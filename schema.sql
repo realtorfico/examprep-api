@@ -35,7 +35,8 @@ CREATE TABLE questions (
   correct_choice TEXT NOT NULL, -- 'A' | 'B' | 'C' | 'D'
   explanation    TEXT NOT NULL,
   weight         INTEGER NOT NULL DEFAULT 3, -- 1-5, exam-likelihood
-  source_note    TEXT,
+  source_note    TEXT, -- which handbook section/page a fact came from
+  source         TEXT, -- provenance of the question itself, e.g. 'self-gen' vs a future imported batch's tag
   created_at     INTEGER NOT NULL
 );
 CREATE INDEX idx_questions_exam_type ON questions(exam_type);

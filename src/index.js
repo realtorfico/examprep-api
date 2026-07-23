@@ -160,7 +160,7 @@ async function handleQuestionsList(request, env) {
 
 function questionFromBody(b) {
   return [b.examType, b.topic, b.question, b.choiceA, b.choiceB, b.choiceC, b.choiceD,
-    b.correctChoice, b.explanation, b.weight ?? 3, b.sourceNote || null];
+    b.correctChoice, b.explanation, b.weight ?? 3, b.sourceNote || null, b.source || 'self-gen'];
 }
 
 async function handleQuestionCreate(request, env) {
@@ -168,8 +168,8 @@ async function handleQuestionCreate(request, env) {
   const id = newId();
   await env.DB.prepare(
     `INSERT INTO questions (id, exam_type, topic, question, choice_a, choice_b, choice_c, choice_d,
-       correct_choice, explanation, weight, source_note, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+       correct_choice, explanation, weight, source_note, source, created_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
   ).bind(id, ...questionFromBody(b), now()).run();
   return json({ id });
 }
@@ -179,7 +179,7 @@ async function handleQuestionUpdate(request, env) {
   if (!b.id) return json({ error: 'id_required' }, 400);
   await env.DB.prepare(
     `UPDATE questions SET exam_type=?, topic=?, question=?, choice_a=?, choice_b=?, choice_c=?, choice_d=?,
-       correct_choice=?, explanation=?, weight=?, source_note=? WHERE id = ?`
+       correct_choice=?, explanation=?, weight=?, source_note=?, source=? WHERE id = ?`
   ).bind(...questionFromBody(b), b.id).run();
   return json({ ok: true });
 }
@@ -196,8 +196,8 @@ async function handleQuestionImport(request, env) {
   const stmts = questions.map((b) =>
     env.DB.prepare(
       `INSERT INTO questions (id, exam_type, topic, question, choice_a, choice_b, choice_c, choice_d,
-         correct_choice, explanation, weight, source_note, created_at)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
+         correct_choice, explanation, weight, source_note, source, created_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`
     ).bind(newId(), ...questionFromBody(b), now())
   );
   await env.DB.batch(stmts);
