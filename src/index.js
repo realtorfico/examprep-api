@@ -41,6 +41,24 @@ async function handleRedeem(request, env) {
   return json({ token, examType: row.exam_type, isNewRedemption: false });
 }
 
+// No auth required — a small taste of the real question bank so visitors can see the
+// experience before buying/redeeming a code. Correct answers are included directly in
+// the response (unlike the real quiz flow) since there's no progress to protect here.
+async function handleSample(request, env) {
+  const url = new URL(request.url);
+  const examType = url.searchParams.get('examType') || 'notary';
+  const rows = await env.DB.prepare(
+    'SELECT * FROM questions WHERE exam_type = ? ORDER BY weight DESC, RANDOM() LIMIT 5'
+  ).bind(examType).all();
+  return json({
+    questions: rows.results.map((q) => ({
+      id: q.id, topic: q.topic, question: q.question,
+      choices: { A: q.choice_a, B: q.choice_b, C: q.choice_c, D: q.choice_d },
+      correctChoice: q.correct_choice, explanation: q.explanation,
+    })),
+  });
+}
+
 async function handleNextQuestion(user, env) {
   const unseen = await env.DB.prepare(
     `SELECT q.* FROM questions q LEFT JOIN progress p ON p.question_id = q.id AND p.user_id = ?
@@ -228,6 +246,7 @@ export default {
 
     try {
       if (pathname === '/redeem' && method === 'POST') return await handleRedeem(request, env);
+      if (pathname === '/sample' && method === 'GET') return await handleSample(request, env);
 
       if (pathname.startsWith('/console/')) {
         if (!(await requireAccess(request, env))) return json({ error: 'unauthorized' }, 401);
