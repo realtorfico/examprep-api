@@ -51,3 +51,11 @@ CREATE TABLE progress (
   PRIMARY KEY (user_id, question_id)
 );
 CREATE INDEX idx_progress_user ON progress(user_id);
+
+-- Self-serve purchase pricing (admin-editable via examprep-admin's Settings tab).
+CREATE TABLE pricing (
+  exam_type   TEXT PRIMARY KEY,
+  price_cents INTEGER NOT NULL,
+  currency    TEXT NOT NULL DEFAULT 'USD',
+  updated_at  INTEGER NOT NULL
+);

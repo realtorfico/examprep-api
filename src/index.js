@@ -1,4 +1,6 @@
 import { verifyTurnstile, requireUser, requireAccess, newId, newCode } from './lib/auth.js';
+import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
+import { sendCodeEmail } from './lib/email.js';
 
 function json(data, status = 200) {
   return Response.json(data, { status, headers: { 'cache-control': 'no-store' } });
@@ -57,6 +59,85 @@ async function handleSample(request, env) {
       correctChoice: q.correct_choice, explanation: q.explanation,
     })),
   });
+}
+
+const DEFAULT_PRICE_CENTS = 499; // fallback if the `pricing` table has no row yet for an exam type
+
+async function getPrice(env, examType) {
+  const row = await env.DB.prepare('SELECT * FROM pricing WHERE exam_type = ?').bind(examType).first();
+  return row ? { priceCents: row.price_cents, currency: row.currency } : { priceCents: DEFAULT_PRICE_CENTS, currency: 'USD' };
+}
+
+async function handlePricingGet(request, env) {
+  const url = new URL(request.url);
+  const examType = url.searchParams.get('examType') || 'notary';
+  const { priceCents, currency } = await getPrice(env, examType);
+  return json({ examType, priceCents, currency });
+}
+
+// Shared by /paypal/capture-order and (later) /points/redeem — generates a fresh code and
+// immediately auto-redeems it (mint token + create user + flip code to redeemed), mirroring
+// /redeem's unused-code branch, so the buyer never has to separately type their own code in.
+async function issueAndRedeemCode(env, examType, note) {
+  const code = newCode();
+  const token = crypto.randomUUID();
+  const userId = newId();
+  await env.DB.batch([
+    env.DB.prepare('INSERT INTO codes (code, exam_type, note, issued_at) VALUES (?, ?, ?, ?)')
+      .bind(code, examType, note, now()),
+    env.DB.prepare('INSERT INTO users (id, exam_type, token, created_at, last_seen_at) VALUES (?, ?, ?, ?, ?)')
+      .bind(userId, examType, token, now(), now()),
+    env.DB.prepare("UPDATE codes SET status = 'redeemed', redeemed_by = ?, redeemed_at = ? WHERE code = ?")
+      .bind(userId, now(), code),
+  ]);
+  return { code, token };
+}
+
+async function handlePaypalCreateOrder(request, env) {
+  const { examType, turnstileToken } = await request.json();
+  const ip = request.headers.get('CF-Connecting-IP');
+  if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
+    return json({ error: 'turnstile_failed' }, 400);
+  }
+  if (!examType) return json({ error: 'examType_required' }, 400);
+
+  const { priceCents, currency } = await getPrice(env, examType);
+  const order = await createPayPalOrder(env, priceCents, currency);
+  return json({ orderId: order.id });
+}
+
+async function handlePaypalCaptureOrder(request, env) {
+  const { orderId, examType, email } = await request.json();
+  if (!orderId || !examType) return json({ error: 'orderId_and_examType_required' }, 400);
+
+  // Idempotency: a retried capture call for an order we've already issued a code for just
+  // re-mints a token for the existing account, instead of risking a double-issue.
+  const note = `paypal:${orderId}`;
+  const existing = await env.DB.prepare('SELECT * FROM codes WHERE note = ?').bind(note).first();
+  if (existing) {
+    const token = crypto.randomUUID();
+    await env.DB.prepare('UPDATE users SET token = ?, last_seen_at = ? WHERE id = ?')
+      .bind(token, now(), existing.redeemed_by).run();
+    return json({ code: existing.code, token, examType: existing.exam_type });
+  }
+
+  const { priceCents: expectedCents } = await getPrice(env, examType);
+  const capture = await capturePayPalOrder(env, orderId);
+  if (capture.status !== 'COMPLETED') return json({ error: 'payment_not_completed' }, 402);
+
+  const captured = capture.purchase_units && capture.purchase_units[0] &&
+    capture.purchase_units[0].payments && capture.purchase_units[0].payments.captures &&
+    capture.purchase_units[0].payments.captures[0];
+  const capturedCents = captured ? Math.round(parseFloat(captured.amount.value) * 100) : 0;
+  if (capturedCents !== expectedCents) return json({ error: 'amount_mismatch' }, 402);
+
+  const { code, token } = await issueAndRedeemCode(env, examType, note);
+
+  if (email) {
+    try { await sendCodeEmail(env, email, code, examType); } catch (e) { /* best-effort, buyer already has the code on-screen */ }
+  }
+
+  return json({ code, token, examType });
 }
 
 async function handleNextQuestion(user, env) {
@@ -137,6 +218,21 @@ async function handlePrefsSet(user, request, env) {
 }
 
 // ---- Admin endpoints (console/*, Cloudflare Access-gated) ------------------
+
+async function handleConsolePricingList(env) {
+  const rows = (await env.DB.prepare('SELECT * FROM pricing').all()).results;
+  return json({ pricing: rows });
+}
+
+async function handleConsolePricingSet(request, env) {
+  const { examType, priceCents, currency } = await request.json();
+  if (!examType || !priceCents) return json({ error: 'examType_and_priceCents_required' }, 400);
+  await env.DB.prepare(
+    `INSERT INTO pricing (exam_type, price_cents, currency, updated_at) VALUES (?, ?, ?, ?)
+     ON CONFLICT (exam_type) DO UPDATE SET price_cents = excluded.price_cents, currency = excluded.currency, updated_at = excluded.updated_at`
+  ).bind(examType, priceCents, currency || 'USD', now()).run();
+  return json({ ok: true });
+}
 
 async function handleCodesGenerate(request, env) {
   const { examType, note, expiresInDays } = await request.json();
@@ -247,12 +343,17 @@ export default {
     try {
       if (pathname === '/redeem' && method === 'POST') return await handleRedeem(request, env);
       if (pathname === '/sample' && method === 'GET') return await handleSample(request, env);
+      if (pathname === '/pricing' && method === 'GET') return await handlePricingGet(request, env);
+      if (pathname === '/paypal/create-order' && method === 'POST') return await handlePaypalCreateOrder(request, env);
+      if (pathname === '/paypal/capture-order' && method === 'POST') return await handlePaypalCaptureOrder(request, env);
 
       if (pathname.startsWith('/console/')) {
         if (!(await requireAccess(request, env))) return json({ error: 'unauthorized' }, 401);
         if (pathname === '/console/codes' && method === 'GET') return await handleCodesList(request, env);
         if (pathname === '/console/codes/generate' && method === 'POST') return await handleCodesGenerate(request, env);
         if (pathname === '/console/codes/revoke' && method === 'POST') return await handleCodesRevoke(request, env);
+        if (pathname === '/console/pricing' && method === 'GET') return await handleConsolePricingList(env);
+        if (pathname === '/console/pricing' && method === 'POST') return await handleConsolePricingSet(request, env);
         if (pathname === '/console/questions' && method === 'GET') return await handleQuestionsList(request, env);
         if (pathname === '/console/questions/create' && method === 'POST') return await handleQuestionCreate(request, env);
         if (pathname === '/console/questions/update' && method === 'POST') return await handleQuestionUpdate(request, env);

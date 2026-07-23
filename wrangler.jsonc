@@ -17,4 +17,8 @@
   //   CF_ACCESS_TEAM_DOMAIN     — e.g. yourteam.cloudflareaccess.com
   //   CF_ACCESS_AUD             — Access application's Audience (AUD) tag for examprep-admin
   //   CF_ACCESS_ALLOWED_EMAILS  — optional extra allowlist on top of the Access policy
+  //   PAYPAL_CLIENT_ID          — from a REST API app at developer.paypal.com
+  //   PAYPAL_CLIENT_SECRET      — from the same PayPal REST API app
+  //   PAYPAL_ENV                — "sandbox" or "live" — picks the PayPal API host
+  //   RESEND_API_KEY            — from resend.com, for the optional backup-code email
 }
