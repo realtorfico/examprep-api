@@ -2,7 +2,8 @@
 // No public hostname/route — both Pages projects reach this via a Service Binding
 // (configured in *their* wrangler.jsonc), so nothing here needs a custom domain.
 // Deploy via Cloudflare's git-connected Workers Builds (Wrangler doesn't run locally
-// on this machine) — connect this repo in the dashboard: Workers & Pages > Create > Workers > Import a repository.
+// on this machine) — connected in the dashboard (Settings > Build): realtorfico/examprep-api,
+// branch main, deploy command `npx wrangler deploy`, root directory `/`.
 {
   "name": "examprep-api",
   "main": "src/index.js",
