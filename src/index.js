@@ -133,11 +133,8 @@ async function handleResourcesSignBatch(request, env) {
 // RESOURCES data (site repo, wwwroot/js/app.js) — that copy is presentation-only.
 const FREE_RESOURCES = {
   notary: [
-    'The_Power_Behind_California_Notary_Stamps.m4a',
-    'Why_your_signature_is_just_ink.m4a',
-    'Surprising_Rules_for_California_Notaries.mp4',
-    'The_Notary_Toolkit.mp4',
-    'California_Notary_Blueprint.pdf',
+    'California_Notary_Fees.mp4',
+    'California_Notary_2026_Quick_Guide.png',
   ],
 };
 
