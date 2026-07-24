@@ -105,3 +105,13 @@ CREATE TABLE point_adjustments (
   admin_email TEXT, -- best-effort, from the already-verified Access JWT
   created_at  INTEGER NOT NULL
 );
+
+-- Bridges /paypal/create-order (which computes and quotes the discount, before payment) to
+-- /paypal/capture-order (which actually deducts the points, only after payment succeeds) --
+-- points are never deducted just for creating an order, only for a captured one.
+CREATE TABLE pending_point_discounts (
+  order_id        TEXT PRIMARY KEY,
+  email           TEXT NOT NULL,
+  points_to_apply INTEGER NOT NULL,
+  created_at      INTEGER NOT NULL
+);

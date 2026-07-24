@@ -184,7 +184,7 @@ async function issueAndRedeemCode(env, examType, note) {
 }
 
 async function handlePaypalCreateOrder(request, env) {
-  const { examType, turnstileToken } = await request.json();
+  const { examType, turnstileToken, email, applyPoints } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
   if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
     return json({ error: 'turnstile_failed' }, 400);
@@ -192,8 +192,31 @@ async function handlePaypalCreateOrder(request, env) {
   if (!examType) return json({ error: 'examType_required' }, 400);
 
   const { priceCents, currency } = await getPrice(env, examType);
-  const order = await createPayPalOrder(env, priceCents, currency);
-  return json({ orderId: order.id });
+
+  // Points are only ever quoted here, never deducted -- that only happens once a capture
+  // actually succeeds (see handlePaypalCaptureOrder), so an abandoned checkout costs nothing.
+  let finalPriceCents = priceCents;
+  let pointsToApply = 0;
+  if (applyPoints && email) {
+    const account = await env.DB.prepare('SELECT * FROM accounts WHERE email = ?').bind(email.trim().toLowerCase()).first();
+    if (account && account.points > 0) {
+      pointsToApply = Math.min(account.points, priceCents);
+      if (pointsToApply >= priceCents) {
+        return json({ error: 'fully_covered_by_points' }, 400); // client should use /points/redeem instead
+      }
+      finalPriceCents = priceCents - pointsToApply;
+    }
+  }
+
+  const order = await createPayPalOrder(env, finalPriceCents, currency);
+
+  if (pointsToApply > 0) {
+    await env.DB.prepare(
+      'INSERT INTO pending_point_discounts (order_id, email, points_to_apply, created_at) VALUES (?, ?, ?, ?)'
+    ).bind(order.id, email.trim().toLowerCase(), pointsToApply, now()).run();
+  }
+
+  return json({ orderId: order.id, priceCents: finalPriceCents, pointsApplied: pointsToApply });
 }
 
 async function handlePaypalCaptureOrder(request, env) {
@@ -211,7 +234,10 @@ async function handlePaypalCaptureOrder(request, env) {
     return json({ code: existing.code, token, examType: existing.exam_type });
   }
 
-  const { priceCents: expectedCents } = await getPrice(env, examType);
+  const { priceCents: fullPriceCents } = await getPrice(env, examType);
+  const discount = await env.DB.prepare('SELECT * FROM pending_point_discounts WHERE order_id = ?').bind(orderId).first();
+  const expectedCents = discount ? fullPriceCents - discount.points_to_apply : fullPriceCents;
+
   const capture = await capturePayPalOrder(env, orderId);
   if (capture.status !== 'COMPLETED') return json({ error: 'payment_not_completed' }, 402);
 
@@ -223,6 +249,15 @@ async function handlePaypalCaptureOrder(request, env) {
 
   const { code, token } = await issueAndRedeemCode(env, examType, note);
 
+  if (discount) {
+    // MAX(0, ...) floors it defensively in case the balance somehow changed since create-order
+    // (e.g. another purchase in a different tab) — the buyer already got the discount they paid
+    // for either way, so we don't fail the purchase over a stale points snapshot.
+    await env.DB.prepare('UPDATE accounts SET points = MAX(0, points - ?) WHERE email = ?')
+      .bind(discount.points_to_apply, discount.email).run();
+    await env.DB.prepare('DELETE FROM pending_point_discounts WHERE order_id = ?').bind(orderId).run();
+  }
+
   if (email) {
     try { await sendCodeEmail(env, email, code, examType); } catch (e) { /* best-effort, buyer already has the code on-screen */ }
   }
@@ -232,7 +267,7 @@ async function handlePaypalCaptureOrder(request, env) {
   const payerEmail = capture.payer && capture.payer.email_address;
   await detectAndCreditConversion(env, payerEmail);
 
-  return json({ code, token, examType });
+  return json({ code, token, examType, pointsApplied: discount ? discount.points_to_apply : 0 });
 }
 
 // ---- Refer & earn points ----------------------------------------------
