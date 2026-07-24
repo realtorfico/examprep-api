@@ -93,10 +93,8 @@ CREATE TABLE point_rules (
   updated_at INTEGER NOT NULL
 );
 
-CREATE TABLE exam_points_required (
-  exam_type       TEXT PRIMARY KEY,
-  points_required INTEGER NOT NULL
-);
+-- No separate "points required per course" table: 1 point = 1 cent, so the redemption
+-- threshold is just that exam type's `pricing.price_cents` — always in sync with the price.
 
 -- Audit trail for admin manual point grants/deductions (support/bug-fix cases).
 CREATE TABLE point_adjustments (

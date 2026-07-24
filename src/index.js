@@ -253,10 +253,12 @@ async function handlePointsBalance(request, env) {
   const email = (url.searchParams.get('email') || '').trim().toLowerCase();
   if (!email) return json({ error: 'email_required' }, 400);
   const account = await env.DB.prepare('SELECT * FROM accounts WHERE email = ?').bind(email).first();
-  const rows = (await env.DB.prepare('SELECT * FROM exam_points_required').all()).results;
+  // 1 point = 1 cent, so the redemption threshold is just the course's price — always in sync
+  // with whatever the admin sets it to, no separate "points required" value to keep updated.
+  const rows = (await env.DB.prepare('SELECT * FROM pricing').all()).results;
   return json({
     points: account ? account.points : 0,
-    examTypes: rows.map((r) => ({ examType: r.exam_type, pointsRequired: r.points_required })),
+    examTypes: rows.map((r) => ({ examType: r.exam_type, pointsRequired: r.price_cents })),
   });
 }
 
@@ -272,12 +274,11 @@ async function handlePointsRedeem(request, env) {
   const account = await env.DB.prepare('SELECT * FROM accounts WHERE email = ?').bind(normalizedEmail).first();
   if (!account) return json({ error: 'account_not_found' }, 404);
 
-  const requiredRow = await env.DB.prepare('SELECT * FROM exam_points_required WHERE exam_type = ?').bind(examType).first();
-  if (!requiredRow) return json({ error: 'exam_type_not_redeemable' }, 400);
-  if (account.points < requiredRow.points_required) return json({ error: 'insufficient_points' }, 402);
+  const { priceCents: required } = await getPrice(env, examType); // 1 point = 1 cent
+  if (account.points < required) return json({ error: 'insufficient_points' }, 402);
 
   await env.DB.prepare('UPDATE accounts SET points = points - ? WHERE id = ?')
-    .bind(requiredRow.points_required, account.id).run();
+    .bind(required, account.id).run();
 
   const { code, token } = await issueAndRedeemCode(env, examType, `points:${account.id}`);
   await detectAndCreditConversion(env, normalizedEmail);
@@ -391,21 +392,6 @@ async function handleConsolePointRulesSet(request, env) {
     `INSERT INTO point_rules (task_key, label, points, active, updated_at) VALUES (?, ?, ?, ?, ?)
      ON CONFLICT (task_key) DO UPDATE SET label = excluded.label, points = excluded.points, active = excluded.active, updated_at = excluded.updated_at`
   ).bind(taskKey, label, points, active ? 1 : 0, now()).run();
-  return json({ ok: true });
-}
-
-async function handleConsoleExamPointsRequiredList(env) {
-  const rows = (await env.DB.prepare('SELECT * FROM exam_points_required').all()).results;
-  return json({ examPointsRequired: rows });
-}
-
-async function handleConsoleExamPointsRequiredSet(request, env) {
-  const { examType, pointsRequired } = await request.json();
-  if (!examType || pointsRequired == null) return json({ error: 'examType_and_pointsRequired_required' }, 400);
-  await env.DB.prepare(
-    `INSERT INTO exam_points_required (exam_type, points_required) VALUES (?, ?)
-     ON CONFLICT (exam_type) DO UPDATE SET points_required = excluded.points_required`
-  ).bind(examType, pointsRequired).run();
   return json({ ok: true });
 }
 
@@ -571,8 +557,6 @@ export default {
         if (pathname === '/console/pricing' && method === 'POST') return await handleConsolePricingSet(request, env);
         if (pathname === '/console/point-rules' && method === 'GET') return await handleConsolePointRulesList(env);
         if (pathname === '/console/point-rules' && method === 'POST') return await handleConsolePointRulesSet(request, env);
-        if (pathname === '/console/exam-points-required' && method === 'GET') return await handleConsoleExamPointsRequiredList(env);
-        if (pathname === '/console/exam-points-required' && method === 'POST') return await handleConsoleExamPointsRequiredSet(request, env);
         if (pathname === '/console/accounts' && method === 'GET') return await handleConsoleAccountsList(env);
         if (pathname === '/console/accounts/adjust-points' && method === 'POST') return await handleConsoleAccountsAdjustPoints(request, env);
         if (pathname === '/console/referrals' && method === 'GET') return await handleConsoleReferralsList(env);
