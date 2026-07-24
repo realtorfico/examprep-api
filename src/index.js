@@ -291,41 +291,59 @@ async function awardPoints(env, accountId, taskKey) {
   return rule.points;
 }
 
+// Accepts a batch of friends in one call rather than one-friend-per-request -- Turnstile tokens
+// are single-use, so referring several friends at once genuinely needs to be one request, not
+// the client calling this N times with the same token. Partial success is expected/normal (e.g.
+// one friend in the batch was already referred by someone else) -- reported per-friend rather
+// than failing the whole batch over one bad entry.
 async function handleReferralInvite(request, env) {
-  const { referrerEmail, referrerName, referredEmail, referredName, turnstileToken } = await request.json();
+  const { referrerEmail, referrerName, friends, turnstileToken } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
   if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
     return json({ error: 'turnstile_failed' }, 400);
   }
-  if (!referrerEmail || !referredEmail) return json({ error: 'emails_required' }, 400);
+  if (!referrerEmail || !Array.isArray(friends) || !friends.length) {
+    return json({ error: 'referrerEmail_and_friends_required' }, 400);
+  }
   const referrerEmailNorm = referrerEmail.trim().toLowerCase();
-  const referredEmailNorm = referredEmail.trim().toLowerCase();
-  if (referrerEmailNorm === referredEmailNorm) return json({ error: 'cannot_refer_yourself' }, 400);
-
   const referrer = await getOrCreateAccount(env, referrerEmailNorm, referrerName);
 
-  // Rate limit: protects Resend sending-domain reputation from spam-blast abuse.
+  // Rate limit: protects Resend sending-domain reputation from spam-blast abuse. Whole batch is
+  // rejected up front if it would push the referrer over the daily cap, rather than partially
+  // processing it and leaving them guessing which ones went through.
   const dayAgo = now() - 86400;
   const recent = await env.DB.prepare(
     'SELECT COUNT(*) AS n FROM referrals WHERE referrer_account_id = ? AND created_at > ?'
   ).bind(referrer.id, dayAgo).first();
-  if (recent.n >= 20) return json({ error: 'rate_limited' }, 429);
-
-  const verifyToken = crypto.randomUUID();
-  try {
-    await env.DB.prepare(
-      'INSERT INTO referrals (id, referrer_account_id, referred_email, referred_name, verify_token, created_at) VALUES (?, ?, ?, ?, ?, ?)'
-    ).bind(newId(), referrer.id, referredEmailNorm, referredName || null, verifyToken, now()).run();
-  } catch (e) {
-    return json({ error: 'already_referred' }, 409); // UNIQUE constraint on referred_email
+  if (recent.n + friends.length > 20) {
+    return json({ error: 'rate_limited', remainingToday: Math.max(0, 20 - recent.n) }, 429);
   }
 
-  try {
-    const verifyUrl = `https://examprep.softician.com/notary#/refer-verify/${verifyToken}`;
-    await sendReferralInviteEmail(env, referredEmailNorm, referrerName, verifyUrl);
-  } catch (e) { /* referral row still exists even if the invite email fails to send */ }
+  const results = [];
+  for (const friend of friends) {
+    const friendEmail = (friend && friend.email ? friend.email : '').trim().toLowerCase();
+    const friendName = friend && friend.name ? friend.name : null;
+    if (!friendEmail) { results.push({ email: friend && friend.email || '', status: 'invalid' }); continue; }
+    if (friendEmail === referrerEmailNorm) { results.push({ email: friendEmail, status: 'self' }); continue; }
 
-  return json({ ok: true });
+    const verifyToken = crypto.randomUUID();
+    try {
+      await env.DB.prepare(
+        'INSERT INTO referrals (id, referrer_account_id, referred_email, referred_name, verify_token, created_at) VALUES (?, ?, ?, ?, ?, ?)'
+      ).bind(newId(), referrer.id, friendEmail, friendName, verifyToken, now()).run();
+    } catch (e) {
+      results.push({ email: friendEmail, status: 'already_referred' }); // UNIQUE constraint on referred_email
+      continue;
+    }
+
+    try {
+      const verifyUrl = `https://examprep.softician.com/notary#/refer-verify/${verifyToken}`;
+      await sendReferralInviteEmail(env, friendEmail, referrerName, verifyUrl);
+    } catch (e) { /* referral row still exists even if the invite email fails to send */ }
+    results.push({ email: friendEmail, status: 'sent' });
+  }
+
+  return json({ results });
 }
 
 async function handleReferralVerify(request, env) {
