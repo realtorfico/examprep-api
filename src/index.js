@@ -1,6 +1,7 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail } from './lib/email.js';
+import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 
 function json(data, status = 200) {
   return Response.json(data, { status, headers: { 'cache-control': 'no-store' } });
@@ -59,6 +60,71 @@ async function handleSample(request, env) {
       correctChoice: q.correct_choice, explanation: q.explanation,
     })),
   });
+}
+
+// Parses a `Range: bytes=start-end` header into an R2 { offset, length } range, supporting
+// open-ended ("bytes=500-") and suffix ("bytes=-500") forms. Needed so <audio>/<video> can
+// seek within these (often 50-100MB+) files instead of re-downloading the whole thing.
+function parseRange(rangeHeader, size) {
+  if (!rangeHeader) return null;
+  const match = /^bytes=(\d*)-(\d*)$/.exec(rangeHeader);
+  if (!match) return null;
+  let start = match[1] ? parseInt(match[1], 10) : null;
+  let end = match[2] ? parseInt(match[2], 10) : null;
+  if (start === null && end === null) return null;
+  if (start === null) {
+    start = Math.max(0, size - end);
+    end = size - 1;
+  } else if (end === null || end >= size) {
+    end = size - 1;
+  }
+  if (start > end) return null;
+  return { offset: start, length: end - start + 1 };
+}
+
+// Public (no bearer token — plain <audio>/<video>/<iframe> tags can't attach one), gated
+// entirely by the exp/sig query params minted by /resources/sign-batch. This is the ONLY way
+// to reach file contents once the R2 bucket's public custom domain is removed.
+async function handleMediaFile(request, env) {
+  const url = new URL(request.url);
+  const file = decodeURIComponent(url.pathname.slice('/media/'.length));
+  const exp = url.searchParams.get('exp');
+  const sig = url.searchParams.get('sig');
+  if (!(await verifyMediaSig(env, file, exp, sig))) return json({ error: 'invalid_or_expired' }, 403);
+
+  const head = await env.MEDIA.head(file);
+  if (!head) return json({ error: 'not_found' }, 404);
+
+  const range = parseRange(request.headers.get('range'), head.size);
+  const object = await env.MEDIA.get(file, range ? { range } : undefined);
+  if (!object) return json({ error: 'not_found' }, 404);
+
+  const headers = new Headers();
+  object.writeHttpMetadata(headers);
+  headers.set('etag', object.httpEtag);
+  headers.set('accept-ranges', 'bytes');
+  headers.set('cache-control', 'private, max-age=3600');
+
+  if (range) {
+    headers.set('content-range', `bytes ${range.offset}-${range.offset + range.length - 1}/${head.size}`);
+    return new Response(object.body, { status: 206, headers });
+  }
+  return new Response(object.body, { status: 200, headers });
+}
+
+// Bearer-token gated (see router) so only someone who has redeemed/bought a code can mint
+// these; the handler itself doesn't need to read `user` since every exam-type's resources are
+// available uniformly to anyone with a valid session, not per-account entitlements.
+async function handleResourcesSignBatch(request, env) {
+  const { files } = await request.json();
+  if (!Array.isArray(files) || !files.length) return json({ error: 'files_required' }, 400);
+  const ttlSeconds = 3600; // long enough to fully stream a large file, short enough to discourage link-sharing
+  const urls = {};
+  for (const file of files) {
+    const { exp, sig } = await signMediaUrl(env, file, ttlSeconds);
+    urls[file] = `/media/${encodeURIComponent(file)}?exp=${exp}&sig=${sig}`;
+  }
+  return json({ urls });
 }
 
 const DEFAULT_PRICE_CENTS = 499; // fallback if the `pricing` table has no row yet for an exam type
@@ -547,6 +613,7 @@ export default {
       if (pathname === '/referrals/verify' && method === 'GET') return await handleReferralVerify(request, env);
       if (pathname === '/points/balance' && method === 'GET') return await handlePointsBalance(request, env);
       if (pathname === '/points/redeem' && method === 'POST') return await handlePointsRedeem(request, env);
+      if (pathname.startsWith('/media/') && method === 'GET') return await handleMediaFile(request, env);
 
       if (pathname.startsWith('/console/')) {
         if (!(await requireAccess(request, env))) return json({ error: 'unauthorized' }, 401);
@@ -578,6 +645,7 @@ export default {
       if (pathname === '/progress' && method === 'GET') return await handleProgress(user, env);
       if (pathname === '/prefs' && method === 'GET') return await handlePrefsGet(user);
       if (pathname === '/prefs' && method === 'POST') return await handlePrefsSet(user, request, env);
+      if (pathname === '/resources/sign-batch' && method === 'POST') return await handleResourcesSignBatch(request, env);
 
       return json({ error: 'not_found' }, 404);
     } catch (err) {

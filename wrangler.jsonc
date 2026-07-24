@@ -12,6 +12,12 @@
     // Create the DB in the dashboard (Workers & Pages > D1 > Create), run schema.sql
     // via its Console tab, then paste the database_id here.
     { "binding": "DB", "database_name": "examprep", "database_id": "9dce57bc-02c9-41cb-8d56-3f5a3dd9347b" }
+  ],
+  "r2_buckets": [
+    // Study-resource media (audio/video/pdf/image). No public custom domain on this bucket --
+    // access is only via signed /media/:file URLs minted by /resources/sign-batch (see
+    // src/lib/mediaSign.js), so this binding is the ONLY way to reach the file contents.
+    { "binding": "MEDIA", "bucket_name": "examprep-media" }
   ]
   // Secrets/vars (set via dashboard: Settings > Variables & Secrets, not committed here):
   //   TURNSTILE_SECRET          — from the Turnstile widget (public site's /redeem form)
@@ -22,4 +28,5 @@
   //   PAYPAL_CLIENT_SECRET      — from the same PayPal REST API app
   //   PAYPAL_ENV                — "sandbox" or "live" — picks the PayPal API host
   //   RESEND_API_KEY            — from resend.com, for the optional backup-code email
+  //   MEDIA_SIGNING_SECRET      — random string, HMACs the short-lived /media/:file URLs
 }
