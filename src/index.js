@@ -127,6 +127,33 @@ async function handleResourcesSignBatch(request, env) {
   return json({ urls });
 }
 
+// Server-side source of truth for which resources are free-to-preview without an access code —
+// deliberately NOT trusted from the client, so a visitor can't just edit a `free: true` flag in
+// devtools to unlock everything. Must be kept in sync with the `free:` flags in the site's own
+// RESOURCES data (site repo, wwwroot/js/app.js) — that copy is presentation-only.
+const FREE_RESOURCES = {
+  notary: [
+    'The_Power_Behind_California_Notary_Stamps.m4a',
+    'Why_your_signature_is_just_ink.m4a',
+    'Surprising_Rules_for_California_Notaries.mp4',
+    'The_Notary_Toolkit.mp4',
+    'California_Notary_Blueprint.pdf',
+  ],
+};
+
+async function handleResourcesFree(request, env) {
+  const url = new URL(request.url);
+  const examType = url.searchParams.get('examType') || 'notary';
+  const files = FREE_RESOURCES[examType] || [];
+  const ttlSeconds = 3600;
+  const urls = {};
+  for (const file of files) {
+    const { exp, sig } = await signMediaUrl(env, file, ttlSeconds);
+    urls[file] = `/media/${encodeURIComponent(file)}?exp=${exp}&sig=${sig}`;
+  }
+  return json({ urls });
+}
+
 const DEFAULT_PRICE_CENTS = 499; // fallback if the `pricing` table has no row yet for an exam type
 
 async function getPrice(env, examType) {
@@ -614,6 +641,7 @@ export default {
       if (pathname === '/points/balance' && method === 'GET') return await handlePointsBalance(request, env);
       if (pathname === '/points/redeem' && method === 'POST') return await handlePointsRedeem(request, env);
       if (pathname.startsWith('/media/') && method === 'GET') return await handleMediaFile(request, env);
+      if (pathname === '/resources/free' && method === 'GET') return await handleResourcesFree(request, env);
 
       if (pathname.startsWith('/console/')) {
         if (!(await requireAccess(request, env))) return json({ error: 'unauthorized' }, 401);
