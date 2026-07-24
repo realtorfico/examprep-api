@@ -91,6 +91,22 @@ export async function requireAccess(request, env) {
   return true;
 }
 
+// Best-effort admin email for audit logs (e.g. point_adjustments.admin_email). Only call this
+// after requireAccess() has already verified the request — this just re-reads the payload
+// without re-verifying the signature, since that trust decision was already made.
+export function getAccessEmail(request) {
+  const jwt = request.headers.get('Cf-Access-Jwt-Assertion');
+  if (!jwt) return null;
+  const [, payloadB64] = jwt.split('.');
+  if (!payloadB64) return null;
+  try {
+    const payload = JSON.parse(new TextDecoder().decode(base64UrlDecode(payloadB64)));
+    return payload.email || null;
+  } catch (e) {
+    return null;
+  }
+}
+
 export function newId() {
   return crypto.randomUUID();
 }

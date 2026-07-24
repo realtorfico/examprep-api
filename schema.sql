@@ -59,3 +59,51 @@ CREATE TABLE pricing (
   currency    TEXT NOT NULL DEFAULT 'USD',
   updated_at  INTEGER NOT NULL
 );
+
+-- Refer & earn points. `accounts` are lightweight, email-keyed identities (no password/login) —
+-- created the moment someone refers a friend, so points can accrue before any purchase happens.
+CREATE TABLE accounts (
+  id         TEXT PRIMARY KEY,
+  email      TEXT NOT NULL UNIQUE,
+  name       TEXT,
+  points     INTEGER NOT NULL DEFAULT 0,
+  created_at INTEGER NOT NULL
+);
+
+CREATE TABLE referrals (
+  id                  TEXT PRIMARY KEY,
+  referrer_account_id TEXT NOT NULL REFERENCES accounts(id),
+  referred_email      TEXT NOT NULL UNIQUE, -- one referral credit per email ever, first-referrer-wins
+  referred_name       TEXT,
+  status              TEXT NOT NULL DEFAULT 'invited', -- invited | verified | converted
+  verify_token        TEXT NOT NULL,
+  verified_at         INTEGER,
+  converted_at        INTEGER,
+  created_at          INTEGER NOT NULL
+);
+
+-- Generic, admin-editable list of point-earning tasks (examprep-admin's Points tab / Settings) —
+-- not fixed columns, so a new earning task later is just a new row + a matching award call in
+-- code, not a schema migration.
+CREATE TABLE point_rules (
+  task_key   TEXT PRIMARY KEY, -- 'referral_verified' | 'referral_converted' today
+  label      TEXT NOT NULL,
+  points     INTEGER NOT NULL,
+  active     INTEGER NOT NULL DEFAULT 1, -- inactive = stop awarding without losing history
+  updated_at INTEGER NOT NULL
+);
+
+CREATE TABLE exam_points_required (
+  exam_type       TEXT PRIMARY KEY,
+  points_required INTEGER NOT NULL
+);
+
+-- Audit trail for admin manual point grants/deductions (support/bug-fix cases).
+CREATE TABLE point_adjustments (
+  id          TEXT PRIMARY KEY,
+  account_id  TEXT NOT NULL REFERENCES accounts(id),
+  delta       INTEGER NOT NULL,
+  reason      TEXT NOT NULL,
+  admin_email TEXT, -- best-effort, from the already-verified Access JWT
+  created_at  INTEGER NOT NULL
+);

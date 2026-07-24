@@ -1,6 +1,6 @@
-import { verifyTurnstile, requireUser, requireAccess, newId, newCode } from './lib/auth.js';
+import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
-import { sendCodeEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail } from './lib/email.js';
 
 function json(data, status = 200) {
   return Response.json(data, { status, headers: { 'cache-control': 'no-store' } });
@@ -137,6 +137,151 @@ async function handlePaypalCaptureOrder(request, env) {
     try { await sendCodeEmail(env, email, code, examType); } catch (e) { /* best-effort, buyer already has the code on-screen */ }
   }
 
+  // PayPal's own capture response tells us the payer's email for free — no extra field/friction
+  // needed on the buy form to detect "this buyer was someone's referral."
+  const payerEmail = capture.payer && capture.payer.email_address;
+  await detectAndCreditConversion(env, payerEmail);
+
+  return json({ code, token, examType });
+}
+
+// ---- Refer & earn points ----------------------------------------------
+
+async function getOrCreateAccount(env, email, name) {
+  const existing = await env.DB.prepare('SELECT * FROM accounts WHERE email = ?').bind(email).first();
+  if (existing) return existing;
+  const id = newId();
+  await env.DB.prepare('INSERT INTO accounts (id, email, name, points, created_at) VALUES (?, ?, ?, 0, ?)')
+    .bind(id, email, name || null, now()).run();
+  return { id, email, name: name || null, points: 0, created_at: now() };
+}
+
+// Looks up the current point value for a task and credits it — returns 0 (no-op) if the rule
+// is missing or an admin has turned it off, so disabling an earning path never breaks the
+// underlying action (verification/conversion still records normally either way).
+async function awardPoints(env, accountId, taskKey) {
+  const rule = await env.DB.prepare('SELECT * FROM point_rules WHERE task_key = ? AND active = 1').bind(taskKey).first();
+  if (!rule) return 0;
+  await env.DB.prepare('UPDATE accounts SET points = points + ? WHERE id = ?').bind(rule.points, accountId).run();
+  return rule.points;
+}
+
+async function handleReferralInvite(request, env) {
+  const { referrerEmail, referrerName, referredEmail, referredName, turnstileToken } = await request.json();
+  const ip = request.headers.get('CF-Connecting-IP');
+  if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
+    return json({ error: 'turnstile_failed' }, 400);
+  }
+  if (!referrerEmail || !referredEmail) return json({ error: 'emails_required' }, 400);
+  const referrerEmailNorm = referrerEmail.trim().toLowerCase();
+  const referredEmailNorm = referredEmail.trim().toLowerCase();
+  if (referrerEmailNorm === referredEmailNorm) return json({ error: 'cannot_refer_yourself' }, 400);
+
+  const referrer = await getOrCreateAccount(env, referrerEmailNorm, referrerName);
+
+  // Rate limit: protects Resend sending-domain reputation from spam-blast abuse.
+  const dayAgo = now() - 86400;
+  const recent = await env.DB.prepare(
+    'SELECT COUNT(*) AS n FROM referrals WHERE referrer_account_id = ? AND created_at > ?'
+  ).bind(referrer.id, dayAgo).first();
+  if (recent.n >= 20) return json({ error: 'rate_limited' }, 429);
+
+  const verifyToken = crypto.randomUUID();
+  try {
+    await env.DB.prepare(
+      'INSERT INTO referrals (id, referrer_account_id, referred_email, referred_name, verify_token, created_at) VALUES (?, ?, ?, ?, ?, ?)'
+    ).bind(newId(), referrer.id, referredEmailNorm, referredName || null, verifyToken, now()).run();
+  } catch (e) {
+    return json({ error: 'already_referred' }, 409); // UNIQUE constraint on referred_email
+  }
+
+  try {
+    const verifyUrl = `https://examprep.softician.com/notary#/refer-verify/${verifyToken}`;
+    await sendReferralInviteEmail(env, referredEmailNorm, referrerName, verifyUrl);
+  } catch (e) { /* referral row still exists even if the invite email fails to send */ }
+
+  return json({ ok: true });
+}
+
+async function handleReferralVerify(request, env) {
+  const url = new URL(request.url);
+  const token = url.searchParams.get('token');
+  if (!token) return json({ error: 'token_required' }, 400);
+
+  const referral = await env.DB.prepare('SELECT * FROM referrals WHERE verify_token = ?').bind(token).first();
+  if (!referral) return json({ error: 'invalid_token' }, 404);
+  if (referral.status !== 'invited') return json({ ok: true, alreadyVerified: true });
+
+  await env.DB.prepare("UPDATE referrals SET status = 'verified', verified_at = ? WHERE id = ?")
+    .bind(now(), referral.id).run();
+
+  const pointsAwarded = await awardPoints(env, referral.referrer_account_id, 'referral_verified');
+  if (pointsAwarded > 0) {
+    const referrer = await env.DB.prepare('SELECT * FROM accounts WHERE id = ?').bind(referral.referrer_account_id).first();
+    if (referrer) {
+      try { await sendPointsEarnedEmail(env, referrer.email, pointsAwarded, 'a friend confirmed your referral'); } catch (e) {}
+    }
+  }
+
+  return json({ ok: true, alreadyVerified: false });
+}
+
+// Shared by /paypal/capture-order and /points/redeem — best-effort, never throws, so a
+// purchase/redemption never fails just because this bookkeeping step hit a snag.
+async function detectAndCreditConversion(env, buyerEmail) {
+  if (!buyerEmail) return;
+  try {
+    const email = buyerEmail.trim().toLowerCase();
+    const referral = await env.DB.prepare(
+      "SELECT * FROM referrals WHERE referred_email = ? AND status = 'verified' AND converted_at IS NULL"
+    ).bind(email).first();
+    if (!referral) return;
+
+    await env.DB.prepare("UPDATE referrals SET status = 'converted', converted_at = ? WHERE id = ?")
+      .bind(now(), referral.id).run();
+
+    const pointsAwarded = await awardPoints(env, referral.referrer_account_id, 'referral_converted');
+    if (pointsAwarded > 0) {
+      const referrer = await env.DB.prepare('SELECT * FROM accounts WHERE id = ?').bind(referral.referrer_account_id).first();
+      if (referrer) await sendPointsEarnedEmail(env, referrer.email, pointsAwarded, 'your referral signed up for a course');
+    }
+  } catch (e) { /* best-effort */ }
+}
+
+async function handlePointsBalance(request, env) {
+  const url = new URL(request.url);
+  const email = (url.searchParams.get('email') || '').trim().toLowerCase();
+  if (!email) return json({ error: 'email_required' }, 400);
+  const account = await env.DB.prepare('SELECT * FROM accounts WHERE email = ?').bind(email).first();
+  const rows = (await env.DB.prepare('SELECT * FROM exam_points_required').all()).results;
+  return json({
+    points: account ? account.points : 0,
+    examTypes: rows.map((r) => ({ examType: r.exam_type, pointsRequired: r.points_required })),
+  });
+}
+
+async function handlePointsRedeem(request, env) {
+  const { email, examType, turnstileToken } = await request.json();
+  const ip = request.headers.get('CF-Connecting-IP');
+  if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
+    return json({ error: 'turnstile_failed' }, 400);
+  }
+  if (!email || !examType) return json({ error: 'email_and_examType_required' }, 400);
+
+  const normalizedEmail = email.trim().toLowerCase();
+  const account = await env.DB.prepare('SELECT * FROM accounts WHERE email = ?').bind(normalizedEmail).first();
+  if (!account) return json({ error: 'account_not_found' }, 404);
+
+  const requiredRow = await env.DB.prepare('SELECT * FROM exam_points_required WHERE exam_type = ?').bind(examType).first();
+  if (!requiredRow) return json({ error: 'exam_type_not_redeemable' }, 400);
+  if (account.points < requiredRow.points_required) return json({ error: 'insufficient_points' }, 402);
+
+  await env.DB.prepare('UPDATE accounts SET points = points - ? WHERE id = ?')
+    .bind(requiredRow.points_required, account.id).run();
+
+  const { code, token } = await issueAndRedeemCode(env, examType, `points:${account.id}`);
+  await detectAndCreditConversion(env, normalizedEmail);
+
   return json({ code, token, examType });
 }
 
@@ -232,6 +377,72 @@ async function handleConsolePricingSet(request, env) {
      ON CONFLICT (exam_type) DO UPDATE SET price_cents = excluded.price_cents, currency = excluded.currency, updated_at = excluded.updated_at`
   ).bind(examType, priceCents, currency || 'USD', now()).run();
   return json({ ok: true });
+}
+
+async function handleConsolePointRulesList(env) {
+  const rows = (await env.DB.prepare('SELECT * FROM point_rules ORDER BY task_key').all()).results;
+  return json({ pointRules: rows });
+}
+
+async function handleConsolePointRulesSet(request, env) {
+  const { taskKey, label, points, active } = await request.json();
+  if (!taskKey || !label || points == null) return json({ error: 'taskKey_label_points_required' }, 400);
+  await env.DB.prepare(
+    `INSERT INTO point_rules (task_key, label, points, active, updated_at) VALUES (?, ?, ?, ?, ?)
+     ON CONFLICT (task_key) DO UPDATE SET label = excluded.label, points = excluded.points, active = excluded.active, updated_at = excluded.updated_at`
+  ).bind(taskKey, label, points, active ? 1 : 0, now()).run();
+  return json({ ok: true });
+}
+
+async function handleConsoleExamPointsRequiredList(env) {
+  const rows = (await env.DB.prepare('SELECT * FROM exam_points_required').all()).results;
+  return json({ examPointsRequired: rows });
+}
+
+async function handleConsoleExamPointsRequiredSet(request, env) {
+  const { examType, pointsRequired } = await request.json();
+  if (!examType || pointsRequired == null) return json({ error: 'examType_and_pointsRequired_required' }, 400);
+  await env.DB.prepare(
+    `INSERT INTO exam_points_required (exam_type, points_required) VALUES (?, ?)
+     ON CONFLICT (exam_type) DO UPDATE SET points_required = excluded.points_required`
+  ).bind(examType, pointsRequired).run();
+  return json({ ok: true });
+}
+
+async function handleConsoleAccountsList(env) {
+  const rows = (await env.DB.prepare(
+    `SELECT a.*,
+       (SELECT COUNT(*) FROM referrals r WHERE r.referrer_account_id = a.id) AS referrals_sent,
+       (SELECT COUNT(*) FROM referrals r WHERE r.referrer_account_id = a.id AND r.status IN ('verified','converted')) AS referrals_verified,
+       (SELECT COUNT(*) FROM referrals r WHERE r.referrer_account_id = a.id AND r.status = 'converted') AS referrals_converted
+     FROM accounts a ORDER BY a.points DESC LIMIT 500`
+  ).all()).results;
+  return json({ accounts: rows });
+}
+
+async function handleConsoleAccountsAdjustPoints(request, env) {
+  const { email, delta, reason } = await request.json();
+  if (!email || !delta || !reason) return json({ error: 'email_delta_reason_required' }, 400);
+  const account = await env.DB.prepare('SELECT * FROM accounts WHERE email = ?').bind(email.trim().toLowerCase()).first();
+  if (!account) return json({ error: 'account_not_found' }, 404);
+
+  const adminEmail = getAccessEmail(request);
+  await env.DB.batch([
+    env.DB.prepare('UPDATE accounts SET points = points + ? WHERE id = ?').bind(delta, account.id),
+    env.DB.prepare(
+      'INSERT INTO point_adjustments (id, account_id, delta, reason, admin_email, created_at) VALUES (?, ?, ?, ?, ?, ?)'
+    ).bind(newId(), account.id, delta, reason, adminEmail, now()),
+  ]);
+  return json({ ok: true, newBalance: account.points + delta });
+}
+
+async function handleConsoleReferralsList(env) {
+  const rows = (await env.DB.prepare(
+    `SELECT r.*, a.email AS referrer_email FROM referrals r
+     JOIN accounts a ON a.id = r.referrer_account_id
+     ORDER BY r.created_at DESC LIMIT 500`
+  ).all()).results;
+  return json({ referrals: rows });
 }
 
 async function handleCodesGenerate(request, env) {
@@ -346,6 +557,10 @@ export default {
       if (pathname === '/pricing' && method === 'GET') return await handlePricingGet(request, env);
       if (pathname === '/paypal/create-order' && method === 'POST') return await handlePaypalCreateOrder(request, env);
       if (pathname === '/paypal/capture-order' && method === 'POST') return await handlePaypalCaptureOrder(request, env);
+      if (pathname === '/referrals/invite' && method === 'POST') return await handleReferralInvite(request, env);
+      if (pathname === '/referrals/verify' && method === 'GET') return await handleReferralVerify(request, env);
+      if (pathname === '/points/balance' && method === 'GET') return await handlePointsBalance(request, env);
+      if (pathname === '/points/redeem' && method === 'POST') return await handlePointsRedeem(request, env);
 
       if (pathname.startsWith('/console/')) {
         if (!(await requireAccess(request, env))) return json({ error: 'unauthorized' }, 401);
@@ -354,6 +569,13 @@ export default {
         if (pathname === '/console/codes/revoke' && method === 'POST') return await handleCodesRevoke(request, env);
         if (pathname === '/console/pricing' && method === 'GET') return await handleConsolePricingList(env);
         if (pathname === '/console/pricing' && method === 'POST') return await handleConsolePricingSet(request, env);
+        if (pathname === '/console/point-rules' && method === 'GET') return await handleConsolePointRulesList(env);
+        if (pathname === '/console/point-rules' && method === 'POST') return await handleConsolePointRulesSet(request, env);
+        if (pathname === '/console/exam-points-required' && method === 'GET') return await handleConsoleExamPointsRequiredList(env);
+        if (pathname === '/console/exam-points-required' && method === 'POST') return await handleConsoleExamPointsRequiredSet(request, env);
+        if (pathname === '/console/accounts' && method === 'GET') return await handleConsoleAccountsList(env);
+        if (pathname === '/console/accounts/adjust-points' && method === 'POST') return await handleConsoleAccountsAdjustPoints(request, env);
+        if (pathname === '/console/referrals' && method === 'GET') return await handleConsoleReferralsList(env);
         if (pathname === '/console/questions' && method === 'GET') return await handleQuestionsList(request, env);
         if (pathname === '/console/questions/create' && method === 'POST') return await handleQuestionCreate(request, env);
         if (pathname === '/console/questions/update' && method === 'POST') return await handleQuestionUpdate(request, env);

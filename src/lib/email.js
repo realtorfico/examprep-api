@@ -22,3 +22,24 @@ export async function sendCodeEmail(env, to, code, examType) {
            <p>You're already logged in on the device you purchased from — keep this email as a backup in case you need to sign in elsewhere.</p>`,
   });
 }
+
+export async function sendReferralInviteEmail(env, to, referrerName, verifyUrl) {
+  const who = referrerName ? referrerName : 'A friend';
+  await sendEmail(env, {
+    to,
+    subject: `${who} thinks you'd like ExamPrep`,
+    html: `<p>${who} referred you to ExamPrep, a California Notary exam prep site.</p>
+           <p><a href="${verifyUrl}">Click here to confirm</a> — no obligation to buy anything,
+           this just lets ${who} know you're a real referral.</p>
+           <p>Once you're ready, you can also earn free access yourself by referring others.</p>`,
+  });
+}
+
+export async function sendPointsEarnedEmail(env, to, points, reason) {
+  await sendEmail(env, {
+    to,
+    subject: `You earned ${points} points!`,
+    html: `<p>Nice — you just earned <strong>${points} points</strong> (${reason}).</p>
+           <p>Redeem your points for free access once you've earned enough for a course.</p>`,
+  });
+}
