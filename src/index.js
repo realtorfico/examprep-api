@@ -8,6 +8,32 @@ function json(data, status = 200) {
 }
 const now = () => Math.floor(Date.now() / 1000);
 
+// Canonicalizes an email for referral dedup/self-referral checks -- major providers alias
+// "+tag" suffixes (and Gmail additionally ignores dots in the local part) to the same inbox,
+// so without this a single inbox can look like dozens of distinct referrals and farm points
+// for free. Deliberately conservative: only known-aliasing domains are touched, so two
+// genuinely different people elsewhere never collide.
+const PLUS_ALIASING_EMAIL_DOMAINS = new Set([
+  'gmail.com', 'googlemail.com', 'outlook.com', 'hotmail.com', 'live.com', 'msn.com',
+  'icloud.com', 'me.com', 'mac.com',
+]);
+const DOT_INSENSITIVE_EMAIL_DOMAINS = new Set(['gmail.com', 'googlemail.com']);
+function normalizeEmailForDedup(email) {
+  const trimmed = (email || '').trim().toLowerCase();
+  const atIdx = trimmed.lastIndexOf('@');
+  if (atIdx < 0) return trimmed;
+  let local = trimmed.slice(0, atIdx);
+  const domain = trimmed.slice(atIdx + 1);
+  if (PLUS_ALIASING_EMAIL_DOMAINS.has(domain)) {
+    const plusIdx = local.indexOf('+');
+    if (plusIdx >= 0) local = local.slice(0, plusIdx);
+  }
+  if (DOT_INSENSITIVE_EMAIL_DOMAINS.has(domain)) {
+    local = local.replace(/\./g, '');
+  }
+  return `${local}@${domain}`;
+}
+
 // ---- Public endpoints (bearer-token auth via requireUser) -----------------
 
 async function handleRedeem(request, env) {
@@ -348,15 +374,19 @@ async function handleReferralInvite(request, env) {
     const friendEmail = (friend && friend.email ? friend.email : '').trim().toLowerCase();
     const friendName = friend && friend.name ? friend.name : null;
     if (!friendEmail) { results.push({ email: friend && friend.email || '', status: 'invalid' }); continue; }
-    if (friendEmail === referrerEmailNorm) { results.push({ email: friendEmail, status: 'self' }); continue; }
+    const friendEmailNormalized = normalizeEmailForDedup(friendEmail);
+    if (friendEmailNormalized === normalizeEmailForDedup(referrerEmailNorm)) {
+      results.push({ email: friendEmail, status: 'self' });
+      continue;
+    }
 
     const verifyToken = crypto.randomUUID();
     try {
       await env.DB.prepare(
-        'INSERT INTO referrals (id, referrer_account_id, referred_email, referred_name, verify_token, created_at) VALUES (?, ?, ?, ?, ?, ?)'
-      ).bind(newId(), referrer.id, friendEmail, friendName, verifyToken, now()).run();
+        'INSERT INTO referrals (id, referrer_account_id, referred_email, referred_email_normalized, referred_name, verify_token, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)'
+      ).bind(newId(), referrer.id, friendEmail, friendEmailNormalized, friendName, verifyToken, now()).run();
     } catch (e) {
-      results.push({ email: friendEmail, status: 'already_referred' }); // UNIQUE constraint on referred_email
+      results.push({ email: friendEmail, status: 'already_referred' }); // UNIQUE constraint on referred_email_normalized
       continue;
     }
 
@@ -398,10 +428,10 @@ async function handleReferralVerify(request, env) {
 async function detectAndCreditConversion(env, buyerEmail) {
   if (!buyerEmail) return;
   try {
-    const email = buyerEmail.trim().toLowerCase();
+    const emailNormalized = normalizeEmailForDedup(buyerEmail);
     const referral = await env.DB.prepare(
-      "SELECT * FROM referrals WHERE referred_email = ? AND status = 'verified' AND converted_at IS NULL"
-    ).bind(email).first();
+      "SELECT * FROM referrals WHERE referred_email_normalized = ? AND status = 'verified' AND converted_at IS NULL"
+    ).bind(emailNormalized).first();
     if (!referral) return;
 
     await env.DB.prepare("UPDATE referrals SET status = 'converted', converted_at = ? WHERE id = ?")

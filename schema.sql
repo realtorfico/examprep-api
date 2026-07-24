@@ -71,15 +71,20 @@ CREATE TABLE accounts (
 );
 
 CREATE TABLE referrals (
-  id                  TEXT PRIMARY KEY,
-  referrer_account_id TEXT NOT NULL REFERENCES accounts(id),
-  referred_email      TEXT NOT NULL UNIQUE, -- one referral credit per email ever, first-referrer-wins
-  referred_name       TEXT,
-  status              TEXT NOT NULL DEFAULT 'invited', -- invited | verified | converted
-  verify_token        TEXT NOT NULL,
-  verified_at         INTEGER,
-  converted_at        INTEGER,
-  created_at          INTEGER NOT NULL
+  id                        TEXT PRIMARY KEY,
+  referrer_account_id       TEXT NOT NULL REFERENCES accounts(id),
+  referred_email            TEXT NOT NULL, -- as entered, for display/delivery
+  referred_email_normalized TEXT NOT NULL UNIQUE, -- dedup key: one referral credit per inbox
+                                                    -- ever, first-referrer-wins -- see
+                                                    -- normalizeEmailForDedup() in index.js,
+                                                    -- which folds "+tag" (and, on Gmail, dots)
+                                                    -- so the same inbox can't masquerade as many.
+  referred_name             TEXT,
+  status                    TEXT NOT NULL DEFAULT 'invited', -- invited | verified | converted
+  verify_token              TEXT NOT NULL,
+  verified_at               INTEGER,
+  converted_at              INTEGER,
+  created_at                INTEGER NOT NULL
 );
 
 -- Generic, admin-editable list of point-earning tasks (examprep-admin's Points tab / Settings) —
