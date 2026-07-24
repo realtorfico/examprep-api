@@ -130,3 +130,17 @@ CREATE TABLE app_settings (
   value      TEXT NOT NULL,
   updated_at INTEGER NOT NULL
 );
+
+-- A free (points-covered) redemption must be confirmed by clicking a link emailed to the
+-- account's address before it actually happens -- otherwise anyone who merely knows/guesses an
+-- email with a points balance could redeem it for themselves. Row is claimed (deleted) atomically
+-- by /points/redeem-verify, so a link can only ever be used once. Mirrors referrals.verify_token.
+CREATE TABLE pending_redemptions (
+  id           TEXT PRIMARY KEY,
+  email        TEXT NOT NULL,
+  exam_type    TEXT NOT NULL,
+  points       INTEGER NOT NULL, -- snapshot of the required points at request time, for display
+  verify_token TEXT NOT NULL UNIQUE,
+  created_at   INTEGER NOT NULL,
+  expires_at   INTEGER NOT NULL
+);

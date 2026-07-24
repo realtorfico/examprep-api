@@ -86,6 +86,23 @@ export async function sendReferralInviteEmail(env, to, referrerName, verifyUrl) 
   });
 }
 
+export async function sendRedeemVerifyEmail(env, to, points, verifyUrl) {
+  await sendEmail(env, {
+    to,
+    subject: '🔓 Confirm your free ExamPrep redemption',
+    html: emailShell({
+      badge: '🔓',
+      title: 'One click to redeem',
+      bodyHtml: `<p>You're using <strong>${points} points</strong> for free access to ExamPrep.</p>
+        <p>Click below to confirm it's really you — this keeps your points safe from anyone who
+        might guess your email address.</p>`,
+      ctaText: 'Confirm & get my code →',
+      ctaUrl: verifyUrl,
+      footerNote: "Didn't request this? You can safely ignore it — your points are untouched.",
+    }),
+  });
+}
+
 export async function sendPointsEarnedEmail(env, to, points, reason) {
   await sendEmail(env, {
     to,

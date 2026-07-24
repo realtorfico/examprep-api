@@ -1,6 +1,6 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
-import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 
 function json(data, status = 200) {
@@ -32,6 +32,29 @@ function normalizeEmailForDedup(email) {
     local = local.replace(/\./g, '');
   }
   return `${local}@${domain}`;
+}
+
+// Curated, non-exhaustive list of throwaway/disposable-inbox domains -- these let anyone mint
+// unlimited genuinely-receivable addresses for free with no registration, which the alias
+// normalization above can't catch (each one is a distinct, real domain). New disposable
+// services appear constantly, so treat this as a meaningful deterrent, not a perfect wall.
+const DISPOSABLE_EMAIL_DOMAINS = new Set([
+  'mailinator.com', 'guerrillamail.com', 'guerrillamail.info', 'guerrillamail.biz',
+  'guerrillamail.de', 'guerrillamail.org', 'guerrillamail.net', 'sharklasers.com', 'grr.la',
+  'temp-mail.org', 'temp-mail.io', 'tempmail.com', 'tempmail.net', 'tempmailo.com',
+  '10minutemail.com', '10minutemail.net', 'throwawaymail.com', 'yopmail.com', 'yopmail.net',
+  'yopmail.fr', 'trashmail.com', 'trashmail.net', 'dispostable.com', 'getnada.com',
+  'maildrop.cc', 'mailnesia.com', 'mintemail.com', 'mohmal.com', 'moakt.com', 'moakt.cc',
+  'fakeinbox.com', 'spamgourmet.com', 'discard.email', 'mailcatch.com', 'tempinbox.com',
+  'emailondeck.com', 'getairmail.com', 'burnermail.io', 'inboxbear.com', 'tempr.email',
+  'mail-temp.com', 'correotemporal.org', 'luxusmail.org', 'wegwerfemail.de', 'einrot.com',
+  'spambog.com', 'mytemp.email', 'emkei.cz', 'dropmail.me', 'fakemailgenerator.com',
+]);
+function isDisposableEmail(email) {
+  const trimmed = (email || '').trim().toLowerCase();
+  const atIdx = trimmed.lastIndexOf('@');
+  if (atIdx < 0) return false;
+  return DISPOSABLE_EMAIL_DOMAINS.has(trimmed.slice(atIdx + 1));
 }
 
 // ---- Public endpoints (bearer-token auth via requireUser) -----------------
@@ -356,6 +379,9 @@ async function handleReferralInvite(request, env) {
     return json({ error: 'referrerEmail_and_friends_required' }, 400);
   }
   const referrerEmailNorm = referrerEmail.trim().toLowerCase();
+  if (isDisposableEmail(referrerEmailNorm)) {
+    return json({ error: 'disposable_email' }, 400);
+  }
   const referrer = await getOrCreateAccount(env, referrerEmailNorm, referrerName);
 
   // Rate limit: protects Resend sending-domain reputation from spam-blast abuse. Whole batch is
@@ -374,6 +400,7 @@ async function handleReferralInvite(request, env) {
     const friendEmail = (friend && friend.email ? friend.email : '').trim().toLowerCase();
     const friendName = friend && friend.name ? friend.name : null;
     if (!friendEmail) { results.push({ email: friend && friend.email || '', status: 'invalid' }); continue; }
+    if (isDisposableEmail(friendEmail)) { results.push({ email: friendEmail, status: 'disposable_email' }); continue; }
     const friendEmailNormalized = normalizeEmailForDedup(friendEmail);
     if (friendEmailNormalized === normalizeEmailForDedup(referrerEmailNorm)) {
       results.push({ email: friendEmail, status: 'self' });
@@ -459,6 +486,11 @@ async function handlePointsBalance(request, env) {
   });
 }
 
+const REDEEM_VERIFY_TTL_SECONDS = 1800; // 30 minutes to click the confirmation email
+
+// Doesn't redeem anything yet -- only knowing/guessing someone's email shouldn't be enough to
+// spend their points, so this just emails a one-time confirmation link (mirrors referral
+// verification) and the actual redemption happens in handlePointsRedeemVerify once it's clicked.
 async function handlePointsRedeem(request, env) {
   const { email, examType, turnstileToken } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
@@ -474,13 +506,44 @@ async function handlePointsRedeem(request, env) {
   const { priceCents: required } = await getPrice(env, examType); // 1 point = 1 cent
   if (account.points < required) return json({ error: 'insufficient_points' }, 402);
 
-  await env.DB.prepare('UPDATE accounts SET points = points - ? WHERE id = ?')
-    .bind(required, account.id).run();
+  const verifyToken = crypto.randomUUID();
+  await env.DB.prepare(
+    'INSERT INTO pending_redemptions (id, email, exam_type, points, verify_token, created_at, expires_at) VALUES (?, ?, ?, ?, ?, ?, ?)'
+  ).bind(newId(), normalizedEmail, examType, required, verifyToken, now(), now() + REDEEM_VERIFY_TTL_SECONDS).run();
 
-  const { code, token } = await issueAndRedeemCode(env, examType, `points:${account.id}`);
-  await detectAndCreditConversion(env, normalizedEmail);
+  const verifyUrl = `https://examprep.softician.com/notary#/points-redeem-verify/${verifyToken}`;
+  await sendRedeemVerifyEmail(env, normalizedEmail, required, verifyUrl);
 
-  return json({ code, token, examType });
+  return json({ pending: true, email: normalizedEmail });
+}
+
+async function handlePointsRedeemVerify(request, env) {
+  const url = new URL(request.url);
+  const token = url.searchParams.get('token');
+  if (!token) return json({ error: 'token_required' }, 400);
+
+  // Atomically claim (delete) the pending row -- a concurrent or repeat click on the same link
+  // finds nothing and fails cleanly, instead of racing another request to redeem twice.
+  const pending = await env.DB.prepare(
+    'DELETE FROM pending_redemptions WHERE verify_token = ? AND expires_at > ? RETURNING *'
+  ).bind(token, now()).first();
+  if (!pending) return json({ error: 'invalid_or_expired' }, 404);
+
+  const account = await env.DB.prepare('SELECT * FROM accounts WHERE email = ?').bind(pending.email).first();
+  if (!account) return json({ error: 'account_not_found' }, 404);
+
+  // Conditional on points still being sufficient -- closes the same TOCTOU window a plain
+  // check-then-write would leave open, and guards against the balance having moved (e.g. spent
+  // elsewhere) in the time between requesting and confirming the redemption.
+  const deduction = await env.DB.prepare(
+    'UPDATE accounts SET points = points - ? WHERE id = ? AND points >= ?'
+  ).bind(pending.points, account.id, pending.points).run();
+  if (!deduction.meta || deduction.meta.changes === 0) return json({ error: 'insufficient_points' }, 402);
+
+  const { code, token: sessionToken } = await issueAndRedeemCode(env, pending.exam_type, `points:${account.id}`);
+  await detectAndCreditConversion(env, pending.email);
+
+  return json({ code, token: sessionToken, examType: pending.exam_type });
 }
 
 async function handleNextQuestion(user, env) {
@@ -759,6 +822,7 @@ export default {
       if (pathname === '/referrals/verify' && method === 'GET') return await handleReferralVerify(request, env);
       if (pathname === '/points/balance' && method === 'GET') return await handlePointsBalance(request, env);
       if (pathname === '/points/redeem' && method === 'POST') return await handlePointsRedeem(request, env);
+      if (pathname === '/points/redeem-verify' && method === 'GET') return await handlePointsRedeemVerify(request, env);
       if (pathname.startsWith('/media/') && method === 'GET') return await handleMediaFile(request, env);
       if (pathname === '/resources/free' && method === 'GET') return await handleResourcesFree(request, env);
 
