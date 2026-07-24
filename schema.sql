@@ -115,3 +115,13 @@ CREATE TABLE pending_point_discounts (
   points_to_apply INTEGER NOT NULL,
   created_at      INTEGER NOT NULL
 );
+
+-- Generic admin-editable key/value settings -- avoids a new table/migration for every future
+-- single-value knob. First use: 'min_paypal_charge_cents', the floor a points discount can
+-- leave payable through PayPal (PayPal purchases can't go below $1; full coverage down to
+-- $0 skips PayPal entirely via /points/redeem, so it isn't subject to this floor).
+CREATE TABLE app_settings (
+  key        TEXT PRIMARY KEY,
+  value      TEXT NOT NULL,
+  updated_at INTEGER NOT NULL
+);

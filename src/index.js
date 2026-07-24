@@ -152,17 +152,34 @@ async function handleResourcesFree(request, env) {
 }
 
 const DEFAULT_PRICE_CENTS = 499; // fallback if the `pricing` table has no row yet for an exam type
+const DEFAULT_MIN_PAYPAL_CHARGE_CENTS = 100; // fallback if app_settings has no row yet
 
 async function getPrice(env, examType) {
   const row = await env.DB.prepare('SELECT * FROM pricing WHERE exam_type = ?').bind(examType).first();
   return row ? { priceCents: row.price_cents, currency: row.currency } : { priceCents: DEFAULT_PRICE_CENTS, currency: 'USD' };
 }
 
+async function getAppSetting(env, key, fallback) {
+  const row = await env.DB.prepare('SELECT value FROM app_settings WHERE key = ?').bind(key).first();
+  return row ? row.value : fallback;
+}
+
+// A points discount can never leave a PayPal charge below this (admin-editable in
+// examprep-admin's Settings tab) -- $0 (full coverage) is fine and skips PayPal entirely
+// via /points/redeem, but a sub-floor partial charge isn't, so create-order caps the points
+// applied instead of letting the leftover dip below it.
+async function getMinPaypalChargeCents(env) {
+  const value = await getAppSetting(env, 'min_paypal_charge_cents', String(DEFAULT_MIN_PAYPAL_CHARGE_CENTS));
+  const cents = parseInt(value, 10);
+  return Number.isFinite(cents) && cents >= 0 ? cents : DEFAULT_MIN_PAYPAL_CHARGE_CENTS;
+}
+
 async function handlePricingGet(request, env) {
   const url = new URL(request.url);
   const examType = url.searchParams.get('examType') || 'notary';
   const { priceCents, currency } = await getPrice(env, examType);
-  return json({ examType, priceCents, currency });
+  const minPaypalChargeCents = await getMinPaypalChargeCents(env);
+  return json({ examType, priceCents, currency, minPaypalChargeCents });
 }
 
 // Shared by /paypal/capture-order and (later) /points/redeem — generates a fresh code and
@@ -203,6 +220,13 @@ async function handlePaypalCreateOrder(request, env) {
       pointsToApply = Math.min(account.points, priceCents);
       if (pointsToApply >= priceCents) {
         return json({ error: 'fully_covered_by_points' }, 400); // client should use /points/redeem instead
+      }
+      // A partial discount can't leave less than the admin-set floor payable through PayPal --
+      // cap the points actually applied so the leftover doesn't dip below it (unapplied points
+      // just stay in the account for next time, nothing is lost).
+      const minPaypalChargeCents = await getMinPaypalChargeCents(env);
+      if (priceCents - pointsToApply < minPaypalChargeCents) {
+        pointsToApply = Math.max(0, priceCents - minPaypalChargeCents);
       }
       finalPriceCents = priceCents - pointsToApply;
     }
@@ -508,6 +532,21 @@ async function handlePrefsSet(user, request, env) {
 
 // ---- Admin endpoints (console/*, Cloudflare Access-gated) ------------------
 
+async function handleConsoleSettingsList(env) {
+  const rows = (await env.DB.prepare('SELECT * FROM app_settings').all()).results;
+  return json({ settings: rows });
+}
+
+async function handleConsoleSettingsSet(request, env) {
+  const { key, value } = await request.json();
+  if (!key || value == null) return json({ error: 'key_and_value_required' }, 400);
+  await env.DB.prepare(
+    `INSERT INTO app_settings (key, value, updated_at) VALUES (?, ?, ?)
+     ON CONFLICT (key) DO UPDATE SET value = excluded.value, updated_at = excluded.updated_at`
+  ).bind(key, String(value), now()).run();
+  return json({ ok: true });
+}
+
 async function handleConsolePricingList(env) {
   const rows = (await env.DB.prepare('SELECT * FROM pricing').all()).results;
   return json({ pricing: rows });
@@ -700,6 +739,8 @@ export default {
         if (pathname === '/console/codes/revoke' && method === 'POST') return await handleCodesRevoke(request, env);
         if (pathname === '/console/pricing' && method === 'GET') return await handleConsolePricingList(env);
         if (pathname === '/console/pricing' && method === 'POST') return await handleConsolePricingSet(request, env);
+        if (pathname === '/console/settings' && method === 'GET') return await handleConsoleSettingsList(env);
+        if (pathname === '/console/settings' && method === 'POST') return await handleConsoleSettingsSet(request, env);
         if (pathname === '/console/point-rules' && method === 'GET') return await handleConsolePointRulesList(env);
         if (pathname === '/console/point-rules' && method === 'POST') return await handleConsolePointRulesSet(request, env);
         if (pathname === '/console/accounts' && method === 'GET') return await handleConsoleAccountsList(env);
