@@ -131,6 +131,25 @@ CREATE TABLE app_settings (
   updated_at INTEGER NOT NULL
 );
 
+-- A single timed practice-exam sitting: question set + duration are frozen at start_at so the
+-- clock (server-authoritative, not client-trusted) and question list can't be gamed by
+-- refreshing, and answers accumulate here so a refresh mid-sitting can resume in place.
+-- One in-progress (submitted_at IS NULL) attempt per user+exam_type is enforced in code, not a
+-- constraint, since "in progress" also depends on whether time has run out.
+CREATE TABLE exam_attempts (
+  id            TEXT PRIMARY KEY,
+  user_id       TEXT NOT NULL REFERENCES users(id),
+  exam_type     TEXT NOT NULL,
+  question_ids  TEXT NOT NULL,          -- JSON array, fixes the exact set + order for this attempt
+  answers       TEXT NOT NULL DEFAULT '{}', -- JSON object {questionId: choice}
+  duration_sec  INTEGER NOT NULL,       -- snapshot at start, immune to later config changes
+  started_at    INTEGER NOT NULL,
+  submitted_at  INTEGER,
+  score_correct INTEGER,
+  score_total   INTEGER
+);
+CREATE INDEX idx_exam_attempts_user ON exam_attempts(user_id);
+
 -- A free (points-covered) redemption must be confirmed by clicking a link emailed to the
 -- account's address before it actually happens -- otherwise anyone who merely knows/guesses an
 -- email with a points balance could redeem it for themselves. Row is claimed (deleted) atomically

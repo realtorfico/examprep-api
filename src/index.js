@@ -633,6 +633,144 @@ async function handleProgress(user, env) {
   });
 }
 
+// ---- Timed mock exam --------------------------------------------------
+// A single-sitting, timed simulation of the real exam -- fixed question set + a
+// server-authoritative start time (not client-trusted) so refreshing or fiddling with the
+// client clock can't extend the time limit or draw a fresh, easier question set mid-attempt.
+
+const EXAM_CONFIGS = {
+  // 45 questions / 60 minutes / scaled score of 70 to pass, per CPS HR's official exam FAQ.
+  // The real score is a proprietary scaled score (0-100), not literally percent-correct --
+  // this uses raw percent-correct against the same 70 threshold as a practice approximation.
+  notary: { questionCount: 45, durationSec: 3600, passPercent: 70 },
+};
+function getExamConfig(examType) {
+  return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
+}
+
+async function handleExamConfig(request, env) {
+  const url = new URL(request.url);
+  const examType = url.searchParams.get('examType') || 'notary';
+  return json({ examType, ...getExamConfig(examType) });
+}
+
+async function fetchQuestionsByIds(env, questionIds) {
+  if (!questionIds.length) return {};
+  const rows = (await env.DB.prepare(
+    `SELECT * FROM questions WHERE id IN (${questionIds.map(() => '?').join(',')})`
+  ).bind(...questionIds).all()).results;
+  const byId = {};
+  rows.forEach((r) => { byId[r.id] = r; });
+  return byId;
+}
+
+async function attemptToClientShape(env, attempt) {
+  const questionIds = JSON.parse(attempt.question_ids);
+  const byId = await fetchQuestionsByIds(env, questionIds);
+  return {
+    attemptId: attempt.id, examType: attempt.exam_type,
+    questions: questionIds.map((id) => byId[id]).filter(Boolean).map(toPublicQuestion),
+    answers: JSON.parse(attempt.answers), durationSec: attempt.duration_sec, startedAt: attempt.started_at,
+  };
+}
+
+function buildExamResult(examType, questionIds, answers, byId, correct, total, startedAt, submittedAt, durationSec) {
+  const config = getExamConfig(examType);
+  const percent = total ? Math.round((correct / total) * 1000) / 10 : 0;
+  return {
+    correct, total, percent, passed: percent >= config.passPercent,
+    timeTakenSec: Math.min(submittedAt - startedAt, durationSec),
+    review: questionIds.map((id) => {
+      const q = byId[id];
+      if (!q) return null;
+      return {
+        questionId: id, topic: q.topic, question: q.question,
+        choices: { A: q.choice_a, B: q.choice_b, C: q.choice_c, D: q.choice_d },
+        yourChoice: answers[id] || null, correctChoice: q.correct_choice,
+        correct: answers[id] === q.correct_choice, explanation: q.explanation,
+      };
+    }).filter(Boolean),
+  };
+}
+
+async function findInProgressAttempt(user, env) {
+  const existing = await env.DB.prepare(
+    `SELECT * FROM exam_attempts WHERE user_id = ? AND exam_type = ? AND submitted_at IS NULL
+     ORDER BY started_at DESC LIMIT 1`
+  ).bind(user.id, user.exam_type).first();
+  if (!existing || existing.started_at + existing.duration_sec <= now()) return null;
+  return existing;
+}
+
+async function handleExamCurrent(user, env) {
+  const attempt = await findInProgressAttempt(user, env);
+  return json({ attempt: attempt ? await attemptToClientShape(env, attempt) : null });
+}
+
+async function handleExamStart(user, env) {
+  // Resume rather than restart -- a refresh or re-visit mid-sitting must not hand out a
+  // fresh, easier random question set or reset the clock.
+  const existing = await findInProgressAttempt(user, env);
+  if (existing) return json(await attemptToClientShape(env, existing));
+
+  const config = getExamConfig(user.exam_type);
+  const picked = (await env.DB.prepare(
+    'SELECT id FROM questions WHERE exam_type = ? ORDER BY RANDOM() LIMIT ?'
+  ).bind(user.exam_type, config.questionCount).all()).results;
+  if (!picked.length) return json({ error: 'no_questions' }, 404);
+
+  const attempt = {
+    id: newId(), question_ids: JSON.stringify(picked.map((r) => r.id)), answers: '{}',
+    duration_sec: config.durationSec, started_at: now(),
+  };
+  await env.DB.prepare(
+    `INSERT INTO exam_attempts (id, user_id, exam_type, question_ids, answers, duration_sec, started_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?)`
+  ).bind(attempt.id, user.id, user.exam_type, attempt.question_ids, attempt.answers, attempt.duration_sec, attempt.started_at).run();
+
+  return json(await attemptToClientShape(env, { ...attempt, user_id: user.id, exam_type: user.exam_type }));
+}
+
+async function handleExamAnswer(user, request, env) {
+  const { attemptId, questionId, choice } = await request.json();
+  const attempt = await env.DB.prepare('SELECT * FROM exam_attempts WHERE id = ? AND user_id = ?').bind(attemptId, user.id).first();
+  if (!attempt) return json({ error: 'attempt_not_found' }, 404);
+  if (attempt.submitted_at) return json({ error: 'already_submitted' }, 400);
+  if (attempt.started_at + attempt.duration_sec <= now()) return json({ error: 'time_expired' }, 400);
+
+  const answers = JSON.parse(attempt.answers);
+  answers[questionId] = choice;
+  await env.DB.prepare('UPDATE exam_attempts SET answers = ? WHERE id = ?').bind(JSON.stringify(answers), attemptId).run();
+  return json({ ok: true });
+}
+
+async function handleExamSubmit(user, request, env) {
+  const { attemptId } = await request.json();
+  const attempt = await env.DB.prepare('SELECT * FROM exam_attempts WHERE id = ? AND user_id = ?').bind(attemptId, user.id).first();
+  if (!attempt) return json({ error: 'attempt_not_found' }, 404);
+
+  const questionIds = JSON.parse(attempt.question_ids);
+  const answers = JSON.parse(attempt.answers);
+  const byId = await fetchQuestionsByIds(env, questionIds);
+
+  if (attempt.submitted_at) {
+    // Idempotent -- a retried submit (e.g. flaky network) returns the same already-computed
+    // result instead of erroring or rescoring.
+    return json(buildExamResult(attempt.exam_type, questionIds, answers, byId,
+      attempt.score_correct, attempt.score_total, attempt.started_at, attempt.submitted_at, attempt.duration_sec));
+  }
+
+  let correctCount = 0;
+  questionIds.forEach((id) => { if (byId[id] && answers[id] === byId[id].correct_choice) correctCount++; });
+  const submittedAt = now();
+  await env.DB.prepare(
+    'UPDATE exam_attempts SET submitted_at = ?, score_correct = ?, score_total = ? WHERE id = ?'
+  ).bind(submittedAt, correctCount, questionIds.length, attemptId).run();
+
+  return json(buildExamResult(attempt.exam_type, questionIds, answers, byId,
+    correctCount, questionIds.length, attempt.started_at, submittedAt, attempt.duration_sec));
+}
+
 async function handlePrefsGet(user) {
   return json({ theme: user.theme, fontScale: user.font_scale });
 }
@@ -876,6 +1014,11 @@ export default {
       if (pathname === '/questions/next' && method === 'GET') return await handleNextQuestion(user, env);
       if (pathname === '/answer' && method === 'POST') return await handleAnswer(user, request, env);
       if (pathname === '/progress' && method === 'GET') return await handleProgress(user, env);
+      if (pathname === '/exam/config' && method === 'GET') return await handleExamConfig(request, env);
+      if (pathname === '/exam/current' && method === 'GET') return await handleExamCurrent(user, env);
+      if (pathname === '/exam/start' && method === 'POST') return await handleExamStart(user, env);
+      if (pathname === '/exam/answer' && method === 'POST') return await handleExamAnswer(user, request, env);
+      if (pathname === '/exam/submit' && method === 'POST') return await handleExamSubmit(user, request, env);
       if (pathname === '/prefs' && method === 'GET') return await handlePrefsGet(user);
       if (pathname === '/prefs' && method === 'POST') return await handlePrefsSet(user, request, env);
       if (pathname === '/resources/sign-batch' && method === 'POST') return await handleResourcesSignBatch(request, env);
