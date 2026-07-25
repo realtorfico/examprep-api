@@ -19,7 +19,13 @@ CREATE TABLE codes (
   expires_at   INTEGER,                        -- epoch seconds; NULL = lifetime
   redeemed_by  TEXT REFERENCES users(id),
   redeemed_at  INTEGER,
-  issued_at    INTEGER NOT NULL
+  issued_at    INTEGER NOT NULL,
+  paid_cents   INTEGER,                        -- real cash actually paid via PayPal (NULL for
+                                                 -- free/points/admin-issued codes) -- refund_claims
+                                                 -- computes off this, never off points value
+  buyer_email  TEXT                            -- payer's email from PayPal (or their optional
+                                                 -- backup email) -- best-effort, used to sanity-check
+                                                 -- refund claims against who actually paid
 );
 CREATE INDEX idx_codes_exam_type ON codes(exam_type);
 
@@ -163,3 +169,28 @@ CREATE TABLE pending_redemptions (
   created_at   INTEGER NOT NULL,
   expires_at   INTEGER NOT NULL
 );
+
+-- Real-money purchase guarantees: (1) unconditional_7day -- full refund, no reason needed,
+-- claimable within 7 days of purchase; (2) exam_failure_50pct -- half refund if the buyer took
+-- and failed the real exam, claimable within a 180-day soft window, admin-reviewed since exam
+-- results can't be verified automatically (no official lookup API exists). Computed off
+-- codes.paid_cents (real cash), never off points -- a free/points-redeemed code is never
+-- eligible (codes.paid_cents is NULL for those). One claim per code, ever, enforced in code.
+-- Refund execution itself is manual (admin processes it in PayPal) -- this table is the queue,
+-- not a payment integration.
+CREATE TABLE refund_claims (
+  id                TEXT PRIMARY KEY,
+  code              TEXT NOT NULL REFERENCES codes(code),
+  email             TEXT NOT NULL,
+  claim_type        TEXT NOT NULL, -- unconditional_7day | exam_failure_50pct
+  status            TEXT NOT NULL DEFAULT 'pending', -- pending | approved | denied | refunded
+  exam_date         TEXT,
+  confirmation_note TEXT,          -- self-reported exam confirmation/candidate ID, not verified
+  notes             TEXT,          -- claimant's free-text notes
+  admin_notes       TEXT,
+  refund_cents      INTEGER NOT NULL, -- computed at submission time from codes.paid_cents
+  created_at        INTEGER NOT NULL,
+  reviewed_at       INTEGER,
+  reviewed_by       TEXT           -- admin email, best-effort from the Access JWT
+);
+CREATE INDEX idx_refund_claims_code ON refund_claims(code);

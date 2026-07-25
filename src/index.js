@@ -245,13 +245,13 @@ async function handlePricingGet(request, env) {
 // Shared by /paypal/capture-order and (later) /points/redeem — generates a fresh code and
 // immediately auto-redeems it (mint token + create user + flip code to redeemed), mirroring
 // /redeem's unused-code branch, so the buyer never has to separately type their own code in.
-async function issueAndRedeemCode(env, examType, note) {
+async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail) {
   const code = newCode();
   const token = crypto.randomUUID();
   const userId = newId();
   await env.DB.batch([
-    env.DB.prepare('INSERT INTO codes (code, exam_type, note, issued_at) VALUES (?, ?, ?, ?)')
-      .bind(code, examType, note, now()),
+    env.DB.prepare('INSERT INTO codes (code, exam_type, note, issued_at, paid_cents, buyer_email) VALUES (?, ?, ?, ?, ?, ?)')
+      .bind(code, examType, note, now(), paidCents == null ? null : paidCents, buyerEmail || null),
     env.DB.prepare('INSERT INTO users (id, exam_type, token, created_at, last_seen_at) VALUES (?, ?, ?, ?, ?)')
       .bind(userId, examType, token, now(), now()),
     env.DB.prepare("UPDATE codes SET status = 'redeemed', redeemed_by = ?, redeemed_at = ? WHERE code = ?")
@@ -331,7 +331,10 @@ async function handlePaypalCaptureOrder(request, env) {
   const capturedCents = captured ? Math.round(parseFloat(captured.amount.value) * 100) : 0;
   if (capturedCents !== expectedCents) return json({ error: 'amount_mismatch' }, 402);
 
-  const { code, token } = await issueAndRedeemCode(env, examType, note);
+  // PayPal's own capture response tells us the payer's email for free -- no extra field/friction
+  // needed on the buy form to detect "this buyer was someone's referral" or to record who paid.
+  const payerEmail = capture.payer && capture.payer.email_address;
+  const { code, token } = await issueAndRedeemCode(env, examType, note, capturedCents, payerEmail || email);
 
   if (discount) {
     // MAX(0, ...) floors it defensively in case the balance somehow changed since create-order
@@ -346,9 +349,6 @@ async function handlePaypalCaptureOrder(request, env) {
     try { await sendCodeEmail(env, email, code, examType); } catch (e) { /* best-effort, buyer already has the code on-screen */ }
   }
 
-  // PayPal's own capture response tells us the payer's email for free — no extra field/friction
-  // needed on the buy form to detect "this buyer was someone's referral."
-  const payerEmail = capture.payer && capture.payer.email_address;
   await detectAndCreditConversion(env, payerEmail);
   await notifyAdmin(env, 'New purchase',
     `<p><strong>${payerEmail || email || 'A buyer'}</strong> just bought ${examType} access for ` +
@@ -490,6 +490,86 @@ async function detectAndCreditConversion(env, buyerEmail) {
   } catch (e) { /* best-effort */ }
 }
 
+// ---- Purchase refund guarantees ----------------------------------------
+// Two claim types, both computed off codes.paid_cents (real cash) so a free/points-redeemed
+// code is never eligible: unconditional_7day (full refund, no reason needed, within 7 days of
+// purchase) and exam_failure_50pct (half refund if the buyer took and failed the real exam,
+// within a 180-day soft window). Neither is verified automatically -- there's no official way
+// to confirm a real exam result -- so every claim lands in an admin review queue instead of
+// being auto-approved, and actual refund execution happens manually in PayPal, not via API here.
+const REFUND_UNCONDITIONAL_WINDOW_SEC = 7 * 86400;
+const REFUND_FAILURE_WINDOW_SEC = 180 * 86400;
+const REFUND_FAILURE_PERCENT = 0.5;
+
+async function handleRefundClaimSubmit(request, env) {
+  const { code, email, claimType, examDate, confirmationNote, notes, turnstileToken } = await request.json();
+  const ip = request.headers.get('CF-Connecting-IP');
+  if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
+    return json({ error: 'turnstile_failed' }, 400);
+  }
+  if (!code || !email || !claimType) return json({ error: 'code_email_claimType_required' }, 400);
+  if (claimType !== 'unconditional_7day' && claimType !== 'exam_failure_50pct') {
+    return json({ error: 'invalid_claim_type' }, 400);
+  }
+
+  const codeRow = await env.DB.prepare('SELECT * FROM codes WHERE code = ?').bind(code.trim().toUpperCase()).first();
+  if (!codeRow) return json({ error: 'code_not_found' }, 404);
+  // note starts with 'paypal:' only for real self-serve purchases -- free/points-redeemed and
+  // admin-issued codes never have a paid_cents value, so they're never refund-eligible.
+  if (!codeRow.note || !codeRow.note.startsWith('paypal:') || !codeRow.paid_cents) {
+    return json({ error: 'not_a_paid_purchase' }, 400);
+  }
+
+  const existingClaim = await env.DB.prepare('SELECT id FROM refund_claims WHERE code = ?').bind(codeRow.code).first();
+  if (existingClaim) return json({ error: 'already_claimed' }, 400);
+
+  const windowSec = claimType === 'unconditional_7day' ? REFUND_UNCONDITIONAL_WINDOW_SEC : REFUND_FAILURE_WINDOW_SEC;
+  if (now() - codeRow.issued_at > windowSec) return json({ error: 'window_expired' }, 400);
+
+  const refundCents = claimType === 'unconditional_7day'
+    ? codeRow.paid_cents
+    : Math.round(codeRow.paid_cents * REFUND_FAILURE_PERCENT);
+
+  const claimId = newId();
+  await env.DB.prepare(
+    `INSERT INTO refund_claims (id, code, email, claim_type, status, exam_date, confirmation_note, notes, refund_cents, created_at)
+     VALUES (?, ?, ?, ?, 'pending', ?, ?, ?, ?, ?)`
+  ).bind(claimId, codeRow.code, email.trim().toLowerCase(), claimType, examDate || null, confirmationNote || null, notes || null, refundCents, now()).run();
+
+  await notifyAdmin(env, 'New refund claim',
+    `<p>${claimType === 'unconditional_7day' ? '7-day no-questions' : 'exam-failure 50%'} refund claim for code ` +
+    `<strong>${codeRow.code}</strong> (${email}) — $${(refundCents / 100).toFixed(2)}. Review it in the admin Refund Claims tab.</p>`);
+
+  return json({ ok: true, refundCents });
+}
+
+async function handleConsoleRefundClaimsList(env) {
+  const rows = (await env.DB.prepare('SELECT * FROM refund_claims ORDER BY created_at DESC LIMIT 500').all()).results;
+  return json({ claims: rows });
+}
+
+async function handleConsoleRefundClaimsReview(request, env) {
+  const { claimId, status, adminNotes } = await request.json();
+  if (!claimId || !['approved', 'denied', 'refunded'].includes(status)) {
+    return json({ error: 'claimId_and_valid_status_required' }, 400);
+  }
+  const claim = await env.DB.prepare('SELECT * FROM refund_claims WHERE id = ?').bind(claimId).first();
+  if (!claim) return json({ error: 'claim_not_found' }, 404);
+
+  const adminEmail = getAccessEmail(request);
+  await env.DB.prepare('UPDATE refund_claims SET status = ?, admin_notes = ?, reviewed_at = ?, reviewed_by = ? WHERE id = ?')
+    .bind(status, adminNotes || null, now(), adminEmail || null, claimId).run();
+
+  // A full (7-day) refund also revokes the code -- the buyer no longer has paid access once
+  // they've gotten their money back. A half refund (exam failure) leaves access intact, since
+  // the buyer already used and paid for what they're keeping.
+  if (status === 'refunded' && claim.claim_type === 'unconditional_7day') {
+    await env.DB.prepare("UPDATE codes SET status = 'revoked' WHERE code = ?").bind(claim.code).run();
+  }
+
+  return json({ ok: true });
+}
+
 // Public (unauthenticated) view of what each referral task currently earns -- lets the site's
 // refer page show real, live numbers instead of hardcoded copy that drifts out of sync with
 // whatever an admin has actually configured in Settings.
@@ -571,7 +651,7 @@ async function handlePointsRedeemVerify(request, env) {
   ).bind(pending.points, account.id, pending.points).run();
   if (!deduction.meta || deduction.meta.changes === 0) return json({ error: 'insufficient_points' }, 402);
 
-  const { code, token: sessionToken } = await issueAndRedeemCode(env, pending.exam_type, `points:${account.id}`);
+  const { code, token: sessionToken } = await issueAndRedeemCode(env, pending.exam_type, `points:${account.id}`, 0, pending.email);
   await detectAndCreditConversion(env, pending.email);
   await notifyAdmin(env, 'Points redeemed',
     `<p><strong>${pending.email}</strong> redeemed <strong>${pending.points} points</strong> for free access to the ${pending.exam_type} course.</p>`);
@@ -991,6 +1071,7 @@ export default {
       if (pathname === '/paypal/capture-order' && method === 'POST') return await handlePaypalCaptureOrder(request, env);
       if (pathname === '/referrals/invite' && method === 'POST') return await handleReferralInvite(request, env);
       if (pathname === '/referrals/verify' && method === 'GET') return await handleReferralVerify(request, env);
+      if (pathname === '/refunds/claim' && method === 'POST') return await handleRefundClaimSubmit(request, env);
       if (pathname === '/points/rules' && method === 'GET') return await handlePointsRules(env);
       if (pathname === '/points/balance' && method === 'GET') return await handlePointsBalance(request, env);
       if (pathname === '/points/redeem' && method === 'POST') return await handlePointsRedeem(request, env);
@@ -1012,6 +1093,8 @@ export default {
         if (pathname === '/console/accounts' && method === 'GET') return await handleConsoleAccountsList(env);
         if (pathname === '/console/accounts/adjust-points' && method === 'POST') return await handleConsoleAccountsAdjustPoints(request, env);
         if (pathname === '/console/referrals' && method === 'GET') return await handleConsoleReferralsList(env);
+        if (pathname === '/console/refund-claims' && method === 'GET') return await handleConsoleRefundClaimsList(env);
+        if (pathname === '/console/refund-claims/review' && method === 'POST') return await handleConsoleRefundClaimsReview(request, env);
         if (pathname === '/console/questions' && method === 'GET') return await handleQuestionsList(request, env);
         if (pathname === '/console/questions/create' && method === 'POST') return await handleQuestionCreate(request, env);
         if (pathname === '/console/questions/update' && method === 'POST') return await handleQuestionUpdate(request, env);
