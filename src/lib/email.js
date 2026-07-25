@@ -103,6 +103,19 @@ export async function sendRedeemVerifyEmail(env, to, points, verifyUrl) {
   });
 }
 
+export async function sendAdminAlertEmail(env, to, title, bodyHtml) {
+  await sendEmail(env, {
+    to,
+    subject: `🔔 ${title}`,
+    html: emailShell({
+      badge: '🔔',
+      title,
+      bodyHtml,
+      footerNote: 'Admin activity alert — change or turn this off in examprep-admin\'s Settings tab.',
+    }),
+  });
+}
+
 export async function sendPointsEarnedEmail(env, to, points, reason) {
   await sendEmail(env, {
     to,

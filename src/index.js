@@ -1,6 +1,6 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
-import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 
 function json(data, status = 200) {
@@ -213,6 +213,17 @@ async function getAppSetting(env, key, fallback) {
   return row ? row.value : fallback;
 }
 
+// Fire-and-forget activity alert to the site owner -- no-op if admin_alert_email isn't set
+// (examprep-admin's Settings tab), and never throws, so a missing/misconfigured recipient can
+// never break the actual user-facing action it's reporting on.
+async function notifyAdmin(env, title, bodyHtml) {
+  try {
+    const to = await getAppSetting(env, 'admin_alert_email', '');
+    if (!to) return;
+    await sendAdminAlertEmail(env, to, title, bodyHtml);
+  } catch (e) { /* best-effort */ }
+}
+
 // A points discount can never leave a PayPal charge below this (admin-editable in
 // examprep-admin's Settings tab) -- $0 (full coverage) is fine and skips PayPal entirely
 // via /points/redeem, but a sub-floor partial charge isn't, so create-order caps the points
@@ -339,6 +350,9 @@ async function handlePaypalCaptureOrder(request, env) {
   // needed on the buy form to detect "this buyer was someone's referral."
   const payerEmail = capture.payer && capture.payer.email_address;
   await detectAndCreditConversion(env, payerEmail);
+  await notifyAdmin(env, 'New purchase',
+    `<p><strong>${payerEmail || email || 'A buyer'}</strong> just bought ${examType} access for ` +
+    `$${(capturedCents / 100).toFixed(2)}` + (discount ? ` (${discount.points_to_apply} points applied as a discount)` : '') + `.</p>`);
 
   return json({ code, token, examType, pointsApplied: discount ? discount.points_to_apply : 0 });
 }
@@ -440,12 +454,13 @@ async function handleReferralVerify(request, env) {
     .bind(now(), referral.id).run();
 
   const pointsAwarded = await awardPoints(env, referral.referrer_account_id, 'referral_verified');
-  if (pointsAwarded > 0) {
-    const referrer = await env.DB.prepare('SELECT * FROM accounts WHERE id = ?').bind(referral.referrer_account_id).first();
-    if (referrer) {
-      try { await sendPointsEarnedEmail(env, referrer.email, pointsAwarded, 'a friend confirmed your referral'); } catch (e) {}
-    }
+  const referrer = await env.DB.prepare('SELECT * FROM accounts WHERE id = ?').bind(referral.referrer_account_id).first();
+  if (pointsAwarded > 0 && referrer) {
+    try { await sendPointsEarnedEmail(env, referrer.email, pointsAwarded, 'a friend confirmed your referral'); } catch (e) {}
   }
+  await notifyAdmin(env, 'Referral confirmed',
+    `<p><strong>${referrer ? referrer.email : 'Someone'}</strong>'s referral of <strong>${referral.referred_email}</strong> was just confirmed` +
+    (pointsAwarded > 0 ? ` — they earned ${pointsAwarded} points.</p>` : '.</p>'));
 
   return json({ ok: true, alreadyVerified: false });
 }
@@ -465,10 +480,13 @@ async function detectAndCreditConversion(env, buyerEmail) {
       .bind(now(), referral.id).run();
 
     const pointsAwarded = await awardPoints(env, referral.referrer_account_id, 'referral_converted');
-    if (pointsAwarded > 0) {
-      const referrer = await env.DB.prepare('SELECT * FROM accounts WHERE id = ?').bind(referral.referrer_account_id).first();
-      if (referrer) await sendPointsEarnedEmail(env, referrer.email, pointsAwarded, 'your referral signed up for a course');
+    const referrer = await env.DB.prepare('SELECT * FROM accounts WHERE id = ?').bind(referral.referrer_account_id).first();
+    if (pointsAwarded > 0 && referrer) {
+      await sendPointsEarnedEmail(env, referrer.email, pointsAwarded, 'your referral signed up for a course');
     }
+    await notifyAdmin(env, 'Referral converted',
+      `<p><strong>${referrer ? referrer.email : 'Someone'}</strong>'s referral <strong>${referral.referred_email}</strong> just signed up for a course` +
+      (pointsAwarded > 0 ? ` — they earned ${pointsAwarded} points.</p>` : '.</p>'));
   } catch (e) { /* best-effort */ }
 }
 
@@ -542,6 +560,8 @@ async function handlePointsRedeemVerify(request, env) {
 
   const { code, token: sessionToken } = await issueAndRedeemCode(env, pending.exam_type, `points:${account.id}`);
   await detectAndCreditConversion(env, pending.email);
+  await notifyAdmin(env, 'Points redeemed',
+    `<p><strong>${pending.email}</strong> redeemed <strong>${pending.points} points</strong> for free access to the ${pending.exam_type} course.</p>`);
 
   return json({ code, token: sessionToken, examType: pending.exam_type });
 }
