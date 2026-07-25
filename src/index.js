@@ -490,6 +490,19 @@ async function detectAndCreditConversion(env, buyerEmail) {
   } catch (e) { /* best-effort */ }
 }
 
+// Public (unauthenticated) view of what each referral task currently earns -- lets the site's
+// refer page show real, live numbers instead of hardcoded copy that drifts out of sync with
+// whatever an admin has actually configured in Settings.
+async function handlePointsRules(env) {
+  const rows = (await env.DB.prepare('SELECT task_key, points FROM point_rules WHERE active = 1').all()).results;
+  const byKey = {};
+  rows.forEach((r) => { byKey[r.task_key] = r.points; });
+  return json({
+    referralVerifiedPoints: byKey.referral_verified || 0,
+    referralConvertedPoints: byKey.referral_converted || 0,
+  });
+}
+
 async function handlePointsBalance(request, env) {
   const url = new URL(request.url);
   const email = (url.searchParams.get('email') || '').trim().toLowerCase();
@@ -978,6 +991,7 @@ export default {
       if (pathname === '/paypal/capture-order' && method === 'POST') return await handlePaypalCaptureOrder(request, env);
       if (pathname === '/referrals/invite' && method === 'POST') return await handleReferralInvite(request, env);
       if (pathname === '/referrals/verify' && method === 'GET') return await handleReferralVerify(request, env);
+      if (pathname === '/points/rules' && method === 'GET') return await handlePointsRules(env);
       if (pathname === '/points/balance' && method === 'GET') return await handlePointsBalance(request, env);
       if (pathname === '/points/redeem' && method === 'POST') return await handlePointsRedeem(request, env);
       if (pathname === '/points/redeem-verify' && method === 'GET') return await handlePointsRedeemVerify(request, env);
