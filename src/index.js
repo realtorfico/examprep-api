@@ -719,7 +719,7 @@ async function handleConsoleAccountsAdjustPoints(request, env) {
 
 async function handleConsoleReferralsList(env) {
   const rows = (await env.DB.prepare(
-    `SELECT r.*, a.email AS referrer_email FROM referrals r
+    `SELECT r.*, a.email AS referrer_email, a.name AS referrer_name FROM referrals r
      JOIN accounts a ON a.id = r.referrer_account_id
      ORDER BY r.created_at DESC LIMIT 500`
   ).all()).results;
