@@ -791,7 +791,7 @@ async function handleResourceProgressGet(user, env) {
 
 async function handleConsoleExamAttemptsList(env) {
   const rows = (await env.DB.prepare(
-    `SELECT ea.id, ea.exam_type, ea.score_correct, ea.score_total, ea.started_at, ea.submitted_at,
+    `SELECT ea.id, ea.user_id, ea.exam_type, ea.score_correct, ea.score_total, ea.started_at, ea.submitted_at,
             c.code, c.buyer_email
      FROM exam_attempts ea
      JOIN users u ON u.id = ea.user_id
@@ -804,12 +804,28 @@ async function handleConsoleExamAttemptsList(env) {
       const config = getExamConfig(r.exam_type);
       const percent = r.score_total ? Math.round((r.score_correct / r.score_total) * 1000) / 10 : 0;
       return {
-        attemptId: r.id, examType: r.exam_type, code: r.code, buyerEmail: r.buyer_email,
+        attemptId: r.id, userId: r.user_id, examType: r.exam_type, code: r.code, buyerEmail: r.buyer_email,
         correct: r.score_correct, total: r.score_total, percent, passed: percent >= config.passPercent,
         startedAt: r.started_at, submittedAt: r.submitted_at,
       };
     }),
   });
+}
+
+// Full per-question breakdown for one attempt -- fetched on demand when an admin expands a
+// specific attempt row, rather than bundled into the list above (that stays a cheap summary scan).
+async function handleConsoleExamAttemptDetail(request, env) {
+  const url = new URL(request.url);
+  const attemptId = url.searchParams.get('attemptId');
+  const attempt = attemptId ? await env.DB.prepare('SELECT * FROM exam_attempts WHERE id = ?').bind(attemptId).first() : null;
+  if (!attempt) return json({ error: 'attempt_not_found' }, 404);
+
+  const questionIds = JSON.parse(attempt.question_ids);
+  const answers = JSON.parse(attempt.answers);
+  const byId = await fetchQuestionsByIds(env, questionIds);
+  const result = buildExamResult(attempt.exam_type, questionIds, answers, byId,
+    attempt.score_correct, attempt.score_total, attempt.started_at, attempt.submitted_at, attempt.duration_sec);
+  return json(result);
 }
 
 async function handleConsoleResourceProgressList(env) {
@@ -1242,6 +1258,7 @@ export default {
         if (pathname === '/console/stats' && method === 'GET') return await handleStats(env);
         if (pathname === '/console/resource-progress' && method === 'GET') return await handleConsoleResourceProgressList(env);
         if (pathname === '/console/exam-attempts' && method === 'GET') return await handleConsoleExamAttemptsList(env);
+        if (pathname === '/console/exam-attempts/detail' && method === 'GET') return await handleConsoleExamAttemptDetail(request, env);
         return json({ error: 'not_found' }, 404);
       }
 
