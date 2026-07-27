@@ -787,6 +787,31 @@ async function handleResourceProgressGet(user, env) {
   return json({ items: rows });
 }
 
+// ---- Mock exam attempts (admin visibility) ------------------------------
+
+async function handleConsoleExamAttemptsList(env) {
+  const rows = (await env.DB.prepare(
+    `SELECT ea.id, ea.exam_type, ea.score_correct, ea.score_total, ea.started_at, ea.submitted_at,
+            c.code, c.buyer_email
+     FROM exam_attempts ea
+     JOIN users u ON u.id = ea.user_id
+     LEFT JOIN codes c ON c.redeemed_by = u.id
+     WHERE ea.submitted_at IS NOT NULL
+     ORDER BY ea.submitted_at DESC LIMIT 1000`
+  ).all()).results;
+  return json({
+    items: rows.map((r) => {
+      const config = getExamConfig(r.exam_type);
+      const percent = r.score_total ? Math.round((r.score_correct / r.score_total) * 1000) / 10 : 0;
+      return {
+        attemptId: r.id, examType: r.exam_type, code: r.code, buyerEmail: r.buyer_email,
+        correct: r.score_correct, total: r.score_total, percent, passed: percent >= config.passPercent,
+        startedAt: r.started_at, submittedAt: r.submitted_at,
+      };
+    }),
+  });
+}
+
 async function handleConsoleResourceProgressList(env) {
   const rows = (await env.DB.prepare(
     `SELECT rp.*, u.exam_type, c.code, c.buyer_email FROM resource_progress rp
@@ -931,8 +956,15 @@ async function handleExamSubmit(user, request, env) {
     'UPDATE exam_attempts SET submitted_at = ?, score_correct = ?, score_total = ? WHERE id = ?'
   ).bind(submittedAt, correctCount, questionIds.length, attemptId).run();
 
-  return json(buildExamResult(attempt.exam_type, questionIds, answers, byId,
-    correctCount, questionIds.length, attempt.started_at, submittedAt, attempt.duration_sec));
+  const result = buildExamResult(attempt.exam_type, questionIds, answers, byId,
+    correctCount, questionIds.length, attempt.started_at, submittedAt, attempt.duration_sec);
+
+  const codeRow = await env.DB.prepare('SELECT code, buyer_email FROM codes WHERE redeemed_by = ?').bind(user.id).first();
+  await notifyAdmin(env, 'Mock exam completed',
+    `<p><strong>${(codeRow && (codeRow.buyer_email || codeRow.code)) || 'A user'}</strong> completed a ${attempt.exam_type} ` +
+    `mock exam: ${correctCount}/${questionIds.length} (${result.percent}%) — ${result.passed ? 'passed' : 'did not pass'}.</p>`);
+
+  return json(result);
 }
 
 // Every submitted attempt (question set, answers, score) is already persisted in exam_attempts --
@@ -1209,6 +1241,7 @@ export default {
         if (pathname === '/console/questions/import' && method === 'POST') return await handleQuestionImport(request, env);
         if (pathname === '/console/stats' && method === 'GET') return await handleStats(env);
         if (pathname === '/console/resource-progress' && method === 'GET') return await handleConsoleResourceProgressList(env);
+        if (pathname === '/console/exam-attempts' && method === 'GET') return await handleConsoleExamAttemptsList(env);
         return json({ error: 'not_found' }, 404);
       }
 
