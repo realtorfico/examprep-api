@@ -659,25 +659,55 @@ async function handlePointsRedeemVerify(request, env) {
   return json({ code, token: sessionToken, examType: pending.exam_type });
 }
 
-async function handleNextQuestion(user, env) {
+// Difficulty is never manually tagged -- it's derived from how everyone (not just the current
+// user) has actually done on each question, via the same `progress` table already used for
+// spaced review. A question needs a minimum sample size before its computed accuracy is trusted;
+// below that it defaults to 'moderate' rather than guessing from an unrelated field.
+const DIFFICULTY_MIN_SAMPLES = 5;
+const DIFFICULTY_BANDS = ['easy', 'moderate', 'hard', 'extremely_hard'];
+const DIFFICULTY_CTE = `WITH q_stats AS (
+    SELECT question_id, SUM(times_seen) AS seen, SUM(times_correct) AS correct FROM progress GROUP BY question_id
+  ) `;
+const DIFFICULTY_CASE = `CASE
+    WHEN COALESCE(qs.seen, 0) < ${DIFFICULTY_MIN_SAMPLES} THEN 'moderate'
+    WHEN (CAST(qs.correct AS REAL) / qs.seen) >= 0.8 THEN 'easy'
+    WHEN (CAST(qs.correct AS REAL) / qs.seen) >= 0.6 THEN 'moderate'
+    WHEN (CAST(qs.correct AS REAL) / qs.seen) >= 0.4 THEN 'hard'
+    ELSE 'extremely_hard'
+  END`;
+
+async function findNextQuestionRow(env, user, difficulty) {
+  const cte = difficulty ? DIFFICULTY_CTE : '';
+  const diffJoin = difficulty ? 'LEFT JOIN q_stats qs ON qs.question_id = q.id' : '';
+  const diffFilter = difficulty ? `AND (${DIFFICULTY_CASE}) = ?` : '';
+  const diffArgs = difficulty ? [difficulty] : [];
+
   const unseen = await env.DB.prepare(
-    `SELECT q.* FROM questions q LEFT JOIN progress p ON p.question_id = q.id AND p.user_id = ?
-     WHERE q.exam_type = ? AND p.question_id IS NULL ORDER BY q.weight DESC, RANDOM() LIMIT 1`
-  ).bind(user.id, user.exam_type).first();
-  if (unseen) return json(toPublicQuestion(unseen));
+    `${cte}SELECT q.* FROM questions q LEFT JOIN progress p ON p.question_id = q.id AND p.user_id = ? ${diffJoin}
+     WHERE q.exam_type = ? AND p.question_id IS NULL ${diffFilter} ORDER BY q.weight DESC, RANDOM() LIMIT 1`
+  ).bind(user.id, user.exam_type, ...diffArgs).first();
+  if (unseen) return unseen;
 
   const missed = await env.DB.prepare(
-    `SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id
-     WHERE p.user_id = ? AND p.last_result = 'incorrect' ORDER BY RANDOM() LIMIT 1`
-  ).bind(user.id).first();
-  if (missed) return json(toPublicQuestion(missed));
+    `${cte}SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin}
+     WHERE p.user_id = ? AND p.last_result = 'incorrect' ${diffFilter} ORDER BY RANDOM() LIMIT 1`
+  ).bind(user.id, ...diffArgs).first();
+  if (missed) return missed;
 
   const review = await env.DB.prepare(
-    `SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id
-     WHERE p.user_id = ? ORDER BY RANDOM() LIMIT 1`
-  ).bind(user.id).first();
-  if (review) return json(toPublicQuestion(review));
+    `${cte}SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin}
+     WHERE p.user_id = ? ${diffFilter} ORDER BY RANDOM() LIMIT 1`
+  ).bind(user.id, ...diffArgs).first();
+  return review || null;
+}
 
+async function handleNextQuestion(user, env, difficulty) {
+  const validDifficulty = difficulty && DIFFICULTY_BANDS.includes(difficulty) ? difficulty : null;
+  let row = await findNextQuestionRow(env, user, validDifficulty);
+  // If that band has nothing left (e.g. all extremely_hard questions already seen), fall back to
+  // the unfiltered pick rather than dead-ending the quiz.
+  if (!row && validDifficulty) row = await findNextQuestionRow(env, user, null);
+  if (row) return json(toPublicQuestion(row));
   return json({ error: 'no_questions' }, 404);
 }
 
@@ -903,6 +933,42 @@ async function handleExamSubmit(user, request, env) {
 
   return json(buildExamResult(attempt.exam_type, questionIds, answers, byId,
     correctCount, questionIds.length, attempt.started_at, submittedAt, attempt.duration_sec));
+}
+
+// Every submitted attempt (question set, answers, score) is already persisted in exam_attempts --
+// this just surfaces it so a user can browse past sittings and revisit what they got wrong,
+// reusing the same review shape buildExamResult already produces for a just-submitted exam.
+async function handleExamHistory(user, env) {
+  const rows = (await env.DB.prepare(
+    `SELECT id, exam_type, score_correct, score_total, started_at, submitted_at FROM exam_attempts
+     WHERE user_id = ? AND submitted_at IS NOT NULL ORDER BY submitted_at DESC LIMIT 50`
+  ).bind(user.id).all()).results;
+  return json({
+    attempts: rows.map((r) => {
+      const config = getExamConfig(r.exam_type);
+      const percent = r.score_total ? Math.round((r.score_correct / r.score_total) * 1000) / 10 : 0;
+      return {
+        attemptId: r.id, examType: r.exam_type, correct: r.score_correct, total: r.score_total,
+        percent, passed: percent >= config.passPercent, startedAt: r.started_at, submittedAt: r.submitted_at,
+      };
+    }),
+  });
+}
+
+async function handleExamAttemptDetail(user, request, env) {
+  const url = new URL(request.url);
+  const attemptId = url.searchParams.get('attemptId');
+  const attempt = attemptId
+    ? await env.DB.prepare('SELECT * FROM exam_attempts WHERE id = ? AND user_id = ?').bind(attemptId, user.id).first()
+    : null;
+  if (!attempt || !attempt.submitted_at) return json({ error: 'attempt_not_found' }, 404);
+
+  const questionIds = JSON.parse(attempt.question_ids);
+  const answers = JSON.parse(attempt.answers);
+  const byId = await fetchQuestionsByIds(env, questionIds);
+  const result = buildExamResult(attempt.exam_type, questionIds, answers, byId,
+    attempt.score_correct, attempt.score_total, attempt.started_at, attempt.submitted_at, attempt.duration_sec);
+  return json({ ...result, startedAt: attempt.started_at, submittedAt: attempt.submitted_at });
 }
 
 async function handlePrefsGet(user) {
@@ -1150,7 +1216,7 @@ export default {
       const user = await requireUser(request, env);
       if (!user) return json({ error: 'unauthorized' }, 401);
 
-      if (pathname === '/questions/next' && method === 'GET') return await handleNextQuestion(user, env);
+      if (pathname === '/questions/next' && method === 'GET') return await handleNextQuestion(user, env, url.searchParams.get('difficulty'));
       if (pathname === '/answer' && method === 'POST') return await handleAnswer(user, request, env);
       if (pathname === '/progress' && method === 'GET') return await handleProgress(user, env);
       if (pathname === '/resources/progress' && method === 'GET') return await handleResourceProgressGet(user, env);
@@ -1160,6 +1226,8 @@ export default {
       if (pathname === '/exam/start' && method === 'POST') return await handleExamStart(user, env);
       if (pathname === '/exam/answer' && method === 'POST') return await handleExamAnswer(user, request, env);
       if (pathname === '/exam/submit' && method === 'POST') return await handleExamSubmit(user, request, env);
+      if (pathname === '/exam/history' && method === 'GET') return await handleExamHistory(user, env);
+      if (pathname === '/exam/attempt' && method === 'GET') return await handleExamAttemptDetail(user, request, env);
       if (pathname === '/prefs' && method === 'GET') return await handlePrefsGet(user);
       if (pathname === '/prefs' && method === 'POST') return await handlePrefsSet(user, request, env);
       if (pathname === '/resources/sign-batch' && method === 'POST') return await handleResourcesSignBatch(request, env);
