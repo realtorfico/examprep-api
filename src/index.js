@@ -726,6 +726,47 @@ async function handleProgress(user, env) {
   });
 }
 
+// ---- Resource consumption tracking -------------------------------------
+// Best-effort, per-user record of what study resources have been opened and (for audio/video)
+// how much of them was actually watched/listened to -- surfaced back to the user on their own
+// Resources tab, and to the admin per-user across the whole library.
+
+async function handleResourceProgressUpdate(user, request, env) {
+  const { file, type, percent, isNewOpen } = await request.json();
+  if (!file || !type) return json({ error: 'file_and_type_required' }, 400);
+  const clamped = Math.max(0, Math.min(100, Math.round(Number(percent) || 0)));
+  const nowTs = now();
+  // isNewOpen fires once when a resource is expanded/opened -- periodic playback-progress
+  // updates during that same session must NOT also increment times_opened.
+  const openIncrement = isNewOpen ? 1 : 0;
+  await env.DB.prepare(
+    `INSERT INTO resource_progress (user_id, resource_file, resource_type, percent, times_opened, first_opened_at, last_opened_at)
+     VALUES (?, ?, ?, ?, 1, ?, ?)
+     ON CONFLICT (user_id, resource_file) DO UPDATE SET
+       percent = MAX(resource_progress.percent, excluded.percent),
+       times_opened = resource_progress.times_opened + ?,
+       last_opened_at = excluded.last_opened_at`
+  ).bind(user.id, file, type, clamped, nowTs, nowTs, openIncrement).run();
+  return json({ ok: true });
+}
+
+async function handleResourceProgressGet(user, env) {
+  const rows = (await env.DB.prepare(
+    'SELECT resource_file, resource_type, percent, times_opened, last_opened_at FROM resource_progress WHERE user_id = ?'
+  ).bind(user.id).all()).results;
+  return json({ items: rows });
+}
+
+async function handleConsoleResourceProgressList(env) {
+  const rows = (await env.DB.prepare(
+    `SELECT rp.*, u.exam_type, c.code, c.buyer_email FROM resource_progress rp
+     JOIN users u ON u.id = rp.user_id
+     LEFT JOIN codes c ON c.redeemed_by = u.id
+     ORDER BY rp.last_opened_at DESC LIMIT 1000`
+  ).all()).results;
+  return json({ items: rows });
+}
+
 // ---- Timed mock exam --------------------------------------------------
 // A single-sitting, timed simulation of the real exam -- fixed question set + a
 // server-authoritative start time (not client-trusted) so refreshing or fiddling with the
@@ -1101,6 +1142,7 @@ export default {
         if (pathname === '/console/questions/delete' && method === 'POST') return await handleQuestionDelete(request, env);
         if (pathname === '/console/questions/import' && method === 'POST') return await handleQuestionImport(request, env);
         if (pathname === '/console/stats' && method === 'GET') return await handleStats(env);
+        if (pathname === '/console/resource-progress' && method === 'GET') return await handleConsoleResourceProgressList(env);
         return json({ error: 'not_found' }, 404);
       }
 
@@ -1111,6 +1153,8 @@ export default {
       if (pathname === '/questions/next' && method === 'GET') return await handleNextQuestion(user, env);
       if (pathname === '/answer' && method === 'POST') return await handleAnswer(user, request, env);
       if (pathname === '/progress' && method === 'GET') return await handleProgress(user, env);
+      if (pathname === '/resources/progress' && method === 'GET') return await handleResourceProgressGet(user, env);
+      if (pathname === '/resources/progress' && method === 'POST') return await handleResourceProgressUpdate(user, request, env);
       if (pathname === '/exam/config' && method === 'GET') return await handleExamConfig(request, env);
       if (pathname === '/exam/current' && method === 'GET') return await handleExamCurrent(user, env);
       if (pathname === '/exam/start' && method === 'POST') return await handleExamStart(user, env);

@@ -58,6 +58,24 @@ CREATE TABLE progress (
 );
 CREATE INDEX idx_progress_user ON progress(user_id);
 
+-- Per-user consumption of study resources (audio/video/pdf/image/table), mirroring the
+-- question `progress` table's shape. resource_file matches RESOURCES[...].file client-side
+-- (the same stable key already used for signed URLs) -- there's no server-side resource ID
+-- table, since the resource catalog itself lives in the site's app.js, not the database.
+-- percent is audio/video playback progress (0-100, never decreases); pdf/image/table have no
+-- meaningful "extent" so they're just marked fully consumed (100) the first time they're opened.
+CREATE TABLE resource_progress (
+  user_id         TEXT NOT NULL REFERENCES users(id),
+  resource_file   TEXT NOT NULL,
+  resource_type   TEXT NOT NULL,
+  percent         INTEGER NOT NULL DEFAULT 0,
+  times_opened    INTEGER NOT NULL DEFAULT 0,
+  first_opened_at INTEGER NOT NULL,
+  last_opened_at  INTEGER NOT NULL,
+  PRIMARY KEY (user_id, resource_file)
+);
+CREATE INDEX idx_resource_progress_file ON resource_progress(resource_file);
+
 -- Self-serve purchase pricing (admin-editable via examprep-admin's Settings tab).
 CREATE TABLE pricing (
   exam_type   TEXT PRIMARY KEY,
