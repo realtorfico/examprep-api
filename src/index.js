@@ -857,6 +857,18 @@ async function handleProgress(user, env) {
   });
 }
 
+async function handleProgressReset(user, request, env) {
+  const { scope } = await request.json();
+  if (scope !== 'quiz' && scope !== 'all') return json({ error: 'invalid_scope' }, 400);
+
+  await env.DB.prepare('DELETE FROM progress WHERE user_id = ?').bind(user.id).run();
+  if (scope === 'all') {
+    await env.DB.prepare('DELETE FROM exam_attempts WHERE user_id = ?').bind(user.id).run();
+  }
+
+  return json({ ok: true, scope });
+}
+
 // ---- Resource consumption tracking -------------------------------------
 // Best-effort, per-user record of what study resources have been opened and (for audio/video)
 // how much of them was actually watched/listened to -- surfaced back to the user on their own
@@ -1378,6 +1390,7 @@ export default {
       if (pathname === '/questions/next' && method === 'GET') return await handleNextQuestion(user, env, url.searchParams.get('difficulty'));
       if (pathname === '/answer' && method === 'POST') return await handleAnswer(user, request, env);
       if (pathname === '/progress' && method === 'GET') return await handleProgress(user, env);
+      if (pathname === '/progress/reset' && method === 'POST') return await handleProgressReset(user, request, env);
       if (pathname === '/resources/progress' && method === 'GET') return await handleResourceProgressGet(user, env);
       if (pathname === '/resources/progress' && method === 'POST') return await handleResourceProgressUpdate(user, request, env);
       if (pathname === '/exam/config' && method === 'GET') return await handleExamConfig(request, env);
