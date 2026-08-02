@@ -794,13 +794,13 @@ function toPublicQuestion(q) {
   };
 }
 
-async function handleAnswer(user, request, env) {
-  const { questionId, choice } = await request.json();
-  const q = await env.DB.prepare('SELECT * FROM questions WHERE id = ?').bind(questionId).first();
-  if (!q) return json({ error: 'question_not_found' }, 404);
-
-  const correct = choice === q.correct_choice;
-  await env.DB.prepare(
+// Shared by quiz answers (handleAnswer, one at a time) and mock exam submission
+// (handleExamSubmit, batched) -- both modes feed the same per-question "current status" record,
+// so whichever mode a question was most recently answered in is what the Progress tab (topic
+// breakdown, wrong-questions list, and totals) reflects. Last write wins, no merge logic needed.
+function progressUpsertStmt(env, userId, questionId, choice, correctChoice, at) {
+  const correct = choice === correctChoice;
+  return env.DB.prepare(
     `INSERT INTO progress (user_id, question_id, times_seen, times_correct, last_result, last_choice, last_answered_at)
      VALUES (?, ?, 1, ?, ?, ?, ?)
      ON CONFLICT (user_id, question_id) DO UPDATE SET
@@ -809,9 +809,17 @@ async function handleAnswer(user, request, env) {
        last_result = excluded.last_result,
        last_choice = excluded.last_choice,
        last_answered_at = excluded.last_answered_at`
-  ).bind(user.id, questionId, correct ? 1 : 0, correct ? 'correct' : 'incorrect', choice, now()).run();
+  ).bind(userId, questionId, correct ? 1 : 0, correct ? 'correct' : 'incorrect', choice || null, at);
+}
 
-  return json({ correct, correctChoice: q.correct_choice, explanation: q.explanation });
+async function handleAnswer(user, request, env) {
+  const { questionId, choice } = await request.json();
+  const q = await env.DB.prepare('SELECT * FROM questions WHERE id = ?').bind(questionId).first();
+  if (!q) return json({ error: 'question_not_found' }, 404);
+
+  await progressUpsertStmt(env, user.id, questionId, choice, q.correct_choice, now()).run();
+
+  return json({ correct: choice === q.correct_choice, correctChoice: q.correct_choice, explanation: q.explanation });
 }
 
 async function handleProgress(user, env) {
@@ -1064,6 +1072,12 @@ async function handleExamSubmit(user, request, env) {
   await env.DB.prepare(
     'UPDATE exam_attempts SET submitted_at = ?, score_correct = ?, score_total = ? WHERE id = ?'
   ).bind(submittedAt, correctCount, questionIds.length, attemptId).run();
+
+  // Feeds this attempt's per-question results into the same progress tracker quiz answers use
+  // (see progressUpsertStmt) -- an unanswered question (ran out of time / skipped) is treated as
+  // incorrect here too, matching how it's already scored for the exam itself.
+  const progressStmts = questionIds.map((id) => byId[id] && progressUpsertStmt(env, user.id, id, answers[id], byId[id].correct_choice, submittedAt)).filter(Boolean);
+  if (progressStmts.length) await env.DB.batch(progressStmts);
 
   const result = buildExamResult(attempt.exam_type, questionIds, answers, byId,
     correctCount, questionIds.length, attempt.started_at, submittedAt, attempt.duration_sec);
