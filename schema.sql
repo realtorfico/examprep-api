@@ -53,6 +53,9 @@ CREATE TABLE progress (
   times_seen       INTEGER NOT NULL DEFAULT 0,
   times_correct    INTEGER NOT NULL DEFAULT 0,
   last_result      TEXT, -- 'correct' | 'incorrect'
+  last_choice      TEXT, -- 'A'|'B'|'C'|'D' the user picked on their last attempt at this question
+                          -- (quiz mode only -- mock exam attempts already store full answers
+                          -- separately). NULL for rows answered before this column existed.
   last_answered_at INTEGER,
   PRIMARY KEY (user_id, question_id)
 );

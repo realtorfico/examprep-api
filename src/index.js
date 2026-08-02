@@ -801,14 +801,15 @@ async function handleAnswer(user, request, env) {
 
   const correct = choice === q.correct_choice;
   await env.DB.prepare(
-    `INSERT INTO progress (user_id, question_id, times_seen, times_correct, last_result, last_answered_at)
-     VALUES (?, ?, 1, ?, ?, ?)
+    `INSERT INTO progress (user_id, question_id, times_seen, times_correct, last_result, last_choice, last_answered_at)
+     VALUES (?, ?, 1, ?, ?, ?, ?)
      ON CONFLICT (user_id, question_id) DO UPDATE SET
        times_seen = times_seen + 1,
        times_correct = times_correct + excluded.times_correct,
        last_result = excluded.last_result,
+       last_choice = excluded.last_choice,
        last_answered_at = excluded.last_answered_at`
-  ).bind(user.id, questionId, correct ? 1 : 0, correct ? 'correct' : 'incorrect', now()).run();
+  ).bind(user.id, questionId, correct ? 1 : 0, correct ? 'correct' : 'incorrect', choice, now()).run();
 
   return json({ correct, correctChoice: q.correct_choice, explanation: q.explanation });
 }
@@ -825,10 +826,26 @@ async function handleProgress(user, env) {
      WHERE p.user_id = ? GROUP BY q.topic`
   ).bind(user.id).all();
 
+  // Only questions currently sitting at "incorrect" as of the user's last attempt -- a question
+  // missed once but since answered correctly again isn't shown, same "current state" idea as the
+  // /questions/next quiz picker's own missed-question query.
+  const wrong = await env.DB.prepare(
+    `SELECT q.id, q.topic, q.question, q.choice_a, q.choice_b, q.choice_c, q.choice_d,
+            q.correct_choice, q.explanation, p.last_choice, p.last_answered_at
+     FROM progress p JOIN questions q ON q.id = p.question_id
+     WHERE p.user_id = ? AND p.last_result = 'incorrect' ORDER BY p.last_answered_at DESC`
+  ).bind(user.id).all();
+
   return json({
     totalAnswered: totals.total || 0,
     totalCorrect: totals.correct || 0,
     byTopic: byTopic.results,
+    wrongQuestions: wrong.results.map((q) => ({
+      id: q.id, topic: q.topic, question: q.question,
+      choices: { A: q.choice_a, B: q.choice_b, C: q.choice_c, D: q.choice_d },
+      correctChoice: q.correct_choice, yourChoice: q.last_choice || null, explanation: q.explanation,
+      lastAnsweredAt: q.last_answered_at,
+    })),
   });
 }
 
