@@ -1146,7 +1146,7 @@ async function handleQuestionsList(request, env) {
   const binds = [];
   if (examType) { sql += ' AND exam_type = ?'; binds.push(examType); }
   if (topic) { sql += ' AND topic = ?'; binds.push(topic); }
-  sql += ' ORDER BY created_at DESC LIMIT 500';
+  sql += ' ORDER BY created_at DESC LIMIT 10000';
   return json({ questions: (await env.DB.prepare(sql).bind(...binds).all()).results });
 }
 
