@@ -135,9 +135,10 @@ CREATE TABLE point_adjustments (
   created_at  INTEGER NOT NULL
 );
 
--- Bridges /paypal/create-order (which computes and quotes the discount, before payment) to
--- /paypal/capture-order (which actually deducts the points, only after payment succeeds) --
--- points are never deducted just for creating an order, only for a captured one.
+-- Bridges create-order/create-intent (which computes and quotes the discount, before payment)
+-- to capture-order/confirm (which actually deducts the points, only after payment succeeds) --
+-- points are never deducted just for creating an order, only for a captured one. `order_id`
+-- holds either a PayPal order ID or a Stripe PaymentIntent ID, whichever processor was used.
 CREATE TABLE pending_point_discounts (
   order_id        TEXT PRIMARY KEY,
   email           TEXT NOT NULL,

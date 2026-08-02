@@ -27,6 +27,7 @@
   //   PAYPAL_CLIENT_ID          — from a REST API app at developer.paypal.com
   //   PAYPAL_CLIENT_SECRET      — from the same PayPal REST API app
   //   PAYPAL_ENV                — "sandbox" or "live" — picks the PayPal API host
+  //   STRIPE_SECRET_KEY         — sk_live_... (or sk_test_...) from dashboard.stripe.com/apikeys
   //   RESEND_API_KEY            — from resend.com, for the optional backup-code email
   //   MEDIA_SIGNING_SECRET      — random string, HMACs the short-lived /media/:file URLs
 }

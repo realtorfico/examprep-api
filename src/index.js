@@ -1,5 +1,6 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
+import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
 import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 
@@ -260,6 +261,61 @@ async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail) {
   return { code, token };
 }
 
+// Shared by both processors' create-order/create-intent handlers -- points are only ever
+// quoted here, never deducted, that only happens once a payment actually completes (see
+// finalizePurchase), so an abandoned checkout costs nothing. Returns { fullyCoveredByPoints:
+// true } instead of a quote when the discount covers the whole price, since that case should
+// route through /points/redeem instead of a real charge -- callers check for it explicitly.
+async function quoteCheckout(env, examType, email, applyPoints) {
+  const { priceCents, currency } = await getPrice(env, examType);
+  let finalPriceCents = priceCents;
+  let pointsToApply = 0;
+  if (applyPoints && email) {
+    const account = await env.DB.prepare('SELECT * FROM accounts WHERE email = ?').bind(email.trim().toLowerCase()).first();
+    if (account && account.points > 0) {
+      pointsToApply = Math.min(account.points, priceCents);
+      if (pointsToApply >= priceCents) return { fullyCoveredByPoints: true };
+      // A partial discount can't leave less than the admin-set floor payable through the
+      // processor -- cap the points actually applied so the leftover doesn't dip below it
+      // (unapplied points just stay in the account for next time, nothing is lost).
+      const minChargeCents = await getMinPaypalChargeCents(env);
+      if (priceCents - pointsToApply < minChargeCents) {
+        pointsToApply = Math.max(0, priceCents - minChargeCents);
+      }
+      finalPriceCents = priceCents - pointsToApply;
+    }
+  }
+  return { priceCents, currency, finalPriceCents, pointsToApply };
+}
+
+// Shared by both processors' capture/confirm handlers, called only after the processor-specific
+// code has verified the payment actually completed and the captured amount matches what was
+// quoted. Handles point deduction, code issuance, receipt email, referral crediting, and the
+// admin activity alert -- the one thing that's genuinely identical regardless of processor.
+async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount }) {
+  const { code, token } = await issueAndRedeemCode(env, examType, note, capturedCents, payerEmail || email);
+
+  if (discount) {
+    // MAX(0, ...) floors it defensively in case the balance somehow changed since create-order
+    // (e.g. another purchase in a different tab) — the buyer already got the discount they paid
+    // for either way, so we don't fail the purchase over a stale points snapshot.
+    await env.DB.prepare('UPDATE accounts SET points = MAX(0, points - ?) WHERE email = ?')
+      .bind(discount.points_to_apply, discount.email).run();
+    await env.DB.prepare('DELETE FROM pending_point_discounts WHERE order_id = ?').bind(discount.order_id).run();
+  }
+
+  if (email) {
+    try { await sendCodeEmail(env, email, code, examType); } catch (e) { /* best-effort, buyer already has the code on-screen */ }
+  }
+
+  await detectAndCreditConversion(env, payerEmail);
+  await notifyAdmin(env, 'New purchase',
+    `<p><strong>${payerEmail || email || 'A buyer'}</strong> just bought ${examType} access for ` +
+    `$${(capturedCents / 100).toFixed(2)}` + (discount ? ` (${discount.points_to_apply} points applied as a discount)` : '') + `.</p>`);
+
+  return { code, token, pointsApplied: discount ? discount.points_to_apply : 0 };
+}
+
 async function handlePaypalCreateOrder(request, env) {
   const { examType, turnstileToken, email, applyPoints } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
@@ -268,39 +324,18 @@ async function handlePaypalCreateOrder(request, env) {
   }
   if (!examType) return json({ error: 'examType_required' }, 400);
 
-  const { priceCents, currency } = await getPrice(env, examType);
+  const quote = await quoteCheckout(env, examType, email, applyPoints);
+  if (quote.fullyCoveredByPoints) return json({ error: 'fully_covered_by_points' }, 400); // client should use /points/redeem instead
 
-  // Points are only ever quoted here, never deducted -- that only happens once a capture
-  // actually succeeds (see handlePaypalCaptureOrder), so an abandoned checkout costs nothing.
-  let finalPriceCents = priceCents;
-  let pointsToApply = 0;
-  if (applyPoints && email) {
-    const account = await env.DB.prepare('SELECT * FROM accounts WHERE email = ?').bind(email.trim().toLowerCase()).first();
-    if (account && account.points > 0) {
-      pointsToApply = Math.min(account.points, priceCents);
-      if (pointsToApply >= priceCents) {
-        return json({ error: 'fully_covered_by_points' }, 400); // client should use /points/redeem instead
-      }
-      // A partial discount can't leave less than the admin-set floor payable through PayPal --
-      // cap the points actually applied so the leftover doesn't dip below it (unapplied points
-      // just stay in the account for next time, nothing is lost).
-      const minPaypalChargeCents = await getMinPaypalChargeCents(env);
-      if (priceCents - pointsToApply < minPaypalChargeCents) {
-        pointsToApply = Math.max(0, priceCents - minPaypalChargeCents);
-      }
-      finalPriceCents = priceCents - pointsToApply;
-    }
-  }
+  const order = await createPayPalOrder(env, quote.finalPriceCents, quote.currency);
 
-  const order = await createPayPalOrder(env, finalPriceCents, currency);
-
-  if (pointsToApply > 0) {
+  if (quote.pointsToApply > 0) {
     await env.DB.prepare(
       'INSERT INTO pending_point_discounts (order_id, email, points_to_apply, created_at) VALUES (?, ?, ?, ?)'
-    ).bind(order.id, email.trim().toLowerCase(), pointsToApply, now()).run();
+    ).bind(order.id, email.trim().toLowerCase(), quote.pointsToApply, now()).run();
   }
 
-  return json({ orderId: order.id, priceCents: finalPriceCents, pointsApplied: pointsToApply });
+  return json({ orderId: order.id, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply });
 }
 
 async function handlePaypalCaptureOrder(request, env) {
@@ -334,27 +369,64 @@ async function handlePaypalCaptureOrder(request, env) {
   // PayPal's own capture response tells us the payer's email for free -- no extra field/friction
   // needed on the buy form to detect "this buyer was someone's referral" or to record who paid.
   const payerEmail = capture.payer && capture.payer.email_address;
-  const { code, token } = await issueAndRedeemCode(env, examType, note, capturedCents, payerEmail || email);
+  const { code, token, pointsApplied } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount });
 
-  if (discount) {
-    // MAX(0, ...) floors it defensively in case the balance somehow changed since create-order
-    // (e.g. another purchase in a different tab) — the buyer already got the discount they paid
-    // for either way, so we don't fail the purchase over a stale points snapshot.
-    await env.DB.prepare('UPDATE accounts SET points = MAX(0, points - ?) WHERE email = ?')
-      .bind(discount.points_to_apply, discount.email).run();
-    await env.DB.prepare('DELETE FROM pending_point_discounts WHERE order_id = ?').bind(orderId).run();
+  return json({ code, token, examType, pointsApplied });
+}
+
+async function handleStripeCreateIntent(request, env) {
+  const { examType, turnstileToken, email, applyPoints } = await request.json();
+  const ip = request.headers.get('CF-Connecting-IP');
+  if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
+    return json({ error: 'turnstile_failed' }, 400);
+  }
+  if (!examType) return json({ error: 'examType_required' }, 400);
+
+  const quote = await quoteCheckout(env, examType, email, applyPoints);
+  if (quote.fullyCoveredByPoints) return json({ error: 'fully_covered_by_points' }, 400); // client should use /points/redeem instead
+
+  const intent = await createStripePaymentIntent(env, quote.finalPriceCents, quote.currency, { email, examType });
+
+  if (quote.pointsToApply > 0) {
+    await env.DB.prepare(
+      'INSERT INTO pending_point_discounts (order_id, email, points_to_apply, created_at) VALUES (?, ?, ?, ?)'
+    ).bind(intent.id, email.trim().toLowerCase(), quote.pointsToApply, now()).run();
   }
 
-  if (email) {
-    try { await sendCodeEmail(env, email, code, examType); } catch (e) { /* best-effort, buyer already has the code on-screen */ }
+  return json({ clientSecret: intent.client_secret, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply });
+}
+
+async function handleStripeConfirm(request, env) {
+  const { paymentIntentId, examType, email } = await request.json();
+  if (!paymentIntentId || !examType) return json({ error: 'paymentIntentId_and_examType_required' }, 400);
+
+  // Idempotency: a retried confirm call for an intent we've already issued a code for just
+  // re-mints a token for the existing account, instead of risking a double-issue.
+  const note = `stripe:${paymentIntentId}`;
+  const existing = await env.DB.prepare('SELECT * FROM codes WHERE note = ?').bind(note).first();
+  if (existing) {
+    const token = crypto.randomUUID();
+    await env.DB.prepare('UPDATE users SET token = ?, last_seen_at = ? WHERE id = ?')
+      .bind(token, now(), existing.redeemed_by).run();
+    return json({ code: existing.code, token, examType: existing.exam_type });
   }
 
-  await detectAndCreditConversion(env, payerEmail);
-  await notifyAdmin(env, 'New purchase',
-    `<p><strong>${payerEmail || email || 'A buyer'}</strong> just bought ${examType} access for ` +
-    `$${(capturedCents / 100).toFixed(2)}` + (discount ? ` (${discount.points_to_apply} points applied as a discount)` : '') + `.</p>`);
+  const { priceCents: fullPriceCents } = await getPrice(env, examType);
+  const discount = await env.DB.prepare('SELECT * FROM pending_point_discounts WHERE order_id = ?').bind(paymentIntentId).first();
+  const expectedCents = discount ? fullPriceCents - discount.points_to_apply : fullPriceCents;
 
-  return json({ code, token, examType, pointsApplied: discount ? discount.points_to_apply : 0 });
+  const intent = await retrieveStripePaymentIntent(env, paymentIntentId);
+  if (intent.status !== 'succeeded') return json({ error: 'payment_not_completed' }, 402);
+  if (intent.amount_received !== expectedCents) return json({ error: 'amount_mismatch' }, 402);
+
+  // Stripe echoes back the receipt email we set at creation, plus the actual billing email
+  // from whichever payment method the buyer used (card, Apple Pay, Google Pay), which can
+  // differ -- prefer the latter, same "trust what the processor tells us" approach as PayPal.
+  const charge = intent.latest_charge;
+  const payerEmail = (charge && charge.billing_details && charge.billing_details.email) || intent.receipt_email;
+  const { code, token, pointsApplied } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount });
+
+  return json({ code, token, examType, pointsApplied });
 }
 
 // ---- Refer & earn points ----------------------------------------------
@@ -543,8 +615,12 @@ async function handleRefundClaimSubmit(request, env) {
   return json({ ok: true, refundCents });
 }
 
+// Joins in the code's `note` (e.g. "stripe:pi_..." / "paypal:ORDER_ID") so the admin can tell
+// which processor actually needs to issue the refund, without a separate lookup on the Codes tab.
 async function handleConsoleRefundClaimsList(env) {
-  const rows = (await env.DB.prepare('SELECT * FROM refund_claims ORDER BY created_at DESC LIMIT 500').all()).results;
+  const rows = (await env.DB.prepare(
+    `SELECT rc.*, c.note AS code_note FROM refund_claims rc LEFT JOIN codes c ON c.code = rc.code ORDER BY rc.created_at DESC LIMIT 500`
+  ).all()).results;
   return json({ claims: rows });
 }
 
@@ -1224,6 +1300,8 @@ export default {
       if (pathname === '/pricing' && method === 'GET') return await handlePricingGet(request, env);
       if (pathname === '/paypal/create-order' && method === 'POST') return await handlePaypalCreateOrder(request, env);
       if (pathname === '/paypal/capture-order' && method === 'POST') return await handlePaypalCaptureOrder(request, env);
+      if (pathname === '/stripe/create-intent' && method === 'POST') return await handleStripeCreateIntent(request, env);
+      if (pathname === '/stripe/confirm' && method === 'POST') return await handleStripeConfirm(request, env);
       if (pathname === '/referrals/invite' && method === 'POST') return await handleReferralInvite(request, env);
       if (pathname === '/referrals/verify' && method === 'GET') return await handleReferralVerify(request, env);
       if (pathname === '/refunds/claim' && method === 'POST') return await handleRefundClaimSubmit(request, env);
