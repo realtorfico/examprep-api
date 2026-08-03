@@ -951,6 +951,23 @@ async function handleConsoleResourceProgressList(env) {
   return json({ items: rows });
 }
 
+// Per-user, per-topic quiz accuracy -- the same shape as the student's own /progress
+// endpoint's byTopic, just grouped by user_id too instead of scoped to one caller. Admin groups
+// these rows client-side into one card per user, mirroring resource-progress above.
+async function handleConsoleQuizProgressList(env) {
+  const rows = (await env.DB.prepare(
+    `SELECT p.user_id, u.exam_type, c.code, c.buyer_email, q.topic,
+            COUNT(*) AS total, SUM(CASE WHEN p.last_result = 'correct' THEN 1 ELSE 0 END) AS correct
+     FROM progress p
+     JOIN questions q ON q.id = p.question_id
+     JOIN users u ON u.id = p.user_id
+     LEFT JOIN codes c ON c.redeemed_by = u.id
+     GROUP BY p.user_id, q.topic
+     ORDER BY p.user_id`
+  ).all()).results;
+  return json({ items: rows });
+}
+
 // ---- Timed mock exam --------------------------------------------------
 // A single-sitting, timed simulation of the real exam -- fixed question set + a
 // server-authoritative start time (not client-trusted) so refreshing or fiddling with the
@@ -1378,6 +1395,7 @@ export default {
         if (pathname === '/console/questions/import' && method === 'POST') return await handleQuestionImport(request, env);
         if (pathname === '/console/stats' && method === 'GET') return await handleStats(env);
         if (pathname === '/console/resource-progress' && method === 'GET') return await handleConsoleResourceProgressList(env);
+        if (pathname === '/console/quiz-progress' && method === 'GET') return await handleConsoleQuizProgressList(env);
         if (pathname === '/console/exam-attempts' && method === 'GET') return await handleConsoleExamAttemptsList(env);
         if (pathname === '/console/exam-attempts/detail' && method === 'GET') return await handleConsoleExamAttemptDetail(request, env);
         return json({ error: 'not_found' }, 404);
