@@ -3,11 +3,13 @@
 
 const SITE_URL = 'https://examprep.softician.com/notary';
 
-async function sendEmail(env, { to, subject, html }) {
+async function sendEmail(env, { to, subject, html, replyTo }) {
+  const body = { from: 'ExamPrep <noreply@examprep.softician.com>', to, subject, html };
+  if (replyTo) body.reply_to = replyTo;
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ from: 'ExamPrep <noreply@examprep.softician.com>', to, subject, html }),
+    body: JSON.stringify(body),
   });
   if (!res.ok) {
     const data = await res.json().catch(() => ({}));
@@ -103,7 +105,7 @@ export async function sendRedeemVerifyEmail(env, to, points, verifyUrl) {
   });
 }
 
-export async function sendAdminAlertEmail(env, to, title, bodyHtml) {
+export async function sendAdminAlertEmail(env, to, title, bodyHtml, replyTo) {
   await sendEmail(env, {
     to,
     subject: `🔔 ${title}`,
@@ -112,6 +114,24 @@ export async function sendAdminAlertEmail(env, to, title, bodyHtml) {
       title,
       bodyHtml,
       footerNote: 'Admin activity alert — change or turn this off in examprep-admin\'s Settings tab.',
+    }),
+    replyTo,
+  });
+}
+
+export async function sendReengagementEmail(env, to, examType) {
+  await sendEmail(env, {
+    to,
+    subject: "👋 Haven't forgotten about your exam prep?",
+    html: emailShell({
+      badge: '👋',
+      title: 'Pick up where you left off',
+      bodyHtml: `<p>You've still got full access to ExamPrep's <strong>${examType}</strong> practice question bank,
+        timed mock exams, and study resources — whenever you're ready to jump back in.</p>
+        <p>A little consistent practice goes a long way toward passing on your first try.</p>`,
+      ctaText: 'Continue studying →',
+      ctaUrl: SITE_URL,
+      footerNote: "Already passed or moved on? No action needed — you won't be nudged again for a while.",
     }),
   });
 }

@@ -1,7 +1,7 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
-import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 
 function json(data, status = 200) {
@@ -217,12 +217,46 @@ async function getAppSetting(env, key, fallback) {
 // Fire-and-forget activity alert to the site owner -- no-op if admin_alert_email isn't set
 // (examprep-admin's Settings tab), and never throws, so a missing/misconfigured recipient can
 // never break the actual user-facing action it's reporting on.
-async function notifyAdmin(env, title, bodyHtml) {
+async function notifyAdmin(env, title, bodyHtml, replyTo) {
   try {
     const to = await getAppSetting(env, 'admin_alert_email', '');
     if (!to) return;
-    await sendAdminAlertEmail(env, to, title, bodyHtml);
+    await sendAdminAlertEmail(env, to, title, bodyHtml, replyTo);
   } catch (e) { /* best-effort */ }
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+// Public "Contact Admin" form -- forwards to whatever admin_alert_email is set (examprep-admin's
+// Settings tab), with reply-to set to the visitor so the admin can just hit reply. No new table --
+// this is a straight-through notification, not something that needs to be listed/reviewed later.
+// Deliberately does NOT go through notifyAdmin()'s silent-no-op-if-unconfigured wrapper -- that's
+// fine for best-effort background alerts, but here the visitor is told "message sent", so a missing
+// destination or a failed send must surface as a real error instead of quietly losing the message.
+async function handleContactSubmit(request, env) {
+  const { name, email, message, turnstileToken } = await request.json();
+  const ip = request.headers.get('CF-Connecting-IP');
+  if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
+    return json({ error: 'turnstile_failed' }, 400);
+  }
+  const trimmedEmail = (email || '').trim();
+  const trimmedMessage = (message || '').trim();
+  if (!trimmedEmail || !trimmedMessage) return json({ error: 'email_and_message_required' }, 400);
+  if (trimmedMessage.length > 5000) return json({ error: 'message_too_long' }, 400);
+
+  const to = await getAppSetting(env, 'admin_alert_email', '');
+  if (!to) return json({ error: 'contact_not_configured' }, 503);
+
+  const bodyHtml = `<p><strong>From:</strong> ${escapeHtml(name ? name.trim() : 'Anonymous')} (${escapeHtml(trimmedEmail)})</p>` +
+    `<p>${escapeHtml(trimmedMessage).replace(/\n/g, '<br>')}</p>`;
+  try {
+    await sendAdminAlertEmail(env, to, 'New contact form message', bodyHtml, trimmedEmail);
+  } catch (e) {
+    return json({ error: 'send_failed' }, 502);
+  }
+  return json({ ok: true });
 }
 
 // A points discount can never leave a PayPal charge below this (admin-editable in
@@ -968,6 +1002,44 @@ async function handleConsoleQuizProgressList(env) {
   return json({ items: rows });
 }
 
+// ---- Re-engagement: stalled buyers --------------------------------------
+// "Stalled" = redeemed (active, non-revoked) code, no activity (last_seen_at, updated on every
+// authenticated request -- see requireUser) in at least `days`. Admin-triggered, not automatic --
+// the admin reviews the list and clicks Send per user, rather than a cron blasting emails unsupervised.
+
+async function handleConsoleStalledBuyersList(request, env) {
+  const url = new URL(request.url);
+  const days = Math.max(1, parseInt(url.searchParams.get('days'), 10) || 7);
+  const cutoff = now() - days * 86400;
+  const rows = (await env.DB.prepare(
+    `SELECT u.id AS user_id, u.exam_type, u.last_seen_at, u.created_at, u.last_reminder_sent_at, c.code, c.buyer_email
+     FROM users u
+     JOIN codes c ON c.redeemed_by = u.id
+     WHERE u.last_seen_at < ? AND c.status = 'redeemed'
+     ORDER BY u.last_seen_at ASC LIMIT 500`
+  ).bind(cutoff).all()).results;
+  return json({ items: rows, days });
+}
+
+async function handleConsoleStalledBuyerRemind(request, env) {
+  const { userId } = await request.json();
+  if (!userId) return json({ error: 'user_id_required' }, 400);
+
+  const row = await env.DB.prepare(
+    `SELECT u.id, u.exam_type, c.buyer_email FROM users u JOIN codes c ON c.redeemed_by = u.id WHERE u.id = ?`
+  ).bind(userId).first();
+  if (!row) return json({ error: 'user_not_found' }, 404);
+  if (!row.buyer_email) return json({ error: 'no_email_on_file' }, 400);
+
+  try {
+    await sendReengagementEmail(env, row.buyer_email, row.exam_type);
+  } catch (e) {
+    return json({ error: 'send_failed' }, 502);
+  }
+  await env.DB.prepare('UPDATE users SET last_reminder_sent_at = ? WHERE id = ?').bind(now(), userId).run();
+  return json({ ok: true });
+}
+
 // ---- Timed mock exam --------------------------------------------------
 // A single-sitting, timed simulation of the real exam -- fixed question set + a
 // server-authoritative start time (not client-trusted) so refreshing or fiddling with the
@@ -1365,6 +1437,7 @@ export default {
       if (pathname === '/referrals/invite' && method === 'POST') return await handleReferralInvite(request, env);
       if (pathname === '/referrals/verify' && method === 'GET') return await handleReferralVerify(request, env);
       if (pathname === '/refunds/claim' && method === 'POST') return await handleRefundClaimSubmit(request, env);
+      if (pathname === '/contact' && method === 'POST') return await handleContactSubmit(request, env);
       if (pathname === '/points/rules' && method === 'GET') return await handlePointsRules(env);
       if (pathname === '/points/balance' && method === 'GET') return await handlePointsBalance(request, env);
       if (pathname === '/points/redeem' && method === 'POST') return await handlePointsRedeem(request, env);
@@ -1396,6 +1469,8 @@ export default {
         if (pathname === '/console/stats' && method === 'GET') return await handleStats(env);
         if (pathname === '/console/resource-progress' && method === 'GET') return await handleConsoleResourceProgressList(env);
         if (pathname === '/console/quiz-progress' && method === 'GET') return await handleConsoleQuizProgressList(env);
+        if (pathname === '/console/stalled-buyers' && method === 'GET') return await handleConsoleStalledBuyersList(request, env);
+        if (pathname === '/console/stalled-buyers/remind' && method === 'POST') return await handleConsoleStalledBuyerRemind(request, env);
         if (pathname === '/console/exam-attempts' && method === 'GET') return await handleConsoleExamAttemptsList(env);
         if (pathname === '/console/exam-attempts/detail' && method === 'GET') return await handleConsoleExamAttemptDetail(request, env);
         return json({ error: 'not_found' }, 404);

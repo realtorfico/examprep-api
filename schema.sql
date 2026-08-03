@@ -1,13 +1,14 @@
 -- examprep-api D1 schema. Apply via the D1 dashboard console (no local wrangler on this machine).
 
 CREATE TABLE users (
-  id           TEXT PRIMARY KEY,
-  exam_type    TEXT NOT NULL,
-  token        TEXT NOT NULL UNIQUE,
-  theme        TEXT NOT NULL DEFAULT 'system',
-  font_scale   REAL NOT NULL DEFAULT 1.0,
-  created_at   INTEGER NOT NULL,
-  last_seen_at INTEGER NOT NULL
+  id                     TEXT PRIMARY KEY,
+  exam_type              TEXT NOT NULL,
+  token                  TEXT NOT NULL UNIQUE,
+  theme                  TEXT NOT NULL DEFAULT 'system',
+  font_scale             REAL NOT NULL DEFAULT 1.0,
+  created_at             INTEGER NOT NULL,
+  last_seen_at           INTEGER NOT NULL,
+  last_reminder_sent_at  INTEGER                  -- last admin-sent "stalled buyer" re-engagement email
 );
 CREATE INDEX idx_users_token ON users(token);
 
