@@ -786,11 +786,28 @@ const DIFFICULTY_CASE = `CASE
     ELSE 'extremely_hard'
   END`;
 
+// Chance any given pick interleaves a missed question in ahead of the unseen pool, instead of
+// strictly deferring all review until every unseen question is exhausted. With a large bank (this
+// one has 1000+ questions), "unseen-first, missed-only-once-exhausted" means a wrong answer could
+// go unrevisited for a very long time -- mirrors how spaced-repetition apps (Anki, Duolingo, etc.)
+// mix review into new content rather than batching it at the end.
+const MISSED_INTERLEAVE_CHANCE = 0.3;
+
 async function findNextQuestionRow(env, user, difficulty) {
   const cte = difficulty ? DIFFICULTY_CTE : '';
   const diffJoin = difficulty ? 'LEFT JOIN q_stats qs ON qs.question_id = q.id' : '';
   const diffFilter = difficulty ? `AND (${DIFFICULTY_CASE}) = ?` : '';
   const diffArgs = difficulty ? [difficulty] : [];
+
+  const pickMissed = () => env.DB.prepare(
+    `${cte}SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin}
+     WHERE p.user_id = ? AND p.last_result = 'incorrect' ${diffFilter} ORDER BY RANDOM() LIMIT 1`
+  ).bind(user.id, ...diffArgs).first();
+
+  if (Math.random() < MISSED_INTERLEAVE_CHANCE) {
+    const interleaved = await pickMissed();
+    if (interleaved) return interleaved;
+  }
 
   const unseen = await env.DB.prepare(
     `${cte}SELECT q.* FROM questions q LEFT JOIN progress p ON p.question_id = q.id AND p.user_id = ? ${diffJoin}
@@ -798,10 +815,7 @@ async function findNextQuestionRow(env, user, difficulty) {
   ).bind(user.id, user.exam_type, ...diffArgs).first();
   if (unseen) return unseen;
 
-  const missed = await env.DB.prepare(
-    `${cte}SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin}
-     WHERE p.user_id = ? AND p.last_result = 'incorrect' ${diffFilter} ORDER BY RANDOM() LIMIT 1`
-  ).bind(user.id, ...diffArgs).first();
+  const missed = await pickMissed();
   if (missed) return missed;
 
   const review = await env.DB.prepare(
