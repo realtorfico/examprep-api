@@ -860,6 +860,13 @@ function progressUpsertStmt(env, userId, questionId, choice, correctChoice, at) 
   ).bind(userId, questionId, correct ? 1 : 0, correct ? 'correct' : 'incorrect', choice || null, at);
 }
 
+async function progressTotals(env, userId) {
+  return env.DB.prepare(
+    `SELECT COUNT(*) AS total, SUM(CASE WHEN last_result = 'correct' THEN 1 ELSE 0 END) AS correct
+     FROM progress WHERE user_id = ?`
+  ).bind(userId).first();
+}
+
 async function handleAnswer(user, request, env) {
   const { questionId, choice } = await request.json();
   const q = await env.DB.prepare('SELECT * FROM questions WHERE id = ?').bind(questionId).first();
@@ -867,14 +874,25 @@ async function handleAnswer(user, request, env) {
 
   await progressUpsertStmt(env, user.id, questionId, choice, q.correct_choice, now()).run();
 
-  return json({ correct: choice === q.correct_choice, correctChoice: q.correct_choice, explanation: q.explanation });
+  // Fresh totals in the same response -- lets the quiz's live stats bar update instantly without
+  // a second round-trip (see /progress/summary for the once-per-quiz-view initial fetch instead).
+  const totals = await progressTotals(env, user.id);
+
+  return json({
+    correct: choice === q.correct_choice, correctChoice: q.correct_choice, explanation: q.explanation,
+    totalAnswered: totals.total || 0, totalCorrect: totals.correct || 0,
+  });
+}
+
+// Lightweight totals-only fetch for the quiz's live stats bar -- avoids pulling the full
+// /progress payload (byTopic + every wrong question's full text) just to show 4 numbers.
+async function handleProgressSummary(user, env) {
+  const totals = await progressTotals(env, user.id);
+  return json({ totalAnswered: totals.total || 0, totalCorrect: totals.correct || 0 });
 }
 
 async function handleProgress(user, env) {
-  const totals = await env.DB.prepare(
-    `SELECT COUNT(*) AS total, SUM(CASE WHEN last_result = 'correct' THEN 1 ELSE 0 END) AS correct
-     FROM progress WHERE user_id = ?`
-  ).bind(user.id).first();
+  const totals = await progressTotals(env, user.id);
 
   const byTopic = await env.DB.prepare(
     `SELECT q.topic, COUNT(*) AS total, SUM(CASE WHEN p.last_result = 'correct' THEN 1 ELSE 0 END) AS correct
@@ -1497,6 +1515,7 @@ export default {
       if (pathname === '/questions/next' && method === 'GET') return await handleNextQuestion(user, env, url.searchParams.get('difficulty'));
       if (pathname === '/answer' && method === 'POST') return await handleAnswer(user, request, env);
       if (pathname === '/progress' && method === 'GET') return await handleProgress(user, env);
+      if (pathname === '/progress/summary' && method === 'GET') return await handleProgressSummary(user, env);
       if (pathname === '/progress/reset' && method === 'POST') return await handleProgressReset(user, request, env);
       if (pathname === '/resources/progress' && method === 'GET') return await handleResourceProgressGet(user, env);
       if (pathname === '/resources/progress' && method === 'POST') return await handleResourceProgressUpdate(user, request, env);
