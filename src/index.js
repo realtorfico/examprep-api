@@ -899,8 +899,11 @@ async function handleProgressSummary(user, env) {
 async function handleProgress(user, env) {
   const totals = await progressTotals(env, user.id);
 
+  // Cumulative attempts (times_seen/times_correct), matching progressTotals above -- these two
+  // must agree, since the Progress tab shows the byTopic breakdown right under the headline totals
+  // and their totals need to sum to the same number.
   const byTopic = await env.DB.prepare(
-    `SELECT q.topic, COUNT(*) AS total, SUM(CASE WHEN p.last_result = 'correct' THEN 1 ELSE 0 END) AS correct
+    `SELECT q.topic, SUM(p.times_seen) AS total, SUM(p.times_correct) AS correct
      FROM progress p JOIN questions q ON q.id = p.question_id
      WHERE p.user_id = ? GROUP BY q.topic`
   ).bind(user.id).all();
@@ -1022,13 +1025,14 @@ async function handleConsoleResourceProgressList(env) {
   return json({ items: rows });
 }
 
-// Per-user, per-topic quiz accuracy -- the same shape as the student's own /progress
-// endpoint's byTopic, just grouped by user_id too instead of scoped to one caller. Admin groups
-// these rows client-side into one card per user, mirroring resource-progress above.
+// Per-user, per-topic quiz accuracy -- the same shape (and now the same cumulative-attempts math,
+// see progressTotals) as the student's own /progress endpoint's byTopic, just grouped by user_id
+// too instead of scoped to one caller. Admin groups these rows client-side into one card per user,
+// mirroring resource-progress above.
 async function handleConsoleQuizProgressList(env) {
   const rows = (await env.DB.prepare(
     `SELECT p.user_id, u.exam_type, c.code, c.buyer_email, q.topic,
-            COUNT(*) AS total, SUM(CASE WHEN p.last_result = 'correct' THEN 1 ELSE 0 END) AS correct
+            SUM(p.times_seen) AS total, SUM(p.times_correct) AS correct
      FROM progress p
      JOIN questions q ON q.id = p.question_id
      JOIN users u ON u.id = p.user_id
@@ -1447,8 +1451,7 @@ async function handleStats(env) {
   ).all();
   const users = await env.DB.prepare('SELECT COUNT(*) AS n FROM users').first();
   const accuracy = await env.DB.prepare(
-    `SELECT q.exam_type, q.topic, COUNT(*) AS attempts,
-       SUM(CASE WHEN p.last_result = 'correct' THEN 1 ELSE 0 END) AS correct
+    `SELECT q.exam_type, q.topic, SUM(p.times_seen) AS attempts, SUM(p.times_correct) AS correct
      FROM progress p JOIN questions q ON q.id = p.question_id
      GROUP BY q.exam_type, q.topic`
   ).all();
