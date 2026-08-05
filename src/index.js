@@ -3,6 +3,7 @@ import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
 import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
+import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL } from './progressQueries.js';
 
 function json(data, status = 200) {
   return Response.json(data, { status, headers: { 'cache-control': 'no-store' } });
@@ -865,11 +866,9 @@ function progressUpsertStmt(env, userId, questionId, choice, correctChoice, at) 
 // in findNextQuestionRow) must still count as another wrong attempt, even though its row's
 // last_result was already 'incorrect' going in. COUNT(*)/last_result-based totals silently ate
 // exactly that case (Wrong looked stuck) since a resurfaced miss doesn't add a new progress row.
+// SQL lives in progressQueries.js (shared with byTopic/admin queries + the consistency test).
 async function progressTotals(env, userId) {
-  return env.DB.prepare(
-    `SELECT SUM(times_seen) AS total, SUM(times_correct) AS correct
-     FROM progress WHERE user_id = ?`
-  ).bind(userId).first();
+  return env.DB.prepare(PROGRESS_TOTALS_SQL).bind(userId).first();
 }
 
 async function handleAnswer(user, request, env) {
@@ -902,11 +901,7 @@ async function handleProgress(user, env) {
   // Cumulative attempts (times_seen/times_correct), matching progressTotals above -- these two
   // must agree, since the Progress tab shows the byTopic breakdown right under the headline totals
   // and their totals need to sum to the same number.
-  const byTopic = await env.DB.prepare(
-    `SELECT q.topic, SUM(p.times_seen) AS total, SUM(p.times_correct) AS correct
-     FROM progress p JOIN questions q ON q.id = p.question_id
-     WHERE p.user_id = ? GROUP BY q.topic`
-  ).bind(user.id).all();
+  const byTopic = await env.DB.prepare(PROGRESS_BY_TOPIC_SQL).bind(user.id).all();
 
   // Only questions currently sitting at "incorrect" as of the user's last attempt -- a question
   // missed once but since answered correctly again isn't shown, same "current state" idea as the
@@ -1030,16 +1025,7 @@ async function handleConsoleResourceProgressList(env) {
 // too instead of scoped to one caller. Admin groups these rows client-side into one card per user,
 // mirroring resource-progress above.
 async function handleConsoleQuizProgressList(env) {
-  const rows = (await env.DB.prepare(
-    `SELECT p.user_id, u.exam_type, c.code, c.buyer_email, q.topic,
-            SUM(p.times_seen) AS total, SUM(p.times_correct) AS correct
-     FROM progress p
-     JOIN questions q ON q.id = p.question_id
-     JOIN users u ON u.id = p.user_id
-     LEFT JOIN codes c ON c.redeemed_by = u.id
-     GROUP BY p.user_id, q.topic
-     ORDER BY p.user_id`
-  ).all()).results;
+  const rows = (await env.DB.prepare(CONSOLE_QUIZ_PROGRESS_SQL).all()).results;
   return json({ items: rows });
 }
 
@@ -1450,11 +1436,7 @@ async function handleStats(env) {
     `SELECT exam_type, status, COUNT(*) AS n FROM codes GROUP BY exam_type, status`
   ).all();
   const users = await env.DB.prepare('SELECT COUNT(*) AS n FROM users').first();
-  const accuracy = await env.DB.prepare(
-    `SELECT q.exam_type, q.topic, SUM(p.times_seen) AS attempts, SUM(p.times_correct) AS correct
-     FROM progress p JOIN questions q ON q.id = p.question_id
-     GROUP BY q.exam_type, q.topic`
-  ).all();
+  const accuracy = await env.DB.prepare(STATS_ACCURACY_BY_TOPIC_SQL).all();
   return json({ codes: codes.results, totalUsers: users.n, accuracyByTopic: accuracy.results });
 }
 

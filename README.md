@@ -12,6 +12,12 @@ Cloudflare Worker + D1, no framework, no build step.
    Service Binding to this Worker (`examprep-api`), so their `worker.js` can call it same-origin
    without any public hostname on this Worker.
 
+## Tests
+`node --test test/progress-consistency.test.js` — runs against an in-memory DB via Node's
+built-in `node:sqlite` (no wrangler/workerd needed, which matters since this repo can't run those
+locally on this machine). Currently just the progress-totals consistency check from the
+2026-08-05 admin-vs-site counter bug; add more test files under `test/` as needed.
+
 ## Routes
 Public (bearer token, minted by `/redeem`): `/questions/next`, `/answer`, `/progress`, `/prefs`.
 Admin (Cloudflare Access-gated): `/console/codes`, `/console/codes/generate`, `/console/codes/revoke`,
