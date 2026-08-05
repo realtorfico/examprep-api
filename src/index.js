@@ -860,9 +860,14 @@ function progressUpsertStmt(env, userId, questionId, choice, correctChoice, at) 
   ).bind(userId, questionId, correct ? 1 : 0, correct ? 'correct' : 'incorrect', choice || null, at);
 }
 
+// Cumulative attempt counts (times_seen/times_correct), NOT distinct-question current-state --
+// a question you've missed before and miss again on a resurfaced attempt (see MISSED_INTERLEAVE_CHANCE
+// in findNextQuestionRow) must still count as another wrong attempt, even though its row's
+// last_result was already 'incorrect' going in. COUNT(*)/last_result-based totals silently ate
+// exactly that case (Wrong looked stuck) since a resurfaced miss doesn't add a new progress row.
 async function progressTotals(env, userId) {
   return env.DB.prepare(
-    `SELECT COUNT(*) AS total, SUM(CASE WHEN last_result = 'correct' THEN 1 ELSE 0 END) AS correct
+    `SELECT SUM(times_seen) AS total, SUM(times_correct) AS correct
      FROM progress WHERE user_id = ?`
   ).bind(userId).first();
 }
