@@ -163,8 +163,8 @@ CREATE TABLE app_settings (
 -- A single timed practice-exam sitting: question set + duration are frozen at start_at so the
 -- clock (server-authoritative, not client-trusted) and question list can't be gamed by
 -- refreshing, and answers accumulate here so a refresh mid-sitting can resume in place.
--- One in-progress (submitted_at IS NULL) attempt per user+exam_type is enforced in code, not a
--- constraint, since "in progress" also depends on whether time has run out.
+-- One in-progress (submitted_at IS NULL) attempt per user+exam_type+mode is enforced in code, not
+-- a constraint, since "in progress" also depends on whether time has run out.
 CREATE TABLE exam_attempts (
   id            TEXT PRIMARY KEY,
   user_id       TEXT NOT NULL REFERENCES users(id),
@@ -175,7 +175,14 @@ CREATE TABLE exam_attempts (
   started_at    INTEGER NOT NULL,
   submitted_at  INTEGER,
   score_correct INTEGER,
-  score_total   INTEGER
+  score_total   INTEGER,
+  mode          TEXT NOT NULL DEFAULT 'standard' -- 'standard' | 'toughest45' (questions drawn from
+                                                  -- the user's own missed questions -- see
+                                                  -- pickToughest45Questions in index.js); tracked
+                                                  -- separately from 'standard' everywhere (history,
+                                                  -- in-progress lookup, Progress tab) so a harder,
+                                                  -- non-representative attempt never mixes into the
+                                                  -- regular exam's stats.
 );
 CREATE INDEX idx_exam_attempts_user ON exam_attempts(user_id);
 

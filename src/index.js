@@ -973,7 +973,7 @@ async function handleResourceProgressGet(user, env) {
 
 async function handleConsoleExamAttemptsList(env) {
   const rows = (await env.DB.prepare(
-    `SELECT ea.id, ea.user_id, ea.exam_type, ea.score_correct, ea.score_total, ea.started_at, ea.submitted_at,
+    `SELECT ea.id, ea.user_id, ea.exam_type, ea.mode, ea.score_correct, ea.score_total, ea.started_at, ea.submitted_at,
             c.code, c.buyer_email
      FROM exam_attempts ea
      JOIN users u ON u.id = ea.user_id
@@ -986,7 +986,7 @@ async function handleConsoleExamAttemptsList(env) {
       const config = getExamConfig(r.exam_type);
       const percent = r.score_total ? Math.round((r.score_correct / r.score_total) * 1000) / 10 : 0;
       return {
-        attemptId: r.id, userId: r.user_id, examType: r.exam_type, code: r.code, buyerEmail: r.buyer_email,
+        attemptId: r.id, userId: r.user_id, examType: r.exam_type, mode: r.mode, code: r.code, buyerEmail: r.buyer_email,
         correct: r.score_correct, total: r.score_total, percent, passed: percent >= config.passPercent,
         startedAt: r.started_at, submittedAt: r.submitted_at,
       };
@@ -1102,10 +1102,43 @@ async function attemptToClientShape(env, attempt) {
   const questionIds = JSON.parse(attempt.question_ids);
   const byId = await fetchQuestionsByIds(env, questionIds);
   return {
-    attemptId: attempt.id, examType: attempt.exam_type,
+    attemptId: attempt.id, examType: attempt.exam_type, mode: attempt.mode,
     questions: questionIds.map((id) => byId[id]).filter(Boolean).map(toPublicQuestion),
     answers: JSON.parse(attempt.answers), durationSec: attempt.duration_sec, startedAt: attempt.started_at,
   };
+}
+
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// "Toughest 45" question selection: every question the user is currently missing (last_result =
+// 'incorrect', same current-state definition as the quiz's own missed-question picker), topped up
+// with random questions from the general pool if there are fewer than a full exam's worth --
+// never fewer than the standard exam's question count, just harder-weighted toward actual gaps.
+async function pickToughest45Questions(env, user, config) {
+  const wrongRows = (await env.DB.prepare(
+    `SELECT q.id FROM questions q JOIN progress p ON p.question_id = q.id
+     WHERE p.user_id = ? AND p.last_result = 'incorrect' AND q.exam_type = ?
+     ORDER BY RANDOM() LIMIT ?`
+  ).bind(user.id, user.exam_type, config.questionCount).all()).results;
+
+  const wrongIds = wrongRows.map((r) => r.id);
+  const remaining = config.questionCount - wrongIds.length;
+  let backfillIds = [];
+  if (remaining > 0) {
+    const exclusion = wrongIds.length ? `AND id NOT IN (${wrongIds.map(() => '?').join(',')})` : '';
+    const backfillRows = (await env.DB.prepare(
+      `SELECT id FROM questions WHERE exam_type = ? ${exclusion} ORDER BY RANDOM() LIMIT ?`
+    ).bind(user.exam_type, ...wrongIds, remaining).all()).results;
+    backfillIds = backfillRows.map((r) => r.id);
+  }
+  return shuffle(wrongIds.concat(backfillIds));
 }
 
 function buildExamResult(examType, questionIds, answers, byId, correct, total, startedAt, submittedAt, durationSec) {
@@ -1127,40 +1160,47 @@ function buildExamResult(examType, questionIds, answers, byId, correct, total, s
   };
 }
 
-async function findInProgressAttempt(user, env) {
+async function findInProgressAttempt(user, env, mode) {
   const existing = await env.DB.prepare(
-    `SELECT * FROM exam_attempts WHERE user_id = ? AND exam_type = ? AND submitted_at IS NULL
+    `SELECT * FROM exam_attempts WHERE user_id = ? AND exam_type = ? AND mode = ? AND submitted_at IS NULL
      ORDER BY started_at DESC LIMIT 1`
-  ).bind(user.id, user.exam_type).first();
+  ).bind(user.id, user.exam_type, mode).first();
   if (!existing || existing.started_at + existing.duration_sec <= now()) return null;
   return existing;
 }
 
-async function handleExamCurrent(user, env) {
-  const attempt = await findInProgressAttempt(user, env);
+async function handleExamCurrent(user, request, env) {
+  const url = new URL(request.url);
+  const mode = url.searchParams.get('mode') === 'toughest45' ? 'toughest45' : 'standard';
+  const attempt = await findInProgressAttempt(user, env, mode);
   return json({ attempt: attempt ? await attemptToClientShape(env, attempt) : null });
 }
 
-async function handleExamStart(user, env) {
+async function handleExamStart(user, request, env) {
+  const body = await request.json().catch(() => ({}));
+  const mode = body.mode === 'toughest45' ? 'toughest45' : 'standard';
+
   // Resume rather than restart -- a refresh or re-visit mid-sitting must not hand out a
-  // fresh, easier random question set or reset the clock.
-  const existing = await findInProgressAttempt(user, env);
+  // fresh, easier random question set or reset the clock. Tracked separately per mode, so a
+  // standard exam and a Toughest 45 can each have their own in-progress sitting at once.
+  const existing = await findInProgressAttempt(user, env, mode);
   if (existing) return json(await attemptToClientShape(env, existing));
 
   const config = getExamConfig(user.exam_type);
-  const picked = (await env.DB.prepare(
-    'SELECT id FROM questions WHERE exam_type = ? ORDER BY RANDOM() LIMIT ?'
-  ).bind(user.exam_type, config.questionCount).all()).results;
-  if (!picked.length) return json({ error: 'no_questions' }, 404);
+  const questionIds = mode === 'toughest45'
+    ? await pickToughest45Questions(env, user, config)
+    : (await env.DB.prepare('SELECT id FROM questions WHERE exam_type = ? ORDER BY RANDOM() LIMIT ?')
+        .bind(user.exam_type, config.questionCount).all()).results.map((r) => r.id);
+  if (!questionIds.length) return json({ error: 'no_questions' }, 404);
 
   const attempt = {
-    id: newId(), question_ids: JSON.stringify(picked.map((r) => r.id)), answers: '{}',
-    duration_sec: config.durationSec, started_at: now(),
+    id: newId(), question_ids: JSON.stringify(questionIds), answers: '{}',
+    duration_sec: config.durationSec, started_at: now(), mode,
   };
   await env.DB.prepare(
-    `INSERT INTO exam_attempts (id, user_id, exam_type, question_ids, answers, duration_sec, started_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?)`
-  ).bind(attempt.id, user.id, user.exam_type, attempt.question_ids, attempt.answers, attempt.duration_sec, attempt.started_at).run();
+    `INSERT INTO exam_attempts (id, user_id, exam_type, question_ids, answers, duration_sec, started_at, mode)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+  ).bind(attempt.id, user.id, user.exam_type, attempt.question_ids, attempt.answers, attempt.duration_sec, attempt.started_at, mode).run();
 
   return json(await attemptToClientShape(env, { ...attempt, user_id: user.id, exam_type: user.exam_type }));
 }
@@ -1211,9 +1251,10 @@ async function handleExamSubmit(user, request, env) {
     correctCount, questionIds.length, attempt.started_at, submittedAt, attempt.duration_sec);
 
   const codeRow = await env.DB.prepare('SELECT code, buyer_email FROM codes WHERE redeemed_by = ?').bind(user.id).first();
+  const modeLabel = attempt.mode === 'toughest45' ? 'Toughest 45' : 'mock';
   await notifyAdmin(env, 'Mock exam completed',
     `<p><strong>${(codeRow && (codeRow.buyer_email || codeRow.code)) || 'A user'}</strong> completed a ${attempt.exam_type} ` +
-    `mock exam: ${correctCount}/${questionIds.length} (${result.percent}%) — ${result.passed ? 'passed' : 'did not pass'}.</p>`);
+    `${modeLabel} exam: ${correctCount}/${questionIds.length} (${result.percent}%) — ${result.passed ? 'passed' : 'did not pass'}.</p>`);
 
   return json(result);
 }
@@ -1221,11 +1262,14 @@ async function handleExamSubmit(user, request, env) {
 // Every submitted attempt (question set, answers, score) is already persisted in exam_attempts --
 // this just surfaces it so a user can browse past sittings and revisit what they got wrong,
 // reusing the same review shape buildExamResult already produces for a just-submitted exam.
-async function handleExamHistory(user, env) {
+// mode-scoped so Toughest 45 attempts never mix into the regular exam's history/stats or vice versa.
+async function handleExamHistory(user, request, env) {
+  const url = new URL(request.url);
+  const mode = url.searchParams.get('mode') === 'toughest45' ? 'toughest45' : 'standard';
   const rows = (await env.DB.prepare(
     `SELECT id, exam_type, score_correct, score_total, started_at, submitted_at FROM exam_attempts
-     WHERE user_id = ? AND submitted_at IS NOT NULL ORDER BY submitted_at DESC LIMIT 50`
-  ).bind(user.id).all()).results;
+     WHERE user_id = ? AND mode = ? AND submitted_at IS NOT NULL ORDER BY submitted_at DESC LIMIT 50`
+  ).bind(user.id, mode).all()).results;
   return json({
     attempts: rows.map((r) => {
       const config = getExamConfig(r.exam_type);
@@ -1510,11 +1554,11 @@ export default {
       if (pathname === '/resources/progress' && method === 'GET') return await handleResourceProgressGet(user, env);
       if (pathname === '/resources/progress' && method === 'POST') return await handleResourceProgressUpdate(user, request, env);
       if (pathname === '/exam/config' && method === 'GET') return await handleExamConfig(request, env);
-      if (pathname === '/exam/current' && method === 'GET') return await handleExamCurrent(user, env);
-      if (pathname === '/exam/start' && method === 'POST') return await handleExamStart(user, env);
+      if (pathname === '/exam/current' && method === 'GET') return await handleExamCurrent(user, request, env);
+      if (pathname === '/exam/start' && method === 'POST') return await handleExamStart(user, request, env);
       if (pathname === '/exam/answer' && method === 'POST') return await handleExamAnswer(user, request, env);
       if (pathname === '/exam/submit' && method === 'POST') return await handleExamSubmit(user, request, env);
-      if (pathname === '/exam/history' && method === 'GET') return await handleExamHistory(user, env);
+      if (pathname === '/exam/history' && method === 'GET') return await handleExamHistory(user, request, env);
       if (pathname === '/exam/attempt' && method === 'GET') return await handleExamAttemptDetail(user, request, env);
       if (pathname === '/prefs' && method === 'GET') return await handlePrefsGet(user);
       if (pathname === '/prefs' && method === 'POST') return await handlePrefsSet(user, request, env);
