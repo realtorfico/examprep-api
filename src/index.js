@@ -1117,28 +1117,18 @@ function shuffle(arr) {
   return a;
 }
 
-// "Toughest 45" question selection: every question the user is currently missing (last_result =
-// 'incorrect', same current-state definition as the quiz's own missed-question picker), topped up
-// with random questions from the general pool if there are fewer than a full exam's worth --
-// never fewer than the standard exam's question count, just harder-weighted toward actual gaps.
+// "Toughest 45" question selection: ONLY questions the user is currently missing (last_result =
+// 'incorrect', same current-state definition as the quiz's own missed-question picker) -- no
+// backfill from the general pool. Up to config.questionCount, but can come back with fewer (or
+// zero, if nothing is currently missed) -- callers must handle a shorter-than-usual, or empty,
+// question set.
 async function pickToughest45Questions(env, user, config) {
   const wrongRows = (await env.DB.prepare(
     `SELECT q.id FROM questions q JOIN progress p ON p.question_id = q.id
      WHERE p.user_id = ? AND p.last_result = 'incorrect' AND q.exam_type = ?
      ORDER BY RANDOM() LIMIT ?`
   ).bind(user.id, user.exam_type, config.questionCount).all()).results;
-
-  const wrongIds = wrongRows.map((r) => r.id);
-  const remaining = config.questionCount - wrongIds.length;
-  let backfillIds = [];
-  if (remaining > 0) {
-    const exclusion = wrongIds.length ? `AND id NOT IN (${wrongIds.map(() => '?').join(',')})` : '';
-    const backfillRows = (await env.DB.prepare(
-      `SELECT id FROM questions WHERE exam_type = ? ${exclusion} ORDER BY RANDOM() LIMIT ?`
-    ).bind(user.exam_type, ...wrongIds, remaining).all()).results;
-    backfillIds = backfillRows.map((r) => r.id);
-  }
-  return shuffle(wrongIds.concat(backfillIds));
+  return shuffle(wrongRows.map((r) => r.id));
 }
 
 function buildExamResult(examType, questionIds, answers, byId, correct, total, startedAt, submittedAt, durationSec) {
