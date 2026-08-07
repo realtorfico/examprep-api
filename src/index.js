@@ -271,9 +271,9 @@ async function getMinPaypalChargeCents(env) {
 }
 
 // Color thresholds for the Progress tab's headline Accuracy/Coverage stat boxes (admin-editable in
-// examprep-admin's Settings tab) -- green/bold at or above, red/bold below. Separate from the
-// per-topic table's own fixed 70%/50% thresholds, which track the exam's own pass percent rather
-// than this "how am I doing overall" summary.
+// examprep-admin's Settings tab) -- green/bold at or above, red/bold below. The per-topic table's
+// own Coverage column uses this same admin-configured coveragePassPct; its Accuracy column still
+// uses a fixed 70% (the exam's own pass percent), which is intentionally different.
 const DEFAULT_PROGRESS_ACCURACY_PASS_PCT = 80;
 const DEFAULT_PROGRESS_COVERAGE_PASS_PCT = 50;
 
@@ -1050,7 +1050,8 @@ async function handleConsoleResourceProgressList(env) {
 // mirroring resource-progress above.
 async function handleConsoleQuizProgressList(env) {
   const rows = (await env.DB.prepare(CONSOLE_QUIZ_PROGRESS_SQL).all()).results;
-  return json({ items: rows });
+  const { accuracyPassPct, coveragePassPct } = await getProgressPassPcts(env);
+  return json({ items: rows, accuracyPassPct, coveragePassPct });
 }
 
 // ---- Re-engagement: stalled buyers --------------------------------------
