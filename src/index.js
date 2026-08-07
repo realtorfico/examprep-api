@@ -270,6 +270,26 @@ async function getMinPaypalChargeCents(env) {
   return Number.isFinite(cents) && cents >= 0 ? cents : DEFAULT_MIN_PAYPAL_CHARGE_CENTS;
 }
 
+// Color thresholds for the Progress tab's headline Accuracy/Coverage stat boxes (admin-editable in
+// examprep-admin's Settings tab) -- green/bold at or above, red/bold below. Separate from the
+// per-topic table's own fixed 70%/50% thresholds, which track the exam's own pass percent rather
+// than this "how am I doing overall" summary.
+const DEFAULT_PROGRESS_ACCURACY_PASS_PCT = 80;
+const DEFAULT_PROGRESS_COVERAGE_PASS_PCT = 50;
+
+async function getProgressPassPcts(env) {
+  const [accuracyRaw, coverageRaw] = await Promise.all([
+    getAppSetting(env, 'progress_accuracy_pass_pct', String(DEFAULT_PROGRESS_ACCURACY_PASS_PCT)),
+    getAppSetting(env, 'progress_coverage_pass_pct', String(DEFAULT_PROGRESS_COVERAGE_PASS_PCT)),
+  ]);
+  const accuracyPassPct = parseInt(accuracyRaw, 10);
+  const coveragePassPct = parseInt(coverageRaw, 10);
+  return {
+    accuracyPassPct: Number.isFinite(accuracyPassPct) ? accuracyPassPct : DEFAULT_PROGRESS_ACCURACY_PASS_PCT,
+    coveragePassPct: Number.isFinite(coveragePassPct) ? coveragePassPct : DEFAULT_PROGRESS_COVERAGE_PASS_PCT,
+  };
+}
+
 async function handlePricingGet(request, env) {
   const url = new URL(request.url);
   const examType = url.searchParams.get('examType') || 'notary';
@@ -897,6 +917,7 @@ async function handleProgressSummary(user, env) {
 
 async function handleProgress(user, env) {
   const totals = await progressTotals(env, user.id);
+  const { accuracyPassPct, coveragePassPct } = await getProgressPassPcts(env);
 
   // Cumulative attempts (times_seen/times_correct), matching progressTotals above -- these two
   // must agree, since the Progress tab shows the byTopic breakdown right under the headline totals
@@ -917,6 +938,8 @@ async function handleProgress(user, env) {
   return json({
     totalAnswered: totals.total || 0,
     totalCorrect: totals.correct || 0,
+    accuracyPassPct,
+    coveragePassPct,
     byTopic: byTopic.results,
     wrongQuestions: wrong.results.map((q) => ({
       id: q.id, topic: q.topic, question: q.question,
