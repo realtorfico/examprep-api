@@ -3,7 +3,7 @@ import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
 import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
-import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL } from './progressQueries.js';
+import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL } from './progressQueries.js';
 
 function json(data, status = 200) {
   return Response.json(data, { status, headers: { 'cache-control': 'no-store' } });
@@ -962,6 +962,45 @@ async function handleProgressReset(user, request, env) {
   return json({ ok: true, scope });
 }
 
+// ---- Leaderboard ---------------------------------------------------------
+// Top 3 by accuracy and top 3 by coverage, same exam_type (track) as the requesting user only --
+// never crosses tracks, since a DRE user's accuracy isn't comparable to a notary user's. Must have
+// answered at least MIN_LEADERBOARD_QUESTIONS questions to qualify, so a single lucky question
+// can't top the accuracy list. Codes are masked (not full identity) since this is visible to any
+// other student on the same track, not just admin. Returns the union of both top-3 sets (not just
+// whichever the caller asked for) so the client can toggle sort order without a second round-trip.
+const MIN_LEADERBOARD_QUESTIONS = 20;
+
+function maskLeaderboardCode(code) {
+  if (!code) return 'Anonymous';
+  const parts = code.split('-');
+  const first = parts[0] ? parts[0][0] + '*'.repeat(parts[0].length - 1) : '';
+  const second = parts[1] ? '*'.repeat(parts[1].length) : '';
+  return second ? first + '-' + second : first;
+}
+
+async function handleLeaderboard(user, env) {
+  const rows = (await env.DB.prepare(LEADERBOARD_SQL).bind(user.exam_type).all()).results;
+  const ranked = rows
+    .map((r) => ({
+      id: r.user_id,
+      code: maskLeaderboardCode(r.code),
+      total: r.total,
+      accuracy: r.total ? Math.round((100 * r.correct) / r.total) : 0,
+      coverage: r.topicTotal ? Math.round((100 * r.seen) / r.topicTotal) : 0,
+    }))
+    .filter((r) => r.total >= MIN_LEADERBOARD_QUESTIONS);
+
+  const topByAccuracy = ranked.slice().sort((a, b) => b.accuracy - a.accuracy).slice(0, 3);
+  const topByCoverage = ranked.slice().sort((a, b) => b.coverage - a.coverage).slice(0, 3);
+  const seenIds = new Set();
+  const combined = topByAccuracy.concat(topByCoverage)
+    .filter((r) => (seenIds.has(r.id) ? false : (seenIds.add(r.id), true)))
+    .map((r) => ({ code: r.code, total: r.total, accuracy: r.accuracy, coverage: r.coverage }));
+
+  return json({ minQuestions: MIN_LEADERBOARD_QUESTIONS, users: combined });
+}
+
 // ---- Resource consumption tracking -------------------------------------
 // Best-effort, per-user record of what study resources have been opened and (for audio/video)
 // how much of them was actually watched/listened to -- surfaced back to the user on their own
@@ -1051,7 +1090,7 @@ async function handleConsoleResourceProgressList(env) {
 async function handleConsoleQuizProgressList(env) {
   const rows = (await env.DB.prepare(CONSOLE_QUIZ_PROGRESS_SQL).all()).results;
   const { accuracyPassPct, coveragePassPct } = await getProgressPassPcts(env);
-  return json({ items: rows, accuracyPassPct, coveragePassPct });
+  return json({ items: rows, accuracyPassPct, coveragePassPct, leaderboardMinQuestions: MIN_LEADERBOARD_QUESTIONS });
 }
 
 // ---- Re-engagement: stalled buyers --------------------------------------
@@ -1585,6 +1624,7 @@ export default {
       if (pathname === '/progress' && method === 'GET') return await handleProgress(user, env);
       if (pathname === '/progress/summary' && method === 'GET') return await handleProgressSummary(user, env);
       if (pathname === '/progress/reset' && method === 'POST') return await handleProgressReset(user, request, env);
+      if (pathname === '/leaderboard' && method === 'GET') return await handleLeaderboard(user, env);
       if (pathname === '/resources/progress' && method === 'GET') return await handleResourceProgressGet(user, env);
       if (pathname === '/resources/progress' && method === 'POST') return await handleResourceProgressUpdate(user, request, env);
       if (pathname === '/exam/config' && method === 'GET') return await handleExamConfig(request, env);
