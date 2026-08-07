@@ -1131,6 +1131,20 @@ async function pickToughest45Questions(env, user, config) {
   return shuffle(wrongRows.map((r) => r.id));
 }
 
+// Regular exam's "unseen only" toggle: questions with no progress row at all for this user (never
+// answered in quiz or exam). Same no-backfill rule as Toughest 45 -- up to config.questionCount,
+// can come back with fewer or zero. Still recorded as a normal mode:'standard' attempt (unlike
+// Toughest 45, this isn't tracked separately -- it's still a representative exam sitting, just
+// biased toward coverage of the bank).
+async function pickUnseenQuestions(env, user, config) {
+  const rows = (await env.DB.prepare(
+    `SELECT id FROM questions WHERE exam_type = ?
+     AND id NOT IN (SELECT question_id FROM progress WHERE user_id = ?)
+     ORDER BY RANDOM() LIMIT ?`
+  ).bind(user.exam_type, user.id, config.questionCount).all()).results;
+  return rows.map((r) => r.id);
+}
+
 function buildExamResult(examType, questionIds, answers, byId, correct, total, startedAt, submittedAt, durationSec) {
   const config = getExamConfig(examType);
   const percent = total ? Math.round((correct / total) * 1000) / 10 : 0;
@@ -1169,19 +1183,24 @@ async function handleExamCurrent(user, request, env) {
 async function handleExamStart(user, request, env) {
   const body = await request.json().catch(() => ({}));
   const mode = body.mode === 'toughest45' ? 'toughest45' : 'standard';
+  const unseenOnly = mode === 'standard' && body.unseenOnly === true;
 
   // Resume rather than restart -- a refresh or re-visit mid-sitting must not hand out a
   // fresh, easier random question set or reset the clock. Tracked separately per mode, so a
   // standard exam and a Toughest 45 can each have their own in-progress sitting at once.
+  // unseenOnly only affects selection at start time -- a resumed attempt just replays whatever
+  // question set was already frozen, regardless of the toggle's current state.
   const existing = await findInProgressAttempt(user, env, mode);
   if (existing) return json(await attemptToClientShape(env, existing));
 
   const config = getExamConfig(user.exam_type);
   const questionIds = mode === 'toughest45'
     ? await pickToughest45Questions(env, user, config)
-    : (await env.DB.prepare('SELECT id FROM questions WHERE exam_type = ? ORDER BY RANDOM() LIMIT ?')
-        .bind(user.exam_type, config.questionCount).all()).results.map((r) => r.id);
-  if (!questionIds.length) return json({ error: 'no_questions' }, 404);
+    : unseenOnly
+      ? await pickUnseenQuestions(env, user, config)
+      : (await env.DB.prepare('SELECT id FROM questions WHERE exam_type = ? ORDER BY RANDOM() LIMIT ?')
+          .bind(user.exam_type, config.questionCount).all()).results.map((r) => r.id);
+  if (!questionIds.length) return json({ error: unseenOnly ? 'no_unseen_questions' : 'no_questions' }, 404);
 
   const attempt = {
     id: newId(), question_ids: JSON.stringify(questionIds), answers: '{}',
