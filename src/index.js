@@ -272,10 +272,10 @@ async function getMinPaypalChargeCents(env) {
 
 // Color thresholds for the Progress tab's headline Accuracy/Coverage stat boxes (admin-editable in
 // examprep-admin's Settings tab) -- green/bold at or above, red/bold below. Also consumed by the
-// admin console's per-topic tables (both Accuracy and Coverage columns, User progress + Accuracy
-// by topic). The student site's own per-topic table is the one exception: its Accuracy column
-// stays a fixed 70% (the exam's own pass percent) by deliberate design, while its Coverage column
-// does use this admin-configured value.
+// student site's and admin console's own per-topic tables (both Accuracy and Coverage columns).
+// Deliberately separate from EXAM_CONFIGS[examType].passPercent, which grades actual mock exam
+// attempts against the real exam's own pass score -- that one is a fact about the real exam and is
+// NOT admin-configurable; these thresholds are purely a personal-progress display preference.
 const DEFAULT_PROGRESS_ACCURACY_PASS_PCT = 80;
 const DEFAULT_PROGRESS_COVERAGE_PASS_PCT = 50;
 
