@@ -1293,6 +1293,22 @@ async function handleExamAnswer(user, request, env) {
   return json({ ok: true });
 }
 
+// Lets a user abandon an in-progress attempt and start a clean one -- e.g. an interruption mid-
+// sitting they don't want counted. Just deletes the row outright (by design -- the user explicitly
+// wants it to vanish, not show up anywhere as an "abandoned" attempt). Safe to hard-delete with no
+// other cleanup: /exam/answer only ever writes to this row's own `answers` column, so an
+// unsubmitted attempt has no `progress` rows or anything else derived from it yet -- those are
+// only written on submit (see handleExamSubmit). Submitted attempts can't be discarded this way;
+// that's what Reset Progress is for.
+async function handleExamDiscard(user, request, env) {
+  const { attemptId } = await request.json();
+  const attempt = await env.DB.prepare('SELECT * FROM exam_attempts WHERE id = ? AND user_id = ?').bind(attemptId, user.id).first();
+  if (!attempt) return json({ error: 'attempt_not_found' }, 404);
+  if (attempt.submitted_at) return json({ error: 'already_submitted' }, 400);
+  await env.DB.prepare('DELETE FROM exam_attempts WHERE id = ?').bind(attemptId).run();
+  return json({ ok: true });
+}
+
 async function handleExamSubmit(user, request, env) {
   const { attemptId } = await request.json();
   const attempt = await env.DB.prepare('SELECT * FROM exam_attempts WHERE id = ? AND user_id = ?').bind(attemptId, user.id).first();
@@ -1633,6 +1649,7 @@ export default {
       if (pathname === '/exam/current' && method === 'GET') return await handleExamCurrent(user, request, env);
       if (pathname === '/exam/start' && method === 'POST') return await handleExamStart(user, request, env);
       if (pathname === '/exam/answer' && method === 'POST') return await handleExamAnswer(user, request, env);
+      if (pathname === '/exam/discard' && method === 'POST') return await handleExamDiscard(user, request, env);
       if (pathname === '/exam/submit' && method === 'POST') return await handleExamSubmit(user, request, env);
       if (pathname === '/exam/history' && method === 'GET') return await handleExamHistory(user, request, env);
       if (pathname === '/exam/attempt' && method === 'GET') return await handleExamAttemptDetail(user, request, env);
