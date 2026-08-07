@@ -59,7 +59,7 @@ function makeDb() {
 test('headline totals equal the sum of the byTopic breakdown for the same user', () => {
   const db = makeDb();
   const totals = db.prepare(PROGRESS_TOTALS_SQL).get('u1');
-  const byTopic = db.prepare(PROGRESS_BY_TOPIC_SQL).all('u1');
+  const byTopic = db.prepare(PROGRESS_BY_TOPIC_SQL).all('u1', 'notary');
 
   const topicTotal = byTopic.reduce((sum, row) => sum + row.total, 0);
   const topicCorrect = byTopic.reduce((sum, row) => sum + row.correct, 0);
@@ -68,6 +68,27 @@ test('headline totals equal the sum of the byTopic breakdown for the same user',
   assert.equal(totals.correct, 2, 'u1 got 1 + 0 + 1 = 2 of those attempts correct');
   assert.equal(topicTotal, totals.total, 'byTopic totals must sum to the headline total');
   assert.equal(topicCorrect, totals.correct, 'byTopic corrects must sum to the headline correct');
+});
+
+test('byTopic includes every topic in the exam, even ones the user has never touched (0% coverage)', () => {
+  const db = makeDb();
+  // q4 is a brand-new topic ('Bonds') u1 has never seen -- LEFT JOIN from questions must still
+  // surface it (seen: 0, topicTotal: 1), not silently omit it the way an INNER JOIN from progress
+  // would. This is the whole point of the coverage feature: a completely untouched topic is
+  // exactly the 0%-coverage case it needs to surface.
+  db.prepare('INSERT INTO questions VALUES (?, ?, ?)').run('q4', 'notary', 'Bonds');
+  const byTopic = db.prepare(PROGRESS_BY_TOPIC_SQL).all('u1', 'notary');
+
+  const bonds = byTopic.find((r) => r.topic === 'Bonds');
+  assert.ok(bonds, 'Bonds must appear in byTopic even though u1 has never attempted it');
+  assert.equal(bonds.seen, 0);
+  assert.equal(bonds.topicTotal, 1);
+  assert.equal(bonds.total, 0);
+  assert.equal(bonds.correct, 0);
+
+  const fees = byTopic.find((r) => r.topic === 'Fees');
+  assert.equal(fees.seen, 2, 'u1 has attempted both q1 and q2, the only two Fees questions');
+  assert.equal(fees.topicTotal, 2);
 });
 
 test('a resurfaced-then-corrected question still counts its earlier misses', () => {
@@ -89,6 +110,20 @@ test("admin's per-user per-topic view matches the student's own headline totals"
 
   assert.equal(adminTotal, totals.total, "admin's total for u1 must match u1's own headline total");
   assert.equal(adminCorrect, totals.correct, "admin's correct for u1 must match u1's own headline correct");
+});
+
+test("admin's per-user view includes an active user's untouched topics too (0% coverage), but skips fully-inactive users", () => {
+  const db = makeDb();
+  db.prepare('INSERT INTO questions VALUES (?, ?, ?)').run('q4', 'notary', 'Bonds');
+  db.prepare('INSERT INTO users VALUES (?, ?)').run('u3', 'notary'); // never answered anything
+  const consoleRows = db.prepare(CONSOLE_QUIZ_PROGRESS_SQL).all();
+
+  const u1Bonds = consoleRows.find((r) => r.user_id === 'u1' && r.topic === 'Bonds');
+  assert.ok(u1Bonds, 'u1 is active (has other progress), so their untouched Bonds topic must still appear');
+  assert.equal(u1Bonds.seen, 0);
+  assert.equal(u1Bonds.topicTotal, 1);
+
+  assert.ok(!consoleRows.some((r) => r.user_id === 'u3'), 'u3 has never answered anything and must not appear at all');
 });
 
 test("admin's global accuracy-by-topic matches the per-user breakdowns summed across users", () => {

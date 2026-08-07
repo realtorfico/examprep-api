@@ -900,8 +900,9 @@ async function handleProgress(user, env) {
 
   // Cumulative attempts (times_seen/times_correct), matching progressTotals above -- these two
   // must agree, since the Progress tab shows the byTopic breakdown right under the headline totals
-  // and their totals need to sum to the same number.
-  const byTopic = await env.DB.prepare(PROGRESS_BY_TOPIC_SQL).bind(user.id).all();
+  // and their totals need to sum to the same number. Also includes every topic in the user's exam
+  // (even untouched ones, contributing 0) so per-topic coverage % has a complete denominator.
+  const byTopic = await env.DB.prepare(PROGRESS_BY_TOPIC_SQL).bind(user.id, user.exam_type).all();
 
   // Only questions currently sitting at "incorrect" as of the user's last attempt -- a question
   // missed once but since answered correctly again isn't shown, same "current state" idea as the
