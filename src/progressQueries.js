@@ -46,11 +46,16 @@ export const CONSOLE_QUIZ_PROGRESS_SQL =
 
 // Same LEFT JOIN idea as CONSOLE_QUIZ_PROGRESS_SQL, but grouped by user only (not user+topic) and
 // scoped to a single exam_type -- backs the cross-user leaderboard (top accuracy / top coverage,
-// same track only).
+// same track only). The exam-attempts count is a correlated subquery rather than another JOIN,
+// since joining exam_attempts directly would multiply against the questions/progress join and
+// inflate SUM(times_seen)/COUNT(question_id) -- submitted_at IS NOT NULL so in-progress/abandoned
+// attempts don't count, and standard+toughest45 are summed together (leaderboard doesn't split by
+// mode).
 export const LEADERBOARD_SQL =
   `SELECT u.id AS user_id, c.code,
           COALESCE(SUM(p.times_seen), 0) AS total, COALESCE(SUM(p.times_correct), 0) AS correct,
-          COUNT(p.question_id) AS seen, COUNT(q.id) AS topicTotal
+          COUNT(p.question_id) AS seen, COUNT(q.id) AS topicTotal,
+          (SELECT COUNT(*) FROM exam_attempts ea WHERE ea.user_id = u.id AND ea.submitted_at IS NOT NULL) AS examAttempts
    FROM (SELECT DISTINCT user_id FROM progress) active
    JOIN users u ON u.id = active.user_id AND u.exam_type = ?
    JOIN questions q ON q.exam_type = u.exam_type

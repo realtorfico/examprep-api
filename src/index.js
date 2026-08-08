@@ -1222,6 +1222,7 @@ async function handleLeaderboard(user, env) {
       total: r.total,
       accuracy: r.total ? Math.round((100 * r.correct) / r.total) : 0,
       coverage: r.topicTotal ? Math.round((100 * r.seen) / r.topicTotal) : 0,
+      examAttempts: r.examAttempts,
     }))
     .filter((r) => r.total >= MIN_LEADERBOARD_QUESTIONS);
 
@@ -1230,7 +1231,7 @@ async function handleLeaderboard(user, env) {
   const seenIds = new Set();
   const combined = topByAccuracy.concat(topByCoverage)
     .filter((r) => (seenIds.has(r.id) ? false : (seenIds.add(r.id), true)))
-    .map((r) => ({ code: r.code, total: r.total, accuracy: r.accuracy, coverage: r.coverage }));
+    .map((r) => ({ code: r.code, total: r.total, accuracy: r.accuracy, coverage: r.coverage, attempts: r.examAttempts }));
 
   return json({ minQuestions: MIN_LEADERBOARD_QUESTIONS, users: combined });
 }
