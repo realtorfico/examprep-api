@@ -208,6 +208,42 @@ CREATE TABLE pending_redemptions (
 -- eligible (codes.paid_cents is NULL for those). One claim per code, ever, enforced in code.
 -- Refund execution itself is manual (admin processes it in PayPal) -- this table is the queue,
 -- not a payment integration.
+-- Admin-configurable promotional banners (examprep-admin's Promotions tab), optionally carrying a
+-- real discount code redeemable at checkout. Ordered by sort_order (admin up/down reorder);
+-- placement decides where a banner shows -- 'home' | 'checkout' | 'both'. promo_code set = a real
+-- discount (percent of price, or a flat cents amount) applied server-side at checkout; NULL =
+-- purely informational, no pricing effect. active is a manual on/off toggle for now --
+-- starts_at/ends_at are reserved for a future scheduled-activation feature, not yet enforced.
+CREATE TABLE promotions (
+  id             TEXT PRIMARY KEY,
+  title          TEXT NOT NULL,
+  body           TEXT NOT NULL,
+  cta_label      TEXT,
+  cta_url        TEXT,
+  promo_code     TEXT,                        -- NULL = marketing-only, no real discount
+  discount_type  TEXT,                        -- 'percent' | 'flat_cents', only when promo_code is set
+  discount_value INTEGER,                     -- 1-100 for percent, cents for flat_cents
+  placement      TEXT NOT NULL DEFAULT 'both', -- 'home' | 'checkout' | 'both'
+  active         INTEGER NOT NULL DEFAULT 0,
+  sort_order     INTEGER NOT NULL DEFAULT 0,
+  redeemed_count INTEGER NOT NULL DEFAULT 0,
+  starts_at      INTEGER,                      -- reserved for future scheduled activation
+  ends_at        INTEGER,                      -- reserved for future scheduled activation
+  created_at     INTEGER NOT NULL
+);
+CREATE INDEX idx_promotions_active ON promotions(active);
+
+-- Same bridge pattern as pending_point_discounts -- a promo discount is quoted at create-
+-- order/create-intent time, then re-verified (not trusted from the client) at capture/confirm
+-- time, so a client can't submit a bigger discount than the server actually quoted.
+CREATE TABLE pending_promo_discounts (
+  order_id       TEXT PRIMARY KEY,
+  promo_id       TEXT NOT NULL REFERENCES promotions(id),
+  code           TEXT NOT NULL,
+  discount_cents INTEGER NOT NULL,
+  created_at     INTEGER NOT NULL
+);
+
 CREATE TABLE refund_claims (
   id                TEXT PRIMARY KEY,
   code              TEXT NOT NULL REFERENCES codes(code),

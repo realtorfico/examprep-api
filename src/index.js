@@ -300,6 +300,42 @@ async function handlePricingGet(request, env) {
   return json({ examType, priceCents, currency, minPaypalChargeCents });
 }
 
+// ---- Promotions ----------------------------------------------------------
+// Admin-configurable banners (examprep-admin's Promotions tab) shown on the public site's home
+// and/or checkout pages. A promo with promo_code set is a real discount, redeemed by typing that
+// code at checkout -- see quoteCheckout below for how it's applied and re-verified server-side.
+
+function normalizePromoCode(code) { return (code || '').trim().toUpperCase(); }
+
+async function findActivePromoByCode(env, code) {
+  const normalized = normalizePromoCode(code);
+  if (!normalized) return null;
+  return await env.DB.prepare(
+    `SELECT * FROM promotions WHERE active = 1 AND promo_code IS NOT NULL AND UPPER(promo_code) = ?`
+  ).bind(normalized).first();
+}
+
+function promoDiscountCentsFor(promo, priceCents) {
+  if (!promo) return 0;
+  if (promo.discount_type === 'percent') return Math.round(priceCents * promo.discount_value / 100);
+  if (promo.discount_type === 'flat_cents') return Math.min(priceCents, promo.discount_value);
+  return 0;
+}
+
+// Public listing -- only active promos, only the fields a visitor needs to see (no internal
+// id/sort_order/redeemed_count). promo_code/discount fields ARE included when present -- the
+// whole point of advertising a code is telling the visitor what to type.
+async function handlePromotionsList(request, env) {
+  const url = new URL(request.url);
+  const placement = url.searchParams.get('placement') === 'checkout' ? 'checkout' : 'home';
+  const rows = (await env.DB.prepare(
+    `SELECT id, title, body, cta_label AS ctaLabel, cta_url AS ctaUrl, promo_code AS promoCode,
+            discount_type AS discountType, discount_value AS discountValue
+     FROM promotions WHERE active = 1 AND (placement = ? OR placement = 'both') ORDER BY sort_order ASC`
+  ).bind(placement).all()).results;
+  return json({ promotions: rows });
+}
+
 // Shared by /paypal/capture-order and (later) /points/redeem — generates a fresh code and
 // immediately auto-redeems it (mint token + create user + flip code to redeemed), mirroring
 // /redeem's unused-code branch, so the buyer never has to separately type their own code in.
@@ -318,38 +354,54 @@ async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail) {
   return { code, token };
 }
 
-// Shared by both processors' create-order/create-intent handlers -- points are only ever
-// quoted here, never deducted, that only happens once a payment actually completes (see
-// finalizePurchase), so an abandoned checkout costs nothing. Returns { fullyCoveredByPoints:
-// true } instead of a quote when the discount covers the whole price, since that case should
-// route through /points/redeem instead of a real charge -- callers check for it explicitly.
-async function quoteCheckout(env, examType, email, applyPoints) {
+// Shared by both processors' create-order/create-intent handlers -- points and a promo code are
+// only ever quoted here, never applied, that only happens once a payment actually completes (see
+// finalizePurchase), so an abandoned checkout costs nothing. Returns { fullyCoveredByPoints: true }
+// instead of a quote when the discount covers the whole price, since that case should route
+// through /points/redeem instead of a real charge -- callers check for it explicitly. Returns
+// { error: 'invalid_promo_code' } if a promoCode was given but doesn't match an active promotion.
+// Promo discount is applied BEFORE points, so points then discount whatever the promo left.
+//
+// NOTE: the fullyCoveredByPoints shortcut is deliberately only offered when there's no promo --
+// /points/redeem checks points against the full undiscounted price, with no promo awareness, so
+// routing a promo'd order there would wrongly require enough points to cover the FULL price. With
+// a promo active, points can still apply as a partial discount on top of it, just never all the
+// way to $0 through that other endpoint.
+async function quoteCheckout(env, examType, email, applyPoints, promoCode) {
   const { priceCents, currency } = await getPrice(env, examType);
-  let finalPriceCents = priceCents;
+  let promo = null;
+  let promoDiscountCents = 0;
+  if (promoCode) {
+    promo = await findActivePromoByCode(env, promoCode);
+    if (!promo) return { error: 'invalid_promo_code' };
+    promoDiscountCents = promoDiscountCentsFor(promo, priceCents);
+  }
+  const workingPriceCents = Math.max(0, priceCents - promoDiscountCents);
+  let finalPriceCents = workingPriceCents;
   let pointsToApply = 0;
   if (applyPoints && email) {
     const account = await env.DB.prepare('SELECT * FROM accounts WHERE email = ?').bind(email.trim().toLowerCase()).first();
     if (account && account.points > 0) {
-      pointsToApply = Math.min(account.points, priceCents);
-      if (pointsToApply >= priceCents) return { fullyCoveredByPoints: true };
+      pointsToApply = Math.min(account.points, workingPriceCents);
+      if (pointsToApply >= workingPriceCents && !promo) return { fullyCoveredByPoints: true };
       // A partial discount can't leave less than the admin-set floor payable through the
       // processor -- cap the points actually applied so the leftover doesn't dip below it
       // (unapplied points just stay in the account for next time, nothing is lost).
       const minChargeCents = await getMinPaypalChargeCents(env);
-      if (priceCents - pointsToApply < minChargeCents) {
-        pointsToApply = Math.max(0, priceCents - minChargeCents);
+      if (workingPriceCents - pointsToApply < minChargeCents) {
+        pointsToApply = Math.max(0, workingPriceCents - minChargeCents);
       }
-      finalPriceCents = priceCents - pointsToApply;
+      finalPriceCents = workingPriceCents - pointsToApply;
     }
   }
-  return { priceCents, currency, finalPriceCents, pointsToApply };
+  return { priceCents, currency, finalPriceCents, pointsToApply, promo, promoDiscountCents };
 }
 
 // Shared by both processors' capture/confirm handlers, called only after the processor-specific
 // code has verified the payment actually completed and the captured amount matches what was
 // quoted. Handles point deduction, code issuance, receipt email, referral crediting, and the
 // admin activity alert -- the one thing that's genuinely identical regardless of processor.
-async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount }) {
+async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount }) {
   const { code, token } = await issueAndRedeemCode(env, examType, note, capturedCents, payerEmail || email);
 
   if (discount) {
@@ -361,6 +413,11 @@ async function finalizePurchase(env, { examType, note, capturedCents, payerEmail
     await env.DB.prepare('DELETE FROM pending_point_discounts WHERE order_id = ?').bind(discount.order_id).run();
   }
 
+  if (promoDiscount) {
+    await env.DB.prepare('UPDATE promotions SET redeemed_count = redeemed_count + 1 WHERE id = ?').bind(promoDiscount.promo_id).run();
+    await env.DB.prepare('DELETE FROM pending_promo_discounts WHERE order_id = ?').bind(promoDiscount.order_id).run();
+  }
+
   if (email) {
     try { await sendCodeEmail(env, email, code, examType); } catch (e) { /* best-effort, buyer already has the code on-screen */ }
   }
@@ -368,20 +425,24 @@ async function finalizePurchase(env, { examType, note, capturedCents, payerEmail
   await detectAndCreditConversion(env, payerEmail);
   await notifyAdmin(env, 'New purchase',
     `<p><strong>${payerEmail || email || 'A buyer'}</strong> just bought ${examType} access for ` +
-    `$${(capturedCents / 100).toFixed(2)}` + (discount ? ` (${discount.points_to_apply} points applied as a discount)` : '') + `.</p>`);
+    `$${(capturedCents / 100).toFixed(2)}` +
+    (discount ? ` (${discount.points_to_apply} points applied as a discount)` : '') +
+    (promoDiscount ? ` (promo code ${promoDiscount.code} applied, -$${(promoDiscount.discount_cents / 100).toFixed(2)})` : '') +
+    `.</p>`);
 
   return { code, token, pointsApplied: discount ? discount.points_to_apply : 0 };
 }
 
 async function handlePaypalCreateOrder(request, env) {
-  const { examType, turnstileToken, email, applyPoints } = await request.json();
+  const { examType, turnstileToken, email, applyPoints, promoCode } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
   if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
     return json({ error: 'turnstile_failed' }, 400);
   }
   if (!examType) return json({ error: 'examType_required' }, 400);
 
-  const quote = await quoteCheckout(env, examType, email, applyPoints);
+  const quote = await quoteCheckout(env, examType, email, applyPoints, promoCode);
+  if (quote.error) return json({ error: quote.error }, 400);
   if (quote.fullyCoveredByPoints) return json({ error: 'fully_covered_by_points' }, 400); // client should use /points/redeem instead
 
   const order = await createPayPalOrder(env, quote.finalPriceCents, quote.currency);
@@ -391,8 +452,13 @@ async function handlePaypalCreateOrder(request, env) {
       'INSERT INTO pending_point_discounts (order_id, email, points_to_apply, created_at) VALUES (?, ?, ?, ?)'
     ).bind(order.id, email.trim().toLowerCase(), quote.pointsToApply, now()).run();
   }
+  if (quote.promo) {
+    await env.DB.prepare(
+      'INSERT INTO pending_promo_discounts (order_id, promo_id, code, discount_cents, created_at) VALUES (?, ?, ?, ?, ?)'
+    ).bind(order.id, quote.promo.id, quote.promo.promo_code, quote.promoDiscountCents, now()).run();
+  }
 
-  return json({ orderId: order.id, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply });
+  return json({ orderId: order.id, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply, promoDiscountCents: quote.promoDiscountCents || 0 });
 }
 
 async function handlePaypalCaptureOrder(request, env) {
@@ -412,7 +478,10 @@ async function handlePaypalCaptureOrder(request, env) {
 
   const { priceCents: fullPriceCents } = await getPrice(env, examType);
   const discount = await env.DB.prepare('SELECT * FROM pending_point_discounts WHERE order_id = ?').bind(orderId).first();
-  const expectedCents = discount ? fullPriceCents - discount.points_to_apply : fullPriceCents;
+  const promoDiscount = await env.DB.prepare('SELECT * FROM pending_promo_discounts WHERE order_id = ?').bind(orderId).first();
+  const expectedCents = Math.max(0, fullPriceCents
+    - (discount ? discount.points_to_apply : 0)
+    - (promoDiscount ? promoDiscount.discount_cents : 0));
 
   const capture = await capturePayPalOrder(env, orderId);
   if (capture.status !== 'COMPLETED') return json({ error: 'payment_not_completed' }, 402);
@@ -426,20 +495,21 @@ async function handlePaypalCaptureOrder(request, env) {
   // PayPal's own capture response tells us the payer's email for free -- no extra field/friction
   // needed on the buy form to detect "this buyer was someone's referral" or to record who paid.
   const payerEmail = capture.payer && capture.payer.email_address;
-  const { code, token, pointsApplied } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount });
+  const { code, token, pointsApplied } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount });
 
   return json({ code, token, examType, pointsApplied });
 }
 
 async function handleStripeCreateIntent(request, env) {
-  const { examType, turnstileToken, email, applyPoints } = await request.json();
+  const { examType, turnstileToken, email, applyPoints, promoCode } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
   if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
     return json({ error: 'turnstile_failed' }, 400);
   }
   if (!examType) return json({ error: 'examType_required' }, 400);
 
-  const quote = await quoteCheckout(env, examType, email, applyPoints);
+  const quote = await quoteCheckout(env, examType, email, applyPoints, promoCode);
+  if (quote.error) return json({ error: quote.error }, 400);
   if (quote.fullyCoveredByPoints) return json({ error: 'fully_covered_by_points' }, 400); // client should use /points/redeem instead
 
   const intent = await createStripePaymentIntent(env, quote.finalPriceCents, quote.currency, { email, examType });
@@ -449,8 +519,13 @@ async function handleStripeCreateIntent(request, env) {
       'INSERT INTO pending_point_discounts (order_id, email, points_to_apply, created_at) VALUES (?, ?, ?, ?)'
     ).bind(intent.id, email.trim().toLowerCase(), quote.pointsToApply, now()).run();
   }
+  if (quote.promo) {
+    await env.DB.prepare(
+      'INSERT INTO pending_promo_discounts (order_id, promo_id, code, discount_cents, created_at) VALUES (?, ?, ?, ?, ?)'
+    ).bind(intent.id, quote.promo.id, quote.promo.promo_code, quote.promoDiscountCents, now()).run();
+  }
 
-  return json({ clientSecret: intent.client_secret, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply });
+  return json({ clientSecret: intent.client_secret, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply, promoDiscountCents: quote.promoDiscountCents || 0 });
 }
 
 async function handleStripeConfirm(request, env) {
@@ -470,7 +545,10 @@ async function handleStripeConfirm(request, env) {
 
   const { priceCents: fullPriceCents } = await getPrice(env, examType);
   const discount = await env.DB.prepare('SELECT * FROM pending_point_discounts WHERE order_id = ?').bind(paymentIntentId).first();
-  const expectedCents = discount ? fullPriceCents - discount.points_to_apply : fullPriceCents;
+  const promoDiscount = await env.DB.prepare('SELECT * FROM pending_promo_discounts WHERE order_id = ?').bind(paymentIntentId).first();
+  const expectedCents = Math.max(0, fullPriceCents
+    - (discount ? discount.points_to_apply : 0)
+    - (promoDiscount ? promoDiscount.discount_cents : 0));
 
   const intent = await retrieveStripePaymentIntent(env, paymentIntentId);
   if (intent.status !== 'succeeded') return json({ error: 'payment_not_completed' }, 402);
@@ -481,7 +559,7 @@ async function handleStripeConfirm(request, env) {
   // differ -- prefer the latter, same "trust what the processor tells us" approach as PayPal.
   const charge = intent.latest_charge;
   const payerEmail = (charge && charge.billing_details && charge.billing_details.email) || intent.receipt_email;
-  const { code, token, pointsApplied } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount });
+  const { code, token, pointsApplied } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount });
 
   return json({ code, token, examType, pointsApplied });
 }
@@ -1431,6 +1509,85 @@ async function handleConsolePricingSet(request, env) {
   return json({ ok: true });
 }
 
+// ---- Promotions (admin) ---------------------------------------------------
+// Full CRUD + reorder for examprep-admin's Promotions tab. See handlePromotionsList/quoteCheckout
+// above for the public-facing/checkout side of this feature.
+
+async function handleConsolePromotionsList(env) {
+  const rows = (await env.DB.prepare('SELECT * FROM promotions ORDER BY sort_order ASC').all()).results;
+  return json({ promotions: rows });
+}
+
+function promotionFromBody(b) {
+  const hasCode = !!(b.promoCode && b.promoCode.trim());
+  return [
+    b.title || '', b.body || '', b.ctaLabel || null, b.ctaUrl || null,
+    hasCode ? normalizePromoCode(b.promoCode) : null,
+    hasCode ? (b.discountType === 'flat_cents' ? 'flat_cents' : 'percent') : null,
+    hasCode ? (parseInt(b.discountValue, 10) || 0) : null,
+    ['home', 'checkout', 'both'].indexOf(b.placement) !== -1 ? b.placement : 'both',
+    b.active ? 1 : 0,
+  ];
+}
+
+async function handleConsolePromotionsCreate(request, env) {
+  const b = await request.json();
+  if (!b.title || !b.body) return json({ error: 'title_and_body_required' }, 400);
+  const id = newId();
+  const maxOrderRow = await env.DB.prepare('SELECT MAX(sort_order) AS m FROM promotions').first();
+  const sortOrder = (maxOrderRow && maxOrderRow.m != null ? maxOrderRow.m : -1) + 1;
+  await env.DB.prepare(
+    `INSERT INTO promotions (id, title, body, cta_label, cta_url, promo_code, discount_type, discount_value,
+       placement, active, sort_order, redeemed_count, created_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?)`
+  ).bind(id, ...promotionFromBody(b), sortOrder, now()).run();
+  return json({ id });
+}
+
+async function handleConsolePromotionsUpdate(request, env) {
+  const b = await request.json();
+  if (!b.id) return json({ error: 'id_required' }, 400);
+  if (!b.title || !b.body) return json({ error: 'title_and_body_required' }, 400);
+  await env.DB.prepare(
+    `UPDATE promotions SET title=?, body=?, cta_label=?, cta_url=?, promo_code=?, discount_type=?,
+       discount_value=?, placement=?, active=? WHERE id = ?`
+  ).bind(...promotionFromBody(b), b.id).run();
+  return json({ ok: true });
+}
+
+async function handleConsolePromotionsDelete(request, env) {
+  const { id } = await request.json();
+  if (!id) return json({ error: 'id_required' }, 400);
+  await env.DB.prepare('DELETE FROM promotions WHERE id = ?').bind(id).run();
+  return json({ ok: true });
+}
+
+async function handleConsolePromotionsToggle(request, env) {
+  const { id, active } = await request.json();
+  if (!id) return json({ error: 'id_required' }, 400);
+  await env.DB.prepare('UPDATE promotions SET active = ? WHERE id = ?').bind(active ? 1 : 0, id).run();
+  return json({ ok: true });
+}
+
+// Swaps sort_order with the adjacent row in the requested direction -- simplest reorder mechanic
+// that doesn't need drag-and-drop wiring on the frontend. No-op (not an error) if already at the
+// top/bottom edge, so a disabled-looking arrow button that still gets clicked does nothing harmful.
+async function handleConsolePromotionsReorder(request, env) {
+  const { id, direction } = await request.json();
+  if (!id || (direction !== 'up' && direction !== 'down')) return json({ error: 'id_and_direction_required' }, 400);
+  const rows = (await env.DB.prepare('SELECT id, sort_order FROM promotions ORDER BY sort_order ASC').all()).results;
+  const index = rows.findIndex((r) => r.id === id);
+  if (index === -1) return json({ error: 'not_found' }, 404);
+  const swapIndex = direction === 'up' ? index - 1 : index + 1;
+  if (swapIndex < 0 || swapIndex >= rows.length) return json({ ok: true });
+  const a = rows[index], b = rows[swapIndex];
+  await env.DB.batch([
+    env.DB.prepare('UPDATE promotions SET sort_order = ? WHERE id = ?').bind(b.sort_order, a.id),
+    env.DB.prepare('UPDATE promotions SET sort_order = ? WHERE id = ?').bind(a.sort_order, b.id),
+  ]);
+  return json({ ok: true });
+}
+
 async function handleConsolePointRulesList(env) {
   const rows = (await env.DB.prepare('SELECT * FROM point_rules ORDER BY task_key').all()).results;
   return json({ pointRules: rows });
@@ -1587,6 +1744,7 @@ export default {
       if (pathname === '/redeem' && method === 'POST') return await handleRedeem(request, env);
       if (pathname === '/sample' && method === 'GET') return await handleSample(request, env);
       if (pathname === '/pricing' && method === 'GET') return await handlePricingGet(request, env);
+      if (pathname === '/promotions' && method === 'GET') return await handlePromotionsList(request, env);
       if (pathname === '/paypal/create-order' && method === 'POST') return await handlePaypalCreateOrder(request, env);
       if (pathname === '/paypal/capture-order' && method === 'POST') return await handlePaypalCaptureOrder(request, env);
       if (pathname === '/stripe/create-intent' && method === 'POST') return await handleStripeCreateIntent(request, env);
@@ -1609,6 +1767,12 @@ export default {
         if (pathname === '/console/codes/revoke' && method === 'POST') return await handleCodesRevoke(request, env);
         if (pathname === '/console/pricing' && method === 'GET') return await handleConsolePricingList(env);
         if (pathname === '/console/pricing' && method === 'POST') return await handleConsolePricingSet(request, env);
+        if (pathname === '/console/promotions' && method === 'GET') return await handleConsolePromotionsList(env);
+        if (pathname === '/console/promotions/create' && method === 'POST') return await handleConsolePromotionsCreate(request, env);
+        if (pathname === '/console/promotions/update' && method === 'POST') return await handleConsolePromotionsUpdate(request, env);
+        if (pathname === '/console/promotions/delete' && method === 'POST') return await handleConsolePromotionsDelete(request, env);
+        if (pathname === '/console/promotions/toggle' && method === 'POST') return await handleConsolePromotionsToggle(request, env);
+        if (pathname === '/console/promotions/reorder' && method === 'POST') return await handleConsolePromotionsReorder(request, env);
         if (pathname === '/console/settings' && method === 'GET') return await handleConsoleSettingsList(env);
         if (pathname === '/console/settings' && method === 'POST') return await handleConsoleSettingsSet(request, env);
         if (pathname === '/console/point-rules' && method === 'GET') return await handleConsolePointRulesList(env);
