@@ -223,6 +223,9 @@ CREATE TABLE promotions (
   promo_code     TEXT,                        -- NULL = marketing-only, no real discount
   discount_type  TEXT,                        -- 'percent' | 'flat_cents', only when promo_code is set
   discount_value INTEGER,                     -- 1-100 for percent, cents for flat_cents
+  required_email_domain TEXT,                 -- e.g. '.edu' -- buyer's checkout email must end
+                                               -- with this (case-insensitive) for the code to
+                                               -- apply; NULL = no restriction
   placement      TEXT NOT NULL DEFAULT 'both', -- 'home' | 'checkout' | 'both'
   active         INTEGER NOT NULL DEFAULT 0,
   sort_order     INTEGER NOT NULL DEFAULT 0,

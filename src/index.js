@@ -330,7 +330,8 @@ async function handlePromotionsList(request, env) {
   const placement = url.searchParams.get('placement') === 'checkout' ? 'checkout' : 'home';
   const rows = (await env.DB.prepare(
     `SELECT id, title, body, cta_label AS ctaLabel, cta_url AS ctaUrl, promo_code AS promoCode,
-            discount_type AS discountType, discount_value AS discountValue
+            discount_type AS discountType, discount_value AS discountValue,
+            required_email_domain AS requiredEmailDomain
      FROM promotions WHERE active = 1 AND (placement = ? OR placement = 'both') ORDER BY sort_order ASC`
   ).bind(placement).all()).results;
   return json({ promotions: rows });
@@ -359,7 +360,9 @@ async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail) {
 // finalizePurchase), so an abandoned checkout costs nothing. Returns { fullyCoveredByPoints: true }
 // instead of a quote when the discount covers the whole price, since that case should route
 // through /points/redeem instead of a real charge -- callers check for it explicitly. Returns
-// { error: 'invalid_promo_code' } if a promoCode was given but doesn't match an active promotion.
+// { error: 'invalid_promo_code' } if a promoCode was given but doesn't match an active promotion,
+// or { error: 'promo_email_domain_required', requiredEmailDomain } if the promo needs a matching
+// email (e.g. a '.edu' student discount) and the given email doesn't qualify (or none was given).
 // Promo discount is applied BEFORE points, so points then discount whatever the promo left.
 //
 // NOTE: the fullyCoveredByPoints shortcut is deliberately only offered when there's no promo --
@@ -374,6 +377,12 @@ async function quoteCheckout(env, examType, email, applyPoints, promoCode) {
   if (promoCode) {
     promo = await findActivePromoByCode(env, promoCode);
     if (!promo) return { error: 'invalid_promo_code' };
+    if (promo.required_email_domain) {
+      const normalizedEmail = (email || '').trim().toLowerCase();
+      if (!normalizedEmail.endsWith(promo.required_email_domain)) {
+        return { error: 'promo_email_domain_required', requiredEmailDomain: promo.required_email_domain };
+      }
+    }
     promoDiscountCents = promoDiscountCentsFor(promo, priceCents);
   }
   const workingPriceCents = Math.max(0, priceCents - promoDiscountCents);
@@ -442,7 +451,7 @@ async function handlePaypalCreateOrder(request, env) {
   if (!examType) return json({ error: 'examType_required' }, 400);
 
   const quote = await quoteCheckout(env, examType, email, applyPoints, promoCode);
-  if (quote.error) return json({ error: quote.error }, 400);
+  if (quote.error) return json({ error: quote.error, requiredEmailDomain: quote.requiredEmailDomain }, 400);
   if (quote.fullyCoveredByPoints) return json({ error: 'fully_covered_by_points' }, 400); // client should use /points/redeem instead
 
   const order = await createPayPalOrder(env, quote.finalPriceCents, quote.currency);
@@ -509,7 +518,7 @@ async function handleStripeCreateIntent(request, env) {
   if (!examType) return json({ error: 'examType_required' }, 400);
 
   const quote = await quoteCheckout(env, examType, email, applyPoints, promoCode);
-  if (quote.error) return json({ error: quote.error }, 400);
+  if (quote.error) return json({ error: quote.error, requiredEmailDomain: quote.requiredEmailDomain }, 400);
   if (quote.fullyCoveredByPoints) return json({ error: 'fully_covered_by_points' }, 400); // client should use /points/redeem instead
 
   const intent = await createStripePaymentIntent(env, quote.finalPriceCents, quote.currency, { email, examType });
@@ -1525,6 +1534,7 @@ function promotionFromBody(b) {
     hasCode ? normalizePromoCode(b.promoCode) : null,
     hasCode ? (b.discountType === 'flat_cents' ? 'flat_cents' : 'percent') : null,
     hasCode ? (parseInt(b.discountValue, 10) || 0) : null,
+    hasCode && b.requiredEmailDomain && b.requiredEmailDomain.trim() ? b.requiredEmailDomain.trim().toLowerCase() : null,
     ['home', 'checkout', 'both'].indexOf(b.placement) !== -1 ? b.placement : 'both',
     b.active ? 1 : 0,
   ];
@@ -1538,8 +1548,8 @@ async function handleConsolePromotionsCreate(request, env) {
   const sortOrder = (maxOrderRow && maxOrderRow.m != null ? maxOrderRow.m : -1) + 1;
   await env.DB.prepare(
     `INSERT INTO promotions (id, title, body, cta_label, cta_url, promo_code, discount_type, discount_value,
-       placement, active, sort_order, redeemed_count, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?)`
+       required_email_domain, placement, active, sort_order, redeemed_count, created_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?)`
   ).bind(id, ...promotionFromBody(b), sortOrder, now()).run();
   return json({ id });
 }
@@ -1550,7 +1560,7 @@ async function handleConsolePromotionsUpdate(request, env) {
   if (!b.title || !b.body) return json({ error: 'title_and_body_required' }, 400);
   await env.DB.prepare(
     `UPDATE promotions SET title=?, body=?, cta_label=?, cta_url=?, promo_code=?, discount_type=?,
-       discount_value=?, placement=?, active=? WHERE id = ?`
+       discount_value=?, required_email_domain=?, placement=?, active=? WHERE id = ?`
   ).bind(...promotionFromBody(b), b.id).run();
   return json({ ok: true });
 }
