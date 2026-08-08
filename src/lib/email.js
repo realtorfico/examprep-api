@@ -105,6 +105,23 @@ export async function sendRedeemVerifyEmail(env, to, points, verifyUrl) {
   });
 }
 
+export async function sendPromoVerifyEmail(env, to, promoTitle, verifyUrl) {
+  await sendEmail(env, {
+    to,
+    subject: `🎓 Confirm your email for "${promoTitle}"`,
+    html: emailShell({
+      badge: '🎓',
+      title: 'One click to unlock your discount',
+      bodyHtml: `<p>You're claiming <strong>${promoTitle}</strong> at ExamPrep.</p>
+        <p>Click below to confirm this is really your email — this discount is limited to
+        verified addresses, so unverified emails can't apply it.</p>`,
+      ctaText: 'Confirm my email →',
+      ctaUrl: verifyUrl,
+      footerNote: "Didn't request this? You can safely ignore it.",
+    }),
+  });
+}
+
 export async function sendAdminAlertEmail(env, to, title, bodyHtml, replyTo) {
   await sendEmail(env, {
     to,

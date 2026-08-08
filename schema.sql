@@ -226,6 +226,10 @@ CREATE TABLE promotions (
   required_email_domain TEXT,                 -- e.g. '.edu' -- buyer's checkout email must end
                                                -- with this (case-insensitive) for the code to
                                                -- apply; NULL = no restriction
+  require_email_verification INTEGER NOT NULL DEFAULT 0, -- admin-toggleable: if set, the email
+                                               -- must click a one-time confirmation link (see
+                                               -- pending_promo_email_verifications) before the
+                                               -- discount applies, not just match the domain
   placement      TEXT NOT NULL DEFAULT 'both', -- 'home' | 'checkout' | 'both'
   active         INTEGER NOT NULL DEFAULT 0,
   sort_order     INTEGER NOT NULL DEFAULT 0,
@@ -246,6 +250,23 @@ CREATE TABLE pending_promo_discounts (
   discount_cents INTEGER NOT NULL,
   created_at     INTEGER NOT NULL
 );
+
+-- One-time email confirmation for promotions with require_email_verification set (e.g. a real
+-- .edu student discount, not just a domain-suffix string check). A row's presence with
+-- verified_at set + not yet expired is what quoteCheckout treats as "this email is allowed to use
+-- this promo" -- mirrors the referrals/pending_redemptions verify-link pattern already used
+-- elsewhere. Rows are never deleted on click (unlike pending_redemptions' claim-once semantics) --
+-- the verified status must persist through the buyer's subsequent checkout call.
+CREATE TABLE pending_promo_email_verifications (
+  id           TEXT PRIMARY KEY,
+  promo_id     TEXT NOT NULL REFERENCES promotions(id),
+  email        TEXT NOT NULL,
+  verify_token TEXT NOT NULL UNIQUE,
+  verified_at  INTEGER,
+  created_at   INTEGER NOT NULL,
+  expires_at   INTEGER NOT NULL
+);
+CREATE INDEX idx_promo_email_verif_lookup ON pending_promo_email_verifications(promo_id, email);
 
 CREATE TABLE refund_claims (
   id                TEXT PRIMARY KEY,

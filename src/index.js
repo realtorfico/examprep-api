@@ -1,7 +1,7 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
-import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL } from './progressQueries.js';
 
@@ -331,10 +331,74 @@ async function handlePromotionsList(request, env) {
   const rows = (await env.DB.prepare(
     `SELECT id, title, body, cta_label AS ctaLabel, cta_url AS ctaUrl, promo_code AS promoCode,
             discount_type AS discountType, discount_value AS discountValue,
-            required_email_domain AS requiredEmailDomain
+            required_email_domain AS requiredEmailDomain, require_email_verification AS requireEmailVerification
      FROM promotions WHERE active = 1 AND (placement = ? OR placement = 'both') ORDER BY sort_order ASC`
   ).bind(placement).all()).results;
   return json({ promotions: rows });
+}
+
+const PROMO_EMAIL_VERIFY_TTL_SECONDS = 604800; // 7 days to click the confirmation email, and how
+                                                // long the verified status stays usable at checkout
+
+async function isPromoEmailVerified(env, promoId, email) {
+  const row = await env.DB.prepare(
+    `SELECT 1 FROM pending_promo_email_verifications
+     WHERE promo_id = ? AND email = ? AND verified_at IS NOT NULL AND expires_at > ? LIMIT 1`
+  ).bind(promoId, email, now()).first();
+  return !!row;
+}
+
+// Sends (or re-sends) a one-time confirmation link for a promo that requires verified email
+// ownership -- called explicitly by the checkout UI once quoteCheckout has already told it
+// verification is needed, never automatically on every price-quote request. Doesn't dedupe/reuse
+// an existing pending row -- a fresh row+link per request is simplest, and a few valid links for
+// the same promo+email is harmless (any one of them verifies it).
+async function handlePromoVerifyRequest(request, env) {
+  const { promoCode, email, turnstileToken } = await request.json();
+  const ip = request.headers.get('CF-Connecting-IP');
+  if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
+    return json({ error: 'turnstile_failed' }, 400);
+  }
+  if (!promoCode || !email) return json({ error: 'promoCode_and_email_required' }, 400);
+
+  const promo = await findActivePromoByCode(env, promoCode);
+  if (!promo) return json({ error: 'invalid_promo_code' }, 400);
+  if (!promo.require_email_verification) return json({ error: 'verification_not_required' }, 400);
+
+  const normalizedEmail = email.trim().toLowerCase();
+  if (promo.required_email_domain && !normalizedEmail.endsWith(promo.required_email_domain)) {
+    return json({ error: 'promo_email_domain_required', requiredEmailDomain: promo.required_email_domain }, 400);
+  }
+  if (await isPromoEmailVerified(env, promo.id, normalizedEmail)) return json({ alreadyVerified: true });
+
+  const verifyToken = crypto.randomUUID();
+  await env.DB.prepare(
+    'INSERT INTO pending_promo_email_verifications (id, promo_id, email, verify_token, created_at, expires_at) VALUES (?, ?, ?, ?, ?, ?)'
+  ).bind(newId(), promo.id, normalizedEmail, verifyToken, now(), now() + PROMO_EMAIL_VERIFY_TTL_SECONDS).run();
+
+  const verifyUrl = `https://examprep.softician.com/notary#/promo-verify/${verifyToken}`;
+  await sendPromoVerifyEmail(env, normalizedEmail, promo.title, verifyUrl);
+
+  return json({ sent: true });
+}
+
+async function handlePromoVerifyEmailConfirm(request, env) {
+  const url = new URL(request.url);
+  const token = url.searchParams.get('token');
+  if (!token) return json({ error: 'token_required' }, 400);
+
+  const pending = await env.DB.prepare(
+    'SELECT * FROM pending_promo_email_verifications WHERE verify_token = ? AND expires_at > ?'
+  ).bind(token, now()).first();
+  if (!pending) return json({ error: 'invalid_or_expired_token' }, 404);
+
+  if (!pending.verified_at) {
+    await env.DB.prepare('UPDATE pending_promo_email_verifications SET verified_at = ? WHERE id = ?')
+      .bind(now(), pending.id).run();
+  }
+
+  const promo = await env.DB.prepare('SELECT title FROM promotions WHERE id = ?').bind(pending.promo_id).first();
+  return json({ ok: true, promoTitle: promo ? promo.title : null });
 }
 
 // Shared by /paypal/capture-order and (later) /points/redeem — generates a fresh code and
@@ -361,8 +425,10 @@ async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail) {
 // instead of a quote when the discount covers the whole price, since that case should route
 // through /points/redeem instead of a real charge -- callers check for it explicitly. Returns
 // { error: 'invalid_promo_code' } if a promoCode was given but doesn't match an active promotion,
-// or { error: 'promo_email_domain_required', requiredEmailDomain } if the promo needs a matching
-// email (e.g. a '.edu' student discount) and the given email doesn't qualify (or none was given).
+// { error: 'promo_email_domain_required', requiredEmailDomain } if the promo needs a matching
+// email (e.g. a '.edu' student discount) and the given email doesn't qualify (or none was given),
+// or { error: 'promo_email_verification_required' } if the promo also requires that email to have
+// clicked a confirmation link (see handlePromoVerifyRequest) and it hasn't yet.
 // Promo discount is applied BEFORE points, so points then discount whatever the promo left.
 //
 // NOTE: the fullyCoveredByPoints shortcut is deliberately only offered when there's no promo --
@@ -377,11 +443,12 @@ async function quoteCheckout(env, examType, email, applyPoints, promoCode) {
   if (promoCode) {
     promo = await findActivePromoByCode(env, promoCode);
     if (!promo) return { error: 'invalid_promo_code' };
-    if (promo.required_email_domain) {
-      const normalizedEmail = (email || '').trim().toLowerCase();
-      if (!normalizedEmail.endsWith(promo.required_email_domain)) {
-        return { error: 'promo_email_domain_required', requiredEmailDomain: promo.required_email_domain };
-      }
+    const normalizedEmail = (email || '').trim().toLowerCase();
+    if (promo.required_email_domain && !normalizedEmail.endsWith(promo.required_email_domain)) {
+      return { error: 'promo_email_domain_required', requiredEmailDomain: promo.required_email_domain };
+    }
+    if (promo.require_email_verification && !(await isPromoEmailVerified(env, promo.id, normalizedEmail))) {
+      return { error: 'promo_email_verification_required' };
     }
     promoDiscountCents = promoDiscountCentsFor(promo, priceCents);
   }
@@ -1535,6 +1602,7 @@ function promotionFromBody(b) {
     hasCode ? (b.discountType === 'flat_cents' ? 'flat_cents' : 'percent') : null,
     hasCode ? (parseInt(b.discountValue, 10) || 0) : null,
     hasCode && b.requiredEmailDomain && b.requiredEmailDomain.trim() ? b.requiredEmailDomain.trim().toLowerCase() : null,
+    hasCode && b.requireEmailVerification ? 1 : 0,
     ['home', 'checkout', 'both'].indexOf(b.placement) !== -1 ? b.placement : 'both',
     b.active ? 1 : 0,
   ];
@@ -1548,8 +1616,8 @@ async function handleConsolePromotionsCreate(request, env) {
   const sortOrder = (maxOrderRow && maxOrderRow.m != null ? maxOrderRow.m : -1) + 1;
   await env.DB.prepare(
     `INSERT INTO promotions (id, title, body, cta_label, cta_url, promo_code, discount_type, discount_value,
-       required_email_domain, placement, active, sort_order, redeemed_count, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?)`
+       required_email_domain, require_email_verification, placement, active, sort_order, redeemed_count, created_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?)`
   ).bind(id, ...promotionFromBody(b), sortOrder, now()).run();
   return json({ id });
 }
@@ -1560,7 +1628,7 @@ async function handleConsolePromotionsUpdate(request, env) {
   if (!b.title || !b.body) return json({ error: 'title_and_body_required' }, 400);
   await env.DB.prepare(
     `UPDATE promotions SET title=?, body=?, cta_label=?, cta_url=?, promo_code=?, discount_type=?,
-       discount_value=?, required_email_domain=?, placement=?, active=? WHERE id = ?`
+       discount_value=?, required_email_domain=?, require_email_verification=?, placement=?, active=? WHERE id = ?`
   ).bind(...promotionFromBody(b), b.id).run();
   return json({ ok: true });
 }
@@ -1755,6 +1823,8 @@ export default {
       if (pathname === '/sample' && method === 'GET') return await handleSample(request, env);
       if (pathname === '/pricing' && method === 'GET') return await handlePricingGet(request, env);
       if (pathname === '/promotions' && method === 'GET') return await handlePromotionsList(request, env);
+      if (pathname === '/promotions/verify-request' && method === 'POST') return await handlePromoVerifyRequest(request, env);
+      if (pathname === '/promotions/verify-email' && method === 'GET') return await handlePromoVerifyEmailConfirm(request, env);
       if (pathname === '/paypal/create-order' && method === 'POST') return await handlePaypalCreateOrder(request, env);
       if (pathname === '/paypal/capture-order' && method === 'POST') return await handlePaypalCaptureOrder(request, env);
       if (pathname === '/stripe/create-intent' && method === 'POST') return await handleStripeCreateIntent(request, env);
