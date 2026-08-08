@@ -95,6 +95,12 @@ CREATE TABLE accounts (
   email      TEXT NOT NULL UNIQUE,
   name       TEXT,
   points     INTEGER NOT NULL DEFAULT 0,
+  points_multiplier            INTEGER, -- set by redeeming a points-multiplier promotion; NULL =
+                                         -- no active multiplier (awardPoints treats missing/expired
+                                         -- the same as 1x)
+  points_multiplier_expires_at INTEGER, -- epoch seconds; awardPoints checks this on every award
+                                         -- rather than clearing it eagerly, so an expired
+                                         -- multiplier is just inert, not actively cleaned up
   created_at INTEGER NOT NULL
 );
 
@@ -230,7 +236,16 @@ CREATE TABLE promotions (
                                                -- must click a one-time confirmation link (see
                                                -- pending_promo_email_verifications) before the
                                                -- discount applies, not just match the domain
-  placement      TEXT NOT NULL DEFAULT 'both', -- 'home' | 'checkout' | 'both'
+  points_multiplier      INTEGER,              -- e.g. 2 to double referral points -- an entirely
+                                               -- different promo "effect" than a checkout discount
+                                               -- (see awardPoints), redeemed on the Refer page, not
+                                               -- checkout. NULL = not a points-multiplier promo.
+                                               -- Can coexist with a checkout discount on the same
+                                               -- row, though in practice each promo will set one.
+  points_multiplier_days INTEGER,              -- how many days the multiplier lasts once redeemed
+  placement      TEXT NOT NULL DEFAULT 'both', -- 'home' | 'checkout' | 'refer' | 'both' (both =
+                                               -- home + checkout; 'refer' is its own explicit
+                                               -- choice since it's a distinct page/audience)
   active         INTEGER NOT NULL DEFAULT 0,
   sort_order     INTEGER NOT NULL DEFAULT 0,
   redeemed_count INTEGER NOT NULL DEFAULT 0,

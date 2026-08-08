@@ -321,8 +321,12 @@ async function findActivePromoByCode(env, code) {
 // than a SQL LIKE per row and avoids the '_'/'%' wildcard-escaping footgun that'd come with LIKE.
 async function findActiveDomainPromoForEmail(env, email) {
   if (!email) return null;
+  // discount_value IS NOT NULL scopes this to actual checkout discounts -- a points-multiplier-only
+  // promotion (see handlePromoRedeemPointsMultiplier) never auto-applies at checkout even if it
+  // also happens to have a required_email_domain set with no code.
   const rows = (await env.DB.prepare(
-    `SELECT * FROM promotions WHERE active = 1 AND promo_code IS NULL AND required_email_domain IS NOT NULL ORDER BY sort_order ASC`
+    `SELECT * FROM promotions WHERE active = 1 AND promo_code IS NULL AND required_email_domain IS NOT NULL
+     AND discount_value IS NOT NULL ORDER BY sort_order ASC`
   ).all()).results;
   return rows.find((p) => email.endsWith(p.required_email_domain)) || null;
 }
@@ -339,12 +343,17 @@ function promoDiscountCentsFor(promo, priceCents) {
 // whole point of advertising a code is telling the visitor what to type.
 async function handlePromotionsList(request, env) {
   const url = new URL(request.url);
-  const placement = url.searchParams.get('placement') === 'checkout' ? 'checkout' : 'home';
+  const requested = url.searchParams.get('placement');
+  const placement = ['home', 'checkout', 'refer'].indexOf(requested) !== -1 ? requested : 'home';
+  // 'both' only ever means home+checkout (see schema.sql) -- 'refer' is its own explicit choice,
+  // not folded into 'both', since it's a distinct page/audience from the storefront banners.
+  const placementFilter = placement === 'refer' ? 'placement = ?' : "(placement = ? OR placement = 'both')";
   const rows = (await env.DB.prepare(
     `SELECT id, title, body, cta_label AS ctaLabel, cta_url AS ctaUrl, promo_code AS promoCode,
             discount_type AS discountType, discount_value AS discountValue,
-            required_email_domain AS requiredEmailDomain, require_email_verification AS requireEmailVerification
-     FROM promotions WHERE active = 1 AND (placement = ? OR placement = 'both') ORDER BY sort_order ASC`
+            required_email_domain AS requiredEmailDomain, require_email_verification AS requireEmailVerification,
+            points_multiplier AS pointsMultiplier, points_multiplier_days AS pointsMultiplierDays
+     FROM promotions WHERE active = 1 AND ${placementFilter} ORDER BY sort_order ASC`
   ).bind(placement).all()).results;
   return json({ promotions: rows });
 }
@@ -415,6 +424,39 @@ async function handlePromoVerifyEmailConfirm(request, env) {
 
   const promo = await env.DB.prepare('SELECT title FROM promotions WHERE id = ?').bind(pending.promo_id).first();
   return json({ ok: true, promoTitle: promo ? promo.title : null });
+}
+
+// Redeems a points-multiplier promotion (e.g. "retired professionals get 2x points") on the
+// Refer-a-Friend page -- a completely different "effect" than a checkout discount, sharing only
+// the code/domain/verification lookup machinery. Sets the multiplier directly on the account
+// (get-or-create by email, same as a referral) so every future awardPoints call picks it up until
+// it expires; nothing retroactive, and nothing to undo if it's not renewed.
+async function handlePromoRedeemPointsMultiplier(request, env) {
+  const { promoCode, email, turnstileToken } = await request.json();
+  const ip = request.headers.get('CF-Connecting-IP');
+  if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
+    return json({ error: 'turnstile_failed' }, 400);
+  }
+  if (!promoCode || !email) return json({ error: 'promoCode_and_email_required' }, 400);
+
+  const promo = await findActivePromoByCode(env, promoCode);
+  if (!promo || !promo.points_multiplier) return json({ error: 'invalid_promo_code' }, 400);
+
+  const normalizedEmail = email.trim().toLowerCase();
+  if (promo.required_email_domain && !normalizedEmail.endsWith(promo.required_email_domain)) {
+    return json({ error: 'promo_email_domain_required', requiredEmailDomain: promo.required_email_domain }, 400);
+  }
+  if (promo.require_email_verification && !(await isPromoEmailVerified(env, promo.id, normalizedEmail))) {
+    return json({ error: 'promo_email_verification_required', promoId: promo.id, promoTitle: promo.title }, 400);
+  }
+
+  const account = await getOrCreateAccount(env, normalizedEmail, null);
+  const expiresAt = now() + (promo.points_multiplier_days || 0) * 86400;
+  await env.DB.prepare('UPDATE accounts SET points_multiplier = ?, points_multiplier_expires_at = ? WHERE id = ?')
+    .bind(promo.points_multiplier, expiresAt, account.id).run();
+  await env.DB.prepare('UPDATE promotions SET redeemed_count = redeemed_count + 1 WHERE id = ?').bind(promo.id).run();
+
+  return json({ ok: true, multiplier: promo.points_multiplier, expiresAt });
 }
 
 // Shared by /paypal/capture-order and (later) /points/redeem — generates a fresh code and
@@ -683,12 +725,18 @@ async function getOrCreateAccount(env, email, name) {
 
 // Looks up the current point value for a task and credits it — returns 0 (no-op) if the rule
 // is missing or an admin has turned it off, so disabling an earning path never breaks the
-// underlying action (verification/conversion still records normally either way).
+// underlying action (verification/conversion still records normally either way). Applies the
+// account's points_multiplier (from redeeming a points-multiplier promotion -- see
+// handlePromoRedeemPointsMultiplier) if one is set and not yet expired; an expired multiplier is
+// just treated as 1x rather than actively cleared, so there's nothing to keep tidy elsewhere.
 async function awardPoints(env, accountId, taskKey) {
   const rule = await env.DB.prepare('SELECT * FROM point_rules WHERE task_key = ? AND active = 1').bind(taskKey).first();
   if (!rule) return 0;
-  await env.DB.prepare('UPDATE accounts SET points = points + ? WHERE id = ?').bind(rule.points, accountId).run();
-  return rule.points;
+  const account = await env.DB.prepare('SELECT points_multiplier, points_multiplier_expires_at FROM accounts WHERE id = ?').bind(accountId).first();
+  const multiplier = (account && account.points_multiplier && account.points_multiplier_expires_at > now()) ? account.points_multiplier : 1;
+  const pointsToAward = rule.points * multiplier;
+  await env.DB.prepare('UPDATE accounts SET points = points + ? WHERE id = ?').bind(pointsToAward, accountId).run();
+  return pointsToAward;
 }
 
 // Accepts a batch of friends in one call rather than one-friend-per-request -- Turnstile tokens
@@ -1632,6 +1680,7 @@ function promotionFromBody(b) {
   // classic secret-coupon-style promos.
   const hasCode = !!(b.promoCode && b.promoCode.trim());
   const hasDiscount = b.discountValue !== undefined && b.discountValue !== null && parseFloat(b.discountValue) > 0;
+  const hasMultiplier = b.pointsMultiplier !== undefined && b.pointsMultiplier !== null && parseInt(b.pointsMultiplier, 10) > 1;
   return [
     b.title || '', b.body || '', b.ctaLabel || null, b.ctaUrl || null,
     hasCode ? normalizePromoCode(b.promoCode) : null,
@@ -1639,7 +1688,9 @@ function promotionFromBody(b) {
     hasDiscount ? (parseInt(b.discountValue, 10) || 0) : null,
     b.requiredEmailDomain && b.requiredEmailDomain.trim() ? b.requiredEmailDomain.trim().toLowerCase() : null,
     b.requireEmailVerification ? 1 : 0,
-    ['home', 'checkout', 'both'].indexOf(b.placement) !== -1 ? b.placement : 'both',
+    hasMultiplier ? parseInt(b.pointsMultiplier, 10) : null,
+    hasMultiplier ? (parseInt(b.pointsMultiplierDays, 10) || 30) : null,
+    ['home', 'checkout', 'refer', 'both'].indexOf(b.placement) !== -1 ? b.placement : 'both',
     b.active ? 1 : 0,
   ];
 }
@@ -1652,8 +1703,9 @@ async function handleConsolePromotionsCreate(request, env) {
   const sortOrder = (maxOrderRow && maxOrderRow.m != null ? maxOrderRow.m : -1) + 1;
   await env.DB.prepare(
     `INSERT INTO promotions (id, title, body, cta_label, cta_url, promo_code, discount_type, discount_value,
-       required_email_domain, require_email_verification, placement, active, sort_order, redeemed_count, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?)`
+       required_email_domain, require_email_verification, points_multiplier, points_multiplier_days,
+       placement, active, sort_order, redeemed_count, created_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?)`
   ).bind(id, ...promotionFromBody(b), sortOrder, now()).run();
   return json({ id });
 }
@@ -1664,7 +1716,8 @@ async function handleConsolePromotionsUpdate(request, env) {
   if (!b.title || !b.body) return json({ error: 'title_and_body_required' }, 400);
   await env.DB.prepare(
     `UPDATE promotions SET title=?, body=?, cta_label=?, cta_url=?, promo_code=?, discount_type=?,
-       discount_value=?, required_email_domain=?, require_email_verification=?, placement=?, active=? WHERE id = ?`
+       discount_value=?, required_email_domain=?, require_email_verification=?, points_multiplier=?,
+       points_multiplier_days=?, placement=?, active=? WHERE id = ?`
   ).bind(...promotionFromBody(b), b.id).run();
   return json({ ok: true });
 }
@@ -1861,6 +1914,7 @@ export default {
       if (pathname === '/promotions' && method === 'GET') return await handlePromotionsList(request, env);
       if (pathname === '/promotions/verify-request' && method === 'POST') return await handlePromoVerifyRequest(request, env);
       if (pathname === '/promotions/verify-email' && method === 'GET') return await handlePromoVerifyEmailConfirm(request, env);
+      if (pathname === '/promotions/redeem-points-multiplier' && method === 'POST') return await handlePromoRedeemPointsMultiplier(request, env);
       if (pathname === '/paypal/create-order' && method === 'POST') return await handlePaypalCreateOrder(request, env);
       if (pathname === '/paypal/capture-order' && method === 'POST') return await handlePaypalCaptureOrder(request, env);
       if (pathname === '/stripe/create-intent' && method === 'POST') return await handleStripeCreateIntent(request, env);
