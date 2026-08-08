@@ -315,6 +315,18 @@ async function findActivePromoByCode(env, code) {
   ).bind(normalized).first();
 }
 
+// Codeless discounts (no promo_code) auto-apply whenever the buyer's email matches -- there's
+// nothing secret to type, so there's no lookup key besides the email itself. Only a handful of
+// promotions exist at a time, so fetching all codeless ones and checking suffixes in JS is simpler
+// than a SQL LIKE per row and avoids the '_'/'%' wildcard-escaping footgun that'd come with LIKE.
+async function findActiveDomainPromoForEmail(env, email) {
+  if (!email) return null;
+  const rows = (await env.DB.prepare(
+    `SELECT * FROM promotions WHERE active = 1 AND promo_code IS NULL AND required_email_domain IS NOT NULL ORDER BY sort_order ASC`
+  ).all()).results;
+  return rows.find((p) => email.endsWith(p.required_email_domain)) || null;
+}
+
 function promoDiscountCentsFor(promo, priceCents) {
   if (!promo) return 0;
   if (promo.discount_type === 'percent') return Math.round(priceCents * promo.discount_value / 100);
@@ -354,14 +366,18 @@ async function isPromoEmailVerified(env, promoId, email) {
 // an existing pending row -- a fresh row+link per request is simplest, and a few valid links for
 // the same promo+email is harmless (any one of them verifies it).
 async function handlePromoVerifyRequest(request, env) {
-  const { promoCode, email, turnstileToken } = await request.json();
+  const { promoCode, promoId, email, turnstileToken } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
   if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
     return json({ error: 'turnstile_failed' }, 400);
   }
-  if (!promoCode || !email) return json({ error: 'promoCode_and_email_required' }, 400);
+  if ((!promoCode && !promoId) || !email) return json({ error: 'promo_and_email_required' }, 400);
 
-  const promo = await findActivePromoByCode(env, promoCode);
+  // promoId (no code to type) covers the auto-detected domain-gated case; promoCode covers the
+  // classic coded case -- either identifies the same promotion, just via a different path.
+  const promo = promoCode
+    ? await findActivePromoByCode(env, promoCode)
+    : await env.DB.prepare('SELECT * FROM promotions WHERE id = ? AND active = 1').bind(promoId).first();
   if (!promo) return json({ error: 'invalid_promo_code' }, 400);
   if (!promo.require_email_verification) return json({ error: 'verification_not_required' }, 400);
 
@@ -425,11 +441,17 @@ async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail) {
 // instead of a quote when the discount covers the whole price, since that case should route
 // through /points/redeem instead of a real charge -- callers check for it explicitly. Returns
 // { error: 'invalid_promo_code' } if a promoCode was given but doesn't match an active promotion,
-// { error: 'promo_email_domain_required', requiredEmailDomain } if the promo needs a matching
+// { error: 'promo_email_domain_required', requiredEmailDomain } if a CODED promo needs a matching
 // email (e.g. a '.edu' student discount) and the given email doesn't qualify (or none was given),
-// or { error: 'promo_email_verification_required' } if the promo also requires that email to have
-// clicked a confirmation link (see handlePromoVerifyRequest) and it hasn't yet.
-// Promo discount is applied BEFORE points, so points then discount whatever the promo left.
+// or { error: 'promo_email_verification_required', promoId, promoTitle } if the promo (coded or
+// auto-detected) also requires that email to have clicked a confirmation link (see
+// handlePromoVerifyRequest) and it hasn't yet. Promo discount is applied BEFORE points, so points
+// then discount whatever the promo left.
+//
+// A promoCode always resolves by exact match; with none given but an email present, a codeless
+// domain-gated promo (see findActiveDomainPromoForEmail) auto-applies if the email's domain
+// matches -- no code to type, since the domain+verification checks are the real gate for that
+// promo type, not the code. No email + no code just means no promo, not an error.
 //
 // NOTE: the fullyCoveredByPoints shortcut is deliberately only offered when there's no promo --
 // /points/redeem checks points against the full undiscounted price, with no promo awareness, so
@@ -438,17 +460,21 @@ async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail) {
 // way to $0 through that other endpoint.
 async function quoteCheckout(env, examType, email, applyPoints, promoCode) {
   const { priceCents, currency } = await getPrice(env, examType);
+  const normalizedEmail = (email || '').trim().toLowerCase();
   let promo = null;
   let promoDiscountCents = 0;
   if (promoCode) {
     promo = await findActivePromoByCode(env, promoCode);
     if (!promo) return { error: 'invalid_promo_code' };
-    const normalizedEmail = (email || '').trim().toLowerCase();
     if (promo.required_email_domain && !normalizedEmail.endsWith(promo.required_email_domain)) {
       return { error: 'promo_email_domain_required', requiredEmailDomain: promo.required_email_domain };
     }
+  } else if (normalizedEmail) {
+    promo = await findActiveDomainPromoForEmail(env, normalizedEmail); // null just means no match -- not an error
+  }
+  if (promo) {
     if (promo.require_email_verification && !(await isPromoEmailVerified(env, promo.id, normalizedEmail))) {
-      return { error: 'promo_email_verification_required' };
+      return { error: 'promo_email_verification_required', promoId: promo.id, promoTitle: promo.title };
     }
     promoDiscountCents = promoDiscountCentsFor(promo, priceCents);
   }
@@ -518,7 +544,9 @@ async function handlePaypalCreateOrder(request, env) {
   if (!examType) return json({ error: 'examType_required' }, 400);
 
   const quote = await quoteCheckout(env, examType, email, applyPoints, promoCode);
-  if (quote.error) return json({ error: quote.error, requiredEmailDomain: quote.requiredEmailDomain }, 400);
+  if (quote.error) {
+    return json({ error: quote.error, requiredEmailDomain: quote.requiredEmailDomain, promoId: quote.promoId, promoTitle: quote.promoTitle }, 400);
+  }
   if (quote.fullyCoveredByPoints) return json({ error: 'fully_covered_by_points' }, 400); // client should use /points/redeem instead
 
   const order = await createPayPalOrder(env, quote.finalPriceCents, quote.currency);
@@ -534,7 +562,7 @@ async function handlePaypalCreateOrder(request, env) {
     ).bind(order.id, quote.promo.id, quote.promo.promo_code, quote.promoDiscountCents, now()).run();
   }
 
-  return json({ orderId: order.id, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply, promoDiscountCents: quote.promoDiscountCents || 0 });
+  return json({ orderId: order.id, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply, promoDiscountCents: quote.promoDiscountCents || 0, promoTitle: quote.promo ? quote.promo.title : undefined });
 }
 
 async function handlePaypalCaptureOrder(request, env) {
@@ -585,7 +613,9 @@ async function handleStripeCreateIntent(request, env) {
   if (!examType) return json({ error: 'examType_required' }, 400);
 
   const quote = await quoteCheckout(env, examType, email, applyPoints, promoCode);
-  if (quote.error) return json({ error: quote.error, requiredEmailDomain: quote.requiredEmailDomain }, 400);
+  if (quote.error) {
+    return json({ error: quote.error, requiredEmailDomain: quote.requiredEmailDomain, promoId: quote.promoId, promoTitle: quote.promoTitle }, 400);
+  }
   if (quote.fullyCoveredByPoints) return json({ error: 'fully_covered_by_points' }, 400); // client should use /points/redeem instead
 
   const intent = await createStripePaymentIntent(env, quote.finalPriceCents, quote.currency, { email, examType });
@@ -601,7 +631,7 @@ async function handleStripeCreateIntent(request, env) {
     ).bind(intent.id, quote.promo.id, quote.promo.promo_code, quote.promoDiscountCents, now()).run();
   }
 
-  return json({ clientSecret: intent.client_secret, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply, promoDiscountCents: quote.promoDiscountCents || 0 });
+  return json({ clientSecret: intent.client_secret, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply, promoDiscountCents: quote.promoDiscountCents || 0, promoTitle: quote.promo ? quote.promo.title : undefined });
 }
 
 async function handleStripeConfirm(request, env) {
@@ -1595,14 +1625,20 @@ async function handleConsolePromotionsList(env) {
 }
 
 function promotionFromBody(b) {
+  // A discount no longer requires a typed code -- a promo with a required_email_domain and no
+  // code auto-applies whenever a matching email is entered at checkout (see
+  // findActiveDomainPromoForEmail), since the domain+verification checks are the real gate and a
+  // code would add no protection, just friction, for that case. A code is still supported for
+  // classic secret-coupon-style promos.
   const hasCode = !!(b.promoCode && b.promoCode.trim());
+  const hasDiscount = b.discountValue !== undefined && b.discountValue !== null && parseFloat(b.discountValue) > 0;
   return [
     b.title || '', b.body || '', b.ctaLabel || null, b.ctaUrl || null,
     hasCode ? normalizePromoCode(b.promoCode) : null,
-    hasCode ? (b.discountType === 'flat_cents' ? 'flat_cents' : 'percent') : null,
-    hasCode ? (parseInt(b.discountValue, 10) || 0) : null,
-    hasCode && b.requiredEmailDomain && b.requiredEmailDomain.trim() ? b.requiredEmailDomain.trim().toLowerCase() : null,
-    hasCode && b.requireEmailVerification ? 1 : 0,
+    hasDiscount ? (b.discountType === 'flat_cents' ? 'flat_cents' : 'percent') : null,
+    hasDiscount ? (parseInt(b.discountValue, 10) || 0) : null,
+    b.requiredEmailDomain && b.requiredEmailDomain.trim() ? b.requiredEmailDomain.trim().toLowerCase() : null,
+    b.requireEmailVerification ? 1 : 0,
     ['home', 'checkout', 'both'].indexOf(b.placement) !== -1 ? b.placement : 'both',
     b.active ? 1 : 0,
   ];
