@@ -113,6 +113,165 @@ async function handleSample(request, env) {
   });
 }
 
+// ---- WebMCP / remote MCP server ------------------------------------------
+// Public, unauthenticated MCP tools so AI assistants (ChatGPT, Perplexity, Claude, a browser
+// WebMCP agent via Cloudflare's bridge script, etc.) can demo real practice questions in-chat and
+// link back to the site -- the AEO/try-before-you-buy funnel described in temp/WebMcp.txt. Reuses
+// handleSample's exact selection query (ORDER BY weight DESC, RANDOM()) rather than a new
+// "is_public_sample" flag, so the exposed question pool is the same self-limiting top-weight tier
+// /sample already exposes unauthenticated -- no new schema, no new trust boundary. Grading trusts
+// question IDs the same way the authenticated quiz flow does: they're non-enumerable UUIDs
+// (newId()), so no additional scoping is needed on the lookup.
+const MCP_PROTOCOL_VERSION = '2025-06-18';
+const MCP_CORS_HEADERS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Access-Control-Allow-Headers': 'Content-Type, Accept, Mcp-Session-Id',
+};
+const MCP_TOOLS = [
+  {
+    name: 'get_sample_question',
+    description: 'Fetch a real practice question from Softician Exam Prep\'s California Notary Public exam question bank. Returns the question and its 4 answer choices (A-D) WITHOUT the correct answer -- call grade_practice_answer with the returned questionId once you have a response to check it and see the explanation.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        topic: { type: 'string', description: 'Optional topic to filter by, e.g. "Fees", "Journal", "Bonds". Omit for any topic.' },
+        examType: { type: 'string', description: 'Which exam track. Currently only "notary" (California Notary Public exam) is available.', default: 'notary' },
+      },
+    },
+    outputSchema: {
+      type: 'object',
+      properties: {
+        questionId: { type: 'string' },
+        examType: { type: 'string' },
+        topic: { type: 'string' },
+        question: { type: 'string' },
+        choices: {
+          type: 'object',
+          properties: { A: { type: 'string' }, B: { type: 'string' }, C: { type: 'string' }, D: { type: 'string' } },
+          required: ['A', 'B', 'C', 'D'],
+        },
+      },
+      required: ['questionId', 'examType', 'topic', 'question', 'choices'],
+    },
+  },
+  {
+    name: 'grade_practice_answer',
+    description: 'Grade a response to a practice question previously returned by get_sample_question, and return whether it was correct plus the official explanation.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        questionId: { type: 'string', description: 'The questionId returned by get_sample_question.' },
+        response: { type: 'string', enum: ['A', 'B', 'C', 'D'], description: 'The letter choice being graded.' },
+      },
+      required: ['questionId', 'response'],
+    },
+    outputSchema: {
+      type: 'object',
+      properties: { correct: { type: 'boolean' }, correctChoice: { type: 'string' }, explanation: { type: 'string' } },
+      required: ['correct', 'correctChoice', 'explanation'],
+    },
+  },
+];
+
+async function mcpGetSampleQuestion(env, args) {
+  const examType = (args && args.examType) || 'notary';
+  const topic = args && args.topic;
+  let row = topic
+    ? await env.DB.prepare('SELECT * FROM questions WHERE exam_type = ? AND topic = ? ORDER BY weight DESC, RANDOM() LIMIT 1').bind(examType, topic).first()
+    : null;
+  if (!row) row = await env.DB.prepare('SELECT * FROM questions WHERE exam_type = ? ORDER BY weight DESC, RANDOM() LIMIT 1').bind(examType).first();
+  if (!row) return { error: `No practice questions available for examType "${examType}".` };
+  return {
+    questionId: row.id, examType: row.exam_type, topic: row.topic, question: row.question,
+    choices: { A: row.choice_a, B: row.choice_b, C: row.choice_c, D: row.choice_d },
+  };
+}
+
+async function mcpGradePracticeAnswer(env, args) {
+  const questionId = args && args.questionId;
+  const response = args && args.response;
+  if (!questionId || !['A', 'B', 'C', 'D'].includes(response)) {
+    return { error: 'questionId and a response of A, B, C, or D are required.' };
+  }
+  const row = await env.DB.prepare('SELECT * FROM questions WHERE id = ?').bind(questionId).first();
+  if (!row) return { error: `Unknown questionId "${questionId}" -- call get_sample_question first to get a valid one.` };
+  return { correct: response === row.correct_choice, correctChoice: row.correct_choice, explanation: row.explanation };
+}
+
+function mcpToolResultText(toolName, data) {
+  if (data.error) return data.error;
+  if (toolName === 'get_sample_question') {
+    return `[${data.topic}] ${data.question}\nA) ${data.choices.A}\nB) ${data.choices.B}\nC) ${data.choices.C}\nD) ${data.choices.D}\n\n` +
+      `(questionId: ${data.questionId} -- pass this to grade_practice_answer with the chosen letter)\n` +
+      `Full mock exams and progress tracking: https://examprep.softician.com`;
+  }
+  const verdict = data.correct ? 'Correct!' : `Not quite -- the correct answer is ${data.correctChoice}.`;
+  return `${verdict} ${data.explanation}\n\nFull mock exams and progress tracking: https://examprep.softician.com`;
+}
+
+function mcpJson(data, status = 200) {
+  return new Response(JSON.stringify(data), {
+    status, headers: { 'content-type': 'application/json', 'cache-control': 'no-store', ...MCP_CORS_HEADERS },
+  });
+}
+function mcpErrorResponse(id, code, message) {
+  return mcpJson({ jsonrpc: '2.0', id: id === undefined ? null : id, error: { code, message } });
+}
+
+async function handleMcp(request, env) {
+  if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: MCP_CORS_HEADERS });
+  if (request.method !== 'POST') {
+    return new Response('Method Not Allowed', { status: 405, headers: { ...MCP_CORS_HEADERS, Allow: 'POST, OPTIONS' } });
+  }
+
+  let body;
+  try {
+    body = await request.json();
+  } catch (e) {
+    return mcpErrorResponse(null, -32700, 'Parse error');
+  }
+  if (Array.isArray(body)) return mcpErrorResponse(null, -32600, 'Batch requests are not supported.');
+  const { jsonrpc, id, method, params } = body || {};
+  if (jsonrpc !== '2.0' || typeof method !== 'string') return mcpErrorResponse(id, -32600, 'Invalid Request');
+  const isNotification = id === undefined;
+
+  if (method === 'notifications/initialized' || method === 'notifications/cancelled') {
+    return new Response(null, { status: 202, headers: MCP_CORS_HEADERS });
+  }
+
+  if (method === 'initialize') {
+    return mcpJson({
+      jsonrpc: '2.0', id,
+      result: {
+        protocolVersion: MCP_PROTOCOL_VERSION,
+        capabilities: { tools: {} },
+        serverInfo: { name: 'examprep-mcp', title: 'Softician Exam Prep', version: '1.0.0' },
+        instructions: 'Public, unauthenticated tools for California Notary Public exam prep: fetch a real practice question and grade a submitted answer. Full mock exams and progress tracking are at https://examprep.softician.com.',
+      },
+    });
+  }
+
+  if (method === 'tools/list') return mcpJson({ jsonrpc: '2.0', id, result: { tools: MCP_TOOLS } });
+
+  if (method === 'tools/call') {
+    const toolName = params && params.name;
+    const args = (params && params.arguments) || {};
+    let data;
+    if (toolName === 'get_sample_question') data = await mcpGetSampleQuestion(env, args);
+    else if (toolName === 'grade_practice_answer') data = await mcpGradePracticeAnswer(env, args);
+    else return mcpErrorResponse(id, -32602, `Unknown tool "${toolName}"`);
+
+    const isError = !!data.error;
+    const result = { content: [{ type: 'text', text: mcpToolResultText(toolName, data) }], isError };
+    if (!isError) result.structuredContent = data;
+    return mcpJson({ jsonrpc: '2.0', id, result });
+  }
+
+  if (isNotification) return new Response(null, { status: 202, headers: MCP_CORS_HEADERS });
+  return mcpErrorResponse(id, -32601, `Method not found: ${method}`);
+}
+
 // Parses a `Range: bytes=start-end` header into an R2 { offset, length } range, supporting
 // open-ended ("bytes=500-") and suffix ("bytes=-500") forms. Needed so <audio>/<video> can
 // seek within these (often 50-100MB+) files instead of re-downloading the whole thing.
@@ -1911,6 +2070,7 @@ export default {
     try {
       if (pathname === '/redeem' && method === 'POST') return await handleRedeem(request, env);
       if (pathname === '/sample' && method === 'GET') return await handleSample(request, env);
+      if (pathname === '/mcp') return await handleMcp(request, env);
       if (pathname === '/pricing' && method === 'GET') return await handlePricingGet(request, env);
       if (pathname === '/promotions' && method === 'GET') return await handlePromotionsList(request, env);
       if (pathname === '/promotions/verify-request' && method === 'POST') return await handlePromoVerifyRequest(request, env);
