@@ -473,6 +473,14 @@ async function handlePricingGet(request, env) {
   return json({ examType, priceCents, currency, minPaypalChargeCents });
 }
 
+// Small, unauthenticated, site-wide config -- fetched once at boot (not tied to any one page) so
+// the footer and other chrome that renders before/without any other API call can still reflect
+// admin-configurable values instead of a stale hardcoded default.
+async function handlePublicConfig(env) {
+  const refundFailurePercent = await getRefundFailurePercent(env);
+  return json({ refundFailurePercent });
+}
+
 // ---- Promotions ----------------------------------------------------------
 // Admin-configurable banners (examprep-admin's Promotions tab) shown on the public site's home
 // and/or checkout pages. A promo with promo_code set is a real discount, redeemed by typing that
@@ -1033,7 +1041,16 @@ async function detectAndCreditConversion(env, buyerEmail) {
 // being auto-approved, and actual refund execution happens manually in PayPal, not via API here.
 const REFUND_UNCONDITIONAL_WINDOW_SEC = 7 * 86400;
 const REFUND_FAILURE_WINDOW_SEC = 180 * 86400;
-const REFUND_FAILURE_PERCENT = 0.5;
+// Admin-editable in examprep-admin's Settings tab (key: refund_failure_percent) -- the
+// 'exam_failure_50pct' claimType string is just a stable internal identifier and is NOT
+// renamed when this changes, same as EXAM_CONFIGS keys don't change when their values do.
+const DEFAULT_REFUND_FAILURE_PERCENT = 50;
+
+async function getRefundFailurePercent(env) {
+  const raw = await getAppSetting(env, 'refund_failure_percent', String(DEFAULT_REFUND_FAILURE_PERCENT));
+  const pct = parseInt(raw, 10);
+  return Number.isFinite(pct) && pct >= 0 && pct <= 100 ? pct : DEFAULT_REFUND_FAILURE_PERCENT;
+}
 
 async function handleRefundClaimSubmit(request, env) {
   const { code, email, claimType, examDate, confirmationNote, notes, turnstileToken } = await request.json();
@@ -1060,9 +1077,10 @@ async function handleRefundClaimSubmit(request, env) {
   const windowSec = claimType === 'unconditional_7day' ? REFUND_UNCONDITIONAL_WINDOW_SEC : REFUND_FAILURE_WINDOW_SEC;
   if (now() - codeRow.issued_at > windowSec) return json({ error: 'window_expired' }, 400);
 
+  const failurePercent = await getRefundFailurePercent(env);
   const refundCents = claimType === 'unconditional_7day'
     ? codeRow.paid_cents
-    : Math.round(codeRow.paid_cents * REFUND_FAILURE_PERCENT);
+    : Math.round(codeRow.paid_cents * (failurePercent / 100));
 
   const claimId = newId();
   await env.DB.prepare(
@@ -1071,7 +1089,7 @@ async function handleRefundClaimSubmit(request, env) {
   ).bind(claimId, codeRow.code, email.trim().toLowerCase(), claimType, examDate || null, confirmationNote || null, notes || null, refundCents, now()).run();
 
   await notifyAdmin(env, 'New refund claim',
-    `<p>${claimType === 'unconditional_7day' ? '7-day no-questions' : 'exam-failure 50%'} refund claim for code ` +
+    `<p>${claimType === 'unconditional_7day' ? '7-day no-questions' : 'exam-failure ' + failurePercent + '%'} refund claim for code ` +
     `<strong>${codeRow.code}</strong> (${email}) — $${(refundCents / 100).toFixed(2)}. Review it in the admin Refund Claims tab.</p>`);
 
   return json({ ok: true, refundCents });
@@ -2086,6 +2104,7 @@ export default {
       if (pathname === '/sample' && method === 'GET') return await handleSample(request, env);
       if (pathname === '/mcp') return await handleMcp(request, env);
       if (pathname === '/pricing' && method === 'GET') return await handlePricingGet(request, env);
+      if (pathname === '/config' && method === 'GET') return await handlePublicConfig(env);
       if (pathname === '/promotions' && method === 'GET') return await handlePromotionsList(request, env);
       if (pathname === '/promotions/verify-request' && method === 'POST') return await handlePromoVerifyRequest(request, env);
       if (pathname === '/promotions/verify-email' && method === 'GET') return await handlePromoVerifyEmailConfirm(request, env);
