@@ -131,7 +131,14 @@ const MCP_CORS_HEADERS = {
 const MCP_TOOLS = [
   {
     name: 'get_sample_question',
+    title: 'Get a sample exam question',
     description: 'Fetch a real practice question from Softician Exam Prep\'s California Notary Public exam question bank. Returns the question and its 4 answer choices (A-D) WITHOUT the correct answer -- call grade_practice_answer with the returned questionId once you have a response to check it and see the explanation.',
+    annotations: {
+      title: 'Get a sample exam question',
+      readOnlyHint: true,
+      destructiveHint: false,
+      openWorldHint: false,
+    },
     inputSchema: {
       type: 'object',
       properties: {
@@ -157,7 +164,14 @@ const MCP_TOOLS = [
   },
   {
     name: 'grade_practice_answer',
+    title: 'Grade a practice answer',
     description: 'Grade a response to a practice question previously returned by get_sample_question, and return whether it was correct plus the official explanation.',
+    annotations: {
+      title: 'Grade a practice answer',
+      readOnlyHint: true,
+      destructiveHint: false,
+      openWorldHint: false,
+    },
     inputSchema: {
       type: 'object',
       properties: {
