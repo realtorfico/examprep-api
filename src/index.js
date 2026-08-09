@@ -399,6 +399,47 @@ async function notifyAdmin(env, title, bodyHtml, replyTo) {
   } catch (e) { /* best-effort */ }
 }
 
+// ---- Daily health check (Cloudflare Cron Trigger, see wrangler.jsonc) -----
+// Guards against the 2026-08-08 incident: STRIPE_SECRET_KEY silently disappeared from this
+// Worker's Cloudflare secrets with no loud error until a real buyer hit checkout. Stripe is
+// checked live (a cheap read-only call proves the key is both present AND still valid, not
+// just non-empty -- catches a revoked/rolled key too); the rest are presence-only since a
+// wiped secret -- not a wrong value -- is the specific failure mode this is guarding against.
+const OTHER_REQUIRED_SECRETS = ['TURNSTILE_SECRET', 'RESEND_API_KEY', 'MEDIA_SIGNING_SECRET'];
+
+async function checkStripeSecretLive(env) {
+  if (!env.STRIPE_SECRET_KEY) return 'STRIPE_SECRET_KEY is not set';
+  const res = await fetch('https://api.stripe.com/v1/balance', {
+    headers: { Authorization: `Bearer ${env.STRIPE_SECRET_KEY}` },
+  });
+  if (res.ok) return null;
+  const data = await res.json().catch(() => ({}));
+  return `Stripe rejected STRIPE_SECRET_KEY: ${(data.error && data.error.message) || res.status}`;
+}
+
+async function runDailyHealthCheck(env) {
+  const problems = [];
+  const stripeProblem = await checkStripeSecretLive(env);
+  if (stripeProblem) problems.push(stripeProblem);
+  for (const name of OTHER_REQUIRED_SECRETS) {
+    if (!env[name]) problems.push(`${name} is not set`);
+  }
+  if (!problems.length) return;
+
+  console.error('Daily health check failed:', problems.join('; '));
+  // Deliberately does NOT use notifyAdmin's silent-no-op-if-unconfigured wrapper -- an
+  // unconfigured admin_alert_email (or a dead RESEND_API_KEY, ironically) should be loud here
+  // via the console.error above, which shows up in the Worker's Logs tab even if the email
+  // itself can't be sent, so this failure never goes completely unnoticed.
+  const to = await getAppSetting(env, 'admin_alert_email', '');
+  if (!to) return;
+  await sendAdminAlertEmail(env, to, '⚠️ ExamPrep daily health check failed',
+    '<p>The daily automated check found a problem:</p><ul>' +
+    problems.map((p) => `<li>${escapeHtml(p)}</li>`).join('') +
+    '</ul><p>Most likely a Worker secret was cleared in the Cloudflare dashboard -- check ' +
+    'examprep-api’s Settings &gt; Variables and Secrets.</p>');
+}
+
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
@@ -2196,5 +2237,12 @@ export default {
     } catch (err) {
       return json({ error: 'internal_error', message: err.message }, 500);
     }
+  },
+
+  // Cloudflare Cron Trigger, see wrangler.jsonc `triggers.crons` -- runs runDailyHealthCheck
+  // once a day regardless of site traffic (unlike the fetch handler above, this fires even if
+  // nobody visits the buy page that day, so a wiped secret gets caught before a real buyer does).
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(runDailyHealthCheck(env));
   },
 };

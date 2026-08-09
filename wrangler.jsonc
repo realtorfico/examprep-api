@@ -18,7 +18,11 @@
     // access is only via signed /media/:file URLs minted by /resources/sign-batch (see
     // src/lib/mediaSign.js), so this binding is the ONLY way to reach the file contents.
     { "binding": "MEDIA", "bucket_name": "examprep-media" }
-  ]
+  ],
+  // Daily health check (src/index.js `scheduled` handler) -- catches a Worker secret silently
+  // going missing (see the 2026-08-08 STRIPE_SECRET_KEY incident) before a real buyer does.
+  // 13:00 UTC = 6am Pacific / 9am Eastern.
+  "triggers": { "crons": ["0 13 * * *"] }
   // Secrets/vars (set via dashboard: Settings > Variables & Secrets, not committed here):
   //   TURNSTILE_SECRET          — from the Turnstile widget (public site's /redeem form)
   //   CF_ACCESS_TEAM_DOMAIN     — e.g. yourteam.cloudflareaccess.com
