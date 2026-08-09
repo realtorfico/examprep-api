@@ -236,6 +236,12 @@ CREATE TABLE promotions (
                                                -- must click a one-time confirmation link (see
                                                -- pending_promo_email_verifications) before the
                                                -- discount applies, not just match the domain
+  first_purchase_only INTEGER NOT NULL DEFAULT 0, -- admin-toggleable: if set, the discount is
+                                               -- rejected when the checkout email already appears
+                                               -- as a buyer_email on any row in `codes` (see
+                                               -- quoteCheckout) -- i.e. this account has already
+                                               -- gotten access before, by any means (paid, points,
+                                               -- or free). Requires an email to be given at all.
   points_multiplier      INTEGER,              -- e.g. 2 to double referral points -- an entirely
                                                -- different promo "effect" than a checkout discount
                                                -- (see awardPoints), redeemed on the Refer page, not

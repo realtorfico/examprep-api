@@ -714,15 +714,23 @@ async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail) {
 // { error: 'invalid_promo_code' } if a promoCode was given but doesn't match an active promotion,
 // { error: 'promo_email_domain_required', requiredEmailDomain } if a CODED promo needs a matching
 // email (e.g. a '.edu' student discount) and the given email doesn't qualify (or none was given),
-// or { error: 'promo_email_verification_required', promoId, promoTitle } if the promo (coded or
+// { error: 'promo_email_verification_required', promoId, promoTitle } if the promo (coded or
 // auto-detected) also requires that email to have clicked a confirmation link (see
-// handlePromoVerifyRequest) and it hasn't yet. Promo discount is applied BEFORE points, so points
-// then discount whatever the promo left.
+// handlePromoVerifyRequest) and it hasn't yet, { error: 'promo_first_purchase_only_email_required' }
+// if the promo is restricted to first-time buyers and no email was given, or
+// { error: 'promo_not_first_purchase' } if that email already appears as a buyer_email on an
+// existing `codes` row (i.e. this account already has access, however it was obtained). Promo
+// discount is applied BEFORE points, so points then discount whatever the promo left.
 //
 // A promoCode always resolves by exact match; with none given but an email present, a codeless
 // domain-gated promo (see findActiveDomainPromoForEmail) auto-applies if the email's domain
 // matches -- no code to type, since the domain+verification checks are the real gate for that
 // promo type, not the code. No email + no code just means no promo, not an error.
+//
+// Exactly one promotion can ever apply to a single checkout -- promoCode resolves by exact match
+// OR (only when absent) a domain match is tried, never both, so there's no path to stacking two
+// promo discounts on the same purchase. Referral points remain a separate, deliberately-stackable
+// mechanism (see the fullyCoveredByPoints note below), not a second promotion.
 //
 // NOTE: the fullyCoveredByPoints shortcut is deliberately only offered when there's no promo --
 // /points/redeem checks points against the full undiscounted price, with no promo awareness, so
@@ -744,6 +752,12 @@ async function quoteCheckout(env, examType, email, applyPoints, promoCode) {
     promo = await findActiveDomainPromoForEmail(env, normalizedEmail); // null just means no match -- not an error
   }
   if (promo) {
+    if (promo.first_purchase_only) {
+      if (!normalizedEmail) return { error: 'promo_first_purchase_only_email_required' };
+      const priorCode = await env.DB.prepare('SELECT 1 FROM codes WHERE LOWER(buyer_email) = ? LIMIT 1')
+        .bind(normalizedEmail).first();
+      if (priorCode) return { error: 'promo_not_first_purchase' };
+    }
     if (promo.require_email_verification && !(await isPromoEmailVerified(env, promo.id, normalizedEmail))) {
       return { error: 'promo_email_verification_required', promoId: promo.id, promoTitle: promo.title };
     }
@@ -1928,6 +1942,7 @@ function promotionFromBody(b) {
     hasDiscount ? (parseInt(b.discountValue, 10) || 0) : null,
     b.requiredEmailDomain && b.requiredEmailDomain.trim() ? b.requiredEmailDomain.trim().toLowerCase() : null,
     b.requireEmailVerification ? 1 : 0,
+    b.firstPurchaseOnly ? 1 : 0,
     hasMultiplier ? parseInt(b.pointsMultiplier, 10) : null,
     hasMultiplier ? (parseInt(b.pointsMultiplierDays, 10) || 30) : null,
     ['home', 'checkout', 'refer', 'both'].indexOf(b.placement) !== -1 ? b.placement : 'both',
@@ -1943,9 +1958,9 @@ async function handleConsolePromotionsCreate(request, env) {
   const sortOrder = (maxOrderRow && maxOrderRow.m != null ? maxOrderRow.m : -1) + 1;
   await env.DB.prepare(
     `INSERT INTO promotions (id, title, body, cta_label, cta_url, promo_code, discount_type, discount_value,
-       required_email_domain, require_email_verification, points_multiplier, points_multiplier_days,
+       required_email_domain, require_email_verification, first_purchase_only, points_multiplier, points_multiplier_days,
        placement, active, sort_order, redeemed_count, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?)`
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?)`
   ).bind(id, ...promotionFromBody(b), sortOrder, now()).run();
   return json({ id });
 }
@@ -1956,8 +1971,8 @@ async function handleConsolePromotionsUpdate(request, env) {
   if (!b.title || !b.body) return json({ error: 'title_and_body_required' }, 400);
   await env.DB.prepare(
     `UPDATE promotions SET title=?, body=?, cta_label=?, cta_url=?, promo_code=?, discount_type=?,
-       discount_value=?, required_email_domain=?, require_email_verification=?, points_multiplier=?,
-       points_multiplier_days=?, placement=?, active=? WHERE id = ?`
+       discount_value=?, required_email_domain=?, require_email_verification=?, first_purchase_only=?,
+       points_multiplier=?, points_multiplier_days=?, placement=?, active=? WHERE id = ?`
   ).bind(...promotionFromBody(b), b.id).run();
   return json({ ok: true });
 }
