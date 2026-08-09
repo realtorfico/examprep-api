@@ -477,8 +477,15 @@ async function handlePricingGet(request, env) {
 // the footer and other chrome that renders before/without any other API call can still reflect
 // admin-configurable values instead of a stale hardcoded default.
 async function handlePublicConfig(env) {
-  const refundFailurePercent = await getRefundFailurePercent(env);
-  return json({ refundFailurePercent });
+  const [refundFailurePercent, progressPassPcts] = await Promise.all([
+    getRefundFailurePercent(env),
+    getProgressPassPcts(env),
+  ]);
+  return json({
+    refundFailurePercent,
+    accuracyPassPct: progressPassPcts.accuracyPassPct,
+    coveragePassPct: progressPassPcts.coveragePassPct,
+  });
 }
 
 // ---- Promotions ----------------------------------------------------------
