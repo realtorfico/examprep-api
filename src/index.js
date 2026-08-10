@@ -1635,6 +1635,13 @@ const EXAM_CONFIGS = {
   // The real score is a proprietary scaled score (0-100), not literally percent-correct --
   // this uses raw percent-correct against the same 70 threshold as a practice approximation.
   notary: { questionCount: 45, durationSec: 3600, passPercent: 70 },
+  // 46 questions / 38 correct to pass, per the real CA DMV Class C written knowledge test.
+  // 38/46 = 82.6% (buildExamResult rounds percent to 1 decimal via Math.round(x*1000)/10) -- using
+  // 82.6 here, not 83, so a candidate who scores exactly the real pass line (38/46) is graded as
+  // passing here too, matching the actual DMV threshold instead of a rounded-up approximation of it.
+  // The real test is untimed (in-person at a DMV office/kiosk) -- 60 minutes here is a generous
+  // stand-in so the timed-mock-exam format still applies, not a real DMV time limit.
+  ca_driver: { questionCount: 46, durationSec: 3600, passPercent: 82.6 },
 };
 function getExamConfig(examType) {
   return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
