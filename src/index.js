@@ -1642,6 +1642,14 @@ const EXAM_CONFIGS = {
   // The real test is untimed (in-person at a DMV office/kiosk) -- 60 minutes here is a generous
   // stand-in so the timed-mock-exam format still applies, not a real DMV time limit.
   ca_driver: { questionCount: 46, durationSec: 3600, passPercent: 82.6 },
+  // 50 questions / 40 correct (80%) to pass, per the real CA DMV CDL General Knowledge test --
+  // the one test every CDL candidate takes regardless of endorsements. The question bank also
+  // covers Air Brakes/Combination Vehicles and Passenger/School Bus/Tank/HazMat endorsement
+  // content (real candidates only take the specific endorsement tests they need, as separate
+  // sittings) -- this mock exam blends everything into one practice sitting rather than modeling
+  // each real sub-test separately, same simplification as the hub card's combined breakdown.
+  // Untimed in reality (in-person at a DMV office/kiosk); 60 minutes is a generous stand-in.
+  cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
 };
 function getExamConfig(examType) {
   return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
