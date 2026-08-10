@@ -10,6 +10,12 @@ function json(data, status = 200) {
 }
 const now = () => Math.floor(Date.now() / 1000);
 
+// examprep-api has no public route -- every request arrives via a Pages Service Binding proxy
+// (see each site's _worker.js) that forwards the original request unchanged aside from path, so
+// request.url's host is whichever public domain the browser actually hit. Used to build links
+// that should point back to that same domain rather than a hardcoded one.
+const requestOrigin = (request) => new URL(request.url).origin;
+
 // Canonicalizes an email for referral dedup/self-referral checks -- major providers alias
 // "+tag" suffixes (and Gmail additionally ignores dots in the local part) to the same inbox,
 // so without this a single inbox can look like dozens of distinct referrals and farm points
@@ -630,7 +636,7 @@ async function handlePromoVerifyRequest(request, env) {
     'INSERT INTO pending_promo_email_verifications (id, promo_id, email, verify_token, created_at, expires_at) VALUES (?, ?, ?, ?, ?, ?)'
   ).bind(newId(), promo.id, normalizedEmail, verifyToken, now(), now() + PROMO_EMAIL_VERIFY_TTL_SECONDS).run();
 
-  const verifyUrl = `https://examprep.softician.com/notary#/promo-verify/${verifyToken}`;
+  const verifyUrl = `${requestOrigin(request)}/notary#/promo-verify/${verifyToken}`;
   await sendPromoVerifyEmail(env, normalizedEmail, promo.title, verifyUrl);
 
   return json({ sent: true });
@@ -1036,7 +1042,7 @@ async function handleReferralInvite(request, env) {
     }
 
     try {
-      const verifyUrl = `https://examprep.softician.com/notary#/refer-verify/${verifyToken}`;
+      const verifyUrl = `${requestOrigin(request)}/notary#/refer-verify/${verifyToken}`;
       await sendReferralInviteEmail(env, friendEmail, referrerName, verifyUrl);
     } catch (e) { /* referral row still exists even if the invite email fails to send */ }
     results.push({ email: friendEmail, status: 'sent' });
@@ -1240,7 +1246,7 @@ async function handlePointsRedeem(request, env) {
     'INSERT INTO pending_redemptions (id, email, exam_type, points, verify_token, created_at, expires_at) VALUES (?, ?, ?, ?, ?, ?, ?)'
   ).bind(newId(), normalizedEmail, examType, required, verifyToken, now(), now() + REDEEM_VERIFY_TTL_SECONDS).run();
 
-  const verifyUrl = `https://examprep.softician.com/notary#/points-redeem-verify/${verifyToken}`;
+  const verifyUrl = `${requestOrigin(request)}/notary#/points-redeem-verify/${verifyToken}`;
   await sendRedeemVerifyEmail(env, normalizedEmail, required, verifyUrl);
 
   return json({ pending: true, email: normalizedEmail });
