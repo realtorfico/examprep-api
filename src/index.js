@@ -1650,6 +1650,9 @@ const EXAM_CONFIGS = {
   // each real sub-test separately, same simplification as the hub card's combined breakdown.
   // Untimed in reality (in-person at a DMV office/kiosk); 60 minutes is a generous stand-in.
   cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  // 25 questions / 20 correct (80%) to pass, per the real CA DMV M1/M2 motorcycle written
+  // knowledge test. Untimed in reality; 60 minutes is a generous stand-in.
+  motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80 },
 };
 function getExamConfig(examType) {
   return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
