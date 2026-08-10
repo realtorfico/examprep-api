@@ -1630,14 +1630,8 @@ async function handleConsoleStalledBuyerRemind(request, env) {
 // server-authoritative start time (not client-trusted) so refreshing or fiddling with the
 // client clock can't extend the time limit or draw a fresh, easier question set mid-attempt.
 
-// exam_type naming convention going forward: {state}_{category}, e.g. tx_driver, fl_notary --
-// national (non-state-specific) exams like the NMLS MLO stay unprefixed. notary/cdl/motorcycle
-// were renamed to ca_notary/ca_cdl/ca_motorcycle to fit this (ca_driver already fit); the aliases
-// below keep old-named rows working during the D1 migration window -- remove once the migration
-// (see the UPDATE statements handed to the user) is confirmed done, and normalizeExamType() with it.
-const LEGACY_EXAM_TYPE_ALIASES = { notary: 'ca_notary', cdl: 'ca_cdl', motorcycle: 'ca_motorcycle' };
-function normalizeExamType(examType) { return LEGACY_EXAM_TYPE_ALIASES[examType] || examType; }
-
+// exam_type naming convention: {state}_{category}, e.g. tx_driver, fl_notary -- national
+// (non-state-specific) exams like the NMLS MLO stay unprefixed.
 const EXAM_CONFIGS = {
   // 45 questions / 60 minutes / scaled score of 70 to pass, per CPS HR's official exam FAQ.
   // The real score is a proprietary scaled score (0-100), not literally percent-correct --
@@ -1663,7 +1657,7 @@ const EXAM_CONFIGS = {
   ca_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80 },
 };
 function getExamConfig(examType) {
-  return EXAM_CONFIGS[normalizeExamType(examType)] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
+  return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
 }
 
 async function handleExamConfig(request, env) {
