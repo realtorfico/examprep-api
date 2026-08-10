@@ -1902,7 +1902,10 @@ async function handleExamAttemptDetail(user, request, env) {
 }
 
 async function handlePrefsGet(user) {
-  return json({ theme: user.theme, fontScale: user.font_scale });
+  // examType rides along here (not just theme/font) since this is already the cheapest existing
+  // per-request lookup of "info about my own account" -- the frontend needs to know which track a
+  // token actually grants access to, distinct from whatever track's route it's currently viewing.
+  return json({ theme: user.theme, fontScale: user.font_scale, examType: user.exam_type });
 }
 async function handlePrefsSet(user, request, env) {
   const { theme, fontScale } = await request.json();
