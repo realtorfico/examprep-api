@@ -106,7 +106,7 @@ async function handleRedeem(request, env) {
 // the response (unlike the real quiz flow) since there's no progress to protect here.
 async function handleSample(request, env) {
   const url = new URL(request.url);
-  const examType = url.searchParams.get('examType') || 'notary';
+  const examType = url.searchParams.get('examType') || 'ca_notary';
   const rows = await env.DB.prepare(
     'SELECT * FROM questions WHERE exam_type = ? ORDER BY weight DESC, RANDOM() LIMIT 5'
   ).bind(examType).all();
@@ -149,7 +149,7 @@ const MCP_TOOLS = [
       type: 'object',
       properties: {
         topic: { type: 'string', description: 'Optional topic to filter by, e.g. "Fees", "Journal", "Bonds". Omit for any topic.' },
-        examType: { type: 'string', description: 'Which exam track. Currently only "notary" (California Notary Public exam) is available.', default: 'notary' },
+        examType: { type: 'string', description: 'Which exam track, e.g. "ca_notary" (California Notary Public exam), "ca_driver", "ca_cdl", "ca_motorcycle".', default: 'ca_notary' },
       },
     },
     outputSchema: {
@@ -195,7 +195,7 @@ const MCP_TOOLS = [
 ];
 
 async function mcpGetSampleQuestion(env, args) {
-  const examType = (args && args.examType) || 'notary';
+  const examType = (args && args.examType) || 'ca_notary';
   const topic = args && args.topic;
   let row = topic
     ? await env.DB.prepare('SELECT * FROM questions WHERE exam_type = ? AND topic = ? ORDER BY weight DESC, RANDOM() LIMIT 1').bind(examType, topic).first()
@@ -370,7 +370,7 @@ const FREE_RESOURCES = {
 
 async function handleResourcesFree(request, env) {
   const url = new URL(request.url);
-  const examType = url.searchParams.get('examType') || 'notary';
+  const examType = url.searchParams.get('examType') || 'ca_notary';
   const files = FREE_RESOURCES[examType] || [];
   const ttlSeconds = 3600;
   const urls = {};
@@ -514,7 +514,7 @@ async function getProgressPassPcts(env) {
 
 async function handlePricingGet(request, env) {
   const url = new URL(request.url);
-  const examType = url.searchParams.get('examType') || 'notary';
+  const examType = url.searchParams.get('examType') || 'ca_notary';
   const { priceCents, currency } = await getPrice(env, examType);
   const minPaypalChargeCents = await getMinPaypalChargeCents(env);
   return json({ examType, priceCents, currency, minPaypalChargeCents });
@@ -1630,11 +1630,19 @@ async function handleConsoleStalledBuyerRemind(request, env) {
 // server-authoritative start time (not client-trusted) so refreshing or fiddling with the
 // client clock can't extend the time limit or draw a fresh, easier question set mid-attempt.
 
+// exam_type naming convention going forward: {state}_{category}, e.g. tx_driver, fl_notary --
+// national (non-state-specific) exams like the NMLS MLO stay unprefixed. notary/cdl/motorcycle
+// were renamed to ca_notary/ca_cdl/ca_motorcycle to fit this (ca_driver already fit); the aliases
+// below keep old-named rows working during the D1 migration window -- remove once the migration
+// (see the UPDATE statements handed to the user) is confirmed done, and normalizeExamType() with it.
+const LEGACY_EXAM_TYPE_ALIASES = { notary: 'ca_notary', cdl: 'ca_cdl', motorcycle: 'ca_motorcycle' };
+function normalizeExamType(examType) { return LEGACY_EXAM_TYPE_ALIASES[examType] || examType; }
+
 const EXAM_CONFIGS = {
   // 45 questions / 60 minutes / scaled score of 70 to pass, per CPS HR's official exam FAQ.
   // The real score is a proprietary scaled score (0-100), not literally percent-correct --
   // this uses raw percent-correct against the same 70 threshold as a practice approximation.
-  notary: { questionCount: 45, durationSec: 3600, passPercent: 70 },
+  ca_notary: { questionCount: 45, durationSec: 3600, passPercent: 70 },
   // 46 questions / 38 correct to pass, per the real CA DMV Class C written knowledge test.
   // 38/46 = 82.6% (buildExamResult rounds percent to 1 decimal via Math.round(x*1000)/10) -- using
   // 82.6 here, not 83, so a candidate who scores exactly the real pass line (38/46) is graded as
@@ -1649,18 +1657,18 @@ const EXAM_CONFIGS = {
   // sittings) -- this mock exam blends everything into one practice sitting rather than modeling
   // each real sub-test separately, same simplification as the hub card's combined breakdown.
   // Untimed in reality (in-person at a DMV office/kiosk); 60 minutes is a generous stand-in.
-  cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  ca_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
   // 25 questions / 20 correct (80%) to pass, per the real CA DMV M1/M2 motorcycle written
   // knowledge test. Untimed in reality; 60 minutes is a generous stand-in.
-  motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80 },
+  ca_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80 },
 };
 function getExamConfig(examType) {
-  return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
+  return EXAM_CONFIGS[normalizeExamType(examType)] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
 }
 
 async function handleExamConfig(request, env) {
   const url = new URL(request.url);
-  const examType = url.searchParams.get('examType') || 'notary';
+  const examType = url.searchParams.get('examType') || 'ca_notary';
   return json({ examType, ...getExamConfig(examType) });
 }
 
