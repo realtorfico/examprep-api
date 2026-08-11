@@ -1671,6 +1671,16 @@ const EXAM_CONFIGS = {
   // 50 questions / 40 correct (80%) to pass, per the real FLHSMV CDL General Knowledge test --
   // same AAMVA-standard format as ca_cdl/tx_cdl. 1 hour time limit in reality, matches durationSec.
   fl_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  // 20 questions / 14 correct (70%) to pass, per the real NY DMV Class D written knowledge test.
+  // Untimed in reality (in-person at a DMV office/kiosk); 60 minutes is a generous stand-in.
+  ny_driver: { questionCount: 20, durationSec: 3600, passPercent: 70 },
+  // 50 questions / 40 correct (80%) to pass, per the real NY DMV CDL General Knowledge test --
+  // same AAMVA-standard format as ca_cdl/tx_cdl/fl_cdl. Untimed in reality; 60 minutes is a
+  // generous stand-in.
+  ny_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  // 40 questions / 28 correct (70%) to pass, per the real NY Department of State notary exam FAQ.
+  // Genuinely timed in reality (60 minutes), unlike the untimed DMV tests above.
+  ny_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
 };
 function getExamConfig(examType) {
   return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
