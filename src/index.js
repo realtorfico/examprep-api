@@ -1665,6 +1665,12 @@ const EXAM_CONFIGS = {
   // 50 questions / 40 correct (80%) to pass, per the real Texas DPS CDL General Knowledge test --
   // same AAMVA-standard format as ca_cdl. Untimed in reality; 60 minutes is a generous stand-in.
   tx_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  // 50 questions / 40 correct (80%) to pass, per the real FLHSMV Class E Knowledge Exam.
+  // Untimed in reality (in-person at a FLHSMV office/kiosk); 60 minutes is a generous stand-in.
+  fl_driver: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  // 50 questions / 40 correct (80%) to pass, per the real FLHSMV CDL General Knowledge test --
+  // same AAMVA-standard format as ca_cdl/tx_cdl. 1 hour time limit in reality, matches durationSec.
+  fl_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
 };
 function getExamConfig(examType) {
   return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
