@@ -539,6 +539,32 @@ async function handlePublicConfig(env) {
   });
 }
 
+// Sitewide, anonymized aggregates for the home page's "outcomes" strip -- real numbers computed
+// live from questions/codes/exam_attempts, not hardcoded or fabricated (see the redesign's
+// standing constraint: never fabricate a value to fill a design element). No per-user data.
+// Pass rate is computed here in JS rather than in SQL because the passing threshold varies per
+// exam_type and lives in EXAM_CONFIGS, not a DB column, so it can't be expressed as a single
+// WHERE clause across all tracks at once.
+async function handlePublicStats(env) {
+  const [questionCountRow, studentsRow, attemptRows] = await Promise.all([
+    env.DB.prepare(`SELECT COUNT(*) AS n FROM questions`).first(),
+    env.DB.prepare(`SELECT COUNT(*) AS n FROM codes WHERE status = 'redeemed'`).first(),
+    env.DB.prepare(`SELECT exam_type, score_correct, score_total FROM exam_attempts WHERE submitted_at IS NOT NULL`).all(),
+  ]);
+  const attempts = attemptRows.results || [];
+  const passed = attempts.filter((a) => {
+    if (!a.score_total) return false;
+    return (100 * a.score_correct) / a.score_total >= getExamConfig(a.exam_type).passPercent;
+  }).length;
+  return json({
+    totalQuestions: questionCountRow.n || 0,
+    examsCompleted: attempts.length,
+    passRate: attempts.length ? Math.round((100 * passed) / attempts.length) : null,
+    studentsServed: studentsRow.n || 0,
+    tracksLive: Object.keys(EXAM_CONFIGS).length,
+  });
+}
+
 // ---- Promotions ----------------------------------------------------------
 // Admin-configurable banners (examprep-admin's Promotions tab) shown on the public site's home
 // and/or checkout pages. A promo with promo_code set is a real discount, redeemed by typing that
@@ -2277,6 +2303,7 @@ export default {
       if (pathname === '/mcp') return await handleMcp(request, env);
       if (pathname === '/pricing' && method === 'GET') return await handlePricingGet(request, env);
       if (pathname === '/config' && method === 'GET') return await handlePublicConfig(env);
+      if (pathname === '/stats/public' && method === 'GET') return await handlePublicStats(env);
       if (pathname === '/promotions' && method === 'GET') return await handlePromotionsList(request, env);
       if (pathname === '/promotions/verify-request' && method === 'POST') return await handlePromoVerifyRequest(request, env);
       if (pathname === '/promotions/verify-email' && method === 'GET') return await handlePromoVerifyEmailConfirm(request, env);
