@@ -1933,6 +1933,29 @@ async function handlePrefsGet(user) {
   // token actually grants access to, distinct from whatever track's route it's currently viewing.
   return json({ theme: user.theme, fontScale: user.font_scale, examType: user.exam_type });
 }
+// Account-level info for the "My Profile" page. There's no name/email field on `users` itself --
+// an email only exists if one was captured at purchase (codes.buyer_email, best-effort from
+// PayPal/backup email), which is also the only way to look up referral points (accounts is a
+// separate, email-keyed table with no direct FK to users) -- both are null for a code redeemed
+// with no email ever provided, which the frontend must render gracefully, not as an error.
+async function handleProfileGet(user, env) {
+  const codeRow = await env.DB.prepare('SELECT code, buyer_email, redeemed_at, paid_cents FROM codes WHERE redeemed_by = ?')
+    .bind(user.id).first();
+  let points = null;
+  if (codeRow && codeRow.buyer_email) {
+    const account = await env.DB.prepare('SELECT points FROM accounts WHERE email = ?')
+      .bind(codeRow.buyer_email.trim().toLowerCase()).first();
+    points = account ? account.points : 0;
+  }
+  return json({
+    examType: user.exam_type,
+    createdAt: user.created_at,
+    code: codeRow ? codeRow.code : null,
+    buyerEmail: codeRow ? codeRow.buyer_email : null,
+    paidCents: codeRow ? codeRow.paid_cents : null,
+    points,
+  });
+}
 async function handlePrefsSet(user, request, env) {
   const { theme, fontScale } = await request.json();
   await env.DB.prepare('UPDATE users SET theme = ?, font_scale = ? WHERE id = ?')
@@ -2301,6 +2324,7 @@ export default {
       if (pathname === '/exam/attempt' && method === 'GET') return await handleExamAttemptDetail(user, request, env);
       if (pathname === '/prefs' && method === 'GET') return await handlePrefsGet(user);
       if (pathname === '/prefs' && method === 'POST') return await handlePrefsSet(user, request, env);
+      if (pathname === '/profile' && method === 'GET') return await handleProfileGet(user, env);
       if (pathname === '/resources/sign-batch' && method === 'POST') return await handleResourcesSignBatch(user, request, env);
 
       return json({ error: 'not_found' }, 404);
