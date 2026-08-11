@@ -20,7 +20,11 @@ const fs = require('fs');
 const path = require('path');
 
 const REQUIRED_FIELDS = ['topic', 'question', 'choice_a', 'choice_b', 'choice_c', 'choice_d', 'correct_choice', 'explanation', 'weight', 'source_note'];
-const CHUNK_SIZE = 40;
+// D1 Console rejects very large single pastes (~271 statements / ~214KB observed failing).
+// Actual per-statement size across tracks built so far runs ~800-950 bytes, so 70 statements
+// keeps every chunk under ~65KB -- comfortably under a third of the known failure point, while
+// roughly halving the number of files to paste (a ~250-question track: 7 chunks -> 4).
+const CHUNK_SIZE = 70;
 const DEDUPE_THRESHOLD = 0.72;
 const SPOT_CHECK_SAMPLES = 12;
 
@@ -158,9 +162,16 @@ function main() {
   console.log(`SQL check: ${badQuotes} odd-quote lines, ${badRows} malformed question rows.`);
   if (badQuotes || badRows) { console.error('Aborting before chunking -- fix the SQL generation issue above first.'); process.exit(1); }
 
-  // 6. Split into D1-Console-sized chunks
+  // 6. Split into D1-Console-sized chunks. Clear any stale chunk files from a prior run first --
+  // a re-run with a different CHUNK_SIZE (or fewer deduped rows) writes fewer/smaller files than
+  // before, and leftover old chunk-NN.sql files would silently still be sitting in the directory
+  // with overlapping/duplicate INSERT statements, ready to be pasted by mistake.
   const chunkDir = path.join(outDir, `${examType}_batch${batchNum}_chunks`);
-  if (!fs.existsSync(chunkDir)) fs.mkdirSync(chunkDir, { recursive: true });
+  if (fs.existsSync(chunkDir)) {
+    for (const f of fs.readdirSync(chunkDir)) fs.unlinkSync(path.join(chunkDir, f));
+  } else {
+    fs.mkdirSync(chunkDir, { recursive: true });
+  }
   const pricingLine = insertLines.find(l => l.startsWith('INSERT INTO pricing'));
   fs.writeFileSync(path.join(chunkDir, 'chunk-00-pricing.sql'), pricingLine + '\n');
   let chunkNum = 1;
