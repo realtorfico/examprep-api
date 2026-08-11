@@ -1659,6 +1659,12 @@ const EXAM_CONFIGS = {
   // 25 questions / 20 correct (80%) to pass, per the real CA DMV M1/M2 motorcycle written
   // knowledge test. Untimed in reality; 60 minutes is a generous stand-in.
   ca_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80 },
+  // 30 questions / 21 correct (70%) to pass, per the real Texas DPS driver knowledge test.
+  // Untimed in reality (in-person at a DPS office/kiosk); 60 minutes is a generous stand-in.
+  tx_driver: { questionCount: 30, durationSec: 3600, passPercent: 70 },
+  // 50 questions / 40 correct (80%) to pass, per the real Texas DPS CDL General Knowledge test --
+  // same AAMVA-standard format as ca_cdl. Untimed in reality; 60 minutes is a generous stand-in.
+  tx_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
 };
 function getExamConfig(examType) {
   return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
