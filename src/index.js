@@ -1707,6 +1707,11 @@ const EXAM_CONFIGS = {
   // questions / 75% to pass (30/40 correct exactly), per the Pearson VUE Candidate Handbook for
   // the PA Real Estate Salesperson exam. Genuinely timed in reality (60 minutes for this portion).
   pa_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 75 },
+  // 150 questions / 105 correct (70%) to pass, per the real DRE Salesperson exam -- covers both
+  // the national/general and state-specific content in one unified test (DRE administers its own
+  // exam directly, no PSI/Pearson national-vs-state split like other states' real estate tracks).
+  // Genuinely timed in reality: 3 hours 15 minutes (11700 sec), not a stand-in.
+  ca_dre: { questionCount: 150, durationSec: 11700, passPercent: 70 },
 };
 function getExamConfig(examType) {
   return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
