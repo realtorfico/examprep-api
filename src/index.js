@@ -1693,6 +1693,20 @@ const EXAM_CONFIGS = {
   // per the same PSI Candidate Information Booklet's Managing Broker Examination Summary Table.
   // Genuinely timed in reality (90 minutes).
   il_managing_broker: { questionCount: 50, durationSec: 3600, passPercent: 75 },
+  // 18 questions / 15 correct to pass, per the real PennDOT non-commercial knowledge test.
+  // 15/18 = 83.3% (buildExamResult rounds percent to 1 decimal) -- using 83.3, not 83, so a
+  // candidate scoring exactly the real pass line is graded as passing here too. Untimed in
+  // reality; 60 minutes is a generous stand-in.
+  pa_driver: { questionCount: 18, durationSec: 3600, passPercent: 83.3 },
+  // 50 questions / 40 correct (80%) to pass -- PennDOT's own fact sheet doesn't state a pass
+  // score, but 80% is the FEDERAL minimum under 49 CFR 383.135(a), binding on every state's CDL
+  // knowledge test (confirmed at ecfr.gov), same AAMVA-standard format as every other CDL track.
+  // Untimed in reality; 60 minutes is a generous stand-in.
+  pa_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  // State-specific portion only (not the national/general portion -- see project notes): 40
+  // questions / 75% to pass (30/40 correct exactly), per the Pearson VUE Candidate Handbook for
+  // the PA Real Estate Salesperson exam. Genuinely timed in reality (60 minutes for this portion).
+  pa_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 75 },
 };
 function getExamConfig(examType) {
   return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
