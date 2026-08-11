@@ -1,1 +1,8 @@
 deploy-metadata.json
+
+# Generated per-batch outputs from scripts/build-track-batch.js -- regenerable from the track
+# config + source excerpts, not worth versioning (mirrors how prior batches lived in ExamPrep/temp/,
+# outside any repo). The small *.json configs in scripts/tracks/ ARE committed.
+scripts/tracks/*.sql
+scripts/tracks/*_chunks/
+scripts/tracks/*_dropped.json
