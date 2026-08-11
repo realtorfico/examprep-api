@@ -1681,6 +1681,18 @@ const EXAM_CONFIGS = {
   // 40 questions / 28 correct (70%) to pass, per the real NY Department of State notary exam FAQ.
   // Genuinely timed in reality (60 minutes), unlike the untimed DMV tests above.
   ny_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
+  // 35 questions / 28 correct (80%) to pass, per the real Illinois Secretary of State Class D
+  // written knowledge test (confirmed via actual state regulation, not just secondary sources).
+  // Untimed in reality; 60 minutes is a generous stand-in.
+  il_driver: { questionCount: 35, durationSec: 3600, passPercent: 80 },
+  // State-specific portion only (not the national/general portion -- see project notes): 40
+  // questions / 75% to pass (30/40 correct exactly), per the PSI Candidate Information Booklet
+  // for the IDFPR Broker exam. Genuinely timed in reality (90 minutes for this portion).
+  il_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 75 },
+  // State-specific only (this exam has no national portion at all): 50 questions / 75% to pass,
+  // per the same PSI Candidate Information Booklet's Managing Broker Examination Summary Table.
+  // Genuinely timed in reality (90 minutes).
+  il_managing_broker: { questionCount: 50, durationSec: 3600, passPercent: 75 },
 };
 function getExamConfig(examType) {
   return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
