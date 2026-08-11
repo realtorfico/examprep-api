@@ -4,6 +4,7 @@ import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/st
 import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL } from './progressQueries.js';
+import { filesOwnedByTrack } from './resourceOwnership.js';
 
 function json(data, status = 200) {
   return Response.json(data, { status, headers: { 'cache-control': 'no-store' } });
@@ -343,15 +344,14 @@ async function handleMediaFile(request, env) {
 }
 
 // Bearer-token gated (see router) *and* exam-type-scoped: a signed URL must only ever be mintable
-// for a file that actually belongs to the caller's own track (see ALL_RESOURCE_FILES below) --
+// for a file that actually belongs to the caller's own track (see resourceOwnership.js) --
 // otherwise any paying customer of ANY track could sign and stream any OTHER track's premium
 // resources just by knowing/guessing a filename, since files themselves aren't stored per-exam_type
-// in D1 at all (the catalog only exists in this list + the site's own presentation-only copy).
+// in D1 at all (the catalog only exists in that module + the site's own presentation-only copy).
 async function handleResourcesSignBatch(user, request, env) {
   const { files } = await request.json();
   if (!Array.isArray(files) || !files.length) return json({ error: 'files_required' }, 400);
-  const owned = new Set(ALL_RESOURCE_FILES[user.exam_type] || []);
-  if (!files.every((f) => owned.has(f))) return json({ error: 'not_found' }, 404);
+  if (!filesOwnedByTrack(files, user.exam_type)) return json({ error: 'not_found' }, 404);
   const ttlSeconds = 3600; // long enough to fully stream a large file, short enough to discourage link-sharing
   const urls = {};
   for (const file of files) {
@@ -360,28 +360,6 @@ async function handleResourcesSignBatch(user, request, env) {
   }
   return json({ urls });
 }
-
-// Server-side source of truth for every resource file that exists for each track (superset of
-// FREE_RESOURCES below) -- authorizes handleResourcesSignBatch above. Must be kept in sync with the
-// `file:`-type entries in the site's own RESOURCES data (site repo, wwwroot/js/app.js) -- that copy
-// is presentation-only (titles/descriptions/topics), this is the actual access-control list.
-// url:-type resources (external handbook links) never go through this endpoint, so aren't listed.
-const ALL_RESOURCE_FILES = {
-  ca_notary: [
-    'The_Power_Behind_California_Notary_Stamps.m4a', 'Legal_Minefields_for_California_Notaries.m4a',
-    'Surprising_Rules_for_California_Notaries.mp4', 'California_Notary_Fees.mp4',
-    'California_Notary_Blueprint.pdf', 'California_Notary_2026_Quick_Guide.png',
-    'Inside_the_2026_California_Notary_Handbook.m4a', 'The_Notary_Toolkit.mp4',
-    'Why_your_California_notary_stamp_is_dangerous.m4a', 'Why_your_signature_is_just_ink.m4a',
-    'How_digital_deeds_become_physical_property_records.m4a', 'Tangible_Copy_Certification.mp4',
-    'California_Notary_Laws_Prevent_Property_Fraud.m4a', 'CA_Notary_Public_Lifecycle.mp4',
-    'Signature_by_Mark.mp4', 'How_an_X_becomes_a_legal_signature.m4a',
-    'California_Notary_Rules_for_Absent_Signers.m4a', 'Proof_of_Execution.mp4',
-    'Rules_for_Immigration_Documents.m4a', 'Immigration_Documents_-_Trust_Guardians.mp4',
-    'California_Notary_Rules.mp4', 'Why_California_Notaries_Demand_Your_Thumbprint.m4a',
-    'CA_Powers_of_Attorney.mp4',
-  ],
-};
 
 // Server-side source of truth for which resources are free-to-preview without an access code —
 // deliberately NOT trusted from the client, so a visitor can't just edit a `free: true` flag in

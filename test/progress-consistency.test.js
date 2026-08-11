@@ -16,6 +16,7 @@ import {
   PROGRESS_BY_TOPIC_SQL,
   CONSOLE_QUIZ_PROGRESS_SQL,
   STATS_ACCURACY_BY_TOPIC_SQL,
+  LEADERBOARD_SQL,
 } from '../src/progressQueries.js';
 
 function makeDb() {
@@ -27,6 +28,9 @@ function makeDb() {
     CREATE TABLE progress (
       user_id TEXT, question_id TEXT, times_seen INTEGER, times_correct INTEGER,
       last_result TEXT, PRIMARY KEY (user_id, question_id)
+    );
+    CREATE TABLE exam_attempts (
+      id TEXT PRIMARY KEY, user_id TEXT, exam_type TEXT, submitted_at INTEGER
     );
   `);
 
@@ -138,4 +142,94 @@ test("admin's global accuracy-by-topic matches the per-user breakdowns summed ac
     assert.equal(topicRow.attempts, expectedAttempts, `topic "${topicRow.topic}" attempts must match summed per-user rows`);
     assert.equal(topicRow.correct, expectedCorrect, `topic "${topicRow.topic}" correct must match summed per-user rows`);
   }
+});
+
+// ---- Multi-track isolation ------------------------------------------------------------
+// Regression coverage for the 2026-08-10 cross-track bugs (an account bound to one track
+// briefly showing another track's UI/resources -- see [[examprep_track_addition_playbook]]).
+// makeDb() above only ever had ONE exam_type in its fixture, so a query that accidentally
+// dropped/forgot a `WHERE exam_type = ?`/`JOIN ... ON exam_type = ...` clause had no way to be
+// caught -- there was nothing else in the fixture for it to leak from. This fixture adds a
+// second track (ca_driver) with its own users/questions/progress, deliberately including a
+// topic NAMED THE SAME in both tracks ("General"), so a query that grouped by topic alone
+// (forgetting to also group/filter by exam_type) would visibly merge two tracks' stats together.
+function makeMultiTrackDb() {
+  const db = makeDb(); // seeds notary: u1/u2, q1-q3 (Fees/Fees/Journal), as already tested above
+
+  db.prepare('INSERT INTO users VALUES (?, ?)').run('d1', 'ca_driver');
+  db.prepare('INSERT INTO users VALUES (?, ?)').run('d2', 'ca_driver');
+  db.prepare('INSERT INTO codes VALUES (?, ?, ?)').run('DCODE1', 'd1', 'c@example.com');
+  db.prepare('INSERT INTO codes VALUES (?, ?, ?)').run('DCODE2', 'd2', 'd@example.com');
+
+  const driverQuestions = [
+    ['dq1', 'ca_driver', 'General'], // same topic NAME as notary would use if it had one -- deliberate
+    ['dq2', 'ca_driver', 'General'],
+    ['dq3', 'ca_driver', 'Signs'],
+  ];
+  for (const q of driverQuestions) db.prepare('INSERT INTO questions VALUES (?, ?, ?)').run(...q);
+
+  // d1: strong performer (mirrors u1's shape but on the OTHER track) -- if any notary query leaked
+  // into this, u1's own totals (5 attempts/2 correct) would visibly change when this runs.
+  db.prepare('INSERT INTO progress VALUES (?, ?, ?, ?, ?)').run('d1', 'dq1', 4, 4, 'correct');
+  db.prepare('INSERT INTO progress VALUES (?, ?, ?, ?, ?)').run('d1', 'dq2', 2, 1, 'correct');
+  db.prepare('INSERT INTO progress VALUES (?, ?, ?, ?, ?)').run('d2', 'dq1', 1, 0, 'incorrect');
+
+  return db;
+}
+
+test("a track's headline totals are unaffected by another track's data existing at all", () => {
+  const soloTotals = db_prepare_totals(makeDb());
+  const withOtherTrackTotals = db_prepare_totals(makeMultiTrackDb());
+  assert.deepEqual(withOtherTrackTotals, soloTotals,
+    "u1's totals must be identical whether or not ca_driver data exists in the same database");
+  function db_prepare_totals(db) { return db.prepare(PROGRESS_TOTALS_SQL).get('u1'); }
+});
+
+test('PROGRESS_BY_TOPIC_SQL never mixes another track\'s identically-named topic into this one\'s breakdown', () => {
+  const db = makeMultiTrackDb();
+  const notaryByTopic = db.prepare(PROGRESS_BY_TOPIC_SQL).all('u1', 'notary');
+  const driverByTopic = db.prepare(PROGRESS_BY_TOPIC_SQL).all('d1', 'ca_driver');
+
+  assert.ok(!notaryByTopic.some((r) => r.topic === 'General'), 'notary has no "General" topic of its own -- ca_driver\'s must not leak in');
+  assert.ok(!driverByTopic.some((r) => r.topic === 'Fees' || r.topic === 'Journal'), "ca_driver's breakdown must not include notary's topics");
+
+  const driverGeneral = driverByTopic.find((r) => r.topic === 'General');
+  assert.equal(driverGeneral.total, 6, 'd1 attempted dq1(4) + dq2(2) = 6 times');
+  assert.equal(driverGeneral.correct, 5, 'd1 got dq1(4) + dq2(1) = 5 correct');
+});
+
+test('LEADERBOARD_SQL only ever includes users from the requested track, even when another track has stronger stats', () => {
+  const db = makeMultiTrackDb();
+  const notaryBoard = db.prepare(LEADERBOARD_SQL).all('notary');
+  const driverBoard = db.prepare(LEADERBOARD_SQL).all('ca_driver');
+
+  assert.ok(notaryBoard.every((r) => ['u1', 'u2'].includes(r.user_id)), 'notary leaderboard must only contain notary users');
+  assert.ok(driverBoard.every((r) => ['d1', 'd2'].includes(r.user_id)), 'ca_driver leaderboard must only contain ca_driver users');
+  assert.ok(!notaryBoard.some((r) => r.user_id === 'd1'), "d1 (100% accuracy on ca_driver) must not appear on notary's leaderboard despite outscoring every notary user");
+});
+
+test("admin's per-user view keeps each user's rows scoped to their own exam_type's topics only", () => {
+  const db = makeMultiTrackDb();
+  const consoleRows = db.prepare(CONSOLE_QUIZ_PROGRESS_SQL).all();
+
+  const u1Rows = consoleRows.filter((r) => r.user_id === 'u1');
+  const d1Rows = consoleRows.filter((r) => r.user_id === 'd1');
+  assert.ok(u1Rows.every((r) => r.exam_type === 'notary'), "u1's admin rows must all say exam_type='notary'");
+  assert.ok(d1Rows.every((r) => r.exam_type === 'ca_driver'), "d1's admin rows must all say exam_type='ca_driver'");
+  assert.ok(!u1Rows.some((r) => r.topic === 'General' || r.topic === 'Signs'), "u1 (notary) must not show ca_driver's topics");
+});
+
+test("admin's global accuracy-by-topic keeps two tracks' identically-named topics as separate rows, not merged", () => {
+  const db = makeMultiTrackDb();
+  const global = db.prepare(STATS_ACCURACY_BY_TOPIC_SQL).all();
+
+  const generalRows = global.filter((r) => r.topic === 'General');
+  assert.equal(generalRows.length, 1, 'only ca_driver has a "General" topic in this fixture, so exactly one row, not merged with anything else');
+  assert.equal(generalRows[0].exam_type, 'ca_driver');
+  assert.equal(generalRows[0].attempts, 7, "d1's 6 (dq1:4 + dq2:2) + d2's 1 (dq1:1) = 7, summed across ALL ca_driver users");
+  assert.equal(generalRows[0].correct, 5, "d1's 5 (dq1:4 + dq2:1) + d2's 0 = 5");
+
+  const feesRows = global.filter((r) => r.topic === 'Fees');
+  assert.equal(feesRows.length, 1);
+  assert.equal(feesRows[0].exam_type, 'notary', 'Fees must stay attributed to notary, not get merged into ca_driver');
 });
