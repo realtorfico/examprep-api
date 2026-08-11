@@ -21,10 +21,12 @@ const path = require('path');
 
 const REQUIRED_FIELDS = ['topic', 'question', 'choice_a', 'choice_b', 'choice_c', 'choice_d', 'correct_choice', 'explanation', 'weight', 'source_note'];
 // D1 Console rejects very large single pastes (~271 statements / ~214KB observed failing).
-// Actual per-statement size across tracks built so far runs ~800-950 bytes, so 70 statements
-// keeps every chunk under ~65KB -- comfortably under a third of the known failure point, while
-// roughly halving the number of files to paste (a ~250-question track: 7 chunks -> 4).
-const CHUNK_SIZE = 70;
+// Actual per-statement size across tracks built so far runs ~800-950 bytes. 160 statements puts
+// a chunk at ~140KB -- about two-thirds of the known failure point, a real but still comfortable
+// margin below it -- cutting file count further (a ~1000-question track: 16 chunks -> ~7). If a
+// paste ever does fail, rebuild with a smaller CHUNK_SIZE; deterministic IDs mean a failed/retried
+// chunk surfaces as a loud UNIQUE constraint error or a COUNT mismatch, never silent corruption.
+const CHUNK_SIZE = 160;
 const DEDUPE_THRESHOLD = 0.72;
 const SPOT_CHECK_SAMPLES = 12;
 
