@@ -1849,6 +1849,12 @@ const EXAM_CONFIGS = {
   // Examination Summary Table, independently confirmed by OAC 1301:5-1-05(E). Genuinely timed in
   // reality (60 minutes for this portion) -- matches durationSec, not a stand-in.
   oh_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 70 },
+  // 60 questions / 48 correct (80%) to pass -- the common format across the NASBLA/ODNR-approved
+  // course vendors checked (BOATERexam/AceBoater use 60Q covering all 9 handbook chapters; 80% is
+  // consistent everywhere including BOATsmart!, which uses a 50Q variant of the same test). No
+  // single official Ohio boating exam exists -- see oh_boating's TRACK_COMPLIANCE entry for the
+  // full disclosure. No time limit published anywhere; untimed in reality (self-paced course).
+  oh_boating: { questionCount: 60, durationSec: 3600, passPercent: 80 },
 };
 
 // See the ca_driver entry above for sourcing -- this is the under-18/provisional-permit variant,
