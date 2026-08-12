@@ -2403,6 +2403,13 @@ async function handleQuestionCounts(env) {
   return json({ counts: rows });
 }
 
+// Backs the admin Settings > Course pricing table's read-only Duration/Questions/Pass score
+// columns -- EXAM_CONFIGS is the same single source of truth getExamConfig() itself reads for
+// generating real exams, so this can't drift out of sync with what a student actually sits.
+async function handleExamConfigsList(env) {
+  return json({ configs: EXAM_CONFIGS });
+}
+
 function questionFromBody(b) {
   return [b.examType, b.topic, b.question, b.choiceA, b.choiceB, b.choiceC, b.choiceD,
     b.correctChoice, b.explanation, b.weight ?? 3, b.sourceNote || null, b.source || 'self-gen'];
@@ -2516,6 +2523,7 @@ export default {
         if (pathname === '/console/refund-claims/review' && method === 'POST') return await handleConsoleRefundClaimsReview(request, env);
         if (pathname === '/console/questions' && method === 'GET') return await handleQuestionsList(request, env);
         if (pathname === '/console/questions/counts' && method === 'GET') return await handleQuestionCounts(env);
+        if (pathname === '/console/exam-configs' && method === 'GET') return await handleExamConfigsList(env);
         if (pathname === '/console/questions/create' && method === 'POST') return await handleQuestionCreate(request, env);
         if (pathname === '/console/questions/update' && method === 'POST') return await handleQuestionUpdate(request, env);
         if (pathname === '/console/questions/delete' && method === 'POST') return await handleQuestionDelete(request, env);
