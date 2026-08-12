@@ -1363,10 +1363,22 @@ async function findNextQuestionRow(env, user, difficulty) {
   const diffFilter = difficulty ? `AND (${DIFFICULTY_CASE}) = ?` : '';
   const diffArgs = difficulty ? [difficulty] : [];
 
+  // Excludes whatever question this user most recently answered, so the missed-question
+  // interleave below (and the exhausted-bank fallback further down) can never immediately
+  // re-serve the exact question just gotten wrong -- with a small missed-pool (e.g. only one
+  // question currently wrong), ORDER BY RANDOM() LIMIT 1 over a pool of one always picks that
+  // same question, which is exactly the "repeats right after I miss it" bug this fixes.
+  const lastRow = await env.DB.prepare(
+    'SELECT question_id FROM progress WHERE user_id = ? ORDER BY last_answered_at DESC LIMIT 1'
+  ).bind(user.id).first();
+  const lastId = lastRow ? lastRow.question_id : null;
+  const excludeFilter = lastId ? 'AND q.id != ?' : '';
+  const excludeArgs = lastId ? [lastId] : [];
+
   const pickMissed = () => env.DB.prepare(
     `${cte}SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin}
-     WHERE p.user_id = ? AND p.last_result = 'incorrect' ${diffFilter} ORDER BY RANDOM() LIMIT 1`
-  ).bind(user.id, ...diffArgs).first();
+     WHERE p.user_id = ? AND p.last_result = 'incorrect' ${excludeFilter} ${diffFilter} ORDER BY RANDOM() LIMIT 1`
+  ).bind(user.id, ...excludeArgs, ...diffArgs).first();
 
   if (Math.random() < MISSED_INTERLEAVE_CHANCE) {
     const interleaved = await pickMissed();
