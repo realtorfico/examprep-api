@@ -1,7 +1,7 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
-import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL } from './progressQueries.js';
 import { filesOwnedByTrack } from './resourceOwnership.js';
@@ -527,15 +527,30 @@ async function handlePricingGet(request, env) {
 // Small, unauthenticated, site-wide config -- fetched once at boot (not tied to any one page) so
 // the footer and other chrome that renders before/without any other API call can still reflect
 // admin-configurable values instead of a stale hardcoded default.
+// Per-track "pull from sale" override, admin-settable via the SAME generic app_settings
+// key/value endpoints already used for min_paypal_charge_cents etc. (see the app_settings table
+// comment in schema.sql) -- no new table/endpoint needed. One row per track, key
+// `track_active:{examType}`, value '0' means "force inactive regardless of the code's own
+// HUB_EXAMS.active default"; no row (the common case) or value '1' means "use the code default".
+// Only inactive overrides are exposed here -- a "force active" override on a track with no real
+// content/route yet (e.g. the mlo scaffold) wouldn't be actionable on the frontend anyway, so
+// there's nothing useful for the public site to do with one.
+async function getInactiveTrackOverrides(env) {
+  const rows = (await env.DB.prepare("SELECT key FROM app_settings WHERE key LIKE 'track_active:%' AND value = '0'").all()).results;
+  return rows.map((r) => r.key.slice('track_active:'.length));
+}
+
 async function handlePublicConfig(env) {
-  const [refundFailurePercent, progressPassPcts] = await Promise.all([
+  const [refundFailurePercent, progressPassPcts, inactiveTracks] = await Promise.all([
     getRefundFailurePercent(env),
     getProgressPassPcts(env),
+    getInactiveTrackOverrides(env),
   ]);
   return json({
     refundFailurePercent,
     accuracyPassPct: progressPassPcts.accuracyPassPct,
     coveragePassPct: progressPassPcts.coveragePassPct,
+    inactiveTracks,
   });
 }
 
@@ -765,6 +780,18 @@ async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail, ag
   return { code, token };
 }
 
+// "Gift a track" checkout path -- issues the code but deliberately does NOT create a user or mint
+// a token, unlike issueAndRedeemCode above. The code sits as a normal unused row (same shape
+// admin's own manual code-generation already produces) until the recipient redeems it themselves
+// via the existing (already track-agnostic) /redeem flow -- so the buyer is never auto-logged-in
+// as if they were the student.
+async function issueGiftCode(env, examType, note, paidCents, buyerEmail) {
+  const code = newCode();
+  await env.DB.prepare('INSERT INTO codes (code, exam_type, note, issued_at, paid_cents, buyer_email) VALUES (?, ?, ?, ?, ?, ?)')
+    .bind(code, examType, note, now(), paidCents == null ? null : paidCents, buyerEmail || null).run();
+  return { code };
+}
+
 // Shared by both processors' create-order/create-intent handlers -- points and a promo code are
 // only ever quoted here, never applied, that only happens once a payment actually completes (see
 // finalizePurchase), so an abandoned checkout costs nothing. Returns { fullyCoveredByPoints: true }
@@ -847,8 +874,11 @@ async function quoteCheckout(env, examType, email, applyPoints, promoCode) {
 // code has verified the payment actually completed and the captured amount matches what was
 // quoted. Handles point deduction, code issuance, receipt email, referral crediting, and the
 // admin activity alert -- the one thing that's genuinely identical regardless of processor.
-async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory }) {
-  const { code, token } = await issueAndRedeemCode(env, examType, note, capturedCents, payerEmail || email, ageCategory);
+async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift }) {
+  const buyerEmail = payerEmail || email;
+  const { code, token } = gift
+    ? await issueGiftCode(env, examType, note, capturedCents, buyerEmail)
+    : await issueAndRedeemCode(env, examType, note, capturedCents, buyerEmail, ageCategory);
 
   if (discount) {
     // MAX(0, ...) floors it defensively in case the balance somehow changed since create-order
@@ -864,23 +894,32 @@ async function finalizePurchase(env, { examType, note, capturedCents, payerEmail
     await env.DB.prepare('DELETE FROM pending_promo_discounts WHERE order_id = ?').bind(promoDiscount.order_id).run();
   }
 
-  if (email) {
+  if (gift) {
+    await env.DB.prepare('DELETE FROM pending_gift_orders WHERE order_id = ?').bind(gift.order_id).run();
+    if (gift.recipient_email) {
+      try { await sendGiftCodeEmail(env, gift.recipient_email, code, examType, gift.gift_message, buyerEmail); } catch (e) { /* best-effort */ }
+    }
+    if (email) {
+      try { await sendGiftPurchaseEmail(env, email, code, examType, gift.recipient_email); } catch (e) { /* best-effort, buyer already has the code on-screen */ }
+    }
+  } else if (email) {
     try { await sendCodeEmail(env, email, code, examType); } catch (e) { /* best-effort, buyer already has the code on-screen */ }
   }
 
   await detectAndCreditConversion(env, payerEmail);
   await notifyAdmin(env, 'New purchase',
-    `<p><strong>${payerEmail || email || 'A buyer'}</strong> just bought ${examType} access for ` +
-    `$${(capturedCents / 100).toFixed(2)}` +
+    `<p><strong>${buyerEmail || 'A buyer'}</strong> just bought ${examType} access` +
+    (gift ? ' as a gift' + (gift.recipient_email ? ` for ${gift.recipient_email}` : '') : '') +
+    ` for $${(capturedCents / 100).toFixed(2)}` +
     (discount ? ` (${discount.points_to_apply} points applied as a discount)` : '') +
     (promoDiscount ? ` (promo code ${promoDiscount.code} applied, -$${(promoDiscount.discount_cents / 100).toFixed(2)})` : '') +
     `.</p>`);
 
-  return { code, token, pointsApplied: discount ? discount.points_to_apply : 0 };
+  return { code, token, pointsApplied: discount ? discount.points_to_apply : 0, isGift: !!gift };
 }
 
 async function handlePaypalCreateOrder(request, env) {
-  const { examType, turnstileToken, email, applyPoints, promoCode } = await request.json();
+  const { examType, turnstileToken, email, applyPoints, promoCode, isGift, recipientEmail, giftMessage } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
   if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
     return json({ error: 'turnstile_failed' }, 400);
@@ -905,6 +944,11 @@ async function handlePaypalCreateOrder(request, env) {
       'INSERT INTO pending_promo_discounts (order_id, promo_id, code, discount_cents, created_at) VALUES (?, ?, ?, ?, ?)'
     ).bind(order.id, quote.promo.id, quote.promo.promo_code, quote.promoDiscountCents, now()).run();
   }
+  if (isGift) {
+    await env.DB.prepare(
+      'INSERT INTO pending_gift_orders (order_id, recipient_email, gift_message, created_at) VALUES (?, ?, ?, ?)'
+    ).bind(order.id, (recipientEmail || '').trim() || null, (giftMessage || '').trim() || null, now()).run();
+  }
 
   return json({ orderId: order.id, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply, promoDiscountCents: quote.promoDiscountCents || 0, promoTitle: quote.promo ? quote.promo.title : undefined });
 }
@@ -913,11 +957,13 @@ async function handlePaypalCaptureOrder(request, env) {
   const { orderId, examType, email, ageCategory } = await request.json();
   if (!orderId || !examType) return json({ error: 'orderId_and_examType_required' }, 400);
 
-  // Idempotency: a retried capture call for an order we've already issued a code for just
-  // re-mints a token for the existing account, instead of risking a double-issue.
+  // Idempotency: a retried capture call for an order we've already issued a code for either
+  // re-mints a token for the existing account (normal purchase), or -- for a gift order, which
+  // deliberately has no account to mint a token for -- just re-returns the same unredeemed code.
   const note = `paypal:${orderId}`;
   const existing = await env.DB.prepare('SELECT * FROM codes WHERE note = ?').bind(note).first();
   if (existing) {
+    if (existing.status === 'unused') return json({ code: existing.code, token: null, examType: existing.exam_type, isGift: true });
     const token = crypto.randomUUID();
     await env.DB.prepare('UPDATE users SET token = ?, last_seen_at = ? WHERE id = ?')
       .bind(token, now(), existing.redeemed_by).run();
@@ -927,6 +973,7 @@ async function handlePaypalCaptureOrder(request, env) {
   const { priceCents: fullPriceCents } = await getPrice(env, examType);
   const discount = await env.DB.prepare('SELECT * FROM pending_point_discounts WHERE order_id = ?').bind(orderId).first();
   const promoDiscount = await env.DB.prepare('SELECT * FROM pending_promo_discounts WHERE order_id = ?').bind(orderId).first();
+  const gift = await env.DB.prepare('SELECT * FROM pending_gift_orders WHERE order_id = ?').bind(orderId).first();
   const expectedCents = Math.max(0, fullPriceCents
     - (discount ? discount.points_to_apply : 0)
     - (promoDiscount ? promoDiscount.discount_cents : 0));
@@ -943,13 +990,13 @@ async function handlePaypalCaptureOrder(request, env) {
   // PayPal's own capture response tells us the payer's email for free -- no extra field/friction
   // needed on the buy form to detect "this buyer was someone's referral" or to record who paid.
   const payerEmail = capture.payer && capture.payer.email_address;
-  const { code, token, pointsApplied } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory });
+  const { code, token, pointsApplied, isGift } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift });
 
-  return json({ code, token, examType, pointsApplied });
+  return json({ code, token, examType, pointsApplied, isGift });
 }
 
 async function handleStripeCreateIntent(request, env) {
-  const { examType, turnstileToken, email, applyPoints, promoCode } = await request.json();
+  const { examType, turnstileToken, email, applyPoints, promoCode, isGift, recipientEmail, giftMessage } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
   if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
     return json({ error: 'turnstile_failed' }, 400);
@@ -974,6 +1021,11 @@ async function handleStripeCreateIntent(request, env) {
       'INSERT INTO pending_promo_discounts (order_id, promo_id, code, discount_cents, created_at) VALUES (?, ?, ?, ?, ?)'
     ).bind(intent.id, quote.promo.id, quote.promo.promo_code, quote.promoDiscountCents, now()).run();
   }
+  if (isGift) {
+    await env.DB.prepare(
+      'INSERT INTO pending_gift_orders (order_id, recipient_email, gift_message, created_at) VALUES (?, ?, ?, ?)'
+    ).bind(intent.id, (recipientEmail || '').trim() || null, (giftMessage || '').trim() || null, now()).run();
+  }
 
   return json({ clientSecret: intent.client_secret, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply, promoDiscountCents: quote.promoDiscountCents || 0, promoTitle: quote.promo ? quote.promo.title : undefined });
 }
@@ -982,11 +1034,13 @@ async function handleStripeConfirm(request, env) {
   const { paymentIntentId, examType, email, ageCategory } = await request.json();
   if (!paymentIntentId || !examType) return json({ error: 'paymentIntentId_and_examType_required' }, 400);
 
-  // Idempotency: a retried confirm call for an intent we've already issued a code for just
-  // re-mints a token for the existing account, instead of risking a double-issue.
+  // Idempotency: a retried confirm call for an intent we've already issued a code for either
+  // re-mints a token for the existing account (normal purchase), or -- for a gift order, which
+  // deliberately has no account to mint a token for -- just re-returns the same unredeemed code.
   const note = `stripe:${paymentIntentId}`;
   const existing = await env.DB.prepare('SELECT * FROM codes WHERE note = ?').bind(note).first();
   if (existing) {
+    if (existing.status === 'unused') return json({ code: existing.code, token: null, examType: existing.exam_type, isGift: true });
     const token = crypto.randomUUID();
     await env.DB.prepare('UPDATE users SET token = ?, last_seen_at = ? WHERE id = ?')
       .bind(token, now(), existing.redeemed_by).run();
@@ -996,6 +1050,7 @@ async function handleStripeConfirm(request, env) {
   const { priceCents: fullPriceCents } = await getPrice(env, examType);
   const discount = await env.DB.prepare('SELECT * FROM pending_point_discounts WHERE order_id = ?').bind(paymentIntentId).first();
   const promoDiscount = await env.DB.prepare('SELECT * FROM pending_promo_discounts WHERE order_id = ?').bind(paymentIntentId).first();
+  const gift = await env.DB.prepare('SELECT * FROM pending_gift_orders WHERE order_id = ?').bind(paymentIntentId).first();
   const expectedCents = Math.max(0, fullPriceCents
     - (discount ? discount.points_to_apply : 0)
     - (promoDiscount ? promoDiscount.discount_cents : 0));
@@ -1009,9 +1064,9 @@ async function handleStripeConfirm(request, env) {
   // differ -- prefer the latter, same "trust what the processor tells us" approach as PayPal.
   const charge = intent.latest_charge;
   const payerEmail = (charge && charge.billing_details && charge.billing_details.email) || intent.receipt_email;
-  const { code, token, pointsApplied } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory });
+  const { code, token, pointsApplied, isGift } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory, gift });
 
-  return json({ code, token, examType, pointsApplied });
+  return json({ code, token, examType, pointsApplied, isGift });
 }
 
 // ---- Refer & earn points ----------------------------------------------

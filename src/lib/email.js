@@ -153,6 +153,66 @@ export async function sendReengagementEmail(env, to, examType) {
   });
 }
 
+// Free-form user text (giftMessage) goes into an HTML email body below -- escape it, unlike the
+// internal/controlled strings (examType, promoTitle, etc.) every other email in this file inserts
+// raw, since a gift message is the one field here a buyer could type literally anything into.
+function escapeForEmail(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+// "Gift a track" recipient email -- the code is issued but deliberately unredeemed (see
+// issueGiftCode in index.js), so this points at the redeem page rather than SITE_URL/logging
+// anyone in automatically, unlike sendCodeEmail below.
+const REDEEM_URL = 'https://passexamhq.com/#/redeem';
+
+export async function sendGiftCodeEmail(env, to, code, examType, giftMessage, gifterEmail) {
+  const from = gifterEmail ? escapeForEmail(gifterEmail) : 'Someone';
+  await sendEmail(env, {
+    to,
+    subject: `🎁 ${from} sent you a gift — ExamPrep access`,
+    html: emailShell({
+      badge: '🎁',
+      title: `${from} sent you a gift!`,
+      bodyHtml: `<p>You've been gifted full access to the <strong>${examType}</strong> exam prep on ExamPrep.</p>` +
+        (giftMessage ? `<p style="font-style:italic;border-left:3px solid #0284c7;padding-left:12px;margin:16px 0;">` +
+          `"${escapeForEmail(giftMessage)}"</p>` : '') +
+        `<p>Redeem your code below to create your own account and start studying:</p>
+        <p style="text-align:center;margin:24px 0;">
+          <span style="display:inline-block;background:#f0f9ff;border:2px dashed #0284c7;border-radius:10px;
+            padding:14px 26px;font-size:22px;font-weight:800;letter-spacing:0.08em;color:#0284c7;">${code}</span>
+        </p>`,
+      ctaText: 'Redeem your code →',
+      ctaUrl: REDEEM_URL,
+      footerNote: "Wasn't expecting this? You can safely ignore it — the code just won't get used.",
+    }),
+  });
+}
+
+// Gift-purchase receipt to the BUYER (not the recipient) -- deliberately separate wording from
+// sendCodeEmail below, since a gift buyer is never auto-logged-in the way a self-purchase is;
+// reusing that email's "you're already logged in" copy here would be flatly wrong.
+export async function sendGiftPurchaseEmail(env, to, code, examType, recipientEmail) {
+  await sendEmail(env, {
+    to,
+    subject: '🎁 Your gift is ready to send',
+    html: emailShell({
+      badge: '🎁',
+      title: 'Gift purchased!',
+      bodyHtml: `<p>Thanks for your purchase! Here's the gift access code for the <strong>${examType}</strong> exam prep:</p>
+        <p style="text-align:center;margin:24px 0;">
+          <span style="display:inline-block;background:#f0f9ff;border:2px dashed #0284c7;border-radius:10px;
+            padding:14px 26px;font-size:22px;font-weight:800;letter-spacing:0.08em;color:#0284c7;">${code}</span>
+        </p>` +
+        (recipientEmail
+          ? `<p>We've already emailed this code to <strong>${escapeForEmail(recipientEmail)}</strong> on your behalf.</p>`
+          : `<p>Share this code with whoever you're gifting it to — they'll enter it on the Redeem page to create their own account.</p>`) +
+        `<p>Keep this email as a backup in case you need the code again.</p>`,
+      ctaUrl: undefined,
+      ctaText: undefined,
+    }),
+  });
+}
+
 export async function sendPointsEarnedEmail(env, to, points, reason) {
   await sendEmail(env, {
     to,
