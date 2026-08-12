@@ -2395,6 +2395,14 @@ async function handleQuestionsList(request, env) {
   return json({ questions: (await env.DB.prepare(sql).bind(...binds).all()).results });
 }
 
+// Per-track question bank inventory for the Settings > Course pricing table -- a tiny GROUP BY
+// instead of reusing handleQuestionsList's full-row fetch (which would drag every question's
+// text/choices/explanation across the wire just to count rows).
+async function handleQuestionCounts(env) {
+  const rows = (await env.DB.prepare('SELECT exam_type, COUNT(*) AS count FROM questions GROUP BY exam_type').all()).results;
+  return json({ counts: rows });
+}
+
 function questionFromBody(b) {
   return [b.examType, b.topic, b.question, b.choiceA, b.choiceB, b.choiceC, b.choiceD,
     b.correctChoice, b.explanation, b.weight ?? 3, b.sourceNote || null, b.source || 'self-gen'];
@@ -2507,6 +2515,7 @@ export default {
         if (pathname === '/console/refund-claims' && method === 'GET') return await handleConsoleRefundClaimsList(env);
         if (pathname === '/console/refund-claims/review' && method === 'POST') return await handleConsoleRefundClaimsReview(request, env);
         if (pathname === '/console/questions' && method === 'GET') return await handleQuestionsList(request, env);
+        if (pathname === '/console/questions/counts' && method === 'GET') return await handleQuestionCounts(env);
         if (pathname === '/console/questions/create' && method === 'POST') return await handleQuestionCreate(request, env);
         if (pathname === '/console/questions/update' && method === 'POST') return await handleQuestionUpdate(request, env);
         if (pathname === '/console/questions/delete' && method === 'POST') return await handleQuestionDelete(request, env);
