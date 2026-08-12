@@ -555,7 +555,7 @@ async function handlePublicStats(env) {
   const [questionCountRow, studentsRow, attemptRows, accuracyRow, coverageRow] = await Promise.all([
     env.DB.prepare(`SELECT COUNT(*) AS n FROM questions`).first(),
     env.DB.prepare(`SELECT COUNT(*) AS n FROM codes WHERE status = 'redeemed'`).first(),
-    env.DB.prepare(`SELECT exam_type, score_correct, score_total FROM exam_attempts WHERE submitted_at IS NOT NULL`).all(),
+    env.DB.prepare(`SELECT exam_type, score_correct, score_total, pass_percent FROM exam_attempts WHERE submitted_at IS NOT NULL`).all(),
     env.DB.prepare(`SELECT SUM(times_correct) AS correct, SUM(times_seen) AS seen FROM progress`).first(),
     env.DB.prepare(
       `SELECT AVG(user_coverage) AS avg FROM (
@@ -571,7 +571,8 @@ async function handlePublicStats(env) {
   const attempts = attemptRows.results || [];
   const passed = attempts.filter((a) => {
     if (!a.score_total) return false;
-    return (100 * a.score_correct) / a.score_total >= getExamConfig(a.exam_type).passPercent;
+    const threshold = a.pass_percent != null ? a.pass_percent : getExamConfig(a.exam_type).passPercent;
+    return (100 * a.score_correct) / a.score_total >= threshold;
   }).length;
   return json({
     totalQuestions: questionCountRow.n || 0,
@@ -747,15 +748,17 @@ async function handlePromoRedeemPointsMultiplier(request, env) {
 // Shared by /paypal/capture-order and (later) /points/redeem — generates a fresh code and
 // immediately auto-redeems it (mint token + create user + flip code to redeemed), mirroring
 // /redeem's unused-code branch, so the buyer never has to separately type their own code in.
-async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail) {
+// ageCategory ('under18' | '18plus' | undefined) only matters for ca_driver -- see getExamConfig --
+// but is accepted generically since this is shared by every track's checkout.
+async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail, ageCategory) {
   const code = newCode();
   const token = crypto.randomUUID();
   const userId = newId();
   await env.DB.batch([
     env.DB.prepare('INSERT INTO codes (code, exam_type, note, issued_at, paid_cents, buyer_email) VALUES (?, ?, ?, ?, ?, ?)')
       .bind(code, examType, note, now(), paidCents == null ? null : paidCents, buyerEmail || null),
-    env.DB.prepare('INSERT INTO users (id, exam_type, token, created_at, last_seen_at) VALUES (?, ?, ?, ?, ?)')
-      .bind(userId, examType, token, now(), now()),
+    env.DB.prepare('INSERT INTO users (id, exam_type, token, created_at, last_seen_at, age_category) VALUES (?, ?, ?, ?, ?, ?)')
+      .bind(userId, examType, token, now(), now(), ageCategory || null),
     env.DB.prepare("UPDATE codes SET status = 'redeemed', redeemed_by = ?, redeemed_at = ? WHERE code = ?")
       .bind(userId, now(), code),
   ]);
@@ -844,8 +847,8 @@ async function quoteCheckout(env, examType, email, applyPoints, promoCode) {
 // code has verified the payment actually completed and the captured amount matches what was
 // quoted. Handles point deduction, code issuance, receipt email, referral crediting, and the
 // admin activity alert -- the one thing that's genuinely identical regardless of processor.
-async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount }) {
-  const { code, token } = await issueAndRedeemCode(env, examType, note, capturedCents, payerEmail || email);
+async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory }) {
+  const { code, token } = await issueAndRedeemCode(env, examType, note, capturedCents, payerEmail || email, ageCategory);
 
   if (discount) {
     // MAX(0, ...) floors it defensively in case the balance somehow changed since create-order
@@ -907,7 +910,7 @@ async function handlePaypalCreateOrder(request, env) {
 }
 
 async function handlePaypalCaptureOrder(request, env) {
-  const { orderId, examType, email } = await request.json();
+  const { orderId, examType, email, ageCategory } = await request.json();
   if (!orderId || !examType) return json({ error: 'orderId_and_examType_required' }, 400);
 
   // Idempotency: a retried capture call for an order we've already issued a code for just
@@ -940,7 +943,7 @@ async function handlePaypalCaptureOrder(request, env) {
   // PayPal's own capture response tells us the payer's email for free -- no extra field/friction
   // needed on the buy form to detect "this buyer was someone's referral" or to record who paid.
   const payerEmail = capture.payer && capture.payer.email_address;
-  const { code, token, pointsApplied } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount });
+  const { code, token, pointsApplied } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory });
 
   return json({ code, token, examType, pointsApplied });
 }
@@ -976,7 +979,7 @@ async function handleStripeCreateIntent(request, env) {
 }
 
 async function handleStripeConfirm(request, env) {
-  const { paymentIntentId, examType, email } = await request.json();
+  const { paymentIntentId, examType, email, ageCategory } = await request.json();
   if (!paymentIntentId || !examType) return json({ error: 'paymentIntentId_and_examType_required' }, 400);
 
   // Idempotency: a retried confirm call for an intent we've already issued a code for just
@@ -1006,7 +1009,7 @@ async function handleStripeConfirm(request, env) {
   // differ -- prefer the latter, same "trust what the processor tells us" approach as PayPal.
   const charge = intent.latest_charge;
   const payerEmail = (charge && charge.billing_details && charge.billing_details.email) || intent.receipt_email;
-  const { code, token, pointsApplied } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount });
+  const { code, token, pointsApplied } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory });
 
   return json({ code, token, examType, pointsApplied });
 }
@@ -1593,7 +1596,7 @@ async function handleResourceProgressGet(user, env) {
 async function handleConsoleExamAttemptsList(env) {
   const rows = (await env.DB.prepare(
     `SELECT ea.id, ea.user_id, ea.exam_type, ea.mode, ea.score_correct, ea.score_total, ea.started_at, ea.submitted_at,
-            c.code, c.buyer_email
+            ea.pass_percent, c.code, c.buyer_email
      FROM exam_attempts ea
      JOIN users u ON u.id = ea.user_id
      LEFT JOIN codes c ON c.redeemed_by = u.id
@@ -1602,11 +1605,11 @@ async function handleConsoleExamAttemptsList(env) {
   ).all()).results;
   return json({
     items: rows.map((r) => {
-      const config = getExamConfig(r.exam_type);
+      const threshold = r.pass_percent != null ? r.pass_percent : getExamConfig(r.exam_type).passPercent;
       const percent = r.score_total ? Math.round((r.score_correct / r.score_total) * 1000) / 10 : 0;
       return {
         attemptId: r.id, userId: r.user_id, examType: r.exam_type, mode: r.mode, code: r.code, buyerEmail: r.buyer_email,
-        correct: r.score_correct, total: r.score_total, percent, passed: percent >= config.passPercent,
+        correct: r.score_correct, total: r.score_total, percent, passed: percent >= threshold,
         startedAt: r.started_at, submittedAt: r.submitted_at,
       };
     }),
@@ -1625,7 +1628,7 @@ async function handleConsoleExamAttemptDetail(request, env) {
   const answers = JSON.parse(attempt.answers);
   const byId = await fetchQuestionsByIds(env, questionIds);
   const result = buildExamResult(attempt.exam_type, questionIds, answers, byId,
-    attempt.score_correct, attempt.score_total, attempt.started_at, attempt.submitted_at, attempt.duration_sec);
+    attempt.score_correct, attempt.score_total, attempt.started_at, attempt.submitted_at, attempt.duration_sec, attempt.pass_percent);
   return json(result);
 }
 
@@ -1699,13 +1702,20 @@ const EXAM_CONFIGS = {
   // The real score is a proprietary scaled score (0-100), not literally percent-correct --
   // this uses raw percent-correct against the same 70 threshold as a practice approximation.
   ca_notary: { questionCount: 45, durationSec: 3600, passPercent: 70 },
-  // 46 questions / 38 correct to pass, per the real CA DMV Class C written knowledge test.
-  // 38/46 = 82.6% (buildExamResult rounds percent to 1 decimal via Math.round(x*1000)/10) -- using
-  // 82.6 here, not 83, so a candidate who scores exactly the real pass line (38/46) is graded as
-  // passing here too, matching the actual DMV threshold instead of a rounded-up approximation of it.
-  // The real test is untimed (in-person at a DMV office/kiosk) -- 60 minutes here is a generous
-  // stand-in so the timed-mock-exam format still applies, not a real DMV time limit.
-  ca_driver: { questionCount: 46, durationSec: 3600, passPercent: 82.6 },
+  // The real CA DMV Class C written knowledge test's format depends on the applicant's age --
+  // confirmed against DMV's own 2006 Class C written-test evaluation report plus current (2026)
+  // corroborating sources: first-time applicants 18+ get 36 questions (30 correct/83.3% to pass),
+  // first-time applicants under 18 (provisional permit) get 46 questions (38 correct/82.6%).
+  // This entry is the 18+ format -- the default for anyone who didn't give an age at checkout or
+  // pick a category on the exam intro page (see CA_DRIVER_UNDER18_CONFIG + getExamConfig below).
+  // 30/36 = 83.33...%, using 83.3 (not 83) so a candidate scoring exactly the real pass line is
+  // graded as passing here too, same reasoning as the under-18 variant's 82.6.
+  // The real test is genuinely untimed (in-person at a DMV office/kiosk, confirmed against DMV's
+  // own testing-process page and that same evaluation report -- no time limit is mentioned
+  // anywhere). durationSec: 0 is this codebase's sentinel for "untimed" -- every consumer
+  // (findInProgressAttempt, handleExamAnswer, buildExamResult) treats a falsy duration_sec as
+  // "never expires" rather than computing against it.
+  ca_driver: { questionCount: 36, durationSec: 0, passPercent: 83.3 },
   // 50 questions / 40 correct (80%) to pass, per the real CA DMV CDL General Knowledge test --
   // the one test every CDL candidate takes regardless of endorsements. The question bank also
   // covers Air Brakes/Combination Vehicles and Passenger/School Bus/Tank/HazMat endorsement
@@ -1771,14 +1781,25 @@ const EXAM_CONFIGS = {
   // Genuinely timed in reality: 3 hours 15 minutes (11700 sec), not a stand-in.
   ca_dre: { questionCount: 150, durationSec: 11700, passPercent: 70 },
 };
-function getExamConfig(examType) {
+
+// See the ca_driver entry above for sourcing -- this is the under-18/provisional-permit variant,
+// used instead of EXAM_CONFIGS.ca_driver when ageCategory === 'under18' (checkout-time answer, or
+// a per-sitting override on the exam intro page; see handleExamStart/handleExamConfig).
+const CA_DRIVER_UNDER18_CONFIG = { questionCount: 46, durationSec: 0, passPercent: 82.6 };
+
+function getExamConfig(examType, ageCategory) {
+  if (examType === 'ca_driver' && ageCategory === 'under18') return CA_DRIVER_UNDER18_CONFIG;
   return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
 }
 
-async function handleExamConfig(request, env) {
+async function handleExamConfig(user, request, env) {
   const url = new URL(request.url);
-  const examType = url.searchParams.get('examType') || 'ca_notary';
-  return json({ examType, ...getExamConfig(examType) });
+  // ageCategory query param previews a specific category (the exam intro page's per-sitting
+  // override picker, which just re-fetches this on change); absent, falls back to the account's
+  // own stored default from checkout.
+  const ageCategory = url.searchParams.get('ageCategory') || user.age_category || null;
+  const config = getExamConfig(user.exam_type, ageCategory);
+  return json({ examType: user.exam_type, ...config });
 }
 
 async function fetchQuestionsByIds(env, questionIds) {
@@ -1838,12 +1859,18 @@ async function pickUnseenQuestions(env, user, config) {
   return rows.map((r) => r.id);
 }
 
-function buildExamResult(examType, questionIds, answers, byId, correct, total, startedAt, submittedAt, durationSec) {
-  const config = getExamConfig(examType);
+// passPercent should be the SNAPSHOT taken at attempt-start time (exam_attempts.pass_percent),
+// not re-derived from getExamConfig(examType) -- for ca_driver specifically, that threshold
+// depends on which age category applied to this particular sitting, which a later config change
+// (or someone else's different checkout answer) must not retroactively reinterpret. Falls back to
+// today's getExamConfig() default only for pre-migration attempts that predate this column.
+function buildExamResult(examType, questionIds, answers, byId, correct, total, startedAt, submittedAt, durationSec, passPercent) {
+  const effectivePassPercent = passPercent != null ? passPercent : getExamConfig(examType).passPercent;
   const percent = total ? Math.round((correct / total) * 1000) / 10 : 0;
   return {
-    correct, total, percent, passed: percent >= config.passPercent,
-    timeTakenSec: Math.min(submittedAt - startedAt, durationSec),
+    correct, total, percent, passed: percent >= effectivePassPercent,
+    // durationSec 0 means untimed (see EXAM_CONFIGS) -- nothing to cap timeTakenSec against.
+    timeTakenSec: durationSec ? Math.min(submittedAt - startedAt, durationSec) : (submittedAt - startedAt),
     review: questionIds.map((id) => {
       const q = byId[id];
       if (!q) return null;
@@ -1862,7 +1889,8 @@ async function findInProgressAttempt(user, env, mode) {
     `SELECT * FROM exam_attempts WHERE user_id = ? AND exam_type = ? AND mode = ? AND submitted_at IS NULL
      ORDER BY started_at DESC LIMIT 1`
   ).bind(user.id, user.exam_type, mode).first();
-  if (!existing || existing.started_at + existing.duration_sec <= now()) return null;
+  // duration_sec 0 means untimed (see EXAM_CONFIGS) -- an untimed attempt never expires this way.
+  if (!existing || (existing.duration_sec && existing.started_at + existing.duration_sec <= now())) return null;
   return existing;
 }
 
@@ -1886,7 +1914,12 @@ async function handleExamStart(user, request, env) {
   const existing = await findInProgressAttempt(user, env, mode);
   if (existing) return json(await attemptToClientShape(env, existing));
 
-  const config = getExamConfig(user.exam_type);
+  // Explicit body.ageCategory (the exam intro page's per-sitting override picker, ca_driver only)
+  // wins over the account's own stored default from checkout; only meaningful for ca_driver, a
+  // no-op for every other track's getExamConfig branch.
+  const ageCategory = body.ageCategory === 'under18' || body.ageCategory === '18plus'
+    ? body.ageCategory : (user.age_category || null);
+  const config = getExamConfig(user.exam_type, ageCategory);
   const questionIds = mode === 'toughest45'
     ? await pickToughest45Questions(env, user, config)
     : unseenOnly
@@ -1898,11 +1931,14 @@ async function handleExamStart(user, request, env) {
   const attempt = {
     id: newId(), question_ids: JSON.stringify(questionIds), answers: '{}',
     duration_sec: config.durationSec, started_at: now(), mode,
+    // Snapshotted so later account/config changes can never retroactively regrade this sitting --
+    // see buildExamResult's passPercent param.
+    pass_percent: config.passPercent,
   };
   await env.DB.prepare(
-    `INSERT INTO exam_attempts (id, user_id, exam_type, question_ids, answers, duration_sec, started_at, mode)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
-  ).bind(attempt.id, user.id, user.exam_type, attempt.question_ids, attempt.answers, attempt.duration_sec, attempt.started_at, mode).run();
+    `INSERT INTO exam_attempts (id, user_id, exam_type, question_ids, answers, duration_sec, started_at, mode, pass_percent)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+  ).bind(attempt.id, user.id, user.exam_type, attempt.question_ids, attempt.answers, attempt.duration_sec, attempt.started_at, mode, attempt.pass_percent).run();
 
   return json(await attemptToClientShape(env, { ...attempt, user_id: user.id, exam_type: user.exam_type }));
 }
@@ -1912,7 +1948,7 @@ async function handleExamAnswer(user, request, env) {
   const attempt = await env.DB.prepare('SELECT * FROM exam_attempts WHERE id = ? AND user_id = ?').bind(attemptId, user.id).first();
   if (!attempt) return json({ error: 'attempt_not_found' }, 404);
   if (attempt.submitted_at) return json({ error: 'already_submitted' }, 400);
-  if (attempt.started_at + attempt.duration_sec <= now()) return json({ error: 'time_expired' }, 400);
+  if (attempt.duration_sec && attempt.started_at + attempt.duration_sec <= now()) return json({ error: 'time_expired' }, 400);
 
   const answers = JSON.parse(attempt.answers);
   answers[questionId] = choice;
@@ -1949,7 +1985,7 @@ async function handleExamSubmit(user, request, env) {
     // Idempotent -- a retried submit (e.g. flaky network) returns the same already-computed
     // result instead of erroring or rescoring.
     return json(buildExamResult(attempt.exam_type, questionIds, answers, byId,
-      attempt.score_correct, attempt.score_total, attempt.started_at, attempt.submitted_at, attempt.duration_sec));
+      attempt.score_correct, attempt.score_total, attempt.started_at, attempt.submitted_at, attempt.duration_sec, attempt.pass_percent));
   }
 
   let correctCount = 0;
@@ -1966,7 +2002,7 @@ async function handleExamSubmit(user, request, env) {
   if (progressStmts.length) await env.DB.batch(progressStmts);
 
   const result = buildExamResult(attempt.exam_type, questionIds, answers, byId,
-    correctCount, questionIds.length, attempt.started_at, submittedAt, attempt.duration_sec);
+    correctCount, questionIds.length, attempt.started_at, submittedAt, attempt.duration_sec, attempt.pass_percent);
 
   const codeRow = await env.DB.prepare('SELECT code, buyer_email FROM codes WHERE redeemed_by = ?').bind(user.id).first();
   const modeLabel = attempt.mode === 'toughest45' ? 'Toughest 45' : 'mock';
@@ -1985,16 +2021,16 @@ async function handleExamHistory(user, request, env) {
   const url = new URL(request.url);
   const mode = url.searchParams.get('mode') === 'toughest45' ? 'toughest45' : 'standard';
   const rows = (await env.DB.prepare(
-    `SELECT id, exam_type, score_correct, score_total, started_at, submitted_at FROM exam_attempts
+    `SELECT id, exam_type, score_correct, score_total, started_at, submitted_at, pass_percent FROM exam_attempts
      WHERE user_id = ? AND mode = ? AND submitted_at IS NOT NULL ORDER BY submitted_at DESC LIMIT 50`
   ).bind(user.id, mode).all()).results;
   return json({
     attempts: rows.map((r) => {
-      const config = getExamConfig(r.exam_type);
+      const threshold = r.pass_percent != null ? r.pass_percent : getExamConfig(r.exam_type).passPercent;
       const percent = r.score_total ? Math.round((r.score_correct / r.score_total) * 1000) / 10 : 0;
       return {
         attemptId: r.id, examType: r.exam_type, correct: r.score_correct, total: r.score_total,
-        percent, passed: percent >= config.passPercent, startedAt: r.started_at, submittedAt: r.submitted_at,
+        percent, passed: percent >= threshold, startedAt: r.started_at, submittedAt: r.submitted_at,
       };
     }),
   });
@@ -2012,7 +2048,7 @@ async function handleExamAttemptDetail(user, request, env) {
   const answers = JSON.parse(attempt.answers);
   const byId = await fetchQuestionsByIds(env, questionIds);
   const result = buildExamResult(attempt.exam_type, questionIds, answers, byId,
-    attempt.score_correct, attempt.score_total, attempt.started_at, attempt.submitted_at, attempt.duration_sec);
+    attempt.score_correct, attempt.score_total, attempt.started_at, attempt.submitted_at, attempt.duration_sec, attempt.pass_percent);
   return json({ ...result, startedAt: attempt.started_at, submittedAt: attempt.submitted_at });
 }
 
@@ -2404,7 +2440,7 @@ export default {
       if (pathname === '/leaderboard' && method === 'GET') return await handleLeaderboard(user, env);
       if (pathname === '/resources/progress' && method === 'GET') return await handleResourceProgressGet(user, env);
       if (pathname === '/resources/progress' && method === 'POST') return await handleResourceProgressUpdate(user, request, env);
-      if (pathname === '/exam/config' && method === 'GET') return await handleExamConfig(request, env);
+      if (pathname === '/exam/config' && method === 'GET') return await handleExamConfig(user, request, env);
       if (pathname === '/exam/current' && method === 'GET') return await handleExamCurrent(user, request, env);
       if (pathname === '/exam/start' && method === 'POST') return await handleExamStart(user, request, env);
       if (pathname === '/exam/answer' && method === 'POST') return await handleExamAnswer(user, request, env);

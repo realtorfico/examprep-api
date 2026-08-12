@@ -8,7 +8,12 @@ CREATE TABLE users (
   font_scale             REAL NOT NULL DEFAULT 1.0,
   created_at             INTEGER NOT NULL,
   last_seen_at           INTEGER NOT NULL,
-  last_reminder_sent_at  INTEGER                  -- last admin-sent "stalled buyer" re-engagement email
+  last_reminder_sent_at  INTEGER,                 -- last admin-sent "stalled buyer" re-engagement email
+  age_category           TEXT                     -- 'under18' | '18plus' | NULL (unset -> default
+                                                    -- 18plus format). Only meaningful for ca_driver
+                                                    -- (see getExamConfig) -- captured optionally at
+                                                    -- checkout, overridable per-sitting on the exam
+                                                    -- intro page. Harmless/unused for every other track.
 );
 CREATE INDEX idx_users_token ON users(token);
 
@@ -189,6 +194,12 @@ CREATE TABLE exam_attempts (
                                                   -- in-progress lookup, Progress tab) so a harder,
                                                   -- non-representative attempt never mixes into the
                                                   -- regular exam's stats.
+  pass_percent  REAL                    -- snapshot at start (like duration_sec) of the threshold
+                                         -- that applied to THIS sitting -- for ca_driver, this
+                                         -- depends on the age category in effect at start time, so
+                                         -- a later config/account change must never retroactively
+                                         -- regrade an old attempt. NULL on pre-migration rows;
+                                         -- buildExamResult falls back to getExamConfig() for those.
 );
 CREATE INDEX idx_exam_attempts_user ON exam_attempts(user_id);
 
