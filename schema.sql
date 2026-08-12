@@ -283,19 +283,14 @@ CREATE TABLE pending_promo_discounts (
   created_at     INTEGER NOT NULL
 );
 
--- "Gift a track" checkout: same pending-at-create/consumed-at-capture pattern as
--- pending_point_discounts/pending_promo_discounts above. A row's presence means the buyer
--- checked "This is a gift" -- finalizePurchase then issues an UNREDEEMED code (no user/token
--- created, no auto-login) instead of the normal auto-redeem flow, so the recipient can redeem it
--- themselves later via the existing (already track-agnostic) /redeem flow. recipient_email/
--- gift_message are both optional -- a buyer can tick "this is a gift" and just get a shareable
--- code with nothing to fill in, same as the on-screen code any purchase already shows.
-CREATE TABLE pending_gift_orders (
-  order_id        TEXT PRIMARY KEY,
-  recipient_email TEXT,
-  gift_message    TEXT,
-  created_at      INTEGER NOT NULL
-);
+-- "Gift a track" checkout needs no table of its own, unlike pending_point_discounts/
+-- pending_promo_discounts above -- gift status has no effect on the charged amount, so there's
+-- nothing that needs to be pre-committed at create-order/create-intent time and re-verified at
+-- capture/confirm time. isGift/recipientEmail/giftMessage are just read straight off the
+-- capture/confirm request (see handleStripeConfirm/handlePaypalCaptureOrder); finalizePurchase
+-- then issues an UNREDEEMED code (no user/token created, no auto-login) instead of the normal
+-- auto-redeem flow, so the recipient can redeem it themselves later via the existing (already
+-- track-agnostic) /redeem flow.
 
 -- One-time email confirmation for promotions with require_email_verification set (e.g. a real
 -- .edu student discount, not just a domain-suffix string check). A row's presence with

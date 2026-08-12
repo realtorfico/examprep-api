@@ -895,7 +895,6 @@ async function finalizePurchase(env, { examType, note, capturedCents, payerEmail
   }
 
   if (gift) {
-    await env.DB.prepare('DELETE FROM pending_gift_orders WHERE order_id = ?').bind(gift.order_id).run();
     if (gift.recipient_email) {
       try { await sendGiftCodeEmail(env, gift.recipient_email, code, examType, gift.gift_message, buyerEmail); } catch (e) { /* best-effort */ }
     }
@@ -919,7 +918,7 @@ async function finalizePurchase(env, { examType, note, capturedCents, payerEmail
 }
 
 async function handlePaypalCreateOrder(request, env) {
-  const { examType, turnstileToken, email, applyPoints, promoCode, isGift, recipientEmail, giftMessage } = await request.json();
+  const { examType, turnstileToken, email, applyPoints, promoCode } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
   if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
     return json({ error: 'turnstile_failed' }, 400);
@@ -944,18 +943,17 @@ async function handlePaypalCreateOrder(request, env) {
       'INSERT INTO pending_promo_discounts (order_id, promo_id, code, discount_cents, created_at) VALUES (?, ?, ?, ?, ?)'
     ).bind(order.id, quote.promo.id, quote.promo.promo_code, quote.promoDiscountCents, now()).run();
   }
-  if (isGift) {
-    await env.DB.prepare(
-      'INSERT INTO pending_gift_orders (order_id, recipient_email, gift_message, created_at) VALUES (?, ?, ?, ?)'
-    ).bind(order.id, (recipientEmail || '').trim() || null, (giftMessage || '').trim() || null, now()).run();
-  }
 
   return json({ orderId: order.id, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply, promoDiscountCents: quote.promoDiscountCents || 0, promoTitle: quote.promo ? quote.promo.title : undefined });
 }
 
 async function handlePaypalCaptureOrder(request, env) {
-  const { orderId, examType, email, ageCategory } = await request.json();
+  const { orderId, examType, email, ageCategory, isGift, recipientEmail, giftMessage } = await request.json();
   if (!orderId || !examType) return json({ error: 'orderId_and_examType_required' }, 400);
+  // Unlike points/promo discounts, gift status has no effect on the charged amount -- nothing to
+  // pre-commit at create-order time, so it's just read straight off this request (see the
+  // finalizePurchase/issueGiftCode comments for why an untrusted isGift can't be exploited).
+  const gift = isGift ? { recipient_email: (recipientEmail || '').trim() || null, gift_message: (giftMessage || '').trim() || null } : null;
 
   // Idempotency: a retried capture call for an order we've already issued a code for either
   // re-mints a token for the existing account (normal purchase), or -- for a gift order, which
@@ -973,7 +971,6 @@ async function handlePaypalCaptureOrder(request, env) {
   const { priceCents: fullPriceCents } = await getPrice(env, examType);
   const discount = await env.DB.prepare('SELECT * FROM pending_point_discounts WHERE order_id = ?').bind(orderId).first();
   const promoDiscount = await env.DB.prepare('SELECT * FROM pending_promo_discounts WHERE order_id = ?').bind(orderId).first();
-  const gift = await env.DB.prepare('SELECT * FROM pending_gift_orders WHERE order_id = ?').bind(orderId).first();
   const expectedCents = Math.max(0, fullPriceCents
     - (discount ? discount.points_to_apply : 0)
     - (promoDiscount ? promoDiscount.discount_cents : 0));
@@ -990,13 +987,13 @@ async function handlePaypalCaptureOrder(request, env) {
   // PayPal's own capture response tells us the payer's email for free -- no extra field/friction
   // needed on the buy form to detect "this buyer was someone's referral" or to record who paid.
   const payerEmail = capture.payer && capture.payer.email_address;
-  const { code, token, pointsApplied, isGift } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift });
+  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift });
 
-  return json({ code, token, examType, pointsApplied, isGift });
+  return json({ code, token, examType, pointsApplied, isGift: giftResult });
 }
 
 async function handleStripeCreateIntent(request, env) {
-  const { examType, turnstileToken, email, applyPoints, promoCode, isGift, recipientEmail, giftMessage } = await request.json();
+  const { examType, turnstileToken, email, applyPoints, promoCode } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
   if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
     return json({ error: 'turnstile_failed' }, 400);
@@ -1021,18 +1018,17 @@ async function handleStripeCreateIntent(request, env) {
       'INSERT INTO pending_promo_discounts (order_id, promo_id, code, discount_cents, created_at) VALUES (?, ?, ?, ?, ?)'
     ).bind(intent.id, quote.promo.id, quote.promo.promo_code, quote.promoDiscountCents, now()).run();
   }
-  if (isGift) {
-    await env.DB.prepare(
-      'INSERT INTO pending_gift_orders (order_id, recipient_email, gift_message, created_at) VALUES (?, ?, ?, ?)'
-    ).bind(intent.id, (recipientEmail || '').trim() || null, (giftMessage || '').trim() || null, now()).run();
-  }
 
   return json({ clientSecret: intent.client_secret, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply, promoDiscountCents: quote.promoDiscountCents || 0, promoTitle: quote.promo ? quote.promo.title : undefined });
 }
 
 async function handleStripeConfirm(request, env) {
-  const { paymentIntentId, examType, email, ageCategory } = await request.json();
+  const { paymentIntentId, examType, email, ageCategory, isGift, recipientEmail, giftMessage } = await request.json();
   if (!paymentIntentId || !examType) return json({ error: 'paymentIntentId_and_examType_required' }, 400);
+  // Unlike points/promo discounts, gift status has no effect on the charged amount -- nothing to
+  // pre-commit at create-intent time, so it's just read straight off this request (see the
+  // finalizePurchase/issueGiftCode comments for why an untrusted isGift can't be exploited).
+  const gift = isGift ? { recipient_email: (recipientEmail || '').trim() || null, gift_message: (giftMessage || '').trim() || null } : null;
 
   // Idempotency: a retried confirm call for an intent we've already issued a code for either
   // re-mints a token for the existing account (normal purchase), or -- for a gift order, which
@@ -1050,7 +1046,6 @@ async function handleStripeConfirm(request, env) {
   const { priceCents: fullPriceCents } = await getPrice(env, examType);
   const discount = await env.DB.prepare('SELECT * FROM pending_point_discounts WHERE order_id = ?').bind(paymentIntentId).first();
   const promoDiscount = await env.DB.prepare('SELECT * FROM pending_promo_discounts WHERE order_id = ?').bind(paymentIntentId).first();
-  const gift = await env.DB.prepare('SELECT * FROM pending_gift_orders WHERE order_id = ?').bind(paymentIntentId).first();
   const expectedCents = Math.max(0, fullPriceCents
     - (discount ? discount.points_to_apply : 0)
     - (promoDiscount ? promoDiscount.discount_cents : 0));
@@ -1064,9 +1059,9 @@ async function handleStripeConfirm(request, env) {
   // differ -- prefer the latter, same "trust what the processor tells us" approach as PayPal.
   const charge = intent.latest_charge;
   const payerEmail = (charge && charge.billing_details && charge.billing_details.email) || intent.receipt_email;
-  const { code, token, pointsApplied, isGift } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory, gift });
+  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory, gift });
 
-  return json({ code, token, examType, pointsApplied, isGift });
+  return json({ code, token, examType, pointsApplied, isGift: giftResult });
 }
 
 // ---- Refer & earn points ----------------------------------------------
