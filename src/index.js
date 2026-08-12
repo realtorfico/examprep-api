@@ -539,17 +539,34 @@ async function handlePublicConfig(env) {
   });
 }
 
-// Sitewide, anonymized aggregates for the home page's "outcomes" strip -- real numbers computed
-// live from questions/codes/exam_attempts, not hardcoded or fabricated (see the redesign's
-// standing constraint: never fabricate a value to fill a design element). No per-user data.
-// Pass rate is computed here in JS rather than in SQL because the passing threshold varies per
-// exam_type and lives in EXAM_CONFIGS, not a DB column, so it can't be expressed as a single
-// WHERE clause across all tracks at once.
+// Sitewide, anonymized aggregates for the home page's "outcomes" strip and the hero's "Community
+// Readiness" card -- real numbers computed live from questions/codes/progress/exam_attempts, not
+// hardcoded or fabricated (see the redesign's standing constraint: never fabricate a value to fill
+// a design element). No per-user data. Pass rate is computed here in JS rather than in SQL because
+// the passing threshold varies per exam_type and lives in EXAM_CONFIGS, not a DB column, so it
+// can't be expressed as a single WHERE clause across all tracks at once.
+//
+// avgCoverage averages each active user's OWN coverage % (their distinct questions seen / their
+// exam_type's question count) rather than a single global ratio -- coverage is inherently relative
+// to whichever exam_type a user is on, so a flat sitewide ratio across users on different-sized
+// banks wouldn't mean anything. Same LEFT JOIN shape as PROGRESS_BY_TOPIC_SQL/LEADERBOARD_SQL in
+// progressQueries.js, just aggregated to one number per user instead of per user+topic.
 async function handlePublicStats(env) {
-  const [questionCountRow, studentsRow, attemptRows] = await Promise.all([
+  const [questionCountRow, studentsRow, attemptRows, accuracyRow, coverageRow] = await Promise.all([
     env.DB.prepare(`SELECT COUNT(*) AS n FROM questions`).first(),
     env.DB.prepare(`SELECT COUNT(*) AS n FROM codes WHERE status = 'redeemed'`).first(),
     env.DB.prepare(`SELECT exam_type, score_correct, score_total FROM exam_attempts WHERE submitted_at IS NOT NULL`).all(),
+    env.DB.prepare(`SELECT SUM(times_correct) AS correct, SUM(times_seen) AS seen FROM progress`).first(),
+    env.DB.prepare(
+      `SELECT AVG(user_coverage) AS avg FROM (
+         SELECT u.id,
+           (COUNT(DISTINCT p.question_id) * 100.0 / NULLIF((SELECT COUNT(*) FROM questions q2 WHERE q2.exam_type = u.exam_type), 0)) AS user_coverage
+         FROM (SELECT DISTINCT user_id FROM progress) active
+         JOIN users u ON u.id = active.user_id
+         LEFT JOIN progress p ON p.user_id = u.id
+         GROUP BY u.id
+       )`
+    ).first(),
   ]);
   const attempts = attemptRows.results || [];
   const passed = attempts.filter((a) => {
@@ -559,7 +576,10 @@ async function handlePublicStats(env) {
   return json({
     totalQuestions: questionCountRow.n || 0,
     examsCompleted: attempts.length,
+    examsPassed: passed,
     passRate: attempts.length ? Math.round((100 * passed) / attempts.length) : null,
+    avgAccuracy: accuracyRow && accuracyRow.seen ? Math.round((100 * accuracyRow.correct) / accuracyRow.seen) : null,
+    avgCoverage: coverageRow && coverageRow.avg != null ? Math.round(coverageRow.avg) : null,
     studentsServed: studentsRow.n || 0,
     tracksLive: Object.keys(EXAM_CONFIGS).length,
   });
