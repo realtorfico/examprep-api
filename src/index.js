@@ -1780,6 +1780,20 @@ const EXAM_CONFIGS = {
   // exam directly, no PSI/Pearson national-vs-state split like other states' real estate tracks).
   // Genuinely timed in reality: 3 hours 15 minutes (11700 sec), not a stand-in.
   ca_dre: { questionCount: 150, durationSec: 11700, passPercent: 70 },
+  // 40 questions / 30 correct (75%) to pass, per the real Ohio BMV driver knowledge test
+  // (confirmed via bmv.ohio.gov plus corroborating secondary sources). No official time limit is
+  // published; untimed in reality (in-person at a BMV kiosk). 60 minutes is a generous stand-in,
+  // same treatment as tx_driver/fl_driver/ny_driver/il_driver/pa_driver above.
+  oh_driver: { questionCount: 40, durationSec: 3600, passPercent: 75 },
+  // 50 questions / 40 correct (80%) to pass, per the real Ohio BMV CDL General Knowledge test --
+  // same AAMVA-standard format as every other CDL track above. Genuinely timed in reality (60
+  // minutes), confirmed via multiple corroborating sources -- matches durationSec here, not a
+  // stand-in.
+  oh_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  // 40 questions / 30 correct (75%) to pass, per the real Ohio BMV motorcycle written knowledge
+  // test -- same computer-kiosk test mechanism as oh_driver, no official time limit published.
+  // Untimed in reality; 60 minutes is a generous stand-in.
+  oh_motorcycle: { questionCount: 40, durationSec: 3600, passPercent: 75 },
 };
 
 // See the ca_driver entry above for sourcing -- this is the under-18/provisional-permit variant,
