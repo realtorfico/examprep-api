@@ -1855,6 +1855,24 @@ const EXAM_CONFIGS = {
   // single official Ohio boating exam exists -- see oh_boating's TRACK_COMPLIANCE entry for the
   // full disclosure. No time limit published anywhere; untimed in reality (self-paced course).
   oh_boating: { questionCount: 60, durationSec: 3600, passPercent: 80 },
+  // The real DDS test is actually two independently-graded 20-question sections (Road Rules, Road
+  // Signs), each requiring 15/20 (75%), confirmed directly from dds.georgia.gov -- built as a
+  // single unified 40Q/75% practice exam anyway (disclosed simplification, see ga_driver's
+  // TRACK_COMPLIANCE entry). No time limit published; untimed in reality (in-person DDS kiosk).
+  ga_driver: { questionCount: 40, durationSec: 3600, passPercent: 75 },
+  // 50 questions / 40 correct (80%) to pass -- the same AAMVA-standard CDL General Knowledge
+  // format as every other state's CDL track. Untimed in reality; 60 minutes is a generous
+  // stand-in, same treatment as most other CDL tracks above.
+  ga_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  // 25 questions / 20 correct (80%) to pass, 30-minute limit -- picked the internally-consistent
+  // figure (20/25 is an exact 80%, corroborated with this specific time limit) over a competing
+  // "75%" claim from other secondary sources that doesn't divide evenly into 25.
+  ga_motorcycle: { questionCount: 25, durationSec: 1800, passPercent: 80 },
+  // State-specific portion only (not the national/general portion -- see project notes): 52
+  // questions / 39 correct (75%) to pass, per the real PSI Candidate Information Bulletin --
+  // confirmed via multiple corroborating sources. Genuinely timed in reality (2 hours for a
+  // state-portion-only sitting) -- matches durationSec, not a stand-in.
+  ga_real_estate: { questionCount: 52, durationSec: 7200, passPercent: 75 },
 };
 
 // See the ca_driver entry above for sourcing -- this is the under-18/provisional-permit variant,
