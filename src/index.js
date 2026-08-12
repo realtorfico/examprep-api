@@ -1794,6 +1794,11 @@ const EXAM_CONFIGS = {
   // test -- same computer-kiosk test mechanism as oh_driver, no official time limit published.
   // Untimed in reality; 60 minutes is a generous stand-in.
   oh_motorcycle: { questionCount: 40, durationSec: 3600, passPercent: 75 },
+  // State-specific portion only (not the national/general portion -- see project notes): 40
+  // questions / 28 correct (70%) to pass, per the real PSI Candidate Information Bulletin's
+  // Examination Summary Table, independently confirmed by OAC 1301:5-1-05(E). Genuinely timed in
+  // reality (60 minutes for this portion) -- matches durationSec, not a stand-in.
+  oh_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 70 },
 };
 
 // See the ca_driver entry above for sourcing -- this is the under-18/provisional-permit variant,
