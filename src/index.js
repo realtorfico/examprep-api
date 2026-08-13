@@ -1937,6 +1937,25 @@ const EXAM_CONFIGS = {
   // product decision, not a sourced number. TRACK_COMPLIANCE frames this honestly as
   // "Michigan-specific subject matter," never as "the state portion of the exam."
   mi_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 70 },
+  // 40 questions / 32 correct (80%) to pass, officially published on dol.wa.gov. No official time
+  // limit found; untimed in reality, 60 minutes is a generous stand-in per this project's convention.
+  wa_driver: { questionCount: 40, durationSec: 3600, passPercent: 80 },
+  // 50 questions / 40 correct (80%) to pass -- same AAMVA-standard CDL General Knowledge format.
+  // Genuinely timed in reality (60 minutes).
+  wa_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  // WA licensing is two-tier: a 50Q/80% Permit test, then a 25Q/80% Endorsement test after permit
+  // holding. This track models the Endorsement (full-license) tier -- 25Q/80% -- matching the
+  // question count/format used by every other state's motorcycle track built this project. Both
+  // counts officially published on dol.wa.gov; neither has a published time limit.
+  wa_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80 },
+  // Washington's entry-level license is called "Broker" (not "Salesperson"). State-specific portion:
+  // 30 items / 70% scaled score / 90min, per the real weighted PSI content outline. Treated as a
+  // direct raw passPercent, same resolved convention as nc_real_estate/ga_real_estate's own
+  // scaled-vs-raw ambiguity.
+  wa_real_estate: { questionCount: 30, durationSec: 5400, passPercent: 70 },
+  // Managing Broker is WA's supervisory upgrade tier (same pattern as il_managing_broker). State
+  // portion: 44 items / 75% scaled score / 90min, per the real weighted PSI content outline.
+  wa_managing_broker: { questionCount: 44, durationSec: 5400, passPercent: 75 },
 };
 
 // See the ca_driver entry above for sourcing -- this is the under-18/provisional-permit variant,
