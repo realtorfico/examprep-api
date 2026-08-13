@@ -1873,6 +1873,70 @@ const EXAM_CONFIGS = {
   // confirmed via multiple corroborating sources. Genuinely timed in reality (2 hours for a
   // state-portion-only sitting) -- matches durationSec, not a stand-in.
   ga_real_estate: { questionCount: 52, durationSec: 7200, passPercent: 75 },
+  // The real NC DMV test is actually two components: a 25-question general knowledge test (20/25,
+  // 80%) plus a 12-item road-sign identification test (9/12, 75%) -- confirmed via ncdot.gov. Built
+  // as a single unified 37Q practice exam (25+12), blended pass threshold 29/37 (78.4%), same
+  // disclosed-simplification pattern as ga_driver. No time limit published; untimed in reality.
+  nc_driver: { questionCount: 37, durationSec: 3600, passPercent: 78.4 },
+  // 50 questions / 40 correct (80%) to pass -- same AAMVA-standard CDL General Knowledge format as
+  // every other state's CDL track. Genuinely timed in reality (60 minutes).
+  nc_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  // State-specific portion only (not the national/general portion): 60 questions / 45 correct (75%)
+  // to pass, per the current (April 2026) PSI/Pearson VUE Candidate Handbook's weighted state
+  // outline, corroborated by NCREC's own License Law and Rules Comments. Genuinely timed in reality
+  // (2 hours for this portion).
+  nc_real_estate: { questionCount: 60, durationSec: 7200, passPercent: 75 },
+  // 50 questions / 40 correct (80%) to pass -- a real statutory threshold, NC General Statutes
+  // Chapter 10B (the Notary Public Act) section 10B-8, fetched fresh from ncleg.gov. Untimed;
+  // 60 minutes is a generous stand-in.
+  nc_notary: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  // 60 questions / 48 correct (80%) to pass, grounded in the NC Vessel Operator's Guide -- same
+  // "clean free content, minor provider-format variance" pattern as oh_boating. Untimed in reality.
+  nc_boating: { questionCount: 60, durationSec: 3600, passPercent: 80 },
+  // The real VA DMV test has a two-gate structure: Part 1 is 10 road-sign questions requiring ALL
+  // 10 correct (confirmed directly from dmv.virginia.gov -- no partial credit), Part 2 is 30
+  // general-knowledge questions at 80% (24/30). Built as a single unified 40Q practice exam,
+  // blended pass threshold 34/40 (85%) -- disclosed simplification, same pattern as ga_driver/
+  // nc_driver. Untimed in reality.
+  va_driver: { questionCount: 40, durationSec: 3600, passPercent: 85 },
+  // 50 questions / 40 correct (80%) to pass -- same AAMVA-standard CDL General Knowledge format.
+  // Genuinely timed in reality (60 minutes).
+  va_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  // 25 questions / 20 correct (80%) to pass, per the VA Motorcycle Rider's Manual's own published
+  // question count. Untimed in reality; 60 minutes is a generous stand-in.
+  va_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80 },
+  // State-specific portion only: 40 questions / 30 correct (75%) to pass, per the real weighted PSI
+  // outline (Licensing 8, Escrow Accounts 2, Disclosure Requirements 10, Agency Definitions/
+  // Relationships 12, VA Fair Housing 4, Specific Acts 4 -- sums to 40). Genuinely timed in reality
+  // (45 minutes).
+  va_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 75 },
+  // 75 questions / 60 correct (80%) to pass -- codified directly in Virginia Administrative Code
+  // 4VAC15-410, a single DWR-administered equivalency exam (no free PDF handbook exists; content
+  // was web-scraped from the DWR Boater's Guide site directly). Untimed in reality.
+  va_boating: { questionCount: 75, durationSec: 3600, passPercent: 80 },
+  // 50 questions / 40 correct (80%) to pass, per the Michigan Driver's Manual (Secretary of State,
+  // Oct 2025 edition). Untimed in reality; 60 minutes is a generous stand-in.
+  mi_driver: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  // 50 questions / 40 correct (80%) to pass -- same AAMVA-standard CDL General Knowledge format.
+  // Genuinely timed in reality (~60 minutes).
+  mi_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  // 25 questions / 20 correct (80%) to pass, per the Michigan Motorcycle Operator Manual (May 2022
+  // edition, still the current version linked from michigan.gov/sos). Untimed in reality.
+  mi_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80 },
+  // 60 questions / 48 correct (80%) to pass, Kalkomey-produced and DNR-promoted -- same
+  // provider-administered pattern as oh_boating/nc_boating. Untimed in reality.
+  mi_boating: { questionCount: 60, durationSec: 3600, passPercent: 80 },
+  // Michigan's real Salesperson exam is ONE unified 115-question/70%/180min sitting with NO
+  // separate state-only portion (confirmed: no national/state labels anywhere in the PSI bulletin,
+  // unlike every other state built so far). MI-specific content is a real, PSI-weighted 28-item
+  // scope (Duties/Powers 3, Licensing 5, Statutory Requirements 10, Contractual Relationships 5,
+  // Additional State Topics 5) grounded in MCL 339.2501-2518 -- but no official practice-exam size/
+  // pass threshold exists for this supplemental scope alone, since it was never meant to be taken
+  // standalone. 40Q/70%/45min chosen here as a reasonable practice-test sizing (matches this
+  // project's default real-estate pass threshold elsewhere, e.g. oh_real_estate) -- an explicit
+  // product decision, not a sourced number. TRACK_COMPLIANCE frames this honestly as
+  // "Michigan-specific subject matter," never as "the state portion of the exam."
+  mi_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 70 },
 };
 
 // See the ca_driver entry above for sourcing -- this is the under-18/provisional-permit variant,
