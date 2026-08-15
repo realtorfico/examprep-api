@@ -1994,6 +1994,8 @@ const EXAM_CONFIGS = {
   wi_real_estate: { questionCount: 140, durationSec: 14400, passPercent: 75 },
   wv_real_estate: { questionCount: 50, durationSec: 3600, passPercent: 70 },
   wy_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75 },
+  fl_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 75 },
+  tx_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70 },
 };
 
 // See the ca_driver entry above for sourcing -- this is the under-18/provisional-permit variant,
