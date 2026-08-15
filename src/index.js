@@ -2514,6 +2514,10 @@ async function handleQuestionsList(request, env) {
   const url = new URL(request.url);
   const examTypesParam = url.searchParams.get('examType');
   const examTypes = examTypesParam ? examTypesParam.split(',').map((s) => s.trim()).filter(Boolean) : [];
+  // examType is required -- an unscoped call is a COUNT(*)/scan over the whole table, and the
+  // admin UI itself refuses to send one (see questionsScopeTooUnbounded() in app.js); this is just
+  // the server-side backstop for a direct/manual call.
+  if (!examTypes.length) return json({ error: 'exam_type_required' }, 400);
   const topic = url.searchParams.get('topic');
   const q = url.searchParams.get('q');
   const limit = Math.min(Math.max(parseInt(url.searchParams.get('limit'), 10) || 50, 1), 200);
@@ -2521,7 +2525,7 @@ async function handleQuestionsList(request, env) {
 
   let where = 'WHERE 1=1';
   const binds = [];
-  if (examTypes.length) { where += ` AND exam_type IN (${examTypes.map(() => '?').join(',')})`; binds.push(...examTypes); }
+  where += ` AND exam_type IN (${examTypes.map(() => '?').join(',')})`; binds.push(...examTypes);
   if (topic) { where += ' AND topic = ?'; binds.push(topic); }
   if (q) { where += ' AND question LIKE ?'; binds.push('%' + q + '%'); }
 
