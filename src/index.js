@@ -2504,16 +2504,50 @@ async function handleCodesRevoke(request, env) {
   return json({ ok: true });
 }
 
+// examType accepts a comma-separated list -- the admin Questions tab uses this for its "kind"
+// and/or "state" pill filters, which resolve to more than one exam_type (e.g. every *_notary
+// track) whenever the pills don't narrow all the way down to a single track. Paginated (limit/
+// offset) with a companion COUNT so the admin's page-of-50-or-so table and "X of Y" footer never
+// have to pull the whole matching set across the wire, unlike the old unpaginated SELECT * this
+// replaced (fine at a few hundred rows/track, not at the tens-of-thousands the bank is headed to).
 async function handleQuestionsList(request, env) {
   const url = new URL(request.url);
-  const examType = url.searchParams.get('examType');
+  const examTypesParam = url.searchParams.get('examType');
+  const examTypes = examTypesParam ? examTypesParam.split(',').map((s) => s.trim()).filter(Boolean) : [];
   const topic = url.searchParams.get('topic');
-  let sql = 'SELECT * FROM questions WHERE 1=1';
+  const q = url.searchParams.get('q');
+  const limit = Math.min(Math.max(parseInt(url.searchParams.get('limit'), 10) || 50, 1), 200);
+  const offset = Math.max(parseInt(url.searchParams.get('offset'), 10) || 0, 0);
+
+  let where = 'WHERE 1=1';
   const binds = [];
-  if (examType) { sql += ' AND exam_type = ?'; binds.push(examType); }
-  if (topic) { sql += ' AND topic = ?'; binds.push(topic); }
-  sql += ' ORDER BY created_at DESC LIMIT 10000';
-  return json({ questions: (await env.DB.prepare(sql).bind(...binds).all()).results });
+  if (examTypes.length) { where += ` AND exam_type IN (${examTypes.map(() => '?').join(',')})`; binds.push(...examTypes); }
+  if (topic) { where += ' AND topic = ?'; binds.push(topic); }
+  if (q) { where += ' AND question LIKE ?'; binds.push('%' + q + '%'); }
+
+  // List-view fields only -- choices/correct_choice/explanation/source_note aren't shown in the
+  // admin table (there's no per-row edit view yet) and would otherwise ride along on every page.
+  const listSql = `SELECT id, exam_type, topic, question, weight, source FROM questions ${where} ORDER BY exam_type ASC, topic ASC, created_at DESC, id ASC LIMIT ? OFFSET ?`;
+  const countSql = `SELECT COUNT(*) AS total FROM questions ${where}`;
+  const [listResult, countResult] = await Promise.all([
+    env.DB.prepare(listSql).bind(...binds, limit, offset).all(),
+    env.DB.prepare(countSql).bind(...binds).first(),
+  ]);
+  return json({ questions: listResult.results, total: countResult.total, limit, offset });
+}
+
+// Topic sub-tabs (with counts) for exactly one track -- the admin only calls this once its kind/
+// state pills resolve to a single exam_type, since "topic" isn't a meaningful cross-track filter
+// (different states' real_estate tracks don't share a topic taxonomy). A GROUP BY instead of
+// deriving counts from a full row fetch, same reasoning as handleQuestionCounts below.
+async function handleQuestionTopics(request, env) {
+  const url = new URL(request.url);
+  const examType = url.searchParams.get('examType');
+  if (!examType) return json({ error: 'examType_required' }, 400);
+  const rows = (await env.DB.prepare(
+    'SELECT topic, COUNT(*) AS count FROM questions WHERE exam_type = ? GROUP BY topic ORDER BY topic ASC'
+  ).bind(examType).all()).results;
+  return json({ topics: rows });
 }
 
 // Per-track question bank inventory for the Settings > Course pricing table -- a tiny GROUP BY
@@ -2644,6 +2678,7 @@ export default {
         if (pathname === '/console/refund-claims/review' && method === 'POST') return await handleConsoleRefundClaimsReview(request, env);
         if (pathname === '/console/questions' && method === 'GET') return await handleQuestionsList(request, env);
         if (pathname === '/console/questions/counts' && method === 'GET') return await handleQuestionCounts(env);
+        if (pathname === '/console/questions/topics' && method === 'GET') return await handleQuestionTopics(request, env);
         if (pathname === '/console/exam-configs' && method === 'GET') return await handleExamConfigsList(env);
         if (pathname === '/console/questions/create' && method === 'POST') return await handleQuestionCreate(request, env);
         if (pathname === '/console/questions/update' && method === 'POST') return await handleQuestionUpdate(request, env);
