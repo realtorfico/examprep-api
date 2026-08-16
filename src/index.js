@@ -1996,6 +1996,10 @@ const EXAM_CONFIGS = {
   wy_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75 },
   fl_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 75 },
   tx_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70 },
+  al_notary: { questionCount: 62, durationSec: 3600, passPercent: 70 },
+  fl_notary: { questionCount: 97, durationSec: 5400, passPercent: 70 },
+  ga_notary: { questionCount: 82, durationSec: 4800, passPercent: 70 },
+  tx_notary: { questionCount: 95, durationSec: 5400, passPercent: 70 },
 };
 
 // See the ca_driver entry above for sourcing -- this is the under-18/provisional-permit variant,
