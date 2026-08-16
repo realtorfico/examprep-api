@@ -1,0 +1,6 @@
+{
+  "examType": "hi_notary",
+  "questionsDir": "C:/claudews/passexamhq/temp/questions/hi_notary_batch2",
+  "priceCents": 999,
+  "handbookNote": "Batch 2 depth expansion for the existing Hawaii notary track (batch 1: Hawaii Revised Statutes Chapter 456, Sections 456-1 through 456-27, and Hawaii Administrative Rules Title 5, Chapter 5-11). This batch draws on the SAME primary-source compilation already retrieved at temp/handbooks/hi/notary.txt (HRS 456 fetched from capitol.hawaii.gov, HAR 5-11 fetched from the AG's adopted 2/27/2022 rules PDF) but covers statutory/rule provisions, definitions, fee-schedule line items, discipline grounds, journal-recordkeeping mechanics, and remote-online-notarization detail NOT tested by the 63 batch-1 questions -- deepening per-state practice-question coverage toward the site's ~200-250-question target without repeating batch-1 content. Price matches this project's established Notary tier ($9.99), same as batch 1."
+}

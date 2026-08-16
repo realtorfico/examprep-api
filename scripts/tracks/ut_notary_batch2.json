@@ -1,0 +1,6 @@
+{
+  "examType": "ut_notary",
+  "questionsDir": "C:/claudews/passexamhq/temp/questions/ut_notary_batch2",
+  "priceCents": 999,
+  "handbookNote": "Batch-2 depth expansion of the Utah notary bank, grounded in the same source as batch 1 (Utah Code Title 46, Chapter 1, Notaries Public Reform Act, Sections 46-1-2 to 46-1-23, plus the Lt. Governor's Notary Public Study Guide and Handbook). Mines statutory territory batch 1 did not cover -- the full journal-entry-content rules (46-1-14, 46-1-14.1), deeper journal custody/inspection/GRAMA-exclusion rules (46-1-15), deeper seal mechanics and certificate alternatives (46-1-16(2)(d),(4),(6)-(8); 46-1-17(2)), additional statutory definitions (46-1-2(2)-(3),(5)-(9),(11),(14)-(18),(28)), and application/background-check/resignation/revocation mechanics -- plus scenario and edge-case application questions (fee calculations, disqualification fact patterns, notarial-act-type discrimination, prohibited-act scenarios) built on already-covered rules but with distinct, non-duplicative fact patterns. Price matches batch 1 ($9.99); questionsDir points to the new ut_notary_batch2 folder so batch 1's existing files are untouched."
+}

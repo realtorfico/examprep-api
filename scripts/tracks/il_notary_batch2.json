@@ -1,0 +1,6 @@
+{
+  "examType": "il_notary",
+  "questionsDir": "C:/claudews/passexamhq/temp/questions/il_notary_batch2",
+  "priceCents": 999,
+  "handbookNote": "Batch 2 depth expansion for Illinois notary public practice questions -- grounded in the same primary source as batch 1 (Illinois Compiled Statutes 5 ILCS 312, Illinois Notary Public Act, current version reflecting the Act's 2023 Article/Section renumbering and substantive rewrite (P.A. 102-160), as further amended through P.A. 103-1009 (eff. 1-1-25), P.A. 104-83 (eff. 1-1-26), and P.A. 104-486 (eff. 1-1-27), per research notes at temp/handbooks/il/notary.txt confirmed against ilga.gov on 2026-08-15). Batch 1 (il_notary.json, 104 questions) covers the Act section-by-section; this batch adds genuinely distinct depth via scenario/application questions (same rules, new concrete fact patterns), error-spotting on prohibited acts, fee/deadline computation and comparison questions, deeper Section 1-104 definitions not tested in batch 1, and true statutory gaps (e.g. fee-overcharge penalty tiers, vendor tech-approval duties, post-revocation e-notary duties, Section 6-105's non-individual short forms) -- not reworded restatements of batch-1 questions. Price matches this project's established Notary tier ($9.99), same as batch 1, not a placeholder."
+}
