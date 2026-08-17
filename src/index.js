@@ -2019,6 +2019,7 @@ const EXAM_CONFIGS = {
   va_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
   wa_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
   wv_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
+  vt_notary: { questionCount: 50, durationSec: 5400, passPercent: 80 },
   az_notary: { questionCount: 45, durationSec: 5400, passPercent: 80 },
   ar_notary: { questionCount: 30, durationSec: 5400, passPercent: 80 },
   co_notary: { questionCount: 40, durationSec: 1800, passPercent: 80 },
