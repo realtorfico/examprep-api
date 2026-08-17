@@ -2027,7 +2027,7 @@ const EXAM_CONFIGS = {
   hi_notary: { questionCount: 45, durationSec: 5400, passPercent: 80 },
   il_notary: { questionCount: 50, durationSec: 5400, passPercent: 85 },
   in_notary: { questionCount: 30, durationSec: 5400, passPercent: 80 },
-  la_notary: { questionCount: 100, durationSec: 14400, passPercent: 70 },
+  la_notary: { questionCount: 50, durationSec: 14400, passPercent: 70 },
   md_notary: { questionCount: 20, durationSec: 5400, passPercent: 80 },
   me_notary: { questionCount: 15, durationSec: 5400, passPercent: 80 },
   mo_notary: { questionCount: 30, durationSec: 5400, passPercent: 80 },
