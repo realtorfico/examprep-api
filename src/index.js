@@ -1751,7 +1751,7 @@ const EXAM_CONFIGS = {
   // 45 questions / 60 minutes / scaled score of 70 to pass, per CPS HR's official exam FAQ.
   // The real score is a proprietary scaled score (0-100), not literally percent-correct --
   // this uses raw percent-correct against the same 70 threshold as a practice approximation.
-  ca_notary: { questionCount: 45, durationSec: 3600, passPercent: 70 },
+  ca_notary: { questionCount: 45, durationSec: 3600, passPercent: 70, minCorrect: 32 },
   // The real CA DMV Class C written knowledge test's format depends on the applicant's age --
   // confirmed against DMV's own 2006 Class C written-test evaluation report plus current (2026)
   // corroborating sources: first-time applicants 18+ get 36 questions (30 correct/83.3% to pass),
@@ -1765,7 +1765,7 @@ const EXAM_CONFIGS = {
   // anywhere). durationSec: 0 is this codebase's sentinel for "untimed" -- every consumer
   // (findInProgressAttempt, handleExamAnswer, buildExamResult) treats a falsy duration_sec as
   // "never expires" rather than computing against it.
-  ca_driver: { questionCount: 36, durationSec: 0, passPercent: 83.3 },
+  ca_driver: { questionCount: 36, durationSec: 0, passPercent: 83.3, minCorrect: 30 },
   // 50 questions / 40 correct (80%) to pass, per the real CA DMV CDL General Knowledge test --
   // the one test every CDL candidate takes regardless of endorsements. The question bank also
   // covers Air Brakes/Combination Vehicles and Passenger/School Bus/Tank/HazMat endorsement
@@ -1773,159 +1773,159 @@ const EXAM_CONFIGS = {
   // sittings) -- this mock exam blends everything into one practice sitting rather than modeling
   // each real sub-test separately, same simplification as the hub card's combined breakdown.
   // Untimed in reality (in-person at a DMV office/kiosk); 60 minutes is a generous stand-in.
-  ca_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  ca_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // 25 questions / 20 correct (80%) to pass, per the real CA DMV M1/M2 motorcycle written
   // knowledge test. Untimed in reality; 60 minutes is a generous stand-in.
-  ca_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80 },
+  ca_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
   // 30 questions / 21 correct (70%) to pass, per the real Texas DPS driver knowledge test.
   // Untimed in reality (in-person at a DPS office/kiosk); 60 minutes is a generous stand-in.
-  tx_driver: { questionCount: 30, durationSec: 3600, passPercent: 70 },
+  tx_driver: { questionCount: 30, durationSec: 3600, passPercent: 70, minCorrect: 21 },
   // 50 questions / 40 correct (80%) to pass, per the real Texas DPS CDL General Knowledge test --
   // same AAMVA-standard format as ca_cdl. Untimed in reality; 60 minutes is a generous stand-in.
-  tx_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  tx_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // 50 questions / 40 correct (80%) to pass, per the real FLHSMV Class E Knowledge Exam.
   // Untimed in reality (in-person at a FLHSMV office/kiosk); 60 minutes is a generous stand-in.
-  fl_driver: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  fl_driver: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // 50 questions / 40 correct (80%) to pass, per the real FLHSMV CDL General Knowledge test --
   // same AAMVA-standard format as ca_cdl/tx_cdl. 1 hour time limit in reality, matches durationSec.
-  fl_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  fl_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // 20 questions / 14 correct (70%) to pass, per the real NY DMV Class D written knowledge test.
   // Untimed in reality (in-person at a DMV office/kiosk); 60 minutes is a generous stand-in.
-  ny_driver: { questionCount: 20, durationSec: 3600, passPercent: 70 },
+  ny_driver: { questionCount: 20, durationSec: 3600, passPercent: 70, minCorrect: 14 },
   // 50 questions / 40 correct (80%) to pass, per the real NY DMV CDL General Knowledge test --
   // same AAMVA-standard format as ca_cdl/tx_cdl/fl_cdl. Untimed in reality; 60 minutes is a
   // generous stand-in.
-  ny_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  ny_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // 40 questions / 28 correct (70%) to pass, per the real NY Department of State notary exam FAQ.
   // Genuinely timed in reality (60 minutes), unlike the untimed DMV tests above.
-  ny_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
+  ny_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
   // 35 questions / 28 correct (80%) to pass, per the real Illinois Secretary of State Class D
   // written knowledge test (confirmed via actual state regulation, not just secondary sources).
   // Untimed in reality; 60 minutes is a generous stand-in.
-  il_driver: { questionCount: 35, durationSec: 3600, passPercent: 80 },
+  il_driver: { questionCount: 35, durationSec: 3600, passPercent: 80, minCorrect: 28 },
   // State-specific portion only (not the national/general portion -- see project notes): 40
   // questions / 75% to pass (30/40 correct exactly), per the PSI Candidate Information Booklet
   // for the IDFPR Broker exam. Genuinely timed in reality (90 minutes for this portion).
-  il_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 75 },
+  il_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 75, minCorrect: 30 },
   // State-specific only (this exam has no national portion at all): 50 questions / 75% to pass,
   // per the same PSI Candidate Information Booklet's Managing Broker Examination Summary Table.
   // Genuinely timed in reality (90 minutes).
-  il_managing_broker: { questionCount: 50, durationSec: 3600, passPercent: 75 },
+  il_managing_broker: { questionCount: 50, durationSec: 3600, passPercent: 75, minCorrect: 38 },
   // 18 questions / 15 correct to pass, per the real PennDOT non-commercial knowledge test.
   // 15/18 = 83.3% (buildExamResult rounds percent to 1 decimal) -- using 83.3, not 83, so a
   // candidate scoring exactly the real pass line is graded as passing here too. Untimed in
   // reality; 60 minutes is a generous stand-in.
-  pa_driver: { questionCount: 18, durationSec: 3600, passPercent: 83.3 },
+  pa_driver: { questionCount: 18, durationSec: 3600, passPercent: 83.3, minCorrect: 15 },
   // 50 questions / 40 correct (80%) to pass -- PennDOT's own fact sheet doesn't state a pass
   // score, but 80% is the FEDERAL minimum under 49 CFR 383.135(a), binding on every state's CDL
   // knowledge test (confirmed at ecfr.gov), same AAMVA-standard format as every other CDL track.
   // Untimed in reality; 60 minutes is a generous stand-in.
-  pa_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  pa_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // State-specific portion only (not the national/general portion -- see project notes): 40
   // questions / 75% to pass (30/40 correct exactly), per the Pearson VUE Candidate Handbook for
   // the PA Real Estate Salesperson exam. Genuinely timed in reality (60 minutes for this portion).
-  pa_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 75 },
+  pa_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 75, minCorrect: 30 },
   // 150 questions / 105 correct (70%) to pass, per the real DRE Salesperson exam -- covers both
   // the national/general and state-specific content in one unified test (DRE administers its own
   // exam directly, no PSI/Pearson national-vs-state split like other states' real estate tracks).
   // Genuinely timed in reality: 3 hours 15 minutes (11700 sec), not a stand-in.
-  ca_dre: { questionCount: 150, durationSec: 11700, passPercent: 70 },
+  ca_dre: { questionCount: 150, durationSec: 11700, passPercent: 70, minCorrect: 105 },
   // 40 questions / 30 correct (75%) to pass, per the real Ohio BMV driver knowledge test
   // (confirmed via bmv.ohio.gov plus corroborating secondary sources). No official time limit is
   // published; untimed in reality (in-person at a BMV kiosk). 60 minutes is a generous stand-in,
   // same treatment as tx_driver/fl_driver/ny_driver/il_driver/pa_driver above.
-  oh_driver: { questionCount: 40, durationSec: 3600, passPercent: 75 },
+  oh_driver: { questionCount: 40, durationSec: 3600, passPercent: 75, minCorrect: 30 },
   // 50 questions / 40 correct (80%) to pass, per the real Ohio BMV CDL General Knowledge test --
   // same AAMVA-standard format as every other CDL track above. Genuinely timed in reality (60
   // minutes), confirmed via multiple corroborating sources -- matches durationSec here, not a
   // stand-in.
-  oh_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  oh_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // 40 questions / 30 correct (75%) to pass, per the real Ohio BMV motorcycle written knowledge
   // test -- same computer-kiosk test mechanism as oh_driver, no official time limit published.
   // Untimed in reality; 60 minutes is a generous stand-in.
-  oh_motorcycle: { questionCount: 40, durationSec: 3600, passPercent: 75 },
+  oh_motorcycle: { questionCount: 40, durationSec: 3600, passPercent: 75, minCorrect: 30 },
   // State-specific portion only (not the national/general portion -- see project notes): 40
   // questions / 28 correct (70%) to pass, per the real PSI Candidate Information Bulletin's
   // Examination Summary Table, independently confirmed by OAC 1301:5-1-05(E). Genuinely timed in
   // reality (60 minutes for this portion) -- matches durationSec, not a stand-in.
-  oh_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 70 },
+  oh_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
   // 60 questions / 48 correct (80%) to pass -- the common format across the NASBLA/ODNR-approved
   // course vendors checked (BOATERexam/AceBoater use 60Q covering all 9 handbook chapters; 80% is
   // consistent everywhere including BOATsmart!, which uses a 50Q variant of the same test). No
   // single official Ohio boating exam exists -- see oh_boating's TRACK_COMPLIANCE entry for the
   // full disclosure. No time limit published anywhere; untimed in reality (self-paced course).
-  oh_boating: { questionCount: 60, durationSec: 3600, passPercent: 80 },
+  oh_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
   // The real DDS test is actually two independently-graded 20-question sections (Road Rules, Road
   // Signs), each requiring 15/20 (75%), confirmed directly from dds.georgia.gov -- built as a
   // single unified 40Q/75% practice exam anyway (disclosed simplification, see ga_driver's
   // TRACK_COMPLIANCE entry). No time limit published; untimed in reality (in-person DDS kiosk).
-  ga_driver: { questionCount: 40, durationSec: 3600, passPercent: 75 },
+  ga_driver: { questionCount: 40, durationSec: 3600, passPercent: 75, minCorrect: 30 },
   // 50 questions / 40 correct (80%) to pass -- the same AAMVA-standard CDL General Knowledge
   // format as every other state's CDL track. Untimed in reality; 60 minutes is a generous
   // stand-in, same treatment as most other CDL tracks above.
-  ga_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  ga_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // 25 questions / 20 correct (80%) to pass, 30-minute limit -- picked the internally-consistent
   // figure (20/25 is an exact 80%, corroborated with this specific time limit) over a competing
   // "75%" claim from other secondary sources that doesn't divide evenly into 25.
-  ga_motorcycle: { questionCount: 25, durationSec: 1800, passPercent: 80 },
+  ga_motorcycle: { questionCount: 25, durationSec: 1800, passPercent: 80, minCorrect: 20 },
   // State-specific portion only (not the national/general portion -- see project notes): 52
   // questions / 39 correct (75%) to pass, per the real PSI Candidate Information Bulletin --
   // confirmed via multiple corroborating sources. Genuinely timed in reality (2 hours for a
   // state-portion-only sitting) -- matches durationSec, not a stand-in.
-  ga_real_estate: { questionCount: 52, durationSec: 7200, passPercent: 75 },
+  ga_real_estate: { questionCount: 52, durationSec: 7200, passPercent: 75, minCorrect: 39 },
   // The real NC DMV test is actually two components: a 25-question general knowledge test (20/25,
   // 80%) plus a 12-item road-sign identification test (9/12, 75%) -- confirmed via ncdot.gov. Built
   // as a single unified 37Q practice exam (25+12), blended pass threshold 29/37 (78.4%), same
   // disclosed-simplification pattern as ga_driver. No time limit published; untimed in reality.
-  nc_driver: { questionCount: 37, durationSec: 3600, passPercent: 78.4 },
+  nc_driver: { questionCount: 37, durationSec: 3600, passPercent: 78.4, minCorrect: 29 },
   // 50 questions / 40 correct (80%) to pass -- same AAMVA-standard CDL General Knowledge format as
   // every other state's CDL track. Genuinely timed in reality (60 minutes).
-  nc_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  nc_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // State-specific portion only (not the national/general portion): 60 questions / 45 correct (75%)
   // to pass, per the current (April 2026) PSI/Pearson VUE Candidate Handbook's weighted state
   // outline, corroborated by NCREC's own License Law and Rules Comments. Genuinely timed in reality
   // (2 hours for this portion).
-  nc_real_estate: { questionCount: 60, durationSec: 7200, passPercent: 75 },
+  nc_real_estate: { questionCount: 60, durationSec: 7200, passPercent: 75, minCorrect: 45 },
   // 50 questions / 40 correct (80%) to pass -- a real statutory threshold, NC General Statutes
   // Chapter 10B (the Notary Public Act) section 10B-8, fetched fresh from ncleg.gov. Untimed;
   // 60 minutes is a generous stand-in.
-  nc_notary: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  nc_notary: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // 60 questions / 48 correct (80%) to pass, grounded in the NC Vessel Operator's Guide -- same
   // "clean free content, minor provider-format variance" pattern as oh_boating. Untimed in reality.
-  nc_boating: { questionCount: 60, durationSec: 3600, passPercent: 80 },
+  nc_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
   // The real VA DMV test has a two-gate structure: Part 1 is 10 road-sign questions requiring ALL
   // 10 correct (confirmed directly from dmv.virginia.gov -- no partial credit), Part 2 is 30
   // general-knowledge questions at 80% (24/30). Built as a single unified 40Q practice exam,
   // blended pass threshold 34/40 (85%) -- disclosed simplification, same pattern as ga_driver/
   // nc_driver. Untimed in reality.
-  va_driver: { questionCount: 40, durationSec: 3600, passPercent: 85 },
+  va_driver: { questionCount: 40, durationSec: 3600, passPercent: 85, minCorrect: 34 },
   // 50 questions / 40 correct (80%) to pass -- same AAMVA-standard CDL General Knowledge format.
   // Genuinely timed in reality (60 minutes).
-  va_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  va_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // 25 questions / 20 correct (80%) to pass, per the VA Motorcycle Rider's Manual's own published
   // question count. Untimed in reality; 60 minutes is a generous stand-in.
-  va_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80 },
+  va_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
   // State-specific portion only: 40 questions / 30 correct (75%) to pass, per the real weighted PSI
   // outline (Licensing 8, Escrow Accounts 2, Disclosure Requirements 10, Agency Definitions/
   // Relationships 12, VA Fair Housing 4, Specific Acts 4 -- sums to 40). Genuinely timed in reality
   // (45 minutes).
-  va_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 75 },
+  va_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 75, minCorrect: 30 },
   // 75 questions / 60 correct (80%) to pass -- codified directly in Virginia Administrative Code
   // 4VAC15-410, a single DWR-administered equivalency exam (no free PDF handbook exists; content
   // was web-scraped from the DWR Boater's Guide site directly). Untimed in reality.
-  va_boating: { questionCount: 75, durationSec: 3600, passPercent: 80 },
+  va_boating: { questionCount: 75, durationSec: 3600, passPercent: 80, minCorrect: 60 },
   // 50 questions / 40 correct (80%) to pass, per the Michigan Driver's Manual (Secretary of State,
   // Oct 2025 edition). Untimed in reality; 60 minutes is a generous stand-in.
-  mi_driver: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  mi_driver: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // 50 questions / 40 correct (80%) to pass -- same AAMVA-standard CDL General Knowledge format.
   // Genuinely timed in reality (~60 minutes).
-  mi_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  mi_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // 25 questions / 20 correct (80%) to pass, per the Michigan Motorcycle Operator Manual (May 2022
   // edition, still the current version linked from michigan.gov/sos). Untimed in reality.
-  mi_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80 },
+  mi_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
   // 60 questions / 48 correct (80%) to pass, Kalkomey-produced and DNR-promoted -- same
   // provider-administered pattern as oh_boating/nc_boating. Untimed in reality.
-  mi_boating: { questionCount: 60, durationSec: 3600, passPercent: 80 },
+  mi_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
   // Michigan's real Salesperson exam is ONE unified 115-question/70%/180min sitting with NO
   // separate state-only portion (confirmed: no national/state labels anywhere in the PSI bulletin,
   // unlike every other state built so far). MI-specific content is a real, PSI-weighted 28-item
@@ -1936,161 +1936,161 @@ const EXAM_CONFIGS = {
   // project's default real-estate pass threshold elsewhere, e.g. oh_real_estate) -- an explicit
   // product decision, not a sourced number. TRACK_COMPLIANCE frames this honestly as
   // "Michigan-specific subject matter," never as "the state portion of the exam."
-  mi_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 70 },
+  mi_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 70, minCorrect: 28 },
   // 40 questions / 32 correct (80%) to pass, officially published on dol.wa.gov. No official time
   // limit found; untimed in reality, 60 minutes is a generous stand-in per this project's convention.
-  wa_driver: { questionCount: 40, durationSec: 3600, passPercent: 80 },
+  wa_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
   // 50 questions / 40 correct (80%) to pass -- same AAMVA-standard CDL General Knowledge format.
   // Genuinely timed in reality (60 minutes).
-  wa_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80 },
+  wa_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // WA licensing is two-tier: a 50Q/80% Permit test, then a 25Q/80% Endorsement test after permit
   // holding. This track models the Endorsement (full-license) tier -- 25Q/80% -- matching the
   // question count/format used by every other state's motorcycle track built this project. Both
   // counts officially published on dol.wa.gov; neither has a published time limit.
-  wa_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80 },
+  wa_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
   // Washington's entry-level license is called "Broker" (not "Salesperson"). State-specific portion:
   // 30 items / 70% scaled score / 90min, per the real weighted PSI content outline. Treated as a
   // direct raw passPercent, same resolved convention as nc_real_estate/ga_real_estate's own
   // scaled-vs-raw ambiguity.
-  wa_real_estate: { questionCount: 30, durationSec: 5400, passPercent: 70 },
+  wa_real_estate: { questionCount: 30, durationSec: 5400, passPercent: 70, minCorrect: 21 },
   // Managing Broker is WA's supervisory upgrade tier (same pattern as il_managing_broker). State
   // portion: 44 items / 75% scaled score / 90min, per the real weighted PSI content outline.
-  wa_managing_broker: { questionCount: 44, durationSec: 5400, passPercent: 75 },
-  ak_real_estate: { questionCount: 40, durationSec: 4800, passPercent: 75 },
-  al_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  ar_real_estate: { questionCount: 30, durationSec: 3600, passPercent: 70 },
-  az_real_estate: { questionCount: 60, durationSec: 5400, passPercent: 75 },
-  co_real_estate: { questionCount: 74, durationSec: 6600, passPercent: 71.6 },
-  ct_real_estate: { questionCount: 35, durationSec: 2700, passPercent: 70 },
-  de_real_estate: { questionCount: 40, durationSec: 4800, passPercent: 70 },
-  hi_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 70 },
-  ia_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  id_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75 },
-  in_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 75 },
-  ks_real_estate: { questionCount: 30, durationSec: 5400, passPercent: 75 },
-  ky_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 75 },
-  la_real_estate: { questionCount: 55, durationSec: 5400, passPercent: 70 },
-  ma_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70 },
-  md_real_estate: { questionCount: 30, durationSec: 1800, passPercent: 70 },
-  me_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75 },
-  mn_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75 },
-  mo_real_estate: { questionCount: 40, durationSec: 7200, passPercent: 75 },
-  ms_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75 },
-  mt_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75 },
-  nd_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75 },
-  ne_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 75 },
-  nh_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70 },
-  nj_real_estate: { questionCount: 30, durationSec: 3600, passPercent: 70 },
-  nm_real_estate: { questionCount: 50, durationSec: 3600, passPercent: 75 },
-  nv_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75 },
-  ok_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70 },
-  or_real_estate: { questionCount: 50, durationSec: 4500, passPercent: 75 },
-  ri_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 70 },
-  sc_real_estate: { questionCount: 40, durationSec: 4800, passPercent: 70 },
-  sd_real_estate: { questionCount: 52, durationSec: 7200, passPercent: 75 },
-  tn_real_estate: { questionCount: 40, durationSec: 4800, passPercent: 70 },
-  ut_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 70 },
-  vt_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 75 },
-  wi_real_estate: { questionCount: 140, durationSec: 14400, passPercent: 75 },
-  wv_real_estate: { questionCount: 50, durationSec: 3600, passPercent: 70 },
-  wy_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75 },
-  fl_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 75 },
-  tx_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70 },
-  al_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  fl_notary: { questionCount: 40, durationSec: 5400, passPercent: 70 },
-  ga_notary: { questionCount: 40, durationSec: 4800, passPercent: 70 },
-  tx_notary: { questionCount: 40, durationSec: 5400, passPercent: 70 },
-  ak_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  de_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  id_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  ia_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  ks_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  ky_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  ma_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  mi_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  mn_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  ms_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  nh_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  nd_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  ok_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  sc_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  sd_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  tn_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  va_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  wa_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  wv_notary: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  vt_notary: { questionCount: 50, durationSec: 5400, passPercent: 80 },
-  az_notary: { questionCount: 45, durationSec: 5400, passPercent: 80 },
-  ar_notary: { questionCount: 30, durationSec: 5400, passPercent: 80 },
-  co_notary: { questionCount: 40, durationSec: 1800, passPercent: 80 },
-  ct_notary: { questionCount: 35, durationSec: 3600, passPercent: 100 },
-  hi_notary: { questionCount: 45, durationSec: 5400, passPercent: 80 },
-  il_notary: { questionCount: 50, durationSec: 5400, passPercent: 85 },
-  in_notary: { questionCount: 30, durationSec: 5400, passPercent: 80 },
-  la_notary: { questionCount: 50, durationSec: 14400, passPercent: 70 },
-  md_notary: { questionCount: 20, durationSec: 5400, passPercent: 80 },
-  me_notary: { questionCount: 15, durationSec: 5400, passPercent: 80 },
-  mo_notary: { questionCount: 30, durationSec: 5400, passPercent: 80 },
-  mt_notary: { questionCount: 30, durationSec: 5400, passPercent: 80 },
-  ne_notary: { questionCount: 20, durationSec: 5400, passPercent: 85 },
-  nj_notary: { questionCount: 50, durationSec: 5400, passPercent: 80 },
-  nm_notary: { questionCount: 50, durationSec: 3600, passPercent: 80 },
-  nv_notary: { questionCount: 50, durationSec: 5400, passPercent: 80 },
-  oh_notary: { questionCount: 50, durationSec: 5400, passPercent: 80 },
-  or_notary: { questionCount: 50, durationSec: 5400, passPercent: 80 },
-  pa_notary: { questionCount: 30, durationSec: 3600, passPercent: 75 },
-  ri_notary: { questionCount: 50, durationSec: 5400, passPercent: 80 },
-  ut_notary: { questionCount: 35, durationSec: 5400, passPercent: 80 },
-  wi_notary: { questionCount: 30, durationSec: 5400, passPercent: 90 },
-  wy_notary: { questionCount: 20, durationSec: 3600, passPercent: 70 },
-  al_driver: { questionCount: 30, durationSec: 0, passPercent: 80 },
-  ak_driver: { questionCount: 20, durationSec: 1500, passPercent: 80 },
-  az_driver: { questionCount: 40, durationSec: 3600, passPercent: 80 },
-  ar_driver: { questionCount: 40, durationSec: 3600, passPercent: 80 },
-  co_driver: { questionCount: 40, durationSec: 3600, passPercent: 80 },
-  ct_driver: { questionCount: 25, durationSec: 3600, passPercent: 80 },
-  de_driver: { questionCount: 30, durationSec: 3600, passPercent: 80 },
-  hi_driver: { questionCount: 30, durationSec: 3600, passPercent: 80 },
-  id_driver: { questionCount: 40, durationSec: 3600, passPercent: 85 },
-  in_driver: { questionCount: 40, durationSec: 3600, passPercent: 80 },
-  ia_driver: { questionCount: 40, durationSec: 3600, passPercent: 80 },
-  ks_driver: { questionCount: 25, durationSec: 3600, passPercent: 80 },
-  ky_driver: { questionCount: 40, durationSec: 0, passPercent: 80 },
-  la_driver: { questionCount: 40, durationSec: 3600, passPercent: 80 },
-  me_driver: { questionCount: 30, durationSec: 0, passPercent: 80 },
-  md_driver: { questionCount: 25, durationSec: 1200, passPercent: 88 },
-  ma_driver: { questionCount: 25, durationSec: 1500, passPercent: 72 },
-  mn_driver: { questionCount: 40, durationSec: 3600, passPercent: 80 },
-  ms_driver: { questionCount: 40, durationSec: 0, passPercent: 80 },
-  mo_driver: { questionCount: 25, durationSec: 0, passPercent: 80 },
-  mt_driver: { questionCount: 40, durationSec: 0, passPercent: 80 },
-  ne_driver: { questionCount: 40, durationSec: 0, passPercent: 80 },
-  nv_driver: { questionCount: 25, durationSec: 0, passPercent: 80 },
-  nh_driver: { questionCount: 40, durationSec: 2400, passPercent: 80 },
-  nj_driver: { questionCount: 50, durationSec: 3600, passPercent: 80 },
-  nm_driver: { questionCount: 40, durationSec: 3600, passPercent: 70 },
-  nd_driver: { questionCount: 40, durationSec: 3600, passPercent: 80 },
-  ok_driver: { questionCount: 20, durationSec: 3600, passPercent: 75 },
-  or_driver: { questionCount: 35, durationSec: 3600, passPercent: 80 },
-  ri_driver: { questionCount: 40, durationSec: 5400, passPercent: 80 },
-  sc_driver: { questionCount: 30, durationSec: 0, passPercent: 80 },
-  sd_driver: { questionCount: 40, durationSec: 0, passPercent: 80 },
-  tn_driver: { questionCount: 40, durationSec: 0, passPercent: 80 },
-  ut_driver: { questionCount: 50, durationSec: 3600, passPercent: 80 },
-  vt_driver: { questionCount: 20, durationSec: 3600, passPercent: 80 },
-  wv_driver: { questionCount: 25, durationSec: 0, passPercent: 76 },
-  wi_driver: { questionCount: 50, durationSec: 2700, passPercent: 80 },
-  wy_driver: { questionCount: 40, durationSec: 3600, passPercent: 80 },
+  wa_managing_broker: { questionCount: 44, durationSec: 5400, passPercent: 75, minCorrect: 33 },
+  ak_real_estate: { questionCount: 40, durationSec: 4800, passPercent: 75, minCorrect: 30 },
+  al_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  ar_real_estate: { questionCount: 30, durationSec: 3600, passPercent: 70, minCorrect: 21 },
+  az_real_estate: { questionCount: 60, durationSec: 5400, passPercent: 75, minCorrect: 45 },
+  co_real_estate: { questionCount: 74, durationSec: 6600, passPercent: 71.6, minCorrect: 53 },
+  ct_real_estate: { questionCount: 35, durationSec: 2700, passPercent: 70, minCorrect: 25 },
+  de_real_estate: { questionCount: 40, durationSec: 4800, passPercent: 70, minCorrect: 28 },
+  hi_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 70, minCorrect: 35 },
+  ia_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  id_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
+  in_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 75, minCorrect: 38 },
+  ks_real_estate: { questionCount: 30, durationSec: 5400, passPercent: 75, minCorrect: 23 },
+  ky_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 75, minCorrect: 38 },
+  la_real_estate: { questionCount: 55, durationSec: 5400, passPercent: 70, minCorrect: 39 },
+  ma_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70, minCorrect: 28 },
+  md_real_estate: { questionCount: 30, durationSec: 1800, passPercent: 70, minCorrect: 21 },
+  me_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
+  mn_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
+  mo_real_estate: { questionCount: 40, durationSec: 7200, passPercent: 75, minCorrect: 30 },
+  ms_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
+  mt_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
+  nd_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
+  ne_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 75, minCorrect: 38 },
+  nh_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70, minCorrect: 28 },
+  nj_real_estate: { questionCount: 30, durationSec: 3600, passPercent: 70, minCorrect: 21 },
+  nm_real_estate: { questionCount: 50, durationSec: 3600, passPercent: 75, minCorrect: 38 },
+  nv_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
+  ok_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70, minCorrect: 28 },
+  or_real_estate: { questionCount: 50, durationSec: 4500, passPercent: 75, minCorrect: 38 },
+  ri_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 70, minCorrect: 35 },
+  sc_real_estate: { questionCount: 40, durationSec: 4800, passPercent: 70, minCorrect: 28 },
+  sd_real_estate: { questionCount: 52, durationSec: 7200, passPercent: 75, minCorrect: 39 },
+  tn_real_estate: { questionCount: 40, durationSec: 4800, passPercent: 70, minCorrect: 28 },
+  ut_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 70, minCorrect: 35 },
+  vt_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 75, minCorrect: 30 },
+  wi_real_estate: { questionCount: 140, durationSec: 14400, passPercent: 75, minCorrect: 105 },
+  wv_real_estate: { questionCount: 50, durationSec: 3600, passPercent: 70, minCorrect: 35 },
+  wy_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
+  fl_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 75, minCorrect: 30 },
+  tx_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70, minCorrect: 28 },
+  al_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  fl_notary: { questionCount: 40, durationSec: 5400, passPercent: 70, minCorrect: 28 },
+  ga_notary: { questionCount: 40, durationSec: 4800, passPercent: 70, minCorrect: 28 },
+  tx_notary: { questionCount: 40, durationSec: 5400, passPercent: 70, minCorrect: 28 },
+  ak_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  de_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  id_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  ia_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  ks_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  ky_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  ma_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  mi_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  mn_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  ms_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  nh_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  nd_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  ok_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  sc_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  sd_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  tn_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  va_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  wa_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  wv_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  vt_notary: { questionCount: 50, durationSec: 5400, passPercent: 80, minCorrect: 40 },
+  az_notary: { questionCount: 45, durationSec: 5400, passPercent: 80, minCorrect: 36 },
+  ar_notary: { questionCount: 30, durationSec: 5400, passPercent: 80, minCorrect: 24 },
+  co_notary: { questionCount: 40, durationSec: 1800, passPercent: 80, minCorrect: 32 },
+  ct_notary: { questionCount: 35, durationSec: 3600, passPercent: 100, minCorrect: 35 },
+  hi_notary: { questionCount: 45, durationSec: 5400, passPercent: 80, minCorrect: 36 },
+  il_notary: { questionCount: 50, durationSec: 5400, passPercent: 85, minCorrect: 43 },
+  in_notary: { questionCount: 30, durationSec: 5400, passPercent: 80, minCorrect: 24 },
+  la_notary: { questionCount: 50, durationSec: 14400, passPercent: 70, minCorrect: 35 },
+  md_notary: { questionCount: 20, durationSec: 5400, passPercent: 80, minCorrect: 16 },
+  me_notary: { questionCount: 15, durationSec: 5400, passPercent: 80, minCorrect: 12 },
+  mo_notary: { questionCount: 30, durationSec: 5400, passPercent: 80, minCorrect: 24 },
+  mt_notary: { questionCount: 30, durationSec: 5400, passPercent: 80, minCorrect: 24 },
+  ne_notary: { questionCount: 20, durationSec: 5400, passPercent: 85, minCorrect: 17 },
+  nj_notary: { questionCount: 50, durationSec: 5400, passPercent: 80, minCorrect: 40 },
+  nm_notary: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  nv_notary: { questionCount: 50, durationSec: 5400, passPercent: 80, minCorrect: 40 },
+  oh_notary: { questionCount: 50, durationSec: 5400, passPercent: 80, minCorrect: 40 },
+  or_notary: { questionCount: 50, durationSec: 5400, passPercent: 80, minCorrect: 40 },
+  pa_notary: { questionCount: 30, durationSec: 3600, passPercent: 75, minCorrect: 23 },
+  ri_notary: { questionCount: 50, durationSec: 5400, passPercent: 80, minCorrect: 40 },
+  ut_notary: { questionCount: 35, durationSec: 5400, passPercent: 80, minCorrect: 28 },
+  wi_notary: { questionCount: 30, durationSec: 5400, passPercent: 90, minCorrect: 27 },
+  wy_notary: { questionCount: 20, durationSec: 3600, passPercent: 70, minCorrect: 14 },
+  al_driver: { questionCount: 30, durationSec: 0, passPercent: 80, minCorrect: 24 },
+  ak_driver: { questionCount: 20, durationSec: 1500, passPercent: 80, minCorrect: 16 },
+  az_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
+  ar_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
+  co_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
+  ct_driver: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
+  de_driver: { questionCount: 30, durationSec: 3600, passPercent: 80, minCorrect: 24 },
+  hi_driver: { questionCount: 30, durationSec: 3600, passPercent: 80, minCorrect: 24 },
+  id_driver: { questionCount: 40, durationSec: 3600, passPercent: 85, minCorrect: 34 },
+  in_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
+  ia_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
+  ks_driver: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
+  ky_driver: { questionCount: 40, durationSec: 0, passPercent: 80, minCorrect: 32 },
+  la_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
+  me_driver: { questionCount: 30, durationSec: 0, passPercent: 80, minCorrect: 24 },
+  md_driver: { questionCount: 25, durationSec: 1200, passPercent: 88, minCorrect: 22 },
+  ma_driver: { questionCount: 25, durationSec: 1500, passPercent: 72, minCorrect: 18 },
+  mn_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
+  ms_driver: { questionCount: 40, durationSec: 0, passPercent: 80, minCorrect: 32 },
+  mo_driver: { questionCount: 25, durationSec: 0, passPercent: 80, minCorrect: 20 },
+  mt_driver: { questionCount: 40, durationSec: 0, passPercent: 80, minCorrect: 32 },
+  ne_driver: { questionCount: 40, durationSec: 0, passPercent: 80, minCorrect: 32 },
+  nv_driver: { questionCount: 25, durationSec: 0, passPercent: 80, minCorrect: 20 },
+  nh_driver: { questionCount: 40, durationSec: 2400, passPercent: 80, minCorrect: 32 },
+  nj_driver: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  nm_driver: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
+  nd_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
+  ok_driver: { questionCount: 20, durationSec: 3600, passPercent: 75, minCorrect: 15 },
+  or_driver: { questionCount: 35, durationSec: 3600, passPercent: 80, minCorrect: 28 },
+  ri_driver: { questionCount: 40, durationSec: 5400, passPercent: 80, minCorrect: 32 },
+  sc_driver: { questionCount: 30, durationSec: 0, passPercent: 80, minCorrect: 24 },
+  sd_driver: { questionCount: 40, durationSec: 0, passPercent: 80, minCorrect: 32 },
+  tn_driver: { questionCount: 40, durationSec: 0, passPercent: 80, minCorrect: 32 },
+  ut_driver: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  vt_driver: { questionCount: 20, durationSec: 3600, passPercent: 80, minCorrect: 16 },
+  wv_driver: { questionCount: 25, durationSec: 0, passPercent: 76, minCorrect: 19 },
+  wi_driver: { questionCount: 50, durationSec: 2700, passPercent: 80, minCorrect: 40 },
+  wy_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
 };
 
 // See the ca_driver entry above for sourcing -- this is the under-18/provisional-permit variant,
 // used instead of EXAM_CONFIGS.ca_driver when ageCategory === 'under18' (checkout-time answer, or
 // a per-sitting override on the exam intro page; see handleExamStart/handleExamConfig).
-const CA_DRIVER_UNDER18_CONFIG = { questionCount: 46, durationSec: 0, passPercent: 82.6 };
+const CA_DRIVER_UNDER18_CONFIG = { questionCount: 46, durationSec: 0, passPercent: 82.6, minCorrect: 38 };
 
 function getExamConfig(examType, ageCategory) {
   if (examType === 'ca_driver' && ageCategory === 'under18') return CA_DRIVER_UNDER18_CONFIG;
-  return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70 };
+  return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70, minCorrect: 32 };
 }
 
 async function handleExamConfig(user, request, env) {
