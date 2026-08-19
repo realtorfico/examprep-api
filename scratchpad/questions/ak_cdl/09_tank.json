@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Tank endorsement threshold",
+    "question": "A tank endorsement is required for a Class A or B CDL when the vehicle hauls liquid or liquid gas in a tank (or tanks) with what capacity?",
+    "choice_a": "Individual rated capacity of more than 119 gallons and an aggregate rated capacity of 1000 gallons or more",
+    "choice_b": "Individual rated capacity of more than 55 gallons and an aggregate rated capacity of 500 gallons or more",
+    "choice_c": "Any tank regardless of size",
+    "choice_d": "Individual rated capacity of more than 250 gallons only",
+    "correct_choice": "A",
+    "explanation": "The manual states a tank endorsement is required if the vehicle needs a Class A or B CDL and hauls liquid or liquid gas in a tank having an individual rated capacity of more than 119 gallons and an aggregate rated capacity of 1000 gallons or more.",
+    "weight": 3,
+    "source_note": "Alaska CDL Manual (AAMVA 2005 CDL Testing System, Version: July 2017, rev. AK DMV 02/2018), Section 8 - Tank Vehicles, p. 8-1"
+  },
+  {
+    "topic": "Tank endorsement and hazardous materials",
+    "question": "According to the manual, when is a tank endorsement also required for Class C vehicles?",
+    "choice_a": "Never; tank endorsements only apply to Class A and B",
+    "choice_b": "When the vehicle is used to transport hazardous materials in liquid or gas form in the rated tanks described for the endorsement",
+    "choice_c": "Only when hauling more than 5000 gallons",
+    "choice_d": "Only when crossing state lines",
+    "correct_choice": "B",
+    "explanation": "The manual states a tank endorsement is also required for Class C vehicles when used to transport hazardous materials in liquid or gas form in the above-described rated tanks.",
+    "weight": 2,
+    "source_note": "Alaska CDL Manual (AAMVA 2005 CDL Testing System, Version: July 2017, rev. AK DMV 02/2018), Section 8 - Tank Vehicles, p. 8-1"
+  },
+  {
+    "topic": "Most important inspection item",
+    "question": "On all tank vehicles, what is the most important item to check for during inspection?",
+    "choice_a": "Tire tread depth",
+    "choice_b": "Leaks",
+    "choice_c": "Mirror alignment",
+    "choice_d": "Fuel level",
+    "correct_choice": "B",
+    "explanation": "The manual states that on all tank vehicles, the most important item to check for is leaks.",
+    "weight": 3,
+    "source_note": "Alaska CDL Manual (AAMVA 2005 CDL Testing System, Version: July 2017, rev. AK DMV 02/2018), Section 8 - Tank Vehicles, p. 8-1"
+  },
+  {
+    "topic": "Driving with open valves",
+    "question": "According to the manual, you should never drive a tank vehicle in what condition?",
+    "choice_a": "With open valves or manhole covers",
+    "choice_b": "With a full fuel tank",
+    "choice_c": "With the parking brake engaged",
+    "choice_d": "With the vapor recovery kit connected",
+    "correct_choice": "A",
+    "explanation": "The manual states you should never drive a tank vehicle with open valves or manhole covers.",
+    "weight": 2,
+    "source_note": "Alaska CDL Manual (AAMVA 2005 CDL Testing System, Version: July 2017, rev. AK DMV 02/2018), Section 8 - Tank Vehicles, p. 8-1"
+  },
+  {
+    "topic": "High center of gravity",
+    "question": "Why are liquid tankers especially easy to roll over?",
+    "choice_a": "Because of their high center of gravity, which makes the vehicle top-heavy",
+    "choice_b": "Because they have fewer axles than other trailers",
+    "choice_c": "Because they lack antilock brakes",
+    "choice_d": "Because they are always overloaded",
+    "correct_choice": "A",
+    "explanation": "The manual explains that high center of gravity means much of the load's weight is carried high off the road, making the vehicle top-heavy and easy to roll over; tests have shown tankers can turn over at speed limits posted for curves.",
+    "weight": 3,
+    "source_note": "Alaska CDL Manual (AAMVA 2005 CDL Testing System, Version: July 2017, rev. AK DMV 02/2018), Section 8 - Tank Vehicles, p. 8-1"
+  },
+  {
+    "topic": "Liquid surge on slippery surfaces",
+    "question": "What danger does liquid surge create when a tanker stops on a slippery surface such as ice?",
+    "choice_a": "The wave can shove a stopped truck out into an intersection",
+    "choice_b": "The tank will automatically vent liquid",
+    "choice_c": "The brakes will lock permanently",
+    "choice_d": "The tank will overheat",
+    "correct_choice": "A",
+    "explanation": "The manual states that if the truck is on a slippery surface such as ice, the surge wave can shove a stopped truck out into an intersection.",
+    "weight": 3,
+    "source_note": "Alaska CDL Manual (AAMVA 2005 CDL Testing System, Version: July 2017, rev. AK DMV 02/2018), Section 8 - Tank Vehicles, p. 8-2"
+  },
+  {
+    "topic": "Bulkheads",
+    "question": "What must a driver pay attention to when loading and unloading a liquid tank divided into smaller tanks by bulkheads?",
+    "choice_a": "Weight distribution, so as not to put too much weight on the front or rear of the vehicle",
+    "choice_b": "The color of the liquid",
+    "choice_c": "The tank's paint condition",
+    "choice_d": "The trailer's tire pressure only",
+    "correct_choice": "A",
+    "explanation": "The manual states that when loading and unloading the smaller tanks divided by bulkheads, the driver must pay attention to weight distribution and not put too much weight on the front or rear of the vehicle.",
+    "weight": 2,
+    "source_note": "Alaska CDL Manual (AAMVA 2005 CDL Testing System, Version: July 2017, rev. AK DMV 02/2018), Section 8 - Tank Vehicles, p. 8-2"
+  },
+  {
+    "topic": "Baffled vs un-baffled tanks",
+    "question": "Why do un-baffled (\"smooth bore\") liquid tankers typically transport food products such as milk?",
+    "choice_a": "Because sanitation regulations forbid baffles due to the difficulty of cleaning the inside of the tank",
+    "choice_b": "Because baffles are too expensive to install",
+    "choice_c": "Because food products need side-to-side surge",
+    "choice_d": "Because un-baffled tanks weigh less",
+    "correct_choice": "A",
+    "explanation": "The manual states un-baffled tanks are usually those that transport food products like milk, because sanitation regulations forbid the use of baffles due to the difficulty in cleaning the inside of the tank.",
+    "weight": 2,
+    "source_note": "Alaska CDL Manual (AAMVA 2005 CDL Testing System, Version: July 2017, rev. AK DMV 02/2018), Section 8 - Tank Vehicles, p. 8-2"
+  },
+  {
+    "topic": "Outage",
+    "question": "What is \"outage\" as it relates to loading a cargo tank?",
+    "choice_a": "Room left in the tank for the liquid to expand as it warms, since a cargo tank should never be loaded totally full",
+    "choice_b": "The process of draining a tank completely before inspection",
+    "choice_c": "A term for a leak in the tank shell",
+    "choice_d": "The amount of fuel remaining in the tractor",
+    "correct_choice": "A",
+    "explanation": "The manual states you should never load a cargo tank totally full because liquids expand as they warm, so you must leave room for the expanding liquid, which is called outage.",
+    "weight": 3,
+    "source_note": "Alaska CDL Manual (AAMVA 2005 CDL Testing System, Version: July 2017, rev. AK DMV 02/2018), Section 8 - Tank Vehicles, p. 8-2"
+  },
+  {
+    "topic": "Stopping distance for tank vehicles",
+    "question": "Regarding stopping distance for tank vehicles, the manual states that:",
+    "choice_a": "Full tank vehicles always stop faster than empty ones",
+    "choice_b": "Wet roads double the normal stopping distance, and empty tank vehicles may take longer to stop than full ones",
+    "choice_c": "Stopping distance is unaffected by road conditions",
+    "choice_d": "Baffled tanks always stop faster than un-baffled tanks",
+    "correct_choice": "B",
+    "explanation": "The manual states that wet roads double the normal stopping distance, and empty tank vehicles may take longer to stop than full ones.",
+    "weight": 2,
+    "source_note": "Alaska CDL Manual (AAMVA 2005 CDL Testing System, Version: July 2017, rev. AK DMV 02/2018), Section 8 - Tank Vehicles, p. 8-2"
+  }
+]

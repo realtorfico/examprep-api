@@ -1943,6 +1943,28 @@ const EXAM_CONFIGS = {
   // 50 questions / 40 correct (80%) to pass -- same AAMVA-standard CDL General Knowledge format.
   // Genuinely timed in reality (60 minutes).
   wa_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  // Alabama uses the AAMVA CDL Testing System (2005 CDL Testing System manual, ALEA Driver License
+  // Division). General Knowledge test is 50 questions / 40 correct (80%) to pass, per FMCSA's
+  // federally standardized 49 CFR 383.135(a) minimum and confirmed via multiple third-party AL CDL
+  // prep sources; untimed in person at an ALEA office in reality, 60 minutes is a generous stand-in
+  // per this project's convention.
+  al_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  // Alaska uses the AAMVA CDL Testing System (2005 CDL Testing System manual, rev. AK DMV
+  // 02/2018), published by the Alaska Dept. of Administration, Division of Motor Vehicles. The
+  // manual states "the minimum passing score for all knowledge tests is 80%" (Section 1, p.1-2);
+  // General Knowledge test is 50 questions / 40 correct (80%), confirmed via multiple third-party
+  // AK CDL prep sources against the federally standardized 49 CFR 383.135(a) minimum. No official
+  // time limit found; 60 minutes is a generous stand-in per this project's convention.
+  ak_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  // Arizona uses the AAMVA CDL Testing System (2005/2022 CDL Testing System manual, ADOT Motor
+  // Vehicle Division, Revised 01/2026). The manual explicitly states "The applicant must answer
+  // at least 80 percent of the questions correctly on each knowledge test to achieve a passing
+  // score" (Customer Service Guide for Commercial Drivers, p. 9). Exact question count (50) is
+  // not spelled out in the manual text itself but matches the federally standardized 49 CFR
+  // 383.135(a) General Knowledge format and is corroborated by multiple third-party AZ CDL prep
+  // sources (epermittest.com, dmv-written-test.com); no official time limit found, 60 minutes is
+  // a generous stand-in per this project's convention.
+  az_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // WA licensing is two-tier: a 50Q/80% Permit test, then a 25Q/80% Endorsement test after permit
   // holding. This track models the Endorsement (full-license) tier -- 25Q/80% -- matching the
   // question count/format used by every other state's motorcycle track built this project. Both

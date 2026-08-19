@@ -1,0 +1,730 @@
+Section 11 - Vehicle Inspection  Page 11-1 
+Version: July 2017
+Section 11  
+Vehicle Inspection Test 
+This Section Covers 
+ Internal Inspection
+ External Inspection
+During the Vehicle inspection , you must show that 
+the vehicl e is saf e to drive . You will hav e to walk 
+around the vehicle, name and point to/ touch each 
+item and explain to the examiner what you are 
+checking and why.  
+Any vehicle that has components marked or labeled 
+cannot be used for the Vehicle Inspection test. 
+11.1 All Vehicles 
+Study the following vehicle parts for the type of 
+vehicle you will be using during the CDL skills tests. 
+You should be able to identify each part and tell the 
+examiner what you are looking for or inspecting. 
+11.1.1 Engine Compartment (Engine Off) 
+Leaks/Hoses 
+Look for puddles on the ground. 
+Look for dripping fluids on underside of engine and 
+transmission. 
+Inspect hoses for condition and leaks. 
+Oil Level 
+Check oil level when engine is off. 
+Indicate where dipstick is located. 
+ Check that the oil level is within safe operating 
+range. Level must be above refill mark. 
+Coolant Level 
+Looks at sight glass on radiator or coolant reservoir; 
+adequate level will show in sight glass. If no sight 
+glass is available, you must describe what s/he 
+would look for after removing radiator cap. 
+Power Steering Fluid 
+Checks the dipstick and sees where the fluid level is 
+relative to the refill mark or checks sight glass. Level 
+must be above refill mark. 
+Engine Compartment Belts 
+Check the following belts for snugness (1/2 to 3/4 
+inch play at center of belt), cracks, frays,loose 
+fibers or signs of wear: 
+Power steering belt. 
+Water pump belt. 
+Alternator belt. 
+Air compressor belt. 
+Note: If any of the components listed above are 
+not belt driven, you must: 
+Tell the examiner which component(s) are not belt 
+driven. 
+Make sure component(s) are operating properly, 
+are not damaged or leaking, and are mounted 
+securely. 
+Hydraulic Brakes Master Cylinder & Brake Fluid 
+Checks that master cylinder is securely attached 
+and not leaking 
+Checks the level of brake fluid in the reservoir to 
+ensure it is between the add and full marks 
+Safe Start 
+Place gearshift lever in neutral (or park, for 
+automatic transmissions). 
+Depress clutch before attempting to start the 
+vehicle 
+Start the vehicle and keep clutch depressed until 
+engine reaches idling speed. 
+Then release clutch slowly. 
+11.1.2 – Cab Check/Engine Start 
+Oil Pressure Gauge 
+Make sure oil pressure gauge is working. 
+Check that pressure gauge shows increasing or 
+normal oil pressure or that the warning light goes 
+off. 
+If equipped, oil temperature gauge should begin a 
+gradual rise to the normal operating range. 
+Temperature Gauge 
+Make sure the temperature gauge is working. 
+Temperature should begin to climb to the normal 
+operating range or temperature light should be off. 
+--- PAGE 141 ---
+Commercial Driver’s License Manual – 2005 CDL Testing System 
+Section 11 - Vehicle Inspection  Page 11-2 
+Version: July 2017 
+Check that the air gauge is working properly and 
+that the air compressor builds the air pressure to 
+governor cut-out at approximately 120-140 psi or 
+as specified by manufacturer.   
+Ammeter/Voltmeter 
+Check that gauges show alternator and/or 
+generator is charging or that warning light is off. 
+Mirrors and Windshield 
+Mirrors should be clean and adjusted properly from 
+the inside. 
+Windshield should be clean with no illegal stickers, 
+no obstructions, or damage to the glass. 
+Emergency Equipment 
+Check for spare electrical fuses.  
+Check for three red reflective triangles and 6 
+fusees or 3 liquid burning flares. 
+Check that the fire extinguisher is  properly 
+charged and securely mounted. 
+Note: If the vehicle is not equipped with electrical 
+fuses, you must mention this to the examiner. 
+Wipers/Washers 
+Check that wiper arms and blades are secure, not 
+damaged, and operate smoothly. 
+If equipped, windshield washers must operate 
+correctly. 
+Lights/Reflectors/Reflector Tape Condition 
+(Sides & Rear) 
+Test that dash indicators work when corresponding 
+lights are turned on: 
+Left turn signal. 
+Right turn signal. 
+Four-way emergency flashers. 
+High beam headlight.  
+Anti-lock Braking System (ABS) indicator. 
+Check that all external lights and reflective 
+equipment are clean and functional and none or 
+broken or missing. Light and reflector checks 
+include verification of correct color: 
+Clearance lights (red on rear, amber elsewhere). 
+Headlights (high and low beams). 
+Taillights. 
+Backing lights. 
+Turn signals. 
+Four-way flashers. 
+Brake lights. 
+Red reflectors (on rear) and amber reflectors 
+(elsewhere). 
+Air Gauge
+--- PAGE 142 ---
+Commercial Driver’s License Manual – 2005 CDL Testing System 
+Section 11 - Vehicle Inspection  Page 11-3 
+Version: July 2017
+Reflector tape condition 
+Note: Checks of brake, turn signal and four-way 
+flasher functions must be done separately. 
+Horn 
+Check that air horn and/or electric horn work. 
+Heater/Defroster 
+Test that the heater and defroster work. 
+Parking Brake Check 
+With air pressure built to governor cutout and the 
+parking brake engaged (trailer brakes released on 
+combination vehicles), check that the parking brake 
+will hold vehicle by gently trying to pull forward with 
+parking brake on. 
+With air pressure built to governor cutout, the 
+parking brake released and the trailer parking 
+brake engaged (combination vehicles only), check 
+that the trailer parking brake will hold vehicle by 
+gently trying to pull forward with the trailer parking 
+brake on. 
+Hydraulic Brake Check 
+Failure to perform both components of the 
+hydraulic brake check will result in an automatic 
+failure of the vehicle inspection test. 
+1. Pump the brake pedal three times, then hold it
+down for five seconds. The brake pedal should
+not move (depress) during the five seconds.
+2. If equipped with a hydraulic brake reserve
+(back-up) system, with the key off, depress the
+brake pedal and listen for the sound of the
+reserve system electric motor.
+3. Check that the warning buzzer or light is off.
+Air Brake Check (Air Brake Equipped Vehicles 
+Only) 
+Failure to perform all three components of the air 
+brake check correctly will result in an automatic 
+failure of the vehicle inspection test. Air brake safety 
+devices vary. However, this procedure is designed 
+to see that any safety device operates correctly as 
+air pressure drops from normal to a low air 
+condition. For safety purposes, in areas where an 
+incline is present, you will use wheel chocks during 
+the air brake check. The proper procedures for 
+inspecting the air brake system are as follows: 
+1. With the air pressure built up to governor cutoff
+(120 – 140 psi), shut off the engine leaving  the
+key in the “on” or “battery charge” position ,
+chock your wheels if necessary, release the
+parking brake (all vehicles), and the tractor
+protection valve (combination vehicle) and fully 
+apply the foot brake.  Hold the foot brake for one 
+minute. Check the air gauge to see if the air 
+pressure drops more than three pounds in one 
+minute (single vehicle) or four pounds in one 
+minute (combination vehicle). 
+2. Begin fanning off the air pressure by rapidly
+applying and releasing the foot brake. Low air
+warning devices (buzzer, light, flag) should
+activate before air pressure drops below 55 psi
+or level specified by the manufacturer.
+3. Continue to fan off the air pressure. At a range
+between 20 – 45 psi on a tractor-trailer
+combination vehicle (or level specified by the
+manufacturer), the tractor protection valve and
+parking brake valve should close (pop out). On
+other combination vehicle types and single
+vehicle types, the parking brake valve should
+close (pop out).
+Service Brake Check 
+You will be required to check the application of air 
+or hydraulic service brakes.  This procedure is 
+designed to determine that the brakes are working 
+correctly and that the vehicle does not pull to one 
+side or the other. 
+Pull forward at 5 mph, apply the service brake and 
+stop.  Check to see that the vehicle does not pull to 
+ei
+ther side and that it stops when brake is applied. 
+Safety Belt 
+Check that the safety belt is securely mounted, 
+adjusts, latches properly and is not ripped or 
+frayed. 
+11.2 – External Inspection (All Vehicles) 
+11.2.1– Steering 
+Steering Box/Hoses 
+Check that the steering box is securely mounted 
+and not leaking. Look for any missing nuts and/or , 
+bolts. 
+Check for power steering fluid leaks or damage to 
+power steering hoses. 
+Steering Linkage 
+See that connecting links, arms, and rods from the 
+steering box to the wheel are not worn or cracked. 
+Check that joints and sockets are not worn or loose 
+and that there are no missing nuts, bolts, or cotter 
+keys. 
+--- PAGE 143 ---
+Commercial Driver’s License Manual – 2005 CDL Testing System   
+ 
+Section 11 - Vehicle Inspection   Page 11-4 
+Version: July 2017  
+11.2.2 – Suspension 
+Springs/Air/Torque 
+Look for missing, shifted, cracked, or broken leaf 
+springs. 
+Look for broken or distorted coil springs. 
+If vehicle is equipped with torsion bars, torque 
+arms, or other types of suspension components, 
+check that they are not damaged and are mounted 
+securely. 
+Air ride suspension should be checked for damage 
+and leaks. 
+ 
+Mounts 
+Look for cracked or broken spring hangers, 
+missing or damaged bushings, and broken, loose, 
+or missing bolts, u-bolts or other axle mounting 
+parts. (The mounts should be checked at each 
+point where they are secured to the vehicle frame 
+and axle[s]). 
+ 
+Shock Absorbers 
+See that shock absorbers are secure and that 
+there are no leaks. 
+ 
+Note: Be prepared to perform the same 
+suspension components inspection on every axl e 
+(power unit and trailer, if equipped). 
+ 
+11.2.3 – Brakes 
+ 
+Slack Adjustors and Pushrods 
+Look for broken, loose, or missing parts. 
+For manual slack adjustors, the brake pushrod 
+should not move more than one inch (with the 
+brakes released) when pulled by hand. 
+ 
+Brake Chambers 
+See that brake chambers are not leaking, cracked, 
+or dented and are mounted securely. There are no 
+loose or missing clamps. 
+ 
+Brake Hoses/Lines 
+Look for cracked, worn, or leaking hoses, lines, 
+and couplings. 
+ 
+Drum Brake 
+Check for cracks, dents, or holes. Also check for 
+loose or missing bolts. 
+Check for contaminates such debris or oil/grease.    
+Brake linings (where visible) should not be worn 
+dangerously thin. 
+ 
+Brake Linings 
+On some brake drums, there are openings where 
+the brake linings can be seen from outside the 
+drum. For this type of drum, check that a visible 
+amount of brake lining is showing. 
+ 
+Note: Be prepared to perform the same brake 
+components inspection on every axle (power unit 
+and trailer, if equipped). 
+ 
+11.2.4 – Wheels 
+ 
+Rims 
+Check for damaged or bent rims. Rims cannot 
+have welding repairs.  Check rims for rust trails 
+that may indicate the rim is loose on the wheel. 
+ 
+Tires 
+The following items must be inspected on every 
+tire: 
+Tread depth: Check for minimum tread depth (4/32 
+on steering axle tires, 2/32 on all other tires). 
+Tire condition: Check that tread is evenly worn and 
+look for cuts or other damage to tread or sidewalls. 
+Also, make sure that valve caps and stems are not 
+missing, broken, or damaged. 
+Tire inflation: Check for proper inflation by using a 
+tire gauge.  Note:  You will not get credit if you simply 
+kick the tires or use a mallet to check for proper 
+inflation. 
+ 
+Hub Oil Seals/Axle Seals 
+See that hub oil/grease seals and axle seals are not 
+leaking and, if wheel has a s ight glass, oil level is 
+adequate. 
+ 
+Lug Nuts 
+Check that all lug nuts are present, free of cracks 
+and distortions, and show no signs of looseness 
+such as rust trails or shiny threads. 
+Make sure all bolt holes are not cracked or distorted. 
+ 
+Spacers or Budd Spacing 
+ 
+If equipped, check that spacers are not bent, 
+damaged, or rusted through; and are centered with 
+dual wheels and tires evenly separated.. 
+ 
+Check the space between the tires for debris 
+and/or foreign objects. 
+ 
+Note: Be prepared to perform the same wh eel 
+inspection on every axle (power unit and trailer, if 
+equipped). 
+--- PAGE 144 ---
+Commercial Driver’s License Manual – 2005 CDL Testing System 
+Section 11 - Vehicle Inspection  Page 11-5 
+Version: July 2017
+11.2.5 – Side of Vehicle 
+Door(s)/Mirror(s) 
+Check that door(s) are not damaged and that they 
+open and close properly from the outside.  
+Hinges should be secure with seals intact. 
+Check that mirror(s) and mirror brackets are not 
+damaged and are mounted securely with no loose 
+fittings. 
+Fuel Tank 
+Check that tank(s) are secure, cap(s) are tight, and 
+that there are no leaks from tank(s) or lines. 
+Drive Shaft 
+See that drive shaft is not bent or cracked. 
+Couplings should be secure and free of foreign 
+objects. 
+Exhaust System 
+Check system for damage and signs of leaks such 
+as rust or carbon soot.  Exhaust system should not 
+have cracks, holes or severe dents 
+System should be connected tightly and mounted 
+securely. 
+If equipped with emissions after-treatment 
+equipment: 
+Checks DEF tank to ensure the level of diesel 
+exhaust fluid in the tank is adequate (more than 
+1/8th tank) 
+Checks that DEF indicator on the dash is working 
+properly  
+Frame 
+Look for cracks, broken welds, holes or other 
+damage to the longitudinal frame members, cross 
+members, box, and floor. 
+11.2.6 – Rear of Vehicle 
+Splash Guards 
+If equipped, check that splash guards or mud flaps 
+are not damaged and are mounted securely. 
+Doors/Ties/Lifts 
+Check that doors and hinges are not damaged and 
+that they open, close, and latch properly from the 
+outside, if equipped. 
+Ties, straps, chains, and binders must also be 
+secure. 
+If equipped with a cargo lift, look for leaking, 
+damaged or missing parts and explain how it 
+should be checked for correct operation. 
+Lift must be fully retracted and latched securely. 
+--- PAGE 145 ---
+Commercial Driver’s License Manual – 2005 CDL Testing System   
+ 
+Section 11 - Vehicle Inspection   Page 11-6 
+Version: July 2017  
+11.2.7 – Tractor/Coupling 
+ 
+Air/Electric Lines 
+Listen for air leaks. Check that air hoses and 
+electrical lines are not cut, chafed, spliced, or worn 
+(steel braid should not show through). 
+Make sure air and electrical lines are not tangled, 
+pinched, or dragging against tractor parts. 
+ 
+Catwalk/Steps 
+Check that the catwalk is solid, clear of objects, 
+and securely bolted to tractor frame. 
+Check that steps leading to the cab entry and 
+catwalk (if equipped) are solid, clear of objects, 
+and securely bolted to tractor frame. 
+ 
+Mounting Bolts 
+Look for loose or missing mounting brackets, 
+clamps, bolts, or nuts. Both the fifth wheel and the 
+slide mounting must be solidly attached. 
+Check for loose or missing mounting bolts and for 
+broken welds for pintle hook or other type of hitch 
+mount, and tongue/draw-bar assembly to ensure 
+that they are solidly attached in place. 
+On other types of coupling systems (i.e., ball hitch, 
+pintle hook, etc.), inspect all coupling components 
+and mounting brackets for missing or broken parts. 
+ 
+Hitch Release Lever 
+Check to see that the hitch release lever is in place 
+and is secure. 
+ 
+Locking Jaws 
+Look into fifth wheel gap and check that locking 
+jaws are fully closed around the kingpin. 
+On other types of coupling systems (i.e., ball hitch, 
+pintle hook, etc.), inspect the locking mechanism 
+for missing or broken parts and make sure it is 
+locked securely. If present, safety cables or chains 
+must be secure and free of kinks and excessive 
+slack. 
+ 
+5th Wheel Skid Plate 
+Check for proper lubrication and that 5th wheel skid 
+plate is securely mounted to the platform and that 
+all bolts and pins are secure and not missing. 
+ 
+Platform (Fifth Wheel) 
+Check for cracks or breaks in the platform structure 
+which supports the fifth wheel skid plate. 
+ 
+Release Arm (Fifth Wheel) 
+If equipped, make sure the release arm is in the 
+engaged position and the safety latch is in place. 
+ 
+Kingpin/Apron/Gap 
+Explain that locking jaws holds kingpin in place 
+and that the kingpin is not bent or damaged 
+Make sure the visible part of the apron is not bent, 
+cracked, or broken. 
+Check that the trailer is lying flat on the fifth wheel 
+skid plate (no gap). 
+Check for kingpin lock. 
+ 
+Locking Pins (Fifth Wheel) 
+If equipped, look for loose or missing pins in the 
+slide mechanism of the sliding fifth wheel. If air 
+powered, check for leaks. 
+Make sure locking pins are fully engaged. 
+Check that the fifth wheel is positioned properly so 
+that the tractor frame will clear the landing gear 
+during turns. 
+ 
+Sliding Pintle 
+Check the sliding pintle hook for excessive wear 
+and to ensure it is secure with no loose or missing 
+nuts or bolts and cotter pin is in place. 
+ 
+Tongue or Draw-bar 
+Check that the tongue/draw-bar is not bent or 
+twisted and checks for broken welds and stress 
+cracks. 
+Check that the tongue/draw-bar eye is not worn 
+excessively. 
+Tongue Storage Area 
+Check that the storage area is solid and secured to 
+the tongue. 
+Check that cargo in the storage area i.e. chains, 
+binders, etc. are secure. 
+ 
+ 
+11.3 – School Bus Only 
+Emergency Equipment 
+In addition to checking for spare electrical fuses (if 
+equipped), three red reflective triangles, 6 fusees 
+or 3 liquid burning flares and a properly charged 
+and rated fire extinguisher, school bus drivers must 
+also inspect the following emergency equipment: 
+Emergency Kit 
+Body Fluid Cleanup Kit 
+ 
+--- PAGE 146 ---
+Commercial Driver’s License Manual – 2005 CDL Testing System 
+Section 11 - Vehicle Inspection  Page 11-7 
+Version: July 2017
+Lighting Indicators 
+In addition to checking the lighting indicators listed 
+in Section 10.2 of this manual, school bus drivers 
+must also check the following lighting indicators 
+(internal panel lights): 
+Alternately flashing amber lights indicator, if 
+equipped. 
+Alternately flashing red lights indicator. 
+Strobe light indicator, if equipped. 
+Lights/Reflectors 
+In addition to checking the lights and reflective 
+devices listed in Section 10.2 of this manual, 
+school bus drivers must also check the following 
+(external) lights and reflectors: 
+Strobe light, if equipped is operational and is not 
+broken. 
+Stop arm light, if equipped. 
+Alternately flashing amber lights, if equipped are 
+operational and not broken. 
+Alternately flashing red lights, on both the front and 
+back of the vehicle are operational and not 
+broken.. 
+Student Mirrors 
+In addition to checking the external mirrors, school 
+bus drivers must also check the internal and 
+external mirrors used for observing students: 
+Check for proper adjustment. 
+Checks that all internal and external mirrors and 
+mirror brackets are not damaged and are mounted 
+securely with no loose fittings. 
+Checks that visibility is not impaired due to dirty 
+mirrors. 
+Stop Arm/Safety Arm 
+If equipped, check the stop arm to see that it is 
+mounted securely to the frame of the vehicle. Also, 
+check for loose fittings and damage.  
+Checks that 
+stop arm extends fully when operated 
+Passenger Entry/Lift 
+Check that the entry door is not damaged, 
+operates smoothly, and closes securely from the 
+inside.  
+Hand rails are secure and the step light is working, 
+if equipped. 
+The entry steps must be clear with the treads not 
+loose or worn excessively. 
+If equipped with a handicap lift, look for leaking, 
+damaged, or missing parts and explain how lift 
+should be checked for correct operation. Lift must 
+be fully retracted and latched securely. 
+Emergency Exit 
+Demonstrate that at least one  emergency exit is  
+not damaged, operates smoothly, and closes 
+securely from the inside.   
+Check that release handle can be operated 
+properly from both inside and outside the vehicle. 
+Point out and describe how all other emergency 
+exits operate 
+Check that any emergency exit warning devices 
+are working properly. 
+Seating 
+Look for broken seat frames and check that seat 
+frames are firmly attached to the floor. 
+Check that seat cushions are attached securely to 
+the seat frames. 
+11.4 – Trailer 
+11.4.1 – Trailer Front 
+Air/Electrical Connections 
+Check that trailer air connectors are sealed and in 
+good condition. 
+Make sure glad hands are locked in place, free of 
+damage or air leaks. 
+Make sure the trailer electrical plug is firmly seated 
+and locked in place. 
+Header Board 
+If equipped, check the header board to see that it 
+is secure, free of damage, and strong enough to 
+contain cargo. 
+If equipped, the canvas or tarp carrier must be 
+mounted and fastened securely. 
+On enclosed trailers, check the front area for signs 
+of damage such as cracks, bulges, or holes. 
+11.4.2 – Side of Trailer 
+Landing Gear 
+Check that the landing gear is fully raised, has no 
+missing parts, crank handle is secure, and the 
+support frame and landing pads are  not damaged. 
+If power operated, check for air or hydraulic leaks. 
+--- PAGE 147 ---
+Commercial Driver’s License Manual – 2005 CDL Testing System   
+ 
+Section 11 - Vehicle Inspection   Page 11-8 
+Version: July 2017  
+Doors/Ties/Lifts 
+If equipped, check that doors are not damaged. 
+Check that doors open, close, and latch properly 
+from the outside. 
+Check that ties, straps, chains, and binders are 
+secure. 
+If equipped with a cargo lift, look for leaking, 
+damaged or missing parts and explain how it 
+should be checked for correct operation. 
+Lift should be fully retracted and latched securely. 
+Frame 
+Look for cracks, broken welds, holes or other 
+damage to the frame, cross members, box, and 
+floor. 
+ 
+Tandem Release Arm/Locking Pins 
+If equipped, make sure the locking pins are locked 
+in place and release arm is secured. 
+11.4.3 – Remainder of Trailer 
+Remainder of Trailer 
+Please refer to Section 11.2 of this manual for 
+detailed inspection procedures regarding the 
+following components: 
+Wheels. 
+Suspension system.  
+Brakes. 
+Doors/ties/lift. 
+Splash guards. 
+ 
+11.5 – Coach/Transit Bus 
+ 
+11.5.1 – Passenger Items 
+Passenger Entry/Lift 
+Check that entry doors operate smoothly and close 
+securely from the inside. 
+Check that hand rails are secure and, if equipped, 
+that the step light(s) are working. 
+Check that the entry steps are clear, with the 
+treads not loose or worn excessively. 
+If equipped with a handicap lift, look for any 
+leaking, damaged or missing part, and explain how 
+it should be checked for correct operation. 
+Lift should be fully retracted and latched securely. 
+ 
+Emergency Exits 
+Make sure that all emergency exits are not 
+damaged, operate smoothly, and close securely 
+from the inside. 
+Check that any emergency exit warning devices 
+are working. 
+ 
+Passenger Seating 
+Look for broken seat frames and check that seat 
+frames are firmly attached to the floor. 
+Check that seat cushions are attached securely to 
+the seat frames. 
+ 
+11.5.2 – Entry/ Exit 
+Doors/Mirrors 
+Check that entry/exit doors are not damaged and 
+operate smoothly from the outside. Hinges should 
+be secure with seals intact. 
+Make sure that the passenger exit mirrors and all 
+external mirrors and mirror brackets are not 
+damaged and are mounted securely with no loose 
+fittings. 
+11.5.3 – External Inspection of Coach/ Transit 
+Bus 
+ 
+Level/Air Leaks 
+See that the vehicle is sitting level (front and rear), 
+and if air-equipped, check for audible air leaks from 
+the suspension system.  
+ 
+Fuel Tank(s) 
+See that fuel tank(s) are secure with no leaks from 
+tank(s) or lines. 
+ 
+Baggage Compartments 
+Check that baggage and all other exterior 
+compartment doors are not damaged, operate 
+properly, and latch securely. 
+ 
+Battery/Box 
+Wherever located, see that battery(s) are secure, 
+connections are tight, and cell caps are present. 
+Battery connections should not show signs of 
+excessive corrosion. 
+Check that battery box and cover or door is not 
+damaged and is secure. 
+--- PAGE 148 ---
+Commercial Driver’s License Manual – 2005 CDL Testing System 
+Section 11 - Vehicle Inspection  Page 11-9 
+Version: July 2017
+11.5.4 – Remainder of Coach/ Transit Bus 
+Remainder of Vehicle 
+Please refer to Section 11.2 of this manual for 
+detailed inspection procedures for the remainder of 
+the vehicle. 
+Remember, the Vehicle Inspection must be passed 
+before you can proceed to the Basic Control Skills 
+test. 
+11.6 – Taking the CDL Vehicle 
+Inspection Test 
+11.6.1 – Class A Vehicle Inspection Test 
+If you are applying for a Class A CDL, you will be 
+required to perform one of the four versions of a 
+Vehicle inspection in the vehicle you have brought 
+with you for testing. Each of the four tests are 
+equivalent and you will not know which test you will 
+take until just before the testing begins. 
+All of the tests include an engine start, an in-cab-
+inspection, and an inspection of the coupling 
+system. Then, your test may require an inspection 
+of the entire vehicle or only a portion of the vehicle 
+which your CDL Examiner will explain to you. 
+11.6.2 – Class B and C Vehicle Inspection Test 
+If you are applying for a Class B CDL, you will be 
+required to perform one of the three versions of a 
+Vehicle inspection in the vehicle you have brought 
+with you for testing. Each of the three tests are 
+equivalent and you will not know which test you will 
+take until just before the testing begins. 
+All of the tests include an engine start and an in-
+cab inspection . Then, your test may require an 
+inspection of the entire vehicle or only a portion of 
+the vehicle which your CDL Examiner will explain to 
+you. You will also have to inspect any special 
+features of your vehicle (e.g, school or transit bus).
+--- PAGE 149 ---
+Commercial Driver’s License Manual – 2005 CDL Testing System 
+Section 11 - Vehicle Inspection  Page 11-9 
+Version: July 2017
+
+--- PAGE 150 ---
+Commercial Driver’s License Manual – 2005 CDL Testing System 

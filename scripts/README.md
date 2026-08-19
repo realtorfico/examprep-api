@@ -19,7 +19,14 @@ D1-Console-ready SQL, for any track.
    sanity-checks it (quote parity, field count), splits it into `<examType>_batch1_chunks/`
    (≤40 statements each, since D1 Console rejects very large single pastes), and prints a spot-
    check sample to read against the source handbook before loading.
-4. Paste `chunk-00-pricing.sql` then each `chunk-NN.sql` into D1 Console in order.
+4. Load the SQL into D1 -- two options:
+   - **Manual**: paste `chunk-00-pricing.sql` then each `chunk-NN.sql` into D1 Console in order.
+   - **Faster**: `node scripts/d1-import.js <examType>_batch1_chunks` (or point it at a single
+     file) uploads via Cloudflare's D1 REST API instead -- no `wrangler` needed (this machine
+     can't run wrangler locally, see root CLAUDE.md), no 40-statement Console-paste limit, and it
+     imports every chunk in the folder in order automatically. Needs `CLOUDFLARE_API_TOKEN` (D1
+     Edit permission) and `CLOUDFLARE_ACCOUNT_ID` env vars set first. See the script's header
+     comment for full usage.
 5. Add the track's `TRACK_COMPLIANCE` entry, `HUB_EXAMS` card, `RESOURCES` link, and
    `EXAM_CONFIGS` entry in the frontend/Worker, flip `active: true`, bump `?v=` cache-bust,
    deploy.
