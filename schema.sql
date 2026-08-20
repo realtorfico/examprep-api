@@ -325,3 +325,52 @@ CREATE TABLE refund_claims (
   reviewed_by       TEXT           -- admin email, best-effort from the Access JWT
 );
 CREATE INDEX idx_refund_claims_code ON refund_claims(code);
+
+-- One row per browser session (sessionStorage-scoped session_id), upserted by the public site's
+-- tracking beacon on every route change (see trackVisitBeacon() in app.js) -- landing_path and
+-- first_seen_at are set once and never overwritten; everything else reflects the session's latest
+-- state. visitor_id (localStorage-scoped, survives across sessions) lets the admin spot repeat
+-- visits by the same browser/device across multiple site_visits rows. Rows matching a
+-- visitor_excluded_ips app_setting entry are filtered out at both write and read time (see
+-- handleTrackVisit/handleConsoleVisitorsList) -- excluded traffic is never even stored.
+CREATE TABLE site_visits (
+  session_id     TEXT PRIMARY KEY,
+  visitor_id     TEXT NOT NULL,
+  ip_address     TEXT,
+  country        TEXT,
+  region         TEXT,             -- Cloudflare's regionCode (US state or similar subdivision)
+  city           TEXT,
+  timezone       TEXT,
+  latitude       REAL,
+  longitude      REAL,
+  user_agent     TEXT,
+  browser        TEXT,             -- parsed server-side from user_agent
+  os             TEXT,             -- parsed server-side from user_agent
+  device_type    TEXT,             -- Mobile | Tablet | Desktop, parsed server-side
+  is_bot         INTEGER NOT NULL DEFAULT 0, -- heuristic user_agent-based crawler/bot flag
+  referrer       TEXT,             -- document.referrer, captured once at session start
+  utm_source     TEXT,
+  utm_medium     TEXT,
+  utm_campaign   TEXT,
+  landing_path   TEXT NOT NULL,    -- first route path this session, never overwritten
+  pages_json     TEXT NOT NULL,    -- JSON array of every route path visited this session, in order
+  page_count     INTEGER NOT NULL DEFAULT 1,
+  first_seen_at  INTEGER NOT NULL,
+  last_seen_at   INTEGER NOT NULL  -- (last_seen_at - first_seen_at) = time spent on site
+);
+CREATE INDEX idx_site_visits_last_seen ON site_visits(last_seen_at);
+CREATE INDEX idx_site_visits_visitor ON site_visits(visitor_id);
+
+-- Admin-managed notification rules -- replaces the old single admin_alert_email app_setting
+-- (which used to control notifyAdmin, the daily health check, AND the Contact Admin form all at
+-- once) with a proper per-trigger table: multiple recipients per trigger, each independently
+-- toggleable. trigger_key must be one of ALERT_TRIGGERS in src/index.js.
+CREATE TABLE admin_alert_rules (
+  id              TEXT PRIMARY KEY,
+  trigger_key     TEXT NOT NULL,
+  recipient_email TEXT NOT NULL,
+  active          INTEGER NOT NULL DEFAULT 1,
+  created_at      INTEGER NOT NULL,
+  updated_at      INTEGER NOT NULL
+);
+CREATE INDEX idx_admin_alert_rules_trigger ON admin_alert_rules(trigger_key);

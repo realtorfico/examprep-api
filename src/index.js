@@ -398,14 +398,38 @@ async function getAppSetting(env, key, fallback) {
   return row ? row.value : fallback;
 }
 
-// Fire-and-forget activity alert to the site owner -- no-op if admin_alert_email isn't set
-// (examprep-admin's Settings tab), and never throws, so a missing/misconfigured recipient can
-// never break the actual user-facing action it's reporting on.
-async function notifyAdmin(env, title, bodyHtml, replyTo) {
+// Admin-managed notification rules (examprep-admin's Alerts tab) -- each trigger can have zero,
+// one, or several active recipients, each independently toggleable. Replaces the old single
+// admin_alert_email app_setting, which used to control every trigger at once with no way to
+// split recipients or disable just one.
+const ALERT_TRIGGERS = [
+  { key: 'new_purchase', label: 'New purchase' },
+  { key: 'referral_confirmed', label: 'Referral confirmed' },
+  { key: 'referral_converted', label: 'Referral converted' },
+  { key: 'new_refund_claim', label: 'New refund claim' },
+  { key: 'points_redeemed', label: 'Points redeemed' },
+  { key: 'mock_exam_completed', label: 'Mock exam completed' },
+  { key: 'health_check_failed', label: 'Site health check failed' },
+  { key: 'contact_form_submitted', label: 'Contact form submitted' },
+];
+const ALERT_TRIGGER_KEYS = new Set(ALERT_TRIGGERS.map((t) => t.key));
+
+async function getActiveAlertRecipients(env, triggerKey) {
+  const rows = (await env.DB.prepare(
+    `SELECT recipient_email FROM admin_alert_rules WHERE trigger_key = ? AND active = 1`
+  ).bind(triggerKey).all()).results;
+  return rows.map((r) => r.recipient_email);
+}
+
+// Fire-and-forget activity alert to every active recipient configured for this trigger -- no-op
+// if none are configured, and never throws, so a missing/misconfigured recipient can never break
+// the actual user-facing action it's reporting on.
+async function notifyAdmin(env, triggerKey, title, bodyHtml, replyTo) {
   try {
-    const to = await getAppSetting(env, 'admin_alert_email', '');
-    if (!to) return;
-    await sendAdminAlertEmail(env, to, title, bodyHtml, replyTo);
+    const recipients = await getActiveAlertRecipients(env, triggerKey);
+    for (const to of recipients) {
+      await sendAdminAlertEmail(env, to, title, bodyHtml, replyTo);
+    }
   } catch (e) { /* best-effort */ }
 }
 
@@ -437,29 +461,31 @@ async function runDailyHealthCheck(env) {
   if (!problems.length) return;
 
   console.error('Daily health check failed:', problems.join('; '));
-  // Deliberately does NOT use notifyAdmin's silent-no-op-if-unconfigured wrapper -- an
-  // unconfigured admin_alert_email (or a dead RESEND_API_KEY, ironically) should be loud here
+  // Deliberately does NOT use notifyAdmin's silent-no-op-if-unconfigured wrapper -- no active
+  // 'health_check_failed' recipient (or a dead RESEND_API_KEY, ironically) should be loud here
   // via the console.error above, which shows up in the Worker's Logs tab even if the email
   // itself can't be sent, so this failure never goes completely unnoticed.
-  const to = await getAppSetting(env, 'admin_alert_email', '');
-  if (!to) return;
-  await sendAdminAlertEmail(env, to, '⚠️ ExamPrep daily health check failed',
-    '<p>The daily automated check found a problem:</p><ul>' +
-    problems.map((p) => `<li>${escapeHtml(p)}</li>`).join('') +
-    '</ul><p>Most likely a Worker secret was cleared in the Cloudflare dashboard -- check ' +
-    'examprep-api’s Settings &gt; Variables and Secrets.</p>');
+  const recipients = await getActiveAlertRecipients(env, 'health_check_failed');
+  for (const to of recipients) {
+    await sendAdminAlertEmail(env, to, '⚠️ ExamPrep daily health check failed',
+      '<p>The daily automated check found a problem:</p><ul>' +
+      problems.map((p) => `<li>${escapeHtml(p)}</li>`).join('') +
+      '</ul><p>Most likely a Worker secret was cleared in the Cloudflare dashboard -- check ' +
+      'examprep-api’s Settings &gt; Variables and Secrets.</p>');
+  }
 }
 
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
-// Public "Contact Admin" form -- forwards to whatever admin_alert_email is set (examprep-admin's
-// Settings tab), with reply-to set to the visitor so the admin can just hit reply. No new table --
-// this is a straight-through notification, not something that needs to be listed/reviewed later.
-// Deliberately does NOT go through notifyAdmin()'s silent-no-op-if-unconfigured wrapper -- that's
-// fine for best-effort background alerts, but here the visitor is told "message sent", so a missing
-// destination or a failed send must surface as a real error instead of quietly losing the message.
+// Public "Contact Admin" form -- forwards to every active 'contact_form_submitted' recipient
+// (examprep-admin's Alerts tab), with reply-to set to the visitor so the admin can just hit reply.
+// No new table for the message itself -- this is a straight-through notification, not something
+// that needs to be listed/reviewed later. Deliberately does NOT go through notifyAdmin()'s
+// silent-no-op-if-unconfigured wrapper -- that's fine for best-effort background alerts, but here
+// the visitor is told "message sent", so a missing destination or a failed send must surface as a
+// real error instead of quietly losing the message.
 async function handleContactSubmit(request, env) {
   const { name, email, message, turnstileToken } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
@@ -471,17 +497,128 @@ async function handleContactSubmit(request, env) {
   if (!trimmedEmail || !trimmedMessage) return json({ error: 'email_and_message_required' }, 400);
   if (trimmedMessage.length > 5000) return json({ error: 'message_too_long' }, 400);
 
-  const to = await getAppSetting(env, 'admin_alert_email', '');
-  if (!to) return json({ error: 'contact_not_configured' }, 503);
+  const recipients = await getActiveAlertRecipients(env, 'contact_form_submitted');
+  if (!recipients.length) return json({ error: 'contact_not_configured' }, 503);
 
   const bodyHtml = `<p><strong>From:</strong> ${escapeHtml(name ? name.trim() : 'Anonymous')} (${escapeHtml(trimmedEmail)})</p>` +
     `<p>${escapeHtml(trimmedMessage).replace(/\n/g, '<br>')}</p>`;
   try {
-    await sendAdminAlertEmail(env, to, 'New contact form message', bodyHtml, trimmedEmail);
+    for (const to of recipients) {
+      await sendAdminAlertEmail(env, to, 'New contact form message', bodyHtml, trimmedEmail);
+    }
   } catch (e) {
     return json({ error: 'send_failed' }, 502);
   }
   return json({ ok: true });
+}
+
+// ---- Site visit tracking (examprep-admin's Visitors tab) ------------------
+// First-party analytics beacon -- see trackVisitBeacon() in the public site's app.js, which fires
+// on every SPA route change (and once more on pagehide via sendBeacon) with the session's full
+// current state. No auth, no Turnstile -- this is a best-effort background beacon, not a
+// user-facing action, and Turnstile's interactive challenge can't run inside sendBeacon anyway.
+// IP/geo/user-agent are always read server-side from the request itself, never trusted from the
+// client. session_id (sessionStorage) is the upsert key -- one row per browser tab session;
+// visitor_id (localStorage) persists across sessions so the admin can spot repeat visits by the
+// same browser across multiple rows.
+
+function parseUserAgent(ua) {
+  ua = ua || '';
+  let os = 'Unknown';
+  if (/windows/i.test(ua)) os = 'Windows';
+  else if (/iphone|ipad|ipod/i.test(ua)) os = 'iOS';
+  else if (/android/i.test(ua)) os = 'Android';
+  else if (/mac os x/i.test(ua)) os = 'macOS';
+  else if (/linux/i.test(ua)) os = 'Linux';
+
+  let browser = 'Unknown';
+  if (/edg\//i.test(ua)) browser = 'Edge';
+  else if (/opr\//i.test(ua) || /opera/i.test(ua)) browser = 'Opera';
+  else if (/crios\//i.test(ua)) browser = 'Chrome (iOS)';
+  else if (/fxios\//i.test(ua)) browser = 'Firefox (iOS)';
+  else if (/chrome\//i.test(ua) && !/chromium/i.test(ua)) browser = 'Chrome';
+  else if (/firefox\//i.test(ua)) browser = 'Firefox';
+  else if (/safari\//i.test(ua) && /version\//i.test(ua)) browser = 'Safari';
+
+  let deviceType = 'Desktop';
+  if (/ipad|tablet/i.test(ua) || (/android/i.test(ua) && !/mobile/i.test(ua))) deviceType = 'Tablet';
+  else if (/mobi|iphone|ipod/i.test(ua)) deviceType = 'Mobile';
+
+  const isBot = /bot|crawl|spider|slurp|facebookexternalhit|bingpreview|pingdom|uptimerobot|monitor|headless|curl\/|wget\/|python-requests|go-http-client/i.test(ua);
+
+  return { os, browser, deviceType, isBot };
+}
+
+// visitor_excluded_ips (examprep-admin's Settings tab) is a comma-separated list of IPs to treat
+// as not-a-visitor at all -- typically the site owner's own office/home IP, so their own testing
+// traffic never pollutes the Visitors tab. Checked at write time (skip storing entirely) AND at
+// read time (handleConsoleVisitorsList) so adding an exclusion also retroactively hides anything
+// already recorded from that IP.
+async function getExcludedVisitorIps(env) {
+  const raw = await getAppSetting(env, 'visitor_excluded_ips', '');
+  return new Set(raw.split(',').map((s) => s.trim()).filter(Boolean));
+}
+
+async function handleTrackVisit(request, env) {
+  let body;
+  try { body = await request.json(); } catch (e) { return json({ error: 'invalid_body' }, 400); }
+  const sessionId = String(body.sessionId || '').trim();
+  const visitorId = String(body.visitorId || '').trim();
+  if (!sessionId || !visitorId) return json({ error: 'missing_ids' }, 400);
+
+  const ip = request.headers.get('CF-Connecting-IP') || null;
+  const excluded = await getExcludedVisitorIps(env);
+  if (ip && excluded.has(ip)) return json({ ok: true, excluded: true });
+
+  const path = typeof body.path === 'string' ? body.path.slice(0, 200) : '';
+  const pages = (Array.isArray(body.pages) ? body.pages : (path ? [path] : []))
+    .slice(-200).map((p) => String(p).slice(0, 200));
+  const landingPath = pages.length ? pages[0] : (path || '/');
+
+  const ua = request.headers.get('User-Agent') || '';
+  const parsed = parseUserAgent(ua);
+  const cf = request.cf || {};
+
+  const t = now();
+  const existing = await env.DB.prepare('SELECT first_seen_at FROM site_visits WHERE session_id = ?').bind(sessionId).first();
+  const firstSeenAt = existing ? existing.first_seen_at : t;
+
+  await env.DB.prepare(
+    `INSERT INTO site_visits (
+       session_id, visitor_id, ip_address, country, region, city, timezone, latitude, longitude,
+       user_agent, browser, os, device_type, is_bot, referrer, utm_source, utm_medium, utm_campaign,
+       landing_path, pages_json, page_count, first_seen_at, last_seen_at
+     ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+     ON CONFLICT(session_id) DO UPDATE SET
+       ip_address = excluded.ip_address, country = excluded.country, region = excluded.region, city = excluded.city,
+       timezone = excluded.timezone, latitude = excluded.latitude, longitude = excluded.longitude,
+       user_agent = excluded.user_agent, browser = excluded.browser, os = excluded.os, device_type = excluded.device_type,
+       is_bot = excluded.is_bot, referrer = excluded.referrer, utm_source = excluded.utm_source,
+       utm_medium = excluded.utm_medium, utm_campaign = excluded.utm_campaign,
+       pages_json = excluded.pages_json, page_count = excluded.page_count, last_seen_at = excluded.last_seen_at`
+  ).bind(
+    sessionId, visitorId, ip, cf.country || null, cf.regionCode || null, cf.city || null,
+    cf.timezone || null, cf.latitude ? Number(cf.latitude) : null, cf.longitude ? Number(cf.longitude) : null,
+    ua, parsed.browser, parsed.os, parsed.deviceType, parsed.isBot ? 1 : 0,
+    (body.referrer || '').slice(0, 500) || null, (body.utmSource || '').slice(0, 100) || null,
+    (body.utmMedium || '').slice(0, 100) || null, (body.utmCampaign || '').slice(0, 100) || null,
+    landingPath, JSON.stringify(pages), pages.length || 1, firstSeenAt, t
+  ).run();
+
+  return json({ ok: true });
+}
+
+async function handleConsoleVisitorsList(env) {
+  const excluded = await getExcludedVisitorIps(env);
+  const rows = (await env.DB.prepare(
+    `SELECT session_id, visitor_id, ip_address, country, region, city, timezone, latitude, longitude,
+            browser, os, device_type, is_bot, referrer, utm_source, utm_medium, utm_campaign,
+            landing_path, pages_json, page_count, first_seen_at, last_seen_at,
+            (last_seen_at - first_seen_at) AS duration_sec
+     FROM site_visits ORDER BY last_seen_at DESC LIMIT 2000`
+  ).all()).results;
+  const filtered = excluded.size ? rows.filter((r) => !excluded.has(r.ip_address)) : rows;
+  return json({ items: filtered });
 }
 
 // A points discount can never leave a PayPal charge below this (admin-editable in
@@ -906,7 +1043,7 @@ async function finalizePurchase(env, { examType, note, capturedCents, payerEmail
   }
 
   await detectAndCreditConversion(env, payerEmail);
-  await notifyAdmin(env, 'New purchase',
+  await notifyAdmin(env, 'new_purchase', 'New purchase',
     `<p><strong>${buyerEmail || 'A buyer'}</strong> just bought ${examType} access` +
     (gift ? ' as a gift' + (gift.recipient_email ? ` for ${gift.recipient_email}` : '') : '') +
     ` for $${(capturedCents / 100).toFixed(2)}` +
@@ -1171,7 +1308,7 @@ async function handleReferralVerify(request, env) {
   if (pointsAwarded > 0 && referrer) {
     try { await sendPointsEarnedEmail(env, referrer.email, pointsAwarded, 'a friend confirmed your referral'); } catch (e) {}
   }
-  await notifyAdmin(env, 'Referral confirmed',
+  await notifyAdmin(env, 'referral_confirmed', 'Referral confirmed',
     `<p><strong>${referrer ? referrer.email : 'Someone'}</strong>'s referral of <strong>${referral.referred_email}</strong> was just confirmed` +
     (pointsAwarded > 0 ? ` — they earned ${pointsAwarded} points.</p>` : '.</p>'));
 
@@ -1197,7 +1334,7 @@ async function detectAndCreditConversion(env, buyerEmail) {
     if (pointsAwarded > 0 && referrer) {
       await sendPointsEarnedEmail(env, referrer.email, pointsAwarded, 'your referral signed up for a course');
     }
-    await notifyAdmin(env, 'Referral converted',
+    await notifyAdmin(env, 'referral_converted', 'Referral converted',
       `<p><strong>${referrer ? referrer.email : 'Someone'}</strong>'s referral <strong>${referral.referred_email}</strong> just signed up for a course` +
       (pointsAwarded > 0 ? ` — they earned ${pointsAwarded} points.</p>` : '.</p>'));
   } catch (e) { /* best-effort */ }
@@ -1259,7 +1396,7 @@ async function handleRefundClaimSubmit(request, env) {
      VALUES (?, ?, ?, ?, 'pending', ?, ?, ?, ?, ?)`
   ).bind(claimId, codeRow.code, email.trim().toLowerCase(), claimType, examDate || null, confirmationNote || null, notes || null, refundCents, now()).run();
 
-  await notifyAdmin(env, 'New refund claim',
+  await notifyAdmin(env, 'new_refund_claim', 'New refund claim',
     `<p>${claimType === 'unconditional_7day' ? '7-day no-questions' : 'exam-failure ' + failurePercent + '%'} refund claim for code ` +
     `<strong>${codeRow.code}</strong> (${email}) — $${(refundCents / 100).toFixed(2)}. Review it in the admin Refund Claims tab.</p>`);
 
@@ -1380,7 +1517,7 @@ async function handlePointsRedeemVerify(request, env) {
 
   const { code, token: sessionToken } = await issueAndRedeemCode(env, pending.exam_type, `points:${account.id}`, 0, pending.email);
   await detectAndCreditConversion(env, pending.email);
-  await notifyAdmin(env, 'Points redeemed',
+  await notifyAdmin(env, 'points_redeemed', 'Points redeemed',
     `<p><strong>${pending.email}</strong> redeemed <strong>${pending.points} points</strong> for free access to the ${pending.exam_type} course.</p>`);
 
   return json({ code, token: sessionToken, examType: pending.exam_type });
@@ -2329,7 +2466,7 @@ async function handleExamSubmit(user, request, env) {
 
   const codeRow = await env.DB.prepare('SELECT code, buyer_email FROM codes WHERE redeemed_by = ?').bind(user.id).first();
   const modeLabel = attempt.mode === 'toughest45' ? 'Toughest 45' : 'mock';
-  await notifyAdmin(env, 'Mock exam completed',
+  await notifyAdmin(env, 'mock_exam_completed', 'Mock exam completed',
     `<p><strong>${(codeRow && (codeRow.buyer_email || codeRow.code)) || 'A user'}</strong> completed a ${attempt.exam_type} ` +
     `${modeLabel} exam: ${correctCount}/${questionIds.length} (${result.percent}%) — ${result.passed ? 'passed' : 'did not pass'}.</p>`);
 
@@ -2425,6 +2562,66 @@ async function handleConsoleSettingsSet(request, env) {
     `INSERT INTO app_settings (key, value, updated_at) VALUES (?, ?, ?)
      ON CONFLICT (key) DO UPDATE SET value = excluded.value, updated_at = excluded.updated_at`
   ).bind(key, String(value), now()).run();
+  return json({ ok: true });
+}
+
+// ---- Admin alert rules (examprep-admin's Alerts tab) -----------------------
+// CRUD over admin_alert_rules -- see ALERT_TRIGGERS/notifyAdmin above for how these are consumed.
+
+async function handleConsoleAlertRulesList(env) {
+  // One-time lazy migration: the very first time this list is loaded after the old single
+  // admin_alert_email setting existed with no rules yet configured, seed one active rule per
+  // trigger so existing alert behavior doesn't silently go dark on upgrade. Only fires when the
+  // table is genuinely empty, so it's safe to leave in permanently rather than a one-shot script.
+  const existingCount = await env.DB.prepare('SELECT COUNT(*) AS n FROM admin_alert_rules').first();
+  if (!existingCount.n) {
+    const legacyEmail = await getAppSetting(env, 'admin_alert_email', '');
+    if (legacyEmail) {
+      const t = now();
+      await env.DB.batch(ALERT_TRIGGERS.map((trig) =>
+        env.DB.prepare(
+          `INSERT INTO admin_alert_rules (id, trigger_key, recipient_email, active, created_at, updated_at) VALUES (?, ?, ?, 1, ?, ?)`
+        ).bind(newId(), trig.key, legacyEmail, t, t)
+      ));
+    }
+  }
+  const rows = (await env.DB.prepare('SELECT * FROM admin_alert_rules ORDER BY trigger_key, recipient_email').all()).results;
+  return json({ rules: rows, triggers: ALERT_TRIGGERS });
+}
+
+async function handleConsoleAlertRuleCreate(request, env) {
+  const { triggerKey, recipientEmail } = await request.json();
+  if (!triggerKey || !ALERT_TRIGGER_KEYS.has(triggerKey)) return json({ error: 'invalid_trigger' }, 400);
+  const email = (recipientEmail || '').trim();
+  if (!email) return json({ error: 'recipient_email_required' }, 400);
+  const t = now();
+  await env.DB.prepare(
+    `INSERT INTO admin_alert_rules (id, trigger_key, recipient_email, active, created_at, updated_at) VALUES (?, ?, ?, 1, ?, ?)`
+  ).bind(newId(), triggerKey, email, t, t).run();
+  return json({ ok: true });
+}
+
+async function handleConsoleAlertRuleUpdate(request, env) {
+  const { id, recipientEmail, active } = await request.json();
+  if (!id) return json({ error: 'id_required' }, 400);
+  const sets = ['updated_at = ?'];
+  const binds = [now()];
+  if (recipientEmail != null) {
+    const email = String(recipientEmail).trim();
+    if (!email) return json({ error: 'recipient_email_required' }, 400);
+    sets.push('recipient_email = ?');
+    binds.push(email);
+  }
+  if (active != null) { sets.push('active = ?'); binds.push(active ? 1 : 0); }
+  binds.push(id);
+  await env.DB.prepare(`UPDATE admin_alert_rules SET ${sets.join(', ')} WHERE id = ?`).bind(...binds).run();
+  return json({ ok: true });
+}
+
+async function handleConsoleAlertRuleDelete(request, env) {
+  const { id } = await request.json();
+  if (!id) return json({ error: 'id_required' }, 400);
+  await env.DB.prepare('DELETE FROM admin_alert_rules WHERE id = ?').bind(id).run();
   return json({ ok: true });
 }
 
@@ -2760,6 +2957,7 @@ export default {
       if (pathname === '/referrals/verify' && method === 'GET') return await handleReferralVerify(request, env);
       if (pathname === '/refunds/claim' && method === 'POST') return await handleRefundClaimSubmit(request, env);
       if (pathname === '/contact' && method === 'POST') return await handleContactSubmit(request, env);
+      if (pathname === '/track/visit' && method === 'POST') return await handleTrackVisit(request, env);
       if (pathname === '/points/rules' && method === 'GET') return await handlePointsRules(env);
       if (pathname === '/points/balance' && method === 'GET') return await handlePointsBalance(request, env);
       if (pathname === '/points/redeem' && method === 'POST') return await handlePointsRedeem(request, env);
@@ -2782,6 +2980,11 @@ export default {
         if (pathname === '/console/promotions/reorder' && method === 'POST') return await handleConsolePromotionsReorder(request, env);
         if (pathname === '/console/settings' && method === 'GET') return await handleConsoleSettingsList(env);
         if (pathname === '/console/settings' && method === 'POST') return await handleConsoleSettingsSet(request, env);
+        if (pathname === '/console/alert-rules' && method === 'GET') return await handleConsoleAlertRulesList(env);
+        if (pathname === '/console/alert-rules/create' && method === 'POST') return await handleConsoleAlertRuleCreate(request, env);
+        if (pathname === '/console/alert-rules/update' && method === 'POST') return await handleConsoleAlertRuleUpdate(request, env);
+        if (pathname === '/console/alert-rules/delete' && method === 'POST') return await handleConsoleAlertRuleDelete(request, env);
+        if (pathname === '/console/visitors' && method === 'GET') return await handleConsoleVisitorsList(env);
         if (pathname === '/console/point-rules' && method === 'GET') return await handleConsolePointRulesList(env);
         if (pathname === '/console/point-rules' && method === 'POST') return await handleConsolePointRulesSet(request, env);
         if (pathname === '/console/accounts' && method === 'GET') return await handleConsoleAccountsList(env);
