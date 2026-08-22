@@ -1,0 +1,804 @@
+           Section 6                                            Avoid quick lane changes, especially when fully
+COMBINATION VEHICLES                                            loaded.
+
+This Section Covers                                             6.1.2 ­ Steer Gently
+
+ Driving Combinations                                           Trucks with trailers have a dangerous "crack-the-
+ Combination Vehicle Air Brakes                                 whip" effect. When you make a quick lane change,
+ Antilock Brake Systems                                         the crack-the-whip effect can turn the trailer over.
+ Coupling and Uncoupling                                        There are many accidents where only the trailer
+ Inspecting Combinations                                        has overturned.
+
+This section provides information needed to pass                "Rearward amplification" causes the crack-the-
+the tests for combination vehicles (tractor-trailer,            whip effect. Figure 6.1 shows eight types of
+doubles, triples, straight truck with trailer). The             combination vehicles and the rearward
+information is only to give you the minimum                     amplification each has in a quick lane change.
+knowledge needed for driving common                             Rigs with the least crack-the-whip effect are shown
+combination vehicles. You should also study                     at the top and those with the most, at the bottom.
+Section 7 if you need to pass the test for doubles              Rearward amplification of 2.0 in the chart means
+and triples.                                                    that the rear trailer is twice as likely to turn over as
+                                                                the tractor. You can see that triples have a
+6.1 ­ Driving Combination Vehicles                              rearward amplification of 3.5. This means you can
+Safely                                                          roll the last trailer of triples 3.5 times as easily as a
+                                                                five-axle tractor.
+Combination vehicles are usually heavier, longer,
+and require more driving skill than single                      Steer gently and smoothly when you are pulling
+commercial vehicles. This means that drivers of                 trailers. If you make a sudden movement with your
+combination vehicles need more knowledge and                    steering wheel, your trailer could tip over. Follow
+skill than drivers of single vehicles. In this section,         far enough behind other vehicles (at least 1
+we talk about some important safety factors that                second for each 10 feet of your vehicle length, plus
+apply specifically to combination vehicles.                     another second if going over 40 mph). Look far
+                                                                enough down the road to avoid being surprised
+6.1.1 ­ Rollover Risks                                          and having to make a sudden lane change. At
+                                                                night, drive slowly enough to see obstacles with
+More than half of truck driver deaths in crashes are            your headlights before it is too late to change lanes
+the result of truck rollovers. When more cargo is               or stop gently. Slow down to a safe speed before
+piled up in a truck, the "center of gravity" moves              going into a turn.
+higher up from the road. The truck becomes easier
+to turn over. Fully loaded rigs are ten times more              6.1.3 ­ Brake Early
+likely to roll over in a crash than empty rigs.
+                                                                Control your speed whether fully loaded or empty.
+The following two things will help you prevent                  Large combination vehicles take longer to stop
+rollover--keep the cargo as close to the ground as              when they are empty than when they are fully
+possible, and drive slowly around turns. Keeping                loaded. When lightly loaded, the very stiff
+cargo low is even more important in combination                 suspension springs and strong brakes give poor
+vehicles than in straight trucks. Also, keep the load           traction and make it very easy to lock up the
+centered on your rig. If the load is to one side so it          wheels. Your trailer can swing out and strike other
+makes a trailer lean, a rollover is more likely. Make           vehicles. Your tractor can jackknife very quickly.
+sure your cargo is centered and spread out as                   You also must be very careful about driving
+much as possible. (Cargo distribution is covered in             "bobtail" tractors (tractors without semitrailers).
+Section 3 of this manual.)                                      Tests have shown that bobtails can be very hard to
+                                                                stop smoothly. It takes them longer to stop than a
+Rollovers happen when you turn too fast. Drive                  tractor-semitrailer loaded to maximum gross
+slowly around corners, on ramps, and off ramps.                 weight.
+
+                                                                In any combination rig, allow lots of following
+                                                                distance and look far ahead, so you can brake
+                                                                early. Don't be caught by surprise and have to
+                                                                make a "panic" stop.
+
+Section 6 - Combination Vehicles                                Page 6-1
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+                                  Figure 6.1
+
+6.1.4 ­ Railroad-highway Crossings                              6.1.5 ­ Prevent Trailer Skids
+
+Railroad-highway crossings can also cause                       When the wheels of a trailer lock up, the trailer will
+problems, particularly when pulling trailers with low           tend to swing around. This is more likely to happen
+underneath clearance.                                           when the trailer is empty or lightly loaded. This
+                                                                type of jackknife is often called a "trailer jackknife."
+These trailers can get stuck on raised crossings:               See Figure 6.2.
+
+Low slung units (lowboy, car carrier, moving van,               The procedure for stopping a trailer skid is:
+possum-belly livestock trailer).
+                                                                Recognize the Skid. The earliest and best way to
+Single-axle tractor pulling a long trailer with its             recognize that the trailer has started to skid is by
+landing gear set to accommodate a tandem-axle                   seeing it in your mirrors. Any time you apply the
+tractor.                                                        brakes hard, check the mirrors to make sure the
+                                                                trailer is staying where it should be. Once the
+If for any reason you get stuck on the tracks, get              trailer swings out of your lane, it's very difficult to
+out of the vehicle and away from the tracks. Check              prevent a jackknife.
+signposts or signal housing at the crossing for
+emergency notification information. Call 911 or                 * (From R.D. Ervin, R.L. Nisconger, C.C.
+other emergency number. Give the location of the                MacAdam, and P.S. Fancher, "Influence of size
+crossing using all identifiable landmarks, especially           and weight variables on the stability and control
+the DOT number, if posted.                                      properties of heavy trucks, "University of Michigan
+                                                                Transportation Research Institute, 1983).
+
+Section 6 - Combination Vehicles                                Page 6-2
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+                                                                                without entering another traffic lane, turn wide as
+                                                                                you complete the turn. This is better than swinging
+                                                                                wide to the left before starting the turn because it
+                                                                                will keep other drivers from passing you on the
+                                                                                right. See Figure 6.4.
+
+                                                         Figure 6.3
+
+                           Figure 6.2                                               Figure 6.4
+
+Stop Using the Brake. Release the brakes to get          6.1.7 ­ Backing with a Trailer.
+traction back. Do not use the trailer hand brake (if     Backing with a Trailer. When backing a car,
+you have one) to "straighten out the rig." This is the   straight truck, or bus, you turn the top of the
+wrong thing to do since the brakes on the trailer        steering wheel in the direction you want to go.
+wheels caused the skid in the first place. Once the      When backing a trailer, you turn the steering wheel
+trailer wheels grip the road again, the trailer will     in the opposite direction. Once the trailer starts to
+start to follow the tractor and straighten out.          turn, you must turn the wheel the other way to
+                                                         follow the trailer.
+6.1.6 ­ Turn Wide
+                                                         Whenever you back up with a trailer, try to position
+When a vehicle goes around a corner, the rear            your vehicle so you can back in a straight line. If
+wheels follow a different path than the front            you must back on a curved path, back to the
+wheels. This is called off-tracking or "cheating."       driver's side so you can see. See Figure 6.5.
+Figure 6.3 shows how off-tracking causes the path
+followed by a tractor to be wider than the rig itself.                                                                          Page 6-3
+Longer vehicles will off-track more. The rear
+wheels of the powered unit (truck or tractor) will off-
+track some, and the rear wheels of the trailer will
+off-track even more. If there is more than one
+trailer, the rear wheels of the last trailer will off-
+track the most. Steer the front end wide enough
+around a corner so the rear end does not run over
+the curb, pedestrians, etc. However, keep the rear
+of your vehicle close to the curb. This will stop
+other drivers from passing you on the right. If you
+cannot complete your turn
+
+Section 6 - Combination Vehicles
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+                                                                Subsection 6.1
+                                                                Test Your Knowledge
+
+                                                                1.  What two things are important to prevent
+
+                                                                    rollover?
+
+                                                                2.  When you turn suddenly while pulling
+
+                                                                    doubles, which trailer is most likely to turn
+
+                                                                    over?
+
+                                                                3.  Why should you not use the trailer hand
+
+                                                                    brake to straighten out a jackknifing trailer?
+
+                                                                4.  What is off-tracking?
+
+                                                                5.  When you back a trailer, you should
+
+                                                                    position your vehicle so you can back in a
+
+                                                                    curved path to the driver's side. True or
+
+                                                                    False?
+
+                                                                6.  What type of trailers can get stuck on
+
+                                                                    railroad-highway crossings?
+
+                                                                These questions may be on your test. If you can't
+                                                                answer them all, re-read subsection 6.1.
+
+                           Figure 6.5                           6.2 ­ Combination Vehicle Air Brakes
+
+Look at Your Path. Look at your line of travel                  You should study Section 5: Air Brakes before
+before you begin. Get out and walk around the                   reading this. In combination vehicles the braking
+vehicle. Check your clearance to the sides and                  system has parts to control the trailer brakes, in
+overhead, in and near the path your vehicle.                    addition to the parts described in Section 5. These
+                                                                parts are described below.
+Use Mirrors on Both Sides. Check the outside
+mirrors on both sides frequently. Get out of the                6.2.1 ­ Trailer Hand Valve
+vehicle and re-inspect your path if you are unsure.
+                                                                The trailer hand valve (also called the trolley valve
+Back Slowly. This will let you make corrections                 or Johnson bar) works the trailer brakes. The trailer
+before you get too far off course.                              hand valve should be used only to test the trailer
+                                                                brakes. Do not use it in driving because of the
+Correct Drift Immediately. As soon as you see                   danger of making the trailer skid. The foot brake
+the trailer getting off the proper path, correct it by          sends air to all of the brakes on the vehicle
+turning the top of the steering wheel in the                    (including the trailer(s)). There is much less danger
+direction of the drift.                                         of causing a skid or jackknife when using just the
+                                                                foot brake.
+Pull Forward. When backing a trailer, make pull-
+ups to re-position your vehicle as needed.                      Never use the hand valve for parking because all
+                                                                the air might leak out unlocking the brakes (in
+                                                                trailers that don't have spring brakes). Always use
+                                                                the parking brakes when parking. If the trailer does
+                                                                not have spring brakes, use wheel chocks to keep
+                                                                the trailer from moving.
+
+Section 6 - Combination Vehicles                                                                 Page 6-4
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+6.2.2 ­ Tractor Protection Valve                                apart the emergency air hose. Or it could be
+                                                                caused by a hose, metal tubing, or other part
+The tractor protection valve keeps air in the tractor           breaking, letting the air out. When the emergency
+or truck brake system should the trailer break away             line loses pressure, it also causes the tractor
+or develop a bad leak. The tractor protection valve             protection valve to close (the air supply knob will
+is controlled by the "trailer air supply" control valve         pop out).
+in the cab. The control valve allows you to open
+and shut the tractor protection valve. The tractor              Emergency lines are often coded with the color red
+protection valve will close automatically if air                (red hose, red couplers, or other parts) to keep
+pressure is low (in the range of 20 to 45 psi). When            from getting them mixed up with the blue service
+the tractor protection valve closes, it stops any air           line.
+from going out of the tractor. It also lets the air out
+of the trailer emergency line. This causes the trailer          6.2.5 ­ Hose Couplers (Glad Hands)
+emergency brakes to come on, with possible loss
+of control. (Emergency brakes are covered later.)               Glad hands are coupling devices used to connect
+                                                                the service and emergency air-lines from the truck
+6.2.3 ­ Trailer Air Supply Control                              or tractor to the trailer. The couplers have a rubber
+                                                                seal, which prevents air from escaping. Clean the
+The trailer air supply control on newer vehicles is a           couplers and rubber seals before a connection is
+red eight-sided knob, which you use to control the              made. When connecting the glad hands, press the
+tractor protection valve. You push it in to supply the          two seals together with the couplers at a 90 degree
+trailer with air, and pull it out to shut the air off and       angle to each other. A turn of the glad hand
+put on the trailer emergency brakes. The valve will             attached to the hose will join and lock the couplers.
+pop out (thus closing the tractor protection valve)
+when the air pressure drops into the range of 20 to             When coupling, make sure to couple the proper
+45 psi. Tractor protection valve controls or                    glad hands together. To help avoid mistakes,
+"emergency" valves on older vehicles may not                    colors are sometimes used. Blue is used for the
+operate automatically. There may be a lever rather              service lines and red for the emergency (supply)
+than a knob. The "normal" position is used for                  lines. Sometimes, metal tags are attached to the
+pulling a trailer. The "emergency" position is used             lines with the words "service" and "emergency"
+to shut the air off and put on the trailer emergency            stamped on them. See Figure 6.6
+brakes.
+
+6.2.4 ­ Trailer Air-lines
+
+Every combination vehicle has two air-lines, the
+service line and the emergency line. They run
+between each vehicle (tractor to trailer, trailer to
+dolly, dolly to second trailer, etc.)
+
+Service Air-line. The service line (also called the
+control line or signal line) carries air, which is
+controlled by the foot brake or the trailer hand
+brake. Depending on how hard you press the foot
+brake or hand valve, the pressure in the service
+line will similarly change. The service line is
+connected to relay valves. These valves allow the
+trailer brakes to be applied more quickly than
+would otherwise be possible.
+
+Emergency Air-line. The emergency line (also                    Figure 6.6
+called the supply line) has two purposes. First, it
+supplies air to the trailer air tanks. Second, the                          Page 6-5
+emergency line controls the emergency brakes on
+combination vehicles. Loss of air pressure in the
+emergency line causes the trailer emergency
+brakes to come on. The pressure loss could be
+caused by a trailer breaking loose, thus tearing
+
+Section 6 - Combination Vehicles
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+If you do cross the air-lines, supply air will be sent          6.2.8 ­ Trailer Service, Parking and Emergency
+to the service line instead of going to charge the              Brakes
+trailer air tanks. Air will not be available to release
+the trailer spring brakes (parking brakes). If the              Newer trailers have spring brakes just like trucks
+spring brakes don't release when you push the                   and truck tractors. However, converter dollies and
+trailer air supply control, check the air-line                  trailers built before 1975 are not required to have
+connections.                                                    spring brakes. Those that do not have spring
+                                                                brakes have emergency brakes, which work from
+Older trailers do not have spring brakes. If the air            the air stored in the trailer air tank. The emergency
+supply in the trailer air tank has leaked away there            brakes come on whenever air pressure in the
+will be no emergency brakes, and the trailer                    emergency line is lost. These trailers have no
+wheels will turn freely. If you crossed the air-lines,          parking brake. The emergency brakes come on
+you could drive away but you wouldn't have trailer              whenever the air supply knob is pulled out or the
+brakes. This would be very dangerous. Always test               trailer is disconnected. A major leak in the
+the trailer brakes before driving with the hand valve           emergency line will cause the tractor protection
+or by pulling the air supply (tractor protection valve)         valve to close and the trailer emergency brakes to
+control. Pull gently against them in a low gear to              come on. But the brakes will hold only as long as
+make sure the brakes work.                                      there is air pressure in the trailer air tank.
+                                                                Eventually, the air will leak away and then there
+Some vehicles have "dead end" or dummy                          will be no brakes. Therefore, it is very important for
+couplers to which the hoses may be attached                     safety that you use wheel chocks when you park
+when they are not in use. This will prevent water               trailers without spring brakes.
+and dirt from getting into the coupler and the air-
+lines. Use the dummy couplers when the air-lines                You may not notice a major leak in the service line
+are not connected to a trailer. If there are no                 until you try to put the brakes on. Then, the air loss
+dummy couplers, the glad hands can sometimes                    from the leak will lower the air tank pressure
+be locked together (depending on the couplings). It             quickly. If it goes low enough, the trailer
+is very important to keep the air supply clean.                 emergency brakes will come on.
+
+6.2.6 ­ Trailer Air Tanks                                       Subsection 6.2
+                                                                Test Your Knowledge
+Each trailer and converter dolly has one or more
+air tanks. They are filled by the emergency (supply)            1.  Why should you not use the trailer hand
+line from the tractor. They provide the air pressure
+used to operate trailer brakes. Air pressure is sent                valve while driving?
+from the air tanks to the brakes by relay valves.
+                                                                2.  Describe what the trailer air supply control
+The pressure in the service line tells how much
+pressure the relay valves should send to the trailer                does.
+brakes. The pressure in the service line is
+controlled by the brake pedal (and the trailer hand             3.  Describe what the service line is for.
+brake).
+                                                                4.  What is the emergency air-line for?
+It is important that you don't let water and oil build
+up in the air tanks. If you do, the brakes may not              5.  Why should you use chocks when parking
+work correctly. Each tank has a drain valve on it
+and you should drain each tank every day. If your                   a trailer without spring brakes?
+tanks have automatic drains, they will keep most
+moisture out. But you should still open the drains to           6.  Where are shut-off valves?
+make sure.
+                                                                These questions may be on your test. If you can't
+6.2.7 ­ Shut-off Valves                                         answer them all, re-read subsection 6.2.
+
+Shut-off valves (also called cut-out cocks) are used            6.3 ­ Antilock Brake Systems
+in the service and supply air-lines at the back of
+trailers used to tow other trailers. These valves               6.3.1 ­ Trailers Required to Have ABS
+permit closing the air-lines off when another trailer
+is not being towed. You must check that all shut-off            All trailers and converter dollies built on or after
+valves are in the open position except the ones at              March 1, 1998, are required to have ABS.
+the back of the last trailer, which must be closed.             However, many trailers and converter dollies built
+                                                                before this date have been voluntarily equipped
+Section 6 - Combination Vehicles                                with ABS.
+Version: July 2017
+                                                                                                      Page 6-6
+Commercial Driver's License Manual ­ Modernized Testing System
+
+Trailers will have yellow ABS malfunction lamps on              or start a tractor jackknife, let up on the brakes (if
+the left side, either on the front or rear corner. See          you can safely do so) until you gain control.
+Figure 6.7. Dollies manufactured on or after March
+1, 1998, are required to have a lamp on the left                When you drive a tractor-trailer combination with
+side.                                                           ABS, you should brake as you always have. In
+                                                                other words:
+In the case of vehicles manufactured before the
+required date, it may be difficult to tell if the unit is       Use only the braking force necessary to stop safely
+equipped with ABS. Look under the vehicle for the               and stay in control.
+ECU and wheel speed sensor wires coming from
+the back of the brakes.                                         Brake the same way, regardless of whether you
+                                                                have ABS on the tractor, the trailer, or both.
+
+                                                                As you slow down, monitor your tractor and trailer
+                                                                and back off the brakes (if it is safe to do so) to
+                                                                stay in control.
+
+                                                                Remember, if your ABS malfunctions, you still
+                                                                have regular brakes. Drive normally, but get the
+                                                                system serviced soon.
+
+                                                                ABS won't allow you to drive faster, follow more
+                                                                closely, or drive less carefully.
+
+                           Figure 6.7                           6.4 ­ Coupling and Uncoupling
+
+6.3.2 ­ Braking with ABS                                        Knowing how to couple and uncouple correctly is
+                                                                basic to safe operation of combination vehicles.
+ABS is an addition to your normal brakes. It does               Wrong coupling and uncoupling can be very
+not decrease or increase your normal braking                    dangerous. General coupling and uncoupling steps
+capability. ABS only activates when wheels are                  are listed below. There are differences between
+about to lock up.                                               different rigs, so learn the details of coupling and
+                                                                uncoupling the truck(s) you will operate.
+ABS does not necessarily shorten your stopping
+distance, but it does help you keep the vehicle                 6.4.1 ­ Coupling Tractor-Semitrailers
+under control during hard braking.
+ABS helps you avoid wheel lock up. The computer                 Step 1. Inspect Fifth Wheel
+senses impending lockup, reduces the braking
+pressure to a safe level, and you maintain control.             Check for damaged/missing parts.
+
+Having ABS on only the trailer, or even on only                 Check to see that mounting to tractor is secure, no
+one axle, still gives you more control over the                 cracks in frame, etc.
+vehicle during braking.
+                                                                Be sure that the fifth wheel plate is greased as
+When only the trailer has ABS, the trailer is less              required. Failure to keep the fifth wheel plate
+likely to swing out, but if you lose steering control           lubricated could cause steering problems because
+                                                                of friction between the tractor and trailer.
+Section 6 - Combination Vehicles
+Version: July 2017                                              Check if fifth wheel is in proper position for
+                                                                coupling:
+
+                                                                 Wheel tilted down toward rear of tractor.
+
+                                                                 Jaws open.
+
+                                                                 Safety unlocking handle in the automatic lock
+                                                                     position.
+
+                                                                 If you have a sliding fifth wheel, make sure it is
+                                                                     locked.
+
+                                                                 Make sure the trailer kingpin is not bent or
+                                                                     broken.
+
+                                                                                                                                       Page 6-7
+Commercial Driver's License Manual ­ Modernized Testing System
+
+Step 2. Inspect Area and Chock Wheels                           Apply and release trailer brakes and listen for
+                                                                sound of trailer brakes being applied and released.
+Make sure area around the vehicle is clear.                     You should hear the brakes move when applied
+                                                                and air escape when the brakes are released.
+Be sure trailer wheels are chocked or spring
+brakes are on.                                                  Check air brake system pressure gauge for signs
+                                                                of major air loss.
+Check that cargo (if any) is secured against
+movement due to tractor being coupled to the                    When you are sure trailer brakes are working, start
+trailer.                                                        engine.
+                                                                Make sure air pressure is up to normal.
+Step 3. Position Tractor
+                                                                Step 9. Lock Trailer Brakes
+Put the tractor directly in front of the trailer. (Never
+back under the trailer at an angle because you                  Pull out the "air supply" knob or move the tractor
+might push the trailer sideways and break the                   protection valve control from "normal" to
+landing gear.)                                                  "emergency."
+
+Check position, using outside mirrors, by looking               Step 10. Back Under Trailer
+down both sides of the trailer.
+                                                                Use lowest reverse gear.
+Step 4. Back Slowly
+                                                                Back tractor slowly under trailer to avoid hitting the
+Back until fifth wheel just touches the trailer.                kingpin too hard.
+
+Don't hit the trailer.                                          Stop when the kingpin is locked into the fifth wheel.
+
+Step 5. Secure Tractor                                          Step 11. Check Connection for Security
+
+Put on the parking brake.                                       Raise trailer landing gear slightly off ground.
+
+Put transmission in neutral.                                    Pull tractor gently forward while the trailer brakes
+                                                                are still locked to check that the trailer is locked
+Step 6. Check Trailer Height                                    onto the tractor.
+
+The trailer should be low enough that it is raised              Step 12. Secure Vehicle
+slightly by the tractor when the tractor is backed
+under it. Raise or lower the trailer as needed. (If             Put transmission in neutral.
+the trailer is too low, the tractor may strike and
+damage the trailer nose; if the trailer is too high, it         Put parking brakes on.
+may not couple correctly.)                                      Shut off engine and take key with you so someone
+                                                                else won't move truck while you are under it.
+Check that the kingpin and fifth wheel are aligned.
+                                                                Step 13. Inspect Coupling
+Step 7. Connect Air-lines to Trailer
+                                                                Use a flashlight, if necessary.
+Check glad hand seals and connect tractor
+emergency air-line to trailer emergency glad hand.              Make sure there is no space between upper and
+                                                                lower fifth wheel. If there is space, something is
+Check glad hand seals and connect tractor service               wrong (kingpin may be on top of the closed fifth
+air-line to trailer service glad hand.                          wheel jaws, and trailer would come loose very
+                                                                easily).
+Make sure air-lines are safely supported where
+they won't be crushed or caught while tractor is                Go under trailer and look into the back of the fifth
+backing under the trailer.                                      wheel. Make sure the fifth wheel jaws have closed
+                                                                around the shank of the kingpin.
+Step 8. Supply Air to Trailer
+                                                                Check that the locking lever is in the "lock"
+From cab, push in "air supply" knob or move                     position.
+tractor protection valve control from the
+"emergency" to the "normal" position to supply air              Check that the safety latch is in position over
+to the trailer brake system.                                    locking lever. (On some fifth wheels the catch must
+                                                                be put in place by hand.)
+Wait until the air pressure is normal.
+
+Check brake system for crossed air-lines.
+
+Shut engine off so you can hear the brakes.
+
+Section 6 - Combination Vehicles                                Page 6-8
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+If the coupling isn't right, don't drive the coupled            Put parking brakes on while tractor is pushing
+unit; get it fixed.                                             against the kingpin. (This will hold rig with pressure
+                                                                off the locking jaws.)
+Step 14. Connect the Electrical Cord and Check
+Air-lines                                                       Step 3. Chock Trailer Wheels
+Plug the electrical cord into the trailer and fasten
+the safety catch.                                               Chock the trailer wheels if the trailer doesn't have
+Check both air-lines and electrical line for signs of           spring brakes or if you're not sure. (The air could
+damage.                                                         leak out of the trailer air tank, releasing its
+Make sure air and electrical lines will not hit any             emergency brakes. Without chocks, the trailer
+moving parts of vehicle.                                        could move.)
+
+Step 15. Raise Front Trailer Supports (Landing                  Step 4. Lower the Landing Gear
+Gear)
+Use low gear range (if so equipped) to begin                    If trailer is empty, lower the landing gear until it
+raising the landing gear. Once free of weight,                  makes firm contact with the ground.
+switch to the high gear range.
+Raise the landing gear all the way up. (Never drive             If trailer is loaded, after the landing gear makes
+with landing gear only part way up as it may catch              firm contact with the ground, turn crank in low gear
+on railroad tracks or other things.)                            a few extra turns. This will lift some weight off the
+After raising landing gear, secure the crank handle             tractor. (Do not lift trailer off the fifth wheel.) This
+safely.                                                         will:
+When full weight of trailer is resting on tractor:
+Check for enough clearance between rear of                      Make it easier to unlatch fifth wheel.
+tractor frame and landing gear. (When tractor turns
+sharply, it must not hit landing gear.)                         Make it easier to couple next time.
+Check that there is enough clearance between the
+top of the tractor tires and the nose of the trailer.           Step 5. Disconnect Air-lines and Electrical
+                                                                Cable
+Step 16. Remove Trailer Wheel Chocks
+Remove and store wheel chocks in a safe place.                  Disconnect air-lines from trailer. Connect air-line
+                                                                glad hands to dummy couplers at back of cab or
+6.4.2 ­ Uncoupling Tractor-Semitrailers                         couple them together.
+
+The following steps will help you to uncouple                   Hang electrical cable with plug down to prevent
+safely.                                                         moisture from entering it.
+
+Step 1. Position Rig                                            Make sure lines are supported so they won't be
+Make sure surface of parking area can support                   damaged while driving the tractor.
+weight of trailer.
+Have tractor lined up with the trailer. (Pulling out at         Step 6. Unlock Fifth Wheel
+an angle can damage landing gear.)
+                                                                Raise the release handle lock.
+
+                                                                Pull the release handle to "open" position.
+
+                                                                Keep legs and feet clear of the rear tractor wheels
+                                                                to avoid serious injury in case the vehicle moves.
+
+                                                                Step 7. Pull Tractor Partially Clear of Trailer
+
+                                                                Pull tractor forward until fifth wheel comes out from
+                                                                under the trailer.
+
+                                                                Stop with tractor frame under trailer (prevents
+                                                                trailer from falling to ground if landing gear should
+                                                                collapse or sink).
+
+Step 2. Ease Pressure on Locking Jaws
+
+Shut off trailer air supply to lock trailer brakes.
+
+Ease pressure on fifth wheel locking jaws by
+backing up gently. (This will help you release the
+fifth wheel locking lever.)
+
+Section 6 - Combination Vehicles                                Page 6-9
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+Step 8. Secure Tractor
+Apply parking brake.
+Place transmission in neutral.
+
+Step 9. Inspect Trailer Supports
+Make sure ground is supporting trailer.
+Make sure landing gear is not damaged.
+
+Step 10. Pull Tractor Clear of Trailer                          Lift the lock handle away from the vehicle until the
+Release parking brakes.                                         lock clears the lock seat on the hook body.
+Check the area and drive tractor forward until it               Open the latch by rotating the latch assembly up
+clears.                                                         toward the vehicle until the latch is in its most
+                                                                upright position, then release the lock handle.
+Subsections 6.3 and 6.4                                         (Figure 17 and 18)
+Test Your Knowledge
+
+1. What might happen if the trailer is too high
+     when you try to couple?
+
+2. After coupling, how much space should be
+     between the upper and lower fifth wheel?
+
+3. You should look into the back of the fifth wheel
+     to see if it is locked onto the kingpin. True or
+     False?
+
+4. To drive you need to raise the landing gear                  .
+
+only until it just lifts off the pavement. True or
+
+False?
+
+5. How do you know if your trailer is equipped
+     with antilock brakes?
+
+These questions may be on your test. If you can't
+answer them all, re-read subsections 6.3 and 6.4.
+
+6.4.3 Coupling a Pintle Hook                                    Step 3. Lower Drawbar into Place
+                                                                Position the drawbar eye over the horn of the pintle
+Step 1. Inspect Pintle Hook                                     hook and lower it into place.
+Before operating, check for worn, damaged, or
+missing parts, and make sure mount is secure.                   Step 4. Lock Pintle Hook
+If the pintle hook is not secured to the mounting               Push the latch closed. When correctly locked, the
+surface, the pintle hook could separate from the                lock handle will rotate and move up until it is flush
+vehicle which, if not avoided, could result in death            with the top of the latch (Figure 19).
+or serious injury.
+
+Step 2. Unlock Lock Pin and Open Latch
+Unlock and remove the tethered lock pin, if
+applicable (Figure 16).
+
+Section 6 - Combination Vehicles                                   Page 6-10
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+                                                                                6.4.5 - Coupling a Drawbar
+
+Insert the tethered lock pin through the latch and    Step 1. Remove Safety Lock screw and Rotate
+lock holes, and close the tethered wire lock pin, if  Safety Cover Bar
+applicable (Figure 16).                               Remove safety lock screw (2), recover and keep
+                                                      the relative self-locking nut (12) aside then also
+Failure to correctly lock the latch can result in     loosen safety lock screw (2a) and turn out the
+separation of the trailer and vehicle which, if not   adjustment screw (3) by at least five turns.
+avoided, could result in death or serious injury.     Rotate the safety cover bar (4) outwards so that it
+                                                      is completely open.
+6.4.4 - Uncoupling a Pintle Hook
+                                                      Step 2. Reverse Truck
+Step 1. Park on Level Surface                         Reverse truck very slowly until the ball cup
+Park the trailer on a firm level surface and block    drawbar eye (6) is in position exactly above the
+trailer tires.                                        drawbar coupling ball (5).
+
+Step 2. Disconnect Electrical Connector,              Step 3. Lower the Drawbeam
+Breakaway Brake Switch and Safety Chains              Lower the drawbeam until the ball cup drawbar eye
+Disconnect electrical connector.                      (6) lies completely covering the drawbar coupling
+Disconnect breakaway brake switch lanyard.            ball (5).
+Disconnect safety chains from tow vehicle.
+                                                      Step 4. Rotate the Safety Cover Bar
+Step 3. Unlock the Coupler                            Rotate the safety cover bar back inwards (4) and fit
+Unlock the coupler and open it.                       in safety lock screw (2) together with its self-
+                                                      locking nut.
+Step 4. Check Ground Surface for Correct              Tighten in both the lock screws (2, 2a) together
+Support                                               with their relative self-locking nuts (12, 12a) at a
+Before extending jack, make certain the ground        350 to 400 Nm torque wrench setting.
+surface below the jack pad will support the tongue
+load.                                                 Step 5. Adjust the Adjustment Screw
+                                                      Adjust the adjustment screw (3) until a 0.3 - 0.5
+Step 5. Rotate Jack Handle                            mm vertical clearance between the guard disk (13)
+Rotate jack handle to extend the jack and transfer    and the ball cup (6) is reached. Lock setting with
+the weight of the trailer tongue to the jack.         counter nut (11).
+
+Step 6. Raise Trailer Coupler
+Raise the trailer coupler above the tow vehicle
+hitch.
+
+Step 7. Drive Forward
+Drive tow vehicle forward.
+
+Section 6 - Combination Vehicles                                                                            Page 6-11
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+In the event that the safety cover bar (4) will not             If you are hooking up a Gooseneck or a fifth wheel
+perfectly lodge into its seating appropriately, travel          hitch, the procedure is a little different from a
+is strictly forbidden.                                          receiver and ball, but it is not more difficult.
+
+                                                                Step 1. Open the Latch and Lubricate the
+                                                                Gooseneck Ball
+                                                                Open the clamp latch on the Gooseneck coupler.
+                                                                Make sure that the Gooseneck ball is properly
+                                                                lubricated.
+
+                                                                Step 2. Position Coupler and Latch the Clamp
+                                                                Position the trailer's coupler directly over the ball
+                                                                and lower the Gooseneck trailer into position and
+                                                                latch the clamp.
+
+Step 6. Protect Coupling Ball and Anchor Edge                   Step 3. Attach Safety Chains
+onto Ball                                                       Attach your safety chains. Remember that all
+Protect the part that is still visible of the coupling          trailers are required by law to have safety chains.
+ball (5) with the rubber dust proof bellows
+protection cover (7). Accurately anchor the edge                Step 4. Connect Trailer Light Wiring
+directly onto the ball itself.                                  Connect your trailer light wiring to your vehicle's
+                                                                connector.
+Step 7. Lubricate the Drawbar Eye                               Check all of your lights, including your brake lights.
+Lubricate the inside of the drawbar eye ball cup (6)
+directly through the grease nipple (18).                        Step 5. Lower and Stow the Trailer Jacks
+                                                                Completely lower and stow the trailer jacks,
+6.4.6 - Uncoupling a Drawbar                                    allowing the weight to settle onto the tow vehicle.
+
+Step 1. Turn Trailer Brake On                                   6.4.8 Uncoupling a Gooseneck Hitch
+Make sure that the trailer brake is on.
+                                                                Step 1. Remove Safety Pin and Clip
+Step 2. Remove Cover and Loosen Screws                          Simply remove safety pin and clip.
+Remove the rubber dust proof bellows protection
+cover (7).                                                      Step 2. Rotate Handle and Raise Trailer Off Ball
+Loosen the adjustment screw (3) and the counter                 Rotate handle to this position (Fig. B) and raise
+nut (11).                                                       trailer off ball. Coupler will return to load position
+Loosen safety lock screw (2a) and remove safety                 automatically.
+lock screw (2) together with its self-locking nut
+(12).                                                           Step 3. Install Safety Pin and Clip
+                                                                Install safety pin and clip. (Fig. B)
+
+Step 3. Rotate Safety Cover Bar and Lift Trailer
+Drawbeam
+Rotate the safety cover bar (4) outwards so that it
+is completely open.
+Lift the trailer drawbeam until the drawbar coupling
+ball (5) is fully visible, then travel forward with the
+trailer very slowly.
+Rotate the safety cover bar inwards (4) until it
+lodges back in its housing.
+
+Step 4. Lock Safety Screw and Tighten Self-                     6.5 ­ Inspecting a Combination Vehicle
+Locking Nut
+Fit in safety lock screw (2) and tighten in self-               Use the seven-step inspection procedure
+locking nut (12).                                               described in Section 2 to inspect your combination
+6.4.7 - Coupling a Gooseneck Hitch                              vehicle. There are more things to inspect on a
+                                                                combination vehicle than on a single vehicle. (For
+Section 6 - Combination Vehicles                                example, tires, wheels, lights, reflectors, etc.)
+Version: July 2017
+                                                                                                                                      Page 6-12
+Commercial Driver's License Manual ­ Modernized Testing System
+
+However, there are also some new things to check.               Properly greased.
+These are discussed below.                                      All locking pins present and locked in place.
+                                                                If air powered--no air leaks.
+6.5.1 ­ Additional Things to Check during a                     Check that fifth wheel is not so far forward that
+Walk-around Inspection                                          tractor frame will hit landing gear, or the cab hit the
+                                                                trailer, during turns.
+Do these checks in addition to those already listed
+in Section 2.                                                   Landing Gear
+                                                                Fully raised, no missing parts, not bent or
+Coupling System Areas                                           otherwise damaged.
+Check fifth wheel (lower).                                      Crank handle in place and secured.
+Securely mounted to frame.                                      If power operated, no air or hydraulic leaks.
+No missing or damaged parts.
+Enough grease.                                                  6.5.2 ­ Combination Vehicle Brake Check
+No visible space between upper and lower fifth                  Do these checks in addition to Section 5.3:
+wheel.                                                          Inspecting Air Brake Systems.
+Locking jaws around the shank, not the head of
+kingpin. See Figure 6.8.                                        The following section explains how to check air
+Release arm properly seated and safety latch/lock               brakes on combination vehicles. Check the brakes
+engaged.                                                        on a double or triple trailer as you would any
+                                                                combination vehicle.
+
+                           Figure 6.8                           Check That Air Flows to All Trailers. Use the
+Check fifth wheel (upper).                                      tractor parking brake and/or chock the wheels to
+Glide plate securely mounted to trailer frame.                  hold the vehicle. Wait for air pressure to reach
+Kingpin not damaged.                                            normal, then push in the red "trailer air supply"
+Air and electric lines to trailer.                              knob. This will supply air to the emergency (supply)
+Electrical cord firmly plugged in and secured.                  lines. Use the trailer handbrake to provide air to the
+Air-lines properly connected to glad hands, no air              service line. Go to the rear of the rig. Open the
+leaks, properly secured with enough slack for                   emergency line shut-off valve at the rear of the last
+turns.                                                          trailer. You should hear air escaping, showing the
+All lines free from damage.                                     entire system is charged. Close the emergency line
+Sliding fifth wheel.                                            valve. Open the service line valve to check that
+Slide not damaged or parts missing.                             service pressure goes through all the trailers (this
+                                                                test assumes that the trailer handbrake or the
+Section 6 - Combination Vehicles                                service brake pedal is on), and then close the
+Version: July 2017                                              valve. If you do NOT hear air escaping from both
+                                                                lines, check that the shut-off valves on the trailer(s)
+                                                                and dolly(ies) are in the OPEN position. You MUST
+                                                                have air all the way to the back for all the brakes to
+                                                                work.
+
+                                                                Test Tractor Protection Valve. Charge the trailer
+                                                                Air-brake system. (That is, build up normal air-
+                                                                pressure and push the "air supply" knob in.) Shut
+                                                                the engine off. Step on and off the brake pedal
+                                                                several times to reduce the air pressure in the
+                                                                tanks. The trailer air supply control (also called the
+                                                                tractor protection valve control) should pop out (or
+                                                                go from "normal" to "emergency" position) when
+                                                                the air pressure falls into the pressure range
+                                                                specified by the manufacturer. (Usually within the
+                                                                range of 20 to 45 psi.)
+
+                                                                                                                                      Page 6-13
+Commercial Driver's License Manual ­ Modernized Testing System
+
+If the tractor protection valve doesn't work right, an
+air hose or trailer brake leak could drain all the air
+from the tractor. This would cause the emergency
+brakes to come on, with possible loss of control.
+
+Test Trailer Emergency Brakes. Charge the
+trailer air brake system and check that the trailer
+rolls freely. Then stop and pull out the trailer air
+supply control (also called tractor protection valve
+control or trailer emergency valve), or place it in
+the "emergency" position. Pull gently on the trailer
+with the tractor to check that the trailer emergency
+brakes are on.
+
+Test Trailer Service Brakes. Check for normal air
+pressure, release the parking brakes, move the
+vehicle forward slowly, and apply trailer brakes
+with the hand control (trolley valve), if so equipped.
+You should feel the brakes come on. This tells you
+the trailer brakes are connected and working. (The
+trailer brakes should be tested with the hand valve
+but controlled in normal operation with the foot
+pedal, which applies air to the service brakes at all
+wheels.)
+
+Subsection 6.5
+Test Your Knowledge
+
+1. Which shut-off valves should be open and
+     which closed?
+
+2. How can you test that air flows to all trailers?
+3. How can you test the tractor protection valve?
+4. How can you test the trailer emergency
+
+     brakes?
+5. How can you test the trailer service brakes?
+
+These questions may be on your test. If you can't
+answer all of them, re-read subsection 6.5.
+
+Section 6 - Combination Vehicles                                Page 6-14
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+

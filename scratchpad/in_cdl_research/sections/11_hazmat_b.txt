@@ -1,0 +1,754 @@
+Do not transport Division 1.1 or 1.2 in vehicle
+combinations if:                                                Division 2.3, Zone A (Poisonous Gases).
+
+There is a marked or placarded cargo tank in the                Division 4.2 (Spontaneously Combustible
+combination.                                                    Materials).
+
+The other vehicle in the combination contains:                  Division 6.1, PGI, Zone A (Poison Liquids).
+Division 1.1 A (Initiating Explosives).
+Packages of Class 7 (Radioactive) materials                     Class 2 (Compressed Gases) Including
+labeled "Yellow III."                                           Cryogenic Liquids. If your vehicle doesn't have
+Division 2.3 (Poisonous Gas) Hazard zone A or B or              racks to hold cylinders, the cargo space floor must
+Division 6.1 (Poisonous) materials Hazard zone A.               be flat. The cylinders must be:
+Hazardous materials in a portable tank, on a DOT
+Spec 106A or 110A tank.                                         Held upright.
+
+Class 4 (Flammable Solids) and Class 5                          In racks attached to the vehicle or in boxes that will
+(Oxidizers) Materials. Class 4 materials are solids             keep them from turning over.
+that react (including fire and explosion) to water,
+heat, and air or even react spontaneously.                      Cylinders may be loaded in a horizontal position
+                                                                (lying down) if it is designed so the relief valve is in
+Section 9 - Hazardous Material                                  the vapor space.
+Version: July 2017
+                                                                Division 2.3 (Poisonous Gas) or Division 6.1
+                                                                (Poisonous) Materials. Never transport these
+                                                                materials in containers with interconnections. Never
+
+                                                                                                                                      Page 9-11
+Commercial Driver's License Manual ­ Modernized Testing System
+
+load a package labeled POISON or POISON                         for Hazardous Materials) name other materials you
+INHALATION HAZARD in the driver's cab or                        must keep apart.
+sleeper or with food material for human or animal
+consumption. There are special rules for loading                           Subsection 9.4
+and unloading Class 2 materials in cargo tanks. You
+must have special training to do this.                              Test Your Knowledge
+
+Class 7 (Radioactive) Materials. Some packages                  1.  Around which hazard classes must you
+of Class 7 (Radioactive) materials bear a number
+called the "transport index." The shipper labels                    never smoke?
+these packages Radioactive II or Radioactive III,
+and prints the package's transport index on the                 2.  Which three hazard classes should not be
+label. Radiation surrounds each package, passing
+through all nearby packages. To deal with this                      loaded into a trailer that has a heater/air
+problem, the number of packages you can load
+together is controlled. Their closeness to people,                  conditioner unit?
+animals, and unexposed film is also controlled. The
+transport index tells the degree of control needed              3.  Should the floor liner required for Division
+during transportation. The total transport index of all
+packages in a single vehicle must not exceed                        1.1 or 1.2 materials be stainless steel?
+50.Table A to this section (49 CFR 177-842) shows
+rules for each transport index. It shows how close              4.  At the shipper's dock you're given a paper
+you can load Class 7 (Radioactive) materials to
+people, animals, or film. For example, you can't                    for 100 cartons of battery acid. You already
+leave a package with a transport index of 1.1 within
+two feet of people or cargo space walls.                            have 100 pounds of dry Silver Cyanide on
+
+                                                                    board. What precautions do you have to
+
+                                                                    take?
+
+                                                                5.  Name a hazard class that uses transport
+
+                                                                    indexes to determine the amount that can
+
+                                                                    be loaded in a single vehicle.
+
+                    Do Not Load Table                           These questions may be on your test. If you can't
+                                                                answer them all, re-read subsection 9.4.
+
+Do Not Load          In The Same Vehicle With
+
+                     Animal or human food unless the
+
+Division 6.1 or 2.3  poison package is over packed in
+
+(POISON or poison    an approved way. Foodstuffs are
+
+inhalation hazard    anything you swallow. However,             9.5 ­ Bulk Packaging Marking, Loading
+                                                                and Unloading
+labeled material).   mouthwash, toothpaste, and skin
+                                                                The glossary at the end of this section gives the
+                     creams are not foodstuff.                  meaning of the word bulk. Cargo tanks are bulk
+                                                                packaging permanently attached to a vehicle. Cargo
+                     Division 1.1, 1.2, 1.3 Explosives,         tanks remain on the vehicle when you load and
+                                                                unload them. Portable tanks are bulk packaging,
+                     Division 5.1 (Oxidizers), Class 3          which are not permanently attached to a vehicle.
+                                                                The product is loaded or unloaded while the
+Division 2.3         (Flammable Liquids), Class 8               portable tanks are off the vehicle. Portable tanks are
+                                                                then put on a vehicle for transportation. There are
+(Poisonous) gas Zone (Corrosive Liquids), Division 5.2          many types of cargo tanks in use. The most
+                                                                common cargo tanks are MC306 for liquids and
+A or Division 6.1    (Organic Peroxides),                       MC331 for gases.
+
+(Poison) liquids, PGI, Division 1.1, 1.2, 1.3 Explosives,       9.5.1 ­ Markings
+
+Zone A.              Division 1.5 (Blasting Agents),            You must display the identification number of the
+                                                                hazardous materials in portable tanks and cargo
+                     Division 2.1 (Flammable Gases),            tanks and other bulk packaging (such as dump
+                                                                trucks). Identification numbers are in column 4 of the
+                     Class 4 (Flammable Solids).                Hazardous Materials Table. The rules require black
+                                                                100 mm (3.9 inch) numbers on orange panels,
+Charged storage      Division 1.1.                              placards, or a white, diamond-shaped background if
+batteries.                                                      no placards are required. Specification cargo tanks
+                                                                must show re-test date markings.
+Class 1 (Detonating  Any other explosives unless in
+primers).            authorized containers or                                                                                         Page 9-12
+                     packages.
+
+                     Acids, corrosive materials, or other
+
+                     acidic materials which could
+
+Division 6.1         release hydrocyanic acid.
+
+(Cyanides or cyanide For Example:
+
+mixtures).           Cyanides, Inorganic, n.o.s.
+
+                     Silver Cyanide
+
+                     Sodium Cyanide.
+
+                     Other materials unless the nitric
+
+Nitric acid (Class 8). acid is not loaded above any other
+
+                     material.
+
+                     Figure 9.9
+
+Mixed loads. The rules require some products to be
+loaded separately. You cannot load them together
+in the same cargo space. Figure 9.9 lists some
+examples. The regulations (the Segregation Table
+
+Section 9 - Hazardous Material
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+Portable tanks must also show the lessee or                     9.5.4 ­ Compressed Gas
+owner's name. They must also display the shipping
+name of the contents on two opposing sides. The                 Keep liquid discharge valves on a compressed gas
+letters of the shipping name must be at least two               tank closed except when loading and unloading.
+inches tall on portable tanks with capacities of more           Unless your engine runs a pump for product
+than 1,000 gallons and one-inch tall on portable                transfer, turn it off when loading or unloading. If you
+tanks with capacities of less than 1,000 gallons. The           use the engine, turn it off after product transfer,
+identification number must appear on each side and              before you unhook the hose. Unhook all
+each end of a portable tank or other bulk packaging             loading/unloading connections before coupling,
+that hold 1,000 gallons or more and on two opposing             uncoupling, or moving a cargo tank. Always chock
+sides, if the portable tank holds less than 1,000               trailers and semi-trailers to prevent motion when
+gallons. The identification numbers must still be               uncoupled from the power unit.
+visible when the portable tank is on the motor
+vehicle. If they are not visible, you must display the                           Subsection 9.5
+identification number on both sides and ends of the                          Test Your Knowledge
+motor vehicle.
+                                                                1. What are cargo tanks?
+Intermediate bulk containers (IBCs) are bulk                    2. How is a portable tank different from a cargo
+packages, but are not required to have the owner's
+name or shipping name.                                               tank?
+                                                                3. Your engine runs a pump used during delivery
+9.5.2 ­ Tank Loading
+                                                                     of compressed gas. Should you turn off the
+The person in charge of loading and unloading a                      engine before or after unhooking hoses after
+cargo tank must be sure a qualified person is always                 delivery?
+watching. This person watching the loading or
+unloading must:                                                 These questions may be on your test. If you can't
+                                                                answer them all, re-read subsection 9.5.
+Be alert.
+                                                                9.6 ­ Hazardous Materials -- Driving
+Have a clear view of the cargo tank.                            and Parking Rules
+
+Be within 25 feet of the tank.                                  9.6.1 ­ Parking with Division 1.1, 1.2, or 1.3
+                                                                Explosives
+Know of the hazards of the materials involved.
+
+Know the procedures to follow in an emergency.
+
+Be authorized to move the cargo tank and able to
+do so.
+
+There are special attendance rules for cargo tanks              Never park with Division 1.1, 1.2, or 1.3 explosives
+transporting propane and anhydrous ammonia.                     within five feet of the traveled part of the road.
+                                                                Except for short periods of time needed for vehicle
+Close all manholes and valves before moving a tank              operation necessities (e.g., fueling), do not park
+of hazardous materials, no matter how small the                 within 300 feet of:
+amount in the tank or how short the distance.
+Manholes and valves must be closed to prevent                   A bridge, tunnel, or building.
+leaks. It is illegal to move a cargo tank with open
+valves or covers unless it is empty according to 49             A place where people gather.
+CFR 173.29.
+                                                                An open fire.
+9.5.3 ­ Flammable Liquids
+                                                                If you must park to do your job, do so only briefly.
+Turn off your engine before loading or unloading
+any flammable liquids. Only run the engine if                   Don't park on private property unless the owner is
+needed to operate a pump. Ground a cargo tank                   aware of the danger. Someone must always watch
+correctly before filling it through an open filling hole.       the parked vehicle. You may let someone else
+Ground the tank before opening the filling hole, and            watch it for you only if your vehicle is:
+maintain the ground until after closing the filling
+hole.                                                           On the shipper's property.
+
+                                                                On the carrier's property.
+
+                                                                On the consignee's property.
+
+Section 9 - Hazardous Material                                  Page 9-13
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+You are allowed to leave your vehicle unattended in             materials through tunnels, over bridges, or other
+a safe haven. A safe haven is an approved place for             roadways. Always check before you start.
+parking unattended vehicles loaded with explosives.
+Designation of authorized safe havens is usually                Whenever placarded, avoid heavily populated
+made by local authorities.                                      areas, crowds, tunnels, narrow streets, and alleys.
+                                                                Take other routes, even if inconvenient, unless
+9.6.2 ­ Parking a Placarded Vehicle Not                         there is no other way. Never drive a placarded
+Transporting Division 1.1, 1.2, or 1.3)                         vehicle near open fires unless you can safely pass
+Explosives                                                      without stopping.
+
+You may park a placarded vehicle (not laden with                If transporting Division 1.1, 1.2, or 1.3 explosives,
+explosives) within five feet of the traveled part of the        you must have a written route plan and follow that
+road only if your work requires it. Do so only briefly.         plan. Carriers prepare the route plan in advance and
+Someone must always watch the vehicle when                      give the driver a copy. You may plan the route
+parked on a public roadway or shoulder. Do not                  yourself if you pick up the explosives at a location
+uncouple a trailer and leave it with hazardous                  other than your employer's terminal. Write out the
+materials on a public street. Do not park within 300            plan in advance. Keep a copy of it with you while
+feet of an open fire.                                           transporting the explosives. Deliver shipments of
+                                                                explosives only to authorized persons or leave them
+9.6.3 ­ Attending Parked Vehicles                               in locked rooms designed for explosives storage.
+
+The person attending a placarded vehicle must:                  A carrier must choose the safest route to transport
+                                                                placarded radioactive materials. After choosing the
+Be in the vehicle, awake, and not in the sleeper                route, the carrier must tell the driver about the
+berth, or within 100 feet of the vehicle and have it            radioactive materials, and show the route plan.
+within clear view.
+                                                                9.6.6 ­ No Smoking
+Be aware of the hazards of the materials being
+transported.                                                    Do not smoke within 25 feet of a placarded cargo
+                                                                tank used for Class 3 (flammable liquids) or Division
+Know what to do in emergencies.                                 2.1 (gases). Also, do not smoke or carry a lighted
+                                                                cigarette, cigar, or pipe within 25 feet of any vehicle,
+Be able to move the vehicle, if needed.                         which contains:
+                                                                Class 1 (Explosives)
+9.6.4 ­ No Flares!                                              Class 3 (Flammable Liquids)
+                                                                Class 4.1 (Flammable Solids)
+You might break down and have to use stopped                    Class 4.2 (Spontaneously Combustible)
+vehicle signals. Use reflective triangles or red                Class 5 (Oxidizers)
+electric lights. Never use burning signals, such as
+flares or fuses, around a:                                      9.6.7 ­ Refuel with Engine Off
+
+Tank used for Class 3 (Flammable Liquids) or                    Turn off your engine before fueling a motor vehicle
+Division 2.1 (Flammable Gas) whether loaded or                  containing hazardous materials. Someone must
+empty.                                                          always be at the nozzle, controlling fuel flow.
+
+Vehicle loaded with Division 1.1, 1.2, or 1.3                   9.6.8 ­ 10 B C Fire Extinguisher
+Explosives.
+                                                                The power unit of placarded vehicles must have a
+9.6.5 ­ Route Restrictions                                      fire extinguisher with a UL rating of 10 B:C or more.
+
+Some states and counties require permits to                     9.6.9 ­ Check Tires
+transport hazardous materials or wastes. They may
+limit the routes you can use. Local rules about                 Make sure your tires are properly inflated.
+routes and permits change often. It is your job as
+driver to find out if you need permits or must use              You must examine each tire on a motor vehicle at
+special routes. Make sure you have all needed                   the beginning of each trip and each time the
+papers before starting.                                         vehicle is parked.
+
+If you work for a carrier, ask your dispatcher about                                                                                  Page 9-14
+route restrictions or permits. If you are an
+independent trucker and are planning a new route,
+check with state agencies where you plan to travel.
+Some localities prohibit transportation of hazardous
+
+Section 9 - Hazardous Material
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+The only acceptable way to check tire pressure is to            9.6.11 ­ Equipment for Chlorine
+use a tire pressure gauge.
+                                                                A driver transporting chlorine in cargo tanks must
+Do not drive with a tire that is leaking or flat except         have an approved gas mask in the vehicle. The
+to the nearest safe place to fix it. Remove any                 driver must also have an emergency kit for
+overheated tire. Place it a safe distance from your             controlling leaks in dome cover plate fittings on the
+vehicle. Don't drive until you correct the cause of the         cargo tank.
+overheating. Remember to follow the rules about
+parking and attending placarded vehicles. They                  9.6.12 ­ Stop before Railroad Crossings
+apply even when checking, repairing, or replacing
+tires.                                                          Stop before a railroad crossing if your vehicle:
+
+9.6.10 ­ Where to Keep Shipping Papers and                      Is placarded.
+Emergency Response Information
+                                                                Carries any amount of chlorine.
+Do not accept a hazardous materials shipment
+without a properly prepared shipping paper. A                   Has cargo tanks, whether loaded or empty used for
+shipping paper for hazardous materials must always              hazardous materials.
+be easily recognized. Other people must be able to
+find it quickly after a crash.                                  You must stop 15 to 50 feet before the nearest rail.
+                                                                Proceed only when you are sure no train is coming
+Clearly distinguish hazardous materials shipping                and you can clear the tracks without stopping. Don't
+papers from others by tabbing them or keeping                   shift gears while crossing the tracks.
+them on top of the stack of papers.
+                                                                9.7 ­ Hazardous Materials -
+When you are behind the wheel, keep shipping                    Emergencies
+papers within your reach (with your seat belt on),
+or in a pouch on the driver's door. They must be                9.7.1 ­ Emergency Response Guidebook (ERG)
+easily seen by someone entering the cab.
+                                                                The Department of Transportation has a guidebook
+When not behind the wheel, leave shipping papers                for firefighters, police, and industry workers on how
+in the driver's door pouch or on the driver's seat.             to protect themselves and the public from
+                                                                hazardous materials. The guide is indexed by
+Emergency response information must be kept in                  proper shipping name and hazardous materials
+the same location as the shipping paper.                        identification number. Emergency personnel look
+                                                                for these things on the shipping paper. That is why
+Papers for Division 1.1, 1.2 or, 1.3 Explosives.                it is vital that the proper shipping name, identification
+A carrier must give each driver transporting Division           number, label, and placards are correct.
+1.1, 1.2, or 1.3 explosives a copy of Federal Motor
+Carrier Safety Regulations (FMCSR), Part 397. The               9.7.2 ­ Crashes/Incidents
+carrier must also give written instructions on what to
+do if delayed or in an accident. The written                    As a professional driver, your job at the scene of a
+instructions must include:                                      crash or an incident is to:
+
+The names and telephone numbers of people to                    Keep people away from the scene.
+contact (including carrier agents or shippers).
+                                                                Limit the spread of material, only if you can safely
+The nature of the explosives transported.                       do so.
+
+The precautions to take in emergencies such as                  Communicate the danger of the hazardous
+fires, accidents, or leaks.                                     materials to emergency response personnel.
+
+Drivers must sign a receipt for these documents.                Provide emergency responders with the shipping
+You must be familiar with, and have in your                     papers and emergency response information.
+possession while driving, the:
+                                                                Follow this checklist:
+Shipping papers.
+                                                                Check to see that your driving partner is OK.
+Written emergency instructions.
+                                                                Keep shipping papers with you.
+Written route plan.
+                                                                Keep people far away and upwind.
+A copy of FMCSR, Part 397.
+                                                                Warn others of the danger.
+
+                                                                Call for help.
+
+Section 9 - Hazardous Material                                  Page 9-15
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+Follow your employer's instructions.                            Your name, the carrier's name, and the name of
+                                                                the community or city where your terminal is
+9.7.3 ­ Fires                                                   located.
+
+You might have to control minor truck fires on the              The proper shipping name, hazard class, and
+road. However, unless you have the training and                 identification number of the hazardous materials, if
+equipment to do so safely, don't fight hazardous                you know them.
+materials fires. Dealing with hazardous materials
+fires requires special training and protective gear.            This is a lot for someone to remember. It is a good
+                                                                idea to write it all down for the person you send for
+When you discover a fire, call for help. You may use            help. The emergency response team must know
+the fire extinguisher to keep minor truck fires from            these things to find you and to handle the
+spreading to cargo before firefighters arrive. Feel             emergency. They may have to travel miles to get to
+trailer doors to see if they are hot before opening             you. This information will help them to bring the right
+them. If hot, you may have a cargo fire and should              equipment the first time, without having to go back
+not open the doors. Opening doors lets air in and               for it.
+may make the fire flare up. Without air, many fires
+only smolder until firemen arrive, doing less                   Never move your vehicle, if doing so will cause
+damage. If your cargo is already on fire, it is not safe        contamination or damage the vehicle. Keep upwind
+to fight the fire. Keep the shipping papers with you            and away from roadside rests, truck stops, cafes,
+to give to emergency personnel as soon as they                  and businesses. Never try to repack leaking
+arrive. Warn other people of the danger and keep                containers. Unless you have the training and
+them away.                                                      equipment to repair leaks safely, don't try it. Call
+                                                                your dispatcher or supervisor for instructions and, if
+If you discover a cargo leak, identify the hazardous            needed, emergency personnel.
+materials leaking by using shipping papers, labels,
+or package location. Do not touch any leaking                   9.7.4 ­ Responses to Specific Hazards
+material--many people injure themselves by
+touching hazardous materials. Do not try to identify            Class 1 (Explosives). If your vehicle has a
+the material or find the source of a leak by smell.             breakdown or accident while carrying explosives,
+Toxic gases can destroy your sense of smell and                 warn others of the danger. Keep bystanders away.
+can injure or kill you even if they don't smell. Never          Do not allow smoking or open fire near the vehicle.
+eat, drink, or smoke around a leak or spill.                    If there is a fire, warn every one of the danger of
+                                                                explosion.
+If hazardous materials are spilling from your vehicle,
+do not move it any more than safety requires. You               Remove all explosives before separating vehicles
+may move off the road and away from places where                involved in a collision. Place the explosives at least
+people gather, if doing so serves safety. Only move             200 feet from the vehicles and occupied buildings.
+your vehicle if you can do so without danger to                 Stay a safe distance away.
+yourself or others.
+                                                                Class 2 (Compressed Gases). If compressed gas
+Never continue driving with hazardous materials                 is leaking from your vehicle, warn others of the
+leaking from your vehicle in order to find a phone ,            danger. Only permit those involved in removing the
+truck stop, help, or similar reason. Remember, the              hazard or wreckage to get close. You must notify
+carrier pays for the cleanup of contaminated parking            the shipper if compressed gas is involved in any
+lots, roadways, and drainage ditches. The costs are             accident.
+enormous, so don't leave a lengthy trail of
+contamination. If hazardous materials are spilling              Unless you are fueling machinery used in road
+from your vehicle:                                              construction or maintenance, do not transfer a
+                                                                flammable compressed gas from one tank to
+Park it.                                                        another on any public roadway.
+
+Secure the area.                                                Class 3 (Flammable Liquids). If you are
+                                                                transporting a flammable liquid and have an
+Stay there.                                                     accident or your vehicle breaks down, prevent
+                                                                bystanders from gathering. Warn people of the
+Call for help or send someone else for help.                    danger. Keep them from smoking.
+                                                                Never transport a leaking cargo tank farther than
+When sending someone for help, give that person:                needed to reach a safe place. Get off the roadway
+                                                                if you can do so safely. Don't transfer flammable
+A description of the emergency.
+                                                                                                                                      Page 9-16
+Your exact location and direction of travel.
+
+Section 9 - Hazardous Material
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+liquid from one vehicle to another on a public                  9.7.5 ­ Required Notification
+roadway except in an emergency.
+                                                                The National Response Center helps coordinate
+Class 4 (Flammable Solids) and Class 5                          emergency response to chemical hazards. It is a
+(Oxidizing Materials). If a flammable solid or                  resource to the police and firefighters. It maintains a
+oxidizing material spills, warn others of the fire              24-hour toll-free line listed below. You or your
+hazard. Do not open smoldering packages of                      employer must phone when any of the following
+flammable solids. Remove them from the vehicle if               occur as a direct result of a hazardous materials
+you can safely do so. Also, remove unbroken                     incident:
+packages if it will decrease the fire hazard.
+                                                                A person is killed.
+Class 6 (Poisonous Materials and Infectious
+Substances). It is your job to protect yourself, other          An injured person requires hospitalization.
+people, and property from harm. Remember that
+many products classed as poison are also                        Estimated property damage exceeds $50,000.
+flammable. If you think a Division 2.3 (Poison
+Gases) or Division 6.1 (Poison Materials) might be              The general public is evacuated for more than one
+flammable, take the added precautions needed for                hour.
+flammable liquids or gases. Do not allow smoking,
+open flame, or welding. Warn others of the hazards              One or more major transportation arteries or
+of fire, of inhaling vapors, or coming in contact with          facilities are closed for one hour or more.
+the poison.
+                                                                Fire, breakage, spillage, or suspected radioactive
+A vehicle involved in a leak of Division 2.3 (Poison            contamination occurs.
+Gases) or Division 6.1 (Poisons) must be checked
+for stray poison before being used again.                       Fire, breakage, spillage or suspected
+                                                                contamination occur involving shipment of
+If a Division 6.2 (Infectious Substances) package is            infectious substance(s) (bacteria or toxins).
+damaged in handling or transportation, you should
+immediately contact your supervisor. Packages that              The release of a marine pollutant in a quantity
+appear to be damaged or show signs of leakage                   greater than 119 gallons for a liquid or 882 pounds
+should not be accepted.                                         for a solid; or a situation exists of such a nature
+                                                                (e.g., continuing danger to life exists at the scene
+Class 7 (Radioactive Materials). If radioactive                 of an incident) that, in the judgment of the carrier,
+material is involved in a leak or broken package, tell          should be reported.
+your dispatcher or supervisor as soon as possible.
+If there is a spill, or if an internal container might be       National Response Center
+damaged, do not touch or inhale the material. Do                (800) 424-8802
+not use the vehicle until it is cleaned and checked
+with a survey meter.                                            Persons telephoning the National Response Center
+                                                                should be ready to give:
+Class 8 (Corrosive Materials). If corrosives spill or
+leak during transportation, be careful to avoid                 Their name.
+further damage or injury when handling the
+containers. Parts of the vehicle exposed to a                   Name and address of the carrier they work for.
+corrosive liquid must be thoroughly washed with
+water. After unloading, wash out the interior as soon           Phone number where they can be reached.
+as possible before reloading.
+                                                                Date, time, and location of incident.
+If continuing to transport a leaking tank would be
+unsafe, get off the road. If safe to do so, contain any         The extent of injuries, if any.
+liquid leaking from the vehicle. Keep bystanders
+away from the liquid and its fumes. Do everything               Classification, name, and quantity of hazardous
+possible to prevent injury to yourself and to others.           materials involved, if such information is available.
+
+                                                                Type of incident and nature of hazardous materials
+                                                                involvement and whether a continuing danger to
+                                                                life exists at the scene.
+
+                                                                If a reportable quantity of hazardous substance was
+                                                                involved, the caller should give the name of the
+                                                                shipper and the quantity of the hazardous
+                                                                substance discharged.
+
+                                                                Be prepared to give your employer the required
+                                                                information as well. Carriers must make detailed
+                                                                written reports within 30 days of an incident.
+
+Section 9 - Hazardous Material                                  Page 9-17
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+CHEMTREC                                                               Hazard Class Definitions
+
+(800) 424-9300                                                                    Table B
+
+The Chemical Transportation Emergency Center                    Class  Class Name            Example
+(CHEMTREC) in Washington also has a 24-hour                     1
+toll-free line. CHEMTREC was created to provide                 2                            Ammunition,
+emergency personnel with technical information                  3
+about the physical properties of hazardous                      4      Explosives            Dynamite,
+materials. The National Response Center and                     5
+CHEMTREC are in close communication. If you call                6                            Fireworks
+either one, they will tell the other about the problem          7
+when appropriate.                                               8      Gases                 Propane,
+                                                                                             Oxygen, Helium
+Do not leave radioactive yellow - II or yellow - III            9
+labeled packages near people, animals, or film                         Flammable             Gasoline,
+longer than shown in Figure 9.10                                None                         Acetone
+
+                 Radioactive Separation                         None   Flammable             Matches, Fuses
+                            Table A                                    Solids
+
+               MINIMUM DISTANCE IN FEET TO                                                   Ammonium
+               NEAREST UNDEVELOPED FILM
+                                                                       Oxidizers             Nitrate, Hydrogen
+
+                                                                                             Peroxide
+
+                                                                       Poisons               Pesticides,
+                                                                                             Arsenic
+
+TRANSPORT                              TO PEOPLE OR CARGO              Radioactive           Uranium,
+                                          COMPARTMENT                                        Plutonium
+                                              PARTITIONS
+                                                                                             Hydrochloric
+
+                                                                       Corrosives            Acid, Battery
+
+                                                                                             Fluid
+
+TOTAL      0-2 2-4 4-8 8-12 Over 12                                    Miscellaneous         Formaldehyde,
+   INDEX   Hrs. Hrs. Hrs. Hrs. Hrs.                                    Hazardous             Asbestos
+                                                                       Materials
+
+                                                                       ORM-D (Other
+
+None 0        0  0              0  0   0                               Regulated             Hair Spray or
+
+                                                                       Material-             Charcoal
+
+0.1 to     1  2  3              4  5   1                               Domestic)
+1.0
+                                                                       Combustible           Fuel Oils, Lighter
+1.1 to
+5.0        3  4  6              8  11  2                               Liquids               Fluid
+
+5.1 to     4  6  9              11 15  3                                        Figure 9.11
+10.0
+
+10.1 to    5  8  12 16 22              4
+20.0
+
+20.1 to    7  10 15 20 29              5                                   Subsections 9.6 and 9.7
+30.0                                                                         Test Your Knowledge
+
+30.1 to    8  11 17 22 33              6                        1. If your placarded trailer has dual tires, how
+40.0                                                                    often should you check the tires?
+
+40.1 to    9  12 19 24 36                                       2. What is a safe haven?
+50.0
+                                                                3. How close to the traveled part of the roadway
+                 Figure 9.10                                            can you park with Division 1.2 or 1.3
+                                                                        materials?
+Classes of Hazardous Materials
+                                                                4. How close can you park to a bridge, tunnel, or
+Hazardous materials are categorized into nine                           building with the same load?
+major hazard classes and additional categories for
+consumer commodities and combustible liquids.                   5. What type of fire extinguisher must placarded
+The classes of hazardous materials are listed in                        vehicles carry?
+Figure 9.11.
+                                                                6. You're hauling 100 pounds of Division 4.3
+                                                                        (dangerous when wet) materials. Do you
+                                                                        need to stop before a railroad-highway
+                                                                        crossing?
+
+                                                                7. At a rest area you discover your hazardous
+                                                                        materials shipments slowly leaking from the
+                                                                        vehicle. There is no phone around. What
+                                                                        should you do?
+
+Section 9 - Hazardous Material                                                                          Page 9-18
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+8. What is the Emergency Response Guide                         Division ­ A subdivision of a hazard class.
+        (ERG)?
+                                                                EPA ­ U.S. Environmental Protection Agency.
+These questions may be on your test. If you can't
+answer them all, re-read subsections 9.6 and 9.7.               FMCSR ­ The Federal Motor Carrier Safety
+                                                                Regulations.
+
+9.8 ­ Hazardous Materials Glossary                              Freight container ­ a reusable container having a
+                                                                volume of 64 cubic feet or more, designed and
+This glossary presents definitions of certain terms             constructed to permit being lifted with its contents
+used in this section. A complete glossary of terms              intact and intended primarily for containment of
+can be found in the federal Hazardous Materials                 packages (in unit form) during transportation.
+Rules (49 CFR 171.8). You should have an up-to-
+date copy of these rules for your reference.                    Fuel tank ­ A tank, other than a cargo tank, used to
+                                                                transport flammable or combustible liquid or
+(Note: You will not be tested on this glossary.)                compressed gas for the purpose of supplying fuel
+                                                                for propulsion of the transport vehicle to which it is
+Sec. 171.8 Definitions and abbreviations.                       attached, or for the operation of other equipment on
+                                                                the transport vehicle.
+
+Bulk packaging ­ Packaging, other than a vessel,                Gross weight or gross mass ­ The weight of the
+or a barge, including a transport vehicle or freight            packaging plus the weight of its contents.
+container, in which hazardous materials are loaded
+with no intermediate form of containment and which              Hazard class ­ The category of hazard assigned to
+has:                                                            a hazardous material under the definitional criteria
+                                                                of Part 173 and the provisions of the Sec. 172.101
+A maximum capacity greater than 450 L (119                      Table. A material may meet the defining criteria for
+gallons) as a receptacle for a liquid;                          more than one hazard class but is assigned to only
+                                                                one hazard class.
+A maximum net mass greater than 400 kg (882
+pounds) or a maximum capacity greater than 450 L                Hazardous materials ­ A substance or material
+(119 gallons) as a receptacle for a solid; or                   which has been determined by the Secretary of
+                                                                Transportation to be capable of posing an
+A water capacity greater than 454 kg (1000 pounds)              unreasonable risk to health, safety, and property
+as a receptacle for a gas as defined in Sec. 173.115.           when transported in commerce, and which has
+                                                                been so designated. The term includes hazardous
+Cargo tank - A bulk packaging which:                            substances, hazardous wastes, marine pollutants,
+                                                                elevated temperature materials and materials
+Is a tank intended primarily for the carriage of liquids        designated as hazardous in the hazardous
+or gases and includes appurtenances,                            materials table of §172.101, and materials that meet
+reinforcements, fittings, and closures (for "tank",             the defining criteria for hazard classes and divisions
+see 49 CFR 178.345-1(c), 178.337-1, or 178.338-1,               in §173, subchapter c of this chapter.
+as applicable);
+                                                                Hazardous substance - A material, including its
+Is permanently attached to or forms a part of a motor           mixtures and solutions, that:
+vehicle, or is not permanently attached to a motor
+vehicle but which, by reason of its size, construction,         Is listed in Appendix A to Sec. 172.101;
+or attachment to a motor vehicle is loaded or
+unloaded without being removed from the motor                   Is in a quantity, in one package, which equals or
+vehicle; and                                                    exceeds the reportable quantity (RQ) listed in
+                                                                Appendix A to Sec. 172.101; and
+Is not fabricated under a specification for cylinders,
+portable tanks, tank cars, or multi-unit tank car               When in a mixture or solution -
+tanks.
+                                                                For radionuclides, conforms to paragraph 7 of
+Carrier ­ A person who transports passengers or                 Appendix A to Sec. 172.101.
+property in commerce by rail car, aircraft, motor
+vehicle or vessel.                                              For other than radionuclides, is in a concentration
+                                                                by weight which equals or exceeds the
+Consignee ­ The business or person to whom a                    concentration corresponding to the RQ of the
+shipment is delivered.                                          material, as shown in Figure 9.12.
+
+Section 9 - Hazardous Material                                  Page 9-19
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+Hazardous Substance Concentrations                              the maximum net mass limitations, provided in
+                                                                subpart L of Part 178.
+RQ Pounds Concentration by Weight
+
+(Kilograms Percent              PPM                             N.O.S. - Not otherwise specified.
+
+5,000      10                   100,000                         Outage or ullage ­ The amount by which a
+                                                                packaging falls short of being liquid full, usually
+(2,270)                         20,000                          expressed in percent by volume.
+                                2,000
+1,000 (454) 2                   200
+                                20
+100 (45.4) .2
+
+10 (4.54)  .02                                                  Portable tank ­ Bulk packaging (except a cylinder
+                                                                having a water capacity of 1,000 pounds or less)
+1 (0.454)  .002                                                 designed primarily to be loaded onto, or on, or
+                                                                temporarily attached to a transport vehicle or ship
+           Figure 9.12                                          and equipped with skids, mountings, or accessories
+                                                                to facilitate handling of the tank by mechanical
+This definition does not apply to petroleum products            means. It does not include a cargo tank, tank car,
+that are lubricants or fuels (see 40 CFR 300.6).                multi-unit tank car tank, or trailer carrying 3AX,
+                                                                3AAX, or 3T cylinders.
+Hazardous waste ­ Any material that is subject to
+the Hazardous Waste Manifest Requirements of the                Proper shipping name ­ The name of the
+U.S. Environmental Protection Agency specified in               hazardous materials shown in Roman print (not
+40 CFR Part 262.                                                italics) in Sec. 172.101.
+
+Intermediate bulk container (IBC) ­ A rigid or                  P.s.i. or psi ­ Pounds per square inch.
+flexible portable packaging, other than a cylinder or
+portable tank, which is designed for mechanical                 P.s.i.a. or psia ­ Pounds per square inch absolute.
+handling. Standards for IBCs manufactured in the
+United States are set forth in subparts N and O Part
+178.
+
+Limited quantity ­ The maximum amount of a                      Reportable quantity (RQ) - The quantity specified
+hazardous material for which there may be specific              in Column 2 of the Appendix to Sec. 172.101 for any
+labeling or packaging exception.                                material identified in Column 1 of the Appendix.
+
+Marking ­ The descriptive name, identification                  PHMSA ­ The Pipeline and Hazardous Materials
+number, instructions, cautions, weight,                         Safety Administration, U.S. Department of
+specification, or UN marks or combinations thereof,             Transportation, Washington, DC 20590.
+required by this subchapter on outer packaging of
+hazardous materials.                                            Shipper's certification ­ A statement on a shipping
+                                                                paper, signed by the shipper, saying he/she
+Mixture ­ A material composed of more than one                  prepared the shipment properly according to law.
+chemical compound or element.                                   For example:
+
+Name of contents ­ The proper shipping name as                  "This is to certify that the above named materials
+specified in Sec. 172.101.                                      are properly classified, described, packaged,
+                                                                marked and labeled, and are in proper condition for
+Non-bulk packaging - A packaging, which has:                    transportation according to the applicable
+                                                                regulations or the Department of Transportation.";
+A maximum capacity of 450 L (119 gallons) as a                  or
+receptacle for a liquid;
+                                                                I hereby declare that the contents of this
+A maximum net mass less than 400 kg (882
+pounds) and a maximum capacity of 450 L (119                    consignment are fully and accurately described
+gallons) or less as a receptacle for a solid;
+                                                                above by the proper shipping name and are
+A water capacity greater than 454 kg (1,000
+pounds) or less as a receptacle for a gas as defined            classified,  packaged,             marked  and
+in Sec. 173.115;
+                                                                labeled/placarded, and are in all respects in proper
+Regardless of the definition of bulk packaging, a
+mazimum net mass of 400 kg (882 pounds) or less                 condition for transport according to applicable
+for a bag or box conforming to the applicable
+requirements for specification packagings, including            international and national government regulations."
+
+                                                                Shipping paper ­ A shipping order, bill of lading,
+                                                                manifest, or other shipping document serving a
+                                                                similar purpose prepared in accordance with
+                                                                subpart C of Part 172.
+
+Section 9 - Hazardous Material                                                                             Page 9-20
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+Technical name ­ A recognized chemical name or
+microbiological name currently used in scientific and
+technical handbooks, journals, and texts.
+
+Transport vehicle ­ A cargo-carrying vehicle such
+as an automobile, van, tractor, truck, semi-trailer,
+tank car, or rail car used for the transportation of
+cargo by any mode. Each cargo-carrying body
+(trailer, rail car, etc.) is a separate transport vehicle.
+
+UN standard packaging ­ A specification
+packaging conforming to the standards in the UN
+recommendations.
+
+UN ­ United Nations.
+
+Section 9 - Hazardous Material                                  Page 9-21
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+               THIS PAGE INTENTIONALLY LEFT BLANK
+
+Section 9 - Hazardous Material                                  Page 9-22
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+           Section 10
+      SCHOOL BUSES
+

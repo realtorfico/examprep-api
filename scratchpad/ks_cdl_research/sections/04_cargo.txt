@@ -1,0 +1,200 @@
+           Section 3                                            Re-check. Re-check the cargo and securing
+TRANSPORTING CARGO                                              devices as often as necessary during a trip to keep
+                                                                the load secure. You need to inspect again:
+             SAFELY
+                                                                 After you have driven for 3 hours or 150 miles.
+This Section Covers
+                                                                 After every break you take during driving.
+ Inspecting Cargo
+ Cargo Weight and Balance                                       Federal, state, and local regulations for commercial
+ Securing Cargo                                                 vehicle weight, securing cargo, covering loads, and
+ Cargo Needing Special Attention                                where you can drive large vehicles vary from place
+                                                                to place. Know the rules where you will be driving.
+This section tells you about hauling cargo safely.
+You must understand basic cargo safety rules to                 3.2 ­ Weight and Balance
+get a CDL.
+                                                                You are responsible for not being overloaded. The
+If you load cargo wrong or do not secure it, it can             following are some definitions of weight you should
+be a danger to others and yourself. Loose cargo                 know.
+that falls off a vehicle can cause traffic problems
+and others could be hurt or killed. Loose cargo                 3.2.1 ­ Definitions You Should Know
+could hurt or kill you during a quick stop or crash.
+Your vehicle could be damaged by an overload.                   Gross Vehicle Weight Rating (GVWR). The value
+Steering could be affected by how a vehicle is                  specified by the manufacturer as the loaded weight
+loaded, making it more difficult to control the                 of a single vehicle.
+vehicle.
+                                                                Gross Combination Weight Rating (GCWR). The
+Whether or not you load and secure the cargo                    value specified by the manufacturer of the power
+yourself, you are responsible for:                              unit, if the value is displayed on the Federal Motor
+                                                                Vehicle Safety Standard (FMVSS) certification
+ Inspecting your cargo.                                         label; or the sum of the gross vehicle weight
+                                                                ratings (GVWRs) or the gross vehicle weights
+ Recognizing overloads and poorly balanced                      (GVWs) of the power unit and the towed unit(s), or
+     weight.                                                    any combination thereof, that produces the highest
+                                                                value.
+ Knowing your cargo is properly secured and
+     does not obscure your view ahead or to the                 (The underlined and italicized text above is for
+     sides.                                                     use by roadside enforcement only to determine
+                                                                whether the driver/vehicle is subject to CDL
+ Knowing your cargo does not restrict your                      regulations. It is not used to determine
+     access to emergency equipment.                             whether a vehicle is representative for the
+                                                                purposes of Skills testing).
+
+If you intend to carry hazardous material that                  Axle Weight. The weight transmitted to the ground
+requires placards on your vehicle, you will also                by one axle or one set of axles.
+need to have a hazardous materials endorsement.
+Section 9 of this manual has the information you                Tire Load. The maximum safe weight a tire can
+need to pass the hazardous materials test.                      carry at a specified pressure. This rating is stated
+                                                                on the side of each tire.
+
+3.1 ­ Inspecting Cargo                                          Suspension Systems. Suspension systems have
+                                                                a manufacturer's weight capacity rating.
+As part of your Vehicle inspection, make sure the
+truck is not overloaded and the cargo is balanced               Coupling Device Capacity. Coupling devices are
+and secured properly.                                           rated for the maximum weight they can pull and/or
+                                                                carry.
+After Starting. Inspect the cargo and its securing
+devices again within the first 50 miles after                   3.2.2 ­ Legal Weight Limits
+beginning a trip. Make any adjustments needed.
+                                                                You must keep weights within legal limits. States
+                                                                have maximums for GVWRs, GCWRs, and axle
+
+Section 3 - Transporting Cargo Safely                           Page 3-1
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+weights. Often, maximum axle weights are set by a
+bridge formula. A bridge formula permits less
+maximum axle weight for axles that are closer
+together. This is to prevent overloading bridges
+and roadways.
+
+Overloading can have bad effects on steering,
+braking, and speed control. Overloaded trucks
+have to go very slowly on upgrades. Worse, they
+may gain too much speed on downgrades.
+Stopping distance increases. Brakes can fail when
+forced to work too hard.
+
+During bad weather or in mountains, it may not be
+safe to operate at legal maximum weights. Take
+this into account before driving.
+
+3.2.3 ­ Don't Be Top-heavy                                                                 Figure 3.1
+
+The height of the vehicle's center of gravity is very           3.3.2 ­ Cargo Tie-down
+important for safe handling. A high center of gravity
+(cargo piled up high or heavy cargo on top) means               On flatbed trailers or trailers without sides, cargo
+you are more likely to tip over. It is most dangerous           must be secured to keep it from shifting or falling
+in curves, or if you have to swerve to avoid a                  off. In closed vans, tie-downs can also be
+hazard. It is very important to distribute the cargo            important to prevent cargo shifting that may affect
+so it is as low as possible. Put the heaviest parts of          the handling of the vehicle. Tie-downs must be of
+the cargo under the lightest parts.                             the proper type and proper strength. Federal
+                                                                regulations require the aggregate working load limit
+3.2.4 ­ Balance the Weight                                      of any securement system used to secure an
+                                                                article or group of articles against movement must
+Poor weight balance can make vehicle handling                   be at least one-half times the weight of the article
+unsafe. Too much weight on the steering axle can                or group of articles. Proper tie-down equipment
+cause hard steering. It can damage the steering                 must be used, including ropes, straps, chains, and
+axle and tires. Under-loaded front axles (caused by             tensioning devices (winches, ratchets, clinching
+shifting weight too far to the rear) can make the               components). Tie-downs must be attached to the
+steering axle weight too light to steer safely. Too             vehicle correctly (hooks, bolts, rails, rings). See
+little weight on the driving axles can cause poor               figure 3.2.
+traction. The drive wheels may spin easily. During
+bad weather, the truck may not be able to keep
+going. Weight that is loaded so there is a high
+center of gravity causes greater chance of rollover.
+On flat bed vehicles, there is also a greater chance
+that the load will shift to the side or fall off. See
+Figure 3.1.
+
+3.3 ­ Securing Cargo                                            Figure 3.2
+
+3.3.1 ­ Blocking and Bracing
+
+Blocking is used in the front, back, and/or sides of
+a piece of cargo to keep it from sliding. Blocking is
+shaped to fit snugly against cargo. It is secured to
+the cargo deck to prevent cargo movement.
+Bracing is also used to prevent movement of
+cargo. Bracing goes from the upper part of the
+cargo to the floor and/or walls of the cargo
+compartment.
+
+Section 3 - Transporting Cargo Safely                                       Page 3-2
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+Cargo should have at least one tie-down for each                3.4.2 ­ Hanging Meat
+ten feet of cargo. Make sure you have enough tie-
+downs to meet this need. No matter how small the                Hanging meat (suspended beef, pork, lamb) in a
+cargo, it should have at least two tie-downs.                   refrigerated truck can be a very unstable load with
+                                                                a high center of gravity. Particular caution is
+There are special requirements for securing                     needed on sharp curves such as off ramps and on
+various heavy pieces of metal. Find out what they               ramps. Go slowly.
+are if you are to carry such loads.
+                                                                3.4.3 ­ Livestock
+3.3.3 ­ Header Boards
+                                                                Livestock can move around in a trailer, causing
+Front-end header boards ("headache racks")                      unsafe handling. With less than a full load, use
+protect you from your cargo in case of a crash or               false bulkheads to keep livestock bunched
+emergency stop. Make sure the front-end structure               together. Even when bunched, special care is
+is in good condition. The front-end structure should            necessary because livestock can lean on curves.
+block the forward movement of any cargo you                     This shifts the center of gravity and makes rollover
+carry.                                                          more likely.
+
+3.3.4 ­ Covering Cargo                                          3.4.4 ­ Oversized Loads
+
+There are two basic reasons for covering cargo:                 Over-length, over-width, and/or overweight loads
+                                                                require special transit permits. Driving is usually
+ To protect people from spilled cargo.                          limited to certain times. Special equipment may be
+                                                                necessary such as "wide load" signs, flashing
+ To protect the cargo from weather.                             lights, flags, etc. Such loads may require a police
+                                                                escort or pilot vehicles bearing warning signs
+Spill protection is a safety requirement in many                and/or flashing lights. These special loads require
+states. Be familiar with the laws in the states you             special driving care.
+drive in.
+
+You should look at your cargo covers in the mirrors             Section 3
+from time to time while driving. A flapping cover               Test Your Knowledge
+can tear loose, uncovering the cargo, and possibly
+block your view or someone else's.                              1. What four things related to cargo are drivers
+                                                                     responsible for?
+3.3.5 ­ Sealed and Containerized Loads
+                                                                2. How often must you stop while on the road to
+Containerized loads generally are used when                          check your cargo?
+freight is carried part way by rail or ship. Delivery
+by truck occurs at the beginning and/or end of the              3. How is Gross Combination Weight Rating
+journey. Some containers have their own tiedown                      different from Gross Combination Weight?
+devices or locks that attach directly to a special
+frame. Others have to be loaded onto flatbed                    4. Name two situations where legal maximum
+trailers. They must be properly secured just like                    weights may not be safe.
+any other cargo.
+                                                                5. What can happen if you don't have enough
+You cannot inspect sealed loads, but you should                      weight on the front axle?
+check that you don't exceed gross weight and axle
+weight limits.                                                  6. What is the minimum number of tie-downs for
+                                                                     any flatbed load?
+3.4 ­ Cargo Needing Special Attention
+                                                                7. What is the minimum number of tie-downs for
+3.4.1 ­ Dry Bulk                                                     a 20-foot load?
+
+Dry bulk tanks require special care because they                8. Name the two basic reasons for covering
+have a high center of gravity, and the load can                      cargo on an open bed.
+shift. Be extremely cautious (slow and careful)
+going around curves and making sharp turns.                     9. What must you check before transporting a
+                                                                     sealed load?
+
+                                                                These questions may be on your test. If you can't
+                                                                answer them all, re-read Section 3.
+
+Section 3 - Transporting Cargo Safely                           Page 3-3
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+                     THIS PAGE INTENTIONALLY LEFT BLANK.
+
+Section 3 - Transporting Cargo Safely                           Page 3-2
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+

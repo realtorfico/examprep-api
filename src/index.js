@@ -2102,6 +2102,18 @@ const EXAM_CONFIGS = {
   // sources (epermittest.com, dmv-written-test.com); no official time limit found, 60 minutes is
   // a generous stand-in per this project's convention.
   az_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  ar_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  co_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  ct_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  de_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  hi_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  id_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  il_cdl: { questionCount: 30, durationSec: 3600, passPercent: 80, minCorrect: 24 },
+  in_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  ia_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  ks_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  ky_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  la_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // WA licensing is two-tier: a 50Q/80% Permit test, then a 25Q/80% Endorsement test after permit
   // holding. This track models the Endorsement (full-license) tier -- 25Q/80% -- matching the
   // question count/format used by every other state's motorcycle track built this project. Both

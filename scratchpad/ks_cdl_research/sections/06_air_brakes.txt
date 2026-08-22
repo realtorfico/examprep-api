@@ -1,0 +1,597 @@
+           Section 5                                            5.1.2 ­ Air Compressor Governor
+         AIR BRAKES
+                                                                The governor controls when the air compressor will
+This Section Covers                                             pump air into the air storage tanks. When air tank
+                                                                pressure rises to the "cut-out" level (around 125
+ Air Brake System Parts                                         pounds per-square-inch or "psi"), the governor
+ Dual Air Brake Systems                                         stops the compressor from pumping air. When the
+ Inspecting Air Brakes                                          tank pressure falls to the "cut-in" pressure (around
+ Using Air Brakes                                               100 psi), the governor allows the compressor to
+                                                                start pumping again.
+This section tells you about air brakes. If you want
+to drive a truck or bus with air brakes, or pull a              5.1.3 ­ Air Storage Tanks
+trailer with air brakes, you need to read this
+section. If you want to pull a trailer with air brakes,         Air storage tanks are used to hold compressed air.
+you also need to read Section 6, Combination                    The number and size of air tanks varies among
+Vehicles.                                                       vehicles. The tanks will hold enough air to allow
+                                                                the brakes to be used several times, even if the
+Air brakes use compressed air to make the brakes                compressor stops working.
+work. Air brakes are a good and safe way of
+stopping large and heavy vehicles, but the brakes               5.1.4 ­ Air Tank Drains
+must be well maintained and used properly.
+                                                                Compressed air usually has some water and some
+Air brakes are really three different braking                   compressor oil in it, which is bad for the air brake
+systems: service brake, parking brake, and                      system. For example, the water can freeze in cold
+emergency brake.                                                weather and cause brake failure. The water and oil
+                                                                tend to collect in the bottom of the air tank. Be sure
+The service brake system applies and releases the               that you drain the air tanks completely. Each air
+brakes when you use the brake pedal during                      tank is equipped with a drain valve in the bottom.
+normal driving.                                                 There are two types:
+
+The parking brake system applies and releases the               Manually operated by turning a quarter turn or by
+parking brakes when you use the parking brake                   pulling a cable. You must drain the tanks yourself
+control.                                                        at the end of each day of driving. See Figure 5.1.
+
+The emergency brake system uses parts of the                    Automatic--the water and oil are automatically
+service and parking brake systems to stop the                   expelled. These tanks may be equipped for
+vehicle in a brake system failure.                              manual draining as well.
+
+                                                                Automatic air tanks are available with electric
+                                                                heating devices. These help prevent freezing of
+                                                                the automatic drain in cold weather.
+
+The parts of these systems are discussed in
+greater detail below.
+
+5.1 ­ The Parts of an Air Brake System
+
+There are many parts to an air brake system. You
+should know about the parts discussed here.
+
+5.1.1 ­ Air Compressor                                          Figure 5.1
+
+The air compressor pumps air into the air storage
+tanks (reservoirs). The air compressor is
+connected to the engine through gears or a v-belt.
+The compressor may be air cooled or may be
+cooled by the engine cooling system. It may have
+its own oil supply or be lubricated by engine oil. If
+the compressor has its own oil supply, check the
+oil level before driving.
+
+Section 5 ­ Air Brakes                                                      Page 5-1
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+5.1.5 ­ Alcohol Evaporator                                      another and presses them against the inside of the
+                                                                brake drum. When you release the brake pedal,
+Some air brake systems have an alcohol                          the s-cam rotates back and a spring pulls the brake
+evaporator to put alcohol into the air system. This             shoes away from the drum, letting the wheels roll
+helps to reduce the risk of ice in air brake valves             freely again. See Figure 5.2.
+and other parts during cold weather. Ice inside the
+system can make the brakes stop working.
+
+Check the alcohol container and fill up as
+necessary, every day during cold weather. Daily air
+tank drainage is still needed to get rid of water and
+oil. (Unless the system has automatic drain
+valves.)
+
+5.1.6 ­ Safety Valve
+
+A safety relief valve is installed in the first tank the
+air compressor pumps air to. The safety valve
+protects the tank and the rest of the system from
+too much pressure. The valve is usually set to
+open at 150 psi. If the safety valve releases air,
+something is wrong. Have the fault fixed by a
+mechanic.
+
+5.1.7 ­ The Brake Pedal                                                                    Figure 5.2
+
+You put on the brakes by pushing down the brake                 Wedge Brakes. In this type of brake, the brake
+pedal. (It is also called the foot valve or treadle             chamber push rod pushes a wedge directly
+valve.) Pushing the pedal down harder applies                   between the ends of two brake shoes. This shoves
+more air pressure. Letting up on the brake pedal                them apart and against the inside of the brake
+reduces the air pressure and releases the brakes.               drum. Wedge brakes may have a single brake
+Releasing the brakes lets some compressed air go                chamber, or two brake chambers, pushing wedges
+out of the system, so the air pressure in the tanks             in at both ends of the brake shoes. Wedge type
+is reduced. It must be made up by the air                       brakes may be self-adjusting or may require
+compressor. Pressing and releasing the pedal                    manual adjustment.
+unnecessarily can let air out faster than the
+compressor can replace it. If the pressure gets too             Disc Brakes. In air-operated disc brakes, air
+low, the brakes won't work.                                     pressure acts on a brake chamber and slack
+                                                                adjuster, like s-cam brakes. But instead of the s-
+5.1.8 ­ Foundation Brakes                                       cam, a "power screw" is used. The pressure of the
+                                                                brake chamber on the slack adjuster turns the
+Foundation brakes are used at each wheel. The                   power screw. The power screw clamps the disc or
+most common type is the s-cam drum brake. The                   rotor between the brake lining pads of a caliper,
+parts of the brake are discussed below.                         similar to a large c-clamp.
+
+Brake Drums, Shoes, and Linings. Brake drums                    Wedge brakes and disc brakes are less common
+are located on each end of the vehicle's axles. The             than s-cam brakes.
+wheels are bolted to the drums. The braking
+mechanism is inside the drum. To stop, the brake                5.1.9 ­ Supply Pressure Gauges
+shoes and linings are pushed against the inside of
+the drum. This causes friction, which slows the                 All vehicles with air brakes have a pressure gauge
+vehicle (and creates heat). The heat a drum can                 connected to the air tank. If the vehicle has a dual
+take without damage depends on how hard and                     air brake system, there will be a gauge for each
+how long the brakes are used. Too much heat can                 half of the system. (Or a single gauge with two
+make the brakes stop working.                                   needles.) Dual systems will be discussed later.
+                                                                These gauges tell you how much pressure is in the
+S-cam Brakes. When you push the brake pedal,                    air tanks.
+air is let into each brake chamber. Air pressure
+pushes the rod out, moving the slack adjuster, thus                                                                                    Page 5-2
+twisting the brake camshaft. This turns the s-cam
+(so called because it is shaped like the letter "S").
+The s-cam forces the brake shoes away from one
+
+Section 5 ­ Air Brakes
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+5.1.10 ­ Application Pressure Gauge                             psi or more application pressure). These valves
+                                                                cannot be controlled by the driver.
+This gauge shows how much air pressure you are
+applying to the brakes. (This gauge is not on all               5.1.14 ­ Spring Brakes
+vehicles.) Increasing application pressure to hold
+the same speed means the brakes are fading. You                 All trucks, truck tractors, and buses must be
+should slow down and use a lower gear. The need                 equipped with emergency brakes and parking
+for increased pressure can also be caused by                    brakes. They must be held on by mechanical force
+brakes out of adjustment, air leaks, or mechanical              (because air pressure can eventually leak away).
+problems.                                                       Spring brakes are usually used to meet these
+                                                                needs. When driving, powerful springs are held
+5.1.11 ­ Low Air Pressure Warning                               back by air pressure. If the air pressure is
+                                                                removed, the springs put on the brakes. A parking
+A low air pressure warning signal is required on                brake control in the cab allows the driver to let the
+vehicles with air brakes. A warning signal you can              air out of the spring brakes. This lets the springs
+see must come on before the air pressure in the                 put the brakes on. A leak in the air brake system,
+tanks falls below 55 psi. (Or one half the                      which causes all the air to be lost, will also cause
+compressor governor cutout pressure on older                    the springs to put on the brakes.
+vehicles.) The warning is usually a red light. A
+buzzer may also come on.                                        Tractor and straight truck spring brakes will come
+                                                                fully on when air pressure drops to a range of 20 to
+Another type of warning is the "wig wag." This                  45 psi (typically 20 to 30 psi). Do not wait for the
+device drops a mechanical arm into your view                    brakes to come on automatically. When the low air
+when the pressure in the system drops below 55                  pressure warning light and buzzer first come on,
+psi. An automatic wig wag will rise out of your view            bring the vehicle to a safe stop right away, while
+when the pressure in the system goes above 55                   you can still control the brakes.
+psi. The manual reset type must be placed in the
+"out of view" position manually. It will not stay in            The braking power of spring brakes depends on
+place until the pressure in the system is above 55              the brakes being in adjustment. If the brakes are
+psi.                                                            not adjusted properly, neither the regular brakes
+                                                                nor the emergency/parking brakes will work right.
+On large buses it is common for the low pressure
+warning devices to signal at 80-85 psi.                         5.1.15 ­ Parking Brake Controls
+
+5.1.12 ­ Stop Light Switch                                      In newer vehicles with air brakes, you put on the
+                                                                parking brakes using a diamond-shaped, yellow,
+Drivers behind you must be warned when you put                  push-pull control knob. You pull the knob out to put
+your brakes on. The air brake system does this                  the parking brakes (spring brakes) on, and push it
+with an electric switch that works by air pressure.             in to release them. On older vehicles, the parking
+The switch turns on the brake lights when you put               brakes may be controlled by a lever. Use the
+on the air brakes.                                              parking brakes whenever you park.
+
+5.1.13 ­ Front Brake Limiting Valve                             Caution. Never push the brake pedal down when
+                                                                the spring brakes are on. If you do, the brakes
+Some older vehicles (made before 1975) have a                   could be damaged by the combined forces of the
+front brake limiting valve and a control in the cab.            springs and the air pressure. Many brake systems
+The control is usually marked "normal" and                      are designed so this will not happen. But not all
+"slippery." When you put the control in the                     systems are set up that way, and those that are
+"slippery" position, the limiting valve cuts the                may not always work. It is much better to develop
+"normal" air pressure to the front brakes by half.              the habit of not pushing the brake pedal down
+Limiting valves were used to reduce the chance of               when the spring brakes are on.
+the front wheels skidding on slippery surfaces.
+However, they actually reduce the stopping power                Modulating Control Valves. In some vehicles a
+of the vehicle. Front wheel braking is good under               control handle on the dash board may be used to
+all conditions. Tests have shown front wheel skids              apply the spring brakes gradually. This is called a
+from braking are not likely even on ice. Make sure              modulating valve. It is spring-loaded so you have a
+the control is in the "normal" position to have                 feel for the braking action. The more you move the
+normal stopping power.                                          control lever, the harder the spring brakes come
+                                                                on. They work this way so you can control the
+Many vehicles have automatic front wheel limiting               spring brakes if the service brakes fail. When
+valves. They reduce the air to the front brakes                 parking a vehicle with a modulating control valve,
+except when the brakes are put on very hard (55
+                                                                                                                                       Page 5-3
+Section 5 ­ Air Brakes
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+move the lever as far as it will go and hold it in              5.1.16 ­ Antilock Braking Systems (ABS)
+place with the locking device.
+                                                                Truck tractors with air brakes built on or after
+Dual Parking Control Valves. When main air                      March 1, 1997, and other air brakes vehicles,
+pressure is lost, the spring brakes come on. Some               (trucks, buses, trailers, and converter dollies) built
+vehicles, such as buses, have a separate air tank               on or after March 1, 1998, are required to be
+which can be used to release the spring brakes.                 equipped with antilock brakes. Many commercial
+This is so you can move the vehicle in an                       vehicles built before these dates have been
+emergency. One of the valves is a push-pull type                voluntarily equipped with ABS. Check the
+and is used to put on the spring brakes for parking.            certification label for the date of manufacture to
+The other valve is spring loaded in the "out"                   determine if your vehicle is equipped with ABS.
+position. When you push the control in, air from the            ABS is a computerized system that keeps your
+separate air tank releases the spring brakes so you             wheels from locking up during hard brake
+can move. When you release the button, the spring               applications.
+brakes come on again. There is only enough air in
+the separate tank to do this a few times. Therefore,            Vehicles with ABS have yellow malfunction lamps
+plan carefully when moving. Otherwise, you may                  to tell you if something isn't working.
+be stopped in a dangerous location when the
+separate air supply runs out. See Figure 5.3.                   Tractors, trucks, and buses will have yellow ABS
+                                                                malfunction lamps on the instrument panel.
+
+                                                                Trailers will have yellow ABS malfunction lamps on
+                                                                the left side, either on the front or rear corner.
+                                                                Dollies manufactured on or after March 1, 1998 are
+                                                                required to have a lamp on the left side.
+
+                                                                On newer vehicles, the malfunction lamp comes on
+                                                                at start-up for a bulb check, and then goes out
+                                                                quickly. On older systems, the lamp could stay on
+                                                                until you are driving over five mph.
+
+                                                                If the lamp stays on after the bulb check, or goes
+                                                                on once you are under way, you may have lost
+                                                                ABS control at one or more wheels.
+
+                                                                In the case of towed units manufactured before it
+                                                                was required by the Department of Transportation,
+                                                                it may be difficult to tell if the unit is equipped with
+                                                                ABS. Look under the vehicle for the electronic
+                                                                control unit (ECU) and wheel speed sensor wires
+                                                                coming from the back of the brakes.
+
+                                                                ABS is an addition to your normal brakes. It does
+                                                                not decrease or increase your normal braking
+                                                                capability. ABS only activates when wheels are
+                                                                about to lock up.
+
+                                                                ABS does not necessarily shorten your stopping
+                                                                distance, but it does help you keep the vehicle
+                                                                under control during hard braking
+
+                        Figure 5.3
+
+Section 5 ­ Air Brakes                                          Page 5-4
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+                                                   Figure 5.4
+
+.Subsection 5.1                                                 (and possibly one rear axle). Both systems supply
+Test Your Knowledge                                             air to the trailer (if there is one). The first system is
+                                                                called the "primary" system. The other is called the
+1.  Why must air tanks be drained?                              "secondary" system. See Figure 5.4.
+
+2.  What is a supply pressure gauge used for?                   Before driving a vehicle with a dual air system,
+                                                                allow time for the air compressor to build up a
+3.  All vehicles with air brakes must have a                    minimum of 100 psi pressure in both the primary
+                                                                and secondary systems. Watch the primary and
+    low air pressure warning signal. True or                    secondary air pressure gauges (or needles, if the
+                                                                system has two needles in one gauge). Pay
+    False?                                                      attention to the low air pressure warning light and
+                                                                buzzer. The warning light and buzzer should shut
+4.  What are spring brakes?                                     off when air pressure in both systems rises to a
+                                                                value set by the manufacturer. This value must be
+5.  Front wheel brakes are good under all                       greater than 55 psi.
+
+    conditions. True or False?                                  The warning light and buzzer should come on
+                                                                before the air pressure drops below 55 psi in either
+6.  How do you know if your vehicle is                          system. If this happens while driving, you should
+                                                                stop right away and safely park the vehicle. If one
+    equipped with antilock brakes?                              air system is very low on pressure, either the front
+                                                                or the rear brakes will not be operating fully. This
+These questions may be on your test. If you can't               means it will take you longer to stop. Bring the
+answer them all, re-read subsection 5.1.                        vehicle to a safe stop, and have the air brakes
+                                                                system fixed.
+5.2 ­ Dual Air Brake
+                                                                                                                                       Page 5-5
+Most heavy-duty vehicles use dual air brake
+systems for safety. A dual air brake system has
+two separate air brake systems, which use a single
+set of brake controls. Each system has its own air
+tanks, hoses, lines, etc. One system typically
+operates the regular brakes on the rear axle or
+axles. The other system operates the regular
+brakes on the front axle
+
+Section 5 ­ Air Brakes
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+5.3 ­ Inspecting Air Brake Systems                              sense of security regarding the effectiveness of the
+                                                                braking system.
+You should use the basic seven-step inspection
+procedure described in Section 2 to inspect your                The manual adjustment of an automatic adjuster
+vehicle. There are more things to inspect on a                  should only be used as a temporary measure to
+vehicle with air brakes than one without them.                  correct the adjustment in an emergency situation
+These things are discussed below, in the order                  as it is likely the brake will soon be back out of
+they fit into the seven-step method.                            adjustment since this procedure usually does not
+                                                                fix the underlying adjustment problem.
+5.3.1 ­ During Step 2 Engine Compartment                        (Note: Automatic slack adjusters are made by
+Checks                                                          different manufacturers and do not all operate the
+                                                                same. Therefore, the specific manufacturer's
+Check Air Compressor Drive Belt (if compressor is               Service Manual should be consulted prior to
+belt-driven). If the air compressor is belt-driven,             troubleshooting a brake adjustment problem.)
+check the condition and tightness of the belt. It
+should be in good condition.                                    Check Brake Drums (or Discs), Linings, and
+                                                                Hoses. Brake drums (or discs) must not have
+5.3.2 ­ During Step 5 Walk-around Inspection                    cracks longer than one half the width of the friction
+                                                                area. Linings (friction material) must not be loose
+Check Slack Adjusters on S-cam Brakes. Park on                  or soaked with oil or grease. They must not be
+level ground and chock the wheels to prevent the                dangerously thin. Mechanical parts must be in
+vehicle from moving. Release the parking brakes                 place, not broken or missing. Check the air hoses
+so you can move the slack adjusters. Use gloves                 connected to the brake chambers to make sure
+and pull hard on each slack adjuster that you can               they aren't cut or worn due to rubbing.
+reach. If a slack adjuster moves more than about
+one inch where the push rod attaches to it, it                  5.3.3 ­ Step 7 Final Air Brake Check
+probably needs adjustment. Adjust it or have it
+adjusted. Vehicles with too much brake slack can                Do the following checks instead of the hydraulic
+be very hard to stop. Out-of-adjustment brakes are              brake check shown in Section 2, Step 7: Check
+the most common problem found in roadside                       Brake System.
+inspections. Be safe. Check the slack adjusters.
+
+All vehicles built since 1994 have automatic slack              Check Air Compressor Governor Cut-in and
+adjustors. Even though automatic slack adjustors                Cut-out Pressures. Pumping by the air
+adjust themselves during full brake applications,               compressor should start at about 100 psi and stop
+they must be checked.                                           at about 125 psi. (Check manufacturer's
+                                                                specifications.) Run the engine at a fast idle. The
+Automatic adjusters should not have to be                       air governor should cut-out the air compressor at
+manually adjusted except when performing                        about the manufacturer's specified pressure. The
+maintenance on the brakes and during installation               air pressure shown by your gauge(s) will stop
+of the slack adjusters. In a vehicle equipped with              rising. With the engine idling, step on and off the
+automatic adjusters, when the pushrod stroke                    brake to reduce the air tank pressure. The
+exceeds the legal brake adjustment limit, it is an              compressor should cut-in at about the
+indication that a mechanical problem exists in the              manufacturer's specified cut-in pressure. The
+adjuster itself, a problem with the related                     pressure should begin to rise.
+foundation brake components, or that the adjuster
+was improperly installed.                                       If the air governor does not work as described
+                                                                above, it may need to be fixed. A governor that
+The manual adjustment of an automatic adjuster to               does not work properly may not keep enough air
+bring a brake pushrod stroke within legal limits is             pressure for safe driving.
+generally masking a mechanical problem and is
+not fixing it. Further, routine adjustment of most              Test Air Leakage Rate. With a fully-charged air
+automatic adjusters will likely result in premature             system (typically 125 psi), turn off the engine,
+wear of the adjuster itself. It is recommended that             release the parking brake (push in); and time the
+when brakes equipped with automatic adjusters                   air pressure drop. The loss rate should be less
+are found to be out of adjustment, the driver take              than two psi in one minute for single vehicles and
+the vehicle to a repair facility as soon as possible            less than three psi in one minute for combination
+to have the problem corrected. The manual                       vehicles.
+adjustment of automatic slack adjusters is
+dangerous because it may give the driver a false                With the air pressure built up to governor cutoff
+                                                                (120 ­ 140 psi), shut off the engine, chock your
+Section 5 ­ Air Brakes
+Version: July 2017                                                                                                                     Page 5-6
+Commercial Driver's License Manual ­ Modernized Testing System
+
+wheels (if necessary), release the parking brake                Check That Spring Brakes Come On
+(all vehicles), and the tractor protection valve                Automatically. Continue to fan off the air
+(combination vehicle); and fully apply the foot                 pressure by stepping on and off the brake pedal to
+brake. Hold the foot brake for one minute. Check                reduce tank pressure. The tractor protection valve
+the air gauge to see if the air pressure drops more             and parking brake valve should close (pop out) on
+than three pounds in one minute (single vehicle) or             a tractor-trailer combination vehicle and the
+four pounds in one minute (combination vehicle). If             parking brake valve should close (pop out) on
+the air pressure falls more than three psi in one               other combination and single vehicle types when
+minute for single vehicles (more than four psi for              the air pressure falls to the manufacturer's
+combination vehicles), the air loss rate is too much.           specification (20 ­ 45 psi). This will cause the
+Check for air leaks and fix before driving the                  spring brakes to come on.
+vehicle. Otherwise, you could lose your brakes
+while driving.                                                  Check Rate of Air Pressure Buildup. When the
+                                                                engine is at operating rpms, the pressure should
+Test Low Pressure Warning Signal. Shut the                      build from 85 to 100 psi within 45 seconds in dual
+engine off when you have enough air pressure so                 air systems. (If the vehicle has larger than
+that the low pressure warning signal is not on. Turn            minimum air tanks, the buildup time can be longer
+the electrical power on and step on and off the                 and still be safe. Check the manufacturer's
+brake pedal to reduce air tank pressure. The low                specifications.) In single air systems (pre-1975),
+air pressure warning signal must come on before                 typical requirements are pressure build-up from 50
+the pressure drops to less than 55 psi in the air               to 90 psi within 3 minutes with the engine at an idle
+tank (or tank with the lowest air pressure, in dual             speed of 600-900 rpms.
+air systems). See Figure 5.5.
+                                                                If air pressure does not build up fast enough, your
+If the warning signal doesn't work, you could lose              pressure may drop too low during driving, requiring
+air pressure and you would not know it. This could              an emergency stop. Don't drive until you get the
+cause sudden emergency braking in a single-                     problem fixed.
+circuit air system. In dual systems the stopping
+distance will be increased. Only limited braking can            Test Parking Brake. Stop the vehicle, put the
+be done before the spring brakes come on.                       parking brake on, and gently pull against it in a low
+                                                                gear to test that the parking brake will hold.
+
+                                                                Test Service Brakes. Wait for normal air pressure,
+                                                                release the parking brake, move the vehicle
+                                                                forward slowly (about five mph), and apply the
+                                                                brakes firmly using the brake pedal. Note any
+                                                                vehicle "pulling" to one side, unusual feel, or
+                                                                delayed stopping action.
+
+                                                                This test may show you problems, which you
+                                                                otherwise wouldn't know about until you needed
+                                                                the brakes on the road.
+
+Figure 5.5                                                      Subsections 5.2 and 5.3
+                                                                Test Your Knowledge
+
+                                                                1. What is a dual air brake system?
+                                                                2. What are the slack adjusters?
+                                                                3. How can you check slack adjusters?
+                                                                4. How can you test the low pressure warning
+
+                                                                     signal?
+                                                                5. How can you check that the spring brakes
+
+                                                                     come on automatically?
+                                                                6. What are the maximum leakage rates?
+
+                                                                These questions may be on your test. If you can't
+                                                                answer them all, re-read subsections 5.2 and 5.3.
+
+Section 5 ­ Air Brakes                                          Page 5-7
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+5.4 ­ Using Air Brakes                                          Remember, if your ABS malfunctions, you still
+                                                                have regular brakes. Drive normally, but get the
+5.4.1 ­ Normal Stops                                            system serviced soon.
+
+Push the brake pedal down. Control the pressure                 5.4.3 ­ Emergency Stops
+so the vehicle comes to a smooth, safe stop. If you
+have a manual transmission, don't push the clutch               If somebody suddenly pulls out in front of you, your
+in until the engine rpm is down close to idle. When             natural response is to hit the brakes. This is a good
+stopped, select a starting gear.                                response if there's enough distance to stop, and
+                                                                you use the brakes correctly.
+5.4.2 ­ Braking with Antilock Brakes                            You should brake in a way that will keep your
+                                                                vehicle in a straight line and allow you to turn if it
+When you brake hard on slippery surfaces in a                   becomes necessary. You can use the "controlled
+vehicle without ABS, your wheels may lock up.                   braking" method or the "stab braking" method.
+When your steering wheels lock up, you lose
+steering control. When your other wheels lock up,               Controlled Braking. With this method, you apply
+you may skid, jackknife, or even spin the vehicle.              the brakes as hard as you can without locking the
+                                                                wheels. Keep steering wheel movements very
+ABS helps you avoid wheel lock up. The computer                 small while doing this. If you need to make a larger
+senses impending lockup, reduces the braking                    steering adjustment or if the wheels lock, release
+pressure to a safe level, and you maintain control.             the brakes. Re-apply the brakes as soon as you
+You may or may not be able to stop faster with                  can.
+ABS, but you should be able to steer around an
+obstacle while braking, and avoid skids caused by               Stab Braking. Apply your brakes all the way.
+over braking.                                                   Release brakes when wheels lock up. As soon as
+                                                                the wheels start rolling, apply the brakes fully
+Having ABS on only the tractor, only the trailer, or            again. (It can take up to one second for the wheels
+even on only one axle, still gives you more control             to start rolling after you release the brakes. If you
+over the vehicle during braking. Brake normally.                re-apply the brakes before the wheels start rolling,
+                                                                the vehicle won't straighten out.)
+When only the tractor has ABS, you should be able
+to maintain steering control, and there is less                 5.4.4 ­ Stopping Distance
+chance of jackknifing. But, keep your eye on the
+trailer and let up on the brakes (if you can safely do          Stopping distance was described in Section 2
+so) if it begins to swing out.                                  under "Speed and Stopping Distance." With air
+                                                                brakes there is an added delay - "Brake Lag". This
+When only the trailer has ABS, the trailer is less              is the time required for the brakes to work after the
+likely to swing out, but if you lose steering control           brake pedal is pushed. With hydraulic brakes (used
+or start a tractor jackknife, let up on the brakes (if          on cars and light/medium trucks), the brakes work
+you can safely do so) until you gain control.                   instantly. However, with air brakes, it takes a little
+                                                                time (one half second or more) for the air to flow
+When you drive a tractor-trailer combination with               through the lines to the brakes. Thus, the total
+ABS, you should brake as you always have. In                    stopping distance for vehicles with air brake
+other words:                                                    systems is made up of four different factors.
+
+Use only the braking force necessary to stop safely             Perception Distance + Reaction Distance + Brake
+and stay in control.                                            Lag Distance + Braking Distance = Total Stopping
+                                                                Distance.
+Brake the same way, regardless of whether you
+have ABS on the tractor, the trailer, or both.                  The air brake lag distance at 55 mph on dry
+                                                                pavement adds about 32 feet. So at 55 mph for an
+As you slow down, monitor your tractor and trailer              average driver under good traction and brake
+and back off the brakes (if it is safe to do so) to             conditions, the total stopping distance is over 450
+stay in control.                                                feet. See Figure 5.6.
+
+There is only one exception to this procedure, if
+you always drive a straight truck or combination
+with working ABS on all axles, in an emergency
+stop, you can fully apply the brakes.
+
+Without ABS, you still have normal brake functions.
+Drive and brake as you always have.
+
+Section 5 ­ Air Brakes                                          Page 5-8
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+                                                                When your speed has been reduced to
+                                                                approximately five mph below your "safe" speed,
+                                                                release the brakes. (This application should last for
+                                                                about three seconds.)
+
+                                                                When your speed has increased to your "safe"
+                                                                speed, repeat steps 1 and 2.
+
+                                                                For example, if your "safe" speed is 40 mph, you
+                                                                would not apply the brakes until your speed
+                                                                reaches 40 mph. You now apply the brakes hard
+                                                                enough to gradually reduce your speed to 35 mph
+                                                                and then release the brakes. Repeat this as often
+                                                                as necessary until you have reached the end of the
+                                                                downgrade.
+
+                           Figure 5.6                           5.4.7 ­ Low Air Pressure
+
+5.4.5 ­ Brake Fading or Failure                                 If the low air pressure warning comes on, stop and
+                                                                safely park your vehicle as soon as possible. There
+Brakes are designed so brake shoes or pads rub                  might be an air leak in the system. Controlled
+against the brake drum or disks to slow the vehicle.            braking is possible only while enough air remains
+Braking creates heat, but brakes are designed to                in the air tanks. The spring brakes will come on
+take a lot of heat. However, brakes can fade or fail            when the air pressure drops into the range of 20 to
+from excessive heat caused by using them too                    45 psi. A heavily loaded vehicle will take a long
+much and not relying on the engine braking effect.              distance to stop because the spring brakes do not
+                                                                work on all axles. Lightly loaded vehicles or
+Excessive use of the service brakes results in                  vehicles on slippery roads may skid out of control
+overheating and leads to brake fade. Brake fade                 when the spring brakes come on. It is much safer
+results from excessive heat causing chemical                    to stop while there is enough air in the tanks to use
+changes in the brake lining, which reduce friction,             the foot brakes.
+and also causing expansion of the brake drums.
+As the overheated drums expand, the brake shoes                 5.4.8 ­ Parking Brakes
+and linings have to move farther to contact the
+drums, and the force of this contact is reduced.                Any time you park, use the parking brakes, except
+Continued overuse may increase brake fade until                 as noted below. Pull the parking brake control
+the vehicle cannot be slowed down or stopped.                   knob out to apply the parking brakes, push it in to
+Brake fade is also affected by adjustment. To                   release. The control will be a yellow, diamond-
+safely control a vehicle, every brake must do its               shaped knob labeled "parking brakes" on newer
+share of the work. Brakes out of adjustment will                vehicles. On older vehicles, it may be a round blue
+stop doing their share before those that are in                 knob or some other shape (including a lever that
+adjustment. The other brakes can then overheat                  swings from side to side or up and down).
+and fade, and there will not be enough braking
+available to control the vehicle(s). Brakes can get             Don't use the parking brakes if the brakes are very
+out of adjustment quickly, especially when they are             hot (from just having come down a steep grade), or
+hot. Therefore, check brake adjustment often.                   if the brakes are very wet in freezing temperatures.
+                                                                If they are used while they are very hot, they can
+5.4.6 ­ Proper Braking Technique                                be damaged by the heat. If they are used in
+                                                                freezing temperatures when the brakes are very
+Remember. The use of brakes on a long and/or                    wet, they can freeze so the vehicle cannot move.
+steep downgrade is only a supplement to the                     Use wheel chocks on a level surface to hold the
+braking effect of the engine. Once the vehicle is in            vehicle. Let hot brakes cool before using the
+the proper low gear, the following is the proper                parking brakes. If the brakes are wet, use the
+braking technique:                                              brakes lightly while driving in a low gear to heat
+                                                                and dry them.
+Apply the brakes just hard enough to feel a definite
+slowdown.                                                       If your vehicle does not have automatic air tank
+                                                                drains, drain your air tanks at the end of each
+                                                                working day to remove moisture and oil.
+                                                                Otherwise, the brakes could fail.
+
+Section 5 ­ Air Brakes                                          Page 5-9
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
+Never leave your vehicle unattended without
+applying the parking brakes or chocking the
+wheels. Your vehicle might roll away and cause
+injury and damage.
+
+Subsection 5.4
+Test Your Knowledge
+
+1. Why should you be in the proper gear before
+       starting down a hill?
+
+2. What factors can cause brakes to fade or
+       fail?
+
+3. The use of brakes on a long, steep
+       downgrade is only a supplement to the
+       braking effect of the engine. True or False?
+
+4. If you are away from your vehicle only a short
+       time, you do not need to use the parking
+       brake. True or False?
+
+5. How often should you drain air tanks?
+6. How should you brake when you drive a
+
+       tractor-trailer combination with ABS?
+7. You still have normal brake functions if your
+
+       ABS is not working. True or False?
+
+These questions may be on your test. If you can't
+answer them all, re-read subsection 5.4.
+
+Section 5 ­ Air Brakes                                          Page 5-10
+Version: July 2017
+Commercial Driver's License Manual ­ Modernized Testing System
+
