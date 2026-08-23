@@ -2197,6 +2197,17 @@ const EXAM_CONFIGS = {
   ks_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   ky_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   la_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  ma_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  md_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  me_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  mn_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  mo_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  ms_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  mt_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  ne_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  nh_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  nj_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  nv_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // WA licensing is two-tier: a 50Q/80% Permit test, then a 25Q/80% Endorsement test after permit
   // holding. This track models the Endorsement (full-license) tier -- 25Q/80% -- matching the
   // question count/format used by every other state's motorcycle track built this project. Both
