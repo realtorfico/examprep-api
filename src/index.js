@@ -11,6 +11,84 @@ function json(data, status = 200) {
 }
 const now = () => Math.floor(Date.now() / 1000);
 
+// ---- Answer-choice display shuffling ---------------------------------------
+// A 2026-08-23 content audit found several CDL states' drafted questions heavily skewed toward
+// marking choice_a as correct (up to 94% of a bucket, vs an expected ~25%) -- and nothing in the
+// pipeline (drafting, build-track-batch.js, or this API) ever randomized display position, so that
+// bias went straight to the live exam: a user could pattern-match "always pick A" and pass without
+// knowing the material. Rather than re-drafting affected states' content, every question is now
+// displayed in a per-question DETERMINISTIC shuffled order (seeded by question id, via a simple
+// hash + seeded PRNG -- no external deps, no per-request randomness) so the same question always
+// renders identically across a fresh quiz, an in-progress exam resume, and later review, but the
+// correct answer's on-screen letter is no longer predictable from the stored data's bias.
+// Storage (progress.last_choice, exam_attempts.answers, questions.correct_choice) still speaks
+// entirely in ORIGINAL/raw letters -- unchanged from before this fix, so historical rows (written
+// back when display == original, since no shuffle existed yet) remain valid with no backfill.
+// Conversion happens only at the two API boundaries: outgoing (buildDisplayChoices/toDisplayChoice)
+// and incoming (toOriginalChoice), right where a request/response crosses the wire.
+const CHOICE_LETTERS = ['A', 'B', 'C', 'D'];
+
+function choiceHashSeed(str) {
+  let h = 2166136261 >>> 0; // FNV-1a basis
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i);
+    h = Math.imul(h, 16777619) >>> 0;
+  }
+  return h >>> 0;
+}
+
+function mulberry32(seed) {
+  let t = seed >>> 0;
+  return function () {
+    t = (t + 0x6d2b79f5) | 0;
+    let r = Math.imul(t ^ (t >>> 15), 1 | t);
+    r = (r + Math.imul(r ^ (r >>> 7), 61 | r)) ^ r;
+    return ((r ^ (r >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+// order[i] is the ORIGINAL letter whose text/correctness should appear at display position
+// CHOICE_LETTERS[i] -- e.g. order = ['C','A','D','B'] means display position A shows the choice
+// stored as choice_c, and a question whose correct_choice is 'C' displays as correct answer 'A'.
+function choiceDisplayOrder(questionId) {
+  const rand = mulberry32(choiceHashSeed(String(questionId)));
+  const order = CHOICE_LETTERS.slice();
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = Math.floor(rand() * (i + 1));
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  return order;
+}
+
+// Builds the shuffled { choices, correctChoice } shape to send to a client from a raw questions
+// row. Does NOT include the row's other fields (explanation, topic, etc.) -- callers spread those
+// in separately, same as before this fix.
+function buildDisplayChoices(q) {
+  const order = choiceDisplayOrder(q.id);
+  const raw = { A: q.choice_a, B: q.choice_b, C: q.choice_c, D: q.choice_d };
+  const choices = {};
+  CHOICE_LETTERS.forEach((displayLetter, i) => { choices[displayLetter] = raw[order[i]]; });
+  const correctChoice = CHOICE_LETTERS[order.indexOf(q.correct_choice)];
+  return { choices, correctChoice };
+}
+
+// Maps a client-submitted display letter (what the user actually clicked) back to the question's
+// original/raw letter, for scoring and storage. Falsy/unrecognized input passes through unchanged
+// (matches prior behavior when choice was null/undefined, e.g. an unanswered exam question).
+function toOriginalChoice(questionId, displayChoice) {
+  const idx = CHOICE_LETTERS.indexOf(displayChoice);
+  if (idx === -1) return displayChoice;
+  return choiceDisplayOrder(questionId)[idx];
+}
+
+// Inverse of toOriginalChoice -- maps a stored original letter (progress.last_choice,
+// exam_attempts.answers) back to display terms for showing "yourChoice" in a review UI.
+function toDisplayChoice(questionId, originalChoice) {
+  const order = choiceDisplayOrder(questionId);
+  const idx = order.indexOf(originalChoice);
+  return idx === -1 ? originalChoice : CHOICE_LETTERS[idx];
+}
+
 // examprep-api has no public route -- every request arrives via a Pages Service Binding proxy
 // (see each site's _worker.js) that forwards the original request unchanged aside from path, so
 // request.url's host is whichever public domain the browser actually hit. Used to build links
@@ -112,11 +190,10 @@ async function handleSample(request, env) {
     'SELECT * FROM questions WHERE exam_type = ? ORDER BY weight DESC, RANDOM() LIMIT 5'
   ).bind(examType).all();
   return json({
-    questions: rows.results.map((q) => ({
-      id: q.id, topic: q.topic, question: q.question,
-      choices: { A: q.choice_a, B: q.choice_b, C: q.choice_c, D: q.choice_d },
-      correctChoice: q.correct_choice, explanation: q.explanation,
-    })),
+    questions: rows.results.map((q) => {
+      const { choices, correctChoice } = buildDisplayChoices(q);
+      return { id: q.id, topic: q.topic, question: q.question, choices, correctChoice, explanation: q.explanation };
+    }),
   });
 }
 
@@ -203,9 +280,10 @@ async function mcpGetSampleQuestion(env, args) {
     : null;
   if (!row) row = await env.DB.prepare('SELECT * FROM questions WHERE exam_type = ? ORDER BY weight DESC, RANDOM() LIMIT 1').bind(examType).first();
   if (!row) return { error: `No practice questions available for examType "${examType}".` };
+  const { choices } = buildDisplayChoices(row);
   return {
     questionId: row.id, examType: row.exam_type, topic: row.topic, question: row.question,
-    choices: { A: row.choice_a, B: row.choice_b, C: row.choice_c, D: row.choice_d },
+    choices,
   };
 }
 
@@ -217,7 +295,9 @@ async function mcpGradePracticeAnswer(env, args) {
   }
   const row = await env.DB.prepare('SELECT * FROM questions WHERE id = ?').bind(questionId).first();
   if (!row) return { error: `Unknown questionId "${questionId}" -- call get_sample_question first to get a valid one.` };
-  return { correct: response === row.correct_choice, correctChoice: row.correct_choice, explanation: row.explanation };
+  const originalResponse = toOriginalChoice(row.id, response);
+  const { correctChoice } = buildDisplayChoices(row);
+  return { correct: originalResponse === row.correct_choice, correctChoice, explanation: row.explanation };
 }
 
 function mcpToolResultText(toolName, data) {
@@ -1602,10 +1682,8 @@ async function handleNextQuestion(user, env, difficulty) {
 }
 
 function toPublicQuestion(q) {
-  return {
-    id: q.id, topic: q.topic, question: q.question,
-    choices: { A: q.choice_a, B: q.choice_b, C: q.choice_c, D: q.choice_d },
-  };
+  const { choices } = buildDisplayChoices(q);
+  return { id: q.id, topic: q.topic, question: q.question, choices };
 }
 
 // Shared by quiz answers (handleAnswer, one at a time) and mock exam submission
@@ -1641,14 +1719,16 @@ async function handleAnswer(user, request, env) {
   const q = await env.DB.prepare('SELECT * FROM questions WHERE id = ?').bind(questionId).first();
   if (!q) return json({ error: 'question_not_found' }, 404);
 
-  await progressUpsertStmt(env, user.id, questionId, choice, q.correct_choice, now()).run();
+  const originalChoice = toOriginalChoice(q.id, choice);
+  await progressUpsertStmt(env, user.id, questionId, originalChoice, q.correct_choice, now()).run();
 
   // Fresh totals in the same response -- lets the quiz's live stats bar update instantly without
   // a second round-trip (see /progress/summary for the once-per-quiz-view initial fetch instead).
   const totals = await progressTotals(env, user.id);
+  const { correctChoice } = buildDisplayChoices(q);
 
   return json({
-    correct: choice === q.correct_choice, correctChoice: q.correct_choice, explanation: q.explanation,
+    correct: originalChoice === q.correct_choice, correctChoice, explanation: q.explanation,
     totalAnswered: totals.total || 0, totalCorrect: totals.correct || 0,
   });
 }
@@ -1686,12 +1766,15 @@ async function handleProgress(user, env) {
     accuracyPassPct,
     coveragePassPct,
     byTopic: byTopic.results,
-    wrongQuestions: wrong.results.map((q) => ({
-      id: q.id, topic: q.topic, question: q.question,
-      choices: { A: q.choice_a, B: q.choice_b, C: q.choice_c, D: q.choice_d },
-      correctChoice: q.correct_choice, yourChoice: q.last_choice || null, explanation: q.explanation,
-      lastAnsweredAt: q.last_answered_at,
-    })),
+    wrongQuestions: wrong.results.map((q) => {
+      const { choices, correctChoice } = buildDisplayChoices(q);
+      return {
+        id: q.id, topic: q.topic, question: q.question,
+        choices, correctChoice,
+        yourChoice: q.last_choice ? toDisplayChoice(q.id, q.last_choice) : null,
+        explanation: q.explanation, lastAnsweredAt: q.last_answered_at,
+      };
+    }),
   });
 }
 
@@ -2287,10 +2370,15 @@ async function fetchQuestionsByIds(env, questionIds) {
 async function attemptToClientShape(env, attempt) {
   const questionIds = JSON.parse(attempt.question_ids);
   const byId = await fetchQuestionsByIds(env, questionIds);
+  // attempt.answers is stored in ORIGINAL letters (see handleExamAnswer) -- map to display terms
+  // so a resumed exam correctly re-highlights whichever button the user actually clicked.
+  const rawAnswers = JSON.parse(attempt.answers);
+  const answers = {};
+  Object.keys(rawAnswers).forEach((id) => { answers[id] = toDisplayChoice(id, rawAnswers[id]); });
   return {
     attemptId: attempt.id, examType: attempt.exam_type, mode: attempt.mode,
     questions: questionIds.map((id) => byId[id]).filter(Boolean).map(toPublicQuestion),
-    answers: JSON.parse(attempt.answers), durationSec: attempt.duration_sec, startedAt: attempt.started_at,
+    answers, durationSec: attempt.duration_sec, startedAt: attempt.started_at,
   };
 }
 
@@ -2346,11 +2434,15 @@ function buildExamResult(examType, questionIds, answers, byId, correct, total, s
     review: questionIds.map((id) => {
       const q = byId[id];
       if (!q) return null;
+      const { choices, correctChoice } = buildDisplayChoices(q);
+      // answers[id] is stored in ORIGINAL letters (see handleExamAnswer) -- correctness is checked
+      // in that same original-letter space, then mapped to display terms only for the client.
+      const originalYourChoice = answers[id] || null;
       return {
         questionId: id, topic: q.topic, question: q.question,
-        choices: { A: q.choice_a, B: q.choice_b, C: q.choice_c, D: q.choice_d },
-        yourChoice: answers[id] || null, correctChoice: q.correct_choice,
-        correct: answers[id] === q.correct_choice, explanation: q.explanation,
+        choices,
+        yourChoice: originalYourChoice ? toDisplayChoice(id, originalYourChoice) : null, correctChoice,
+        correct: originalYourChoice === q.correct_choice, explanation: q.explanation,
       };
     }).filter(Boolean),
   };
@@ -2423,7 +2515,9 @@ async function handleExamAnswer(user, request, env) {
   if (attempt.duration_sec && attempt.started_at + attempt.duration_sec <= now()) return json({ error: 'time_expired' }, 400);
 
   const answers = JSON.parse(attempt.answers);
-  answers[questionId] = choice;
+  // Stored in ORIGINAL letters (matches progress.last_choice's convention) -- converted back to
+  // display terms on the way out, in attemptToClientShape/buildExamResult.
+  answers[questionId] = toOriginalChoice(questionId, choice);
   await env.DB.prepare('UPDATE exam_attempts SET answers = ? WHERE id = ?').bind(JSON.stringify(answers), attemptId).run();
   return json({ ok: true });
 }
