@@ -2016,6 +2016,14 @@ const EXAM_CONFIGS = {
   // same AAMVA-standard format as ca_cdl/tx_cdl/fl_cdl. Untimed in reality; 60 minutes is a
   // generous stand-in.
   ny_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  // Utah's own manual (Driver License Division) and dld.utah.gov never disclose a General
+  // Knowledge item count or passing-score percentage anywhere -- confirmed via exhaustive search
+  // of both, same situation as this project's Montana/Louisiana/New Mexico CDL tracks. 50Q/80%/40
+  // correct is the AAMVA-standard convention (federally mandated 80% min under 49 CFR 383.135(a))
+  // used as a stand-in per this project's convention for hedged-mechanics CDL states; confirmed
+  // Utah-specific facts (30Q hazmat/20Q tank endorsement tests, 8/30 error-point skills thresholds)
+  // are documented in the track's handbookNote instead, not modeled as separate exam configs here.
+  ut_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // 40 questions / 28 correct (70%) to pass, per the real NY Department of State notary exam FAQ.
   // Genuinely timed in reality (60 minutes), unlike the untimed DMV tests above.
   ny_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
@@ -2204,10 +2212,18 @@ const EXAM_CONFIGS = {
   mo_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   ms_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   mt_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  nd_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   ne_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   nh_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   nj_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  nm_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   nv_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  ok_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  or_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  ri_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  sc_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  sd_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  tn_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // WA licensing is two-tier: a 50Q/80% Permit test, then a 25Q/80% Endorsement test after permit
   // holding. This track models the Endorsement (full-license) tier -- 25Q/80% -- matching the
   // question count/format used by every other state's motorcycle track built this project. Both
