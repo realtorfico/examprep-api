@@ -2304,6 +2304,10 @@ const EXAM_CONFIGS = {
   wy_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
   fl_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 75, minCorrect: 30 },
   tx_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70, minCorrect: 28 },
+  // NY DOS reports the real exam as pass/fail only -- no published item count or percentage score.
+  // 75Q/70% (53 of 75 correct) is a commonly-cited third-party study convention, not an official
+  // DOS figure; 90-minute duration IS confirmed directly by DOS.
+  ny_real_estate: { questionCount: 75, durationSec: 5400, passPercent: 70, minCorrect: 53 },
   al_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
   fl_notary: { questionCount: 40, durationSec: 5400, passPercent: 70, minCorrect: 28 },
   ga_notary: { questionCount: 40, durationSec: 4800, passPercent: 70, minCorrect: 28 },
