@@ -374,3 +374,25 @@ CREATE TABLE admin_alert_rules (
   updated_at      INTEGER NOT NULL
 );
 CREATE INDEX idx_admin_alert_rules_trigger ON admin_alert_rules(trigger_key);
+
+-- Copy for the site's category-first landing pages (one row per category -- notary, driver, cdl,
+-- real_estate_salesperson, etc; not per state, since state-specific facts like pass rate/track
+-- count are computed from existing track data, not stored here). slug is the exam-kind identifier
+-- used both as the site's URL segment and the admin's lookup key -- kebab-case, e.g.
+-- 'real-estate-salesperson'. feature_tiles/testimonials/faq are JSON arrays (admin-edited as
+-- structured lists, stored as TEXT since D1/SQLite has no native JSON column type).
+CREATE TABLE category_content (
+  slug              TEXT PRIMARY KEY,
+  label             TEXT NOT NULL,
+  hero_headline     TEXT,
+  hero_subhead      TEXT,
+  feature_tiles     TEXT,    -- JSON array of {icon, title, body}
+  testimonials      TEXT,    -- JSON array of {quote, author}
+  compliance_copy   TEXT,
+  faq               TEXT,    -- JSON array of {question, answer}
+  seo_title         TEXT,
+  seo_description   TEXT,
+  seo_canonical     TEXT,
+  active            INTEGER NOT NULL DEFAULT 1,
+  updated_at        INTEGER NOT NULL
+);

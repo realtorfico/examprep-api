@@ -3094,6 +3094,66 @@ async function handleStats(env) {
   return json({ codes: codes.results, totalUsers: users.n, accuracyByTopic: accuracy.results });
 }
 
+// ---- Category content (category-first landing pages) ----------------------
+// Copy for the site's category landing pages (notary, driver, cdl, real_estate_salesperson, etc).
+// Public side (handleCategoryContentList) only returns active rows, keyed by slug, for the site
+// to render; the console side is full CRUD by slug (upsert, since slug is admin-chosen and
+// human-readable, unlike the generated ids promotions/codes use).
+
+async function handleCategoryContentList(request, env) {
+  const url = new URL(request.url);
+  const slug = url.searchParams.get('slug');
+  const rows = slug
+    ? (await env.DB.prepare('SELECT * FROM category_content WHERE slug = ? AND active = 1').bind(slug).all()).results
+    : (await env.DB.prepare('SELECT * FROM category_content WHERE active = 1').all()).results;
+  return json({ categories: rows.map(parseCategoryContentRow) });
+}
+
+function parseCategoryContentRow(row) {
+  return {
+    ...row,
+    featureTiles: row.feature_tiles ? JSON.parse(row.feature_tiles) : [],
+    testimonials: row.testimonials ? JSON.parse(row.testimonials) : [],
+    faq: row.faq ? JSON.parse(row.faq) : [],
+  };
+}
+
+async function handleConsoleCategoryContentList(env) {
+  const rows = (await env.DB.prepare('SELECT * FROM category_content ORDER BY slug ASC').all()).results;
+  return json({ categories: rows.map(parseCategoryContentRow) });
+}
+
+async function handleConsoleCategoryContentUpsert(request, env) {
+  const b = await request.json();
+  if (!b.slug || !b.slug.trim()) return json({ error: 'slug_required' }, 400);
+  if (!b.label || !b.label.trim()) return json({ error: 'label_required' }, 400);
+  const slug = b.slug.trim().toLowerCase();
+  await env.DB.prepare(
+    `INSERT INTO category_content (slug, label, hero_headline, hero_subhead, feature_tiles, testimonials,
+       compliance_copy, faq, seo_title, seo_description, seo_canonical, active, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+     ON CONFLICT (slug) DO UPDATE SET label = excluded.label, hero_headline = excluded.hero_headline,
+       hero_subhead = excluded.hero_subhead, feature_tiles = excluded.feature_tiles,
+       testimonials = excluded.testimonials, compliance_copy = excluded.compliance_copy, faq = excluded.faq,
+       seo_title = excluded.seo_title, seo_description = excluded.seo_description,
+       seo_canonical = excluded.seo_canonical, active = excluded.active, updated_at = excluded.updated_at`
+  ).bind(
+    slug, b.label.trim(), b.heroHeadline || null, b.heroSubhead || null,
+    JSON.stringify(b.featureTiles || []), JSON.stringify(b.testimonials || []),
+    b.complianceCopy || null, JSON.stringify(b.faq || []),
+    b.seoTitle || null, b.seoDescription || null, b.seoCanonical || null,
+    b.active === false ? 0 : 1, now()
+  ).run();
+  return json({ ok: true });
+}
+
+async function handleConsoleCategoryContentDelete(request, env) {
+  const { slug } = await request.json();
+  if (!slug) return json({ error: 'slug_required' }, 400);
+  await env.DB.prepare('DELETE FROM category_content WHERE slug = ?').bind(slug).run();
+  return json({ ok: true });
+}
+
 // ---- Router -----------------------------------------------------------
 
 export default {
@@ -3109,6 +3169,7 @@ export default {
       if (pathname === '/pricing' && method === 'GET') return await handlePricingGet(request, env);
       if (pathname === '/config' && method === 'GET') return await handlePublicConfig(env);
       if (pathname === '/stats/public' && method === 'GET') return await handlePublicStats(env);
+      if (pathname === '/category-content' && method === 'GET') return await handleCategoryContentList(request, env);
       if (pathname === '/promotions' && method === 'GET') return await handlePromotionsList(request, env);
       if (pathname === '/promotions/verify-request' && method === 'POST') return await handlePromoVerifyRequest(request, env);
       if (pathname === '/promotions/verify-email' && method === 'GET') return await handlePromoVerifyEmailConfirm(request, env);
@@ -3136,6 +3197,9 @@ export default {
         if (pathname === '/console/codes/revoke' && method === 'POST') return await handleCodesRevoke(request, env);
         if (pathname === '/console/pricing' && method === 'GET') return await handleConsolePricingList(env);
         if (pathname === '/console/pricing' && method === 'POST') return await handleConsolePricingSet(request, env);
+        if (pathname === '/console/category-content' && method === 'GET') return await handleConsoleCategoryContentList(env);
+        if (pathname === '/console/category-content/upsert' && method === 'POST') return await handleConsoleCategoryContentUpsert(request, env);
+        if (pathname === '/console/category-content/delete' && method === 'POST') return await handleConsoleCategoryContentDelete(request, env);
         if (pathname === '/console/promotions' && method === 'GET') return await handleConsolePromotionsList(env);
         if (pathname === '/console/promotions/create' && method === 'POST') return await handleConsolePromotionsCreate(request, env);
         if (pathname === '/console/promotions/update' && method === 'POST') return await handleConsolePromotionsUpdate(request, env);
