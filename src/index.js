@@ -2224,6 +2224,33 @@ const EXAM_CONFIGS = {
   sc_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   sd_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   tn_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  // Vermont's CDL Manual (VN-111) never discloses a knowledge-test item count or passing-score
+  // percentage anywhere in its text -- confirmed via exhaustive search, same situation as this
+  // project's Montana/Louisiana/New Mexico/Oregon/Utah CDL tracks. 50Q/80%/40 correct is the
+  // AAMVA-standard convention (federally mandated 80% min under 49 CFR 383.135(a)) used as a
+  // stand-in per this project's convention for hedged-mechanics CDL states.
+  vt_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  // Wisconsin's Commercial Driver's Manual (May 2026 edition, WisDOT) never discloses a General
+  // Knowledge item count or passing-score percentage anywhere -- the only official Wisconsin
+  // document stating an explicit 80% figure (WisDOT CDL Instructor Guidelines) applies to the
+  // separate CDL instructor licensing exam, not the driver knowledge test. 50Q/80%/40 correct is
+  // the AAMVA-standard convention (federally mandated 80% min under 49 CFR 383.135(a)) used as a
+  // stand-in per this project's convention for hedged-mechanics CDL states.
+  wi_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  // West Virginia's CDL Manual (WV DMV Rev. 08/2023 front matter over AAMVA base manual) confirms
+  // only the 80% passing score explicitly ("must be taken and passed, with at least an 80% score")
+  // -- no exact knowledge-test item count is disclosed anywhere in the manual, same situation as
+  // this project's Montana/Louisiana/New Mexico/Oregon/Utah/Vermont CDL tracks. 50Q/80%/40 correct
+  // is the AAMVA-standard convention (federally mandated 80% min under 49 CFR 383.135(a)) used as a
+  // stand-in per this project's convention for hedged-mechanics CDL states.
+  wv_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  // Wyoming's CDL Manual ("Rules of the Road," Oct 2024) confirms the 80% passing score directly
+  // in its Wyoming-specific front matter ("the passing score for a written test is 80 percent"),
+  // independently re-confirmed on WYDOT's live CDL Testing webpage -- but no exact per-test item
+  // count is disclosed anywhere. 50Q/80%/40 correct is the AAMVA-standard convention (federally
+  // mandated 80% min under 49 CFR 383.135(a)) used as a stand-in per this project's convention for
+  // hedged-mechanics CDL states.
+  wy_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
   // WA licensing is two-tier: a 50Q/80% Permit test, then a 25Q/80% Endorsement test after permit
   // holding. This track models the Endorsement (full-license) tier -- 25Q/80% -- matching the
   // question count/format used by every other state's motorcycle track built this project. Both
