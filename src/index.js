@@ -2057,7 +2057,7 @@ const EXAM_CONFIGS = {
   // the national/general and state-specific content in one unified test (DRE administers its own
   // exam directly, no PSI/Pearson national-vs-state split like other states' real estate tracks).
   // Genuinely timed in reality: 3 hours 15 minutes (11700 sec), not a stand-in.
-  ca_dre: { questionCount: 150, durationSec: 11700, passPercent: 70, minCorrect: 105 },
+  ca_real_estate: { questionCount: 150, durationSec: 11700, passPercent: 70, minCorrect: 105 },
   // 40 questions / 30 correct (75%) to pass, per the real Ohio BMV driver knowledge test
   // (confirmed via bmv.ohio.gov plus corroborating secondary sources). No official time limit is
   // published; untimed in reality (in-person at a BMV kiosk). 60 minutes is a generous stand-in,
