@@ -187,7 +187,7 @@ async function handleSample(request, env) {
   const url = new URL(request.url);
   const examType = url.searchParams.get('examType') || 'ca_notary';
   const rows = await env.DB.prepare(
-    'SELECT * FROM questions WHERE exam_type = ? ORDER BY weight DESC, RANDOM() LIMIT 5'
+    'SELECT * FROM questions WHERE exam_type = ? ORDER BY weight DESC, RANDOM() LIMIT 10'
   ).bind(examType).all();
   return json({
     questions: rows.results.map((q) => {
