@@ -3170,6 +3170,11 @@ export default {
       if (pathname === '/config' && method === 'GET') return await handlePublicConfig(env);
       if (pathname === '/stats/public' && method === 'GET') return await handlePublicStats(env);
       if (pathname === '/category-content' && method === 'GET') return await handleCategoryContentList(request, env);
+      // Public alias of the admin's /console/questions/counts -- question bank SIZE per track
+      // isn't sensitive (it's already effectively public via each track's own "X Multiple Choice"
+      // display copy), and the category landing pages want a real, non-fabricated "X,XXX practice
+      // questions in this category" stat, summed client-side from these per-exam_type counts.
+      if (pathname === '/questions/counts' && method === 'GET') return await handleQuestionCounts(env);
       if (pathname === '/promotions' && method === 'GET') return await handlePromotionsList(request, env);
       if (pathname === '/promotions/verify-request' && method === 'POST') return await handlePromoVerifyRequest(request, env);
       if (pathname === '/promotions/verify-email' && method === 'GET') return await handlePromoVerifyEmailConfirm(request, env);

@@ -29,7 +29,12 @@ D1-Console-ready SQL, for any track.
      comment for full usage.
 5. Add the track's `TRACK_COMPLIANCE` entry, `HUB_EXAMS` card, `RESOURCES` link, and
    `EXAM_CONFIGS` entry in the frontend/Worker, flip `active: true`, bump `?v=` cache-bust,
-   deploy.
+   deploy. If the `HUB_EXAMS` card was drafted as/from JSON, run
+   `node scripts/normalize-hub-exams-quotes.js` (in the `passexamhq` site repo) afterward --
+   JSON's double quotes left uncorrected have silently broken mechanical rewrites against
+   `HUB_EXAMS` before (see that script's header comment). Also run
+   `node scripts/generate-seo-meta.js` (same repo) to add the new track to `_worker.js`'s
+   per-route SEO title/description and to `sitemap.xml`.
 
 Run again with a second arg (`node scripts/build-track-batch.js scripts/tracks/<examType>.json 2`)
 for a batch-2 top-up later — it won't collide with batch 1's question IDs, and the pricing row is
