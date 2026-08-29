@@ -2003,6 +2003,8 @@ const EXAM_CONFIGS = {
   // 50 questions / 40 correct (80%) to pass, per the real Texas DPS CDL General Knowledge test --
   // same AAMVA-standard format as ca_cdl. Untimed in reality; 60 minutes is a generous stand-in.
   tx_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  // 25 questions / 20 correct (80%) to pass -- hedged, neither TDLR nor DPS publish an official item count/passing %; third-party sources disagree (20q vs 25q, both claiming 80%). Matches the stand-in already used for CA/GA/MI/VA/WA. Untimed in reality; 60 minutes is a generous stand-in. IMPORTANT: most TX applicants waive this written test entirely via a TDLR-approved course -- see tx_motorcycle's TRACK_COMPLIANCE entry for full disclosure.
+  tx_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
   // 50 questions / 40 correct (80%) to pass, per the real FLHSMV Class E Knowledge Exam.
   // Untimed in reality (in-person at a FLHSMV office/kiosk); 60 minutes is a generous stand-in.
   fl_driver: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
@@ -2016,6 +2018,8 @@ const EXAM_CONFIGS = {
   // same AAMVA-standard format as ca_cdl/tx_cdl/fl_cdl. Untimed in reality; 60 minutes is a
   // generous stand-in.
   ny_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  // 20 questions / 14 correct (70%) to pass, CONFIRMED directly from NY DMV's own site (dmv.ny.gov/driver-license/get-a-motorcycle-learner-permit-and-license) -- also requires at least 2 of 4 road-sign questions correct (that sub-requirement is documented in TRACK_COMPLIANCE, not separately modeled here). MSF course waiver applies only to the road/skills test, never the written test. Untimed in reality; 60 minutes is a generous stand-in.
+  ny_motorcycle: { questionCount: 20, durationSec: 3600, passPercent: 70, minCorrect: 14 },
   // Utah's own manual (Driver License Division) and dld.utah.gov never disclose a General
   // Knowledge item count or passing-score percentage anywhere -- confirmed via exhaustive search
   // of both, same situation as this project's Montana/Louisiana/New Mexico CDL tracks. 50Q/80%/40
@@ -2049,6 +2053,8 @@ const EXAM_CONFIGS = {
   // knowledge test (confirmed at ecfr.gov), same AAMVA-standard format as every other CDL track.
   // Untimed in reality; 60 minutes is a generous stand-in.
   pa_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  // 20 questions / 16 correct (80%) to pass -- hedged, PennDOT confirms the knowledge test is mandatory for all applicants (PAMSP course only waives the skills test) but doesn't publish an official item count/passing %; matches convergent third-party sources. Untimed in reality; 60 minutes is a generous stand-in.
+  pa_motorcycle: { questionCount: 20, durationSec: 3600, passPercent: 80, minCorrect: 16 },
   // State-specific portion only (not the national/general portion -- see project notes): 40
   // questions / 75% to pass (30/40 correct exactly), per the Pearson VUE Candidate Handbook for
   // the PA Real Estate Salesperson exam. Genuinely timed in reality (60 minutes for this portion).
@@ -2109,6 +2115,8 @@ const EXAM_CONFIGS = {
   // 50 questions / 40 correct (80%) to pass -- same AAMVA-standard CDL General Knowledge format as
   // every other state's CDL track. Genuinely timed in reality (60 minutes).
   nc_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
+  // 25 questions / 20 correct (80%) to pass -- hedged, official NCDMV confirms the test is mandatory (course only waives skills test) but no item count/passing % is published; 25q/80% is the more consistently-cited third-party figure over a conflicting 37q/78% source. Untimed in reality; 60 minutes is a generous stand-in.
+  nc_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
   // State-specific portion only (not the national/general portion): 60 questions / 45 correct (75%)
   // to pass, per the current (April 2026) PSI/Pearson VUE Candidate Handbook's weighted state
   // outline, corroborated by NCREC's own License Law and Rules Comments. Genuinely timed in reality
@@ -2256,6 +2264,18 @@ const EXAM_CONFIGS = {
   // question count/format used by every other state's motorcycle track built this project. Both
   // counts officially published on dol.wa.gov; neither has a published time limit.
   wa_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
+  // 30 questions / 24 correct (80%) to pass -- hedged, not officially disclosed by ALEA; matches the 5 convergent third-party sources checked and AL's separate Driver track's own hedge. Untimed in reality; 60 minutes is a generous stand-in.
+  al_motorcycle: { questionCount: 30, durationSec: 3600, passPercent: 80, minCorrect: 24 },
+  // 25 questions / 20 correct (80%) to pass -- hedged, not officially disclosed anywhere by AR DPS; matches 3 convergent third-party sources. Untimed in reality; 60 minutes is a generous stand-in.
+  ar_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
+  // 16 questions confirmed directly from the manual ("consist of 16 questions") and portal.ct.gov. Passing score hedged -- not published anywhere official; 80% (13 correct) used as the standard stand-in. Untimed in reality; 60 minutes is a generous stand-in.
+  ct_motorcycle: { questionCount: 16, durationSec: 3600, passPercent: 80, minCorrect: 13 },
+  // 40 questions / 32 correct (80%) to pass -- hedged, the manual's own preface confirms the test is mandatory for everyone but no official item count/passing % is published; matches convergent third-party sources. Untimed in reality; 60 minutes is a generous stand-in.
+  mn_motorcycle: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
+  // 25 questions / 20 correct (80%) to pass -- hedged, official MS DPS pages confirm the knowledge test is mandatory (course only waives the skills test) but no item count/passing % is published; matches convergent third-party sources. Untimed in reality; 60 minutes is a generous stand-in.
+  ms_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
+  // 25 questions CONFIRMED directly from two independent dld.utah.gov pages (closed-book test). 80% (20 correct) passing is well-corroborated -- matches UT's own confirmed Driver-track passing % and third-party sources -- but not stated verbatim by DLD for the motorcycle test specifically, so the percentage is hedged even though the item count is confirmed. Untimed in reality; 60 minutes is a generous stand-in.
+  ut_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
   // Washington's entry-level license is called "Broker" (not "Salesperson"). State-specific portion:
   // 30 items / 70% scaled score / 90min, per the real weighted PSI content outline. Treated as a
   // direct raw passPercent, same resolved convention as nc_real_estate/ga_real_estate's own
