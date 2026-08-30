@@ -2677,18 +2677,6 @@ async function handleQuestionCounts(env) {
   return json({ counts: rows });
 }
 
-// Backs the admin Settings > Course pricing table's read-only Duration/Questions/Pass score
-// columns -- track_registry is the same single source of truth getExamConfig() itself reads for
-// generating real exams, so this can't drift out of sync with what a student actually sits.
-async function handleExamConfigsList(env) {
-  const registry = await getTrackRegistry(env);
-  const configs = {};
-  Object.keys(registry).forEach((examType) => {
-    const r = registry[examType];
-    configs[examType] = { questionCount: r.exam_question_count, durationSec: r.exam_duration_sec, passPercent: r.pass_percent, minCorrect: r.min_correct };
-  });
-  return json({ configs });
-}
 
 function questionFromBody(b) {
   return [b.examType, b.topic, b.question, b.choiceA, b.choiceB, b.choiceC, b.choiceD,
@@ -2882,7 +2870,6 @@ export default {
         if (pathname === '/console/questions' && method === 'GET') return await handleQuestionsList(request, env);
         if (pathname === '/console/questions/counts' && method === 'GET') return await handleQuestionCounts(env);
         if (pathname === '/console/questions/topics' && method === 'GET') return await handleQuestionTopics(request, env);
-        if (pathname === '/console/exam-configs' && method === 'GET') return await handleExamConfigsList(env);
         if (pathname === '/console/track-registry' && method === 'GET') return await handleTrackRegistryList(env);
         if (pathname === '/console/track-registry/active' && method === 'POST') return await handleConsoleTrackRegistryActiveSet(request, env);
         if (pathname === '/console/questions/create' && method === 'POST') return await handleQuestionCreate(request, env);
