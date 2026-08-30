@@ -743,31 +743,19 @@ async function handlePricingGet(request, env) {
 
 // Small, unauthenticated, site-wide config -- fetched once at boot (not tied to any one page) so
 // the footer and other chrome that renders before/without any other API call can still reflect
-// admin-configurable values instead of a stale hardcoded default.
-// Per-track "pull from sale" override, admin-settable via the SAME generic app_settings
-// key/value endpoints already used for min_paypal_charge_cents etc. (see the app_settings table
-// comment in schema.sql) -- no new table/endpoint needed. One row per track, key
-// `track_active:{examType}`, value '0' means "force inactive regardless of the code's own
-// HUB_EXAMS.active default"; no row (the common case) or value '1' means "use the code default".
-// Only inactive overrides are exposed here -- a "force active" override on a track with no real
-// content/route yet (e.g. the mlo scaffold) wouldn't be actionable on the frontend anyway, so
-// there's nothing useful for the public site to do with one.
-async function getInactiveTrackOverrides(env) {
-  const rows = (await env.DB.prepare("SELECT key FROM app_settings WHERE key LIKE 'track_active:%' AND value = '0'").all()).results;
-  return rows.map((r) => r.key.slice('track_active:'.length));
-}
-
+// admin-configurable values instead of a stale hardcoded default. Per-track active status used to
+// be a separate app_settings 'track_active:{examType}' override layered on top of a hardcoded code
+// default -- retired 2026-08-30 in favor of track_registry.active directly (see /track-registry),
+// which the site now reads at boot alongside this endpoint.
 async function handlePublicConfig(env) {
-  const [refundFailurePercent, progressPassPcts, inactiveTracks] = await Promise.all([
+  const [refundFailurePercent, progressPassPcts] = await Promise.all([
     getRefundFailurePercent(env),
     getProgressPassPcts(env),
-    getInactiveTrackOverrides(env),
   ]);
   return json({
     refundFailurePercent,
     accuracyPassPct: progressPassPcts.accuracyPassPct,
     coveragePassPct: progressPassPcts.coveragePassPct,
-    inactiveTracks,
   });
 }
 
@@ -1985,8 +1973,9 @@ const CA_DRIVER_UNDER18_CONFIG = { questionCount: 46, durationSec: 0, passPercen
 // EXAM_CONFIGS object here; retired in favor of the DB. Cached per-isolate with a short TTL rather
 // than re-queried on every call -- exam generation/scoring is a hot path, and Workers isolates are
 // short-lived enough that "stale until next cold start or TTL expiry" is the normal, accepted
-// tradeoff for this kind of rarely-changing reference data (same pattern already used by
-// getInactiveTrackOverrides/handlePublicConfig).
+// tradeoff for this kind of rarely-changing reference data (a full 244-row select is far more
+// worth caching than the single-row app_settings reads elsewhere in this file, which query fresh
+// every time -- this is the first genuinely hot-path, whole-table read that needed it).
 let trackRegistryCache = null;
 let trackRegistryCacheAt = 0;
 const TRACK_REGISTRY_CACHE_TTL_MS = 5 * 60 * 1000;
@@ -2044,6 +2033,20 @@ async function handleTrackRegistryList(env) {
     };
   });
   return json({ tracks });
+}
+
+// Replaces the old app_settings 'track_active:{examType}' override -- admin now writes directly
+// to track_registry.active, the same column getTrackRegistry()/getExamConfig() already read as
+// the single source of truth, instead of a separate override layer bolted on top of a hardcoded
+// code default. Invalidates this isolate's cache immediately so the change is visible on this
+// isolate's very next request rather than waiting out the full TTL.
+async function handleConsoleTrackRegistryActiveSet(request, env) {
+  const { examType, active } = await request.json();
+  if (!examType) return json({ error: 'examType_required' }, 400);
+  await env.DB.prepare('UPDATE track_registry SET active = ?, updated_at = ? WHERE exam_type = ?')
+    .bind(active ? 1 : 0, now(), examType).run();
+  trackRegistryCache = null;
+  return json({ ok: true });
 }
 
 async function handleExamConfig(user, request, env) {
@@ -2881,6 +2884,7 @@ export default {
         if (pathname === '/console/questions/topics' && method === 'GET') return await handleQuestionTopics(request, env);
         if (pathname === '/console/exam-configs' && method === 'GET') return await handleExamConfigsList(env);
         if (pathname === '/console/track-registry' && method === 'GET') return await handleTrackRegistryList(env);
+        if (pathname === '/console/track-registry/active' && method === 'POST') return await handleConsoleTrackRegistryActiveSet(request, env);
         if (pathname === '/console/questions/create' && method === 'POST') return await handleQuestionCreate(request, env);
         if (pathname === '/console/questions/update' && method === 'POST') return await handleQuestionUpdate(request, env);
         if (pathname === '/console/questions/delete' && method === 'POST') return await handleQuestionDelete(request, env);
