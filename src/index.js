@@ -714,7 +714,7 @@ async function getMinPaypalChargeCents(env) {
 // Color thresholds for the Progress tab's headline Accuracy/Coverage stat boxes (admin-editable in
 // examprep-admin's Settings tab) -- green/bold at or above, red/bold below. Also consumed by the
 // student site's and admin console's own per-topic tables (both Accuracy and Coverage columns).
-// Deliberately separate from EXAM_CONFIGS[examType].passPercent, which grades actual mock exam
+// Deliberately separate from track_registry's pass_percent, which grades actual mock exam
 // attempts against the real exam's own pass score -- that one is a fact about the real exam and is
 // NOT admin-configurable; these thresholds are purely a personal-progress display preference.
 const DEFAULT_PROGRESS_ACCURACY_PASS_PCT = 80;
@@ -775,8 +775,8 @@ async function handlePublicConfig(env) {
 // Readiness" card -- real numbers computed live from questions/codes/progress/exam_attempts, not
 // hardcoded or fabricated (see the redesign's standing constraint: never fabricate a value to fill
 // a design element). No per-user data. Pass rate is computed here in JS rather than in SQL because
-// the passing threshold varies per exam_type and lives in EXAM_CONFIGS, not a DB column, so it
-// can't be expressed as a single WHERE clause across all tracks at once.
+// the passing threshold varies per exam_type and lives in track_registry, not an exam_attempts
+// column, so it can't be expressed as a single WHERE clause across all tracks at once.
 //
 // avgCoverage averages each active user's OWN coverage % (their distinct questions seen / their
 // exam_type's question count) rather than a single global ratio -- coverage is inherently relative
@@ -801,9 +801,10 @@ async function handlePublicStats(env) {
     ).first(),
   ]);
   const attempts = attemptRows.results || [];
+  const trackRegistry = await getTrackRegistry(env);
   const passed = attempts.filter((a) => {
     if (!a.score_total) return false;
-    const threshold = a.pass_percent != null ? a.pass_percent : getExamConfig(a.exam_type).passPercent;
+    const threshold = a.pass_percent != null ? a.pass_percent : getExamConfigFromRegistry(trackRegistry, a.exam_type).passPercent;
     return (100 * a.score_correct) / a.score_total >= threshold;
   }).length;
   return json({
@@ -814,7 +815,7 @@ async function handlePublicStats(env) {
     avgAccuracy: accuracyRow && accuracyRow.seen ? Math.round((100 * accuracyRow.correct) / accuracyRow.seen) : null,
     avgCoverage: coverageRow && coverageRow.avg != null ? Math.round(coverageRow.avg) : null,
     studentsServed: studentsRow.n || 0,
-    tracksLive: Object.keys(EXAM_CONFIGS).length,
+    tracksLive: Object.values(trackRegistry).filter((r) => r.active).length,
   });
 }
 
@@ -1431,7 +1432,7 @@ const REFUND_UNCONDITIONAL_WINDOW_SEC = 7 * 86400;
 const REFUND_FAILURE_WINDOW_SEC = 180 * 86400;
 // Admin-editable in examprep-admin's Settings tab (key: refund_failure_percent) -- the
 // 'exam_failure_50pct' claimType string is just a stable internal identifier and is NOT
-// renamed when this changes, same as EXAM_CONFIGS keys don't change when their values do.
+// renamed when this changes, same as track_registry's exam_type keys don't change when their values do.
 const DEFAULT_REFUND_FAILURE_PERCENT = 50;
 
 async function getRefundFailurePercent(env) {
@@ -1873,9 +1874,10 @@ async function handleConsoleExamAttemptsList(env) {
      WHERE ea.submitted_at IS NOT NULL
      ORDER BY ea.submitted_at DESC LIMIT 1000`
   ).all()).results;
+  const trackRegistry = await getTrackRegistry(env);
   return json({
     items: rows.map((r) => {
-      const threshold = r.pass_percent != null ? r.pass_percent : getExamConfig(r.exam_type).passPercent;
+      const threshold = r.pass_percent != null ? r.pass_percent : getExamConfigFromRegistry(trackRegistry, r.exam_type).passPercent;
       const percent = r.score_total ? Math.round((r.score_correct / r.score_total) * 1000) / 10 : 0;
       return {
         attemptId: r.id, userId: r.user_id, examType: r.exam_type, mode: r.mode, code: r.code, buyerEmail: r.buyer_email,
@@ -1897,7 +1899,7 @@ async function handleConsoleExamAttemptDetail(request, env) {
   const questionIds = JSON.parse(attempt.question_ids);
   const answers = JSON.parse(attempt.answers);
   const byId = await fetchQuestionsByIds(env, questionIds);
-  const result = buildExamResult(attempt.exam_type, questionIds, answers, byId,
+  const result = await buildExamResult(env, attempt.exam_type, questionIds, answers, byId,
     attempt.score_correct, attempt.score_total, attempt.started_at, attempt.submitted_at, attempt.duration_sec, attempt.pass_percent);
   return json(result);
 }
@@ -1967,504 +1969,81 @@ async function handleConsoleStalledBuyerRemind(request, env) {
 
 // exam_type naming convention: {state}_{category}, e.g. tx_driver, fl_notary -- national
 // (non-state-specific) exams like the NMLS MLO stay unprefixed.
-const EXAM_CONFIGS = {
-  // 45 questions / 60 minutes / scaled score of 70 to pass, per CPS HR's official exam FAQ.
-  // The real score is a proprietary scaled score (0-100), not literally percent-correct --
-  // this uses raw percent-correct against the same 70 threshold as a practice approximation.
-  ca_notary: { questionCount: 45, durationSec: 3600, passPercent: 70, minCorrect: 32 },
-  // The real CA DMV Class C written knowledge test's format depends on the applicant's age --
-  // confirmed against DMV's own 2006 Class C written-test evaluation report plus current (2026)
-  // corroborating sources: first-time applicants 18+ get 36 questions (30 correct/83.3% to pass),
-  // first-time applicants under 18 (provisional permit) get 46 questions (38 correct/82.6%).
-  // This entry is the 18+ format -- the default for anyone who didn't give an age at checkout or
-  // pick a category on the exam intro page (see CA_DRIVER_UNDER18_CONFIG + getExamConfig below).
-  // 30/36 = 83.33...%, using 83.3 (not 83) so a candidate scoring exactly the real pass line is
-  // graded as passing here too, same reasoning as the under-18 variant's 82.6.
-  // The real test is genuinely untimed (in-person at a DMV office/kiosk, confirmed against DMV's
-  // own testing-process page and that same evaluation report -- no time limit is mentioned
-  // anywhere). durationSec: 0 is this codebase's sentinel for "untimed" -- every consumer
-  // (findInProgressAttempt, handleExamAnswer, buildExamResult) treats a falsy duration_sec as
-  // "never expires" rather than computing against it.
-  ca_driver: { questionCount: 36, durationSec: 0, passPercent: 83.3, minCorrect: 30 },
-  // 50 questions / 40 correct (80%) to pass, per the real CA DMV CDL General Knowledge test --
-  // the one test every CDL candidate takes regardless of endorsements. The question bank also
-  // covers Air Brakes/Combination Vehicles and Passenger/School Bus/Tank/HazMat endorsement
-  // content (real candidates only take the specific endorsement tests they need, as separate
-  // sittings) -- this mock exam blends everything into one practice sitting rather than modeling
-  // each real sub-test separately, same simplification as the hub card's combined breakdown.
-  // Untimed in reality (in-person at a DMV office/kiosk); 60 minutes is a generous stand-in.
-  ca_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // 25 questions / 20 correct (80%) to pass, per the real CA DMV M1/M2 motorcycle written
-  // knowledge test. Untimed in reality; 60 minutes is a generous stand-in.
-  ca_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
-  // 30 questions / 21 correct (70%) to pass, per the real Texas DPS driver knowledge test.
-  // Untimed in reality (in-person at a DPS office/kiosk); 60 minutes is a generous stand-in.
-  tx_driver: { questionCount: 30, durationSec: 3600, passPercent: 70, minCorrect: 21 },
-  // 50 questions / 40 correct (80%) to pass, per the real Texas DPS CDL General Knowledge test --
-  // same AAMVA-standard format as ca_cdl. Untimed in reality; 60 minutes is a generous stand-in.
-  tx_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // 25 questions / 20 correct (80%) to pass -- hedged, neither TDLR nor DPS publish an official item count/passing %; third-party sources disagree (20q vs 25q, both claiming 80%). Matches the stand-in already used for CA/GA/MI/VA/WA. Untimed in reality; 60 minutes is a generous stand-in. IMPORTANT: most TX applicants waive this written test entirely via a TDLR-approved course -- see tx_motorcycle's TRACK_COMPLIANCE entry for full disclosure.
-  tx_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
-  // 50 questions / 40 correct (80%) to pass, per the real FLHSMV Class E Knowledge Exam.
-  // Untimed in reality (in-person at a FLHSMV office/kiosk); 60 minutes is a generous stand-in.
-  fl_driver: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // 50 questions / 40 correct (80%) to pass, per the real FLHSMV CDL General Knowledge test --
-  // same AAMVA-standard format as ca_cdl/tx_cdl. 1 hour time limit in reality, matches durationSec.
-  fl_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // 20 questions / 14 correct (70%) to pass, per the real NY DMV Class D written knowledge test.
-  // Untimed in reality (in-person at a DMV office/kiosk); 60 minutes is a generous stand-in.
-  ny_driver: { questionCount: 20, durationSec: 3600, passPercent: 70, minCorrect: 14 },
-  // 50 questions / 40 correct (80%) to pass, per the real NY DMV CDL General Knowledge test --
-  // same AAMVA-standard format as ca_cdl/tx_cdl/fl_cdl. Untimed in reality; 60 minutes is a
-  // generous stand-in.
-  ny_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // 20 questions / 14 correct (70%) to pass, CONFIRMED directly from NY DMV's own site (dmv.ny.gov/driver-license/get-a-motorcycle-learner-permit-and-license) -- also requires at least 2 of 4 road-sign questions correct (that sub-requirement is documented in TRACK_COMPLIANCE, not separately modeled here). MSF course waiver applies only to the road/skills test, never the written test. Untimed in reality; 60 minutes is a generous stand-in.
-  ny_motorcycle: { questionCount: 20, durationSec: 3600, passPercent: 70, minCorrect: 14 },
-  // Utah's own manual (Driver License Division) and dld.utah.gov never disclose a General
-  // Knowledge item count or passing-score percentage anywhere -- confirmed via exhaustive search
-  // of both, same situation as this project's Montana/Louisiana/New Mexico CDL tracks. 50Q/80%/40
-  // correct is the AAMVA-standard convention (federally mandated 80% min under 49 CFR 383.135(a))
-  // used as a stand-in per this project's convention for hedged-mechanics CDL states; confirmed
-  // Utah-specific facts (30Q hazmat/20Q tank endorsement tests, 8/30 error-point skills thresholds)
-  // are documented in the track's handbookNote instead, not modeled as separate exam configs here.
-  ut_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // 40 questions / 28 correct (70%) to pass, per the real NY Department of State notary exam FAQ.
-  // Genuinely timed in reality (60 minutes), unlike the untimed DMV tests above.
-  ny_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  // 35 questions / 28 correct (80%) to pass, per the real Illinois Secretary of State Class D
-  // written knowledge test (confirmed via actual state regulation, not just secondary sources).
-  // Untimed in reality; 60 minutes is a generous stand-in.
-  il_driver: { questionCount: 35, durationSec: 3600, passPercent: 80, minCorrect: 28 },
-  // State-specific portion only (not the national/general portion -- see project notes): 40
-  // questions / 75% to pass (30/40 correct exactly), per the PSI Candidate Information Booklet
-  // for the IDFPR Broker exam. Genuinely timed in reality (90 minutes for this portion).
-  il_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 75, minCorrect: 30 },
-  // State-specific only (this exam has no national portion at all): 50 questions / 75% to pass,
-  // per the same PSI Candidate Information Booklet's Managing Broker Examination Summary Table.
-  // Genuinely timed in reality (90 minutes).
-  il_managing_broker: { questionCount: 50, durationSec: 3600, passPercent: 75, minCorrect: 38 },
-  // 18 questions / 15 correct to pass, per the real PennDOT non-commercial knowledge test.
-  // 15/18 = 83.3% (buildExamResult rounds percent to 1 decimal) -- using 83.3, not 83, so a
-  // candidate scoring exactly the real pass line is graded as passing here too. Untimed in
-  // reality; 60 minutes is a generous stand-in.
-  pa_driver: { questionCount: 18, durationSec: 3600, passPercent: 83.3, minCorrect: 15 },
-  // 50 questions / 40 correct (80%) to pass -- PennDOT's own fact sheet doesn't state a pass
-  // score, but 80% is the FEDERAL minimum under 49 CFR 383.135(a), binding on every state's CDL
-  // knowledge test (confirmed at ecfr.gov), same AAMVA-standard format as every other CDL track.
-  // Untimed in reality; 60 minutes is a generous stand-in.
-  pa_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // 20 questions / 16 correct (80%) to pass -- hedged, PennDOT confirms the knowledge test is mandatory for all applicants (PAMSP course only waives the skills test) but doesn't publish an official item count/passing %; matches convergent third-party sources. Untimed in reality; 60 minutes is a generous stand-in.
-  pa_motorcycle: { questionCount: 20, durationSec: 3600, passPercent: 80, minCorrect: 16 },
-  // State-specific portion only (not the national/general portion -- see project notes): 40
-  // questions / 75% to pass (30/40 correct exactly), per the Pearson VUE Candidate Handbook for
-  // the PA Real Estate Salesperson exam. Genuinely timed in reality (60 minutes for this portion).
-  pa_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 75, minCorrect: 30 },
-  // 150 questions / 105 correct (70%) to pass, per the real DRE Salesperson exam -- covers both
-  // the national/general and state-specific content in one unified test (DRE administers its own
-  // exam directly, no PSI/Pearson national-vs-state split like other states' real estate tracks).
-  // Genuinely timed in reality: 3 hours 15 minutes (11700 sec), not a stand-in.
-  ca_real_estate: { questionCount: 150, durationSec: 11700, passPercent: 70, minCorrect: 105 },
-  // 40 questions / 30 correct (75%) to pass, per the real Ohio BMV driver knowledge test
-  // (confirmed via bmv.ohio.gov plus corroborating secondary sources). No official time limit is
-  // published; untimed in reality (in-person at a BMV kiosk). 60 minutes is a generous stand-in,
-  // same treatment as tx_driver/fl_driver/ny_driver/il_driver/pa_driver above.
-  oh_driver: { questionCount: 40, durationSec: 3600, passPercent: 75, minCorrect: 30 },
-  // 50 questions / 40 correct (80%) to pass, per the real Ohio BMV CDL General Knowledge test --
-  // same AAMVA-standard format as every other CDL track above. Genuinely timed in reality (60
-  // minutes), confirmed via multiple corroborating sources -- matches durationSec here, not a
-  // stand-in.
-  oh_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // 40 questions / 30 correct (75%) to pass, per the real Ohio BMV motorcycle written knowledge
-  // test -- same computer-kiosk test mechanism as oh_driver, no official time limit published.
-  // Untimed in reality; 60 minutes is a generous stand-in.
-  oh_motorcycle: { questionCount: 40, durationSec: 3600, passPercent: 75, minCorrect: 30 },
-  // State-specific portion only (not the national/general portion -- see project notes): 40
-  // questions / 28 correct (70%) to pass, per the real PSI Candidate Information Bulletin's
-  // Examination Summary Table, independently confirmed by OAC 1301:5-1-05(E). Genuinely timed in
-  // reality (60 minutes for this portion) -- matches durationSec, not a stand-in.
-  oh_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  // 60 questions / 48 correct (80%) to pass -- the common format across the NASBLA/ODNR-approved
-  // course vendors checked (BOATERexam/AceBoater use 60Q covering all 9 handbook chapters; 80% is
-  // consistent everywhere including BOATsmart!, which uses a 50Q variant of the same test). No
-  // single official Ohio boating exam exists -- see oh_boating's TRACK_COMPLIANCE entry for the
-  // full disclosure. No time limit published anywhere; untimed in reality (self-paced course).
-  oh_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // The real DDS test is actually two independently-graded 20-question sections (Road Rules, Road
-  // Signs), each requiring 15/20 (75%), confirmed directly from dds.georgia.gov -- built as a
-  // single unified 40Q/75% practice exam anyway (disclosed simplification, see ga_driver's
-  // TRACK_COMPLIANCE entry). No time limit published; untimed in reality (in-person DDS kiosk).
-  ga_driver: { questionCount: 40, durationSec: 3600, passPercent: 75, minCorrect: 30 },
-  // 50 questions / 40 correct (80%) to pass -- the same AAMVA-standard CDL General Knowledge
-  // format as every other state's CDL track. Untimed in reality; 60 minutes is a generous
-  // stand-in, same treatment as most other CDL tracks above.
-  ga_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // 25 questions / 20 correct (80%) to pass, 30-minute limit -- picked the internally-consistent
-  // figure (20/25 is an exact 80%, corroborated with this specific time limit) over a competing
-  // "75%" claim from other secondary sources that doesn't divide evenly into 25.
-  ga_motorcycle: { questionCount: 25, durationSec: 1800, passPercent: 80, minCorrect: 20 },
-  // State-specific portion only (not the national/general portion -- see project notes): 52
-  // questions / 39 correct (75%) to pass, per the real PSI Candidate Information Bulletin --
-  // confirmed via multiple corroborating sources. Genuinely timed in reality (2 hours for a
-  // state-portion-only sitting) -- matches durationSec, not a stand-in.
-  ga_real_estate: { questionCount: 52, durationSec: 7200, passPercent: 75, minCorrect: 39 },
-  // The real NC DMV test is actually two components: a 25-question general knowledge test (20/25,
-  // 80%) plus a 12-item road-sign identification test (9/12, 75%) -- confirmed via ncdot.gov. Built
-  // as a single unified 37Q practice exam (25+12), blended pass threshold 29/37 (78.4%), same
-  // disclosed-simplification pattern as ga_driver. No time limit published; untimed in reality.
-  nc_driver: { questionCount: 37, durationSec: 3600, passPercent: 78.4, minCorrect: 29 },
-  // 50 questions / 40 correct (80%) to pass -- same AAMVA-standard CDL General Knowledge format as
-  // every other state's CDL track. Genuinely timed in reality (60 minutes).
-  nc_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // 25 questions / 20 correct (80%) to pass -- hedged, official NCDMV confirms the test is mandatory (course only waives skills test) but no item count/passing % is published; 25q/80% is the more consistently-cited third-party figure over a conflicting 37q/78% source. Untimed in reality; 60 minutes is a generous stand-in.
-  nc_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
-  // State-specific portion only (not the national/general portion): 60 questions / 45 correct (75%)
-  // to pass, per the current (April 2026) PSI/Pearson VUE Candidate Handbook's weighted state
-  // outline, corroborated by NCREC's own License Law and Rules Comments. Genuinely timed in reality
-  // (2 hours for this portion).
-  nc_real_estate: { questionCount: 60, durationSec: 7200, passPercent: 75, minCorrect: 45 },
-  // 50 questions / 40 correct (80%) to pass -- a real statutory threshold, NC General Statutes
-  // Chapter 10B (the Notary Public Act) section 10B-8, fetched fresh from ncleg.gov. Untimed;
-  // 60 minutes is a generous stand-in.
-  nc_notary: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // 60 questions / 48 correct (80%) to pass, grounded in the NC Vessel Operator's Guide -- same
-  // "clean free content, minor provider-format variance" pattern as oh_boating. Untimed in reality.
-  nc_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // The real VA DMV test has a two-gate structure: Part 1 is 10 road-sign questions requiring ALL
-  // 10 correct (confirmed directly from dmv.virginia.gov -- no partial credit), Part 2 is 30
-  // general-knowledge questions at 80% (24/30). Built as a single unified 40Q practice exam,
-  // blended pass threshold 34/40 (85%) -- disclosed simplification, same pattern as ga_driver/
-  // nc_driver. Untimed in reality.
-  va_driver: { questionCount: 40, durationSec: 3600, passPercent: 85, minCorrect: 34 },
-  // 50 questions / 40 correct (80%) to pass -- same AAMVA-standard CDL General Knowledge format.
-  // Genuinely timed in reality (60 minutes).
-  va_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // 25 questions / 20 correct (80%) to pass, per the VA Motorcycle Rider's Manual's own published
-  // question count. Untimed in reality; 60 minutes is a generous stand-in.
-  va_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
-  // State-specific portion only: 40 questions / 30 correct (75%) to pass, per the real weighted PSI
-  // outline (Licensing 8, Escrow Accounts 2, Disclosure Requirements 10, Agency Definitions/
-  // Relationships 12, VA Fair Housing 4, Specific Acts 4 -- sums to 40). Genuinely timed in reality
-  // (45 minutes).
-  va_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 75, minCorrect: 30 },
-  // 75 questions / 60 correct (80%) to pass -- codified directly in Virginia Administrative Code
-  // 4VAC15-410, a single DWR-administered equivalency exam (no free PDF handbook exists; content
-  // was web-scraped from the DWR Boater's Guide site directly). Untimed in reality.
-  va_boating: { questionCount: 75, durationSec: 3600, passPercent: 80, minCorrect: 60 },
-  // 50 questions / 40 correct (80%) to pass, per the Michigan Driver's Manual (Secretary of State,
-  // Oct 2025 edition). Untimed in reality; 60 minutes is a generous stand-in.
-  mi_driver: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // 50 questions / 40 correct (80%) to pass -- same AAMVA-standard CDL General Knowledge format.
-  // Genuinely timed in reality (~60 minutes).
-  mi_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // 25 questions / 20 correct (80%) to pass, per the Michigan Motorcycle Operator Manual (May 2022
-  // edition, still the current version linked from michigan.gov/sos). Untimed in reality.
-  mi_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
-  // 60 questions / 48 correct (80%) to pass, Kalkomey-produced and DNR-promoted -- same
-  // provider-administered pattern as oh_boating/nc_boating. Untimed in reality.
-  mi_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- DBW approves third-party NASBLA-standard courses (Boat-Ed, ACE Boater, etc.) rather than administering one single exam; this format converges consistently across DBW-approved providers. Untimed in reality; 60 minutes is a generous stand-in.
-  ca_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 75 questions / 60 correct (80%) to pass -- hedged, TPWD approves third-party vendor courses whose item counts genuinely vary 50-75 by provider (a TPWD-affiliated classroom course uses 60); this uses the most-cited national-vendor (Boat-Ed/BOATERexam) format. Untimed in reality; 60 minutes is a generous stand-in.
-  tx_boating: { questionCount: 75, durationSec: 3600, passPercent: 80, minCorrect: 60 },
-  // 60 questions / 48 correct (80%) to pass -- FWC approves third-party NASBLA-standard courses (Boat-Ed, BOATERexam, etc.) rather than administering one single exam; this format converges tightly across FWC-approved providers. Untimed in reality; 60 minutes is a generous stand-in.
-  fl_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- hedged, item counts genuinely vary 50-60 by OPRHP-approved vendor and passing scores converge mostly in the 75-80% range; this uses the upper-end round figure. Untimed in reality; 60 minutes is a generous stand-in.
-  ny_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- PFBC-approved vendors (Boat-Ed, Aceboater, etc.) converge tightly on this format rather than PFBC administering one single exam. Untimed in reality; 60 minutes is a generous stand-in.
-  pa_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- hedged, IDNR's handbook directs boaters to Boat-Ed (confirmed 80% passing, unlimited retakes) but the exact per-vendor question count is not publicly published; 60q matches the industry-wide 50-60 range reported for NASBLA course finals. Untimed in reality; 60 minutes is a generous stand-in.
-  il_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- CONFIRMED convergence: Boat-Ed (the provider GA DNR's handbook directs boaters to) confirms 80% passing with unlimited retakes, and BoatUS Foundation's Georgia course independently confirms 60 final-exam questions. Untimed in reality; 60 minutes is a generous stand-in.
-  ga_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass, CONFIRMED live on NJSP's FAQ and boat-ed.com/newjersey for the NASBLA-approved online course's final exam (unit quizzes separately require 70%, unlimited attempts). This is NOT the separate mandatory in-person proctored NJSP exam, whose question count/passing score NJSP does not publicly publish. Untimed in reality; 60 minutes is a generous stand-in.
-  nj_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- CONFIRMED convergence: Boat-Ed confirms 80% passing on its final exam (70% on unit quizzes, unlimited retakes), and BoatUS Foundation's Washington course independently confirms 60 final-exam questions. Untimed in reality; 60 minutes is a generous stand-in.
-  wa_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- unconfirmed stand-in. Arizona has NO mandatory boater-education law (confirmed via ARS Title 5 Ch.3 and 2 AZGFD-approved vendor pages stating outright "not required in Arizona"); this format applies only to boaters who voluntarily take an AZGFD-approved course. Boat-Ed and iLearnToBoat both confirm 80% passing, but neither publishes an exact question count. Untimed in reality; 60 minutes is a generous stand-in.
-  az_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- hedged, neither MEP-approved vendor (Boat-Ed, iLearnToBoat) publishes an official final-exam item count, though both independently confirm 80% passing with unlimited retakes. Untimed in reality; 60 minutes is a generous stand-in. Massachusetts's boater education mandate is a new, currently phasing-in law (certify by April 2026 or April 2028 depending on birth date) -- see ma_boating's TRACK_COMPLIANCE entry for full disclosure.
-  ma_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- hedged, TWRA does not publish an item count for its own delegated exam, but the independently TWRA-approved Boat-Ed course confirms 80% final-exam passing (70% on unit quizzes) with unlimited retakes. Untimed in reality; 60 minutes is a generous stand-in. TWRA directly administers its own proctored exam pathway ($13 Type 600 permit) alongside the separate paid Boat-Ed course -- see tn_boating's TRACK_COMPLIANCE entry for both paths.
-  tn_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- hedged, Missouri's approved vendors don't consistently publish a final-exam item count, but Boat-Ed's official Missouri course confirms 80% final-exam passing (70% on unit quizzes) with unlimited retakes. Untimed in reality; 60 minutes is a generous stand-in.
-  mo_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- hedged, Maryland's approved vendors don't publish a single official item count, but Boat-Ed's Maryland course confirms 80% final-exam passing with unlimited retakes. Untimed in reality; 60 minutes is a generous stand-in.
-  md_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- hedged, South Carolina's approved vendors don't consistently publish a final-exam item count, but Boat-Ed's official South Carolina course confirms 80% final-exam passing (70% on unit quizzes) with unlimited retakes. Untimed in reality; 60 minutes is a generous stand-in.
-  sc_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- fully hedged self-study convention. Minnesota's mandate (Minn. Stat. 86B.302) is confirmed and genuinely phasing in through 2028, but neither the DNR nor its approved course vendors uniformly publish a final-exam question count or passing percentage. Untimed in reality; 60 minutes is a generous stand-in.
-  mn_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- 80% passing threshold CONFIRMED (two independent DNR-approved vendors, Boat-Ed and iLearnToBoat, both require 80%+ on the final exam); the 60-question count is hedged, since no vendor consistently publishes an exact figure. Untimed in reality; 60 minutes is a generous stand-in.
-  wi_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- 80% final-exam threshold CONFIRMED directly on Boat-Ed's Alabama course page (after 70%+ unit quizzes); question count hedged, not published by ALEA or Boat-Ed. Alabama also offers a separate ALEA-administered state exam as an alternate path with an unpublished format. Untimed in reality; 60 minutes is a generous stand-in.
-  al_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions (CONFIRMED via BoatUS.org's Louisiana course) / 48 correct (80%, CONFIRMED via Boat-Ed's final-exam threshold) to pass -- LDWF's own in-person course uses a separately confirmed, different 70% threshold; this config matches the most convergent online-vendor figures, not one official LDWF-wide number. Untimed in reality; 60 minutes is a generous stand-in.
-  la_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- 80% threshold CONFIRMED directly on Boat-Ed's Nevada course page (both unit quizzes and final exam); question count hedged, not consistently published across NDOW-approved vendors. NRS 488.730's mandate applies specifically to Nevada's interstate boundary waters (Tahoe/Mead/Mohave), not a blanket statewide rule. Untimed in reality; 60 minutes is a generous stand-in.
-  nv_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // 60 questions / 48 correct (80%) to pass -- fully hedged self-study convention matching DEEP's own confirmed Equivalency Examination passing threshold (80%, $75 fee, one attempt). Connecticut's mandate is registration/residency-based, not birth-date-based, and its 9-provider approved-course landscape has no published cross-vendor convergence on a standard question count or score. Untimed in reality; 60 minutes is a generous stand-in.
-  ct_boating: { questionCount: 60, durationSec: 3600, passPercent: 80, minCorrect: 48 },
-  // Michigan's real Salesperson exam is ONE unified 115-question/70%/180min sitting with NO
-  // separate state-only portion (confirmed: no national/state labels anywhere in the PSI bulletin,
-  // unlike every other state built so far). MI-specific content is a real, PSI-weighted 28-item
-  // scope (Duties/Powers 3, Licensing 5, Statutory Requirements 10, Contractual Relationships 5,
-  // Additional State Topics 5) grounded in MCL 339.2501-2518 -- but no official practice-exam size/
-  // pass threshold exists for this supplemental scope alone, since it was never meant to be taken
-  // standalone. 40Q/70%/45min chosen here as a reasonable practice-test sizing (matches this
-  // project's default real-estate pass threshold elsewhere, e.g. oh_real_estate) -- an explicit
-  // product decision, not a sourced number. TRACK_COMPLIANCE frames this honestly as
-  // "Michigan-specific subject matter," never as "the state portion of the exam."
-  mi_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 70, minCorrect: 28 },
-  // 40 questions / 32 correct (80%) to pass, officially published on dol.wa.gov. No official time
-  // limit found; untimed in reality, 60 minutes is a generous stand-in per this project's convention.
-  wa_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
-  // 50 questions / 40 correct (80%) to pass -- same AAMVA-standard CDL General Knowledge format.
-  // Genuinely timed in reality (60 minutes).
-  wa_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // Alabama uses the AAMVA CDL Testing System (2005 CDL Testing System manual, ALEA Driver License
-  // Division). General Knowledge test is 50 questions / 40 correct (80%) to pass, per FMCSA's
-  // federally standardized 49 CFR 383.135(a) minimum and confirmed via multiple third-party AL CDL
-  // prep sources; untimed in person at an ALEA office in reality, 60 minutes is a generous stand-in
-  // per this project's convention.
-  al_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // Alaska uses the AAMVA CDL Testing System (2005 CDL Testing System manual, rev. AK DMV
-  // 02/2018), published by the Alaska Dept. of Administration, Division of Motor Vehicles. The
-  // manual states "the minimum passing score for all knowledge tests is 80%" (Section 1, p.1-2);
-  // General Knowledge test is 50 questions / 40 correct (80%), confirmed via multiple third-party
-  // AK CDL prep sources against the federally standardized 49 CFR 383.135(a) minimum. No official
-  // time limit found; 60 minutes is a generous stand-in per this project's convention.
-  ak_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // Arizona uses the AAMVA CDL Testing System (2005/2022 CDL Testing System manual, ADOT Motor
-  // Vehicle Division, Revised 01/2026). The manual explicitly states "The applicant must answer
-  // at least 80 percent of the questions correctly on each knowledge test to achieve a passing
-  // score" (Customer Service Guide for Commercial Drivers, p. 9). Exact question count (50) is
-  // not spelled out in the manual text itself but matches the federally standardized 49 CFR
-  // 383.135(a) General Knowledge format and is corroborated by multiple third-party AZ CDL prep
-  // sources (epermittest.com, dmv-written-test.com); no official time limit found, 60 minutes is
-  // a generous stand-in per this project's convention.
-  az_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  ar_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  co_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  ct_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  de_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  hi_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  id_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  il_cdl: { questionCount: 30, durationSec: 3600, passPercent: 80, minCorrect: 24 },
-  in_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  ia_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  ks_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  ky_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  la_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  ma_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  md_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  me_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  mn_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  mo_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  ms_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  mt_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  nd_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  ne_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  nh_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  nj_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  nm_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  nv_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  ok_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  or_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  ri_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  sc_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  sd_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  tn_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // Vermont's CDL Manual (VN-111) never discloses a knowledge-test item count or passing-score
-  // percentage anywhere in its text -- confirmed via exhaustive search, same situation as this
-  // project's Montana/Louisiana/New Mexico/Oregon/Utah CDL tracks. 50Q/80%/40 correct is the
-  // AAMVA-standard convention (federally mandated 80% min under 49 CFR 383.135(a)) used as a
-  // stand-in per this project's convention for hedged-mechanics CDL states.
-  vt_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // Wisconsin's Commercial Driver's Manual (May 2026 edition, WisDOT) never discloses a General
-  // Knowledge item count or passing-score percentage anywhere -- the only official Wisconsin
-  // document stating an explicit 80% figure (WisDOT CDL Instructor Guidelines) applies to the
-  // separate CDL instructor licensing exam, not the driver knowledge test. 50Q/80%/40 correct is
-  // the AAMVA-standard convention (federally mandated 80% min under 49 CFR 383.135(a)) used as a
-  // stand-in per this project's convention for hedged-mechanics CDL states.
-  wi_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // West Virginia's CDL Manual (WV DMV Rev. 08/2023 front matter over AAMVA base manual) confirms
-  // only the 80% passing score explicitly ("must be taken and passed, with at least an 80% score")
-  // -- no exact knowledge-test item count is disclosed anywhere in the manual, same situation as
-  // this project's Montana/Louisiana/New Mexico/Oregon/Utah/Vermont CDL tracks. 50Q/80%/40 correct
-  // is the AAMVA-standard convention (federally mandated 80% min under 49 CFR 383.135(a)) used as a
-  // stand-in per this project's convention for hedged-mechanics CDL states.
-  wv_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // Wyoming's CDL Manual ("Rules of the Road," Oct 2024) confirms the 80% passing score directly
-  // in its Wyoming-specific front matter ("the passing score for a written test is 80 percent"),
-  // independently re-confirmed on WYDOT's live CDL Testing webpage -- but no exact per-test item
-  // count is disclosed anywhere. 50Q/80%/40 correct is the AAMVA-standard convention (federally
-  // mandated 80% min under 49 CFR 383.135(a)) used as a stand-in per this project's convention for
-  // hedged-mechanics CDL states.
-  wy_cdl: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  // WA licensing is two-tier: a 50Q/80% Permit test, then a 25Q/80% Endorsement test after permit
-  // holding. This track models the Endorsement (full-license) tier -- 25Q/80% -- matching the
-  // question count/format used by every other state's motorcycle track built this project. Both
-  // counts officially published on dol.wa.gov; neither has a published time limit.
-  wa_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
-  // 30 questions / 24 correct (80%) to pass -- hedged, not officially disclosed by ALEA; matches the 5 convergent third-party sources checked and AL's separate Driver track's own hedge. Untimed in reality; 60 minutes is a generous stand-in.
-  al_motorcycle: { questionCount: 30, durationSec: 3600, passPercent: 80, minCorrect: 24 },
-  // 25 questions / 20 correct (80%) to pass -- hedged, not officially disclosed anywhere by AR DPS; matches 3 convergent third-party sources. Untimed in reality; 60 minutes is a generous stand-in.
-  ar_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
-  // 16 questions confirmed directly from the manual ("consist of 16 questions") and portal.ct.gov. Passing score hedged -- not published anywhere official; 80% (13 correct) used as the standard stand-in. Untimed in reality; 60 minutes is a generous stand-in.
-  ct_motorcycle: { questionCount: 16, durationSec: 3600, passPercent: 80, minCorrect: 13 },
-  // 40 questions / 32 correct (80%) to pass -- hedged, the manual's own preface confirms the test is mandatory for everyone but no official item count/passing % is published; matches convergent third-party sources. Untimed in reality; 60 minutes is a generous stand-in.
-  mn_motorcycle: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
-  // 25 questions / 20 correct (80%) to pass -- hedged, official MS DPS pages confirm the knowledge test is mandatory (course only waives the skills test) but no item count/passing % is published; matches convergent third-party sources. Untimed in reality; 60 minutes is a generous stand-in.
-  ms_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
-  // 25 questions CONFIRMED directly from two independent dld.utah.gov pages (closed-book test). 80% (20 correct) passing is well-corroborated -- matches UT's own confirmed Driver-track passing % and third-party sources -- but not stated verbatim by DLD for the motorcycle test specifically, so the percentage is hedged even though the item count is confirmed. Untimed in reality; 60 minutes is a generous stand-in.
-  ut_motorcycle: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
-  // Washington's entry-level license is called "Broker" (not "Salesperson"). State-specific portion:
-  // 30 items / 70% scaled score / 90min, per the real weighted PSI content outline. Treated as a
-  // direct raw passPercent, same resolved convention as nc_real_estate/ga_real_estate's own
-  // scaled-vs-raw ambiguity.
-  wa_real_estate: { questionCount: 30, durationSec: 5400, passPercent: 70, minCorrect: 21 },
-  // Managing Broker is WA's supervisory upgrade tier (same pattern as il_managing_broker). State
-  // portion: 44 items / 75% scaled score / 90min, per the real weighted PSI content outline.
-  wa_managing_broker: { questionCount: 44, durationSec: 5400, passPercent: 75, minCorrect: 33 },
-  ak_real_estate: { questionCount: 40, durationSec: 4800, passPercent: 75, minCorrect: 30 },
-  al_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  ar_real_estate: { questionCount: 30, durationSec: 3600, passPercent: 70, minCorrect: 21 },
-  az_real_estate: { questionCount: 60, durationSec: 5400, passPercent: 75, minCorrect: 45 },
-  co_real_estate: { questionCount: 74, durationSec: 6600, passPercent: 71.6, minCorrect: 53 },
-  ct_real_estate: { questionCount: 35, durationSec: 2700, passPercent: 70, minCorrect: 25 },
-  de_real_estate: { questionCount: 40, durationSec: 4800, passPercent: 70, minCorrect: 28 },
-  hi_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 70, minCorrect: 35 },
-  ia_real_estate: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  id_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
-  in_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 75, minCorrect: 38 },
-  ks_real_estate: { questionCount: 30, durationSec: 5400, passPercent: 75, minCorrect: 23 },
-  ky_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 75, minCorrect: 38 },
-  la_real_estate: { questionCount: 55, durationSec: 5400, passPercent: 70, minCorrect: 39 },
-  ma_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70, minCorrect: 28 },
-  md_real_estate: { questionCount: 30, durationSec: 1800, passPercent: 70, minCorrect: 21 },
-  me_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
-  mn_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
-  mo_real_estate: { questionCount: 40, durationSec: 7200, passPercent: 75, minCorrect: 30 },
-  ms_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
-  mt_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
-  nd_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
-  ne_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 75, minCorrect: 38 },
-  nh_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70, minCorrect: 28 },
-  nj_real_estate: { questionCount: 30, durationSec: 3600, passPercent: 70, minCorrect: 21 },
-  nm_real_estate: { questionCount: 50, durationSec: 3600, passPercent: 75, minCorrect: 38 },
-  nv_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
-  ok_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70, minCorrect: 28 },
-  or_real_estate: { questionCount: 50, durationSec: 4500, passPercent: 75, minCorrect: 38 },
-  ri_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 70, minCorrect: 35 },
-  sc_real_estate: { questionCount: 40, durationSec: 4800, passPercent: 70, minCorrect: 28 },
-  sd_real_estate: { questionCount: 52, durationSec: 7200, passPercent: 75, minCorrect: 39 },
-  tn_real_estate: { questionCount: 40, durationSec: 4800, passPercent: 70, minCorrect: 28 },
-  ut_real_estate: { questionCount: 50, durationSec: 5400, passPercent: 70, minCorrect: 35 },
-  vt_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 75, minCorrect: 30 },
-  wi_real_estate: { questionCount: 140, durationSec: 14400, passPercent: 75, minCorrect: 105 },
-  wv_real_estate: { questionCount: 50, durationSec: 3600, passPercent: 70, minCorrect: 35 },
-  wy_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 75, minCorrect: 30 },
-  fl_real_estate: { questionCount: 40, durationSec: 2700, passPercent: 75, minCorrect: 30 },
-  tx_real_estate: { questionCount: 40, durationSec: 5400, passPercent: 70, minCorrect: 28 },
-  // NY DOS reports the real exam as pass/fail only -- no published item count or percentage score.
-  // 75Q/70% (53 of 75 correct) is a commonly-cited third-party study convention, not an official
-  // DOS figure; 90-minute duration IS confirmed directly by DOS.
-  ny_real_estate: { questionCount: 75, durationSec: 5400, passPercent: 70, minCorrect: 53 },
-  al_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  fl_notary: { questionCount: 40, durationSec: 5400, passPercent: 70, minCorrect: 28 },
-  ga_notary: { questionCount: 40, durationSec: 4800, passPercent: 70, minCorrect: 28 },
-  tx_notary: { questionCount: 40, durationSec: 5400, passPercent: 70, minCorrect: 28 },
-  ak_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  de_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  id_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  ia_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  ks_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  ky_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  ma_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  mi_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  mn_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  ms_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  nh_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  nd_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  ok_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  sc_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  sd_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  tn_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  va_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  wa_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  wv_notary: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  vt_notary: { questionCount: 50, durationSec: 5400, passPercent: 80, minCorrect: 40 },
-  az_notary: { questionCount: 45, durationSec: 5400, passPercent: 80, minCorrect: 36 },
-  ar_notary: { questionCount: 30, durationSec: 5400, passPercent: 80, minCorrect: 24 },
-  co_notary: { questionCount: 40, durationSec: 1800, passPercent: 80, minCorrect: 32 },
-  ct_notary: { questionCount: 35, durationSec: 3600, passPercent: 100, minCorrect: 35 },
-  hi_notary: { questionCount: 45, durationSec: 5400, passPercent: 80, minCorrect: 36 },
-  il_notary: { questionCount: 50, durationSec: 5400, passPercent: 85, minCorrect: 43 },
-  in_notary: { questionCount: 30, durationSec: 5400, passPercent: 80, minCorrect: 24 },
-  la_notary: { questionCount: 50, durationSec: 14400, passPercent: 70, minCorrect: 35 },
-  md_notary: { questionCount: 20, durationSec: 5400, passPercent: 80, minCorrect: 16 },
-  me_notary: { questionCount: 15, durationSec: 5400, passPercent: 80, minCorrect: 12 },
-  mo_notary: { questionCount: 30, durationSec: 5400, passPercent: 80, minCorrect: 24 },
-  mt_notary: { questionCount: 30, durationSec: 5400, passPercent: 80, minCorrect: 24 },
-  ne_notary: { questionCount: 20, durationSec: 5400, passPercent: 85, minCorrect: 17 },
-  nj_notary: { questionCount: 50, durationSec: 5400, passPercent: 80, minCorrect: 40 },
-  nm_notary: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  nv_notary: { questionCount: 50, durationSec: 5400, passPercent: 80, minCorrect: 40 },
-  oh_notary: { questionCount: 50, durationSec: 5400, passPercent: 80, minCorrect: 40 },
-  or_notary: { questionCount: 50, durationSec: 5400, passPercent: 80, minCorrect: 40 },
-  pa_notary: { questionCount: 30, durationSec: 3600, passPercent: 75, minCorrect: 23 },
-  ri_notary: { questionCount: 50, durationSec: 5400, passPercent: 80, minCorrect: 40 },
-  ut_notary: { questionCount: 35, durationSec: 5400, passPercent: 80, minCorrect: 28 },
-  wi_notary: { questionCount: 30, durationSec: 5400, passPercent: 90, minCorrect: 27 },
-  wy_notary: { questionCount: 20, durationSec: 3600, passPercent: 70, minCorrect: 14 },
-  al_driver: { questionCount: 30, durationSec: 0, passPercent: 80, minCorrect: 24 },
-  ak_driver: { questionCount: 20, durationSec: 1500, passPercent: 80, minCorrect: 16 },
-  az_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
-  ar_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
-  co_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
-  ct_driver: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
-  de_driver: { questionCount: 30, durationSec: 3600, passPercent: 80, minCorrect: 24 },
-  hi_driver: { questionCount: 30, durationSec: 3600, passPercent: 80, minCorrect: 24 },
-  id_driver: { questionCount: 40, durationSec: 3600, passPercent: 85, minCorrect: 34 },
-  in_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
-  ia_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
-  ks_driver: { questionCount: 25, durationSec: 3600, passPercent: 80, minCorrect: 20 },
-  ky_driver: { questionCount: 40, durationSec: 0, passPercent: 80, minCorrect: 32 },
-  la_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
-  me_driver: { questionCount: 30, durationSec: 0, passPercent: 80, minCorrect: 24 },
-  md_driver: { questionCount: 25, durationSec: 1200, passPercent: 88, minCorrect: 22 },
-  ma_driver: { questionCount: 25, durationSec: 1500, passPercent: 72, minCorrect: 18 },
-  mn_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
-  ms_driver: { questionCount: 40, durationSec: 0, passPercent: 80, minCorrect: 32 },
-  mo_driver: { questionCount: 25, durationSec: 0, passPercent: 80, minCorrect: 20 },
-  mt_driver: { questionCount: 40, durationSec: 0, passPercent: 80, minCorrect: 32 },
-  ne_driver: { questionCount: 40, durationSec: 0, passPercent: 80, minCorrect: 32 },
-  nv_driver: { questionCount: 25, durationSec: 0, passPercent: 80, minCorrect: 20 },
-  nh_driver: { questionCount: 40, durationSec: 2400, passPercent: 80, minCorrect: 32 },
-  nj_driver: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  nm_driver: { questionCount: 40, durationSec: 3600, passPercent: 70, minCorrect: 28 },
-  nd_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
-  ok_driver: { questionCount: 20, durationSec: 3600, passPercent: 75, minCorrect: 15 },
-  or_driver: { questionCount: 35, durationSec: 3600, passPercent: 80, minCorrect: 28 },
-  ri_driver: { questionCount: 40, durationSec: 5400, passPercent: 80, minCorrect: 32 },
-  sc_driver: { questionCount: 30, durationSec: 0, passPercent: 80, minCorrect: 24 },
-  sd_driver: { questionCount: 40, durationSec: 0, passPercent: 80, minCorrect: 32 },
-  tn_driver: { questionCount: 40, durationSec: 0, passPercent: 80, minCorrect: 32 },
-  ut_driver: { questionCount: 50, durationSec: 3600, passPercent: 80, minCorrect: 40 },
-  vt_driver: { questionCount: 20, durationSec: 3600, passPercent: 80, minCorrect: 16 },
-  wv_driver: { questionCount: 25, durationSec: 0, passPercent: 76, minCorrect: 19 },
-  wi_driver: { questionCount: 50, durationSec: 2700, passPercent: 80, minCorrect: 40 },
-  wy_driver: { questionCount: 40, durationSec: 3600, passPercent: 80, minCorrect: 32 },
-};
 
-// See the ca_driver entry above for sourcing -- this is the under-18/provisional-permit variant,
-// used instead of EXAM_CONFIGS.ca_driver when ageCategory === 'under18' (checkout-time answer, or
-// a per-sitting override on the exam intro page; see handleExamStart/handleExamConfig).
+// The ca_driver under-18/provisional-permit variant, used instead of track_registry's ca_driver
+// row when ageCategory === 'under18' (checkout-time answer, or a per-sitting override on the exam
+// intro page; see handleExamStart/handleExamConfig). Kept as a code-level special case rather than
+// a track_registry column since it's keyed on (exam_type, age_category), a 2-dimensional key the
+// registry's one-row-per-exam_type shape doesn't support -- not worth a second table for a single
+// age-conditional variant. Sourcing: 46 questions / untimed / 38 correct (82.6%) to pass, confirmed
+// against DMV's own 2006 Class C written-test evaluation report plus corroborating current sources
+// (see track_registry's ca_driver row for the full sourcing note on the paired 18+ variant).
 const CA_DRIVER_UNDER18_CONFIG = { questionCount: 46, durationSec: 0, passPercent: 82.6, minCorrect: 38 };
 
-function getExamConfig(examType, ageCategory) {
+// Single source of truth for exam mechanics (question count/duration/passing score) is
+// track_registry (2026-08-30 migration -- see schema.sql). This used to be a ~500-line hardcoded
+// EXAM_CONFIGS object here; retired in favor of the DB. Cached per-isolate with a short TTL rather
+// than re-queried on every call -- exam generation/scoring is a hot path, and Workers isolates are
+// short-lived enough that "stale until next cold start or TTL expiry" is the normal, accepted
+// tradeoff for this kind of rarely-changing reference data (same pattern already used by
+// getInactiveTrackOverrides/handlePublicConfig).
+let trackRegistryCache = null;
+let trackRegistryCacheAt = 0;
+const TRACK_REGISTRY_CACHE_TTL_MS = 5 * 60 * 1000;
+
+async function getTrackRegistry(env) {
+  const cacheAge = Date.now() - trackRegistryCacheAt;
+  if (trackRegistryCache && cacheAge < TRACK_REGISTRY_CACHE_TTL_MS) return trackRegistryCache;
+  const rows = (await env.DB.prepare('SELECT * FROM track_registry').all()).results;
+  const map = {};
+  rows.forEach((r) => { map[r.exam_type] = r; });
+  trackRegistryCache = map;
+  trackRegistryCacheAt = Date.now();
+  return map;
+}
+
+// Synchronous lookup against an already-fetched registry map -- for callers iterating many rows
+// (e.g. scoring a whole list of exam_attempts) that await getTrackRegistry(env) ONCE up front,
+// then look up each row's config without an await per iteration.
+function getExamConfigFromRegistry(registry, examType, ageCategory) {
   if (examType === 'ca_driver' && ageCategory === 'under18') return CA_DRIVER_UNDER18_CONFIG;
-  return EXAM_CONFIGS[examType] || { questionCount: 45, durationSec: 3600, passPercent: 70, minCorrect: 32 };
+  const r = registry[examType];
+  if (r) return { questionCount: r.exam_question_count, durationSec: r.exam_duration_sec, passPercent: r.pass_percent, minCorrect: r.min_correct };
+  return { questionCount: 45, durationSec: 3600, passPercent: 70, minCorrect: 32 };
+}
+
+async function getExamConfig(env, examType, ageCategory) {
+  const registry = await getTrackRegistry(env);
+  return getExamConfigFromRegistry(registry, examType, ageCategory);
+}
+
+// The single source of truth for "what tracks exist" -- site and admin both build their track
+// list from this instead of each keeping an independently-hardcoded copy (which is exactly how
+// admin's Kind labels drifted out of sync with the site's examKind before this table existed).
+// Shaped in camelCase matching the site's existing HUB_EXAMS field names (examType/examKind/
+// stateCode/shortName/active) so the site can merge this directly onto its content-only track
+// objects with no key translation. Public + unauthenticated, same posture as /questions/counts --
+// none of this is sensitive, and the public site needs it to render its own homepage/category
+// pages/nav.
+async function handleTrackRegistryList(env) {
+  const registry = await getTrackRegistry(env);
+  const tracks = Object.keys(registry).map((examType) => {
+    const r = registry[examType];
+    return {
+      examType: r.exam_type,
+      examKind: r.kind,
+      stateCode: r.state_code,
+      shortName: r.short_name,
+      active: !!r.active,
+      isExamRequired: !!r.is_exam_required,
+      questionCount: r.exam_question_count,
+      durationSec: r.exam_duration_sec,
+      passPercent: r.pass_percent,
+      minCorrect: r.min_correct,
+      mechanicsNote: r.mechanics_note,
+    };
+  });
+  return json({ tracks });
 }
 
 async function handleExamConfig(user, request, env) {
@@ -2473,7 +2052,7 @@ async function handleExamConfig(user, request, env) {
   // override picker, which just re-fetches this on change); absent, falls back to the account's
   // own stored default from checkout.
   const ageCategory = url.searchParams.get('ageCategory') || user.age_category || null;
-  const config = getExamConfig(user.exam_type, ageCategory);
+  const config = await getExamConfig(env, user.exam_type, ageCategory);
   return json({ examType: user.exam_type, ...config });
 }
 
@@ -2544,12 +2123,12 @@ async function pickUnseenQuestions(env, user, config) {
 // depends on which age category applied to this particular sitting, which a later config change
 // (or someone else's different checkout answer) must not retroactively reinterpret. Falls back to
 // today's getExamConfig() default only for pre-migration attempts that predate this column.
-function buildExamResult(examType, questionIds, answers, byId, correct, total, startedAt, submittedAt, durationSec, passPercent) {
-  const effectivePassPercent = passPercent != null ? passPercent : getExamConfig(examType).passPercent;
+async function buildExamResult(env, examType, questionIds, answers, byId, correct, total, startedAt, submittedAt, durationSec, passPercent) {
+  const effectivePassPercent = passPercent != null ? passPercent : (await getExamConfig(env, examType)).passPercent;
   const percent = total ? Math.round((correct / total) * 1000) / 10 : 0;
   return {
     correct, total, percent, passed: percent >= effectivePassPercent,
-    // durationSec 0 means untimed (see EXAM_CONFIGS) -- nothing to cap timeTakenSec against.
+    // durationSec 0 means untimed (see track_registry) -- nothing to cap timeTakenSec against.
     timeTakenSec: durationSec ? Math.min(submittedAt - startedAt, durationSec) : (submittedAt - startedAt),
     review: questionIds.map((id) => {
       const q = byId[id];
@@ -2573,7 +2152,7 @@ async function findInProgressAttempt(user, env, mode) {
     `SELECT * FROM exam_attempts WHERE user_id = ? AND exam_type = ? AND mode = ? AND submitted_at IS NULL
      ORDER BY started_at DESC LIMIT 1`
   ).bind(user.id, user.exam_type, mode).first();
-  // duration_sec 0 means untimed (see EXAM_CONFIGS) -- an untimed attempt never expires this way.
+  // duration_sec 0 means untimed (see track_registry) -- an untimed attempt never expires this way.
   if (!existing || (existing.duration_sec && existing.started_at + existing.duration_sec <= now())) return null;
   return existing;
 }
@@ -2603,7 +2182,7 @@ async function handleExamStart(user, request, env) {
   // no-op for every other track's getExamConfig branch.
   const ageCategory = body.ageCategory === 'under18' || body.ageCategory === '18plus'
     ? body.ageCategory : (user.age_category || null);
-  const config = getExamConfig(user.exam_type, ageCategory);
+  const config = await getExamConfig(env, user.exam_type, ageCategory);
   const questionIds = mode === 'toughest45'
     ? await pickToughest45Questions(env, user, config)
     : unseenOnly
@@ -2670,7 +2249,7 @@ async function handleExamSubmit(user, request, env) {
   if (attempt.submitted_at) {
     // Idempotent -- a retried submit (e.g. flaky network) returns the same already-computed
     // result instead of erroring or rescoring.
-    return json(buildExamResult(attempt.exam_type, questionIds, answers, byId,
+    return json(await buildExamResult(env, attempt.exam_type, questionIds, answers, byId,
       attempt.score_correct, attempt.score_total, attempt.started_at, attempt.submitted_at, attempt.duration_sec, attempt.pass_percent));
   }
 
@@ -2687,7 +2266,7 @@ async function handleExamSubmit(user, request, env) {
   const progressStmts = questionIds.map((id) => byId[id] && progressUpsertStmt(env, user.id, id, answers[id], byId[id].correct_choice, submittedAt)).filter(Boolean);
   if (progressStmts.length) await env.DB.batch(progressStmts);
 
-  const result = buildExamResult(attempt.exam_type, questionIds, answers, byId,
+  const result = await buildExamResult(env, attempt.exam_type, questionIds, answers, byId,
     correctCount, questionIds.length, attempt.started_at, submittedAt, attempt.duration_sec, attempt.pass_percent);
 
   const codeRow = await env.DB.prepare('SELECT code, buyer_email FROM codes WHERE redeemed_by = ?').bind(user.id).first();
@@ -2710,9 +2289,10 @@ async function handleExamHistory(user, request, env) {
     `SELECT id, exam_type, score_correct, score_total, started_at, submitted_at, pass_percent FROM exam_attempts
      WHERE user_id = ? AND mode = ? AND submitted_at IS NOT NULL ORDER BY submitted_at DESC LIMIT 50`
   ).bind(user.id, mode).all()).results;
+  const trackRegistry = await getTrackRegistry(env);
   return json({
     attempts: rows.map((r) => {
-      const threshold = r.pass_percent != null ? r.pass_percent : getExamConfig(r.exam_type).passPercent;
+      const threshold = r.pass_percent != null ? r.pass_percent : getExamConfigFromRegistry(trackRegistry, r.exam_type).passPercent;
       const percent = r.score_total ? Math.round((r.score_correct / r.score_total) * 1000) / 10 : 0;
       return {
         attemptId: r.id, examType: r.exam_type, correct: r.score_correct, total: r.score_total,
@@ -2733,7 +2313,7 @@ async function handleExamAttemptDetail(user, request, env) {
   const questionIds = JSON.parse(attempt.question_ids);
   const answers = JSON.parse(attempt.answers);
   const byId = await fetchQuestionsByIds(env, questionIds);
-  const result = buildExamResult(attempt.exam_type, questionIds, answers, byId,
+  const result = await buildExamResult(env, attempt.exam_type, questionIds, answers, byId,
     attempt.score_correct, attempt.score_total, attempt.started_at, attempt.submitted_at, attempt.duration_sec, attempt.pass_percent);
   return json({ ...result, startedAt: attempt.started_at, submittedAt: attempt.submitted_at });
 }
@@ -3095,10 +2675,16 @@ async function handleQuestionCounts(env) {
 }
 
 // Backs the admin Settings > Course pricing table's read-only Duration/Questions/Pass score
-// columns -- EXAM_CONFIGS is the same single source of truth getExamConfig() itself reads for
+// columns -- track_registry is the same single source of truth getExamConfig() itself reads for
 // generating real exams, so this can't drift out of sync with what a student actually sits.
 async function handleExamConfigsList(env) {
-  return json({ configs: EXAM_CONFIGS });
+  const registry = await getTrackRegistry(env);
+  const configs = {};
+  Object.keys(registry).forEach((examType) => {
+    const r = registry[examType];
+    configs[examType] = { questionCount: r.exam_question_count, durationSec: r.exam_duration_sec, passPercent: r.pass_percent, minCorrect: r.min_correct };
+  });
+  return json({ configs });
 }
 
 function questionFromBody(b) {
@@ -3237,6 +2823,9 @@ export default {
       // display copy), and the category landing pages want a real, non-fabricated "X,XXX practice
       // questions in this category" stat, summed client-side from these per-exam_type counts.
       if (pathname === '/questions/counts' && method === 'GET') return await handleQuestionCounts(env);
+      // Public alias of the admin's /console/track-registry -- see handleTrackRegistryList's own
+      // comment for why this is public and what it replaces.
+      if (pathname === '/track-registry' && method === 'GET') return await handleTrackRegistryList(env);
       if (pathname === '/promotions' && method === 'GET') return await handlePromotionsList(request, env);
       if (pathname === '/promotions/verify-request' && method === 'POST') return await handlePromoVerifyRequest(request, env);
       if (pathname === '/promotions/verify-email' && method === 'GET') return await handlePromoVerifyEmailConfirm(request, env);
@@ -3291,6 +2880,7 @@ export default {
         if (pathname === '/console/questions/counts' && method === 'GET') return await handleQuestionCounts(env);
         if (pathname === '/console/questions/topics' && method === 'GET') return await handleQuestionTopics(request, env);
         if (pathname === '/console/exam-configs' && method === 'GET') return await handleExamConfigsList(env);
+        if (pathname === '/console/track-registry' && method === 'GET') return await handleTrackRegistryList(env);
         if (pathname === '/console/questions/create' && method === 'POST') return await handleQuestionCreate(request, env);
         if (pathname === '/console/questions/update' && method === 'POST') return await handleQuestionUpdate(request, env);
         if (pathname === '/console/questions/delete' && method === 'POST') return await handleQuestionDelete(request, env);

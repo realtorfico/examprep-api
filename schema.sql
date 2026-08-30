@@ -93,6 +93,34 @@ CREATE TABLE pricing (
   updated_at  INTEGER NOT NULL
 );
 
+-- Single source of truth for "what tracks exist" -- identity (kind/state/label/active) and real
+-- exam mechanics (question count/duration/passing score), replacing what used to be independently
+-- hardcoded in site's HUB_EXAMS, admin's EXAM_TYPES, and the API's EXAM_CONFIGS (2026-08-30
+-- migration -- those three had already drifted out of sync once, see the Real Estate Kind
+-- clubbing bug). Deliberately excludes: `category` (was pure display text, no logic ever used it,
+-- dropped rather than migrated) and question bank size (stays a live COUNT(*) on `questions` --
+-- storing it here would go stale the moment a question is added/removed). `kind` + `state_code`
+-- are kept independent of `exam_type` rather than derived from it, since 3 kinds' exam_type
+-- suffixes don't match their kind's slug (Real Estate Broker -> `_managing_broker`, Real Estate
+-- Salesperson -> `_real_estate`, Commercial Driver (CDL) -> `_cdl`) -- a deliberate grandfathered
+-- exception rather than a naming bug.
+CREATE TABLE track_registry (
+  exam_type           TEXT PRIMARY KEY,
+  kind                 TEXT NOT NULL,
+  state_code           TEXT NOT NULL,
+  short_name           TEXT NOT NULL,
+  active               INTEGER NOT NULL DEFAULT 1,
+  is_exam_required     INTEGER NOT NULL DEFAULT 1,
+  exam_question_count  INTEGER NOT NULL,
+  exam_duration_sec    INTEGER NOT NULL,
+  pass_percent         INTEGER NOT NULL,
+  min_correct          INTEGER NOT NULL,
+  mechanics_note       TEXT, -- sourcing/confidence rationale, migrated verbatim from EXAM_CONFIGS' code comments
+  updated_at           INTEGER NOT NULL
+);
+CREATE INDEX idx_track_registry_kind ON track_registry(kind);
+CREATE INDEX idx_track_registry_state ON track_registry(state_code);
+
 -- Refer & earn points. `accounts` are lightweight, email-keyed identities (no password/login) —
 -- created the moment someone refers a friend, so points can accrue before any purchase happens.
 CREATE TABLE accounts (
