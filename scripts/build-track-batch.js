@@ -39,6 +39,14 @@ function jaccard(aWords, bWords) {
   const union = a.size + b.size - inter;
   return union === 0 ? 0 : inter / union;
 }
+function choiceWords(q) { return normWords([q.choice_a, q.choice_b, q.choice_c, q.choice_d].join(' ')); }
+// A stem-only Jaccard check flags legitimate math/formula variants (same template wording, different
+// numbers -> different real answer) as near-duplicates, since the template words dominate the
+// stopword-filtered token set. Requiring the answer CHOICES to also be similar (not just the stem)
+// fixes this: two LTV questions with different dollar figures share a similar stem but have very
+// different choice text (different computed percentages), so they correctly stay distinct. Found via
+// a ga_re_broker depth-backfill QA pass 2026-08-30 that silently dropped 249/250 "duplicates" this way.
+const CHOICE_SIM_THRESHOLD = 0.5;
 function esc(s) { return String(s).replace(/'/g, "''"); }
 function isValid(q) {
   for (const k of REQUIRED_FIELDS) if (!q[k] && q[k] !== 0) return false;
@@ -107,7 +115,7 @@ function main() {
   const seenExact = new Set();
   const deduped = [];
   const dropped = [];
-  const withWords = valid.map(q => ({ q, words: normWords(q.question) }));
+  const withWords = valid.map(q => ({ q, words: normWords(q.question), cwords: choiceWords(q) }));
   for (const item of withWords) {
     const key = item.q.question.trim().toLowerCase().replace(/\s+/g, ' ');
     if (seenExact.has(key)) { dropped.push({ q: item.q, reason: 'exact-dup' }); continue; }
@@ -116,7 +124,10 @@ function main() {
     for (const kept of deduped) {
       if (kept.q.topic !== item.q.topic) continue;
       const sim = jaccard(item.words, kept.words);
-      if (sim >= DEDUPE_THRESHOLD) { isDup = true; dropped.push({ q: item.q, reason: `near-dup (${sim.toFixed(2)}) of: ${kept.q.question.slice(0, 60)}` }); break; }
+      if (sim < DEDUPE_THRESHOLD) continue;
+      const choiceSim = jaccard(item.cwords, kept.cwords);
+      if (choiceSim < CHOICE_SIM_THRESHOLD) continue; // stem-similar but answers differ -> legitimate variant (e.g. math), not a duplicate
+      isDup = true; dropped.push({ q: item.q, reason: `near-dup (stem ${sim.toFixed(2)}, choices ${choiceSim.toFixed(2)}) of: ${kept.q.question.slice(0, 60)}` }); break;
     }
     if (!isDup) deduped.push(item);
   }
