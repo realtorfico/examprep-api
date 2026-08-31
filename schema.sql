@@ -67,6 +67,27 @@ CREATE TABLE progress (
 );
 CREATE INDEX idx_progress_user ON progress(user_id);
 
+-- One row per (user, calendar day) recording that user's cumulative accuracy/coverage AT that
+-- point in time -- `progress` above only stores running totals with no history, so this is the
+-- only way to ever chart "improvement over time" for regular quiz activity (mock exams already
+-- have their own real per-attempt timestamps in exam_attempts, no snapshot needed there). Written
+-- by a daily cron (recordDailyProgressSnapshots in index.js, see the `scheduled` handler) for
+-- every user with at least one progress row -- NOT retroactive, so a user's history only starts
+-- accumulating from whenever this table first shipped. Added 2026-08-31 for the admin Codes-table
+-- usage drilldown.
+CREATE TABLE progress_snapshots (
+  user_id        TEXT NOT NULL REFERENCES users(id),
+  snapshot_date  TEXT NOT NULL,              -- 'YYYY-MM-DD', UTC
+  accuracy_pct   INTEGER,                    -- NULL if total_attempts = 0 (no activity yet)
+  coverage_pct   INTEGER,                    -- NULL if the user's exam_type has 0 questions (shouldn't happen, but guard)
+  total_seen     INTEGER NOT NULL,           -- distinct questions attempted so far (coverage numerator)
+  total_correct  INTEGER NOT NULL,           -- cumulative SUM(times_correct)
+  total_attempts INTEGER NOT NULL,           -- cumulative SUM(times_seen) (accuracy denominator)
+  created_at     INTEGER NOT NULL,
+  PRIMARY KEY (user_id, snapshot_date)
+);
+CREATE INDEX idx_progress_snapshots_user ON progress_snapshots(user_id);
+
 -- Per-user consumption of study resources (audio/video/pdf/image/table), mirroring the
 -- question `progress` table's shape. resource_file matches RESOURCES[...].file client-side
 -- (the same stable key already used for signed URLs) -- there's no server-side resource ID

@@ -3,7 +3,7 @@ import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
 import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
-import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL } from './progressQueries.js';
+import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL, ALL_USERS_PROGRESS_TOTALS_SQL } from './progressQueries.js';
 import { filesOwnedByTrack } from './resourceOwnership.js';
 
 function json(data, status = 200) {
@@ -552,6 +552,35 @@ async function runDailyHealthCheck(env) {
       problems.map((p) => `<li>${escapeHtml(p)}</li>`).join('') +
       '</ul><p>Most likely a Worker secret was cleared in the Cloudflare dashboard -- check ' +
       'examprep-api’s Settings &gt; Variables and Secrets.</p>');
+  }
+}
+
+// One row per active user per UTC calendar day, recording their cumulative accuracy/coverage as
+// of that moment -- see schema.sql's progress_snapshots comment for why this exists (progress
+// itself has no history). Idempotent (INSERT ... ON CONFLICT DO UPDATE) so a redeploy or a manual
+// re-run on the same day just refreshes today's row instead of erroring or double-counting.
+async function recordDailyProgressSnapshots(env) {
+  const rows = (await env.DB.prepare(ALL_USERS_PROGRESS_TOTALS_SQL).all()).results;
+  if (!rows.length) return;
+  const today = new Date().toISOString().slice(0, 10); // 'YYYY-MM-DD', UTC
+  const ts = now();
+  const stmt = env.DB.prepare(
+    `INSERT INTO progress_snapshots (user_id, snapshot_date, accuracy_pct, coverage_pct, total_seen, total_correct, total_attempts, created_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+     ON CONFLICT(user_id, snapshot_date) DO UPDATE SET
+       accuracy_pct = excluded.accuracy_pct, coverage_pct = excluded.coverage_pct,
+       total_seen = excluded.total_seen, total_correct = excluded.total_correct, total_attempts = excluded.total_attempts`
+  );
+  const stmts = rows.map((r) => stmt.bind(
+    r.user_id, today,
+    r.total ? Math.round((100 * r.correct) / r.total) : null,
+    r.topicTotal ? Math.round((100 * r.seen) / r.topicTotal) : null,
+    r.seen, r.correct, r.total, ts,
+  ));
+  // D1 batch caps around 100 statements per call in practice; chunk defensively since this runs
+  // unattended and a partial failure here should never take down the health-check cron alongside it.
+  for (let i = 0; i < stmts.length; i += 100) {
+    await env.DB.batch(stmts.slice(i, i + 100));
   }
 }
 
@@ -2654,6 +2683,70 @@ async function handleCodesList(request, env) {
   return json({ codes: (await stmt.all()).results });
 }
 
+// Full usage drilldown for one code -- the admin Codes table's "Details" expand. Everything here
+// is read-only and scoped to the single account (at most one) a code has ever redeemed to.
+// Sections, roughly least-to-most granular:
+//   - code + account timeline (redeemed_at, last_seen_at, first/last progress activity)
+//   - current cumulative accuracy/coverage, overall and per-topic (same shape as the student's own
+//     Progress tab, and the same numbers the Codes table's summary columns already show)
+//   - mock exam attempt history (real per-session timestamps + duration + score) -- the one place
+//     genuine "improvement across sessions" is directly observable today, since exam_attempts (unlike
+//     progress) has always been timestamped per attempt
+//   - daily progress_snapshots (see schema.sql) -- sparse/empty for any code whose account predates
+//     that table; fills in day by day from here on for a real quiz-activity trend line
+//   - study-resource engagement, for a fuller usage picture
+async function handleCodeDetail(request, env) {
+  const url = new URL(request.url);
+  const code = url.searchParams.get('code');
+  if (!code) return json({ error: 'code_required' }, 400);
+  const codeRow = await env.DB.prepare('SELECT * FROM codes WHERE code = ?').bind(code).first();
+  if (!codeRow) return json({ error: 'code_not_found' }, 404);
+
+  if (!codeRow.redeemed_by) {
+    return json({ code: codeRow, user: null, activity: null, current: null, examAttempts: [], resources: [], snapshots: [] });
+  }
+
+  const userId = codeRow.redeemed_by;
+  const [user, activityRow, totalsRow, topicRows, examAttemptRows, resourceRows, snapshotRows] = await Promise.all([
+    env.DB.prepare('SELECT id, exam_type, created_at, last_seen_at FROM users WHERE id = ?').bind(userId).first(),
+    env.DB.prepare('SELECT MIN(last_answered_at) AS firstActivityAt, MAX(last_answered_at) AS lastActivityAt FROM progress WHERE user_id = ? AND last_answered_at IS NOT NULL').bind(userId).first(),
+    env.DB.prepare(PROGRESS_TOTALS_SQL).bind(userId).first(),
+    env.DB.prepare(PROGRESS_BY_TOPIC_SQL).bind(userId, codeRow.exam_type).all(),
+    env.DB.prepare(
+      `SELECT id AS attemptId, mode, started_at AS startedAt, submitted_at AS submittedAt, duration_sec AS durationSec,
+              score_correct AS correct, score_total AS total, pass_percent AS passPercent
+       FROM exam_attempts WHERE user_id = ? AND submitted_at IS NOT NULL ORDER BY submitted_at ASC`
+    ).bind(userId).all(),
+    env.DB.prepare('SELECT resource_file, resource_type, percent, times_opened, first_opened_at, last_opened_at FROM resource_progress WHERE user_id = ? ORDER BY last_opened_at DESC').bind(userId).all(),
+    env.DB.prepare('SELECT snapshot_date AS date, accuracy_pct AS accuracyPct, coverage_pct AS coveragePct, total_seen AS totalSeen, total_attempts AS totalAttempts FROM progress_snapshots WHERE user_id = ? ORDER BY snapshot_date ASC').bind(userId).all(),
+  ]);
+
+  const topics = topicRows.results;
+  const seen = topics.reduce((sum, t) => sum + t.seen, 0);
+  const topicTotal = topics.reduce((sum, t) => sum + t.topicTotal, 0);
+  const trackRegistry = await getTrackRegistry(env);
+  const threshold = getExamConfigFromRegistry(trackRegistry, codeRow.exam_type).passPercent;
+
+  return json({
+    code: codeRow,
+    user,
+    activity: { firstActivityAt: activityRow.firstActivityAt, lastActivityAt: activityRow.lastActivityAt },
+    current: {
+      total: totalsRow.total || 0, correct: totalsRow.correct || 0,
+      accuracyPct: totalsRow.total ? Math.round((100 * totalsRow.correct) / totalsRow.total) : null,
+      seen, topicTotal, coveragePct: topicTotal ? Math.round((100 * seen) / topicTotal) : null,
+      topics,
+    },
+    examAttempts: examAttemptRows.results.map((a) => ({
+      ...a,
+      percent: a.total ? Math.round((1000 * a.correct) / a.total) / 10 : 0,
+      passed: (a.total ? Math.round((1000 * a.correct) / a.total) / 10 : 0) >= (a.passPercent != null ? a.passPercent : threshold),
+    })),
+    resources: resourceRows.results,
+    snapshots: snapshotRows.results,
+  });
+}
+
 async function handleCodesRevoke(request, env) {
   const { code } = await request.json();
   await env.DB.prepare("UPDATE codes SET status = 'revoked' WHERE code = ?").bind(code).run();
@@ -2911,6 +3004,7 @@ export default {
       if (pathname.startsWith('/console/')) {
         if (!(await requireAccess(request, env))) return json({ error: 'unauthorized' }, 401);
         if (pathname === '/console/codes' && method === 'GET') return await handleCodesList(request, env);
+        if (pathname === '/console/codes/detail' && method === 'GET') return await handleCodeDetail(request, env);
         if (pathname === '/console/codes/generate' && method === 'POST') return await handleCodesGenerate(request, env);
         if (pathname === '/console/codes/revoke' && method === 'POST') return await handleCodesRevoke(request, env);
         if (pathname === '/console/codes/update' && method === 'POST') return await handleCodesUpdate(request, env);
@@ -2994,7 +3088,10 @@ export default {
   // Cloudflare Cron Trigger, see wrangler.jsonc `triggers.crons` -- runs runDailyHealthCheck
   // once a day regardless of site traffic (unlike the fetch handler above, this fires even if
   // nobody visits the buy page that day, so a wiped secret gets caught before a real buyer does).
+  // recordDailyProgressSnapshots rides the same daily trigger (see its own comment) -- two
+  // independent waitUntil calls so one failing doesn't block the other.
   async scheduled(event, env, ctx) {
     ctx.waitUntil(runDailyHealthCheck(env));
+    ctx.waitUntil(recordDailyProgressSnapshots(env));
   },
 };

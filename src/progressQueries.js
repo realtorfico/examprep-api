@@ -63,6 +63,21 @@ export const LEADERBOARD_SQL =
    LEFT JOIN codes c ON c.redeemed_by = u.id
    GROUP BY u.id`;
 
+// Per-user (not per-topic) cumulative totals, no exam_type scoping -- backs both the daily
+// snapshot cron (records one row per active user per day, see recordDailyProgressSnapshots) and
+// the per-code drilldown's "current" figures (handleCodeDetail). Same shape as LEADERBOARD_SQL's
+// per-user aggregation, just without the single-track WHERE and the examAttempts subquery (the
+// drilldown pulls exam_attempts separately, and the cron doesn't need it at all).
+export const ALL_USERS_PROGRESS_TOTALS_SQL =
+  `SELECT u.id AS user_id,
+          COALESCE(SUM(p.times_seen), 0) AS total, COALESCE(SUM(p.times_correct), 0) AS correct,
+          COUNT(p.question_id) AS seen, COUNT(q.id) AS topicTotal
+   FROM (SELECT DISTINCT user_id FROM progress) active
+   JOIN users u ON u.id = active.user_id
+   JOIN questions q ON q.exam_type = u.exam_type
+   LEFT JOIN progress p ON p.question_id = q.id AND p.user_id = u.id
+   GROUP BY u.id`;
+
 export const STATS_ACCURACY_BY_TOPIC_SQL =
   `SELECT q.exam_type, q.topic, SUM(p.times_seen) AS attempts, SUM(p.times_correct) AS correct
    FROM progress p JOIN questions q ON q.id = p.question_id
