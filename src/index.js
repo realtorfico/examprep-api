@@ -688,17 +688,51 @@ async function handleTrackVisit(request, env) {
   return json({ ok: true });
 }
 
-async function handleConsoleVisitorsList(env) {
+// Filters are additive WHERE clauses (all bound, never string-interpolated), so the query stays
+// scoped rather than always pulling the full LIMIT 2000 window -- narrower filters return fewer,
+// more relevant rows instead of the admin having to page through everything client-side.
+async function handleConsoleVisitorsList(request, env) {
+  const url = new URL(request.url);
+  const from = url.searchParams.get('from'); // unix seconds, inclusive lower bound on last_seen_at
+  const to = url.searchParams.get('to'); // unix seconds, inclusive upper bound on last_seen_at
+  const country = url.searchParams.get('country');
+  const region = url.searchParams.get('region');
+  const minDurationSec = url.searchParams.get('minDurationSec');
+  const maxDurationSec = url.searchParams.get('maxDurationSec');
+
+  const clauses = [];
+  const binds = [];
+  if (from) { clauses.push('last_seen_at >= ?'); binds.push(Number(from)); }
+  if (to) { clauses.push('last_seen_at <= ?'); binds.push(Number(to)); }
+  if (country) { clauses.push('country = ?'); binds.push(country); }
+  if (region) { clauses.push('region = ?'); binds.push(region); }
+  if (minDurationSec) { clauses.push('(last_seen_at - first_seen_at) >= ?'); binds.push(Number(minDurationSec)); }
+  if (maxDurationSec) { clauses.push('(last_seen_at - first_seen_at) <= ?'); binds.push(Number(maxDurationSec)); }
+  const where = clauses.length ? `WHERE ${clauses.join(' AND ')}` : '';
+
   const excluded = await getExcludedVisitorIps(env);
   const rows = (await env.DB.prepare(
     `SELECT session_id, visitor_id, ip_address, country, region, city, timezone, latitude, longitude,
             browser, os, device_type, is_bot, referrer, utm_source, utm_medium, utm_campaign,
             landing_path, pages_json, page_count, first_seen_at, last_seen_at,
             (last_seen_at - first_seen_at) AS duration_sec
-     FROM site_visits ORDER BY last_seen_at DESC LIMIT 2000`
-  ).all()).results;
+     FROM site_visits ${where} ORDER BY last_seen_at DESC LIMIT 2000`
+  ).bind(...binds).all()).results;
   const filtered = excluded.size ? rows.filter((r) => !excluded.has(r.ip_address)) : rows;
   return json({ items: filtered });
+}
+
+// Distinct country/region values across ALL recorded visits (unfiltered), used once to populate
+// the Visitors tab's filter dropdowns -- kept as a separate lightweight call so applying a filter
+// doesn't shrink the dropdown's own option list.
+async function handleConsoleVisitorsFacets(env) {
+  const countries = (await env.DB.prepare(
+    `SELECT DISTINCT country FROM site_visits WHERE country IS NOT NULL AND country != '' ORDER BY country`
+  ).all()).results.map((r) => r.country);
+  const regions = (await env.DB.prepare(
+    `SELECT DISTINCT region FROM site_visits WHERE region IS NOT NULL AND region != '' ORDER BY region`
+  ).all()).results.map((r) => r.region);
+  return json({ countries, regions });
 }
 
 // A points discount can never leave a PayPal charge below this (admin-editable in
@@ -2859,7 +2893,8 @@ export default {
         if (pathname === '/console/alert-rules/create' && method === 'POST') return await handleConsoleAlertRuleCreate(request, env);
         if (pathname === '/console/alert-rules/update' && method === 'POST') return await handleConsoleAlertRuleUpdate(request, env);
         if (pathname === '/console/alert-rules/delete' && method === 'POST') return await handleConsoleAlertRuleDelete(request, env);
-        if (pathname === '/console/visitors' && method === 'GET') return await handleConsoleVisitorsList(env);
+        if (pathname === '/console/visitors' && method === 'GET') return await handleConsoleVisitorsList(request, env);
+        if (pathname === '/console/visitors/facets' && method === 'GET') return await handleConsoleVisitorsFacets(env);
         if (pathname === '/console/point-rules' && method === 'GET') return await handleConsolePointRulesList(env);
         if (pathname === '/console/point-rules' && method === 'POST') return await handleConsolePointRulesSet(request, env);
         if (pathname === '/console/accounts' && method === 'GET') return await handleConsoleAccountsList(env);
