@@ -1145,7 +1145,7 @@ async function quoteCheckout(env, examType, email, applyPoints, promoCode) {
 // code has verified the payment actually completed and the captured amount matches what was
 // quoted. Handles point deduction, code issuance, receipt email, referral crediting, and the
 // admin activity alert -- the one thing that's genuinely identical regardless of processor.
-async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift }) {
+async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode }) {
   const buyerEmail = payerEmail || email;
   const { code, token } = gift
     ? await issueGiftCode(env, examType, note, capturedCents, buyerEmail)
@@ -1176,7 +1176,7 @@ async function finalizePurchase(env, { examType, note, capturedCents, payerEmail
     try { await sendCodeEmail(env, email, code, examType); } catch (e) { /* best-effort, buyer already has the code on-screen */ }
   }
 
-  await detectAndCreditConversion(env, payerEmail);
+  await detectAndCreditConversion(env, payerEmail, refCode);
   await notifyAdmin(env, 'new_purchase', 'New purchase',
     `<p><strong>${buyerEmail || 'A buyer'}</strong> just bought ${examType} access` +
     (gift ? ' as a gift' + (gift.recipient_email ? ` for ${gift.recipient_email}` : '') : '') +
@@ -1219,7 +1219,7 @@ async function handlePaypalCreateOrder(request, env) {
 }
 
 async function handlePaypalCaptureOrder(request, env) {
-  const { orderId, examType, email, ageCategory, isGift, recipientEmail, giftMessage } = await request.json();
+  const { orderId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode } = await request.json();
   if (!orderId || !examType) return json({ error: 'orderId_and_examType_required' }, 400);
   // Unlike points/promo discounts, gift status has no effect on the charged amount -- nothing to
   // pre-commit at create-order time, so it's just read straight off this request (see the
@@ -1258,7 +1258,7 @@ async function handlePaypalCaptureOrder(request, env) {
   // PayPal's own capture response tells us the payer's email for free -- no extra field/friction
   // needed on the buy form to detect "this buyer was someone's referral" or to record who paid.
   const payerEmail = capture.payer && capture.payer.email_address;
-  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift });
+  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode });
 
   return json({ code, token, examType, pointsApplied, isGift: giftResult });
 }
@@ -1294,7 +1294,7 @@ async function handleStripeCreateIntent(request, env) {
 }
 
 async function handleStripeConfirm(request, env) {
-  const { paymentIntentId, examType, email, ageCategory, isGift, recipientEmail, giftMessage } = await request.json();
+  const { paymentIntentId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode } = await request.json();
   if (!paymentIntentId || !examType) return json({ error: 'paymentIntentId_and_examType_required' }, 400);
   // Unlike points/promo discounts, gift status has no effect on the charged amount -- nothing to
   // pre-commit at create-intent time, so it's just read straight off this request (see the
@@ -1330,7 +1330,7 @@ async function handleStripeConfirm(request, env) {
   // differ -- prefer the latter, same "trust what the processor tells us" approach as PayPal.
   const charge = intent.latest_charge;
   const payerEmail = (charge && charge.billing_details && charge.billing_details.email) || intent.receipt_email;
-  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory, gift });
+  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode });
 
   return json({ code, token, examType, pointsApplied, isGift: giftResult });
 }
@@ -1425,6 +1425,20 @@ async function handleReferralInvite(request, env) {
   return json({ results });
 }
 
+// Get-or-create the caller's own account (by their own email) and hand back its id, for the
+// site's Share-with-a-friend button to build a real ?ref=<accountId> link BEFORE the referrer has
+// gone through the invite-a-friend form at all. No Turnstile: account creation alone is harmless
+// (0 points, same side effect that already happens silently on invite-submit) -- only an actual
+// completed purchase later credits any points, via detectAndCreditConversion's refCode path.
+async function handleReferralLink(request, env) {
+  const { email, name } = await request.json();
+  const trimmedEmail = (email || '').trim().toLowerCase();
+  if (!trimmedEmail || !trimmedEmail.includes('@')) return json({ error: 'valid_email_required' }, 400);
+  if (isDisposableEmail(trimmedEmail)) return json({ error: 'disposable_email' }, 400);
+  const account = await getOrCreateAccount(env, trimmedEmail, name || null);
+  return json({ accountId: account.id });
+}
+
 async function handleReferralVerify(request, env) {
   const url = new URL(request.url);
   const token = url.searchParams.get('token');
@@ -1449,27 +1463,66 @@ async function handleReferralVerify(request, env) {
   return json({ ok: true, alreadyVerified: false });
 }
 
-// Shared by /paypal/capture-order and /points/redeem — best-effort, never throws, so a
-// purchase/redemption never fails just because this bookkeeping step hit a snag.
-async function detectAndCreditConversion(env, buyerEmail) {
+// Shared by /paypal/capture-order, /stripe/confirm, and /points/redeem — best-effort, never
+// throws, so a purchase/redemption never fails just because this bookkeeping step hit a snag.
+//
+// `refCode` (an accounts.id, from a ?ref=<accountId> share link -- see the site's
+// getStoredRefCode()/clearStoredRefCode()) is a SEPARATE, lower-trust attribution path from the
+// email-invite flow above: no friend email was ever collected or confirmed, just a link click
+// followed by an actual completed purchase. Deliberately awards ONLY 'referral_converted' (the
+// purchase-gated tier), never 'referral_verified' (which specifically rewards the email-confirm
+// step this path has no equivalent of) -- a real paid transaction is itself the fraud guard, so
+// this can't be farmed by just clicking a link. Only used as a FALLBACK when no email-matched
+// referral exists, so a friend who was properly invited-and-verified still credits that referral
+// even if a stale ?ref= link is also sitting in their browser.
+async function detectAndCreditConversion(env, buyerEmail, refCode) {
   if (!buyerEmail) return;
   try {
     const emailNormalized = normalizeEmailForDedup(buyerEmail);
     const referral = await env.DB.prepare(
       "SELECT * FROM referrals WHERE referred_email_normalized = ? AND status = 'verified' AND converted_at IS NULL"
     ).bind(emailNormalized).first();
-    if (!referral) return;
 
-    await env.DB.prepare("UPDATE referrals SET status = 'converted', converted_at = ? WHERE id = ?")
-      .bind(now(), referral.id).run();
-
-    const pointsAwarded = await awardPoints(env, referral.referrer_account_id, 'referral_converted');
-    const referrer = await env.DB.prepare('SELECT * FROM accounts WHERE id = ?').bind(referral.referrer_account_id).first();
-    if (pointsAwarded > 0 && referrer) {
-      await sendPointsEarnedEmail(env, referrer.email, pointsAwarded, 'your referral signed up for a course');
+    if (referral) {
+      await env.DB.prepare("UPDATE referrals SET status = 'converted', converted_at = ? WHERE id = ?")
+        .bind(now(), referral.id).run();
+      const pointsAwarded = await awardPoints(env, referral.referrer_account_id, 'referral_converted');
+      const referrer = await env.DB.prepare('SELECT * FROM accounts WHERE id = ?').bind(referral.referrer_account_id).first();
+      if (pointsAwarded > 0 && referrer) {
+        await sendPointsEarnedEmail(env, referrer.email, pointsAwarded, 'your referral signed up for a course');
+      }
+      await notifyAdmin(env, 'referral_converted', 'Referral converted',
+        `<p><strong>${referrer ? referrer.email : 'Someone'}</strong>'s referral <strong>${referral.referred_email}</strong> just signed up for a course` +
+        (pointsAwarded > 0 ? ` — they earned ${pointsAwarded} points.</p>` : '.</p>'));
+      return;
     }
-    await notifyAdmin(env, 'referral_converted', 'Referral converted',
-      `<p><strong>${referrer ? referrer.email : 'Someone'}</strong>'s referral <strong>${referral.referred_email}</strong> just signed up for a course` +
+
+    if (!refCode) return;
+    const referrer = await env.DB.prepare('SELECT * FROM accounts WHERE id = ?').bind(refCode).first();
+    if (!referrer) return;
+    if (normalizeEmailForDedup(referrer.email) === emailNormalized) return; // no self-referral credit
+
+    const linkReferral = {
+      id: newId(), referrer_account_id: referrer.id, referred_email: buyerEmail,
+      referred_email_normalized: emailNormalized, verify_token: crypto.randomUUID(), created_at: now(),
+    };
+    try {
+      // UNIQUE(referred_email_normalized) is the dedup guard -- this inbox may already have a
+      // referral row (invited-but-unconfirmed, or already credited via a previous purchase), in
+      // which case this INSERT fails and we correctly award nothing rather than double-crediting.
+      await env.DB.prepare(
+        `INSERT INTO referrals (id, referrer_account_id, referred_email, referred_email_normalized, status, verify_token, converted_at, created_at)
+         VALUES (?, ?, ?, ?, 'converted', ?, ?, ?)`
+      ).bind(linkReferral.id, linkReferral.referrer_account_id, linkReferral.referred_email,
+        linkReferral.referred_email_normalized, linkReferral.verify_token, now(), linkReferral.created_at).run();
+    } catch (e) { return; } // already referred via another path -- no credit, no error surfaced to the buyer
+
+    const pointsAwarded = await awardPoints(env, referrer.id, 'referral_converted');
+    if (pointsAwarded > 0) {
+      await sendPointsEarnedEmail(env, referrer.email, pointsAwarded, 'someone signed up through your shared link and bought a course');
+    }
+    await notifyAdmin(env, 'referral_converted', 'Referral converted (shared link)',
+      `<p><strong>${referrer.email}</strong>'s shared link led to <strong>${buyerEmail}</strong> signing up for a course` +
       (pointsAwarded > 0 ? ` — they earned ${pointsAwarded} points.</p>` : '.</p>'));
   } catch (e) { /* best-effort */ }
 }
@@ -2989,6 +3042,7 @@ export default {
       if (pathname === '/paypal/capture-order' && method === 'POST') return await handlePaypalCaptureOrder(request, env);
       if (pathname === '/stripe/create-intent' && method === 'POST') return await handleStripeCreateIntent(request, env);
       if (pathname === '/stripe/confirm' && method === 'POST') return await handleStripeConfirm(request, env);
+      if (pathname === '/referrals/link' && method === 'POST') return await handleReferralLink(request, env);
       if (pathname === '/referrals/invite' && method === 'POST') return await handleReferralInvite(request, env);
       if (pathname === '/referrals/verify' && method === 'GET') return await handleReferralVerify(request, env);
       if (pathname === '/refunds/claim' && method === 'POST') return await handleRefundClaimSubmit(request, env);
