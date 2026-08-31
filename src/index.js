@@ -2655,6 +2655,19 @@ async function handleCodesRevoke(request, env) {
   return json({ ok: true });
 }
 
+// Admin-editable fields on an existing code: note (free text) and expires_at (epoch seconds, or
+// null to clear -- a code with no expiry is valid indefinitely, see schema.sql). Deliberately does
+// NOT restrict this to unredeemed/unrevoked codes -- editing note/expiry on an already-redeemed
+// code is a harmless no-op (redemption already happened), and an admin correcting a typo'd note
+// after the fact is a legitimate use case regardless of status.
+async function handleCodesUpdate(request, env) {
+  const { code, note, expiresAt } = await request.json();
+  if (!code) return json({ error: 'code_required' }, 400);
+  await env.DB.prepare('UPDATE codes SET note = ?, expires_at = ? WHERE code = ?')
+    .bind(note || null, expiresAt || null, code).run();
+  return json({ ok: true });
+}
+
 // examType accepts a comma-separated list -- the admin Questions tab uses this for its "kind"
 // and/or "state" pill filters, which resolve to more than one exam_type (e.g. every *_notary
 // track) whenever the pills don't narrow all the way down to a single track. Paginated (limit/
@@ -2895,6 +2908,7 @@ export default {
         if (pathname === '/console/codes' && method === 'GET') return await handleCodesList(request, env);
         if (pathname === '/console/codes/generate' && method === 'POST') return await handleCodesGenerate(request, env);
         if (pathname === '/console/codes/revoke' && method === 'POST') return await handleCodesRevoke(request, env);
+        if (pathname === '/console/codes/update' && method === 'POST') return await handleCodesUpdate(request, env);
         if (pathname === '/console/pricing' && method === 'GET') return await handleConsolePricingList(env);
         if (pathname === '/console/pricing' && method === 'POST') return await handleConsolePricingSet(request, env);
         if (pathname === '/console/category-content' && method === 'GET') return await handleConsoleCategoryContentList(env);
