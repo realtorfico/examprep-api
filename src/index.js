@@ -2671,6 +2671,8 @@ async function handleQuestionsList(request, env) {
   if (!examTypes.length) return json({ error: 'exam_type_required' }, 400);
   const topic = url.searchParams.get('topic');
   const q = url.searchParams.get('q');
+  const source = url.searchParams.get('source');
+  const sourceOp = url.searchParams.get('sourceOp') === 'ne' ? '!=' : '='; // 'ne' = "is not"
   const limit = Math.min(Math.max(parseInt(url.searchParams.get('limit'), 10) || 50, 1), 200);
   const offset = Math.max(parseInt(url.searchParams.get('offset'), 10) || 0, 0);
 
@@ -2679,6 +2681,7 @@ async function handleQuestionsList(request, env) {
   where += ` AND exam_type IN (${examTypes.map(() => '?').join(',')})`; binds.push(...examTypes);
   if (topic) { where += ' AND topic = ?'; binds.push(topic); }
   if (q) { where += ' AND question LIKE ?'; binds.push('%' + q + '%'); }
+  if (source) { where += ` AND source ${sourceOp} ?`; binds.push(source); }
 
   // List-view fields only -- choices/correct_choice/explanation/source_note aren't shown in the
   // admin table (there's no per-row edit view yet) and would otherwise ride along on every page.
@@ -2703,6 +2706,20 @@ async function handleQuestionTopics(request, env) {
     'SELECT topic, COUNT(*) AS count FROM questions WHERE exam_type = ? GROUP BY topic ORDER BY topic ASC'
   ).bind(examType).all()).results;
   return json({ topics: rows });
+}
+
+// Distinct source tags (with counts) for the resolved exam_type scope -- populates the Questions
+// tab's Source filter dropdown. Unlike topic, source is meaningful across multiple exam_types at
+// once (each track's own source tags just show up as separate rows), so this accepts a comma list.
+async function handleQuestionSources(request, env) {
+  const url = new URL(request.url);
+  const examTypesParam = url.searchParams.get('examType');
+  const examTypes = examTypesParam ? examTypesParam.split(',').map((s) => s.trim()).filter(Boolean) : [];
+  if (!examTypes.length) return json({ error: 'examType_required' }, 400);
+  const rows = (await env.DB.prepare(
+    `SELECT source, COUNT(*) AS count FROM questions WHERE exam_type IN (${examTypes.map(() => '?').join(',')}) GROUP BY source ORDER BY source ASC`
+  ).bind(...examTypes).all()).results;
+  return json({ sources: rows });
 }
 
 // Per-track question bank inventory for the Settings > Course pricing table -- a tiny GROUP BY
@@ -2907,6 +2924,7 @@ export default {
         if (pathname === '/console/questions' && method === 'GET') return await handleQuestionsList(request, env);
         if (pathname === '/console/questions/counts' && method === 'GET') return await handleQuestionCounts(env);
         if (pathname === '/console/questions/topics' && method === 'GET') return await handleQuestionTopics(request, env);
+        if (pathname === '/console/questions/sources' && method === 'GET') return await handleQuestionSources(request, env);
         if (pathname === '/console/track-registry' && method === 'GET') return await handleTrackRegistryList(env);
         if (pathname === '/console/track-registry/active' && method === 'POST') return await handleConsoleTrackRegistryActiveSet(request, env);
         if (pathname === '/console/questions/create' && method === 'POST') return await handleQuestionCreate(request, env);
