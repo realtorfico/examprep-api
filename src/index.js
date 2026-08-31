@@ -696,7 +696,9 @@ async function handleConsoleVisitorsList(request, env) {
   const from = url.searchParams.get('from'); // unix seconds, inclusive lower bound on last_seen_at
   const to = url.searchParams.get('to'); // unix seconds, inclusive upper bound on last_seen_at
   const country = url.searchParams.get('country');
+  const countryOp = url.searchParams.get('countryOp') === 'ne' ? '!=' : '='; // 'ne' = "is not"
   const region = url.searchParams.get('region');
+  const regionOp = url.searchParams.get('regionOp') === 'ne' ? '!=' : '=';
   const minDurationSec = url.searchParams.get('minDurationSec');
   const maxDurationSec = url.searchParams.get('maxDurationSec');
 
@@ -704,8 +706,8 @@ async function handleConsoleVisitorsList(request, env) {
   const binds = [];
   if (from) { clauses.push('last_seen_at >= ?'); binds.push(Number(from)); }
   if (to) { clauses.push('last_seen_at <= ?'); binds.push(Number(to)); }
-  if (country) { clauses.push('country = ?'); binds.push(country); }
-  if (region) { clauses.push('region = ?'); binds.push(region); }
+  if (country) { clauses.push(`country ${countryOp} ?`); binds.push(country); }
+  if (region) { clauses.push(`region ${regionOp} ?`); binds.push(region); }
   if (minDurationSec) { clauses.push('(last_seen_at - first_seen_at) >= ?'); binds.push(Number(minDurationSec)); }
   if (maxDurationSec) { clauses.push('(last_seen_at - first_seen_at) <= ?'); binds.push(Number(maxDurationSec)); }
   const where = clauses.length ? `WHERE ${clauses.join(' AND ')}` : '';
