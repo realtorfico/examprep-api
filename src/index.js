@@ -2643,9 +2643,14 @@ async function handleCodesGenerate(request, env) {
 async function handleCodesList(request, env) {
   const url = new URL(request.url);
   const status = url.searchParams.get('status');
+  // last_used_at = the redeeming account's own last_seen_at (bumped on every authenticated request,
+  // see auth.js) -- there's no separate per-code activity log, but a code maps 1:1 to at most one
+  // account once redeemed, so the account's activity IS the code's activity. NULL for an
+  // unused/revoked-before-redemption code, same meaning as redeemed_at being NULL.
+  const base = `SELECT c.*, u.last_seen_at AS last_used_at FROM codes c LEFT JOIN users u ON c.redeemed_by = u.id`;
   const stmt = status
-    ? env.DB.prepare('SELECT * FROM codes WHERE status = ? ORDER BY issued_at DESC LIMIT 200').bind(status)
-    : env.DB.prepare('SELECT * FROM codes ORDER BY issued_at DESC LIMIT 200');
+    ? env.DB.prepare(`${base} WHERE c.status = ? ORDER BY c.issued_at DESC LIMIT 200`).bind(status)
+    : env.DB.prepare(`${base} ORDER BY c.issued_at DESC LIMIT 200`);
   return json({ codes: (await stmt.all()).results });
 }
 
