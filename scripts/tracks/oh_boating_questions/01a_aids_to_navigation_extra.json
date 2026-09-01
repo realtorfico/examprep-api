@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Federal Regulations & Aids to Navigation",
+    "question": "Aside from color and numbering, what is the basic difference in physical shape between a \"nun\" buoy and a \"can\" buoy in the U.S. Aids to Navigation System?",
+    "choice_a": "A nun buoy has a cone-shaped (pointed) top; a can buoy has a flat, cylindrical top",
+    "choice_b": "A nun buoy is square; a can buoy is round",
+    "choice_c": "A nun buoy floats freely; a can buoy is fixed to the bottom",
+    "choice_d": "There is no shape difference -- only the color differs",
+    "correct_choice": "A",
+    "explanation": "A nun buoy has a cone-shaped top that comes to a point, while a can buoy has a flat-topped, cylindrical shape, allowing boaters to identify them by silhouette even when color is hard to see.",
+    "weight": 2,
+    "source_note": "U.S. Coast Guard Aids to Navigation System"
+  },
+  {
+    "topic": "Federal Regulations & Aids to Navigation",
+    "question": "As a boater proceeds from open water into a channel and continues upstream toward the head of navigation, what generally happens to the numbers on the lateral markers?",
+    "choice_a": "The numbers generally decrease",
+    "choice_b": "The numbers generally increase",
+    "choice_c": "The numbers reset to zero at every bend in the channel",
+    "choice_d": "Numbers are not used on lateral markers",
+    "correct_choice": "B",
+    "explanation": "Lateral marker numbers generally increase as a boater moves from open water upstream toward the head of navigation.",
+    "weight": 2,
+    "source_note": "U.S. Coast Guard Aids to Navigation System"
+  },
+  {
+    "topic": "Federal Regulations & Aids to Navigation",
+    "question": "Fixed daymarks (as opposed to floating buoys) use shapes to convey the same red/even-numbered, green/odd-numbered meaning as buoys. What shape corresponds to the red, even-numbered (starboard hand, returning) side of a channel?",
+    "choice_a": "A square",
+    "choice_b": "A circle",
+    "choice_c": "A triangle",
+    "choice_d": "A diamond",
+    "correct_choice": "C",
+    "explanation": "A triangular daymark corresponds to a red, even-numbered marker (starboard hand when returning from open water), while a square daymark corresponds to a green, odd-numbered marker (port hand).",
+    "weight": 3,
+    "source_note": "U.S. Coast Guard Aids to Navigation System"
+  },
+  {
+    "topic": "Federal Regulations & Aids to Navigation",
+    "question": "What does a red-and-white vertically striped safe water (mid-channel) marker indicate to boaters, beyond how it is identified?",
+    "choice_a": "Boats must keep out of the area entirely",
+    "choice_b": "A hazard, such as a rock or shoal, is located directly beneath the marker",
+    "choice_c": "The marker indicates the boundary of a no-wake zone",
+    "choice_d": "Water is safe and unobstructed on all sides, and the marker may be passed on either side",
+    "correct_choice": "D",
+    "explanation": "A safe water/mid-channel marker indicates unobstructed water on all sides of the aid, and it may safely be passed on either side.",
+    "weight": 3,
+    "source_note": "U.S. Coast Guard Aids to Navigation System"
+  },
+  {
+    "topic": "Federal Regulations & Aids to Navigation",
+    "question": "If a boater notices that a federal aid to navigation, such as a channel buoy, is missing, damaged, or appears to have drifted from its charted position, what should the boater do?",
+    "choice_a": "Report the discrepancy to the U.S. Coast Guard",
+    "choice_b": "Move the buoy back into position themselves",
+    "choice_c": "Ignore it, since aids to navigation are never moved or damaged",
+    "choice_d": "Repaint the buoy in the correct colors before continuing on",
+    "correct_choice": "A",
+    "explanation": "Boaters should never attempt to reposition, repair, or repaint an aid to navigation. A missing, damaged, or off-station aid should be reported to the U.S. Coast Guard.",
+    "weight": 3,
+    "source_note": "U.S. Coast Guard Aids to Navigation System"
+  },
+  {
+    "topic": "Federal Regulations & Aids to Navigation",
+    "question": "Which agency is responsible for placing and maintaining the federal aids to navigation (buoys and day beacons) found on Ohio's federally controlled waterways, such as Lake Erie and the Ohio River?",
+    "choice_a": "The Ohio State Highway Patrol",
+    "choice_b": "The U.S. Coast Guard",
+    "choice_c": "Individual marina owners",
+    "choice_d": "The county sheriff's water rescue unit",
+    "correct_choice": "B",
+    "explanation": "The U.S. Coast Guard is responsible for placing and maintaining federal aids to navigation on federally controlled waterways.",
+    "weight": 2,
+    "source_note": "U.S. Coast Guard Aids to Navigation System"
+  },
+  {
+    "topic": "Federal Regulations & Aids to Navigation",
+    "question": "If a safe water (mid-channel) marker is equipped with a light, what color is that light?",
+    "choice_a": "Red",
+    "choice_b": "Green",
+    "choice_c": "White",
+    "choice_d": "Yellow",
+    "correct_choice": "C",
+    "explanation": "Unlike lateral markers, which show red or green lights, a lighted safe water/mid-channel marker shows a white light.",
+    "weight": 3,
+    "source_note": "U.S. Coast Guard Aids to Navigation System"
+  }
+]

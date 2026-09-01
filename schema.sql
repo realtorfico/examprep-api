@@ -514,3 +514,27 @@ CREATE TABLE category_content (
   active            INTEGER NOT NULL DEFAULT 1,
   updated_at        INTEGER NOT NULL
 );
+
+-- Educational blog/guide articles (admin-authored, DB-backed so publishing needs no code deploy).
+-- kind matches HUB_KIND_SLUGS/category_content.slug (e.g. 'notary') for cross-linking to the
+-- category page; state_code is optional for a state-specific article. slug is the URL segment
+-- under /blog/. body_html is admin-authored HTML (not markdown -- kept simple, matches
+-- category_content's plain-text-field convention). seo_title/seo_description override title/
+-- excerpt for meta tags when set; otherwise the site/Worker fall back to title/excerpt.
+CREATE TABLE blog_posts (
+  id              TEXT PRIMARY KEY,
+  slug            TEXT NOT NULL UNIQUE,
+  kind            TEXT NOT NULL,
+  state_code      TEXT,
+  title           TEXT NOT NULL,
+  excerpt         TEXT NOT NULL,
+  body_html       TEXT NOT NULL,
+  seo_title       TEXT,
+  seo_description TEXT,
+  status          TEXT NOT NULL DEFAULT 'draft', -- draft | published
+  published_at    INTEGER,
+  created_at      INTEGER NOT NULL,
+  updated_at      INTEGER NOT NULL
+);
+CREATE INDEX idx_blog_posts_status_published ON blog_posts(status, published_at);
+CREATE INDEX idx_blog_posts_kind ON blog_posts(kind, status);

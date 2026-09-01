@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Registration, Titling & Required Equipment",
+    "question": "Under Ohio's personal watercraft law, what must every person aboard a PWC do regarding personal flotation devices while the PWC is being operated?",
+    "choice_a": "Carry a PFD within reach, but wearing it is optional",
+    "choice_b": "Wear a Coast Guard-approved wearable PFD, used in compliance with the manufacturer's labeling",
+    "choice_c": "Wear a PFD only if operating after dark",
+    "choice_d": "Only the operator, not any passengers, must wear a PFD",
+    "correct_choice": "B",
+    "explanation": "No person shall operate or permit the operation of a personal watercraft unless each person on the watercraft is wearing a Coast Guard-approved wearable PFD used in compliance with manufacturer labeling -- unlike most vessels, where a PFD need only be carried aboard, every PWC occupant must actually wear one.",
+    "weight": 3,
+    "source_note": "ORC 1547.41"
+  },
+  {
+    "topic": "Registration, Titling & Required Equipment",
+    "question": "Besides the operator, who else is directly prohibited by Ohio's personal watercraft law from letting a PWC be operated in violation of the chapter?",
+    "choice_a": "Only a marina employee who fuels the PWC",
+    "choice_b": "Only the dealer who originally sold the PWC",
+    "choice_c": "A person who owns the PWC, or who has charge over or control of it",
+    "choice_d": "No one besides the operator is subject to this section",
+    "correct_choice": "C",
+    "explanation": "No person who owns a personal watercraft, or who has charge over or control of one, shall authorize or knowingly permit it to be operated in violation of the chapter.",
+    "weight": 3,
+    "source_note": "ORC 1547.41"
+  },
+  {
+    "topic": "Registration, Titling & Required Equipment",
+    "question": "A person operating a PWC in a Coast Guard-approved tournament is exempt from which of Ohio's personal watercraft requirements while participating?",
+    "choice_a": "Only the sunset-to-sunrise hours restriction",
+    "choice_b": "Only the PFD-wearing requirement",
+    "choice_c": "None -- competitors must still comply with every requirement",
+    "choice_d": "All of the requirements in that section, including the PFD, lanyard, and hours-of-operation rules",
+    "correct_choice": "D",
+    "explanation": "Ohio's personal watercraft section does not apply to a person participating in a regatta, race, marine parade, tournament, or exhibition operated in accordance with ORC 1547.20 or that is Coast Guard approved, exempting them from all of that section's requirements while so engaged.",
+    "weight": 4,
+    "source_note": "ORC 1547.41, 1547.20"
+  },
+  {
+    "topic": "Registration, Titling & Required Equipment",
+    "question": "Under Ohio's Child Operators law, what is the minimum age at which a person may operate a personal watercraft entirely on their own, with no supervising adult aboard?",
+    "choice_a": "16 years old",
+    "choice_b": "12 years old",
+    "choice_c": "14 years old",
+    "choice_d": "18 years old",
+    "correct_choice": "A",
+    "explanation": "No person under sixteen years of age shall operate a personal watercraft, except that a person who is at least 12 but under 16 may do so with a qualified supervising person 18 or older also aboard. Without such a supervisor, the minimum operating age is 16.",
+    "weight": 3,
+    "source_note": "ORC 1547.06"
+  },
+  {
+    "topic": "Registration, Titling & Required Equipment",
+    "question": "Under Ohio's Child Operators law, what is a supervising adult specifically prohibited from doing while accompanying a minor operator?",
+    "choice_a": "Allowing the minor to wear a PFD",
+    "choice_b": "Permitting the person under their supervision to operate in violation of any provision of the watercraft chapter",
+    "choice_c": "Leaving the dock before sunrise",
+    "choice_d": "Nothing -- a supervising adult has no independent duties under this section",
+    "correct_choice": "B",
+    "explanation": "No supervising person eighteen years of age or older shall permit any person under that supervision to operate a vessel in violation of the watercraft chapter.",
+    "weight": 3,
+    "source_note": "ORC 1547.06"
+  },
+  {
+    "topic": "Registration, Titling & Required Equipment",
+    "question": "What is the minimum score a person must achieve on Ohio's boater education proficiency examination to obtain a certificate?",
+    "choice_a": "60 percent",
+    "choice_b": "80 percent",
+    "choice_c": "70 percent",
+    "choice_d": "50 percent",
+    "correct_choice": "C",
+    "explanation": "A minimum of seventy percent must be achieved on the proficiency examination to obtain a boater education certificate.",
+    "weight": 2,
+    "source_note": "OAC 1501:47-1-16"
+  },
+  {
+    "topic": "Registration, Titling & Required Equipment",
+    "question": "How many attempts, and within what time frame, may a person make to achieve a passing score on Ohio's boater education proficiency examination?",
+    "choice_a": "Unlimited attempts within one calendar day",
+    "choice_b": "One attempt per week",
+    "choice_c": "Three attempts within 30 days",
+    "choice_d": "Two attempts within one calendar day",
+    "correct_choice": "D",
+    "explanation": "A person taking the proficiency examination shall only have two attempts at achieving a passing score within one calendar day.",
+    "weight": 3,
+    "source_note": "OAC 1501:47-1-16"
+  },
+  {
+    "topic": "Registration, Titling & Required Equipment",
+    "question": "While completing Ohio's proctored boater education proficiency examination, what is a test-taker prohibited from doing?",
+    "choice_a": "Using reference material, or receiving information from another person, to help achieve a passing score",
+    "choice_b": "Taking a break to use the restroom",
+    "choice_c": "Wearing corrective glasses",
+    "choice_d": "Sitting near a window",
+    "correct_choice": "A",
+    "explanation": "No reference material shall be used by a person while completing the proctored examination, and no person shall provide information to another person attempting to complete the examination in order to attain a passing score.",
+    "weight": 3,
+    "source_note": "OAC 1501:47-1-16"
+  },
+  {
+    "topic": "Registration, Titling & Required Equipment",
+    "question": "Who may administer Ohio's proctored boater education proficiency examination?",
+    "choice_a": "Any licensed boat dealer",
+    "choice_b": "A Division of Parks and Watercraft employee, a certified Ohio boating education instructor, or a designated representative of the Division",
+    "choice_c": "Any notary public",
+    "choice_d": "Only a natural resources officer",
+    "correct_choice": "B",
+    "explanation": "The proctored examination may be administered by a Division of Parks and Watercraft employee, a certified Ohio boating education instructor, or a designated representative of the Division.",
+    "weight": 3,
+    "source_note": "OAC 1501:47-1-16"
+  }
+]

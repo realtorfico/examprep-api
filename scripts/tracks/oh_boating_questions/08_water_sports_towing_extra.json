@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under ORC 1547.15, in addition to the observer required to watch the towed person, what must the operator of the towing vessel do at all times?",
+    "choice_a": "Sound the horn continuously while towing",
+    "choice_b": "Observe the traffic pattern toward which the vessel is approaching",
+    "choice_c": "Maintain a fixed speed no greater than 20 miles per hour",
+    "choice_d": "Face backward toward the skier at all times",
+    "correct_choice": "B",
+    "explanation": "The operator of the towing vessel shall at all times observe the traffic pattern toward which the vessel is approaching -- a duty separate from the observer's duty to watch the person being towed.",
+    "weight": 3,
+    "source_note": "ORC 1547.15"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under ORC 1547.14, the requirement to confine towed water sports to a designated ski zone or open zone does NOT apply if the vessel is doing what?",
+    "choice_a": "Carrying an observer at least 10 years of age",
+    "choice_b": "Towing only one skier at a time",
+    "choice_c": "Operating at idle speed in a no-wake zone, outside restricted areas like marinas, anchorages, swim areas, bridges, and posted no-ski zones",
+    "choice_d": "Operating only on Lake Erie",
+    "correct_choice": "C",
+    "explanation": "The ski-zone confinement requirement does not apply when a vessel operates at idle speed in a no-wake zone, except within 300 feet of gas docks, marinas, launch ramps, or harbor entrances; designated anchorage, swim, or boat camping areas; under or within 300 feet of a bridge; or in a designated no-ski zone.",
+    "weight": 4,
+    "source_note": "ORC 1547.14(C)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under ORC 1547.19, installing or maintaining a water ski jump structure on Ohio's waters is prohibited unless what condition is met?",
+    "choice_a": "The jump is removed each night before sunset",
+    "choice_b": "The jump is anchored at least 300 feet from shore",
+    "choice_c": "The jump is inspected annually by the U.S. Coast Guard",
+    "choice_d": "A special permit is obtained from the state department, conservancy district, or political subdivision with jurisdiction over the water",
+    "correct_choice": "D",
+    "explanation": "No person shall install or maintain a water ski jump on Ohio's waters, or use one to ski jump, without a special permit issued by the state department, conservancy district, or political subdivision having jurisdiction and control over the water.",
+    "weight": 3,
+    "source_note": "ORC 1547.19"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "At an Ohio State Park lake with a posted direction of travel for ski boat traffic in a designated ski zone, when is an operator permitted to travel against that posted direction?",
+    "choice_a": "Only when retrieving a person who has fallen overboard, or a skier who has fallen",
+    "choice_b": "At any time after sunset",
+    "choice_c": "Whenever traffic in the zone is light",
+    "choice_d": "Never, under any circumstance",
+    "correct_choice": "A",
+    "explanation": "It is unlawful to operate a watercraft against a posted direction of travel in a designated ski zone, except when a person has fallen overboard or a skier has fallen, and then only for the purpose of retrieving that person.",
+    "weight": 3,
+    "source_note": "OAC 1501:47-3-23"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under Ohio Administrative Code, how is a \"ski zone\" at an Ohio State Park lake defined?",
+    "choice_a": "Any area within 100 feet of a marked swimming beach",
+    "choice_b": "Any water area where towed watersports activities are permitted within the buoys placed to designate the zone",
+    "choice_c": "Any lake smaller than 500 acres",
+    "choice_d": "Any area designated exclusively for personal watercraft",
+    "correct_choice": "B",
+    "explanation": "A \"ski zone\" is defined as any water area whereon towed watersports activities are permitted within the buoys so placed to designate the zone.",
+    "weight": 2,
+    "source_note": "OAC 1501:47-3-02(P)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under Ohio Administrative Code, what distinguishes a \"special water ski zone\" from an ordinary ski zone at an Ohio State Park lake?",
+    "choice_a": "It is reserved exclusively for competitive racing events",
+    "choice_b": "It permits water skiing between sunset and sunrise",
+    "choice_c": "It is designated for public use where equipment or facilities for trick skiing may be placed, or acrobatic skiing by more than one person acting together may be performed",
+    "choice_d": "It allows unlimited horsepower motors",
+    "correct_choice": "C",
+    "explanation": "A \"special water ski zone\" is a ski zone designated for public use wherein equipment or facilities for trick skiing may be placed, or acrobatic skiing by more than one person acting together may be performed.",
+    "weight": 3,
+    "source_note": "OAC 1501:47-3-02(Q)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "On which Ohio State Park lake are ALL towed watersports -- water skiing, surfboards, and towed inflatable devices -- completely prohibited under a lake-specific rule?",
+    "choice_a": "Buckeye Lake",
+    "choice_b": "Indian Lake",
+    "choice_c": "Mosquito Lake",
+    "choice_d": "Pymatuning Lake",
+    "correct_choice": "D",
+    "explanation": "On the waters of Pymatuning Lake, no person is permitted to ride or attempt to ride upon water skis, surfboards, towed inflatable devices, or similar devices, or use a watercraft to tow a person -- a lake-specific rule that also caps motors at 20 horsepower.",
+    "weight": 3,
+    "source_note": "OAC 1501:47-3-38"
+  }
+]

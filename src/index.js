@@ -3227,6 +3227,80 @@ async function handleConsoleCategoryContentDelete(request, env) {
   return json({ ok: true });
 }
 
+// ---- Blog (educational articles) ---------------------------------------
+// Admin-authored, DB-backed so publishing needs no code deploy (see schema.sql's blog_posts
+// comment). Public side only ever sees status='published' rows; console side is full CRUD.
+
+function parseBlogPostRow(row) {
+  return { ...row };
+}
+
+async function handleBlogList(request, env) {
+  const url = new URL(request.url);
+  const kind = url.searchParams.get('kind');
+  const rows = kind
+    ? (await env.DB.prepare(
+        `SELECT id, slug, kind, state_code, title, excerpt, seo_title, seo_description, published_at FROM blog_posts
+         WHERE status = 'published' AND kind = ? ORDER BY published_at DESC`
+      ).bind(kind).all()).results
+    : (await env.DB.prepare(
+        `SELECT id, slug, kind, state_code, title, excerpt, seo_title, seo_description, published_at FROM blog_posts
+         WHERE status = 'published' ORDER BY published_at DESC`
+      ).all()).results;
+  return json({ posts: rows });
+}
+
+async function handleBlogPostGet(request, env) {
+  const url = new URL(request.url);
+  const slug = url.pathname.replace('/blog/', '');
+  const row = await env.DB.prepare(
+    `SELECT * FROM blog_posts WHERE slug = ? AND status = 'published'`
+  ).bind(slug).first();
+  if (!row) return json({ error: 'not_found' }, 404);
+  return json({ post: parseBlogPostRow(row) });
+}
+
+async function handleConsoleBlogList(env) {
+  const rows = (await env.DB.prepare('SELECT * FROM blog_posts ORDER BY updated_at DESC').all()).results;
+  return json({ posts: rows.map(parseBlogPostRow) });
+}
+
+async function handleConsoleBlogUpsert(request, env) {
+  const b = await request.json();
+  if (!b.slug || !b.slug.trim()) return json({ error: 'slug_required' }, 400);
+  if (!b.kind || !b.kind.trim()) return json({ error: 'kind_required' }, 400);
+  if (!b.title || !b.title.trim()) return json({ error: 'title_required' }, 400);
+  if (!b.excerpt || !b.excerpt.trim()) return json({ error: 'excerpt_required' }, 400);
+  if (!b.bodyHtml || !b.bodyHtml.trim()) return json({ error: 'body_required' }, 400);
+  const slug = b.slug.trim().toLowerCase();
+  const status = b.status === 'published' ? 'published' : 'draft';
+  const ts = now();
+  const existing = await env.DB.prepare('SELECT id, status, published_at FROM blog_posts WHERE slug = ?').bind(slug).first();
+  const id = (b.id || (existing && existing.id)) || crypto.randomUUID();
+  const publishedAt = status === 'published'
+    ? ((existing && existing.published_at) || ts)
+    : null;
+  await env.DB.prepare(
+    `INSERT INTO blog_posts (id, slug, kind, state_code, title, excerpt, body_html, seo_title, seo_description, status, published_at, created_at, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+     ON CONFLICT (id) DO UPDATE SET slug = excluded.slug, kind = excluded.kind, state_code = excluded.state_code,
+       title = excluded.title, excerpt = excluded.excerpt, body_html = excluded.body_html,
+       seo_title = excluded.seo_title, seo_description = excluded.seo_description,
+       status = excluded.status, published_at = excluded.published_at, updated_at = excluded.updated_at`
+  ).bind(
+    id, slug, b.kind.trim(), b.stateCode || null, b.title.trim(), b.excerpt.trim(), b.bodyHtml,
+    b.seoTitle || null, b.seoDescription || null, status, publishedAt, ts, ts
+  ).run();
+  return json({ ok: true, id });
+}
+
+async function handleConsoleBlogDelete(request, env) {
+  const { id } = await request.json();
+  if (!id) return json({ error: 'id_required' }, 400);
+  await env.DB.prepare('DELETE FROM blog_posts WHERE id = ?').bind(id).run();
+  return json({ ok: true });
+}
+
 // ---- Router -----------------------------------------------------------
 
 export default {
@@ -3244,6 +3318,8 @@ export default {
       if (pathname === '/stats/public' && method === 'GET') return await handlePublicStats(env);
       if (pathname === '/activity/recent' && method === 'GET') return await handleRecentActivity(env);
       if (pathname === '/category-content' && method === 'GET') return await handleCategoryContentList(request, env);
+      if (pathname === '/blog' && method === 'GET') return await handleBlogList(request, env);
+      if (pathname.startsWith('/blog/') && method === 'GET') return await handleBlogPostGet(request, env);
       // Public alias of the admin's /console/questions/counts -- question bank SIZE per track
       // isn't sensitive (it's already effectively public via each track's own "X Multiple Choice"
       // display copy), and the category landing pages want a real, non-fabricated "X,XXX practice
@@ -3288,6 +3364,9 @@ export default {
         if (pathname === '/console/category-content' && method === 'GET') return await handleConsoleCategoryContentList(env);
         if (pathname === '/console/category-content/upsert' && method === 'POST') return await handleConsoleCategoryContentUpsert(request, env);
         if (pathname === '/console/category-content/delete' && method === 'POST') return await handleConsoleCategoryContentDelete(request, env);
+        if (pathname === '/console/blog' && method === 'GET') return await handleConsoleBlogList(env);
+        if (pathname === '/console/blog/upsert' && method === 'POST') return await handleConsoleBlogUpsert(request, env);
+        if (pathname === '/console/blog/delete' && method === 'POST') return await handleConsoleBlogDelete(request, env);
         if (pathname === '/console/promotions' && method === 'GET') return await handleConsolePromotionsList(env);
         if (pathname === '/console/promotions/create' && method === 'POST') return await handleConsolePromotionsCreate(request, env);
         if (pathname === '/console/promotions/update' && method === 'POST') return await handleConsolePromotionsUpdate(request, env);
