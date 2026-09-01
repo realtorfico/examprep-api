@@ -1,7 +1,7 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
-import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL, ALL_USERS_PROGRESS_TOTALS_SQL } from './progressQueries.js';
 import { filesOwnedByTrack } from './resourceOwnership.js';
@@ -673,6 +673,31 @@ async function handleConsoleTestimonialModerate(request, env) {
   await env.DB.prepare('UPDATE testimonial_submissions SET status = ?, reviewed_at = ? WHERE id = ?')
     .bind(status, now(), id).run();
   return json({ ok: true });
+}
+
+// ---- "Notify me when my track launches" waitlist ---------------------------
+// No moderation queue -- nothing to approve, just a demand signal shown as counts on the admin
+// Stats tab (checked before/when a new state ships). No Turnstile deliberately: this is meant to
+// be a one-field, near-zero-friction ask, and the worst case (a garbage email) costs nothing since
+// no message is ever sent automatically off this table.
+async function handleWaitlistJoin(request, env) {
+  const { email, kind, stateCode } = await request.json();
+  const trimmedEmail = (email || '').trim().toLowerCase();
+  if (!trimmedEmail || !trimmedEmail.includes('@') || !kind || !stateCode) {
+    return json({ error: 'email_kind_stateCode_required' }, 400);
+  }
+  try {
+    await env.DB.prepare('INSERT INTO track_waitlist (id, email, kind, state_code, created_at) VALUES (?,?,?,?,?)')
+      .bind(newId(), trimmedEmail, kind, stateCode, now()).run();
+  } catch (e) { /* UNIQUE(email, kind, state_code) -- already on the list, treat as success */ }
+  return json({ ok: true });
+}
+
+async function handleConsoleWaitlist(env) {
+  const rows = (await env.DB.prepare(
+    'SELECT kind, state_code, COUNT(*) AS count, MAX(created_at) AS last_signup_at FROM track_waitlist GROUP BY kind, state_code ORDER BY count DESC'
+  ).all()).results;
+  return json({ items: rows });
 }
 
 // ---- Site visit tracking (examprep-admin's Visitors tab) ------------------
@@ -2499,6 +2524,26 @@ async function handleExamSubmit(user, request, env) {
     correctCount, questionIds.length, attempt.started_at, submittedAt, attempt.duration_sec, attempt.pass_percent);
 
   const codeRow = await env.DB.prepare('SELECT code, buyer_email FROM codes WHERE redeemed_by = ?').bind(user.id).first();
+
+  // "You passed!" email -- sent once, on the FIRST passing attempt for this exam_type, not every
+  // repeat pass. Checks prior submitted attempts using each row's own pass_percent snapshot (same
+  // threshold logic buildExamResult/handleExamHistory use), not a fresh registry lookup, since the
+  // threshold can vary by ageCategory and must not retroactively reinterpret old sittings.
+  if (result.passed && codeRow && codeRow.buyer_email) {
+    const priorAttempts = (await env.DB.prepare(
+      'SELECT score_correct, score_total, pass_percent FROM exam_attempts WHERE user_id = ? AND exam_type = ? AND submitted_at IS NOT NULL AND id != ?'
+    ).bind(user.id, attempt.exam_type, attemptId).all()).results;
+    const registry = await getTrackRegistry(env);
+    const alreadyPassedBefore = priorAttempts.some((row) => {
+      const threshold = row.pass_percent != null ? row.pass_percent : getExamConfigFromRegistry(registry, attempt.exam_type).passPercent;
+      const pct = row.score_total ? Math.round((row.score_correct / row.score_total) * 1000) / 10 : 0;
+      return pct >= threshold;
+    });
+    if (!alreadyPassedBefore) {
+      try { await sendExamPassedEmail(env, codeRow.buyer_email, attempt.exam_type); } catch (e) { /* best-effort */ }
+    }
+  }
+
   const modeLabel = attempt.mode === 'toughest45' ? 'Toughest 45' : 'mock';
   await notifyAdmin(env, 'mock_exam_completed', 'Mock exam completed',
     `<p><strong>${(codeRow && (codeRow.buyer_email || codeRow.code)) || 'A user'}</strong> completed a ${attempt.exam_type} ` +
@@ -3156,6 +3201,7 @@ export default {
       if (pathname === '/refunds/claim' && method === 'POST') return await handleRefundClaimSubmit(request, env);
       if (pathname === '/contact' && method === 'POST') return await handleContactSubmit(request, env);
       if (pathname === '/testimonials/submit' && method === 'POST') return await handleTestimonialSubmit(request, env);
+      if (pathname === '/waitlist/join' && method === 'POST') return await handleWaitlistJoin(request, env);
       if (pathname === '/track/visit' && method === 'POST') return await handleTrackVisit(request, env);
       if (pathname === '/track/event' && method === 'POST') return await handleTrackEvent(request, env);
       if (pathname === '/points/rules' && method === 'GET') return await handlePointsRules(env);
@@ -3192,6 +3238,7 @@ export default {
         if (pathname === '/console/visitors' && method === 'GET') return await handleConsoleVisitorsList(request, env);
         if (pathname === '/console/funnel' && method === 'GET') return await handleConsoleFunnel(env);
         if (pathname === '/console/testimonials' && method === 'GET') return await handleConsoleTestimonialsList(env);
+        if (pathname === '/console/waitlist' && method === 'GET') return await handleConsoleWaitlist(env);
         if (pathname === '/console/testimonials/moderate' && method === 'POST') return await handleConsoleTestimonialModerate(request, env);
         if (pathname === '/console/visitors/facets' && method === 'GET') return await handleConsoleVisitorsFacets(env);
         if (pathname === '/console/point-rules' && method === 'GET') return await handleConsolePointRulesList(env);

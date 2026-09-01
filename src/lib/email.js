@@ -1,7 +1,10 @@
 // Transactional email via Resend (https://resend.com). Callers treat this as best-effort —
 // a purchase should never fail just because the backup email couldn't be sent.
 
-const SITE_URL = 'https://examprep.softician.com/notary';
+// Was 'https://examprep.softician.com/notary' -- a stale pre-category-first-restructure domain
+// and hardcoded track, fixed 2026-09-01 (found while adding a new email that needed a correct
+// general site link). REDEEM_URL below already used the right domain; this didn't.
+const SITE_URL = 'https://passexamhq.com/';
 
 async function sendEmail(env, { to, subject, html, replyTo }) {
   const body = { from: 'ExamPrep <noreply@examprep.softician.com>', to, subject, html };
@@ -224,6 +227,27 @@ export async function sendPointsEarnedEmail(env, to, points, reason) {
         <p>Redeem your points for free access once you've earned enough to cover a course.</p>`,
       ctaText: 'Refer more, earn faster →',
       ctaUrl: `${SITE_URL}#/refer`,
+    }),
+  });
+}
+
+// Sent once, on a user's FIRST passing mock exam attempt for a given track (see the caller in
+// index.js's handleExamSubmit for the "first passing attempt" dedup logic) -- a genuine positive-
+// outcome moment, same trigger the in-app "You passed!" screen's own feedback prompt uses, just
+// reaching them by email too since not everyone notices an on-page link.
+export async function sendExamPassedEmail(env, to, examType) {
+  await sendEmail(env, {
+    to,
+    subject: '🎉 Congrats on passing your practice exam!',
+    html: emailShell({
+      badge: '🎉',
+      title: 'You passed!',
+      bodyHtml: `<p>Nice work passing a <strong>${examType}</strong> practice exam — that's a real sign you're ready.</p>
+        <p>Got a minute? A quick note about your experience helps other students trust the practice questions,
+        and if you know someone else studying for the same exam, referring them earns you points too.</p>`,
+      ctaText: 'Share your experience →',
+      ctaUrl: `${SITE_URL}#/feedback`,
+      footerNote: `Want to refer a friend instead? <a href="${SITE_URL}#/refer" style="color:#0284c7;">Refer &amp; earn →</a>`,
     }),
   });
 }
