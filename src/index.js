@@ -668,6 +668,59 @@ async function getExcludedVisitorIps(env) {
   return new Set(raw.split(',').map((s) => s.trim()).filter(Boolean));
 }
 
+// Fixed allowlist, not free-form -- keeps funnel_events queryable/meaningful instead of an
+// open-ended event-name free-for-all. 'purchase_completed' is recorded server-side directly from
+// finalizePurchase() (see recordFunnelEvent below), not via this endpoint -- a real completed
+// purchase is authoritative there, no need to trust a client-fired beacon for it.
+const FUNNEL_EVENT_NAMES = new Set(['quiz_completed', 'checkout_started']);
+
+async function recordFunnelEvent(env, { sessionId, visitorId, eventName, examType }) {
+  try {
+    await env.DB.prepare('INSERT INTO funnel_events (id, session_id, visitor_id, event_name, exam_type, created_at) VALUES (?,?,?,?,?,?)')
+      .bind(newId(), sessionId || null, visitorId || null, eventName, examType || null, now()).run();
+  } catch (e) { /* best-effort -- funnel tracking never blocks the actual user action */ }
+}
+
+async function handleTrackEvent(request, env) {
+  let body;
+  try { body = await request.json(); } catch (e) { return json({ error: 'invalid_body' }, 400); }
+  const eventName = String(body.eventName || '');
+  if (!FUNNEL_EVENT_NAMES.has(eventName)) return json({ error: 'invalid_event_name' }, 400);
+
+  const ip = request.headers.get('CF-Connecting-IP');
+  const excluded = await getExcludedVisitorIps(env);
+  if (ip && excluded.has(ip)) return json({ ok: true, excluded: true });
+
+  await recordFunnelEvent(env, {
+    sessionId: String(body.sessionId || '').trim(),
+    visitorId: String(body.visitorId || '').trim(),
+    eventName,
+    examType: typeof body.examType === 'string' ? body.examType.slice(0, 100) : null,
+  });
+  return json({ ok: true });
+}
+
+// All-time counts per funnel stage -- deliberately simple (no date range/filtering) for a first
+// pass; a visitor can appear in multiple stages (or skip straight to purchase via a direct link),
+// so these are independent stage totals, not a strict single-path funnel. 'quiz_completed' and
+// 'checkout_started' come from the public /track/event beacon; 'purchase_completed' is recorded
+// directly by finalizePurchase() server-side, more reliable than trusting a client-fired beacon
+// for the actual conversion event.
+async function handleConsoleFunnel(env) {
+  const rows = (await env.DB.prepare(
+    'SELECT event_name, COUNT(*) AS count FROM funnel_events GROUP BY event_name'
+  ).all()).results;
+  const byName = {};
+  rows.forEach((r) => { byName[r.event_name] = r.count; });
+  return json({
+    stages: [
+      { eventName: 'quiz_completed', label: 'Sample Quiz Completed', count: byName.quiz_completed || 0 },
+      { eventName: 'checkout_started', label: 'Checkout Started', count: byName.checkout_started || 0 },
+      { eventName: 'purchase_completed', label: 'Purchase Completed', count: byName.purchase_completed || 0 },
+    ],
+  });
+}
+
 async function handleTrackVisit(request, env) {
   let body;
   try { body = await request.json(); } catch (e) { return json({ error: 'invalid_body' }, 400); }
@@ -1145,7 +1198,7 @@ async function quoteCheckout(env, examType, email, applyPoints, promoCode) {
 // code has verified the payment actually completed and the captured amount matches what was
 // quoted. Handles point deduction, code issuance, receipt email, referral crediting, and the
 // admin activity alert -- the one thing that's genuinely identical regardless of processor.
-async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode }) {
+async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, sessionId }) {
   const buyerEmail = payerEmail || email;
   const { code, token } = gift
     ? await issueGiftCode(env, examType, note, capturedCents, buyerEmail)
@@ -1177,6 +1230,7 @@ async function finalizePurchase(env, { examType, note, capturedCents, payerEmail
   }
 
   await detectAndCreditConversion(env, payerEmail, refCode);
+  await recordFunnelEvent(env, { sessionId, visitorId: null, eventName: 'purchase_completed', examType });
   await notifyAdmin(env, 'new_purchase', 'New purchase',
     `<p><strong>${buyerEmail || 'A buyer'}</strong> just bought ${examType} access` +
     (gift ? ' as a gift' + (gift.recipient_email ? ` for ${gift.recipient_email}` : '') : '') +
@@ -1219,7 +1273,7 @@ async function handlePaypalCreateOrder(request, env) {
 }
 
 async function handlePaypalCaptureOrder(request, env) {
-  const { orderId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode } = await request.json();
+  const { orderId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode, sessionId } = await request.json();
   if (!orderId || !examType) return json({ error: 'orderId_and_examType_required' }, 400);
   // Unlike points/promo discounts, gift status has no effect on the charged amount -- nothing to
   // pre-commit at create-order time, so it's just read straight off this request (see the
@@ -1258,7 +1312,7 @@ async function handlePaypalCaptureOrder(request, env) {
   // PayPal's own capture response tells us the payer's email for free -- no extra field/friction
   // needed on the buy form to detect "this buyer was someone's referral" or to record who paid.
   const payerEmail = capture.payer && capture.payer.email_address;
-  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode });
+  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, sessionId });
 
   return json({ code, token, examType, pointsApplied, isGift: giftResult });
 }
@@ -1294,7 +1348,7 @@ async function handleStripeCreateIntent(request, env) {
 }
 
 async function handleStripeConfirm(request, env) {
-  const { paymentIntentId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode } = await request.json();
+  const { paymentIntentId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode, sessionId } = await request.json();
   if (!paymentIntentId || !examType) return json({ error: 'paymentIntentId_and_examType_required' }, 400);
   // Unlike points/promo discounts, gift status has no effect on the charged amount -- nothing to
   // pre-commit at create-intent time, so it's just read straight off this request (see the
@@ -1330,7 +1384,7 @@ async function handleStripeConfirm(request, env) {
   // differ -- prefer the latter, same "trust what the processor tells us" approach as PayPal.
   const charge = intent.latest_charge;
   const payerEmail = (charge && charge.billing_details && charge.billing_details.email) || intent.receipt_email;
-  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode });
+  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, sessionId });
 
   return json({ code, token, examType, pointsApplied, isGift: giftResult });
 }
@@ -3048,6 +3102,7 @@ export default {
       if (pathname === '/refunds/claim' && method === 'POST') return await handleRefundClaimSubmit(request, env);
       if (pathname === '/contact' && method === 'POST') return await handleContactSubmit(request, env);
       if (pathname === '/track/visit' && method === 'POST') return await handleTrackVisit(request, env);
+      if (pathname === '/track/event' && method === 'POST') return await handleTrackEvent(request, env);
       if (pathname === '/points/rules' && method === 'GET') return await handlePointsRules(env);
       if (pathname === '/points/balance' && method === 'GET') return await handlePointsBalance(request, env);
       if (pathname === '/points/redeem' && method === 'POST') return await handlePointsRedeem(request, env);
@@ -3080,6 +3135,7 @@ export default {
         if (pathname === '/console/alert-rules/update' && method === 'POST') return await handleConsoleAlertRuleUpdate(request, env);
         if (pathname === '/console/alert-rules/delete' && method === 'POST') return await handleConsoleAlertRuleDelete(request, env);
         if (pathname === '/console/visitors' && method === 'GET') return await handleConsoleVisitorsList(request, env);
+        if (pathname === '/console/funnel' && method === 'GET') return await handleConsoleFunnel(env);
         if (pathname === '/console/visitors/facets' && method === 'GET') return await handleConsoleVisitorsFacets(env);
         if (pathname === '/console/point-rules' && method === 'GET') return await handleConsolePointRulesList(env);
         if (pathname === '/console/point-rules' && method === 'POST') return await handleConsolePointRulesSet(request, env);

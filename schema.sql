@@ -410,6 +410,22 @@ CREATE TABLE site_visits (
 CREATE INDEX idx_site_visits_last_seen ON site_visits(last_seen_at);
 CREATE INDEX idx_site_visits_visitor ON site_visits(visitor_id);
 
+-- Lightweight funnel/conversion event log -- fixed, allowlisted event_name values (see
+-- FUNNEL_EVENT_NAMES in index.js), not a free-form analytics table. Lets the admin see where
+-- visitors drop off (quiz_completed -> checkout_started -> purchase_completed) beyond just raw
+-- pageviews. session_id/visitor_id mirror site_visits' own ids (not a foreign key -- an event can
+-- arrive before or after that session's own site_visits row, no ordering dependency between them).
+CREATE TABLE funnel_events (
+  id          TEXT PRIMARY KEY,
+  session_id  TEXT NOT NULL,
+  visitor_id  TEXT,
+  event_name  TEXT NOT NULL,
+  exam_type   TEXT,
+  created_at  INTEGER NOT NULL
+);
+CREATE INDEX idx_funnel_events_name ON funnel_events(event_name);
+CREATE INDEX idx_funnel_events_created ON funnel_events(created_at);
+
 -- Admin-managed notification rules -- replaces the old single admin_alert_email app_setting
 -- (which used to control notifyAdmin, the daily health check, AND the Contact Admin form all at
 -- once) with a proper per-trigger table: multiple recipients per trigger, each independently
