@@ -1024,6 +1024,28 @@ async function handlePublicStats(env) {
   });
 }
 
+// Real, anonymized "recent activity" feed -- last few genuine PASSING mock exam attempts
+// site-wide, no names/emails, just kind+state+how-long-ago. Real social-proof signal, not
+// fabricated activity. Scans the 300 most recent submitted attempts (not the whole table) and
+// keeps the first 15 that were actual passes, so this stays cheap even as exam_attempts grows.
+async function handleRecentActivity(env) {
+  const rows = (await env.DB.prepare(
+    `SELECT exam_type, score_correct, score_total, pass_percent, submitted_at FROM exam_attempts
+     WHERE submitted_at IS NOT NULL ORDER BY submitted_at DESC LIMIT 300`
+  ).all()).results;
+  const trackRegistry = await getTrackRegistry(env);
+  const items = [];
+  for (const a of rows) {
+    if (!a.score_total) continue;
+    const threshold = a.pass_percent != null ? a.pass_percent : getExamConfigFromRegistry(trackRegistry, a.exam_type).passPercent;
+    if ((100 * a.score_correct) / a.score_total < threshold) continue;
+    const track = trackRegistry[a.exam_type];
+    items.push({ kind: track ? track.kind : a.exam_type, stateCode: track ? track.state_code : null, submittedAt: a.submitted_at });
+    if (items.length >= 15) break;
+  }
+  return json({ items });
+}
+
 // ---- Promotions ----------------------------------------------------------
 // Admin-configurable banners (examprep-admin's Promotions tab) shown on the public site's home
 // and/or checkout pages. A promo with promo_code set is a real discount, redeemed by typing that
@@ -3220,6 +3242,7 @@ export default {
       if (pathname === '/pricing' && method === 'GET') return await handlePricingGet(request, env);
       if (pathname === '/config' && method === 'GET') return await handlePublicConfig(env);
       if (pathname === '/stats/public' && method === 'GET') return await handlePublicStats(env);
+      if (pathname === '/activity/recent' && method === 'GET') return await handleRecentActivity(env);
       if (pathname === '/category-content' && method === 'GET') return await handleCategoryContentList(request, env);
       // Public alias of the admin's /console/questions/counts -- question bank SIZE per track
       // isn't sensitive (it's already effectively public via each track's own "X Multiple Choice"
