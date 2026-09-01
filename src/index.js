@@ -491,6 +491,7 @@ const ALERT_TRIGGERS = [
   { key: 'mock_exam_completed', label: 'Mock exam completed' },
   { key: 'health_check_failed', label: 'Site health check failed' },
   { key: 'contact_form_submitted', label: 'Contact form submitted' },
+  { key: 'testimonial_submitted', label: 'Testimonial submitted' },
 ];
 const ALERT_TRIGGER_KEYS = new Set(ALERT_TRIGGERS.map((t) => t.key));
 
@@ -618,6 +619,59 @@ async function handleContactSubmit(request, env) {
   } catch (e) {
     return json({ error: 'send_failed' }, 502);
   }
+  return json({ ok: true });
+}
+
+// ---- Testimonial submissions (real-student feedback collection) -----------
+// A moderation queue (testimonial_submissions), NOT auto-published -- see the table's own schema
+// comment for why approving one doesn't write straight into category_content.testimonials.
+async function handleTestimonialSubmit(request, env) {
+  const { author, quote, examType, email, turnstileToken } = await request.json();
+  const ip = request.headers.get('CF-Connecting-IP');
+  if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
+    return json({ error: 'turnstile_failed' }, 400);
+  }
+  const trimmedAuthor = (author || '').trim();
+  const trimmedQuote = (quote || '').trim();
+  if (!trimmedAuthor || !trimmedQuote || !examType) return json({ error: 'author_quote_examType_required' }, 400);
+  if (trimmedQuote.length > 1000) return json({ error: 'quote_too_long' }, 400);
+  if (trimmedAuthor.length > 100) return json({ error: 'author_too_long' }, 400);
+
+  await env.DB.prepare(
+    'INSERT INTO testimonial_submissions (id, author, quote, exam_type, email, created_at) VALUES (?,?,?,?,?,?)'
+  ).bind(newId(), trimmedAuthor, trimmedQuote, examType, (email || '').trim() || null, now()).run();
+
+  try {
+    const recipients = await getActiveAlertRecipients(env, 'testimonial_submitted');
+    for (const to of recipients) {
+      await sendAdminAlertEmail(env, to, 'New testimonial submitted',
+        `<p><strong>${escapeHtml(trimmedAuthor)}</strong> (${escapeHtml(examType)}):</p><p>${escapeHtml(trimmedQuote)}</p>` +
+        `<p>Review it in the admin Testimonials tab.</p>`, (email || '').trim() || null);
+    }
+  } catch (e) { /* best-effort -- the submission itself already saved either way */ }
+
+  return json({ ok: true });
+}
+
+async function handleConsoleTestimonialsList(env) {
+  const rows = (await env.DB.prepare(
+    'SELECT * FROM testimonial_submissions ORDER BY created_at DESC LIMIT 500'
+  ).all()).results;
+  const registryByType = await getTrackRegistry(env); // already a map keyed by exam_type
+  return json({
+    items: rows.map((r) => ({
+      ...r,
+      kind: (registryByType[r.exam_type] || {}).kind || r.exam_type,
+      stateCode: (registryByType[r.exam_type] || {}).state_code || null,
+    })),
+  });
+}
+
+async function handleConsoleTestimonialModerate(request, env) {
+  const { id, status } = await request.json();
+  if (!id || (status !== 'approved' && status !== 'rejected')) return json({ error: 'id_and_valid_status_required' }, 400);
+  await env.DB.prepare('UPDATE testimonial_submissions SET status = ?, reviewed_at = ? WHERE id = ?')
+    .bind(status, now(), id).run();
   return json({ ok: true });
 }
 
@@ -3101,6 +3155,7 @@ export default {
       if (pathname === '/referrals/verify' && method === 'GET') return await handleReferralVerify(request, env);
       if (pathname === '/refunds/claim' && method === 'POST') return await handleRefundClaimSubmit(request, env);
       if (pathname === '/contact' && method === 'POST') return await handleContactSubmit(request, env);
+      if (pathname === '/testimonials/submit' && method === 'POST') return await handleTestimonialSubmit(request, env);
       if (pathname === '/track/visit' && method === 'POST') return await handleTrackVisit(request, env);
       if (pathname === '/track/event' && method === 'POST') return await handleTrackEvent(request, env);
       if (pathname === '/points/rules' && method === 'GET') return await handlePointsRules(env);
@@ -3136,6 +3191,8 @@ export default {
         if (pathname === '/console/alert-rules/delete' && method === 'POST') return await handleConsoleAlertRuleDelete(request, env);
         if (pathname === '/console/visitors' && method === 'GET') return await handleConsoleVisitorsList(request, env);
         if (pathname === '/console/funnel' && method === 'GET') return await handleConsoleFunnel(env);
+        if (pathname === '/console/testimonials' && method === 'GET') return await handleConsoleTestimonialsList(env);
+        if (pathname === '/console/testimonials/moderate' && method === 'POST') return await handleConsoleTestimonialModerate(request, env);
         if (pathname === '/console/visitors/facets' && method === 'GET') return await handleConsoleVisitorsFacets(env);
         if (pathname === '/console/point-rules' && method === 'GET') return await handleConsolePointRulesList(env);
         if (pathname === '/console/point-rules' && method === 'POST') return await handleConsolePointRulesSet(request, env);

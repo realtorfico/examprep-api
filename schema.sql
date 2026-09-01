@@ -426,6 +426,27 @@ CREATE TABLE funnel_events (
 CREATE INDEX idx_funnel_events_name ON funnel_events(event_name);
 CREATE INDEX idx_funnel_events_created ON funnel_events(created_at);
 
+-- Real-student testimonial submissions -- a moderation queue, NOT auto-published. Approving one
+-- here does not write into category_content.testimonials directly: that JSON is keyed by category
+-- SLUG (e.g. "notary"), which uses a hand-curated exam-kind -> slug map (HUB_KIND_SLUGS in the
+-- site's app.js, has real overrides, not a mechanical slugify) that this API deliberately does not
+-- duplicate -- duplicating it server-side would drift out of sync with the real one. Instead the
+-- admin Testimonials tab shows each approved submission's real exam_type/kind (via track_registry,
+-- no guessing) pre-formatted as "quote | author" -- the exact line format the Categories tab's
+-- testimonials textarea already expects -- so the admin can paste it into the right category by
+-- hand in one step, not retype it.
+CREATE TABLE testimonial_submissions (
+  id          TEXT PRIMARY KEY,
+  author      TEXT NOT NULL,
+  quote       TEXT NOT NULL,
+  exam_type   TEXT NOT NULL,
+  email       TEXT, -- private, admin-only (follow-up/verification), never shown publicly
+  status      TEXT NOT NULL DEFAULT 'pending', -- pending | approved | rejected
+  created_at  INTEGER NOT NULL,
+  reviewed_at INTEGER
+);
+CREATE INDEX idx_testimonial_submissions_status ON testimonial_submissions(status);
+
 -- Admin-managed notification rules -- replaces the old single admin_alert_email app_setting
 -- (which used to control notifyAdmin, the daily health check, AND the Contact Admin form all at
 -- once) with a proper per-trigger table: multiple recipients per trigger, each independently
