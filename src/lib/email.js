@@ -216,6 +216,27 @@ export async function sendGiftPurchaseEmail(env, to, code, examType, recipientEm
   });
 }
 
+// Abandoned-checkout recovery -- sent once per checkout_intents row (see index.js's
+// sendAbandonedCheckoutReminders, run from the daily cron). No deep link to the exact track's buy
+// page: that would need the same hand-curated kind->slug mapping (HUB_KIND_SLUGS in the site's
+// app.js) that sendExamPassedEmail/the testimonial-moderation work both deliberately avoided
+// duplicating server-side -- links to the homepage instead, exam name called out in the copy.
+export async function sendAbandonedCheckoutEmail(env, to, examType) {
+  await sendEmail(env, {
+    to,
+    subject: 'Still want your ' + examType + ' practice questions?',
+    html: emailShell({
+      badge: '👋',
+      title: 'You left something behind',
+      bodyHtml: `<p>Looks like you started checking out for <strong>${examType}</strong> practice questions but didn't finish.</p>
+        <p>If something got in the way (a question about pricing, the guarantee, anything), just reply to this email — a real person will help.</p>`,
+      ctaText: 'Finish checkout →',
+      ctaUrl: SITE_URL,
+      footerNote: 'Already bought elsewhere or changed your mind? No action needed.',
+    }),
+  });
+}
+
 export async function sendPointsEarnedEmail(env, to, points, reason) {
   await sendEmail(env, {
     to,

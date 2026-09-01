@@ -1,7 +1,7 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
-import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL, ALL_USERS_PROGRESS_TOTALS_SQL } from './progressQueries.js';
 import { filesOwnedByTrack } from './resourceOwnership.js';
@@ -530,6 +530,26 @@ async function checkStripeSecretLive(env) {
   if (res.ok) return null;
   const data = await res.json().catch(() => ({}));
   return `Stripe rejected STRIPE_SECRET_KEY: ${(data.error && data.error.message) || res.status}`;
+}
+
+// Emails anyone who started checkout (a real checkout_intents row, not just the funnel_events
+// pageview beacon) but hasn't purchased within a few hours -- once per abandoned attempt, then
+// never again for that same row (reminder_sent_at). Only runs on the daily cron (13:00 UTC), so
+// the 6h/3-day window is generous rather than tuned for same-day delivery -- see the cron's own
+// comment for why this can't run more often without duplicating the create-intent write's timing.
+async function sendAbandonedCheckoutReminders(env) {
+  const sixHoursAgo = now() - 6 * 3600;
+  const threeDaysAgo = now() - 3 * 86400;
+  const rows = (await env.DB.prepare(
+    `SELECT id, email, exam_type FROM checkout_intents
+     WHERE purchased_at IS NULL AND reminder_sent_at IS NULL AND created_at < ? AND created_at > ?`
+  ).bind(sixHoursAgo, threeDaysAgo).all()).results;
+  for (const row of rows) {
+    try {
+      await sendAbandonedCheckoutEmail(env, row.email, row.exam_type);
+      await env.DB.prepare('UPDATE checkout_intents SET reminder_sent_at = ? WHERE id = ?').bind(now(), row.id).run();
+    } catch (e) { /* best-effort -- one failed send shouldn't block the rest of the batch */ }
+  }
 }
 
 async function runDailyHealthCheck(env) {
@@ -1310,6 +1330,12 @@ async function finalizePurchase(env, { examType, note, capturedCents, payerEmail
 
   await detectAndCreditConversion(env, payerEmail, refCode);
   await recordFunnelEvent(env, { sessionId, visitorId: null, eventName: 'purchase_completed', examType });
+  if (buyerEmail) {
+    try {
+      await env.DB.prepare('UPDATE checkout_intents SET purchased_at = ? WHERE email = ? AND exam_type = ? AND purchased_at IS NULL')
+        .bind(now(), buyerEmail.trim().toLowerCase(), examType).run();
+    } catch (e) { /* best-effort */ }
+  }
   await notifyAdmin(env, 'new_purchase', 'New purchase',
     `<p><strong>${buyerEmail || 'A buyer'}</strong> just bought ${examType} access` +
     (gift ? ' as a gift' + (gift.recipient_email ? ` for ${gift.recipient_email}` : '') : '') +
@@ -1411,6 +1437,22 @@ async function handleStripeCreateIntent(request, env) {
   if (quote.fullyCoveredByPoints) return json({ error: 'fully_covered_by_points' }, 400); // client should use /points/redeem instead
 
   const intent = await createStripePaymentIntent(env, quote.finalPriceCents, quote.currency, { email, examType });
+
+  // Abandoned-checkout tracking -- the real "started checkout with a known email" moment (unlike
+  // the funnel_events 'checkout_started' beacon, which fires on page-render before any email is
+  // typed in). Best-effort: never block checkout if this write fails. Re-mounting the Payment
+  // Element (e.g. the buyer edits their email or toggles points/promo) just refreshes created_at
+  // and clears any prior reminder_sent_at, not a duplicate row (UNIQUE(email, exam_type)) --
+  // purchased_at is deliberately left untouched by this upsert (see finalizePurchase for how it
+  // gets set) so a genuinely-completed prior purchase is never un-marked by a later re-mount.
+  if (email && email.trim()) {
+    try {
+      await env.DB.prepare(
+        `INSERT INTO checkout_intents (id, email, exam_type, created_at) VALUES (?, ?, ?, ?)
+         ON CONFLICT(email, exam_type) DO UPDATE SET created_at = excluded.created_at, reminder_sent_at = NULL`
+      ).bind(newId(), email.trim().toLowerCase(), examType, now()).run();
+    } catch (e) { /* best-effort */ }
+  }
 
   if (quote.pointsToApply > 0) {
     await env.DB.prepare(
@@ -3307,5 +3349,6 @@ export default {
   async scheduled(event, env, ctx) {
     ctx.waitUntil(runDailyHealthCheck(env));
     ctx.waitUntil(recordDailyProgressSnapshots(env));
+    ctx.waitUntil(sendAbandonedCheckoutReminders(env));
   },
 };

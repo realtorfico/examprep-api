@@ -447,6 +447,38 @@ CREATE TABLE testimonial_submissions (
 );
 CREATE INDEX idx_testimonial_submissions_status ON testimonial_submissions(status);
 
+-- "Notify me when my state/track launches" capture -- shown on a category page for any state NOT
+-- already active for that kind (categoryStateSelectHtml() only lists active ones, so there's
+-- otherwise no UI surface for this demand signal at all). No moderation queue needed (nothing to
+-- approve, just a list to check before/when a new track ships) -- surfaced as counts on the admin
+-- Stats tab. UNIQUE prevents the same person re-registering interest in the same kind+state combo.
+CREATE TABLE track_waitlist (
+  id         TEXT PRIMARY KEY,
+  email      TEXT NOT NULL,
+  kind       TEXT NOT NULL,
+  state_code TEXT NOT NULL,
+  created_at INTEGER NOT NULL,
+  UNIQUE(email, kind, state_code)
+);
+CREATE INDEX idx_track_waitlist_kind_state ON track_waitlist(kind, state_code);
+
+-- Abandoned-checkout recovery -- a row is created/refreshed every time handleStripeCreateIntent
+-- successfully quotes a real checkout with a real email (the true "started checkout" moment,
+-- distinct from the funnel_events 'checkout_started' beacon which fires on page-render before an
+-- email is known). finalizePurchase marks purchased_at on success; the daily cron
+-- (sendAbandonedCheckoutReminders) emails anyone still unpurchased after a few hours, once, then
+-- sets reminder_sent_at so they're never emailed twice for the same abandoned attempt.
+CREATE TABLE checkout_intents (
+  id                TEXT PRIMARY KEY,
+  email             TEXT NOT NULL,
+  exam_type         TEXT NOT NULL,
+  created_at        INTEGER NOT NULL,
+  purchased_at      INTEGER,
+  reminder_sent_at  INTEGER,
+  UNIQUE(email, exam_type)
+);
+CREATE INDEX idx_checkout_intents_reminder ON checkout_intents(purchased_at, reminder_sent_at, created_at);
+
 -- Admin-managed notification rules -- replaces the old single admin_alert_email app_setting
 -- (which used to control notifyAdmin, the daily health check, AND the Contact Admin form all at
 -- once) with a proper per-trigger table: multiple recipients per trigger, each independently
