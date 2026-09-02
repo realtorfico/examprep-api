@@ -6,3 +6,6 @@ deploy-metadata.json
 scripts/tracks/*.sql
 scripts/tracks/*_chunks/
 scripts/tracks/*_dropped.json
+
+# Local wrangler build/auth cache -- machine-specific, never worth versioning.
+.wrangler/
