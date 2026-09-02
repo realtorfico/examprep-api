@@ -197,6 +197,42 @@ async function handleSample(request, env) {
   });
 }
 
+// "Question of the Day" -- backs the embeddable widget at wwwroot/embed/qotd/index.html (site
+// repo), built 2026-09-02 as a real backlink/distribution lever: other sites (state subreddits,
+// forums, agent blogs) iframe-embed it with attribution back to the real track page. Deterministic
+// per UTC calendar day (dayIndex % pool size, ordered by id) rather than random, so it genuinely
+// rotates through the whole real question pool over time and everyone embedding it on the same day
+// sees the same question -- a random pick per request wouldn't be "of the day" at all. Reuses
+// buildDisplayChoices() (same per-request A/B/C/D shuffle as /sample) for the answer LAYOUT, which
+// is independent of which question got picked -- two visitors on the same day seeing the correct
+// answer in a different lettered slot doesn't change which question is "today's."
+async function handleQotd(request, env) {
+  const url = new URL(request.url);
+  const examType = url.searchParams.get('examType');
+  if (!examType) return json({ error: 'examType query param is required' }, 400);
+  const trackRegistry = await getTrackRegistry(env);
+  const track = trackRegistry[examType];
+  if (!track || !track.active) return json({ error: 'unknown or inactive examType' }, 404);
+  const countRow = await env.DB.prepare('SELECT COUNT(*) AS n FROM questions WHERE exam_type = ?').bind(examType).first();
+  const total = countRow ? countRow.n : 0;
+  if (!total) return json({ error: 'no questions available for this track' }, 404);
+  const dayIndex = Math.floor(Date.now() / 86400000);
+  const offset = dayIndex % total;
+  const row = await env.DB.prepare('SELECT * FROM questions WHERE exam_type = ? ORDER BY id LIMIT 1 OFFSET ?').bind(examType, offset).first();
+  const { choices, correctChoice } = buildDisplayChoices(row);
+  const data = {
+    examType,
+    trackLabel: track.short_name,
+    trackUrl: trackUrl(track.kind, track.state_code),
+    date: new Date().toISOString().slice(0, 10),
+    topic: row.topic, question: row.question, choices, correctChoice, explanation: row.explanation,
+  };
+  // Cached at the edge for an hour (unlike json()'s usual no-store) -- this is public, unauthenticated,
+  // identical for every caller on a given day, and meant to be embedded on potentially high-traffic
+  // third-party pages, so there's real value in not hitting D1 on every single embed impression.
+  return Response.json(data, { headers: { 'cache-control': 'public, max-age=3600' } });
+}
+
 // ---- WebMCP / remote MCP server ------------------------------------------
 // Public, unauthenticated MCP tools so AI assistants (ChatGPT, Perplexity, Claude, a browser
 // WebMCP agent via Cloudflare's bridge script, etc.) can demo real practice questions in-chat and
@@ -3471,6 +3507,7 @@ export default {
     try {
       if (pathname === '/redeem' && method === 'POST') return await handleRedeem(request, env);
       if (pathname === '/sample' && method === 'GET') return await handleSample(request, env);
+      if (pathname === '/qotd' && method === 'GET') return await handleQotd(request, env);
       if (pathname === '/mcp') return await handleMcp(request, env);
       if (pathname === '/pricing' && method === 'GET') return await handlePricingGet(request, env);
       if (pathname === '/config' && method === 'GET') return await handlePublicConfig(env);
