@@ -1,0 +1,1438 @@
+Version: September 9, 2022
+Supplement Only
+CDL Driver's Manual
+COPYRIGHT © 2022 AAMVA
+All Rights Reserved
+Commercial Driver's License Manual
+Supplement for Modernized Version
+This material is based upon work supported by the Federal Motor Carrier
+Safety Administration under Cooperative Agreement No. DTFH61-97-X-
+00017. Any opinions, findings, conclusions or recommendations expressed in
+this publication are those of the Author(s) and do not necessarily reflect the
+view of the Federal Motor Carrier Safety Administration.
+COPYRIGHT © 2022 AAMVA. All rights reserved.
+This material has been created for and provided to State Driver License Agencies (SDLAs) by AAMVA for the purpose of educating Driver
+License applicants (Commercial or Non-Commercial). Permission to reproduce, use, distribute or sell this material has been granted to
+SDLAs only. No part of this book may be reproduced or transmitted in any form or by any means, electronic or mechanical, including
+photocopying, recording, or by any information storage and retrieval system without express written permission from the author / publisher.
+Any unauthorized reprint, use, distribution or sale of this material is prohibited.
+Table of Contents
+Vehicle Inspection .........................................................11M-1
+Basic Vehicle Control Skills Test...................................12M-1
+Section 11M - Vehicle Inspection Page 11M-1
+Version: September 9, 2022
+Section 11M
+Vehicle Inspection Test
+This Section Covers:
+· Internal Inspections (All Vehicles)
+· Passenger Vehicle Inspections
+· School Bus Vehicle Inspections
+· Lights Operations Check (All Vehicles)
+· External Inspections (All Vehicles)
+· Combination Vehicle Inspections
+Federal and jurisdictional laws require that CDL
+drivers inspect their vehicle to determine if it is safe to
+drive. A vehicle inspection will help you find problems
+or defects that can cause a breakdown or, even
+worse, a crash. It is important to inspect all vehicle
+components for proper working order.
+During your CDL Vehicle Inspection test, your
+inspection will focus on the safety critical items for the
+operation of your vehicle. During this inspection, you
+must show you have the knowledge to determine the
+vehicle is safe to drive. During the test, you will only
+be required to inspect one vehicle axle, however, you
+should be prepared to perform the same inspection,
+described in section (11M.5.2) on all of the vehicle
+axles. The vehicle inspection used to evaluate your
+basic knowledge does not cover all the federal
+inspection guidelines. It is your responsibility to be
+knowledgeable of the Federal Motor Carrier Safety
+Regulations.
+[For safety purposes, you should use wheel chocks
+during the Vehicle Inspection test.] You will have to
+walk around and enter/exit the vehicle to conduct the
+inspection. When exiting the vehicle, you must set
+the parking brake(s) and place the vehicle in neutral.
+When entering/exiting the vehicle, you must safely
+exit/enter by facing the vehicle and maintaining three
+(3) points of contact at all times (when entering/
+exiting a bus, safely enter/exit by facing forward and
+maintaining a firm grasp on the handrail).
+You are only required to inspect the items on the
+CDL Vehicle Inspection checklist. You may use the
+checklist provided in this section for your test and
+check off items as you have completed them, but NO
+additional markings or writing may be placed on this
+list prior to the test.
+You MUST name, point to and/or touch and fully
+explain to the examiner WHAT you are inspecting
+each safety critical item for. If you do not, you will not
+get credit for the item(s). [You will NOT have to crawl
+under the vehicle.] Any vehicle that has components
+marked or labeled, other than by the manufacturer,
+CANNOT be used for the Vehicle Inspection test.
+Failure to Follow Instructions or Unsafe Act ­
+Failure to follow examiner instructions for completing
+the test as directed may result in an automatic failure,
+and the test may be terminated by the examiner.
+Always follow the examiner's instructions and
+directions. If you do not understand the instructions,
+ask the examiner for clarification.
+Committing an "unsafe act" (e.g., forgetting to set the
+parking brake), may result in an automatic failure for
+an unsafe act, and the test may be terminated by the
+examiner. Safety of the driver, the examiner and the
+testing area is of the highest priority. Always think
+SAFETY.
+11M.1 Internal Inspection (All Vehicles)
+Study the following vehicle parts for the vehicle you
+will be using during the CDL Vehicle Inspection test.
+You should be able to identify each part and tell the
+examiner what you are looking for or inspecting.
+11M.1.1 ­ In-Vehicle/Engine Start
+Lighting Indicators
+Description: Dashboard indicator lights for signals,
+flashers, headlight high beam; Anti-lock Braking
+System (ABS); and Diesel Exhaust Fuel (DEF)/Diesel
+Particulate Filter (DPF).
+Why Inspect: Indicates which functions are active or
+warns of problem vehicle components.
+Inspection: Each of the following items must be
+inspected. Inspect to make sure the dash indicators
+work when the vehicle starts and when
+corresponding lights are turned on including:
+· Left turn signal indicator.
+· Right turn signal indicator.
+· Four-way emergency indicator.
+· High beam headlight indicator.
+· ABS indicator on dashboard; (and for
+combination vehicles only, the rear driver's side
+trailer ABS light should turn on then off), if
+equipped.
+· DEF indicator, if equipped.
+Note: Operational inspection of actual turn signals,
+four-way indicators and high beam functions must be
+done separately during the lights operation inspection
+described in Section 11M.4.
+Emergency Equipment
+Description: Required emergency equipment.
+Why Inspect: Emergency equipment must be
+available and in usable condition.
+Inspection:
+· Inspect for three (3) red reflective triangles, six
+(6) fuses or three (3) liquid burning flares.
+· Inspect for a properly charged and secured fire
+extinguisher.
+Section 11M - Vehicle Inspection Page 11M-2
+Version: September 9, 2022
+· Inspect for spare electrical fuses (if used) or
+identify circuit breakers.
+Note: If the vehicle is not equipped with electrical
+fuses, you must mention this to the examiner and
+identify that the vehicle operates on circuit breakers.
+Windshield and Traffic Monitoring Devices
+Description: Windshield, mirrors and other monitoring
+devices, such as cameras.
+Why Inspect: Cracks, obstructions, stickers, or dirt in
+the driver's viewing area can cause the driver to lose
+sight of changes in road conditions or other traffic
+around the vehicle.
+Inspection:
+· Inspect that the windshield is clean with no
+obstructions except for an inspection sticker.
+There can be no damage, such as cracks or
+flaws to the glass.
+· Inspect that mirrors are clean and adjusted
+properly from the inside, when present.
+· If equipped, inspect that rear and side view
+monitoring devices or cameras are clean and in
+working condition. Devices should be viewable
+from the inside and the video display must be
+operable and adjusted for viewing.
+Wipers/Washers
+Description: Windshield wipers and washers.
+Why Inspect: Wipers improve visibility during rain and
+snow. Worn blades reduce visibility. Washers assist in
+keeping the windshield clean.
+Inspection:
+· Inspect that wiper arms and blades are secure,
+not damaged, and demonstrate wipers operate
+smoothly by turning them on and off.
+· Inspect for windshield washer fluid and
+demonstrate windshield washers operate
+correctly by activating the washers.
+Heater/Defroster
+Description: Heats cab or passenger compartment
+and prevents frost or condensation from forming on
+windshield.
+Why Inspect: The defroster improves visibility,
+especially during cold weather.
+Inspection:
+· Identify, describe and demonstrate the heater(s)
+and defroster(s) work correctly by operating the
+controls.
+Horn(s)
+Description: Air and/or electrical horns used for
+warning other roadway users (e.g., cars, motorcyclists,
+bicyclists and pedestrians).
+Why Inspect: The horn is a device that must function
+properly in order to warn other roadway users of your
+presence.
+Inspection:
+· Inspect that air horn and/or electric horn work.
+Parking and Trailer Brake Check
+Description: Keeps vehicle from moving or rolling
+when parked.
+Why Inspect: The parking brake(s) must function
+when a vehicle is parked, especially when on a
+grade/hill. A vehicle allowed to roll could cause
+damage or injury to other roadway users or property.
+Inspection: You will be required to demonstrate the
+parking brake check (and trailer parking brake check,
+if equipped). This procedure is designed to determine
+that the parking brake(s) are working correctly, and
+they keep the vehicle from moving.
+· Parking Brake: With the parking brake engaged
+(trailer brakes released on combination vehicles, if
+applicable), remove foot from service brake and
+inspect that the parking brake will hold the vehicle
+by gently pulling forward with the parking brake
+on.
+· Trailer Brake: With the parking brake released
+and the trailer parking brake engaged
+(combination vehicles only), remove foot from
+service brake and inspect that the trailer parking
+brake will hold the vehicle by gently pulling
+forward with the trailer parking brake on. Also
+assists in checking the coupling connection with
+the trailer.
+Service Brake Check
+Description: Procedure to be followed to inspect the
+application of air, hydraulic or electric service brakes.
+Why Inspect: This procedure is designed to make
+certain that air, hydraulic or electric service brakes are
+operating correctly for normal operation.
+Inspection: You will be required to demonstrate the
+application of air, hydraulic or electric service brakes.
+This procedure is designed to determine that the
+brakes are working correctly, and that the vehicle does
+not pull to one side or the other at a low speed.
+· Pull forward at 5 mph, apply the service (foot)
+brake and come to a complete stop. Inspect to
+see that the vehicle does not pull to either side
+and stops when the service brake is applied. If
+the vehicle pulls to either side or does not stop
+well, the brakes may not be working correctly.
+Section 11M - Vehicle Inspection Page 11M-3
+Version: September 9, 2022
+11M.1.2 ­ Air Brake or Hydraulic Brake
+Check (based on type of brake system)
+Air Brake Check (Air Brake Equipped
+Vehicles Only)
+Description: Procedures to be followed in inspecting
+air brake systems.
+Why Inspect: Air brake safety devices vary. This
+procedure is designed to make certain that safety
+devices are operating correctly as air pressure drops
+from "normal" to "low air" conditions. Loss of air
+pressure will cause the emergency brakes to activate
+causing an abrupt and uncontrolled stop.
+Inspection: Failure to explain and demonstrate
+(perform) all four (4) parts of the air brake check
+correctly will result in an automatic failure of the
+CDL Vehicle Inspection test.
+The proper procedures for inspecting the air brake
+system are as follows:
+1. Air Gauge and Governor Cutoff Check ­
+Chock the wheels, start the vehicle and inspect
+that the air gauge is working and builds the air
+pressure to governor cutoff (approximately 120 ­
+140 psi) and identify the cutoff pressure for your
+vehicle.
+2. Air Leakage Rate Test ­ Shut off the engine,
+return the key to the "on" or "battery charge"
+position, release the parking brake (all vehicles),
+and the tractor protection valve (combination
+vehicle). Fully apply the foot brake. Once the air
+gauge is stabilized, hold the foot brake for one (1)
+minute. Inspect the air gauge to see if the air
+pressure drops more than three (3) pounds in
+one (1) minute (single vehicle or trailer without
+airbrakes) or four (4) pounds in one (1) minute
+(combination vehicle).
+3. Air Warning Device(s) Test ­ Without re-
+starting the engine, make sure the key or
+electrical power is in the "on" or "battery charge"
+position. Begin fanning off the air pressure by
+applying and releasing the foot brake. The low air
+warning devices (buzzer, light, and flag) should
+activate before air pressure drops below 55 psi or
+level specified by the manufacturer. It is the
+applicant's responsibility to know the vehicle
+manufacturer's specifications.
+4. Emergency Brake(s) Test ­ Continue to fan off
+the air pressure. The parking brake (or
+emergency brake) valve should close (pop out)
+between 20 psi and 45 psi (no less than 20 psi
+and no more than 45 psi).
+· On air operated trailers, the tractor protection
+valve and trailer parking brake (or emergency
+brake) valve should close (pop out) at the
+same time or prior to the valve for the
+truck/tractor/bus.
+· You will need to identify the level specified by
+the manufacturer for the vehicle you are
+testing in. If the vehicle's valves are not
+designed to pop out, you will need to listen
+for the sound of air discharging from the air
+system, which indicates the parking (or
+emergency) brakes have been applied. If the
+vehicle is equipped with a backup air system,
+you will need to explain that there is a
+backup system and that the valve(s) will not
+pop out.
+Note: You will need to explain the specific procedures
+specified by the manufacturer for the vehicle you are
+testing in. It is your responsibility to know and
+describe to the examiner the vehicle manufacturer's
+specifications for air systems.
+OR
+Hydraulic Brake Check (Hydraulic Brake
+Equipped Vehicles Only)
+Description: Procedure to be followed to inspect
+hydraulic brakes. Types of hydraulic brake systems
+and inspection procedures will vary.
+Why Inspect: Damaged hydraulic hoses, leaks in the
+braking system or low hydraulic fluid will result in a
+partial or total loss of the braking system that may
+result in increased stopping distances or a crash.
+Inspection: Failure to explain and demonstrate
+the hydraulic brake check correctly will result in
+an automatic failure of the CDL Vehicle
+Inspection test. This check is designed to see that
+the hydraulic brakes operate correctly. Use the
+following hydraulic brake check steps based on your
+vehicle's system specifications:
+· Inspect that indicators and warning systems are
+functioning, as specified by the manufacturer, if
+equipped.
+· With the transmission placed in "park", identify
+the normal height of the brake pedal and inspect
+brake pedal pressure [i.e., pump the brake pedal
+three (3) times, and then hold it down for five (5)
+seconds], or as specified by the manufacturer.
+The brake pedal should not move (depress) after
+initial application and should be firm and have a
+sufficient amount of reserve for brake pedal
+application.
+· Inspect that the hydraulic power assist system(s),
+if equipped, are functioning, as specified by the
+manufacturer.
+Note: Hydraulic brake systems vary. Your system
+may require the ignition to be in the "on" position
+and/or the engine running. You will need to explain
+and demonstrate to the examiner the procedures for
+your vehicle as specified by the manufacturer.
+Section 11M - Vehicle Inspection Page 11M-4
+Version: September 9, 2022
+11M.2 ­ Passenger and School Bus Only
+Passenger Entry and Lift
+Description: Bus door(s) used for normal entry or exit.
+Passenger lift used for wheelchair accessibility.
+Why Inspect: All passengers must be able to enter
+and exit safely.
+Inspection:
+· Inspect that entry door(s) are not damaged,
+operate smoothly and close securely from the
+inside.
+· Inspect that handrails are secure and, if
+equipped, that the step light(s) are working.
+· Inspect that the entry steps are clear, and the
+tread is not loose, or worn.
+· If equipped with a passenger lift, inspect for
+leaking, damaged or missing parts, and explain
+how the lift should be inspected for correct
+operation.
+· If equipped, lift must be fully retracted and
+latched securely.
+Emergency Exits
+Description: Bus doors, roof hatches, or push-out
+windows used for emergency evacuation.
+Why Inspect: Emergency exits must be operable in
+order to provide an escape for passengers during a
+crash or emergency.
+Inspection:
+· Inspect that all emergency exits are labeled, not
+damaged, operate smoothly, and close securely
+from the inside. Demonstrate that at least one (1)
+emergency exit operates smoothly, closes
+securely, and is not damaged. Confirm that the
+exit and warnings work properly. Point out and
+describe how all other emergency exits operate.
+· Inspect that release handles can be operated
+properly both from inside and outside the vehicle.
+· With the key in the "on" or "charged" position,
+inspect that emergency exit warning devices are
+working.
+Passenger Seating
+Description: Passenger vehicle seats and frames.
+Why Inspect: Seats must be safe for passengers to
+sit in.
+Inspection:
+· Inspect that there are no broken seat frames and
+inspect that seat frames are firmly attached to the
+floor.
+· Inspect that seat cushions are attached securely
+to the seat frames.
+Passenger Monitoring Devices
+Description: Mirrors and monitoring devices, such as
+cameras, for observing and monitoring passengers or
+students.
+Why Inspect: Internal (passenger) and external
+(fender, cross-over and other) mirrors or monitoring
+devices for seeing and observing passengers or
+students help the driver to safely observe and
+monitor passengers/students during driving, loading
+and unloading. Passenger/school bus vehicle drivers
+must be able to see boarding and discharging
+passengers/students.
+Inspection:
+· Inspect that all internal and external passenger
+mirrors and mirror brackets are not bent and are
+mounted securely with no missing parts.
+· Inspect all internal and external passenger
+mirrors for proper adjustment and that they are
+clean.
+· If equipped, inspect that passenger monitoring
+devices or cameras are clean and viewable from
+the inside and the video display is operable and
+adjusted for viewing.
+· Inspect student crossover mirrors (school bus
+only).
+11M.3 ­ School Bus Only
+Student Lights (Front and Back)
+Description: Strobe light (if equipped), alternately
+flashing amber lights and alternately flashing red lights
+on school buses.
+Why Inspect: Student lights allow the driver of a
+school bus to communicate presence and intentions to
+stop/resume student loading and unloading with other
+traffic.
+Inspection: The following student lights must be
+inspected, and the operation demonstrated, on both
+the front and back of the vehicle.
+· Inspect that strobe light (if equipped) is operational
+and is not broken. Inspect that the strobe light
+indicator on the dash is operational.
+· Inspect that alternately flashing amber lights (if
+equipped), on both front and rear of vehicle, are
+operational and is not broken. Inspect that the
+flashing amber light indicator on the dash is
+operational.
+· Inspect that alternately flashing red lights, on both
+front and rear of vehicle, are operational and is not
+broken. Inspect that the flashing red light indicator
+on the dash is operational.
+Stop Arm(s) and Safety Arm
+Description: The stop arm and safety arm on school
+buses that operate when student loading and
+unloading lights are activated.
+Section 11M - Vehicle Inspection Page 11M-5
+Version: September 9, 2022
+Why Inspect: Stop Arm - Warns other drivers a
+school bus is stopping or is stopped. Safety Arm -
+Forces school students to cross well (e.g., 10 feet)
+away from the front of the school bus in the drivers
+view.
+Inspection: The following school bus safety items
+must be inspected and the operation of, must be
+described and demonstrated.
+· Inspect the stop arm(s) - if equipped, are
+securely mounted to the vehicle frame and there
+are no loose, broken, or damaged parts. Inspect
+the stop arm extends fully when operated, stop
+arm lights are operational and that the stop arm
+indicator on the dash is operational.
+· Inspect that safety arm, if equipped, is securely
+mounted to the vehicle frame and there are no
+loose, broken, or damaged parts. Inspect that the
+safety arm functions properly in conjunction with
+the stop arm, it extends fully.
+First Aid Emergency and Body Fluid Kits
+Description: Required emergency equipment
+(including emergency first aid kit and body fluid
+cleanup kit) for a school bus.
+Why Inspect: Emergency equipment must be
+available and in usable condition.
+Inspection:
+· Inspect that emergency first aid kit is present and
+the seal has not been broken which may indicate
+missing items.
+· Inspect that body fluid cleanup kit is present and
+the seal has not been broken which may indicate
+missing items.
+11M.4 ­ Lights Operations Check (All
+Vehicles)
+Lights Operations Check
+Description: Headlights, high-beam lights, turn
+signals, 4-way flashers, clearance lights, taillights, and
+brake lights on the front, sides and rear of a
+commercial motor vehicle and trailer (combination
+only).
+Why Inspect: Lights allow the driver of a commercial
+vehicle to see and be seen and to communicate with
+other traffic.
+Inspection:
+· Inspect that all lights on the front, sides and rear of
+the vehicle operate and illuminate when
+corresponding lights are turned on, including the
+left and right turn signals, 4-way flashers, low
+beam headlights, high beam headlights, clearance
+or marker lights, taillights and brake lights. Inspect
+that brake lights come "on" when brakes are
+applied and turn "off" when brakes are released.
+Note: on a combination vehicle, you need only
+inspect the rear of the trailer.
+Note: The operation of all external lights must be
+inspected from outside the vehicle. You may ask the
+examiner to assist you in inspecting the external
+operation of the lights. You will need to direct the
+examiner to the front, sides and rear of the vehicle or
+trailer (combination only), as you conduct the
+inspection. You are responsible for telling the
+examiner exactly which lights you would like them to
+inspect as you activate the lights from inside the
+vehicle. You will need to roll the window down and
+speak loud enough for the examiner to hear. If you
+forget or leave out a specific light, you will not get
+credit.
+11M.5 ­ External Inspection (All Vehicles)
+11M.5.1 ­ Front of Vehicle / Engine Area
+(Engine Off)
+Lenses
+Description: Light lenses or covers on the front of the
+vehicle/tractor.
+Why Inspect: Light lenses or covers must be clean
+and free of damage for lights to work properly.
+Inspection:
+· Inspect that light lenses or covers are the proper
+color, clean, not broken and not missing.
+Critical Fluid Levels
+Description: Engine oil for engine lubrication;
+coolant for cooling the engine; steering fluid for
+assisting wheel action to the front wheels; and brake
+fluid for vehicle braking (hydraulic brakes only).
+Why Inspect: Proper fluid levels ensure that engine,
+cooling, steering and brake systems (hydraulic
+brakes only) operate correctly and extends the life of
+the engine and these systems.
+Inspection: With the engine off, indicate that fluids
+would be inspected for proper levels including the:
+· engine oil;
+· cooling system/coolant;
+· power steering fluid; and
+· brake fluid (hydraulic brakes only).
+If applicable, indicate where to inspect the fluid level
+and where the dipstick(s) or sight glass(es) are
+located. Identify that you would inspect that the level
+is between the add and the full marks for each item.
+Caution: Never remove the coolant radiator cap if the
+engine is hot.
+Section 11M - Vehicle Inspection Page 11M-6
+Version: September 9, 2022
+Fluid and Air Leaks
+Description: Fluid leaks from engine and other vehicle
+systems; and air leaks, if applicable.
+Why Inspect: Fluid loss could indicate component
+failure in areas where levels might not be readily
+inspected (e.g., transmission or fuel systems). Air
+leaks could indicate component failure in areas that
+may not be readily inspected (e.g., air compressor and
+other air components).
+Inspection:
+· Look for puddles on the ground.
+· Look for dripping fluids around and on underside
+of engine and transmission.
+· Inspect hoses and air lines, if applicable, for
+condition and leaks.
+Steering System
+Description: Mechanisms that transform steering
+column action into wheel turning action.
+Why Inspect: Worn, cracked, loose or broken steering
+parts could result in loss of steering. Movement in the
+linkage can cause the vehicle to wander or experience
+other serious control problems.
+Inspection:
+· Inspect that the power steering box is securely
+mounted and not leaking.
+· Inspect that all steering hoses and connections
+are not cracked, worn or leaking.
+· Inspect that the steering system has no missing
+nuts, bolts, or cotter keys.
+· Inspect that visible connecting links, arms, and
+rods from the steering box to the wheel are not
+worn or cracked and that joints and sockets are
+not worn or loose.
+11M.5.2 ­ Axle Components/Steering
+Axle
+Note: Be prepared to perform the same
+inspection, described in this section (11M.5.2) on
+any of the vehicle axles.
+Tires
+Description: Tire/wheel assemblies in contact with the
+pavement.
+Why Inspect: Underinflation increases the chance of
+blowout from excessive heat buildup due to increased
+flexing of the tire. Low tread depth increases the effect
+of hydroplaning, reduces traction and increases
+stopping distance.
+Overinflation increases the chances of damage to the
+tire from curbs and potholes and loss of traction due to
+less tread in contact with the road. Cuts and bulges
+may cause tire failure, blowouts, and sudden loss of
+control.
+Inspection: The following items must be inspected
+on each tire:
+· Tire inflation: Inspect for proper inflation using a
+tire gauge. Make sure all valve stems are
+accessible.
+· Tire condition: Inspect for cuts and damage that
+expose body plies to the tire in the tread and
+sidewall. Make sure that valve caps are not
+missing, and valve stems are not damaged or
+broken. Look for bumps and bulges in the
+sidewall and mismatched diameters in dual tires.
+· Tread depth: Inspect for minimum tread depth
+with a tread depth gauge on all major tread
+grooves containing wear bars (4/32 on steering
+axle tires, 2/32 on all other tires).
+Note: You will not get credit if you simply kick the
+tires or use a mallet to inspect for proper inflation.
+You must mention the use of a tire gauge.
+Note: If the tires are equipped with an automatic tire
+inflation system (ATIS) or tire pressure monitoring
+system (TPMS) that has hoses connected to the tire
+valve stems, you need only mention that tire pressure
+is monitored and adjusted by an automatic system
+and inspect that it is working properly.
+Rims/Wheels
+Description: The metal rims/wheels which tires are
+mounted on.
+Why Inspect: Damaged rims can result in loss of a tire
+from the rim, loss of a wheel from an axle, loss of air
+pressure in a tire, a wheel rolling off a rim due to
+damage to flange, or split rim. A damaged wheel can
+result in loss of vehicle control, leading to a crash.
+Wheels and rims should be inspected for conditions
+that could result in a complete or partial wheel
+separation or air loss in the tire.
+Inspection:
+· Inspect for damaged, cracked or bent rims. Rims
+cannot have welding repairs. Inspect for rust
+trails that may indicate rim is loose on a wedge
+wheel, if applicable.
+· Inspect studs and bolt holes to make sure they
+are not elongated (out of round) and there are no
+missing or loose nuts or bolts.
+Wheel Fasteners (Lug Nuts)
+Description: Holds wheel on axle.
+Why Inspect: Loose or missing lug nuts could result in
+the loss of a wheel and lead to a crash.
+Inspection:
+· Inspect that all lug nuts are present.
+· Inspect that lug nuts are not loose and there are
+no signs of rust trails or shiny threads that may
+show looseness.
+· Inspect that there are no broken studs.
+Section 11M - Vehicle Inspection Page 11M-7
+Version: September 9, 2022
+Springs and Air Bags and Shocks
+Description: Leaf or coil springs for dampening wheel
+vibration forces created by rolling over road surface.
+Air bags that accompany springs or serve as the
+primary suspension system. Gas or hydraulic devices
+(shocks) that cushion vehicle suspension and stabilize
+the vehicle.
+Why Inspect: Damaged or missing leaf springs or
+coils may lead to loss of control or rollover if the
+vehicle falls on the frame or on a tire. Shifted springs
+may strike a tire causing a blowout or interference with
+steering. Damaged air bags or shocks can affect
+vehicle handling and stopping distances.
+Inspection: The following items must be inspected,
+where visible and accessible, on each axle:
+· Inspect for missing, shifted, cracked, or broken
+leaf springs and inspect that spring mounts are
+not cracked, broken or missing any parts.
+· Inspect for broken or distorted coil springs and
+inspect that mounts are not cracked, broken or
+have any missing parts.
+· Inspect that the air ride suspension is secure, not
+damaged and not leaking (if equipped).
+· Inspect that shock absorbers are secure, not
+damaged and not leaking (if equipped).
+· Inspect that the vehicle is sitting level (front to
+rear and side to side).
+Note: Inform the examiner if the suspension
+components are not visible or accessible, on vehicles
+such as transit or motor coach buses, and inspect
+that the vehicle is sitting level (front to rear and side
+to side) and note that a leaning vehicle may indicate
+a suspension problem.
+Brake Lines / Hoses / Leaks
+Description: Carries air or hydraulic fluid to wheel
+brake assembly.
+Why Inspect: Loss of hydraulic fluid may lead to loss
+of brake power and response. Loss of air pressure
+may cause wheel lockup.
+Inspection:
+· Inspect that hoses or lines can supply air or
+hydraulic fluid to the brakes and are not leaking.
+· Inspect for cracked, worn or frayed hoses or
+lines.
+· Inspect that all hose or line couplings and fittings
+are secure.
+Note: If electric brakes, inspect that electric lines are
+secure, and casing is not worn or cracked.
+Brake Contaminates
+Description: Contamination, such as grease, oil, etc.,
+that can affect braking performance when slowing or
+stopping the vehicle.
+Why Inspect: Contaminates on the brakes can cause
+a reduction in braking friction which may lead to a
+crash. Contaminates can also create a fire hazard.
+Inspection:
+· If accessible, inspect for contaminants such as
+grease, oil, etc., on the brake lining or pads and
+the brake drum or disc that can affect braking
+capabilities.
+11M.5.3 ­ Side of Vehicle
+Lenses and Reflectors
+Description: Light lenses or covers and reflectors on
+the sides of the vehicle and trailer (combination only).
+Why Inspect: Light lenses or covers must be free of
+damage for lights to work properly. Reflectors allow
+the driver of a commercial vehicle to be seen and to
+communicate presence with other traffic.
+Inspection:
+· Inspect that light lenses or covers on the sides of
+the vehicle and trailer (combination only) are the
+proper color, clean, not broken or missing.
+· Inspect that reflectors on the sides of the vehicle
+and trailer (combination only) are the proper
+color, clean, not broken or missing.
+Traffic Monitoring Devices
+Description: Side view mirrors for rear view of traffic
+to the sides and behind (all vehicles). Other monitoring
+devices, such as cameras, may be utilized with mirrors
+or instead of mirrors.
+Why Inspect: Mirrors or other monitoring devices
+provide visibility to the sides and rear of the vehicle.
+The driver must be able to see other traffic, especially
+in blind areas.
+Inspection:
+· Inspect that mirror(s) are clean and not cracked
+and mirror brackets are not bent and are
+mounted securely with no missing parts.
+· If equipped, rear and side view monitoring
+devices or cameras must be clean to view from
+the inside.
+Battery/Electrical System
+Description: Batteries that supply electrical current for
+vehicle functions or serve as a partial or primary
+source for vehicle power.
+Why Inspect: Damage to the batteries, electrical
+system or electric motor can cause vehicle
+breakdowns or electrical shortage leading to a fire
+onboard the vehicle.
+Inspection: Wherever located:
+· Inspect that batteries are secure, if visible.
+· Inspect that all connections are tight and should
+not show signs of excessive corrosion, if visible.
+Section 11M - Vehicle Inspection Page 11M-8
+Version: September 9, 2022
+· Inspect all electrical system cables and lines are
+secure and not cracked or worn.
+· Inspect that the battery box, cover or door is
+secure, if applicable.
+Note: Inform the examiner if the batteries are not
+visible or accessible.
+Fuel Tank(s)
+Description: A container that holds fuel.
+Why Inspect: Leaks are a fire hazard and can cause
+driving hazards to other traffic. Fuel on pavement can
+be very slippery.
+Inspection:
+· Inspect that all fuel tank(s), including Diesel
+Exhaust Fuel (DEF) tank(s), if equipped, are
+securely mounted, cap(s) are tight, and that there
+are no leaks from tank(s) or lines.
+Frame(s)
+Description: Structural members for supporting
+vehicle body or trailer body.
+Why Inspect: Loose or cracked frame members may
+reduce vehicle stability, cause handling and cornering
+problems (e.g., wandering, possible rollover) resulting
+in total loss of vehicle control. Cracks, breaks or holes
+in the cargo area can result in possible loss of cargo.
+Inspection:
+· Inspect for cracks, broken welds, holes or other
+damage to the frame members, including the
+trailer, if applicable.
+· Inspect for cracks, breaks or holes in the cargo
+area or floor, including the trailer, if applicable.
+· Inspect that trailer tandem release lever and pins
+are secure, if applicable.
+11M.5.4 ­ Rear of Vehicle or Trailer
+Lenses and Reflectors
+Description: Light lenses or covers and reflectors on
+rear of vehicle or trailer (combination only).
+Why Inspect: Light lenses or covers must be free of
+damage for lights to work properly. Reflectors allow
+the driver of a commercial vehicle to be seen and to
+communicate presence with other traffic.
+Inspection:
+· Inspect that light lenses or covers are the proper
+color, clean, not broken and not missing.
+· Inspect that reflectors are the proper color, clean,
+not broken and not missing.
+Note: on a combination vehicle, you need only inspect
+the rear of the trailer.
+11M.6 ­ Combination Vehicles
+11M.6.1 ­ Combination Vehicles Only
+Air and Electric Lines / Connectors
+Description: Carry air and electricity from power unit
+to trailer.
+Why Inspect: Air Brakes - Loss of air to the trailer will
+result in a partial or total loss of braking to the towed
+unit. A low air condition will cause sudden application
+of the trailer's spring brakes, which may result in loss
+of control and lead to a crash.
+Electric Brakes - Loss of electrical connection to the
+trailer will result in total loss of braking and control to
+the towed unit and can lead to a crash.
+Electric Lines - Damaged lines may result in loss of
+the vehicle's ability to communicate its maneuvers to
+other drivers (no turn, or brake lights). Not being seen
+by other traffic at night is a serious traffic hazard and
+can lead to a crash.
+Inspection:
+· Inspect that air and electric connectors on the
+power unit and trailer are seated and sealed, free
+of damage and locked into place.
+· Inspect that air hoses and electrical lines are not
+cut, cracked, chafed, spliced, taped or worn
+(steel braid/electrical conductor must not show
+through). Listen for air leaks (air brake systems
+only).
+· Inspect that electrical lines and air lines (if
+equipped) are not tangled, crimped or pinched, or
+dragging against vehicle parts or the ground.
+Note: You must inspect the connections on both the
+power unit and trailer to receive credit.
+For the remainder of this section (11M.6.1), you
+will need to study the type of coupling system
+your vehicle is equipped with ­ that you will be
+using for your Vehicle Inspection test:
+· Fifth Wheel Combination, or
+· Pintle Hook Combination, or
+· All Other Types of Combinations.
+FOR FIFTH WHEEL COMBINATIONS ONLY
+Fifth Wheel Skid Plate
+Description: Plate on which the trailer rests and
+secures the trailer kingpin.
+Why Inspect: A faulty or damaged fifth wheel skid
+plate and an improper connection between the tractor
+and the trailer can result in handling problems,
+rollover, or separation of the tractor and trailer leading
+to a crash.
+Section 11M - Vehicle Inspection Page 11M-9
+Version: September 9, 2022
+Inspection:
+· Inspect that the fifth wheel skid plate is securely
+mounted to the vehicle by the fifth wheel
+platform.
+· Inspect for cracks, breaks or excessive wear.
+· Inspect for proper lubrication, if applicable.
+Kingpin, Apron & Gap
+Description: Pin that attaches the semi-trailer to
+tractor (kingpin) and the metal plate attached to the
+kingpin that provides the surface for resting the trailer
+on the fifth wheel (apron).
+Why Inspect: Wear or damage to the kingpin can
+result in handling problems, rollover, or separation of
+the tractor and trailer leading to a crash.
+Inspection:
+· Inspect that the kingpin is in place and not bent,
+damaged or worn.
+· Inspect that the visible part of the apron is not
+bent, cracked, or broken.
+· Inspect that the trailer is lying flat on the fifth
+wheel skid plate and there is no space between
+the apron and fifth wheel (no gap).
+· Inspect for proper lubrication, if applicable.
+OR
+FOR PINTLE HOOK COMBINATIONS ONLY
+Pintle Hook
+Description: Tow hitch or receiving coupling which
+the trailer drawbar ring/eye locks into.
+Why Inspect: A faulty or damaged pintle hook and an
+improper connection between the power unit and the
+trailer can result in handling problems, rollover, or
+separation of the power unit and trailer leading to a
+crash.
+Inspection:
+· Inspect that the pintle hook is securely mounted
+to the vehicle frame.
+· Inspect for loose or missing parts including
+mounting bolts, nuts, pins, brackets and clamps.
+· Inspect for cracks, breaks or excessive wear.
+Trailer Drawbar Ring & Tongue
+Description: Trailer drawbar ring or eye attached to
+the front of the trailer tongue that secures into the
+pintle hook for coupling. The trailer tongue that
+extends from the trailer's main body frame to allow for
+coupling and turning.
+Why Inspect: Wear, damage, cracks or improper
+welds in the drawbar ring and trailer tongue may result
+in loss of the trailer leading to a crash.
+Inspection:
+· Inspect that the drawbar ring or eye is not bent or
+twisted.
+· Inspect that the drawbar ring or eye is secured to
+the trailer tongue and there are no loose or
+missing bolts, broken welds, or cracks.
+· Inspect that the drawbar ring or eye is not worn.
+· Inspect the trailer tongue for dents, twists, cracks,
+and broken welds and that the trailer tongue can
+support the weight of the load. If extendable,
+inspect that bolts, locking pins and cotter pins are
+in place.
+OR
+ALL OTHER TYPES OF COMBINATIONS
+Note: Coupling systems vary. If you have another type
+of coupling system, you will need to describe to the
+examiner how it works and what you are inspecting.
+Tow Hitch
+Description: Tow or receiver hitch and trailer ball,
+which the trailer coupler rests on.
+Why Inspect: A faulty or damaged tow hitch or other
+mechanism and an improper connection between the
+power unit and the trailer can result in handling
+problems, rollover, or separation of the power unit and
+trailer leading to a crash.
+Inspection:
+· Inspect that the tow hitch or other mechanism is
+securely mounted to the vehicle frame. Inspect
+sway bar/control, if equipped.
+· Inspect for loose or missing parts including
+mounting bolts, nuts, pins, brackets and clamps,
+including the trailer ball or other mechanism.
+· Inspect for cracks, breaks or excessive wear.
+Trailer Coupler & Tongue
+Description: Trailer coupler attached to the front of
+the trailer tongue that latches to the trailer hitch and
+trailer ball. The trailer tongue that extends from the
+trailer's main body frame to allow for coupling and
+turning.
+Why Inspect: Wear, damage, cracks or improper
+welds in the trailer coupler and trailer tongue may
+result in loss of the trailer, leading to a crash.
+Inspection:
+· Inspect that the trailer coupler is not bent or
+twisted.
+· Inspect that the trailer coupler is secured to the
+trailer tongue and there are no loose or missing
+bolts, broken welds, or cracks.
+· Inspect that the trailer coupler is not worn.
+· Inspect the trailer tongue for dents, twists, cracks,
+and broken welds and that the trailer tongue can
+support the weight of the load. If extendable,
+inspect that bolts, locking pins and cotter pins are
+in place.
+Section 11M - Vehicle Inspection Page 11M-10
+Version: September 9, 2022
+Locking and Safety Devices
+Description: Locking connection and safety devices
+that keep the trailer locked into place.
+Why Inspect: The trailer could uncouple during travel
+if the locking mechanisms are not secured. Safety
+devices help to keep the locking mechanism in place
+and provide assistance should the connection fail.
+Inspection: Fifth Wheel Coupling Systems Only
+· Look into fifth wheel gap and inspect that locking
+jaws or lever are fully secured around the kingpin
+and inspect for play between kingpin and locking
+jaws/lever.
+· Inspect that the release arm is in the engaged
+position and the safety latch or lock (if equipped)
+is in place.
+· Inspect the sliding fifth wheel locking pins (if
+equipped) for damage and the pins are fully
+engaged.
+OR
+Inspection: All Other Coupling Systems
+· Inspect the locking mechanism or latch for
+missing or broken parts and make sure the pintle
+or hitch release lever or latch is locked in place
+and secure.
+· Inspect that safety pins and cotter pins are in
+place and not missing, if present.
+· Inspect that safety cables or chains are secure,
+crossed, and free of kinks and excessive slack, if
+present. Breakaway cables must be engaged.
+11M.6.2 ­ Trailers Only
+Landing Gear & Clearance
+Description: Supports front end of trailer when trailer
+is not coupled to a truck or tractor.
+Why Inspect: Landing gear must be raised properly
+so that it will not strike the ground during travel and
+must clear the back of the power unit while turning. Its
+handle must be secured to the vehicle so it will not
+move and strike other traffic. Any damage to landing
+gear supports may result in the trailer tipping or falling
+over when disconnected.
+Inspection:
+· Inspect that the landing gear is fully raised, has
+no missing parts, the crank handle is secure, and
+the support frame and landing pads are not
+damaged.
+· If power operated, inspect for air or hydraulic
+leaks.
+· If tractor semi-trailer, inspect that the fifth wheel
+is positioned properly so that the tractor frame
+will clear the landing gear during turns.
+Reflective Tape
+Description: Reflective tape on the side and rear of
+the trailer, if required.
+Why Inspect: Reflective tape on a trailer allows the
+driver of a commercial vehicle to be seen and to
+communicate presence with other traffic.
+Inspection:
+· Inspect that reflector tape on the sides and rear
+of the trailer are present and affixed securely to
+the vehicle.
+Note: Reflective tape is only required for trailers.
+Some jurisdictional laws may require for school
+buses.
+Basic Control Skills Test
+Remember, the Vehicle Inspection test must be
+passed before you can proceed to the Basic Control
+Skills test (covered in the next section).
+Section 11M - Vehicle Inspection Page 11M-11
+Version: September 9, 2022
+Class A Checklist
+Tractor Semi-Trailer or Truck & Trailer or Bus & Trailer
+In-Vehicle/Engine Start
+ *air or *hydraulic brake check
+ parking & trailer brake check
+ service brake check
+ lighting indicators
+ emergency equipment
+ windshield & traffic monitoring devices
+ wipers & washers
+ heater & defroster
+ horn(s)
+Lights Operations Check
+ all external lights
+Front of Vehicle/Engine Area
+ lenses
+ fluid levels
+ fluid & air leaks
+ steering systems
+Steering Axle
+ tires
+ rims
+ lug nuts
+ springs/mounts & air bags & shocks
+ brake lines or hoses & leaks
+ brake contaminates
+Side of Vehicle
+ lenses & reflectors
+ traffic monitoring devices
+ battery
+ fuel tank(s)/DEF tank
+ frame(s)
+Combination Vehicles Only
+ air & electric lines & connectors
+ fifth wheel skid plate or pintle hook
+or tow hitch
+ kingpin & apron & gap or drawbar ring &
+tongue or coupler & tongue
+ locking & safety devices
+Trailer Only
+ landing gear & clearance
+ reflective tape
+Rear of Trailer
+ lenses & reflectors
+* Automatic failure if not performed correctly
+Passenger and School Bus
+Only
+ passenger entry & lift
+ emergency exits
+ passenger seating
+ passenger monitoring devices
+School Bus Only
+ student lights (front & back)
+ stop arm(s) & safety arm
+ first aid & body fluid kits
+You are only required to inspect the items on the CDL Vehicle Inspection checklist. You may use this checklist
+for your test and check off items as you have completed them, NO additional markings or writing may be
+placed on this list. You MUST name, point to and/or touch and fully explain what you are inspecting
+each safety critical item for. If you do not do so, you will not get credit for the item(s).
+Section 11M - Vehicle Inspection Page 11M-12
+Version: September 9, 2022
+Class B or Class C Checklist
+Straight Truck or Other Straight Vehicle
+In-Vehicle/Engine Start
+ *air or *hydraulic brake check
+ parking & trailer brake check
+ service brake check
+ lighting indicators
+ emergency equipment
+ windshield & traffic monitoring devices
+ wipers & washers
+ heater & defroster
+ horn(s)
+Lights Operations Check
+ all external lights
+Front of Vehicle/Engine Area
+ lenses
+ fluid levels
+ fluid & air leaks
+ steering systems
+Steering Axle
+ tires
+ rims
+ lug nuts
+ springs/mounts & air bags & shocks
+ brake lines or hoses & leaks
+ brake contaminates
+Side of Vehicle
+ lenses & reflectors
+ traffic monitoring devices
+ battery
+ fuel tank(s)/DEF tank
+ frame(s)
+Rear of Vehicle
+ lenses & reflectors
+* Automatic failure if not performed correctly
+You are only required to inspect the items on the CDL Vehicle Inspection checklist. You may use this checklist
+for your test and check off items as you have completed them, NO additional markings or writing may be
+placed on this list. You MUST name, point to and/or touch and fully explain what you are inspecting
+each safety critical item for. If you do not do so, you will not get credit for the item(s).
+Section 11M - Vehicle Inspection Page 11M-13
+Version: September 9, 2022
+Class B or Class C Checklist
+Passenger or School Bus
+In-Vehicle/Engine Start
+ *air or *hydraulic brake check
+ parking & trailer brake check
+ service brake check
+ lighting indicators
+ emergency equipment
+ windshield & traffic monitoring devices
+ wipers & washers
+ heater & defroster
+ horn(s)
+Passenger and School Bus Only
+ passenger entry & lift
+ emergency exits
+ passenger seating
+ passenger monitoring devices
+School Bus Only
+ student lights (front & back)
+ stop arm(s) & safety arm
+ first aid & body fluid kits
+Lights Operations Check
+ all external lights
+Front of Vehicle/Engine Area
+ lenses
+ fluid levels
+ fluid & air leaks
+ steering systems
+Steering Axle
+ tires
+ rims
+ lug nuts
+ springs/mounts & air bags & shocks
+ brake lines or hoses & leaks
+ brake contaminates
+Side of Vehicle
+ lenses & reflectors
+ traffic monitoring devices
+ battery
+ fuel tank(s)/DEF tank
+ frame(s)
+Rear of Vehicle
+ lenses & reflectors
+* Automatic failure if not performed correctly
+You are only required to inspect the items on the CDL Vehicle Inspection checklist. You may use this checklist
+for your test and check off items as you have completed them, NO additional markings or writing may be
+placed on this list. You MUST name, point to and/or touch and fully explain what you are inspecting
+each safety critical item for. If you do not do so, you will not get credit for the item(s).
+Section 11M - Vehicle Inspection Page 11M-14
+Version: September 9, 2022
+THIS PAGE LEFT INTENTIONALLY BLANK
+Section 12M ­ Basic Control Skills Page 12M-1
+Version: September 9, 2022/Update 2/9/2024
+Section 12M
+Basic Control Skills Test
+This Section Covers
+· Basic Control Skills Test Scoring
+· Basic Control Skills Test Exercises
+For the Basic Control Skills test, you will
+demonstrate basic skills in controlling a
+commercial vehicle and judging its position in
+relation to other objects.
+It tests for the basic skills needed for safe control
+and operation of the vehicle. The types of
+judgment and skills required for these basic control
+skills are also required in many different driving
+situations.
+You will receive points for changing direction to
+gain a better position, crossing over or touching
+boundary lines or cones and for your final position.
+You may be permitted to exit the vehicle to check
+around the vehicle during backing exercises. When
+entering/exiting the vehicle, you must set your
+parking brake, place the vehicle in neutral, and
+safely exit/enter by facing the vehicle and
+maintaining three (3) points of contact at all times
+(when entering/exiting a bus, face forward and
+maintain a firm grasp on the handrail).
+If at any time you open the door, move from a
+seated position when in physical control of the
+vehicle, (or on a bus, walk to the back to get a
+better view), you will be scored for a look.
+You will receive specific instructions for each
+exercise prior to performing them. You will have an
+opportunity to ask questions. You must complete
+the exercise as directed. If you see the examiner
+raise their hand (like this ), stop and return your
+vehicle within the exercise boundary lines.
+Your Basic Control Skills test will include the
+following exercises, either off-road or somewhere
+on the street during the Road Test:
+Step 1 ­ Forward Stop,
+Step 2 ­ Straight-Line Backing,
+Step 3 ­ Forward Offset Tracking, and
+Step 4 ­ Reverse Offset Backing.
+These exercises are shown in Figures 12M.1
+through 12M.4 on page 12M-4.
+12M.1 Scoring
+During the Basic Control Skills test exercises, you
+will be scored for:
+Pull-ups ­ pulling forward on a backing exercise to
+clear an encroachment or to get a better position is
+scored as a "pull-up." These exercises include
+Exercise 2 ­ Straight-Line Backing and Exercise
+4 ­ Reverse Offset Backing. The examiner will
+score the number of times you pull-up.
+Stopping without changing direction does not count
+as a pull-up.
+You will not be penalized for initial pull-ups.
+However, an excessive number of pull-ups, will
+count as errors. Your examiner will cover "pull-ups"
+when giving instructions for these exercises.
+Back-ups ­ backing up on a forward moving
+exercise to clear an encroachment or to get a
+better position is scored as a "back-up." "Back-ups"
+will be scored on Exercise 3 ­ Forward Offset
+Tracking. The examiner will score the number of
+times you back-up.
+Encroachments ­ crossing over or touching
+exercise boundary lines or cones with any portion
+of your vehicle, other than the vehicle's mirrors
+(door or fender) or other unique vehicle parts at
+door mirror height or higher, such as a bucket
+truck, is scored as an encroachment. Unique parts
+below door mirror height are counted as an
+"encroachment."
+If you have encroached, the examiner will stop you
+and you must return the vehicle within the exercise
+boundaries. You must stop immediately when
+signaled by the examiner. The examiner will score
+the number of times you touch or cross over an
+exercise boundary line or cone. Each
+encroachment will count as an error.
+Looks ­ exiting the vehicle while performing an
+exercise to check the vehicle's position while
+backing. You may be permitted to safely stop and
+exit the vehicle to check the external position of the
+vehicle (look).
+When doing so, you must set the parking brake(s)
+and place the vehicle in neutral. Then, when
+exiting/entering the vehicle, you must do so safely
+by facing the vehicle and maintaining three (3)
+points of contact with the vehicle at all times (when
+exiting/entering a bus, you may face forward and
+maintain a firm grasp on the handrail). If you do not
+safely secure the vehicle or safely exit/enter the
+vehicle, it may result in an automatic failure for an
+unsafe act.
+If you open your door or move from a seated
+position, it will count as a "look." If you open your
+door while the vehicle is moving (not in neutral and
+park), it may result in an automatic failure for an
+unsafe act.
+On a bus, if you walk to the back of the bus to get
+a better view, it will count as a "look."
+Section 12M ­ Basic Control Skills Page 12M-2
+Version: September 9, 2022/Update 2/9/2024
+You may be allowed a maximum of one (1) free
+look on Exercise 2 ­ Straight-line Backing, and two
+(2) free looks on Exercise 4 ­ Reverse Offset
+Backing, to check the position of your vehicle. Your
+examiner will cover "looks" when giving instructions
+for these exercises.
+Final Position ­ the final position of the vehicle for
+backing exercises. You will be scored for final
+vehicle position on Exercise 2 ­ Straight-Line
+Backing and on Exercise 4 ­ Reverse Offset
+Backing.
+It is important that you finish each exercise exactly
+as the examiner has instructed. Your vehicle must
+be within final exercise boundaries (other than
+mirrors and unique vehicle parts higher than the
+door mirrors, such as a bucket truck). If you do not
+maneuver the vehicle into its final position as
+described by the examiner, you will be penalized
+and will fail the Basic Control Skills test. You
+MUST complete the exercises as directed.
+Failure to Follow Instructions or Unsafe Act ­
+Failure to follow examiner instructions for
+completing the exercise as directed may result in
+an automatic failure and the test may be
+terminated by the examiner. Always follow the
+examiner instructions and directions. If you do not
+understand the instructions or understand how to
+complete the exercises, ask the examiner for
+clarification. [If permitted, you may ask the
+examiner to walk you through the exercise area.]
+Committing an "unsafe act" (e.g., forgetting to set
+the parking brake or opening the door while in
+motion), may result in an automatic failure for an
+unsafe act and the test may be terminated by the
+examiner. Safety of the driver, the examiner and
+the testing area is of the highest priority. Always
+think SAFETY.
+12M.2 Exercises
+12M.2.1
+Exercise 1 ­ Forward Stop
+You will demonstrate your ability to judge the front
+of your vehicle during a controlled
+stop. Drive forward through the alley
+and stop with the front most part of
+the vehicle (other than unique vehicle
+parts higher than the door mirrors,
+such as a bucket truck) within the box
+at the end of the alley without going past it. You
+may stop only once.
+Your examiner will point out the front most part of
+your vehicle when giving instructions for this
+exercise.
+When you have stopped, set your parking brake,
+shift to neural and sound the horn. The examiner
+will then score the exercise. You will receive points
+if the front most part of the vehicle (other than
+unique vehicle parts higher than the door mirrors,
+such as a bucket truck) is not in the stop box. (See
+Figure 12M.1 on page 12M-4).
+12M.2.2
+Exercise 2 ­ Straight Line Backing
+You will demonstrate your ability to back a vehicle
+in a straight line. From your stopped position from
+the previous exercise, the examiner will ask you to
+pull forward and stop when they raise their hand
+(like this ).
+Then back straight through the alley until the front
+of your vehicle has cleared the last set of cones at
+the far end of the alley. (See Figure 12M.2 on page
+12M-4)
+You will be scored for pull-ups, encroachments and
+final position.
+You are allowed one (1) free pull-up and may
+safely exit the vehicle only one (1) time to check
+around the vehicle.
+When you have completed the exercise, set your
+parking brake, shift to neutral and sound your horn.
+This will inform the examiner you have completed
+the exercise and allow them to score your final
+position.
+12M.2.3
+Exercise 3 ­ Forward Offset Tracking
+You will demonstrate your ability to
+maneuver a vehicle around other
+objects while moving forward.
+You will drive forward and steer to
+the left through the opening into the
+opposite lane, keeping the right most
+rear tire between the cone and the line without
+stopping.
+You will be scored for back-ups, encroachments
+and forward tracking clearance (rear tire between
+the cone and the line).
+There are NO free back-ups, and you are NOT
+permitted to exit the vehicle during this exercise.
+Stop your vehicle when you are parallel to the
+outer boundary, prior to or at the cones at the far
+end of the exercise. Then, set your parking brake,
+shift to neutral and sound your horn. This will
+Section 12M ­ Basic Control Skills Page 12M-3
+Version: September 9, 2022/Update 2/9/2024
+inform the examiner you have completed the
+exercise and allow them to score the exercise.
+(See Figure 12M.3 on page 12M-4)
+12M.2.4
+Exercise 4 ­ Reverse Offset Backing
+You will demonstrate your ability to offset back and
+park a vehicle at the end of an alley. Starting
+parallel with the outer boundary, offset back into
+the alley, bringing the rear most part of your
+vehicle (other than unique vehicle parts higher
+than the door mirrors, such as a bucket truck)
+within three (3) feet of the rear of the alley.
+Stop with the rear most
+part of the vehicle
+(other than unique
+vehicle parts)
+in the three (3) foot box
+at the end of the alley.
+Your examiner will point out the rear most part of
+your vehicle when giving instructions for this
+exercise.
+Your vehicle must be straight within the alley when
+completed. Your vehicle must be completely within
+the defined exercise boundaries when completed
+(other than mirrors or other unique vehicle parts
+higher than the door mirrors, such as a bucket
+truck). You may not go beyond the outer boundary
+line. (See Figure 12M.4 on page 12M-4)
+You will be scored for pull-ups, encroachments and
+final position.
+You are allowed two (2) free pull-ups and may exit
+the vehicle a maximum of two (2) times to check
+around the vehicle during this exercise.
+When you have completed the exercise, set your
+parking brake, shift to neutral and sound your horn.
+This will inform the examiner you have completed
+the exercise and allow them to score your final
+position.
+Road Test
+Remember, the Basic Control Skills test must be
+passed before you can proceed to the Road Test.
+Section 12M ­ Basic Control Skills Page 12M-4
+Version: September 9, 2022/Update 2/9/2024
+Figure 12M.1: Exercise 1 ­ Forward Stop
+Figure 12M.2: Exercise 2 ­ Straight Line Backing
+Figure 12M.3: Exercise 3 ­ Forward Offset Tracking
+Figure 12M.4: Exercise 4 ­ Reverse Offset Backing
+Section 12M ­ Basic Control Skills Page 12M-5
+Version: September 9, 2022/Update 2/9/2024
+Basic Control Skills Diagram w/ Cone Placement
+Section 12M ­ Basic Control Skills Page 12M-6
+Version: September 9, 2022/Update 2/9/2024
+Basic Control Skills Dimensions
+

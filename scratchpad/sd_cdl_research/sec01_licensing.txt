@@ -1,0 +1,1343 @@
+ Commercial
+Driver License
+
+    Manual
+
+      2005 CDL Testing System
+
+                  Version: July 2014
+
+                                  CDL Driver's Manual
+                            COPYRIGHT © 2005 AAMVA
+
+                                   All Rights Reserved
+    This material is based upon work supported by the Federal Motor Carrier Safety
+Administration under Cooperative Agreement No. DTFH61-97-X-00017. Any opinions,
+
+  findings, conclusions or recommendations expressed in this publication are those of
+    the Author(s) and do not necessarily reflect the view of the Federal Motor Carrier
+                                           Safety Administration.
+
+                                                                    COPYRIGHT © 2005 AAMVA. All rights reserved
+
+This material has been created for and provided to State Driver License Agencies (SDLAs) by AAMVA for the purpose of educating Driver License
+applicants (Commercial or Non-Commercial). Permission to reproduce, use, distribute or sell this material has been granted to SDLAs only. No part of
+this book may be reproduced or transmitted in any form or by any means, electronic or mechanical, including photocopying, recording, or by any
+information storage and retrieval system without express written permission from the author / publisher. Any unauthorized reprint, use, distribution or
+sale of this material is prohibited.
+Human trafficking is modern-day slavery. Traffickers use force, fraud and coercion to control their victims. Any minor
+engaged in commercial sex is a victim of human trafficking. Trafficking can occur in many locations, including truck
+stops, restaurants, rest areas, brothels, strip clubs, private homes, etc. Truckers are the eyes and the ears of our
+nation's highways. If you see a minor working any of those areas or suspect pimp control, call the National Hotline
+and report your tip:
+
+                                                      1-888-3737-888 (US)
+                                                      1-800-222-TIPS (Canada)
+
+For law enforcement to open an investigation on your tip, they need "actionable information." Specific tips helpful
+when reporting to the hotline would include:
+
+     Descriptions of cars (make, model, color, license plate number, etc.) and people (height, weight, hair color,
+
+          eye color, age, etc.)
+
+     Take a picture if you can.
+     Specific times and dates (When did you see the event in question take place? What day was it?)
+     Addresses and locations where suspicious activity took place
+
+Trafficking Red Flags to Look for:
+
+     Lack of knowledge of their community or whereabouts
+     Not in control of own identification documents (ID/passport)
+     Restricted or controlled communication--not allowed to speak for self
+     Demeanor: fear, anxiety, depression, submissive, tense, nervous
+
+Questions to Ask:
+
+     Are you being paid?
+     Are you being watched or followed?
+     Are you free to leave? Come and go as you please?
+     Are you physically or sexually abused? Are you or your family threatened? What is the nature of the threats?
+
+Report by Email: Report@PolarisProject.org
+
+Warning: Please do not approach traffickers. Call the hotline, and they will call the FBI and local police to deal with
+them and rescue the victims. Approaching traffickers is not only dangerous for you and their victims but could lead to
+problems in the eventual prosecution of traffickers. Go to www.truckersagainsttrafficking.org for more information.
+Who must have a South Dakota Commercial Driver's License?
+You must have a South Dakota Commercial Driver License to operate any of the following Commercial Motor Vehicles
+(CMV'S):
+
+ A single vehicle with a gross vehicle weight rating (GVWR) of 26,001 or more pounds.
+ A trailer with a GVWR of 10,001 or more pounds if the gross combination weight rating is 26,001 or more pounds.
+ A vehicle designed to transport 16 or more persons (including the driver).
+ Any size vehicle which requires hazardous materials placards or is carrying material listed as a select agent or toxin in 42
+
+  CFR Part 73.
+
+Who Does Not Need A South Dakota Commercial Driver License?
+
+ Operators serving in the United States military, operating commercial vehicles in pursuit of military purposes.
+ Operators of emergency firefighting equipment necessary to the preservation of life, property, or the execution of
+
+   emergency governmental functions performed under emergency conditions that aren't subject to normal traffic regulation.
+ Operators of rental transporting equipment used as personal family use vehicles.
+ Operators of recreation vehicles used as personal family recreational use vehicles.
+ Operators involved in farm to market transportation movements, at least 18 years of age holding a valid operator's license,
+
+   limited to those operators of a farm vehicle:
+         (a) Controlled and operated by a farmer,
+         (b) Used to transport either agricultural products, farm machinery, or farm supplies to or from a farm, and
+         (c) Not used in the operations of a common or contract motor carrier,
+         (d) Used within 150 miles of a person's farm.
+
+ Operators of Covered Farm Vehicles:
+       1. Means a straight truck or articulated vehicle
+         (a) Registered in the state with a farm license plate or farm sticker issued by the State of registration that allows law
+              enforcement officials to identify it as a farm vehicle
+         (b) Operated by the owner or operator of a farm or ranch, or an employee or family member of an owner or operator
+              of a farm or ranch,
+         (c) Used to transport agricultural commodities, livestock, machinery or supplies to or from a farm or ranch,
+         (d) Not used in for-hire motor carrier operations; however, for-hire motor carrier operations do not include the
+              operation of a vehicle by a tenant pursuant to a crop share farm lease agreement to transport the landlord's
+              portion of the crops under that agreement.
+         (e) With a gross vehicle weight or gross vehicle weight rating, whichever is greater, of 26,001 pounds or less may
+              utilize the exemptions anywhere in the unites States; or
+         (f) With a gross vehicle weight or gross vehicle weight rating, whichever is greater, of more than 26,001 pounds may
+              utilize the exemptions anywhere in the State of registration or across State lines within 150 air miles of the farm or
+              ranch with respect to which the vehicle is being operated.
+
+Who Can Not Get A South Dakota Commercial Driver License?
+
+ Persons under the age of 18.
+ Persons who have a license under suspension, revocation, cancellation, or disqualification.
+ Persons who can't successfully complete licensing requirements under `Driver Application Procedures' of this manual.
+ Persons who aren't a resident of South Dakota.
+ Persons who have accumulated child support arrearages of $1,000 or more.
+ The minimum age to qualify for interstate commerce in a commercial vehicle is 21 years of age.
+ The minimum age to qualify for intrastate commerce in a commercial vehicle is 18 years of age.
+
+Knowledge and Specialized Tests
+Every driver who wants a CDL must pass the general knowledge test. A driver who does not obtain a passing score on the
+general knowledge test cannot be issued a Commercial Learner's Permit or take the skills test. You must have a score of
+80% or better to pass each test.
+
+       The General Knowledge Test (taken by all applicants) consists of 50 multiple choice questions.
+
+The Specialized Tests measure the level of knowledge a driver is required to have and are administered based upon the
+type of vehicle the applicant wishes to drive and type of cargo to be transported.
+
+       The Air Brakes Test must be taken if your vehicle has air brakes, including air over hydraulic brakes. The test
+           consists of 25 multiple choice questions.
+
+       The Combination Vehicles Test is required if you want to drive combination vehicles. The test consists of 20
+           multiple choice questions.
+      The Passenger Transport Test must be taken by all bus driver applicants. The test consists of 20 multiple choice
+          questions.
+
+      The Double/Triples Test is required if you want to pull double or triple trailers. The test consists of 20 multiple
+          choice questions.
+
+      The Tank Vehicle Test is required if you want to haul a liquid or liquefied gases in bulk. The test consists of 20
+          multiple choice questions.
+
+      The Hazardous Materials Test is required if you want to haul hazardous materials or waste that are required to be
+          placarded as defined in 49 CFR 383.5. In order to obtain this endorsement you are also required to pass a
+          Transportation Security Administration (TSA) background check and show proof of citizenship or permanent
+          residency. The test consists of 30 multiple choice questions.
+
+      The School Bus Test is required by school bus drivers. The test consists of 20 multiple choice questions.
+
+Tests will only be given once per day; to retest you will need to return to an exam station the next business day.
+
+What is Considered a Passing Score?
+You must have a score of 80% or better to pass each test.
+
+Commercial Drivers Learner's Permit (CLP)
+A commercial learner's permit may be issued to an individual 18 years of age who holds a valid Class 1 or Class 2
+operator's license.
+
+The CLP must be valid for no more than 180 days from the date of issuance. The CLP may be renewed once in the 1
+year period from the issuance date for an additional 180 days without requiring the CLP holder to retake the general and
+specialized knowledge tests.
+
+The holder of a CLP may, unless otherwise disqualified, drive a commercial motor vehicle only if accompanied by the
+holder of a CDL, who is 21 years of age, has a valid license for a type of vehicle driven, and occupies a seat beside the
+individual or directly behind if in a passenger vehicle for the purpose of giving instruction in driving the commercial motor
+vehicle.
+
+A CLP holder with a passenger or school bus endorsement are prohibited from operating a commercial motor vehicle or
+school bus carrying passengers. A CLP holder with a tank endorsement may only operate an empty tank vehicle and is
+prohibited from operating any tank vehicle that previously contained hazardous materials that has not been purged of any
+residue.
+
+A 14 day waiting period is required between the issue date of the CLP and to the date it can be converted to a commercial
+driver's license.
+
+Third Party Testing
+The State has authorized persons, employers, training facilities, departments, and other agencies to administer the skills
+tests. The tests given by the third party are the same as those, which would otherwise be given by the State. For more
+information on Third Party Testing please contact:
+
+          State of South Dakota
+          Dept. of Public Safety - Driver Licensing
+          (605) 773-6883 or 1-800-952-3696 or see a list of Third Party Testers on our website at:
+          http://dps.sd.gov
+
+Skills Tests
+After passing the required knowledge test(s), you can be issued a commercial learner's permit and then take the CDL skills
+tests. The commercial learner's permit must contain all endorsements and restrictions necessary to complete the skills test.
+There are three types of general skills that will be tested: pre-trip inspection, basic vehicle control, and on-road driving. You
+must take these tests in the type of vehicle for which you wish to be licensed.
+
+Scores for the passed segments of the skills tests are only valid during the initial issuance of the CLP. If the CLP is renewed,
+all three segments of the skills test must be retaken.
+
+The third party examiners must schedule tests 2 days in advance.
+Pre-trip Vehicle Inspection
+Purpose: To see if you know whether the vehicle is safe to drive.
+
+Test Procedure: You will be asked to do a pre-trip inspection of your vehicle and explain to the examiner what you would
+inspect and why. The examiner will mark on a scoring form each item that you correctly inspect or explain. This manual tells
+you what you need to inspect.
+
+Basic Vehicle Control
+Purpose: To evaluate your basic skills in controlling the vehicle.
+
+Set-Up: The test set-up consists of various exercises marked out by lines, traffic cones, or something similar. The exercises
+may include moving the vehicle forward, backing, or turning maneuvers.
+
+The examiner will explain to you how each exercise is to be done. You will be scored on how well you stay within the
+exercise boundaries and how many pull-ups you make.
+
+Road Test
+Purpose: to evaluate your ability to drive safely in a variety of on-the-road situations.
+
+Test Procedure: The test drive is taken over a route specified by the examiner. It may include left and right turns,
+intersections, railway crossings, curves, up and down grades, rural or semi-rural roads, city multi-lane streets, and
+expressway driving.
+
+You will drive over the test route following instructions given by the examiner. The examiner will score specific tasks such as
+turns, merging into traffic, lane changes, and speed control at specific places along the route. The examiner will also score
+whether you correctly do tasks such as signaling, searching for hazards, controlling speed, and lane positioning
+
+            DOCUMENT REQUIREMENTS (photo copies are not acceptable)
+
+Renewal of a driver license or ID card (must have a star in upper right corner). If your license or ID doesn't have a star
+please follow the directions below for a new license or ID card:
+
+     1. South Dakota driver license or ID card (with star in upper right corner)
+     2. Two documents proving your residential address (must be less than one year old)
+     3. Non-US citizens and transfers from other states must provide proof of lawful status in the U.S. (such as U.S. certified
+
+          birth certificate, valid U.S. passport/passport card, certificate of citizenship/naturalization, permanent resident card,
+          employment authorization card, or foreign passport with visa/I-94)
+     4. If your name has changed you will need to provide proof of the name change (marriage certificate, divorce decree, or
+          court order)
+For information about online renewal (available every other renewal period) go to www.dps.sd.gov
+
+Replacement of a South Dakota driver license or ID card (had a star in upper right corner):
+     1. U.S. certified birth certificate, valid U.S. passport/passport card, certificate of citizenship/naturalization, valid
+          permanent resident card, valid employment authorization document, or foreign passport with U.S. visa/I-94
+     2. Second document proving identity (such as social security card, W-2 form, military ID, tribal ID, or other document
+          approved by examiner)
+     3. Two documents proving your residential address (must be less than one year old)
+     4. Name Change: If you need to change your name from what was on your last license or ID you will need to provide
+          proof of the name change (marriage certificate, divorce decree, or court order)
+
+To request a duplicate online (once per renewal period) go to www.dps.sd.gov. Name changes cannot be done online.
+
+New South Dakota driver license or ID card (includes transfer from another state*)
+     1. One document proving your date of birth, identity and lawful status or presence. If possible, select a
+          document that has your current full legal name to avoid documenting any name change.
+      Valid, unexpired U.S. passport or U.S. passport card
+      Certified copy of a birth certificate issued by a state of the United States. It must be a certified copy and have the
+          stamp or raised seal of the issuing authority. A hospital-issued certificate is not acceptable. A certified birth certificate
+          issued by Puerto Rico must be certified as being issued on or after July 1, 2010.
+      Consular Report of Birth Abroad issued by the U.S. Department of State (Form FS-240, DS-1350 or FS-545)
+      Certificate of Naturalization (Form N-550, N-570 or N-578)
+ Certificate of Citizenship (Form N-560, N-561 or N-645)
+ Unexpired Permanent Resident Card (Form I-551)
+ Unexpired Employment Authorization Document (Form I-766).
+ Record of Arrival and Departure (I-94) with attached photo and stamped "Temporary Proof of Lawful Permanent
+
+     Resident"
+ Record of Arrival and Departure (I-94) stamped "Refugee," "Parolee" or "Asylee"
+ Unexpired foreign passport accompanied by the approved I-94 documenting applicant's most recent admittance into
+
+     the United States
+ Valid foreign passport stamped "Processed for I-551"
+ Permit to Reenter the United States (I-327)
+ Refugee Travel Document (I-571)
+
+*Transfer of a federally compliant driver license or ID from another state requires the documents listed under "Renewal of
+a driver license or ID card (must have a star in upper right corner)" above.
+
+2. Check your name. Is your current full legal name different from the name listed on the identity document you are
+     providing in step 1? Were you previously issued a South Dakota driver license or ID card with a name different from
+     that listed on the identity document in step 1? If you answered yes to one or both of the questions above, you
+     must document your name change. If not, go to step 3.
+
+To document your name change, bring documents that connect the name on the identity document you selected to your
+current full legal name. Select the documents you will use (this can be more than one if needed to connect the name listed
+on your identity document to your current name). Certified marriage certificate
+
+                 Court order under petition for name change
+                 Court order for name change in a divorce decree or decree of annulment
+                 Court order for name change in a decree of adoption
+     Any marriage certificate must be issued by the state office of vital statistics or equivalent agency in your state or
+     country of marriage. It must be a certified copy and have the stamp or raised seal of the issuing authority. A church,
+     chapel or similarly issued certificate is not acceptable.
+
+Any court order must contain your prior full legal name, your court-ordered full legal name and your date of birth;
+and be stamped with the official court seal (date stamps and file stamps are not the official court seal).
+Photocopies and faxes are not acceptable.
+
+3. Document your Social Security number (SSN). Select one document you will use that contains your current
+     name and SSN. (We are unable to accept any document except what is listed below, including Medicare cards)
+
+ Social Security card (the social security card stub or metal cards are not acceptable)
+ W-2 form
+ Social Security Administration 1099 form
+ Non-Social Security Administration 1099 form
+ Pay stub or statement with your name and full Social Security number on it
+ I am a temporary foreign national not authorized for employment. (You do not have to document a SSN, but South
+
+     Dakota will verify your USCIS number. Make sure you are not authorized for employment. If you are eligible for
+     employment but do not have a SSN, you are required to obtain and present one.
+
+4. Two documents proving your residential address (less than one year old). A parent's proof of address is
+
+acceptable for a minor child.
+
+ Utility bill                                       If you are unable to provide proof of residency
+
+ Pay stub or earnings statement                    please see a list of address exceptions on our
+
+ Rent receipt                                      website at www.dps.sd.gov or call 1-605-773-
+
+ Phone bill                                        6883
+
+ Transcript or report card from accredited school   Mail with post office box addresses are acceptable
+ Bank statement                                         in areas not assigned a street or 911 address
+
+ Mortgage document
+
+ Tax document
+
+ Homeowners/rent's insurance policy
+
+ Other items with your address can be reviewed by
+
+the examiner
+Veterans
+Veterans who have been honorably discharged from the military have the option of adding the word "Veteran" to the front
+of their South Dakota driver license or identification card. In addition to the documents listed above, they will need to
+present one of the following:
+
+ DD-214 form which shows their honorable discharge status from active duty
+ Present a certificate signed by a county or tribal veteran's service officer verifying their status
+ DD Form 2 (Retired)
+ DD Form 2A (Reserve Retired)
+
+Note to current or new CDL applicants: If you are required to carry a medical examiners certificate (aka DOT medical card)
+you must show a valid card at the driver exam station.
+
+If you are unable to obtain any of the required documents please contact our office to see if exceptions are
+available:
+
+E-mail:   DPSLicensingInfo@state.sd.us (please include your first and last name)
+Phone:
+Address:  1-605-773-6883  Website Address: www.dps.sd.gov
+
+          South Dakota Driver Licensing Program, 118 W. Capitol Ave., Pierre, SD 57501
+South Dakota Classification System
+
+         1 Car/Truck
+         2 Car/Truck/Motorcycle
+         3 Motorcycle
+         A Combination Vehicle over 26,000
+         B Heavy Straight Vehicle over 26,000
+         C Commercial Vehicle Under 26,000
+
+South Dakota Endorsements
+         (T) Double/Triple Trailers- Many drivers who are qualified to drive Class A vehicles may
+         wish to pull double or triple trailers. Research shows that considerable additional knowledge
+         and skill is necessary to safely pull double and triple trailers in various traffic conditions and
+         driving environments. Consequently, adding the endorsement to the licenses of Class A
+         drivers is necessary if they wish to pull double or triple trailers. A special knowledge
+         examination on the problems associated with pulling multiple trailers must be passed.
+         (P) Passengers- Drivers who wish to drive a vehicle having a design capacity to carry 16 or
+         more people, including the driver, must add a passenger endorsement to their CDL. They
+         must pass a special knowledge examination on safety considerations when transporting
+         passengers and must pass skills tests in a passenger vehicle. The endorsement applies to
+         applicants who wish to drive a bus in any class (A, B, or C).
+         (N) Tank Vehicles- Drivers of vehicles that are used to haul liquids or gaseous materials in
+         permanent tanks having a rating capacity of 450 liters (119 gallons) or in portable tanks
+         having a rating capacity of 1,000 gallons or more must have specialized knowledge and skills
+         to drive safely. The current regulation [CFR part 383.5 tank vehicle] does not specify the
+         rating capacity of permanent tanks. Therefore FMCSA has defined a permanent tank using a
+         hazardous materials requirement [CFR part 171.8] that specifies permanent tanks as having
+         a rating capacity of 450 liters (119 gallons). Applies to Class A, B and C vehicles. Liquids in
+         bulk cause driving control problems because the cargo is heavy, prone to shifting, and has a
+         high center of gravity. These drivers must add an endorsement to their license showing they
+         have passed a special knowledge examination on the problems posed by large volume liquid
+         cargos.
+         (H) Hazardous Materials- Any driver, regardless of the class of their vehicle (A, B, or C)
+         who wishes to haul hazardous materials or waste in amounts requiring placards must add a
+         hazardous materials endorsement to their CDL. S/he must pass a special written examination
+         on how to recognize, handle, and transport hazardous materials. Before the endorsement can
+         be added to the license the driver must also pass a federal Transportation Security
+         Administration background check which includes an application, fingerprinting and fee.
+         (X) Combination Tank and Hazardous- Drivers who haul hazardous materials or hazardous
+         waste in a tank vehicle must add an X endorsement to their CDL, showing that they have
+         passed the special knowledge examinations for both tank vehicles and hazardous materials.
+         (S) School Bus- Drivers who wish to drive a school bus, must add a school bus endorsement
+         to their CDL. They must pass a special knowledge examination on safety considerations when
+         transporting passengers in a school bus and must pass skills tests in a school bus. The
+         endorsement applies to applicants who wish to drive a school bus in any class (A, B, or C).
+
+If applying for Hazardous Materials endorsement duplicate or renewal you must provide a
+valid U.S. passport, U.S. birth certificate, or Permanent Resident Card.
+EFFECTIVE JULY 1st, 2015
+
+Prior to                  SD License Restrictions
+July 1,
+ 2015                     Now Commercial Learner's Permit Restrictions
+                            P No passengers in a CMV
+   B                        X No cargo in a tank CMV
+   J                                   Commercial Driver License Restrictions
+   K                        L No air brakes
+   W                       M No Class A passenger vehicle
+   V                       N No Class A or B passenger vehicle
+                           W Seasonal CDL
+   O                       V Medical Variance
+   R                        E Automatic Transmission (new for CMV)
+   G                        K Intrastate only
+   F                       O No tractor-trailer CMV
+   Q                        Z No Full Air Brake (air over hydraulic brakes)
+   E                              Driver License Restrictions
+   X                        B Corrective Lenses
+   Z                       R Restricted Permit (6AM-10PM)
+                           G No night driving
+                           F Left outside rearview mirror
+                            I No driving outside of town
+                           A Automatic Transmission (Non-Commercial)
+                            Y 50 mile radius of residence
+                            C Special equipped vehicle
+License Transfer
+
+When applying to transfer a CLP/CDL from one state of domicile to a new state of domicile, an applicant shall
+apply for a CLP/CDL from the new State of domicile within no more than 30 days. The applicant shall:
+
+          Meet document requirements on page iv and v.
+
+           Complete application and provide updated information for the Commercial Driver's License document.
+           Surrender the CDL from the old state of domicile.
+
+If an applicant wishes to transfer a hazardous materials endorsement the applicant must:
+ Have completed a TSA security threat assessment;
+ Successfully complete the hazardous materials endorsement knowledge test;
+ Provide proof of citizenship or permanent residency.
+
+License Renewal
+
+When applying for renewal of a CLP/CDL, all applicants shall:
+           Meet document requirements on page iv and v.
+           Complete application and provide updated information for the CLP/CDL document.
+
+If an applicant wishes to renew hazardous materials endorsement the applicant must:
+     a) Have completed a TSA security threat assessment;
+     b) Successfully complete the hazardous materials endorsement knowledge test;
+     c) Provide proof of citizenship or permanent residency.
+
+License Upgrade
+
+When applying to operate a commercial motor vehicle in a different group or endorsement from the group or
+endorsement in which the applicant already has a CDL, all persons shall:
+
+           Provide the necessary certifications,
+           Pass all tests specified for the new vehicle group and/or endorsements.
+
+Seasonal Farm-Services CDL
+
+Drivers who are seasonal employees of a farm-related service industry, such as custom harvesters, farm retail
+outlet suppliers, agri-chemical businesses, and livestock feeders may be eligible for a "Seasonal/Restricted
+Commercial License". The applicant for the "Seasonal CDL" must be 18 years old and have a good driving
+record for the two most recent years and must have held a valid operator license for one year (this doesn't
+include instruction permits or restricted licenses). Upon meeting these requirements all knowledge and skill
+testing will be waived.
+
+A "Seasonal CDL" allows the operator to operate only Class B and C Commercial vehicles within 150 miles from
+the place of business or the farm currently being served, and the operator may not drive vehicles carrying any
+placarded quantities of hazardous materials, except for the following:
+
+          (1) Diesel fuel in quantities of 1,000 gallons or less,
+          (2) Liquid fertilizers, such as plant nutrients, in vehicles or implements of husbandry with total capacities
+
+                of 3,000 gallons or less, and,
+          (3) Solid fertilizers, such as solid plant nutrients, that aren't transported with any organic substance.
+
+A "Seasonal CDL" is valid for one 180-day period or two 90-day periods each calendar year.
+                           License Expiration
+
+A CDL expires on the licensee's birthday in the fifth year following the issuance of the license. Each license is
+renewable 180 days prior to its expiration, unless the applicant is turning twenty-one, in which case their license
+expires 30 days after their 21st birthday and they must wait until their birthday to renew their license.
+
+Non-citizens will be issued a "Nonresident CDL" for the duration of their legal stay in the U.S. (not to exceed five
+years or, if turning 21, 30 days after their 21st birthday).
+
+Reciprocity
+
+The holder of a valid CDL, which is not suspended, revoked, cancelled, or disqualified, may operate a
+commercial motor vehicle in any State, Canada or Mexico.
+
+Fees
+
+The fee for a commercial driver license is $33.00. There is also a $15.00 fee for each endorsement to a
+commercial license. A third party tester may charge up to $90.00 plus tax for each attempt to successfully
+complete the commercial skills test.
+
+Reinstatement Fee
+
+A person whose license has been revoked, suspended, or disqualified is required by law to pay a license
+reinstatement fee of $50.00 to $200.00 plus application fees when he/she is eligible to apply for a new license.
+Tests may be required following a revocation, suspension, or disqualification.
+
+For any other Driver License information CALL 1-605-773-6883 or check our website at http://dps.sd.gov.
+
+Imminent Hazardous Disqualification
+
+Upon notification from the Federal Motor Carrier Safety Administration that a driver is an imminent hazard
+(FMCSR 383.52)
+
+In Addition While Driving a Commercial Motor Vehicle... if you refuse to submit to the requested chemical
+analysis you will be immediately placed out of service for a period of 24 hours and will be disqualified from
+operating a commercial motor vehicle for a period of one year under SDCL 32-12A-43 and 32-12A-46. Also, if
+your chemical analysis discloses that you have been operating a commercial motor vehicle with an alcohol
+concentration of 0.04% or more by weight of alcohol in your blood in violation of SDCL 32-12A-44, your
+commercial driver license will be disqualified for a period of one year.
+
+Vehicle Registration and Title
+
+Commercial vehicles are registered at the County Treasurer's office of the applicant's residence. If the vehicle is
+being apportioned (prorated), application for registration is made to the Prorate Section of the Division of Motor
+Vehicles. Commercial and prorate registrations are valid from January 1 to December 31. A certificate of title is
+required to sell or transfer any vehicle. The title should be kept in a safe place, not in the vehicle. The
+registration certificate must be carried in the vehicle at all times.
+
+Financial Responsibility
+
+Any operator who has had his license revoked or suspended following a conviction for NO INSURANCE, DWI,
+VEHICULAR HOMICIDE, RECKLESS DRIVING (2nd in one-year period), OR A JUDGMENT must establish
+proof of financial responsibility (a SR-22 form filed with the state by your auto insurance company) before he may
+drive or re-register any vehicle in this State.
+
+Construction and Maintenance Devices
+
+Various traffic control devices are used in construction and maintenance work areas to direct drivers or
+pedestrians safely through the work zone and to provide for the safety of the highway workers.
+
+The most commonly used traffic control devices are signs, barricades, drums, cones, tubes, flashing arrow panels,
+and flag-persons. Orange is the color for these devices.
+Construction and Maintenance Signs
+Construction and maintenance signs are used to notify drivers of unusual or potentially dangerous conditions in
+or near work areas. Most signs in work areas are diamond shape, but a few are rectangular.
+
+Channelizing Devices
+Barricades, vertical panels, drums, cones, and tubes are the most commonly used devices to alert drivers of
+unusual or potentially dangerous conditions in highway and street work areas and to guide drivers safely
+through the work zone. At night they are often equipped with flashing or steady burn lights.
+
+Barricade         Panel  Cone  Tube  Drum         Barricade
+
+The diagonal stripes on the barricade or vertical panel, guide the driver towards the direction to which traffic is
+to pass. Stripes sloping downward to the right means the driver should bear to the right. Conversely, stripes
+sloping downward to the left means bear to the left.
+
+Pass to the Left               Pass to the Right
+
+Flashing Arrow Panels
+
+Large flashing or sequencing arrow panels may be used in work zones both day and night to guide drivers into
+certain traffic lanes and to inform them that part of the road or street ahead of them is closed.
+              Traffic Stop
+
+                            Traffic Proceed
+
+Flag persons
+
+Flag persons are often provided in highway and street work zones to stop, slow, or guide traffic safely through
+the area. Flag persons wear orange vests, shirts, or jackets and use stop/slow paddles or red flags to direct
+traffic through work zones.
+
+                       **************************************************
+
+  Security Threat Assessment Procedures for Hazardous Materials Endorsement Applicants
+
+New Endorsement: Federal Regulations require anyone applying for a new hazardous materials
+endorsement to submit finger prints and obtain a security clearance from the Transportation Security
+Administration (TSA) prior to the issuance of the commercial driver license containing a hazardous materials
+endorsement. To begin these process applicants need to make application and complete the written
+hazardous materials test at a South Dakota driver exam station. The next step is to complete the application
+for a security threat assessment background check and pay the $86.50 background check fee by either
+logging onto https://universalenroll.dhs.gov or by calling 1-855-347-8371. The website or call center can
+advise the applicant of the nearest location for fingerprinting. At the fingerprinting site applicants will need to
+provide the staff with a receipt from the driver exam station showing the hazardous material endorsement test
+was successfully passed and photo identification. When the background check is completed the
+Transportation Security Administration will notify both the applicant and the state driver licensing authorities.
+At that time the applicant may return to their local driver exam station to be issued a license with the
+endorsement.
+
+Renewal or Transfer of Endorsement: Applicants applying for renewal or transfer of a commercial driver
+license containing a hazardous materials endorsement are required to obtain a security clearance from TSA.
+For renewals or transfers you may start the background check process by applying online and paying the
+background check fee of $86.50 at https://universalenroll.dhs.gov or through the call center at 1-855-347-
+8371.
+
+All Applicants: Anyone applying for a commercial driver license with a hazardous materials endorsement
+must provide proof of citizenship or immigration status. The proof of citizenship or permanent residency must
+be presented to the driver license examiner when you make a new application for a hazardous materials
+endorsement, transfer or renew your driver license with a hazardous materials endorsement, apply for a
+duplicate commercial driver license with a hazardous materials endorsement or reinstate a driver license with
+a hazardous materials endorsement.
+
+In order to comply with these requirements, the state of South Dakota requires one of the documents listed
+below when you make application at a South Dakota Driver Exam Station for a commercial driver license with
+a hazardous materials endorsement. This document is required in addition to any other documents that are
+required for proof of identity.
+
+US Citizen: Valid U.S. Passport; Certificate of birth that bears an official seal and was issued by a county,
+state, municipal authority, or outlying possession of the United States; Certificate of Birth Abroad issued by the
+United States Department of State (Form FS-545 or DS 1350); Certificate of Naturalization (Form N-550 or N-
+570); or Certificate of United States Citizenship (Form N-560 or N-561)
+Immigration Status Documentation*: Permanent Resident Card, Alien Registration Receipt Card (Form I-551);
+Temporary I-551 stamp in Foreign Passport; Temporary I-551 stamp in form I-94, Arrival/Departure Record
+with photograph of the bearer; Re-entry Permit Form I-327
+
+All applicants are required to provide their social security number.
+
+If you have a Hazardous Materials endorsement and you do not meet the Hazardous Materials qualification
+requirements that follow, you must surrender your commercial driver license to a Driver Exam Station
+immediately. When you surrender your commercial driver license you may be issued a commercial driver
+license without a Hazardous Materials endorsement if you are otherwise qualified.
+
+See Parts A, B and C below for information on disqualifying criminal offenses. In addition to the disqualifying
+criminal offenses listed below, the Transportation Security Administration (TSA) may determine that an
+applicant is not eligible for the HME based on analysis of the following:
+
+a) Interpol and other international information, as appropriate.
+b) Terrorist watch lists, other government databases and related information.
+c) Any other information relevant to determining applicant eligibility or an applicant's identity.
+TSA may also determine that an applicant is not eligible if the security threat assessment process reveals
+extensive foreign or domestic criminal convictions, a conviction for a serious crime not listed in Part A or B
+below (including some lesser included offenses of serious crimes; e.g. Murder/Voluntary Manslaughter), or a
+period of foreign or domestic imprisonment that exceeds 365 consecutive days.
+
+TSA may also determine that an applicant is not eligible based on analysis of records related to violations of
+transportation security regulatory requirements. These include security-related offenses at an airport, on board
+an aircraft, at a maritime port, in connection with air cargo, and other regulatory violations.
+
+PART A: Permanent Disqualifying Criminal Offenses
+
+An applicant will be disqualified if he or she was convicted, pled guilty (including `no contest'), or found not
+guilty by reason of insanity for any of the following felonies regardless of when they occurred:
+
+1. Espionage or conspiracy to commit espionage.
+2. Sedition or conspiracy to commit sedition.
+3. Treason or conspiracy to commit treason.
+4. A federal crime of terrorism as defined in 18 U.S.C. 2332b(g), or comparable State law, or conspiracy to
+commit such crime.
+5. A crime involving a TSI (transportation security incident). Note: A transportation security incident is a
+security incident resulting in a significant loss of life, environmental damage, transportation system disruption,
+or economic disruption in a particular area, as defined in 46 U.S.C. 70101. The term "economic disruption"
+does not include a work stoppage or other employee-related action not related to terrorism and resulting from
+an employer-employee dispute.
+6. Improper transportation of a hazardous material under 49 U.S.C. 5124 or a comparable state law.
+7. Unlawful possession, use, sale, distribution, manufacture, purchase, receipt, transfer, shipping, transporting,
+import, export, storage of, or dealing in an explosive or explosive device. An explosive or explosive device
+includes an explosive or explosive material as defined in 18 U.S.C. 232(5), 841(c) through 841(f), and 844(j);
+and a destructive device, as defined in 18 U.S.C. 921(a)(4) and 26 U.S.C. 5845(f).
+8. Murder.
+9. Threat or maliciously conveying false information knowing the same to be false, concerning the deliverance,
+placement, or detonation of an explosive or other lethal device in or against a place of public use, a state or
+government facility, a public transportations system, or an infrastructure facility.
+10. Violations of the Racketeer Influenced and Corrupt Organizations Act, 18 U.S.C. 1961, et seq., or a
+comparable State law, where one of the predicate acts found by a jury or admitted by the defendant, consists
+of one of the permanently disqualifying crimes.
+11. Attempt to commit the crimes in items (1)-(4) of this section.
+12. Conspiracy or attempt to commit the crimes in items (5)-(10) of this section.
+Note: An applicant may apply for a waiver for any disqualifying offense listed under Part A, numbers 5 through
+12 listed above.
+
+PART B: Interim Disqualifying Criminal Offenses
+
+Conviction for one of the following felonies is disqualifying if the applicant was convicted, pled guilty (including
+`no contest'), or found not guilty by reason of insanity within 7 years of the date of the application; OR if the
+applicant was released from prison after conviction within 5 years of the date of the application.
+
+1. Unlawful possession, use, sale, manufacture, purchase, distribution, receipt, transfer, shipping, transporting,
+delivery, import, export of, or dealing in a firearm or other weapon. A firearm or other weapon includes, but is
+not limited to, firearms as defined in 18 U.S.C. 921(a)(3) or 26 U.S.C. 5 845(a), or items contained on the U.S.
+Munitions Import List at 27 CFR 447.21.
+2. Extortion.
+3. Dishonesty, fraud, or misrepresentation, including identity fraud and money laundering, where the money
+laundering is related to a crime listed in Parts A or B (except welfare fraud and passing bad checks).
+4. Bribery.
+5. Smuggling.
+6. Immigration violations.
+7. Distribution, possession w/ intent to distribute, or importation of a controlled substance.
+8. Arson.
+9. Kidnapping or hostage taking.
+10. Rape or aggravated sexual abuse.
+11. Assault with intent to kill.
+12. Robbery.
+13. Fraudulent entry into a seaport as described in 18 U.S.C. 1036, or a comparable State law.
+14. Violations of the Racketeer Influenced and Corrupt Organizations Act (RICO) under 18 U.S.C. 1961, et
+seq., or a comparable State law, other than any permanently disqualifying offenses.
+15. Voluntary Manslaughter.
+16. Conspiracy or attempt to commit crimes in this section.
+Note: An applicant may apply for a waiver for any disqualifying offense listed under Part B.
+
+PART C: Under Want, Warrant or Indictment
+A person will be disqualified if he or she is wanted or under indictment in any civilian or military jurisdiction for
+a felony listed under Part A or Part B until the want or warrant is released or the indictment is dismissed.
+Application Process
+
+1. Complete the application for a security threat assessment background check by either logging onto
+     https://universalenroll.dhs.gov or by calling 1-855-347-8371. There is an $86.50 background check fee
+     that will need to be paid upon application.
+
+2. Fingerprinting. Contact one of the following fingerprinting sites for an appointment. You must provide
+     the fingerprinting site with identification (a state-issued driver license or identification card):
+
+EMSI Sioux Falls         Right Turn Inc.
+2221 Russell Street      124 East Dakota Ave
+Sioux Falls, SD 57104    Pierre, SD 57501
+Hours: Monday - Friday   Hours: Wednesday
+8:30am ­ 4:30 pm         1pm -5pm
+Preferred Appointments   Preferred Appointments
+605-728-5999             605-773-4755
+
+TekNetCorp
+1727 W Main St Suite 4
+Rapid City, SD 57702
+Hours: Wednesday
+10am-2pm
+Preferred Appointments:
+605-716-6582
+
+Issuance of CDL with Hazardous Material Endorsement
+
+When the background check is completed the Transportation Security Administration will notify both the
+applicant and the state driver licensing authorities. At that time the applicant may return to their local driver
+exam station, with proof of citizenship and proof of identity, to be issued a license with the endorsement.
+
+All applicants for a hazardous material endorsement must complete a knowledge exam to obtain the
+endorsement.
+
+Hazardous Material Regulations (HMR) and regulations for CDL operation are found in Title 42 CFR part 1003 and Title 49
+CFR parts 100 to 185 and 300 to 399. You can purchase a copy of the Code of Federal Regulations through your local
+Government Printing Office bookstore and various industry publishers. Company offices often have copies of the rules for
+sale or driver use.
+Information is also available on the Transportation Security Administration's website at www.tsa.gov. Individuals and
+operators with questions about the Patriot Act rule can e-mail patriotact@dhs.gov
+THIS PAGE INTENTIONALLY LEFT BLANK
+                            Table of Contents
+
+Introduction .........................................................................................................................................1-1
+Driving Safely ...................................................................................................................................2-1
+Transporting Cargo Safely ...............................................................................................3-1
+Transporting Passengers Safely...............................................................................4-1
+Air Brakes .............................................................................................................................................5-1
+Combination Vehicles ............................................................................................................6-1
+Doubles and Triples .................................................................................................................7-1
+Tank Vehicles ..................................................................................................................................8-1
+Hazardous Materials................................................................................................................9-1
+School Bus ........................................................................................................................................10-1
+Vehicle Inspection.....................................................................................................................11-1
+Basic Vehicle Control Skills Test............................................................................12-1
+On-Road Driving.........................................................................................................................13-1
+THIS PAGE INTENTIONALLY LEFT BLANK
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+    Section 1
+INTRODUCTION
+
+This Section Covers                                                                      Figure 1.1
+
+ Commercial Driver License Tests                              NOTE: A bus may be Class A, B, or C depending on whether
+ Medical Requirements                                                      the GVWR is over 26,001 pounds or is a combination
+ Driver Disqualifications                                                  vehicle.
+ Other Safety Rules
+ International Registration Program
+
+There is a federal requirement that each state have
+minimum standards for the licensing of commercial
+drivers.
+
+This manual provides driver license testing
+information for drivers who wish to have a
+commercial driver license (CDL). This manual does
+NOT provide information on all the federal and
+state requirements needed before you can drive a
+commercial motor vehicle (CMV). You may have to
+contact your state driver licensing authority for
+additional information.
+
+You must have a CDL to operate:
+
+Any single vehicle with a gross vehicle weight
+rating (GVWR) of 26,001 pounds or more.
+
+A combination vehicle with a gross combination
+weight rating (GCWR) of 26,001 or more pounds,
+provided the GVWR of the vehicle(s) being towed is
+in excess of 10,000 pounds.
+
+A vehicle designed to transport 16 or more
+passengers (including the driver).
+
+Any size vehicle which requires hazardous material
+placards or is carrying material listed as a select
+agent or toxin in 42 CFR part 73. Federal
+regulations through the Department of Homeland
+Security require a background check and
+fingerprinting for the Hazardous Materials
+endorsement. Contact your local department of
+driver licensing for more information.
+
+(Your state may have additional definitions of
+CMVs.)
+
+To get a CDL, you must pass knowledge and skills
+tests. This manual will help you pass the tests,
+however, it is not a substitute for a truck driver
+training class or program. Formal training is the
+most reliable way to learn the many special skills
+required for safely driving a large commercial
+vehicle and becoming a professional driver in the
+trucking industry. Figure 1.1 helps you determine if
+you need a CDL
+
+Section 1 - Introduction                                      Page 1-1
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+1.1 ­ Commercial Driver License Tests                         similar. The examiner will tell you how each control
+                                                              test is to be done.
+1.1.1 ­ Knowledge Tests
+                                                              On-road Test. You will be tested on your skill to
+You will have to take one or more knowledge tests,            safely drive your vehicle in a variety of traffic
+depending on what class of license and what                   situations. The situations may include left and right
+endorsements you need. The CDL knowledge                      turns, intersections, railroad crossings, curves, up
+tests include:                                                and down grades, single or multi-lane roads,
+                                                              streets, or highways. The examiner will tell you
+The general knowledge test, taken by all                      where to drive.
+applicants.
+                                                              Figure 1.2 details which sections of this manual
+The passenger transport test, taken by all bus                you should study for each particular class of
+driver applicants.                                            license and for each endorsement.
+
+The air brakes test, which you must take if your              What Sections Should You Study?
+vehicle has air brakes, including air over hydraulic
+brakes.                                                           LICENSE  ENDORSEMENT
+                                                                  TYPE
+The combination vehicles test, which is required
+if you want to drive combination vehicles.                                                                                     School Bus
+                                                                                                                       Passenger
+The hazardous materials test, required if you                                                                   Tank Vehicles
+want to haul hazardous materials as defined in 49                                                        Double / Triple
+CFR 383.5. In order to obtain this endorsement                                                     Hazardous
+you are also required to pass a Transportation                                                  Materials
+Security Administration (TSA) background check.                                           Class C
+                                                                                   Class B
+The tank vehicle test, required if you want to haul                         Class A
+any liquid or gaseous materials in a tank or tanks
+having an individual rated capacity of more than              Sections to Study
+119 gallons and an aggregate rated capacity of                1XXX
+1,000 gallons or more that is either permanently or
+temporarily attached to the vehicle or chassis                2XXX            XXX
+
+The doubles/triples test, required if you want to             3XXX
+pull double or triple trailers.
+                                                              4                                   X
+The School Bus test, required if you want to drive
+a school bus.                                                 5* X X X        X
+
+1.1.2 ­ Skills Tests                                          6X              XX
+If you pass the required knowledge test(s), you can
+take the CDL skills tests. There are three types of           7               X
+general skills that will be tested: Vehicle inspection,
+basic vehicle control, and on-road driving. You               8                                X
+must take these tests in the type of vehicle for
+which you wish to be licensed. Any vehicle that               9            X                   X
+has components marked or labeled cannot be
+used for the Vehicle Inspection Test.                         10                                     X
+
+Vehicle Inspection. You will be tested to see if              11 X X X                            XX
+you know whether your vehicle is safe to drive.
+You will be asked to do a Vehicle inspection of               12 X X X                            XX
+your vehicle and explain to the examiner what you
+would inspect and why.                                        13 X X X                            XX
+
+Basic Vehicle Control. You will be tested on your             *Study section 5 if you plan to operate vehicles
+skill to control the vehicle. You will be asked to            equipped with air brakes.
+move your vehicle forward, backward, and turn it
+within a defined area. These areas may be marked                             Figure 1.2 ­ What to Study
+with traffic lanes, cones, barriers, or something
+
+Section 1 - Introduction                                                                          Page 1-2
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+1.2 ­ Medical Documentation                                   1.2.2 ­ Inter/Intrastate Commerce: Status Non-
+Requirements                                                  excepted or Excepted?
+
+Starting January 30, 2012 and no later than                   Once you decide whether you will operate in
+January 30, 2014, if you are applying for a CDL               interstate commerce or intrastate commerce,
+Permit; or are renewing, upgrading, adding                    you must decide whether you will operate (or
+endorsements to a CDL; or transferring a CDL                  expect to operate) in a non-excepted or excepted
+from another state, you are required to provide               status. This decision will tell you to which of the
+information to your State Driver's License Agency             four types of commerce you must self-certify.
+(SDLA) regarding the type of commercial motor
+vehicle operation you drive in or expect to drive in          Interstate Commerce:
+with your CDL. Drivers operating in certain types of
+commerce will be required to submit a current                 You operate in excepted interstate commerce
+medical examiner's certificate and/or any medical             when you drive a CMV in interstate commerce only
+variance documents that you have been issued                  for the following excepted activities:
+(i.e. Vision, Skills Performance or Diabetic waivers,
+or other exemptions) to your SDLA to obtain a                 To transport school children and/or school staff
+"certified" medical status as part of your driving            between home and school;
+record. You must contact your State Driver
+Licensing Agency (SDLA) to obtain information                 As Federal, State or local government employees;
+regarding the requirement for submitting these
+documents.                                                    To transport human corpses or sick or injured
+                                                              persons;
+If you are required to have a "certified" medical
+status and fail to provide and keep up-to-date your           Fire truck or rescue vehicle drivers during
+medical examiner's certificate you become "not-               emergencies and other related activities;
+certified" and may lose your CDL.
+                                                              Primarily in the transportation of propane winter
+For the purpose of complying with the new                     heating fuel when responding to an emergency
+requirements for medical certification, it is                 condition requiring immediate response such as
+important to know how you are using the CMV.                  damage to a propane gas system after a storm or
+The following information will help you decide how            flooding;
+to self-certify:
+                                                              In Response to a pipeline emergency condition
+1.2.1 ­ Interstate or Intrastate Commerce                     requiring immediate response such as a pipeline
+                                                              leak or rupture;
+Do you, or will you, use a CDL to operate a CMV in
+interstate or intrastate commerce?                            In custom harvesting on a farm or to transport farm
+                                                              machinery and supplies used in the custom
+Interstate commerce is when you drive a CMV:                  harvesting operation to and from a farm or to
+                                                              transport custom harvested crops to storage or
+From one State to another State or a foreign                  market;
+country;
+                                                              Beekeeper in the seasonal transportation of bees;
+Between two places within a State, but during part
+of the trip, the CMV crosses into another State or            Controlled and operated by a farmer, but is not a
+foreign country; or                                           combination vehicle (power unit and towed unit),
+                                                              and is used to transport agricultural products, farm
+Between two places within a State, but the cargo              machinery or farm supplies (no placardable
+or passengers are part of a trip that began or will           hazardous materials) to and from a farm and within
+end in another State or foreign country.                      150 air-miles of the farm;
+
+Intrastate commerce is when you drive a CMV                   As a private motor carrier of passengers for non-
+within a State and you do not meet any of the                 business purposes ; or
+descriptions above for interstate commerce.
+                                                              To transport migrant workers.
+If you operate in both intrastate commerce and
+interstate commerce, you must choose interstate               If you answered yes to one or more of the above
+commerce.                                                     activities as the only operation in which you drive,
+                                                              you operate in excepted interstate commerce
+                                                              and do not need a Federal medical examiner's
+                                                              certificate.
+
+Section 1 - Introduction                                      Page 1-3
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System   Intrastate non-excepted: I certify that I
+                                                                   operate or expect to operate entirely in
+If you answered no to all of the above activities,                 intrastate commerce, that I am subject to and
+you operate in non-excepted interstate                             meet the medical requirements for my State;
+commerce and are required to provide a current                     and that I am required to obtain a medical
+medical examiner's certificate (49 CFR                             examiner's certificate.
+391.45),commonly referred to as a medical
+certificate or DOT card, to your State Driver                  Intrastate excepted: I certify that I operate or
+Licensing Agency (SDLA). Most CDL holders who                      expect to operate entirely in intrastate
+drive CMVs in interstate commerce are non-                         commerce, that I am not subject to the medical
+excepted interstate commerce drivers.                              requirements for my State; and that I am not
+                                                                   required to obtain a medical examiner's
+If you operate in both excepted interstate                         certificate.
+commerce and non-excepted interstate
+commerce, you must choose non-excepted                        1.3 - CDL Disqualifications
+interstate commerce to be qualified to operate in
+both types of interstate commerce.                            1.3.1 ­ General
+
+Intrastate Commerce:                                          You may not drive a commercial motor vehicle if
+                                                              you are disqualified for any reason.
+You operate in excepted Intrastate commerce
+when you drive a CMV only in intrastate commerce              1.3.2 ­ Alcohol, Leaving the Scene of an
+activities for which your State of licensure has              Accident, and Commission of a Felony
+determined do not require you to meet the State's
+medical certification requirements. (contact your             It is illegal to operate a CMV if your blood alcohol
+SDLA about their requirements).                               concentration (BAC) is .04% or more. If you
+                                                              operate a CMV, you shall be deemed to have
+You operate in non-excepted intrastate                        given your consent to alcohol testing.
+commerce when you drive a CMV only in
+intrastate commerce and are required to meet your             You will lose your CDL for at least one year for a
+State of licensure's medical certification                    first offense for:
+requirements (contact your SDLA about their                   Driving a CMV if your blood alcohol concentration
+requirements).                                                is .04% or higher.
+                                                              Driving a CMV under the influence of alcohol.
+If you operate in both excepted intrastate                    Refusing to undergo blood alcohol testing.
+commerce and non-excepted intrastate                          Driving a CMV while under the influence of a
+commerce, you must choose non-excepted                        controlled substance.
+intrastate commerce.                                          Leaving the scene of an accident involving a CMV.
+                                                              Committing a felony involving the use of a CMV.
+1.2.3 ­ Self-Certification Statements                         Driving a CMV when the CDL is suspended.
+                                                              Causing a fatality through negligent operation of a
+When completing an application for your CDL, you              CMV.
+will be required to check the box next to the
+statement that describes your status. The actual              You will lose your CDL for at least three years if
+statements on your application may vary from                  the offense occurs while you are operating a CMV
+those shown below:                                            that is placarded for hazardous materials.
+
+ Interstate non-excepted: I certify that I                    You will lose your CDL for life for a second offense.
+     operate or expect to operate in interstate
+     commerce, that I am subject to and meet the              You will lose your CDL for life if you use a CMV to
+     Federal DOT medical card requirements under              commit a felony involving controlled substances.
+     49 CFR part 391; and that I am required to
+     obtain a medical examiner's certificate.
+
+ Interstate excepted: I certify that I operate or
+     expect to operate in interstate commerce, but
+     engage exclusively in transportation or
+     operations excepted under 49 CFR §§390.3(f),
+     391.2, 391.68 or 398.3 from all or parts of the
+     qualification requirements of 49 CFR part 391;
+     and that I am not required to obtain a medical
+     examiner's certificate.
+
+Section 1 - Introduction                                      Page 1-4
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+You will be put out-of-service for 24 hours if you            For drivers who are not required to always stop,
+have any detectable amount of alcohol under                   failing to slow down and check that the tracks are
+.04%.                                                         clear of an approaching train.
+
+1.3.3 ­ Serious Traffic Violations                            For drivers who are always required to stop, failing
+                                                              to stop before driving onto the crossing.
+Serious traffic violations are excessive speeding
+(15 mph or more above the posted limit), reckless             For all drivers failing to have sufficient space to
+driving, improper or erratic lane changes, following          drive completely through the crossing without
+a vehicle too closely, traffic offenses committed in          stopping.
+a CMV in connection with fatal traffic accidents,
+driving a CMV without obtaining a CDL or having a             For all drivers failing to obey a traffic control device
+CDL in the driver's possession, and driving a CMV             or the directions of an enforcement official at the
+without the proper class of CDL and/or                        crossing.
+endorsements.
+                                                              For all drivers failing to negotiate a crossing
+                                                              because of insufficient undercarriage clearance.
+
+You will lose your CDL:                                       1.3.6 ­ Hazardous Materials Endorsement
+                                                              Background Check and Disqualifications
+For at least 60 days if you have committed two
+serious traffic violations within a three-year period         If you require a hazardous materials endorsement
+involving a CMV.                                              you will be required to submit your fingerprints and
+                                                              be subject to a background check.
+For at least 120 days for three or more serious
+traffic violations within a three-year period involving       You will be denied or you will lose your hazardous
+a CMV.                                                        materials endorsement if you:
+
+1.3.4 ­ Violation of Out-of-Service Orders                    Are not a lawful permanent resident of the United
+                                                              States.
+You will lose your CDL:
+                                                              Renounce your United States citizenship.
+For at least 90 days if you have committed your
+first violation of an out-of-service order.                   Are wanted or under indictment for certain felonies.
+
+For at least one year if you have committed two               Have a conviction in military or civilian court for
+violations of an out-of-service order in a ten-year           certain felonies.
+period.
+                                                              Have been adjudicated as a mental defective or
+For at least three years if you have committed                committed to a mental institution.
+three or more violations of an out-of-service order
+in a ten-year period.                                         Are considered to pose a security threat as
+                                                              determined by the Transportation Security
+1.3.5 ­ Railroad-highway Grade Crossing                       Administration.
+Violations
+                                                              The background check procedures vary from
+You will lose your CDL:                                       jurisdiction to jurisdiction. Your licensing agency
+                                                              will provide you with all the information you need to
+For at least 60 days for your first violation.                complete the required TSA background check
+                                                              procedures.
+For at least 120 days for your second violation
+within a three-year period.                                   1.3.7 ­ Traffic Violations in Your Personal
+                                                              Vehicle
+For at least one year for your third violation within a
+three-year period.                                            The Motor Carrier Safety Improvement Act
+                                                              (MCSIA) of 1999 requires a CDL holder to be
+These violations include violation of a federal, state        disqualified from operating a commercial motor
+or local law or regulation pertaining to one of the           vehicle if the CDL holder has been convicted of
+following six offenses at a railroad-highway grade            certain types of moving violations in their personal
+crossing:                                                     vehicle.
+
+For drivers who are not required to always stop,
+failing to stop before reaching the crossing if the
+tracks are not clear.
+
+Section 1 - Introduction                                      Page 1-5
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+If your privilege to operate your personal vehicle is         Your employer may not let you drive a commercial
+revoked, cancelled, or suspended due to violations            motor vehicle if you have more than one license or
+of traffic control laws (other than parking violations)       if you're CDL is suspended or revoked. A court
+you will also lose your CDL driving privileges.               may fine the employer up to $5,000 or put him/her
+                                                              in jail for breaking this rule.
+If your privilege to operate your personal vehicle is
+revoked, cancelled, or suspended due to alcohol,              All states are connected to one computerized
+controlled substance or felony violations, you will           system to share information about CDL drivers.
+lose your CDL for 1 year. If you are convicted of a           The states will check on drivers' accident records
+second violation in your personal vehicle or CMV              to be sure that drivers do not have more than one
+you will lose your CDL for life.                              CDL.
+
+If your license to operate your personal vehicle is           You are not allowed to hold a mobile telephone to
+revoked, cancelled, or suspended you may not                  conduct a voice communication or dial a mobile
+obtain a "hardship" license to operate a CMV.                 telephone by pressing more than a single button
+                                                              when driving.
+1.4 ­ Other CDL Rules
+                                                              You are not allowed to send or read text messages
+There are other federal and state rules that affect           while driving.
+drivers operating CMVs in all states. Among them
+are:                                                          You must be properly restrained by a safety belt at
+                                                              all times while operating a commercial motor
+You cannot have more than one license. If you                 vehicle. The safety belt design holds the driver
+break this rule, a court may fine you up to $5,000            securely behind the wheel during a crash, helping
+or put you in jail and keep your home state license           the driver to control the vehicle and reduces the
+and return any others.                                        chance of serious injury or death. If you do not
+                                                              wear a safety belt, you are four times more likely to
+You must notify your employer within 30 days of               be fatally injured if you are thrown from the vehicle.
+conviction for any traffic violations (except parking).
+This is true no matter what type of vehicle you               Your state may have additional rules that you must
+were driving.                                                 also obey.
+
+You must notify your motor vehicle licensing                  1.5 ­ International Registration Plan
+agency within 30 days if you are convicted in any                    International Fuel Tax Agreement
+other jurisdiction of any traffic violation (except
+parking). This is true no matter what type of vehicle         If you operate a CDL required vehicle in interstate
+you were driving.                                             commerce, the vehicle, with few exceptions, is
+                                                              required to be registered under the International
+You must notify your employer within two business             Registration Plan (IRP) and the International Fuel
+days if your license is suspended, revoked, or                Tax Agreement (IFTA). These federally mandated
+canceled, or if you are disqualified from driving.            programs provide for the equitable collection and
+                                                              distribution of vehicle license fees and motor fuels
+You must give your employer information on all                taxes for vehicles traveling throughout the 48
+driving jobs you have held for the past 10 years.             contiguous United States and 10 Canadian
+You must do this when you apply for a commercial              provinces.
+driving job.
+                                                              Under the IRP, jurisdictions must register
+No one can drive a commercial motor vehicle                   apportioned vehicles which includes issuing
+without a CDL. A court may fine you up to $5,000              license plates and cab cards or proper credentials,
+or put you in jail for breaking this rule.                    calculate, collect and distribute IRP fees, audit
+                                                              carriers for accuracy of reported distance and fees
+If you have a hazardous materials endorsement                 and enforce IRP requirements.
+you must notify and surrender your hazardous
+materials endorsement to the state that issued
+your CDL within 24 hours of any conviction or
+indictment in any jurisdiction, civilian or military, for,
+or found not guilty by reason of insanity of a
+disqualifying crime listed in 49 CFR 1572.103; who
+is adjudicated as a mental defective or committed
+to a mental institution as specified in 49 CFR
+1572.109; or who renounces his or her U. S.
+citizenship;
+
+Section 1 - Introduction                                      Page 1-6
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+Registrant responsibilities under the Plan include             (iv) is used in combination, when the gross
+applying for IRP registration with base jurisdiction,               Vehicle weight of such combination exceeds
+providing proper documentation for registration,                    26,000 pounds (11,793.401 kilograms).
+paying appropriate IRP registration fees, properly
+displaying registration credentials, maintaining              While similar, the Qualified Motor Vehicle in IFTA
+accurate distance records, and making records                 means a motor vehicle used, designed, or
+available for jurisdiction review.                            maintained for transportation of persons or
+                                                              property and:
+The basic concept behind IFTA is to allow a
+licensee (motor carrier) to license in a base                   1) Having two axles and a gross vehicle weight
+jurisdiction for the reporting and payment of motor                   or registered gross vehicle weight exceeding
+fuel use taxes.                                                       26,000 pounds or 11,797 kilograms; or
+Under the IFTA, a licensee is issued one set of
+credentials which will authorize operations through             2) Is used in combination, when the weight of
+all IFTA member jurisdictions. The fuel use taxes                     such combination exceeds 26,000 pounds or
+collected pursuant to the IFTA are calculated                         11,797 kilograms gross vehicle or registered
+based on the number of miles (kilometers) traveled                    gross vehicle weight. Qualified Motor
+and the number of gallons (liters) consumed in the                    Vehicle does not include recreational
+member jurisdictions. The licensee files one                          vehicles.
+quarterly tax return with the base jurisdiction by
+which the licensee will report all operations through           If the vehicle you operate is registered under IRP
+all IFTA member jurisdictions.                                  and you are a motor carrier licensed under IFTA,
+                                                                then you are required to comply with the
+It is the base jurisdiction's responsibility to remit           mandatory record keeping requirements for
+the taxes collected to other member jurisdictions               operating the vehicle. A universally accepted
+and to represent the other member jurisdictions in              method of capturing this information is through
+the tax collection process, including the                       the completion of an Individual Vehicle Distance
+performance of audits.                                          Record (IVDR), sometimes times referred to as a
+                                                                Driver Trip Report. This document reflects the
+An IFTA licensee must retain records to support                 distance traveled and fuel purchased for a
+the information reported on the IFTA quarterly tax              vehicle that operates interstate under
+return                                                          apportioned (IRP) registration and IFTA fuel tax
+                                                                credentials.
+The IRP registrant and the IFTA licensee may
+be the vehicle owner or the vehicle operator.                 Although the actual format of the IVDR may vary, the
+                                                              information that is required for proper record keeping
+The requirement for acquiring IRP plates for a                does not.
+vehicle and IFTA license for a motor carrier is
+determined by the definitions from the IRP Plan               In order to satisfy the requirements for Individual
+and the IFTA for Qualified Vehicle and Qualified              Vehicle Distance Records, these documents must
+Motor Vehicle:                                                include the following information:
+
+For purposes of IRP:                                          Distance
+
+A Qualified Vehicle is (except as provided below)             Per Article IV of the IRP Plan
+any Power Unit that is used or                                    (i) Date of trip (starting and ending)
+intended for use in two or more Member                            (ii) Trip origin and destination ­ City and State
+Jurisdictions and that is used for the transportation             or Province
+of persons for hire or designed, used, or                         (iii) Route(s) of travel
+maintained primarily for the transportation of                    (iv) Beginning and ending odometer or
+property, and:                                                         hubometer reading of the trip
+                                                                  (v) Total distance traveled
+ (i) has two Axles and a gross Vehicle weight or                  (vi) In-Jurisdiction distance
+      registered gross Vehicle weight in                          (vii) Power unit number or vehicle identification
+                                                                        number.
+ (ii) excess of 26,000 pounds (11,793.401
+      kilograms), or                                          Fuel
+
+ (iii) has three or more Axles, regardless of weight,         Per Section P560 of the IFTA Procedures Manual
+      or                                                      .300 An acceptable receipt or invoice must
+                                                              include, but shall not be limited to, the following:
+
+                                                                  .005 Date of purchase
+                                                                  .010 Seller's name and address
+
+Section 1 - Introduction                                      Page 1-7
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+    .015 Number of gallons or liters purchased;               By completing this document in full and keeping all
+    .020 Fuel type                                            records required by both the IRP and the IFTA, you
+    .025 Price per gallon or liter or total amount of         will have ensured that you and your company are
+                                                              in compliance with all State and Provincial laws
+           sale                                               surrounding fuel and distance record keeping
+    .030 Unit number or other unique vehicle                  requirements.
+
+           identifier                                         The IVDR serves as the source document for the
+    .035 Purchaser's name                                     calculation of fees and taxes that are payable to
+                                                              the jurisdictions in which the vehicle is operated, so
+An example of an IVDR that must be completed in               these original records must be maintained for a
+its entirety for each trip can be found in Figure 1           minimum of four years.
+below. Each individual IVDR should be filled out
+for only one vehicle. The rules to follow when                In addition, these records are subject to audit by
+trying to determine how and when to log an                    the taxing jurisdictions. Failure to maintain
+odometer reading are the following:                           complete and accurate records could result in
+                                                              fines, penalties and suspension or revocation of
+      At the beginning of the day                             IRP registrations and IFTA licenses.
+      When leaving the state or province
+      At the end of the trip/day                              For additional information on the IRP and the
+                                                              requirements related to the IRP, contact your base
+Not only do the trips need to be logged, but the fuel         jurisdiction motor vehicle department or IRP, Inc.
+purchases need to be documented as well. You                  the official repository for the IRP. Additional
+must obtain a receipt for all fueling and include it with     information can be found on the IRP, Inc. website
+your completed IVDR.                                          at www.irponline.org. There is a training video on
+                                                              the website home page available in English,
+Make sure that any trips that you enter are always            Spanish and French
+filled out in descending order and that your trips
+include all state/provinces that you traveled through
+on your route.
+
+There are different routes that a driver may take,            For additional information on IFTA and the
+and most of the miles may be within one state or              requirements related to IFTA, contact the
+province. Whether or not the distance you travel is           appropriate agency in your base jurisdiction. You
+primarily in one jurisdiction or spread among                 will also find useful information about the
+several jurisdictions, all information for the trip           Agreement at the official repository of IFTA at
+must be recorded. This includes the dates, the                http://www.iftach.org/index.php.
+routes, odometer readings and fuel purchases.
+
+                          Figure 1 ­ Individual Vehicle Mileage & Fuel Record (Example)
+
+Section 1 - Introduction                                                                 Page 1-8
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+           Section 2                                          breakdown on the road that will cost time and
+      DRIVING SAFELY                                          dollars, or even worse, a crash caused by the
+                                                              defect.
+This Section Covers
+                                                              Federal and state laws require that drivers inspect
+ Vehicle Inspection                                           their vehicles. Federal and state inspectors also
+ Basic Control of Your Vehicle                                may inspect your vehicles. If they judge the vehicle
+ Shifting Gears                                               to be unsafe, they will put it "out of service" until it
+ Seeing                                                       is fixed.
+ Communicating
+ Space Management                                             2.1.2 ­ Types of Vehicle Inspection
+ Controlling Your Speed
+ Seeing Hazards                                               Vehicle Inspection. A Vehicle inspection will help
+ Distracted Driving                                           you find problems that could cause a crash or
+ Aggressive Drivers/Road Rage                                 breakdown.
+ Night Driving & Driver Fatigue
+ Driving in Fog                                               During a Trip. For safety you should:
+ Winter Driving
+ Hot Weather Driving                                          Watch gauges for signs of trouble.
+ Railroad-highway Crossings
+ Mountain Driving                                             Use your senses to check for problems (look,
+ Driving Emergencies                                          listen, smell, feel).
+ Antilock Braking Systems
+ Skid Control and Recovery                                    Check critical items when you stop:
+ Accident Procedures                                          Tires, wheels and rims.
+ Fires                                                        Brakes.
+ Alcohol, Other Drugs, and Driving                            Lights and reflectors.
+ Hazardous Materials Rules                                    Brake and electrical connections to trailer.
+                                                              Trailer coupling devices.
+This section contains knowledge and safe driving              Cargo securement devices.
+information that all commercial drivers should
+know. You must pass a test on this information to             After-trip Inspection and Report. You should do
+get a CDL. This section does not have specific                an after-trip inspection at the end of the trip, day, or
+information on air brakes, combination vehicles,              tour of duty on each vehicle you operated. It may
+doubles, or passenger vehicles. When preparing                include filling out a vehicle condition report listing
+for the Vehicle Inspection Test, you must review              any problems you find. The inspection report helps
+the material in Section 11 in addition to the                 a motor carrier know when the vehicle needs
+information in this section. This section does have           repairs.
+basic information on hazardous materials (HazMat)
+that all drivers should know. If you need a HazMat            2.1.3 ­ What to Look For
+endorsement, you should study Section 9.
+                                                              Tire Problems
+2.1 ­ Vehicle Inspection
+                                                              Too much or too little air pressure.
+2.1.1 ­ Why Inspect
+                                                              Bad wear. You need at least 4/32-inch tread depth
+Safety is the most important reason you inspect               in every major groove on front tires. You need 2/32
+your vehicle, safety for yourself and for other road          inch on other tires. No fabric should show through
+users.                                                        the tread or sidewall.
+A vehicle defect found during an inspection could
+save you problems later. You could have a                     Cuts or other damage.
+
+                                                              Tread separation.
+
+                                                              Dual tires that come in contact with each other or
+                                                              parts of the vehicle.
+
+                                                              Mismatched sizes.
+
+                                                              Radial and bias-ply tires used together.
+
+                                                              Cut or cracked valve stems.
+
+                                                              Re-grooved, recapped, or retreaded tires on the
+                                                              front wheels of a bus are prohibited.
+
+Section 2 ­ Driving Safely                                    Page 2-1

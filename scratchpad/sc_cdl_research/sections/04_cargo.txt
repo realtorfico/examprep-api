@@ -1,0 +1,171 @@
+3.1 ­ Inspecting Cargo                                        a manufacturer's weight capacity rating.
+
+As part of your Vehicle inspection, make sure the             Coupling Device Capacity. Coupling devices are
+truck is not overloaded and the cargo is balanced             rated for the maximum weight they can pull and/or
+and secured properly.                                         carry.
+
+After Starting. Inspect the cargo and its securing            3.2.2 ­ Legal Weight Limits
+devices again within the first 50 miles after
+beginning a trip. Make any adjustments needed.                You must keep weights within legal limits. States
+                                                              have maximums for GVWRs, GCWRs, and axle
+Re-check. Re-check the cargo and securing                     weights. Often, maximum axle weights are set by a
+devices as often as necessary during a trip to keep           bridge formula. A bridge formula permits less
+the load secure. You need to inspect again:                   maximum axle weight for axles that are closer
+
+Section 3 - Transporting Cargo Safely                         Page 3-1
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System                             Figure 3.1
+
+together. This is to prevent overloading bridges and          3.3.2 ­ Cargo Tie-down
+roadways.
+                                                              On flatbed trailers or trailers without sides, cargo
+Overloading can have bad effects on steering,                 must be secured to keep it from shifting or falling off.
+braking, and speed control. Overloaded trucks have            In closed vans, tie-downs can also be important to
+to go very slowly on upgrades. Worse, they may                prevent cargo shifting that may affect the handling
+gain too much speed on downgrades. Stopping                   of the vehicle. Tie-downs must be of the proper type
+distance increases. Brakes can fail when forced to            and proper strength. Federal regulations require the
+work too hard.                                                aggregate working load limit of any securement
+                                                              system used to secure an article or group of articles
+During bad weather or in mountains, it may not be             against movement must be at least one-half times
+safe to operate at legal maximum weights. Take this           the weight of the article or group of articles. Proper
+into account before driving.                                  tie-down equipment must be used, including ropes,
+                                                              straps, chains, and tensioning devices (winches,
+3.2.3 ­ Don't Be Top-heavy                                    ratchets, clinching components). Tie-downs must be
+                                                              attached to the vehicle correctly (hooks, bolts, rails,
+The height of the vehicle's center of gravity is very         rings). See figure 3.2.
+important for safe handling. A high center of gravity
+(cargo piled up high or heavy cargo on top) means
+you are more likely to tip over. It is most dangerous
+in curves, or if you have to swerve to avoid a hazard.
+It is very important to distribute the cargo so it is as
+low as possible. Put the heaviest parts of the cargo
+under the lightest parts.
+
+3.2.4 ­ Balance the Weight
+
+Poor weight balance can make vehicle handling
+unsafe. Too much weight on the steering axle can
+cause hard steering. It can damage the steering
+axle and tires. Under-loaded front axles (caused by
+shifting weight too far to the rear) can make the
+steering axle weight too light to steer safely. Too
+little weight on the driving axles can cause poor
+traction. The drive wheels may spin easily. During
+bad weather, the truck may not be able to keep
+going. Weight that is loaded so there is a high center
+of gravity causes greater chance of rollover. On flat
+bed vehicles, there is also a greater chance that the
+load will shift to the side or fall off. See Figure 3.1.
+
+3.3 ­ Securing Cargo
+
+3.3.1 ­ Blocking and Bracing
+
+Blocking is used in the front, back, and/or sides of a
+piece of cargo to keep it from sliding. Blocking is
+shaped to fit snugly against cargo. It is secured to
+the cargo deck to prevent cargo movement. Bracing
+is also used to prevent movement of cargo. Bracing
+goes from the upper part of the cargo to the floor
+and/or walls of the cargo compartment.
+
+                                                              Figure 3.2
+
+Section 3 - Transporting Cargo Safely                                     Page 3-2
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System  3.4.2 ­ Hanging Meat
+
+Cargo should have at least one tie-down for each              Hanging meat (suspended beef, pork, lamb) in a
+ten feet of cargo. Make sure you have enough tie-             refrigerated truck can be a very unstable load with a
+downs to meet this need. No matter how small the              high center of gravity. Particular caution is needed
+cargo, it should have at least two tie-downs.                 on sharp curves such as off ramps and on ramps.
+                                                              Go slowly.
+There are special requirements for securing various
+heavy pieces of metal. Find out what they are if you          3.4.3 ­ Livestock
+are to carry such loads.
+                                                              Livestock can move around in a trailer, causing
+3.3.3 ­ Header Boards                                         unsafe handling. With less than a full load, use false
+                                                              bulkheads to keep livestock bunched together. Even
+Front-end header boards ("headache racks")                    when bunched, special care is necessary because
+protect you from your cargo in case of a crash or             livestock can lean on curves. This shifts the center
+emergency stop. Make sure the front-end structure             of gravity and makes rollover more likely.
+is in good condition. The front-end structure should
+block the forward movement of any cargo you carry.            3.4.4 ­ Oversized Loads
+
+3.3.4 ­ Covering Cargo                                        Over-length, over-width, and/or overweight loads
+                                                              require special transit permits. Driving is usually
+There are two basic reasons for covering cargo:               limited to certain times. Special equipment may be
+     · To protect people from spilled cargo.                  necessary such as "wide load" signs, flashing lights,
+     · To protect the cargo from weather.                     flags, etc. Such loads may require a police escort or
+                                                              pilot vehicles bearing warning signs and/or flashing
+Spill protection is a safety requirement in many              lights. These special loads require special driving
+states. Be familiar with the laws in the states you           care.
+drive in.
+                                                                                    Section 3
+You should look at your cargo covers in the mirrors                        Test Your Knowledge
+from time to time while driving. A flapping cover can
+tear loose, uncovering the cargo, and possibly block          1. What four things related to cargo are drivers
+your view or someone else's.                                       responsible for?
+
+3.3.5 ­ Sealed and Containerized Loads                        2. How often must you stop while on the road to
+                                                                   check your cargo?
+Containerized loads generally are used when freight
+is carried part way by rail or ship. Delivery by truck        3. How is Gross Combination Weight Rating
+occurs at the beginning and/or end of the journey.                 different from Gross Combination Weight?
+Some containers have their own tiedown devices or
+locks that attach directly to a special frame. Others         4. Name two situations where legal maximum
+have to be loaded onto flatbed trailers. They must                 weights may not be safe.
+be properly secured just like any other cargo.
+                                                              5. What can happen if you don't have enough
+You cannot inspect sealed loads, but you should                    weight on the front axle?
+check that you don't exceed gross weight and axle
+weight limits.                                                6. What is the minimum number of tie-downs for
+                                                                   any flatbed load?
+3.4 ­ Cargo Needing Special Attention
+                                                              7. What is the minimum number of tie-downs for a
+3.4.1 ­ Dry Bulk                                                   20-foot load?
+
+Dry bulk tanks require special care because they              8. Name the two basic reasons for covering cargo
+have a high center of gravity, and the load can shift.             on an open bed.
+Be extremely cautious (slow and careful) going
+around curves and making sharp turns.                         9. What must you check before transporting a
+                                                                   sealed load?
+
+                                                              These questions may be on your test. If you can't
+                                                              answer them all, re-read Section 3.
+
+Section 3 - Transporting Cargo Safely                         Page 3-3
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System
+
+                      THIS PAGE INTENTIONALLY LEFT BLANK.
+
+Section 3 - Transporting Cargo Safely                         Page 3-2
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System  Make sure your bus has the fire extinguisher and
+                                                              emergency reflectors (3 reflective triangles or at
+           Section 4                                          least 6 fusees or 3 liquid burning flares) required
+       TRANSPORTING                                           by law. The bus must also have spare electrical
+  PASSENGERS SAFELY                                           fuses, unless equipped with circuit breakers.
+
+This Section Covers                                           4.1.2 ­ Access Doors and Panels
+
+· Vehicle Inspection                                          As you check the outside of the bus, close any open
+· Loading                                                     emergency exits. Also, close any open access
+· On the Road                                                 panels (for baggage, restroom service, engine, etc.)
+· After-trip Vehicle Inspection                               before driving.
+· Prohibited Practices
+· Use of Brake-door Interlocks                                4.1.3 ­ Bus Interior
+                                                              People sometimes damage unattended buses.
+Bus drivers must have a commercial driver license             Always check the interior of the bus before driving
+if they drive a vehicle designed to seat more than 16         to ensure rider safety. Aisles and stairwells should
+or more persons, including the driver.                        always be clear. The following parts of your bus
+                                                              must be in safe working condition:
+Bus drivers must have a passenger endorsement on
+their commercial driver license. To get the                        · Each handhold and railing.
+endorsement you must pass a knowledge test on                      · Floor covering.
+Sections 2 and 4 of this manual. (If your bus has air              · Signaling devices, including the restroom
+brakes, you must also pass a knowledge test on
+Section 5.) You must also pass the skills tests                          emergency buzzer, if the bus has a
+required for the class of vehicle you drive.                             restroom.
+                                                                   · Emergency exit handles.

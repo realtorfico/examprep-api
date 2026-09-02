@@ -1,0 +1,155 @@
+Section 8 - Tank Vehicles
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+8.2.2 ­ Danger of Surge                                       Legal weight limits.
+
+Liquid surge results from movement of the liquid in           8.3 ­ Safe Driving Rules
+partially filled tanks. This movement can have bad
+effects on handling. For example, when coming to              In order to drive tank vehicles safely, you must
+a stop, the liquid will surge back and forth. When            remember to follow all the safe driving rules. A few
+the wave hits the end of the tank, it tends to push           of these rules are:
+the truck in the direction the wave is moving. If the
+truck is on a slippery surface such as ice, the wave          8.3.1 ­ Drive Smoothly
+can shove a stopped truck out into an intersection.
+The driver of a liquid tanker must be very familiar           Because of the high center of gravity and the surge
+with the handling of the vehicle.                             of the liquid, you must start, slow down, and stop
+                                                              very smoothly. Also, make smooth turns and lane
+8.2.3 ­ Bulkheads                                             changes.
+
+Some liquid tanks are divided into several smaller            8.3.2 ­ Controlling Surge
+tanks by bulkheads. When loading and unloading
+the smaller tanks, the driver must pay attention to           Keep a steady pressure on the brakes. Do not
+weight distribution. Don't put too much weight on             release too soon when coming to a stop.
+the front or rear of the vehicle.
+                                                              Brake far in advance of a stop and increase your
+8.2.4 ­ Baffled Tanks                                         following distance.
+
+Baffled liquid tanks have bulkheads in them with              If you must make a quick stop to avoid a crash,
+holes that let the liquid flow through. The baffles           use controlled or stab braking. If you do not
+help to control the forward and backward liquid               remember how to stop using these methods,
+surge. Side-to-side surge can still occur. This can           review subsection 2.17.2. Also, remember that if
+cause a roll over.                                            you steer quickly while braking, your vehicle may
+                                                              roll over.
+8.2.5 ­ Un-baffled Tanks
+                                                              8.3.3 ­ Curves
+Un-baffled liquid tankers (sometimes called
+"smooth bore" tanks) have nothing inside to slow              Slow down before curves, then accelerate slightly
+down the flow of the liquid. Therefore, forward-and-          through the curve. The posted speed for a curve
+back surge is very strong. Un-baffled tanks are               may be too fast for a tank vehicle.
+usually those that transport food products (milk, for
+example). (Sanitation regulations forbid the use of           8.3.4 ­ Stopping Distance
+baffles because of the difficulty in cleaning the
+inside of the tank.) Be extremely cautious (slow              Keep in mind how much space you need to stop
+and careful) in driving smooth bore tanks,                    your vehicle. Remember that wet roads double the
+especially when starting and stopping.                        normal stopping distance. Empty tank vehicles
+                                                              may take longer to stop than full ones.
+8.2.6 ­ Outage
+                                                              8.3.5 ­ Skids
+Never load a cargo tank totally full. Liquids expand
+as they warm and you must leave room for the                  Don't over steer, over accelerate, or over brake. If
+expanding liquid. This is called "outage." Since              you do, your vehicle may skid. On tank trailers, if
+different liquids expand by different amounts, they           your drive wheels or trailer wheels begin to skid,
+require different amounts of outage. You must                 your vehicle may jackknife. When any vehicle
+know the outage requirement when hauling liquids              starts to skid, you must take action to restore
+in bulk.                                                      traction to the wheels.
+
+8.2.7 ­ How Much to Load?                                                 Section 8
+                                                                  Test Your Knowledge
+A full tank of dense liquid (such as some acids)
+may exceed legal weight limits. For that reason,              1.  How are bulkheads different than baffles?
+you may often only partially fill tanks with heavy
+liquids. The amount of liquid to load into a tank             2.  Should a tank vehicle take curves, on
+depends on:
+                                                                  ramps, or off ramps at the posted speed
+The amount the liquid will expand in transit.
+                                                                  limits?
+The weight of the liquid.
+                                                              3.  How are smooth bore tankers different to
+Section 8 - Tank Vehicles
+Version: July 2014                                                drive than those with baffles?
+
+                                                                                                  Page 8-2
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+4.  What three things determine how much                      5.  What is outage?
+
+    liquid you can load?                                      6.  How can you help control surge?
+
+                                                              7.  What two reasons make special care
+
+                                                                  necessary when driving tank vehicles?
+
+                                                              These questions may be on the test. If you can't
+                                                              answer them all, re-read Section 8.
+
+Section 8 - Tank Vehicles                                                                          Page 8-3
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+                     THIS PAGE INTENTIONALLY LEFT BLANK.
+
+Section 8 - Tank Vehicles                                     Page 8-4
+Version: July 2013
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+           Section 9                                          You must have a commercial driver license (CDL)
+HAZARDOUS MATERIALS                                           with a hazardous materials endorsement before
+                                                              you drive any size vehicle that is used to transport
+             This Section Covers                              hazardous material as defined in 49 CFR 383.5.
+                                                              You must pass a written test about the regulations
+                                                              and requirements to get this endorsement.
+
+ The Intent of the Regulations                                Everything you need to know to pass the written
+ Bulk Tank Loading, Unloading, and                            test is in this section. However, this is only a
+                                                              beginning. Most drivers need to know much more
+    Marking                                                   on the job. You can learn more by reading and
+ Driver Responsibilities                                      understanding the federal and state rules
+ Driving and Parking Rules                                    applicable to hazardous materials, as well as,
+ Communications Rules                                         attending hazardous materials training courses.
+ Emergencies                                                  Your employer, colleges and universities, and
+ Loading and Unloading                                        various associations usually offer these courses.
+                                                              You can get copies of the Federal Regulations (49
+Hazardous materials are products that pose a risk             CFR) through your local Government Printing
+to health, safety, and property during                        Office bookstore and various industry publishers.
+transportation. The term often is shortened to                Union or company offices often have copies of the
+HAZMAT, which you may see on road signs, or to                rules for driver use. Find out where you can get
+HM in government regulations. Hazardous                       your own copy to use on the job.
+materials include explosives, various types of gas,
+solids, flammable and combustible liquid, and other           The regulations require training and testing for all
+materials. Because of the risks involved and the              drivers involved in transporting hazardous
+potential consequences these risks impose, all                materials. Your employer or a designated
+levels of government regulate the handling of                 representative is required to provide this training
+hazardous materials.                                          and testing. Hazardous materials employers are
+                                                              required to keep a record of training for each
+The Hazardous Materials Regulations (HMR) is                  employee as long as that employee is working with
+found in parts 100 - 185 of title 49 of the Code of           hazardous materials, and for 90 days thereafter.
+Federal Regulations. The common reference for                 The regulations require that hazardous materials
+these regulations is 49 CFR 100 - 185                         employees be trained and tested at least once
+                                                              every three years.
+
+The Hazardous Materials Table in the regulations              All drivers must be trained in the security risks of
+contains a list of these items. However, this list is         hazardous materials transportation. This training
+not all-inclusive. Whether or not a material is               must include how to recognize and respond to
+considered hazardous is based on its                          possible security threats.
+characteristics and the shipper's decision on
+whether or not the material meets a definition of a           The regulations also require that drivers have
+hazardous material in the regulations.                        special training before driving a vehicle
+                                                              transporting certain flammable gas materials or
+The regulations require vehicles transporting                 highway route controlled quantities of radioactive
+certain types or quantities of hazardous materials            materials. In addition, drivers transporting cargo
+to display diamond-shaped, square on point,                   tanks and portable tanks must receive specialized
+warning signs called placards.                                training. Each driver's employer or his or her
+                                                              designated representative must provide such
+This section is designed to assist you in                     training.
+understanding your role and responsibilities in
+hauling hazardous materials. Due to the constantly            Some locations require permits to transport certain
+changing nature of government regulations, it is              explosives or bulk hazardous wastes. States and
+impossible to guarantee absolute accuracy of the              counties also may require drivers to follow special
+materials in this section. An up-to-date copy of the          hazardous materials routes. The federal
+complete regulations is essential for you to have.            government may require permits or exemptions for
+Included in these regulations is a complete                   special hazardous materials cargo such as rocket
+glossary of terms.                                            fuel. Find out about permits, exemptions, and
+                                                              special routes for the places you drive.
+
+Section 9 - Hazardous Material                                Page 9-1

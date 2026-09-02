@@ -1,0 +1,138 @@
+           Section 8                                          Check manhole covers and vents. Make sure the
+      TANK VEHICLES                                           covers have gaskets and they close correctly.
+                                                              Keep the vents clear so they work correctly.
+This Section Covers
+                                                              8.1.2 ­ Check Special Purpose Equipment
+· Inspecting Tank Vehicles                                    If your vehicle has any of the following equipment,
+· Driving Tank Vehicles                                       make sure it works:
+· Safe Driving Rules                                          Vapor recovery kits.
+                                                              Grounding and bonding cables.
+This section has information needed to pass the               Emergency shut-off systems.
+CDL knowledge test for driving a tank vehicle. (You           Built in fire extinguisher.
+should also study Sections 2, 5, 6, and 9). A tank            Never drive a tank vehicle with open valves or
+endorsement is required for certain vehicles that             manhole covers.
+transport liquids or gases. The liquid or gas does not
+have to be a hazardous material. A tank                       8.1.3 ­ Special Equipment
+endorsement is required if your vehicle needs a               Check the emergency equipment required for your
+Class A or B CDL and you want to haul a liquid or             vehicle. Find out what equipment you're required to
+liquid gas in a tank or tanks having an individual            carry and make sure you have it (and it works).
+rated capacity of more than 119 gallons and an
+aggregate rated capacity of 1000 gallons or more              8.2 ­ Driving Tank Vehicles
+that is either permanently or temporarily attached to
+the vehicle or the chassis. A tank endorsement is             Hauling liquids in tanks requires special skills
+also required for Class C vehicles when the vehicle           because of the high center of gravity and liquid
+is used to transport hazardous materials in liquid or         movement. See Figure 8.1.
+gas form in the above described rated tanks.
+
+Before loading, unloading, or driving a tanker,
+inspect the vehicle. This makes sure that the vehicle
+is safe to carry the liquid or gas and is safe to drive.
+
+8.1 ­ Inspecting Tank Vehicles                                                           Figure 8.1
+
+Tank vehicles have special items that you need to             8.2.1 ­ High Center of Gravity
+check. Tank vehicles come in many types and sizes.
+You need to check the vehicle's operator manual to            High center of gravity means that much of the load's
+make sure you know how to inspect your tank                   weight is carried high up off the road. This makes
+vehicle.                                                      the vehicle top-heavy and easy to roll over. Liquid
+                                                              tankers are especially easy to roll over. Tests have
+8.1.1 ­ Leaks                                                 shown that tankers can turn over at the speed limits
+                                                              posted for curves. Take highway curves and on
+On all tank vehicles, the most important item to              ramp/off ramp curves well below the posted speeds.
+check for is leaks. Check under and around the
+vehicle for signs of any leaking. Don't carry liquids         8.2.2 ­ Danger of Surge
+or gases in a leaking tank. To do so is a crime. You
+will be cited and prevented from driving further. You         Liquid surge results from movement of the liquid in
+may also be liable for the clean-up of any spill. In          partially filled tanks. This movement can have bad
+general, check the following:                                 effects on handling. For example, when coming to a
+                                                              stop, the liquid will surge back and forth. When the
+Check the tank's body or shell for dents or leaks.
+
+Check the intake, discharge, and cut-off valves.
+Make sure the valves are in the correct position
+before loading, unloading, or moving the vehicle.
+
+Check pipes, connections, and hoses for leaks,
+especially around joints.
+
+Section 8 - Tank Vehicles                                     Page 8-8-1
+Version: July 2017
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+wave hits the end of the tank, it tends to push the           8.3.1 ­ Drive Smoothly
+truck in the direction the wave is moving. If the truck
+is on a slippery surface such as ice, the wave can            Because of the high center of gravity and the surge
+shove a stopped truck out into an intersection. The           of the liquid, you must start, slow down, and stop
+driver of a liquid tanker must be very familiar with          very smoothly. Also, make smooth turns and lane
+the handling of the vehicle.                                  changes.
+
+8.2.3 ­ Bulkheads                                             8.3.2 ­ Controlling Surge
+
+Some liquid tanks are divided into several smaller            Keep a steady pressure on the brakes. Do not
+tanks by bulkheads. When loading and unloading                release too soon when coming to a stop.
+the smaller tanks, the driver must pay attention to
+weight distribution. Don't put too much weight on the         Brake far in advance of a stop and increase your
+front or rear of the vehicle.                                 following distance.
+
+8.2.4 ­ Baffled Tanks                                         If you must make a quick stop to avoid a crash, use
+                                                              controlled or stab braking. If you do not remember
+Baffled liquid tanks have bulkheads in them with              how to stop using these methods, review subsection
+holes that let the liquid flow through. The baffles           2.17.2. Also, remember that if you steer quickly
+help to control the forward and backward liquid               while braking, your vehicle may roll over.
+surge. Side-to-side surge can still occur. This can
+cause a roll over.                                            8.3.3 ­ Curves
+
+8.2.5 ­ Un-baffled Tanks                                      Slow down before curves, then accelerate slightly
+                                                              through the curve. The posted speed for a curve
+Un-baffled liquid tankers (sometimes called                   may be too fast for a tank vehicle.
+"smooth bore" tanks) have nothing inside to slow
+down the flow of the liquid. Therefore, forward-and-          8.3.4 ­ Stopping Distance
+back surge is very strong. Un-baffled tanks are
+usually those that transport food products (milk, for         Keep in mind how much space you need to stop
+example). (Sanitation regulations forbid the use of           your vehicle. Remember that wet roads double the
+baffles because of the difficulty in cleaning the             normal stopping distance. Empty tank vehicles may
+inside of the tank.) Be extremely cautious (slow and          take longer to stop than full ones.
+careful) in driving smooth bore tanks, especially
+when starting and stopping.                                   8.3.5 ­ Skids
+
+8.2.6 ­ Outage                                                Don't over steer, over accelerate, or over brake. If
+                                                              you do, your vehicle may skid. On tank trailers, if
+Never load a cargo tank totally full. Liquids expand          your drive wheels or trailer wheels begin to skid,
+as they warm and you must leave room for the                  your vehicle may jackknife. When any vehicle starts
+expanding liquid. This is called "outage." Since              to skid, you must take action to restore traction to
+different liquids expand by different amounts, they           the wheels.
+require different amounts of outage. You must know
+the outage requirement when hauling liquids in bulk.                      Section 8
+                                                                  Test Your Knowledge
+8.2.7 ­ How Much to Load?
+                                                              1.  How are bulkheads different than baffles?
+A full tank of dense liquid (such as some acids) may
+exceed legal weight limits. For that reason, you may          2.  Should a tank vehicle take curves, on
+often only partially fill tanks with heavy liquids. The
+amount of liquid to load into a tank depends on:                  ramps, or off ramps at the posted speed
+
+The amount the liquid will expand in transit.                     limits?
+
+The weight of the liquid.                                     3.  How are smooth bore tankers different to
+
+Legal weight limits.                                              drive than those with baffles?
+
+8.3 ­ Safe Driving Rules                                      4.  What three things determine how much
+
+In order to drive tank vehicles safely, you must                  liquid you can load?
+remember to follow all the safe driving rules. A few
+of these rules are:                                           5.  What is outage?
+
+                                                              6.  How can you help control surge?
+
+                                                              7.  What two reasons make special care
+
+                                                                  necessary when driving tank vehicles?
+
+                                                              These questions may be on the test. If you can't
+                                                              answer them all, re-read Section 8.
+
+Section 8 - Tank Vehicles                                                                         Page 8-8-2
+Version: July 2017
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+

@@ -1,0 +1,275 @@
+7.1 ­ Pulling Double/Triple Trailers                          7.1.7 ­ Parking the Vehicle
+
+Take special care when pulling two and three                  Make sure you do not get in a spot you cannot pull
+trailers. There are more things that can go wrong,            straight through. You need to be aware of how
+and doubles/triples are less stable than other                parking lots are arranged in order to avoid a long
+commercial vehicles. Some areas of concern are                and difficult escape.
+discussed below.
+                                                              7.1.8 ­ Antilock Braking Systems on Converter
+7.1.1 ­ Prevent Trailer from Rolling Over                     Dollies
+
+To prevent trailers from rolling over, you must steer         Converter dollies built on or after March 1, 1998, are
+gently and go slowly around corners, on ramps, off            required to have antilock brakes. These dollies will
+ramps, and curves. A safe speed on a curve for a              have a yellow lamp on the left side of the dolly.
+straight truck or a single trailer combination vehicle
+may be too fast for a set of doubles or triples.              7.2 ­ Coupling and Uncoupling
+
+7.1.2 ­ Beware of the Crack-the-whip Effect                   Knowing how to couple and uncouple correctly is
+                                                              basic to safe operation of doubles and triples.
+Doubles and triples are more likely to turn over than         Wrong coupling and uncoupling can be very
+other combination vehicles because of the "crack-             dangerous. Coupling and uncoupling steps for
+the-whip" effect. You must steer gently when pulling          doubles and triples are listed below.
+trailers. The last trailer in a combination is most
+likely to turn over. If you don't understand the crack-       7.2.1 ­ Coupling Twin Trailers
+the-whip effect, study subsection 6.1.2 of this               Secure Second (Rear) Trailer
+manual.
+                                                              If the second trailer doesn't have spring brakes,
+7.1.3 ­ Inspect Completely                                    drive the tractor close to the trailer, connect the
+                                                              emergency line, charge the trailer air tank, and
+There are more critical parts to check when you               disconnect the emergency line. This will set the
+have two or three trailers. Check them all. Follow            trailer emergency brakes (if the slack adjusters are
+the procedures described later in this section.               correctly adjusted). Chock the wheels if you have
+                                                              any doubt about the brakes.
+7.1.4 ­ Look Far Ahead
+                                                              For the safest handling on the road, the more
+Doubles and triples must be driven very smoothly to           heavily loaded semitrailer should be in first position
+avoid rollover or jackknife. Therefore, look far ahead        behind the tractor. The lighter trailer should be in the
+so you can slow down or change lanes gradually                rear.
+when necessary.
+                                                                                                                                    Page 7-1
+Section 7 - Doubles and Triples
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System  Connect Converter Dolly to Rear Trailer
+
+A converter gear on a dolly is a coupling device of                · Make sure trailer brakes are locked and/or
+one or two axles and a fifth wheel by which a                            wheels chocked.
+semitrailer can be coupled to the rear of a tractor-
+trailer combination forming a double bottom rig. See               · Make sure trailer height is correct. (It must
+Figure 7.1.                                                             be slightly lower than the center of the fifth
+                                                                        wheel, so trailer is raised slightly when
+                           Figure 7.1                                   dolly is pushed under.)
+
+Position Converter Dolly in Front of Second                        · Back converter dolly under rear trailer.
+(Rear) Trailer
+                                                                   · Raise landing gear slightly off ground to
+Release dolly brakes by opening the air tank                            prevent damage if trailer moves.
+petcock. (Or, if the dolly has spring brakes, use the
+dolly parking brake control.)                                      · Test coupling by pulling against pin of the
+                                                                        second semitrailer.
+If the distance is not too great, wheel the dolly into
+position by hand so it is in line with the kingpin.                · Make visual check of coupling. (No space
+                                                                         between upper and lower fifth wheel.
+Or, use the tractor and first semitrailer to pick up the                 Locking jaws closed on kingpin.)
+converter dolly:
+                                                                   · Connect safety chains, air hoses, and light
+     · Position combination as close as possible                        cords.
+          to converter dolly.
+                                                                   · Close converter dolly air tank petcock and
+     · Move dolly to rear of first semitrailer and                      shut-off valves at rear of second trailer
+          couple it to the trailer.                                     (service and emergency shut-offs).
+
+     · Lock pintle hook.                                           · Open shut-off valves at rear of first trailer
+     · Secure dolly support in raised position.                         (and on dolly if so equipped).
+     · Pull dolly into position as close as possible
+                                                                   · Raise landing gear completely.
+          to nose of the second semitrailer.
+     · Lower dolly support.                                        · Charge trailer brakes (push "air supply"
+     · Unhook dolly from first trailer.                                 knob in), and check for air at rear of
+     · Wheel dolly into position in front of second                     second trailer by opening the emergency
+                                                                        line shut-off. If air pressure isn't there,
+          trailer in line with the kingpin.                             something is wrong and the brakes won't
+                                                                        work.
+Connect Converter Dolly to Front Trailer
+     · Back first semitrailer into position in front of       7.2.2 ­ Uncoupling Twin Trailers
+          dolly tongue.
+     · Hook dolly to front trailer.                           Uncouple Rear Trailer
+     · Lock pintle hook.
+     · Secure converter gear support in raised                     · Park rig in a straight line on firm level
+          position.                                                     ground.
+
+                                                                   · Apply parking brakes so rig won't move.
+
+                                                                   · Chock wheels of second trailer if it doesn't
+                                                                         have spring brakes.
+
+                                                                   · Lower landing gear of second semitrailer
+                                                                        enough to remove some weight from dolly.
+
+                                                                   · Close air shut-offs at rear of first
+                                                                        semitrailer (and on dolly if so equipped).
+
+                                                                   · Disconnect all dolly air and electric lines
+                                                                        and secure them.
+
+                                                                   · Release dolly brakes.
+
+                                                                   · Release converter dolly fifth wheel latch.
+
+                                                                   · Slowly pull tractor, first semitrailer, and
+                                                                        dolly forward to pull dolly out from under
+                                                                        rear semitrailer.
+
+Section 7 - Doubles and Triples                               Page 7-2
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System  7.3.1 ­ Additional Checks
+
+Uncouple Converter Dolly                                      Do these checks in addition to those already listed
+     · Lower dolly landing gear.                              in Section 2, Step 5: Do a Walk-around Inspection.
+     · Disconnect safety chains.
+     · Apply converter gear spring brakes or                  Coupling System Areas
+          chock wheels.
+     · Release pintle hook on first semi-trailer.             Check fifth wheel (lower).
+     · Slowly pull clear of dolly.                                 · Securely mounted to frame.
+                                                                   · No missing or damaged parts.
+Never unlock the pintle hook with the dolly still under            · Enough grease.
+the rear trailer. The dolly tow bar may fly up,                    · No visible space between upper and lower
+possibly causing injury, and making it very difficult                    fifth wheel.
+to re-couple.                                                      · Locking jaws around the shank, not the
+                                                                         head of kingpin.
+7.2.3 ­ Coupling and Uncoupling Triple Trailers                    · Release arm properly seated and safety
+                                                                         latch/lock engaged.
+Couple Tractor/First Semitrailer to
+Second/Third Trailers                                         Check fifth wheel (upper).
+                                                                   · Glide plate securely mounted to trailer
+     · Couple tractor to first trailer. Use the                          frame.
+          method already described for coupling                    · Kingpin not damaged.
+          tractor-semitrailers.
+                                                              Air and electric lines to trailer.
+     · Move converter dolly into position and                      · Electrical cord firmly plugged in and
+          couple first trailer to second trailer using                   secured.
+          the method for coupling doubles. Triples                 · Air-lines properly connected to glad hands,
+          rig is now complete.                                           no air leaks, properly secured with enough
+                                                                         slack for turns.
+Uncouple Triple-trailer Rig                                        · All lines free from damage.
+     · Uncouple third trailer by pulling the dolly
+          out, then unhitching the dolly using the            Sliding fifth wheel.
+          method for uncoupling doubles.                           · Slide not damaged or parts missing.
+     · Uncouple remainder of rig as you would                      · Properly greased.
+          any double-bottom rig using the method                   · All locking pins present and locked in
+          already described.                                             place.
+                                                                   · If air powered, no air leaks.
+7.2.4 ­ Coupling and Uncoupling Other                              · Check that fifth wheel is not so far forward
+Combinations                                                             that the tractor frame will hit landing gear,
+                                                                         or cab will hit the trailer, during turns.
+The methods described so far apply to the more
+common tractor-trailer combinations. However,                 Landing Gear
+there are other ways of coupling and uncoupling the                · Fully raised, no missing parts, not bent or
+many types of truck-trailer and tractor-trailer                          otherwise damaged.
+combinations that are in use. There are too many to                · Crank handle in place and secured.
+cover in this manual. You will need to learn the                   · If power operated, no air or hydraulic
+correct way to couple and uncouple the vehicle(s)                        leaks.
+you will drive according to the manufacturer and/or
+owner specifications.                                         Double and Triple Trailers
+                                                                   · Shut-off valves (at rear of trailers, in
+7.3 ­ Inspecting Doubles and Triples                                     service and emergency lines).
+
+Use the seven-step inspection procedure described                           Rear of front trailers: OPEN.
+in Section 2 to inspect your combination vehicle.                           Rear of last trailer: CLOSED.
+There are more things to inspect on a combination
+vehicle than on a single vehicle. Many of these                                                                                     Page 7-3
+items are simply more of what you would find on a
+single vehicle. (For example, tires, wheels, lights,
+reflectors, etc.) However, there are also some new
+things to check. These are discussed below.
+
+Section 7 - Doubles and Triples
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System  protection valve control) should pop out (or go from
+                                                              "normal" to "emergency" position) when the air
+              Converter dolly air tank drain                  pressure falls into the pressure range specified by
+                                                              the manufacturer. (Usually within the range of 20 to
+                     valve: CLOSED.                           45 psi.)
+
+     · Be sure air-lines are supported and glad               If the tractor protection valve doesn't work properly,
+          hands are properly connected.                       an air hose or trailer brake leak could drain all the
+                                                              air from the tractor. This would cause the
+     · If spare tire is carried on converter gear             emergency brakes to come on, with possible loss of
+          (dolly), make sure it's secured.                    control.
+
+     · Be sure pintle-eye of dolly is in place in             Test Trailer Emergency Brakes. Charge the trailer
+          pintle hook of trailer(s).                          air brake system and check that the trailer rolls
+                                                              freely. Then stop and pull out the trailer air supply
+     · Make sure pintle hook is latched.                      control (also called tractor protection valve control
+                                                              or trailer emergency valve) or place it in the
+     · Safety chains should be secured to                     "emergency" position. Pull gently on the trailer with
+          trailer(s).                                         the tractor to check that the trailer emergency
+                                                              brakes are on.
+     · Be sure light cords are firmly in sockets on
+          trailers.                                           Test Trailer Service Brakes. Check for normal air
+                                                              pressure, release the parking brakes, move the
+7.3.2 ­ Additional Things to Check during a                   vehicle forward slowly, and apply trailer brakes with
+Walk-around Inspection                                        the hand control (trolley valve), if so equipped. You
+Do these checks in addition to subsection 5.3,                should feel the brakes come on. This tells you the
+Inspecting Air Brake Systems.                                 trailer brakes are connected and working. (The
+                                                              trailer brakes should be tested with the hand valve,
+7.4 ­ Doubles/Triples Air Brake Check                         but controlled in normal operation with the foot
+                                                              pedal, which applies air to the service brakes at all
+Check the brakes on a double or triple trailer as you         wheels.)
+would any combination vehicle. Subsection 6.5.2
+explains how to check air brakes on combination                                           Section 7
+vehicles. You must also make the following checks                                Test Your Knowledge
+on your double or triple trailers
+                                                              1. What is a converter dolly?
+7.4.1 ­ Additional Air Brake Checks                           2. Do converter dollies have spring brakes?
+                                                              3. What three methods can you use to secure a
+Check That Air Flows to All Trailers (Double and
+Triple Trailers). Use the tractor parking brake                       second trailer before coupling?
+and/or chock the wheels to hold the vehicle. Wait for         4. How do you check to make sure trailer height
+air pressure to reach normal, then push in the red
+"trailer air supply" knob. This will supply air to the                is correct before coupling?
+emergency (supply) lines. Use the trailer handbrake           5. What do you check when making a visual
+to provide air to the service line. Go to the rear of
+the rig. Open the emergency line shut-off valve at                    check of coupling?
+the rear of the last trailer. You should hear air             6. Why should you pull a dolly out from under a
+escaping, showing the entire system is charged.
+Close the emergency line valve. Open the service                      trailer before you disconnect it from the trailer
+line valve to check that service pressure goes                        in front?
+through all the trailers (this test assumes that the          7. What should you check for when inspecting
+trailer handbrake or the service brake pedal is on),                  the converter dolly? The pintle hook?
+and then close the valve. If you do NOT hear air              8. Should the shut-off valves on the rear of the
+escaping from both lines, check that the shut-off                     last trailer be open or closed? On the first
+valves on the trailer(s) and dolly(ies) are in the                    trailer in a set of doubles? On the middle
+OPEN position. You MUST have air all the way to                       trailer of a set of triples?
+the back for all the brakes to work.                          9. How can you test that air flows to all trailers?
+                                                              10. How do you know if your converter dolly is
+Test Tractor Protection Valve. Charge the trailer                     equipped with antilock brakes?
+air brake system. (That is, build up normal air
+pressure and push the "air supply" knob in.) Shut             These questions may be on your test. If you can't
+the engine off. Step on and off the brake pedal               answer them all, re-read Section 7.
+several times to reduce the air pressure in the tanks.
+The trailer air supply control (also called the tractor
+
+Section 7 - Doubles and Triples                               Page 7-4
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System       · Check manhole covers and vents. Make
+                                                                        sure the covers have gaskets and they
+           Section 8                                                    close correctly. Keep the vents clear so
+      TANK VEHICLES                                                     they work correctly.
+
+This Section Covers                                           8.1.2 ­ Check Special Purpose Equipment
+
+· Inspecting Tank Vehicles                                    If your vehicle has any of the following equipment,
+· Driving Tank Vehicles                                       make sure it works:
+· Safe Driving Rules
+                                                                   · Vapor recovery kits.
+This section has information needed to pass the                    · Grounding and bonding cables.
+CDL knowledge test for driving a tank vehicle. (You                · Emergency shut-off systems.
+should also study Sections 2, 5, 6, and 9). A tank                 · Built in fire extinguisher.
+endorsement is required for certain vehicles that
+transport liquids or gases. The liquid or gas does not        Never drive a tank vehicle with open valves or
+have to be a hazardous material. A tank                       manhole covers.
+endorsement is required if your vehicle needs a
+Class A or B CDL and you want to haul a liquid or             8.1.3 ­ Special Equipment
+liquid gas in a tank or tanks having an individual
+rated capacity of more than 119 gallons and an                Check the emergency equipment required for your
+aggregate rated capacity of 1000 gallons or more              vehicle. Find out what equipment you're required to
+that is either permanently or temporarily attached to         carry and make sure you have it (and it works).
+the vehicle or the chassis. A tank endorsement is
+also required for Class C vehicles when the vehicle           8.2 ­ Driving Tank Vehicles
+is used to transport hazardous materials in liquid or
+gas form in the above described rated tanks.                  Hauling liquids in tanks requires special skills
+                                                              because of the high center of gravity and liquid
+Before loading, unloading, or driving a tanker,               movement. See Figure 8.1.
+inspect the vehicle. This makes sure that the vehicle
+is safe to carry the liquid or gas and is safe to drive.
+

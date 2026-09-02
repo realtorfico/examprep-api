@@ -1,0 +1,765 @@
+Section 9 - Hazardous Material                                Page 9-1
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+9.1 ­ The Intent of the Regulations                           Identification number
+                                                              Proper shipping name.
+9.1.1 ­ Contain the Material                                  Hazard class.
+                                                              Packing group.
+Transporting hazardous materials can be risky.                Correct packaging.
+The regulations are intended to protect you, those            Correct label and markings.
+around you, and the environment. They tell                    Correct placards.
+shippers how to package the materials safely and              Must package, mark, and label the materials;
+drivers how to load, transport, and unload the                prepare shipping papers; provide emergency
+material. These are called "containment rules."               response information; and supply placards.
+                                                              Certify on the shipping paper that the shipment has
+9.1.2 ­ Communicate the Risk                                  been prepared according to the rules (unless you
+                                                              are pulling cargo tanks supplied by you or your
+To communicate the risk, shippers must warn                   employer).
+drivers and others about the material's hazards.
+The regulations require shippers to put hazard                9.2.2 ­ The Carrier
+warning labels on packages, provide proper                    Takes the shipment from the shipper to its
+shipping papers, emergency response information,              destination.
+and placards. These steps communicate the                     Prior to transportation, checks that the shipper
+hazard to the shipper, the carrier, and the driver.           correctly described, marked, labeled, and
+                                                              otherwise prepared the shipment for transportation.
+9.1.3 ­ Assure Safe Drivers and Equipment                     Refuses improper shipments.
+                                                              Reports accidents and incidents involving
+In order to get a hazardous materials endorsement             hazardous materials to the proper government
+on a CDL, you must pass a written test about                  agency.
+transporting hazardous materials. To pass the test,
+you must know how to:                                         9.2.3 ­ The Driver
+                                                              Makes sure the shipper has identified, marked, and
+Identify what are hazardous materials.                        labeled the hazardous materials properly.
+                                                              Refuses leaking packages and shipments.
+Safely load shipments.                                        Placards vehicle when loading, if required.
+                                                              Safely transports the shipment without delay.
+Properly placard your vehicle in accordance with              Follows all special rules about transporting
+the rules.                                                    hazardous materials.
+                                                              Keeps hazardous materials shipping papers and
+Safely transport shipments.                                   emergency response information in the proper
+                                                              place.
+Learn the rules and follow them. Following the
+rules reduces the risk of injury from hazardous               9.3 ­ Communication Rules
+materials. Taking shortcuts by breaking rules is
+unsafe. Non-compliance with regulations can result            9.3.1 ­ Definitions
+in fines and jail.
+                                                              Some words and phrases have special meanings
+Inspect your vehicle before and during each trip.             when talking about hazardous materials. Some of
+Law enforcement officers may stop and inspect                 these may differ from meanings you are used to.
+your vehicle. When stopped, they may check your               The words and phrases in this section may be on
+shipping papers, vehicle placards, and the                    your test. The meanings of other important words
+hazardous materials endorsement on your driver                are in the glossary at the end of Section 9.
+license, and your knowledge of hazardous
+materials.                                                                                                                           Page 9-2
+
+9.2 ­ Hazardous Materials
+Transportation--Who Does What
+
+9.2.1 ­ The Shipper
+
+Sends products from one place to another by truck,
+rail, vessel, or airplane.
+
+Uses the hazardous materials regulations to
+determine the product's:
+
+Section 9 - Hazardous Material
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+A material's hazard class reflects the risks                   being carried. Your life, and the lives of others,
+associated with it. There are nine different hazard            may depend on quickly locating the hazardous
+classes. The types of materials included in these              materials shipping papers. For that reason the
+nine classes are in Figure 9.1.                                rules require:
+
+               Hazardous Materials Class                       Shippers to describe hazardous materials correctly
+                                                               and include an emergency response telephone
+        Division  Name of Class or       Examples              number on shipping papers.
+Class             Division
+                                                               Carriers and drivers to quickly identify hazardous
+       1.1 Mass Explosion                Dynamite              materials shipping papers, or keep them on top of
+       1.2 Projection Hazard             Flares                other shipping papers and keep the required
+       1.3 Fire Hazard                   Display Fireworks     emergency response information with the shipping
+1 1.4 Minor Explosion                    Ammunition            papers.
+       1.5 Very Insensitive              Blasting Agents
+       1.6 Extremely                     Explosive Devices     Drivers to keep hazardous materials shipping
+                                                               papers:
+                Insensitive
+                                                               In a pouch on the driver's door, or
+   2.1 Flammable Gases                   Propane
+                                         Helium                In clear view within immediate reach while the seat
+2  2.2            Non-Flammable                                belt is fastened while driving, or
+                  Gases                  Fluorine, Compressed
+                                                               On the driver's seat when out of the vehicle.
+   2.3 Poisonous/Toxic                   Gasoline
+                                                               9.3.2 ­ Package Labels
+                  Gases                  Ammonium Picrate,
+                                         Wetted                Shippers put diamond-shaped hazard warning
+3-                Flammable Liquids      White Phosphorus      labels on most hazardous materials packages.
+                                         Sodium                These labels inform others of the hazard. If the
+4  4.1            Flammable Solids                             diamond label won't fit on the package, shippers
+   4.2            Spontaneously                                may put the label on a tag securely attached to the
+                  Combustible                                  package. For example, compressed gas cylinders
+                                                               that will not hold a label will have tags or decals.
+   4.3            Dangerous When                               Labels look like the examples in Figure 9.2.
+                  Wet
+
+5  5.1            Oxidizers              Ammonium Nitrate
+   5.2            Organic Peroxides      Methyl Ethyl Ketone
+                                         Peroxide
+
+   6.1 Poison (Toxic                     Potassium Cyanide
+
+6                 Material)
+
+   6.2 Infectious                        Anthrax Virus
+
+                  Substances
+
+7-                Radioactive            Uranium
+
+8-                Corrosives             Battery Fluid
+
+9-                Miscellaneous          Polychlorinated
+
+                  Hazardous Materials Biphenyls (PCB)
+
+e-                ORM-D (Other           Food Flavorings,
+                  Regulated Material-    Medicines
+                  Domestic)
+
+   -              Combustible Liquids Fuel Oil
+
+                             Figure 9.1
+
+A shipping paper describes the hazardous
+materials being transported. Shipping orders, bills
+of lading, and manifests are all shipping papers.
+Figure 9.6 shows an example shipping paper.
+
+After an accident or hazardous materials spill or              Examples of HAZMAT Labels. Figure 9.2
+leak, you may be injured and unable to
+communicate the hazards of the materials you are
+transporting. Firefighters and police can prevent or
+reduce the amount of damage or injury at the
+scene if they know what hazardous materials are
+
+Section 9 - Hazardous Material                                 Page 9-3
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+9.3.3 ­ Lists of Regulated Products                           Appendix B to Section 172.101, the List of Marine
+                                                              Pollutants.
+Placards. Placards are used to warn others of
+hazardous materials. Placards are signs put on the            The Hazardous Materials Table. Figure 9.4
+outside of a vehicle and on bulk packages, which              shows part of the Hazardous Materials Table.
+identify the hazard class of the cargo. A placarded
+vehicle must have at least four identical placards.           Column 1 tells which shipping mode(s) the entry
+                                                              affects and other information concerning the
+They are put on the front, rear, and both sides of            shipping description. The next five columns show
+the vehicle. See Figure 9.3. Placards must be                 each material's shipping name, hazard class or
+readable from all four directions. They are at least          division, identification number, packaging group,
+10 3/4 inches square, square-on-point, in a                   and required labels.
+diamond shape. Cargo tanks and other bulk
+packaging display the identification number of their          Six different symbols may appear in Column 1 of
+contents on placards or orange panels or white                the table.
+square-on-point displays that are the same size as
+placards.                                                      (+)  Shows the proper shipping name, hazard
+                                                               (A)  class, and packing group to use, even if
+           Examples of HAZMAT Placards                         (W)  the material doesn't meet the hazard class
+                           Figure 9.3                               definition.
+                                                               (D)
+Identification numbers are a four-digit code used              (I)  Means the hazardous material described
+by first responders to identify hazardous materials.          (G)   in Column 2 is subject to the HMR only
+An identification number may be used to identify                    when offered or intended for transport by
+more than one chemical. The letters "NA or "UN"                     air unless it is a hazardous substance or
+will precede the identification number. The United                  hazardous waste.
+States Department of Transportation's Emergency
+Response Guidebook (ERG) lists the chemicals                        Means the hazardous material described
+and the identification numbers assigned to them.                    in Column 2 is subject to the HMR only
+                                                                    when offered or intended for transportation
+There are three main lists used by shippers,                        by water unless it is a hazardous
+carriers, and drivers when trying to identify                       substance, hazardous waste, or marine
+hazardous materials. Before transporting a                          pollutant.
+material, look for its name on three lists. Some
+materials are on all lists, others on only one.                     Means the proper shipping name is
+Always check the following lists:                                   appropriate for describing materials for
+Section 172.101, the Hazardous Materials Table.                     domestic transportation, but may not be
+Appendix A to Section 172.101, the List of                          proper for international transportation.
+Hazardous Substances and Reportable Quantities.
+                                                                    Identifies a proper shipping name that is
+Section 9 - Hazardous Material                                      used to describe materials in international
+Version: July 2014                                                  transportation. A different shipping name
+                                                                    may be used when only domestic
+                                                                    transportation is involved.
+
+                                                                    Means this hazardous material described
+                                                                    in Column 2 is a generic shipping name. A
+                                                                    generic shipping name must be
+                                                                    accompanied by a technical name on the
+                                                                    shipping paper. A technical name is a
+                                                                    specific chemical that makes the product
+                                                                    hazardous
+
+                                                              Column 2 lists the proper shipping names and
+                                                              descriptions of regulated materials. Entries are in
+                                                              alphabetical order so you can more quickly find the
+                                                              right entry. The table shows proper shipping
+                                                              names in regular type. The shipping paper must
+                                                              show proper shipping names. Names shown in
+                                                              italics are not proper shipping names.
+
+                                                                    Page 9-4
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+                               49 CFR 172.101 Hazardous Materials Table
+
+                                                                                     Packaging (173. ***)
+
+Symbols  Hazardous Materials   Hazard     Identification      PG  Label  Special
+         Description & Proper  Class or   Numbers                 Codes  Provisions
+         Shipping Names        Division                                  (172.102)
+                                                                                                 Non
+                                                                                     Exceptions  Bulk      Bulk
+
+(1)      (2)                   (3)        (4)                 (5) (6)    (7)         (8A)        (8B) (8C)
+                                                                                                 204 240
+A        Acetaldehyde ammonia 9           UN1841              III 9      IB8, IP6    155
+
+                                               Figure 9.4
+
+                                    Appendix A to 49 CFR 172
+              List of Hazardous Substances and Reportable Quantities
+
+              Hazardous Substances             Reportable Quantity (RQ) Pounds
+                                               (Kilograms)
+              Phenyl mercaptan @
+              Phenylmercury acetate            100 (45.4)
+              N-Phenylthiourea                 100 (45.4)
+              Phorate                          100 (45.4)
+              Phosgene                         10 (4.54)
+
+              Phosphine                        10 (4.54)
+
+              Phosphoric acid                  100 (45.4) *
+
+              Phosphoric acid, diethyl         5,000 (2270)
+              4-nitrophenyl ester
+                                               100 (45.4)
+
+              Phosphoric acid, lead salt       10 (.454)
+
+              * Spills of 10 pounds or more must be reported.
+
+                                               Figure 9.5
+
+Column 3 shows a material's hazard class or                   shipping description and also appear on the
+division, or the entry "Forbidden." Never transport           package. It also must appear on cargo tanks and
+a "Forbidden" material. Placard hazardous                     other bulk packaging. Police and firefighters use
+materials shipments based on the quantity and                 this number to quickly identify the hazardous
+hazard class. You can decide which placards to                materials.
+use if you know these three things:
+                                                              Column 5 shows the packing group (in Roman
+Material's hazard class.                                      numeral) assigned to a material.
+
+Amount being shipped.                                         Column 6 shows the hazard warning label(s)
+                                                              shippers must put on packages of hazardous
+Amount of all hazardous materials of all classes on           materials. Some products require use of more than
+your vehicle.                                                 one label due to a dual hazard being present.
+
+Column 4 lists the identification number for each             Column 7 lists the additional (special) provisions
+proper shipping name. Identification numbers are              that apply to this material. When there is an entry
+preceded by the letters "UN" or "NA." The letters             in this column, you must refer to the federal
+"NA" are associated with proper shipping names                regulations for specific information. The numbers
+that are only used within the United States and to            1-6 in this column mean the hazardous material is
+and from Canada. The identification number must               a poison inhalation hazard (PIH). PIH materials
+appear on the shipping paper as part of the
+                                                                                                                                     Page 9-5
+Section 9 - Hazardous Material
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+have special requirements for shipping papers,                A proper shipping description for each hazardous
+marking, and placards.                                        material.
+
+Column 8 is a three-part column showing the                   A shipper's certification, signed by the shipper,
+section numbers covering the packaging                        saying they prepared the shipment according to
+requirements for each hazardous material.                     the regulations.
+
+Note: Columns 9 and 10 do not apply to                                         Shipping Paper
+transportation by highway.
+                                                              TO:       ABC                        DEF          Page
+Appendix A to 49 CFR 172.101 - The List of                    Quantity  Corporation                Corporation  1 of 1
+Hazardous Substances and Reportable                                     88 Valley                  55
+Quantities. The DOT and the EPA want to know                            Street       FROM: Mountain             Weight
+about spills of hazardous substances. They are                          Anywhere,                  Street
+named in the List of Hazardous Substances and                           VA                         Nowhere,
+Reportable Quantities. See Figure 9.5. Column 3                                                    CO
+of the list shows each product's reportable quantity                          HM
+(RQ). When these materials are being transported                                             Description
+in a reportable quantity or greater in one package,
+the shipper displays the letters RQ on the shipping           1         RQ           UN1076,Phosgene,           25 lbs
+paper and package. The letters RQ may appear                  cylinder               2.3,
+before or after the basic description. You or your                      ("RQ"        Poison, Inhalation
+employer must report any spill of these materials,                      means that   Hazard,
+which occurs in a reportable quantity.                                  this is a    Zone A
+                                                                        reportable
+If the words INHALATION HAZARD appear on the                            quantity.)   (UN1076 is the
+shipping paper or package, the rules require                                         Identification
+display of the POISON INHALATION HAZARD or                                           Number from
+POISON GAS placards, as appropriate. These                                           Column 4 of the
+placards must be used in addition to other                                           Hazardous materials
+placards, which may be required by the product's                                     Table.
+hazard class. Always display the hazard class
+placard and the POISON INHALATION HAZARD                                             Phosgene is the
+placard, even for small amounts.                                                     proper shipping
+                                                                                     name from Column
+Appendix B to 49 CFR 172.101 ­ List of Marine                                        2 of the Hazardous
+Pollutants                                                                           Materials Table.
+
+Appendix B is a listing of chemicals that are toxic                                             2.3 is the Hazard
+to marine life. For highway transportation, this list                                           Class from Column
+is only used for chemicals in a container with a                                                3 of the Hazardous
+capacity of 119 gallons or more without a placard                                               Materials Table.)
+or label as specified by the HMR.
+                                                              This is to certify that the above named materials are
+Any bulk packages of a Marine Pollutant must                  properly classified, described, packaged marked and
+display the Marine Pollutant marking (white triangle          labeled, and are in proper condition for transportation
+with a fish and an "X" through the fish). This                according to the applicable regulations of the
+marking (it is not a placard) must also be displayed          Department of Transportation.
+on the outside of the vehicle. In addition, a notation
+must be made on the shipping papers near the                            DEF                 Carrier:            Safety
+description of the material: "Marine Pollutant".
+                                                              Shipper: Corporation          Per:                First
+9.3.4 ­ The Shipping Paper
+                                                              Per:      Smith               Date:
+The shipping paper shown in Figure 9.6 describes
+a shipment. A shipping paper for hazardous                    Date:     October 15,
+materials must include:
+                                                                        2003
+Page numbers if the shipping paper has more than
+one page. The first page must tell the total number           Special Instructions: 24 hour Emergency Contact,
+of pages. For example, "Page 1 of 4".
+                                                              John Smith 1-800-555-5555
+
+                                                                               Figure 9.6
+
+                                                              9.3.5 ­ The Item Description
+
+                                                              If a shipping paper describes both hazardous and
+                                                              non-hazardous products, the hazardous materials
+                                                              must be:
+
+                                                              Entered first.
+
+                                                              Highlighted in a contrasting color, OR.
+
+                                                              Identified by an "X" placed before the shipping
+                                                              description (ID#, Shipping Name, Hazard Class,
+
+Section 9 - Hazardous Material                                                                                  Page 9-6
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+Packing Group) in a column captioned "HM". The                The basic description and technical name;
+letters "RQ" may be used instead of "X" if a                  Immediate hazards to health;
+reportable quantity needs to be identified.                   Risks of fire or explosion;
+                                                              Immediate precautions to be taken in the event of
+The basic description of hazardous materials                  an accident or incident;
+includes the identification number, proper shipping           Immediate methods for handling fires;
+name, hazard class or division, and the packing               Initial methods for handling spills or leaks in the
+group, if any, in that order. The packing group is            absence of fires; and
+displayed in Roman numerals and may be                        Preliminary first aid measures
+preceded by "PG".
+                                                              Such information can be on the shipping paper or
+Identification number, shipping name, and hazard              some other document that includes the basic
+class must not be abbreviated unless specifically             description and technical name of the hazardous
+authorized in the hazardous materials regulations.            material. Or, it may be in a guidance book such as
+The description must also show:                               the Emergency Response Guidebook (ERG).
+                                                              Motor carriers may assist shippers by keeping an
+The total quantity and unit of measure.                       ERG on each vehicle carrying hazardous
+                                                              materials. The driver must provide the emergency
+The number and type of packages (example: "6                  response information to any federal, state, or local
+Drums").                                                      authority responding to a hazardous materials
+                                                              incident or investigating one.
+The letters RQ, if a reportable quantity.
+                                                              Total quantity and number & type of packages
+If the letters RQ appear, the name of the                     must appear before or after the basic description.
+hazardous substance (if not included in the                   The packaging type and the unit of measurement
+shipping name).                                               may be abbreviated. For example:
+
+For all materials with the letter "G" (Generic) in                      10 ctns. UN1263, Paint, 3, PG II, 500 lbs.
+Column 1, the technical name of the hazardous
+material.                                                     The shipper of hazardous wastes must put the
+                                                              word WASTE before the proper shipping name of
+Shipping papers also must list an emergency                   the material on the shipping paper (hazardous
+response telephone number (unless excepted).                  waste manifest). For example:
+The emergency response telephone number is the
+responsibility of the shipper. It can be used by                        UN1090, Waste Acetone, 3, PG II.
+emergency responders to obtain information about
+any hazardous materials involved in a spill or fire.          A non-hazardous material may not be described by
+The telephone number must be:                                 using a hazard class or an identification number.
+
+The number of the person offering the hazardous               Shippers must keep a copy of shipping papers (or
+material for transportation (if the shipper/offerer is        an electronic image) for a period of 2 years (3
+the emergency response information (ERI)                      years for hazardous waste) after the material is
+provider); or                                                 accepted by the initial carrier.
+
+The number of an agency or organization capable               If one provides a carrier service only and is not the
+of, and accepting responsibility for, providing the           originator of the shipment, a carrier is required to
+detailed information required by paragraph (a)(2) of          keep a copy of the shipping paper (or an electronic
+this section. The person who is registered with the           image) for a period of 1 year.
+ERI provider must be identified by name, or
+contract number or other unique identifier assigned           IMPORTANT NOTE: To view complete regulatory
+by the ERI provider, on the shipping paper                    requirements for the transportation of hazardous
+                                                              materials one should refer to the Code of Federal
+Shippers also must provide emergency response                 Regulations, Title 49, Parts 100-185.
+information to the motor carrier for each hazardous
+material being shipped. The emergency response
+information must be able to be used away from the
+motor vehicle and must provide information on how
+to safely handle incidents involving the material. At
+a minimum, it must include the following
+information:
+
+Section 9 - Hazardous Material                                Page 9-7
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+9.3.6 ­ Shipper's Certification                               Does it have:
+
+When the shipper packages hazardous materials,                An entry with a proper shipping name, hazard
+he/she certifies that the package has been                    class, and identification number?
+prepared according to the rules. The signed
+shipper's certification appears on the original               A highlighted entry, or one with an X or RQ in the
+shipping paper. The only exceptions are when a                hazardous materials column?
+shipper is a private carrier transporting their own
+product and when the package is provided by the               Other clues suggesting hazardous materials:
+carrier (for example, a cargo tank). Unless a
+package is clearly unsafe or does not comply with             What business is the shipper in? Paint dealer?
+the HMR, you may accept the shipper's                         Chemical supply? Scientific supply house? Pest
+certification concerning proper packaging. Some               control or agricultural supplier? Explosives,
+carriers have additional rules about transporting             munitions, or fireworks dealer?
+hazardous materials. Follow your employer's rules
+when accepting shipments.                                     Are there tanks with diamond labels or placards on
+                                                              the premises?
+9.3.7 ­ Package Markings and Labels
+                                                              What type of package is being shipped? Cylinders
+Shippers print required markings directly on the              and drums are often used for hazardous materials
+package, an attached label, or tag. An important              shipments.
+package marking is the name of the hazardous
+material. It is the same name as the one on the               Is a hazard class label, proper shipping name, or
+shipping paper. The requirements for marking vary             identification number on the package?
+by package size and material being transported.
+When required, the shipper will put the following on          Are there any handling precautions?
+the package:
+                                                              9.3.9 ­ Hazardous Waste Manifest
+The name and address of shipper or consignee.
+                                                              When transporting hazardous wastes, you must
+The hazardous material's shipping name and                    sign by hand and carry a Uniform Hazardous
+identification number.                                        Waste Manifest. The name and EPA registration
+                                                              number of the shippers, carriers, and destination
+The labels required.                                          must appear on the manifest. Shippers must
+                                                              prepare, date, and sign by hand the manifest.
+It is a good idea to compare the shipping paper to            Treat the manifest as a shipping paper when
+the markings and labels. Always make sure that                transporting the waste. Only give the waste
+the shipper shows the correct basic description on            shipment to another registered carrier or
+the shipping paper, and verifies that the proper              disposal/treatment facility. Each carrier
+labels are shown on the packages. If you are not              transporting the shipment must sign by hand the
+familiar with the material, ask the shipper to                manifest. After you deliver the shipment, keep your
+contact your office.                                          copy of the manifest. Each copy must have all
+                                                              needed signatures and dates, including those of
+                                                              the person to whom you delivered the waste.
+
+If rules require it, the shipper will put RQ, MARINE          9.3.10 ­ Placarding
+POLLUTANT, BIOHAZARD, HOT, or
+INHALATION-HAZARD on the package. Packages                    Attach the appropriate placards to the vehicle
+with liquid containers inside will also have package          before you drive it. You are only allowed to move
+orientation markings with the arrows pointing in the          an improperly placarded vehicle during an
+correct upright direction. The labels used always             emergency, in order to protect life or property.
+reflect the hazard class of the product. If a package
+needs more than one label, the labels must be                 Placards must appear on both sides and both ends
+close together, near the proper shipping name.                of the vehicle. Each placard must be:
+
+9.3.8 ­ Recognizing Hazardous Materials                       Easily seen from the direction it faces.
+
+Learn to recognize shipments of hazardous                     Placed so the words or numbers are level and read
+materials. To find out if the shipment includes               from left to right.
+hazardous materials, look at the shipping paper.
+                                                              At least three inches away from any other
+                                                              markings.
+
+Section 9 - Hazardous Material                                Page 9-8
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+Kept clear of attachments or devices such as                  You have 1,001 pounds or more of two or more
+ladders, doors, and tarpaulins.                               Table 2 hazard classes, requiring different
+                                                              placards, and
+Kept clean and undamaged so that the color,
+format, and message are easily seen.                          You have not loaded 2,205 pounds or more of any
+                                                              Table 2 hazard class material at any one place.
+Be affixed to a background of contrasting color.              (You must use the specific placard for this
+                                                              material.)
+The use of "Drive Safely" and other slogans is
+prohibited.                                                   The dangerous placard is an option, not a
+                                                              requirement. You can always placard for the
+The front placard may be on the front of the tractor          materials.
+or the front of the trailer.
+                                                              If the words INHALATION HAZARD are on the
+To decide which placards to use, you need to                  shipping paper or package, you must display
+know:                                                         POISON GAS or POISON INHALATION placards
+                                                              in addition to any other placards needed by the
+The hazard class of the materials.                            product's hazard class. The 1,000 pound exception
+                                                              does not apply to these materials.
+The amount of hazardous materials shipped.
+                                                              Materials with a secondary hazard of dangerous
+The total weight of all classes of hazardous                  when wet must display the DANGEROUS WHEN
+materials in your vehicle.                                    WET placard in addition to any other placards
+                                                              needed by the product's hazard class. The 1,000-
+9.3.11 ­ Placard Tables                                       pound exception to placarding does not apply to
+                                                              these materials.
+There are two placard tables, Table 1 and Table 2.
+Table 1 materials must be placarded whenever any                                Placard Table 2
+amount is transported. See Figure 9.7.                                      1,001 Pounds Or More
+
+Except for bulk packaging, the hazard classes in              Category of Material (Hazard        Placard Name
+Table 2 need placards only if the total amount                class or division number and
+transported is 1,001 pounds or more including the                                            Explosives 1.4
+package. Add the amounts from all shipping                       additional description, as  Explosives 1.5
+papers for all the Table 2 products you have on                          appropriate)        Explosives 1.6
+board. See Figure 9.8.                                                                       Flammable Gas
+                                                              1.4 Minor Explosion            Non-Flammable Gas.
+             Placard Table 1                                  1.5 Very Insensitive           Flammable
+               Any Amount                                     1.6 Extremely Insensitive      Combustible*
+                                                              2.1 Flammable Gases            Flammable Solid
+      IF YOUR VEHICLE              PLACARD AS...              2.2 Non- Flammable Gases       Spontaneously
+ CONTAINS ANY AMOUNT                                          3 Flammable Liquids            Combustible
+                                Explosives 1.1                Combustible Liquid             Oxidizer
+              OF......          Explosives 1.2                4.1 Flammable Solids
+                                Explosives 1.3                4.2 Spontaneously
+1.1 Mass Explosives             Poison Gas                    Combustible
+1.2 Project Hazards             Dangerous When                5.1 Oxidizers
+1.3 Mass Fire Hazards           Wet
+2.3 Poisonous/Toxic Gases                                     5.2 (other than organic
+                                                              peroxide, Type B, liquid or
+4.3 Dangerous When Wet                                        solid, Temperature
+                                                              Controlled)
+                                                                                             Organic Peroxide
+
+5.2 (Organic Peroxide, Type     Organic Peroxide
+B, liquid or solid,
+Temperature controlled)                                       6.1 (other than inhalation     Poison
+                                                              hazard zone A or B)
+
+6.1 (Inhalation hazard zone Poison/toxic                      6.2 Infectious Substances      (None)
+
+A & B only)                     inhalation                    8 Corrosives                   Corrosive
+
+7 (Radioactive Yellow III       Radioactive                   9 Miscellaneous Hazardous      Class 9**
+label only)                                                   Materials
+
+             Figure 9.7                                       ORM-D                          (None)
+
+You may use DANGEROUS placards instead of                     * FLAMMABLE may be used in place of a
+separate placards for each Table 2 hazard class               COMBUSTIBLE on a cargo tank or portable tank.
+when:
+                                                              ** Class 9 Placard is not required for domestic
+                                                              transportation.
+
+                                                                                       Figure 9.8
+
+Section 9 - Hazardous Material                                                                          Page 9-9
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+Placards used to identify the primary or subsidiary           Many products become more hazardous when
+hazard class of a material must have the hazard               exposed to heat. Load hazardous materials away
+class or division number displayed in the lower               from heat sources.
+corner of the placard. Permanently affixed
+subsidiary hazard placards without the hazard                 Watch for signs of leaking or damaged containers:
+class number may be used as long as they stay                 LEAKS SPELL TROUBLE! Do not transport
+within color specifications.                                  leaking packages. Depending on the material, you,
+Placards may be displayed for hazardous materials             your truck, and others could be in danger. It is
+even if not required so long as the placard                   illegal to move a vehicle with leaking hazardous
+identifies the hazard of the material being                   materials.
+transported.
+                                                              Containers of hazardous materials must be braced
+Bulk packaging is a single container with a                   to prevent movement of the packages during
+capacity of 119 gallons or more. A bulk package,              transportation.
+and a vehicle transporting a bulk package, must be
+placarded, even if it only has the residue of a               No Smoking. When loading or unloading
+hazardous material. Certain bulk packages only                hazardous materials, keep fire away. Don't let
+have to be placarded on the two opposite sides or             people smoke nearby. Never smoke around:
+may display labels. All other bulk packages must
+be placarded on all four sides.                               Class 1 (Explosives)
+
+    Subsections 9.1, 9.2, and 9.3                             Class 2.1 (Flammable Gas )
+         Test Your Knowledge
+                                                              Class 3 (Flammable Liquids)
+1.  Shippers package in order to (fill in the
+                                                              Class 4 (Flammable Solids)
+    blank) the material.
+                                                              Class 5 (Oxidizers)
+2.  Driver placard their vehicle to (fill in the
+                                                              Secure Against Movement. Brace containers so
+    blank) the risk.                                          they will not fall, slide, or bounce around during
+                                                              transportation. Be very careful when loading
+3.  What three things do you need to know to                  containers that have valves or other fittings. All
+                                                              hazardous materials packages must be secured
+    decide which placards (if any) you need?                  during transportation.
+
+4.  A hazardous materials identification                      After loading, do not open any package during
+                                                              your trip. Never transfer hazardous materials from
+    number must appear on the (fill in the                    one package to another while in transit. You may
+                                                              empty a cargo tank, but do not empty any other
+    blank) and on the (fill in the blank). The                package while it is on the vehicle.
+
+    identification number must also appear on                 Cargo Heater Rules. There are special cargo
+                                                              heater rules for loading:
+    cargo tanks and other bulk packaging.
+                                                              Class 1 (Explosives)
+5.  Where must you keep shipping papers
+                                                              Class 2.1 (Flammable Gas )
+    describing hazardous materials?
+                                                              Class 3 (Flammable Liquids)
+These questions may be on your test. If you can't
+answer them all, re-read subsections 9.1, 9.2 and             The rules usually forbid use of cargo heaters,
+9.3.                                                          including automatic cargo heater/air conditioner
+                                                              units. Unless you have read all the related rules,
+9.4 ­ Loading and Unloading                                   don't load the above products in a cargo space that
+                                                              has a heater.
+Do all you can to protect containers of hazardous
+materials. Don't use any tools, which might                   Use Closed Cargo Space. You cannot have
+damage containers or other packaging during                   overhang or tailgate loads of:
+loading. Don't use hooks.
+                                                              Class 1 (Explosives)
+9.4.1 ­ General Loading Requirements
+                                                              Class 4 (Flammable Solids)
+Before loading or unloading, set the parking brake.
+Make sure the vehicle will not move.                          Class 5 (Oxidizers)
+
+Section 9 - Hazardous Material                                                                                                      Page 9-10
+Version: July 2014
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+You must load these hazardous materials into a                Class 4 and 5 materials must be completely
+closed cargo space unless all packages are:                   enclosed in a vehicle or covered securely. Class 4
+                                                              and 5 materials, which become unstable and
+Fire and water resistant.                                     dangerous when wet, must be kept dry while in
+                                                              transit and during loading and unloading. Materials
+Covered with a fire and water resistant tarp.                 that are subject to spontaneous combustion or
+                                                              heating must be in vehicles with sufficient
+Precautions for Specific Hazards                              ventilation.
+
+Class 1 (Explosives) Materials. Turn your engine              Class 8 (Corrosive) Materials. If loading by hand,
+off before loading or unloading any explosives.               load breakable containers of corrosive liquid one
+Then check the cargo space. You must:                         by one. Keep them right side up. Do not drop or roll
+                                                              the containers. Load them onto an even floor
+Disable cargo heaters. Disconnect heater power                surface. Stack carboys only if the lower tiers can
+sources and drain heater fuel tanks.                          bear the weight of the upper tiers safely.
+
+Make sure there are no sharp points that might                Do not load nitric acid above any other product.
+damage cargo. Look for bolts, screws, nails,
+broken side panels, and broken floorboards.                   Load charged storage batteries so their liquid won't
+                                                              spill. Keep them right side up. Make sure other
+Use a floor lining with Division 1.1, 1.2, or 1.3.            cargo won't fall against or short circuit them.
+The floors must be tight and the liner must be
+either non-metallic material or non-ferrous metal.            Never load corrosive liquids next to or above:
+(Non-ferrous metals are any metal that does not
+contain iron or iron alloys).                                 Division 1.4 (Explosives C).
+
+Use extra care to protect explosives. Never use               Division 4.1 (Flammable Solids).
+hooks or other metal tools. Never drop, throw, or
+roll packages. Protect explosive packages from                Division 4.3 (Dangerous When Wet).
+other cargo that might cause damage.
+                                                              Class 5 (Oxidizers).
+Do not transfer a Division 1.1, 1.2, or 1.3 from one
+vehicle to another on a public roadway except in              Division 2.3, Zone B (Poisonous Gases).
+an emergency. If safety requires an emergency
+transfer, set out red warning reflectors, flags, or           Never load corrosive liquids with:
+electric lanterns. You must warn others on the
+road.                                                         Division 1.1 or 1.2
+
+Never transport damaged packages of explosives.               Division 1.2 or 1.3
+Do not take a package that shows any dampness
+or oily stain.                                                Division 1.5 (Blasting Agents).
+
+Do not transport Division 1.1 or 1.2 in vehicle               Division 2.3, Zone A (Poisonous Gases).
+combinations if:
+                                                              Division 4.2 (Spontaneously Combustible
+There is a marked or placarded cargo tank in the              Materials).
+combination.
+                                                              Division 6.1, PGI, Zone A (Poison Liquids).
+The other vehicle in the combination contains:
+Division 1.1 A (Initiating Explosives).                       Class 2 (Compressed Gases) Including
+Packages of Class 7 (Radioactive) materials                   Cryogenic Liquids. If your vehicle doesn't have
+labeled "Yellow III."                                         racks to hold cylinders, the cargo space floor must
+Division 2.3 (Poisonous Gas) or Division 6.1                  be flat. The cylinders must be:
+(Poisonous) materials.
+Hazardous materials in a portable tank, on a DOT              Held upright.
+Spec 106A or 110A tank.
+                                                              In racks attached to the vehicle or in boxes that will
+Class 4 (Flammable Solids) and Class 5                        keep them from turning over.
+(Oxidizers) Materials. Class 4 materials are solids
+that react (including fire and explosion) to water,           Cylinders may be loaded in a horizontal position
+heat, and air or even react spontaneously.                    (lying down) if it is designed so the relief valve is in
+                                                              the vapor space.
+Section 9 - Hazardous Material
+Version: July 2014                                            Division 2.3 (Poisonous Gas) or Division 6.1
+                                                              (Poisonous) Materials. Never transport these
+                                                              materials in containers with interconnections.
+
+                                                                                                                                    Page 9-11
+Commercial Driver's License Manual ­ 2005 CDL Testing System
+
+Never load a package labeled POISON or                        Table for Hazardous Materials) name other
+POISON INHALATION HAZARD in the driver's cab                  materials you must keep apart.
+or sleeper or with food material for human or
+animal consumption. There are special rules for                   Subsection 9.4
+loading and unloading Class 2 materials in cargo
+tanks. You must have special training to do this.                 Test Your Knowledge
+
+Class 7 (Radioactive) Materials. Some packages                1.  Around which hazard classes must you
+of Class 7 (Radioactive) materials bear a number
+called the "transport index." The shipper labels                  never smoke?
+these packages Radioactive II or Radioactive III,
+and prints the package's transport index on the               2.  Which three hazard classes should not be
+label. Radiation surrounds each package, passing
+through all nearby packages. To deal with this                    loaded into a trailer that has a heater/air
+problem, the number of packages you can load
+together is controlled. Their closeness to people,                conditioner unit?
+animals, and unexposed film is also controlled. The
+transport index tells the degree of control needed            3.  Should the floor liner required for Division
+during transportation. The total transport index of
+all packages in a single vehicle must not exceed                  1.1 or 1.2 materials be stainless steel?
+50.Table A to this section shows rules for each
+transport index. It shows how close you can load              4.  At the shipper's dock you're given a paper
+Class 7 (Radioactive) materials to people, animals,
+or film. For example, you can't leave a package                   for 100 cartons of battery acid. You
+with a transport index of 1.1 within two feet of
+people or cargo space walls.                                      already have 100 pounds of dry Silver
+
+                                                                  Cyanide on board. What precautions do
+
+                                                                  you have to take?
+
+                                                              5.  Name a hazard class that uses transport
+
+                                                                  indexes to determine the amount that can
+
+                                                                  be loaded in a single vehicle.
+
+                    Do Not Load Table                         These questions may be on your test. If you can't
+                                                              answer them all, re-read subsection 9.4.
+
+Do Not Load          In The Same Vehicle With
+
+                     Animal or human food unless the
+
+Division 6.1 or 2.3  poison package is over packed in
+
+(POISON or poison    an approved way. Foodstuffs are
+
+inhalation hazard    anything you swallow. However,           9.5 ­ Bulk Packaging Marking, Loading

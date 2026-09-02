@@ -1,0 +1,42 @@
+                           Automated Knowledge Tests Offered
+
+Exam                       English      ASL*  Burmese Chinese            Croatian  Hmong  Polish  Russian Serbian Somali  Spanish
+
+CDL Air Brakes                       X    X                  (Mandarin)       X               X   X  X                        X
+                                          X                                   X               X                               X
+CDL Combination                      X    X        X                          X               X   X  X                        X
+                                          X        X                          X               X                               X
+CDL Doubles/Triples                  X             X                                              X  X
+                                                   X
+CDL General Knowledge                X                                                            X  X
+
+CDL Hazardous Materials              X
+
+CDL Passenger Transport              X  X     X                          X                X       X  X                    X
+
+CDL School Bus                       X
+
+CDL Tanker                           X  X     X                          X                X       X  X                    X
+
+Class D                              X  X     X  X                       X         X      X       X  X  X                 X
+
+Driver Training School
+
+Instructor                           X
+
+Driver Training School
+
+Owner Operator                       X
+
+Farm Service CDL                     X
+
+Motor Vehicle Salesperson            X
+
+Motorcycle                           X                                                                                    X
+
+Signs                                X  X     X  X                       X         X      X       X  X  X                 X
+
+UPDATED 11/2020
+
+*NOTE: ASL - American Sign Language
+

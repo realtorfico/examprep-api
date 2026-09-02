@@ -1,0 +1,1402 @@
+Commercial Driver
+  License Manual
+
+  South Carolina
+                           March 2025
+                   Table of Contents
+
+Commercial Driver License Information ...................................................................... 3
+         Entry-Level Driver Training Requirement .............................................................. 3
+         License Classifications ........................................................................................ 3
+         Knowledge Tests ................................................................................................. 3
+         Skills Tests........................................................................................................... 4
+         Return Times if You Fail the Skills Test................................................................. 4
+         Banking of CDL Skills Test Scores ....................................................................... 5
+         Vehicle Inspection................................................................................................ 6
+         Basic Control Skills Test ....................................................................................... 7
+         Road Test............................................................................................................ 7
+
+South Carolina Licensing Procedures and Requirements .......................................... 8
+          Application Procedure for Taking a Test .............................................................. 8
+          Knowledge Examinations ................................................................................... 9
+          Skills Test ........................................................................................................... 9
+          Expiration of License .......................................................................................... 9
+          Organ Donor Program ........................................................................................ 9
+          Commercial Learner's Permits ..........................................................................10
+          Upgrading a CDL..............................................................................................10
+          Restriction Codes .............................................................................................10
+          Transfer of CDL from Another State ..................................................................10
+          Railroad Crossing Violations .............................................................................11
+          Hazmat Threat Assessment Requirements .......................................................12
+
+AAMVA's 2005 CDL Testing System (Sections 1 ­ 13)............................................ 1-1
+          Introduction .................................................................................................... 1-1
+          Driving Safely ................................................................................................. 2-1
+          Transporting Cargo Safely .............................................................................. 3-1
+          Transporting Passengers Safely...................................................................... 4-1
+          Air Brakes ...................................................................................................... 5-1
+          Combination Vehicles..................................................................................... 6-1
+          Doubles and Triples........................................................................................ 7-1
+          Tank Vehicles ................................................................................................ 8-1
+          Hazardous materials....................................................................................... 9-1
+          School Bus....................................................................................................10-1
+          Vehicle Inspection Test..................................................................................11-1
+          Basic Vehicle Control Skills Test ....................................................................12-1
+          On-Road Driving............................................................................................13-1
+
+                                                                           1
+                          DISCLAIMER
+
+The American Association of Motor Vehicle Administrators
+(AAMVA) contracted by the Federal Motor Carrier Safety
+Administration (FMCSA) provides the standard in which each
+state is to test commercial drivers. AAMVA was approved by
+FMCSA to make revisions to the CDL Manual. The current
+skills test is covered within this manual as well as the new
+upcoming skills test.
+
+Since South Carolina's skills test will be changing, notices will
+be posted online prior to an SCDMV Office transitioning to the
+new test. All drivers must study all of the following sections so
+they will be prepared to successfully pass all possible
+maneuvers.
+
+· Sections 11 and 12 describe the current skills test.
+
+The state motor vehicle laws and federal regulations that are
+mentioned in this book are not reproduced in their entirety and
+the wording is not identical. The information in this manual may
+not always be current due to possible changes in federal
+regulations, state law or SCDMV Policy. SCDMV will make
+every effort to incorporate any changes as soon as possible.
+
+For more information, please visit our website at
+dmv.sc.gov
+  South Carolina Licensing Procedures and Requirements
+
+          Entry-Level Driver Training Requirements for CDL Applicants
+
+The new Entry-Level Driver Training (ELDT) regulations require that all entry-level drivers of
+commercial motor vehicles (CMVs) receive training from a provider listed on FMCSA's Training
+Provider Registry.
+Beginning February 7, 2022, to be eligible to take required skills or knowledge tests, Commercial
+Driver's License (CDL) applicants must have completed applicable entry-level driver training from
+a registered training provider.
+
+            Use the scenario chart below to determine if you are required to complete entry-level driver training.
+
+                                                            The
+
+    A driver holds a CLP that                               The driver is not required to complete entry-level
+was issued before February                                  driver training, as long as the driver obtains a CDL
+7, 2022...                                                  before the CLP expires.
+
+                          A driver was issued a CDL         The driver is not required to complete entry-
+or an S, P, or H endorsement before February                level driver training for the previously-issued
+7, 2022...                                                  license or endorsement, even if it has since
+                                                            lapsed.
+
+       A driver holds a CLP that was issued                 The driver must complete the required entry-level
+     before February 7, 2022, but the CLP                   driver training.
+expires before the driver applies for his or
+
+                                           her CDL...
+
+A driver obtains a CLP on or after February 7,              The driver must complete the required entry-level
+2022...                                                     driver training.
+
+A driver held a CDL prior to the compliance                 The driver must complete the required entry-level
+        date, and applies for an upgrade to a               driver training for the class of CDL to which the driver
+                                           higher class     is upgrading or the endorsement(s) for which the
+                                                            driver is applying.
+    of CDL, or an S, P, or H endorsement for
+                           the first time on or after
+                                 February 7, 2022...
+
+ELDT EXCEPTIONS. The ELDT regulations do not apply to individuals that are not required to have a
+CDL as outlined in 49 CFR part 383, or for whom the state has waived the CDL skills test.
+
+                                                         3
+   South Carolina Licensing Procedures and Requirements
+
+                                   LICENSE CLASSIFICATIONS
+
+On October 26, 1986, Congress passed the Commercial Motor Vehicle Safety Act of 1986. This
+law requires each state to meet the same minimum standards for commercial driver licensing. The
+standards require commercial motor vehicle drivers to get a Commercial Driver's License (CDL).
+You must have a CDL to operate any of the following commercial motor vehicles:
+Class A Any combination of vehicles with a Gross Combination Weight Rating (GCWR) of 26,001
+
+              pounds or more provided the GVWR of the vehicle being towed is in excess of 10,000
+              pounds. You may also operate a three-wheel vehicle (excluding a two-wheel
+              motorcycle with a side car).
+Class B Any single unit vehicle with a GVWR of 26,001 pounds or more, or any such vehicle
+              towing a vehicle not in excess of 10,000 pounds GVWR. You may also operate a three-
+              wheel vehicle (excluding a two-wheel motorcycle with a side car).
+Class C Any single vehicle, or combination of vehicles, that are not Class A or B vehicles, but
+              that are either designed to transport sixteen or more passengers including the driver
+              or is used in the transportation of materials found to be hazardous for the purposes of
+              the Hazardous Materials Transportation Act and which require the motor vehicle to be
+              placarded under the Hazardous Materials Regulations (49 CFR §172(F)). You may
+              also operate a three-wheel vehicle (excluding a two-wheel motorcycle with a side car).
+S.C. Code §56-1-2030(16), defines Gross Vehicle Weight Rating (GVWR) as the weight or the
+value specified by the manufacturer as the maximum loaded weight of a single or a combination
+vehicle. The gross vehicle weight rating of a combination vehicle (referred to as gross combination
+weight rating) is the gross vehicle weight rating of the power unit plus the gross vehicle weight
+rating of the towed unit.
+
+                                        KNOWLEDGE TESTS
+
+To obtain a commercial driver's license, you must take and pass one or more knowledge tests,
+depending on what class of license and what endorsements you may need. A failed knowledge
+test cannot be retaken on the same day, it may be re-taken the following business day. The tests
+include:
+
+     · General Knowledge Test ­ must be taken and passed by all commercial driver's license applicants.
+     · Combination Vehicles Test ­ must be taken and passed drive a Class A combination vehicle.
+     · Air Brakes Test ­ must be taken and passed to operate a vehicle with air brakes. A driver
+
+          who does not take this test or does not pass this test will be restricted to driving vehicles
+          without air brakes. To lift this restriction from your license, you will need to take an air
+          brakes knowledge test and complete a CDL road test in a vehicle equipped with air brakes.
+     · Doubles/Triples Test ­ must be takenandpassed to pull double or triple trailers.
+
+     · Passenger Transport Test ­ must be taken and passed by all bus driver applicants.
+     · School Bus Test ­ must be taken and passed to transport pre-primary, primary, or
+
+          secondary school students from home to school, from school to home, or to and from
+          school-sponsored events. For the School Bus Endorsement, the skills test must be taken
+          in a school bus used for the purpose of transporting pre-primary, primary, or secondary
+          school students from home to school, from school to home, or to and from school-
+          sponsored events
+     · Hazardous Materials Test ­ must be taken and passed to haul hazardous materials or
+          waste requiring placarding.
+     · Tanker Test ­ must be taken and passed to operate a tank vehicle. Tank vehicle means
+          any commercial motor vehicle that is designed to transport any liquid or gaseous materials
+          within a tank or tanks having an individual rated capacity of more than 119 gallons and an
+          aggregate rated capacity of 1,000 gallons or more that is either permanently or temporarily
+          attached to the vehicle or the chassis. A commercial motor vehicle transporting an empty
+          storage container tank, not designed for transportation, with a rated capacity of 1,000
+          gallons or more that is temporarily attached to a flatbed trailer is not considered a tank
+          vehicle.
+
+                                             SKILLS TEST
+
+There are three sections to a CDL skills test: the vehicle inspection, the basic control skills, and
+the on-road test. You must take these test(s) in the type of vehicle for which you are to be licensed.
+The vehicle inspection and basic vehicle control skills test must be administered prior to the on-
+
+                                                                             4
+   South Carolina Licensing Procedures and Requirements
+
+road portion of the skills test. If you fail one of the sections of the test, you cannot continue to the
+next section of the skills test. If you fail any of the sections of the skills test you may, under certain
+conditions, bank skills test scores from segments you have passed and not be required to repeat
+them when you return to re-test. See the Banking of CDL Skills Test Scores on page 5.
+When taking the skills test, you must show proof of the GVWR to the examiner.
+If you are testing in a bus, you must also show proof of the bus passenger rating capacity to the
+examiner. This information is normally found on a metal tag or sticker in the door jamb of the truck,
+front of the trailer, or a metal plate above the driver on a bus. This manufacturer's plate must
+be legible.
+If you take your skills test in a vehicle that is not equipped with air brakes you will be restricted to
+operating only non-air brake vehicles. Additionally, if you take your skills test in a vehicle that is
+not fully equipped with air brakes (air over/hydraulic) a restriction will be placed on your commercial
+driver's license that states "No Full air brake."
+If you are testing in a tank vehicle the tank must be empty and purged of any residue if the tank
+vehicle previously contained hazardous materials. You must provide a document showing proof
+the tank is purged.
+For the passenger endorsement, the skills test must be passed in a bus or passenger vehicle with
+a capacity to transport 16 passengers or more, including the driver. The license will be restricted
+to the type and size of vehicle used.
+Trucks must have a passenger seat and the passenger door must open from the inside. The
+driver and passenger seat belts must work properly. Seatbelts should be clean. Smoking and use of
+cell phones are prohibited during the test.
+A Commercial Learner's Permit (CLP) holder is not eligible to take the CDL skills test
+within the first 14 days after initial issuance of a CLP. This is in accordance with 4 9 C FR
+§ 383.25(e).
+
+                                                Failing the Skills Test
+All commercial driver's license (CDL) applicants who fail any portion of the skills tests are to be
+charged a $25.00 fee for subsequent skills tests.
+
+                        RETURN TIMES IF YOU FAIL THE SKILLS TEST
+
+If you fail a CDL skills test on your first attempt, you must wait two business days to be retested.
+
+If you fail a CDL skills test on your second attempt, youmust wait sevencalendar days to be retested.
+If you fail a CDL skills test on the third attempt or after, you must wait 30 calendar days to be
+retested.
+
+                          BANKING OF CDL SKILLS TEST SCORES
+
+You may receive credit (bank scores) for portions of the CDL skills test that are successfully
+completed.
+
+     Scenario #1: A driver who fails the vehicle inspection due to a low score or does not
+     perform the air brake check correctly is required to start over from the beginning during
+     their next test, no scores or items inspected are carried-over.
+
+     Scenario #2: A driver who successfully completes the vehicle inspection but fails the
+     parallel parking maneuver, is required to retake and pass three basic control maneuvers
+     before going on the road test.
+
+     Scenario #3: A driver who passes the vehicle inspection and basic control maneuvers but
+     fails the road test, is required to retake the entire road test.
+
+Banking of scores will only apply under the following conditions:
+
+     a) You must have a valid commercial learner's permit (CLP) for the class license for which
+          you are applying.
+                · CLP holders are not eligible to take the CDL skills test within the first 14 days after
+                    initial issuance of a CLP.
+                · The remainder of the test must be taken within 1 year from the issuance of the
+                    commercial learner's permit.
+
+                                                                             5
+  South Carolina Licensing Procedures and Requirements
+
+               · You must retake all portions of the skills test once the learner's permit expires or
+                   is renewed.
+
+    b) You must successfully complete the skills test in this order: 1) vehicle inspection, 2)
+         basic control skills, then 3) road test.
+               · If you fail any portion ­ you cannot advance to the next step until you
+                  successfully complete that portion of the test.
+               · All three portions of the skills test must be completed with the same
+                   agency/company.
+               · Third-Party Testers are also permitted to bank scores for their customers.
+
+    c) The vehicle must be representative of the class license for which you are applying. If you
+         are not able to use the same vehicle in which you passed the vehicle inspection portion of
+         the test, the vehicle must match when it comes to these items:
+                · Air Brakes
+                · Auto or Manual Transmission
+                · Bus/Truck/Truck Tractor. Combination vehicles must have the same articulation
+                   (such as 5th wheel and pintle hook).
+
+     d) The previous score sheet(s) or supporting document(s) must be on file with the
+         agency/company. If the examiner/safety officer is unable to verify your scores or vehicle
+         type from the previous skills tests, then you will be required to retake those portions of the
+         skills test.
+
+                                       VEHICLE INSPECTION
+Purpose: To see if you have the knowledge to determine whether the vehicle is safe to drive.
+
+Test Procedure: You will be required to do a vehicle inspection on your vehicle and explain to
+the examiner what you would inspect and why. The examiner will mark on a scoring form
+each item you correctly inspect and/or explain.
+
+To prepare for the vehicle inspection you should study Section 11 of this manual. You must name
+and point to/ touch each item and explain to the examiner what you are checking and why. To
+receive credit for an item you must give a detailed commentary as outlined in Sections 11. You
+are not required to use the exact wording from Section 11 but you must meet the scoring
+criteria.
+
+                                              EXAMPLE from Section 11
+       Shock Absorbers - See that shock absorbers are secure and that there are no leaks.
+       · The examiner will accept other adjectives that properly describe the word "leaks"
+
+            such as fluids, puddles, or drips.
+       · Instead of the word "secure", the examiner would accept a description such as
+
+            tightly bolted to the frame.
+
+Warning: Some commercial vehicles come from the factory with minimal labels identifying
+particular components on the vehicle (power steering, oil, diesel, etc.) These markings are from
+the manufacturer and may be tolerated, if not excessive. However, it is not permissible to label
+either by name or listing scoring criteria on the vehicle or the parts, identifying the inspection
+components outlined in Sections 11 of this manual. If your commercial motor vehicle is labeled
+or marked as described, you will not be allowed to test for your commercial driver's license in that
+vehicle. Also, you cannot paint the required vehicle inspection components a different color
+
+                                                                             6
+   South Carolina Licensing Procedures and Requirements
+
+from the initial factory paint to distinguish each part as a necessary inspection item for the test. If
+you in any way, paint, mark, write on, or label the individual inspection components to identify
+them as the required inspection components you will not be allowed to take the skills test in that
+vehicle. FMCSA prohibits these practices for the CDL skills test. You will be required to name and
+point to/touch each item and explain to the examiner what you are inspecting and why, and the
+type of defects you would look for on each item.
+
+You are to conduct the vehicle inspection as instructed by the Department's Certified CDL
+Examiner beginning with the cab check/engine start. Once you complete the internal (cab
+check/engine start) inspection the Examiner will instruct you to complete an external inspection
+including the front of the vehicle, down a specific side of the vehicle, and the rear of the vehicle
+(in no particular order). The vehicle inspection test must be passed before taking the basic control
+test and the road test. The vehicle must also be safe. All major systems must work properly.
+This includes the lights, air brakes or other braking systems, and emergency brakes. Any major
+system which does not work properly must be repaired before the road test will be given. The
+Examiner is required to read you the instructions for each portion of the test.
+
+                                BASIC CONTROLS SKILLS TEST
+
+Purpose: To evaluate your basic skills in controlling the vehicle and judging its position in relation
+to other objects.
+
+Test Procedure: After successful completion of the vehicle inspection test, you are required to
+successfully complete the Basic Control Skills (BCS) examination. The maneuvers you are
+required to perform are conducted on an off-road skills pad located on or near the Department of
+Motor Vehicles. You will not be required to attempt these maneuvers in an in- traffic environment.
+Your basic control skills will be tested using four off-road exercises. See Sections 12 of this manual
+for more information.
+
+                                              ROAD TEST
+Purpose: To evaluate your ability to drive safely in most traffic situations.
+
+Test Procedure: After successful completion of the Basic Control Skills examination, you will
+drive a predetermined test route following the instructions given by the examiner. The test route will
+include left and right turns, intersections, railroad crossings, curves, up and downhill grades,
+interstate, city, and rural roads. The examiner will score specific areas of the test route. The
+examiner will not ask you to do anything dangerous or illegal. See Section 13 of this manual for
+more information.
+
+Time Limits for Taking the Test: The CDL test described above meets the minimum
+standards for the licensing of commercial drivers. To complete the Vehicle Inspection, Basic
+Control Skills, and the Road Test takes about 90 minutes. The time needed for the Vehicle
+Inspection varies from the type of unit being tested in. There is a maximum time limit of 45 minutes
+allowed for the Vehicle Inspection. The Basic Controls Skills Test takes about 15 minutes and the
+Road Test will take from 35 to 45 minutes depending upon the area and route design.
+
+                    APPLICATION PROCEDURES FOR TAKING A TEST
+
+To apply for a commercial license, you must certify you have read and meet the qualification
+requirements under 49 CFR, Part 391 to operate a commercial motor vehicle. This manual will
+help you prepare for these test(s).
+
+     · To apply for a commercial learner's permit, you may go to your local or most convenient
+         Department of Motor Vehicles (SCDMV) branch office and take the knowledge test during
+         normal working hours.
+
+     · To apply for a commercial driver's license, you must make an appointment to take the
+         skills test at one of the designated CDL test sites.
+
+A person must be medically qualified pursuant to 49 CFR §391.41 to operate a commercial vehicle.
+If you are required to obtain a medical examiner's certificate, you must keep your certificate current.
+
+                                                                             7
+  South Carolina Licensing Procedures and Requirements
+
+Medical examiners are required to electronically transmit proof that you are medically qualified
+through the National Registry.
+
+· If applicable, you must maintain a valid medical certification on file with the SCDMV or be
+    in jeopardy of losing your CDL.
+
+· If a medical variance document is required, it too must be valid and kept on file with the
+    SCDMV.
+
+Step-by-Step Procedures to Apply
+
+1) You must be a United States citizen or an immigrant with a valid Permanent Resident card to
+    be eligible for a South Carolina Commercial Learner's Permit (CLP) or Commercial Driver's
+    License (CDL).
+
+2) You must be at least 18 years of age to drive within the State of South Carolina and 21 years
+     of age for interstate driving.
+
+3) Drivers applying for a Class A or Class B CDL for the first time who are issued a CLP on or
+     after February 7, 2022, must complete Entry-Level Driver Training (ELDT) with a registered
+     training provider prior to attempting the skills test.
+
+4) You must complete Form DL-402A Affidavit of Previous Driver's License, and Form 447-CDL
+    application at an SCDMV office certifying that you meet the requirements found in 49 CFR, Part
+    391.
+
+5) You must self-certify the type of commerce for which you intend to use your CDL by completing
+    Form DL-405A. This information will be added to your national Commercial Driver License
+    Information System (CDLIS) record.
+
+6) You must also prove that you are medically qualified for any type of commerce that requires
+    it. If a medical variance document is required, it too must be valid and provided electronically
+    to the SCDMV from a medical provider listed on FMCSA's National Registry of Certified
+    Medical Examiners.
+
+7) You must pass the vision test. This test is performed at no charge at the SCDMV.
+8) Pass the skills test which includes the vehicle inspection, basic control skills, and road skills
+
+     sections.
+
+a) When renewing your CDL license, if you have had five or more points against you in the
+    prior two years you will have to pass the General Knowledge Test.
+
+b) If you hold a Hazardous Materials Endorsement of your CDL, you will have to pass the
+    Hazardous Material Endorsement Test.
+
+                             CDL License Application Fees
+
+CDL Application              $15.00  This fee is charged each time application is made, except
+Commercial Learner's Permit          for public school bus drivers.
+
+                             $2.50 CLP is valid for 1 year.
+
+CDL Knowledge Test           $2.00   This fee is charged for every attempt whether you pass or
+CDL License                          fail.
+
+                             $25.00 Fee for an 8-year commercial driver's license.
+
+HAZMAT CDL License           $15.00  Fee for a 5-year CDL with a hazardous material
+                                     endorsement
+
+                                     8
+   South Carolina Licensing Procedures and Requirements
+
+                                  KNOWLEDGE EXAMINATIONS
+
+The knowledge test, written or oral, may be passed with a score of 80% or higher. The
+endorsement test(s) can be taken at the same time as the general knowledge test or at a
+later time. If you fail any portion of the knowledge test, you must wait until the following day before
+you may retest. You may test three times on the original application fees paid. However, once you
+receive a permit or license, you must pay an additional fee for any additional test.
+
+Hearing-impaired customers are eligible to request the assistance of an American Sign Language
+(ASL) translator on the CDL knowledge test. The SCDMV will furnish and pay for a certified ASL
+translator to assist a knowledge test applicant who is hearing impaired no more than three times
+within a twenty-four-month period. This limit includes each time he/she does not show up for
+a scheduled appointment and whenever he/she fails. The applicant must incur the expense of
+an interpreter beyond the limit imposed by the SCDMV.
+
+The Hazardous Material Endorsement test MUST be taken and passed in a written or automated test format
+only.
+
+                                              SKILLS TEST
+
+The skills tests are administered in designated SCDMV Offices. Refer to SCDMV's public
+website for the designated sites at dmv.sc.gov/Driver-Services/Commercial-Licenses/Testing.
+The road test will not be given until you have passed all other parts of the skills test. Each section
+of the skills test must be passed. NOTE: The State does not supply vehicles for the road test.
+
+Items you must take to the SCDMV for a CDL skills test.
+ 1) Commercial Learner's Permit and Driver's License
+
+          a) Provide a valid SC Commercial Learner's Permit (CLP).
+          b) Must have held the CLP for at least 14 days prior to taking the skills test.
+          c) Provide a valid base SC Driver's License or SC Commercial Driver's License.
+
+ 2) Vehicle
+          a) Vehicle used to take the skills test must be representative of the class license for
+               which you wish to be licensed.
+          b) Vehicle must be in safe operating condition.
+          c) Vehicle must contain the following items:
+                  i. Current vehicle registration card
+                  ii. Manufacturer's Plate affixed to the vehicle indicating the GVWR/GCWR - must
+                     be legible
+                  iii. Current Annual Federal Inspection Sticker, if required. A combination vehicle
+                     must have separate stickers for the truck and towed unit.
+
+The examiner cannot give the skills test unless the vehicle is in a safe condition. Your
+vehicle must first be checked to ensure it complies with registration, vehicle inspection, and
+equipment laws.
+Only the applicant and SCDMV Examiner are allowed in or around the vehicle during the skills
+test. There are three parts to the CDL skills test that must be taken in this order: (1) the vehicle
+inspection test, (2) the basic control skills test, and then (3) the road test.
+
+                                     EXPIRATION OF LICENSE
+
+Your Commercial Driver's License shall expire every 8 years from the date of issuance unless you
+have a HAZMAT endorsement. In that case, your license will expire five years from the date on
+which you passed the security threat assessment. You will need to acquire your HAZMAT
+endorsement again.
+Any person applying to renew a South Carolina CDL that has expired for nine (9) months or more
+must repeat the same process for an initial CDL license. This includes the written test and full skills
+test.
+
+                                                                             9
+  South Carolina Licensing Procedures and Requirements
+
+                              COMMERCIAL LEARNER'S PERMITS
+
+Commercial Learner's Permits (CLPs) are valid for intrastate and interstate (out-of-state)
+use if the following conditions are met: You must have a CLP to operate a commercial motor
+vehicle that meets the requirements for a Class A, B, or C commercial motor vehicle. State
+learner's permits are issued for 1 year and are considered valid for the purpose of behind the
+wheel training on public roads and highways if the following minimum conditions are met:
+
+    1) A CLP may be issued to an individual who holds a valid Class D license and has passed
+           the appropriate vision and knowledge test for the type CDL sought.
+
+    2) The CLP holder must be 18 years of age or older.
+
+    3) A CLP may only contain the following endorsements: (S) School Bus, (P) Passenger, (N)
+           Tanker. No other endorsements are permitted on a CLP. A CLP may never be issued with
+           a Hazardous Materials endorsement.
+
+    4) An original CLP must be held for at least 14 days before you are eligible to take the skills
+           test.
+
+    5) The holder of a CLP, unless otherwise disqualified may drive a commercial motor vehicle,
+           but only when accompanied by the holder of a valid CDL with applicable endorsements
+           which are for the type of vehicle being driven, and who occupies the seat beside the
+           individual for the purpose of giving instruction in driving the commercial vehicle.
+
+    6) He/she does not operate a commercial motor vehicle transporting hazardous
+           materials as defined in 49 CFR §383.5.
+
+    7) When renewing a CLP, you will be required to pass the knowledge and endorsement
+           tests again.
+
+                     UPGRADING A COMMERCIAL DRIVER'S LICENSE
+
+A commercial learner's permit (CLP) must be issued when upgrading a Commercial Driver's
+License (CDL) if the upgrade requires a skills test. You must hold the CLP for at least 14 days
+before you are eligible to take the skills test. All of the other conditions listed above regarding the
+CLP must also be met when upgrading a CDL.
+
+                                        RESTRICTION CODES
+
+An explanation of the restriction codes that could be displayed on a South Carolina commercial
+driver's license can be found on our public website at https://dmv.sc.gov/Driver-Services/
+Commercial-Licenses/CDL-Restriction-Codes.
+
+TRANSFER OF A COMMERCIAL DRIVER'S LICENSE FROM ANOTHER STATE
+
+After establishing a residence in South Carolina, you must apply to transfer your out-of-state CDL
+license within thirty (30) days. This is in accordance with Federal Regulations and State Law. The
+SCDMV will obtain your driving history from your previous state of record when you make an
+application in South Carolina. If you have the Hazardous Materials Endorsement, you will have to
+pass that knowledge test.
+
+The South Carolina Department of Motor Vehicles will obtain driving information through the
+Commercial Driver's License Information System (CDLIS), the National Driver's Register (NDR),
+and from each state in which you have been licensed. You will be required to present your out- of-
+state license before a South Carolina commercial driver's license can be issued.
+
+                                                                             10
+  South Carolina Licensing Procedures and Requirements
+
+Commercial learner's permits (CLP) are not transferable in South Carolina. You must present your
+CLP and pass the general knowledge test and any other applicable test in South Carolina before
+you are issued an SC CLP. You must hold the SC CLP for at least 14 calendar days before you are
+eligible to take the CDL skills test.
+To transfer a CDL from another state to South Carolina:
+
+    1) You must complete Form 447-CDL application at your local SCDMV Office certifying you
+         have read, understand, and meet the qualifications requirements under 49 CFR Part 391.
+
+    2) You must self-certify the type of commerce for which you intend to use your CDL by
+         completing Form DL-405A. This information will be added to your national Commercial
+         Driver License Information System (CDLIS) record.
+
+    3) You must also prove that you are medically qualified for any type of commerce that requires
+         it. If a medical variance document is required, it too must be valid and provided
+         electronically to the SCDMV from a medical provider listed on FMCSA's National Registry
+         of Certified Medical Examiners.
+
+    4) You are required to present the actual commercial driver's license you have in your
+         possession at the time you apply.
+
+    5) You must pass the vision test. The vision test is performed for no charge at the SCDMV.
+    6) The fees for transferring your commercial driver's license are the same as applying for an
+
+         original license.
+
+                                                                             11
+  South Carolina Licensing Procedures and Requirements
+
+                    HAZMAT THREAT ASSESSMENT REQUIREMENTS
+
+CDL drivers who wish to add a hazardous material (HME) endorsement or renew with an HME
+must pass a Threat Assessment from TSA before the credential may be issued or renewed. For
+more information on this process, please go the SCDMV's website, dmv.sc.gov and select
+Hazmat Requirements under the Driver Services tab.
+49 CFR §383.25(a)(5)(iv) prohibits a person with a Commercial Learner's Permit from obtaining
+a hazardous material endorsement. Also, if you are requesting a HAZMAT endorsement (X or H)
+on an original CDL you must submit fingerprints, submit to a background check, and obtain
+security clearance from the US Transportation Security Administration (TSA) before issuance of
+an original CDL that includes a HAZMAT endorsement.
+SCDMV Form DL- 400(IS) provides instructions on how to obtain a HAZMAT endorsement as well
+as the TSA locations. The background records check, and fingerprinting fees do not include the
+regular application, license, and knowledge test fees. Refer to SCDMV's public website,
+dmv.sc.gov, for fingerprinting locations and fees.
+The SCDMV cannot issue, renew, or upgrade a commercial driver's license with a HAZMAT
+endorsement until the driver completes a new application, is fingerprinted, and the background
+check is complete.
+
+                                                                             12
+Commercial Driver's License
+              Manual
+
+                              Version: March 2025
+
+                                                               CDL Driver's Manual
+                                                         COPYRIGHT © 2022 AAMVA
+
+                                                               All Rights Reserved
+This material is based upon work supported by the Federal Motor Carrier Safety
+Administration under Cooperative Agreement No. DTFH61-97-X-00017. Any
+opinions, findings, conclusions or recommendations expressed in this
+publication are those of the Author(s) and do not necessarily reflect the view of
+the Federal Motor Carrier Safety Administration.
+
+                                                           COPYRIGHT © 2005 AAMVA. All rights reserved
+
+This material has been created for and provided to State Driver License Agencies (SDLAs) by AAMVA for the purpose of educating Driver
+License applicants (Commercial or Non-Commercial). Permission to reproduce, use, distribute or sell this material has been granted to
+SDLAs only. No part of this book may be reproduced or transmitted in any form or by any means, electronic or mechanical, including
+photocopying, recording, or by any information storage and retrieval system without express written permission from the author / publisher.
+Any unauthorized reprint, use, distribution or sale of this material is prohibited.
+                                                                                              Human trafficking is modern-day slavery.
+                                                                                              Traffickers use force, fraud and coercion to
+                                                                                              control their victims. Any minor engaged in
+                                                                                              commercial sex is a victim of human traffick-
+                                                                                              ing. Trafficking can occur in many locations,
+                                                                                              including truck stops, restaurants, rest areas,
+                                                                                              brothels, strip clubs, private homes, etc.
+
+'  ,·. .,, ·- : ·.._  -,,1  ..._.._..._lf ,:., ...,.     Qti t -v_....-:iy..,tj  ,,....... r  Truckers are the eyes and the ears of our
+                                                                                              nation's highways and are already making
+,                               r'                    1                                       calls that are saving lives. If you see a minor
+
+..J. - -- .,,._ . ll{ ·-    -·      .                 -·,t         l..t,      "               working any of those areas or suspect pimp
+                                       ----...·. "' --- : 4." . .:- . ··                      control, call the national hotline and report
+                                                                                              your tip.
+
+                                                      ··                                         1.-888-373-7888 (US)
+                                                                                              1.-800-222-TIPS ( Canada)
+                                ' ' · ,. : I                J·  1         ·'  :.              01.800-5533-000 (Mexico)
+In January 2015, an RV pulled into a truck stop in Virginia. Observant professional truck driver Kevin Kimmel recognized
+suspicious activity around that RV, which had pulled back by the truck line, and decided something was off. Instead of turning a
+blind eye, he made a call that brought law enforcement out to the scene within a few minutes. After interviewing the occupants
+of the vehicle, they discovered that a young woman, 20 years old, had been kidnapped from Iowa two weeks prior. She had
+been beaten, raped, her whole body burned by instruments heated on the RV stove, branded and starved. She was being sold by
+her traffickers, Laura Sorenson and Aldair Hodza, through sex ads on Craigslist, where men were purchasing her and then arriving
+at the RV to rape her. She was dying from malnutrition and the torture she was subjected to ... had the call not been made that
+brought law enforcement out to that truck stop, doctors said she would have died within the next few days. Now a recovering
+survivor, this young woman calls Kimmel her guardian angel. He calls himself a Trucker Against Trafficking.
+
+Truckers Against Trafficking is a non-profit organization that has been working with the trucking industry since 2009 to provide
+the needed training and tools to enable members of the industry to both recognize human trafficking when they see it
+happening and to know what actions to take to enable law enforcement to effectively fight this crime. Through this training and
+these tools, truckers are becoming Everyday Heroes like Kevin Kimmel, who was also named TAT's 2015 Harriet Tubman Award
+winner.
+
+One of the tools TAT provides is a wallet card with red flags
+to look for, questions to ask if you suspect someone is a
+victim and actionable information to report. This wallet card
+is available by App, from the appropriate App Store, on all
+smart phones, whether Android, iPhone or Windows format,
+as well as by emailing tat.truckers@gmail.com, for a version
+to carry in your wallet.
+
+Additionally, TAT provides a powerful, 26-minute training
+video on its website (www.truckersagainsttrafficking.org),
+which, when watched along with taking and passing a short test, certifies drivers as TAT-Trained, a designation which can go on
+your resume. Because professional drivers often find themselves in locations frequented and exploited by human traffickers,
+they are in a unique position to recognize the signs of human trafficking and to make the call that can lead to victim recovery and
+perpetrator arrests. Get your wallet card today. Be an Everyday Hero! Make the call (1-888-3737-888); save lives!
+                            Table of Contents
+
+Introduction ........................................................................... 1-1
+Driving Safely ....................................................................... 2-1
+Transporting Cargo Safely .................................................... 3-1
+Transporting Passengers Safely ........................................... 4-1
+Air Brakes ............................................................................. 5-1
+Combination Vehicles ........................................................... 6-1
+Doubles and Triples .............................................................. 7-1
+Tank Vehicles ....................................................................... 8-1
+Hazardous Materials ............................................................. 9-1
+School Bus .......................................................................... 10-1
+Vehicle Inspection................................................................ 11-1
+Basic Vehicle Control Skills Test.......................................... 12-1
+On-Road Driving .................................................................. 13-1
+THIS PAGE INTENTIONALLY LEFT BLANK
+Commercial Driver's License Manual ­ 2025 CDL Testing System  Class A Combination Vehicles. Any combination
+                                                              of vehicles with gross combination weight rating
+           Section 1                                          (GCWR) of 26,001 or more pounds falls in Group A
+       INTRODUCTION                                           provided the GVWR of the vehicle(s) being towed is
+                                                              more than 10,000 pounds. Most Class A vehicles
+This Section Covers                                           are trucks such as truck-tractor/semi-trailer or truck
+                                                              and trailer combinations. However, tractor-trailer
+· Commercial Driver License Tests                             buses may be found in a few communities. Driving a
+· Medical Requirements                                        Class A vehicle requires considerably more skill and
+· Driver Disqualifications                                    knowledge than driving vehicles in Classes B and C.
+· Other Safety Rules                                          Since these skills include those required to drive a B
+· International Registration Program                          and C vehicle, a driver who has a Class A license
+                                                              also may drive vehicles in Classes B and C.
+There is a federal requirement that each state have
+minimum standards for the licensing of commercial             Class B Heavy Straight Vehicles. Any single
+drivers.                                                      vehicle with a GVWR of 26,001 or more pounds falls
+                                                              in Group B, or any such vehicle towing another
+This manual provides driver license testing                   vehicle not in excess of 10,000 pounds GVWR.
+information for drivers who wish to have a                    Class B includes straight trucks and large buses,
+commercial driver license (CDL). This manual does             including articulated buses. Safely driving these
+NOT provide information on all the federal and state          heavy vehicles requires considerably more
+requirements needed before you can drive a                    knowledge and skill than driving the small trucks and
+commercial motor vehicle (CMV). You may have to               buses found in Class C. Since they include the skills
+contact your state driver licensing authority for             required to drive Class C vehicles, drivers who have
+additional information.                                       qualified for a Class B license may also drive vehicles
+                                                              in Class C.
+You must have a CDL to operate:
+Any single vehicle with a gross vehicle weight                Class C Small Vehicles. Any single vehicle with a
+rating (GVWR) of 26,001 pounds or more.                       GVWR less than 26,001 pounds falls in Group C, or
+                                                              any such vehicle towing another vehicle not in
+A combination vehicle with a gross combination                excess of 10,000 pounds GVWR. However, vehicles
+weight rating (GCWR) of 26,001 or more pounds,                of this size are included in the CDL program only if
+provided the GVWR of the vehicle(s) being towed is            they are: 1) Designed to carry 16 or more passengers
+in excess of 10,000 pounds.                                   including the driver, or (2) Used to transport
+                                                              hazardous materials in quantities requiring
+A vehicle designed to transport 16 or more                    placarding under the Hazardous Materials
+passengers (including the driver).                            Regulations (49 CFR Part 172, Subpart F) or is
+                                                              carrying material listed as a select agent or toxin in
+Any size vehicle which requires hazardous material            42 CFR part 73.
+placards or is carrying material listed as a select
+agent or toxin in 42 CFR part 73. Federal                     There are a great variety of vehicles in Class C.
+regulations through the Department of Homeland                Some rather large Class C vehicles may require
+Security require a background check and                       more skill and knowledge to operate than do the
+fingerprinting for the Hazardous Materials                    smaller ones. However, the licensing category is
+endorsement. Contact your local department of                 based principally on the type of cargo carried.
+driver licensing for more information.                        Because of the seriousness of an accident involving
+                                                              hazardous material or human passengers, the safe
+(Your state may have additional definitions of                operation of even the smaller vehicles in Class C
+CMVs.)                                                        requires special knowledge and the drivers of these
+                                                              vehicles must have a CDL.
+CDL Classifications
+                                                              STATE OPTIONS: Some states may include more
+The CDL vehicle classification included in the                drivers and vehicles in their CDL programs. For
+federal standard, together with the type of cargo to          example, in some states, a CDL may be required for
+be transported, determine what type of CDL license            buses designed to carry fewer than 16 passengers.
+and endorsement an applicant must apply for. There            Going beyond the federal standard is acceptable
+are three basic vehicle classes or groups:                    and the state will need to decide which battery of
+                                                              tests applies to these drivers, or develop a new
+                                                              battery.
+
+Section 1 - Introduction                                      Page 1-1
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System  to haul any material that has been designated as
+                                                              hazardous under 49 U.S.C. 5103 and is required to
+CDL Endorsements & Restrictions                               be placarded under subpart F of 49 CFR part 172;
+                                                              or any quantity of a material listed as a select
+Endorsements                                                  agent or toxin 42 CFR Part 73 must add a
+                                                              hazardous materials endorsement to their CDL.
+All commercial drivers who drive certain types of             S/he must pass a special written examination on
+vehicles or haul certain types of cargo must add              how to recognize, handle, and transport hazardous
+endorsements to their CDL license and/or                      materials.
+Commercial Learner's Permit (CLP) to show that
+they have the specialized knowledge required for              The Transportation Security Administration (TSA)
+these operations. There are six kinds of CDL                  and the US Department of Transportation require
+endorsements that may be required, depending on               background checks on commercial drivers who are
+the vehicle or type of cargo.                                 certified to transport hazardous materials. The
+                                                              background checks include a review of criminal,
+NOTE: The only endorsements that may be                       immigration and FBI records. If the driver is found
+added to a Commercial Learner's Permit (CLP)                  to represent a security threat, TSA will notify the
+are:                                                          person and the state will deny issuance of an
+                                                              endorsement.
+     - Passenger (P);
+     - School bus (S); and                                    Combination Hazardous Materials and Tank
+     - Tank vehicle (N).                                      Vehicle (X). Drivers of tank vehicles who haul
+                                                              hazardous materials or waste in amounts requiring
+Double and Triple Trailers (T). Many drivers who              placards must add an X endorsement to their CDL,
+are qualified to drive Class A vehicles may wish to           showing that they have passed the special
+pull double or triple trailers. Research shows that           knowledge examinations for both tank vehicles and
+considerable additional knowledge and skill is                hazardous materials.
+necessary to safely pull double and triple trailers in
+various traffic conditions and driving environments.          School Buses (S). Drivers who wish to drive a
+Consequently, adding the endorsement to the                   school bus, must add a school bus endorsement to
+licenses of Class A drivers is necessary if they wish         their CDL/CLP. They must pass a special knowledge
+to pull double or triple trailers. A special knowledge        examination on safety considerations when
+examination on the problems associated with pulling           transporting passengers in a school bus and must
+multiple trailers must be passed.                             pass skills tests in a school bus. The endorsement
+                                                              applies to applicants who wish to drive a school bus
+Tank Vehicle (N). Drivers of any commercial motor             in any class (A, B, or C).
+vehicle that is designed to transport any liquid or
+gaseous materials within a tank or tanks having an            In addition to these six required endorsements,
+individual rated capacity of more than 119 gallons            states may add special endorsements of their
+and an aggregate rated capacity of 1,000 gallons or           own as they see fit.
+more that is either permanently or temporarily
+attached to the vehicle or the chassis must obtain this       Restrictions
+endorsement. Applies to Class A, B and C (only
+applicable to Class C if the vehicle is hauling               Restrictions may be added to Commercial Driver
+hazardous materials) vehicles. Liquids in bulk cause          Licenses/Permits based upon the type of vehicle and
+driving control problems because the cargo is heavy,          equipment that the driver uses for the Skills Test.
+prone to shifting, and has a high center of gravity.          There are ten standardized restriction codes.
+These drivers must pass a special knowledge
+examination on the problems posed by large volume             NOTE: If a CLP is issued with a Passenger (P) or a
+liquid cargos to add the endorsement to their                 School Bus (S) endorsement, it must also contain a
+CDL/CLP.                                                      (P) ­ No passengers in a CMV bus restriction.
+
+Passengers (P). Drivers who wish to drive a vehicle           If a CLP is issued with a Tanker (N) endorsement, it
+having a design capacity to carry 16 or more people,          must also contain a (X) ­ No cargo in a CMV tank
+including the driver, must add a passenger                    vehicle.
+endorsement to their CDL/CLP. They must pass a
+special knowledge examination on safety
+considerations when transporting passengers and
+must pass skills tests in a passenger vehicle. The
+endorsement applies to applicants who wish to drive
+a bus in any class (A, B, or C).
+
+Hazardous Materials (H). Any driver, regardless
+of the vehicle Class/Group (A, B, or C) who wishes
+
+Section 1 - Introduction                                      Page 1-2
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System  (P) - No passengers in CMV bus: A CLP holder
+                                                              with a P endorsement is prohibited from operating a
+(E) - No manual transmission. If an applicant                 CMV carrying passengers, other than Federal/State
+performs the skills test in a vehicle equipped with an        auditors and inspectors, test examiners, other
+automatic transmission, the State must indicate on            trainees, and the CDL holder accompanying the
+the CDL, if issued, that the person is restricted from        CLP holder as prescribed by § CFR 383.25(a)(1) of
+operating a CMV equipped with a manual                        this part.
+transmission. For the purposes of the skills test and
+the restriction, an automatic transmission includes           A CLP holder with a S endorsement is prohibited
+any transmission not operating fully on the gear shift        from operating a school bus with passengers, other
+and clutch principle.                                         than Federal/State auditors and inspectors, test
+                                                              examiners, other trainees, and the CDL holder
+(K) - Intrastate only: If an applicant certifies their        accompanying the CLP holder as prescribed by §
+status as either Non-Excepted Intrastate or                   CFR 383.25(a)(1) of this part.
+Excepted Intrastate, the state must indicate on the
+CDL, if issued, that person is restricted from                (V) - Medical Variance: If the State is notified
+operating a CMV in interstate commerce. States                according to § 383.73(o)(3) that the driver has been
+may impose this restriction for reasons other than            issued a medical variance, the State must indicate
+those specified above.                                        the existence of such a medical variance on the
+                                                              CDLIS driver record and the CDL document, if
+(L) - No Air brake equipped CMV: If an applicant              issued, using the restriction code ``V'' to indicate
+does not take or fails the air brake component of the         there is information about a medical variance on the
+knowledge test, or performs the skills test in a              CDLIS driver record.
+vehicle not equipped with air brakes, the State must
+indicate on the CLP or CDL, if issued, that the               (X) - No cargo in CMV tank vehicle: A CLP holder
+person is restricted from operating a CMV equipped            with an N endorsement may only operate an empty
+with any type of air brakes. For the purposes of the          tank vehicle and is prohibited from operating any
+skills test and the restriction, air brakes include any       tank vehicle that previously contained hazardous
+braking system operating fully or partially on the air        materials that has not been purged of any residue.
+brake principle.
+                                                              (Z) - No full air brake equipped CMV: If an
+(M) - No Class A passenger vehicle: If an                     applicant performs the skills test in a vehicle
+applicant applying for a passenger endorsement                equipped with air over hydraulic brakes, the State
+performs the skills test in a passenger vehicle               must indicate on the CDL, if issued, that the person
+requiring a Group B CDL, the State must indicate on           is restricted from operating a CMV equipped with
+the CDL, if issued, that the person is restricted from        any braking system operating fully on the air brake
+operating a passenger vehicle requiring a Group A             principle. For the purposes of the skills test and the
+CDL.                                                          restriction, air over hydraulic brakes includes any
+                                                              braking system operating partially on the air brake
+(N) - No Class A and B passenger vehicle: If an               and partially on the hydraulic brake principle.
+applicant applying for a passenger endorsement
+performs the skills test in a passenger vehicle               Any additional jurisdictional restrictions that apply to
+requiring a Group C CDL, the State must indicate on           the CLP driving privilege.
+the CDL, if issued, that the person is restricted from
+operating a passenger vehicle requiring a Group A             To Get a CDL or CLP
+or B CDL
+                                                              To get a CDL or CLP, you must pass knowledge and
+(O) - No tractor trailer CMV: If an applicant                 skills tests. This manual will help you pass the tests,
+performs the skills test in a combination vehicle for         however, it is not a substitute for a truck driver
+a Group A CDL with the power unit and towed unit              training class or program. Formal training is the
+connected with a pintle hook or other non-fifth wheel         most reliable way to learn the many special skills
+connection, the State must indicate on the CDL, if            required for safely driving a large commercial
+issued, that the person is restricted from operating          vehicle and becoming a professional driver in the
+a tractor-trailer combination connected by a fifth            trucking industry. Figure 1.1 helps you determine if
+wheel that requires a Group A CDL.                            you need a CDL
+
+An applicant who passes a skills test using a
+combination vehicle that is NOT a Truck Tractor
+Semi-Trailer combination, but is otherwise
+equipped with a fifth wheel, will be issued a CDL
+with an "O" restriction.
+
+Section 1 - Introduction                                      Page 1-3
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System
+
+                                                                   Figure 1.1
+
+NOTE: A bus may be Class A, B, or C depending on whether the GVWR is over 26,001 pounds or is a combination vehicle.
+
+Section 1 - Introduction                                                                                              Page 1-4
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System  traffic lanes, cones, barriers, or something similar.
+                                                              The examiner will tell you how each control test is to
+1.1 ­ Commercial Driver License Tests                         be done.
+
+1.1.1 ­ Knowledge Tests                                       On-road Test. You will be tested on your skill to
+You will have to take one or more knowledge tests,            safely drive your vehicle in a variety of traffic
+depending on what class of license and what                   situations. The situations may include left and right
+endorsements you need. The CDL knowledge tests                turns, intersections, railroad crossings, curves, up
+include:                                                      and down grades, single or multi-lane roads,
+                                                              streets, or highways. The examiner will tell you
+     · The general knowledge test, taken by all               where to drive.
+           applicants.
+                                                              Figure 1.2 details which sections of this manual you
+     · The passenger transport test, taken by                 should study for each particular class of license and
+           all bus driver applicants.                         for each endorsement.
+
+     · The air brakes test, which you must take               What Sections Should You Study?
+           if your vehicle has air brakes, including air
+           over hydraulic brakes.                                 LICENSE  ENDORSEMENT
+                                                                  TYPE
+     · The combination vehicles test, which is
+           required if you want to drive combination                                                                           School Bus
+           vehicles.                                                                                                    Passenger
+                                                                                                                Tank Vehicles
+     · The hazardous materials test, required if                                                         Double / Triple
+           you want to haul hazardous materials as                                                 Hazardous
+           defined in 49 CFR 383.5. In order to                                                Materials
+           obtain this endorsement you are also                                           Class C
+           required to pass a Transportation Security                              Class B
+           Administration (TSA) background check.                           Class A
+
+     · The tank vehicle test, required if you want            Sections to Study
+           to haul any liquid or gaseous materials in         1XXX
+           a tank or tanks having an individual rated
+           capacity of more than 119 gallons and an           2XXX            XXX
+           aggregate rated capacity of 1,000 gallons
+           or more that is either permanently or              3XXX
+           temporarily attached to the vehicle or
+           chassis                                            4                                   X
+
+     · The doubles/triples test, required if you              5* X X X        X
+           want to pull double or triple trailers.
+                                                              6X              XX
+     · The School Bus test, required if you want
+           to drive a school bus.                             7               X
+
+1.1.2 ­ Skills Tests                                          8                                X
+If you pass the required knowledge test(s), you can
+take the CDL skills test when you are eligible. The           9            X                   X
+CDL Skills Test consists of three segments: Vehicle
+inspection, basic vehicle control, and on- road               10                                                X
+driving. You must take the segments in the order
+listed and must pass each one before moving to the            11 X X X                            XX
+next. You must take these tests in the type of vehicle
+for which you wish to be licensed. Any vehicle that           12 X X X                            XX
+has components marked or labeled cannot be used
+for the CDL Skills Test.                                      13 X X X                            XX
+
+Vehicle Inspection. You will be tested to see if you          *Study section 5 if you plan to operate vehicles
+know whether your vehicle is safe to drive. You will          equipped with air brakes.
+be asked to do a Vehicle inspection of your vehicle.
+You must point to/touch and name the item you are                 Figure 1.2 ­ What to Study
+inspecting and explain to the examiner what you
+would inspect and why.
+
+Basic Vehicle Control. You will be tested on your
+skill to control the vehicle. You will be asked to move
+your vehicle forward, backward, and turn it within a
+defined area. These areas may be marked with
+
+Section 1 - Introduction                                                                          Page 1-5
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System  1.2.2 ­ Inter/Intrastate Commerce: Status
+                                                              Non-excepted or Excepted?
+1.2 ­ Medical Documentation
+Requirements                                                  Once you decide whether you will operate in
+                                                              interstate commerce or intrastate commerce,
+Starting January 30, 2012 and no later than January           you must decide whether you will operate (or expect
+30, 2014, if you are applying for a CDL Permit; or            to operate) in a non-excepted or excepted status.
+are renewing, upgrading, adding endorsements to a             This decision will tell you to which of the four types
+CDL; or transferring a CDL from another state, you            of commerce you must self-certify.
+are required to provide information to your State
+Driver's License Agency (SDLA) regarding the type             Interstate Commerce:
+of commercial motor vehicle operation you drive in
+or expect to drive in with your CDL. Drivers                  You operate in excepted interstate commerce
+operating in certain types of commerce will be                when you drive a CMV in interstate commerce only
+required to have their medical provider submit                for the following excepted activities:
+electronic proof of your medical qualification and/or
+any medical variance documents that you have                       · To transport school children and/or school
+been issued (i.e. Vision, Skills Performance or                         staff between home and school;
+Diabetic waivers, or other exemptions) to your
+SDLA to obtain a "certified" medical status as part                · As Federal, State or local government
+of your driving record. You must contact your State                     employees;
+Driver Licensing Agency (SDLA) to obtain
+information regarding the requirement for submitting               · To transport human corpses or sick or
+these documents.                                                        injured persons;
+
+If you are required to have a "certified" medical                  · Fire truck or rescue vehicle drivers during
+status and fail to keep up-to-date your electronic                      emergencies and other related activities;
+medical examiner's certificate you become "not-
+certified" and may lose your CDL.                                  · Primarily in the transportation of propane
+                                                                        winter heating fuel when responding to an
+For the purpose of complying with the new                               emergency condition requiring immediate
+requirements for medical certification, it is important                 response such as damage to a propane gas
+to know how you are using the CMV. The following                        system after a storm or flooding;
+information will help you decide how to self-certify:
+                                                                   · In Response to a pipeline emergency
+1.2.1 ­ Interstate or Intrastate Commerce                               condition requiring immediate response
+                                                                        such as a pipeline leak or rupture;
+Do you, or will you, use a CDL to operate a CMV in
+interstate or intrastate commerce?                                 · In custom harvesting on a farm or to
+                                                                        transport farm machinery and supplies
+Interstate commerce is when you drive a CMV:                            used in the custom harvesting operation to
+                                                                        and from a farm or to transport custom
+     · From one State to another State or a foreign                     harvested crops to storage or market;
+          country;
+                                                                   · Beekeeper in the seasonal transportation of
+     · Between two places within a State, but                           bees;
+          during part of the trip, the CMV crosses into
+          another State or foreign country; or                     · Controlled and operated by a farmer, but is
+                                                                        not a combination vehicle (power unit and
+     · Between two places within a State, but the                       towed unit), and is used to transport
+          cargo or passengers are part of a trip that                   agricultural products, farm machinery or
+          began or will end in another State or foreign                 farm supplies (no placardable hazardous
+          country.                                                      materials) to and from a farm and within 150
+                                                                        air-miles of the farm;
+     · Intrastate commerce is when you drive a
+          CMV within a State and you do not meet                   · As a private motor carrier of passengers for
+          any of the descriptions above for interstate                  non-business purposes; or
+          commerce.
+                                                                   · To transport migrant workers.
+     · If you operate in both intrastate commerce
+          and interstate commerce, you must                   If you answered yes to one or more of the above
+          choose interstate commerce.                         activities as the only operation in which you drive,
+                                                              you operate in excepted interstate commerce and
+                                                              do not need a Federal medical examiner's
+                                                              certificate.
+
+Section 1 - Introduction                                      Page 1-6
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System   Intrastate non-excepted: (In South Carolina,
+                                                                   this option can only be selected if the applicant
+If you answered no to all of the above activities, you             is 18-20 years of age and/or license has a "K"
+operate in non-excepted interstate commerce                        restriction for intrastate use only). I certify that I
+and are required to prove that you are medically                   operate or expect to operate entirely in
+qualified pursuant to (49 CFR 391.45). Most CDL                    intrastate commerce, that I am subject to and
+holders who drive CMVs in interstate commerce are                  meet the medical requirements for my State;
+non-excepted interstate commerce drivers.                          and that I am required to obtain a medical
+                                                                   examiner's certificate.
+If you operate in both excepted interstate
+commerce and non-excepted interstate                           Intrastate excepted: (This option is not
+commerce, you must choose non-excepted                             applicable in South Carolina). I certify that I
+interstate commerce to be qualified to operate in                  operate or expect to operate entirely in
+both types of interstate commerce.                                 intrastate commerce, that I am not subject to the
+                                                                   medical requirements for my State; and that I
+Intrastate Commerce:                                               am not required to obtain a medical examiner's
+                                                                   certificate.
+You operate in excepted Intrastate commerce
+when you drive a CMV only in intrastate commerce              1.3 - CDL Disqualifications
+activities for which your State of licensure has
+determined do not require you to meet the State's             1.3.1 ­ General
+medical certification requirements. (contact your             You may not drive a commercial motor vehicle if you
+SDLA about their requirements).                               are disqualified for any reason.
+
+You operate in non-excepted intrastate                        1.3.2 ­ Alcohol, Leaving the Scene of an
+commerce when you drive a CMV only in intrastate              Accident, and Commission of a Felony
+commerce and are required to meet your State of
+licensure's medical certification requirements                It is illegal to operate a CMV if your blood alcohol
+(contact your SDLA about their requirements).                 concentration (BAC) is .04% or more. If you operate
+                                                              a CMV, you shall be deemed to have given your
+If you operate in both excepted intrastate                    consent to alcohol testing.
+commerce and non-excepted intrastate
+commerce, you must choose non-excepted                        You will lose your CDL for at least one year for a first
+intrastate commerce.                                          offense for:
+
+1.2.3 ­ Self-Certification Statements                              · Driving a CMV if your blood alcohol
+When completing an application for your CDL, you                        concentration is .04% or higher.
+will be required to check the box next to the
+statement that describes your status. The actual                   · Driving a CMV under the influence of
+statements on your application may vary from those                      alcohol.
+shown below:
+                                                                   · Refusing to undergo blood alcohol testing.
+ Interstate non-excepted: I certify that I operate                 · Driving a CMV while under the influence of
+     or expect to operate in interstate commerce,
+     that I am subject to and meet the Federal DOT                      a controlled substance.
+     medical card requirements under 49 CFR part                   · Leaving the scene of an accident involving
+     391; and that I am required to obtain a medical
+     examiner's certificate.                                            a CMV.
+                                                                   · Committing a felony involving the use of a
+ Interstate excepted: I certify that I operate or
+     expect to operate in interstate commerce, but                      CMV.
+     engage exclusively in transportation or                       · Driving a CMV when the CDL is
+     operations excepted under 49 CFR §§390.3(f),
+     391.2, 391.68 or 398.3 from all or parts of the                    suspended.
+     qualification requirements of 49 CFR part 391;                · Causing a fatality through negligent
+     and that I am not required to obtain a medical
+     examiner's certificate.                                            operation of a CMV.
+
+                                                              You will lose your CDL for at least three years if the
+                                                              offense occurs while you are operating a CMV that
+                                                              is placarded for hazardous materials.
+
+                                                              You will lose your CDL for life for a second offense.
+
+Section 1 - Introduction                                      Page 1-7
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System       · For drivers who are always required to
+                                                                        stop, failing to stop before driving onto the
+You will lose your CDL for life if you use a CMV to                     crossing.
+commit a felony involving controlled substances.
+                                                                   · For all drivers failing to have sufficient
+You will be put out-of-service for 24 hours if you                      space to drive completely through the
+have any detectable amount of alcohol under .04%.                       crossing without stopping.
+
+1.3.3 ­ Serious Traffic Violations                                 · For all drivers failing to obey a traffic
+Serious traffic violations are excessive speeding (15                   control device or the directions of an
+mph or more above the posted limit), reckless                           enforcement official at the crossing.
+driving, improper or erratic lane changes, following
+a vehicle too closely, traffic offenses committed in a             · For all drivers failing to negotiate a
+CMV in connection with fatal traffic accidents,                         crossing because of insufficient
+driving a CMV without obtaining a CDL or having a                       undercarriage clearance.
+CDL in the driver's possession, and driving a CMV
+without the proper class of CDL and/or                        1.3.6 ­ Hazardous Materials Endorsement
+endorsements.                                                 Background Check and Disqualifications
+
+You will lose your CDL:                                       If you require a hazardous materials endorsement
+     · For at least 60 days if you have committed             you will be required to submit your fingerprints and
+          two serious traffic violations within a three-      be subject to a background check.
+          year period involving a CMV.
+     · For at least 120 days for three or more                You will be denied or you will lose your hazardous
+          serious traffic violations within a three-year      materials endorsement if you:
+          period involving a CMV.
+                                                                   · Are not a lawful permanent resident of the
+1.3.4 ­ Violation of Out-of-Service Orders                              United States.
+You will lose your CDL:
+                                                                   · Renounce your United States citizenship.
+     · For at least 90 days if you have committed                  · Are wanted or under indictment for certain
+          your first violation of an out-of-service
+          order.                                                        felonies.
+                                                                   · Have a conviction in military or civilian
+     · For at least one year if you have
+          committed two violations of an out-of-                        court for certain felonies.
+          service order in a ten-year period.                      · Have been adjudicated as lacking mental
+
+     · For at least three years if you have                             capacity or have been involuntarily
+          committed three or more violations of an                      committed to a mental health facility as
+          out-of-service order in a ten-year period.                    specified in 49 CFR 1572.109.
+                                                                   · Are considered to pose a security threat as
+1.3.5 ­ Railroad-highway Grade Crossing                                 determined by the Transportation Security
+Violations                                                              Administration.
+                                                              The background check procedures vary from
+You will lose your CDL:                                       jurisdiction to jurisdiction. Your licensing agency
+     · For at least 60 days for your first violation.         will provide you with all the information you need to
+     · For at least 120 days for your second                  complete the required TSA background check
+          violation within a three-year period.               procedures.
+     · For at least one year for your third violation
+          within a three-year period.                         1.3.7 ­ Traffic Violations in Your Personal
+                                                              Vehicle
+These violations include violation of a federal, state        The Motor Carrier Safety Improvement Act
+or local law or regulation pertaining to one of the           (MCSIA) of 1999 requires a CDL holder to be
+following six offenses at a railroad-highway grade            disqualified from operating a commercial motor
+crossing:                                                     vehicle if the CDL holder has been convicted of
+                                                              certain types of moving violations in their personal
+     · For drivers who are not required to always             vehicle.
+          stop, failing to stop before reaching the
+          crossing if the tracks are not clear.               If your privilege to operate your personal vehicle is
+                                                              revoked, cancelled, or suspended due to violations
+     · For drivers who are not required to always             of traffic control laws (other than parking violations)
+          stop, failing to slow down and check that           you will also lose your CDL driving privileges.
+          the tracks are clear of an approaching
+          train.                                              If your privilege to operate your personal vehicle is
+                                                              revoked, cancelled, or suspended due to alcohol,
+                                                              controlled substance or felony violations, you will
+
+Section 1 - Introduction                                      Page 1-8
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System       · Your employer may not let you drive a
+                                                                        commercial motor vehicle if you have more
+lose your CDL for 1 year. If you are convicted of a                     than one license or if you're CDL is
+second violation in your personal vehicle or CMV                        suspended or revoked. A court may fine
+you will lose your CDL for life.                                        the employer up to $5,000 or put him/her
+                                                                        in jail for breaking this rule.
+If your license to operate your personal vehicle is
+revoked, cancelled, or suspended you may not                       · All states are connected to one
+obtain a "hardship" license to operate a CMV.                           computerized system to share information
+                                                                        about CDL drivers. The states will check
+1.4 ­ Other CDL Rules                                                   on drivers' accident records to be sure that
+                                                                        drivers do not have more than one CDL.
+There are other federal and state rules that affect
+drivers operating CMVs in all states. Among them                   · You are not allowed to hold a mobile
+are:                                                                    telephone to conduct a voice
+                                                                        communication or dial a mobile telephone
+     · You cannot have more than one license. If                        by pressing more than a single button
+          you break this rule, a court may fine you                     when driving.
+          up to $5,000 or put you in jail and keep
+          your home state license and return any                   · You are not allowed to send or read text
+          others.                                                       messages while driving.
+
+     · You must notify your employer within 30                     · You must be properly restrained by a
+          days of conviction for any traffic violations                 safety belt at all times while operating a
+          (except parking). This is true no matter                      commercial motor vehicle. The safety belt
+          what type of vehicle you were driving.                        design holds the driver securely behind the
+                                                                        wheel during a crash, helping the driver to
+     · You must notify your motor vehicle                               control the vehicle and reduces the chance
+          licensing agency within 30 days if you are                    of serious injury or death. If you do not
+          convicted in any other jurisdiction of any                    wear a safety belt, you are four times more
+          traffic violation (except parking). This is                   likely to be fatally injured if you are thrown
+          true no matter what type of vehicle you                       from the vehicle.
+          were driving.
+                                                                  Your state may have additional rules that you
+     · You must notify your employer within two                   must also obey.
+          business days if your license is
+          suspended, revoked, or canceled, or if you          1.5 ­ International Registration Plan
+          are disqualified from driving.                             International Fuel Tax Agreement
+
+     · You must give your employer information                If you operate a CDL required vehicle in interstate
+          on all driving jobs you have held for the           commerce, the vehicle, with few exceptions, is
+          past 10 years. You must do this when you            required to be registered under the International
+          apply for a commercial driving job.                 Registration Plan (IRP) and the International Fuel
+                                                              Tax Agreement (IFTA). These federally mandated
+     · No one can drive a commercial motor                    programs provide for the equitable collection and
+          vehicle without a CDL. A court may fine             distribution of vehicle license fees and motor fuels
+          you up to $5,000 or put you in jail for             taxes for vehicles traveling throughout the 48
+          breaking this rule.                                 contiguous United States and 10 Canadian
+                                                              provinces.
+     · If you have a hazardous materials
+          endorsement you must notify and                     Under the IRP, jurisdictions must register
+          surrender your hazardous materials                  apportioned vehicles which includes issuing license
+          endorsement to the state that issued your           plates and cab cards or proper credentials,
+          CDL within 24 hours of any conviction or            calculate, collect and distribute IRP fees, audit
+          indictment in any jurisdiction, civilian or         carriers for accuracy of reported distance and fees
+          military, for, or found not guilty by reason        and enforce IRP requirements.
+          of insanity of a disqualifying crime listed in
+          49 CFR 1572.103; who is adjudicated as
+          lacking mental capacity or have been
+          involuntarily committed to a mental health
+          facility as specified in 49 CFR 1572.109; or
+          who renounces his or her U. S. citizenship;
+
+Section 1 - Introduction                                      Page 1-9
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System  While similar, the Qualified Motor Vehicle in IFTA
+                                                              means a motor vehicle used, designed, or
+Registrant responsibilities under the Plan include            maintained for transportation of persons or property
+applying for IRP registration with base jurisdiction,         and:
+providing proper documentation for registration,
+paying appropriate IRP registration fees, properly              1) Having two axles and a gross vehicle weight
+displaying registration credentials, maintaining                      or registered gross vehicle weight exceeding
+accurate distance records, and making records                         26,000 pounds or 11,797 kilograms; or
+available for jurisdiction review.
+                                                                2) Is used in combination, when the weight of
+The basic concept behind IFTA is to allow a licensee                  such combination exceeds 26,000 pounds or
+(motor carrier) to license in a base jurisdiction for                 11,797 kilograms gross vehicle or registered
+the reporting and payment of motor fuel use taxes.                    gross vehicle weight. Qualified Motor Vehicle
+Under the IFTA, a licensee is issued one set of                       does not include recreational vehicles.
+credentials which will authorize operations through
+all IFTA member jurisdictions. The fuel use taxes               If the vehicle you operate is registered under IRP
+collected pursuant to the IFTA are calculated based             and you are a motor carrier licensed under IFTA,
+on the number of miles (kilometers) traveled and the            then you are required to comply with the
+number of gallons (liters) consumed in the member               mandatory record keeping requirements for
+jurisdictions. The licensee files one quarterly tax             operating the vehicle. A universally accepted
+return with the base jurisdiction by which the                  method of capturing this information is through the
+licensee will report all operations through all IFTA            completion of an Individual Vehicle Distance
+member jurisdictions.                                           Record (IVDR), sometimes times referred to as a
+                                                                Driver Trip Report. This document reflects the
+It is the base jurisdiction's responsibility to remit the       distance traveled and fuel purchased for a vehicle
+taxes collected to other member jurisdictions and to            that operates interstate under apportioned (IRP)
+represent the other member jurisdictions in the tax             registration and IFTA fuel tax credentials.
+collection process, including the performance of
+audits.                                                       Although the actual format of the IVDR may vary, the
+                                                              information that is required for proper record keeping
+An IFTA licensee must retain records to support the           does not.
+information reported on the IFTA quarterly tax return
+                                                              In order to satisfy the requirements for Individual
+The IRP registrant and the IFTA licensee may be               Vehicle Distance Records, these documents must
+the vehicle owner or the vehicle operator.                    include the following information:
+
+The requirement for acquiring IRP plates for a                Distance
+vehicle and IFTA license for a motor carrier is
+determined by the definitions from the IRP Plan and           Per Article IV of the IRP Plan
+the IFTA for Qualified Vehicle and Qualified Motor                (i) Date of trip (starting and ending)
+Vehicle:                                                          (ii) Trip origin and destination ­ City and State
+                                                                  or Province
+For purposes of IRP:                                              (iii) Route(s) of travel
+                                                                  (iv) Beginning and ending odometer or
+A Qualified Vehicle is (except as provided below)                      hubometer reading of the trip
+any Power Unit that is used or                                    (v) Total distance traveled
+intended for use in two or more Member                            (vi) In-Jurisdiction distance
+Jurisdictions and that is used for the transportation             (vii) Power unit number or vehicle identification
+of persons for hire or designed, used, or maintained                    number.
+primarily for the transportation of property, and:
+                                                              Fuel
+ (i) has two Axles and a gross Vehicle weight or
+      registered gross Vehicle weight in                      Per Section P560 of the IFTA Procedures Manual
+                                                              .300 An acceptable receipt or invoice must
+ (ii) excess of 26,000 pounds (11,793.401                     include, but shall not be limited to, the following:
+      kilograms), or
+                                                                  .005 Date of purchase
+ (iii) has three or more Axles, regardless of weight,             .010 Seller's name and address
+      or                                                          .015 Number of gallons or liters purchased;
+                                                                  .020 Fuel type
+ (iv) is used in combination, when the gross Vehicle              .025 Price per gallon or liter or total amount of
+      weight of such combination exceeds 26,000
+      pounds (11,793.401 kilograms).                                     sale
+                                                                  .030 Unit number or other unique vehicle
+
+                                                                         identifier
+                                                                  .035 Purchaser's name
+
+Section 1 - Introduction                                      Page 1-10
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System  compliance with all State and Provincial laws
+                                                              surrounding fuel and distance record keeping
+An example of an IVDR that must be completed in               requirements.
+its entirety for each trip can be found in Figure 1
+below. Each individual IVDR should be filled out for          The IVDR serves as the source document for the
+only one vehicle. The rules to follow when trying to          calculation of fees and taxes that are payable to the
+determine how and when to log an odometer                     jurisdictions in which the vehicle is operated, so
+reading are the following:                                    these original records must be maintained for a
+                                                              minimum of four years.
+      At the beginning of the day
+      When leaving the state or province                      In addition, these records are subject to audit by the
+      At the end of the trip/day                              taxing jurisdictions. Failure to maintain complete
+                                                              and accurate records could result in fines, penalties
+Not only do the trips need to be logged, but the fuel         and suspension or revocation of IRP registrations
+purchases need to be documented as well. You must             and IFTA licenses.
+obtain a receipt for all fueling and include it with your
+completed IVDR.                                               For additional information on the IRP and the
+                                                              requirements related to the IRP, contact your base
+Make sure that any trips that you enter are always            jurisdiction motor vehicle department or IRP, Inc.
+filled out in descending order and that your trips            the official repository for the IRP. Additional
+include all state/provinces that you traveled through         information can be found on the IRP, Inc. website at
+on your route.                                                www.irponline.org. There is a training video on the
+                                                              website home page available in English, Spanish
+There are different routes that a driver may take,            and French
+and most of the miles may be within one state or
+province. Whether or not the distance you travel is           For additional information on IFTA and the
+primarily in one jurisdiction or spread among several         requirements related to IFTA, contact the
+jurisdictions, all information for the trip must be           appropriate agency in your base jurisdiction. You
+recorded. This includes the dates, the routes,                will also find useful information about the Agreement
+odometer readings and fuel purchases. By                      at the official repository of IFTA at
+completing this document in full and keeping all              http://www.iftach.org/index.php.
+records required by both the IRP and the IFTA, you
+will have ensured that you and your company are in
+
+                          Figure 1 ­ Individual Vehicle Mileage & Fuel Record (Example)
+
+Section 1 - Introduction                                                                 Page 1-11
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System
+
+                      THIS PAGE INTENTIONALLY LEFT BLANK.
+
+Section 1 - Introduction                                      Page 1-12
+Version: March 2025
+Commercial Driver's License Manual ­ 2025 CDL Testing System  dollars, or even worse, a crash caused by the
+                                                              defect.
+           Section 2
+      DRIVING SAFELY                                          Federal and state laws require that drivers inspect
+                                                              their vehicles. Federal and state inspectors also
+This Section Covers                                           may inspect your vehicles. If they judge the vehicle
+                                                              to be unsafe, they will put it "out of service" until it is
+· Vehicle Inspection                                          fixed.
+· Basic Control of Your Vehicle
+· Shifting Gears                                              2.1.2 ­ Types of Vehicle Inspection
+· Seeing
+· Communicating                                               Vehicle Inspection. A Vehicle inspection will help
+· Space Management                                            you find problems that could cause a crash or
+· Controlling Your Speed                                      breakdown.
+· Seeing Hazards
+· Distracted Driving                                          During a Trip. For safety you should:
+· Aggressive Drivers/Road Rage                                     · Watch gauges for signs of trouble.
+· Night Driving & Driver Fatigue                                   · Use your senses to check for problems
+· Driving in Fog                                                        (look, listen, smell, feel).
+· Winter Driving                                                   · Check critical items when you stop:
+· Hot Weather Driving
+· Railroad-highway Crossings                                            Tires, wheels and rims.
+· Mountain Driving                                                      Brakes.
+· Driving Emergencies                                                   Lights and reflectors.
+· Antilock Braking Systems                                              Brake and electrical connections to
+· Skid Control and Recovery
+· Accident Procedures                                                         trailer.
+· Fires
+· Alcohol, Other Drugs, and Driving                                     Trailer coupling devices.
+· Hazardous Materials Rules                                             Cargo securement devices.
+
+This section contains knowledge and safe driving              After-trip Inspection and Report. You should do
+information that all commercial drivers should know.          an after-trip inspection at the end of the trip, day, or
+You must pass a test on this information to get a             tour of duty on each vehicle you operated. It may
+CDL. This section does not have specific                      include filling out a vehicle condition report listing
+information on air brakes, combination vehicles,              any problems you find. The inspection report helps
+doubles, or passenger vehicles. When preparing                a motor carrier know when the vehicle needs
+for the Vehicle Inspection Test, you must review              repairs.
+the material in Section 11 in addition to the
+information in this section. This section does                2.1.3 ­ What to Look For
+have basic information on hazardous materials
+(HazMat) that all drivers should know. If you need a          Tire Problems
+HazMat endorsement, you should study Section 9.                    · Too much or too little air pressure.
+                                                                   · Bad wear. You need at least 4/32-inch
