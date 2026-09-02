@@ -537,4 +537,38 @@ CREATE TABLE blog_posts (
   updated_at      INTEGER NOT NULL
 );
 CREATE INDEX idx_blog_posts_status_published ON blog_posts(status, published_at);
+
+-- Business affiliate partners (pre-licensing course providers, etc.) -- deliberately SEPARATE from
+-- accounts/referrals/point_rules above: a peer referral rewards an existing customer with points
+-- redeemable for a course, but a business partner relationship is a real revenue-share commission
+-- (tracked here for a manual payout, not automated -- actually transferring money to a partner is
+-- a business/accounting step, not something this schema handles) and shouldn't share a code
+-- namespace or reward mechanism with individual customers' ?ref= links. id is the human-readable
+-- slug used as the ?aff=<id> URL param (e.g. 'kaplan-re'), not a generated UUID, so a partner's own
+-- marketing link is legible instead of opaque.
+CREATE TABLE affiliate_partners (
+  id                 TEXT PRIMARY KEY,
+  name               TEXT NOT NULL,
+  contact_email      TEXT,
+  commission_percent INTEGER, -- % of captured revenue owed to this partner; NULL = tracking only, no commission arrangement
+  active             INTEGER NOT NULL DEFAULT 1,
+  notes              TEXT,
+  created_at         INTEGER NOT NULL
+);
+
+-- One row per real completed purchase attributed to a partner's ?aff= link -- see
+-- creditAffiliateConversion() in index.js. commission_cents is snapshotted from the partner's
+-- commission_percent AT THE TIME of this conversion (same reasoning as exam_attempts.pass_percent
+-- being snapshotted): a later change to a partner's commission rate must never retroactively
+-- change what a past, possibly-already-paid-out conversion owed.
+CREATE TABLE affiliate_conversions (
+  id                TEXT PRIMARY KEY,
+  partner_id        TEXT NOT NULL REFERENCES affiliate_partners(id),
+  buyer_email       TEXT NOT NULL,
+  exam_type         TEXT NOT NULL,
+  paid_cents        INTEGER NOT NULL,
+  commission_cents  INTEGER,
+  created_at        INTEGER NOT NULL
+);
+CREATE INDEX idx_affiliate_conversions_partner ON affiliate_conversions(partner_id);
 CREATE INDEX idx_blog_posts_kind ON blog_posts(kind, status);

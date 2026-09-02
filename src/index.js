@@ -834,6 +834,54 @@ async function handleConsoleTestimonialModerate(request, env) {
   return json({ ok: true });
 }
 
+// ---- Affiliate partners (business, e.g. pre-licensing course providers) ---
+// Separate from the customer-facing referral/points system -- see the schema.sql comment on
+// affiliate_partners for why. Aggregates are computed live (join against affiliate_conversions)
+// rather than maintained as running counters -- this table is small (a handful of partners, not
+// hundreds of thousands of rows like exam_attempts), so a live aggregate is cheap and can never
+// drift out of sync with the underlying conversion rows.
+async function handleConsoleAffiliatePartnersList(env) {
+  const [partners, conversionRows] = await Promise.all([
+    env.DB.prepare('SELECT * FROM affiliate_partners ORDER BY created_at DESC').all(),
+    env.DB.prepare(
+      `SELECT partner_id, COUNT(*) AS conversions, SUM(paid_cents) AS revenue_cents, SUM(commission_cents) AS commission_cents
+       FROM affiliate_conversions GROUP BY partner_id`
+    ).all(),
+  ]);
+  const statsByPartner = {};
+  (conversionRows.results || []).forEach((r) => { statsByPartner[r.partner_id] = r; });
+  return json({
+    items: (partners.results || []).map((p) => {
+      const stats = statsByPartner[p.id] || { conversions: 0, revenue_cents: 0, commission_cents: 0 };
+      return {
+        id: p.id, name: p.name, contactEmail: p.contact_email, commissionPercent: p.commission_percent,
+        active: !!p.active, notes: p.notes, createdAt: p.created_at,
+        conversions: stats.conversions || 0, revenueCents: stats.revenue_cents || 0, commissionCents: stats.commission_cents || 0,
+      };
+    }),
+  });
+}
+
+async function handleConsoleAffiliatePartnerCreate(request, env) {
+  const { id, name, contactEmail, commissionPercent, notes } = await request.json();
+  const slug = (id || '').trim().toLowerCase().replace(/[^a-z0-9-]+/g, '-').replace(/^-+|-+$/g, '');
+  if (!slug || !name) return json({ error: 'id_and_name_required' }, 400);
+  try {
+    await env.DB.prepare(
+      `INSERT INTO affiliate_partners (id, name, contact_email, commission_percent, active, notes, created_at)
+       VALUES (?, ?, ?, ?, 1, ?, ?)`
+    ).bind(slug, name, contactEmail || null, commissionPercent != null ? Number(commissionPercent) : null, notes || null, now()).run();
+  } catch (e) { return json({ error: 'a partner with that id already exists' }, 409); }
+  return json({ ok: true, id: slug });
+}
+
+async function handleConsoleAffiliatePartnerActiveSet(request, env) {
+  const { id, active } = await request.json();
+  if (!id) return json({ error: 'id_required' }, 400);
+  await env.DB.prepare('UPDATE affiliate_partners SET active = ? WHERE id = ?').bind(active ? 1 : 0, id).run();
+  return json({ ok: true });
+}
+
 // ---- "Notify me when my track launches" waitlist ---------------------------
 // No moderation queue -- nothing to approve, just a demand signal shown as counts on the admin
 // Stats tab (checked before/when a new state ships). No Turnstile deliberately: this is meant to
@@ -1514,7 +1562,7 @@ async function quoteCheckout(env, examType, email, applyPoints, promoCode) {
 // code has verified the payment actually completed and the captured amount matches what was
 // quoted. Handles point deduction, code issuance, receipt email, referral crediting, and the
 // admin activity alert -- the one thing that's genuinely identical regardless of processor.
-async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, sessionId }) {
+async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, affCode, sessionId }) {
   const buyerEmail = payerEmail || email;
   const { code, token } = gift
     ? await issueGiftCode(env, examType, note, capturedCents, buyerEmail)
@@ -1546,6 +1594,7 @@ async function finalizePurchase(env, { examType, note, capturedCents, payerEmail
   }
 
   await detectAndCreditConversion(env, payerEmail, refCode);
+  await creditAffiliateConversion(env, buyerEmail, examType, capturedCents, affCode);
   await recordFunnelEvent(env, { sessionId, visitorId: null, eventName: 'purchase_completed', examType });
   if (buyerEmail) {
     try {
@@ -1595,7 +1644,7 @@ async function handlePaypalCreateOrder(request, env) {
 }
 
 async function handlePaypalCaptureOrder(request, env) {
-  const { orderId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode, sessionId } = await request.json();
+  const { orderId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode, affCode, sessionId } = await request.json();
   if (!orderId || !examType) return json({ error: 'orderId_and_examType_required' }, 400);
   // Unlike points/promo discounts, gift status has no effect on the charged amount -- nothing to
   // pre-commit at create-order time, so it's just read straight off this request (see the
@@ -1634,7 +1683,7 @@ async function handlePaypalCaptureOrder(request, env) {
   // PayPal's own capture response tells us the payer's email for free -- no extra field/friction
   // needed on the buy form to detect "this buyer was someone's referral" or to record who paid.
   const payerEmail = capture.payer && capture.payer.email_address;
-  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, sessionId });
+  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, affCode, sessionId });
 
   return json({ code, token, examType, pointsApplied, isGift: giftResult });
 }
@@ -1686,7 +1735,7 @@ async function handleStripeCreateIntent(request, env) {
 }
 
 async function handleStripeConfirm(request, env) {
-  const { paymentIntentId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode, sessionId } = await request.json();
+  const { paymentIntentId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode, affCode, sessionId } = await request.json();
   if (!paymentIntentId || !examType) return json({ error: 'paymentIntentId_and_examType_required' }, 400);
   // Unlike points/promo discounts, gift status has no effect on the charged amount -- nothing to
   // pre-commit at create-intent time, so it's just read straight off this request (see the
@@ -1722,7 +1771,7 @@ async function handleStripeConfirm(request, env) {
   // differ -- prefer the latter, same "trust what the processor tells us" approach as PayPal.
   const charge = intent.latest_charge;
   const payerEmail = (charge && charge.billing_details && charge.billing_details.email) || intent.receipt_email;
-  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, sessionId });
+  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, affCode, sessionId });
 
   return json({ code, token, examType, pointsApplied, isGift: giftResult });
 }
@@ -1916,6 +1965,29 @@ async function detectAndCreditConversion(env, buyerEmail, refCode) {
     await notifyAdmin(env, 'referral_converted', 'Referral converted (shared link)',
       `<p><strong>${referrer.email}</strong>'s shared link led to <strong>${buyerEmail}</strong> signing up for a course` +
       (pointsAwarded > 0 ? ` — they earned ${pointsAwarded} points.</p>` : '.</p>'));
+  } catch (e) { /* best-effort */ }
+}
+
+// Business affiliate partner attribution (?aff=<partnerId>, see the site's
+// captureAffCodeFromUrl()/getStoredAffCode()) -- a completely separate path from
+// detectAndCreditConversion() above: no points/accounts involved, just a real commission-tracking
+// row for a business partner (e.g. a pre-licensing course provider), for manual payout. Best-effort
+// like its referral counterpart -- never throws, so bookkeeping can't fail a real purchase.
+async function creditAffiliateConversion(env, buyerEmail, examType, paidCents, affCode) {
+  if (!buyerEmail || !affCode || !paidCents) return;
+  try {
+    const partner = await env.DB.prepare('SELECT * FROM affiliate_partners WHERE id = ? AND active = 1').bind(affCode).first();
+    if (!partner) return;
+    const commissionCents = partner.commission_percent != null
+      ? Math.round(paidCents * partner.commission_percent / 100)
+      : null;
+    await env.DB.prepare(
+      `INSERT INTO affiliate_conversions (id, partner_id, buyer_email, exam_type, paid_cents, commission_cents, created_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?)`
+    ).bind(newId(), partner.id, buyerEmail, examType, paidCents, commissionCents, now()).run();
+    await notifyAdmin(env, 'affiliate_conversion', 'Affiliate conversion',
+      `<p>Partner <strong>${partner.name}</strong>'s link led to a purchase (${examType}, $${(paidCents / 100).toFixed(2)}` +
+      (commissionCents != null ? `, commission owed $${(commissionCents / 100).toFixed(2)}` : '') + `).</p>`);
   } catch (e) { /* best-effort */ }
 }
 
@@ -3589,6 +3661,9 @@ export default {
         if (pathname === '/console/alert-rules/update' && method === 'POST') return await handleConsoleAlertRuleUpdate(request, env);
         if (pathname === '/console/alert-rules/delete' && method === 'POST') return await handleConsoleAlertRuleDelete(request, env);
         if (pathname === '/console/visitors' && method === 'GET') return await handleConsoleVisitorsList(request, env);
+        if (pathname === '/console/affiliate-partners' && method === 'GET') return await handleConsoleAffiliatePartnersList(env);
+        if (pathname === '/console/affiliate-partners/create' && method === 'POST') return await handleConsoleAffiliatePartnerCreate(request, env);
+        if (pathname === '/console/affiliate-partners/active' && method === 'POST') return await handleConsoleAffiliatePartnerActiveSet(request, env);
         if (pathname === '/console/funnel' && method === 'GET') return await handleConsoleFunnel(env);
         if (pathname === '/console/testimonials' && method === 'GET') return await handleConsoleTestimonialsList(env);
         if (pathname === '/console/waitlist' && method === 'GET') return await handleConsoleWaitlist(env);
