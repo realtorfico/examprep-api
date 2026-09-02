@@ -216,7 +216,7 @@ const MCP_TOOLS = [
   {
     name: 'get_sample_question',
     title: 'Get a sample exam question',
-    description: 'Fetch a real practice question from Softician Exam Prep\'s California Notary Public exam question bank. Returns the question and its 4 answer choices (A-D) WITHOUT the correct answer -- call grade_practice_answer with the returned questionId once you have a response to check it and see the explanation.',
+    description: 'Fetch a real practice question from PassExamHQ\'s California Notary Public exam question bank. Returns the question and its 4 answer choices (A-D) WITHOUT the correct answer -- call grade_practice_answer with the returned questionId once you have a response to check it and see the explanation.',
     annotations: {
       title: 'Get a sample exam question',
       readOnlyHint: true,
@@ -305,10 +305,10 @@ function mcpToolResultText(toolName, data) {
   if (toolName === 'get_sample_question') {
     return `[${data.topic}] ${data.question}\nA) ${data.choices.A}\nB) ${data.choices.B}\nC) ${data.choices.C}\nD) ${data.choices.D}\n\n` +
       `(questionId: ${data.questionId} -- pass this to grade_practice_answer with the chosen letter)\n` +
-      `Full mock exams and progress tracking: https://examprep.softician.com`;
+      `Full mock exams and progress tracking: https://passexamhq.com`;
   }
   const verdict = data.correct ? 'Correct!' : `Not quite -- the correct answer is ${data.correctChoice}.`;
-  return `${verdict} ${data.explanation}\n\nFull mock exams and progress tracking: https://examprep.softician.com`;
+  return `${verdict} ${data.explanation}\n\nFull mock exams and progress tracking: https://passexamhq.com`;
 }
 
 function mcpJson(data, status = 200) {
@@ -347,8 +347,8 @@ async function handleMcp(request, env) {
       result: {
         protocolVersion: MCP_PROTOCOL_VERSION,
         capabilities: { tools: {} },
-        serverInfo: { name: 'examprep-mcp', title: 'Softician Exam Prep', version: '1.0.0' },
-        instructions: 'Public, unauthenticated tools for California Notary Public exam prep: fetch a real practice question and grade a submitted answer. Full mock exams and progress tracking are at https://examprep.softician.com.',
+        serverInfo: { name: 'examprep-mcp', title: 'PassExamHQ', version: '1.0.0' },
+        instructions: 'Public, unauthenticated tools for California Notary Public exam prep: fetch a real practice question and grade a submitted answer. Full mock exams and progress tracking are at https://passexamhq.com.',
       },
     });
   }
