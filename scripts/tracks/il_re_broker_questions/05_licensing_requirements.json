@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Licensing Requirements",
+    "question": "To qualify for licensure as a managing broker in Illinois, an applicant must be at least what age?",
+    "choice_a": "18 years of age",
+    "choice_b": "19 years of age",
+    "choice_c": "20 years of age",
+    "choice_d": "21 years of age",
+    "correct_choice": "C",
+    "explanation": "Section 5-28(a)(1) requires every applicant for licensure as a managing broker to \"be at least 20 years of age.\" This is higher than the 18-year minimum required for brokers and residential leasing agents.",
+    "weight": 5,
+    "source_note": "225 ILCS 454/5-28(a)(1) - Requirements for licensure as a managing broker"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "Under the Illinois Real Estate License Act, before applying for a managing broker license, an applicant must have held a broker's license for what minimum period?",
+    "choice_a": "1 consecutive year out of the preceding 2 years",
+    "choice_b": "2 consecutive years out of the preceding 3 years",
+    "choice_c": "3 consecutive years out of the preceding 4 years",
+    "choice_d": "4 consecutive years out of the preceding 5 years",
+    "correct_choice": "B",
+    "explanation": "Section 5-28(a)(3) requires the applicant to \"have been licensed at least 2 consecutive years out of the preceding 3 years as a broker.\"",
+    "weight": 5,
+    "source_note": "225 ILCS 454/5-28(a)(3) - Requirements for licensure as a managing broker"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "Section 5-28 requires a managing broker applicant to provide satisfactory evidence of having completed at least how many total hours of instruction?",
+    "choice_a": "120 hours",
+    "choice_b": "135 hours",
+    "choice_c": "165 hours",
+    "choice_d": "195 hours",
+    "correct_choice": "C",
+    "explanation": "Section 5-28(a)(5) requires \"at least 165 hours, 120 of which shall be those hours required pre-licensure and post-licensure to obtain a broker's license, and 45 additional hours\" focused on brokerage administration and management and residential leasing agent management.",
+    "weight": 4,
+    "source_note": "225 ILCS 454/5-28(a)(5) - Requirements for licensure as a managing broker"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "A broker who already holds the 120 hours of pre-license and post-license education required for a broker's license wants to apply for a managing broker's license. By when must the additional 45 hours of managing-broker-specific education be completed?",
+    "choice_a": "At any point before the managing broker exam is scheduled",
+    "choice_b": "Within the year immediately preceding the filing of the managing broker license application",
+    "choice_c": "Within 6 months after the managing broker license is issued",
+    "choice_d": "During the final year of the broker's initial license term",
+    "correct_choice": "B",
+    "explanation": "Section 5-28(a)(5) specifies the 45 additional hours must be \"completed within the year immediately preceding the filing of an application for a managing broker's license,\" and must include at least 15 hours in the classroom or by live, interactive webinar or online distance education courses.",
+    "weight": 3,
+    "source_note": "225 ILCS 454/5-28(a)(5) - Requirements for licensure as a managing broker"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "The written examination required for licensure as a managing broker under Section 5-28 specifically tests an applicant's knowledge of which subject matter?",
+    "choice_a": "National real estate principles and practices",
+    "choice_b": "Illinois specific real estate brokerage laws",
+    "choice_c": "Federal fair housing regulations only",
+    "choice_d": "General residential leasing agent procedures",
+    "correct_choice": "B",
+    "explanation": "Section 5-28(a)(6) requires the applicant to \"personally take and pass a written examination on Illinois specific real estate brokerage laws authorized by the Department.\"",
+    "weight": 4,
+    "source_note": "225 ILCS 454/5-28(a)(6) - Requirements for licensure as a managing broker"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "A sponsoring broker's only designated managing broker leaves the firm and is not replaced. Under Section 5-29, within how many days of that loss must a written request for authorization to continue operating the office be submitted to the Department?",
+    "choice_a": "10 days",
+    "choice_b": "15 days",
+    "choice_c": "30 days",
+    "choice_d": "45 days",
+    "correct_choice": "B",
+    "explanation": "Section 5-29 states that upon the loss of a designated managing broker who is not replaced, \"a written request for authorization allowing the continued operation of the office may be submitted to the Department within 15 days of the loss.\"",
+    "weight": 2,
+    "source_note": "225 ILCS 454/5-29 - Temporary practice as a designated managing broker"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "Under Section 5-29, once the Department issues a written authorization allowing continued operation of an office after the loss of a designated managing broker, that authorization is valid for no more than how many days unless the Department grants an extension for good cause?",
+    "choice_a": "30 days",
+    "choice_b": "45 days",
+    "choice_c": "60 days",
+    "choice_d": "90 days",
+    "correct_choice": "C",
+    "explanation": "Section 5-29 provides that \"No such written authorization shall be valid for more than 60 days unless extended by the Department for good cause shown and upon written request by the broker or representative.\"",
+    "weight": 2,
+    "source_note": "225 ILCS 454/5-29 - Temporary practice as a designated managing broker"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "According to Section 5-35, approved pre-license education completed for licensure as a managing broker, broker, or residential leasing agent remains valid for how long after the date it is satisfactorily completed?",
+    "choice_a": "1 year",
+    "choice_b": "18 months",
+    "choice_c": "2 years",
+    "choice_d": "3 years",
+    "correct_choice": "C",
+    "explanation": "Section 5-35(a) states that \"Approved pre-license education, as prescribed by this Act for licensure as a managing broker, broker, or residential leasing agent, shall be valid for 2 years after the date of satisfactory completion of all required pre-license education.\"",
+    "weight": 4,
+    "source_note": "225 ILCS 454/5-35(a) - Examination; managing broker, broker, or residential leasing agent"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "After establishing sponsorship of a licensee, a sponsoring broker must notify the Department of that sponsorship within what time frame under Section 5-40?",
+    "choice_a": "24 hours",
+    "choice_b": "3 business days",
+    "choice_c": "10 days",
+    "choice_d": "30 days",
+    "correct_choice": "A",
+    "explanation": "Section 5-40(a) requires the sponsoring broker to notify the Department \"of each licensee employed by or associated with the sponsoring broker within 24 hours after establishing a sponsorship.\"",
+    "weight": 5,
+    "source_note": "225 ILCS 454/5-40(a) - Sponsorship; establishing and terminating sponsorship"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "In addition to the general continuing education hours required of all managing brokers and brokers, Section 5-70 requires licensees renewing or obtaining a managing broker's license to complete what additional continuing education course?",
+    "choice_a": "A 6-hour fair housing course",
+    "choice_b": "A 12-hour broker management continuing education course",
+    "choice_c": "A 15-hour brokerage administration course",
+    "choice_d": "An 8-hour core curriculum course",
+    "correct_choice": "B",
+    "explanation": "Section 5-70(b) states that \"those licensees renewing or obtaining a managing broker's license must successfully complete a 12-hour broker management continuing education course approved by the Department during the current term of the license,\" in addition to the 12 hours of general real estate continuing education required of all managing brokers and brokers.",
+    "weight": 5,
+    "source_note": "225 ILCS 454/5-70(b) - Continuing education requirement; managing broker or broker"
+  }
+]

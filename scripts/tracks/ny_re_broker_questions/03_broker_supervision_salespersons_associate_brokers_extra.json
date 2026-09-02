@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Broker Supervision of Salespersons & Associate Brokers",
+    "question": "Under RPL Section 442-b, when a salesperson's association with a broker ends, who is responsible for promptly reporting that discontinuance to DOS?",
+    "choice_a": "The broker",
+    "choice_b": "The salesperson alone, with no broker reporting duty at all",
+    "choice_c": "DOS discovers discontinuances automatically with no reporting by anyone",
+    "choice_d": "The county clerk where the brokerage's office is located",
+    "correct_choice": "A",
+    "explanation": "RPL Section 442-b places the reporting duty on the broker: when a salesperson's association ends, the broker must promptly inform DOS following prescribed procedures -- and if the salesperson moves to a new broker, that new broker must separately report the change.",
+    "weight": 4,
+    "source_note": "RPL Article 12-A, Section 442-b (Discontinuance or change of salesperson's association; report)"
+  },
+  {
+    "topic": "Broker Supervision of Salespersons & Associate Brokers",
+    "question": "Under RPL Section 442-b, until a salesperson whose association has ended becomes associated with a new licensed broker, what is that salesperson barred from doing?",
+    "choice_a": "Performing any act within the prohibitions of Article 12-A -- effectively, engaging in real estate brokerage activity at all",
+    "choice_b": "Nothing -- the salesperson may continue working exactly as before with no restriction",
+    "choice_c": "Only renewing their own license, with no restriction on active brokerage work",
+    "choice_d": "Only showing rental properties, while sales activity remains permitted",
+    "correct_choice": "A",
+    "explanation": "RPL Section 442-b provides that a salesperson may not perform any act within the prohibitions of Article 12-A from the moment their association terminates until they become associated with a new licensed broker -- underscoring that a salesperson has no independent authority to practice real estate brokerage while unaffiliated.",
+    "weight": 5,
+    "source_note": "RPL Article 12-A, Section 442-b (Discontinuance of association -- activity bar while unaffiliated)"
+  },
+  {
+    "topic": "Broker Supervision of Salespersons & Associate Brokers",
+    "question": "Under RPL Section 442-b, what fee accompanies a new broker's report to DOS that a salesperson has changed association to that broker?",
+    "choice_a": "One dollar",
+    "choice_b": "One hundred dollars",
+    "choice_c": "No fee is charged for reporting a change of association",
+    "choice_d": "Two hundred fifty dollars",
+    "correct_choice": "A",
+    "explanation": "RPL Section 442-b sets a modest one-dollar fee accompanying the new broker's required report of a salesperson's change of association -- a low administrative charge relative to the $185/$65 initial licensing fees discussed elsewhere.",
+    "weight": 2,
+    "source_note": "RPL Article 12-A, Section 442-b (change-of-association report fee)"
+  },
+  {
+    "topic": "Broker Supervision of Salespersons & Associate Brokers",
+    "question": "Under RPL Section 442-c, when may a broker's license be revoked or suspended based solely on a violation committed by that broker's salesperson?",
+    "choice_a": "Only if the broker had actual knowledge of the violation, or retains the benefits, profits, or proceeds of a transaction wrongfully negotiated by the salesperson after being notified of the misconduct",
+    "choice_b": "Automatically, any time any salesperson associated with the broker commits any violation, regardless of the broker's knowledge",
+    "choice_c": "Never -- a broker can never face discipline for a salesperson's individual violation under any circumstance",
+    "choice_d": "Only if the violation occurred more than five years after the salesperson's initial licensure",
+    "correct_choice": "A",
+    "explanation": "RPL Section 442-c protects a broker from automatic vicarious discipline for a salesperson's violation -- the broker's own license is at risk only where the broker had actual knowledge of the violation, or retained the benefits/profits/proceeds of a wrongfully negotiated transaction after being notified of the misconduct.",
+    "weight": 5,
+    "source_note": "RPL Article 12-A, Section 442-c (Violations by salespersons; broker's responsibility)"
+  },
+  {
+    "topic": "Broker Supervision of Salespersons & Associate Brokers",
+    "question": "Under RPL Section 442-c, what criminal classification applies to a broker who knowingly employs a salesperson lacking the required license for that position?",
+    "choice_a": "A misdemeanor",
+    "choice_b": "A civil infraction only, with no criminal exposure",
+    "choice_c": "A felony carrying a mandatory prison term",
+    "choice_d": "No penalty is specified -- the practice is technically unregulated",
+    "correct_choice": "A",
+    "explanation": "RPL Section 442-c makes it a misdemeanor for a broker to employ any salesperson who lacks the license required for that role, independent of the separate 'actual knowledge / retained benefit' standard that governs a broker's discipline exposure for a properly licensed salesperson's individual misconduct.",
+    "weight": 4,
+    "source_note": "RPL Article 12-A, Section 442-c (misdemeanor for employing an unlicensed salesperson)"
+  },
+  {
+    "topic": "Broker Supervision of Salespersons & Associate Brokers",
+    "question": "A broker learns that a salesperson wrongfully negotiated a transaction in violation of Article 12-A, but the broker takes no corrective action and keeps the brokerage's share of the resulting commission. Under RPL Section 442-c, what is the significance of the broker retaining that commission after notification?",
+    "choice_a": "It can itself support discipline against the broker, since Section 442-c ties broker exposure to retaining the benefits/profits/proceeds of a wrongfully negotiated transaction after notice of the misconduct",
+    "choice_b": "It is legally irrelevant, since only the salesperson who committed the violation can ever be disciplined",
+    "choice_c": "It automatically converts the violation into a civil-only matter with no misdemeanor exposure for anyone",
+    "choice_d": "It has significance only if the commission exceeds $50,000",
+    "correct_choice": "A",
+    "explanation": "Section 442-c specifically identifies retaining the benefits, profits, or proceeds of a wrongfully negotiated transaction -- after being notified of the underlying misconduct -- as one of the two paths (along with actual knowledge) by which a broker's own license can become exposed to discipline for a salesperson's violation.",
+    "weight": 4,
+    "source_note": "RPL Article 12-A, Section 442-c (applied -- retained-benefit exposure)"
+  },
+  {
+    "topic": "Broker Supervision of Salespersons & Associate Brokers",
+    "question": "How do RPL Section 442-c's 'actual knowledge or retained benefit' standard and 19 NYCRR Section 175.21's affirmative supervisory duty work together to shape a broker's overall exposure for a salesperson's misconduct?",
+    "choice_a": "Section 442-c limits when a broker can be disciplined purely for a salesperson's individual violation, while Section 175.21 separately and independently exposes the broker to discipline for failing to provide the required regular, frequent supervision in the first place -- a broker can face 175.21 exposure even without meeting 442-c's knowledge/benefit standard",
+    "choice_b": "The two provisions are identical and redundant, addressing exactly the same conduct in exactly the same way",
+    "choice_c": "Section 442-c completely overrides and nullifies the Section 175.21 supervisory duty",
+    "choice_d": "Neither provision has any bearing on broker discipline; only DOS's informal internal policy governs the outcome",
+    "correct_choice": "A",
+    "explanation": "These are two distinct (though related) exposure paths: Section 442-c narrows when a broker is vicariously liable purely for a salesperson's specific violation (requiring actual knowledge or retained benefit after notice), while Section 175.21 independently requires the broker to actively supervise in the first place -- a broker who never meets 442-c's knowledge/benefit threshold can still face discipline under 175.21 for failing to supervise adequately.",
+    "weight": 4,
+    "source_note": "RPL Article 12-A, Section 442-c; 19 NYCRR Section 175.21 (interaction of the two standards)"
+  },
+  {
+    "topic": "Broker Supervision of Salespersons & Associate Brokers",
+    "question": "A salesperson's association with Broker A ends on a Monday, and the salesperson begins working with Broker B the following week without any gap being reported. Under RPL Section 442-b, which broker(s) have a reporting obligation to DOS?",
+    "choice_a": "Both -- Broker A must report the discontinuance, and Broker B must separately report the new association",
+    "choice_b": "Only Broker B, since Broker A's relationship with the salesperson has already ended",
+    "choice_c": "Only the salesperson has any reporting duty; neither broker is required to report anything",
+    "choice_d": "Neither broker has any reporting duty as long as the gap is less than one month",
+    "correct_choice": "A",
+    "explanation": "RPL Section 442-b creates reporting duties on both sides of a salesperson's transition: the broker being left must report the discontinuance, and the new broker must separately report the change of association (accompanied by the one-dollar fee) -- ensuring DOS's licensing records accurately reflect current supervisory relationships at all times.",
+    "weight": 4,
+    "source_note": "RPL Article 12-A, Section 442-b (applied -- dual reporting duty)"
+  },
+  {
+    "topic": "Broker Supervision of Salespersons & Associate Brokers",
+    "question": "A broker, aware that a particular salesperson has a documented pattern of overstepping the unauthorized-practice-of-law limits, takes no additional training or corrective steps and later discovers the salesperson has done it again on a new deal. Which of the following most directly reflects the broker's compliance exposure?",
+    "choice_a": "The broker's own knowledge of the pattern and failure to correct it strengthens both an actual-knowledge argument under Section 442-c and a failure-to-supervise argument under Section 175.21",
+    "choice_b": "The broker has no exposure whatsoever, since only the individual salesperson who overstepped can ever face discipline",
+    "choice_c": "The broker's exposure depends solely on whether the salesperson has more than five years of experience",
+    "choice_d": "The broker's exposure is eliminated entirely as long as the brokerage carries general liability insurance",
+    "correct_choice": "A",
+    "explanation": "A documented pattern the broker was aware of but did nothing about strengthens both the 'actual knowledge' basis for discipline under Section 442-c and a separate failure-to-supervise theory under Section 175.21's regular-frequent-consistent oversight standard -- the two theories can reinforce each other on the same facts.",
+    "weight": 4,
+    "source_note": "RPL Article 12-A, Section 442-c; 19 NYCRR Section 175.21 (applied, composite scenario)"
+  }
+]

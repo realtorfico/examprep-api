@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Escrow & Trust Fund Management",
+    "question": "A broker's trust account is examined by GREC during a renewal period, and the broker submits a CPA report in lieu of a direct GREC examination. Under O.C.G.A. § 43-40-20(c), is this an acceptable substitute?",
+    "choice_a": "No -- a CPA report is never an acceptable substitute for a direct GREC examination under any circumstance",
+    "choice_b": "Yes -- the statute expressly allows a CPA report or renewal-form summary to satisfy the renewal-period trust account examination in lieu of a direct GREC examination",
+    "choice_c": "Yes, but only if the CPA is also a licensed real estate broker",
+    "choice_d": "No -- only a court-appointed auditor's report satisfies the renewal-period examination requirement",
+    "correct_choice": "B",
+    "explanation": "O.C.G.A. § 43-40-20(c) expressly permits a broker to satisfy the renewal-period trust account examination with a CPA report or renewal-form summary, as an alternative to a direct GREC examination.",
+    "weight": 4,
+    "source_note": "O.C.G.A. § 43-40-20(c)"
+  },
+  {
+    "topic": "Escrow & Trust Fund Management",
+    "question": "A broker opens a trust account for the firm at a bank located in South Carolina, just across the border, believing it is more convenient than a Georgia bank. Under O.C.G.A. § 43-40-20(a), is this permissible for a Georgia-resident broker?",
+    "choice_a": "Yes -- any federally-insured bank in any U.S. state satisfies the requirement",
+    "choice_b": "Yes -- the requirement applies only to commercial transactions, not residential ones",
+    "choice_c": "No -- § 43-40-20(a) requires the account to be maintained at a financial institution in this state (Georgia), absent the separate nonresident-broker exception under § 43-40-20(g)",
+    "choice_d": "No, but only because South Carolina banks are not federally insured",
+    "correct_choice": "C",
+    "explanation": "O.C.G.A. § 43-40-20(a) requires the trust account to be maintained at a financial institution in Georgia; the separate home-state-bank allowance under § 43-40-20(g) applies specifically to nonresident brokers, not to a Georgia-resident broker choosing an out-of-state bank for convenience.",
+    "weight": 4,
+    "source_note": "O.C.G.A. § 43-40-20(a); § 43-40-20(g)"
+  },
+  {
+    "topic": "Escrow & Trust Fund Management",
+    "question": "A dispute arises between a buyer and seller over entitlement to earnest money after a contract falls through, and neither party will sign a mutual release. Under Rule 520-1-.08(4)(b), what is one lawful path for the broker to resolve holding the disputed funds?",
+    "choice_a": "The broker must simply pick whichever party seems more likely to be correct and disburse the funds accordingly",
+    "choice_b": "The broker must retain the funds indefinitely until both parties agree, with no other lawful option available",
+    "choice_c": "The broker may keep the disputed funds as compensation for the broker's time spent mediating the dispute",
+    "choice_d": "Filing an interpleader action, which is one of the enumerated proper bases for disbursement under the rule",
+    "correct_choice": "D",
+    "explanation": "Rule 520-1-.08(4)(b) lists filing an interpleader action among the proper bases for disbursement -- allowing the broker to deposit the disputed funds with a court and let the court determine entitlement, rather than the broker unilaterally deciding or holding the funds indefinitely.",
+    "weight": 4,
+    "source_note": "Ga. Comp. R. & Regs. 520-1-.08(4)(b)"
+  },
+  {
+    "topic": "Escrow & Trust Fund Management",
+    "question": "A broker's trust account accounting system tracks only the total monthly deposits and withdrawals in a single lump-sum figure, without recording individual buyer/seller names or which property each deposit relates to. Does this satisfy Rule 520-1-.08(2)?",
+    "choice_a": "No -- Rule 520-1-.08(2) requires transaction-level detail, including buyer and seller names, the deposit amount and date, and the property involved for each item, not merely aggregate monthly totals",
+    "choice_b": "Yes -- aggregate monthly totals are all that Georgia rule requires",
+    "choice_c": "Yes, as long as the bank's own monthly statement is retained as backup",
+    "choice_d": "No, but only because the totals must also be reported to the IRS in that format",
+    "correct_choice": "A",
+    "explanation": "Rule 520-1-.08(2) requires the broker's accounting system to capture transaction-level detail -- buyer/seller names, deposit amount and date, the property involved, and each disbursement check's amount, payee, and date -- an aggregate-only monthly total would not satisfy this requirement.",
+    "weight": 4,
+    "source_note": "Ga. Comp. R. & Regs. 520-1-.08(2)"
+  },
+  {
+    "topic": "Escrow & Trust Fund Management",
+    "question": "A broker performs a monthly written reconciliation of the trust account for January but then discards that reconciliation record after 18 months, believing that is sufficient. Does this satisfy Rule 520-1-.08(6)'s retention requirement?",
+    "choice_a": "Yes -- 18 months exceeds the 1-year minimum retention period",
+    "choice_b": "No -- Rule 520-1-.08(6) requires reconciliation records to be retained for 3 years, so discarding them after only 18 months falls short",
+    "choice_c": "Yes -- there is no specific retention period for reconciliation records under Georgia rule",
+    "choice_d": "No, but only because the broker also failed to reconcile a second time that same month",
+    "correct_choice": "B",
+    "explanation": "Rule 520-1-.08(6) requires monthly written reconciliations and requires those records to be retained for 3 years -- discarding a reconciliation record after only 18 months would violate the retention requirement.",
+    "weight": 4,
+    "source_note": "Ga. Comp. R. & Regs. 520-1-.08(6)"
+  },
+  {
+    "topic": "Escrow & Trust Fund Management",
+    "question": "As a matter of general national real estate terminology (not a Georgia-specific statutory distinction), how do the terms 'trust account' and 'escrow account' typically relate to one another in residential brokerage practice?",
+    "choice_a": "They refer to two legally unrelated concepts that never overlap in any jurisdiction",
+    "choice_b": "'Escrow account' refers only to funds held by a lender for taxes and insurance, and is never used to describe earnest money holding",
+    "choice_c": "They are commonly used as near-interchangeable terms for an account a broker or other party holds to safeguard funds belonging to others pending a transaction's completion, though the specific statutory label used (e.g., Georgia's 'trust account') can vary state to state",
+    "choice_d": "'Trust account' applies only to attorney-held funds, never to broker-held funds, in every U.S. state",
+    "correct_choice": "C",
+    "explanation": "As a matter of general national terminology, 'trust account' and 'escrow account' are commonly used close to interchangeably to describe an account holding funds belonging to others pending a transaction, though the specific term codified in statute (Georgia uses 'trust account' in O.C.G.A. § 43-40-20) can differ by state.",
+    "weight": 3,
+    "source_note": "hedge: standard national real estate terminology"
+  },
+  {
+    "topic": "Escrow & Trust Fund Management",
+    "question": "A Georgia broker never received a written agreement about entitlement to interest earned on the firm's interest-bearing trust account, but has been quietly keeping the accrued interest as extra income for a year. Under Rule 520-1-.08(1)(d), what is the compliance status of this practice?",
+    "choice_a": "Fully compliant, since brokers are automatically entitled to all trust account interest by default",
+    "choice_b": "Fully compliant, as long as the amount kept is under $500 per year",
+    "choice_c": "Out of compliance, but only because the interest was not also reported on the firm's tax return",
+    "choice_d": "Out of compliance -- the rule requires a written agreement specifying interest entitlement before a broker may treat accrued interest as belonging to the broker",
+    "correct_choice": "D",
+    "explanation": "Rule 520-1-.08(1)(d) requires a written agreement specifying who is entitled to interest earned on an interest-bearing trust account -- quietly retaining the interest without such an agreement in place does not comply with the rule.",
+    "weight": 4,
+    "source_note": "Ga. Comp. R. & Regs. 520-1-.08(1)(d)"
+  },
+  {
+    "topic": "Escrow & Trust Fund Management",
+    "question": "A brokerage firm's license is revoked by GREC while the firm is still holding several buyers' earnest money deposits in its trust account for pending transactions. As a matter of the trust account's basic legal character (not a specific Georgia disposition-on-revocation statute), whose money does that held earnest money remain?",
+    "choice_a": "It remains the depositing parties' (or, once consummated or terminated, the rightful party's) money held in trust -- license revocation does not convert trust funds into the broker's or firm's own assets",
+    "choice_b": "It automatically becomes the property of the State of Georgia upon revocation",
+    "choice_c": "It automatically becomes the personal property of the qualifying broker upon revocation",
+    "choice_d": "It is forfeited entirely and simply ceases to exist as a legal claim",
+    "correct_choice": "A",
+    "explanation": "Trust funds are, by their basic legal character, held for the benefit of the depositing party (or the rightful party once the transaction is consummated or terminated) -- a broker's or firm's license revocation does not convert those funds into the broker's or firm's own assets, consistent with O.C.G.A. § 43-40-20(e)'s rule that a broker is never entitled to trust funds as commission until consummation or termination.",
+    "weight": 4,
+    "source_note": "hedge: general legal character of trust funds, consistent with O.C.G.A. § 43-40-20(e); no specific Georgia disposition-on-revocation statute independently confirmed this session"
+  },
+  {
+    "topic": "Escrow & Trust Fund Management",
+    "question": "A broker's trust account routinely dips into a negative available balance for a brief period because the broker disburses a check before a corresponding deposit has fully cleared the bank. What GREC concern does this practice most directly raise, even absent any intent to misappropriate funds?",
+    "choice_a": "No concern at all, since intent is the only factor GREC ever considers in trust account matters",
+    "choice_b": "It risks the trust account temporarily holding less than the broker's total trust liability to depositors, which is precisely the kind of shortfall the required monthly reconciliation under Rule 520-1-.08(6) is designed to detect",
+    "choice_c": "It is a concern only if the shortfall exceeds $100,000",
+    "choice_d": "It is a concern solely for the bank, with no bearing on the broker's GREC compliance",
+    "correct_choice": "B",
+    "explanation": "Disbursing against uncleared deposits risks a temporary trust-liability shortfall -- funds on hand falling short of what is owed to depositors -- which is exactly the kind of discrepancy the required monthly written reconciliation under Rule 520-1-.08(6) is designed to catch, independent of whether the broker intended any misappropriation.",
+    "weight": 4,
+    "source_note": "Ga. Comp. R. & Regs. 520-1-.08(6)"
+  }
+]

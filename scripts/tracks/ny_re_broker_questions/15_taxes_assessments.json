@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Taxes & Assessments",
+    "question": "What is the standard New York State real estate transfer tax rate?",
+    "choice_a": "$0.50 for each $1,000 of consideration",
+    "choice_b": "A flat $500 regardless of sale price",
+    "choice_c": "5% of the sale price",
+    "choice_d": "$2 for each $500 of consideration",
+    "correct_choice": "D",
+    "explanation": "New York State imposes a real estate transfer tax at a rate of $2 for each $500 of consideration paid for the property, under Tax Law Article 31.",
+    "weight": 5,
+    "source_note": "NY Tax Law Article 31 (Real Estate Transfer Tax) -- $2 per $500 rate"
+  },
+  {
+    "topic": "Taxes & Assessments",
+    "question": "New York's 'mansion tax' imposes an additional tax on residential property transfers meeting what threshold?",
+    "choice_a": "Total consideration of $1 million or more",
+    "choice_b": "Total consideration of $100,000 or more",
+    "choice_c": "Total consideration of $10 million or more",
+    "choice_d": "Any residential transfer, regardless of price",
+    "correct_choice": "A",
+    "explanation": "The mansion tax applies an additional 1% tax on residential real property transfers where the total consideration is $1 million or more -- a New York-specific tax layered on top of the standard state transfer tax.",
+    "weight": 5,
+    "source_note": "NY Tax Law (mansion tax on residential transfers of $1 million+)"
+  },
+  {
+    "topic": "Taxes & Assessments",
+    "question": "What is the base mansion tax rate applied once a residential transfer reaches the $1 million threshold?",
+    "choice_a": "10% of the total consideration",
+    "choice_b": "1% of the total consideration",
+    "choice_c": "0.1% of the total consideration",
+    "choice_d": "$1,000 flat fee",
+    "correct_choice": "B",
+    "explanation": "The base mansion tax rate is 1% of the total consideration once a residential transfer reaches the $1 million threshold; New York's 2019 reforms layered additional, higher tiers on top of this base rate for larger New York City transactions.",
+    "weight": 4,
+    "source_note": "NY Tax Law (mansion tax base rate)"
+  },
+  {
+    "topic": "Taxes & Assessments",
+    "question": "Effective July 1, 2019, an enhanced transfer tax rate applies in New York City (or any other city in the state with a population of one million or more) for residential conveyances above what consideration threshold?",
+    "choice_a": "$500,000 or more",
+    "choice_b": "$50 million or more",
+    "choice_c": "$3 million or more",
+    "choice_d": "There is no additional NYC-specific tier",
+    "correct_choice": "C",
+    "explanation": "For residential real property in NYC (or another New York city with 1 million+ population) where total consideration is $3 million or more, an additional $1.25 per $500 is added on top of the regular NYS Transfer Tax, for a combined $3.25 per $500 rate -- effective for transfers on or after July 1, 2019.",
+    "weight": 4,
+    "source_note": "NY Tax Law, 2019 transfer tax reform (enhanced NYC residential tier, effective July 1, 2019)"
+  },
+  {
+    "topic": "Taxes & Assessments",
+    "question": "By New York custom, which party typically pays the state real estate transfer tax, absent a different agreement?",
+    "choice_a": "The buyer (grantee)",
+    "choice_b": "The listing broker",
+    "choice_c": "The county government",
+    "choice_d": "The seller (grantor)",
+    "correct_choice": "D",
+    "explanation": "By longstanding New York custom, the seller (grantor) customarily pays the state real estate transfer tax, in contrast to the mortgage recording tax, which is customarily paid by the buyer/borrower -- though either allocation can be negotiated differently by the parties.",
+    "weight": 3,
+    "source_note": "hedge: well-corroborated NY real estate closing-cost industry convention"
+  },
+  {
+    "topic": "Taxes & Assessments",
+    "question": "New York's STAR (School Tax Relief) program provides what kind of property tax benefit?",
+    "choice_a": "A reduction in the school tax portion of property taxes on an owner's primary residence",
+    "choice_b": "A complete exemption from all property taxes, including county and municipal taxes",
+    "choice_c": "A rebate on the mortgage recording tax",
+    "choice_d": "A reduction available only to commercial rental property owners",
+    "correct_choice": "A",
+    "explanation": "STAR specifically reduces the school tax portion of property taxes for an owner's primary residence -- it does not apply to rental properties, second homes, or seasonal residences, and does not reduce other components of the property tax bill (such as county or municipal taxes).",
+    "weight": 4,
+    "source_note": "NY STAR (School Tax Relief) program -- confirmed via NYS official/local government guidance"
+  },
+  {
+    "topic": "Taxes & Assessments",
+    "question": "Basic STAR is available to homeowners of what age, provided the property is their primary residence and household income is within the applicable limit?",
+    "choice_a": "Only homeowners age 65 or older",
+    "choice_b": "Any age -- Basic STAR has no minimum age requirement, only income and primary-residence conditions",
+    "choice_c": "Only first-time homebuyers under age 35",
+    "choice_d": "Only homeowners age 18-25",
+    "correct_choice": "B",
+    "explanation": "Basic STAR is available to homeowners of any age who own and reside in the home as their primary residence and meet the applicable household income limit -- distinct from Enhanced STAR, which is age-restricted to seniors.",
+    "weight": 3,
+    "source_note": "NY STAR program -- Basic STAR eligibility (confirmed via NYS/local government guidance)"
+  },
+  {
+    "topic": "Taxes & Assessments",
+    "question": "Enhanced STAR provides additional school tax relief to homeowners who meet what age threshold, along with a lower household income limit than Basic STAR?",
+    "choice_a": "All owners must be at least 40 years old",
+    "choice_b": "All owners must be at least 21 years old",
+    "choice_c": "All owners must be at least 65 years old",
+    "choice_d": "There is no age requirement for Enhanced STAR",
+    "correct_choice": "C",
+    "explanation": "Enhanced STAR requires all owners of the property to be at least 65 years old in the year the benefit takes effect, along with a household income limit that is lower than the Basic STAR threshold, reflecting the enhanced benefit's focus on senior homeowners.",
+    "weight": 3,
+    "source_note": "NY STAR program -- Enhanced STAR eligibility (confirmed via NYS/local government guidance)"
+  },
+  {
+    "topic": "Taxes & Assessments",
+    "question": "Does the STAR program apply to a homeowner's rental property or seasonal second home?",
+    "choice_a": "Yes, STAR applies equally to all residential property an owner holds",
+    "choice_b": "Yes, but only for rental properties with fewer than four units",
+    "choice_c": "Yes, but only for seasonal residences owned for more than ten years",
+    "choice_d": "No -- STAR applies only to an owner's primary residence, not rental properties, second homes, or seasonal residences",
+    "correct_choice": "D",
+    "explanation": "STAR is specifically limited to an owner's primary residence -- rental properties, second homes, and seasonal residences do not qualify, regardless of how long they have been owned.",
+    "weight": 3,
+    "source_note": "NY STAR program -- primary residence limitation (confirmed via NYS/local government guidance)"
+  },
+  {
+    "topic": "Taxes & Assessments",
+    "question": "An 'equalization rate,' as used in New York property tax administration, is generally intended to:",
+    "choice_a": "Reconcile differences in local assessment practices across municipalities by expressing the relationship between a locality's total assessed value and its estimated full (market) value",
+    "choice_b": "Set an identical dollar tax bill for every property in the state",
+    "choice_c": "Eliminate the need for any local property tax assessment",
+    "choice_d": "Determine a broker's commission rate on a given transaction",
+    "correct_choice": "A",
+    "explanation": "An equalization rate helps reconcile differing local assessment practices by expressing the relationship between a municipality's total assessed value and its estimated full (market) value -- important because assessment ratios vary widely between New York's many local assessing units, affecting how state aid and other cross-jurisdictional tax calculations are applied.",
+    "weight": 3,
+    "source_note": "hedge: standard, well-corroborated NY property tax assessment administration concept"
+  }
+]

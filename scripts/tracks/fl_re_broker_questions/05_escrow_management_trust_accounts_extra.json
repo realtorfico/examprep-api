@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Escrow Management & Trust Accounts",
+    "question": "Under Section 475.5015, F.S., a broker must preserve escrow/trust account books, accounts, and records pertaining to the real estate brokerage business for how long from the date of receipt of any money, fund, deposit, check, or draft entrusted to the broker?",
+    "choice_a": "At least 5 years, extended further if the records become involved in litigation or a pending DBPR/FREC proceeding",
+    "choice_b": "1 year from the date of closing only",
+    "choice_c": "10 years, with no exceptions",
+    "choice_d": "Only until the transaction closes, after which records may be destroyed",
+    "correct_choice": "A",
+    "explanation": "Section 475.5015, F.S., requires a broker to preserve at least one legible copy of all books, accounts, and records pertaining to the real estate brokerage business for at least 5 years from the date of receipt of any money, fund, deposit, check, or draft entrusted to the broker, with retention extending further where the records are involved in litigation or a regulatory proceeding.",
+    "weight": 4,
+    "source_note": "Section 475.5015, F.S. (Records Retention)"
+  },
+  {
+    "topic": "Escrow Management & Trust Accounts",
+    "question": "F.A.C. 61J2-14.010 permits a broker to keep a limited amount of the broker's own personal or brokerage funds in an escrow account (e.g., to maintain a minimum balance or cover bank service charges) up to what maximum, without that limited amount being treated as unlawful commingling?",
+    "choice_a": "Up to $1,000 in a sales escrow account and up to $5,000 in a property management escrow account, with personal or brokerage funds never exceeding $5,000 in any single escrow account",
+    "choice_b": "An unlimited amount, provided the broker later documents the purpose in the monthly reconciliation",
+    "choice_c": "No personal or brokerage funds may ever be present in an escrow account under any circumstance, with zero exceptions",
+    "choice_d": "A flat $10,000 regardless of whether the account holds sales deposits or property management funds",
+    "correct_choice": "A",
+    "explanation": "F.A.C. 61J2-14.010 carves out a narrow exception to the general anti-commingling rule: a broker may keep up to $1,000 of personal or brokerage funds in a sales escrow account, and up to $5,000 in a property management escrow account, with the overall cap on personal/brokerage funds in any one escrow account set at $5,000 -- intended only to cover incidental costs like bank service charges, not to fund brokerage operations.",
+    "weight": 4,
+    "source_note": "F.A.C. 61J2-14.010 (Real Estate Broker)"
+  },
+  {
+    "topic": "Escrow Management & Trust Accounts",
+    "question": "Under F.A.C. 61J2-14.010, who must be a signatory on a Florida real estate brokerage's escrow account?",
+    "choice_a": "The broker must be a signatory on all escrow accounts; in a multi-broker firm, one broker licensee may be designated to serve as the signatory",
+    "choice_b": "Any sales associate in the office may serve as the sole signatory without any broker involvement",
+    "choice_c": "Only the brokerage's outside bookkeeper or accountant may be a signatory",
+    "choice_d": "The buyer and seller in each transaction must personally co-sign every escrow disbursement",
+    "correct_choice": "A",
+    "explanation": "F.A.C. 61J2-14.010 requires the broker to be a signatory on all escrow accounts maintained by the brokerage; in a firm with multiple broker licensees, one broker may be designated to serve as the signatory, but a sales associate alone cannot be the sole authorized signer on the account.",
+    "weight": 3,
+    "source_note": "F.A.C. 61J2-14.010 (Real Estate Broker)"
+  },
+  {
+    "topic": "Escrow Management & Trust Accounts",
+    "question": "F.A.C. 61J2-14.008's definition of a 'deposit' subject to Florida's escrow/trust account rules extends to:",
+    "choice_a": "Not only cash or currency, but any medium of exchange or securities to be converted into money",
+    "choice_b": "Cash only -- checks, drafts, and other instruments are excluded from the definition entirely",
+    "choice_c": "Only cashier's checks drawn on a Florida-chartered bank",
+    "choice_d": "Funds only once they have already been converted to cash at the depository institution",
+    "correct_choice": "A",
+    "explanation": "F.A.C. 61J2-14.008 defines a 'deposit' broadly to include not only cash or currency but any medium of exchange, or securities to be converted into money -- meaning checks, drafts, and similar instruments used as earnest money are squarely covered by the trust account deposit-timing and handling rules, not just currency.",
+    "weight": 3,
+    "source_note": "F.A.C. 61J2-14.008 (Definitions)"
+  },
+  {
+    "topic": "Escrow Management & Trust Accounts",
+    "question": "A broker properly deposits a buyer's earnest money check into the escrow account in the regular course of business, but the check is later dishonored for insufficient funds. Under F.A.C. 61J2-14.008, the broker's liability for that uncollected item is:",
+    "choice_a": "None, unless the broker's own culpable negligence caused the failure to deposit the item properly in the regular course of business",
+    "choice_b": "Automatic and absolute -- the broker must personally make the seller whole regardless of fault",
+    "choice_c": "Grounds for immediate, mandatory license revocation with no discretion",
+    "choice_d": "Limited to checks under $1,000; any larger dishonored check makes the broker strictly liable",
+    "correct_choice": "A",
+    "explanation": "F.A.C. 61J2-14.008 provides that a broker is not liable for an unpaid or dishonored check or draft accepted as a deposit, so long as the broker deposited it in the regular course of business; liability attaches only where the broker's own culpable negligence caused the failure to properly deposit the item.",
+    "weight": 3,
+    "source_note": "F.A.C. 61J2-14.008 (Definitions)"
+  },
+  {
+    "topic": "Escrow Management & Trust Accounts",
+    "question": "In a Florida sale involving a foreign (nonresident alien) seller subject to FIRPTA withholding under IRC Section 1445, which statement most accurately describes the withholding obligation and the closing/escrow agent's role?",
+    "choice_a": "The buyer (transferee) is generally the party responsible for withholding (commonly 15% of the amount realized) and filing IRS Forms 8288/8288-A, though the closing or escrow agent commonly helps facilitate and document compliance at settlement",
+    "choice_b": "The escrow agent, not the buyer, is always personally and solely liable to the IRS for the entire withholding amount",
+    "choice_c": "FIRPTA withholding is a matter of Florida law only, with no federal tax component",
+    "choice_d": "FIRPTA withholding never applies to residential property, only to commercial transactions",
+    "correct_choice": "A",
+    "explanation": "Under IRC Section 1445 (FIRPTA), the buyer/transferee is generally the withholding agent responsible for withholding tax (commonly 15% of the amount realized, subject to exceptions such as reduced withholding where the amount realized is $300,000 or less and the buyer will use the property as a residence) and for filing Forms 8288 and 8288-A with the IRS; the closing or escrow agent typically assists procedurally but the statutory withholding obligation is federal and falls on the buyer.",
+    "weight": 3,
+    "source_note": "IRC Section 1445 (FIRPTA); IRS FIRPTA withholding guidance"
+  },
+  {
+    "topic": "Escrow Management & Trust Accounts",
+    "question": "IRS Form 1099-S, which reports gross proceeds from a real estate sale, is typically filed by which party as the designated 'reporting person'?",
+    "choice_a": "The closing or settlement agent handling the transaction (such as a title company or closing attorney), under IRS real estate proceeds reporting rules",
+    "choice_b": "The buyer's real estate licensee, in every transaction without exception",
+    "choice_c": "The Florida Real Estate Commission",
+    "choice_d": "The county property appraiser's office",
+    "correct_choice": "A",
+    "explanation": "Under IRS rules for reporting real estate transaction proceeds, the closing or settlement agent handling the transaction (commonly a title company or closing attorney) is typically the designated 'reporting person' responsible for filing Form 1099-S to report gross sale proceeds to the IRS and the seller.",
+    "weight": 2,
+    "source_note": "IRS Form 1099-S instructions (Proceeds From Real Estate Transactions)"
+  },
+  {
+    "topic": "Escrow Management & Trust Accounts",
+    "question": "To reduce the modern risk of wire-fraud schemes targeting real estate closings -- where a criminal impersonates a party (e.g., via a spoofed or hacked email) and requests that closing funds be wired to a fraudulent account -- prudent escrow disbursement practice generally includes:",
+    "choice_a": "Independently verifying wiring instructions by phone using a previously known, independently obtained number before sending any funds, rather than relying solely on emailed instructions",
+    "choice_b": "Sending funds immediately whenever a request appears to come from a familiar party's email address, with no further verification",
+    "choice_c": "Disabling standard verification procedures whenever a closing is time-sensitive",
+    "choice_d": "Treating a successful test transfer to an account as proof that all future transfers to that same account are safe",
+    "correct_choice": "A",
+    "explanation": "This reflects general industry and consumer-protection risk-management guidance (e.g., FBI IC3 and NAR wire-fraud warnings) rather than a specific Florida statute or rule -- independently verifying wiring instructions by phone using an independently obtained (not emailed) number before disbursing funds is the standard recommended safeguard against business email compromise and closing wire-fraud schemes.",
+    "weight": 2,
+    "source_note": "General industry/consumer-protection guidance (e.g., FBI IC3, NAR); not tied to a specific F.A.C./F.S. citation -- included as general risk-management knowledge relevant to escrow disbursement"
+  }
+]

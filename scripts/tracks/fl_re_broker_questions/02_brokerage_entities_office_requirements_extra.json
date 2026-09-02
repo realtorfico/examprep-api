@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Brokerage Entities & Office Requirements",
+    "question": "Under F.A.C. 61J2-10.026 (Team or Group Advertising), when two or more Florida licensees advertise themselves collectively under a \"team\" or \"group\" name, what must be done regarding compliance oversight?",
+    "choice_a": "The team or group must file with the broker a designated licensee responsible for ensuring the team's or group's advertising complies with Chapter 475, F.S., and Division 61J2, F.A.C.",
+    "choice_b": "Nothing -- team advertising is exempt from broker supervision once the team has its own name",
+    "choice_c": "The team must register as a completely separate brokerage entity with DBPR",
+    "choice_d": "Each team member must obtain an individual advertising license from FREC",
+    "correct_choice": "A",
+    "explanation": "F.A.C. 61J2-10.026(2) requires a team or group to file with the registered broker a designated licensee responsible for ensuring the team's/group's advertising complies with Chapter 475, F.S., and Division 61J2, F.A.C. -- the team remains under the supervising broker, not a separate entity.",
+    "weight": 4,
+    "source_note": "F.A.C. 61J2-10.026 (Team or Group Advertising), eff. 11/1/2021; authority Sections 475.05, 475.25(1)(c), F.S."
+  },
+  {
+    "topic": "Brokerage Entities & Office Requirements",
+    "question": "Under F.A.C. 61J2-10.026, a Florida real estate \"team\" or \"group\" advertising name may NOT include which type of wording?",
+    "choice_a": "Words suggesting the team or group is a separate brokerage or company, such as \"Realty,\" \"Properties,\" \"Company,\" \"LLC,\" or \"Inc.\"",
+    "choice_b": "The word \"Team\" or \"Group\" itself",
+    "choice_c": "The last names of the team's members",
+    "choice_d": "Any numerals or geographic references",
+    "correct_choice": "A",
+    "explanation": "F.A.C. 61J2-10.026(4) permits \"team\" or \"group\" in the name but bars words like Agency, Associates, Brokerage, Brokers, Company, Corporation, Corp., Inc., LLC, LP, LLP, Partnership, Properties, Property, Real Estate, or Realty -- terms that would falsely suggest the team is itself a separate licensed brokerage.",
+    "weight": 4,
+    "source_note": "F.A.C. 61J2-10.026(4) (Team or Group Advertising), eff. 11/1/2021"
+  },
+  {
+    "topic": "Brokerage Entities & Office Requirements",
+    "question": "Under F.A.C. 61J2-10.026, in an advertisement featuring a team or group name, how must the print size of that name compare to the registered brokerage's name, and what recordkeeping duty does the rule place on the broker?",
+    "choice_a": "The team/group name may not appear in larger print than the brokerage name, and the broker must maintain a current written record of each team's/group's members, updated at least monthly",
+    "choice_b": "The team/group name must always appear in larger print than the brokerage name, and no recordkeeping is required",
+    "choice_c": "There is no print-size restriction, but the team must file quarterly membership reports directly with FREC",
+    "choice_d": "The print-size rule applies only to online advertising, not printed materials",
+    "correct_choice": "A",
+    "explanation": "F.A.C. 61J2-10.026(3) and (6) require the broker to keep a current written record of each team's/group's members (updated at least monthly) and prohibit the team/group name from appearing in larger print than the registered brokerage's name in any advertisement.",
+    "weight": 3,
+    "source_note": "F.A.C. 61J2-10.026(3), (6) (Team or Group Advertising), eff. 11/1/2021"
+  },
+  {
+    "topic": "Brokerage Entities & Office Requirements",
+    "question": "Under F.A.C. 61J2-10.027 (Use of Association Names), a Florida licensee who advertises membership in a real estate industry association or organization (for example, a local Board or Association of REALTORS(R)) without actually being entitled to that designation:",
+    "choice_a": "Violates the rule's prohibition on using an association's identification or designation without being entitled to use it",
+    "choice_b": "Commits no violation, since association names are not regulated by FREC",
+    "choice_c": "Only violates the rule if the association itself files a private lawsuit against the licensee",
+    "choice_d": "Is automatically exempt from the rule if the brokerage's own name also appears in the ad",
+    "correct_choice": "A",
+    "explanation": "F.A.C. 61J2-10.027 states that no licensee shall use an identification or designation of any real estate association or organization unless entitled to use it -- a separate advertising-integrity rule distinct from blind-ad, brokerage-disclosure, or team-name requirements.",
+    "weight": 2,
+    "source_note": "F.A.C. 61J2-10.027 (Use of Association Names), eff. 1/1/1980"
+  },
+  {
+    "topic": "Brokerage Entities & Office Requirements",
+    "question": "Under Section 475.24, F.S., the annual registration fee FREC may charge for each Florida branch office a licensee maintains is capped at:",
+    "choice_a": "$50",
+    "choice_b": "$500",
+    "choice_c": "$1,000",
+    "choice_d": "There is no statutory cap -- FREC may set any amount it chooses",
+    "correct_choice": "A",
+    "explanation": "Section 475.24, F.S., requires that any additional place of business be registered as a branch office and caps the annual registration fee the commission may charge per branch office at $50.",
+    "weight": 2,
+    "source_note": "Section 475.24, F.S. (Branch Office; Fees)"
+  },
+  {
+    "topic": "Brokerage Entities & Office Requirements",
+    "question": "Under Section 475.42(1)(a) and (2), F.S., a person who operates as a broker or sales associate without holding a valid, current, active license commits:",
+    "choice_a": "A felony of the third degree -- a more serious criminal exposure than most other Section 475.42 violations, which are second-degree misdemeanors",
+    "choice_b": "A noncriminal civil infraction only, with no criminal exposure",
+    "choice_c": "A first-degree misdemeanor, the harshest classification the statute allows",
+    "choice_d": "The exact same second-degree misdemeanor classification as every other Section 475.42 violation",
+    "correct_choice": "A",
+    "explanation": "Section 475.42(1)(a) prohibits operating as a broker or sales associate without a valid active license, and unlike most other Section 475.42 violations (classified as second-degree misdemeanors under 475.42(2)), practicing entirely without a license is elevated to a third-degree felony.",
+    "weight": 4,
+    "source_note": "Section 475.42(1)(a), (2), F.S."
+  },
+  {
+    "topic": "Brokerage Entities & Office Requirements",
+    "question": "A corporation registering as a Florida real estate brokerage entity must, under Florida's general corporation law (separate from its Chapter 475 broker registration), also continuously maintain:",
+    "choice_a": "A registered office and a registered agent within Florida",
+    "choice_b": "A minimum of five shareholders",
+    "choice_c": "A publicly traded stock listing",
+    "choice_d": "An out-of-state address designated for service of process",
+    "correct_choice": "A",
+    "explanation": "Section 607.0501, F.S. (the Florida Business Corporation Act) requires every corporation, including one registered as a real estate brokerage, to continuously maintain a registered office and registered agent in Florida -- a distinct mechanical requirement from simply identifying which chapter of law governs the entity form.",
+    "weight": 3,
+    "source_note": "Section 607.0501, F.S. (Florida Business Corporation Act -- Registered Office and Registered Agent)"
+  },
+  {
+    "topic": "Brokerage Entities & Office Requirements",
+    "question": "Before an out-of-state (foreign) corporation may register with DBPR as a Florida real estate brokerage entity, it must first:",
+    "choice_a": "Obtain a certificate of authority to transact business in Florida from the Division of Corporations",
+    "choice_b": "Dissolve its home-state incorporation entirely and re-incorporate only in Florida",
+    "choice_c": "Wait a minimum of five years after its original date of formation",
+    "choice_d": "Register exclusively as a Florida sole proprietorship instead of as a corporation",
+    "correct_choice": "A",
+    "explanation": "Section 607.1501, F.S., prohibits a foreign corporation from transacting business in Florida until it obtains a certificate of authority from the Division of Corporations -- a prerequisite that logically precedes and underlies any subsequent DBPR brokerage-entity registration for an out-of-state corporate applicant.",
+    "weight": 3,
+    "source_note": "Section 607.1501, F.S. (Foreign Corporations -- Certificate of Authority)"
+  },
+  {
+    "topic": "Brokerage Entities & Office Requirements",
+    "question": "Under Section 721.20(1), F.S., a person selling timeshare plan interests in Florida must:",
+    "choice_a": "Be a licensed real estate broker, broker associate, or sales associate under Chapter 475, F.S. -- there is no separate, standalone timeshare sales license",
+    "choice_b": "Hold a distinct \"timeshare sales agent\" license issued only under Chapter 721, entirely separate from any Chapter 475 license",
+    "choice_c": "Have no licensure requirement at all when selling only to Florida residents",
+    "choice_d": "Be licensed solely as a title insurance agent under Chapter 626, F.S.",
+    "correct_choice": "A",
+    "explanation": "Section 721.20(1), F.S., requires any seller of a timeshare plan to be a licensed real estate broker, broker associate, or sales associate as defined in Section 475.01 -- timeshare sales are folded into ordinary Chapter 475 licensure rather than governed by a separate timeshare-specific sales license.",
+    "weight": 3,
+    "source_note": "Section 721.20(1), F.S. (Vacation and Timeshare Plans)"
+  },
+  {
+    "topic": "Brokerage Entities & Office Requirements",
+    "question": "A Florida brokerage that sends bulk commercial marketing emails advertising listings to a purchased list of prospects must comply with:",
+    "choice_a": "The federal CAN-SPAM Act's requirements for commercial email, including accurate header/routing information, a clear opt-out mechanism, and a valid physical postal address",
+    "choice_b": "No federal law at all -- only FREC's advertising rules govern brokerage email",
+    "choice_c": "The Telephone Consumer Protection Act's Do-Not-Call registry provisions, which apply to email exactly as they apply to phone solicitation",
+    "choice_d": "State banking privacy statutes exclusively",
+    "correct_choice": "A",
+    "explanation": "The federal CAN-SPAM Act (15 U.S.C. Section 7701 et seq.) governs commercial email marketing, including real estate solicitation emails, requiring truthful headers, an opt-out mechanism, and a valid physical address -- a distinct federal compliance layer from the Telephone Consumer Protection Act, which governs phone solicitation.",
+    "weight": 2,
+    "source_note": "CAN-SPAM Act of 2003, 15 U.S.C. Section 7701 et seq."
+  }
+]

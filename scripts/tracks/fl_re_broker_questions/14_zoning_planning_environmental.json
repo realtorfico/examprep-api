@@ -1,0 +1,99 @@
+[
+  {
+    "topic": "Zoning, Planning & Environmental Issues",
+    "question": "A property owner seeking permission to use their land in a way that deviates from the strict letter of the zoning ordinance, due to a unique hardship affecting that specific parcel, would typically apply for a:",
+    "choice_a": "Rezoning of the entire district",
+    "choice_b": "Variance",
+    "choice_c": "Eminent domain proceeding",
+    "choice_d": "Deed restriction waiver",
+    "correct_choice": "B",
+    "explanation": "A variance is a limited exception granted by a local zoning board allowing a specific property owner to deviate from certain zoning requirements (such as setback or lot-size rules) due to a demonstrated unique hardship, without changing the underlying zoning classification for the district as a whole.",
+    "weight": 4,
+    "source_note": "Standard zoning law terminology -- variance, well-corroborated"
+  },
+  {
+    "topic": "Zoning, Planning & Environmental Issues",
+    "question": "A lawful land use that existed before a zoning ordinance was adopted or amended, and that no longer conforms to the current zoning classification, but is permitted to continue, is known as a:",
+    "choice_a": "Special exception",
+    "choice_b": "Comprehensive plan amendment",
+    "choice_c": "Legal nonconforming use (grandfathered use)",
+    "choice_d": "Conditional use permit",
+    "correct_choice": "C",
+    "explanation": "A legal nonconforming use (commonly called 'grandfathered') is a lawful use that predates a zoning change and no longer conforms to current zoning but is generally permitted to continue, subject to restrictions on expansion, and may lose its protected status if abandoned or destroyed beyond a certain threshold.",
+    "weight": 4,
+    "source_note": "Standard zoning law terminology -- nonconforming use, well-corroborated"
+  },
+  {
+    "topic": "Zoning, Planning & Environmental Issues",
+    "question": "Florida local governments' land use planning authority, including the requirement to adopt and maintain a comprehensive plan, is primarily governed by:",
+    "choice_a": "Chapter 475, F.S., Part I",
+    "choice_b": "Chapter 720, F.S.",
+    "choice_c": "Chapter 83, F.S.",
+    "choice_d": "The Community Planning Act, Chapter 163, F.S.",
+    "correct_choice": "D",
+    "explanation": "Chapter 163, F.S. (the Community Planning Act, part of Florida's 'Intergovernmental Programs' chapter), requires Florida counties and municipalities to adopt and maintain a comprehensive plan guiding future land use, growth management, and the framework within which local zoning ordinances must be consistent.",
+    "weight": 4,
+    "source_note": "Chapter 163, F.S. (Intergovernmental Programs -- Community Planning Act); DBPR Real Estate Broker Candidate Information Booklet reference list, item 8"
+  },
+  {
+    "topic": "Zoning, Planning & Environmental Issues",
+    "question": "The subdivision of raw land into individual lots for sale, requiring approval of a plat showing lot boundaries, roads, and easements, is generally subject to:",
+    "choice_a": "Local subdivision/platting regulations, in addition to broader zoning and comprehensive plan consistency requirements",
+    "choice_b": "No local government review or approval process whatsoever",
+    "choice_c": "Only federal environmental review, with no local process",
+    "choice_d": "Approval by FREC before any lots may be sold",
+    "correct_choice": "A",
+    "explanation": "Subdividing land into individual lots for sale requires compliance with local subdivision/platting regulations -- governing lot layout, infrastructure, roads, and easements -- in addition to consistency with the applicable zoning and comprehensive plan, a distinct regulatory layer from real estate licensing itself.",
+    "weight": 3,
+    "source_note": "DBPR Real Estate Broker Candidate Information Booklet, Content Overview and Outline, Section IX.B (Subdividing and Development of Land)"
+  },
+  {
+    "topic": "Zoning, Planning & Environmental Issues",
+    "question": "Development or dredge-and-fill activity affecting wetlands on a Florida property is generally subject to permitting requirements from:",
+    "choice_a": "No agency at all -- wetlands are entirely unregulated in Florida",
+    "choice_b": "Both state (Florida Department of Environmental Protection / water management districts) and federal (U.S. Army Corps of Engineers under the Clean Water Act) authorities",
+    "choice_c": "FREC exclusively, with no state environmental agency involvement",
+    "choice_d": "Only the county tax assessor's office",
+    "correct_choice": "B",
+    "explanation": "Wetlands impacts in Florida are regulated at both the state level (Florida DEP and the regional water management districts, under Florida's environmental resource permitting program) and the federal level (the U.S. Army Corps of Engineers under Section 404 of the Clean Water Act), often requiring dual permitting before development can proceed.",
+    "weight": 4,
+    "source_note": "Clean Water Act Section 404 (federal wetlands permitting); Florida DEP environmental resource permitting program, well-corroborated"
+  },
+  {
+    "topic": "Zoning, Planning & Environmental Issues",
+    "question": "CERCLA (the federal 'Superfund' law) is significant to real estate brokers primarily because it:",
+    "choice_a": "Only applies to the original polluter, never to a subsequent innocent purchaser",
+    "choice_b": "Has no application to real estate transactions of any kind",
+    "choice_c": "Can impose broad environmental cleanup liability on current and certain former property owners for contamination, even if they did not cause it",
+    "choice_d": "Applies only to residential single-family homes",
+    "correct_choice": "C",
+    "explanation": "CERCLA can impose strict, and in some respects retroactive and joint-and-several, environmental cleanup liability on current property owners and certain categories of past owners/operators for contamination -- even parties who did not cause the contamination -- making environmental due diligence (such as a Phase I Environmental Site Assessment) an important consideration in commercial transactions.",
+    "weight": 4,
+    "source_note": "42 U.S.C. Section 9601 et seq. (CERCLA); general federal environmental law, well-corroborated"
+  },
+  {
+    "topic": "Zoning, Planning & Environmental Issues",
+    "question": "A prospective purchaser conducting environmental due diligence on a commercial property may qualify for CERCLA's 'innocent landowner' defense to cleanup liability by:",
+    "choice_a": "Simply purchasing the property with no investigation at all",
+    "choice_b": "Waiting until after closing to investigate any environmental concerns",
+    "choice_c": "Relying solely on the seller's verbal assurance that the property is clean",
+    "choice_d": "Conducting appropriate inquiry (such as a Phase I Environmental Site Assessment) before acquisition and having no knowledge of the contamination",
+    "correct_choice": "D",
+    "explanation": "CERCLA's innocent landowner defense (and the related bona fide prospective purchaser protection) generally requires that the purchaser conducted 'all appropriate inquiry' -- commonly satisfied through a Phase I Environmental Site Assessment -- before acquiring the property and had no actual knowledge of the contamination at the time of purchase.",
+    "weight": 4,
+    "source_note": "42 U.S.C. Section 9601(35) (innocent landowner defense); general federal environmental law, well-corroborated",
+    "source_2": "hedge:general-knowledge"
+  },
+  {
+    "topic": "Zoning, Planning & Environmental Issues",
+    "question": "Florida law requires that a specific radon gas disclosure be provided in most real estate contracts because Florida is considered to have:",
+    "choice_a": "A statewide potential for radon gas accumulation in structures, warranting a standardized disclosure regardless of a specific property's tested levels",
+    "choice_b": "No radon risk anywhere in the state, making the disclosure purely symbolic",
+    "choice_c": "A disclosure requirement that applies only to commercial property, never residential",
+    "choice_d": "A disclosure requirement that has been repealed and no longer applies",
+    "correct_choice": "A",
+    "explanation": "Section 404.056(5), F.S., requires that most Florida building sale or lease contracts include a standard radon gas notification statement, reflecting the state's general position that radon, a naturally occurring radioactive gas, can accumulate in any Florida building to levels that may pose a health risk -- the disclosure is required regardless of whether the specific property has been tested.",
+    "weight": 4,
+    "source_note": "Section 404.056(5), F.S. (radon gas disclosure requirement)"
+  }
+]

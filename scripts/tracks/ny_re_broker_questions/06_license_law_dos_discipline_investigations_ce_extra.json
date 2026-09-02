@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "License Law, DOS Discipline, Investigations & Continuing Education",
+    "question": "When a licensee challenges a DOS disciplinary determination made after a full evidentiary hearing, CPLR Section 7803(4) directs a reviewing court to apply what standard of review?",
+    "choice_a": "Whether the determination is supported by substantial evidence in the hearing record",
+    "choice_b": "Whether a majority of licensed brokers statewide personally agree with the outcome",
+    "choice_c": "A brand-new, from-scratch trial with a jury deciding all factual issues",
+    "choice_d": "No standard at all -- courts may never review a post-hearing DOS determination",
+    "correct_choice": "A",
+    "explanation": "CPLR Section 7803(4), applied in an Article 78 proceeding reviewing a determination made after a quasi-judicial evidentiary hearing (such as a DOS license discipline hearing), asks whether the determination is supported by 'substantial evidence' in the record -- a deferential standard that does not re-try the facts from scratch.",
+    "weight": 4,
+    "source_note": "CPLR Section 7803(4) (Article 78 substantial-evidence standard, applied to DOS discipline review)"
+  },
+  {
+    "topic": "License Law, DOS Discipline, Investigations & Continuing Education",
+    "question": "For a DOS licensing decision made without a full evidentiary hearing (such as denying a license application on the papers), CPLR Section 7803(3) instead asks whether the determination was:",
+    "choice_a": "Arbitrary and capricious, or an abuse of discretion",
+    "choice_b": "Approved by a two-thirds vote of the State Real Estate Board",
+    "choice_c": "Published in the New York State Register within 10 days",
+    "choice_d": "Consistent with the licensee's own stated preference",
+    "correct_choice": "A",
+    "explanation": "Where no full evidentiary hearing occurred, Article 78 review under CPLR Section 7803(3) applies the 'arbitrary and capricious'/abuse-of-discretion standard, distinct from the substantial-evidence standard that applies to post-hearing determinations under CPLR Section 7803(4).",
+    "weight": 4,
+    "source_note": "CPLR Section 7803(3) (Article 78 arbitrary-and-capricious standard)"
+  },
+  {
+    "topic": "License Law, DOS Discipline, Investigations & Continuing Education",
+    "question": "A broker facing DOS revocation charges receives the required written notice of charges but simply ignores it and does not appear at the scheduled hearing. What is the likely practical consequence?",
+    "choice_a": "DOS may proceed with the hearing and determine the matter based on the evidence presented, even without the broker's participation, since the broker was afforded -- but did not exercise -- the opportunity to be heard",
+    "choice_b": "The charges are automatically and permanently dismissed the moment the broker fails to appear",
+    "choice_c": "DOS must indefinitely postpone the hearing until the broker voluntarily agrees to attend",
+    "choice_d": "The broker's failure to appear converts the matter into a criminal case prosecuted by the Attorney General instead of a DOS disciplinary matter",
+    "correct_choice": "A",
+    "explanation": "Because RPL Section 441-e's notice-and-hearing framework affords the licensee an opportunity to be heard -- not a guarantee that discipline is impossible without their participation -- DOS may proceed with a properly noticed hearing and reach a determination on the available evidence even if the licensee chooses not to appear.",
+    "weight": 4,
+    "source_note": "RPL Article 12-A, Section 441-e (applied -- consequence of failing to appear at a noticed hearing)"
+  },
+  {
+    "topic": "License Law, DOS Discipline, Investigations & Continuing Education",
+    "question": "RPL Section 442-e authorizes the Attorney General to criminally prosecute an Article 12-A violation, while DOS separately pursues license discipline for the same underlying conduct under Section 441-c. How do these two tracks generally relate to one another?",
+    "choice_a": "They are independent enforcement tracks that can proceed separately -- a criminal prosecution and a civil/administrative license discipline proceeding are not mutually exclusive, since they serve different purposes (punishment/deterrence versus fitness to hold a license)",
+    "choice_b": "DOS must always wait for a final criminal verdict before it may take any disciplinary action whatsoever",
+    "choice_c": "A criminal acquittal automatically bars DOS from ever pursuing related license discipline",
+    "choice_d": "Only one of the two tracks may ever be pursued for the same underlying conduct, never both",
+    "correct_choice": "A",
+    "explanation": "Criminal prosecution under Section 442-e and administrative license discipline under Section 441-c are separate, independent enforcement mechanisms serving different purposes -- a licensee's conduct can trigger both a criminal case pursued by the Attorney General and a parallel or sequential DOS disciplinary proceeding assessing fitness to hold a license.",
+    "weight": 4,
+    "source_note": "RPL Article 12-A, Sections 441-c and 442-e (parallel enforcement tracks)"
+  },
+  {
+    "topic": "License Law, DOS Discipline, Investigations & Continuing Education",
+    "question": "In a DOS administrative disciplinary hearing, what standard of proof (evidentiary burden) is typically applied to establish a charge against a licensee, consistent with general New York administrative-hearing practice?",
+    "choice_a": "A preponderance of the evidence -- more likely than not -- rather than the higher 'beyond a reasonable doubt' standard used in criminal cases",
+    "choice_b": "Beyond a reasonable doubt, identical to a criminal trial",
+    "choice_c": "No evidentiary standard is applied; the hearing officer may decide purely by personal impression",
+    "choice_d": "Clear and convincing evidence in every single case without exception",
+    "correct_choice": "A",
+    "explanation": "Consistent with general New York administrative-hearing practice, a DOS disciplinary charge is typically established by a preponderance of the evidence -- a substantially lower bar than the 'beyond a reasonable doubt' standard reserved for criminal prosecutions, reflecting the different purpose (license fitness) of an administrative proceeding.",
+    "weight": 3,
+    "source_note": "hedge: standard, well-corroborated general New York administrative-hearing burden-of-proof doctrine, applied to DOS licensing discipline"
+  },
+  {
+    "topic": "License Law, DOS Discipline, Investigations & Continuing Education",
+    "question": "When DOS is deciding what penalty to impose on a licensee found to have violated Section 441-c, which of the following would typically be treated as an aggravating factor supporting a more severe penalty?",
+    "choice_a": "A documented pattern of similar prior misconduct or prior disciplinary history, rather than a single isolated incident",
+    "choice_b": "The fact that the licensee has been licensed for less than one year",
+    "choice_c": "The fact that the transaction ultimately closed successfully",
+    "choice_d": "The fact that the licensee's brokerage is located outside New York City",
+    "correct_choice": "A",
+    "explanation": "As with administrative discipline generally, a documented pattern of similar prior misconduct or an existing disciplinary history is typically treated as an aggravating factor supporting a harsher penalty (suspension or revocation rather than a fine or reprimand), while an isolated first-time incident may weigh toward a lesser sanction.",
+    "weight": 3,
+    "source_note": "hedge: standard, well-corroborated general administrative-discipline aggravating-factor principle, applied to DOS licensing discipline"
+  },
+  {
+    "topic": "License Law, DOS Discipline, Investigations & Continuing Education",
+    "question": "How does DOS's power to impose a 'reprimand' under Section 441-c generally compare to suspension or revocation in severity?",
+    "choice_a": "A reprimand is the least severe of the listed disciplinary tools -- a formal censure that does not itself remove the licensee's ability to continue practicing, unlike a suspension or revocation",
+    "choice_b": "A reprimand is legally identical to a permanent revocation with no practical difference",
+    "choice_c": "A reprimand automatically triggers a criminal referral to the Attorney General",
+    "choice_d": "A reprimand is more severe than suspension because it becomes part of a licensee's permanent record while a suspension does not",
+    "correct_choice": "A",
+    "explanation": "Among the disciplinary tools available under Section 441-c -- revocation, suspension, a fine, or a reprimand -- a reprimand is generally the least severe: a formal, on-the-record censure that does not itself interrupt the licensee's ability to continue practicing, unlike a suspension (temporary loss of licensure) or revocation (permanent loss).",
+    "weight": 3,
+    "source_note": "RPL Article 12-A, Section 441-c (relative severity of disciplinary tools)"
+  },
+  {
+    "topic": "License Law, DOS Discipline, Investigations & Continuing Education",
+    "question": "A broker under DOS investigation for alleged escrow misappropriation asserts a right to remain completely silent and refuse to produce any requested transaction records, citing the criminal 'beyond a reasonable doubt' standard. Is this a sound basis for withholding records from a civil/administrative DOS investigation?",
+    "choice_a": "Not necessarily -- while constitutional protections against self-incrimination can apply in specific circumstances, DOS's civil/administrative investigatory and subpoena powers under Section 442-e operate under different rules than a criminal prosecution, and a blanket refusal to produce required business records can itself create separate recordkeeping-violation exposure",
+    "choice_b": "Yes -- DOS has no subpoena power of any kind and can never compel document production",
+    "choice_c": "Yes -- the 'beyond a reasonable doubt' standard automatically applies to every DOS administrative proceeding",
+    "choice_d": "No -- brokers have no legal rights whatsoever once a DOS investigation begins",
+    "correct_choice": "A",
+    "explanation": "DOS's investigatory and subpoena powers under Section 442-e function within a civil/administrative framework distinct from a criminal prosecution's heightened protections -- and because Part 175 independently requires brokers to maintain and be able to produce transaction and escrow records, a blanket refusal to cooperate can itself create separate recordkeeping-violation exposure on top of whatever the underlying investigation concerns.",
+    "weight": 4,
+    "source_note": "RPL Article 12-A, Section 442-e; 19 NYCRR Sections 175.1 and 175.23 (investigatory cooperation and recordkeeping obligations)"
+  }
+]

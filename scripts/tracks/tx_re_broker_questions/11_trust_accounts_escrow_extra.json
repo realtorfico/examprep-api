@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Trust Accounts & Escrow Management",
+    "question": "Is a Texas broker always required to maintain a trust or escrow account, even if the broker never personally handles client funds?",
+    "choice_a": "No -- a trust account is only required if the broker agrees to hold money belonging to others or agrees to act as an escrow agent",
+    "choice_b": "Yes, every licensed broker must maintain a trust account regardless of whether the broker ever holds client funds",
+    "choice_c": "Yes, but only brokers who handle residential sales, not those who only do property management",
+    "choice_d": "No broker may ever maintain a trust account without TREC's prior written approval",
+    "correct_choice": "A",
+    "explanation": "Under 22 TAC Section 535.146(b)(1), maintaining a trust or escrow account is not a blanket requirement for every Texas broker -- it is only triggered once the broker agrees to hold money belonging to others or agrees to act as an escrow agent in a transaction. A broker who never takes on that role has no independent obligation to open one.",
+    "weight": 4,
+    "source_note": "22 TAC Section 535.146(b)(1) (Maintaining Trust Money -- when a trust account is required); TREC Rules and Laws FAQ"
+  },
+  {
+    "topic": "Trust Accounts & Escrow Management",
+    "question": "May a broker authorize someone else to sign checks or transfer funds out of the firm's trust account?",
+    "choice_a": "Yes, the broker may authorize another license holder to withdraw or transfer trust account money, but the broker remains fully responsible and accountable for the account and for proper handling of the trust money",
+    "choice_b": "Yes, any unlicensed office employee may be given signing authority on the trust account with no further oversight",
+    "choice_c": "No, only the broker personally may ever sign on a trust account under any circumstances",
+    "choice_d": "Yes, and once authority is delegated the broker is no longer accountable for how the account is handled",
+    "correct_choice": "A",
+    "explanation": "22 TAC Section 535.146(c)(7) and Section 535.2(c) permit a broker to authorize another license holder -- not an unlicensed staff member -- to withdraw or transfer trust account funds. Delegating signing authority does not relieve the broker of ultimate responsibility and accountability for the trust account and for proper handling of the trust money.",
+    "weight": 4,
+    "source_note": "22 TAC Sections 535.146(c)(7) and 535.2(c); TREC Rules and Laws FAQ"
+  },
+  {
+    "topic": "Trust Accounts & Escrow Management",
+    "question": "A broker holds all trust funds intact with no shortage, but months after a deal closes still has not remitted a refund clearly owed to a former client and has not documented why. Under Texas Occupations Code Section 1101.652(b)(9), this delay by itself is:",
+    "choice_a": "An independent statutory ground for TREC disciplinary action, since failing within a reasonable time to properly account for or remit money belonging to another is itself a listed violation, separate from any account shortage",
+    "choice_b": "Not a violation at all as long as the trust account balance is never deficient",
+    "choice_c": "A violation only if the former client files a civil lawsuit first",
+    "choice_d": "Excused indefinitely so long as the broker eventually pays once formally demanded in writing",
+    "correct_choice": "A",
+    "explanation": "Occupations Code Section 1101.652(b)(9) makes it a stand-alone ground for discipline to fail within a reasonable time to properly account for or remit money belonging to another person -- this applies even where the trust account itself is never short, because the violation is the delay and lack of accounting, not necessarily a missing-funds shortage.",
+    "weight": 4,
+    "source_note": "Texas Occupations Code Section 1101.652(b)(9)"
+  },
+  {
+    "topic": "Trust Accounts & Escrow Management",
+    "question": "Under Texas Occupations Code Section 1101.652(b)(30), a broker who receives escrow or trust funds in a real estate transaction must, within a reasonable time, deposit those funds in which of the following?",
+    "choice_a": "Either in trust with a title company authorized to do business in Texas, or in a custodial, trust, or escrow account maintained for that purpose at a banking institution authorized to do business in Texas",
+    "choice_b": "Only in the broker's personal checking account, pending transfer",
+    "choice_c": "Only with an out-of-state escrow company chosen at the broker's sole discretion",
+    "choice_d": "Only in cash, held in the brokerage's office safe until closing",
+    "correct_choice": "A",
+    "explanation": "Occupations Code Section 1101.652(b)(30) identifies two acceptable statutory depositories for escrow or trust funds received in a real estate transaction: trust with an authorized title company, or a custodial, trust, or escrow account at a banking institution authorized to do business in Texas -- failing to use either within a reasonable time is a listed ground for discipline.",
+    "weight": 4,
+    "source_note": "Texas Occupations Code Section 1101.652(b)(30)"
+  },
+  {
+    "topic": "Trust Accounts & Escrow Management",
+    "question": "Apart from any dispute between the parties, Texas Occupations Code Section 1101.652(b)(31) separately makes it a specific ground for discipline for a broker to:",
+    "choice_a": "Disburse money deposited in a custodial, trust, or escrow account before the completion or termination of the real estate transaction",
+    "choice_b": "Deposit escrow funds one day earlier than the statutory deadline requires",
+    "choice_c": "Decline to accept earnest money that a buyer offers in cash",
+    "choice_d": "Require a written receipt before accepting trust money from a principal",
+    "correct_choice": "A",
+    "explanation": "Occupations Code Section 1101.652(b)(31) makes premature disbursement itself a listed violation: paying out money from a custodial, trust, or escrow account before the underlying real estate transaction has been completed or terminated is prohibited, independent of whether the parties are actively disputing entitlement to the funds.",
+    "weight": 4,
+    "source_note": "Texas Occupations Code Section 1101.652(b)(31)"
+  },
+  {
+    "topic": "Trust Accounts & Escrow Management",
+    "question": "Under TREC's promulgated contract forms, if a buyer fails to timely deliver the earnest money to the escrow agent after a binding contract is signed, the seller's available response is generally to:",
+    "choice_a": "Terminate the contract, exercise the default remedies available under the contract's earnest money/default provision, or both",
+    "choice_b": "Do nothing, since a buyer's failure to fund earnest money has no effect on the seller's rights",
+    "choice_c": "Automatically forfeit the seller's own right to sell the property to anyone else",
+    "choice_d": "Sue the broker personally for the missing earnest money, since the broker is automatically liable for a buyer's non-payment",
+    "correct_choice": "A",
+    "explanation": "TREC contract forms require the buyer to deliver earnest money to the escrow agent within the time specified. If the buyer fails to do so, the seller may terminate the contract, exercise the remedies available under the contract's default provision, or both -- a consequence distinct from a broker's own deposit-timing obligations once funds are actually received.",
+    "weight": 3,
+    "source_note": "TREC Rules and Laws FAQ (TREC promulgated contract earnest money delivery requirement)"
+  },
+  {
+    "topic": "Trust Accounts & Escrow Management",
+    "question": "The four-year period a Texas broker must retain a trust or escrow record under 22 TAC Section 535.146(e) is measured from:",
+    "choice_a": "The date the trust or escrow document is received or created by the broker",
+    "choice_b": "The date the broker's license was originally issued",
+    "choice_c": "The date the broker retires or the brokerage permanently closes",
+    "choice_d": "The date TREC happens to open an audit of the broker",
+    "correct_choice": "A",
+    "explanation": "22 TAC Section 535.146(e) runs the four-year retention clock from the date a given trust or escrow document is received or created by the broker -- each record has its own four-year window starting from that document's own date, not from a single fixed event like license issuance or brokerage closure.",
+    "weight": 3,
+    "source_note": "22 TAC Section 535.146(e) (Maintaining Trust Money -- record retention period)"
+  },
+  {
+    "topic": "Trust Accounts & Escrow Management",
+    "question": "When a Texas broker delivers earnest money to a title company's escrow officer to hold as an authorized escrow agent instead of depositing it in the broker's own trust account, that escrow officer's own licensing and regulation falls under:",
+    "choice_a": "The Texas Department of Insurance, not TREC, since title agents and escrow officers are licensed and regulated under the Texas Insurance Code",
+    "choice_b": "TREC exclusively, under the same broker license framework as real estate brokers",
+    "choice_c": "No regulatory body, since title company escrow officers are entirely unregulated in Texas",
+    "choice_d": "The county clerk's office where the property is located",
+    "correct_choice": "A",
+    "explanation": "Title insurance agents and escrow officers who may serve as authorized escrow agents for earnest money are licensed and regulated by the Texas Department of Insurance under the Texas Insurance Code (Title 11) and 28 TAC Chapter 9 -- a separate regulatory framework from TREC's oversight of real estate brokers and sales agents.",
+    "weight": 3,
+    "source_note": "Texas Insurance Code Title 11 (Chapters 2501-2751); 28 TAC Chapter 9; Texas Department of Insurance title/escrow regulation"
+  }
+]

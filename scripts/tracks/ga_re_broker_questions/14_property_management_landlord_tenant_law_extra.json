@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Property Management & Landlord-Tenant Law",
+    "question": "Under O.C.G.A. § 44-7-13, what general duty does a Georgia landlord owe regarding the physical condition of the rental premises during the tenancy?",
+    "choice_a": "Georgia law places the entire repair burden on the tenant with no landlord repair duty of any kind",
+    "choice_b": "The landlord's repair duty applies only during the first 30 days of the lease term",
+    "choice_c": "The landlord must keep the premises in repair, and is liable for substantial improvements placed on the premises with the landlord's consent",
+    "choice_d": "The landlord's repair duty applies only to commercial leases, never residential leases",
+    "correct_choice": "C",
+    "explanation": "O.C.G.A. § 44-7-13 states that the landlord must keep the premises in repair, and is liable for substantial improvements placed on the premises with the landlord's consent -- a general statutory repair obligation running for the duration of the tenancy.",
+    "weight": 5,
+    "source_note": "O.C.G.A. § 44-7-13"
+  },
+  {
+    "topic": "Property Management & Landlord-Tenant Law",
+    "question": "Under O.C.G.A. § 44-7-2, may the landlord's repair duty under O.C.G.A. § 44-7-13 be waived by agreement between landlord and tenant?",
+    "choice_a": "Yes -- landlords and tenants may freely waive any statutory duty by including a lease clause to that effect",
+    "choice_b": "Yes, but only if the tenant is a commercial entity rather than an individual",
+    "choice_c": "The repair duty may be waived only with GREC's prior written approval",
+    "choice_d": "No -- O.C.G.A. § 44-7-2 specifically prohibits landlords and tenants from waiving the rights set out in the repair-and-improvements provisions",
+    "correct_choice": "D",
+    "explanation": "O.C.G.A. § 44-7-2 specifically bars landlords and tenants from contracting away the rights established in the repair-and-improvements provisions (including O.C.G.A. § 44-7-13) -- a lease clause purporting to waive the landlord's repair duty would not be enforceable.",
+    "weight": 4,
+    "source_note": "O.C.G.A. § 44-7-2"
+  },
+  {
+    "topic": "Property Management & Landlord-Tenant Law",
+    "question": "Under O.C.G.A. § 44-7-2, up to what lease term may a Georgia landlord-tenant relationship be created by a purely oral (parol) agreement, without violating the statute of frauds?",
+    "choice_a": "Any term not exceeding one year",
+    "choice_b": "Any term at all, with no limitation on oral leases",
+    "choice_c": "No oral lease is ever valid in Georgia regardless of term length",
+    "choice_d": "Any term not exceeding 30 days",
+    "correct_choice": "A",
+    "explanation": "O.C.G.A. § 44-7-2 provides that a landlord-tenant relationship for any time not exceeding one year may be created by parol (oral) agreement -- a specific statute-of-frauds carve-out for shorter-term leases, distinct from the general writing requirement for land-sale contracts and longer leases.",
+    "weight": 4,
+    "source_note": "O.C.G.A. § 44-7-2"
+  },
+  {
+    "topic": "Property Management & Landlord-Tenant Law",
+    "question": "Under O.C.G.A. § 44-7-2, if a residential lease contains a clause requiring only the tenant (and not the landlord) to pay the other party's attorney's fees in litigation over the lease, is that clause enforceable?",
+    "choice_a": "Yes -- landlords may always include a one-way attorney's-fee clause favoring themselves with no restriction",
+    "choice_b": "No -- O.C.G.A. § 44-7-2 voids a one-way attorney's-fee-shifting provision unless it is reciprocal, obligating both parties equally",
+    "choice_c": "Yes, provided the clause is initialed separately by the tenant",
+    "choice_d": "The enforceability of attorney's-fee clauses is entirely unaddressed by Georgia landlord-tenant law",
+    "correct_choice": "B",
+    "explanation": "O.C.G.A. § 44-7-2 voids a lease provision requiring the tenant to pay the landlord's attorney's fees unless the obligation is made reciprocal -- a one-sided fee-shifting clause favoring only the landlord is unenforceable.",
+    "weight": 4,
+    "source_note": "O.C.G.A. § 44-7-2"
+  },
+  {
+    "topic": "Property Management & Landlord-Tenant Law",
+    "question": "As a matter of general property-management leasing practice (not itself a specific Georgia statutory citation), what is the practical distinction between a tenant 'assigning' a lease and 'subletting' the premises?",
+    "choice_a": "The two terms are legally identical in every jurisdiction and every context",
+    "choice_b": "An assignment always requires a brand-new written lease document, while a subletting never requires any writing",
+    "choice_c": "An assignment transfers the tenant's entire remaining leasehold interest to a new party, who then deals directly with the landlord, while a subletting creates a new, separate landlord-tenant relationship between the original tenant and a subtenant, with the original tenant remaining primarily liable to the landlord",
+    "choice_d": "Subletting automatically releases the original tenant from all further liability to the landlord, while an assignment never does",
+    "correct_choice": "C",
+    "explanation": "As a matter of general leasing doctrine, an assignment transfers the entire remaining leasehold interest to the assignee, who then stands in direct privity with the landlord, whereas a sublet creates a separate landlord-subtenant-like relationship in which the original tenant typically remains primarily liable to the landlord for lease compliance.",
+    "weight": 3,
+    "source_note": "hedge: standard national landlord-tenant leasing doctrine, not Georgia-statute-specific"
+  },
+  {
+    "topic": "Property Management & Landlord-Tenant Law",
+    "question": "As a matter of general property-management practice, what is the purpose of a documented move-in/move-out condition report (inspection checklist) for a managed rental unit?",
+    "choice_a": "It has no practical value and is purely a formality with no bearing on deposit disputes",
+    "choice_b": "It is required solely to satisfy fair housing advertising rules",
+    "choice_c": "It replaces the landlord's obligation to provide any itemized statement of deductions under O.C.G.A. § 44-7-34",
+    "choice_d": "It creates an objective, dated record of the unit's condition at the start and end of the tenancy, helping to substantiate (or refute) proposed security deposit deductions and reducing the risk of disputes over pre-existing versus tenant-caused damage",
+    "correct_choice": "D",
+    "explanation": "A documented condition report at move-in and move-out creates an objective record that helps substantiate legitimate deposit deductions (or protect the tenant from improper ones), reducing disputes over whether damage was pre-existing or tenant-caused -- though it does not itself substitute for the landlord's separate statutory itemization obligation under O.C.G.A. § 44-7-34.",
+    "weight": 3,
+    "source_note": "hedge: standard national property-management risk-management practice"
+  },
+  {
+    "topic": "Property Management & Landlord-Tenant Law",
+    "question": "A residential lease term expires, but the tenant remains in possession and continues paying rent, which the landlord accepts, without either party signing a new lease. As a matter of general landlord-tenant doctrine, what tenancy typically results?",
+    "choice_a": "A holdover tenancy generally results, commonly treated as a periodic (e.g., month-to-month) tenancy on the prior lease's material terms, formed by the landlord's acceptance of continued rent after the original lease term expired",
+    "choice_b": "The lease automatically terminates immediately with no further tenancy of any kind, regardless of continued rent acceptance",
+    "choice_c": "The tenant automatically acquires fee simple ownership of the property after 30 days of holdover",
+    "choice_d": "A holdover tenant can never be lawfully removed under any circumstances once the original lease expires",
+    "correct_choice": "A",
+    "explanation": "When a tenant remains in possession after lease expiration and the landlord accepts continued rent, this generally creates a holdover tenancy -- commonly treated as a periodic tenancy (such as month-to-month) continuing on the prior lease's material terms, as a matter of general landlord-tenant doctrine.",
+    "weight": 4,
+    "source_note": "hedge: standard national landlord-tenant holdover-tenancy doctrine, not Georgia-statute-specific"
+  }
+]

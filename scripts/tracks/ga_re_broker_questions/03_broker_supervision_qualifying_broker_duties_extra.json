@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Broker Supervision & Qualifying Broker Duties",
+    "question": "A salesperson decides to leave their sponsoring broker and affiliate with a new firm. Under O.C.G.A. § 43-40-19(b), what must the releasing broker do with that licensee's license?",
+    "choice_a": "Immediately forward the license to GREC or to the new broker, and notify GREC of the termination with the required details",
+    "choice_b": "Hold the license indefinitely until any disputed commission is resolved between the broker and the departing licensee",
+    "choice_c": "Destroy the license, since a new one will be issued automatically to the new firm",
+    "choice_d": "Forward the license only if the departing licensee has no pending transactions",
+    "correct_choice": "A",
+    "explanation": "O.C.G.A. § 43-40-19(b) requires the releasing broker to immediately forward the departing licensee's license to GREC or the new broker, and to notify GREC of the termination with the required details -- the broker may not simply hold the license as leverage over unrelated disputes.",
+    "weight": 5,
+    "source_note": "O.C.G.A. § 43-40-19(b)"
+  },
+  {
+    "topic": "Broker Supervision & Qualifying Broker Duties",
+    "question": "A salesperson has left their broker but has not yet personally delivered a transfer application to GREC or received a new wall certificate. Under O.C.G.A. § 43-40-19(b), may that salesperson continue engaging in real estate activities in the interim?",
+    "choice_a": "Yes -- the licensee may continue practicing under the old broker's authority indefinitely until the new paperwork clears",
+    "choice_b": "No -- the departing licensee cannot engage in real estate activities until either personally delivering a transfer application to GREC or receiving a wall certificate authorizing them under the new broker",
+    "choice_c": "Yes -- the licensee may practice independently, without any broker affiliation, during the transition period",
+    "choice_d": "Yes, but only for transactions that were already pending before the departure",
+    "correct_choice": "B",
+    "explanation": "O.C.G.A. § 43-40-19(b) provides that a departing licensee may not engage in real estate activities until either personally delivering a transfer application to GREC or receiving a wall certificate authorizing them as licensed under the new broker or qualifying broker.",
+    "weight": 5,
+    "source_note": "O.C.G.A. § 43-40-19(b)"
+  },
+  {
+    "topic": "Broker Supervision & Qualifying Broker Duties",
+    "question": "A licensee transfers to a new firm but has several pending transactions originated under the former broker. Under O.C.G.A. § 43-40-19(c), what must happen for the licensee to continue representing the former broker on those specific pending transactions?",
+    "choice_a": "Nothing further is required -- the licensee may automatically continue on any pending matter without any documentation",
+    "choice_b": "Only the departing licensee's personal consent is needed, with no involvement from either broker",
+    "choice_c": "The former and new brokers must agree in writing, list the specific pending transactions, have the former broker assume responsibility for them, and document the compensation terms",
+    "choice_d": "GREC must issue a special order authorizing continued representation in every such case",
+    "correct_choice": "C",
+    "explanation": "O.C.G.A. § 43-40-19(c) allows a transferring licensee to continue representing the former broker on pre-transfer transactions only if both brokers agree in writing, the specific transactions are listed, the former broker assumes responsibility, and the compensation terms are documented -- an ad hoc or undocumented continuation is not permitted.",
+    "weight": 4,
+    "source_note": "O.C.G.A. § 43-40-19(c)"
+  },
+  {
+    "topic": "Broker Supervision & Qualifying Broker Duties",
+    "question": "Under O.C.G.A. § 43-40-19(d), may a salesperson or community association manager act as a licensee for more than one broker at the same time?",
+    "choice_a": "Yes -- salespersons may freely split their affiliation between multiple brokers without any special procedure",
+    "choice_b": "Yes, but only associate brokers (not salespersons) face this restriction",
+    "choice_c": "No such restriction exists under Georgia license law",
+    "choice_d": "No -- a salesperson or CAM may not act as a licensee for any broker other than the broker holding their license, except as permitted under the § 43-40-19(c) pending-transaction procedure",
+    "correct_choice": "D",
+    "explanation": "O.C.G.A. § 43-40-19(d) provides that a salesperson or community association manager may not act as a licensee for any broker other than the one holding their license, except as permitted under the documented pending-transaction procedure in § 43-40-19(c).",
+    "weight": 4,
+    "source_note": "O.C.G.A. § 43-40-19(d)"
+  },
+  {
+    "topic": "Broker Supervision & Qualifying Broker Duties",
+    "question": "A qualifying broker personally reviews a batch of listing contracts on day 45 after their contract dates, having missed the statutory review window entirely. Beyond the review-timing violation itself, what broader supervisory-procedure concern does this pattern most directly suggest?",
+    "choice_a": "That the broker's supervisory procedures for timely contract review, required under O.C.G.A. § 43-40-18(c), may not be functioning as required, independent of whether any individual licensee also committed a separate violation",
+    "choice_b": "No concern at all, since only the 90-day trust-fund examination window is legally significant",
+    "choice_c": "That the broker should immediately dissolve the firm and reapply for a new license",
+    "choice_d": "That only the individual licensees who signed those contracts, and not the broker, bear any responsibility",
+    "correct_choice": "A",
+    "explanation": "Consistently missing the 30-day contract-review window required by O.C.G.A. § 43-40-18(c) suggests the broker's supervisory procedures themselves may be inadequate -- a distinct concern from any individual licensee's conduct, since the broker's own compliance with the enumerated supervisory duties is independently assessed.",
+    "weight": 3,
+    "source_note": "O.C.G.A. § 43-40-18(c)"
+  },
+  {
+    "topic": "Broker Supervision & Qualifying Broker Duties",
+    "question": "As a matter of general national real estate brokerage practice (not a Georgia-specific statutory term), what is a 'broker-in-charge' or 'branch manager' role typically used for in a multi-office firm?",
+    "choice_a": "A title with no supervisory function, used purely for marketing purposes",
+    "choice_b": "A person to whom the qualifying broker delegates day-to-day supervisory functions at a given office location, while the qualifying broker retains ultimate statutory responsibility for that delegate's supervisory acts",
+    "choice_c": "A position that fully replaces the qualifying broker's legal responsibility for that office",
+    "choice_d": "A role reserved exclusively for community association managers",
+    "correct_choice": "B",
+    "explanation": "As a matter of general industry practice (consistent with, though not itself defined by, O.C.G.A. § 43-40-18(d)'s delegation provision), a branch manager or 'broker-in-charge' role is commonly used to handle day-to-day office-level supervision, while the qualifying broker retains ultimate statutory responsibility for the delegate's supervisory acts.",
+    "weight": 3,
+    "source_note": "hedge: standard national brokerage-practice terminology, consistent with O.C.G.A. § 43-40-18(d)'s delegation rule"
+  },
+  {
+    "topic": "Broker Supervision & Qualifying Broker Duties",
+    "question": "A qualifying broker allows an unlicensed personal assistant to negotiate price terms directly with a buyer on the broker's behalf. What supervisory concern does this raise under O.C.G.A. § 43-40-18(c)?",
+    "choice_a": "No concern -- unlicensed assistants may perform any task a broker delegates to them",
+    "choice_b": "It is permitted as long as the assistant is a family member of the broker",
+    "choice_c": "It conflicts with the required supervisory procedure ensuring that only licensed personnel perform acts requiring a license -- negotiating price terms is a licensable activity an unlicensed assistant may not lawfully perform",
+    "choice_d": "It is a concern only if the assistant is paid a commission-based fee for the negotiation",
+    "correct_choice": "C",
+    "explanation": "O.C.G.A. § 43-40-18(c) requires supervisory procedures ensuring only licensed personnel perform licensable acts; negotiating price terms with a buyer on the broker's behalf is a licensable brokerage activity, so allowing an unlicensed assistant to do so undermines this required supervisory safeguard regardless of the assistant's relationship to the broker or fee arrangement.",
+    "weight": 4,
+    "source_note": "O.C.G.A. § 43-40-18(c)"
+  },
+  {
+    "topic": "Broker Supervision & Qualifying Broker Duties",
+    "question": "A firm's qualifying broker dies unexpectedly. Under Ga. Comp. R. & Regs. 520-1-.07(3), does the firm's 60-day window to secure a replacement qualifying broker apply the same way it would to a resignation or discharge?",
+    "choice_a": "No -- death of a qualifying broker automatically and permanently dissolves the firm's license with no replacement window at all",
+    "choice_b": "No -- death extends the window to a full calendar year, unlike resignation or discharge",
+    "choice_c": "No -- death of a qualifying broker is not addressed by Georgia rule at all",
+    "choice_d": "Yes -- Rule 520-1-.07(3) applies the same 60-day replacement window regardless of whether the qualifying broker's departure was by death, resignation, or discharge",
+    "correct_choice": "D",
+    "explanation": "Ga. Comp. R. & Regs. 520-1-.07(3) treats death, resignation, and discharge of the qualifying broker the same way for purposes of the 60-day replacement window -- the firm must secure a new qualifying broker within that period regardless of which of the three events triggered the vacancy, or it must cease brokerage activity.",
+    "weight": 4,
+    "source_note": "Ga. Comp. R. & Regs. 520-1-.07(3)"
+  },
+  {
+    "topic": "Broker Supervision & Qualifying Broker Duties",
+    "question": "Two different affiliated licensees at the same firm each separately violate license law within the same month, and the broker had documented, reasonable supervisory procedures covering both areas of violation, did not participate in either violation, and did not ratify either. Under O.C.G.A. § 43-40-18(b), does having two separate violations by two different licensees change the safe-harbor analysis?",
+    "choice_a": "No -- the safe-harbor analysis under § 43-40-18(b) is applied on the same three-element basis (reasonable procedures, no participation, no ratification) regardless of how many separate affiliate violations occur",
+    "choice_b": "Yes -- a second unrelated violation within the same month automatically forfeits the safe harbor regardless of the broker's conduct",
+    "choice_c": "Yes -- the broker must personally re-certify supervisory procedures to GREC after each individual violation to preserve the defense",
+    "choice_d": "No, because Georgia law caps the safe harbor at one violation per firm per year",
+    "correct_choice": "A",
+    "explanation": "O.C.G.A. § 43-40-18(b)'s three-element safe-harbor test (reasonable supervisory procedures, no participation, no ratification) applies to each instance of an affiliate's violation on its own terms; the statute does not impose a cap on the number of separate affiliate violations a broker may successfully defend against under the same three-element showing.",
+    "weight": 3,
+    "source_note": "O.C.G.A. § 43-40-18(b)"
+  }
+]

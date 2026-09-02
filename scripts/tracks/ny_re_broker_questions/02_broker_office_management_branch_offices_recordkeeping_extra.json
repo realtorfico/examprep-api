@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Broker Office Management, Branch Offices & Recordkeeping",
+    "question": "Under 19 NYCRR Section 175.20(a), who may manage a branch office, and what is a salesperson or other employee specifically barred from doing there?",
+    "choice_a": "Only the licensed broker may manage the branch office, and a salesperson/employee may not bear financial responsibility for the office or conduct brokerage business there for their own personal gain",
+    "choice_b": "Any salesperson with at least six months of experience may independently manage and profit from a branch office",
+    "choice_c": "Branch offices have no management requirement at all under Part 175",
+    "choice_d": "Only an unlicensed office administrator may manage a branch office",
+    "correct_choice": "A",
+    "explanation": "19 NYCRR Section 175.20(a) requires branch office management to remain with the licensed broker, and specifically prohibits arrangements where a salesperson or employee bears financial responsibility for the branch or conducts brokerage business there for personal gain -- reinforcing that branch operations cannot be effectively run as an independent, salesperson-owned business.",
+    "weight": 4,
+    "source_note": "19 NYCRR Section 175.20(a) (Branch offices -- management and financial-responsibility restriction)"
+  },
+  {
+    "topic": "Broker Office Management, Branch Offices & Recordkeeping",
+    "question": "Under 19 NYCRR Section 175.20(b), every branch office must be under the direct supervision of the broker to whom the license is issued, or of what alternative supervisory figure for an organizational licensee?",
+    "choice_a": "A representative broker of the organization holding the license",
+    "choice_b": "Any unlicensed regional manager selected by the organization",
+    "choice_c": "The organization's outside accountant",
+    "choice_d": "No supervisory figure is required if the branch has fewer than three employees",
+    "correct_choice": "A",
+    "explanation": "19 NYCRR Section 175.20(b) requires every branch office to be under the direct supervision of the licensed broker or a representative broker of the licensed organization -- consistent with the broader Section 175.21 supervisory framework, this ensures a licensed, accountable individual actively oversees each branch location.",
+    "weight": 4,
+    "source_note": "19 NYCRR Section 175.20(b) (Branch offices -- direct supervision requirement)"
+  },
+  {
+    "topic": "Broker Office Management, Branch Offices & Recordkeeping",
+    "question": "Under 19 NYCRR Section 175.20(c), may a broker relocate a main or branch office without first notifying and receiving authorization from DOS?",
+    "choice_a": "No -- Section 175.20(c) prohibits moving a main or branch office without prior departmental authorization",
+    "choice_b": "Yes, a broker may relocate freely and simply update the address at the next renewal",
+    "choice_c": "Yes, as long as the new location is within the same zip code",
+    "choice_d": "The rule applies only to branch offices, never to a broker's main office",
+    "correct_choice": "A",
+    "explanation": "19 NYCRR Section 175.20(c) requires DOS authorization before a broker relocates either a main or branch office -- a stricter framing than simply notifying DOS after the fact, and consistent with the broader 5-day post-change notification duty covered elsewhere in this bucket.",
+    "weight": 4,
+    "source_note": "19 NYCRR Section 175.20(c) (Branch offices -- prior authorization to relocate)"
+  },
+  {
+    "topic": "Broker Office Management, Branch Offices & Recordkeeping",
+    "question": "Under RPL Section 442-h, a broker who establishes standardized prerequisites for prospective clients (such as ID verification or mortgage pre-approval) must handle those written procedures how?",
+    "choice_a": "Post them, properly dated, on the brokerage's website and applications",
+    "choice_b": "Keep them entirely secret from clients and DOS alike",
+    "choice_c": "File them only with the IRS, with no other disclosure",
+    "choice_d": "Destroy them after each individual client interaction",
+    "correct_choice": "A",
+    "explanation": "RPL Section 442-h's operating-procedure rules require a broker who establishes standardized client prerequisites to post those procedures, properly dated, on the brokerage's website and applications -- a transparency requirement so prospective clients can see the office's stated conditions of service in advance.",
+    "weight": 3,
+    "source_note": "RPL Article 12-A, Section 442-h (Rules of the secretary of state -- operating procedure posting requirement)"
+  },
+  {
+    "topic": "Broker Office Management, Branch Offices & Recordkeeping",
+    "question": "A brokerage's designated 'representative broker' for a branch office, as recognized under 19 NYCRR Section 175.20(b), fulfills what role?",
+    "choice_a": "Provides the direct on-site supervisory presence Part 175 requires at that branch on behalf of the organizational licensee, when the broker to whom the license is issued is not personally stationed there",
+    "choice_b": "Serves purely as a marketing spokesperson with no supervisory duties",
+    "choice_c": "Automatically becomes a member of the State Real Estate Board",
+    "choice_d": "Has authority to unilaterally change the brokerage's DOS license number",
+    "correct_choice": "A",
+    "explanation": "Because an organizational broker (corporation, LLC, or partnership) cannot itself be physically present, Section 175.20(b) allows the organization to satisfy its branch-office direct-supervision duty through a representative broker who provides that supervisory presence at the branch.",
+    "weight": 3,
+    "source_note": "19 NYCRR Section 175.20(b) (Branch offices -- representative broker role)"
+  },
+  {
+    "topic": "Broker Office Management, Branch Offices & Recordkeeping",
+    "question": "A branch manager who is a salesperson (not a broker) is allowed to personally retain a share of the branch's profits as compensation for running the office day-to-day. Is this compliant with 19 NYCRR Section 175.20(a)?",
+    "choice_a": "No -- Section 175.20(a) bars a salesperson or employee from bearing financial responsibility for the branch office or conducting brokerage business there for personal gain, regardless of a title like 'branch manager'",
+    "choice_b": "Yes, as long as the salesperson has at least three years of experience",
+    "choice_c": "Yes, without restriction, since 'branch manager' is a recognized title under Part 175",
+    "choice_d": "Yes, provided the profit share is under 10%",
+    "correct_choice": "A",
+    "explanation": "Giving a salesperson a personal financial stake in a branch office's profits or operating results is precisely the kind of arrangement Section 175.20(a) prohibits -- branch office management and financial responsibility must remain with the licensed broker (or a representative broker), not be effectively delegated to a salesperson for personal gain.",
+    "weight": 4,
+    "source_note": "19 NYCRR Section 175.20(a) (Branch offices -- management and financial-responsibility restriction, applied)"
+  },
+  {
+    "topic": "Broker Office Management, Branch Offices & Recordkeeping",
+    "question": "A broker plans to relocate the main office next month and intends to simply notify DOS online within 5 days after the move, as is done for a routine address update. Given 19 NYCRR Section 175.20(c), is that sufficient?",
+    "choice_a": "No -- Section 175.20(c) requires DOS authorization before the relocation occurs, not merely notification after the fact",
+    "choice_b": "Yes -- the 5-day post-move notification alone fully satisfies every applicable DOS requirement",
+    "choice_c": "Yes, because main offices are exempt from any relocation rule that applies to branch offices",
+    "choice_d": "No, because relocations are permanently prohibited under any circumstance",
+    "correct_choice": "A",
+    "explanation": "While DOS's general address-change notification process calls for online notice within 5 days of a change, Section 175.20(c) separately requires the broker to obtain departmental authorization before relocating a main or branch office -- treating the move itself, not just the resulting address update, as subject to prior approval.",
+    "weight": 4,
+    "source_note": "19 NYCRR Section 175.20(c) (Branch offices -- prior authorization requirement, applied)"
+  },
+  {
+    "topic": "Broker Office Management, Branch Offices & Recordkeeping",
+    "question": "Why does 19 NYCRR Section 175.20(a)'s bar on a salesperson bearing 'financial responsibility' for a branch office matter for broker-level accountability?",
+    "choice_a": "Because it prevents brokerage economics from quietly shifting supervisory and escrow-adjacent accountability onto an unlicensed-for-that-purpose salesperson, keeping the licensed broker financially and regulatorily responsible for the office's operations",
+    "choice_b": "Because financial responsibility has no bearing on regulatory accountability under Article 12-A",
+    "choice_c": "Because it only affects how the branch's holiday party budget is allocated",
+    "choice_d": "Because DOS taxes brokers differently based on which employee controls branch finances",
+    "correct_choice": "A",
+    "explanation": "By keeping financial responsibility for a branch office with the licensed broker rather than a salesperson, Section 175.20(a) reinforces the same broker-centered accountability structure seen in the escrow-exclusivity and supervisory rules elsewhere in Part 175 -- a salesperson cannot be made the de facto financial owner of a branch's operations.",
+    "weight": 3,
+    "source_note": "19 NYCRR Section 175.20(a) (policy rationale)"
+  }
+]
