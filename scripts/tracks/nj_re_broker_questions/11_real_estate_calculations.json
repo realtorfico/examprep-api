@@ -310,5 +310,101 @@
     "explanation": "Sale price equals the commission divided by the commission rate: $19,800 / 0.05 = $396,000. Checking the math, $396,000 x 0.05 = $19,800, which confirms the answer.",
     "weight": 3,
     "source_note": "PSI national content outline: Real Estate Calculations"
+  },
+  {
+    "topic": "Real Estate Calculations",
+    "question": "A lender charges a 1% loan origination fee on a $310,000 loan to cover the cost of processing and underwriting the loan. How much is the origination fee?",
+    "choice_a": "$3,000",
+    "choice_b": "$3,500",
+    "choice_c": "$3,100",
+    "choice_d": "$2,800",
+    "correct_choice": "C",
+    "explanation": "The origination fee is the loan amount multiplied by the fee rate: $310,000 x 0.01 = $3,100. Unlike discount points, which buy down the interest rate, an origination fee compensates the lender for administrative costs of making the loan.",
+    "weight": 2,
+    "source_note": "PSI national content outline: Real Estate Calculations"
+  },
+  {
+    "topic": "Real Estate Calculations",
+    "question": "A property is valued at $400,000. The buyer has a first mortgage of $280,000 and a second mortgage (home equity line of credit) of $40,000 against the property. What is the combined loan-to-value (CLTV) ratio?",
+    "choice_a": "70%",
+    "choice_b": "75%",
+    "choice_c": "85%",
+    "choice_d": "80%",
+    "correct_choice": "D",
+    "explanation": "CLTV totals all loan balances secured by the property and divides by the property's value: ($280,000 + $40,000) / $400,000 = $320,000 / $400,000 = 0.80, or 80%. Unlike a simple LTV, which considers only one loan, CLTV accounts for every lien against the property.",
+    "weight": 3,
+    "source_note": "PSI national content outline: Real Estate Calculations"
+  },
+  {
+    "topic": "Real Estate Calculations",
+    "question": "A borrower can buy down her interest rate by paying 2 discount points, costing $6,000, on a $300,000 loan. Doing so will lower her monthly payment by $100. How many months will it take for the monthly savings to recoup the upfront cost of the points?",
+    "choice_a": "60 months",
+    "choice_b": "50 months",
+    "choice_c": "45 months",
+    "choice_d": "72 months",
+    "correct_choice": "A",
+    "explanation": "The breakeven period is the cost of the points divided by the monthly savings: $6,000 / $100 = 60 months (5 years). If the borrower keeps the loan longer than the breakeven period, paying the points results in a net savings over the life of the loan.",
+    "weight": 4,
+    "source_note": "PSI national content outline: Real Estate Calculations"
+  },
+  {
+    "topic": "Real Estate Calculations",
+    "question": "An investor purchases a rental property for $300,000, making a cash down payment of $75,000 and financing the remainder. The property generates annual pre-tax cash flow (after debt service) of $6,000. What is the investor's cash-on-cash return?",
+    "choice_a": "6%",
+    "choice_b": "8%",
+    "choice_c": "10%",
+    "choice_d": "2%",
+    "correct_choice": "B",
+    "explanation": "Cash-on-cash return measures annual cash flow relative to the actual cash invested, not the total property value: $6,000 / $75,000 = 0.08, or 8%. This differs from the capitalization rate, which divides NOI by the total property value rather than by the investor's cash invested.",
+    "weight": 4,
+    "source_note": "PSI national content outline: Real Estate Calculations"
+  },
+  {
+    "topic": "Real Estate Calculations",
+    "question": "Annual property taxes of $5,110 have not yet been paid and will be paid in arrears by the buyer after closing. Using an actual/365-day calendar year (not a 360-day banker's year), closing occurs on March 1, with the day of closing charged to the seller, so the seller owned the property for 60 days of the year. What credit does the seller owe the buyer at closing for the unpaid taxes?",
+    "choice_a": "$854.00",
+    "choice_b": "$820.00",
+    "choice_c": "$840.00",
+    "choice_d": "$900.00",
+    "correct_choice": "C",
+    "explanation": "Using the actual/365-day method, the daily tax rate is $5,110 / 365 = $14.00 per day. The seller owned the property for 60 days (January 1 through March 1, including the day of closing), so the seller owes the buyer a credit of 60 x $14.00 = $840.00 for taxes that will later be paid in full by the buyer.",
+    "weight": 4,
+    "source_note": "PSI national content outline: Real Estate Calculations"
+  },
+  {
+    "topic": "Real Estate Calculations",
+    "question": "A seller sells a home for $340,000. At closing, the seller must pay off a first mortgage balance of $210,000 and a home equity line of credit balance of $18,500, pay a 6% brokerage commission, and pay $2,100 in other closing costs. The seller also owes the buyer a $1,200 property tax proration credit for unpaid taxes accrued through the closing date. What are the seller's net proceeds?",
+    "choice_a": "$89,000",
+    "choice_b": "$86,600",
+    "choice_c": "$90,200",
+    "choice_d": "$87,800",
+    "correct_choice": "D",
+    "explanation": "The commission is $340,000 x 0.06 = $20,400. Net proceeds = $340,000 - $210,000 (1st mortgage payoff) - $18,500 (HELOC payoff) - $20,400 (commission) - $2,100 (other closing costs) - $1,200 (tax proration credit owed to buyer) = $87,800.",
+    "weight": 5,
+    "source_note": "PSI national content outline: Real Estate Calculations"
+  },
+  {
+    "topic": "Real Estate Calculations",
+    "question": "A buyer purchases a home for $325,000 with a loan of $260,000 (80% LTV). The buyer expects $7,400 in closing costs, has already paid $4,000 in earnest money, and negotiated a $3,000 seller credit toward closing costs. How much cash will the buyer need to bring to closing?",
+    "choice_a": "$65,400",
+    "choice_b": "$68,400",
+    "choice_c": "$61,400",
+    "choice_d": "$72,400",
+    "correct_choice": "A",
+    "explanation": "The down payment is $325,000 - $260,000 = $65,000. Adding closing costs and subtracting amounts already applied toward the buyer's obligation: $65,000 + $7,400 (closing costs) - $4,000 (earnest money already paid) - $3,000 (seller credit) = $65,400 needed at closing.",
+    "weight": 4,
+    "source_note": "PSI national content outline: Real Estate Calculations"
+  },
+  {
+    "topic": "Real Estate Calculations",
+    "question": "A state's real property transfer tax is calculated at $2 per $500 of consideration on the first $150,000 of the sale price, and $4 per $500 of consideration on any amount above $150,000. What is the total transfer tax due on a home selling for $250,000?",
+    "choice_a": "$1,000.00",
+    "choice_b": "$1,400.00",
+    "choice_c": "$2,000.00",
+    "choice_d": "$1,200.00",
+    "correct_choice": "B",
+    "explanation": "The first $150,000 is taxed at $2 per $500: $150,000 / $500 = 300 units x $2 = $600. The remaining $100,000 ($250,000 - $150,000) is taxed at the higher $4 per $500 tier: $100,000 / $500 = 200 units x $4 = $800. Total transfer tax = $600 + $800 = $1,400.00.",
+    "weight": 4,
+    "source_note": "hedge: generic tiered transfer tax formula (actual transfer tax schedules and rate tiers vary by state)"
   }
 ]
