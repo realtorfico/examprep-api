@@ -2525,7 +2525,18 @@ async function getExamConfig(env, examType, ageCategory) {
 // none of this is sensitive, and the public site needs it to render its own homepage/category
 // pages/nav.
 async function handleTrackRegistryList(env) {
-  const registry = await getTrackRegistry(env);
+  const [registry, lastUpdatedRows] = await Promise.all([
+    getTrackRegistry(env),
+    // Real per-track "question bank last updated" signal for the site's freshness-stamp feature --
+    // deliberately MAX(questions.created_at), NOT track_registry.updated_at (that column only
+    // tracks edits to exam MECHANICS -- question count/duration/pass_percent/active -- and is
+    // untouched by a pure content backfill, which is exactly the event this needs to reflect).
+    // Every question row has a real created_at (NOT NULL), so this covers all 266 active tracks
+    // uniformly, unlike mining git history (only ~69 tracks still have a source JSON file on disk).
+    env.DB.prepare('SELECT exam_type, MAX(created_at) AS ts FROM questions GROUP BY exam_type').all(),
+  ]);
+  const lastUpdatedByType = {};
+  (lastUpdatedRows.results || []).forEach((row) => { lastUpdatedByType[row.exam_type] = row.ts; });
   const tracks = Object.keys(registry).map((examType) => {
     const r = registry[examType];
     return {
@@ -2540,6 +2551,7 @@ async function handleTrackRegistryList(env) {
       passPercent: r.pass_percent,
       minCorrect: r.min_correct,
       mechanicsNote: r.mechanics_note,
+      questionsUpdatedAt: lastUpdatedByType[examType] || null,
     };
   });
   return json({ tracks });
