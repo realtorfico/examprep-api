@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Doubles & Triples",
+    "question": "In a set of doubles or triples, which trailer is most likely to turn over because of the \"crack-the-whip\" effect?",
+    "choice_a": "The last trailer in the combination",
+    "choice_b": "The first trailer, directly behind the tractor",
+    "choice_c": "The middle trailer only, in a triples combination",
+    "choice_d": "All trailers are equally likely to turn over",
+    "correct_choice": "A",
+    "explanation": "Doubles and triples are more prone to rollover than other combination vehicles because of the crack-the-whip effect, and the last trailer in the combination is the one most likely to turn over. You must steer gently when pulling trailers.",
+    "weight": 3,
+    "source_note": "Section 7.1.2 - Beware of the Crack-the-whip Effect"
+  },
+  {
+    "topic": "Doubles & Triples",
+    "question": "Before backing a converter dolly under the rear trailer to couple it, what must be true about the height of that trailer?",
+    "choice_a": "The trailer must be slightly lower than the center of the fifth wheel on the dolly, so the trailer is raised slightly as the dolly is pushed under",
+    "choice_b": "The trailer must be higher than the dolly's fifth wheel by at least six inches",
+    "choice_c": "Trailer height does not matter as long as the kingpin is centered",
+    "choice_d": "The trailer's landing gear must be fully retracted before checking height",
+    "correct_choice": "A",
+    "explanation": "When connecting a converter dolly to the rear trailer, the trailer height must be correct: it should be slightly lower than the center of the dolly's fifth wheel, so the trailer is raised slightly when the dolly is pushed under it.",
+    "weight": 3,
+    "source_note": "Section 7.2.1 - Connect Converter Dolly to Rear Trailer"
+  },
+  {
+    "topic": "Doubles & Triples",
+    "question": "When making a visual check of a converter dolly coupling, what two things confirm the coupling is correct?",
+    "choice_a": "No visible space between the upper and lower fifth wheel, and the locking jaws are closed around the kingpin",
+    "choice_b": "The tow bar is fully extended and the safety chains are disconnected",
+    "choice_c": "The landing gear is lowered and the pintle hook is unlatched",
+    "choice_d": "The air tank petcock is open and the parking brake is released",
+    "correct_choice": "A",
+    "explanation": "The visual check of a converter dolly coupling requires confirming there is no visible space between the upper and lower fifth wheel and that the locking jaws are closed around the kingpin.",
+    "weight": 3,
+    "source_note": "Section 7.3.1 - Coupling System Areas (Double and Triple Trailers)"
+  },
+  {
+    "topic": "Doubles & Triples",
+    "question": "If the second (rear) trailer in a set of doubles does not have spring brakes, how do you set its emergency brakes before coupling?",
+    "choice_a": "Drive the tractor close to the trailer, connect the emergency line to charge the trailer air tank, then disconnect the emergency line",
+    "choice_b": "Leave the trailer completely unsecured since it will be coupled immediately",
+    "choice_c": "Apply the tractor's parking brake only; this automatically locks all trailers in the combination",
+    "choice_d": "Fill the service line only, since the emergency line has no effect on the trailer brakes",
+    "correct_choice": "A",
+    "explanation": "If the second trailer lacks spring brakes, you drive the tractor close to it, connect the emergency line to charge the trailer air tank, then disconnect the emergency line, which sets the trailer's emergency brakes (assuming the slack adjusters are correctly adjusted). Chock the wheels if there is any doubt.",
+    "weight": 3,
+    "source_note": "Section 7.2.1 - Secure Second (Rear) Trailer"
+  },
+  {
+    "topic": "Doubles & Triples",
+    "question": "During a pre-trip inspection of a doubles/triples rig, what position should the converter dolly's air tank drain valve (petcock) be in?",
+    "choice_a": "Closed",
+    "choice_b": "Open",
+    "choice_c": "Half open, to allow slow drainage",
+    "choice_d": "It has no set position and is checked only for leaks",
+    "correct_choice": "A",
+    "explanation": "During inspection, the converter dolly air tank drain valve (petcock) must be CLOSED so the dolly's air tank can hold pressure for the dolly's brakes.",
+    "weight": 2,
+    "source_note": "Section 7.3.1 - Double and Triple Trailers checks"
+  },
+  {
+    "topic": "Doubles & Triples",
+    "question": "Why must you allow extra following distance and larger gaps when entering or crossing traffic while pulling doubles or triples?",
+    "choice_a": "Because doubles/triples take up more space and cannot be turned or stopped as suddenly as other commercial vehicles",
+    "choice_b": "Because state law requires an arbitrary extra 500 feet of following distance for any multi-trailer rig",
+    "choice_c": "Because doubles/triples have shorter stopping distances than single trailers and need room to slow gradually",
+    "choice_d": "Extra following distance is only required in doubles/triples when hauling placarded hazardous materials",
+    "correct_choice": "A",
+    "explanation": "Doubles and triples take up more space than other commercial vehicles because they are longer and cannot be turned or stopped suddenly, so drivers must allow more following distance and larger gaps before entering or crossing traffic.",
+    "weight": 2,
+    "source_note": "Section 7.1.5 - Manage Space"
+  },
+  {
+    "topic": "Doubles & Triples",
+    "question": "Why must you be especially careful driving double and triple bottoms in adverse conditions such as bad weather or mountain driving?",
+    "choice_a": "They have greater length and more dead (unpowered) axles to pull with the drive axles, increasing the chance of skids and loss of traction",
+    "choice_b": "Doubles and triples are exempt from chain-law requirements, so drivers tend to become complacent",
+    "choice_c": "Converter dollies do not have brakes at all, so all stopping power comes from the tractor",
+    "choice_d": "Adverse conditions only affect single-trailer combination vehicles, not doubles or triples",
+    "correct_choice": "A",
+    "explanation": "In bad weather, slippery conditions, and mountain driving, drivers of double and triple bottoms must be especially careful because of the greater length and additional dead axles being pulled by the drive axles, which increases the chance of skids and loss of traction.",
+    "weight": 3,
+    "source_note": "Section 7.1.6 - Adverse Conditions"
+  },
+  {
+    "topic": "Doubles & Triples",
+    "question": "What special concern should you keep in mind when choosing a parking spot while driving a set of doubles or triples?",
+    "choice_a": "Make sure you do not park in a spot you cannot pull straight through, since backing a long combination out can be very difficult",
+    "choice_b": "Always back into parking spots so the tractor faces the exit",
+    "choice_c": "Parking is identical to a single straight truck, so no special planning is needed",
+    "choice_d": "Only the length of the tractor needs to be considered when selecting a parking spot",
+    "correct_choice": "A",
+    "explanation": "When parking a doubles/triples rig, you must be aware of how parking lots are arranged and avoid a spot you cannot pull straight through, to avoid a long and difficult escape.",
+    "weight": 2,
+    "source_note": "Section 7.1.7 - Parking the Vehicle"
+  },
+  {
+    "topic": "Doubles & Triples",
+    "question": "When uncoupling a triple-trailer rig, which trailer must be uncoupled first?",
+    "choice_a": "The third (rearmost) trailer, by pulling the dolly out and then unhitching it using the doubles uncoupling method",
+    "choice_b": "The first trailer directly behind the tractor",
+    "choice_c": "The second (middle) trailer, since it carries the converter dolly connecting to both other trailers",
+    "choice_d": "It does not matter which trailer is uncoupled first as long as all parking brakes are set",
+    "correct_choice": "A",
+    "explanation": "To uncouple a triple-trailer rig, you first uncouple the third trailer by pulling the dolly out, then unhitch the dolly using the same method used for uncoupling doubles; the remainder of the rig is then uncoupled as a double-bottom rig.",
+    "weight": 3,
+    "source_note": "Section 7.2.3 - Coupling and Uncoupling Triple Trailers"
+  },
+  {
+    "topic": "Doubles & Triples",
+    "question": "After backing the converter dolly under the rear trailer and raising the landing gear slightly, how do you test that the coupling is secure before making the final visual check?",
+    "choice_a": "Test the coupling by pulling against the pin (kingpin) of the second semitrailer",
+    "choice_b": "Test the coupling by disconnecting the safety chains and observing whether the trailer shifts",
+    "choice_c": "Test the coupling by fully releasing the tractor parking brake and driving in a tight circle",
+    "choice_d": "Test the coupling by opening the emergency line shut-off valve at the rear of the last trailer",
+    "correct_choice": "A",
+    "explanation": "After backing the converter dolly under the rear trailer and raising the landing gear slightly to prevent damage if the trailer moves, you test the coupling by pulling against the pin of the second semitrailer, then make a visual check of the coupling.",
+    "weight": 3,
+    "source_note": "Section 7.2.1 - Connect Converter Dolly to Rear Trailer"
+  }
+]

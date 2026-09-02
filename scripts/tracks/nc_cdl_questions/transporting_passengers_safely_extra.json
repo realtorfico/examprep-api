@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Transporting Passengers Safely",
+    "question": "According to the manual, what vehicle design capacity requires a driver to hold a passenger endorsement on their CDL?",
+    "choice_a": "A vehicle designed to seat 16 or more persons, including the driver",
+    "choice_b": "Any vehicle that carries fare-paying riders, regardless of seating capacity",
+    "choice_c": "A vehicle designed to seat 24 or more persons, not counting the driver",
+    "choice_d": "Only vehicles used for interstate charter service",
+    "correct_choice": "A",
+    "explanation": "Bus drivers must have a commercial driver license and a passenger endorsement if the vehicle is designed to seat 16 or more persons, including the driver.",
+    "weight": 3,
+    "source_note": "Section 4 - Introduction (bus/CDL and passenger endorsement requirement)"
+  },
+  {
+    "topic": "Transporting Passengers Safely",
+    "question": "Under what condition should a driver sign the previous driver's vehicle inspection report before starting a trip?",
+    "choice_a": "Only if defects reported earlier have been certified as repaired or certified as not needing repair",
+    "choice_b": "Any time, as a routine formality before every trip",
+    "choice_c": "Only if the bus is less than one year old",
+    "choice_d": "Signing the previous driver's report is never required",
+    "correct_choice": "A",
+    "explanation": "You must review the previous driver's inspection report, and should sign it only if defects reported earlier have been certified as repaired or as not needing repair; signing is your certification that this was done.",
+    "weight": 3,
+    "source_note": "Section 4.1 - Vehicle Inspection"
+  },
+  {
+    "topic": "Transporting Passengers Safely",
+    "question": "Per the vehicle systems check described in the manual, what is required of a bus's front wheel tires?",
+    "choice_a": "They must not be recapped or regrooved tires",
+    "choice_b": "They must be regrooved for extra traction",
+    "choice_c": "They may be recapped as long as the tread depth is legal",
+    "choice_d": "There is no special restriction for front tires",
+    "correct_choice": "A",
+    "explanation": "During the pre-trip vehicle systems check, front wheels must not have recapped or regrooved tires.",
+    "weight": 3,
+    "source_note": "Section 4.1.1 - Vehicle Systems"
+  },
+  {
+    "topic": "Transporting Passengers Safely",
+    "question": "Before driving, what must a bus driver do with any open access panels or emergency exits found while checking the outside of the bus?",
+    "choice_a": "Close them before driving",
+    "choice_b": "Leave them open for ventilation",
+    "choice_c": "Note them on the report but continue driving with them open",
+    "choice_d": "Tape them shut permanently",
+    "correct_choice": "A",
+    "explanation": "As you check the outside of the bus, close any open emergency exits and any open access panels, such as those for baggage, restroom service, or the engine, before driving.",
+    "weight": 2,
+    "source_note": "Section 4.1.2 - Access Doors and Panels"
+  },
+  {
+    "topic": "Transporting Passengers Safely",
+    "question": "What is required regarding a bus's red emergency door light, if the bus is equipped with one?",
+    "choice_a": "It must work, and be turned on at night or any other time the outside lights are in use",
+    "choice_b": "It should be left off at all times so it does not distract riders",
+    "choice_c": "It only needs to be tested during the annual inspection",
+    "choice_d": "It is optional equipment with no functional requirement",
+    "correct_choice": "A",
+    "explanation": "The Emergency Exit sign on an emergency door must be clearly visible, and if there is a red emergency door light, it must work; it should be turned on at night or any other time the outside lights are used.",
+    "weight": 3,
+    "source_note": "Section 4.1.3 - Bus Interior"
+  },
+  {
+    "topic": "Transporting Passengers Safely",
+    "question": "What caution applies when a driver locks an emergency roof hatch in a partly open position for fresh air?",
+    "choice_a": "Keep in mind the bus's higher clearance while driving with the hatch open",
+    "choice_b": "The hatch must be fully closed within five minutes of opening it",
+    "choice_c": "Roof hatches may never be used for ventilation under any circumstance",
+    "choice_d": "Opening a roof hatch automatically applies the parking brake",
+    "correct_choice": "A",
+    "explanation": "Drivers may lock some emergency roof hatches in a partly open position for fresh air but should not leave them open as a regular practice, and must keep in mind the bus's higher clearance while driving with them open.",
+    "weight": 2,
+    "source_note": "Section 4.1.4 - Roof Hatches"
+  },
+  {
+    "topic": "Transporting Passengers Safely",
+    "question": "When arriving at a destination or intermediate stop, what should a bus driver announce to riders?",
+    "choice_a": "The location, the reason for stopping, the next departure time, and the bus number",
+    "choice_b": "Only the name of the final destination",
+    "choice_c": "The driver's name and CDL number",
+    "choice_d": "Nothing; stop announcements are the dispatcher's responsibility",
+    "correct_choice": "A",
+    "explanation": "At destinations or intermediate stops, drivers should announce the location, the reason for stopping, the next departure time, and the bus number, and remind riders to take carry-ons and watch for any step-down.",
+    "weight": 3,
+    "source_note": "Section 4.2.4 - At Your Destination"
+  },
+  {
+    "topic": "Transporting Passengers Safely",
+    "question": "Why should charter bus drivers avoid letting riders board the bus before the scheduled departure time?",
+    "choice_a": "It helps prevent theft or vandalism of the bus",
+    "choice_b": "Early boarding voids the bus's liability insurance",
+    "choice_c": "It is required for fuel-conservation compliance",
+    "choice_d": "There is no reason; early boarding is encouraged whenever possible",
+    "correct_choice": "A",
+    "explanation": "Charter bus drivers should not allow riders on the bus until departure time, which helps prevent theft or vandalism of the bus.",
+    "weight": 2,
+    "source_note": "Section 4.2.4 - At Your Destination"
+  },
+  {
+    "topic": "Transporting Passengers Safely",
+    "question": "If a bus has a manual transmission, what rule applies specifically while crossing railroad tracks?",
+    "choice_a": "Never change gears while crossing the tracks",
+    "choice_b": "Always downshift to first gear before crossing",
+    "choice_c": "Shift to neutral and coast across the tracks",
+    "choice_d": "A gear change is required at every crossing to signal caution",
+    "correct_choice": "A",
+    "explanation": "If a bus has a manual transmission, the driver must never change gears while crossing railroad tracks, though a full stop is not always required.",
+    "weight": 3,
+    "source_note": "Section 4.3.2 - At Stops"
+  },
+  {
+    "topic": "Transporting Passengers Safely",
+    "question": "How should a driver handle a drunk or disruptive rider on the bus?",
+    "choice_a": "Ensure the rider's safety and that of others, avoiding discharge where it would be unsafe, waiting if needed for a well-lighted stop with other people present",
+    "choice_b": "Immediately stop the bus at the nearest point, regardless of location, and remove the rider",
+    "choice_c": "Call for police support and continue the route without changing anything",
+    "choice_d": "Take no action unless the disruptive behavior becomes violent",
+    "correct_choice": "A",
+    "explanation": "Drivers must ensure a disruptive or intoxicated rider's safety as well as that of others, and should not discharge such a rider where it would be unsafe; it may be safer to wait for the next scheduled stop or a well-lighted area where other people are present.",
+    "weight": 3,
+    "source_note": "Section 4.3.2 - At Stops"
+  }
+]

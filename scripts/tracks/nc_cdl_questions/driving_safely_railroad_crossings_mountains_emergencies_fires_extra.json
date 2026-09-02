@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Driving Safely: Railroad Crossings, Mountains, Emergencies & Fires",
+    "question": "What distinguishes an active railroad-highway crossing from a passive crossing?",
+    "choice_a": "An active crossing has a traffic control device installed, such as flashing red lights (with or without bells) or flashing red lights with bells and gates",
+    "choice_b": "An active crossing has no warning devices of any kind",
+    "choice_c": "An active crossing only exists in cities, never in rural areas",
+    "choice_d": "An active crossing never requires a stop under any circumstance",
+    "correct_choice": "A",
+    "explanation": "Active crossings have a traffic control device installed to regulate traffic, including flashing red lights (with or without bells) and flashing red lights with bells and gates; passive crossings have no such device and leave the stop/proceed decision entirely to the driver.",
+    "weight": 2,
+    "source_note": "NC CDL Manual Section 2.15.1 - Types of Crossings, Active Crossings"
+  },
+  {
+    "topic": "Driving Safely: Railroad Crossings, Mountains, Emergencies & Fires",
+    "question": "Why must you look both ways and check again before crossing double railroad tracks, even right after one train has passed?",
+    "choice_a": "A train on one track can hide a second train approaching on the other track",
+    "choice_b": "Regulations require a mandatory 60-second wait at every double-track crossing",
+    "choice_c": "Double checking is only necessary at crossings that have gates",
+    "choice_d": "Once one train has cleared, no further train can be near the crossing",
+    "correct_choice": "A",
+    "explanation": "The manual warns that a train on one track may hide a train on the other track, so drivers should look both ways and make sure no other train is near before starting across after one has cleared.",
+    "weight": 3,
+    "source_note": "NC CDL Manual Section 2.15.3 - Driving Procedures, Double Tracks Require a Double Check"
+  },
+  {
+    "topic": "Driving Safely: Railroad Crossings, Mountains, Emergencies & Fires",
+    "question": "If your vehicle becomes stuck on a railroad crossing, what should you do first?",
+    "choice_a": "Get out of the vehicle and move away from the tracks, then call 911 or the emergency number posted at the crossing and give the exact location, including the DOT number if posted",
+    "choice_b": "Stay in the vehicle and keep trying to drive it free",
+    "choice_c": "Wait inside the vehicle until the train arrives, then exit",
+    "choice_d": "Try to push the vehicle off the tracks by yourself before calling for help",
+    "correct_choice": "A",
+    "explanation": "If you get stuck on the tracks, get out of the vehicle and away from the tracks, check for emergency notification information at the crossing, and call 911 (or other emergency number), giving the exact location using identifiable landmarks, especially the posted DOT number.",
+    "weight": 3,
+    "source_note": "NC CDL Manual Section 2.15.6 - Special Situations"
+  },
+  {
+    "topic": "Driving Safely: Railroad Crossings, Mountains, Emergencies & Fires",
+    "question": "What are escape ramps on mountain downgrades designed to do?",
+    "choice_a": "Safely stop a runaway vehicle using a long bed of loose, soft material, sometimes combined with an upgrade",
+    "choice_b": "Provide a faster shortcut route down the mountain",
+    "choice_c": "Let a vehicle bypass a weigh station on a steep grade",
+    "choice_d": "Automatically recharge the air brake system while descending",
+    "correct_choice": "A",
+    "explanation": "Escape ramps are built on many steep mountain downgrades to safely stop runaway vehicles without injuring drivers and passengers, using a long bed of loose, soft material, sometimes in combination with an upgrade.",
+    "weight": 2,
+    "source_note": "NC CDL Manual Section 2.16.4 - Proper Braking Technique, Escape Ramps"
+  },
+  {
+    "topic": "Driving Safely: Railroad Crossings, Mountains, Emergencies & Fires",
+    "question": "When descending a long, steep mountain grade, what should you use as the principal method of controlling your speed?",
+    "choice_a": "The braking effect of the engine, kept near governed rpm in a low gear, saving the service brakes for when they are needed",
+    "choice_b": "Continuous light application of the service brakes the entire way down",
+    "choice_c": "The parking brake applied on and off throughout the descent",
+    "choice_d": "Coasting in neutral to conserve fuel",
+    "correct_choice": "A",
+    "explanation": "Drivers must use the braking effect of the engine as the principal way of controlling speed on a downgrade -- the braking effect is greatest near the governed rpms in lower gears -- and save the brakes so they are available when needed.",
+    "weight": 3,
+    "source_note": "NC CDL Manual Section 2.16.1 - Select a Safe Speed"
+  },
+  {
+    "topic": "Driving Safely: Railroad Crossings, Mountains, Emergencies & Fires",
+    "question": "If an emergency forces you to drive off the road onto the shoulder, what braking guidance should you follow?",
+    "choice_a": "Avoid using the brakes, if possible, until your speed has dropped to about 20 mph, then brake gently to avoid skidding on the loose surface",
+    "choice_b": "Apply the brakes as hard as possible the instant your wheels leave the pavement",
+    "choice_c": "Use only the parking brake while traveling on the shoulder",
+    "choice_d": "Braking technique does not need to change once you are off the pavement",
+    "correct_choice": "A",
+    "explanation": "When leaving the road in an emergency, avoid braking if possible until speed has dropped to about 20 mph, then brake very gently to avoid skidding on the loose shoulder surface.",
+    "weight": 3,
+    "source_note": "NC CDL Manual Section 2.17.1 - Steering to Avoid a Crash, Leaving the Road"
+  },
+  {
+    "topic": "Driving Safely: Railroad Crossings, Mountains, Emergencies & Fires",
+    "question": "If you experience a loss of hydraulic brake pressure (the pedal feels spongy or goes to the floor), which response is recommended?",
+    "choice_a": "Downshift to a lower gear and pump the brake pedal, which may generate enough hydraulic pressure to help stop the vehicle",
+    "choice_b": "Immediately shut off the engine while the vehicle is still moving at speed",
+    "choice_c": "Shift into neutral and coast until the vehicle stops on its own",
+    "choice_d": "Take no action, since hydraulic brake systems cannot lose pressure",
+    "correct_choice": "A",
+    "explanation": "With loss of hydraulic pressure, the manual recommends downshifting to a lower gear to help slow the vehicle and pumping the brake pedal, which can sometimes generate enough pressure to stop; the parking brake and finding an escape route are additional options.",
+    "weight": 3,
+    "source_note": "NC CDL Manual Section 2.17.3 - Brake Failure, Loss of Hydraulic Pressure"
+  },
+  {
+    "topic": "Driving Safely: Railroad Crossings, Mountains, Emergencies & Fires",
+    "question": "Which of the following is one of the major signs that a tire has failed while you are driving?",
+    "choice_a": "A loud bang, heavy vibration or thumping, or the steering suddenly feeling heavy",
+    "choice_b": "The fuel gauge dropping rapidly",
+    "choice_c": "The engine temperature gauge spiking",
+    "choice_d": "The vehicle instantly losing all electrical power",
+    "correct_choice": "A",
+    "explanation": "The major signs of tire failure are sound (the loud bang of a blowout), vibration or thumping (often the only sign with a rear tire), and feel (steering going heavy usually signals a front tire failure).",
+    "weight": 2,
+    "source_note": "NC CDL Manual Section 2.17.4 - Tire Failure, Recognize Tire Failure"
+  },
+  {
+    "topic": "Driving Safely: Railroad Crossings, Mountains, Emergencies & Fires",
+    "question": "On a trailer equipped with ABS, where is the yellow ABS malfunction lamp located?",
+    "choice_a": "On the left side of the trailer, either on the front or rear corner",
+    "choice_b": "On the instrument panel inside the tractor cab only",
+    "choice_c": "Trailers are not required to have any ABS malfunction lamp",
+    "choice_d": "Centered on the rear bumper of the trailer",
+    "correct_choice": "A",
+    "explanation": "Tractors, trucks, and buses have yellow ABS malfunction lamps on the instrument panel, while trailers have yellow ABS malfunction lamps on the left side, either on the front or rear corner.",
+    "weight": 2,
+    "source_note": "NC CDL Manual Section 2.18.3 - How to Know If Your Vehicle Is Equipped with ABS"
+  },
+  {
+    "topic": "Driving Safely: Railroad Crossings, Mountains, Emergencies & Fires",
+    "question": "What is the recommended way to correct a front-wheel skid?",
+    "choice_a": "Stop turning and/or braking so hard, and slow down as quickly as possible without skidding",
+    "choice_b": "Turn the steering wheel sharply in the opposite direction while accelerating",
+    "choice_c": "Apply the parking brake immediately to regain traction",
+    "choice_d": "Continue steering and braking normally, since front-wheel skids correct themselves",
+    "correct_choice": "A",
+    "explanation": "In a front-wheel skid the front end tends to go straight no matter how you steer; the only way to stop the skid is to stop turning and/or braking so hard and let the vehicle slow down as quickly as possible without skidding.",
+    "weight": 3,
+    "source_note": "NC CDL Manual Section 2.19.3 - Front-wheel Skids"
+  }
+]

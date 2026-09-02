@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Tank Vehicles",
+    "question": "For a Class A or B CDL, when is a tank endorsement required for hauling a liquid or liquid gas?",
+    "choice_a": "When tanks have an individual rated capacity of more than 119 gallons and an aggregate rated capacity of 1,000 gallons or more",
+    "choice_b": "Only when the cargo is classified as a hazardous material",
+    "choice_c": "Whenever any size container is permanently mounted to the chassis",
+    "choice_d": "Only when the tank is constructed of steel rather than aluminum",
+    "correct_choice": "A",
+    "explanation": "A tank endorsement is required for a Class A or B CDL to haul a liquid or liquid gas in a tank or tanks with an individual rated capacity of more than 119 gallons and an aggregate rated capacity of 1,000 gallons or more attached to the vehicle or chassis; the liquid or gas does not have to be a hazardous material.",
+    "weight": 3,
+    "source_note": "Section 8 - Tank Vehicles, introduction (tank endorsement requirement)"
+  },
+  {
+    "topic": "Tank Vehicles",
+    "question": "During a tank vehicle inspection, what should you check regarding manhole covers and vents?",
+    "choice_a": "That the covers have gaskets and close correctly, and that the vents are kept clear so they work correctly",
+    "choice_b": "That the covers are painted a reflective color",
+    "choice_c": "That the vents are sealed shut with tape for transport",
+    "choice_d": "That the manhole covers are removed before driving",
+    "correct_choice": "A",
+    "explanation": "When inspecting a tank vehicle, make sure manhole covers have gaskets and close correctly, and keep the vents clear so they work correctly.",
+    "weight": 2,
+    "source_note": "Section 8.1 - Inspecting Tank Vehicles (manhole covers and vents)"
+  },
+  {
+    "topic": "Tank Vehicles",
+    "question": "Which items are examples of special purpose equipment you must check on a tank vehicle if it is equipped with them?",
+    "choice_a": "Vapor recovery kits, grounding and bonding cables, emergency shut-off systems, and a built-in fire extinguisher",
+    "choice_b": "Cruise control, power windows, and satellite radio",
+    "choice_c": "Spare tires, jumper cables, and a tool box",
+    "choice_d": "Air conditioning and heated mirrors",
+    "correct_choice": "A",
+    "explanation": "If your tank vehicle has vapor recovery kits, grounding and bonding cables, emergency shut-off systems, or a built-in fire extinguisher, make sure each works; also never drive a tank vehicle with open valves or manhole covers.",
+    "weight": 3,
+    "source_note": "Section 8.1.2 - Check Special Purpose Equipment"
+  },
+  {
+    "topic": "Tank Vehicles",
+    "question": "When checking the intake, discharge, and cut-off valves on a tank vehicle, what must you confirm?",
+    "choice_a": "That the valves are in the correct position before loading, unloading, or moving the vehicle",
+    "choice_b": "That all valves are left fully open at all times",
+    "choice_c": "That the valves are painted to match the tank",
+    "choice_d": "That the valves have been removed for cleaning",
+    "correct_choice": "A",
+    "explanation": "As part of checking for leaks, make sure the intake, discharge, and cut-off valves are in the correct position before loading, unloading, or moving the vehicle.",
+    "weight": 3,
+    "source_note": "Section 8.1.1 - Leaks (valve position check)"
+  },
+  {
+    "topic": "Tank Vehicles",
+    "question": "What must a driver pay attention to when a liquid tank is divided into smaller tanks by bulkheads?",
+    "choice_a": "Weight distribution when loading and unloading, so as not to put too much weight on the front or rear of the vehicle",
+    "choice_b": "The color-coding of each bulkhead compartment",
+    "choice_c": "Whether the bulkheads are removable for cargo flexibility",
+    "choice_d": "Nothing extra; bulkheads have no effect on loading",
+    "correct_choice": "A",
+    "explanation": "Some liquid tanks are divided into several smaller tanks by bulkheads; when loading and unloading these smaller tanks, the driver must pay attention to weight distribution and avoid putting too much weight on the front or rear of the vehicle.",
+    "weight": 3,
+    "source_note": "Section 8.2.3 - Bulkheads"
+  },
+  {
+    "topic": "Tank Vehicles",
+    "question": "Even in a baffled tank, what type of surge can still occur and potentially cause a rollover?",
+    "choice_a": "Side-to-side surge",
+    "choice_b": "Forward-and-backward surge",
+    "choice_c": "Vertical surge",
+    "choice_d": "No surge of any kind can occur in a baffled tank",
+    "correct_choice": "A",
+    "explanation": "Baffles help control forward-and-backward liquid surge, but side-to-side surge can still occur in a baffled tank, and this can cause a rollover.",
+    "weight": 3,
+    "source_note": "Section 8.2.4 - Baffled Tanks"
+  },
+  {
+    "topic": "Tank Vehicles",
+    "question": "Because of the high center of gravity and liquid surge, how should a tank vehicle driver start, slow down, stop, turn, and change lanes?",
+    "choice_a": "Very smoothly",
+    "choice_b": "As quickly as possible to minimize surge duration",
+    "choice_c": "It doesn't matter as long as speed limits are followed",
+    "choice_d": "Only using engine braking, never the service brakes",
+    "correct_choice": "A",
+    "explanation": "Because of the high center of gravity and the surge of the liquid, a tank vehicle driver must start, slow down, and stop very smoothly, and also make smooth turns and lane changes.",
+    "weight": 2,
+    "source_note": "Section 8.3.1 - Drive Smoothly"
+  },
+  {
+    "topic": "Tank Vehicles",
+    "question": "What is the recommended technique for driving a tank vehicle through a curve?",
+    "choice_a": "Slow down before entering the curve, then accelerate slightly through it, since the posted curve speed may be too fast for a tank vehicle",
+    "choice_b": "Maintain constant speed through the entire curve",
+    "choice_c": "Accelerate hard before the curve and brake in the middle of it",
+    "choice_d": "Always match the posted speed limit exactly since it accounts for tank vehicles",
+    "correct_choice": "A",
+    "explanation": "Tank vehicle drivers should slow down before curves, then accelerate slightly through the curve; the posted speed for a curve may be too fast for a tank vehicle.",
+    "weight": 3,
+    "source_note": "Section 8.3.3 - Curves"
+  },
+  {
+    "topic": "Tank Vehicles",
+    "question": "If a tank vehicle driver must make a quick stop to avoid a crash, what braking method should be used, and what added danger exists?",
+    "choice_a": "Use controlled or stab braking; steering quickly while braking may cause the vehicle to roll over",
+    "choice_b": "Slam on the brakes and turn the wheel sharply at the same time for the fastest stop",
+    "choice_c": "Release the brakes completely and coast to a stop",
+    "choice_d": "Downshift repeatedly without touching the brakes",
+    "correct_choice": "A",
+    "explanation": "If a tank vehicle driver must make a quick stop to avoid a crash, they should use controlled or stab braking; the manual also warns that if you steer quickly while braking, the vehicle may roll over.",
+    "weight": 3,
+    "source_note": "Section 8.3.2 - Controlling Surge (emergency stopping)"
+  },
+  {
+    "topic": "Tank Vehicles",
+    "question": "On tank trailers, what can happen if the drive wheels or trailer wheels begin to skid from over-steering, over-accelerating, or over-braking?",
+    "choice_a": "The vehicle may jackknife",
+    "choice_b": "The tank will automatically vent to relieve pressure",
+    "choice_c": "The trailer brakes will lock in the released position",
+    "choice_d": "Nothing significant happens as long as the tank is baffled",
+    "correct_choice": "A",
+    "explanation": "Don't over-steer, over-accelerate, or over-brake, or your vehicle may skid; on tank trailers, if the drive wheels or trailer wheels begin to skid, the vehicle may jackknife, and you must act to restore traction.",
+    "weight": 3,
+    "source_note": "Section 8.3.5 - Skids"
+  }
+]

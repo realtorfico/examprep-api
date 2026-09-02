@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Transporting Cargo Safely",
+    "question": "Whether or not you loaded and secured the cargo yourself, what are you responsible for as the driver?",
+    "choice_a": "Inspecting your cargo, recognizing overloads or poor weight balance, and making sure the cargo is secured, does not block your view, and does not restrict access to emergency equipment",
+    "choice_b": "Only checking that the shipping paperwork matches the load",
+    "choice_c": "Only making sure the cargo is covered with a tarp",
+    "choice_d": "Nothing, since the shipper is responsible for how the cargo was loaded",
+    "correct_choice": "A",
+    "explanation": "Regardless of who loaded and secured the cargo, drivers are responsible for inspecting cargo, recognizing overloads and poor weight balance, knowing the cargo is properly secured and does not obscure their view, and knowing it does not restrict access to emergency equipment.",
+    "weight": 3,
+    "source_note": "Section 3 - Transporting Cargo Safely, introduction (driver responsibilities)"
+  },
+  {
+    "topic": "Transporting Cargo Safely",
+    "question": "What is the Gross Vehicle Weight Rating (GVWR)?",
+    "choice_a": "The value specified by the manufacturer as the loaded weight of a single vehicle",
+    "choice_b": "The maximum safe weight a single tire can carry",
+    "choice_c": "The weight transmitted to the ground by one axle or set of axles",
+    "choice_d": "The maximum weight a coupling device can pull or carry",
+    "correct_choice": "A",
+    "explanation": "GVWR is defined as the value specified by the manufacturer as the loaded weight of a single vehicle, distinct from axle weight, tire load, or coupling device capacity.",
+    "weight": 3,
+    "source_note": "Section 3.2.1 - Definitions You Should Know (Gross Vehicle Weight Rating)"
+  },
+  {
+    "topic": "Transporting Cargo Safely",
+    "question": "What is the purpose of a 'bridge formula' used by states to set maximum axle weights?",
+    "choice_a": "It permits less maximum weight on axles that are closer together, to prevent overloading bridges and roadways",
+    "choice_b": "It sets a single flat weight limit that applies equally no matter how axles are spaced",
+    "choice_c": "It only applies to vehicles hauling hazardous materials",
+    "choice_d": "It determines how many tie-downs a load needs",
+    "correct_choice": "A",
+    "explanation": "A bridge formula permits less maximum axle weight for axles that are closer together, which prevents overloading bridges and roadways.",
+    "weight": 2,
+    "source_note": "Section 3.2.2 - Legal Weight Limits (bridge formula)"
+  },
+  {
+    "topic": "Transporting Cargo Safely",
+    "question": "What can happen to a commercial vehicle's operation if it is overloaded?",
+    "choice_a": "It may have to go very slowly on upgrades, can gain too much speed on downgrades, has increased stopping distance, and brakes can fail from being forced to work too hard",
+    "choice_b": "It will only affect fuel economy, with no impact on braking or speed control",
+    "choice_c": "It has no effect as long as the driver has a CDL",
+    "choice_d": "It only matters if the load is hazardous material",
+    "correct_choice": "A",
+    "explanation": "Overloading can have bad effects on steering, braking, and speed control: overloaded trucks must go slowly on upgrades, may gain too much speed on downgrades, have increased stopping distances, and brakes can fail when forced to work too hard.",
+    "weight": 3,
+    "source_note": "Section 3.2.2 - Legal Weight Limits (effects of overloading)"
+  },
+  {
+    "topic": "Transporting Cargo Safely",
+    "question": "What problem can result from having too much weight on a vehicle's steering axle?",
+    "choice_a": "It can cause hard steering and can damage the steering axle and tires",
+    "choice_b": "It improves traction on the drive wheels",
+    "choice_c": "It has no effect on handling",
+    "choice_d": "It automatically triggers an axle overweight citation regardless of total GVWR",
+    "correct_choice": "A",
+    "explanation": "Too much weight on the steering axle can cause hard steering and can damage the steering axle and tires.",
+    "weight": 2,
+    "source_note": "Section 3.2.4 - Balance the Weight (steering axle)"
+  },
+  {
+    "topic": "Transporting Cargo Safely",
+    "question": "What problem can too little weight on the driving axles cause, especially in bad weather?",
+    "choice_a": "Poor traction, causing the drive wheels to spin easily and possibly leaving the truck unable to keep moving",
+    "choice_b": "The steering axle becomes too heavy to turn",
+    "choice_c": "It causes the brakes to lock automatically",
+    "choice_d": "It has no effect on the vehicle's ability to move",
+    "correct_choice": "A",
+    "explanation": "Too little weight on the driving axles can cause poor traction, so the drive wheels may spin easily; during bad weather the truck may not be able to keep going.",
+    "weight": 2,
+    "source_note": "Section 3.2.4 - Balance the Weight (driving axles)"
+  },
+  {
+    "topic": "Transporting Cargo Safely",
+    "question": "What is the difference between blocking and bracing when securing cargo?",
+    "choice_a": "Blocking is shaped to fit snugly against the cargo and is secured to the deck to prevent sliding, while bracing runs from the upper part of the cargo to the floor and/or walls to prevent movement",
+    "choice_b": "Blocking and bracing mean exactly the same thing",
+    "choice_c": "Blocking is only used on hazardous materials loads, and bracing is only used on flatbeds",
+    "choice_d": "Bracing replaces the need for any tie-downs",
+    "correct_choice": "A",
+    "explanation": "Blocking is shaped to fit snugly against cargo and is secured to the cargo deck to prevent cargo movement, while bracing goes from the upper part of the cargo to the floor and/or walls of the cargo compartment to prevent movement.",
+    "weight": 3,
+    "source_note": "Section 3.3.1 - Blocking and Bracing"
+  },
+  {
+    "topic": "Transporting Cargo Safely",
+    "question": "What types of equipment does the manual identify as proper tie-down equipment for securing cargo?",
+    "choice_a": "Ropes, straps, chains, and tensioning devices such as winches, ratchets, and clinching components, attached via hooks, bolts, rails, or rings",
+    "choice_b": "Only bungee cords",
+    "choice_c": "Only duct tape and rope",
+    "choice_d": "Whatever is on hand, since type does not matter as long as quantity is sufficient",
+    "correct_choice": "A",
+    "explanation": "Proper tie-down equipment must include ropes, straps, chains, and tensioning devices (winches, ratchets, clinching components), and tie-downs must be attached to the vehicle correctly using hooks, bolts, rails, or rings.",
+    "weight": 3,
+    "source_note": "Section 3.3.2 - Cargo Tie-down (proper equipment)"
+  },
+  {
+    "topic": "Transporting Cargo Safely",
+    "question": "What are the two basic reasons for covering cargo, according to the manual?",
+    "choice_a": "To protect people from spilled cargo, and to protect the cargo from weather",
+    "choice_b": "To improve the vehicle's fuel economy and to reduce noise",
+    "choice_c": "To avoid needing any tie-downs and to hide the load from view",
+    "choice_d": "To comply with hazardous materials placarding rules only",
+    "correct_choice": "A",
+    "explanation": "There are two basic reasons for covering cargo: to protect people from spilled cargo, and to protect the cargo from weather.",
+    "weight": 2,
+    "source_note": "Section 3.3.4 - Covering Cargo"
+  },
+  {
+    "topic": "Transporting Cargo Safely",
+    "question": "When hauling a less-than-full load of livestock, what technique helps keep the animals safely bunched together, and why is care still needed even when bunched?",
+    "choice_a": "Use false bulkheads to bunch the animals together; even when bunched, livestock can lean on curves, shifting the center of gravity and making rollover more likely",
+    "choice_b": "Spread the animals as far apart as possible in the trailer to reduce total weight in any one area",
+    "choice_c": "No special technique is needed since livestock cannot move around in a trailer",
+    "choice_d": "Use a header board, since it serves the same purpose as a bulkhead for livestock",
+    "correct_choice": "A",
+    "explanation": "With less than a full load, use false bulkheads to keep livestock bunched together; even when bunched, special care is necessary because livestock can lean on curves, shifting the center of gravity and making rollover more likely.",
+    "weight": 3,
+    "source_note": "Section 3.4.3 - Livestock"
+  }
+]

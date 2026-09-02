@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "School Buses",
+    "question": "When properly adjusted, what should the outside left and right side convex mirrors show a school bus driver?",
+    "choice_a": "The entire side of the bus up to the mirror mounts, the front of the rear tires touching the ground, and at least one traffic lane on either side of the bus",
+    "choice_b": "Only the rear bumper and license plate",
+    "choice_c": "A wide-angle view of the sky above the bus for spotting weather",
+    "choice_d": "Nothing behind the front axle of the bus",
+    "correct_choice": "A",
+    "explanation": "The convex mirrors, mounted below the outside flat mirrors, should be positioned to show the entire side of the bus up to the mirror mounts, the front of the rear tires touching the ground, and at least one traffic lane on either side of the bus.",
+    "weight": 2,
+    "source_note": "Section 10.1.4 - Outside Left and Right Side Convex Mirrors"
+  },
+  {
+    "topic": "School Buses",
+    "question": "What is the specific purpose of the outside left and right side crossover mirrors on a school bus?",
+    "choice_a": "To show the front bumper danger zone directly in front of the bus, which is not visible by direct vision, as well as the danger zone near the service door and front wheels",
+    "choice_b": "To show traffic approaching directly from behind the bus",
+    "choice_c": "To eliminate the need for the overhead inside rearview mirror",
+    "choice_d": "To monitor the bus's engine temperature and oil pressure gauges",
+    "correct_choice": "A",
+    "explanation": "Crossover mirrors are used to see the front bumper danger zone directly in front of the bus that is not visible by direct vision, and to view the danger zone to the left and right sides of the bus, including the service door and front wheel area.",
+    "weight": 3,
+    "source_note": "Section 10.1.5 - Outside Left and Right Side Crossover Mirrors"
+  },
+  {
+    "topic": "School Buses",
+    "question": "How far can the blind spot behind a school bus extend, and which mirrors must a driver rely on to monitor traffic entering that area?",
+    "choice_a": "Up to 400 feet or more behind the bus; the driver must use the exterior side mirrors to monitor traffic approaching and entering this area",
+    "choice_b": "About 5 feet; the overhead inside mirror alone is sufficient",
+    "choice_c": "The blind spot never extends past the rear bumper of the bus",
+    "choice_d": "About 50 feet, and the convex mirrors are not needed to cover it",
+    "correct_choice": "A",
+    "explanation": "The overhead inside rearview mirror has a large blind spot that begins at the rear bumper and could extend up to 400 feet or more behind the bus; the driver must use the exterior side mirrors to monitor traffic that approaches and enters this area.",
+    "weight": 2,
+    "source_note": "Section 10.1.6 - Overhead Inside Rearview Mirror"
+  },
+  {
+    "topic": "School Buses",
+    "question": "About how far, or how many seconds, before pulling over at a school bus stop should a driver turn on the right turn signal indicator?",
+    "choice_a": "About 100-300 feet, or approximately 3-5 seconds, before pulling over",
+    "choice_b": "Immediately upon opening the door, after already stopped",
+    "choice_c": "At least 500 feet, or 15 seconds, before pulling over",
+    "choice_d": "A turn signal is not required before stopping for a school bus stop",
+    "correct_choice": "A",
+    "explanation": "When approaching a school bus stop, the driver should turn on the right turn signal indicator about 100-300 feet, or approximately 3-5 seconds, before pulling over -- a separate step from activating the alternating amber warning lights.",
+    "weight": 2,
+    "source_note": "Section 10.2.1 - Approaching the Stop"
+  },
+  {
+    "topic": "School Buses",
+    "question": "While loading students at a bus stop, what should a driver do to help ensure that no student is left behind?",
+    "choice_a": "Count the number of students at the stop, know names when possible, and ask the other students where a missing student is",
+    "choice_b": "Rely solely on the dome light to visually confirm all students are present",
+    "choice_c": "Assume all students who are usually at the stop have boarded without counting",
+    "choice_d": "Wait for a school administrator to confirm attendance before departing",
+    "correct_choice": "A",
+    "explanation": "During loading, the driver should count the number of students at the bus stop and be sure all board the bus; if possible, know the names of students at each stop, and if a student is missing, ask the other students where that student is.",
+    "weight": 3,
+    "source_note": "Section 10.2.2 - Loading Procedures"
+  },
+  {
+    "topic": "School Buses",
+    "question": "If a student drops an object near the bus during loading or unloading, what should the student be told to do?",
+    "choice_a": "Leave the object, move to a point of safety out of the danger zones, and try to get the driver's attention to retrieve it",
+    "choice_b": "Quickly pick the object up and continue toward the bus",
+    "choice_c": "Ask another student to retrieve the object while the bus continues loading",
+    "choice_d": "Ignore it until arriving at school and report it there instead of to the driver",
+    "correct_choice": "A",
+    "explanation": "Students should be told to leave any dropped object and move to a point of safety out of the danger zones, then attempt to get the driver's attention to retrieve the object -- since stopping or returning for it can cause the student to disappear from the driver's sight at a dangerous moment.",
+    "weight": 3,
+    "source_note": "Section 10.2.5 - Special Dangers of Loading and Unloading"
+  },
+  {
+    "topic": "School Buses",
+    "question": "During an evacuation where there is a risk from a spilled hazardous material, how far upwind of the bus should students be led?",
+    "choice_a": "At least 300 feet upwind of the bus",
+    "choice_b": "At least 50 feet, and direction relative to the wind does not matter",
+    "choice_c": "10 feet, the same as the standard loading/unloading danger zone",
+    "choice_d": "There is no distance guideline given for a hazardous materials spill",
+    "correct_choice": "A",
+    "explanation": "When there is a risk from spilled hazardous materials, students should be led upwind of the bus at least 300 feet -- farther than the general 100-foot guideline for a safe place in other evacuations.",
+    "weight": 3,
+    "source_note": "Section 10.3.2 - Evacuation Procedures"
+  },
+  {
+    "topic": "School Buses",
+    "question": "If a school bus is in the direct path of a sighted tornado and evacuation is ordered, what should the driver do if shelter in a building is not readily available?",
+    "choice_a": "Escort students to a nearby ditch or culvert, far enough away that the bus cannot topple on them, and direct them to lie face down with hands covering their heads",
+    "choice_b": "Keep all students seated on the bus with seatbelts fastened until the tornado passes",
+    "choice_c": "Direct students to stand pressed against the side of the bus for wind protection",
+    "choice_d": "Attempt to drive the bus away to outrun the tornado",
+    "correct_choice": "A",
+    "explanation": "If the bus is in the direct path of a sighted tornado and building shelter is not readily available, the driver should escort students to a nearby ditch or culvert, far enough away that the bus cannot topple on them, and direct them to lie face down with hands covering their heads.",
+    "weight": 3,
+    "source_note": "Section 10.3.2 - Evacuation Procedures"
+  },
+  {
+    "topic": "School Buses",
+    "question": "At a railroad crossing with multiple sets of tracks, where should a school bus stop, and when should it proceed?",
+    "choice_a": "Stop only before the first set of tracks, and once sure no train is approaching on any track, proceed across all of the tracks until completely clear",
+    "choice_b": "Stop separately before each individual set of tracks in the crossing",
+    "choice_c": "Stop only at the last set of tracks, nearest the far side",
+    "choice_d": "Multiple-track crossings do not require the bus to stop at all",
+    "correct_choice": "A",
+    "explanation": "At a multiple-track crossing, the driver should stop only before the first set of tracks; once certain no train is approaching on any track, the driver should proceed across all of the tracks until they have completely cleared them.",
+    "weight": 3,
+    "source_note": "Section 10.4.3 - Recommended Procedures (Crossing the Track)"
+  },
+  {
+    "topic": "School Buses",
+    "question": "If a railroad crossing gate begins coming down after a school bus has already started crossing the tracks, what should the driver do?",
+    "choice_a": "Drive through it and continue across, even if it means breaking the gate",
+    "choice_b": "Stop immediately on the tracks and wait for the gate to rise again",
+    "choice_c": "Back the bus up off the tracks",
+    "choice_d": "Call the dispatcher and wait for instructions before moving the bus",
+    "correct_choice": "A",
+    "explanation": "If the gate comes down after the bus has already started across the tracks, the driver should drive through it and continue crossing, even if it means breaking the gate -- unlike a gate that stays down after a train has already passed, in which case the driver should not drive around it and should call the dispatcher instead.",
+    "weight": 3,
+    "source_note": "Section 10.4.3 - Recommended Procedures (Crossing the Track)"
+  }
+]

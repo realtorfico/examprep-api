@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Alcohol, Drugs & Hazardous Materials Basics",
+    "question": "What three things does the manual say determine a driver's Blood Alcohol Concentration (BAC)?",
+    "choice_a": "The amount of alcohol consumed, how fast it is consumed, and the drinker's body weight",
+    "choice_b": "The type of alcoholic beverage, the drinker's age, and the room temperature",
+    "choice_c": "The drinker's gender, the time of day, and how much food was eaten that day",
+    "choice_d": "Only the total number of drinks consumed, regardless of any other factor",
+    "correct_choice": "A",
+    "explanation": "BAC is determined by the amount of alcohol you drink (more alcohol means higher BAC), how fast you drink (faster drinking means higher BAC), and your weight (a smaller person doesn't have to drink as much to reach the same BAC).",
+    "weight": 3,
+    "source_note": "Section 2.22.1 - What Determines Blood Alcohol Concentration?"
+  },
+  {
+    "topic": "Alcohol, Drugs & Hazardous Materials Basics",
+    "question": "Per the manual's BAC effects table, what happens at a BAC of .08?",
+    "choice_a": "Definite impairment in coordination and judgment -- the drunk driving limit",
+    "choice_b": "Only a mellow feeling and slight body warmth, with no real impairment",
+    "choice_c": "Most drinkers lose consciousness at this level",
+    "choice_d": "No measurable effect on coordination or judgment occurs until .10",
+    "correct_choice": "A",
+    "explanation": "The manual's BAC effects table lists .08 as producing definite impairment in coordination and judgment, describing it as the drunk driving limit with impaired coordination and judgment.",
+    "weight": 3,
+    "source_note": "Section 2.22.1 - Effects of Increasing Blood Alcohol Content (Figure 2.23)"
+  },
+  {
+    "topic": "Alcohol, Drugs & Hazardous Materials Basics",
+    "question": "According to the manual's opening discussion of alcohol and driving, which of the following abilities does alcohol impair?",
+    "choice_a": "Muscle coordination, reaction time, depth perception, and night vision",
+    "choice_b": "Only long-term memory and math ability",
+    "choice_c": "Only the sense of smell and hearing",
+    "choice_d": "Nothing measurable until a driver is well past the legal limit",
+    "correct_choice": "A",
+    "explanation": "The manual states that alcohol impairs muscle coordination, reaction time, depth perception, and night vision, and also affects the parts of the brain that control judgment and inhibition.",
+    "weight": 2,
+    "source_note": "Section 2.22.1 - Alcohol and Driving"
+  },
+  {
+    "topic": "Alcohol, Drugs & Hazardous Materials Basics",
+    "question": "Under the manual's list of driving errors caused by alcohol, which combination is given?",
+    "choice_a": "Increased reaction time to hazards, driving too fast or too slow, driving in the wrong lane, running over the curb, and weaving",
+    "choice_b": "Excessive caution, driving too slowly, and over-signaling every turn",
+    "choice_c": "Improved night vision but slower highway merging",
+    "choice_d": "Only an increased tendency to speed, with no other listed effects",
+    "correct_choice": "A",
+    "explanation": "The manual states alcohol causes serious driving errors including increased reaction time to hazards, driving too fast or too slow, driving in the wrong lane, running over the curb, and weaving.",
+    "weight": 3,
+    "source_note": "Section 2.22.1 - How Alcohol Affects Driving"
+  },
+  {
+    "topic": "Alcohol, Drugs & Hazardous Materials Basics",
+    "question": "What does the manual say about combining alcohol with other drugs?",
+    "choice_a": "Alcohol can make the effects of other drugs much worse, so the safest rule is not to mix drugs with driving at all",
+    "choice_b": "Alcohol cancels out the drowsy effects of most cold medicines",
+    "choice_c": "Combining alcohol with over-the-counter drugs is safe as long as the dose is small",
+    "choice_d": "Only illegal drugs interact with alcohol; prescription drugs do not",
+    "correct_choice": "A",
+    "explanation": "The manual warns that alcohol can make the effects of other drugs much worse, and that the safest rule is not to mix drugs with driving at all.",
+    "weight": 3,
+    "source_note": "Section 2.22.2 - Other Drugs"
+  },
+  {
+    "topic": "Alcohol, Drugs & Hazardous Materials Basics",
+    "question": "What does the manual instruct a driver to do if they become too ill to operate a motor vehicle safely?",
+    "choice_a": "Not drive; however, in an emergency, the driver may drive to the nearest place where the vehicle can be safely stopped",
+    "choice_b": "Keep driving at reduced speed until the next scheduled stop",
+    "choice_c": "Only pull over if the illness involves a fever",
+    "choice_d": "Continue the route as planned since illness is not addressed by the rules",
+    "correct_choice": "A",
+    "explanation": "The manual states that if you become too ill to operate a motor vehicle safely, you must not drive; however, in an emergency you may drive to the nearest place where you can safely stop.",
+    "weight": 2,
+    "source_note": "Section 2.22.3 - Illness"
+  },
+  {
+    "topic": "Alcohol, Drugs & Hazardous Materials Basics",
+    "question": "In the manual's hazard class chart, hydrochloric acid and battery acid are given as examples of which hazard class?",
+    "choice_a": "Corrosives",
+    "choice_b": "Oxidizers",
+    "choice_c": "Flammable solids",
+    "choice_d": "Miscellaneous hazardous materials (ORM-D)",
+    "correct_choice": "A",
+    "explanation": "The manual's hazard class definitions chart lists hydrochloric acid and battery acid as examples of the Corrosives class.",
+    "weight": 2,
+    "source_note": "Section 2.23.1 - What Are Hazardous Materials? (Figure 2.24)"
+  },
+  {
+    "topic": "Alcohol, Drugs & Hazardous Materials Basics",
+    "question": "In the manual's hazard class chart, hair spray and charcoal are given as examples of which category?",
+    "choice_a": "ORM-D (Other Regulated Material-Domestic), a miscellaneous hazardous materials category",
+    "choice_b": "Class 1 Explosives",
+    "choice_c": "Class 7 Radioactive materials",
+    "choice_d": "Combustible liquids",
+    "correct_choice": "A",
+    "explanation": "The manual's hazard class definitions chart lists hair spray and charcoal as examples of ORM-D (Other Regulated Material-Domestic), a miscellaneous hazardous materials category.",
+    "weight": 2,
+    "source_note": "Section 2.23.1 - What Are Hazardous Materials? (Figure 2.24)"
+  },
+  {
+    "topic": "Alcohol, Drugs & Hazardous Materials Basics",
+    "question": "What is the US DOT Emergency Response Guidebook (ERG) used for, according to the manual's discussion of hazardous materials identification numbers?",
+    "choice_a": "It lists hazardous chemicals along with the identification numbers assigned to them",
+    "choice_b": "It certifies drivers for the hazardous materials endorsement",
+    "choice_c": "It replaces the need for hazardous materials shipping papers",
+    "choice_d": "It sets the placard size and shape requirements",
+    "correct_choice": "A",
+    "explanation": "The manual states that the US DOT Emergency Response Guidebook (ERG) lists the chemicals and the identification numbers assigned to them, and notes that one identification number may be used to identify more than one chemical on shipping papers.",
+    "weight": 2,
+    "source_note": "Section 2.23.3 - Lists of Regulated Products (Identification Numbers)"
+  },
+  {
+    "topic": "Alcohol, Drugs & Hazardous Materials Basics",
+    "question": "According to the manual, what happens if a driver is stopped while driving a placarded vehicle without holding the required hazardous materials endorsement?",
+    "choice_a": "The driver will be cited and not allowed to continue driving the truck, costing time and money, since doing so is a crime",
+    "choice_b": "Nothing, as long as the shipping papers are correctly filled out",
+    "choice_c": "The driver only receives a written warning on the first offense",
+    "choice_d": "The load must simply be reassigned to a different route",
+    "correct_choice": "A",
+    "explanation": "The manual warns that driving a vehicle needing placards without the hazardous materials endorsement is a crime; when stopped, the driver will be cited and not allowed to continue driving the truck, costing time and money.",
+    "weight": 3,
+    "source_note": "Section 2.23.3 - Lists of Regulated Products"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Driving Safely: Vehicle Inspection & Basic Control",
+    "question": "During an inspection, how much steering wheel free play is considered a defect that can make a vehicle hard to steer?",
+    "choice_a": "More than 10 degrees (about 2 inches of movement at the rim of a 20-inch steering wheel)",
+    "choice_b": "More than 45 degrees of movement",
+    "choice_c": "Any movement at all, even 1 degree",
+    "choice_d": "More than a full turn of the wheel",
+    "correct_choice": "A",
+    "explanation": "The manual lists steering wheel play of more than 10 degrees -- approximately 2 inches of movement at the rim of a 20-inch steering wheel -- as a steering system defect that can make the vehicle hard to steer.",
+    "weight": 3,
+    "source_note": "Section 2.1.3 - What to Look For, Steering System Defects"
+  },
+  {
+    "topic": "Driving Safely: Vehicle Inspection & Basic Control",
+    "question": "Why are exhaust system defects, such as loose or broken pipes, mufflers, or mounting brackets, especially dangerous?",
+    "choice_a": "A broken exhaust system can let poison fumes into the cab or sleeper berth",
+    "choice_b": "They only cause excess noise with no safety risk",
+    "choice_c": "They reduce fuel economy but pose no danger to the driver",
+    "choice_d": "They are a cosmetic issue only",
+    "correct_choice": "A",
+    "explanation": "A broken exhaust system can let poison fumes into the cab or sleeper berth, so drivers must look for loose, broken, or missing exhaust pipes, mufflers, tailpipes, mounting brackets, and leaks.",
+    "weight": 4,
+    "source_note": "Section 2.1.3 - What to Look For, Exhaust System Defects"
+  },
+  {
+    "topic": "Driving Safely: Vehicle Inspection & Basic Control",
+    "question": "According to the manual, what is prohibited regarding tires on the front wheels of a bus?",
+    "choice_a": "Re-grooved, recapped, or retreaded tires are prohibited on the front wheels of a bus",
+    "choice_b": "Only new tires may ever be used anywhere on a bus",
+    "choice_c": "Radial tires are prohibited on the front wheels of a bus",
+    "choice_d": "Bias-ply tires are prohibited on the front wheels of a bus",
+    "correct_choice": "A",
+    "explanation": "The manual specifically states that re-grooved, recapped, or retreaded tires on the front wheels of a bus are prohibited.",
+    "weight": 3,
+    "source_note": "Section 2.1.3 - What to Look For, Tire Problems"
+  },
+  {
+    "topic": "Driving Safely: Vehicle Inspection & Basic Control",
+    "question": "What does rust around a wheel's nuts most likely indicate, and what should a driver do after a tire has been changed?",
+    "choice_a": "Rust around the nuts may mean they are loose, so tightness should be checked, and nuts should be re-checked a short while after a tire change",
+    "choice_b": "Rust around wheel nuts is purely cosmetic and never needs checking",
+    "choice_c": "Rust means the rim needs to be repainted only",
+    "choice_d": "Rust indicates the tire pressure is too high",
+    "correct_choice": "A",
+    "explanation": "Rust streaks around wheel nuts may mean the nuts are loose, so a driver should check tightness; after a tire has been changed, the driver should stop a short while later and re-check the tightness of the nuts.",
+    "weight": 3,
+    "source_note": "Section 2.1.3 - What to Look For, Wheel and Rim Problems"
+  },
+  {
+    "topic": "Driving Safely: Vehicle Inspection & Basic Control",
+    "question": "Regarding the vehicle inspection report, what must the motor carrier do, and when must the driver sign it?",
+    "choice_a": "The motor carrier must repair any items in the report affecting safety and certify repairs were made or unnecessary; the driver signs only if defects were noted and certified as repaired or not needing repair",
+    "choice_b": "The motor carrier is never required to act on the report",
+    "choice_c": "The driver must sign the report every day regardless of whether any defects were found",
+    "choice_d": "Only a state inspector, never the motor carrier, may act on the report",
+    "correct_choice": "A",
+    "explanation": "The motor carrier must repair any items in the report that affect safety and certify on the report that repairs were made or were unnecessary; the driver signs only if defects were noted and certified to be repaired or not needing repair.",
+    "weight": 3,
+    "source_note": "Section 2.1.5 - Seven-step Inspection Method, Step 1: Vehicle Overview, Review Last Vehicle Inspection Report"
+  },
+  {
+    "topic": "Driving Safely: Vehicle Inspection & Basic Control",
+    "question": "If the drive wheels begin to spin because of poor traction (rain or snow) while accelerating, what should the driver do?",
+    "choice_a": "Take your foot off the accelerator",
+    "choice_b": "Apply more power to regain traction",
+    "choice_c": "Shift immediately into the highest gear",
+    "choice_d": "Apply the parking brake",
+    "correct_choice": "A",
+    "explanation": "When traction is poor, speed up very gradually; if the drive wheels begin to spin, take your foot off the accelerator, since too much power can cause the wheels to spin and lead to loss of control.",
+    "weight": 3,
+    "source_note": "Section 2.2.1 - Accelerating"
+  },
+  {
+    "topic": "Driving Safely: Vehicle Inspection & Basic Control",
+    "question": "How should a driver hold the steering wheel, and why?",
+    "choice_a": "Firmly with both hands on opposite sides of the wheel, because hitting a curb or pothole could otherwise pull the wheel from your hands",
+    "choice_b": "Loosely with one hand so you can react quickly",
+    "choice_c": "With both hands at the top of the wheel only",
+    "choice_d": "It doesn't matter as long as you are alert",
+    "correct_choice": "A",
+    "explanation": "Hold the steering wheel firmly with both hands on opposite sides of the wheel; if you hit a curb or pothole, the wheel could pull away from your hands unless you have a firm hold.",
+    "weight": 2,
+    "source_note": "Section 2.2.2 - Steering"
+  },
+  {
+    "topic": "Driving Safely: Vehicle Inspection & Basic Control",
+    "question": "In the basic procedure for shifting down (downshifting) a manual transmission, what do you do after releasing the clutch and before pushing the clutch back in to shift to the lower gear?",
+    "choice_a": "Press the accelerator to increase engine and gear speed to the rpm required in the lower gear",
+    "choice_b": "Immediately apply the brakes",
+    "choice_c": "Shift directly to neutral and coast",
+    "choice_d": "Release the accelerator completely and wait several seconds",
+    "correct_choice": "A",
+    "explanation": "The basic procedure for shifting down is: release accelerator, push in clutch, and shift to neutral; release clutch; press accelerator and increase engine and gear speed to the rpm required in the lower gear; push in clutch and shift to the lower gear; release clutch and press accelerator.",
+    "weight": 3,
+    "source_note": "Section 2.3.1 - Manual Transmissions, Basic Procedures for Shifting Down"
+  },
+  {
+    "topic": "Driving Safely: Vehicle Inspection & Basic Control",
+    "question": "Besides before starting down a hill, what is the other special condition listed in the manual where a driver should downshift before proceeding?",
+    "choice_a": "Before entering a curve, so you can use some power through the curve for stability and speed up as you exit",
+    "choice_b": "Before merging onto a highway",
+    "choice_c": "Before crossing a railroad track at any speed",
+    "choice_d": "Before every stop sign",
+    "correct_choice": "A",
+    "explanation": "The manual lists two special conditions for downshifting: before starting down a hill, and before entering a curve -- slowing down and downshifting before the curve lets you use some power through the curve for stability and to speed up once out of it.",
+    "weight": 3,
+    "source_note": "Section 2.3.1 - Manual Transmissions, Before Entering a Curve"
+  },
+  {
+    "topic": "Driving Safely: Vehicle Inspection & Basic Control",
+    "question": "For a vehicle with an automatic transmission, why would a driver select a low range when going down a grade?",
+    "choice_a": "To get greater engine braking, since the lower range prevents the transmission from shifting up beyond the selected gear (unless governor rpm is exceeded)",
+    "choice_b": "To increase top speed on the downgrade",
+    "choice_c": "Low range only affects air conditioning performance",
+    "choice_d": "Automatic transmissions have no selectable ranges",
+    "correct_choice": "A",
+    "explanation": "With an automatic transmission, selecting a low range gives greater engine braking when going down grades; the lower range prevents the transmission from shifting up beyond the selected gear unless the governor rpm is exceeded, and it's important to use this braking effect on grades.",
+    "weight": 3,
+    "source_note": "Section 2.3.3 - Automatic Transmissions"
+  }
+]
