@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "Besides matching the coupler size to the hitch ball, what else must a driver confirm about the trailer coupler before towing?",
+    "choice_a": "That the coupler's latch or locking pin is fully engaged and secured over the ball, not just resting near it",
+    "choice_b": "Nothing further; matching sizes alone guarantees a safe connection",
+    "choice_c": "That the coupler is painted the same color as the tow vehicle",
+    "choice_d": "That the coupler has been recently waxed",
+    "correct_choice": "A",
+    "explanation": "Even a correctly sized coupler can separate from the ball if its latch or locking pin isn't fully engaged and secured, so drivers are taught to visually and physically confirm the latch is locked down before towing, not just that the sizes match.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Trailering Your Boat"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why should a driver check that the trailer's wiring connector is properly matched and functioning with the tow vehicle before a trip?",
+    "choice_a": "Wiring only affects the trailer's brakes, never its lights",
+    "choice_b": "A mismatched or faulty connector will prevent the trailer's brake, turn signal, and running lights from working, creating a serious road hazard and possible citation",
+    "choice_c": "Trailer wiring has no functional purpose and is purely cosmetic",
+    "choice_d": "Wiring connectors never need to be checked once initially installed",
+    "correct_choice": "B",
+    "explanation": "The wiring connector between tow vehicle and trailer powers the trailer's brake lights, turn signals, and running lights; if it's mismatched or faulty, those lights won't work, leaving other drivers without warning of braking or turning and exposing the driver to a possible citation.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Trailering Your Boat"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why does proper tongue weight -- the downward force the loaded trailer exerts on the hitch -- matter for safe towing?",
+    "choice_a": "Tongue weight has no effect on how a trailer tows",
+    "choice_b": "Incorrect tongue weight, especially too little, can cause the trailer to sway dangerously from side to side at highway speed",
+    "choice_c": "Tongue weight only matters for trailers carrying more than one boat",
+    "choice_d": "Heavier tongue weight always improves fuel economy with no downside",
+    "correct_choice": "B",
+    "explanation": "A trailer with too little tongue weight (the load resting on the hitch) is prone to dangerous side-to-side sway at highway speeds, while proper loading and tongue weight help keep the trailer tracking straight and stable behind the tow vehicle.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Trailering Your Boat"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is the correct basic technique for backing up a vehicle towing a boat trailer?",
+    "choice_a": "Turn the steering wheel in the same direction you want the trailer to go",
+    "choice_b": "Turn the steering wheel in the direction opposite of where you want the back of the trailer to go, making small corrections and checking mirrors frequently",
+    "choice_c": "Keep the steering wheel perfectly straight at all times while backing",
+    "choice_d": "Backing up a trailer requires no different technique than backing up the tow vehicle alone",
+    "correct_choice": "B",
+    "explanation": "Backing a trailer is counterintuitive to many new drivers: turning the steering wheel one way sends the back of the trailer the opposite way, so drivers are taught to make small, deliberate steering corrections while frequently checking their mirrors.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Trailering Your Boat"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What precautions should be taken when a loaded boat trailer is parked and unhitched from the tow vehicle?",
+    "choice_a": "No precautions are needed since trailers are inherently stable when parked",
+    "choice_b": "Use wheel chocks and the trailer's tongue jack/stand to keep it from rolling or tipping forward once disconnected from the tow vehicle",
+    "choice_c": "The trailer should always be left connected to the tow vehicle indefinitely",
+    "choice_d": "Only the tow vehicle's parking brake matters; the trailer itself needs no separate securing",
+    "correct_choice": "B",
+    "explanation": "Once a loaded trailer is disconnected from the tow vehicle, wheel chocks and a properly deployed tongue jack or stand keep it from rolling away or tipping forward, since the trailer no longer has the vehicle's brakes or transmission holding it in place.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Trailering Your Boat"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Do boat trailers generally need their own separate braking system?",
+    "choice_a": "No trailer, regardless of weight, is ever required to have its own brakes",
+    "choice_b": "Trailers exceeding a certain gross weight threshold generally must have their own brakes, consistent with the vehicle-code approach used broadly across states, though Wisconsin's specific weight threshold was not independently re-verified in this build",
+    "choice_c": "Every boat trailer, regardless of size, must have hydraulic disc brakes",
+    "choice_d": "Trailer brakes are purely optional accessories with no basis in any state's vehicle code",
+    "correct_choice": "B",
+    "explanation": "Most states, consistent with a widely used vehicle-code approach, require a trailer above a certain gross weight to have its own independent braking system since the tow vehicle's brakes alone may not safely stop the combined weight; the exact Wisconsin weight threshold was not independently re-verified against current statute text in this build.",
+    "weight": 2,
+    "source_note": "General state vehicle-code trailer-braking threshold, applied broadly across states; Wisconsin-specific weight threshold not independently re-verified in this build"
+  }
+]

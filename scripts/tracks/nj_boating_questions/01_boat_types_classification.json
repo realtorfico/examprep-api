@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Under the traditional U.S. Coast Guard vessel length classes still referenced in state boating handbooks, which class covers vessels less than 16 feet long?",
+    "choice_a": "Class A",
+    "choice_b": "Class 1",
+    "choice_c": "Class 2",
+    "choice_d": "Class 3",
+    "correct_choice": "A",
+    "explanation": "Class A covers vessels under 16 feet, Class 1 covers 16 to less than 26 feet, Class 2 covers 26 to less than 40 feet, and Class 3 covers 40 to 65 feet -- these length classes historically determined which safety equipment requirements applied to a vessel.",
+    "weight": 2,
+    "source_note": "Traditional USCG vessel length classification system referenced in NASBLA-aligned state boating handbooks"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What defines a 'displacement hull' as opposed to a 'planing hull'?",
+    "choice_a": "There is no meaningful difference between the two hull types",
+    "choice_b": "A displacement hull pushes water aside and moves through the water rather than rising on top of it, limiting its top speed",
+    "choice_c": "A displacement hull is designed to rise up and skim across the water's surface at high speed",
+    "choice_d": "A displacement hull only exists on personal watercraft",
+    "correct_choice": "B",
+    "explanation": "A displacement hull moves through the water by pushing it aside, which limits how fast the boat can go, while a planing hull is designed to rise and glide across the surface at higher speeds.",
+    "weight": 2,
+    "source_note": "Universal boating-safety hull design fundamentals taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How does New Jersey law generally define a personal watercraft (PWC)?",
+    "choice_a": "Any sailboat under 20 feet",
+    "choice_b": "Any vessel used exclusively for fishing",
+    "choice_c": "A vessel less than 13 feet long that uses an inboard jet-drive engine as its primary propulsion and is designed to be operated by a person sitting, standing, or kneeling on the vessel rather than in it",
+    "choice_d": "Any vessel with an outboard propeller-driven motor",
+    "correct_choice": "C",
+    "explanation": "A personal watercraft, such as a Jet Ski or WaveRunner, is a small jet-drive vessel designed for the operator to sit, stand, or kneel on top of rather than inside a hull, and New Jersey applies distinct age and operating rules to this vessel category.",
+    "weight": 3,
+    "source_note": "New Jersey State Police Marine Services Bureau (NJSP MSB) PWC definition and operating rules"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is the key structural difference between a monohull and a multihull vessel (such as a catamaran)?",
+    "choice_a": "A multihull always has an outboard motor and a monohull never does",
+    "choice_b": "Monohulls are illegal on New Jersey's tidal waters",
+    "choice_c": "There is no structural difference; the terms are interchangeable",
+    "choice_d": "A monohull has a single continuous hull, while a multihull has two or more separate hulls connected by a deck structure",
+    "correct_choice": "D",
+    "explanation": "A monohull vessel has one continuous hull, while a multihull vessel, such as a catamaran or trimaran, has two or more separate hulls joined by a deck, generally providing greater stability.",
+    "weight": 2,
+    "source_note": "Universal boating-safety hull design fundamentals"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What distinguishes a 'documented vessel' from a state-registered vessel?",
+    "choice_a": "A documented vessel is federally documented with the U.S. Coast Guard's National Vessel Documentation Center instead of, or in addition to, being titled and registered at the state level",
+    "choice_b": "A documented vessel cannot legally operate in New Jersey waters",
+    "choice_c": "Documentation only applies to personal watercraft",
+    "choice_d": "There is no such thing as a documented vessel",
+    "correct_choice": "A",
+    "explanation": "Federal vessel documentation through the U.S. Coast Guard is a national form of registration typically used for larger commercial or recreational vessels, and it exists alongside (or in place of) New Jersey's own state title and registration system.",
+    "weight": 2,
+    "source_note": "USCG National Vessel Documentation Center program; New Jersey vessel titling framework"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Which of the following is generally considered a non-motorized vessel that New Jersey law treats differently from powered vessels for certification purposes?",
+    "choice_a": "A pontoon boat with an inboard engine",
+    "choice_b": "A canoe or kayak propelled solely by paddle",
+    "choice_c": "A center-console boat with an outboard motor",
+    "choice_d": "A personal watercraft",
+    "correct_choice": "B",
+    "explanation": "New Jersey's Boat Safety Certificate mandate applies to operators of power vessels and PWCs; non-motorized vessels such as canoes, kayaks, and sailboats are not subject to the same certificate requirement.",
+    "weight": 3,
+    "source_note": "NJSP Marine Services Bureau Boat Safety Certificate scope"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a 'sailboard' or 'windsurfer' classified as for boating safety purposes?",
+    "choice_a": "A federally documented vessel",
+    "choice_b": "A powered vessel requiring a Boat Safety Certificate",
+    "choice_c": "A vessel propelled by a sail attached to a board, distinct from both PWCs and traditional powerboats",
+    "choice_d": "A type of personal watercraft",
+    "correct_choice": "C",
+    "explanation": "A sailboard or windsurfer is a wind-propelled craft consisting of a board and a sail, treated as a distinct, non-motorized vessel type separate from powerboats and PWCs.",
+    "weight": 1,
+    "source_note": "Universal boating vessel-type terminology used in NASBLA-aligned state handbooks"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Why does vessel length classification matter for a New Jersey boat owner?",
+    "choice_a": "Because it determines the color of the vessel's hull",
+    "choice_b": "It has no practical effect on any boating requirement",
+    "choice_c": "It only matters for vessels used in organized racing",
+    "choice_d": "Because required safety equipment, such as visual distress signals and fire extinguisher counts, is often tied directly to a vessel's length",
+    "correct_choice": "D",
+    "explanation": "Vessel length determines many required-equipment thresholds, such as whether visual distress signals, a bell, or additional PFDs are mandatory, making it a foundational concept for understanding equipment rules.",
+    "weight": 3,
+    "source_note": "Universal USCG equipment-by-length requirement structure applied statewide including New Jersey"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What generally distinguishes an inboard engine from an outboard engine on a powerboat?",
+    "choice_a": "An inboard engine is mounted inside the hull and connects to the propeller through a shaft, while an outboard engine is mounted outside the hull, typically at the transom, and can be tilted or steered as a unit",
+    "choice_b": "Inboard engines are only found on personal watercraft",
+    "choice_c": "There is no functional difference between the two",
+    "choice_d": "Outboard engines are always more powerful than inboard engines",
+    "correct_choice": "A",
+    "explanation": "An inboard engine sits inside the hull and drives the propeller via a shaft, while an outboard engine is an external, mountable unit at the stern that steers by pivoting -- a distinction relevant to ventilation and fire-safety equipment rules.",
+    "weight": 2,
+    "source_note": "Universal boating-safety engine-type fundamentals taught in NASBLA-aligned boating courses"
+  }
+]

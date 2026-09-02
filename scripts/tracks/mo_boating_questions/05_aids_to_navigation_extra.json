@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "In the traditional U.S. lateral buoyage system, what shape is a 'nun' buoy, and what color is it typically painted?",
+    "choice_a": "A flat, disk-shaped buoy painted yellow",
+    "choice_b": "A cylindrical buoy painted white with blue stripes",
+    "choice_c": "A cone-shaped (conical-topped) buoy, traditionally painted red, marking the right side of a channel when returning from open water",
+    "choice_d": "A square buoy painted black and white checkerboard",
+    "correct_choice": "C",
+    "explanation": "A 'nun' buoy has a distinctive cone-shaped top and is traditionally painted red, marking the starboard (right) side of a channel when a boater is returning from open water, consistent with the 'red, right, returning' rule -- its shape alone lets boaters identify it even without clear color visibility.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, nun buoy shape and color)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What shape and color is a 'can' buoy in the traditional U.S. lateral buoyage system, and what side of the channel does it mark?",
+    "choice_a": "A cylindrical, flat-topped buoy, traditionally painted green, marking the left (port) side of a channel when returning from open water",
+    "choice_b": "A cone-shaped buoy painted red",
+    "choice_c": "A spherical buoy painted orange",
+    "choice_d": "A can buoy always marks the center of the channel",
+    "correct_choice": "A",
+    "explanation": "A 'can' buoy has a flat-topped, cylindrical shape and is traditionally painted green, marking the port (left) side of the channel for a vessel returning from open water -- its distinctive flat shape distinguishes it by feel or silhouette from the cone-shaped red nun buoy on the opposite side.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, can buoy shape and color)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "How do lighted aids to navigation extend the lateral buoyage system's color-coding into nighttime use?",
+    "choice_a": "Lighted buoys typically show a light color matching their daymark color -- red lights on red markers, green lights on green markers -- so the same red/green channel-side convention applies after dark",
+    "choice_b": "All lighted buoys show the same white light regardless of which side of the channel they mark",
+    "choice_c": "Lighted buoys are never used on inland lakes",
+    "choice_d": "Lighted markers are used only to mark swimming areas",
+    "correct_choice": "A",
+    "explanation": "A lighted aid to navigation generally shows a light color that matches its daytime color scheme -- red markers show a red light and green markers show a green light -- letting boaters apply the same 'red, right, returning' logic at night that they would use with the buoy's color and shape during the day.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, lighted aid color-coding)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is a 'daybeacon,' as distinguished from a floating buoy?",
+    "choice_a": "A daybeacon is a fixed structure, permanently mounted on a piling or other support in or near the water, displaying a colored and numbered daymark, unlike a buoy which floats and is anchored to the bottom",
+    "choice_b": "A daybeacon is simply another name for any floating buoy",
+    "choice_c": "A daybeacon can only be used during nighttime hours",
+    "choice_d": "A daybeacon has no navigational purpose",
+    "correct_choice": "A",
+    "explanation": "Unlike a floating buoy anchored to the lake or river bottom, a daybeacon is a fixed aid mounted on a piling or similar permanent structure, displaying a colored, numbered daymark -- fixed daybeacons generally hold their position more reliably than floating buoys, which can shift or be struck out of position.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, daybeacons vs. buoys)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is a 'range,' as used to help boaters stay in the safe center of a channel on some Missouri waterways?",
+    "choice_a": "A single isolated buoy marking a shoal",
+    "choice_b": "Two fixed markers positioned so that when a boater lines them up one directly above or behind the other, the vessel is on the centerline of a safe, deep channel",
+    "choice_c": "A restricted no-boating zone",
+    "choice_d": "A type of anchor light",
+    "correct_choice": "B",
+    "explanation": "A range consists of two fixed markers, typically at different heights, positioned so that when a boater sights them in line -- one directly over or behind the other -- the vessel is tracking the centerline of a safe, charted channel, a technique especially useful in narrow river channels.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, range markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "How are numbers generally assigned to lateral channel markers under the U.S. Aids to Navigation System?",
+    "choice_a": "Numbers are assigned randomly with no pattern",
+    "choice_b": "Even numbers are placed on red markers and odd numbers on green markers, with numbers generally increasing as a boater proceeds from open water into a channel or upstream",
+    "choice_c": "All markers, red and green alike, share the exact same number",
+    "choice_d": "Numbering restarts at zero at every bend in the channel",
+    "correct_choice": "B",
+    "explanation": "Even numbers appear on red markers and odd numbers on green markers, and the numbers generally increase as a boater moves from open water into a channel or proceeds upstream, giving boaters an additional way (beyond color) to track their position and confirm they are reading the channel correctly.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, numbering convention)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What should a boater do if an aid to navigation appears to be missing, damaged, or noticeably out of its charted position?",
+    "choice_a": "Assume the marker's absence means the area is now completely safe to cross",
+    "choice_b": "Ignore the discrepancy and continue on the same course at the same speed",
+    "choice_c": "Exercise extra caution, reduce speed, rely more heavily on a chart or GPS, and report the discrepancy to the Water Patrol Division or the responsible maintaining authority",
+    "choice_d": "There is no appropriate response; markers are never wrong",
+    "correct_choice": "C",
+    "explanation": "A missing, damaged, or displaced aid to navigation can no longer be trusted to accurately mark a hazard or channel edge; the safe response is to slow down, use a chart or GPS as a backup reference, and report the problem so it can be corrected before it endangers another boater -- 'when in doubt, stay out' of an area a discrepant marker was meant to guard.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (responding to a discrepant aid to navigation), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Why is it important for a boater on an unfamiliar section of a large Missouri reservoir to cross-reference a nautical chart or GPS chartplotter with the physical buoys and markers actually seen on the water?",
+    "choice_a": "Charts are purely decorative and never need to match physical markers",
+    "choice_b": "A chart or chartplotter shows the intended layout of marked channels and charted hazards, and comparing it against what is physically observed helps catch a missing, shifted, or unfamiliar marker before it leads to running aground",
+    "choice_c": "Physical buoys are always more reliable than any chart and should never be cross-checked",
+    "choice_d": "GPS devices cannot display any aids to navigation information",
+    "correct_choice": "B",
+    "explanation": "Cross-referencing a paper chart or GPS chartplotter's symbols for buoys, channels, and charted hazards against what is actually seen on the water helps a boater on an unfamiliar stretch of a large reservoir catch a marker that has drifted, been removed for the season, or is simply unfamiliar, reducing the risk of running aground on a shoal or submerged hazard.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (chart and physical aid cross-referencing), applied to Missouri reservoir navigation"
+  }
+]

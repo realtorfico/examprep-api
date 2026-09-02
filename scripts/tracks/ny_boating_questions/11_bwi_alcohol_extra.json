@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "BWI, BWAI & Alcohol",
+    "question": "Under NY Navigation Law Section 49-a(2)(a), what penalty can a person face for a FIRST offense of operating a vessel while their ability is impaired by alcohol (BWAI), a lesser charge than a full per se BWI violation?",
+    "choice_a": "Automatic felony conviction with mandatory prison time",
+    "choice_b": "A fine of $300 to $500, up to 15 days imprisonment, or both",
+    "choice_c": "No fine or penalty, only a written warning",
+    "choice_d": "A fine of $1,000 to $5,000 with no possibility of jail time",
+    "correct_choice": "B",
+    "explanation": "New York Navigation Law Section 49-a(2)(a) treats a first ability-impaired (BWAI) violation as a lesser offense than per se BWI, carrying a fine of $300 to $500, up to 15 days imprisonment, or both.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 49-a(2)(a), first-offense BWAI penalty"
+  },
+  {
+    "topic": "BWI, BWAI & Alcohol",
+    "question": "Under NY Navigation Law Section 49-a, what is a first-offense BWI charge (BAC of .08% or more, general intoxication, or drug impairment) classified as, and what can it carry as a penalty?",
+    "choice_a": "A simple traffic infraction with no possibility of jail time",
+    "choice_b": "A felony carrying a mandatory minimum of five years in prison",
+    "choice_c": "A misdemeanor punishable by up to one year of imprisonment and/or a fine of $500 to $1,000",
+    "choice_d": "A civil matter handled entirely outside the criminal court system",
+    "correct_choice": "C",
+    "explanation": "New York Navigation Law Section 49-a(2)(f) classifies a first-offense BWI violation (BAC-based, intoxication, or drug impairment) as a misdemeanor, punishable by up to one year imprisonment and/or a fine of $500 to $1,000.",
+    "weight": 3,
+    "source_note": "NY Navigation Law Section 49-a(2)(f), first-offense BWI misdemeanor penalty"
+  },
+  {
+    "topic": "BWI, BWAI & Alcohol",
+    "question": "How does New York law escalate criminal penalties for a person with prior BWI convictions who is convicted again under Navigation Law Section 49-a?",
+    "choice_a": "New York boating law has no enhanced penalty for repeat offenders; every offense is treated identically",
+    "choice_b": "A second offense automatically results in permanent, lifetime loss of the right to ever operate a vessel in any U.S. state",
+    "choice_c": "Repeat offenses are downgraded to violations rather than escalated, since the operator has 'already learned their lesson'",
+    "choice_d": "A second BWI-level offense within ten years becomes a Class E felony, and a third or subsequent offense within ten years becomes a Class D felony, with progressively higher fines",
+    "correct_choice": "D",
+    "explanation": "New York Navigation Law Section 49-a escalates repeat BWI-level offenses within a ten-year window from misdemeanor to felony level -- a second offense is a Class E felony and a third or subsequent offense is a Class D felony, each with higher fine ranges.",
+    "weight": 3,
+    "source_note": "NY Navigation Law Section 49-a(2)(f), repeat-offense felony escalation"
+  },
+  {
+    "topic": "BWI, BWAI & Alcohol",
+    "question": "Under NY Navigation Law, why does operating a vessel in an intoxicated or drug-impaired condition while a young child is aboard carry enhanced legal consequences?",
+    "choice_a": "Operating in violation of the BAC, intoxication, or drug-impairment provisions while a passenger age fifteen or younger is aboard is treated as a separate, more seriously punished offense under Section 49-a",
+    "choice_b": "New York law does not distinguish based on passenger age in any way",
+    "choice_c": "A child passenger only affects sentencing for speeding violations, not BWI",
+    "choice_d": "The enhanced penalty applies only if the child is also found to be intoxicated",
+    "correct_choice": "A",
+    "explanation": "Navigation Law Section 49-a(2)(e-1) makes it a separate, more heavily punished offense to operate a vessel in violation of the BAC, intoxication, or drug provisions while a passenger who is fifteen years old or younger is aboard.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 49-a(2)(e-1), child-passenger enhancement"
+  },
+  {
+    "topic": "BWI, BWAI & Alcohol",
+    "question": "How does New York's chemical-test refusal penalty differ for a boat operator under 21, or for someone with a prior refusal or BWI conviction, compared to a standard first refusal?",
+    "choice_a": "There is no difference; every refusal carries exactly the same six-month suspension and $200 penalty regardless of age or history",
+    "choice_b": "The suspension period is extended to at least one year rather than the standard six months, and the civil penalty rises to $500 for a repeat refusal within five years",
+    "choice_c": "Operators under 21 are exempt from any refusal penalty",
+    "choice_d": "A second refusal results in a shorter suspension than the first, since the operator is presumed to have already learned the consequences",
+    "correct_choice": "B",
+    "explanation": "New York enhances the standard chemical-test refusal penalty -- extending the minimum suspension to at least one year for operators under 21, those with a prior suspension, or those with a recent prior conviction, and raising the civil penalty to $500 for a repeat refusal within five years.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 49-a(7)(d), enhanced refusal penalties"
+  },
+  {
+    "topic": "BWI, BWAI & Alcohol",
+    "question": "Beyond any fine or jail time, what non-monetary requirement must a court impose on a person convicted under NY Navigation Law Section 49-a?",
+    "choice_a": "Nothing further; a fine or jail sentence alone fully satisfies the law",
+    "choice_b": "Mandatory enlistment in the U.S. Coast Guard Auxiliary",
+    "choice_c": "Completion of an approved boating safety course",
+    "choice_d": "Surrender of a driver's license, even though the offense involved a vessel, not a motor vehicle",
+    "correct_choice": "C",
+    "explanation": "Navigation Law Section 49-a requires that a person convicted under the section be ordered to complete an approved boating safety course, in addition to any fine or imprisonment.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 49-a, mandatory boating safety course upon conviction"
+  },
+  {
+    "topic": "BWI, BWAI & Alcohol",
+    "question": "Can a New York court sentence someone convicted of a BAC-based or intoxication-based BWI violation to an unconditional discharge with no fine or conditions attached?",
+    "choice_a": "Yes, unconditional discharge is the standard outcome for a first BWI conviction",
+    "choice_b": "Yes, but only if the operator's BAC was exactly at the .08% threshold",
+    "choice_c": "The law is silent on discharge options, leaving it entirely to unwritten court custom",
+    "choice_d": "No, the law bars an unconditional discharge for these violations, so at minimum a conditional discharge that includes a fine must be imposed",
+    "correct_choice": "D",
+    "explanation": "Navigation Law Section 49-a bars courts from imposing an unconditional discharge for BAC-based, intoxication, or drug-impairment violations, requiring at least a conditional discharge that includes a fine.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 49-a(5), sentencing limitation on unconditional discharge"
+  },
+  {
+    "topic": "BWI, BWAI & Alcohol",
+    "question": "Beyond the implied-consent chemical test that follows a lawful arrest, what additional testing obligation applies to a New York vessel operator involved in a boating accident?",
+    "choice_a": "The operator must submit to a preliminary breath test upon a police officer's request, independent of any later post-arrest chemical test",
+    "choice_b": "No testing obligation applies until a criminal charge has already been formally filed",
+    "choice_c": "Only the other party involved in the accident can be required to test, never the operator being investigated",
+    "choice_d": "Testing after an accident is entirely voluntary and carries no consequence if declined",
+    "correct_choice": "A",
+    "explanation": "New York Navigation Law Section 49-a(6)(b) separately requires an operator involved in a boating accident to submit to a preliminary breath test upon a police officer's request, apart from the implied-consent chemical test that can follow a lawful arrest.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 49-a(6)(b), post-accident breath test requirement"
+  },
+  {
+    "topic": "BWI, BWAI & Alcohol",
+    "question": "What happens under New York law if a person operates a vessel after their boating privileges have already been suspended for a prior alcohol-related violation?",
+    "choice_a": "Nothing; once a suspension has begun, operating a vessel again has no additional legal consequence",
+    "choice_b": "It is a separate offense with its own fine (roughly $350 to $750) or up to 90 days imprisonment, on top of any penalty for a new underlying BWI-type violation",
+    "choice_c": "The original suspension is automatically lifted the moment the person operates a vessel again",
+    "choice_d": "It can only be addressed through a civil lawsuit, never as a criminal or violation-level offense",
+    "correct_choice": "B",
+    "explanation": "Operating a vessel while boating privileges are suspended is its own separate offense under Navigation Law Section 49-a, carrying its own fine of roughly $350 to $750 or up to 90 days imprisonment, independent of any penalty for a new underlying violation.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 49-a(4), operating on a suspended privilege"
+  },
+  {
+    "topic": "BWI, BWAI & Alcohol",
+    "question": "How does the length of a court-ordered privilege suspension in New York generally compare between an 'ability impaired' (BWAI) conviction and a per se BAC, intoxication, or drug-impairment (BWI) conviction?",
+    "choice_a": "Both offenses always carry the exact same fixed suspension length with no variation",
+    "choice_b": "A BWAI conviction results in a longer suspension than a full BWI conviction",
+    "choice_c": "The BWAI suspension is generally shorter (roughly six to twelve months) than the suspension for a BAC-based, intoxicated, or drug-impairment conviction (around twelve months), with even longer suspensions for repeat or child-passenger violations",
+    "choice_d": "Suspension length is left entirely to the discretion of the vessel's registered owner, not the court",
+    "correct_choice": "C",
+    "explanation": "New York Navigation Law Section 49-a graduates the mandatory suspension length by offense severity -- roughly six to twelve months for an ability-impaired (BWAI) conviction, about twelve months for a per se BAC, intoxication, or drug-impairment conviction, and longer for repeat offenses or violations involving a young child passenger.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 49-a(3), graduated privilege-suspension periods"
+  }
+]

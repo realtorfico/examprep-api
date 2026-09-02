@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should a boater do with the drain plug before trailering a boat home from a Missouri lake such as the Lake of the Ozarks or Table Rock Lake?",
+    "choice_a": "Insert the drain plug tightly and leave it in the entire drive home",
+    "choice_b": "The drain plug has no relevance to trailering",
+    "choice_c": "Remove the drain plug so water drains out and cannot be transported to another body of water",
+    "choice_d": "Fill the bilge with lake water intentionally before leaving",
+    "correct_choice": "C",
+    "explanation": "Removing the drain plug before leaving the ramp lets any water drain from the bilge during the drive home, both preventing trailer sway from sloshing water and reducing the risk of transporting invasive species like zebra mussels between Missouri's lakes.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (trailering and aquatic invasive species prevention), applied to Missouri reservoirs"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why is it important to clean, drain, and dry a boat, trailer, and live well before moving between different Missouri bodies of water?",
+    "choice_a": "It has no ecological or safety purpose",
+    "choice_b": "It is required only for saltwater vessels",
+    "choice_c": "It is purely a cosmetic recommendation",
+    "choice_d": "To prevent the spread of aquatic invasive species, such as zebra mussels, that can hitch a ride on hulls, trailers, or in live wells and bilge water",
+    "correct_choice": "D",
+    "explanation": "Clean-drain-dry practices are a standard aquatic invasive species prevention measure; organisms like zebra mussels can survive in bilge water, live wells, or attached to hull and trailer surfaces and spread rapidly if carried from an infested lake to a clean one.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (aquatic invasive species prevention), applied to Missouri lake systems"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is proper boat ramp etiquette when preparing to launch, in order to keep the line moving for other boaters?",
+    "choice_a": "Prepare the boat fully -- load gear, remove tie-downs, insert the drain plug -- in a staging area away from the ramp itself, only backing down to launch when ready to immediately drive the boat off the trailer",
+    "choice_b": "Back the trailer down to the water first, then begin loading gear and removing tie-downs while blocking the ramp",
+    "choice_c": "There is no etiquette; boaters should take as long as needed on the ramp itself",
+    "choice_d": "Only one boat ramp per lake is required regardless of how busy it gets",
+    "correct_choice": "A",
+    "explanation": "Good ramp etiquette means completing all preparation -- loading gear, removing tie-down straps, inserting the drain plug, raising the outboard's tilt lock -- in a staging area before backing down the ramp, so the ramp itself is occupied only briefly during the actual launch or retrieval.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (boat ramp etiquette), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What check should be performed on trailer wheel bearings and tires before a long tow to a Missouri lake?",
+    "choice_a": "No pre-trip trailer inspection is ever necessary",
+    "choice_b": "Check tire pressure and inspect wheel bearings for excess heat, looseness, or grease leakage, since bearing failure is a common cause of trailer breakdowns",
+    "choice_c": "Only the boat's engine needs inspection, never the trailer",
+    "choice_d": "Trailer tires never need air pressure checks",
+    "correct_choice": "B",
+    "explanation": "Trailer wheel bearings and tires endure significant heat and stress, especially on long highway tows; checking tire pressure and inspecting bearings for looseness, excess heat, or grease leakage before a trip helps prevent a roadside breakdown or blowout.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (trailer maintenance)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why should a boater walk around the trailer and hitch and do a visual safety check (lights, safety chains, coupler) before towing on the highway?",
+    "choice_a": "It is purely a legal formality with no real safety benefit",
+    "choice_b": "Trailer lights are never required by law",
+    "choice_c": "A failed hitch connection, missing safety chains, or non-functioning trailer lights can cause the boat to detach or make the trailer invisible to other drivers, creating a serious road hazard",
+    "choice_d": "Safety chains are optional decorative accessories",
+    "correct_choice": "C",
+    "explanation": "A pre-tow check of the hitch coupler, safety chains, and trailer lights helps prevent a detached trailer or a collision caused by other drivers not being able to see brake and turn signals -- safety chains in particular are meant to keep the trailer connected to the tow vehicle even if the hitch itself fails.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (trailer pre-tow safety check)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What load-balancing principle should a boater follow when loading gear onto a trailered boat before a trip?",
+    "choice_a": "Load all heavy gear at the very back of the boat regardless of trailer tongue weight",
+    "choice_b": "Weight distribution has no effect on towing safety",
+    "choice_c": "Always load gear only on one side of the boat for easier access",
+    "choice_d": "Distribute weight evenly, keeping heavier items low and toward the center, to avoid trailer sway and maintain safe towing balance",
+    "correct_choice": "D",
+    "explanation": "Poor weight distribution on a trailered boat can cause dangerous trailer sway at highway speeds; keeping weight low, centered, and balanced side-to-side (and maintaining appropriate tongue weight) improves towing stability.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (trailer weight distribution)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should a boater do immediately after backing a trailer into the water at a ramp, before releasing the boat?",
+    "choice_a": "Confirm the drain plug is in place, the battery is connected, and the engine will start, since these checks are far easier to fix at the dock than once the boat is already floating away from the ramp",
+    "choice_b": "Release the winch strap immediately without any checks",
+    "choice_c": "It does not matter when these checks happen",
+    "choice_d": "Wait until the boat is already in open water to check the drain plug",
+    "correct_choice": "A",
+    "explanation": "Before releasing a boat from the trailer at the ramp, a boater should confirm the drain plug is properly seated, the battery is connected, and the engine starts -- discovering a missing drain plug or dead battery once the boat is floating in open water is far more dangerous and inconvenient than catching it at the dock.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (pre-launch checklist)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why should a boater check bridge and overpass clearance heights before towing a tall boat (such as a sailboat with its mast up) on Missouri highways?",
+    "choice_a": "Clearance heights are irrelevant because all Missouri bridges are the same height",
+    "choice_b": "Striking a low bridge or overpass with a mast or tall structure can cause a severe accident and vehicle damage, so route planning should account for the combined trailer, boat, and mast height",
+    "choice_c": "Only boats over 40 feet in length need to worry about overhead clearance",
+    "choice_d": "Masts are always removed automatically by law before any towing occurs",
+    "correct_choice": "B",
+    "explanation": "A trailered sailboat or tall vessel adds significant height beyond a typical fishing boat; failing to plan a route around low clearances can result in a serious collision with an overpass, so total height should be measured and checked against posted clearances before a trip.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (trailering clearance planning)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is a practical reason to back a trailer down a ramp slowly and use a spotter when other boaters are waiting?",
+    "choice_a": "Speed is always preferable when backing a trailer to save time for others in line",
+    "choice_b": "A spotter is never useful because mirrors show the entire ramp area",
+    "choice_c": "Slow, controlled backing reduces the risk of jackknifing the trailer or striking dock structures, and a spotter can warn of pedestrians, other trailers, or steep drop-offs the driver cannot see in mirrors",
+    "choice_d": "Backing quickly reduces the chance of the trailer's wheels going off the ramp's edge",
+    "correct_choice": "C",
+    "explanation": "Backing a trailer, especially on a sloped or narrow ramp, is easier to lose control of at speed; a spotter positioned safely to the side can see blind spots, warn of nearby people or trailers, and help the driver stay centered on the ramp, reducing damage and delay for everyone in line.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (safe trailer backing technique)"
+  }
+]

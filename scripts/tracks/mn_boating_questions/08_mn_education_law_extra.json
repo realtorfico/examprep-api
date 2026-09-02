@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Minnesota Boater Education Law",
+    "question": "What qualification does an \"accompanying operator\" generally need under Minnesota's law allowing a younger, permit-required operator to run a motorboat under supervision?",
+    "choice_a": "No qualification at all; any bystander aboard satisfies the requirement",
+    "choice_b": "The accompanying operator must be at least 21 years old and aboard the vessel, reasonably able to take control immediately if needed",
+    "choice_c": "The accompanying operator must be a licensed driving instructor",
+    "choice_d": "The accompanying operator must be under age 18",
+    "correct_choice": "B",
+    "explanation": "Minnesota's accompanying-operator framework generally requires an adult at least 21 years old to be aboard and positioned to take control of the vessel immediately, ensuring meaningful supervision rather than merely having another person present on the boat.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.302 (accompanying operator qualification requirements)"
+  },
+  {
+    "topic": "Minnesota Boater Education Law",
+    "question": "Does Minnesota's watercraft operator's permit requirement apply to a person merely riding as a passenger, or only to the person actually operating the vessel?",
+    "choice_a": "It applies to every passenger aboard regardless of role",
+    "choice_b": "It applies only to the person actually operating the motorboat or PWC, not to passengers who are simply riding along",
+    "choice_c": "It applies only if there are more than two passengers",
+    "choice_d": "It never applies to anyone, passenger or operator",
+    "correct_choice": "B",
+    "explanation": "The watercraft operator's permit requirement is tied to actually operating a motorboat or PWC; a passenger who is not at the controls does not need a permit simply for riding along.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.302 (permit requirement applies to the vessel's operator)"
+  },
+  {
+    "topic": "Minnesota Boater Education Law",
+    "question": "Can a person who already completed a NASBLA-approved boater safety course in another state use that certificate to satisfy Minnesota's watercraft operator's permit training requirement?",
+    "choice_a": "No, only a Minnesota-specific course can ever be accepted",
+    "choice_b": "Generally yes -- Minnesota's law allows an applicant to present proof of an accepted reciprocal program, including a NASBLA-approved certificate from another state, as one path to satisfying the requirement",
+    "choice_c": "Out-of-state certificates are accepted only from Canadian provinces",
+    "choice_d": "Reciprocity is never available under any circumstance",
+    "correct_choice": "B",
+    "explanation": "Minnesota's permit framework recognizes reciprocal boater education programs, including NASBLA-approved courses completed in other states, as an accepted way to satisfy the training requirement without repeating an entirely new Minnesota-based course.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.302, 86B.304 (reciprocal program acceptance, including NASBLA-approved out-of-state courses)"
+  },
+  {
+    "topic": "Minnesota Boater Education Law",
+    "question": "What is a general consequence for operating a motorboat or PWC in Minnesota without the watercraft operator's permit required for the operator's birth-date cohort?",
+    "choice_a": "No consequence exists since the requirement is only a recommendation",
+    "choice_b": "Operating without the required permit is generally treated as a petty misdemeanor, similar to the enforcement approach used for other boating equipment and licensing violations",
+    "choice_c": "It is automatically a felony on a first offense",
+    "choice_d": "The vessel is permanently destroyed by court order",
+    "correct_choice": "B",
+    "explanation": "Consistent with the enforcement approach applied to other boating licensing and equipment requirements, operating without the required watercraft operator's permit is generally treated as a petty misdemeanor rather than a more serious criminal offense.",
+    "weight": 2,
+    "source_note": "Minnesota Statutes Chapter 86B (petty misdemeanor enforcement approach for permit and equipment violations)"
+  },
+  {
+    "topic": "Minnesota Boater Education Law",
+    "question": "Does a Minnesota watercraft operator's permit expire and require periodic renewal, the way vessel registration does on a three-year cycle?",
+    "choice_a": "Yes, it must be renewed every year",
+    "choice_b": "Yes, it follows the identical three-year cycle as vessel registration",
+    "choice_c": "The watercraft operator's permit is generally a one-time certification of completed training rather than a credential that periodically expires and must be renewed like vessel registration",
+    "choice_d": "It expires the moment the holder turns 18",
+    "correct_choice": "C",
+    "explanation": "Unlike vessel registration, which must be renewed on a three-year cycle, the watercraft operator's permit generally functions as a one-time proof that the holder completed the required training, rather than a credential with its own periodic renewal requirement.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.302 (permit as a one-time training credential, contrasted with 86B.401's three-year registration cycle)"
+  },
+  {
+    "topic": "Minnesota Boater Education Law",
+    "question": "What kind of subject matter must a DNR-approved Minnesota boater safety course generally cover to qualify for permit purposes?",
+    "choice_a": "Only how to operate a specific brand of motor",
+    "choice_b": "The statutorily-grounded safety curriculum covering topics such as navigation rules, required equipment, right-of-way, and applicable Minnesota boating laws, so a permit holder demonstrates baseline safety knowledge across the same areas the law regulates",
+    "choice_c": "Only swimming technique, with no boating law content",
+    "choice_d": "No defined content requirement exists for an approved course",
+    "correct_choice": "B",
+    "explanation": "An approved course must cover the substantive safety curriculum the law is built around -- navigation rules, required equipment, right-of-way, and Minnesota-specific boating law -- so that completing it demonstrates the same baseline knowledge the permit requirement is meant to ensure.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.304 (approved course content requirements for the watercraft safety program)"
+  },
+  {
+    "topic": "Minnesota Boater Education Law",
+    "question": "Does a professional fishing guide operating a motorboat for hire in Minnesota get a special exemption from the watercraft operator's permit requirement simply because boating is their profession?",
+    "choice_a": "Yes, all professional guides are automatically exempt",
+    "choice_b": "No general professional-guide exemption exists; a guide falling within a permit-required birth cohort must still satisfy the permit requirement unless another specific statutory exemption applies",
+    "choice_c": "Guides are exempt only if they operate PWCs",
+    "choice_d": "Exemption depends solely on the guide's years of experience, with no birth-date relevance",
+    "correct_choice": "B",
+    "explanation": "Minnesota's statutory exemptions from the watercraft operator's permit are specific and limited (such as USCG license holders or short-term nonresidents); simply working as a fishing guide is not itself a listed exemption, so a guide within a permit-required birth cohort must still meet the requirement.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.302 (exemptions are specific and limited; no general professional-guide exemption)"
+  },
+  {
+    "topic": "Minnesota Boater Education Law",
+    "question": "Are all DNR-approved Minnesota boater safety courses delivered in exactly the same format?",
+    "choice_a": "Yes, every approved course must be taken in a physical classroom with no online option",
+    "choice_b": "No -- approved options range from fully online, self-paced courses to programs that combine online instruction with an in-person skills or \"field day\" session, particularly common for younger students",
+    "choice_c": "Every course must include a multi-day wilderness expedition",
+    "choice_d": "Format is irrelevant because no course is ever DNR-approved",
+    "correct_choice": "B",
+    "explanation": "Minnesota's approved course landscape includes fully online, self-paced options as well as programs that pair online coursework with an in-person, hands-on \"field day\" component, giving students and families some flexibility in how the training requirement is completed.",
+    "weight": 2,
+    "source_note": "Minnesota DNR boater education program (variety of approved course delivery formats, including online-plus-field-day models)"
+  }
+]

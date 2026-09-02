@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What do the nautical terms \"bow\" and \"stern\" refer to on a boat?",
+    "choice_a": "The left and right sides of the boat",
+    "choice_b": "The front and the rear of the boat",
+    "choice_c": "The top deck and the bilge",
+    "choice_d": "The engine and the steering wheel",
+    "correct_choice": "B",
+    "explanation": "The bow is the front of the boat and the stern is the rear -- basic orientation terms used throughout boater education to describe direction, docking, and right-of-way situations.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Boat Terminology"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a boat's \"freeboard,\" and why does it matter?",
+    "choice_a": "The distance from the waterline to the lowest point of the gunwale, which affects how easily the boat can take on water",
+    "choice_b": "The maximum legal speed for the vessel",
+    "choice_c": "The width of the boat at its widest point",
+    "choice_d": "A fee charged for dockage",
+    "correct_choice": "A",
+    "explanation": "Freeboard is the vertical distance from the waterline to the top edge of the hull (gunwale); a boat with little freeboard can be swamped more easily by waves, wake, or overloading.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Boat Terminology"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a boat's \"beam\"?",
+    "choice_a": "The vessel's maximum width",
+    "choice_b": "The length of the anchor line",
+    "choice_c": "The vessel's overall height above the waterline",
+    "choice_d": "The distance between navigation lights",
+    "correct_choice": "A",
+    "explanation": "Beam refers to a boat's width at its widest point, which affects stability -- a wider beam generally provides more initial stability than a narrow one.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Boat Terminology"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is the difference between an inboard engine, an outboard engine, and an inboard/outboard (stern drive)?",
+    "choice_a": "There is no meaningful difference; the terms are interchangeable",
+    "choice_b": "An inboard engine sits inside the hull with a fixed shaft to the propeller, an outboard is a self-contained unit mounted on the transom that steers with the whole engine, and an inboard/outboard mounts the engine inside the hull but drives an external, steerable lower unit",
+    "choice_c": "Only outboards are legal on Wisconsin's inland lakes",
+    "choice_d": "Inboard engines are exclusive to personal watercraft",
+    "correct_choice": "B",
+    "explanation": "These are the three common recreational propulsion layouts: inboard (engine inside the hull, fixed propeller shaft), outboard (a complete, transom-mounted unit that pivots to steer), and inboard/outboard or \"stern drive\" (engine inside the hull driving an external, steerable outdrive).",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Types of Boats and Propulsion"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What distinguishes an airboat, a vessel type sometimes seen on Wisconsin's shallow marshes and wetlands?",
+    "choice_a": "It is propelled by an above-water, fan-like propeller rather than a submerged propeller or jet drive, letting it operate in very shallow water and vegetation",
+    "choice_b": "It has no engine and relies solely on wind",
+    "choice_c": "It can only be operated on the Great Lakes",
+    "choice_d": "It uses the same jet-drive propulsion as a personal watercraft",
+    "correct_choice": "A",
+    "explanation": "An airboat uses an aircraft-style propeller mounted above the waterline to push air rather than water, so it has no submerged lower unit -- allowing it to skim across shallow marshes, wetlands, and weedy areas where a conventional propeller or jet drive would be at risk of damage or fouling.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Types of Boats, applied to Wisconsin's marsh and wetland boating"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What stability advantage does a catamaran or other multihull design offer compared to a similarly sized monohull?",
+    "choice_a": "It has no advantage and is generally less stable",
+    "choice_b": "Its two separated hulls provide a wider effective base, generally giving greater initial stability and resistance to rolling",
+    "choice_c": "Multihulls cannot be used with an outboard motor",
+    "choice_d": "Multihulls are exempt from all capacity plate requirements",
+    "correct_choice": "B",
+    "explanation": "A catamaran's two hulls are spread apart, creating a wider stability base than a single-hull boat of similar size, which generally reduces rolling and increases resistance to capsizing in calm-to-moderate conditions.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Types of Boat Hulls"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a boat's \"draft,\" and why is it especially important to know on many of Wisconsin's shallower inland lakes?",
+    "choice_a": "The vertical distance from the waterline down to the lowest point of the hull or keel, which determines the minimum water depth the boat needs to avoid running aground",
+    "choice_b": "The amount of fuel the boat can carry",
+    "choice_c": "The angle at which the boat tilts while turning",
+    "choice_d": "The boat's total passenger capacity",
+    "correct_choice": "A",
+    "explanation": "Draft is how deep a vessel sits in the water; knowing it helps an operator avoid running aground in the shoals, weed beds, and variable depths common on many of Wisconsin's smaller inland lakes.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Boat Terminology, applied to Wisconsin's inland lake depth variability"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a \"runabout,\" one of the most common recreational boat types seen on Wisconsin's lakes?",
+    "choice_a": "A small, versatile open motorboat typically used for general recreation such as cruising, watersports, and fishing",
+    "choice_b": "A vessel used exclusively for commercial fishing",
+    "choice_c": "A type of sailboat with no engine",
+    "choice_d": "A specialized vessel used only for towing barges",
+    "correct_choice": "A",
+    "explanation": "A runabout is a small, open, general-purpose motorboat popular for day cruising, watersports, and fishing -- one of the most common recreational boat types found on Wisconsin's many inland lakes.",
+    "weight": 1,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Types of Boats"
+  }
+]

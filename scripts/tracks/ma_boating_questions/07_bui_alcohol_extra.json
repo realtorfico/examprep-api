@@ -1,0 +1,38 @@
+[
+  {
+    "topic": "BUI & Alcohol",
+    "question": "What blood alcohol concentration (BAC) threshold does Massachusetts marine OUI enforcement generally apply, consistent with its motor vehicle OUI framework?",
+    "choice_a": "0.08%, the same per se BAC threshold used for a Massachusetts motor vehicle OUI",
+    "choice_b": "0.20%, twice the motor vehicle threshold",
+    "choice_c": "There is no numeric BAC threshold used for marine OUI in Massachusetts",
+    "choice_d": "0.02%, a near-zero tolerance limit",
+    "correct_choice": "A",
+    "explanation": "Massachusetts extends its motor vehicle OUI framework to boating, applying the same 0.08% blood alcohol concentration per se threshold used on the road, above which an operator is considered legally impaired for purposes of operating a vessel.",
+    "weight": 2,
+    "source_note": "Massachusetts General Laws Chapter 90B, marine OUI BAC threshold consistent with the motor vehicle OUI framework, consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Can a boat operator be charged with operating under the influence even if a chemical test shows a BAC below the 0.08% per se threshold?",
+    "choice_a": "No -- a BAC below 0.08% is an absolute defense and no OUI charge can ever be brought",
+    "choice_b": "Yes -- similar to motor vehicle OUI law, an operator can still be charged based on observed impairment (unsteady balance, slurred speech, poor judgment) even with a BAC below the per se threshold, since the underlying standard is impairment, not a specific number alone",
+    "choice_c": "OUI charges require a BAC test result and can never be based on observed behavior alone",
+    "choice_d": "A BAC below 0.08% guarantees the operator was not impaired in any way",
+    "correct_choice": "B",
+    "explanation": "As with motor vehicle OUI law, the underlying legal standard is impairment of the ability to safely operate the vessel; a chemical test result is strong evidence but not the only path to a charge, so an operator can still be charged based on clear signs of impairment even at a BAC under the 0.08% per se level.",
+    "weight": 2,
+    "source_note": "Massachusetts General Laws Chapter 90B, marine OUI impairment standard consistent with the motor vehicle OUI framework, consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Does the Massachusetts Environmental Police have the authority to conduct on-water sobriety checks of boat operators?",
+    "choice_a": "No -- only local police departments may stop a boat for a suspected marine OUI",
+    "choice_b": "Yes -- as the state's boating law enforcement agency, Massachusetts Environmental Police officers may stop and board vessels and, where there is reasonable suspicion of impairment, conduct field sobriety assessments similar in principle to a roadway OUI stop",
+    "choice_c": "Sobriety checks are illegal on the water under any circumstances",
+    "choice_d": "Sobriety checks may only be conducted at a boat's home marina, never while underway",
+    "correct_choice": "B",
+    "explanation": "Massachusetts Environmental Police officers, as the agency responsible for enforcing boating law including marine OUI provisions, may stop and board vessels and, when there is reasonable suspicion an operator is impaired, conduct field sobriety assessments on the water, paralleling how a police officer would handle a suspected impaired driver on the road.",
+    "weight": 2,
+    "source_note": "Massachusetts Environmental Police enforcement authority, consistent with Massachusetts General Laws Chapter 90B and Massachusetts Environmental Police-reviewed course materials"
+  }
+]

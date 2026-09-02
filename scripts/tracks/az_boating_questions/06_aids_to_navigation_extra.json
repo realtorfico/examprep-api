@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "Under the U.S. Aids to Navigation System's lateral marker numbering convention, what do the numbers on channel markers indicate?",
+    "choice_a": "Numbers are assigned randomly and carry no navigational meaning",
+    "choice_b": "Red markers carry even numbers and green markers carry odd numbers, with the numbers increasing consecutively as a boater heads upstream or returns from open water",
+    "choice_c": "Green markers carry even numbers and red markers carry odd numbers",
+    "choice_d": "Numbers decrease consecutively as a boater heads upstream or returns from open water",
+    "correct_choice": "B",
+    "explanation": "In the U.S. lateral marking system, red markers are always given even numbers and green markers odd numbers, and the numbers increase consecutively as a boater proceeds upstream or returns from open water into a channel.",
+    "weight": 3,
+    "source_note": "Boat-Ed/Kalkomey Arizona boating safety course (AZGFD-approved), boat-ed.com/arizona, 'Lateral Markers: Colors and Numbers'"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What shape is a 'nun' buoy, and what does it mark?",
+    "choice_a": "A cylindrical buoy that is green with an odd number, marking the port side of the channel",
+    "choice_b": "A flat, square white buoy marking an information point",
+    "choice_c": "A cone-shaped buoy that is red with an even number, marking the edge of the channel on a boater's starboard (right) side when entering from open sea or heading upstream",
+    "choice_d": "A striped buoy marking a swimming area closed to boats",
+    "correct_choice": "C",
+    "explanation": "A nun buoy is cone-shaped, colored red, and carries an even number; it marks the edge of the channel on a boater's starboard side when entering from open sea or heading upstream.",
+    "weight": 2,
+    "source_note": "Boat-Ed/Kalkomey Arizona boating safety course (AZGFD-approved), boat-ed.com/arizona, 'Lateral Markers: Shapes'"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What shape is a 'can' buoy, and what does it mark?",
+    "choice_a": "A cone-shaped buoy that is red with an even number, marking the starboard side of the channel",
+    "choice_b": "A diamond-shaped buoy warning of a hazard such as rocks or a dam",
+    "choice_c": "A buoy with an orange circle marking a controlled speed zone",
+    "choice_d": "A cylindrical buoy that is green with an odd number, marking the edge of the channel on a boater's port (left) side when entering from open sea or heading upstream",
+    "correct_choice": "D",
+    "explanation": "A can buoy is cylindrical, colored green, and carries an odd number; it marks the edge of the channel on a boater's port side when entering from open sea or heading upstream.",
+    "weight": 2,
+    "source_note": "Boat-Ed/Kalkomey Arizona boating safety course (AZGFD-approved), boat-ed.com/arizona, 'Lateral Markers: Shapes'"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "A junction (preferred channel) marker displays both red and green horizontal bands at a point where a channel splits. How is the preferred, or primary, channel indicated?",
+    "choice_a": "If the topmost band is green, the preferred channel lies to the right; if the topmost band is red, the preferred channel lies to the left",
+    "choice_b": "The preferred channel is always to the right, regardless of which color band is on top",
+    "choice_c": "The preferred channel is always to the left, regardless of which color band is on top",
+    "choice_d": "The band colors indicate water depth, not which channel is preferred",
+    "correct_choice": "A",
+    "explanation": "On a junction marker with both red and green horizontal bands, the topmost color tells the boater which side holds the preferred channel: green on top means the preferred channel is to the right, and red on top means it is to the left.",
+    "weight": 3,
+    "source_note": "Boat-Ed/Kalkomey Arizona boating safety course (AZGFD-approved), boat-ed.com/arizona, 'Lateral Markers: Colors and Numbers'"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "How do lighted buoys within the lateral marking system convey their meaning after dark?",
+    "choice_a": "All lighted buoys display only a white light, regardless of the buoy's daytime color",
+    "choice_b": "They display a light in the same color as the buoy itself -- a red light on a red buoy and a green light on a green buoy -- while keeping the same shape, color, and numbering meaning as their unlighted counterparts",
+    "choice_c": "Lighted buoys follow a completely separate numbering system from unlighted buoys",
+    "choice_d": "Lights on navigational buoys are decorative and carry no navigational meaning",
+    "correct_choice": "B",
+    "explanation": "Lighted buoys use the same lateral marker shapes, colors, and numbers as their unlighted counterparts, adding a matching colored light -- red on red buoys and green on green buoys -- so the meaning carries over after dark.",
+    "weight": 2,
+    "source_note": "Boat-Ed/Kalkomey Arizona boating safety course (AZGFD-approved), boat-ed.com/arizona, 'Lateral Markers: Other Kinds of Buoys and Markers'"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with a blue horizontal band indicate, and how may a boater use it?",
+    "choice_a": "It marks a hazard, such as rocks or a dam, that must never be approached",
+    "choice_b": "It is a regulatory marker requiring boats to slow to idle speed",
+    "choice_c": "It is a mooring buoy, typically found in marinas or designated anchorages, and it is the only type of buoy a boater may legally tie up to",
+    "choice_d": "It marks a swimming area that is closed to all boat traffic",
+    "correct_choice": "C",
+    "explanation": "A white buoy with a blue horizontal band is a mooring buoy, usually placed in marinas or designated anchoring areas; it is the only type of buoy a boater may legally tie up to.",
+    "weight": 3,
+    "source_note": "Boat-Ed/Kalkomey Arizona boating safety course (AZGFD-approved), boat-ed.com/arizona, 'Other Non-Lateral Markers'"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white marker with black vertical stripes indicate on inland waters, and how should a boater respond to it?",
+    "choice_a": "It marks a safe, unobstructed anchorage open to all boat traffic",
+    "choice_b": "It marks a fueling station or supply dock",
+    "choice_c": "It indicates that the preferred channel lies to the right",
+    "choice_d": "It marks an obstruction in inland waters, and a boater should not pass between the marker and the nearest shore",
+    "correct_choice": "D",
+    "explanation": "A white marker with black vertical stripes marks an obstruction in inland waters; a boater should not pass between the marker and the nearest shore, since the obstruction lies in that space.",
+    "weight": 3,
+    "source_note": "Boat-Ed/Kalkomey Arizona boating safety course (AZGFD-approved), boat-ed.com/arizona, 'Other Non-Lateral Markers'"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "The 'red, right, returning' rule applies when a boater is returning from open water or heading upstream. What changes when the boater instead heads outbound, from a channel out into open water?",
+    "choice_a": "The relationship reverses in most circumstances -- red markers are kept on the boater's port (left) side and green markers on the boater's starboard (right) side",
+    "choice_b": "Nothing changes -- red markers are kept on the right regardless of the direction of travel",
+    "choice_c": "Green markers become hazards that must be avoided entirely when heading outbound",
+    "choice_d": "The numbers on the markers reverse and begin counting down when heading outbound",
+    "correct_choice": "A",
+    "explanation": "Because 'red, right, returning' describes travel from open water into a channel or upstream, the relationship reverses in most circumstances when a boater is instead heading from a channel out into open water: red markers are then kept to port and green markers to starboard.",
+    "weight": 3,
+    "source_note": "Boat-Ed/Kalkomey Arizona boating safety course (AZGFD-approved), boat-ed.com/arizona, 'Lateral Markers: Red Right Returning'"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "NY Brianna's Law & Boater Education",
+    "question": "Under NY Navigation Law, what is the minimum age at which a person may operate a personal watercraft (PWC) in New York, and under what condition?",
+    "choice_a": "16 years of age or older, with no certificate needed as long as an adult is aboard",
+    "choice_b": "12 years of age or older, regardless of certification",
+    "choice_c": "There is no minimum age for PWC operation as long as an adult is aboard",
+    "choice_d": "14 years of age or older, if the operator holds a boating safety certificate or is accompanied by a person 18 or older who holds one",
+    "correct_choice": "D",
+    "explanation": "New York Navigation Law Section 49(1-a)(a) bars anyone from operating a personal watercraft or specialty prop-craft unless they are at least 14 years old and hold a boating safety certificate, or are accompanied by a person 18 or older who holds one.",
+    "weight": 3,
+    "source_note": "NY Navigation Law Section 49(1-a)(a), verbatim statutory text via nysenate.gov"
+  },
+  {
+    "topic": "NY Brianna's Law & Boater Education",
+    "question": "Under NY Navigation Law Section 49, which of the following is specifically exempt from the boating safety certificate requirement?",
+    "choice_a": "A police officer, peace officer, fire personnel, rescue personnel, or lifeguard operating a vessel while acting pursuant to their assigned duties",
+    "choice_b": "Anyone who has owned their boat for more than five years",
+    "choice_c": "Any operator who is a lifelong New York resident",
+    "choice_d": "Anyone who has completed a hunter safety course",
+    "correct_choice": "A",
+    "explanation": "Navigation Law Section 49(1)(a) exempts police officers, peace officers, fire personnel, rescue personnel, and lifeguards from the boating safety certificate requirement when they are acting pursuant to their assigned duties.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 49(1)(a), verbatim statutory text via nysenate.gov"
+  },
+  {
+    "topic": "NY Brianna's Law & Boater Education",
+    "question": "Besides completing a New York-approved boating safety course, what is another way to satisfy Brianna's Law's certificate requirement under Navigation Law Section 49?",
+    "choice_a": "Hold a valid New York driver's license",
+    "choice_b": "Hold a valid operator's license issued by the United States Coast Guard or the Canadian Coast Guard",
+    "choice_c": "Own a boat with a current New York vessel registration",
+    "choice_d": "Pass a written test at any county clerk's office",
+    "correct_choice": "B",
+    "explanation": "Navigation Law Section 49(1)(a) exempts persons licensed to operate vessels by the United States Coast Guard or the Canadian Coast Guard from needing a separate New York boating safety certificate.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 49(1)(a), verbatim statutory text via nysenate.gov"
+  },
+  {
+    "topic": "NY Brianna's Law & Boater Education",
+    "question": "Members of which organizations are specifically named as exempt from New York's boating safety certificate requirement under Navigation Law Section 49?",
+    "choice_a": "The American Red Cross and the Boy Scouts of America",
+    "choice_b": "Any yacht club or marina membership organization",
+    "choice_c": "The United States Power Squadrons and the United States Coast Guard Auxiliary",
+    "choice_d": "USA Swimming and the National Rifle Association",
+    "correct_choice": "C",
+    "explanation": "Navigation Law Section 49(1)(a) exempts members of the United States Power Squadrons and members of the United States Coast Guard Auxiliary from having to obtain a separate boating safety certificate.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 49(1)(a), verbatim statutory text via nysenate.gov"
+  },
+  {
+    "topic": "NY Brianna's Law & Boater Education",
+    "question": "What is the New York State 'Adventure License' anchor-icon option available to boaters who complete a safety course?",
+    "choice_a": "A mandatory ink stamp applied at the course site",
+    "choice_b": "A replacement for the vessel's registration decal",
+    "choice_c": "A discount code toward retaking the course",
+    "choice_d": "An optional anchor icon added to the boater's DMV-issued driver's license, permit, or non-driver ID, attesting that they hold a New York State boating safety certificate",
+    "correct_choice": "D",
+    "explanation": "Through the NYS Adventure License program, a boater who completes an approved safety course can opt to have a small anchor icon added to their DMV-issued driver's license, permit, or non-driver ID, showing they have earned a New York State boating safety certificate.",
+    "weight": 2,
+    "source_note": "ny.gov 'Get a New York State Adventure License' official service page"
+  },
+  {
+    "topic": "NY Brianna's Law & Boater Education",
+    "question": "Under the NYS Adventure License program, what does it cost to have the boating safety anchor icon added to a DMV document?",
+    "choice_a": "$12.50 for an immediate new driver's license, or $5.00 for a non-driver ID -- or it can be added at no charge at the person's next scheduled DMV renewal",
+    "choice_b": "It always costs a flat $50 fee no matter when it is added",
+    "choice_c": "It is free only for first-time driver's license applicants",
+    "choice_d": "It costs $100 and can only be added at renewal, never immediately",
+    "correct_choice": "A",
+    "explanation": "Adding the anchor icon to a DMV document immediately costs $12.50 for a new driver's license or $5.00 for a non-driver ID; a boater willing to wait can instead have the icon added at no charge when their license or ID is next renewed.",
+    "weight": 2,
+    "source_note": "ny.gov 'Get a New York State Adventure License' official service page"
+  },
+  {
+    "topic": "NY Brianna's Law & Boater Education",
+    "question": "Which section of the New York Navigation Law establishes the boating safety certificate requirement created by Brianna's Law?",
+    "choice_a": "Section 10",
+    "choice_b": "Section 49",
+    "choice_c": "Section 22",
+    "choice_d": "Section 100",
+    "correct_choice": "B",
+    "explanation": "New York Navigation Law Section 49, titled 'Boating safety requirements,' is the statutory provision that codifies Brianna's Law's mandatory boating safety certificate requirement, with violations punishable under Section 73-c.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 49 (Boating Safety Requirements), nysenate.gov"
+  }
+]

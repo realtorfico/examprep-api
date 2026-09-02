@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should be checked on a boat trailer before towing it on Florida highways?",
+    "choice_a": "Nothing; trailers require no pre-tow inspection",
+    "choice_b": "Only the boat's registration numbers",
+    "choice_c": "Tire condition and pressure, wheel bearings, lights/turn signals, and that the coupler and safety chains are properly secured to the tow vehicle",
+    "choice_d": "Only the fuel level of the tow vehicle",
+    "correct_choice": "C",
+    "explanation": "A pre-tow check of tires, wheel bearings, functioning lights, and a properly latched coupler with attached safety chains reduces the risk of a trailer failure or accident on the road.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course trailering safety checklist"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should be done to the drain plug before launching a boat, and what is the opposite step after loading it back on the trailer?",
+    "choice_a": "The drain plug should be removed before launching and inserted after loading",
+    "choice_b": "The drain plug has no function related to launching or trailering",
+    "choice_c": "The drain plug should be left in the same position at all times regardless of launching",
+    "choice_d": "The drain plug should be inserted before launching to prevent the boat from taking on water, and removed after loading onto the trailer to let water drain out",
+    "correct_choice": "D",
+    "explanation": "Forgetting to insert the drain plug before launching is one of the most common boating mistakes and can cause the boat to swamp; after trailering, removing the plug lets accumulated water drain out during transport.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course pre-launch checklist, drain plug"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is proper boat ramp etiquette regarding preparation before backing down the ramp?",
+    "choice_a": "Prepare the boat (load gear, insert the drain plug, disconnect tie-downs except the winch strap) in a staging area away from the ramp, then move to the ramp only when ready to launch",
+    "choice_b": "Back down the ramp first, then begin loading gear and preparing the boat while blocking the ramp",
+    "choice_c": "There is no expected etiquette; ramp order does not matter",
+    "choice_d": "Always launch during the busiest time of day to save time",
+    "correct_choice": "A",
+    "explanation": "Good ramp etiquette calls for completing preparation -- loading gear, inserting the drain plug, removing all but the winch tie-down -- away from the ramp itself, minimizing time spent occupying the launch lane.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course boat ramp etiquette"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why is it important to check trailer light function before towing, especially at night?",
+    "choice_a": "Trailer lights only matter for law enforcement inspections, not actual safety",
+    "choice_b": "Working brake lights, turn signals, and running lights let other drivers see the trailer's presence and intentions, reducing collision risk while towing",
+    "choice_c": "Trailer lights are purely decorative and have no legal or safety requirement",
+    "choice_d": "Trailer lights are only required for trailers longer than 40 feet",
+    "correct_choice": "B",
+    "explanation": "Functioning trailer lights are both a legal requirement and a practical safety measure, letting following and crossing traffic see the trailer's brake, turn, and running signals.",
+    "weight": 2,
+    "source_note": "Standard trailer safety/road-legal requirements"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should a boater do if the boat ramp is crowded with other boaters waiting to launch or retrieve?",
+    "choice_a": "Launch anyway even while another boat is still on the ramp",
+    "choice_b": "Abandon the ramp lane blocked with their vehicle while socializing",
+    "choice_c": "Wait their turn patiently, keep the ramp lane clear, and work efficiently once it is their turn to avoid delaying others",
+    "choice_d": "Push in ahead of others who arrived first",
+    "correct_choice": "C",
+    "explanation": "Courteous ramp use means waiting one's turn, keeping the launch lane clear for others, and being efficient once it is your turn, which keeps traffic moving at busy Florida ramps.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course boat ramp etiquette"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should be verified about a trailer's coupler and safety chains before towing a boat?",
+    "choice_a": "Safety chains are optional decorative accessories",
+    "choice_b": "The coupler only needs to be resting on the hitch ball, not latched",
+    "choice_c": "Chains should be left loose and uncrossed for easier disconnection",
+    "choice_d": "The coupler is fully latched and locked onto the tow vehicle's hitch ball, and the safety chains are crossed underneath the tongue and attached securely",
+    "correct_choice": "D",
+    "explanation": "A properly latched and locked coupler keeps the trailer attached to the tow vehicle, and crossed safety chains are designed to catch and cradle the trailer tongue if the coupler ever fails.",
+    "weight": 3,
+    "source_note": "Standard trailer hitching safety guidance"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why should a boater check the tow vehicle's weight rating and the trailer's weight capacity before towing?",
+    "choice_a": "Exceeding the tow vehicle's rated towing capacity or the trailer's weight rating can cause loss of control, brake failure, or structural damage while on the road",
+    "choice_b": "Weight ratings are purely a manufacturer suggestion with no real-world consequence",
+    "choice_c": "Weight capacity only matters for boats over 40 feet",
+    "choice_d": "Any vehicle can safely tow any boat trailer regardless of weight",
+    "correct_choice": "A",
+    "explanation": "Exceeding a tow vehicle's rated capacity or a trailer's rated load can compromise braking, steering, and structural integrity, creating a serious highway safety hazard.",
+    "weight": 3,
+    "source_note": "Standard trailering weight-rating safety guidance"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is a recommended practice immediately after retrieving a boat from Florida's saltwater and loading it onto the trailer?",
+    "choice_a": "Store the boat with the drain plug still inserted and full of standing water",
+    "choice_b": "Flush the engine's cooling system with fresh water and rinse the hull, trailer, and equipment of salt to reduce corrosion",
+    "choice_c": "Leave all salt residue in place, since it has no long-term effect",
+    "choice_d": "Immediately repaint the hull before any rinsing",
+    "correct_choice": "B",
+    "explanation": "Saltwater accelerates corrosion of engines, trailers, and metal fittings, so flushing the engine and rinsing the boat and trailer with fresh water after each saltwater outing is standard maintenance practice in Florida.",
+    "weight": 2,
+    "source_note": "Standard saltwater boat/trailer maintenance guidance"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should a boater visually confirm about vehicle mirrors and trailer width before getting underway on the highway?",
+    "choice_a": "Only the rearview mirror needs checking, never the side mirrors",
+    "choice_b": "Trailer width never exceeds the tow vehicle's width",
+    "choice_c": "That side mirrors provide adequate visibility of the trailer and boat's width, since the trailer will often be wider than the tow vehicle",
+    "choice_d": "Mirrors are unnecessary because trailers do not affect visibility",
+    "correct_choice": "C",
+    "explanation": "A boat trailer is frequently wider than the tow vehicle, so extended or towing mirrors that give a clear view down both sides of the trailer are important for safe lane changes and turns.",
+    "weight": 2,
+    "source_note": "Standard trailering visibility guidance"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why is it important to secure loose gear and check that the engine is tilted up properly before backing a trailered boat down a ramp?",
+    "choice_a": "Gear and engine position have no bearing on a safe launch",
+    "choice_b": "The engine should always be left fully lowered during trailering for better weight distribution",
+    "choice_c": "Only the trailer's tires matter during the launch process",
+    "choice_d": "Loose gear can fall out during the drive or launch, and a lowered outboard/sterndrive can strike the ramp surface, damaging the lower unit",
+    "correct_choice": "D",
+    "explanation": "Securing gear prevents it from shifting or falling during transit, and tilting the outboard or sterndrive up before backing down the ramp avoids striking the ramp surface and damaging the lower unit or propeller.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course pre-launch checklist"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why do trailers above a certain gross weight generally require their own functioning brakes, separate from the tow vehicle's brakes?",
+    "choice_a": "Trailer brakes are purely optional decorative equipment with no safety function",
+    "choice_b": "A sufficiently heavy, loaded boat trailer adds significant stopping distance and instability if the tow vehicle's brakes alone must slow the combined weight, so trailer brakes above a weight threshold help the combination stop safely and predictably",
+    "choice_c": "Trailer brakes are illegal on any boat trailer",
+    "choice_d": "Trailer weight has no bearing on stopping distance",
+    "correct_choice": "B",
+    "explanation": "As a loaded boat trailer's weight increases, relying solely on the tow vehicle's brakes to stop the combined weight becomes less safe and can extend stopping distance considerably; trailer brake requirements above a set weight threshold, consistent with Missouri's motor vehicle equipment law, help the combination stop safely.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (trailer brake requirements), consistent with Missouri motor vehicle trailer equipment law"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Besides the winch strap securing the bow to the trailer, what additional securement is generally recommended for the stern of a boat during highway towing?",
+    "choice_a": "No additional securement is ever needed once the winch strap is attached",
+    "choice_b": "Separate transom (stern) tie-down straps, since the winch strap alone is not designed to hold the boat down against bouncing and shifting at highway speeds and over bumps",
+    "choice_c": "Duct tape wrapped around the entire hull",
+    "choice_d": "The stern should always be left completely unsecured for easier launching",
+    "correct_choice": "B",
+    "explanation": "The bow winch strap is primarily designed to pull the boat forward onto the trailer and hold it from sliding off, not to resist the vertical bouncing a boat experiences at highway speed; separate transom tie-down straps at the stern provide the redundant securement needed to keep the boat firmly seated on the trailer bunks or rollers during the drive.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (bow and stern trailer securement)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What extra caution should a boater take when launching or retrieving a boat from a trailer on a windy day?",
+    "choice_a": "Wind has no effect on a boat still resting on its trailer",
+    "choice_b": "A boat with significant freeboard or a tall cabin can catch crosswinds like a sail while still on the trailer, so extra care, a firm grip on a bow or stern line, and possibly a helper are recommended to prevent the boat shifting unexpectedly during launch or retrieval",
+    "choice_c": "Windy conditions make launching perfectly safe with no extra precautions",
+    "choice_d": "Wind only matters once the boat is fully off the trailer and floating",
+    "correct_choice": "B",
+    "explanation": "A boat with a tall cabin, bimini top, or high freeboard can act like a sail even while still resting on the trailer, so a gust of wind during launch or retrieval can push it sideways unexpectedly; keeping a firm hold on a bow or stern line and having a helper on hand adds control in these conditions.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (windy-condition launching precautions)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is the recommended technique for safely loading (retrieving) a boat back onto its trailer at a ramp, rather than driving it fully onto the trailer under engine power?",
+    "choice_a": "Always drive the boat at full throttle directly up onto the trailer bunks",
+    "choice_b": "Approach the trailer slowly, align the bow with the trailer's guide-ons or bunks, idle the boat just onto the trailer, and use the manual winch to complete and secure the final pull into position",
+    "choice_c": "There is no recommended technique; any approach works equally well",
+    "choice_d": "The boat should always be lifted out of the water by hand rather than driven onto the trailer",
+    "correct_choice": "B",
+    "explanation": "A controlled approach -- idling slowly onto the trailer bunks or rollers rather than powering all the way up under throttle -- reduces the risk of overshooting the trailer, striking the winch stand, or damaging the hull, with the hand winch used to complete and secure the final positioning.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (safe boat retrieval technique), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is good etiquette after retrieving a boat from a Missouri lake ramp, regarding where the tow vehicle and trailer are parked?",
+    "choice_a": "The tow vehicle and trailer should be moved promptly to a designated parking area away from the ramp lanes and turnaround space, rather than left blocking access for other boaters still waiting to launch or retrieve",
+    "choice_b": "It is acceptable to leave the vehicle and trailer parked in the middle of the ramp indefinitely",
+    "choice_c": "Parking location has no effect on other boaters at a busy ramp",
+    "choice_d": "Only the boat needs to be moved; the tow vehicle can remain on the ramp",
+    "correct_choice": "A",
+    "explanation": "Just as ramp etiquette calls for staging boat preparation away from the ramp itself before launching, after retrieval the tow vehicle and trailer should be moved promptly to a designated parking area so the ramp lanes and turnaround space remain open for other boaters, especially at busy Missouri lake ramps during peak season.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (boat ramp parking etiquette), applied to Missouri lake ramps"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why might a boater use a coupler lock or trailer hitch lock when leaving a boat and trailer unattended overnight at a Missouri lake or campground?",
+    "choice_a": "Coupler locks have no security purpose and are purely decorative",
+    "choice_b": "A coupler lock prevents someone from simply hitching up and towing away the trailer and boat, reducing the risk of theft when the vehicle and trailer are left unattended",
+    "choice_c": "Coupler locks are required by Missouri law on every trailer at all times",
+    "choice_d": "A coupler lock replaces the need for vessel registration",
+    "correct_choice": "B",
+    "explanation": "A coupler lock or hitch lock blocks the trailer's coupler from being connected to another tow vehicle, making it much harder for a thief to simply hitch up and drive off with a trailered boat left unattended overnight at a lake, campground, or marina parking area.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (trailer theft-prevention equipment)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is a 'transom saver,' and why is it used when trailering a boat with an outboard motor?",
+    "choice_a": "A device or bar that supports the tilted outboard motor's weight during transport, reducing stress and vibration damage to the transom and tilt/trim mechanism over rough roads",
+    "choice_b": "A flotation device thrown to a person in the water",
+    "choice_c": "A tool used only to remove the drain plug",
+    "choice_d": "A type of fire extinguisher mount",
+    "correct_choice": "A",
+    "explanation": "A transom saver is a support bar or strap that takes some of the outboard motor's weight off the transom and tilt/trim mechanism while the motor is tilted up for trailering, reducing vibration-related stress and wear over the miles of highway travel to and from a Missouri lake.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (outboard motor transom saver), consistent with NASBLA-aligned course curricula"
+  }
+]

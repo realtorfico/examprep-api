@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under Illinois law, when is a PWC prohibited from operating regardless of who is on board?",
+    "choice_a": "Between sunset and sunrise",
+    "choice_b": "Between 10 a.m. and 2 p.m.",
+    "choice_c": "On weekends only",
+    "choice_d": "PWCs may operate at any time with no time restriction",
+    "correct_choice": "A",
+    "explanation": "Illinois law specifically prohibits operating a PWC between sunset and sunrise, unlike some other motorized vessels that may run at night if properly lit.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/5-20; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What PFD rule applies specifically to everyone aboard a PWC in Illinois?",
+    "choice_a": "Inflatable PFDs are the preferred choice for PWC riders",
+    "choice_b": "Every person on board must wear a USCG-approved PFD; inflatable PFDs are not approved for PWC use",
+    "choice_c": "Only the operator is required to wear a PFD",
+    "choice_d": "PFDs are optional on PWCs shorter than 10 feet",
+    "correct_choice": "B",
+    "explanation": "Every occupant of a PWC in Illinois must wear a USCG-approved PFD, and inflatable PFDs specifically do not satisfy this requirement because they are not approved for PWC use.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/4-1; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "If a PWC is equipped with an engine cut-off switch (ECOS), what must the operator do under Illinois law?",
+    "choice_a": "Only use the ECOS when operating at night",
+    "choice_b": "ECOS use on PWCs is optional under Illinois law",
+    "choice_c": "Attach the lanyard to their person, clothing, or PFD, or activate the wireless cut-off system if equipped",
+    "choice_d": "Disconnect the ECOS to allow faster acceleration",
+    "correct_choice": "C",
+    "explanation": "Illinois requires an operational ECOS on an equipped PWC, with the lanyard attached to the operator or the wireless cut-off activated, so the engine stops if the operator is thrown from the craft.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/4-11; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What minimum age and education requirements apply to PWC operators in Illinois, per 625 ILCS 45/5-18?",
+    "choice_a": "PWC operators face no minimum age requirement",
+    "choice_b": "PWC operators must be at least 21 years old with no exceptions",
+    "choice_c": "PWC operators are exempt from the Boating Safety Certificate requirement",
+    "choice_d": "The same age tiers and Boating Safety Certificate requirements that apply to operating any motorized vessel over 10 hp -- no one under 10 may operate a PWC at all",
+    "correct_choice": "D",
+    "explanation": "Illinois applies its general operator age and education framework to PWCs specifically -- under 10, never; 10 to 11, only accompanied by a qualifying adult; 12 to 17, certificate or accompanied supervision.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/5-18; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Which of the following is specifically listed as prohibited, dangerous PWC maneuvering under Illinois law?",
+    "choice_a": "Weaving through congested waterway traffic",
+    "choice_b": "Operating at slow, no wake speed near a launch ramp",
+    "choice_c": "Wearing a USCG-approved PFD while riding",
+    "choice_d": "Displaying a registration number on the bow",
+    "correct_choice": "A",
+    "explanation": "Illinois law prohibits PWC maneuvers that endanger people or property, specifically naming weaving through congested traffic, jumping wakes unreasonably close to another vessel, and waiting until the last moment to swerve and avoid collision.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-2 and 45/5-20; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Are inflatable PFDs an acceptable option for someone riding on a PWC in Illinois?",
+    "choice_a": "The type of PFD does not matter for PWC riders",
+    "choice_b": "No -- inflatable PFDs are not approved for PWC or specialty prop-craft use under Illinois law",
+    "choice_c": "Yes, inflatable PFDs are the only approved type for PWC riders",
+    "choice_d": "Yes, as long as the PFD is USCG-approved for any purpose",
+    "correct_choice": "B",
+    "explanation": "Illinois law specifically excludes inflatable PFDs from PWC and specialty prop-craft use, because they may not perform as reliably during the sudden impacts and immersion common on these vessels.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/4-1; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "A 'specialty prop-craft,' regulated alongside PWCs in Illinois, shares which specific safety requirements with PWCs?",
+    "choice_a": "Exemption from the nighttime operating restriction",
+    "choice_b": "No shared requirements -- prop-craft are regulated entirely differently",
+    "choice_c": "The all-aboard USCG-approved PFD requirement and the engine cut-off switch requirement",
+    "choice_d": "Exemption from all registration requirements",
+    "correct_choice": "C",
+    "explanation": "Illinois law applies the same all-occupant PFD rule and ECOS requirement to specialty prop-craft that it applies to PWCs, reflecting their similar operating risks.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/4-1 and 45/4-11; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Why might a PWC operator have less time to react to hazards compared with a conventional powerboat operator at the same speed?",
+    "choice_a": "PWCs are legally required to travel faster than powerboats",
+    "choice_b": "PWCs are not equipped with any steering controls",
+    "choice_c": "PWC operators are never required to watch for other vessels",
+    "choice_d": "PWCs typically sit lower to the water, offer a narrower field of view, and can accelerate and change direction very quickly, which can shorten reaction windows",
+    "correct_choice": "D",
+    "explanation": "A PWC's low seating position, narrower sightlines, and quick acceleration and handling mean operators must stay especially alert, since hazards can appear and close distance quickly.",
+    "weight": 2,
+    "source_note": "General PWC operating-characteristics guidance used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under Illinois's reckless operation statute, does it apply specifically to PWC 'reckless manipulation,' in addition to general vessel operation?",
+    "choice_a": "Yes -- 625 ILCS 45/5-2 explicitly covers the reckless manipulation of water skis, a surfboard, or similar devices, alongside reckless vessel operation generally",
+    "choice_b": "No, the reckless operation statute applies only to sailboats",
+    "choice_c": "No, PWCs and towed sports equipment are entirely unregulated in Illinois",
+    "choice_d": "Yes, but only for vessels registered after 2020",
+    "correct_choice": "A",
+    "explanation": "Illinois's reckless operation law explicitly extends to the reckless manipulation of water skis, surfboards, or similar towed devices, not just to the vessel doing the towing.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-2; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What must a PWC operator do before letting a passenger ride along, in terms of the vessel's design rating?",
+    "choice_a": "PWCs may carry unlimited passengers as long as everyone wears a PFD",
+    "choice_b": "Confirm the PWC is designed and rated by the manufacturer to carry that number of occupants safely",
+    "choice_c": "No design or capacity limits apply to PWCs",
+    "choice_d": "Only the operator's weight matters, regardless of the manufacturer's rating",
+    "correct_choice": "B",
+    "explanation": "Like other vessels, a PWC has a manufacturer-rated capacity, and operators must not exceed the number of persons or weight the craft is designed to safely carry.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-4 and 45/5-6 overloading provisions applied to PWC; Handbook of Illinois Boating Laws and Responsibilities"
+  }
+]

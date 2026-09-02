@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Required Safety Equipment",
+    "question": "How does the number and size of required B-I fire extinguishers generally change as a recreational vessel's length increases?",
+    "choice_a": "The requirement decreases as vessel length increases",
+    "choice_b": "It is fixed at exactly one extinguisher regardless of length",
+    "choice_c": "Larger vessels must carry a greater number of extinguishers, or fewer larger-capacity B-II extinguishers, than smaller vessels with the same type of engine compartment",
+    "choice_d": "Only vessels longer than 65 feet require any extinguisher",
+    "correct_choice": "C",
+    "explanation": "The minimum number and rating of required portable fire extinguishers scales up as vessel length increases, since larger vessels have more fuel and engine-compartment volume and greater potential fire risk.",
+    "weight": 2,
+    "source_note": "Universal USCG fire-extinguisher carriage requirements by vessel length (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "When might a recreational vessel with an outboard engine and no enclosed fuel or engine compartment NOT be required to carry a fire extinguisher?",
+    "choice_a": "A fire extinguisher is required on every vessel with an outboard engine regardless of configuration",
+    "choice_b": "If it is built so that it cannot trap explosive or flammable gases or vapors, and it is not carrying flammable or combustible materials in quantity",
+    "choice_c": "Whenever the vessel is operated on the Chesapeake Bay",
+    "choice_d": "Only if the vessel is longer than 40 feet",
+    "correct_choice": "B",
+    "explanation": "Certain small open outboard boats without enclosed compartments where vapors could accumulate, and not carrying flammable materials, are exempt from the fire extinguisher carriage requirement under federal rules.",
+    "weight": 2,
+    "source_note": "Universal USCG fire-extinguisher exemption for certain open outboard vessels (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Which vessels may be exempt from carrying daytime visual distress signals, even though a nighttime signal is still generally required if operating after dark?",
+    "choice_a": "Certain small, manually propelled or open Class A (under 16 ft) vessels operating during the day on certain waters, per federal VDS exemptions",
+    "choice_b": "No vessel is ever exempt from VDS requirements",
+    "choice_c": "Vessels longer than 65 feet",
+    "choice_d": "Only commercial vessels are exempt",
+    "correct_choice": "A",
+    "explanation": "Federal rules exempt certain smaller, manually propelled, or specified open vessels from carrying daytime visual distress signals, though most of these same vessels still need a night signal if operated after dark.",
+    "weight": 2,
+    "source_note": "Universal USCG visual distress signal daytime exemptions (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is the practical difference between a B-I and a B-II rated fire extinguisher aboard a boat?",
+    "choice_a": "A B-II extinguisher has a larger fire-suppression capacity than a B-I, so fewer B-II units (or a combination) can satisfy the requirement on larger vessels",
+    "choice_b": "A B-I extinguisher only works on wood fires",
+    "choice_c": "There is no difference; the labels are interchangeable",
+    "choice_d": "A B-II extinguisher is used exclusively for electrical fires",
+    "correct_choice": "A",
+    "explanation": "B-II extinguishers carry a larger flammable-liquid fire-suppression rating than B-I units, so a vessel can sometimes satisfy its requirement with fewer, larger B-II extinguishers instead of multiple smaller B-I units.",
+    "weight": 1,
+    "source_note": "Universal USCG fire-extinguisher rating classification (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What must a vessel less than 12 meters (about 39.4 feet) long carry to comply with sound-signaling requirements, if it does not have a mounted horn?",
+    "choice_a": "Nothing; vessels under 12 meters have no sound-signal requirement",
+    "choice_b": "Some other means of making an efficient sound signal, such as a whistle or air horn, audible at an appropriate distance",
+    "choice_c": "A ship's bell only",
+    "choice_d": "A siren identical to law enforcement vessels",
+    "correct_choice": "B",
+    "explanation": "Vessels under 12 meters must carry at least an efficient sound-producing device, such as a whistle or handheld air horn, even if they do not have a fixed, mounted horn system.",
+    "weight": 2,
+    "source_note": "Universal USCG/Navigation Rules sound-signaling equipment requirements by vessel length (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "For a boater planning an extended trip on the more open or remote stretches of the Chesapeake Bay, what additional emergency device is commonly recommended beyond standard VDS and a VHF radio?",
+    "choice_a": "A personal locator beacon (PLB) or emergency position-indicating radio beacon (EPIRB), which can transmit a distress signal with GPS location to search-and-rescue authorities",
+    "choice_b": "A second anchor with no additional communication device",
+    "choice_c": "A citizens band (CB) radio only",
+    "choice_d": "No additional device is ever recommended",
+    "correct_choice": "A",
+    "explanation": "A PLB or EPIRB can transmit a distress signal with the vessel's or person's GPS location directly to search-and-rescue authorities, providing an added layer of safety beyond VDS and VHF radio for longer or more remote trips.",
+    "weight": 2,
+    "source_note": "Universal USCG emergency locator beacon guidance for recreational boaters (NASBLA-aligned course content)"
+  }
+]

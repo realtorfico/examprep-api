@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Boating Under the Influence",
+    "question": "What blood alcohol concentration (BAC) does federal law use as the threshold constituting evidence of being under the influence for boating, a standard most states' boating-under-the-influence laws align with?",
+    "choice_a": "0.15%",
+    "choice_b": "0.08%",
+    "choice_c": "0.20%",
+    "choice_d": "There is no BAC threshold used in federal or state boating law",
+    "correct_choice": "B",
+    "explanation": "Federal law (46 U.S.C. Sec. 2302) uses a 0.08% BAC as evidence of intoxication for federal boating-under-the-influence enforcement, a threshold most states' own boating-under-the-influence statutes align with as a general baseline.",
+    "weight": 2,
+    "source_note": "Federal BUI evidentiary BAC threshold (46 U.S.C. Sec. 2302), presented as the general baseline most state boating-under-the-influence laws align with; not independently re-verified against a Maryland-specific numeric threshold in this build"
+  },
+  {
+    "topic": "Boating Under the Influence",
+    "question": "Besides balance and judgment, how does alcohol commonly affect a boat operator's vision?",
+    "choice_a": "Alcohol has no effect on vision",
+    "choice_b": "Alcohol improves night vision",
+    "choice_c": "Alcohol can impair night vision, depth perception, and peripheral vision, all of which are important for spotting other vessels, markers, and hazards",
+    "choice_d": "Alcohol only affects color perception, not depth or night vision",
+    "correct_choice": "C",
+    "explanation": "Alcohol can degrade night vision, depth perception, and peripheral vision, each of which a boat operator relies on to spot other vessels, aids to navigation, and hazards in time to react safely.",
+    "weight": 2,
+    "source_note": "Universal alcohol-impairment fundamentals used across boating safety curricula (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Boating Under the Influence",
+    "question": "Why do Maryland's Natural Resources Police typically increase on-water BUI patrols and checkpoints around holiday weekends such as Memorial Day and the Fourth of July?",
+    "choice_a": "Alcohol-related boating incidents and boating traffic both increase during peak recreational holiday periods, making focused enforcement more effective",
+    "choice_b": "NRP patrols are reduced during holidays to save resources",
+    "choice_c": "Holiday weekends have historically the lowest boating traffic of the year",
+    "choice_d": "There is no connection between holidays and BUI enforcement",
+    "correct_choice": "A",
+    "explanation": "Boating traffic and alcohol consumption both tend to peak around major recreational holiday weekends, which is why NRP and similar agencies nationally concentrate BUI enforcement, such as through Operation Dry Water, around these periods.",
+    "weight": 2,
+    "source_note": "Maryland Natural Resources Police holiday-weekend BUI enforcement emphasis, consistent with national Operation Dry Water timing"
+  },
+  {
+    "topic": "Boating Under the Influence",
+    "question": "Why is combining alcohol with certain prescription or over-the-counter medications especially risky for a boat operator?",
+    "choice_a": "Medications always cancel out alcohol's impairing effects",
+    "choice_b": "The combination can produce a greater impairing effect on judgment, coordination, and reaction time than either substance alone",
+    "choice_c": "There is no interaction between medication and alcohol relevant to boating",
+    "choice_d": "This combination is only a concern for vehicle drivers, not boaters",
+    "correct_choice": "B",
+    "explanation": "Many common medications interact with alcohol to intensify drowsiness, impaired coordination, or slowed reaction time well beyond the effect of either substance alone, adding risk for anyone operating a vessel.",
+    "weight": 2,
+    "source_note": "Universal alcohol-and-medication interaction guidance used across boating safety curricula (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Boating Under the Influence",
+    "question": "Why does alcohol use significantly increase the risk of drowning for a person who falls overboard?",
+    "choice_a": "Alcohol has no bearing on a person's ability to survive a fall overboard",
+    "choice_b": "Impaired coordination, judgment, and swimming ability make it harder for an intoxicated person to stay afloat or self-rescue after an unexpected fall into the water",
+    "choice_c": "Alcohol makes a person float better",
+    "choice_d": "Only sober people are at risk of drowning after falling overboard",
+    "correct_choice": "B",
+    "explanation": "An intoxicated person who falls overboard has reduced coordination, judgment, and swimming ability, all of which make it significantly harder to stay afloat, tread water, or reach a PFD or the vessel before drowning.",
+    "weight": 2,
+    "source_note": "Universal alcohol-and-drowning-risk guidance used across boating safety curricula (NASBLA-aligned course content)"
+  }
+]

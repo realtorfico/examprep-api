@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What PFD requirement applies specifically to personal watercraft (PWC) operators, riders, and persons being towed behind a PWC in Florida?",
+    "choice_a": "PFDs only need to be stowed aboard, not worn",
+    "choice_b": "Only the PWC operator is required to wear a PFD",
+    "choice_c": "Inflatable PFDs are the only type approved for PWC use",
+    "choice_d": "Each person must wear an approved non-inflatable wearable PFD; inflatable PFDs are prohibited for this use",
+    "correct_choice": "D",
+    "explanation": "Florida requires every person operating, riding on, or being towed behind a PWC to wear an approved wearable PFD, and specifically prohibits inflatable PFDs for this use.",
+    "weight": 5,
+    "source_note": "FWC PWC PFD requirements, myfwc.com/boating/regulations"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What PFD requirement applies to water skiers and persons being towed on a tube, wakeboard, or similar device in Florida?",
+    "choice_a": "They must wear a USCG-approved non-inflatable wearable PFD; inflatable PFDs are prohibited for this activity",
+    "choice_b": "No PFD is required while actively being towed",
+    "choice_c": "An inflatable PFD is required and non-inflatable types are prohibited",
+    "choice_d": "A PFD is only required if the skier cannot swim",
+    "correct_choice": "A",
+    "explanation": "Florida requires water skiers, wakeboarders, and other persons being towed to wear a USCG-approved non-inflatable wearable PFD; inflatable PFDs are not permitted for skiing or aquaplaning.",
+    "weight": 4,
+    "source_note": "FWC water skiing/towed-person PFD requirements, myfwc.com/boating/regulations"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Which vessels are exempt from the requirement to carry an additional throwable Type IV device even if they are 16 feet or longer?",
+    "choice_a": "Pontoon boats",
+    "choice_b": "Canoes and kayaks",
+    "choice_c": "Center console boats",
+    "choice_d": "Personal watercraft",
+    "correct_choice": "B",
+    "explanation": "Canoes and kayaks are specifically exempt from the additional throwable Type IV device requirement that otherwise applies to vessels 16 feet and longer.",
+    "weight": 3,
+    "source_note": "FWC PFD requirements by vessel length, throwable device exemption"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "How does a Type II PFD differ from a Type I offshore life jacket in its ability to right an unconscious wearer?",
+    "choice_a": "A Type II and a Type I perform identically at turning unconscious wearers face-up",
+    "choice_b": "A Type II is designed to turn unconscious wearers face-down for safety",
+    "choice_c": "A Type II is designed to turn some unconscious wearers face-up, while a Type I is designed to turn most unconscious wearers face-up",
+    "choice_d": "Only a Type II can turn an unconscious wearer face-up; a Type I cannot",
+    "correct_choice": "C",
+    "explanation": "A Type II near-shore vest is designed to turn some unconscious wearers face-up, a less reliable performance than a Type I offshore life jacket, which is designed to turn most unconscious wearers face-up.",
+    "weight": 3,
+    "source_note": "USCG PFD type classifications, Type I vs Type II turning performance"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What should a boater check before relying on an inflatable PFD for use on the water?",
+    "choice_a": "Inflatable PFDs require no inspection since they are always ready to use",
+    "choice_b": "Only the color of the outer fabric needs to be checked",
+    "choice_c": "The CO2 cartridge never needs to be checked once installed",
+    "choice_d": "That the inflator's status indicator shows it is properly armed and ready (commonly shown green) and that the CO2 cartridge is full and not corroded",
+    "correct_choice": "D",
+    "explanation": "Inflatable PFDs must be inspected before use to confirm the inflator's status indicator shows it is properly armed and ready and that the CO2 cartridge is full and not corroded; an inflator that is not ready will not deploy properly in an emergency.",
+    "weight": 3,
+    "source_note": "USCG inflatable PFD maintenance/serviceability guidance"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why is a throwable Type IV device not considered a substitute for a wearable PFD for children, non-swimmers, or unconscious persons?",
+    "choice_a": "It must be thrown to and actively grasped and held by the person in the water, which children, non-swimmers, or an unconscious person may be unable to do",
+    "choice_b": "Throwable devices are illegal for anyone to use in Florida",
+    "choice_c": "Throwable devices provide more buoyancy than any wearable PFD",
+    "choice_d": "Throwable devices automatically attach themselves to a person in the water",
+    "correct_choice": "A",
+    "explanation": "A Type IV throwable device must be actively grasped and held by the person in the water; because children, non-swimmers, and unconscious persons may not be able to do this, they still require their own wearable PFD rather than relying on a throwable device.",
+    "weight": 3,
+    "source_note": "USCG/NASBLA guidance on throwable device limitations"
+  }
+]

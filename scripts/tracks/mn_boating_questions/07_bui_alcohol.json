@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "BUI & Alcohol",
+    "question": "What alcohol concentration threshold applies to operating a motorboat while impaired in Minnesota, under Minn. Stat. 86B.33 (which incorporates the standards of Chapter 169A)?",
+    "choice_a": "0.20 or more",
+    "choice_b": "There is no alcohol threshold for boating in Minnesota",
+    "choice_c": "0.02 for any operator regardless of age",
+    "choice_d": "0.08 or more, the same threshold used for driving a motor vehicle while impaired",
+    "correct_choice": "D",
+    "explanation": "Minnesota's boating-while-impaired law incorporates the same 0.08 alcohol concentration threshold used under Chapter 169A for driving a motor vehicle, applying the identical standard to motorboat operation on the state's waters.",
+    "weight": 4,
+    "source_note": "Minn. Stat. 86B.33 (operating while impaired), incorporating Minn. Stat. 169A alcohol concentration standard"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Under Minnesota law, can a boat owner face a penalty for allowing someone else to operate their motorboat while intoxicated?",
+    "choice_a": "Yes -- Minn. Stat. 86B.33 makes it a misdemeanor for an owner to knowingly permit a person under the influence of alcohol, a controlled substance, or another intoxicating substance to operate the owner's motorboat",
+    "choice_b": "No, only the operator can ever be held responsible",
+    "choice_c": "Owners are only liable if they are also aboard the vessel",
+    "choice_d": "This applies only to owners of personal watercraft",
+    "correct_choice": "A",
+    "explanation": "Minnesota law extends liability beyond the impaired operator: an owner who knowingly lets an intoxicated person operate their motorboat commits a misdemeanor, similar to how a vehicle owner can face liability for knowingly allowing an impaired person to drive.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.33 (owner liability for permitting an intoxicated operator)"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "What happens to a person's driver's license consequences if they are convicted of operating a motorboat while impaired in Minnesota?",
+    "choice_a": "Boating convictions never have any effect on a driver's license",
+    "choice_b": "Minnesota law applies the same license revocation, suspension, and cancellation procedures used for impaired driving (Chapters 169A and 171) to a BWI conviction, meaning a boating impairment offense can affect driving privileges",
+    "choice_c": "Only a boat registration is affected, never a driver's license",
+    "choice_d": "A BWI conviction automatically restores a suspended driver's license",
+    "correct_choice": "B",
+    "explanation": "Minnesota cross-applies the license revocation, suspension, and cancellation framework from its impaired-driving statutes to boating-while-impaired offenses, so a BWI conviction can carry consequences for a person's driver's license, not just their boating privileges.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.33 (cross-application of driver's license penalties to BWI)"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "What special equipment requirement can Minnesota impose on a person enrolled in the state's ignition interlock program who wants to legally operate a motorboat?",
+    "choice_a": "Ignition interlock programs never apply to motorboats",
+    "choice_b": "The person must surrender their boat permanently",
+    "choice_c": "The motorboat may be operated only if it is equipped with an approved ignition interlock device, and all program requirements are met",
+    "choice_d": "No equipment is ever required for interlock program participants",
+    "correct_choice": "C",
+    "explanation": "Minnesota extends its ignition interlock program to motorboats: a person enrolled in the program may only operate a motorboat if it is fitted with an approved ignition interlock device and they otherwise comply with program requirements, closing a potential loophole where someone barred from driving could still operate impaired on the water.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.33 (ignition interlock program applied to motorboat operation)"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Why does alcohol impair boating ability even at levels some people consider \"a little buzzed\"?",
+    "choice_a": "Alcohol has no additional effect on the water compared to on land",
+    "choice_b": "Alcohol only impairs vision, not balance or judgment",
+    "choice_c": "Boater's fatigue counteracts alcohol's effects, making drinking safer on the water",
+    "choice_d": "The combined effects of sun, wind, noise, vibration, and motion on the water (\"boater's fatigue\") intensify alcohol's impairing effects on balance, judgment, and reaction time compared to the same amount consumed on land",
+    "correct_choice": "D",
+    "explanation": "Sun exposure, wind, engine noise, vibration, and the constant motion of the boat combine to produce \"boater's fatigue,\" which compounds alcohol's impairing effects on balance, judgment, coordination, and reaction time more than the same amount of alcohol would on land.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (boater's fatigue and alcohol interaction), cited in DNR boating safety materials"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Approximately what share of fatal Minnesota boating accidents does the DNR report as involving alcohol?",
+    "choice_a": "About 30 percent",
+    "choice_b": "Alcohol is never a factor in any Minnesota boating fatality",
+    "choice_c": "Approximately 95 percent",
+    "choice_d": "Exactly 1 percent",
+    "correct_choice": "A",
+    "explanation": "The Minnesota DNR's own boating safety materials state that alcohol is involved in about 30 percent of fatal boat accidents in Minnesota, making impaired operation one of the state's leading contributing factors in fatal incidents.",
+    "weight": 4,
+    "source_note": "Minnesota DNR boat and water safety program materials (alcohol involvement in fatal accidents)"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "How does Minnesota law treat a passenger under age 14 who dies in a boating accident, in terms of alcohol/drug testing?",
+    "choice_a": "Every fatality of any age must be tested regardless of role or timing",
+    "choice_b": "Testing to detect alcohol and drugs is mandated only for operators killed in the accident and for passengers or drowning victims age 14 or older who die within four hours of the incident, not for those under 14",
+    "choice_c": "Testing is entirely optional in every case",
+    "choice_d": "Only the boat's owner is tested, never victims",
+    "correct_choice": "B",
+    "explanation": "Minnesota's coroner reporting statute (Minn. Stat. 86B.335) requires alcohol and drug testing for operators killed in a watercraft accident and for passengers or drowning victims age 14 or older who die within four hours of the incident, with the data compiled by the DNR for statistical reporting.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.335 (coroner reports; mandatory testing for certain watercraft fatalities)"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Is it only the boat operator who can be impaired in a way that creates danger aboard a Minnesota vessel?",
+    "choice_a": "Yes, passengers cannot become impaired in any legally relevant way",
+    "choice_b": "Passenger behavior has no bearing on vessel safety",
+    "choice_c": "No -- an intoxicated passenger can also endanger everyone aboard by falling overboard, capsizing a small boat while moving around, or interfering with the operator, so responsible boating applies to the whole crew, not just the operator",
+    "choice_d": "Only the registered owner's sobriety matters",
+    "correct_choice": "C",
+    "explanation": "An intoxicated passenger poses real risks even if they are not operating the vessel -- unsteady movement can capsize a small boat, and a passenger can fall overboard or distract the operator -- so boating safety guidance treats alcohol as a whole-crew concern, not solely an operator issue.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (passenger impairment risk), consistent with NASBLA-aligned course guidance"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "What best explains why Minnesota law enforcement can request a preliminary breath test from a boat operator suspected of impairment, similar to a roadside stop?",
+    "choice_a": "Because breath tests are legally impossible to administer on the water",
+    "choice_b": "Because Minnesota boating law is entirely separate from and unrelated to its DWI law",
+    "choice_c": "Because only a warrant obtained days later can authorize any test",
+    "choice_d": "Because Minn. Stat. 86B.33 applies impaired-operation and testing standards from the vehicle DWI framework (Chapter 169A) to watercraft operators, giving officers comparable authority on the water as on the road",
+    "correct_choice": "D",
+    "explanation": "By cross-referencing the DWI framework in Chapter 169A, Minnesota's boating-while-impaired statute gives conservation officers and other peace officers testing and enforcement tools on the water that closely mirror those used for impaired driving on the road.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.33 (incorporation of Chapter 169A testing and enforcement standards)"
+  }
+]

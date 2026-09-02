@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under NRS 488.405, what blood or breath alcohol concentration establishes that a vessel operator is legally under the influence in Nevada?",
+    "choice_a": "There is no defined blood alcohol threshold under Nevada boating law",
+    "choice_b": "0.08 or more grams of alcohol per 100 milliliters of blood or per 210 liters of breath",
+    "choice_c": "0.15 or more",
+    "choice_d": "0.02 or more",
+    "correct_choice": "B",
+    "explanation": "NRS 488.405 sets the same 0.08 blood/breath alcohol concentration threshold used in Nevada's impaired-driving law as the standard for boating under the influence (BUI).",
+    "weight": 4,
+    "source_note": "NRS 488.405 (concentration of alcohol establishing violation)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "What does NRS 488.400 prohibit regarding vessel operation?",
+    "choice_a": "Boating under the influence is not addressed anywhere in Nevada law",
+    "choice_b": "Only passengers, never operators, can be charged under this statute",
+    "choice_c": "Operating or being in actual physical control of a vessel while intoxicated or under the influence of a controlled substance",
+    "choice_d": "Operating a vessel with any amount of caffeine in the operator's system",
+    "correct_choice": "C",
+    "explanation": "NRS 488.400 makes it unlawful to operate, or be in actual physical control of, a vessel underway while intoxicated or under the influence of a controlled substance.",
+    "weight": 4,
+    "source_note": "NRS 488.400 (unlawful operation of vessel while intoxicated)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Why is alcohol especially dangerous on the water compared to driving a vehicle, even at the same blood alcohol concentration?",
+    "choice_a": "Alcohol has no additional effect on boaters compared to drivers",
+    "choice_b": "Water reflects sunlight in a way that cancels out alcohol's effects",
+    "choice_c": "Boaters are legally allowed a higher blood alcohol limit than drivers",
+    "choice_d": "\"Boater's fatigue\" from sun, wind, noise, vibration, and glare intensifies alcohol's effects on balance, judgment, and reaction time faster than on land",
+    "correct_choice": "D",
+    "explanation": "Sun, wind, engine noise, vibration, and motion, commonly called \"boater's fatigue,\" compound the impairing effects of alcohol on balance, coordination, judgment, and reaction time more quickly than on land, making a given BAC more dangerous on the water.",
+    "weight": 3,
+    "source_note": "Universal boater's fatigue and alcohol-impairment principle, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Can a Nevada boating officer request a preliminary breath or field sobriety test from a vessel operator suspected of BUI?",
+    "choice_a": "Yes, a peace officer with authority over Nevada waters can investigate suspected BUI and request testing similar to impaired-driving enforcement on the road",
+    "choice_b": "No, testing is never permitted on the water under any circumstance",
+    "choice_c": "Only a federal agent may request such a test on Nevada waters",
+    "choice_d": "Testing is permitted only if the vessel is a PWC",
+    "correct_choice": "A",
+    "explanation": "Nevada peace officers with jurisdiction over its waters, similar to those enforcing impaired-driving laws on roads, can investigate and test a vessel operator suspected of boating under the influence.",
+    "weight": 3,
+    "source_note": "NRS 488.400/488.405 (BUI enforcement) combined with general Nevada peace officer enforcement authority on state waters"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "What kind of operation is prohibited as \"reckless\" that is commonly seen and enforced on crowded waters like Lake Mead's marina areas?",
+    "choice_a": "Anchoring in a designated anchorage area",
+    "choice_b": "Weaving at high speed through anchored or slow-moving vessels, or jumping a wake dangerously close to another boat",
+    "choice_c": "Traveling at a steady, moderate speed in open water with no other vessels nearby",
+    "choice_d": "Idling at a fuel dock",
+    "correct_choice": "B",
+    "explanation": "Weaving through congested traffic at high speed or wake-jumping dangerously close to another vessel are classic examples of reckless operation that put other boaters at serious risk and are actively enforced in busy areas like Lake Mead's marinas.",
+    "weight": 3,
+    "source_note": "Universal reckless-operation examples, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "How does drug impairment relate to Nevada's BUI law under NRS 488.400?",
+    "choice_a": "Prescription medication use is always exempt from any impairment concern",
+    "choice_b": "Drug impairment is only relevant for commercial vessel operators",
+    "choice_c": "Operating a vessel while under the influence of a controlled substance is prohibited in the same statute that addresses alcohol intoxication",
+    "choice_d": "Only alcohol is addressed by Nevada's boating impairment law; drug impairment is entirely unregulated on the water",
+    "correct_choice": "C",
+    "explanation": "NRS 488.400 addresses both intoxication from alcohol and impairment from a controlled substance under the same prohibition against unlawfully operating a vessel while impaired.",
+    "weight": 3,
+    "source_note": "NRS 488.400 (unlawful operation of vessel while intoxicated or under influence of controlled substance)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Why might a passenger who has been drinking still pose a safety risk even if they are not the vessel's operator?",
+    "choice_a": "Passengers who are not steering the boat face no additional risk from alcohol",
+    "choice_b": "Nevada law only restricts alcohol use by the operator, and passenger drinking carries no risk to safety",
+    "choice_c": "A passenger's alcohol use is legally and practically irrelevant to boating safety",
+    "choice_d": "An impaired passenger is more likely to fall overboard, disrupt the boat's balance, or interfere with the operator, and cold water or heat can worsen the effects of alcohol on anyone aboard",
+    "correct_choice": "D",
+    "explanation": "Alcohol affects balance and judgment for anyone aboard, not just the operator; an impaired passenger is more likely to fall overboard or shift weight suddenly, and cold water or heat exposure common on Nevada's reservoirs can intensify those effects.",
+    "weight": 2,
+    "source_note": "Universal alcohol-and-passenger-safety principle, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "What is a practical strategy recommended for a group planning to drink alcohol during a day on Lake Mead or Lake Tahoe?",
+    "choice_a": "Designate a sober operator for the entire outing, just as with driving, since operating a vessel while impaired carries the same real risk as impaired driving",
+    "choice_b": "Alcohol has no effect on boat-handling ability so no precautions are needed",
+    "choice_c": "Only the fastest boat in a group needs a sober operator",
+    "choice_d": "Switching drivers mid-lake resets any accumulated blood alcohol level",
+    "correct_choice": "A",
+    "explanation": "Just as with driving, designating a sober operator for the entire outing is the most effective way to prevent boating under the influence and its serious safety and legal consequences.",
+    "weight": 2,
+    "source_note": "Universal designated-sober-operator guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "What can happen to a person's boating privileges or record following a BUI conviction in Nevada, similar to an impaired-driving conviction?",
+    "choice_a": "BUI convictions are automatically expunged after 24 hours",
+    "choice_b": "The person can face criminal penalties, fines, and a record that can affect insurance and, upon repeat offenses, may lead to enhanced penalties",
+    "choice_c": "There are no consequences of any kind for a BUI conviction",
+    "choice_d": "A BUI conviction can only affect a person's ability to drive a car, never their boating record",
+    "correct_choice": "B",
+    "explanation": "As with impaired driving, a BUI conviction can bring criminal penalties, fines, and a record that affects insurance rates, with repeat offenses generally leading to enhanced penalties under Nevada law.",
+    "weight": 2,
+    "source_note": "NRS 488.400/488.405 (BUI penalties) combined with general impaired-operation consequences"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Which of the following is an example of reckless operation that could also expose an operator to a negligent homicide or serious-injury charge if it causes a collision?",
+    "choice_a": "Anchoring overnight in a designated anchorage",
+    "choice_b": "Displaying proper navigation lights after dark",
+    "choice_c": "Operating at excessive speed through a crowded anchorage in willful disregard for the safety of others",
+    "choice_d": "Operating at idle speed while docking",
+    "correct_choice": "C",
+    "explanation": "Reckless operation, such as excessive speed through a crowded anchorage in willful disregard for others' safety, is exactly the kind of conduct that can escalate to serious criminal charges if it results in a collision causing injury or death.",
+    "weight": 3,
+    "source_note": "Universal reckless-operation and consequence framework, NASBLA-aligned boating safety curriculum"
+  }
+]

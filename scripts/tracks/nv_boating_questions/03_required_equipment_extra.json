@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under NRS 488.187, what must a human-powered vessel such as a canoe or kayak have available if it is operated after dark, since it is not required to carry fixed running lights like a motorboat?",
+    "choice_a": "Nothing; human-powered vessels are exempt from all lighting rules at any hour",
+    "choice_b": "An electric torch or lighted lantern kept ready at hand and shown in time to prevent a collision",
+    "choice_c": "A full set of red and green sidelights identical to a motorboat's",
+    "choice_d": "A rotating emergency beacon",
+    "correct_choice": "B",
+    "explanation": "NRS 488.187 requires a human-powered vessel operated after dark to have an electric torch or lighted lantern ready at hand, to be shown in time to prevent a collision, since it is not required to carry the fixed running lights a motorboat must display.",
+    "weight": 3,
+    "source_note": "NRS 488.187 (navigation light requirements by vessel class; human-powered vessel lighting)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under NRS 488.195, what does Nevada law require regarding a vessel's engine exhaust, and what is the narrow exception?",
+    "choice_a": "Exhaust must be effectively muffled and cutouts that vent unmuffled exhaust are prohibited, except for a vessel competing in a properly permitted regatta or race",
+    "choice_b": "No exhaust regulation applies to any Nevada vessel",
+    "choice_c": "Mufflers are required only on vessels longer than 65 feet",
+    "choice_d": "Unmuffled exhaust cutouts are always permitted on any Nevada lake",
+    "correct_choice": "A",
+    "explanation": "NRS 488.195 requires a vessel's engine exhaust to be effectively muffled and prohibits cutouts that bypass the muffler to vent unmuffled exhaust, with a narrow exception for a vessel operating in a regatta or race under a permit issued for that event.",
+    "weight": 3,
+    "source_note": "NRS 488.195 (muffling of exhaust; cutouts prohibited; regatta/race exception)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under NRS 488.197, may a private recreational boater install and use a siren on their vessel?",
+    "choice_a": "Yes, sirens are unrestricted on any Nevada vessel",
+    "choice_b": "Sirens are prohibited on Nevada vessels except on authorized emergency vessels approved for that use",
+    "choice_c": "Sirens are required equipment on every motorboat",
+    "choice_d": "Sirens are permitted only on personal watercraft",
+    "correct_choice": "B",
+    "explanation": "NRS 488.197 prohibits sirens on Nevada vessels except on authorized emergency vessels, reserving that distinctive sound-signaling device for legitimate emergency response rather than private recreational use.",
+    "weight": 2,
+    "source_note": "NRS 488.197 (sirens prohibited except on authorized emergency vessels)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under NRS 488.320, what must a vessel with an onboard toilet have to legally operate on Nevada waters such as Lake Mead or Lake Tahoe?",
+    "choice_a": "No equipment is required if the toilet is rarely used",
+    "choice_b": "A functioning, U.S. Coast Guard-approved marine sanitation device designed to prevent the overboard discharge of treated or untreated sewage, and discharging sewage directly into Nevada waters is unlawful",
+    "choice_c": "Only a warning sign posted near the toilet",
+    "choice_d": "A permit renewed annually with no equipment requirement",
+    "correct_choice": "B",
+    "explanation": "NRS 488.320 requires a vessel equipped with an onboard toilet to have a Coast Guard-approved marine sanitation device that prevents the overboard discharge of sewage, and makes it unlawful to discharge sewage directly into Nevada waters like Lake Mead or Lake Tahoe.",
+    "weight": 3,
+    "source_note": "NRS 488.320 (use of approved marine sanitation device required; discharge of sewage prohibited)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under NRS 488.585, what speed restriction applies to a motorboat equipped with an engine cut-off switch if that switch or its link is missing, disconnected, or not working properly?",
+    "choice_a": "There is no restriction as long as the operator is experienced",
+    "choice_b": "The boat must not exceed 5 nautical miles per hour, and if the switch is functional, the link must be attached to the operator's body, clothing, or life jacket before exceeding that speed",
+    "choice_c": "The boat may be operated at full throttle regardless of the switch's condition",
+    "choice_d": "The restriction applies only to vessels over 65 feet",
+    "correct_choice": "B",
+    "explanation": "NRS 488.585 prohibits operating a motorboat above 5 nautical miles per hour if its engine cut-off switch or link is missing, disconnected, or not operating properly, and requires the link to be attached to the operator when exceeding that speed if the system is functional.",
+    "weight": 3,
+    "source_note": "NRS 488.585 (operation of motorboat above certain speed prohibited unless engine cut-off switch present, connected, and operating properly)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under NRS 488.590, is overloading a vessel beyond its rated capacity treated as a separate violation from the federal capacity-plate requirement?",
+    "choice_a": "No, overloading is legal as long as the boat still floats",
+    "choice_b": "Yes, NRS 488.590 independently prohibits overloading a vessel, in addition to the federal requirement that many vessels carry a capacity plate showing maximum persons and weight",
+    "choice_c": "Overloading rules apply only to houseboats",
+    "choice_d": "Overloading is regulated only by insurance companies, not by Nevada law",
+    "correct_choice": "B",
+    "explanation": "NRS 488.590 makes overloading a vessel its own prohibited act under Nevada law, standing alongside (not replacing) the federal capacity-plate requirement that tells an operator the maximum persons and weight a vessel can safely carry.",
+    "weight": 3,
+    "source_note": "NRS 488.590 (overloading vessel prohibited) combined with the federal capacity-plate requirement (33 CFR 183)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "How are the portable marine fire extinguishers required aboard most gasoline-powered vessels classified?",
+    "choice_a": "By color only, with no functional rating",
+    "choice_b": "As B-I or B-II rated devices, dry-chemical or CO2 types effective on flammable-liquid and electrical fires typical of an engine or fuel compartment",
+    "choice_c": "As Type I through Type V, the same system used for life jackets",
+    "choice_d": "By horsepower rating of the vessel's engine",
+    "correct_choice": "B",
+    "explanation": "Required marine fire extinguishers are rated B-I or B-II, portable dry-chemical or CO2 devices designed to be effective against flammable-liquid and electrical fires, the kind most likely to occur in an engine or fuel compartment.",
+    "weight": 2,
+    "source_note": "Universal federal marine fire extinguisher classification (B-I/B-II, 46 CFR/33 CFR), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why does it matter that pyrotechnic visual distress signals, such as flares, carry a Coast Guard-stamped expiration date, generally around 42 months from manufacture?",
+    "choice_a": "Expiration dates on flares are purely informational and have no legal significance",
+    "choice_b": "A flare's chemical components can degrade over time, so an expired flare does not satisfy the visual distress signal carriage requirement even though expired flares should still be kept aboard as backup",
+    "choice_c": "Flares never expire once purchased",
+    "choice_d": "Only flares used on Lake Tahoe have expiration dates",
+    "correct_choice": "B",
+    "explanation": "A pyrotechnic flare's chemical components can degrade over time, so a flare stamped with an expiration date around 42 months from manufacture no longer counts toward the legal visual distress signal requirement once expired, even though many boaters keep expired flares aboard in addition to current ones.",
+    "weight": 2,
+    "source_note": "Universal federal visual distress signal expiration standard (33 CFR 175), NASBLA-aligned boating safety curriculum"
+  }
+]

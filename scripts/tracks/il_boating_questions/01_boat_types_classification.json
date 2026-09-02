@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Under Illinois law (625 ILCS 45/5-18), a person born on or after January 1, 1998 may operate a vessel powered by a motor of more than 10 horsepower only if they:",
+    "choice_a": "Have a valid Boating Safety Certificate accepted by the Illinois DNR",
+    "choice_b": "Own the vessel outright",
+    "choice_c": "Are accompanied by any adult passenger",
+    "choice_d": "Have a valid driver's license",
+    "correct_choice": "A",
+    "explanation": "Illinois's Boat Registration and Safety Act requires anyone born on or after January 1, 1998 to hold a valid Boating Safety Certificate accepted by the DNR before operating a motorized vessel with more than 10 hp.",
+    "weight": 3,
+    "source_note": "Handbook of Illinois Boating Laws and Responsibilities (2023), 625 ILCS 45/5-18"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How does Illinois's Boat Registration and Safety Act define a personal watercraft (PWC), such as a Jet Ski or WaveRunner?",
+    "choice_a": "Any vessel that can exceed 30 mph",
+    "choice_b": "A vessel less than 16 feet long that uses an inboard motor powering a water jet pump as its primary propulsion and is designed to be operated by a person sitting, standing, or kneeling on it rather than inside it",
+    "choice_c": "Any small boat with an outboard motor under 25 hp",
+    "choice_d": "A non-motorized paddle craft used for recreation",
+    "correct_choice": "B",
+    "explanation": "A PWC is a jet-drive vessel under 16 feet designed for the operator to sit, stand, or kneel on top of it, distinguishing it from a conventional motorboat that the operator sits or stands inside.",
+    "weight": 2,
+    "source_note": "625 ILCS 45 PWC definition; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is the primary difference between a displacement hull and a planing hull?",
+    "choice_a": "A displacement hull is only found on personal watercraft",
+    "choice_b": "There is no meaningful difference between the two hull types",
+    "choice_c": "A displacement hull pushes through the water and is limited in top speed by its waterline length, while a planing hull is designed to rise up and glide across the water's surface at higher speeds",
+    "choice_d": "A planing hull can never be used in open water",
+    "correct_choice": "C",
+    "explanation": "Displacement hulls (common on sailboats, trawlers, and canoes) push through the water and are speed-limited by their length, while planing hulls (common on many powerboats) lift and skim across the surface as speed increases.",
+    "weight": 2,
+    "source_note": "Universal hull-design fundamentals covered in NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a 'pontoon boat'?",
+    "choice_a": "A vessel that can only travel on Lake Michigan",
+    "choice_b": "A type of sailboat with a single hull and no motor",
+    "choice_c": "A vessel that must always be registered as a PWC",
+    "choice_d": "A flat-decked vessel supported by two or more airtight, buoyant cylindrical tubes (pontoons) instead of a traditional hull",
+    "correct_choice": "D",
+    "explanation": "Pontoon boats float on two or more sealed buoyant tubes rather than a conventional hull, providing a stable, flat deck popular for cruising and fishing on Illinois's inland lakes.",
+    "weight": 1,
+    "source_note": "General boat-type terminology used across NASBLA-based boater education courses"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Which of these vessel types is exempt from Illinois's registration and titling requirement under 625 ILCS 45/3?",
+    "choice_a": "Unpowered vessels such as canoes, kayaks, and paddleboards",
+    "choice_b": "A 20-foot motorized pontoon boat used on a private lake",
+    "choice_c": "A personal watercraft used year-round on the Illinois River",
+    "choice_d": "A bass boat with a 90-horsepower outboard motor",
+    "correct_choice": "A",
+    "explanation": "Illinois exempts unpowered vessels, including canoes, kayaks, and paddleboards, from the state registration and titling requirement, along with government-owned vessels, lifeboats, and certain out-of-state or documented vessels using Illinois waters temporarily.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/3; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What generally distinguishes an inboard engine from an outboard engine?",
+    "choice_a": "There is no functional difference between inboard and outboard engines",
+    "choice_b": "An inboard engine is mounted inside the hull and connects to the propeller through a shaft, while an outboard engine is a self-contained unit mounted on the outside of the transom",
+    "choice_c": "An inboard engine only exists on sailboats",
+    "choice_d": "An outboard engine cannot be tilted or removed",
+    "correct_choice": "B",
+    "explanation": "Inboard engines sit inside the hull and drive the propeller via a shaft, whereas outboard engines are complete, removable propulsion units mounted on the transom that can be tilted out of the water.",
+    "weight": 1,
+    "source_note": "General propulsion-system terminology used in NASBLA-based boating courses"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "A vessel's 'capacity plate,' required on most motorized boats less than 20 feet long, provides which information?",
+    "choice_a": "The name of the vessel's previous owner",
+    "choice_b": "The vessel's expected resale value",
+    "choice_c": "The maximum recommended number of persons, maximum weight capacity, and maximum horsepower rating set by the manufacturer",
+    "choice_d": "The vessel's original purchase price",
+    "correct_choice": "C",
+    "explanation": "The federally required capacity plate lists a boat's maximum recommended persons, weight capacity, and horsepower, and Illinois law makes it illegal to exceed these limits.",
+    "weight": 2,
+    "source_note": "USCG capacity-plate standard; 625 ILCS 45/5-4 and 45/5-6 overloading/overpowering provisions"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Which body of water bordering Illinois is subject to additional federal Great Lakes navigation and visual distress signal rules not required on many of the state's smaller inland lakes?",
+    "choice_a": "Rend Lake",
+    "choice_b": "Lake Shelbyville",
+    "choice_c": "Carlyle Lake",
+    "choice_d": "Lake Michigan",
+    "correct_choice": "D",
+    "explanation": "Illinois's boating handbook specifically requires vessels on Lake Michigan to carry USCG-approved visual distress signals, reflecting the additional federal requirements that apply on the Great Lakes and other coastal waters.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/4-12; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a 'specialty prop-craft' as referenced alongside PWC in Illinois boating law?",
+    "choice_a": "A small, jet- or propeller-driven vessel similar in operation and risk profile to a personal watercraft, subject to the same PFD and engine cut-off switch requirements as PWC",
+    "choice_b": "A type of unpowered canoe",
+    "choice_c": "A large houseboat used for overnight trips",
+    "choice_d": "A vessel exempt from all Illinois boating laws",
+    "correct_choice": "A",
+    "explanation": "Illinois law groups 'specialty prop-craft' with PWC for safety purposes, applying the same all-aboard PFD requirement and engine cut-off switch rules because these small, high-maneuverability craft share similar operating risks.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/4-1 and 45/4-11; Handbook of Illinois Boating Laws and Responsibilities"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Registration & Titling",
+    "question": "What must you generally have to operate or moor a vessel on Washington's waters?",
+    "choice_a": "Only a fishing license",
+    "choice_b": "Only proof of purchase",
+    "choice_c": "A Washington title, current registration certificate, and current registration decals",
+    "choice_d": "Nothing is required for vessels used exclusively on private lakes",
+    "correct_choice": "C",
+    "explanation": "Washington generally requires a title, current registration certificate, and current registration decals to operate or moor a vessel, with limited exceptions such as small unpowered vessels.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Registering and Titling Your Vessel"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Which vessels are exempt from Washington's registration requirement?",
+    "choice_a": "All vessels under 40 feet in length",
+    "choice_b": "Any vessel used fewer than 100 days per year",
+    "choice_c": "There are no exemptions in Washington",
+    "choice_d": "Non-motorized vessels like canoes and kayaks, sailboats under 16 feet without a motor, and vessels under 16 feet with a motor of 10 horsepower or less used only on nonfederal waters",
+    "correct_choice": "D",
+    "explanation": "Exemptions include non-motorized vessels like canoes/kayaks, sailboats under 16 feet without a motor, and vessels under 16 feet with 10 hp or less used only on nonfederal waters; motorboats on federally controlled waters must be registered regardless of size.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Registering and Titling Your Vessel"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "How must a vessel's registration number be displayed?",
+    "choice_a": "Painted or affixed on the forward half of each side of the vessel, reading left to right, in at least three-inch-high bold block characters that contrast with the background, with letters separated from numbers by a space or hyphen",
+    "choice_b": "In any font or size as long as it's visible from shore",
+    "choice_c": "On the stern only, in any color",
+    "choice_d": "Only required on the port side of the vessel",
+    "correct_choice": "A",
+    "explanation": "The registration number must appear on the forward half of both sides of the bow, read left to right, in at least three-inch-high bold block characters contrasting with the background, with a space or hyphen separating the letters and numbers.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Registering and Titling Your Vessel"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Which registered vessels are subject to an annual excise tax on vessels?",
+    "choice_a": "All vessels regardless of length",
+    "choice_b": "Registered vessels 16 feet or longer, with exceptions such as commercial fishing vessels and government-owned vessels",
+    "choice_c": "Only vessels used exclusively for racing",
+    "choice_d": "Vessels under 16 feet only",
+    "correct_choice": "B",
+    "explanation": "Registered vessels 16 feet or longer are subject to the annual excise tax, with specific exemptions such as commercial fishing vessels, vessels under 16 feet, and vessels owned by government entities.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Annual Excise Tax on Vessels"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "How is Washington's annual vessel excise tax calculated?",
+    "choice_a": "A flat $50 fee for every registered vessel",
+    "choice_b": "5% of the vessel's purchase price",
+    "choice_c": "One-half of one percent (0.5%) of the vessel's fair market value or purchase price",
+    "choice_d": "There is no formula; it is set arbitrarily by the county",
+    "correct_choice": "C",
+    "explanation": "The excise tax is calculated at one-half of one percent (0.5%) of the vessel's fair market value, or the purchase price if it reflects fair market value.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Annual Excise Tax on Vessels"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Through what date is a Washington vessel registration valid, and when must it be renewed?",
+    "choice_a": "Valid for exactly five years from purchase",
+    "choice_b": "Valid indefinitely once issued",
+    "choice_c": "Valid only for the calendar year it was issued, ending December 31",
+    "choice_d": "Valid through June 30 each year; renewal begins July 1",
+    "correct_choice": "D",
+    "explanation": "A vessel's registration is valid through June 30 and must be renewed beginning July 1 of each year; courtesy renewal notices are no longer mailed.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Other Facts About Registration and Titling"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What is the Hull Identification Number (HIN)?",
+    "choice_a": "A unique 12-digit number assigned by the manufacturer to vessels built after 1972, distinguishing one vessel from another",
+    "choice_b": "The same number as the vessel's state registration number",
+    "choice_c": "A number only assigned to commercial vessels",
+    "choice_d": "An optional serial number with no legal significance",
+    "correct_choice": "A",
+    "explanation": "The HIN is a unique 12-digit number assigned by the manufacturer to vessels built after 1972, used to distinguish one vessel from another for identification and warranty purposes.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Hull Identification Number"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Where should you keep a record of your vessel's HIN, according to the handbook?",
+    "choice_a": "Nowhere -- there is no need to record it separately",
+    "choice_b": "In a place separate from your vessel, in case of warranty problems or theft",
+    "choice_c": "Only inside the vessel's glove compartment",
+    "choice_d": "Tattooed on the engine cover",
+    "correct_choice": "B",
+    "explanation": "The handbook recommends writing down your HIN and keeping the record separate from your vessel in case of warranty problems or theft.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Hull Identification Number"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "How does registration work for a vessel 'tender' with propulsion machinery less than 10 horsepower used only for direct ship-to-shore transportation?",
+    "choice_a": "It must have a completely separate, unrelated registration number",
+    "choice_b": "No registration numbers are ever required on tenders",
+    "choice_c": "It displays the parent vessel's registration numbers followed by the number '1' on both sides of the bow",
+    "choice_d": "It uses the operator's driver's license number instead",
+    "correct_choice": "C",
+    "explanation": "A tender under 10 horsepower used only for direct ship-to-shore transport displays the parent vessel's registration numbers followed by the number '1' (for example, WN 3717 ZW1).",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Registering and Titling Your Vessel"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Where can a Washington resident submit a vessel registration application and fees?",
+    "choice_a": "Only directly to the U.S. Coast Guard",
+    "choice_b": "Only online, with no in-person option",
+    "choice_c": "To the local sheriff's department exclusively",
+    "choice_d": "To the county auditor or a vehicle licensing subagent office",
+    "correct_choice": "D",
+    "explanation": "Registration applications and fees can be submitted to the county auditor or a vehicle licensing subagent office; locations are listed at www.dol.wa.gov.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Registering and Titling Your Vessel"
+  }
+]

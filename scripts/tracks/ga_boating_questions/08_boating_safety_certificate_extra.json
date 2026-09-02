@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "Under Georgia's vessel rental education rule, what must be true before a boat livery may rent a vessel with 10 horsepower or more to a customer?",
+    "choice_a": "The renter must be at least 21 years old, with no education requirement of any kind",
+    "choice_b": "The renter must pay a deposit and sign a liability waiver, with no age or education requirement",
+    "choice_c": "The renter must provide proof of boat trailer registration",
+    "choice_d": "The renter must be at least 16 years old and must have completed an approved Rental Education Course, unless they qualify for a recognized exemption",
+    "correct_choice": "D",
+    "explanation": "Georgia law bars boat liveries from renting a vessel of 10 hp or more to anyone under 16, and requires renters 16 or older to complete a DNR-approved Rental Education Course unless they hold a USCG master's license or a valid boater education card/out-of-state NASBLA-equivalent proof.",
+    "weight": 3,
+    "source_note": "O.C.G.A. § 52-7-8.3 (Operation of Watercraft; Identification; Operation by Minors); Ga. Comp. R. & Regs. r. 391-4-5-.22 (Education Requirement for Vessel Rental)"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "Once issued, how long is a Georgia Rental Education Certificate valid?",
+    "choice_a": "Six months from the date of issuance, and it is valid anywhere in the state of Georgia",
+    "choice_b": "Only for the remainder of the calendar year in which it was issued",
+    "choice_c": "24 hours, covering only the specific rental transaction for which it was issued",
+    "choice_d": "It never expires once issued",
+    "correct_choice": "A",
+    "explanation": "A Rental Education Certificate issued under Georgia's vessel rental rule is effective for six months after the date of issuance and is valid statewide.",
+    "weight": 2,
+    "source_note": "Ga. Comp. R. & Regs. r. 391-4-5-.22 (Education Requirement for Vessel Rental)"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "At minimum, what must a Georgia Rental Education Course cover before a renter may operate a rented vessel?",
+    "choice_a": "The identical six-hour classroom curriculum used for the standard DNR boater education course",
+    "choice_b": "A video of at least ten minutes on operator responsibility, safety equipment, navigation rules, and waterway markers, followed by a signed orientation safety checklist",
+    "choice_c": "Nothing beyond a verbal reminder from the rental counter clerk",
+    "choice_d": "A proctored 50-question written examination administered by DNR",
+    "correct_choice": "B",
+    "explanation": "Georgia's rental education requirement calls for a minimum ten-minute instructional video addressing operator responsibility, required safety equipment, navigation rules, and waterway markers, plus the renter signing an orientation safety checklist before operating the rented vessel.",
+    "weight": 2,
+    "source_note": "Ga. Comp. R. & Regs. r. 391-4-5-.22 (Education Requirement for Vessel Rental); confirmed on gadnr.org, 'Rental Boat Requirements'"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "May a boat livery legally rent a vessel of 10 horsepower or more to a 15-year-old if a competent adult will accompany them on the water?",
+    "choice_a": "Yes, as long as the accompanying adult signs a liability waiver",
+    "choice_b": "Yes, if the 15-year-old has completed the standard boater education course",
+    "choice_c": "No -- Georgia's rental rule sets a flat minimum rental age of 16, with no exception for adult accompaniment",
+    "choice_d": "Yes, rental liveries may rent to any age with parental permission",
+    "correct_choice": "C",
+    "explanation": "Unlike the 'competent adult' accompaniment option that lets a minor operate a smaller vessel they or their family own, Georgia's rental-specific rule sets an absolute minimum age of 16 to rent a vessel of 10 hp or more from a boat livery, with no adult-supervision exception.",
+    "weight": 3,
+    "source_note": "O.C.G.A. § 52-7-8.3; Ga. Comp. R. & Regs. r. 391-4-5-.22 (Education Requirement for Vessel Rental)"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "Under O.C.G.A. § 52-7-8.3, can a vessel owner allow someone else to operate their vessel in a way that violates Georgia's age and education requirements?",
+    "choice_a": "Yes, legal responsibility rests solely with the operator, never the owner",
+    "choice_b": "Yes, as long as the owner is not physically on board at the time",
+    "choice_c": "Yes, provided the owner carries boat liability insurance",
+    "choice_d": "No -- the statute also prohibits an owner from knowingly permitting another person to operate the vessel in violation of these requirements",
+    "correct_choice": "D",
+    "explanation": "O.C.G.A. § 52-7-8.3 extends responsibility beyond the operator: an owner may not permit another person to operate the vessel in violation of the statute's age and education provisions.",
+    "weight": 2,
+    "source_note": "O.C.G.A. § 52-7-8.3 (Operation of Watercraft; Identification; Operation by Minors)"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "What is the general penalty classification under Georgia law for violating the boating education requirements or DNR's boating rules and regulations?",
+    "choice_a": "A misdemeanor",
+    "choice_b": "A felony punishable by at least one year in prison",
+    "choice_c": "A civil infraction carrying no criminal penalty",
+    "choice_d": "Georgia law specifies no penalty for this type of violation",
+    "correct_choice": "A",
+    "explanation": "Except where otherwise specifically provided, any person who violates Georgia's boating article or a rule or regulation adopted under it -- including the mandatory education requirement -- is guilty of a misdemeanor.",
+    "weight": 2,
+    "source_note": "O.C.G.A. § 52-7-26 (Penalty)"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "After passing a DNR-approved online Georgia boater education course, how can a boater legally operate right away while the permanent card is still being mailed?",
+    "choice_a": "They may not legally operate a vessel until the permanent card physically arrives in the mail",
+    "choice_b": "By printing or emailing themselves a Temporary Boater Education Certificate, which is valid for 60 days while the permanent card arrives by mail (typically in about 3 to 5 weeks)",
+    "choice_c": "By calling the DNR Law Enforcement Division for a verbal verification code",
+    "choice_d": "The temporary certificate is valid indefinitely and no permanent card is ever issued",
+    "correct_choice": "B",
+    "explanation": "A boater who completes an approved online Georgia course can immediately print (or have emailed) a Temporary Boater Education Certificate proving course completion; it expires 60 days after completion, which is normally enough time for the permanent card to arrive by mail.",
+    "weight": 3,
+    "source_note": "Boat-Ed Georgia Boating Safety Course (DNR-approved provider), 'Georgia Boating License' course-completion page, boat-ed.com/georgia"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "Besides another U.S. state's NASBLA-approved boating education card, what other specific credential does Georgia's reciprocity policy recognize for visiting boaters?",
+    "choice_a": "A hunting license issued by any Canadian province",
+    "choice_b": "A commercial driver's license (CDL) from another U.S. state",
+    "choice_c": "A Canadian Pleasure Craft Operator Card that meets Transport Canada's requirements",
+    "choice_d": "Georgia's reciprocity policy recognizes no credential other than its own certificate",
+    "correct_choice": "C",
+    "explanation": "Georgia's stated reciprocity policy is that all states, territories, and provinces will recognize boating education cards meeting NASBLA requirements, and that Canadian Pleasure Craft Operator Cards meeting Transport Canada's requirements are likewise recognized for visiting boaters.",
+    "weight": 2,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Georgia Boating Laws & Regulations,' Reciprocity section, boat-ed.com/georgia/boating_law"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "How does Georgia law classify vessels by length, a classification tied to required equipment and to the age-based operating restrictions discussed elsewhere in state boating law?",
+    "choice_a": "Small, Medium, and Large, with no specific length cutoffs defined in the statute",
+    "choice_b": "Class I through Class V, based solely on engine horsepower rather than length",
+    "choice_c": "Georgia uses the same registration classes defined for aircraft",
+    "choice_d": "Class A (less than 16 feet), Class 1 (16 feet to less than 26 feet), Class 2 (26 feet to less than 40 feet), and Class 3 (40 feet or more)",
+    "correct_choice": "D",
+    "explanation": "O.C.G.A. § 52-7-8 divides vessels into four length-based classes -- Class A (under 16 ft), Class 1 (16 ft to under 26 ft), Class 2 (26 ft to under 40 ft), and Class 3 (40 ft or more) -- and this classification underlies both required-equipment rules and the minor operator restrictions tied to vessel length.",
+    "weight": 2,
+    "source_note": "O.C.G.A. § 52-7-8 (Classification of Vessels; Required Equipment)"
+  }
+]

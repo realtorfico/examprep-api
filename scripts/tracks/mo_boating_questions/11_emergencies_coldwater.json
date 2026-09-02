@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "If a small boat capsizes, what does boating safety training generally recommend the occupants do?",
+    "choice_a": "Immediately abandon the capsized boat and swim toward the nearest shore no matter the distance",
+    "choice_b": "Dive underneath the capsized hull to retrieve gear before doing anything else",
+    "choice_c": "Remove all clothing immediately to swim faster",
+    "choice_d": "Stay with the boat if possible, since it provides flotation and is much easier for rescuers to spot than a swimmer in the water",
+    "correct_choice": "D",
+    "explanation": "A capsized boat, even swamped or upside down, generally still floats and is far more visible to rescuers than a person swimming alone; occupants are usually safer staying with the vessel than attempting a long swim to shore, especially in cold or rough water.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (capsizing response), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is 'cold-water shock,' and why is it dangerous immediately after sudden immersion?",
+    "choice_a": "A involuntary gasp reflex and hyperventilation triggered by sudden cold-water immersion that can cause a person to inhale water and drown within the first minute, even if they are a strong swimmer",
+    "choice_b": "A minor, harmless sensation of coolness with no physical effect",
+    "choice_c": "A condition that only affects people who cannot swim",
+    "choice_d": "A delayed reaction that only occurs after an hour in the water",
+    "correct_choice": "A",
+    "explanation": "Cold-water shock triggers an involuntary gasp reflex and rapid, uncontrolled breathing within seconds of sudden immersion in cold water; if the face is underwater during that gasp, a person can inhale water and drown almost immediately, regardless of swimming ability.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (cold-water immersion, cold shock response)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the recommended body position for a lone person awaiting rescue in cold water while wearing a PFD, to conserve body heat?",
+    "choice_a": "Swimming vigorously at all times to generate body heat",
+    "choice_b": "The Heat Escape Lessening Posture (HELP): drawing knees to the chest and arms close to the sides to protect the body's major heat-loss areas",
+    "choice_c": "Spreading arms and legs out as far as possible to maximize surface area",
+    "choice_d": "Removing the PFD to swim more efficiently",
+    "correct_choice": "B",
+    "explanation": "The Heat Escape Lessening Posture (HELP) -- drawing the knees toward the chest and arms in close to the body -- protects the torso, groin, and armpits, which are major sites of heat loss, helping a PFD-wearing person conserve body heat while awaiting rescue.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Heat Escape Lessening Posture for cold-water survival)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "How should multiple people in cold water conserve body heat together while awaiting rescue?",
+    "choice_a": "Spread out as far apart as possible to cover more area for rescuers to find",
+    "choice_b": "Take turns submerging their heads to look for a way out",
+    "choice_c": "Huddle closely together, chest to chest, with arms around one another, which helps retain body heat better than swimming individually",
+    "choice_d": "Remove PFDs to swim faster toward each other",
+    "correct_choice": "C",
+    "explanation": "The 'huddle' technique -- group members pressing together chest-to-chest with arms around one another -- helps conserve collective body heat in cold water better than individuals swimming or floating separately, and also makes the group easier for rescuers to spot.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (huddle technique for group cold-water survival)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the first thing a boater should do if a fire breaks out aboard a vessel?",
+    "choice_a": "Immediately jump overboard without attempting to control the fire",
+    "choice_b": "Pour gasoline on the fire to smother it",
+    "choice_c": "Ignore the fire and continue at full throttle toward shore",
+    "choice_d": "Maneuver the boat to keep the fire downwind, cut off fuel and electrical power to the affected area, and use the onboard fire extinguisher aimed at the base of the flames",
+    "correct_choice": "D",
+    "explanation": "In an onboard fire, positioning the boat so the fire is downwind (reducing the wind's push on flames toward the crew) and cutting fuel/electrical sources before aiming an extinguisher at the base of the fire gives the best chance of controlling it before it spreads.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (onboard fire response), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the recommended immediate response if a person falls overboard from a moving vessel?",
+    "choice_a": "Immediately reduce throttle, turn to keep the person in sight, throw a floating object toward them, and maneuver back carefully to retrieve them, approaching from downwind or downcurrent",
+    "choice_b": "Continue at the same speed and circle back an hour later",
+    "choice_c": "Immediately jump in after them without a flotation device or plan",
+    "choice_d": "Speed away to get help, leaving the person alone in the water",
+    "correct_choice": "A",
+    "explanation": "The standard man-overboard response is to reduce speed, keep constant visual contact with the person in the water, throw a Type IV throwable device toward them, and carefully maneuver the boat back for a controlled approach, typically from downwind or downcurrent to avoid drifting into the person or striking them with the propeller.",
+    "weight": 5,
+    "source_note": "Universal boating safety fundamentals (man-overboard response procedure)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "Why is turning off the engine before attempting to pull a person from the water alongside the boat considered critical?",
+    "choice_a": "Engine noise has no bearing on the safety of the recovery",
+    "choice_b": "A spinning propeller near a person in the water can cause severe or fatal injury, so the engine should be shut off before anyone reaches toward the water to assist",
+    "choice_c": "Leaving the engine running always makes recovery faster and safer",
+    "choice_d": "This precaution only matters for sailboats, never powerboats",
+    "correct_choice": "B",
+    "explanation": "A rotating propeller poses a severe laceration and impact hazard to anyone in the water nearby; shutting off the engine before attempting to bring a person alongside the hull for recovery is a critical safety step in any man-overboard or swimmer-assist situation.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (propeller safety during recovery)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the purpose of filing a float plan with a family member or friend before heading out on a Missouri lake trip?",
+    "choice_a": "It is a legally mandatory document that must be filed with the Water Patrol before every trip",
+    "choice_b": "It replaces the need for any safety equipment aboard",
+    "choice_c": "It gives someone onshore key details -- planned route, destination, return time, and vessel description -- so they can alert authorities and provide useful search information if the boater does not return as expected",
+    "choice_d": "It has no practical safety benefit",
+    "correct_choice": "C",
+    "explanation": "A float plan is not legally required, but leaving one with a responsible person gives searchers a description of the vessel, planned route, and expected return time -- critical information that can dramatically speed up a search-and-rescue response if a boater fails to return on time.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (float plans), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What immediate step should a boater whose vessel is taking on water and sinking take regarding communication and survival gear?",
+    "choice_a": "Turn off all electronics immediately and wait silently",
+    "choice_b": "Abandon ship immediately, swimming away from the boat before attempting any distress call",
+    "choice_c": "There is nothing useful to do before a vessel sinks",
+    "choice_d": "Broadcast a distress call with location if possible, don PFDs, and prepare to stay with the vessel as long as it provides flotation rather than swimming away prematurely",
+    "correct_choice": "D",
+    "explanation": "When a vessel is taking on water, broadcasting a distress call (a VHF radio 'Mayday' call with position, if available) and getting everyone into PFDs are priorities, and staying with a partially swamped or sinking vessel as long as it offers flotation is generally safer than swimming away too soon.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (sinking/swamping emergency response)"
+  }
+]

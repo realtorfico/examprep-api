@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under RSMo 306.100, what muffling requirement applies to Missouri motorboats?",
+    "choice_a": "Every motorboat must have its engine equipped with an effective muffling or noise-suppression system to prevent excessive or unusual noise, except when the vessel is competing in a properly sanctioned race",
+    "choice_b": "No motorboat in Missouri is required to have any exhaust muffling",
+    "choice_c": "Muffling is only required on vessels used for fishing tournaments",
+    "choice_d": "Mufflers are optional and never enforced",
+    "correct_choice": "A",
+    "explanation": "Missouri's equipment statute requires motorboats to have an effective muffling system on the exhaust to prevent excessive noise, with an exception for vessels operating in a properly sanctioned race under conditions approved for the event.",
+    "weight": 3,
+    "source_note": "RSMo 306.100 (muffling/exhaust noise-suppression requirement)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "In the 'B-1' fire extinguisher rating required on many Missouri vessels, what do the letter and number generally indicate?",
+    "choice_a": "The letter and number are purely a brand name with no technical meaning",
+    "choice_b": "The letter 'B' indicates the extinguisher is rated for flammable liquid fires (such as gasoline), while the number indicates a relative extinguishing capacity/size class",
+    "choice_c": "'B-1' means the extinguisher works only on electrical fires",
+    "choice_d": "'B-1' indicates the extinguisher must be replaced exactly one time per year",
+    "correct_choice": "B",
+    "explanation": "The 'B' classification identifies an extinguisher rated for flammable liquid fires like gasoline or oil -- the type of fire most likely aboard a boat -- while the accompanying number reflects a relative capacity/size classification, with higher numbers indicating a larger extinguishing capacity.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (fire extinguisher classification), consistent with RSMo 306.100's B-1 extinguisher requirement"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "How does Missouri's required fire extinguisher count generally scale for larger Class 2 and Class 3 vessels compared to a Class A or Class 1 boat, under RSMo 306.100?",
+    "choice_a": "Larger vessels require additional extinguishers or an approved fixed fire-extinguishing system, beyond the single B-1 extinguisher required for smaller Class A and Class 1 motorboats",
+    "choice_b": "Larger vessels are completely exempt from carrying any fire extinguisher",
+    "choice_c": "Every vessel class requires exactly the same single extinguisher regardless of size",
+    "choice_d": "Fire extinguisher requirements decrease as vessel length increases",
+    "correct_choice": "A",
+    "explanation": "Missouri's equipment statute scales fire protection with vessel size: Class A and Class 1 motorboats carrying flammable materials need at least one B-1 extinguisher, while larger Class 2 and Class 3 vessels must carry additional extinguishers or an approved fixed extinguishing system appropriate to their larger enclosed spaces and fuel capacity.",
+    "weight": 3,
+    "source_note": "RSMo 306.100 (fire extinguisher requirements scaled by vessel class)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why does a vessel with an installed toilet require a Marine Sanitation Device (MSD) under federal boating regulations that apply on Missouri waters?",
+    "choice_a": "MSDs are purely a comfort feature with no environmental or legal basis",
+    "choice_b": "A federally required MSD treats or holds sewage aboard a vessel so that raw, untreated waste is not discharged directly into lakes and rivers, protecting water quality",
+    "choice_c": "MSDs are required only on vessels used for scuba diving",
+    "choice_d": "MSDs are optional decorative accessories",
+    "correct_choice": "B",
+    "explanation": "Federal Clean Water Act regulations require vessels with installed toilets to carry an approved Marine Sanitation Device that treats or holds sewage rather than discharging it untreated, protecting water quality on heavily used Missouri reservoirs like the Lake of the Ozarks.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (federal Marine Sanitation Device requirement, Clean Water Act), applied to Missouri reservoir boating"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Although not always statutorily mandated on smaller vessels, why is a functioning bilge pump (manual or electric) considered important safety equipment on larger Missouri boats?",
+    "choice_a": "A bilge pump removes water that accumulates in the hull from rain, waves, or a small leak, helping prevent a slow flooding situation from becoming a swamping or sinking emergency",
+    "choice_b": "A bilge pump is used only to fill the fuel tank",
+    "choice_c": "Bilge pumps have no safety function on any vessel",
+    "choice_d": "A bilge pump is required to operate the navigation lights",
+    "correct_choice": "A",
+    "explanation": "Water can accumulate in a boat's bilge from rain, spray, waves, or a minor leak; a working bilge pump removes that water before it accumulates enough to affect stability or cause swamping, making it recommended safety equipment even where not specifically mandated by statute for smaller classes.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (bilge pump as recommended safety equipment)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is a 'heaving line,' and how does it differ in practical use from a Type IV throwable PFD cushion?",
+    "choice_a": "A heaving line is a length of buoyant line, often 50 to 90 feet, thrown to a person in the water or to another vessel, giving greater throwing distance and something to physically pull the person in with, rather than only providing flotation",
+    "choice_b": "A heaving line and a Type IV cushion are the exact same piece of equipment",
+    "choice_c": "A heaving line is illegal to carry on a Missouri vessel",
+    "choice_d": "A heaving line is used only to tie up at a dock, never in an emergency",
+    "correct_choice": "A",
+    "explanation": "A heaving line is a length of floating line, commonly 50 to 90 feet, that can be thrown farther than a buoyant cushion and lets rescuers physically pull a person or another vessel toward safety, complementing rather than replacing a Type IV throwable flotation device.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (heaving line as supplemental rescue equipment)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under federal Navigation Rules that apply on Missouri waters, what sound-signaling device must even a human-powered vessel such as a canoe or kayak generally carry?",
+    "choice_a": "No sound-signaling device is ever required on a canoe or kayak",
+    "choice_b": "A full boat horn identical to that required on a Class 1 motorboat",
+    "choice_c": "A police-style siren",
+    "choice_d": "An efficient sound-producing device, such as a whistle, capable of giving an audible signal to alert nearby vessels, particularly in conditions of reduced visibility",
+    "correct_choice": "D",
+    "explanation": "Even a paddle-powered canoe or kayak is generally expected to carry an efficient sound-producing device, such as a simple whistle, to signal other vessels, especially in fog or other reduced-visibility conditions where a paddler could otherwise go unnoticed by an approaching motorboat.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (sound-signaling device for human-powered vessels), consistent with U.S. Inland Navigation Rules"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why might experienced boaters recommend carrying a spare propeller and basic tools when heading to a remote cove on a large Missouri reservoir?",
+    "choice_a": "Because striking a submerged stump or rock -- common in the flooded timber and rocky shoreline of reservoirs like Table Rock Lake -- can bend or shear a propeller, and a spare can mean the difference between a self-recovery and being stranded far from a ramp",
+    "choice_b": "A spare propeller has no practical value on a lake",
+    "choice_c": "Propellers never need replacement once installed",
+    "choice_d": "Carrying tools is required by Missouri statute for every vessel",
+    "correct_choice": "A",
+    "explanation": "Missouri's reservoirs, including Table Rock Lake, often have flooded timber, stumps, and rocky shallows near the shoreline; striking one of these hazards can damage a propeller, and carrying a spare prop and basic tools lets a boater who is far from a ramp make a self-repair rather than waiting for a tow.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (recommended spare equipment), applied to Missouri reservoir conditions"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under the Navigation Rules, what daytime 'day shape' must a vessel at anchor outside a designated anchorage display, in addition to its nighttime anchor light?",
+    "choice_a": "No shape of any kind is required during daylight hours",
+    "choice_b": "A black ball shape, hoisted where it can best be seen, indicating the vessel is anchored",
+    "choice_c": "A brightly colored flag with no standardized shape",
+    "choice_d": "An inflatable buoy trailed behind the vessel",
+    "correct_choice": "B",
+    "explanation": "In addition to the nighttime white all-round anchor light, the Navigation Rules require a vessel anchored outside a designated anchorage to display a black ball shape during daylight hours, giving other vessels a visual cue of its anchored status even in full daylight.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (Navigation Rules, daytime anchor day-shape, Rule 30)"
+  }
+]

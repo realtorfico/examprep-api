@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "A Type I PFD (offshore life jacket) is designed primarily for:",
+    "choice_a": "Rough or remote water where rescue may be delayed, offering the best turning ability to right most unconscious wearers face-up",
+    "choice_b": "Personal watercraft riders exclusively",
+    "choice_c": "Being thrown to, rather than worn by, a person overboard",
+    "choice_d": "Calm, sheltered water close to shore where rescue is likely to be quick",
+    "correct_choice": "A",
+    "explanation": "Type I offshore life jackets are bulkier than Type II or III but provide the most reliable flotation and turning capability, making them the best choice for rough or remote water where help may take a while to arrive.",
+    "weight": 3,
+    "source_note": "Standard USCG PFD-type classifications used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "A Type V PFD, such as certain hybrid inflatable or specialty work vests, differs from Types I through III in that:",
+    "choice_a": "It is only intended for use by children under 16",
+    "choice_b": "It counts toward carriage requirements for its labeled special use, but generally only when worn as specified on its label",
+    "choice_c": "It never needs to be USCG-approved",
+    "choice_d": "It can substitute for a Type IV throwable device in every case",
+    "correct_choice": "B",
+    "explanation": "Type V PFDs are approved only for the specific activity or condition stated on their label (such as certain paddling or water-skiing vests, or hybrid inflatables), and typically must be worn -- not just stowed -- to satisfy the carriage requirement.",
+    "weight": 3,
+    "source_note": "Standard USCG PFD-type classifications used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "An inflatable PFD's CO2 cartridge and inflation mechanism should be:",
+    "choice_a": "Ignored once the PFD is purchased, since inflatables never require maintenance",
+    "choice_b": "Removed permanently to prevent accidental inflation",
+    "choice_c": "Replaced only after the PFD has already failed to inflate in an emergency",
+    "choice_d": "Periodically inspected per the manufacturer's instructions to confirm the cartridge is charged and the mechanism will fire when needed",
+    "correct_choice": "D",
+    "explanation": "Because an inflatable PFD provides no buoyancy until its CO2 cartridge fires, regular inspection of the cartridge and inflation mechanism per the manufacturer's instructions is essential to make sure it will actually work in an emergency.",
+    "weight": 3,
+    "source_note": "Standard USCG inflatable-PFD maintenance guidance used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "To be useful in an emergency, PFDs aboard a vessel should be:",
+    "choice_a": "Sealed inside their original retail packaging until needed",
+    "choice_b": "Locked in a compartment whose key only the operator carries",
+    "choice_c": "Readily accessible, not buried under gear or stored somewhere that takes time to reach",
+    "choice_d": "Stored below deck in the bilge to keep them out of the way",
+    "correct_choice": "C",
+    "explanation": "A PFD that technically satisfies the carriage requirement but is buried under gear or hard to reach may not be usable in the seconds that matter during an actual emergency, so ready accessibility is part of proper PFD practice.",
+    "weight": 3,
+    "source_note": "Standard USCG PFD carriage and accessibility guidance used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "When selecting a properly fitting PFD for a child, the correct approach is to size the PFD based on:",
+    "choice_a": "The child's age alone",
+    "choice_b": "The child's height alone",
+    "choice_c": "The child's weight, since PFDs are manufactured and labeled by weight range rather than age",
+    "choice_d": "The adult-sized PFD nearest in the boat, adjusted with extra straps",
+    "correct_choice": "C",
+    "explanation": "PFDs are designed and labeled for specific weight ranges, not ages, so a child's weight -- not their age or height alone -- determines which PFD size will actually fit and function correctly.",
+    "weight": 3,
+    "source_note": "Standard USCG PFD sizing guidance used across NASBLA-aligned boating courses"
+  }
+]

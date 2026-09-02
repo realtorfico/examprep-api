@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "Under the U.S. Aids to Navigation System, what do red buoys or markers indicate when returning from open water into a channel (following the 'red, right, returning' rule)?",
+    "choice_a": "They indicate open, unrestricted water with no channel",
+    "choice_b": "They should be kept on the vessel's right (starboard) side",
+    "choice_c": "They should be kept on the vessel's left (port) side",
+    "choice_d": "They mark a swimming area only",
+    "correct_choice": "B",
+    "explanation": "Under the 'red, right, returning' convention, red buoys and markers are kept on the starboard (right) side of a vessel when heading upstream or returning from open water into a harbor or channel; green markers are kept on the port side.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'U.S. Aids to Navigation System'"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a red-and-white vertically striped buoy indicate?",
+    "choice_a": "A hazard directly at that location that must never be approached",
+    "choice_b": "A fuel dock",
+    "choice_c": "A safe water marker, indicating navigable water is all around it, often used to mark a channel's midpoint or approach",
+    "choice_d": "A swimming-only area closed to all boats",
+    "correct_choice": "C",
+    "explanation": "Red-and-white vertically striped buoys are safe water marks, indicating that navigable water lies all around the buoy, and are often used to mark the approach or midchannel of a channel.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Safe Water Markers'"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange diamond symbol typically warn boaters about?",
+    "choice_a": "A safe, unrestricted anchorage",
+    "choice_b": "A location where fishing is encouraged",
+    "choice_c": "A designated PWC-only zone",
+    "choice_d": "A danger, such as rocks, shoals, dams, or a swim area boundary -- the exact hazard is usually written inside or near the diamond",
+    "correct_choice": "D",
+    "explanation": "A white buoy with an orange diamond is a regulatory marker warning of a danger such as rocks, a dam, shoals, or other hazards; the specific hazard is often identified in words printed on or near the diamond.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Regulatory Markers'"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange circle typically indicate?",
+    "choice_a": "A control zone, such as a no-wake, speed-limit, or idle-speed zone, with the specific restriction written inside the circle",
+    "choice_b": "A safe area to swim with unlimited boat traffic",
+    "choice_c": "A marker showing the deepest water in a lake",
+    "choice_d": "A dive site with no other meaning",
+    "correct_choice": "A",
+    "explanation": "A white buoy with an orange circle marks a controlled area, such as a no-wake zone, idle-speed zone, or other operating restriction, with the specific rule written inside the circle.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Regulatory Markers'"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange square typically indicate?",
+    "choice_a": "A speed zone requiring maximum throttle",
+    "choice_b": "General information, such as directions, distances, or the location of services",
+    "choice_c": "A boundary that no vessel may ever cross for any reason",
+    "choice_d": "A required fueling stop",
+    "correct_choice": "B",
+    "explanation": "A white buoy with an orange square is an information marker, providing directions, locations of services, or other useful information to boaters rather than marking a hazard or restriction.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Regulatory Markers'"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange crossed diamond (an 'X' inside a diamond) mean?",
+    "choice_a": "The area is a designated PWC play zone",
+    "choice_b": "The buoy marks the deepest safe channel",
+    "choice_c": "The area is closed to all vessels",
+    "choice_d": "The area is a preferred anchorage",
+    "correct_choice": "C",
+    "explanation": "A white buoy with an orange crossed diamond marks an area that is closed to all vessels, such as a swimming area, dam face, or other zone boats must not enter.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Regulatory Markers'"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "On Arizona's larger reservoirs like Lake Mead, Lake Powell, and Lake Havasu, why are aids to navigation especially important to understand?",
+    "choice_a": "These lakes have no navigational hazards of any kind",
+    "choice_b": "Buoys are purely decorative on Arizona's reservoirs",
+    "choice_c": "Aids to navigation are not used on any Arizona waters",
+    "choice_d": "Fluctuating water levels can submerge or expose hazards like rock outcrops, sandbars, and old structures, so buoys and markers help boaters avoid dangers that may not be visible at a given water level",
+    "correct_choice": "D",
+    "explanation": "Arizona's large reservoirs experience significant water-level fluctuation from drought, seasonal snowmelt releases, and demand, which can expose or submerge hazards; navigational markers help boaters identify and avoid those changing dangers.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum applied to Arizona reservoir conditions (Lake Mead, Lake Powell, Lake Havasu)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is the general rule for daymarks (fixed signs on posts or pilings, as opposed to floating buoys) that use the same red-triangle/green-square coloring system?",
+    "choice_a": "They follow the same 'red, right, returning' logic as buoys -- red triangular daymarks are kept to starboard and green square daymarks are kept to port when returning from open water",
+    "choice_b": "Daymarks have no relationship to the buoy color system",
+    "choice_c": "Daymarks are used exclusively at night, unlike buoys",
+    "choice_d": "Green daymarks are always kept to starboard",
+    "correct_choice": "A",
+    "explanation": "Fixed daymarks follow the same lateral system as buoys: red triangular shapes correspond to red (starboard-when-returning) buoys, and green square shapes correspond to green (port-when-returning) buoys.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Daymarks'"
+  }
+]

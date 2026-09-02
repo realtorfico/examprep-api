@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Trailering and Launching",
+    "question": "What should a boater verify about a trailer before towing a boat on the highway to a Pennsylvania boat launch?",
+    "choice_a": "The trailer's weight rating has no relationship to towing safety",
+    "choice_b": "Only the boat's weight matters, not the motor or gear",
+    "choice_c": "That the trailer's weight rating meets or exceeds the combined weight of the boat, motor, fuel, and gear",
+    "choice_d": "Only that the trailer is the same color as the tow vehicle",
+    "correct_choice": "C",
+    "explanation": "An overloaded trailer can suffer axle, tire, or hitch failure; the trailer must be rated to handle the full combined weight of the boat, motor, fuel, and all gear aboard.",
+    "weight": 2,
+    "source_note": "Trailer weight-rating safety practice, PA-approved boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should a boat trailer have safety chains connecting it to the tow vehicle, separate from the hitch coupler?",
+    "choice_a": "Safety chains are purely decorative and serve no functional purpose",
+    "choice_b": "They are required only for trailers carrying PWCs",
+    "choice_c": "They replace the need for a hitch coupler entirely",
+    "choice_d": "To keep the trailer attached to the tow vehicle if the primary hitch coupler ever fails or disconnects",
+    "correct_choice": "D",
+    "explanation": "Safety chains act as a backup connection, keeping the trailer attached to the tow vehicle and preventing a runaway trailer if the hitch coupler unexpectedly disconnects.",
+    "weight": 2,
+    "source_note": "Trailer safety-chain practice, PA-approved boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What should a boater do to the boat before backing the trailer down the launch ramp, to keep the ramp moving efficiently for other boaters waiting in line?",
+    "choice_a": "Prepare the boat fully in advance -- load gear, insert the drain plug, attach the bow line, and disconnect all but the winch strap",
+    "choice_b": "Wait until the boat is already in the water to load any gear",
+    "choice_c": "Nothing needs to be done before backing down the ramp",
+    "choice_d": "Remove the drain plug just before backing down the ramp",
+    "correct_choice": "A",
+    "explanation": "Proper launch-ramp etiquette calls for doing all preparation -- loading gear, inserting the drain plug, attaching lines -- away from the ramp itself, so the ramp lane isn't blocked longer than necessary once it's the boater's turn.",
+    "weight": 2,
+    "source_note": "Launch-ramp etiquette and preparation, PA-approved boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why is the boat's drain plug so critical to check before launching?",
+    "choice_a": "It is only relevant when trailering, not launching",
+    "choice_b": "If left out, water can flood into the bilge once the boat is in the water, potentially swamping or sinking it",
+    "choice_c": "The drain plug has no effect on whether water enters the boat",
+    "choice_d": "It only matters for boats without an engine",
+    "correct_choice": "B",
+    "explanation": "Forgetting to insert the drain plug before launching is one of the most common (and preventable) boater mistakes, since it lets water flood the bilge and can sink the boat at the dock.",
+    "weight": 3,
+    "source_note": "Drain plug pre-launch checklist, PA-approved boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What is the general courtesy rule for using a busy public boat launch ramp with multiple lanes?",
+    "choice_a": "Only one boat is allowed to use a ramp per day",
+    "choice_b": "Ramps are always first-come, unlimited-time with no courtesy expectations",
+    "choice_c": "Prepare the boat away from the ramp, launch or load promptly once at the ramp, then move the tow vehicle and trailer clear of the lane for the next boater",
+    "choice_d": "Take as much time as needed directly on the ramp regardless of others waiting",
+    "correct_choice": "C",
+    "explanation": "Good ramp etiquette means doing all prep off to the side, launching or retrieving quickly once at the ramp, and immediately clearing the lane so the next boater in line can use it.",
+    "weight": 2,
+    "source_note": "Launch-ramp etiquette, PA-approved boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What should a boater do to help prevent the spread of aquatic invasive species between Pennsylvania waterways when trailering a boat?",
+    "choice_a": "Invasive species prevention is not a boater's responsibility",
+    "choice_b": "Only fill the live well with water from the previous lake",
+    "choice_c": "Leave weeds and debris attached to transport them for study",
+    "choice_d": "Clean, drain, and dry the boat, trailer, live wells, and gear before moving between different bodies of water",
+    "correct_choice": "D",
+    "explanation": "The PFBC promotes 'Clean, Drain, Dry' -- removing plants/debris, draining all water from bilges, live wells, and bait buckets, and letting equipment dry -- before moving between waterways, to prevent spreading invasive species.",
+    "weight": 2,
+    "source_note": "PFBC aquatic invasive species prevention guidance"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should trailer wheel bearings be inspected and maintained regularly?",
+    "choice_a": "Bearings can overheat or fail from repeated submersion in water during launching, potentially causing a wheel to seize or separate on the highway",
+    "choice_b": "Wheel bearings never need maintenance once installed",
+    "choice_c": "Bearings only affect how the trailer looks, not how it performs",
+    "choice_d": "Wheel bearing maintenance is only relevant for boats stored indoors",
+    "correct_choice": "A",
+    "explanation": "Because trailer wheel bearings are repeatedly submerged during launching and retrieval, water intrusion can degrade the grease and lead to bearing failure, so they need regular inspection and repacking.",
+    "weight": 2,
+    "source_note": "Trailer maintenance guidance, PA-approved boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What is 'tongue weight,' and why does it matter when loading a boat onto a trailer?",
+    "choice_a": "The total weight of the boat and trailer combined",
+    "choice_b": "The downward force the trailer's coupler exerts on the tow vehicle's hitch; incorrect tongue weight can cause dangerous trailer sway on the highway",
+    "choice_c": "The weight of the boat's engine only",
+    "choice_d": "A measurement that has no effect on towing safety",
+    "correct_choice": "B",
+    "explanation": "Tongue weight is the downward force the trailer coupler places on the hitch; too little or too much can cause the trailer to sway or fishtail dangerously while towing, so the boat's load should be positioned to balance it correctly.",
+    "weight": 2,
+    "source_note": "Trailer tongue-weight safety guidance, PA-approved boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What should a boater check on the trailer immediately before getting on the highway with a boat in tow?",
+    "choice_a": "Nothing needs to be checked if the trailer was fine last season",
+    "choice_b": "Only the tow vehicle's oil level needs checking",
+    "choice_c": "That the trailer lights, tires, and tie-downs (bow and transom straps) are all secure and functioning",
+    "choice_d": "Only that the boat's registration sticker is visible",
+    "correct_choice": "C",
+    "explanation": "A pre-tow check of trailer lights (for road visibility and legality), tire condition, and secure bow/transom tie-downs helps prevent a boat shifting, detaching, or causing a road hazard while under tow.",
+    "weight": 2,
+    "source_note": "Pre-tow trailer safety checklist, PA-approved boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "When retrieving a boat from the water back onto its trailer, in what general order should equipment be reconnected compared to how it was disconnected at launch?",
+    "choice_a": "The order used for launching and retrieving makes no difference to ramp efficiency",
+    "choice_b": "All gear should be loaded onto the boat while it still sits on the ramp",
+    "choice_c": "The boat should be fully secured with all straps before leaving the water",
+    "choice_d": "Roughly in reverse order -- winch the boat on and secure the strap first, then move away from the ramp before finishing tie-downs and unloading gear",
+    "correct_choice": "D",
+    "explanation": "As with launching, boaters should winch the boat onto the trailer and secure it enough to move clear of the ramp quickly, then finish tying down and unloading gear in a parking or prep area so the ramp lane stays open for others.",
+    "weight": 2,
+    "source_note": "Launch-ramp retrieval etiquette, PA-approved boating courses"
+  }
+]

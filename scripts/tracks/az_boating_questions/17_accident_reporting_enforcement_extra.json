@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under A.R.S. 5-349, to what extent is a watercraft operator obligated to render assistance to persons endangered by a collision, accident, or other casualty?",
+    "choice_a": "Regardless of any danger to the operator's own watercraft or the persons aboard it, with no exception",
+    "choice_b": "Only if the operator's insurance company later approves the assistance",
+    "choice_c": "The duty to render assistance does not exist under Arizona law",
+    "choice_d": "Only to the extent the operator can do so without serious danger to the operator's own watercraft or the persons aboard it",
+    "correct_choice": "D",
+    "explanation": "A.R.S. 5-349 requires an operator to render all practical and necessary assistance to endangered persons only 'to the extent the operator can do so without serious danger to the operator's own watercraft or persons aboard,' balancing the duty to help against the operator's own safety.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-349, duty-to-render-aid limitation"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under A.R.S. 5-349, which state agency must receive a watercraft operator's written casualty report?",
+    "choice_a": "The report must be submitted directly to the department (Arizona Game and Fish Department), for use in statistical studies for casualty prevention",
+    "choice_b": "The county sheriff's office where the operator resides, regardless of where the incident occurred",
+    "choice_c": "The National Transportation Safety Board",
+    "choice_d": "No specific agency is designated to receive watercraft casualty reports",
+    "correct_choice": "A",
+    "explanation": "A.R.S. 5-349 states that written reports 'shall be submitted directly to the department for use in statistical studies for casualty prevention,' distinct from the Game and Fish Commission, which is the body that approves the report form itself.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-349, report submission to the department"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Besides the operator involved, who else has an independent duty under A.R.S. 5-349 to transmit a report to the department after a qualifying watercraft casualty?",
+    "choice_a": "No one besides the operator has any reporting duty under the statute",
+    "choice_b": "Every peace officer who, in the regular course of duty, investigates a watercraft collision, accident, or other casualty involving death, personal injury, or property damage exceeding $500",
+    "choice_c": "Only the manufacturer of the watercraft involved",
+    "choice_d": "Only a witness who is a licensed attorney",
+    "correct_choice": "B",
+    "explanation": "A.R.S. 5-349 imposes a separate, independent reporting duty on any peace officer who investigates a qualifying watercraft collision, accident, or casualty in the regular course of duty, requiring that officer to prepare and transmit a report to the department.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-349, peace officer reporting duty"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under A.R.S. 5-349, can a watercraft casualty report an operator files be used as evidence against that operator in a later civil or criminal trial arising from the same incident?",
+    "choice_a": "Yes, the report is automatically admissible as evidence in any related trial",
+    "choice_b": "Yes, but only in a civil trial, never in a criminal trial",
+    "choice_c": "No -- the statute states that reports shall not be used as evidence in any trial, civil or criminal, arising from the collision, accident, or other casualty",
+    "choice_d": "Yes, but only if the operator consents in writing beforehand",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-349 protects casualty reports from being used as evidence in any trial, civil or criminal, arising from the underlying collision, accident, or casualty, encouraging complete and honest reporting for statistical and safety purposes.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-349, evidentiary protection of reports"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "What is a vessel capacity plate, commonly found on many powerboats under 20 feet, and why does exceeding it matter?",
+    "choice_a": "A manufacturer-issued plate showing the maximum recommended number of persons and/or weight and horsepower for the vessel; exceeding it increases the risk of swamping or capsizing and can be a violation",
+    "choice_b": "A decorative plate with no safety significance",
+    "choice_c": "A plate that only applies to sailboats",
+    "choice_d": "A plate showing the vessel's registration number only",
+    "correct_choice": "A",
+    "explanation": "The federally required capacity plate on many smaller powerboats states the maximum safe number of persons and/or weight and horsepower; overloading beyond these limits significantly raises the risk of swamping or capsizing.",
+    "weight": 3,
+    "source_note": "Universal USCG vessel capacity plate requirement (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "How should an operator respond when approaching an area with swimmers or a diver-down flag in the water?",
+    "choice_a": "Maintain normal cruising speed since swimmers are responsible for their own safety",
+    "choice_b": "Reduce to no-wake or minimum-steerage speed and keep a safe, substantial distance from the swimmers or divers",
+    "choice_c": "Increase speed to clear the area as quickly as possible",
+    "choice_d": "There is no need to change course or speed near swimmers",
+    "correct_choice": "B",
+    "explanation": "Slowing to no-wake or minimum-steerage speed and giving swimmers or a diver-down flag a wide, safe berth reduces the risk of a collision or injury to a person who may be difficult to see in the water.",
+    "weight": 3,
+    "source_note": "Universal safe-speed-near-swimmers guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "Why should an operator idle through a marina's narrow fairways and slips rather than operating at higher speed?",
+    "choice_a": "Idle speed reduces wake that could damage moored boats, and gives the operator time to react in the tight, congested space around docks and other vessels",
+    "choice_b": "Marinas require full-throttle operation to save time",
+    "choice_c": "Fairway speed has no bearing on safety near moored boats",
+    "choice_d": "Only sailboats need to slow down in a marina",
+    "correct_choice": "A",
+    "explanation": "Idling through marina fairways minimizes wake damage to moored vessels and docks, and gives the operator more reaction time in the tight, congested space typical of a marina.",
+    "weight": 2,
+    "source_note": "Universal marina/fairway idle-speed courtesy and safety guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "When overtaking a smaller or slower vessel in one of Maryland's narrow tributaries, what should the overtaking operator do regarding speed?",
+    "choice_a": "Maintain maximum speed regardless of the wake produced",
+    "choice_b": "Slow down to reduce the wake thrown at the vessel being passed, since a large wake in a confined space can be more dangerous than in open water",
+    "choice_c": "Speed has no relevance to a safe passing maneuver",
+    "choice_d": "Only the vessel being overtaken must adjust speed",
+    "correct_choice": "B",
+    "explanation": "In a narrow tributary, a large wake from an overtaking vessel has less room to dissipate and can rock or swamp the smaller vessel being passed, so the overtaking operator should reduce speed during the maneuver.",
+    "weight": 2,
+    "source_note": "Universal safe-overtaking wake-reduction guidance in confined waters (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "Why should passengers and gear be distributed evenly and kept low in a recreational vessel, in addition to staying within the rated capacity?",
+    "choice_a": "Even, low weight distribution helps maintain the vessel's stability and trim, reducing the risk of capsizing or swamping, especially in rough water",
+    "choice_b": "Weight distribution has no effect on a vessel's stability",
+    "choice_c": "All weight should always be concentrated at the bow regardless of vessel type",
+    "choice_d": "Only commercial vessels need to consider weight distribution",
+    "correct_choice": "A",
+    "explanation": "Evenly distributed, low-centered weight helps a vessel maintain proper trim and stability, which is especially important in rough water or when maneuvering, reducing the risk of capsizing or swamping.",
+    "weight": 2,
+    "source_note": "Universal vessel loading, trim, and stability guidance (NASBLA-aligned course content)"
+  }
+]

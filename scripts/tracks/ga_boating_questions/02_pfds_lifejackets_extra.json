@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What makes a Type I PFD (offshore life jacket) the best choice for a Georgia boater heading into open, remote, or rough water?",
+    "choice_a": "It provides the most buoyancy of any wearable PFD type and will turn most unconscious wearers face up in the water",
+    "choice_b": "It is the lightest and least bulky PFD, making it the easiest to swim in",
+    "choice_c": "It is the only PFD type approved for use on personal watercraft",
+    "choice_d": "It never needs to be replaced regardless of age or condition",
+    "correct_choice": "A",
+    "explanation": "Type I offshore life jackets provide the most buoyancy of any PFD category and are designed to turn most unconscious wearers face up, making them the best choice for rough or remote water where rescue may be delayed.",
+    "weight": 2,
+    "source_note": "Georgia Boater Safety Course (Boat-Ed, DNR-approved provider), 'Type I PFDs: Wearable Offshore Life Jackets'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "How does a Type II PFD (near-shore vest) compare to a Type I PFD?",
+    "choice_a": "It provides greater buoyancy than a Type I and is intended for offshore use",
+    "choice_b": "It is intended for calm water where quick rescue is likely, and it will turn some unconscious wearers face up, though less reliably than a Type I",
+    "choice_c": "It is a throwable device rather than a wearable vest",
+    "choice_d": "It is only approved for use while water skiing",
+    "correct_choice": "B",
+    "explanation": "Type II near-shore vests are intended for calm waters where quick rescue is likely. They will turn some unconscious wearers face up, but the turning effect is less pronounced than with a Type I.",
+    "weight": 2,
+    "source_note": "Georgia Boater Safety Course (Boat-Ed, DNR-approved provider), 'Type II PFDs: Wearable Near-Shore Vests'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a key limitation of a Type III PFD (flotation aid), even though it is comfortable enough for continuous wear during activities like water skiing?",
+    "choice_a": "It cannot legally be worn while fishing",
+    "choice_b": "It provides no flotation at all until manually inflated",
+    "choice_c": "It will not turn most unconscious wearers face up in the water",
+    "choice_d": "It may only be worn by children under 13",
+    "correct_choice": "C",
+    "explanation": "Type III flotation aids (vests or full-sleeved jackets) are comfortable for continuous wear and popular for activities like water skiing and fishing in calm water, but unlike a Type I or II, they will not turn most unconscious persons face up.",
+    "weight": 2,
+    "source_note": "Georgia Boater Safety Course (Boat-Ed, DNR-approved provider), 'Type III PFDs: Wearable Flotation Aids'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why is a Type IV throwable device (ring buoy or cushion) not a suitable PFD choice for a weak swimmer or a young child?",
+    "choice_a": "It is illegal to carry a Type IV device on any Georgia vessel",
+    "choice_b": "It automatically deflates after ten minutes in the water",
+    "choice_c": "It can only be used by the vessel operator",
+    "choice_d": "It is designed to be thrown and gripped by the user rather than worn, so it does not work for someone unable to hold onto it, and it is not intended for rough water",
+    "correct_choice": "D",
+    "explanation": "A Type IV throwable device is not designed to be worn -- it must be thrown to and held by the person in the water. It is not appropriate for rough water or for anyone unable to grip and hold onto it, such as a weak swimmer or young child.",
+    "weight": 2,
+    "source_note": "Georgia Boater Safety Course (Boat-Ed, DNR-approved provider), 'Type IV PFDs: Throwable Devices (Not Wearable)'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What must be true for a Type V special-use PFD (such as one designed for windsurfing, kayaking, or water skiing) to count as an acceptable PFD?",
+    "choice_a": "It must be worn and used in accordance with the conditions stated on its label",
+    "choice_b": "It only needs to be stored on board, not worn",
+    "choice_c": "It must be a different color than other PFD types",
+    "choice_d": "It automatically satisfies the requirement for any activity, regardless of its label",
+    "correct_choice": "A",
+    "explanation": "Type V special-use PFDs are designed for specific activities and, in some cases, inflate automatically upon entering the water. To be acceptable, they must be worn and used in accordance with the conditions stated on their label.",
+    "weight": 2,
+    "source_note": "Georgia Boater Safety Course (Boat-Ed, DNR-approved provider), 'Type V PFDs: Special-Use Devices'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Which of the following would violate Georgia's requirement that PFDs be 'readily accessible' on board?",
+    "choice_a": "Keeping PFDs unzipped and within arm's reach of each passenger's seat",
+    "choice_b": "Storing all of the vessel's PFDs sealed in their original plastic bags inside a locked compartment",
+    "choice_c": "Having PFDs sized appropriately for each passenger on board",
+    "choice_d": "Wearing a PFD continuously while underway",
+    "correct_choice": "B",
+    "explanation": "PFDs must be readily accessible so they can be put on quickly in an emergency. Sealing them in plastic bags or storing them in locked compartments or under other gear violates this requirement.",
+    "weight": 3,
+    "source_note": "Georgia Boater Safety Course (Boat-Ed, DNR-approved provider), 'Overview of PFD Law'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "According to Georgia boating safety guidance, why is a PFD that is carried on board but not worn less protective than one actually being worn?",
+    "choice_a": "Because an unworn PFD loses its USCG approval after one hour on board",
+    "choice_b": "Because Georgia law only recognizes PFDs that are factory-sealed and never removed from packaging",
+    "choice_c": "Because most fatal boating accident victims had a PFD on board but were not wearing it, and it becomes much harder to put one on once already in the water",
+    "choice_d": "Because unworn PFDs must be reported to Georgia DNR within 24 hours",
+    "correct_choice": "C",
+    "explanation": "Most fatal boating accidents involve life jackets that were on board but not being worn. Once a person is already in the water, especially in an emergency, putting on a PFD becomes far more difficult, which is why wearing it proactively is safest.",
+    "weight": 2,
+    "source_note": "Georgia Boater Safety Course (Boat-Ed, DNR-approved provider), 'Video: Wearing Life Jackets'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What should a boater check on a PFD's label and construction to confirm it fits and functions properly before relying on it?",
+    "choice_a": "Only that the PFD is the newest model available",
+    "choice_b": "Only that the PFD is a bright color",
+    "choice_c": "Only that the PFD was manufactured in the United States",
+    "choice_d": "That it carries USCG approval for its intended use, matches the wearer's weight and chest size, and has fully functioning buckles, zippers, straps, and flotation material",
+    "correct_choice": "D",
+    "explanation": "A properly fitting PFD should be checked for USCG approval and intended use on its label, should match the wearer's weight and chest size, and should have buckles, zippers, straps, and flotation components all in good working order.",
+    "weight": 2,
+    "source_note": "Georgia Boater Safety Course (Boat-Ed, DNR-approved provider), 'Video: Wearing Life Jackets'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under Georgia boating law, what does the term 'personal flotation device (PFD)' encompass?",
+    "choice_a": "Both wearable life jackets and throwable rescue devices designed to help a person float",
+    "choice_b": "Only devices that are worn on the body",
+    "choice_c": "Only devices that are thrown to a person in the water",
+    "choice_d": "Only inflatable devices",
+    "correct_choice": "A",
+    "explanation": "The term PFD covers both wearable life jackets and throwable rescue devices, such as ring buoys and cushions, that are designed to help a person float.",
+    "weight": 1,
+    "source_note": "Georgia Boater Safety Course (Boat-Ed, DNR-approved provider), 'Overview of PFD Law'"
+  }
+]

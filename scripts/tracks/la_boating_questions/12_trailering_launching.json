@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Trailering and Launching",
+    "question": "Before launching a boat at a Louisiana ramp, an operator should typically:",
+    "choice_a": "Prepare the boat away from the ramp (removing tie-downs, loading gear, inserting the drain plug) so the ramp lane stays clear for others",
+    "choice_b": "Back down the ramp first, then begin preparing the boat while blocking the lane",
+    "choice_c": "Leave the drain plug out until after the boat is fully launched",
+    "choice_d": "Skip all preparation steps, since they do not affect ramp safety",
+    "correct_choice": "A",
+    "explanation": "Prepping a boat in the staging area before backing down the ramp keeps the launch lane clear and moving efficiently for everyone waiting to launch or retrieve.",
+    "weight": 3,
+    "source_note": "Standard boat-ramp courtesy and safety practice used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What is one of the most common and preventable mistakes boaters make when launching, according to standard boating safety guidance?",
+    "choice_a": "Using a spotter to help guide the trailer",
+    "choice_b": "Forgetting to insert the drain plug before launching, causing the boat to take on water",
+    "choice_c": "Removing all gear before backing down the ramp",
+    "choice_d": "Checking trailer lights before departure",
+    "correct_choice": "B",
+    "explanation": "A missing drain plug is one of the most common launch-day mistakes, and it can quickly swamp a boat's bilge once it's in the water.",
+    "weight": 3,
+    "source_note": "Standard boat-ramp safety practice used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "When trailering a boat on Louisiana roads, why is it important to check trailer tire condition and wheel bearings before a trip?",
+    "choice_a": "Wheel bearings have no safety relevance for boat trailers",
+    "choice_b": "Trailer maintenance is solely the responsibility of the launch ramp operator",
+    "choice_c": "Trailer tires and bearings undergo significant heat and stress, and failure on the road can cause a dangerous breakdown or accident",
+    "choice_d": "Trailer tires never wear out under normal use",
+    "correct_choice": "C",
+    "explanation": "Trailer tires and bearings run hot under highway speed and load; failing to inspect them before a trip risks a blowout or bearing failure that can cause a roadside accident.",
+    "weight": 3,
+    "source_note": "Standard trailer-safety practice used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Before backing a trailer down a launch ramp, a boat operator should verify:",
+    "choice_a": "Nothing in particular; ramps are designed to accommodate distracted backing",
+    "choice_b": "That the boat's engine is off and cannot be started until it is fully afloat",
+    "choice_c": "That every other boater has already left the ramp area entirely before beginning",
+    "choice_d": "The safety chains and transom straps/tie-downs are ready to be released, and the area behind and around the ramp is clear",
+    "correct_choice": "D",
+    "explanation": "Checking that tie-downs are ready to release and that the ramp area is clear of people and other trailers reduces the chance of an accident during the backing maneuver.",
+    "weight": 3,
+    "source_note": "Standard boat-ramp safety practice used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "After retrieving a boat from the water onto a trailer, what should be done before driving away from a Louisiana boat ramp?",
+    "choice_a": "Secure the boat with tie-downs/transom straps, raise the outboard motor as needed, and remove the drain plug to drain bilge water",
+    "choice_b": "Immediately drive away at highway speed",
+    "choice_c": "Leave the boat unsecured, since trailers are designed to hold boats without straps",
+    "choice_d": "Refill the fuel tank while the trailer is still on the ramp",
+    "correct_choice": "A",
+    "explanation": "Securing the boat, raising the motor to protect it from road debris, and pulling the drain plug to let bilge water drain are standard post-retrieval steps before leaving a ramp.",
+    "weight": 3,
+    "source_note": "Standard boat-ramp safety practice used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should boaters avoid lingering in the launch lane at a busy Louisiana ramp during peak weekend hours?",
+    "choice_a": "Lingering in the launch lane has no effect on other boaters",
+    "choice_b": "It blocks other boaters from launching or retrieving, creating congestion and increasing the risk of collisions or backups",
+    "choice_c": "Ramps are private property with no shared-use expectation",
+    "choice_d": "Louisiana law has no rules governing ramp courtesy",
+    "correct_choice": "B",
+    "explanation": "Busy public ramps depend on quick turnover in the launch lane; lingering there creates backups and raises the risk of collisions among boats and trailers maneuvering nearby.",
+    "weight": 3,
+    "source_note": "Standard boat-ramp courtesy and safety practice used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What is the purpose of a trailer's safety chains, separate from the hitch coupler?",
+    "choice_a": "To ground electrical current from the trailer's lights",
+    "choice_b": "Safety chains serve a purely decorative function",
+    "choice_c": "To keep the trailer connected to the tow vehicle if the primary hitch coupler fails or disconnects",
+    "choice_d": "To hold the boat onto the trailer bed",
+    "correct_choice": "C",
+    "explanation": "Safety chains act as a backup connection to the tow vehicle if the primary hitch coupler ever fails or comes loose during towing, preventing a full trailer separation.",
+    "weight": 3,
+    "source_note": "Standard trailer-safety practice used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Before towing a boat trailer on Louisiana highways, a driver should confirm that trailer lights (brake, turn signal, running lights) are:",
+    "choice_a": "Optional equipment not required for trailers",
+    "choice_b": "Only necessary when towing at night",
+    "choice_c": "Irrelevant, as long as the boat itself has its own running lights",
+    "choice_d": "Functioning properly and matched to the tow vehicle's electrical connector",
+    "correct_choice": "D",
+    "explanation": "Working, properly connected trailer lights let other drivers see braking and turning intentions, an essential highway-safety check before any towing trip.",
+    "weight": 3,
+    "source_note": "Standard trailer-safety practice used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "When approaching a launch ramp with other boaters waiting, courtesy and safety both suggest:",
+    "choice_a": "Preparing the boat and trailer fully before pulling into the launch lane, then moving efficiently once it's your turn",
+    "choice_b": "Taking as long as needed in the launch lane regardless of others waiting",
+    "choice_c": "Launching directly into oncoming boat traffic",
+    "choice_d": "There is no expected etiquette at public ramps",
+    "correct_choice": "A",
+    "explanation": "Fully preparing before entering the launch lane, then launching or retrieving quickly, keeps a shared public ramp moving safely for everyone waiting.",
+    "weight": 2,
+    "source_note": "Standard boat-ramp courtesy and safety practice used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "A properly loaded trailer should distribute the boat's weight so that:",
+    "choice_a": "The heaviest gear should always be placed at the stern regardless of trailer position",
+    "choice_b": "Slightly more weight sits forward of the trailer axle(s), providing proper tongue weight for stable towing",
+    "choice_c": "All the weight rests behind the axle for easier launching",
+    "choice_d": "Weight distribution has no effect on towing stability",
+    "correct_choice": "B",
+    "explanation": "Correct tongue weight -- achieved by keeping slightly more weight forward of the axle -- helps prevent dangerous trailer sway at highway speed.",
+    "weight": 3,
+    "source_note": "Standard trailer-safety practice used across NASBLA-aligned boating courses"
+  }
+]

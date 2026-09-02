@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Operating Rules, Speed & No-Wake Zones",
+    "question": "What basic operating duty requires a boat operator to continuously watch and listen for other traffic, hazards, and changing conditions?",
+    "choice_a": "The duty to maintain a proper lookout by sight and hearing at all times while underway",
+    "choice_b": "There is no ongoing lookout duty once a trip is underway",
+    "choice_c": "Lookout duty applies only when another vessel is already within 100 feet",
+    "choice_d": "Only the largest vessel in an area has a lookout duty",
+    "correct_choice": "A",
+    "explanation": "Every operator has a continuous duty to maintain a proper lookout using both sight and hearing, scanning for other vessels, swimmers, obstructions, and changing weather, since failing to notice a hazard in time is a leading cause of collisions.",
+    "weight": 3,
+    "source_note": "General navigation duty of lookout, applied in NASBLA-aligned Wisconsin boater education curriculum, Unit 2/Unit 4"
+  },
+  {
+    "topic": "Operating Rules, Speed & No-Wake Zones",
+    "question": "Why is intentionally \"jumping\" another boat's wake at high speed considered dangerous and often reckless?",
+    "choice_a": "It has no real risk as long as the operator is an experienced boater",
+    "choice_b": "The sudden airborne moment and hard landing can throw passengers, damage the hull, or cause a loss of control, especially if timed poorly or done too close to other traffic",
+    "choice_c": "Wake-jumping is a required skill tested during Wisconsin's boater education course",
+    "choice_d": "Wake-jumping is illegal only for personal watercraft, never for other boats",
+    "correct_choice": "B",
+    "explanation": "Deliberately launching a boat off another vessel's wake at speed can throw unsecured passengers, strain or damage the hull on landing, and momentarily take the boat out of the operator's full control -- a combination that boater education flags as a common cause of injury and reckless-operation citations.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Unlawful Operation"
+  },
+  {
+    "topic": "Operating Rules, Speed & No-Wake Zones",
+    "question": "Why should an operator never leave the helm unattended while the boat is underway, even briefly?",
+    "choice_a": "An unattended, moving boat can drift off course, strike an obstacle, or endanger nearby people or vessels since no one is actively steering or watching for hazards",
+    "choice_b": "Leaving the helm briefly has no real risk if the water is calm",
+    "choice_c": "Modern boats are designed to steer themselves safely without an operator present",
+    "choice_d": "This rule applies only to vessels over 40 feet",
+    "correct_choice": "A",
+    "explanation": "A moving boat with no one actively at the controls can drift off course or continue on a collision path with no one able to react, which is why leaving the helm unattended while underway is treated as unsafe operation regardless of how calm conditions appear.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Unlawful Operation"
+  },
+  {
+    "topic": "Operating Rules, Speed & No-Wake Zones",
+    "question": "Why do Wisconsin DNR and local officials urge extra caution during the state's busiest recreational boating weekends, such as Memorial Day, the Fourth of July, and Labor Day?",
+    "choice_a": "Traffic volume on popular lakes rises sharply during these weekends, increasing the risk of collisions, especially when combined with alcohol use and inexperienced operators",
+    "choice_b": "Boating is technically prohibited on these specific weekends",
+    "choice_c": "These weekends see the lowest boating traffic of the year",
+    "choice_d": "Speed limits are lifted entirely during these holiday weekends",
+    "correct_choice": "A",
+    "explanation": "Wisconsin's popular lakes see a significant surge in boat traffic during major summer holiday weekends, and that congestion -- often combined with more alcohol consumption and less experienced seasonal boaters -- raises collision risk, which is why extra caution and reduced speed are especially important during these periods.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR seasonal boating safety messaging, consistent with national NASBLA-aligned holiday-weekend safety guidance"
+  },
+  {
+    "topic": "Operating Rules, Speed & No-Wake Zones",
+    "question": "What is the safest way to overtake a slow-moving vessel that is trolling or fishing?",
+    "choice_a": "Pass close alongside at full speed to get by quickly",
+    "choice_b": "Sound the danger signal and force the fishing boat to move out of the way",
+    "choice_c": "Give the fishing boat a wide berth and reduce speed and wake as you pass, since sudden wake or a close pass can disrupt their lines, gear, or balance",
+    "choice_d": "There is no special consideration needed when passing a fishing vessel",
+    "correct_choice": "C",
+    "explanation": "A boat trolling or fishing often has lines out and passengers focused on their gear rather than passing traffic, so overtaking it safely means giving a wide berth and slowing down to reduce wake, avoiding a startling, disruptive, or dangerous close pass.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Additional Regulations and Safety Considerations"
+  },
+  {
+    "topic": "Operating Rules, Speed & No-Wake Zones",
+    "question": "Why should an operator avoid following closely in the wake path directly behind another moving vessel?",
+    "choice_a": "Following closely offers no benefit or risk either way",
+    "choice_b": "Wake immediately behind another vessel can be choppy and unpredictable, reducing the following boat's stability and control, and leaves little reaction time if the lead boat slows or turns suddenly",
+    "choice_c": "It is required by law to follow directly in another vessel's wake at all times",
+    "choice_d": "This concern applies only to sailboats, never to powerboats",
+    "correct_choice": "B",
+    "explanation": "The water directly behind a moving vessel is often choppy and turbulent from its wake, which can reduce a following boat's control, and staying too close leaves little time to react if the lead vessel slows, turns, or stops unexpectedly.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Additional Regulations and Safety Considerations"
+  },
+  {
+    "topic": "Operating Rules, Speed & No-Wake Zones",
+    "question": "What should an operator do before making a sharp or sudden turn at speed?",
+    "choice_a": "Nothing extra is needed; sharp turns carry no added risk to passengers",
+    "choice_b": "Scan for other vessels, swimmers, or obstacles in the turn's path, and warn passengers so they can brace or hold on, since a sudden turn can throw an unprepared passenger off balance or overboard",
+    "choice_c": "Increase speed further to complete the turn more quickly",
+    "choice_d": "Sharp turns should only ever be made in a designated no-wake zone",
+    "correct_choice": "B",
+    "explanation": "A sharp or sudden turn at speed can throw passengers off balance or even overboard if they are not braced for it, so a careful operator checks the surrounding area for hazards and gives passengers a warning before maneuvering aggressively.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Additional Regulations and Safety Considerations"
+  }
+]

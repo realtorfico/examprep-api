@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Required Safety Equipment",
+    "question": "How does the Coast Guard-standard fire extinguisher classification system (such as B-I versus B-II) affect the number and type Minnesota boaters must carry?",
+    "choice_a": "All Minnesota boats, regardless of length, must carry the identical single extinguisher class",
+    "choice_b": "The classification only affects the extinguisher's color",
+    "choice_c": "The required class and number of extinguishers scale with vessel length, with larger vessels needing either more B-I hand-portable units or a higher-capacity B-II unit",
+    "choice_d": "Classification has no bearing on the number required",
+    "correct_choice": "C",
+    "explanation": "Coast Guard fire extinguisher classes such as B-I (smaller hand-portable) and B-II (larger capacity) scale the required number and type to a vessel's length, so a larger boat may need multiple B-I units or a single higher-capacity B-II unit instead of just one small extinguisher.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.531 (fire extinguisher requirements scaled to vessel length and class)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is a backfire flame arrestor, and which Minnesota motorboats generally must have one?",
+    "choice_a": "A device required only on personal watercraft",
+    "choice_b": "A Coast Guard-approved device fitted to a gasoline inboard engine's carburetor air intake to keep an engine backfire from igniting fuel vapors in the engine compartment",
+    "choice_c": "A decorative engine cover with no safety function",
+    "choice_d": "A device used only to reduce engine noise",
+    "correct_choice": "B",
+    "explanation": "A backfire flame arrestor is mounted on a gasoline inboard engine's air intake to stop a backfire from igniting accumulated fuel vapors in an enclosed engine compartment, a fire-prevention measure required on gasoline inboard-powered motorboats.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.531 (backfire flame arrestor requirement for gasoline inboard engines)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Does Minnesota law address exhaust noise from motorboats operating on the state's lakes?",
+    "choice_a": "No, exhaust noise is entirely unregulated in Minnesota",
+    "choice_b": "Minnesota generally requires motorboats to be equipped with an effective muffling system that limits exhaust noise, rather than allowing unrestricted straight-pipe exhaust",
+    "choice_c": "Only PWCs are subject to any noise-related equipment requirement",
+    "choice_d": "Noise limits apply only to boats used commercially",
+    "correct_choice": "B",
+    "explanation": "Minnesota law generally requires motorboats to run an effective muffling system to control exhaust noise, addressing both nuisance concerns for lakeshore residents and the broader boating public on the state's heavily used lakes.",
+    "weight": 2,
+    "source_note": "Minnesota Statutes Chapter 86B (motorboat muffler and exhaust noise control requirement)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Although not always a strict legal mandate for every small craft, why do Minnesota boating safety courses recommend carrying an anchor and sufficient anchor line?",
+    "choice_a": "Anchors are useful only for overnight houseboat stays",
+    "choice_b": "An anchor has no practical safety value on an inland lake",
+    "choice_c": "A properly sized anchor and enough line let a boater hold position in an emergency, such as engine failure in wind or current, instead of drifting toward a hazard, shoreline, or busy channel",
+    "choice_d": "Anchors are prohibited on most Minnesota lakes",
+    "correct_choice": "C",
+    "explanation": "An appropriately sized anchor with enough line allows a disabled or waiting boat to hold its position rather than drifting with wind or current toward rocks, other boats, or a busy channel, which is why it is treated as recommended safety gear even where not strictly mandated for a given vessel class.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (anchor and anchor line as recommended safety equipment)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What practical step should an operator take with a powered ventilation blower before starting a gasoline inboard engine that has been sitting with the compartment closed?",
+    "choice_a": "Skip the blower entirely if the boat smells fine",
+    "choice_b": "Run the blower for several minutes to clear accumulated fuel vapors from the bilge and engine compartment before starting the engine",
+    "choice_c": "Run the blower only after the engine is already running",
+    "choice_d": "Blowers are decorative and have no bearing on engine starting procedure",
+    "correct_choice": "B",
+    "explanation": "Because gasoline vapors can accumulate in a closed bilge or engine compartment, an operator should run the required powered ventilation blower for several minutes before starting the engine to clear those vapors, reducing the risk of an explosion or fire at startup.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.531 (fuel area ventilation; pre-start blower use)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "How does the type of sound-signaling device required aboard a Minnesota vessel generally vary with the vessel's length?",
+    "choice_a": "Every vessel of every length may only use a mouth whistle",
+    "choice_b": "Length has no bearing on the sound device requirement",
+    "choice_c": "Smaller vessels may typically use a hand, mouth, or power-operated whistle, while larger vessels are expected to have a power-operated horn capable of being heard over a greater distance",
+    "choice_d": "Only vessels under 10 feet need any sound-signaling device",
+    "correct_choice": "C",
+    "explanation": "Sound-signaling requirements generally scale with vessel length: smaller recreational boats commonly satisfy the requirement with a hand, mouth, or power whistle, while larger vessels are expected to carry a power-operated horn audible over a greater distance for effective signaling and fog warnings.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (sound-signaling device requirements scaled by vessel length)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "If loading passengers and gear would bring a Minnesota boat close to or over its capacity plate's rated maximum in choppy or windy conditions, what is the prudent response?",
+    "choice_a": "Load exactly to the plate's numeric maximum regardless of water conditions",
+    "choice_b": "Reduce the number of people or amount of gear well below the plate's maximum rating, since rough water and wind reduce the safe margin the plate assumes for calm conditions",
+    "choice_c": "Ignore the capacity plate since it is only a suggestion",
+    "choice_d": "Add extra unsecured gear to balance the load",
+    "correct_choice": "B",
+    "explanation": "A capacity plate's rating generally assumes reasonably calm conditions, so a prudent operator reduces the actual load below the plate's stated maximum when facing rough water, wind, or waves, since those conditions reduce the freeboard and stability margin the rating was based on.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.505 (capacity plate rating); universal boating safety fundamentals (loading margin in adverse conditions)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What lighting is generally required on a Minnesota motorboat anchored overnight away from a dock or designated mooring area, between sunset and sunrise?",
+    "choice_a": "No lighting is required once a vessel is anchored rather than underway",
+    "choice_b": "The same running lights used while underway, left on continuously",
+    "choice_c": "An all-round white anchor light, so other vessels operating at night can see the anchored boat's position and avoid a collision",
+    "choice_d": "A flashing red light identical to a hazard buoy",
+    "correct_choice": "C",
+    "explanation": "A vessel anchored outside a designated anchorage area between sunset and sunrise generally must display an all-round white anchor light rather than its underway running lights, giving other nighttime boaters a clear signal of the anchored vessel's fixed position.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.511 (navigation and anchor lighting requirements)"
+  }
+]

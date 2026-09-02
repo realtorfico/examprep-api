@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "Under the U.S. Aids to Navigation System, what does a red, even-numbered buoy mark when a boater is returning from open water toward a harbor, such as heading up Mobile Bay toward the Port of Mobile?",
+    "choice_a": "The right side of the channel -- \"red, right, returning\" means keep red markers on your right (starboard) side when heading upstream or into a harbor",
+    "choice_b": "The center of the deepest water in the channel",
+    "choice_c": "A prohibited swimming area",
+    "choice_d": "A hazard that must always be passed on the same side as a green marker",
+    "correct_choice": "A",
+    "explanation": "The lateral system's memory aid \"red, right, returning\" means a boater should keep red, even-numbered markers on the right (starboard) side of the vessel when returning from open water or heading upstream, such as when heading into Mobile Bay from the Gulf.",
+    "weight": 5,
+    "source_note": "Universal U.S. Aids to Navigation System (lateral system), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What color and shape is used for a green, odd-numbered aid to navigation under the lateral system?",
+    "choice_a": "A red, cone-shaped nun buoy",
+    "choice_b": "A green can-shaped buoy (flat-topped) with an odd number",
+    "choice_c": "A yellow buoy with no number",
+    "choice_d": "A black-and-white striped buoy",
+    "correct_choice": "B",
+    "explanation": "In the lateral system, green markers are can-shaped (flat-topped) buoys carrying odd numbers, and they are kept on a boater's left (port) side when returning from open water or heading upstream -- the opposite side from red, even-numbered nun buoys.",
+    "weight": 4,
+    "source_note": "Universal U.S. Aids to Navigation System (lateral system)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a safe water mark, showing red and white vertical stripes, indicate to a boater on Alabama waters?",
+    "choice_a": "A hazard directly ahead that must be avoided at all costs",
+    "choice_b": "A swimming-only area where boats are banned",
+    "choice_c": "Unobstructed, safe water is on all sides of the mark, often used to indicate a mid-channel or approach point",
+    "choice_d": "The boundary of a no-wake zone only",
+    "correct_choice": "C",
+    "explanation": "A safe water mark with red and white vertical stripes indicates navigable water on all sides, commonly used to mark a fairway, mid-channel, or the approach to a channel from open water.",
+    "weight": 4,
+    "source_note": "Universal U.S. Aids to Navigation System (safe water marks), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does an orange-and-white regulatory marker with a diamond symbol containing a cross typically indicate on an Alabama lake such as Guntersville or Wheeler Lake?",
+    "choice_a": "A fueling station",
+    "choice_b": "A designated area exclusively for high-speed racing",
+    "choice_c": "A recommended anchorage with no restrictions",
+    "choice_d": "An exclusion or danger area that vessels must not enter, such as a swimming area, dam, or restricted zone",
+    "correct_choice": "D",
+    "explanation": "Orange-and-white regulatory markers use standardized symbols: a diamond with a cross through it marks an exclusion area vessels must not enter, such as a swimming zone, dam approach, or other restricted area -- important near Alabama's TVA and Alabama Power hydroelectric dams.",
+    "weight": 4,
+    "source_note": "Universal U.S. Aids to Navigation System (Uniform State Waterway Marking System regulatory markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does an orange-and-white regulatory marker showing a plain diamond symbol (no cross) indicate?",
+    "choice_a": "A danger area, such as rocks, a shoal, or a submerged hazard, that boaters should approach with caution or avoid",
+    "choice_b": "A no-wake zone specifically",
+    "choice_c": "An area reserved for personal watercraft only",
+    "choice_d": "A safe area for swimming with no restrictions",
+    "correct_choice": "A",
+    "explanation": "A plain diamond symbol on an orange-and-white regulatory marker warns of a danger, such as a submerged rock, shoal, or other hazard, and boaters should proceed with caution or avoid the marked area entirely.",
+    "weight": 3,
+    "source_note": "Universal U.S. Aids to Navigation System (Uniform State Waterway Marking System regulatory markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does an orange-and-white circle symbol on a regulatory marker indicate on Alabama waters?",
+    "choice_a": "A hazard that must be avoided entirely",
+    "choice_b": "A controlled-operation area, such as a no-wake or idle-speed zone, where boaters must comply with the stated restriction",
+    "choice_c": "A fuel dock",
+    "choice_d": "An area with unlimited speed permitted",
+    "correct_choice": "B",
+    "explanation": "A circle symbol on an orange-and-white regulatory marker designates a controlled-operation area, such as a no-wake zone, idle-speed zone, or other area where vessel operation is restricted in a specific way described on the sign.",
+    "weight": 3,
+    "source_note": "Universal U.S. Aids to Navigation System (Uniform State Waterway Marking System regulatory markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What do the square orange-and-white regulatory markers with black lettering typically display?",
+    "choice_a": "Personal watercraft-only zones",
+    "choice_b": "Only hazard warnings, identical to the diamond symbol",
+    "choice_c": "General information, such as directions, distances, or other non-hazard, non-regulatory notices useful to boaters",
+    "choice_d": "Fire danger levels",
+    "correct_choice": "C",
+    "explanation": "A square symbol on an orange-and-white marker is the informational marker, used to provide directions, distances, locations of services, or other general information rather than a hazard or regulatory restriction.",
+    "weight": 3,
+    "source_note": "Universal U.S. Aids to Navigation System (Uniform State Waterway Marking System informational markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Along Alabama's Gulf Intracoastal Waterway near Mobile Bay, what do yellow triangle and square symbols on aids to navigation typically indicate?",
+    "choice_a": "Yellow symbols have no meaning under the U.S. aids to navigation system",
+    "choice_b": "They mean the channel is permanently closed to all traffic",
+    "choice_c": "They are used only to mark swimming beaches",
+    "choice_d": "They mark the Intracoastal Waterway route itself, supplementing the normal red/green lateral system so boaters can follow the ICW route separately from a connecting channel",
+    "correct_choice": "D",
+    "explanation": "A yellow triangle or square added to a standard aid to navigation identifies it as part of the Intracoastal Waterway route, helping boaters follow the ICW distinctly from other channels it crosses or joins, such as where it passes through Alabama's Mobile Bay.",
+    "weight": 4,
+    "source_note": "Universal U.S. Aids to Navigation System (Intracoastal Waterway yellow symbols) applied to Alabama's Gulf Intracoastal Waterway segment"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a preferred-channel (junction) marker, showing both red and green bands with the top color indicating the preferred route, tell a boater?",
+    "choice_a": "The channel splits, and the top band's color shows which side to treat the marker as if it were that color when choosing the preferred (deeper or primary) route",
+    "choice_b": "The marker indicates a total prohibition on entering the channel",
+    "choice_c": "It marks a designated swimming area",
+    "choice_d": "It always means to stop and reverse course",
+    "correct_choice": "A",
+    "explanation": "A preferred-channel or junction marker shows a horizontal band of both red and green; the color of the topmost band indicates which type of marker (red or green) it should be treated as when a boater is following the preferred route through the junction.",
+    "weight": 4,
+    "source_note": "Universal U.S. Aids to Navigation System (preferred-channel/junction markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Why is understanding lateral and regulatory markers especially important for boaters navigating Alabama's hydroelectric-dam reservoirs, like those on the Tennessee River and Coosa River systems?",
+    "choice_a": "Because reservoirs never have any navigational hazards worth marking",
+    "choice_b": "Because exclusion markers near dam faces, spillways, and tailraces warn of dangerous currents and restricted zones that boaters must not enter, and channel markers guide safe passage through varying reservoir depths",
+    "choice_c": "Because dams are always located outside any Marine Patrol district and are unmarked",
+    "choice_d": "Markers on reservoirs use an entirely different, unrelated color scheme from the rest of the country",
+    "correct_choice": "B",
+    "explanation": "Alabama's extensive system of TVA and Alabama Power hydroelectric reservoirs includes dam faces, spillways, and tailraces with genuinely dangerous currents, which is why exclusion and danger markers near these structures matter so much, alongside standard lateral channel markers guiding safe routes across varying reservoir depths.",
+    "weight": 3,
+    "source_note": "Universal aids-to-navigation principles applied to Alabama's Tennessee River/Coosa River hydroelectric reservoir system (ALEA boating rules and regulations, hydroelectric dam area special requirements)"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How does Arizona law broadly define a 'watercraft'?",
+    "choice_a": "Any boat designed to be propelled by machinery, oars, paddles, or wind action on a sail for navigation on the water",
+    "choice_b": "Only vessels longer than 20 feet that have an inboard engine",
+    "choice_c": "Only motorized vessels that are registered with the U.S. Coast Guard",
+    "choice_d": "Any object that floats, regardless of whether it is designed for navigation",
+    "correct_choice": "A",
+    "explanation": "Arizona's watercraft statutes define 'watercraft' broadly as any boat designed to be propelled by machinery, oars, paddles, or wind action on a sail for navigation on the water.",
+    "weight": 2,
+    "source_note": "A.R.S. § 5-301, 'Definitions' (watercraft)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Under Arizona law, how is a 'motorboat' specifically defined?",
+    "choice_a": "Any vessel with an outboard engine, regardless of its length",
+    "choice_b": "Any watercraft that is not more than sixty-five feet in length and that is propelled by machinery",
+    "choice_c": "Any vessel used exclusively for racing on public waters",
+    "choice_d": "Any non-motorized vessel equipped with a sail",
+    "correct_choice": "B",
+    "explanation": "Arizona statute defines a 'motorboat' as any watercraft that is not more than sixty-five feet in length and that is propelled by machinery, whether or not the machinery is the principal source of propulsion.",
+    "weight": 2,
+    "source_note": "A.R.S. § 5-301, 'Definitions' (motorboat)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is the key difference between Arizona's statutory definitions of 'motorized watercraft' and 'motorboat'?",
+    "choice_a": "There is no difference; Arizona statute uses the two terms interchangeably in every section",
+    "choice_b": "'Motorboat' includes sailboats, while 'motorized watercraft' does not",
+    "choice_c": "'Motorized watercraft' includes any watercraft propelled by machinery regardless of length, while 'motorboat' specifically means a watercraft of sixty-five feet or less that is propelled by machinery",
+    "choice_d": "'Motorized watercraft' applies only to personal watercraft",
+    "correct_choice": "C",
+    "explanation": "Arizona law defines 'motorized watercraft' as any watercraft propelled by machinery whether or not the machinery is the principal source of propulsion, with no length limit, while 'motorboat' is narrower -- specifically a watercraft of sixty-five feet or less that is propelled by machinery.",
+    "weight": 3,
+    "source_note": "A.R.S. § 5-301, 'Definitions' (motorized watercraft; motorboat)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What does Arizona law mean by a 'documented watercraft'?",
+    "choice_a": "Any watercraft that has a bill of sale on file with the Arizona Game and Fish Department",
+    "choice_b": "A watercraft that has passed a state-mandated safety inspection",
+    "choice_c": "A watercraft covered by a written marine insurance policy",
+    "choice_d": "A watercraft that is currently registered as a vessel of the United States under federal Coast Guard documentation regulations (46 CFR Part 67)",
+    "correct_choice": "D",
+    "explanation": "Under Arizona statute, a 'documented watercraft' is any watercraft currently registered as a watercraft of the United States pursuant to 46 Code of Federal Regulations Part 67, i.e., federally documented through the U.S. Coast Guard rather than state-numbered.",
+    "weight": 3,
+    "source_note": "A.R.S. § 5-301, 'Definitions' (documented watercraft)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How does Arizona law define an 'undocumented watercraft'?",
+    "choice_a": "Any watercraft that does not have, and is not required to have, a valid marine document as a watercraft of the United States",
+    "choice_b": "Any watercraft that has never been registered in any state",
+    "choice_c": "Any watercraft that is currently unsafe to operate",
+    "choice_d": "Any watercraft under twelve feet in length",
+    "correct_choice": "A",
+    "explanation": "Arizona statute defines an 'undocumented watercraft' as any watercraft that does not have, and is not required to have, a valid marine document as a watercraft of the United States -- meaning it falls under state numbering requirements instead of federal documentation.",
+    "weight": 2,
+    "source_note": "A.R.S. § 5-301, 'Definitions' (undocumented watercraft)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Why can a federally documented vessel legally operate on Arizona waters without also carrying an Arizona-issued hull number?",
+    "choice_a": "Documented vessels are exempt from every state and federal registration fee nationwide",
+    "choice_b": "Arizona law exempts documented watercraft that are numbered in accordance with United States Coast Guard regulations from the state's numbering requirement",
+    "choice_c": "Documented vessels must still obtain an Arizona number, just not a decal",
+    "choice_d": "Only personal watercraft that are documented receive this exemption",
+    "correct_choice": "B",
+    "explanation": "Arizona's numbering statute exempts 'documented watercraft numbered in accordance with the regulations of the United States coast guard' from the requirement to obtain a state-issued number, since the vessel is already identified through federal documentation.",
+    "weight": 3,
+    "source_note": "A.R.S. § 5-322 (exemptions from Arizona watercraft numbering)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How does Arizona law classify a 'sailboard'?",
+    "choice_a": "A powered surfboard equipped with a small outboard motor",
+    "choice_b": "A type of personal watercraft used exclusively for racing",
+    "choice_c": "Any board of less than fifteen feet in length that is designed to be propelled by wind action",
+    "choice_d": "A board used only for towing water skiers behind a motorboat",
+    "correct_choice": "C",
+    "explanation": "Arizona statute defines a 'sailboard' as any board of less than fifteen feet in length that is designed to be propelled by wind action on a sail, distinguishing it from motorized craft and from personal watercraft.",
+    "weight": 2,
+    "source_note": "A.R.S. § 5-301, 'Definitions' (sailboard)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How is a 'rowing shell' classified under Arizona watercraft law?",
+    "choice_a": "Any small motorized fishing boat used on a lake",
+    "choice_b": "A type of personal watercraft",
+    "choice_c": "A canoe designed specifically for whitewater use",
+    "choice_d": "A manually propelled watercraft that is recognized by a national rowing/racing association",
+    "correct_choice": "D",
+    "explanation": "Arizona statute defines a 'rowing shell' as a manually propelled watercraft that is recognized by a national racing association, a classification distinct from motorized watercraft or PWC.",
+    "weight": 2,
+    "source_note": "A.R.S. § 5-301, 'Definitions' (rowing shell)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Under Arizona law, what is a 'launch' in the context of vessel classification?",
+    "choice_a": "Any motorized watercraft that carries a coach and is used to follow and monitor rowing shells",
+    "choice_b": "Any vessel used to launch a boat off of a trailer at a ramp",
+    "choice_c": "The initial registration event for a newly purchased vessel",
+    "choice_d": "A term for a personal watercraft's very first outing on the water",
+    "correct_choice": "A",
+    "explanation": "Arizona statute defines a 'launch' as any motorized watercraft that carries a coach and that is used to follow and monitor rowing shells, a specific vessel classification tied to competitive rowing.",
+    "weight": 2,
+    "source_note": "A.R.S. § 5-301, 'Definitions' (launch)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How does Arizona law define a 'commercial motorized watercraft'?",
+    "choice_a": "Any motorized watercraft that is owned by a registered business, regardless of how it is used",
+    "choice_b": "A motorized watercraft that carries passengers or property for a valuable consideration",
+    "choice_c": "A vessel used exclusively by a government agency",
+    "choice_d": "A personal watercraft rented out from a marina",
+    "correct_choice": "B",
+    "explanation": "Arizona statute defines a 'commercial motorized watercraft' as a motorized watercraft that carries passengers or property for a valuable consideration, distinguishing it from privately operated recreational vessels.",
+    "weight": 2,
+    "source_note": "A.R.S. § 5-301, 'Definitions' (commercial motorized watercraft)"
+  }
+]

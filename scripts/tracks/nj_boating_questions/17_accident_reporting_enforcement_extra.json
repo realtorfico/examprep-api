@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under N.J.S.A. 12:7-34.46(a), how do the penalties for violating the duty to render aid and exchange identifying information after a boating accident escalate between a first offense and a subsequent offense?",
+    "choice_a": "First offense: a fine of not less than $200 nor more than $400, or imprisonment for up to 30 days, or both; subsequent offense: a fine of not less than $400 nor more than $600, or imprisonment for 30 to 90 days, or both",
+    "choice_b": "Both a first offense and a subsequent offense carry an identical flat fine of $500 with no possibility of jail time",
+    "choice_c": "There is no escalation -- every offense under this section is treated the same, with only a written warning issued",
+    "choice_d": "The fine actually decreases for a subsequent offense because the operator is presumed to already understand the law",
+    "correct_choice": "A",
+    "explanation": "N.J.S.A. 12:7-34.46(a) sets a first-offense penalty of a fine of not less than $200 or more than $400, or imprisonment of up to 30 days, or both, for failing to render aid or exchange identifying information after a boating accident. A subsequent offense increases the penalty to a fine of not less than $400 or more than $600, or imprisonment of not less than 30 nor more than 90 days, or both.",
+    "weight": 3,
+    "source_note": "N.J.S.A. 12:7-34.46(a) (NJ Statutes 2020, Title 12 Chapter 7), official text hosted at njsp.njoag.gov/wp/wp-content/uploads/Title_12_7_20220127.pdf"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under N.J.S.A. 12:7-34.46(c), what specific deadline applies to reporting a New Jersey boating accident to the Division of State Police, depending on its severity?",
+    "choice_a": "Every boating accident, no matter how severe, must be reported within 30 days and no sooner",
+    "choice_b": "An accident causing a death or the disappearance of a person must be reported by the quickest means of communication possible; any other reportable accident resulting in personal injury or property damage must be reported within 10 days",
+    "choice_c": "Only accidents involving property damage must ever be reported, and only within 10 days; deaths and disappearances have no reporting requirement",
+    "choice_d": "Reports may be filed at the operator's convenience since New Jersey law sets no fixed deadline at all",
+    "correct_choice": "B",
+    "explanation": "N.J.S.A. 12:7-34.46(c) requires a boating accident that has caused a death or disappearance to be reported to the Division of State Police by the quickest means of communication possible, while any other reportable accident resulting in personal injury or property damage must be reported within 10 days.",
+    "weight": 3,
+    "source_note": "N.J.S.A. 12:7-34.46(c) (NJ Statutes 2020, Title 12 Chapter 7), official text hosted at njsp.njoag.gov/wp/wp-content/uploads/Title_12_7_20220127.pdf"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "How does N.J.S.A. 12:7-34.46(b) define the property-damage threshold that triggers a mandatory New Jersey boating accident report?",
+    "choice_a": "Any property damage at all, even a single dollar, regardless of any federal reference point",
+    "choice_b": "New Jersey sets its own fixed dollar figure that has nothing to do with any federal regulation",
+    "choice_c": "Property damage in excess of the federal standard for filing an accident report established under 33 C.F.R. Section 173.55, with the Superintendent of State Police required to notify operators of any change to that federal standard",
+    "choice_d": "Property damage is explicitly excluded and can never be a basis for a mandatory boating accident report in New Jersey",
+    "correct_choice": "C",
+    "explanation": "N.J.S.A. 12:7-34.46(b) ties New Jersey's reportable property-damage threshold to the federal standard for filing an accident report established under 33 C.F.R. Section 173.55, and requires the Superintendent of State Police to notify operators of any change to that federal standard.",
+    "weight": 3,
+    "source_note": "N.J.S.A. 12:7-34.46(b) (NJ Statutes 2020, Title 12 Chapter 7), official text hosted at njsp.njoag.gov/wp/wp-content/uploads/Title_12_7_20220127.pdf"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under N.J.S.A. 12:7-34.46(d), how is a required New Jersey boating accident report treated in a later court proceeding?",
+    "choice_a": "The report automatically becomes the primary piece of evidence in any related lawsuit",
+    "choice_b": "Either party in a lawsuit may subpoena the report at any time for any purpose",
+    "choice_c": "Filing the report automatically waives the operator's right to remain silent in a related criminal case",
+    "choice_d": "The report itself may not be referred to in any judicial proceeding, is not subject to subpoena, and is not admissible as evidence, though the underlying information may still be shared with the U.S. Coast Guard for official statistical purposes",
+    "correct_choice": "D",
+    "explanation": "N.J.S.A. 12:7-34.46(d) provides that a required boating accident report may not be referred to during any judicial proceeding and is neither subject to subpoena nor admissible as evidence, though the information (and statistics based on it) may still be made available for official purposes such as to the U.S. Coast Guard.",
+    "weight": 2,
+    "source_note": "N.J.S.A. 12:7-34.46(d) (NJ Statutes 2020, Title 12 Chapter 7), official text hosted at njsp.njoag.gov/wp/wp-content/uploads/Title_12_7_20220127.pdf"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "For a violation of Title 12, Chapter 7 boating law that does not carry its own specifically prescribed penalty, what default fine schedule does N.J.S.A. 12:7-51 (General penalties) set?",
+    "choice_a": "$25 for a first offense, $50 for a second offense, and $100 for a third and each subsequent offense of the same violation",
+    "choice_b": "A flat $1,000 fine no matter how many times the person has previously offended",
+    "choice_c": "No fine at all -- any violation lacking a specifically prescribed penalty simply goes unpunished",
+    "choice_d": "Automatic, permanent loss of the vessel's registration on a first violation, with no fine involved",
+    "correct_choice": "A",
+    "explanation": "N.J.S.A. 12:7-51 establishes a catch-all penalty for any Title 12, Chapter 7 violation (or violation of a rule or regulation issued under it) that does not have its own specifically prescribed penalty: $25 for a first offense, $50 for a second offense, and $100 for a third and each subsequent offense of the same violation.",
+    "weight": 2,
+    "source_note": "N.J.S.A. 12:7-51 (NJ Statutes 2020, Title 12 Chapter 7), official text hosted at njsp.njoag.gov/wp/wp-content/uploads/Title_12_7_20220127.pdf"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under N.J.S.A. 12:7-79, what is a vessel operator's legal obligation when ordered to stop by a law enforcement officer on New Jersey waters?",
+    "choice_a": "The operator may keep going if the officer's patrol boat is not displaying its emergency lights",
+    "choice_b": "The operator shall stop or lay to when so ordered by any law enforcement officer",
+    "choice_c": "Only personal watercraft operators are required to stop when ordered; operators of other vessel types may continue on",
+    "choice_d": "New Jersey law imposes no legal duty to stop for a marine law enforcement officer under any circumstance",
+    "correct_choice": "B",
+    "explanation": "N.J.S.A. 12:7-79 provides that a person operating a vessel on the waters of New Jersey shall stop or lay to whenever so ordered by any law enforcement officer, giving officers a clear statutory basis to compel a vessel to stop for inspection or investigation.",
+    "weight": 3,
+    "source_note": "N.J.S.A. 12:7-79 (NJ Statutes 2020, Title 12 Chapter 7), official text hosted at njsp.njoag.gov/wp/wp-content/uploads/Title_12_7_20220127.pdf"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under N.J.S.A. 12:7-80(c), when may a New Jersey law enforcement officer arrest a boater without a warrant for operating a vessel under the influence in violation of N.J.S.A. 12:7-46?",
+    "choice_a": "A warrantless arrest for boating under the influence is never permitted under any circumstances in New Jersey",
+    "choice_b": "The officer must personally witness the violation occur before any arrest can be made, with no exceptions",
+    "choice_c": "The officer may make a warrantless arrest based on probable cause to believe the person violated the boating-under-the-influence law, even if the violation did not occur in the officer's presence",
+    "choice_d": "Only a judge, and never a law enforcement officer, has authority to order an arrest for this offense",
+    "correct_choice": "C",
+    "explanation": "N.J.S.A. 12:7-80(c) specifically authorizes a law enforcement officer to arrest without a warrant any person the officer has probable cause to believe has operated a vessel under the influence in violation of N.J.S.A. 12:7-46, regardless of whether the suspected violation occurred in the officer's presence -- an exception to the general in-presence arrest rule in subsection (b).",
+    "weight": 3,
+    "source_note": "N.J.S.A. 12:7-80(c) (NJ Statutes 2020, Title 12 Chapter 7), official text hosted at njsp.njoag.gov/wp/wp-content/uploads/Title_12_7_20220127.pdf"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under N.J.S.A. 12:7-69, which agency holds primary jurisdiction over investigating accidents and crimes involving the operation of personal watercraft in New Jersey, even though county and municipal police may also enforce personal watercraft laws?",
+    "choice_a": "The county prosecutor's office, to the exclusion of all other agencies",
+    "choice_b": "The U.S. Coast Guard, with no role for any New Jersey state agency",
+    "choice_c": "Local municipal harbor commissions",
+    "choice_d": "The Division of State Police",
+    "correct_choice": "D",
+    "explanation": "N.J.S.A. 12:7-69 authorizes the Division of State Police and county or municipal police officers to enforce personal watercraft law provisions, but specifies that the Division of State Police shall maintain primary jurisdiction over the investigation of accidents and crimes involving the operation of personal watercraft.",
+    "weight": 2,
+    "source_note": "N.J.S.A. 12:7-69 (NJ Statutes 2020, Title 12 Chapter 7), official text hosted at njsp.njoag.gov/wp/wp-content/uploads/Title_12_7_20220127.pdf"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under N.J.S.A. 12:7-55(a)(2), how does an operator's involvement in a boating accident factor into an officer's decision to request a chemical breath test for intoxication?",
+    "choice_a": "Whenever an operator has been involved in an accident resulting in death, bodily injury, or property damage, the officer shall consider that fact, along with all other facts and circumstances, in deciding whether there are reasonable grounds to believe the operator was boating under the influence",
+    "choice_b": "Involvement in a boating accident is legally irrelevant to any investigation into possible intoxication",
+    "choice_c": "Being involved in an accident automatically and conclusively proves intoxication with no further inquiry allowed",
+    "choice_d": "Only a judge, and never the investigating officer, may take accident involvement into account when assessing suspected intoxication",
+    "correct_choice": "A",
+    "explanation": "N.J.S.A. 12:7-55(a)(2), part of New Jersey's implied consent provisions, directs that when an operator has been involved in an accident resulting in death, bodily injury, or property damage, an officer must weigh that fact together with all other facts and circumstances in determining whether reasonable grounds exist to believe the operator was operating under the influence in violation of N.J.S.A. 12:7-46.",
+    "weight": 2,
+    "source_note": "N.J.S.A. 12:7-55(a)(2) (NJ Statutes 2020, Title 12 Chapter 7), official text hosted at njsp.njoag.gov/wp/wp-content/uploads/Title_12_7_20220127.pdf"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Personal Flotation Devices",
+    "question": "What is a Type II personal flotation device (near-shore buoyant vest) designed for?",
+    "choice_a": "Extended offshore survival in rough seas",
+    "choice_b": "Calmer, inland, or near-shore water where rescue is likely to be relatively quick, providing less buoyancy and turning ability than a Type I but more than a Type III",
+    "choice_c": "Exclusive use as a throwable device",
+    "choice_d": "Use only by non-swimmers under age 5",
+    "correct_choice": "B",
+    "explanation": "A Type II near-shore vest sits between a Type I and a Type III in performance: it offers some ability to turn an unconscious wearer face-up and is intended for calmer waters where help is likely to arrive quickly.",
+    "weight": 2,
+    "source_note": "Universal USCG PFD-type classification (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Personal Flotation Devices",
+    "question": "Under federal PFD approval standards, what age requirement generally applies to most inflatable PFDs?",
+    "choice_a": "The wearer must be at least 16 years old, since most inflatables are not approved for younger children",
+    "choice_b": "There is no minimum age for any inflatable PFD",
+    "choice_c": "The wearer must be at least 25 years old",
+    "choice_d": "Inflatable PFDs may only be worn by infants",
+    "correct_choice": "A",
+    "explanation": "Most USCG-approved inflatable PFDs carry a label restricting use to wearers at least 16 years old, since younger or smaller wearers may not reliably activate or benefit from the inflation mechanism.",
+    "weight": 2,
+    "source_note": "Universal USCG inflatable PFD approval-label age restriction (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Personal Flotation Devices",
+    "question": "Even though canoes and kayaks are generally exempt from Maryland's vessel numbering requirement, what PFD rule still applies to them?",
+    "choice_a": "No PFD is required on a canoe or kayak under any circumstance",
+    "choice_b": "PFDs are required only if the canoe or kayak is longer than 16 feet",
+    "choice_c": "Each person aboard a canoe or kayak must still have a wearable, USCG-approved PFD available, just as on any other recreational vessel",
+    "choice_d": "Only the person steering the canoe needs a PFD",
+    "correct_choice": "C",
+    "explanation": "The vessel numbering exemption for manually propelled vessels does not remove the separate federal and Maryland requirement that every person aboard have an appropriate, USCG-approved PFD available, including on a canoe or kayak.",
+    "weight": 3,
+    "source_note": "Universal USCG/Maryland PFD carriage requirement, independent of vessel numbering exemptions (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Personal Flotation Devices",
+    "question": "Besides being the correct size and USCG-approved, what does it mean for a PFD to be 'readily accessible' aboard a vessel?",
+    "choice_a": "It must be stored in its original sealed packaging at all times",
+    "choice_b": "It can be reached and put on quickly in an emergency, not stored in a locked or hard-to-reach compartment",
+    "choice_c": "It must be worn at all times regardless of conditions",
+    "choice_d": "It has no bearing on whether the device satisfies the legal requirement",
+    "correct_choice": "B",
+    "explanation": "A PFD that is buried under gear, locked away, or otherwise difficult to reach quickly does not meet the practical 'readily accessible' expectation behind the carriage requirement, since it would not help someone in a sudden emergency.",
+    "weight": 2,
+    "source_note": "Universal USCG PFD carriage/accessibility guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Personal Flotation Devices",
+    "question": "When choosing a PFD for a child, why is it important to check the manufacturer's weight range on the label rather than relying on the child's age alone?",
+    "choice_a": "PFD buoyancy and fit are matched to a wearer's weight range, so a device sized only by age could be too loose or lack enough buoyancy for that particular child",
+    "choice_b": "PFD labels never include weight information",
+    "choice_c": "Age is always a more accurate sizing measure than weight",
+    "choice_d": "Weight has no relationship to PFD buoyancy needs",
+    "correct_choice": "A",
+    "explanation": "PFDs are sized and rated by wearer weight range rather than age, because two children of the same age can differ significantly in weight, so checking the weight label ensures a proper, safe fit.",
+    "weight": 2,
+    "source_note": "Universal PFD sizing guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Personal Flotation Devices",
+    "question": "Unlike a Type I offshore life jacket, what is a limitation of a Type III flotation aid?",
+    "choice_a": "It is not designed to reliably turn an unconscious wearer face-up, which is why it is best suited for conscious, active users in calmer water",
+    "choice_b": "It cannot be worn while boating",
+    "choice_c": "It provides more buoyancy than a Type I",
+    "choice_d": "It is illegal to wear on Maryland waters",
+    "correct_choice": "A",
+    "explanation": "A Type III flotation aid is comfortable and popular for active water sports, but unlike a Type I, it is not designed to dependably turn an unconscious wearer face-up, making it best suited to conscious swimmers in calmer waters.",
+    "weight": 2,
+    "source_note": "Universal USCG PFD-type classification (NASBLA-aligned course content)"
+  }
+]

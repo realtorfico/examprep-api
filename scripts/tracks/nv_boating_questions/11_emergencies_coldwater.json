@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "If a small boat capsizes on Lake Tahoe, what is generally the safest action for the occupants?",
+    "choice_a": "Remove life jackets to swim faster",
+    "choice_b": "Dive underwater to look for the source of the capsizing",
+    "choice_c": "Stay with the boat, since it provides flotation and is far easier for rescuers to spot than a swimmer alone, and swimming to shore is often farther than it appears",
+    "choice_d": "Immediately swim for shore no matter the distance",
+    "correct_choice": "C",
+    "explanation": "Most recreational boats float even when capsized or swamped, so staying with the vessel keeps occupants together, conserves energy, and gives rescuers a much larger, more visible target than a lone swimmer, especially across the open expanse of Lake Tahoe.",
+    "weight": 4,
+    "source_note": "Universal capsizing response guidance (stay with the boat), NASBLA-aligned boating safety curriculum, applied to Lake Tahoe's open-water distances"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "What is the \"1-10-1\" principle used to describe the stages of cold-water immersion?",
+    "choice_a": "It refers to a boat's required equipment count: 1 fire extinguisher, 10 feet of rope, and 1 life jacket per person",
+    "choice_b": "It describes the maximum legal speed in a no-wake zone",
+    "choice_c": "It is a Nevada-specific registration fee schedule",
+    "choice_d": "About 1 minute to control initial cold shock and breathing, about 10 minutes of meaningful muscle movement before losing coordination, and about 1 hour before hypothermia causes unconsciousness",
+    "correct_choice": "D",
+    "explanation": "The 1-10-1 principle is a widely taught cold-water immersion framework: about 1 minute to get cold shock and breathing under control, about 10 minutes of useful muscle function before losing coordination, and roughly 1 hour before hypothermia leads to unconsciousness, a timeline highly relevant to Lake Tahoe's cold water even in summer.",
+    "weight": 4,
+    "source_note": "Universal 1-10-1 cold water immersion principle, NASBLA-aligned boating safety curriculum, applied to Lake Tahoe's documented cold surface temperatures"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "Why does Lake Tahoe present a meaningful cold-water immersion risk even on a hot summer day?",
+    "choice_a": "Lake Tahoe is extremely deep and sits at roughly 6,225 feet elevation, so its surface water stays cold, often in the 50s Fahrenheit, even while air temperatures are warm",
+    "choice_b": "Lake Tahoe's water temperature always matches the air temperature",
+    "choice_c": "Cold-water immersion risk applies only to salt water, not freshwater alpine lakes",
+    "choice_d": "Lake Tahoe is shallow, so the sun warms it thoroughly by midsummer",
+    "correct_choice": "A",
+    "explanation": "Lake Tahoe's exceptional depth and high elevation mean the sun cannot warm its surface water the way it would a shallow desert reservoir, so the water commonly stays in the 50s Fahrenheit throughout the year, a real cold-shock and hypothermia risk even on a warm summer day.",
+    "weight": 4,
+    "source_note": "General alpine-lake thermal fundamentals applied to Lake Tahoe's documented depth, elevation, and cold year-round surface temperatures"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "What is the recommended body position for a lone person awaiting rescue in cold water, known as the HELP position?",
+    "choice_a": "Remove clothing to reduce water resistance while swimming",
+    "choice_b": "Heat Escape Lessening Position: draw the knees up toward the chest and hold the arms close to the sides to protect the body's core heat-loss areas",
+    "choice_c": "Swim continuously to generate body heat",
+    "choice_d": "Float completely flat on the back with limbs spread wide",
+    "correct_choice": "B",
+    "explanation": "The HELP (Heat Escape Lessening Position) draws the knees toward the chest and arms close to the body, protecting the torso, groin, and armpits, key areas of rapid heat loss, and helps a person conserve body heat while awaiting rescue.",
+    "weight": 3,
+    "source_note": "Universal cold-water immersion HELP position, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "What should be done immediately if a person falls overboard from a moving vessel?",
+    "choice_a": "Jump in after them immediately without a flotation device or plan",
+    "choice_b": "Radio for help and take no other action",
+    "choice_c": "Immediately reduce speed, turn to keep the person in sight, throw a flotation device toward them, and approach carefully to bring them safely aboard",
+    "choice_d": "Continue at the same speed and circle back later",
+    "correct_choice": "C",
+    "explanation": "A man-overboard response calls for immediately slowing down, keeping the person in continuous sight, throwing a flotation device, and carefully maneuvering back to recover them without endangering them with the propeller.",
+    "weight": 4,
+    "source_note": "Universal man-overboard response procedure, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "What should an operator do if a fire breaks out in the engine compartment while underway?",
+    "choice_a": "Open all engine compartment hatches fully to let the fire vent",
+    "choice_b": "Increase speed to blow the fire out with wind",
+    "choice_c": "Do nothing and wait for the fire to burn out",
+    "choice_d": "Position the boat so the fire is downwind, shut off the fuel supply, and use the onboard fire extinguisher aimed at the base of the flames rather than opening the compartment fully into the wind",
+    "correct_choice": "D",
+    "explanation": "Positioning the vessel so the fire is downwind, cutting the fuel supply, and applying a fire extinguisher at the base of the flames through a limited opening (rather than throwing the compartment wide open, which feeds the fire more oxygen) is the recommended onboard engine fire response.",
+    "weight": 3,
+    "source_note": "Universal onboard fire response procedure, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "Why is running out of fuel or having a mechanical breakdown a more serious concern on remote stretches of Lake Mead or Lake Mohave than on a small local pond?",
+    "choice_a": "These reservoirs have large, remote stretches with limited cell coverage and few nearby boaters, so help can take much longer to arrive, and extreme heat compounds the risk of being stranded",
+    "choice_b": "Breakdowns are equally minor no matter where they occur",
+    "choice_c": "Lake Mead and Lake Mohave always have boats within sight at every location",
+    "choice_d": "Fuel and mechanical issues are not a safety concern for boaters",
+    "correct_choice": "A",
+    "explanation": "The remote canyon stretches of Lake Mead and Lake Mohave can have limited cell coverage and sparse boat traffic, so a breakdown there can mean a much longer wait for help, made more dangerous by extreme desert heat and limited shade.",
+    "weight": 3,
+    "source_note": "General remote-water breakdown risk guidance applied to Lake Mead/Lake Mohave's terrain and desert climate"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "What is a \"float plan\" and why is it recommended before a trip on a large reservoir like Lake Mead?",
+    "choice_a": "An insurance document with no relevance to safety",
+    "choice_b": "A written plan left with a family member or friend describing the trip's route, expected return time, and vessel description, so rescuers know where to look if the boater does not return as expected",
+    "choice_c": "A plan for how to keep the boat floating if it takes on water",
+    "choice_d": "A mandatory government form filed only for vessels over 65 feet",
+    "correct_choice": "B",
+    "explanation": "A float plan left with someone onshore, describing the planned route, timing, and vessel details, gives search and rescue crews critical information to act on quickly if a boater fails to return, which matters especially on a large, remote body of water like Lake Mead.",
+    "weight": 3,
+    "source_note": "Universal float plan guidance, NASBLA-aligned boating safety curriculum, applied to Lake Mead's size and remote stretches"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "What immediate first-aid priority applies to a person just pulled from cold water showing signs of hypothermia?",
+    "choice_a": "Have the person perform strenuous exercise to warm up faster",
+    "choice_b": "No special care is needed once the person is out of the water",
+    "choice_c": "Gently remove wet clothing, insulate and warm the person gradually, and avoid vigorous movement or rubbing, which can trigger dangerous heart rhythm problems in a severely hypothermic person",
+    "choice_d": "Immediately place the person in a hot shower or hot tub",
+    "correct_choice": "C",
+    "explanation": "Gentle handling, gradual rewarming, and avoiding vigorous rubbing or sudden hot-water immersion are recommended for hypothermia victims because rough handling or a rapid temperature change can trigger dangerous cardiac arrhythmias in someone whose body is already cold-stressed.",
+    "weight": 3,
+    "source_note": "Universal cold-water immersion / hypothermia first-aid guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "What onboard tool helps a boater alert others and speed up rescue in an emergency on a large, remote reservoir like Lake Mohave?",
+    "choice_a": "Shouting alone is always sufficient regardless of distance to other boats",
+    "choice_b": "There is no effective way to signal for help on Nevada's reservoirs",
+    "choice_c": "A cell phone is guaranteed to work everywhere on Lake Mohave",
+    "choice_d": "A marine VHF radio and visual distress signals, which can reach nearby vessels, marinas, or rescue agencies even where cell service is unreliable",
+    "correct_choice": "D",
+    "explanation": "A marine VHF radio and visual distress signals like flares or an orange distress flag provide reliable ways to summon help on Lake Mohave's remote stretches, where cell phone coverage can be unreliable in the surrounding canyon terrain.",
+    "weight": 2,
+    "source_note": "General emergency signaling guidance applied to Lake Mohave's remote terrain and limited cell coverage"
+  }
+]

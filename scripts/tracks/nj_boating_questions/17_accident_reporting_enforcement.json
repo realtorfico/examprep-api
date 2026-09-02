@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "In general, what kinds of boating accidents must be reported to the New Jersey State Police Marine Services Bureau or another appropriate law enforcement agency?",
+    "choice_a": "Only accidents involving a PWC must ever be reported",
+    "choice_b": "Accidents involving death, injury requiring medical attention beyond simple first aid, disappearance of a person from the vessel, or significant property damage",
+    "choice_c": "Only accidents in which the vessel completely sinks",
+    "choice_d": "New Jersey has no boating accident reporting requirement",
+    "correct_choice": "B",
+    "explanation": "Consistent with the federal framework that states implement, New Jersey requires boating accidents involving death, injury beyond first aid, disappearance of a person, or significant property damage to be reported to NJSP Marine Services Bureau or another appropriate law enforcement authority.",
+    "weight": 4,
+    "source_note": "Federal boating accident reporting framework (33 CFR 173) implemented through NJSP Marine Services Bureau"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What is the first priority for an operator immediately after a boating accident occurs?",
+    "choice_a": "Take photographs before checking on anyone who may be injured",
+    "choice_b": "Contact only an insurance company, with no other obligation",
+    "choice_c": "Stop, render aid to anyone injured, and ensure the safety of everyone involved, without endangering their own vessel or crew",
+    "choice_d": "Leave the scene immediately to avoid liability",
+    "correct_choice": "C",
+    "explanation": "Just as with a vehicle collision, a vessel operator involved in a boating accident is expected to stop, help anyone injured, and ensure everyone's safety, before addressing paperwork or reporting obligations, as long as doing so does not create further danger.",
+    "weight": 4,
+    "source_note": "Universal post-accident duty-to-render-aid principle applied to New Jersey boating law"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under federal and New Jersey boating law, what information must a vessel operator exchange with another party after an accident, similar to a car accident?",
+    "choice_a": "No information exchange is ever required after a boating accident",
+    "choice_b": "Only insurance information needs to be exchanged, and only if requested",
+    "choice_c": "Operators are legally prohibited from exchanging any information",
+    "choice_d": "Identification and vessel registration information sufficient to allow follow-up, similar to information exchanged after a motor vehicle collision",
+    "correct_choice": "D",
+    "explanation": "Similar to a motor vehicle accident, boaters involved in a collision or accident are expected to exchange identifying and vessel information to allow the incident to be properly documented and, if required, formally reported.",
+    "weight": 3,
+    "source_note": "Universal post-accident information-exchange expectation applied to New Jersey boating law"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Besides the NJSP Marine Services Bureau, what enforcement role does the U.S. Coast Guard play on New Jersey's coastal and federally connected waters?",
+    "choice_a": "The Coast Guard can also conduct safety inspections, respond to distress calls, and enforce federal boating safety regulations alongside state and local marine officers",
+    "choice_b": "The Coast Guard has no authority on any New Jersey waters",
+    "choice_c": "Only the Coast Guard, and no state agency, may ever board a vessel",
+    "choice_d": "The Coast Guard's role is limited exclusively to commercial shipping",
+    "correct_choice": "A",
+    "explanation": "The U.S. Coast Guard shares enforcement responsibility on New Jersey's coastal and federally connected waters with the NJSP Marine Services Bureau and other state/local marine officers, conducting safety checks, responding to emergencies, and enforcing federal regulations.",
+    "weight": 3,
+    "source_note": "Federal USCG boating safety enforcement role alongside NJSP Marine Services Bureau"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Can a New Jersey marine law enforcement officer conduct a routine safety equipment check on a recreational vessel without suspicion of a specific violation?",
+    "choice_a": "Only the vessel owner may request an inspection",
+    "choice_b": "Yes -- marine officers can generally stop a vessel for a routine safety and documentation check as part of their authority to enforce boating laws",
+    "choice_c": "No, officers may never board or inspect a vessel under any circumstance",
+    "choice_d": "Routine checks are permitted only on land, never on the water",
+    "correct_choice": "B",
+    "explanation": "Marine law enforcement officers, including NJSP Marine Services Bureau troopers, generally have authority to stop a vessel for a routine safety and documentation check, similar to a highway safety checkpoint, without needing a specific suspected violation first.",
+    "weight": 3,
+    "source_note": "NJSP Marine Services Bureau routine vessel safety inspection authority"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What is a likely consequence of operating a vessel in New Jersey without required safety equipment, such as PFDs or a fire extinguisher, if stopped during a safety check?",
+    "choice_a": "The vessel is automatically impounded on a first offense with no citation issued",
+    "choice_b": "Missing equipment only matters if an accident actually occurs",
+    "choice_c": "A citation or fine, and potentially being ordered to correct the deficiency or return to shore before continuing",
+    "choice_d": "No consequence exists for missing required safety equipment",
+    "correct_choice": "C",
+    "explanation": "A vessel found missing required safety equipment during a routine check can be cited or fined, and the operator may be directed to correct the deficiency, such as returning to shore to obtain missing equipment, before continuing on the water.",
+    "weight": 3,
+    "source_note": "Universal safety-equipment-violation enforcement consequence, applied under NJSP Marine Services Bureau authority"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Why does New Jersey require formal accident reports for qualifying boating incidents, rather than leaving reporting purely voluntary?",
+    "choice_a": "Accident reports serve no purpose beyond paperwork",
+    "choice_b": "Reports are only used to assign blame for insurance purposes",
+    "choice_c": "New Jersey does not use accident data for any safety purpose",
+    "choice_d": "Formal reports create an official record used for enforcement, statistics, and identifying safety trends or hazards that can inform future boating safety rules",
+    "correct_choice": "D",
+    "explanation": "Formal boating accident reports create an official record that agencies like NJSP Marine Services Bureau and the Coast Guard use for statistics, trend analysis, and identifying hazards or equipment failures that can shape future boating safety education and rules.",
+    "weight": 2,
+    "source_note": "Universal purpose of standardized boating accident reporting, implemented through NJSP Marine Services Bureau"
+  }
+]

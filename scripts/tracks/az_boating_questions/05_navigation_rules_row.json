@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "In general, when a sailboat under sail alone meets a powerboat, which vessel normally has the right-of-way?",
+    "choice_a": "The sailboat, because sailing vessels generally have right-of-way over power-driven vessels",
+    "choice_b": "The powerboat, because it can maneuver more easily",
+    "choice_c": "Whichever vessel is closer to shore",
+    "choice_d": "Whichever vessel is larger",
+    "correct_choice": "A",
+    "explanation": "Under the Navigation Rules, a sailing vessel operating under sail alone generally has the right-of-way over a power-driven vessel, though a sailboat should not rely on this and should still take avoiding action when needed.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Sailing Vessels vs Power-Driven Vessels'"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "In a crossing situation between two power-driven vessels, which vessel is the 'give-way' vessel?",
+    "choice_a": "The vessel that is closest to a navigational buoy",
+    "choice_b": "The vessel that has the other vessel approaching on its own starboard (right) side",
+    "choice_c": "The vessel that is traveling faster",
+    "choice_d": "The vessel that sounds its horn first",
+    "correct_choice": "B",
+    "explanation": "In a crossing situation, the vessel that has the other vessel approaching from its own starboard side is the give-way vessel and must take early, substantial action to keep clear; the other vessel is the stand-on vessel.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Crossing Situations'"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What should the 'stand-on' vessel in a meeting or crossing situation generally do?",
+    "choice_a": "Speed up to get out of the way as fast as possible",
+    "choice_b": "Turn hard toward the other vessel",
+    "choice_c": "Maintain its current course and speed so the give-way vessel can predict its path, taking action only if a collision becomes imminent",
+    "choice_d": "Immediately stop dead in the water",
+    "correct_choice": "C",
+    "explanation": "The stand-on vessel should hold its course and speed so the give-way vessel can predictably steer clear, but it must still take whatever action is necessary to avoid a collision if the give-way vessel fails to act in time.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Stand-On and Give-Way Vessels'"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "When two power-driven vessels are meeting head-on, what is each operator generally required to do?",
+    "choice_a": "Both should stop and wait for radio instructions",
+    "choice_b": "Each should turn toward the other vessel",
+    "choice_c": "Whichever vessel is smaller must reverse direction entirely",
+    "choice_d": "Each should alter course to starboard (turn right) so the vessels pass port-to-port, like cars on a two-lane road",
+    "correct_choice": "D",
+    "explanation": "In a head-on meeting, each power-driven vessel should alter course to starboard so the two vessels pass safely on each other's port side, similar to the right-hand rule used on roads.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Meeting Head-On'"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "When one power-driven vessel is overtaking another, which vessel has the right-of-way?",
+    "choice_a": "The vessel being overtaken (the vessel ahead) has right-of-way, and the overtaking vessel must keep clear until well past and clear",
+    "choice_b": "The overtaking vessel always has the right-of-way",
+    "choice_c": "Neither vessel has right-of-way in an overtaking situation",
+    "choice_d": "Right-of-way depends solely on which vessel is louder",
+    "correct_choice": "A",
+    "explanation": "The vessel being overtaken is the stand-on vessel and keeps the right-of-way; the vessel coming from behind is the give-way vessel and must keep clear until it is safely past and clear of the vessel it passed.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Overtaking'"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "In general, which type of vessel is given the least maneuverability and therefore the most right-of-way consideration among sailing vessels, PWC, and human-powered craft like canoes?",
+    "choice_a": "Right-of-way rules do not apply to human-powered craft",
+    "choice_b": "It depends on the specific encounter, but as a general rule less maneuverable vessels such as sailboats under sail and human-powered craft are typically given way to by faster, more maneuverable powerboats and PWC",
+    "choice_c": "PWC always have right-of-way over every other vessel because they are faster",
+    "choice_d": "Canoes and kayaks have no right-of-way considerations at all",
+    "correct_choice": "B",
+    "explanation": "As a general operating principle (separate from the specific meeting/crossing/overtaking rules), less maneuverable and slower vessels -- sailboats under sail, canoes, kayaks -- should be given a wide, safe berth by faster, more maneuverable powerboats and PWC.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'General Right-of-Way Principles'"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What is the 'rule of common sense' or 'general prudential rule' in the Navigation Rules?",
+    "choice_a": "A rule that only applies to vessels flying a special flag",
+    "choice_b": "A rule that eliminates the need for lookout at all times",
+    "choice_c": "An operator must depart from the normal right-of-way rules when necessary to avoid immediate danger, even if it means the stand-on vessel must give way",
+    "choice_d": "A rule that lets any operator ignore right-of-way whenever convenient",
+    "correct_choice": "C",
+    "explanation": "The general prudential rule recognizes that in special circumstances, any vessel -- even one that would normally stand on -- must depart from the standard rules if needed to avoid immediate danger.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'General Prudential Rule'"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What is a vessel operator's duty regarding maintaining a proper lookout?",
+    "choice_a": "A lookout is only required when the vessel is anchored",
+    "choice_b": "A lookout is optional if the operator has radar",
+    "choice_c": "Only commercial vessels are required to keep a lookout",
+    "choice_d": "Maintain a lookout by sight and hearing at all times to be aware of other vessels, swimmers, obstructions, and changing conditions",
+    "correct_choice": "D",
+    "explanation": "Every vessel operator must maintain a proper lookout by both sight and hearing at all times, using all available means appropriate to the conditions, to detect risk of collision with other vessels, swimmers, or hazards.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Proper Lookout'"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "How does a vessel operator determine a 'safe speed' under the Navigation Rules?",
+    "choice_a": "By weighing conditions like visibility, traffic density, water depth, and the vessel's maneuverability, so the vessel can be stopped or turned in time to avoid a collision",
+    "choice_b": "Safe speed is always the posted speed limit sign, with no other factors relevant",
+    "choice_c": "Safe speed means going as fast as the engine allows",
+    "choice_d": "Safe speed only matters at night",
+    "correct_choice": "A",
+    "explanation": "A safe speed accounts for factors such as visibility, traffic density, the vessel's stopping distance and maneuverability, and prevailing conditions, so the operator can take proper and effective action to avoid a collision.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Safe Speed'"
+  }
+]

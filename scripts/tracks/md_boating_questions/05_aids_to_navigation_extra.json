@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with a blue horizontal band indicate?",
+    "choice_a": "A federal shipping channel boundary",
+    "choice_b": "A designated mooring buoy, meant for a vessel to tie up to rather than serving as an aid to navigation",
+    "choice_c": "A hazardous obstruction",
+    "choice_d": "A swimming area",
+    "correct_choice": "B",
+    "explanation": "A white buoy with a blue horizontal band marks a designated mooring, intended for a vessel to secure to, and is not itself a navigational aid marking a channel or hazard.",
+    "weight": 2,
+    "source_note": "Universal U.S. Aids to Navigation System mooring buoy convention (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What are 'range markers,' and how does a boater use them to stay in a safe channel?",
+    "choice_a": "Two fixed markers that, when visually lined up one above or behind the other, indicate the centerline of a safe channel",
+    "choice_b": "Buoys that mark the maximum speed allowed in an area",
+    "choice_c": "A single floating buoy with no navigational use",
+    "choice_d": "Markers used only to indicate fuel docks",
+    "correct_choice": "A",
+    "explanation": "Range markers consist of a front and rear fixed marker; keeping them visually aligned, one above or behind the other, tells the boater they are on the centerline of a safe, charted channel.",
+    "weight": 2,
+    "source_note": "Universal U.S. Aids to Navigation System range-marker convention (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is a 'daybeacon,' as distinguished from a lateral buoy, and where are they commonly used on Maryland's waters?",
+    "choice_a": "A fixed, unlighted structure with a colored/shaped dayboard, often used in narrower or shallower tributaries where a fixed marker is more practical than a floating buoy",
+    "choice_b": "A type of PFD",
+    "choice_c": "A floating buoy used only at night",
+    "choice_d": "A marker found exclusively offshore in the ocean",
+    "correct_choice": "A",
+    "explanation": "Daybeacons are permanently fixed, unlighted structures carrying a colored dayboard shaped and colored like a buoy's equivalent, often preferred in shallower or narrower tributaries where a floating buoy could shift position or be less practical.",
+    "weight": 2,
+    "source_note": "Universal U.S. Aids to Navigation System daybeacon convention (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is the primary tool a boater should consult before a trip on the Chesapeake Bay to learn water depths, charted hazards, and the locations of aids to navigation?",
+    "choice_a": "A road atlas",
+    "choice_b": "A NOAA nautical chart of the area to be traveled",
+    "choice_c": "A weather almanac from the prior year",
+    "choice_d": "There is no such resource available to recreational boaters",
+    "correct_choice": "B",
+    "explanation": "A current NOAA nautical chart shows charted depths, hazards, shoals, and the location and characteristics of aids to navigation, making it an essential trip-planning tool for Bay boaters.",
+    "weight": 2,
+    "source_note": "Universal NOAA nautical chart trip-planning guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does an isolated danger mark, showing black and red horizontal bands topped by two black spheres, indicate?",
+    "choice_a": "A safe channel entrance",
+    "choice_b": "A charted danger, such as a wreck or rock, that has navigable water around it, allowing the mark to be passed on any side at a safe distance",
+    "choice_c": "A no-wake zone",
+    "choice_d": "A commercial fueling dock",
+    "correct_choice": "B",
+    "explanation": "An isolated danger mark identifies a specific charted hazard, like a wreck or rock, that has safe, navigable water surrounding it, so it may be passed on any side as long as a safe distance is kept.",
+    "weight": 2,
+    "source_note": "Universal U.S. Aids to Navigation System isolated danger mark convention (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Charted water depths on a nautical chart of the Chesapeake Bay are typically referenced to what depth standard?",
+    "choice_a": "The deepest point ever recorded in the Bay",
+    "choice_b": "A datum such as mean lower low water, meaning the actual depth at a given moment can be less than charted at low tide",
+    "choice_c": "The average depth of the Atlantic Ocean",
+    "choice_d": "Charts do not indicate depth at all",
+    "correct_choice": "B",
+    "explanation": "Charted depths are typically referenced to a tidal datum such as mean lower low water, so the actual depth at any given time, especially at low tide, can be less than the number printed on the chart.",
+    "weight": 2,
+    "source_note": "Universal NOAA nautical chart depth-datum convention (NASBLA-aligned course content)"
+  }
+]

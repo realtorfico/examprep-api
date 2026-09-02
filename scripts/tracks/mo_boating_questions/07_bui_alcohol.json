@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Boating While Intoxicated (BUI)",
+    "question": "Under RSMo 577.014, at what blood alcohol content (BAC) is a Missouri vessel operator legally considered to be boating with excessive blood alcohol content?",
+    "choice_a": "0.15% or more only",
+    "choice_b": "0.02% or more",
+    "choice_c": "There is no defined BAC threshold under Missouri law",
+    "choice_d": "Eight-hundredths of one percent (0.08%) or more by weight, measured by blood, breath, saliva, or urine analysis",
+    "correct_choice": "D",
+    "explanation": "Missouri sets the BUI (boating while intoxicated) per se blood alcohol threshold at 0.08%, mirroring the state's driving-while-intoxicated standard, and the offense can be proven through blood, breath, saliva, or urine analysis.",
+    "weight": 5,
+    "source_note": "RSMo 577.014 (boating with excessive blood alcohol content)"
+  },
+  {
+    "topic": "Boating While Intoxicated (BUI)",
+    "question": "Under RSMo 577.014, what mandatory minimum jail time applies to a first-offense BUI conviction with a BAC between 0.15% and 0.20%?",
+    "choice_a": "A mandatory minimum of 48 hours imprisonment",
+    "choice_b": "No minimum jail time applies to any first offense",
+    "choice_c": "A mandatory minimum of 10 years imprisonment",
+    "choice_d": "The vessel is destroyed as the sole penalty",
+    "correct_choice": "A",
+    "explanation": "Missouri law imposes a mandatory minimum of 48 hours imprisonment for a first-offense BUI conviction where BAC falls between 0.15% and 0.20%, with the mandatory minimum rising to 5 days if BAC exceeds 0.20%.",
+    "weight": 4,
+    "source_note": "RSMo 577.014 (first-offense BUI mandatory minimums by BAC level)"
+  },
+  {
+    "topic": "Boating While Intoxicated (BUI)",
+    "question": "How does Missouri classify a repeat ('prior boating offender') BUI conviction under RSMo 577.014?",
+    "choice_a": "The same class B misdemeanor as a first offense, with no enhancement",
+    "choice_b": "A class A misdemeanor, with a mandatory minimum of 10 days imprisonment",
+    "choice_c": "An infraction with a small fine and nothing more",
+    "choice_d": "Automatic dismissal if it is the operator's second offense",
+    "correct_choice": "B",
+    "explanation": "A 'prior boating offender' conviction under RSMo 577.014 is enhanced to a class A misdemeanor with a mandatory minimum of 10 days imprisonment, and penalties continue to escalate through persistent, aggravated, chronic, and habitual offender tiers up to a class B felony.",
+    "weight": 3,
+    "source_note": "RSMo 577.014 (repeat-offender BUI penalty enhancement)"
+  },
+  {
+    "topic": "Boating While Intoxicated (BUI)",
+    "question": "What condition does Missouri law place on suspended sentences for first-time BUI offenders under RSMo 577.014?",
+    "choice_a": "Suspended sentences are given automatically with no conditions whatsoever",
+    "choice_b": "Suspended sentences are legally impossible for any BUI conviction",
+    "choice_c": "A suspended sentence generally requires completing at least two years of probation, or participation in an approved DWI court/treatment program if available",
+    "choice_d": "A suspended sentence requires forfeiting the vessel permanently",
+    "correct_choice": "C",
+    "explanation": "Missouri law restricts suspended sentences for first-time BUI offenders, generally requiring a minimum two-year probation term or participation in an approved DWI court or treatment program where available, rather than an unconditional suspension.",
+    "weight": 3,
+    "source_note": "RSMo 577.014 (suspended sentence conditions for BUI)"
+  },
+  {
+    "topic": "Boating While Intoxicated (BUI)",
+    "question": "Why is operating a boat while intoxicated considered even more dangerous in some ways than driving a car while intoxicated?",
+    "choice_a": "Alcohol has no effect on reaction time or balance while on the water",
+    "choice_b": "Boats always travel much slower than cars, so intoxication has no practical impact",
+    "choice_c": "Water eliminates all risk of collision or drowning",
+    "choice_d": "Sun, wind, engine noise, vibration, and motion cause 'boater's fatigue,' which intensifies alcohol's impairing effects, and there are no lane markings or brakes to help avoid a collision",
+    "correct_choice": "D",
+    "explanation": "Environmental stressors on the water -- sun, wind, engine noise, vibration, and constant motion -- produce 'boater's fatigue' that compounds alcohol's effects on balance, judgment, and reaction time, while a boat also lacks lane markings, traffic signals, and braking distance controls that help drivers avoid collisions.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (alcohol and boater's fatigue), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Boating While Intoxicated (BUI)",
+    "question": "How does alcohol impairment affect a boater's risk of drowning if they fall overboard, compared to a sober swimmer?",
+    "choice_a": "Alcohol impairs balance, judgment, and swimming ability, and reduces the body's ability to survive cold-water immersion, significantly increasing drowning risk",
+    "choice_b": "Alcohol has no effect on swimming ability or judgment in water",
+    "choice_c": "Alcohol improves reaction time in emergencies",
+    "choice_d": "Alcohol only affects drivers, never boaters or swimmers",
+    "correct_choice": "A",
+    "explanation": "A large share of boating fatalities involve alcohol; impairment reduces coordination, judgment, and swimming ability while also worsening the body's response to cold-water immersion, making an intoxicated person who falls overboard far more likely to drown.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (alcohol-related drowning risk), consistent with U.S. Coast Guard boating accident statistics"
+  },
+  {
+    "topic": "Boating While Intoxicated (BUI)",
+    "question": "Which Missouri law enforcement authority is primarily responsible for enforcing BUI and other boating laws on the state's waters?",
+    "choice_a": "Only local city police departments, with no state-level authority",
+    "choice_b": "The Water Patrol Division of the Missouri State Highway Patrol",
+    "choice_c": "The Missouri Department of Revenue",
+    "choice_d": "The U.S. Postal Inspection Service",
+    "correct_choice": "B",
+    "explanation": "The Water Patrol Division of the Missouri State Highway Patrol is designated by statute as the division responsible for enforcing Missouri's boating laws, including BUI, on the waters of the state.",
+    "weight": 3,
+    "source_note": "RSMo 306.010 (water patrol division enforcement authority)"
+  },
+  {
+    "topic": "Boating While Intoxicated (BUI)",
+    "question": "What is 'implied consent,' generally applied in Missouri to both driving and boating impairment cases?",
+    "choice_a": "A rule that requires an officer to obtain a search warrant before any breath test can ever be administered",
+    "choice_b": "A voluntary program boaters may decline without any consequence",
+    "choice_c": "By operating a vessel on Missouri waters, an operator has legally consented to submit to a chemical test for alcohol or drug content if lawfully requested by an officer investigating BUI",
+    "choice_d": "A requirement that only applies to commercial vessel operators",
+    "correct_choice": "C",
+    "explanation": "Implied consent laws hold that by operating a vessel (or motor vehicle) on public waters or roads, a person has already agreed to submit to a chemical test if a law enforcement officer has reasonable grounds to believe they are impaired; refusing a requested test typically carries its own separate penalties.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (implied consent principle), consistent with Missouri's chemical testing statutes (RSMo Chapter 577)"
+  },
+  {
+    "topic": "Boating While Intoxicated (BUI)",
+    "question": "Under RSMo 577.024, what is prohibited regarding water skis and surfboards in Missouri?",
+    "choice_a": "Water skiing is completely banned throughout Missouri",
+    "choice_b": "Only surfboards are regulated; water skis are entirely unregulated",
+    "choice_c": "There is no penalty of any kind for reckless water skiing",
+    "choice_d": "Operating them in a reckless or negligent manner endangering life or property, or while intoxicated or under the influence of a narcotic, barbiturate, or marijuana -- a class B misdemeanor",
+    "correct_choice": "D",
+    "explanation": "Missouri's water-ski and surfboard statute makes it a class B misdemeanor to operate skis or a surfboard in a reckless or negligent manner endangering life or property, or while intoxicated or under the influence of a narcotic drug, barbiturate, or marijuana.",
+    "weight": 3,
+    "source_note": "RSMo 577.024 (unlawful use of water skis and surfboards)"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under Maryland Natural Resources Article Sec. 8-725, besides the vessel operator, who else must be aboard when towing a person on water skis, an aquaplane, or a similar device?",
+    "choice_a": "A licensed lifeguard must always be present",
+    "choice_b": "At least three additional passengers regardless of age",
+    "choice_c": "An observer, at least 12 years old, whose job is to watch the person being towed",
+    "choice_d": "No one else is required to be aboard besides the operator",
+    "correct_choice": "C",
+    "explanation": "Maryland law requires a separate observer at least 12 years old, in addition to the operator (also at least 12), to watch the progress of the person being towed on water skis or a similar device.",
+    "weight": 3,
+    "source_note": "Maryland Natural Resources Article Sec. 8-725 (water skiing and towed water sports observer requirement)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under Maryland law, during what hours is towing a person on water skis or a similar device prohibited?",
+    "choice_a": "Between noon and 2 p.m. only",
+    "choice_b": "Towing is prohibited at all hours in Maryland",
+    "choice_c": "There is no time-of-day restriction on towing in Maryland",
+    "choice_d": "Between sunset and sunrise",
+    "correct_choice": "D",
+    "explanation": "Maryland Natural Resources Article Sec. 8-725 prohibits towing a person on water skis, an aquaplane, or a similar device between sunset and sunrise, when visibility for both the tow boat and other traffic is significantly reduced.",
+    "weight": 3,
+    "source_note": "Maryland Natural Resources Article Sec. 8-725 (towing time-of-day restriction)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What must a person being towed behind a vessel on Maryland waters wear, under Sec. 8-725?",
+    "choice_a": "A personal flotation device, a barefoot wet suit, or a trick skiing wet suit",
+    "choice_b": "No flotation or protective gear is required for a person being towed",
+    "choice_c": "A snorkel and diving mask only",
+    "choice_d": "A helmet is the only required item, with no flotation device needed",
+    "correct_choice": "A",
+    "explanation": "Maryland law requires anyone being towed on or over the water behind a vessel to wear a PFD, a barefoot wet suit, or a trick skiing wet suit for protection and flotation.",
+    "weight": 3,
+    "source_note": "Maryland Natural Resources Article Sec. 8-725 (required gear for towed persons)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Are Maryland's towed-water-sports operator, observer, and equipment requirements automatically waived for any activity?",
+    "choice_a": "Yes, for any recreational skier who asks a fellow boater for an exemption",
+    "choice_b": "Yes, for performers in a professional exhibition, or participants in an authorized regatta, motorboat race, or other sanctioned boat race, marine parade, tournament, or exhibition",
+    "choice_c": "No; the requirements apply with no exceptions of any kind",
+    "choice_d": "Yes, but only for vessels operating exclusively at night",
+    "correct_choice": "B",
+    "explanation": "Maryland's towing statute exempts professional exhibition performers and participants in an authorized regatta, motorboat race, marine parade, tournament, or exhibition from its normal observer, timing, and equipment requirements.",
+    "weight": 2,
+    "source_note": "Maryland Natural Resources Article Sec. 8-725 (exemptions for professional exhibitions and sanctioned events)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why is a dedicated observer, separate from the operator, considered important when towing a water skier or wakeboarder?",
+    "choice_a": "An observer is only useful for identifying other boats, never the skier",
+    "choice_b": "Having an observer allows the operator to stop watching the water entirely",
+    "choice_c": "The operator needs to focus on steering, speed, and watching for hazards ahead, while the observer continuously watches the skier for falls or signals",
+    "choice_d": "The observer's role is purely decorative and provides no safety benefit",
+    "correct_choice": "C",
+    "explanation": "Because the operator must focus on driving the boat and watching for hazards ahead and around the vessel, a dedicated observer is needed to continuously watch the towed skier for falls, signals, or trouble.",
+    "weight": 2,
+    "source_note": "Universal towed water-sports safety rationale (NASBLA-aligned course content), reflected in Maryland's Sec. 8-725 observer mandate"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What is a widely used hand signal a downed water skier gives to indicate they are okay after a fall?",
+    "choice_a": "Waving both arms wildly overhead in a distress motion",
+    "choice_b": "Diving completely underwater and staying submerged",
+    "choice_c": "Splashing water toward the boat repeatedly",
+    "choice_d": "Raising one arm straight up out of the water, or forming a circle with the arm above the head",
+    "correct_choice": "D",
+    "explanation": "A common 'okay' signal after a fall is raising one arm straight up (sometimes forming a circle above the head), letting the boat operator and observer know the skier is unhurt, as opposed to waving both arms, which signals distress.",
+    "weight": 2,
+    "source_note": "Universal water-skiing hand-signal convention (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why should a tow boat approach a fallen water skier from the side rather than backing directly toward them?",
+    "choice_a": "Approaching from the side keeps the propeller away from the person in the water and allows the operator to see the skier clearly at all times",
+    "choice_b": "Backing directly toward a fallen skier is always the fastest and safest method",
+    "choice_c": "The propeller poses no danger regardless of approach angle",
+    "choice_d": "Approaching from the side is prohibited under Maryland law",
+    "correct_choice": "A",
+    "explanation": "Approaching a fallen skier from the side, rather than backing the stern (and propeller) directly toward them, reduces the risk of a serious propeller injury and keeps the person visible to the operator throughout the approach.",
+    "weight": 2,
+    "source_note": "Universal towed-water-sports rescue-approach guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why does towing a skier or tuber require extra caution in areas of the Chesapeake Bay with crab-pot floats or heavy boat traffic?",
+    "choice_a": "Extra caution is only needed if towing at night",
+    "choice_b": "The tow line and skier both create additional obstacles and risks, and crab-pot floats can be struck or tangled in the tow line at speed, in addition to standard collision risks with other traffic",
+    "choice_c": "Crab-pot floats pose no hazard to a boat towing a water skier",
+    "choice_d": "Towing activities are automatically banned anywhere near a crab-pot float",
+    "correct_choice": "B",
+    "explanation": "Towing activities add extra complexity, including a long tow line and a skier who may fall unpredictably, so operators need to watch for crab-pot floats, other boat traffic, and shallow water simultaneously, making congested or gear-heavy areas of the Bay less suitable for water sports.",
+    "weight": 2,
+    "source_note": "Chesapeake Bay crab-pot/trotline navigation hazard guidance combined with universal towed water-sports safety fundamentals"
+  }
+]

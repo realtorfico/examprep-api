@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Under Alabama's state PFD regulation, which PFD types satisfy the requirement for a vessel in the largest length class (40 feet and over)?",
+    "choice_a": "Only a Type IV throwable device satisfies the requirement",
+    "choice_b": "A Type I, II, or III PFD -- Alabama's four length-based vessel classes (under 16 feet, 16 to under 26 feet, 26 to under 40 feet, and 40 feet and over) all require the same Type I, II, or III wearable category, regardless of the vessel's size",
+    "choice_c": "Only a Type V special-use device is acceptable for the largest vessels",
+    "choice_d": "Vessels 40 feet and over are exempt from carrying any wearable PFD",
+    "correct_choice": "B",
+    "explanation": "Alabama's PFD regulation organizes vessels into four length classes for registration purposes and requires a Type I, II, or III Coast Guard-approved PFD across all four classes -- the length class does not change which PFD type is acceptable, only how many other equipment items (like throwable devices) may also apply.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.11 (Personal Flotation Devices Required, Class I-IV)"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "What is distinctive about how a Type V \"Hybrid\" PFD must be used to count toward Alabama's PFD requirement?",
+    "choice_a": "It only needs to be somewhere on board, not worn",
+    "choice_b": "It must be worn at all times while the vessel is underway in an open boat, or whenever a person is not inside an enclosed space on a larger boat -- simply stowing it does not satisfy the requirement",
+    "choice_c": "It may substitute for a fire extinguisher instead of a PFD",
+    "choice_d": "It is banned outright on Alabama waters",
+    "correct_choice": "B",
+    "explanation": "Alabama's PFD regulation specifically requires a Type V Hybrid PFD to be worn while underway in an open boat, or whenever the wearer is not within an enclosed space aboard a larger vessel -- reflecting that a Hybrid device, unlike a standard foam vest, is only Coast Guard-approved for flotation credit under the conditions on its label.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.11(1)(a) (Type V Hybrid wear requirement)"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Within what distance below a hydroelectric dam or navigation lock and dam must everyone aboard a vessel, including the operator, wear a PFD in Alabama?",
+    "choice_a": "50 feet",
+    "choice_b": "There is no such zone-based PFD-wear requirement anywhere in Alabama",
+    "choice_c": "244 meters, or 800 feet, below the dam or lock and dam",
+    "choice_d": "One mile",
+    "correct_choice": "C",
+    "explanation": "Alabama regulation makes it unlawful to operate any vessel within 800 feet below a hydroelectric dam or navigation lock and dam unless every person aboard, including the operator, is wearing a Coast Guard-approved Type I, II, III, or V PFD securely fastened per the manufacturer's instructions -- reflecting the genuinely dangerous currents that can occur in these tailrace areas.",
+    "weight": 4,
+    "source_note": "Alabama Administrative Rule 220-6-.20 (PFD to be Worn Below Dam)"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "What happens automatically to a PFD's U.S. Coast Guard approval status if it becomes torn, rotted, or damaged, under Alabama's equipment regulation?",
+    "choice_a": "Nothing -- approval is permanent once granted regardless of the device's condition",
+    "choice_b": "A torn, rotted, or damaged PFD automatically loses its Coast Guard approval as a matter of law, not merely as a matter of an officer's subjective judgment",
+    "choice_c": "It must be sent back to the manufacturer to be formally deapproved",
+    "choice_d": "Only inflatable PFDs can lose approval this way; foam PFDs never can",
+    "correct_choice": "B",
+    "explanation": "Alabama's PFD regulation states directly that PFDs which are torn, rotted, or damaged lose their U.S. Coast Guard approval -- this is a categorical legal consequence built into the regulation itself, not simply a discretionary call an inspecting officer happens to make in the field.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.11(1)(d) (PFD condition and loss of approval)"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Under Alabama's equipment regulation, is a Marine Police officer required to physically stamp or mark a PFD as \"unserviceable\" before a boater can be cited for having a defective PFD aboard?",
+    "choice_a": "Yes -- without a physical stamp on the device, no citation can ever be issued",
+    "choice_b": "No -- the regulation specifically states that stamping or marking unserviceable equipment is not a prerequisite for prosecuting a person who violates the PFD requirements",
+    "choice_c": "Only a written notarized report satisfies this requirement",
+    "choice_d": "Stamping is required only for inflatable PFDs, never for foam PFDs",
+    "correct_choice": "B",
+    "explanation": "While Alabama's regulation authorizes officers to stamp or mark unserviceable safety equipment to keep it from being used again, it explicitly clarifies that such stamping or marking is not a required first step before a person can be prosecuted for violating the underlying PFD requirement.",
+    "weight": 2,
+    "source_note": "Alabama Administrative Rule 220-6-.11(1)(h) (stamping not prerequisite to prosecution)"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Beyond simply having the required number of PFDs aboard, what sizing standard must each PFD meet under Alabama's regulation?",
+    "choice_a": "Any PFD size is acceptable as long as the correct total count is present",
+    "choice_b": "Only PFDs sized for an average adult are required, regardless of who is actually aboard",
+    "choice_c": "All PFDs must be a proper size for the specific occupants who will actually be aboard the vessel",
+    "choice_d": "PFD sizing is governed solely by federal law and Alabama imposes no separate sizing standard",
+    "correct_choice": "C",
+    "explanation": "Alabama's equipment regulation requires that all PFDs be a proper size for the occupants aboard, not merely that the right number of devices be present -- an undersized adult PFD stowed for a child, for example, would not satisfy the requirement.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.11(1)(e) (PFD sizing requirement)"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "What must a boat livery (rental) operator do if the Department notifies them in writing that a rental boat's PFDs or other safety equipment is unsafe?",
+    "choice_a": "Nothing -- livery operators are exempt from all PFD and safety equipment inspections",
+    "choice_b": "Continue renting the boat as normal since the notice is only advisory",
+    "choice_c": "Stop renting or offering to rent that boat until it has been repaired and reinspected to confirm it is again seaworthy and safe",
+    "choice_d": "Immediately destroy the vessel",
+    "correct_choice": "C",
+    "explanation": "Once the Department of Conservation and Natural Resources notifies a boat livery operator in writing that a rental vessel or its equipment is unsafe, it becomes unlawful for the operator to rent or offer to rent that boat until repairs are made and a follow-up inspection confirms the boat is again in a safe, seaworthy condition.",
+    "weight": 2,
+    "source_note": "Code of Alabama Section 33-5-21 (safety provisions relative to boat liveries)"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "What is the minimum fine for a person who fails to ensure that a child under 8 in their legal custody wears the required PFD aboard an Alabama vessel?",
+    "choice_a": "There is no fine, only a verbal warning",
+    "choice_b": "A minimum fine of $100, as a Class B misdemeanor",
+    "choice_c": "A minimum fine of $1,000",
+    "choice_d": "The fine is capped at $5 regardless of circumstances",
+    "correct_choice": "B",
+    "explanation": "Alabama Code Section 33-5-69(c) makes it a Class B misdemeanor, punishable by a fine of not less than $100, for anyone to fail to require -- or to permit a person in their legal custody or control to fail to comply with -- the under-8 PFD-wear requirement.",
+    "weight": 3,
+    "source_note": "Code of Alabama Section 33-5-69(c) (flotation device violation penalty)"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "May a Type V special-use PFD ever be substituted for one of the wearable PFDs Alabama otherwise requires by vessel-length class?",
+    "choice_a": "No -- Type V devices are never an acceptable substitute under any circumstance",
+    "choice_b": "Yes, but only for vessels under 16 feet",
+    "choice_c": "Yes, a Type V PFD may be carried in lieu of any otherwise-required PFD, but only if that specific Type V device is Coast Guard-approved for the activity the recreational boat is actually being used for",
+    "choice_d": "Yes, with no conditions or limitations whatsoever",
+    "correct_choice": "C",
+    "explanation": "Alabama's PFD regulation allows a Type V device to substitute for any PFD otherwise required by vessel-length class, but only where that particular Type V PFD is Coast Guard-approved specifically for the activity in which the recreational boat is being used -- an activity-specific limitation that doesn't apply to Type I, II, or III devices.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.11(1)(a) (Type V substitution condition)"
+  }
+]

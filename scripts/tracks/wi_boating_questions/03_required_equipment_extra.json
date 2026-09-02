@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Required Safety Equipment",
+    "question": "How does the number and size of USCG-approved fire extinguishers a boat must carry generally scale?",
+    "choice_a": "It is identical for every recreational boat regardless of size",
+    "choice_b": "It scales up with the vessel's length and configuration -- larger boats, and those with enclosed engine compartments or fuel-carrying cabins, generally need more or larger-rated extinguishers than a small open boat",
+    "choice_c": "Only boats with sails are required to carry one",
+    "choice_d": "Fire extinguisher requirements apply only to PWCs",
+    "correct_choice": "B",
+    "explanation": "USCG fire extinguisher requirements generally scale with a boat's length and whether it has enclosed spaces capable of trapping fuel vapors or fire -- a larger boat or one with an enclosed engine compartment or cabin generally needs more, or larger-rated, extinguishers than a small open boat.",
+    "weight": 2,
+    "source_note": "USCG fire extinguisher carriage requirements, applied in NASBLA-aligned Wisconsin boater education curriculum, Unit 4: Fire Extinguishers"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why should a boat carry an anchor with an adequate length of anchor line (rode), not just any anchor?",
+    "choice_a": "Anchor line length has no bearing on whether the anchor holds",
+    "choice_b": "A longer scope (the ratio of line length to water depth) lets the anchor pull at a lower angle along the bottom, helping it dig in and hold securely rather than dragging",
+    "choice_c": "Anchors are only used for decoration and never actually deployed",
+    "choice_d": "Shorter line always holds better than longer line",
+    "correct_choice": "B",
+    "explanation": "An anchor holds best when its line pulls at a shallow angle relative to the bottom, which requires enough scope -- letting out several times the water depth in line -- rather than a short, steep line that can pop the anchor loose.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Anchoring"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why is a manual bilge pump or bailing device (such as a bucket) recommended equipment aboard a boat?",
+    "choice_a": "It has no practical safety use",
+    "choice_b": "It is used only to clean the boat after fishing",
+    "choice_c": "It allows an operator to remove water that enters the hull from rain, waves, or a leak, helping prevent the boat from swamping",
+    "choice_d": "It is required only on sailboats",
+    "correct_choice": "C",
+    "explanation": "A manual bilge pump or simple bailing device lets a boater remove water that accumulates in the hull from rain, spray, waves, or a small leak, helping keep the boat afloat and stable until the source of the water can be addressed.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Additional Safety Equipment"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why do boater education courses recommend carrying a paddle or oar as backup equipment on a small motorboat?",
+    "choice_a": "It provides a way to propel or maneuver the boat to safety if the engine fails, especially in calm water or when close to shore",
+    "choice_b": "It is required only for decoration, not function",
+    "choice_c": "It replaces the need for a fire extinguisher",
+    "choice_d": "It is only useful for fending off other boats at a dock",
+    "correct_choice": "A",
+    "explanation": "A paddle or oar provides a simple backup means of propulsion if the engine fails, letting an operator maneuver a small boat to shore or out of a hazard area without relying on outside help.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Additional Safety Equipment"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is the purpose of an all-round white anchor light displayed by a boat anchored away from a dock at night?",
+    "choice_a": "It has no functional purpose and is purely decorative",
+    "choice_b": "It warns other vessels underway at night that a boat is anchored in that location, helping them avoid a collision",
+    "choice_c": "It is used only to signal an emergency",
+    "choice_d": "It replaces the need for red and green sidelights while underway",
+    "correct_choice": "B",
+    "explanation": "An anchored vessel is required to display an all-round white light visible from all directions so that other boats operating at night can see and avoid it, since an anchored boat won't show the running-light pattern of a vessel underway.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 2: Navigation Lights -- Anchor Lights"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why can most personal watercraft generally not be legally operated after sunset?",
+    "choice_a": "PWCs typically are not equipped with the installed navigation lights required for nighttime operation, and many states, consistent with national guidance, restrict PWC use to daylight hours",
+    "choice_b": "There is no restriction on PWC operating hours anywhere",
+    "choice_c": "PWCs are exempt from all navigation light requirements at any hour",
+    "choice_d": "PWC engines cannot legally run after dark for mechanical reasons",
+    "correct_choice": "A",
+    "explanation": "Most PWCs are not built with the installed navigation lights required for operating after sunset, and consistent with the national approach reflected in NASBLA-aligned curricula, states commonly restrict PWC operation to daylight hours as a result.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 3: Personal Watercraft, applied to navigation light equipment limitations"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is the standard daytime visual distress signal, distinct from nighttime flares?",
+    "choice_a": "A flashing blue light",
+    "choice_b": "An orange distress flag, often marked with a black square and ball, or an orange smoke signal",
+    "choice_c": "A green flag",
+    "choice_d": "There is no distinct daytime distress signal; flares are used at all hours",
+    "correct_choice": "B",
+    "explanation": "Because flares are hard to see in daylight, an orange distress flag (commonly marked with a black square and ball) or orange smoke signal is used as the standard daytime visual distress signal, while flares remain the primary nighttime signal.",
+    "weight": 2,
+    "source_note": "USCG visual distress signal requirements, applied in NASBLA-aligned boater education curriculum, Unit 5: Summoning Help"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why must required safety equipment such as a fire extinguisher, PFDs, and sound-signaling devices be kept readily accessible rather than buried in a locker or under gear?",
+    "choice_a": "Accessibility has no bearing on whether equipment satisfies the requirement",
+    "choice_b": "So the equipment can actually be reached and used within the short time available during a real emergency, rather than only technically being aboard",
+    "choice_c": "Equipment only needs to be accessible when a warden requests an inspection",
+    "choice_d": "Buried equipment satisfies the requirement equally well as accessible equipment",
+    "correct_choice": "B",
+    "explanation": "Carrying required safety equipment satisfies the letter of the law only if it can also be reached quickly enough to be useful -- equipment buried under gear or locked away defeats the purpose of carrying it in the first place, since emergencies leave little time to search for it.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Additional Safety Equipment"
+  }
+]

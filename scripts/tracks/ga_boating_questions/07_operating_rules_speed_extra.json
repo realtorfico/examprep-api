@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Besides dropping water-skiers close to swimmers and jumping another boat's wake within 100 feet, what other specific act does Georgia's boating handbook list as an example of 'reckless operation'?",
+    "choice_a": "Operating a boat with an expired registration decal",
+    "choice_b": "Causing damage from the wake of your boat or PWC",
+    "choice_c": "Failing to carry a spare propeller on board",
+    "choice_d": "Anchoring overnight in a designated mooring field",
+    "correct_choice": "B",
+    "explanation": "Georgia's handbook lists three specific examples of reckless operation: water-skiing or dropping skiers close to swimmers, launching ramps, or other boaters; jumping the wake of another boat within 100 feet or buzzing other boats; and causing damage from the wake of your boat or PWC.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Unlawful and Dangerous Operation -- Reckless Operation'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Beyond the 100-foot distance rule, what other wake-related conduct toward another boat does Georgia's 'Improper Distance' rule specifically make illegal?",
+    "choice_a": "Traveling in the same general direction as another boat at any distance whatsoever",
+    "choice_b": "Passing another boat on its port side in open, uncongested water",
+    "choice_c": "Following closely behind another boat, jumping the wake of the other boat, or changing course or direction in order to jump the wake of another boat",
+    "choice_d": "Operating at a different speed than a boat traveling in a marked channel",
+    "correct_choice": "C",
+    "explanation": "In addition to the 100-foot distance restrictions, Georgia law separately makes it illegal to follow closely behind another boat, jump its wake, or change course or direction specifically to jump the wake of another boat.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Unlawful and Dangerous Operation -- Improper Distance'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Operating a boat with a marine toilet, galley, or sleeping quarters (including houseboats) is unlawful on which of these Georgia lakes?",
+    "choice_a": "Lake Lanier",
+    "choice_b": "West Point Lake",
+    "choice_c": "Clarks Hill Lake (J. Strom Thurmond Lake)",
+    "choice_d": "Lake Burton",
+    "correct_choice": "D",
+    "explanation": "Georgia law bans operating any boat with a marine toilet, galley, or sleeping quarters (including houseboats) on Bull Sluice Lake, Goat Rock Lake, Lake Burton, Lake Harding, Lake Jackson, Lake Oconee, Lake Oliver, Lake Rabun, Lake Tugalo, Lake Yonah, North Highlands Lake, Seed Lake, and Tallulah Falls Lake.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Georgia Boating Safety Zones'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under Georgia's 'Obstructing Navigation' rules, may a boater anchor in the traveled portion of a river or channel?",
+    "choice_a": "No, not if doing so will prevent or interfere with another vessel passing through the same area",
+    "choice_b": "Yes, anchoring in a traveled channel is always allowed regardless of traffic",
+    "choice_c": "Yes, but only between sunset and sunrise",
+    "choice_d": "It is allowed as long as an anchor light is displayed",
+    "correct_choice": "A",
+    "explanation": "Georgia law prohibits anchoring a vessel in the traveled portion of a river or channel in a way that will prevent or interfere with any other vessel passing through the same area, as well as operating any vessel so as to interfere unnecessarily with the safe navigation of other vessels.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Obstructing Navigation'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Which of the following is illegal under Georgia's 'Obstructing Navigation' rules concerning navigational aids?",
+    "choice_a": "Reading a navigational aid's number or color before proceeding",
+    "choice_b": "Mooring a vessel to a buoy, beacon, light, or other navigational aid (other than a designated mooring buoy), or moving, displacing, tampering with, damaging, or destroying any navigational aid",
+    "choice_c": "Reporting a damaged or missing navigational aid to Georgia DNR",
+    "choice_d": "Reducing speed while passing near a navigational aid",
+    "correct_choice": "B",
+    "explanation": "Georgia's obstructing-navigation rules make it illegal to moor a vessel to a buoy, beacon, light, or other navigational aid other than a mooring buoy, or to move, displace, tamper with, damage, or destroy any navigational aid, or to place unauthorized buoys, markers, or signs in an attempt to regulate navigation on public waters.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Obstructing Navigation'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under Georgia's Homeland Security boating restrictions, how close may a vessel approach a U.S. Naval vessel, and at what distance must it slow to minimum speed?",
+    "choice_a": "Stay at least 1 mile away from any U.S. Naval vessel with no exceptions permitted",
+    "choice_b": "There is no approach restriction as long as navigation lights are displayed",
+    "choice_c": "Do not approach within 100 yards, and slow to minimum speed within 500 yards, of any U.S. Naval vessel",
+    "choice_d": "Approach no closer than 10 feet as long as the vessel operates at idle speed",
+    "correct_choice": "C",
+    "explanation": "Georgia's Homeland Security restrictions require boaters not to approach within 100 yards, and to slow to minimum speed within 500 yards, of any U.S. Naval vessel; if a boater must pass within 100 yards for safe passage, they must contact the Naval vessel or its USCG escort on VHF-FM Channel 16.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Homeland Security Restrictions'"
+  }
+]

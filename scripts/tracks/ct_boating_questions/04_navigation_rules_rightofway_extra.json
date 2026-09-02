@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "In a crossing situation between two power-driven vessels, which vessel is the give-way vessel under the Navigation Rules?",
+    "choice_a": "The vessel that has the other vessel on its own starboard (right) side",
+    "choice_b": "The vessel that has the other vessel on its own port (left) side",
+    "choice_c": "Whichever vessel is moving faster",
+    "choice_d": "Neither vessel needs to give way in a crossing situation",
+    "correct_choice": "A",
+    "explanation": "In a crossing situation, the vessel that has the other vessel on its own starboard side is the give-way vessel and must take early, substantial action to keep clear, while the other vessel is the stand-on vessel and should maintain course and speed.",
+    "weight": 5,
+    "source_note": "General Navigation Rules (Inland Rule 15, crossing situation), universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "How can an operator determine whether risk of collision exists with an approaching vessel, using a simple compass-bearing check?",
+    "choice_a": "If the compass bearing to the other vessel stays roughly constant while the distance between the vessels decreases, risk of collision exists",
+    "choice_b": "Risk of collision exists only if the other vessel is visibly larger",
+    "choice_c": "If the compass bearing to the other vessel keeps changing rapidly, risk of collision always exists",
+    "choice_d": "Compass bearings have no relationship to collision risk",
+    "correct_choice": "A",
+    "explanation": "A steady or nearly unchanging compass bearing to an approaching vessel, combined with a decreasing distance, is a classic sign that risk of collision exists and that action should be taken; a bearing that is clearly changing generally means the vessels will pass clear of each other.",
+    "weight": 4,
+    "source_note": "General Navigation Rules (Inland Rule 7, risk of collision), universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "What sound signal must a power-driven vessel underway and making way through the water sound in conditions of restricted visibility, such as fog?",
+    "choice_a": "One prolonged blast at intervals of not more than two minutes",
+    "choice_b": "Five short blasts every ten seconds",
+    "choice_c": "No sound signal is required in fog if radar is aboard",
+    "choice_d": "Three short blasts once per hour",
+    "correct_choice": "A",
+    "explanation": "Under the Navigation Rules, a power-driven vessel underway and making way through the water in restricted visibility must sound one prolonged blast at intervals of not more than two minutes, alerting nearby vessels to its presence when it cannot be seen.",
+    "weight": 4,
+    "source_note": "General Navigation Rules (Inland Rule 35, sound signals in restricted visibility), universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "How does the fog signal differ for a power-driven vessel that is underway but stopped and making no way through the water, compared to one that is making way?",
+    "choice_a": "It sounds two prolonged blasts in succession, at intervals of not more than two minutes, instead of the single prolonged blast used when making way",
+    "choice_b": "The signal is identical regardless of whether the vessel is making way",
+    "choice_c": "A stopped vessel is exempt from sounding any signal in restricted visibility",
+    "choice_d": "It must sound five short blasts continuously until it resumes moving",
+    "correct_choice": "A",
+    "explanation": "A power-driven vessel underway but stopped, making no way through the water, sounds two prolonged blasts in succession at intervals of not more than two minutes, distinguishing it from the single prolonged blast used by a vessel that is still moving through the water.",
+    "weight": 3,
+    "source_note": "General Navigation Rules (Inland Rule 35, sound signals in restricted visibility), universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Under the Navigation Rules' general right-of-way hierarchy, how does a vessel engaged in commercial fishing (with nets, lines, or trawls actually deployed) generally rank relative to an ordinary sailing vessel and power-driven vessel?",
+    "choice_a": "A vessel engaged in fishing generally outranks both an ordinary sailing vessel and a power-driven vessel, because its gear limits its ability to maneuver",
+    "choice_b": "A vessel engaged in fishing always has the lowest right-of-way priority of the three",
+    "choice_c": "Fishing vessels are entirely exempt from the Navigation Rules",
+    "choice_d": "A power-driven vessel always outranks a vessel engaged in fishing",
+    "correct_choice": "A",
+    "explanation": "A vessel actually engaged in fishing with gear deployed (nets, trawls, or lines that restrict its ability to maneuver) generally ranks above both an ordinary sailing vessel and a power-driven vessel in the right-of-way hierarchy, reflecting its reduced ability to change course quickly without fouling or losing its gear.",
+    "weight": 3,
+    "source_note": "General Navigation Rules right-of-way hierarchy, universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "A boater on the Sound hears another nearby vessel sound two short horn blasts as it maneuvers to pass. Among the recognized meeting/passing sound signals, what is that boater signaling?",
+    "choice_a": "\"I intend to leave you on my starboard side\"",
+    "choice_b": "\"I am operating astern propulsion\"",
+    "choice_c": "\"I do not understand your intentions\"",
+    "choice_d": "\"I am anchoring for the night\"",
+    "correct_choice": "A",
+    "explanation": "Two short blasts signals \"I intend to leave you on my starboard side,\" the counterpart to the one-short-blast signal meaning \"I intend to leave you on my port side,\" both used among the sound signals recognized for vessels in sight of one another on Connecticut waters.",
+    "weight": 3,
+    "source_note": "2026 CT DEEP Boater's Guide, \"Sound Signals,\" p.33"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "What is a vessel \"restricted in her ability to maneuver\" (RAM) under the Navigation Rules, and what is an example?",
+    "choice_a": "A vessel that, by the nature of its work, cannot maneuver as required by the Rules and therefore must keep out of the way of other vessels only to the extent possible -- such as a vessel laying an underwater cable or engaged in dredging",
+    "choice_b": "Any vessel simply moving slower than 5 miles per hour",
+    "choice_c": "A vessel with a broken radio, regardless of its ability to steer or maneuver normally",
+    "choice_d": "A category that no longer exists under the modern Navigation Rules",
+    "correct_choice": "A",
+    "explanation": "A vessel restricted in her ability to maneuver (RAM) is one that, due to the nature of its work -- such as laying cable, dredging, or conducting underwater operations -- cannot maneuver as the Rules would otherwise require; other vessels generally must keep clear of a RAM vessel because of its limited ability to get out of the way itself.",
+    "weight": 3,
+    "source_note": "General Navigation Rules (Inland Rule 3, definitions), universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "At night, what does it mean if you see two all-round red lights displayed in a vertical line on another vessel?",
+    "choice_a": "The vessel is not under command (NUC) -- for example, disabled by an engine failure -- and other vessels should keep well clear",
+    "choice_b": "The vessel is a fishing vessel actively trawling",
+    "choice_c": "The vessel is simply at anchor for the night",
+    "choice_d": "The vessel is a high-speed ferry underway",
+    "correct_choice": "A",
+    "explanation": "Two all-round red lights displayed in a vertical line indicate a vessel not under command (NUC) -- for instance, one disabled by mechanical failure and unable to maneuver as required -- signaling other vessels that they must keep well clear since the NUC vessel cannot reliably get out of the way itself.",
+    "weight": 3,
+    "source_note": "General Navigation Rules (Inland Rule 30/Annex I, lights for vessels not under command), universal NASBLA-aligned boating safety curriculum"
+  }
+]

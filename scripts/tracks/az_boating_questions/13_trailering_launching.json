@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should a boater check before towing a boat trailer on Arizona highways, especially before a long desert drive to a reservoir like Lake Powell or Lake Havasu?",
+    "choice_a": "Trailer tire condition and pressure, wheel bearings, lug nuts, safety chains, lights, and the hitch coupling, since desert heat can accelerate tire wear and bearing failure",
+    "choice_b": "Nothing needs to be checked once the boat is loaded onto the trailer",
+    "choice_c": "Only the boat's fuel level matters before towing",
+    "choice_d": "Trailer inspections are required only for trailers over 40 feet",
+    "correct_choice": "A",
+    "explanation": "Arizona's extreme summer heat is especially hard on trailer tires and wheel bearings, so a pre-trip check of tire condition/pressure, bearings, lug nuts, safety chains, lights, and the hitch coupling is important before towing any real distance.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Trailering'"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "At a busy boat ramp, what is proper ramp etiquette regarding preparing the boat for launch?",
+    "choice_a": "Always launch at the same time as another boat to save time",
+    "choice_b": "Prepare the boat -- removing tie-downs, loading gear, inserting the drain plug -- in a staging area away from the ramp itself, so the ramp lane stays clear for others to launch and retrieve",
+    "choice_c": "Pull directly onto the ramp and take as much time as needed to prepare the boat while other boaters wait",
+    "choice_d": "Ramp etiquette does not exist; boaters may use the ramp in any manner they choose",
+    "correct_choice": "B",
+    "explanation": "Good ramp etiquette calls for boaters to complete preparation -- removing tie-downs, loading gear, inserting the drain plug -- in a staging area before backing down the ramp itself, keeping the ramp lane clear and launches efficient for everyone.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Boat Ramp Etiquette'"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is one of the most common and preventable causes of a boat sinking shortly after launch?",
+    "choice_a": "Using a trailer that is too large for the boat",
+    "choice_b": "Launching during daylight hours",
+    "choice_c": "Forgetting to insert the drain plug before backing down the ramp",
+    "choice_d": "Having too much fuel on board",
+    "correct_choice": "C",
+    "explanation": "Forgetting to insert the drain (bilge) plug before launching is one of the most common and entirely preventable causes of a boat swamping or sinking shortly after it enters the water.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Pre-Launch Checklist'"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why is it important to disconnect trailer lights (or otherwise confirm they are safely handled) before backing a trailer into the water at a launch ramp?",
+    "choice_a": "Trailer lights are legally required to be removed entirely before any launch",
+    "choice_b": "Trailer lights have no relationship to water exposure",
+    "choice_c": "It is only a concern for trailers manufactured before 1980",
+    "choice_d": "Submerging a still-connected, hot incandescent trailer light bulb in cold water can crack or damage the bulb and housing",
+    "correct_choice": "D",
+    "explanation": "Submerging trailer lights while they are still warm from highway use can thermally shock and crack the bulb or housing; many boaters disconnect the trailer light harness or use fully sealed LED lights to avoid this common problem.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Trailer Maintenance'"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "After retrieving a boat from Arizona waters, why is it especially important to clean, drain, and dry ('Clean, Drain, Dry') the boat, trailer, and live wells before moving to another body of water?",
+    "choice_a": "To prevent transporting aquatic invasive species -- such as quagga mussels found in some Arizona reservoirs -- from one body of water to another",
+    "choice_b": "Cleaning the trailer has no connection to invasive species prevention",
+    "choice_c": "It is required only for boats used exclusively in salt water",
+    "choice_d": "It is purely a cosmetic practice with no environmental purpose",
+    "correct_choice": "A",
+    "explanation": "Quagga mussels and other invasive species are established in some Arizona waters (including Lake Mead and Lake Havasu); the 'Clean, Drain, Dry' practice helps prevent boaters from unknowingly transporting them to uninfested lakes and rivers.",
+    "weight": 3,
+    "source_note": "AZGFD aquatic invasive species prevention program, 'Clean, Drain, Dry'"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should a driver do differently when towing a loaded boat trailer compared to driving without a trailer?",
+    "choice_a": "Ignore the trailer's presence entirely when changing lanes",
+    "choice_b": "Allow greater following and stopping distance, reduce speed on curves, and use extra caution backing up, since a loaded trailer adds weight and changes handling",
+    "choice_c": "Drive exactly the same way, since a trailer has no effect on vehicle handling",
+    "choice_d": "Increase speed to compensate for the trailer's added weight",
+    "correct_choice": "B",
+    "explanation": "A loaded trailer increases overall weight and changes a vehicle's handling and stopping distance, so towing safely requires more following distance, reduced speed on curves, and extra care when backing up or changing lanes.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Towing a Trailer'"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why might launching or loading a boat feel more physically demanding in Arizona than in a cooler-climate state?",
+    "choice_a": "Heat has no measurable effect on launching activities",
+    "choice_b": "Arizona ramps are only usable in winter months",
+    "choice_c": "Summer surface temperatures on ramps, docks, and metal trailer parts can reach levels that cause burns or heat exhaustion, so boaters should plan ramp activities for cooler parts of the day and protect skin from hot surfaces",
+    "choice_d": "Arizona has no ramps that experience direct sunlight",
+    "correct_choice": "C",
+    "explanation": "Arizona's intense summer heat can make pavement, metal trailer parts, and dock surfaces dangerously hot, creating burn and heat-exhaustion risks during ramp activities; many boaters launch early in the morning or evening to avoid the worst heat.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum applied to Arizona desert climate conditions"
+  }
+]

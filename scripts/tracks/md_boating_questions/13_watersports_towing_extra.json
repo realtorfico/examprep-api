@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Water Sports and Towing",
+    "question": "When towing a water skier or tuber, must the vessel's total number of occupants (operator, observer, and any others aboard) still stay within the vessel's rated capacity?",
+    "choice_a": "No; towing activities are exempt from the vessel's capacity rating",
+    "choice_b": "Yes; the vessel's overall occupant count, including operator and observer, must still stay within its rated capacity to avoid overloading",
+    "choice_c": "Capacity ratings apply only when the vessel is not towing",
+    "choice_d": "Capacity limits apply only to the person being towed, not those aboard the boat",
+    "correct_choice": "B",
+    "explanation": "A vessel's rated capacity applies regardless of the activity, so the operator, observer, and any other passengers aboard while towing a skier still must not exceed the vessel's rated occupant capacity.",
+    "weight": 2,
+    "source_note": "Universal vessel capacity-plate requirement applied to towed water-sports activities (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What should a boater check about the tow rope or line before towing a water skier or tuber?",
+    "choice_a": "Tow rope condition has no bearing on safety",
+    "choice_b": "That the line is free of fraying or damage and is an appropriate length for the activity and the number of people being towed",
+    "choice_c": "The rope should always be as long as possible regardless of activity",
+    "choice_d": "Only the color of the rope matters",
+    "correct_choice": "B",
+    "explanation": "A frayed, damaged, or improperly sized tow line can fail or perform unpredictably, so it should be checked for condition and matched in length to the activity and the number of people being towed.",
+    "weight": 2,
+    "source_note": "Universal towed water-sports equipment-check guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why should towed water sports like skiing or tubing be conducted in a wide-open area, clear of docks, other boats, swimmers, and shallow water?",
+    "choice_a": "Towing activities and a falling skier or tuber require extra maneuvering room and reaction time, so congested or obstructed areas significantly increase collision and injury risk",
+    "choice_b": "Open water is required only for jet skis, not for towing skiers",
+    "choice_c": "There is no relationship between available space and towing safety",
+    "choice_d": "Docks and shallow water pose no additional risk during towing",
+    "correct_choice": "A",
+    "explanation": "Towing a skier or tuber adds the unpredictability of a person who may fall at any moment, so an area clear of docks, other traffic, swimmers, and shallow water gives the operator the room and reaction time needed to respond safely.",
+    "weight": 2,
+    "source_note": "Universal towed water-sports site-selection safety guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What hand signal does a person in the water use to indicate they need help, as opposed to the one-arm-up 'okay' signal?",
+    "choice_a": "Waving both arms overhead in a clear, deliberate motion signals trouble or a need for assistance",
+    "choice_b": "Raising one arm signals distress, and waving both arms signals 'okay'",
+    "choice_c": "There is no distinct distress signal used in water sports",
+    "choice_d": "Splashing quietly is the standard distress signal",
+    "correct_choice": "A",
+    "explanation": "Waving both arms overhead in a clear, deliberate motion is the widely used signal that a downed skier or tuber needs help, in contrast to the single-arm-raised 'okay' signal indicating the person is unhurt.",
+    "weight": 2,
+    "source_note": "Universal water-skiing/towing hand-signal convention (NASBLA-aligned course content)"
+  }
+]

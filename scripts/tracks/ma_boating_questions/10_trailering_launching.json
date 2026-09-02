@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should a boater do before launching a boat at a ramp to keep the launch efficient and safe for others waiting?",
+    "choice_a": "Prepare the boat fully in a staging area first -- loading gear, installing the drain plug, attaching lines, and disconnecting tie-downs -- so the ramp lane itself is occupied only briefly",
+    "choice_b": "Perform all rigging and loading directly on the ramp itself while other boaters wait behind",
+    "choice_c": "Back the trailer into the water first, then begin loading gear onto the boat while still on the ramp",
+    "choice_d": "There is no need to prepare in advance since ramps have unlimited space",
+    "correct_choice": "A",
+    "explanation": "Courteous, efficient launching means doing as much preparation as possible away from the ramp itself -- loading gear, inserting the drain plug, and freeing tie-downs -- so the actual ramp lane is used only briefly, keeping the line moving for others.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (boat ramp etiquette and procedure), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why is inserting the boat's drain plug one of the most important pre-launch steps?",
+    "choice_a": "The drain plug is needed only for boats with outboard motors",
+    "choice_b": "Without the drain plug in place, water will flood into the bilge once the boat is in the water, which can cause it to swamp or sink",
+    "choice_c": "The drain plug only affects the boat's top speed, not its buoyancy",
+    "choice_d": "The drain plug is purely decorative and has no functional purpose",
+    "correct_choice": "B",
+    "explanation": "Forgetting the drain plug is one of the most common and preventable launch mistakes; without it, water immediately floods the bilge once the boat is afloat, which can quickly swamp or sink the vessel.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (drain plug / pre-launch checklist), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is a recommended practice when backing a trailer down a launch ramp?",
+    "choice_a": "Always launch nose-first rather than backing the trailer down",
+    "choice_b": "It does not matter how deep the tow vehicle goes into the water",
+    "choice_c": "Back slowly and steadily, using a spotter if available, and avoid submerging the tow vehicle's wheels or exhaust too deeply into the water",
+    "choice_d": "Back down as quickly as possible to minimize time on the ramp",
+    "correct_choice": "C",
+    "explanation": "Backing a trailer down a ramp should be done slowly, ideally with a spotter guiding the driver, and the tow vehicle should not be backed in so far that its wheels, exhaust, or electrical components are submerged, which can cause damage or safety hazards.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (trailer launch procedure), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What safety chains and connections should be checked before towing a boat trailer on the road?",
+    "choice_a": "Only the trailer's tire pressure needs to be checked; chains and lights are optional",
+    "choice_b": "Safety chains are illegal to use on boat trailers",
+    "choice_c": "Trailer lights are unnecessary if towing during daylight hours",
+    "choice_d": "Safety chains, the trailer hitch coupling, and trailer lights (brake lights, turn signals) should all be checked and properly connected before driving",
+    "correct_choice": "D",
+    "explanation": "Before towing, a driver should confirm the hitch is properly latched and pinned, safety chains are crossed and connected (providing a backup if the hitch fails), and all trailer lights are functioning, since a trailer detachment or unseen turn signal failure can cause a serious road accident.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (trailer towing safety checklist), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What invasive species precaution is commonly recommended (and sometimes legally required) for boaters moving a trailered boat between different Massachusetts lakes or ponds?",
+    "choice_a": "Clean, drain, and dry the boat, trailer, and any equipment such as live wells or bilges to avoid transporting invasive aquatic species like zebra mussels or milfoil between water bodies",
+    "choice_b": "There is no concern about invasive species when moving a boat between different bodies of water",
+    "choice_c": "Only power-washing the tow vehicle is necessary; the boat hull does not need cleaning",
+    "choice_d": "Invasive species precautions apply only to saltwater vessels",
+    "correct_choice": "A",
+    "explanation": "Aquatic invasive species such as zebra mussels and Eurasian watermilfoil can hitch a ride on hulls, trailers, and live wells; boaters moving between different Massachusetts freshwater bodies are encouraged (and at some checkpoints required) to clean, drain, and dry their equipment to prevent spreading these species.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (aquatic invasive species prevention), relevant to Massachusetts's inland lakes and ponds, consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should a boater do with the boat's engine (outboard or sterndrive) while trailering on the road?",
+    "choice_a": "Engine position while trailering has no effect on safety or equipment wear",
+    "choice_b": "Tilt/trim the engine up to an appropriate travel position and secure it with a transom saver or similar support to reduce stress and prevent it from dragging",
+    "choice_c": "Leave the engine fully lowered into the running position at all times while trailering",
+    "choice_d": "Remove the engine completely before every tow",
+    "correct_choice": "B",
+    "explanation": "An engine left in the fully down position while trailering can strike the road, a ramp, or a speed bump, and also puts stress on the tilt mechanism; boaters typically raise the engine and support it with a transom saver or trailer-specific bracket for the drive.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (engine position while trailering), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is a recommended practice for retrieving a boat from the water back onto its trailer at a busy ramp?",
+    "choice_a": "There is no benefit to using a courtesy dock; the ramp lane should always be used for unloading",
+    "choice_b": "Retrieval order and staging have no impact on other boaters waiting to launch or retrieve",
+    "choice_c": "Move the boat to a courtesy dock or clear area away from the ramp lane to unload gear and passengers first, then position the trailer and load the boat efficiently to free the lane quickly",
+    "choice_d": "Unload all gear and passengers directly on the ramp itself while others wait",
+    "correct_choice": "C",
+    "explanation": "Using a courtesy dock or nearby staging area to unload gear and passengers before backing the trailer down keeps the ramp lane itself free for the actual loading process, reducing wait times for others at a busy ramp.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (boat ramp retrieval etiquette), consistent with NASBLA-aligned course curricula"
+  }
+]

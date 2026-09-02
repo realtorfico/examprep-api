@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "In the U.S. Aids to Navigation System, what does a red, even-numbered buoy mark when returning from open water toward a harbor ('red, right, returning')?",
+    "choice_a": "The left (port) side of the channel when returning from open water",
+    "choice_b": "The right (starboard) side of the channel as a boater returns from open water toward a harbor or upstream",
+    "choice_c": "The center of the safest, deepest water in the channel",
+    "choice_d": "A swimming area boundary",
+    "correct_choice": "B",
+    "explanation": "The memory aid 'red, right, returning' means red, even-numbered buoys and markers should be kept on the boater's right (starboard) side when returning from open water into a harbor or heading upstream.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, lateral markers), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a green, odd-numbered buoy or daymark indicate when a boater is returning from open water toward a harbor?",
+    "choice_a": "It should be kept on the boater's right (starboard) side when returning",
+    "choice_b": "It indicates a fuel dock only",
+    "choice_c": "It should be kept on the boater's left (port) side when returning from open water",
+    "choice_d": "It marks a mandatory anchoring zone",
+    "correct_choice": "C",
+    "explanation": "Green, odd-numbered markers are kept to the boater's left (port) side when returning from open water or heading upstream -- the opposite convention from red markers.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, lateral markers), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a red-and-white vertically striped buoy or daymark indicate?",
+    "choice_a": "A swimming-only area where all boats are prohibited",
+    "choice_b": "The centerline that must never be crossed by any vessel",
+    "choice_c": "A fueling station",
+    "choice_d": "A safe-water mark showing that navigable water is on all sides, often used to indicate a mid-channel or approach point",
+    "correct_choice": "D",
+    "explanation": "Red-and-white vertically striped markers are safe-water marks, indicating navigable water on all sides, and are typically used to mark a mid-channel or the start of a channel.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, safe-water marks), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a solid orange circle on a white buoy typically indicate?",
+    "choice_a": "A controlled area, such as a speed zone, no-wake zone, or other regulated area described on the buoy",
+    "choice_b": "A designated scuba diving area exclusively",
+    "choice_c": "A hazard to navigation with no further meaning",
+    "choice_d": "A fuel dock",
+    "correct_choice": "A",
+    "explanation": "Orange geometric shapes on white regulatory buoys communicate controlled or restricted areas -- a solid circle typically marks a controlled area such as a speed zone or no-wake zone -- and boaters should read the accompanying text for specifics.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, regulatory markers), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does an orange diamond symbol on a white regulatory buoy generally indicate?",
+    "choice_a": "A fishing pier",
+    "choice_b": "A danger or hazard to navigation, such as a rock, shoal, or wreck",
+    "choice_c": "A designated PWC-only zone",
+    "choice_d": "A marina entrance",
+    "correct_choice": "B",
+    "explanation": "An orange diamond on a white regulatory marker warns of a danger, such as a rock, shoal, dam, or wreck; a diamond with a cross inside specifically means boats are excluded from that area entirely.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, regulatory markers), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does an orange square on a white regulatory buoy generally indicate?",
+    "choice_a": "A hazard requiring vessels to stay at least 300 feet away",
+    "choice_b": "A restricted military zone with no exceptions",
+    "choice_c": "General information, such as directions, distances, or locations",
+    "choice_d": "A mandatory stop for all vessels",
+    "correct_choice": "C",
+    "explanation": "An orange square on a white marker is used to convey general information to boaters, such as directions to a marina, distances, or other helpful notices, unlike the diamond (danger) or circle (controlled area) shapes.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, regulatory markers), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is a preferred channel (junction) marker used to indicate?",
+    "choice_a": "A location where anchoring overnight is mandatory",
+    "choice_b": "The exact center of a harbor with no other significance",
+    "choice_c": "A designated PWC launch ramp",
+    "choice_d": "The point where a channel splits into two, with the marker's top color showing which side is the preferred (primary) channel",
+    "correct_choice": "D",
+    "explanation": "A preferred channel marker, banded in red and green with the top color indicating the preferred route, marks a point where a channel splits, telling boaters which branch is the primary, better-marked channel.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, preferred channel/junction markers), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is a nautical chart used for, and why is one especially useful along the Massachusetts coast?",
+    "choice_a": "It shows water depths, hazards, aids to navigation, and shoreline features, which helps boaters avoid the rocks, shoals, and shifting sandbars common along Massachusetts's coastline and harbors",
+    "choice_b": "It only shows road access points to boat ramps",
+    "choice_c": "It is used exclusively for tracking weather fronts",
+    "choice_d": "Nautical charts are unnecessary if a GPS chartplotter is aboard",
+    "correct_choice": "A",
+    "explanation": "A nautical chart shows depths, navigational hazards, buoys, and shoreline detail; along the Massachusetts coast -- with its rocky ledges, shifting sandbars near Cape Cod, and strong tidal currents -- a current chart is essential even when electronic chartplotters are also used, since electronics can fail or lose signal.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (nautical chart use), relevant to Massachusetts's rocky and shoal-prone coastal waters"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a mooring buoy (white with a horizontal blue band) indicate?",
+    "choice_a": "A speed-zone boundary",
+    "choice_b": "An authorized area or specific spot for a vessel to moor, distinct from a navigational aid marking a channel or hazard",
+    "choice_c": "The presence of an underwater pipeline that must be avoided at all costs",
+    "choice_d": "A restricted swimming area",
+    "correct_choice": "B",
+    "explanation": "A white buoy with a blue horizontal band marks a designated mooring area or specific mooring spot, which is a different function from the lateral, safe-water, and regulatory markers used to guide or restrict navigation.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, mooring buoys), consistent with NASBLA-aligned course curricula"
+  }
+]

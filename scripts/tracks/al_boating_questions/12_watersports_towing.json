@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Water Sports and Towing",
+    "question": "When towing a water-skier or wakeboarder on Alabama waters, what is required in addition to the operator, if the boat lacks a wide-angle rearview mirror?",
+    "choice_a": "Only the skier needs to watch out for hazards; the boat operator has no such duty",
+    "choice_b": "No observer or mirror of any kind is ever required for towing skiers",
+    "choice_c": "A separate observer aboard, at least old enough to responsibly watch the person being towed and relay information to the operator, since the operator alone cannot safely watch both the skier and the boat's path",
+    "choice_d": "The requirement applies only to PWCs, never to boats towing water-skiers",
+    "correct_choice": "C",
+    "explanation": "A vessel towing a person on water skis, a tube, or a wakeboard must either have a wide-angle rearview mirror or a second person aboard as an observer who watches the person being towed continuously, since the operator cannot safely watch both the tow line and the boat's forward path at once.",
+    "weight": 4,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (observer/mirror requirement for towing)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What personal flotation device rule applies specifically to anyone being towed behind a boat on Alabama waters, such as a water-skier or tuber?",
+    "choice_a": "Only the boat operator needs a PFD, not the person being towed",
+    "choice_b": "No PFD is required for anyone being towed if they are a confident swimmer",
+    "choice_c": "PFDs are optional for adults being towed, but never for anyone else",
+    "choice_d": "The person being towed must wear a Coast Guard-approved wearable PFD, the same as any PWC rider",
+    "correct_choice": "D",
+    "explanation": "Alabama's boating rules require anyone being towed behind a vessel -- water-skier, tuber, or wakeboarder -- to wear a Coast Guard-approved wearable PFD, recognizing the real risk of a high-speed fall and disorientation in the water.",
+    "weight": 4,
+    "source_note": "ALEA boating rules and regulations (PFD requirement for towed persons)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What is a widely used signal for a downed water-skier in the water to alert nearby boat traffic on an Alabama lake?",
+    "choice_a": "Raising one arm or hand straight up out of the water, or holding a bright orange or red flag upright, so approaching boats can see the skier's location",
+    "choice_b": "Submerging completely and waiting silently",
+    "choice_c": "Waving both arms in a broad circular motion, which universally means \"proceed at full speed\"",
+    "choice_d": "There is no recognized signal for a downed skier",
+    "correct_choice": "A",
+    "explanation": "A downed skier raising an arm straight up, or a spotter/tow boat displaying a bright orange or red \"skier down\" flag, is a widely recognized way to make a person in the water visible to other boat traffic that might not otherwise see them at the surface.",
+    "weight": 4,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (downed skier flag/hand signal)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Is towing a water-skier after dark generally permitted under widely applied boating safety rules that Alabama's operators should follow?",
+    "choice_a": "Yes, towing after dark is unrestricted at any hour",
+    "choice_b": "No -- towing an ski, tube, or wakeboard rider is generally prohibited between sunset and sunrise, since visibility is too poor to safely watch the skier and other traffic",
+    "choice_c": "Towing after dark is allowed only on the Gulf of Mexico, never on lakes",
+    "choice_d": "Darkness has no bearing on towing safety",
+    "correct_choice": "B",
+    "explanation": "Towing a person on water skis, a tube, or a wakeboard is generally prohibited between sunset and sunrise, consistent with widely applied state boating laws, because low visibility makes it far too dangerous to safely monitor a skier and surrounding traffic.",
+    "weight": 4,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (sunset-to-sunrise towing restriction)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why should a boat operator maintain a wide buffer distance from swimmers, docks, and other boats when towing a tuber at speed on a crowded lake like Lake Martin?",
+    "choice_a": "Buffer distance is only a concern for the tow boat itself, never for the person being towed",
+    "choice_b": "Tubes and skiers always follow the exact same path as the tow boat with no lateral movement",
+    "choice_c": "A tube or skier can swing wide of the tow boat's own path, especially during turns, creating a collision risk with anything close to the towing vessel's course that the boat itself might have cleared",
+    "choice_d": "There is no reason to maintain any distance from other objects while towing",
+    "correct_choice": "C",
+    "explanation": "A skier or tuber can swing significantly wider than the tow boat's own path, particularly through turns, so an operator must account for that wide arc and keep well clear of swimmers, docks, moored boats, and other traffic that the tow boat alone might have safely passed.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (towed-person swing radius hazard)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What condition of the tow rope/line should be checked before water skiing or tubing behind a boat on Alabama waters?",
+    "choice_a": "A rope that has already frayed partway through is still considered safe to use",
+    "choice_b": "Rope condition never matters as long as it is tied to the boat somehow",
+    "choice_c": "Only the color of the rope matters, not its structural condition",
+    "choice_d": "That the line is free of fraying, knots, or excessive stretch, and is rated for the activity and the number/weight of riders being towed",
+    "correct_choice": "D",
+    "explanation": "A worn, frayed, or overstretched tow line can snap unexpectedly under load, so operators should inspect the line's condition and confirm it is rated appropriately for the towed activity and the number and weight of riders before use.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (tow line condition and rating)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why is cutting between a tow boat and the person it is towing considered reckless operation under Alabama law, particularly for PWC operators?",
+    "choice_a": "Because the taut tow line and the person in the water create a serious entanglement and collision hazard for any vessel crossing between them",
+    "choice_b": "Because it is simply against boating etiquette with no real safety concern",
+    "choice_c": "Because it is only dangerous if the tow boat is traveling in reverse",
+    "choice_d": "Because Alabama law only prohibits this maneuver for sailboats, not PWCs",
+    "correct_choice": "A",
+    "explanation": "Cutting between a tow vessel and the person being towed creates a genuine entanglement and collision risk from the taut tow line and the person's position in the water, which is exactly why Alabama law lists this maneuver as a specific example of reckless PWC operation with a minimum fine.",
+    "weight": 3,
+    "source_note": "ALEA boating rules and regulations (PWC reckless operation examples)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What should the tow boat operator and observer do immediately after a skier falls and signals they are okay on an Alabama lake?",
+    "choice_a": "Immediately speed away from the fallen skier without returning",
+    "choice_b": "Circle back carefully to pick up the skier, approaching from a direction that lets the skier see the boat and keeps the propeller clear of them",
+    "choice_c": "Ignore the fall and continue towing an empty rope",
+    "choice_d": "Require the skier to swim the entire distance to shore unassisted regardless of distance",
+    "correct_choice": "B",
+    "explanation": "After a skier falls, the boat should circle back deliberately, keeping the skier visible and approaching in a way that keeps the propeller well clear of them, rather than approaching directly at the skier or leaving them stranded far from the boat.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (skier pickup procedure)"
+  }
+]

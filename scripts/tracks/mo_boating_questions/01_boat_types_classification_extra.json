@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a key practical difference between an aluminum hull and a fiberglass hull, both common on Missouri lakes and rivers?",
+    "choice_a": "Aluminum hulls are generally lighter, more resistant to impact damage from submerged rocks or logs, and easier to repair, while fiberglass hulls ride more smoothly and resist denting but can crack or gouge on impact",
+    "choice_b": "Fiberglass hulls float higher out of the water with no ballast needed",
+    "choice_c": "Aluminum hulls cannot be used on any Missouri river",
+    "choice_d": "There is no meaningful performance difference between the two materials",
+    "correct_choice": "A",
+    "explanation": "Aluminum hulls are lightweight, dent rather than crack on impact, and are popular on rocky Ozark streams and gravel-bar rivers, while fiberglass hulls generally offer a smoother ride and resist corrosion but can gouge or crack against hard impacts -- boaters choose based on the waters they run most.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (hull material comparison), applied to Missouri river and lake boating"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a 'jon boat,' a vessel type frequently seen on Missouri's smaller rivers and backwaters?",
+    "choice_a": "A high-speed offshore racing hull",
+    "choice_b": "A flat-bottomed, shallow-draft aluminum or fiberglass boat with a simple, squared-off shape, well suited to shallow rivers, sloughs, and duck-hunting or fishing use",
+    "choice_c": "A sailing vessel with a deep fin keel",
+    "choice_d": "A vessel that can only legally carry one person",
+    "correct_choice": "B",
+    "explanation": "A jon boat's flat bottom and shallow draft let it operate in the thin, snag-filled water typical of Missouri's smaller rivers and backwaters, making it a popular, inexpensive choice for fishing, duck hunting, and utility use, though its flat hull provides less stability in rough, open water.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (vessel types), applied to Missouri river and backwater boating"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What distinguishes a 'bass boat,' a vessel type common at tournament events on Missouri reservoirs such as Table Rock Lake?",
+    "choice_a": "A low-profile, high-performance fiberglass or aluminum hull optimized for speed and stability, typically equipped with a raised casting deck, livewell, and a powerful outboard",
+    "choice_b": "A vessel that can never exceed 5 mph",
+    "choice_c": "A boat designed exclusively for offshore ocean fishing",
+    "choice_d": "A houseboat variant with no motor",
+    "correct_choice": "A",
+    "explanation": "Bass boats are built low and fast, with a raised casting deck for anglers, a livewell to keep caught fish alive, and a powerful outboard motor -- they are widely used in competitive bass fishing tournaments on Missouri reservoirs like Table Rock Lake and the Lake of the Ozarks.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (vessel types), applied to Missouri reservoir tournament fishing"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Why are houseboats popular on the Lake of the Ozarks, and what equipment consideration follows from their typical size?",
+    "choice_a": "Houseboats are exempt from all Missouri equipment requirements",
+    "choice_b": "Houseboats are always classified as Class A vessels regardless of length",
+    "choice_c": "Houseboats provide onboard living space for multi-day stays on the water, and because many fall into Missouri's Class 2 or Class 3 length categories, they must meet the higher fire extinguisher and sound-signaling equipment standards that apply to larger vessels",
+    "choice_d": "Houseboats are prohibited on all Missouri reservoirs",
+    "correct_choice": "C",
+    "explanation": "Houseboats are a fixture of Lake of the Ozarks recreation because they let groups live aboard for extended stays, and their length often places them in Missouri's Class 2 (26 to under 40 feet) or Class 3 (40 feet and over) categories under RSMo 306.100, triggering additional required fire extinguishers, sound-signaling devices, and in Class 3's case a bell alongside the horn.",
+    "weight": 3,
+    "source_note": "RSMo 306.100 (vessel classification and equipment scaling), applied to Lake of the Ozarks houseboat recreation"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What stability advantage does a catamaran or other multihull vessel generally offer compared to a similarly sized monohull?",
+    "choice_a": "Multihulls are always faster in every condition than any monohull",
+    "choice_b": "Two or more separated hulls provide a wider effective base, generally giving greater initial stability and resistance to rolling than a single hull of similar length",
+    "choice_c": "Multihulls cannot be used with an outboard motor",
+    "choice_d": "Multihulls have no stability advantage of any kind",
+    "correct_choice": "B",
+    "explanation": "By spreading buoyancy across two or more separated hulls, a catamaran or other multihull vessel generally achieves greater initial (resting) stability than a monohull of comparable length, which is one reason multihull pontoon-style and small catamaran designs are popular for calm lake recreation.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (multihull vessel design)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is distinctive about an airboat's propulsion, occasionally seen on shallow Missouri backwaters and marsh areas?",
+    "choice_a": "It is propelled by an above-water aircraft-style propeller mounted at the stern, driving air rather than water, with no underwater propeller or rudder to strike submerged objects",
+    "choice_b": "It uses a completely silent electric underwater motor",
+    "choice_c": "It relies solely on oars for propulsion",
+    "choice_d": "It cannot be steered in any direction",
+    "correct_choice": "A",
+    "explanation": "An airboat is driven by a large, above-water propeller (much like an aircraft propeller) that pushes air rather than water, letting it operate in extremely shallow water or over vegetation without an underwater propeller or rudder that could strike submerged obstacles -- steering is achieved with rudders positioned in the prop's airflow.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (vessel types), applied to Missouri shallow-water and marsh boating"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a 'stern drive' (also called an inboard/outboard or I/O), and how does it differ from a pure inboard engine?",
+    "choice_a": "A stern drive has no propeller at all",
+    "choice_b": "A stern drive mounts the engine inside the hull like an inboard but connects to an external, tiltable outdrive unit at the transom that steers and can be raised out of the water, unlike a fixed inboard shaft and rudder",
+    "choice_c": "A stern drive is identical in every respect to an outboard engine",
+    "choice_d": "A stern drive can only be used on sailboats",
+    "correct_choice": "B",
+    "explanation": "A stern drive (I/O) combines an inboard-mounted engine with an external outdrive unit at the transom that both steers the boat and can be tilted up out of the water, unlike a fixed inboard shaft-and-rudder setup or a fully self-contained outboard, giving it characteristics of both configurations.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (engine and drive types)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a 'runabout,' a common general-purpose powerboat type seen on Missouri lakes?",
+    "choice_a": "A vessel used exclusively for commercial cargo transport",
+    "choice_b": "A boat that cannot legally carry passengers",
+    "choice_c": "A general-purpose, open or bowrider-style powerboat, typically 16 to 24 feet, used for day cruising, watersports, and casual family recreation on lakes such as the Lake of the Ozarks",
+    "choice_d": "A vessel exclusively designed for competitive offshore racing",
+    "correct_choice": "C",
+    "explanation": "A runabout is a versatile, general-purpose powerboat -- often an open or bowrider design in the 16- to 24-foot range -- widely used for day cruising, towing water-skiers or tubers, and casual family recreation, making it one of the most common vessel types on Missouri's recreational lakes.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (vessel types), applied to Missouri lake recreation"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is the difference between a vessel's 'length overall' (LOA) and its 'waterline length,' a distinction relevant to Missouri's length-based vessel classes under RSMo 306.100?",
+    "choice_a": "Length overall measures the vessel end-to-end including bow and stern overhangs, swim platforms, and pulpits, while waterline length measures only the portion of the hull actually touching the water, which is normally shorter",
+    "choice_b": "The two terms are always exactly identical for every vessel",
+    "choice_c": "Waterline length is always longer than length overall",
+    "choice_d": "Neither measurement has any bearing on vessel classification",
+    "correct_choice": "A",
+    "explanation": "Length overall (LOA) measures the full extent of the vessel including bow pulpits, swim platforms, and other overhangs, while waterline length measures only the hull length actually in contact with the water; Missouri's Class A through Class 3 equipment categories under RSMo 306.100 are based on the vessel's overall length, not waterline length.",
+    "weight": 3,
+    "source_note": "RSMo 306.100 (vessel classification by length), general vessel measurement terminology"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What generally distinguishes a 'deep-V' planing hull from a flatter planing hull design?",
+    "choice_a": "A deep-V hull has a pronounced V-shaped cross-section that cuts through waves for a softer ride in rough or choppy water, at some cost in stability at rest compared to a flatter-bottomed planing hull",
+    "choice_b": "A deep-V hull cannot plane at any speed",
+    "choice_c": "A deep-V hull is only used on sailboats",
+    "choice_d": "There is no difference between a deep-V and a flat-bottomed planing hull",
+    "correct_choice": "A",
+    "explanation": "A deep-V hull's pronounced V-shape helps it slice through chop and waves for a softer ride at speed, which is why it is favored for rougher, more open water, though it typically feels less stable at rest or low speed than a flatter-bottomed planing hull of similar size.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (hull design), consistent with NASBLA-aligned course curricula"
+  }
+]

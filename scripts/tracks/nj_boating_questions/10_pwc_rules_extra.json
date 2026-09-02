@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under New Jersey law, during what hours is a person prohibited from operating a personal watercraft (PWC)?",
+    "choice_a": "Only between midnight and 5:00 a.m.",
+    "choice_b": "There are no hour restrictions specific to PWCs in New Jersey",
+    "choice_c": "Only on weekdays before 9:00 a.m.",
+    "choice_d": "Between sunset and sunrise, and during any period of reduced or restricted visibility",
+    "correct_choice": "D",
+    "explanation": "New Jersey law bars PWC operation between sunset and sunrise and during periods of restricted visibility, unlike some conventional powerboats that may run with proper navigation lights after dark.",
+    "weight": 3,
+    "source_note": "boat-ed.com New Jersey Operating a PWC course content; aceboater.com NJ PWC regulations page -- sunset-to-sunrise and restricted-visibility prohibition"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What type of personal flotation device (PFD) must every person aboard a PWC in New Jersey wear while the PWC is underway?",
+    "choice_a": "A U.S. Coast Guard-approved Type I, II, III, or V PFD, worn at all times the PWC is running -- not just kept on board",
+    "choice_b": "Any flotation cushion is acceptable as long as it is within reach",
+    "choice_c": "A Type IV throwable cushion or ring, since it does not need to be worn",
+    "choice_d": "PFDs are optional on a PWC as long as the operator is a strong swimmer",
+    "correct_choice": "A",
+    "explanation": "New Jersey requires everyone aboard a PWC to wear, not merely carry, a USCG-approved Type I, II, III, or V PFD whenever the craft is in operation; a Type IV throwable device does not satisfy this because it is designed to be thrown, not worn.",
+    "weight": 3,
+    "source_note": "N.J.A.C. 13:82-1.4, Personal flotation devices; boat-ed.com New Jersey Specific PFD Requirements -- PWC wear mandate, Type I/II/III/V"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Besides prohibiting passengers in excess of the manufacturer's stated capacity, what else does New Jersey's regulation on vessel riders (N.J.A.C. 13:82-1.13) prohibit for a PWC operator?",
+    "choice_a": "Allowing more than one adult passenger regardless of the PWC's rated capacity",
+    "choice_b": "Allowing any person to ride in a position that would unduly endanger their life or limb, such as one where they could easily fall overboard",
+    "choice_c": "Allowing passengers to sit anywhere except the very front of the PWC",
+    "choice_d": "Nothing else -- the rule addresses only maximum headcount",
+    "correct_choice": "B",
+    "explanation": "New Jersey's rider regulation bars both overloading a vessel beyond its manufacturer's or Coast Guard capacity rating and allowing anyone to ride in a position -- such as one with a high risk of falling overboard -- that would unduly endanger life or limb.",
+    "weight": 2,
+    "source_note": "N.J.A.C. 13:82-1.13, Riders"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "According to New Jersey PWC operating guidance, how must the operator be positioned while the PWC is underway?",
+    "choice_a": "Facing sideways to better watch for other vessels",
+    "choice_b": "There is no required orientation for the operator",
+    "choice_c": "Always facing forward in the direction of travel",
+    "choice_d": "Facing backward whenever towing a skier",
+    "correct_choice": "C",
+    "explanation": "A PWC operator in New Jersey must always face forward while operating the craft, maintaining a proper lookout in the direction of travel rather than riding sideways or backward.",
+    "weight": 2,
+    "source_note": "boat-ed.com New Jersey Operating a PWC course content, operator position requirement"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "May a New Jersey PWC operator allow a passenger to ride positioned between the operator and the steering controls (handlebars)?",
+    "choice_a": "Yes, as long as the passenger is a licensed adult",
+    "choice_b": "Yes, this is the recommended seating position for a second rider",
+    "choice_c": "It is allowed only on three-seat PWC models",
+    "choice_d": "No -- New Jersey prohibits allowing any person to ride between the certified operator and the PWC's steering controls",
+    "correct_choice": "D",
+    "explanation": "New Jersey bars a PWC operator from allowing anyone to ride in the position between the operator and the steering controls, since that position can interfere with steering and throttle control and endanger both riders.",
+    "weight": 2,
+    "source_note": "boat-ed.com New Jersey Operating a PWC course content, prohibition on riders positioned between operator and steering controls"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Where in New Jersey is PWC operation entirely prohibited, regardless of time of day?",
+    "choice_a": "The Point Pleasant Canal and the Cape May Canal",
+    "choice_b": "All of the Delaware River",
+    "choice_c": "Any lake larger than 500 acres",
+    "choice_d": "New Jersey has no waterway-specific PWC bans",
+    "correct_choice": "A",
+    "explanation": "New Jersey law specifically bars personal watercraft from operating on the Point Pleasant Canal and the Cape May Canal, on top of the general operating rules that apply on other state waters.",
+    "weight": 3,
+    "source_note": "boat-ed.com New Jersey Operating a PWC course content; aceboater.com NJ PWC regulations page -- Point Pleasant/Cape May canal prohibition"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Can someone rent and operate a PWC in New Jersey after completing only a short pre-rental instruction session, the way they could for renting some other power vessels?",
+    "choice_a": "Yes, a brief dockside pre-rental instruction always satisfies PWC rental requirements",
+    "choice_b": "No -- the pre-rental instruction shortcut does not apply to PWCs; a renter must have already completed a full boat safety course",
+    "choice_c": "Yes, but only if the rental is for less than one hour",
+    "choice_d": "PWC rentals in New Jersey require no instruction or certification of any kind",
+    "correct_choice": "B",
+    "explanation": "New Jersey regulation bars a rental business from letting anyone operate a rented PWC unless that person has completed a required boat safety course; the pre-rental instruction shortcut available for some other power vessel rentals does not apply to PWCs.",
+    "weight": 3,
+    "source_note": "N.J.A.C. 13:64-1.1, Operation prohibited; N.J.S.A. 12:7-61 pre-rental instruction scope, corroborated by Patch.com New Jersey PWC operating FAQ"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under New Jersey's PWC rental regulations, how many rented personal watercraft may a single qualified supervisor oversee in the designated rental area at one time?",
+    "choice_a": "An unlimited number, as long as they stay in sight",
+    "choice_b": "Only one at a time",
+    "choice_c": "Up to seven",
+    "choice_d": "Up to twenty",
+    "correct_choice": "C",
+    "explanation": "New Jersey regulation caps each qualified rental supervisor at overseeing up to seven personal watercraft at a time within the permitted designated rental area, and the supervisor must remain in that area while the rented PWCs are operating.",
+    "weight": 2,
+    "source_note": "N.J.A.C. 13:64-2.1, Supervisors required"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What must be true of a PWC in New Jersey before it may legally be used to tow a water skier?",
+    "choice_a": "Any PWC rated for a single rider may tow a skier as long as the operator watches through a mirror",
+    "choice_b": "PWCs are never permitted to tow water skiers under any circumstances in New Jersey",
+    "choice_c": "Only PWCs manufactured after 2020 may tow water skiers",
+    "choice_d": "It must be designed and rated to carry at least three people, with one person aboard, other than the operator, acting as an observer",
+    "correct_choice": "D",
+    "explanation": "A PWC used to tow a water skier in New Jersey must be one designed and rated to carry at least three people, since it needs the operator plus a dedicated observer aboard to watch the skier, consistent with the general requirement that vessels towing skiers carry a competent observer.",
+    "weight": 2,
+    "source_note": "N.J.A.C. 13:82-3.1(c), waterskiing crew/observer requirement; aceboater.com NJ PWC regulations page -- 3-person-rated PWC towing requirement"
+  }
+]

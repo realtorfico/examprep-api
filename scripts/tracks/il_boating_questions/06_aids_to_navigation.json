@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "Under the U.S. Aids to Navigation System used on Illinois waters, what does a red, even-numbered buoy mark when returning from open water toward a harbor or upstream?",
+    "choice_a": "It marks a swimming-only area",
+    "choice_b": "It marks the deepest part of the channel",
+    "choice_c": "It should be kept on the vessel's right (starboard) side, following the 'red, right, returning' rule",
+    "choice_d": "It should be kept on the vessel's left (port) side",
+    "correct_choice": "C",
+    "explanation": "The mnemonic 'red, right, returning' reminds boaters to keep red, even-numbered markers on their starboard (right) side when heading upstream or returning from open water toward a harbor.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, uniform lateral marker convention used across NASBLA-based state boating courses including Illinois's"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What color and shape is a green, odd-numbered navigational buoy, and which side should it be kept on when returning from open water?",
+    "choice_a": "A red, conical (nun) buoy, kept on the right side",
+    "choice_b": "A yellow diamond-shaped buoy marking a hazard",
+    "choice_c": "A black-and-white striped buoy marking safe water",
+    "choice_d": "A green, cylindrical (can) buoy, kept on the vessel's left (port) side when returning",
+    "correct_choice": "D",
+    "explanation": "Green, odd-numbered can buoys mark the left (port) side of a channel when a vessel is returning from open water or heading upstream, opposite the red, even-numbered markers on the right.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, uniform lateral marker convention used across NASBLA-based state boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange diamond symbol typically indicate on Illinois waterways?",
+    "choice_a": "A danger, such as rocks, a shoal, a dam, or other hazard to navigation",
+    "choice_b": "A designated swimming area",
+    "choice_c": "A safe-water marker showing unobstructed water on all sides",
+    "choice_d": "A location where fuel is sold",
+    "correct_choice": "A",
+    "explanation": "An orange diamond on a white regulatory marker warns boaters of a danger such as rocks, a shoal, a dam, construction, or other navigational hazard nearby.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System regulatory marker standards, used across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange circle indicate?",
+    "choice_a": "The area is reserved exclusively for law enforcement vessels",
+    "choice_b": "A restriction on boat operation is in effect in that area, such as a no-wake, idle-speed, or speed-limit zone described by accompanying text",
+    "choice_c": "The area is a fueling station",
+    "choice_d": "The buoy marks the edge of a designated anchorage with no restrictions",
+    "correct_choice": "B",
+    "explanation": "An orange circle on a white regulatory marker indicates an operating restriction, such as slow, no-wake, or speed-limit zones, with the specific restriction spelled out in black lettering on the marker.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System regulatory marker standards, used across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange square generally indicate?",
+    "choice_a": "An area closed to all boating",
+    "choice_b": "The presence of a diver-down flag",
+    "choice_c": "General information, such as directions, distances, or the location of services",
+    "choice_d": "A mandatory stop for all vessels",
+    "correct_choice": "C",
+    "explanation": "An orange square on a white regulatory marker conveys general information, such as directions to marinas, distances, or other guidance useful to boaters in the area.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System regulatory marker standards, used across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "A buoy with red and white vertical stripes marks what?",
+    "choice_a": "A no-boating zone",
+    "choice_b": "A fuel dock",
+    "choice_c": "A hazardous underwater cable",
+    "choice_d": "A safe-water marker, indicating navigable water on all sides, typically used to mark a channel's midpoint or approach",
+    "correct_choice": "D",
+    "explanation": "Red-and-white vertically striped safe-water markers indicate unobstructed water on all sides and are often used to mark a channel's midpoint or the start of a channel from open water.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System safe-water marker standards, used across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Junction (preferred channel) markers, showing a wide horizontal band of a second color, indicate what?",
+    "choice_a": "The preferred, or primary, channel when a channel splits, with the color of the top band matching the side to favor",
+    "choice_b": "A hazard requiring boaters to stop immediately",
+    "choice_c": "A restricted swim area",
+    "choice_d": "The center of a designated anchorage",
+    "correct_choice": "A",
+    "explanation": "A junction marker's topmost color band indicates the preferred, or primary, channel when the waterway splits -- if the top band is green, treat the marker like a green marker for the preferred route, and if red, treat it like a red marker.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System junction/preferred-channel marker standards, used across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "On the Illinois River and other inland rivers, which general direction is used as the reference for 'upstream' when applying lateral (red/green) markers?",
+    "choice_a": "There is no consistent reference point on inland rivers",
+    "choice_b": "The direction against the river's current, generally moving away from its mouth toward its source",
+    "choice_c": "Always due north, regardless of the river's actual flow",
+    "choice_d": "Whichever direction the boat happens to be traveling",
+    "correct_choice": "B",
+    "explanation": "On rivers, 'upstream' means traveling against the current, away from the river's mouth; lateral markers are placed as if a vessel is heading upstream (returning), which determines which side red and green markers should be kept on.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System inland waterway convention, used across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "A flashing light on a lighted aid to navigation, compared to a fixed (steady) light, generally serves what purpose?",
+    "choice_a": "It only appears on markers reserved for commercial vessels",
+    "choice_b": "It has no functional purpose beyond decoration",
+    "choice_c": "It helps boaters distinguish that particular aid from background lights and other aids at night, often with a distinctive flash pattern",
+    "choice_d": "It indicates the marker is malfunctioning and should be ignored",
+    "correct_choice": "C",
+    "explanation": "Flashing or occulting light patterns on navigational aids help operators identify and distinguish a specific aid at night from shore lights, other vessels' lights, and nearby aids.",
+    "weight": 1,
+    "source_note": "U.S. Aids to Navigation System lighted-aid conventions, used across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "If a boater in Illinois discovers a navigational buoy that is missing, damaged, or off its correct station, what is the recommended action?",
+    "choice_a": "Move the buoy back into position personally using the boat's anchor line",
+    "choice_b": "Ignore it, since aids to navigation are only advisory",
+    "choice_c": "Remove the buoy entirely to avoid confusing other boaters",
+    "choice_d": "Report it to the U.S. Coast Guard or the Illinois DNR so it can be repaired or repositioned, since a discrepant aid can mislead other boaters",
+    "correct_choice": "D",
+    "explanation": "A missing, damaged, or off-station aid to navigation should be reported to the Coast Guard or Illinois DNR promptly, since other boaters rely on these markers being accurate to navigate safely.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System discrepancy-reporting guidance; IDNR enforcement role under 625 ILCS 45/2"
+  }
+]

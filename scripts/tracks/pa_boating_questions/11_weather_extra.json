@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Weather and Boating",
+    "question": "NOAA Weather Radio All Hazards broadcasts continuous marine and land forecasts on a dedicated set of VHF frequencies. What is true about these frequencies?",
+    "choice_a": "NOAA Weather Radio broadcasts on the same channel used for marine emergency distress calls",
+    "choice_b": "NOAA Weather Radio only operates during named hurricanes",
+    "choice_c": "A standard AM/FM car radio can receive NOAA Weather Radio broadcasts without any special equipment",
+    "choice_d": "They occupy seven specific VHF channels (roughly 162.400 to 162.550 MHz) reserved for continuous NOAA weather broadcasts, separate from the marine hailing and distress channels",
+    "correct_choice": "D",
+    "explanation": "NOAA Weather Radio All Hazards transmits continuous, repeating weather and marine forecasts on seven dedicated VHF frequencies between about 162.400 and 162.550 MHz, separate from the VHF marine hailing/distress channel, so a boater needs a receiver capable of tuning those specific frequencies (such as a marine VHF radio or dedicated weather radio) to pick up the broadcast.",
+    "weight": 1,
+    "source_note": "NOAA Weather Radio All Hazards VHF frequency band, NWS/NOAA public reference"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "What is the '30-30 rule' that boating safety courses teach for lightning?",
+    "choice_a": "If less than 30 seconds pass between seeing lightning and hearing the thunder, seek safe shelter immediately, and wait at least 30 minutes after the last thunder is heard before resuming activity on the water",
+    "choice_b": "A boat is safe from lightning as long as it stays within 30 feet of shore",
+    "choice_c": "Lightning cannot strike a boat that is moving faster than 30 miles per hour",
+    "choice_d": "Boaters only need to take lightning precautions if a storm is forecast to last more than 30 minutes",
+    "correct_choice": "A",
+    "explanation": "The 30-30 rule, taught by the National Weather Service and used in boating safety education, says that a flash-to-bang gap of less than 30 seconds means the storm is close enough to be dangerous and shelter should be sought right away, and that people should not resume outdoor or on-water activity until 30 minutes have passed since the last audible thunder.",
+    "weight": 2,
+    "source_note": "NWS lightning-safety 30-30 rule, referenced in NASBLA-aligned boating safety courses"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "How does a National Weather Service Gale Warning generally compare to a Small Craft Advisory?",
+    "choice_a": "A Gale Warning and a Small Craft Advisory indicate exactly the same wind conditions",
+    "choice_b": "A Gale Warning signals a more severe wind hazard than a Small Craft Advisory, and is issued for sustained surface winds in roughly the 34-to-47-knot range, well above small craft advisory conditions",
+    "choice_c": "A Gale Warning is a lesser hazard than a Small Craft Advisory and can be safely ignored by small boats",
+    "choice_d": "Gale Warnings are only issued for ocean coastlines and are never relevant to Great Lakes waters like Lake Erie",
+    "correct_choice": "B",
+    "explanation": "In NWS marine forecast terminology, warning categories escalate with severity; a Gale Warning covers sustained winds in roughly the 34-to-47-knot range, a step up from the lower wind/wave thresholds that trigger a Small Craft Advisory, and Gale Warnings are issued for the Great Lakes, including Lake Erie, not just ocean waters.",
+    "weight": 2,
+    "source_note": "NWS marine wind warning terminology (Gale Warning definition), NWS glossary"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "Why should boaters on Lake Erie be aware of waterspouts, particularly in late summer and fall?",
+    "choice_a": "Waterspouts cannot form over freshwater lakes and are exclusive to the ocean",
+    "choice_b": "A waterspout is not dangerous to a boat and can safely be approached to observe it",
+    "choice_c": "Waterspouts are a documented hazard on the Great Lakes, including Lake Erie, especially when relatively warm lake water underlies cooler autumn air, and a boater who spots one should steer away at a right angle to its apparent path rather than trying to outrun it in a straight line",
+    "choice_d": "Waterspouts only occur in winter when the lake is frozen",
+    "correct_choice": "C",
+    "explanation": "Lake Erie sees a recognized waterspout season, particularly in late summer and fall when the lake surface is still warm relative to overriding cooler air, and boating safety guidance recommends moving away at an angle to a spotted waterspout's track rather than attempting to outrun it directly, since its path can be unpredictable.",
+    "weight": 2,
+    "source_note": "Great Lakes waterspout hazard and avoidance guidance, NWS Great Lakes forecast offices"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "What weather change often signals that a cold front has just passed over a boater's location?",
+    "choice_a": "The wind steadily and gradually rotating counterclockwise over the course of several days",
+    "choice_b": "A rise in temperature with no change in wind direction",
+    "choice_c": "Cold fronts never produce any noticeable change in wind or temperature",
+    "choice_d": "The wind shifting fairly abruptly, often swinging from a southerly or southwesterly direction to westerly or northwesterly, along with a noticeable drop in temperature",
+    "correct_choice": "D",
+    "explanation": "The passage of a cold front is commonly marked by a fairly sudden shift in wind direction, typically from south or southwest ahead of the front to west or northwest behind it, together with falling temperatures, and often gusty winds for a period after passage.",
+    "weight": 1,
+    "source_note": "Cold front passage indicators, general meteorology as applied in boating weather-awareness courses"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "What does a visible halo or ring around the sun or moon often indicate to an observant boater?",
+    "choice_a": "High, thin cirrostratus clouds containing ice crystals are present, which can be an early sign that a warm front and associated precipitation may arrive within the next day or so",
+    "choice_b": "A halo around the sun or moon guarantees that the weather will remain clear and calm for the following week",
+    "choice_c": "A halo effect is caused by pollution and has no relationship to approaching weather",
+    "choice_d": "A halo can only be seen immediately before a tornado",
+    "correct_choice": "A",
+    "explanation": "A halo around the sun or moon is produced by light refracting through ice crystals in high, thin cirrostratus clouds, which frequently precede an approaching warm front; while not a certainty, it is a traditional and meteorologically grounded early sign that unsettled weather may be on the way.",
+    "weight": 1,
+    "source_note": "Cirrostratus halo as a warm-front precursor, general meteorology as applied in boating weather-awareness courses"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "The old saying 'red sky at night, sailor's delight; red sky at morning, sailor take warning' has a real meteorological basis for boaters in the continental United States because:",
+    "choice_a": "The color of the sky is determined only by water temperature and has nothing to do with air or cloud conditions",
+    "choice_b": "Weather systems generally move from west to east in the mid-latitudes, so a red sunset (looking west) can indicate clear, dry air approaching, while a red sunrise (looking east) can indicate that clear air has already passed and an approaching system may bring worsening weather",
+    "choice_c": "Red skies are caused exclusively by wildfire smoke and indicate nothing about approaching weather",
+    "choice_d": "The saying has been scientifically disproven and reflects no real weather pattern",
+    "correct_choice": "B",
+    "explanation": "Because weather in the continental U.S. mid-latitudes typically moves west to east, the coloring of sunlight scattering through high-pressure dry air versus moisture-laden air gives this old sailor's rhyme a genuine, if imperfect, meteorological basis that is still referenced in boating weather-awareness education.",
+    "weight": 1,
+    "source_note": "Red-sky weather proverb and its meteorological basis, general meteorology as applied in boating weather-awareness courses"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "Why should a paddler or boater on a Pennsylvania river such as the Susquehanna, Delaware, or Allegheny stay aware of rainfall happening upstream, even if the sky overhead looks clear?",
+    "choice_a": "River levels in Pennsylvania are controlled entirely by dams and cannot be affected by natural rainfall",
+    "choice_b": "Upstream rainfall has no effect on downstream water levels or current speed",
+    "choice_c": "Heavy rain far upstream can cause a river's water level and current speed to rise rapidly at a downstream location well after the local weather has cleared, creating a flash-flood-type hazard even under locally sunny skies",
+    "choice_d": "River currents only change in response to wind, never to rainfall",
+    "correct_choice": "C",
+    "explanation": "Because a river channel carries runoff downstream over time, heavy rain well upstream on a Pennsylvania river system can raise water levels and current speed at a point downstream hours later, even though the sky there looks clear, so checking river-gauge and regional rainfall information is a real, practical part of trip planning on these waterways.",
+    "weight": 2,
+    "source_note": "Upstream-rainfall / downstream water-level hazard on river systems, PA-approved boating courses"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "Experienced boaters sometimes describe an eerie lull or sudden calm in the wind followed almost immediately by a strong, cool gust as a warning sign. What does this pattern often indicate?",
+    "choice_a": "This pattern has no meteorological significance and can be safely ignored",
+    "choice_b": "It indicates that all storm activity in the area has already ended",
+    "choice_c": "It only occurs on very calm days with no storms anywhere nearby",
+    "choice_d": "A gust front, the leading edge of rain-cooled air pushing out ahead of an approaching thunderstorm, which can bring a sudden, strong wind shift and rough water just before the storm itself arrives",
+    "correct_choice": "D",
+    "explanation": "A brief lull followed by a sudden, cooler gust can mark the arrival of a thunderstorm's gust front, the outflow boundary of rain-cooled air that spreads out ahead of the storm cell itself, and it is a practical cue to get off the water promptly rather than waiting for the storm's visible arrival.",
+    "weight": 1,
+    "source_note": "Thunderstorm gust front / outflow boundary as a precursor sign, general meteorology as applied in boating weather-awareness courses"
+  }
+]

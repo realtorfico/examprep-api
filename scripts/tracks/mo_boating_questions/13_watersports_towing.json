@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Besides a PWC towing a skier (covered separately under RSMo 306.142), what is the general universal requirement for a conventional motorboat towing a water-skier?",
+    "choice_a": "No additional person or mirror is ever needed to tow a skier from a motorboat",
+    "choice_b": "The boat must have either an observer at least old enough to watch the skier continuously, or a wide-angle rearview mirror, in addition to the operator",
+    "choice_c": "The operator may watch the skier only through the rearview mirror of a following vehicle on land",
+    "choice_d": "Skiing may only be towed behind a sailboat, never a motorboat",
+    "correct_choice": "B",
+    "explanation": "A vessel towing a water-skier is generally required to carry either a competent observer whose job is to watch the skier at all times, or an approved wide-angle mirror, since the operator cannot safely watch the skier and navigate at the same time without one of these aids.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (observer/mirror requirement for towed water sports)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is Missouri's nighttime restriction relevant to towing a water-skier, given the statewide nighttime speed limit under RSMo 306.125?",
+    "choice_a": "There is no meaningful safety concern with towing skiers at night",
+    "choice_b": "Missouri law encourages night skiing as safer than daytime skiing",
+    "choice_c": "Skiing after dark is effectively impractical and unsafe, since visibility for the operator, observer, and skier is severely reduced and the statewide 30 mph nighttime speed cap still applies",
+    "choice_d": "Night skiing removes the need for a PFD",
+    "correct_choice": "C",
+    "explanation": "Water skiing is a daytime activity in practice because of the visibility a skier, observer, and operator all need to spot hazards and communicate; Missouri's general nighttime motorboat speed limit of 30 mph under RSMo 306.125 also still applies to any vessel towing a skier after dark.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (night skiing hazards), applied to RSMo 306.125's nighttime speed cap"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What hand signal does a water-skier typically use to indicate 'speed is okay / everything is fine' to the tow boat operator?",
+    "choice_a": "Waving both arms wildly overhead",
+    "choice_b": "Patting the top of the head",
+    "choice_c": "Slapping the water repeatedly",
+    "choice_d": "A thumbs-up",
+    "correct_choice": "D",
+    "explanation": "A thumbs-up is the widely used skier hand signal meaning speed is good or everything is fine; patting the top of the head signals a return-to-dock request, and a cut-across-the-throat motion or a flat hand signals to stop, though signals should be confirmed with all riders before departure.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (standard water-ski hand signals)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What does a water-skier signal by slapping both hands flat on the top of the water repeatedly?",
+    "choice_a": "That they have fallen and are indicating their location, or signaling that they are okay after a fall",
+    "choice_b": "A request to increase speed dramatically",
+    "choice_c": "A request for the boat to leave the area immediately",
+    "choice_d": "It has no recognized meaning",
+    "correct_choice": "A",
+    "explanation": "A skier slapping both hands on the water after a fall is a widely recognized signal that they are okay, helping the observer and operator confirm the skier's condition and location before approaching, especially in busy areas with other boat traffic.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (fallen-skier 'okay' signal)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why must a tow boat approach a fallen water-skier carefully, keeping the skier on the operator's side of the boat during pickup?",
+    "choice_a": "It is purely a matter of tradition with no safety basis",
+    "choice_b": "So the operator can maintain direct visual contact with the skier at all times and avoid running over them, since a skier can be difficult to see if positioned on the blind side of the boat",
+    "choice_c": "It makes the boat easier to steer regardless of visibility",
+    "choice_d": "Skiers should always be approached from directly behind at full throttle",
+    "correct_choice": "B",
+    "explanation": "Approaching a fallen skier while keeping them on the operator's side of the boat (rather than the blind side) lets the operator watch the skier continuously during the entire approach, reducing the risk of losing sight of them or striking them with the hull or propeller.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (fallen-skier pickup approach)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What towed activities does Missouri's statutory definition of 'skiing' (RSMo 306.010) specifically include?",
+    "choice_a": "Only traditional two-ski water skiing; wakeboarding and tubing are undefined and unregulated",
+    "choice_b": "Only activities performed without any tow rope",
+    "choice_c": "Water skiing, wakeboarding, wake surfing, kneeboarding, and tubing",
+    "choice_d": "Scuba diving",
+    "correct_choice": "C",
+    "explanation": "Missouri's statutory definition of 'skiing' is written broadly to include water skiing, wakeboarding, wake surfing, kneeboarding, and tubing, ensuring the same towing safety expectations apply across these popular towed water sports.",
+    "weight": 3,
+    "source_note": "RSMo 306.010 (definition of skiing, includes wakeboarding/tubing/kneeboarding)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What safety consideration applies specifically to parasailing operations, which Missouri statute also separately references?",
+    "choice_a": "Parasailing carries no unique hazards compared to towing a water-skier",
+    "choice_b": "Wind conditions are irrelevant to parasailing safety",
+    "choice_c": "Parasailing does not require the participant to wear a harness or flotation device",
+    "choice_d": "The parasailer is airborne and attached to the tow vessel by a long line, so the operator must account for wind conditions, sufficient towing speed, and a clear area free of obstacles such as power lines, bridges, or other vessels",
+    "correct_choice": "D",
+    "explanation": "Parasailing lifts a participant well above the water on a long tow line, so wind gusts, insufficient boat speed, and overhead obstacles like power lines or bridges pose unique risks not present in surface-towed sports like skiing or tubing, requiring extra caution from the tow vessel operator.",
+    "weight": 3,
+    "source_note": "RSMo 306.010 (statutory reference to parasailing), general towed-sport safety fundamentals"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why should a boat towing a tuber or wakeboarder avoid crowded areas near docks, swimmers, or other vessels?",
+    "choice_a": "A towed rider can swing wide of the boat's own path, especially while carving or cutting across the wake, creating a much larger hazard zone than the boat alone",
+    "choice_b": "Towed riders always travel in a perfectly straight line directly behind the boat with no lateral movement",
+    "choice_c": "There is no additional hazard zone created by a towed rider",
+    "choice_d": "Crowded areas are actually the safest place to practice towed water sports",
+    "correct_choice": "A",
+    "explanation": "A tuber, wakeboarder, or water-skier can swing significantly wider than the tow boat's own path, particularly when cutting across the wake, meaning the effective hazard zone extends well beyond the boat itself -- this is why towing should be done in open water away from docks, swimmers, and congested traffic.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (towed-sport hazard zone)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What should a towed skier or tuber always do before entering the water, in addition to wearing an approved PFD?",
+    "choice_a": "Nothing extra is needed beyond wearing a PFD",
+    "choice_b": "Confirm hand signals with the boat operator and observer in advance, and check that the tow rope is free of tangles and clear of the propeller",
+    "choice_c": "Only the boat operator needs to know the hand signals; the skier does not need to know them",
+    "choice_d": "The tow rope should be wrapped around the skier's wrist for a more secure grip",
+    "correct_choice": "B",
+    "explanation": "Agreeing on hand signals beforehand prevents dangerous miscommunication about speed or stopping once towing begins, and checking that the tow rope is untangled and clear of the propeller before starting reduces the risk of entanglement injury.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (pre-tow safety checklist for towed water sports)"
+  }
+]

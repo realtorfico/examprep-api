@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "Under S.C. Code Section 50-21-87, how close may a vessel operate to another vessel that is properly displaying a diver-down flag?",
+    "choice_a": "There is no minimum distance requirement around a diver-down flag",
+    "choice_b": "No closer than 50 feet, except where a narrow waterway makes that distance impossible to maintain",
+    "choice_c": "No closer than 5 feet",
+    "choice_d": "Diver-down flags carry no legal significance in South Carolina",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-87 generally requires vessels to stay at least 50 feet away from a vessel or area marked with a diver-down flag (red with a diagonal white stripe), protecting divers below the surface from an approaching boat's hull or propeller.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-87 (diver-down flag 50-foot clearance)"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "Under Section 50-21-87, what is a vessel operator permitted to do in a narrow waterway where maintaining 50 feet of clearance from a diver-down flag is not possible?",
+    "choice_a": "The operator must stop completely and wait indefinitely with no other option",
+    "choice_b": "Pass at no-wake/idle speed while maintaining the maximum safe clearance the waterway allows",
+    "choice_c": "Maintain full speed since the 50-foot rule does not apply in narrow waterways at all",
+    "choice_d": "Diver-down flags may simply be ignored in any narrow waterway",
+    "correct_choice": "B",
+    "explanation": "Where a narrow waterway makes the full 50-foot clearance from a diver-down flag impractical, Section 50-21-87 allows a vessel to pass at no-wake or idle speed while keeping the maximum safe clearance the channel's width allows, balancing diver safety with the reality of confined passages.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-87 (narrow-waterway exception to diver-down clearance)"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "Under Section 50-21-87, how does South Carolina law resolve a potential conflict between a diver-down flag and a nearby vessel whose occupants are fishing?",
+    "choice_a": "Diving activity always overrides fishing activity regardless of timing",
+    "choice_b": "Fishing activity always overrides diving activity regardless of timing",
+    "choice_c": "Whichever activity's flag or presence was established first generally has priority, so no violation occurs if a fishing or dive flag was already displayed before the other activity moved in nearby",
+    "choice_d": "The statute does not address any interaction between diving and fishing at all",
+    "correct_choice": "C",
+    "explanation": "Section 50-21-87 provides that no violation occurs where a fishing vessel or a diver-down flag was already present before the other party's later, potentially conflicting activity began nearby, resolving priority based on which activity was established first rather than penalizing whichever party happens to arrive second.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-87 (fishing/diving priority based on which activity was established first)"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "Under S.C. Code Section 50-21-125, how close to a public boat landing on a hydroelectric lake is swimming generally prohibited?",
+    "choice_a": "Swimming is never restricted near any public landing",
+    "choice_b": "Within 50 feet of the landing, provided the restricted area is clearly marked and posted",
+    "choice_c": "Within 5 miles of the landing",
+    "choice_d": "Swimming is prohibited statewide with no distance limitation at all",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-125 prohibits swimming within 50 feet of a public boat landing on a hydroelectric lake, provided the area is clearly marked and posted, reducing the risk of a collision between a swimmer and a boat launching or retrieving at the ramp.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-125 (50-foot swim restriction near public hydroelectric-lake landings)"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "Under Section 50-21-125, what speed restriction applies to vessel operators within 200 feet of a public boat landing on a hydroelectric lake?",
+    "choice_a": "No speed restriction applies within 200 feet of a landing",
+    "choice_b": "A flat 25 mph limit",
+    "choice_c": "Vessels must slow to idle speed within 200 feet of the landing",
+    "choice_d": "Vessels must come to a complete stop and shut off the engine",
+    "correct_choice": "C",
+    "explanation": "Section 50-21-125 requires vessel operators to slow to idle speed within 200 feet of a public boat landing on a hydroelectric lake, protecting people launching, retrieving, and swimming near the restricted 50-foot zone from an approaching vessel's wake or speed.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-125 (200-foot idle-speed zone near public hydroelectric-lake landings)"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "What does it functionally mean for a South Carolina vessel to be operating at \"idle speed\" or \"no-wake speed\" in a restricted zone, rather than simply going slowly?",
+    "choice_a": "Any speed under 20 mph automatically qualifies as idle speed",
+    "choice_b": "The vessel must be fully stopped and dead in the water at all times",
+    "choice_c": "The vessel is operating at the slowest speed that still maintains steerage, producing the minimum possible wake, rather than merely reducing throttle somewhat while still throwing a significant wake",
+    "choice_d": "Idle speed and full throttle are legally treated as the same thing",
+    "correct_choice": "C",
+    "explanation": "\"Idle speed\" or \"no-wake speed\" means operating at the slowest speed that still allows the operator to maintain steering control, producing the minimum wake the hull can create -- simply throttling back somewhat while the boat still throws a significant wake does not satisfy a posted idle-speed or no-wake restriction.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on the practical definition of idle/no-wake speed"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "May divers, under Section 50-21-87, lawfully engage in diving activity within 50 feet of a vessel whose occupants are actively fishing?",
+    "choice_a": "Diving is always permitted regardless of nearby fishing activity",
+    "choice_b": "Generally no -- the statute also restricts divers from diving within 50 feet of a vessel whose occupants are fishing, mirroring the protection the law gives to divers from approaching vessels",
+    "choice_c": "The restriction applies only to fishing vessels, never to divers",
+    "choice_d": "Diving near a fishing vessel is only restricted at night",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-87 works in both directions: just as vessels must generally stay 50 feet from a diver-down flag, divers are generally restricted from diving within 50 feet of a vessel whose occupants are fishing, reducing the chance of entangling fishing lines or startling anglers and divers alike.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-87 (reciprocal diving restriction near fishing vessels)"
+  }
+]

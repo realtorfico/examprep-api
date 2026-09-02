@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "What color scheme identifies a mooring buoy, and what is the only type of aid to navigation a boater should ever tie up to?",
+    "choice_a": "Solid orange -- used to mark restricted swim areas only",
+    "choice_b": "Black with a single red band -- reserved for commercial barge traffic",
+    "choice_c": "Green with a white top -- used to mark the edge of a marina channel",
+    "choice_d": "White with a blue horizontal band -- it is the only type of aid to navigation a boater should tie up to",
+    "correct_choice": "D",
+    "explanation": "A white buoy with a blue horizontal band marks an authorized mooring. It is the only aid to navigation boaters should ever tie up to -- lateral, regulatory, and other aids should never be used for mooring, since doing so can damage them or pull them off station and mislead other boaters.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System mooring buoy standard, used across NASBLA-based boating courses including Illinois's"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What distinguishes a daybeacon from a buoy in the U.S. Aids to Navigation System?",
+    "choice_a": "A daybeacon is a fixed structure, such as a single pile driven into the bottom, displaying a dayboard, while a buoy is a floating aid anchored in place",
+    "choice_b": "A daybeacon is always red, while a buoy is always green",
+    "choice_c": "A daybeacon can only be used at night, while a buoy can only be used during the day",
+    "choice_d": "A daybeacon marks fishing areas, while a buoy marks swimming areas",
+    "correct_choice": "A",
+    "explanation": "Daybeacons are permanently fixed structures, commonly a single piling, that display a colored, numbered or lettered dayboard, whereas buoys are floating aids moored to the bottom and can shift somewhat with wind, current, or ice.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System fixed vs. floating aid definitions, used across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What are 'range markers' -- a pair of fixed markers used together -- and how does a boater use them to navigate?",
+    "choice_a": "A single tall tower marking the maximum distance a boat may travel offshore",
+    "choice_b": "Two markers positioned so that, when a boater visually lines up the near and far marker one above/behind the other, the sightline indicates the centerline of a safe channel to steer along",
+    "choice_c": "A pair of buoys marking the boundary of an onshore shooting range",
+    "choice_d": "Markers showing the minimum and maximum safe water depth for a given vessel",
+    "correct_choice": "B",
+    "explanation": "Range markers are two fixed daybeacons or lights placed at different distances along a line; when a boater visually aligns the near marker with the far marker, that sightline indicates the centerline of a safe channel to follow.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System range marker convention, used across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "A white regulatory marker displaying an orange diamond shape with a cross (X) inside it means what?",
+    "choice_a": "The area is a designated fishing zone open to all vessels",
+    "choice_b": "The marker indicates the presence of a fuel dock nearby",
+    "choice_c": "The area is closed to all boats -- vessels are not permitted to enter (a 'boats keep out' marker)",
+    "choice_d": "The marker simply repeats the plain-diamond danger warning with no added meaning",
+    "correct_choice": "C",
+    "explanation": "An orange diamond with a cross (X) inside it on a white regulatory marker is a 'boats keep out' marker, indicating an area -- such as a swim zone, dam approach, or other restricted area -- that is closed to all vessels, distinct from a plain diamond, which simply warns of danger.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System regulatory marker standards, used across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "The U.S. Aids to Navigation System's lateral convention -- red markers kept to the right when returning from open water, green to the left -- follows which international buoyage region?",
+    "choice_a": "IALA Maritime Buoyage System Region A, used throughout Europe, Africa, and most of Asia",
+    "choice_b": "There is no international standard; the U.S. system exists only domestically with no foreign counterpart",
+    "choice_c": "The Metric Buoyage Convention, adopted worldwide in 1990",
+    "choice_d": "IALA Maritime Buoyage System Region B, used throughout the Americas",
+    "correct_choice": "D",
+    "explanation": "The United States, along with the rest of the Americas, Japan, Korea, and the Philippines, follows IALA Maritime Buoyage System Region B, where red lateral markers are kept to starboard when returning from open water. Most of Europe, Africa, and Asia use Region A, which reverses the colors.",
+    "weight": 1,
+    "source_note": "IALA Maritime Buoyage System regional convention as referenced in U.S. Aids to Navigation System overviews used across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "As a boater proceeds upstream, returning from open water toward the head of navigation, how do the numbers on lateral (red and green) markers generally change?",
+    "choice_a": "The numbers generally increase in sequence, helping boaters track their approximate position along the route",
+    "choice_b": "The numbers generally decrease toward zero",
+    "choice_c": "Numbers are assigned randomly and carry no positional meaning",
+    "choice_d": "Numbers reset to 1 at every mile marker",
+    "correct_choice": "A",
+    "explanation": "Lateral marker numbers generally increase consecutively moving from the sea, or the mouth of a waterway, toward the head of navigation, giving boaters a way to track their approximate position in addition to showing which side of the channel to keep the marker on.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System lateral marker numbering convention, used across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does the color yellow generally indicate when it appears on a buoy or marker, separate from the standard red/green lateral system?",
+    "choice_a": "A malfunctioning aid to navigation that boaters should disregard entirely",
+    "choice_b": "A special-purpose marker, such as one indicating a traffic separation area, anchorage boundary, or other special feature, rather than a side of the channel to keep",
+    "choice_c": "A marker reserved exclusively for personal watercraft",
+    "choice_d": "A marker showing the location of a public boat launch, replacing white regulatory markers",
+    "correct_choice": "B",
+    "explanation": "Yellow is used for special marks, which indicate features such as traffic separation schemes, anchorage areas, or other special-purpose zones, and are separate from the red/green lateral system that shows which side of a channel to favor.",
+    "weight": 1,
+    "source_note": "U.S. Aids to Navigation System special-mark (yellow) convention, used across NASBLA-based boating courses"
+  }
+]

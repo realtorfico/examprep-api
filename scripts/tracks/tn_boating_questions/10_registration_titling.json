@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Registration & Titling",
+    "question": "How long is the temporary yellow registration valid after a Tennessee boat owner applies for a Certificate of Number?",
+    "choice_a": "60 days, to allow time for processing",
+    "choice_b": "1 year",
+    "choice_c": "It is valid indefinitely",
+    "choice_d": "24 hours",
+    "correct_choice": "A",
+    "explanation": "Tennessee issues a temporary yellow registration valid for 60 days from the date of application, giving TWRA time to process the permanent Certificate of Number.",
+    "weight": 3,
+    "source_note": "TWRA Boating Registration page"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Where should a Hull Identification Number (HIN) be permanently affixed on a vessel manufactured after 1972?",
+    "choice_a": "It does not need to be affixed to the vessel at all",
+    "choice_b": "On the starboard (right) side of the transom, or another standard location set by federal regulation",
+    "choice_c": "Hidden inside the fuel tank",
+    "choice_d": "Painted on the underside of the hull only",
+    "correct_choice": "B",
+    "explanation": "A HIN is typically permanently affixed to the starboard side of the transom (or another federally specified standard location) so it can be verified during registration or a safety check.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals / USCG HIN placement rule"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Must a federally documented recreational vessel still be registered with TWRA if it is principally used in Tennessee?",
+    "choice_a": "Only if the vessel is under 16 feet",
+    "choice_b": "Only commercial documented vessels must register",
+    "choice_c": "Yes -- federally documented recreational vessels principally used in Tennessee must still be registered",
+    "choice_d": "No, federal documentation always replaces the need for any state registration",
+    "correct_choice": "C",
+    "explanation": "Tennessee requires federally documented recreational vessels that are principally used in the state to be registered with TWRA in addition to their federal documentation.",
+    "weight": 3,
+    "source_note": "TWRA Boating Registration page"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "If a boat owner moves to Tennessee, or Tennessee otherwise becomes their vessel's state of principal use, what should they do?",
+    "choice_a": "Nothing; a vessel's original registration is honored forever regardless of where it is used",
+    "choice_b": "Re-register only if the vessel is renamed",
+    "choice_c": "Only register if the vessel is over 65 feet",
+    "choice_d": "Register the vessel with TWRA, since registration follows the vessel's state of principal use",
+    "correct_choice": "D",
+    "explanation": "Because Tennessee ties the registration requirement to a vessel's state of principal use, an owner who relocates to Tennessee (or otherwise makes it their vessel's main-use state) needs to register the vessel with TWRA.",
+    "weight": 3,
+    "source_note": "TWRA Boating Registration page"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Can a visiting sailboat from a state that does not require sailboat numbering avoid registering in Tennessee?",
+    "choice_a": "Yes, as long as Tennessee is not the sailboat's state of principal use",
+    "choice_b": "No, all sailboats entering Tennessee waters must register immediately regardless of origin",
+    "choice_c": "Only if the sailboat is under 12 feet",
+    "choice_d": "Sailboats can never be exempted from registration under any circumstance",
+    "correct_choice": "A",
+    "explanation": "A sailboat brought into Tennessee by a resident of a state without sailboat numbering requirements does not need Tennessee registration, provided Tennessee is not the vessel's state of principal use.",
+    "weight": 2,
+    "source_note": "TWRA Boating Registration page"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Where can a Tennessee boat owner register or renew a vessel's registration online?",
+    "choice_a": "Through the Tennessee Department of Transportation website",
+    "choice_b": "Through the gooutdoorstennessee.com portal",
+    "choice_c": "Only by visiting the Secretary of State's office in person",
+    "choice_d": "Registration cannot be completed online under any circumstances",
+    "correct_choice": "B",
+    "explanation": "Tennessee vessel owners can register or renew registration online through the gooutdoorstennessee.com portal, the same system used for TWRA hunting and fishing licenses and boating permits.",
+    "weight": 2,
+    "source_note": "TWRA Boating Registration page"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "When a used boat is sold in Tennessee, what should happen to its registration?",
+    "choice_a": "The buyer only needs to keep a copy of the bill of sale, with no registration update",
+    "choice_b": "Registration automatically transfers without any action needed",
+    "choice_c": "The new owner should register the vessel in their own name with TWRA",
+    "choice_d": "Nothing; the prior owner's registration remains valid forever",
+    "correct_choice": "C",
+    "explanation": "When ownership of a registered vessel changes hands, the new owner is expected to register the vessel in their own name with TWRA rather than continuing to operate under the seller's registration.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals / TWRA registration transfer principle"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "How does a commercial outfitter's Non-Motorized Vessel (NMV) permit differ from an individual owner's vessel registration in Tennessee?",
+    "choice_a": "They are the same thing with two different names",
+    "choice_b": "The NMV permit replaces the need for any PFDs on paddlecraft",
+    "choice_c": "The NMV permit is required only for personal watercraft owners",
+    "choice_d": "The NMV permit authorizes a business to rent out canoes, kayaks, or paddleboards, while individual vessel registration applies to owners of mechanically propelled or sail vessels",
+    "correct_choice": "D",
+    "explanation": "A Non-Motorized Vessel outfitter permit is a business-level authorization to rent canoes, kayaks, or paddleboards, which is a separate concept from the registration and Certificate of Number required for individually owned mechanically propelled or sail vessels.",
+    "weight": 2,
+    "source_note": "TWRA Non-Motorized Vessel (Paddlecraft) Permit page"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What can happen if an operator is stopped by TWRA while operating a qualifying vessel that has never been registered?",
+    "choice_a": "The operator can be cited for a registration violation",
+    "choice_b": "Nothing, since Tennessee registration is entirely optional",
+    "choice_c": "The vessel is automatically registered on the spot at no cost",
+    "choice_d": "Only out-of-state vessels can be cited for this violation",
+    "correct_choice": "A",
+    "explanation": "Operating a qualifying vessel in Tennessee without the required registration and Certificate of Number can result in a citation from TWRA or other law enforcement.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals / TWRA registration enforcement"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What must a vessel display on board at all times to prove it has been properly registered in Tennessee?",
+    "choice_a": "Nothing needs to be displayed once the boat has been used for over a year",
+    "choice_b": "Its current Certificate of Number, along with properly displayed registration numbers and validation decal",
+    "choice_c": "Only a photo ID of the operator",
+    "choice_d": "The original manufacturer's warranty card",
+    "correct_choice": "B",
+    "explanation": "A properly registered vessel must display its current Certificate of Number and properly placed registration numbers and validation decal, together showing the registration is active and current.",
+    "weight": 2,
+    "source_note": "TWRA Boating Registration page / Watercraft Equipment Checklist"
+  }
+]

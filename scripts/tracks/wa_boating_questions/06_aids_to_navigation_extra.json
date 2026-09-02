@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Aids to Navigation (ATON)",
+    "question": "As a boater travels from open water toward upstream (or into a channel from the sea), what generally happens to the numbers marked on lateral markers?",
+    "choice_a": "They decrease progressively",
+    "choice_b": "They reset to zero at every bend in the waterway",
+    "choice_c": "They alternate randomly between odd and even",
+    "choice_d": "They increase progressively",
+    "correct_choice": "D",
+    "explanation": "Numbers on lateral markers typically increase progressively as a boater returns from open sea or heads upstream, helping track position along the channel.",
+    "weight": 2,
+    "source_note": "WA Boating handbook (boat-ed.com/washington), Lateral Markers: Colors and Numbers"
+  },
+  {
+    "topic": "Aids to Navigation (ATON)",
+    "question": "On a daymark (a sign attached to a fixed structure such as a piling or post), what shape and color serve as the equivalent of a nun buoy?",
+    "choice_a": "A red triangle",
+    "choice_b": "A green square",
+    "choice_c": "A yellow diamond",
+    "choice_d": "A white circle",
+    "correct_choice": "A",
+    "explanation": "Daymarks use a red triangle as the fixed-structure equivalent of a nun buoy, marking the same side of the channel with the same meaning.",
+    "weight": 2,
+    "source_note": "WA Boating handbook (boat-ed.com/washington), Lateral Markers: Other Kinds of Buoys and Markers"
+  },
+  {
+    "topic": "Aids to Navigation (ATON)",
+    "question": "On a daymark (a sign attached to a fixed structure such as a piling or post), what shape and color serve as the equivalent of a can buoy?",
+    "choice_a": "A red triangle",
+    "choice_b": "A green square",
+    "choice_c": "A white diamond",
+    "choice_d": "An orange circle",
+    "correct_choice": "B",
+    "explanation": "Daymarks use a green square as the fixed-structure equivalent of a can buoy, marking the same side of the channel with the same meaning.",
+    "weight": 2,
+    "source_note": "WA Boating handbook (boat-ed.com/washington), Lateral Markers: Other Kinds of Buoys and Markers"
+  },
+  {
+    "topic": "Aids to Navigation (ATON)",
+    "question": "What kind of information do square-shaped Information Markers give to boaters?",
+    "choice_a": "Mandatory speed limits for the area",
+    "choice_b": "The boundary of an area off-limits to all vessels",
+    "choice_c": "Non-regulatory information such as locations for food, supplies, and repairs, along with directions and distances",
+    "choice_d": "A warning about a submerged shipwreck",
+    "correct_choice": "C",
+    "explanation": "Square Information Markers provide non-regulatory information, such as where to find food, supplies, and repairs, along with directions, distances, and similar guidance.",
+    "weight": 2,
+    "source_note": "WA Boating handbook (boat-ed.com/washington), Common Non-Lateral Markers"
+  },
+  {
+    "topic": "Aids to Navigation (ATON)",
+    "question": "What are the standard colors used on non-lateral regulatory markers (such as controlled area, danger, exclusion, and information markers) in the U.S. Aids to Navigation System?",
+    "choice_a": "Solid red with white lettering",
+    "choice_b": "Black with yellow stripes",
+    "choice_c": "Solid blue with white lettering",
+    "choice_d": "White with orange markings and black lettering",
+    "correct_choice": "D",
+    "explanation": "Non-lateral regulatory markers, most commonly found on lakes and rivers, are white with orange markings and black lettering.",
+    "weight": 2,
+    "source_note": "WA Boating handbook (boat-ed.com/washington), Non-Lateral Markers"
+  },
+  {
+    "topic": "Aids to Navigation (ATON)",
+    "question": "According to the Washington boating handbook, what makes mooring buoys unique compared to all other buoy types?",
+    "choice_a": "They are the only buoys you may legally tie your vessel to",
+    "choice_b": "They are the only buoys equipped with lights",
+    "choice_c": "They always mark the deepest water in a channel",
+    "choice_d": "They are removed from the water every winter by law",
+    "correct_choice": "A",
+    "explanation": "Mooring buoys, white with a blue horizontal band, are the only buoys you may legally tie up to; tying to any other type of buoy is not permitted.",
+    "weight": 3,
+    "source_note": "WA Boating handbook (boat-ed.com/washington), Other Non-Lateral Markers"
+  },
+  {
+    "topic": "Aids to Navigation (ATON)",
+    "question": "On the Intracoastal Waterway (ICW), what do yellow triangle and yellow square symbols on aids to navigation indicate when traveling in the standard ICW direction (clockwise from New Jersey toward Brownsville, Texas)?",
+    "choice_a": "Yellow triangles mark underwater hazards; yellow squares mark anchorage areas",
+    "choice_b": "Yellow triangles mark the side to keep on your starboard (right); yellow squares mark the side to keep on your port (left)",
+    "choice_c": "Both yellow shapes indicate a no-wake zone",
+    "choice_d": "Yellow symbols apply only to commercial shipping traffic",
+    "correct_choice": "B",
+    "explanation": "On the ICW, a chain of local channels linking the Atlantic and Gulf coasts, yellow triangles are kept to the boater's starboard and yellow squares to the boater's port when following the standard ICW direction.",
+    "weight": 2,
+    "source_note": "WA Boating handbook (boat-ed.com/washington), Intracoastal Waterway (ICW)"
+  },
+  {
+    "topic": "Aids to Navigation (ATON)",
+    "question": "When a lateral marker also carries a yellow ICW symbol, which should a boater following the Intracoastal Waterway use as the guide?",
+    "choice_a": "The marker's own red or green color and shape, ignoring the yellow symbol",
+    "choice_b": "Neither; only a paper chart may be used to navigate the ICW",
+    "choice_c": "The yellow ICW triangle or square symbol, rather than the marker's own color and shape",
+    "choice_d": "Whichever symbol is larger in size",
+    "correct_choice": "C",
+    "explanation": "When following the ICW, the yellow triangles and squares should be used as guides rather than the colors and shapes of the lateral navigation markers on which they appear.",
+    "weight": 2,
+    "source_note": "WA Boating handbook (boat-ed.com/washington), Intracoastal Waterway (ICW)"
+  },
+  {
+    "topic": "Aids to Navigation (ATON)",
+    "question": "How does the Western Rivers System (covering the Mississippi River and its tributaries upstream of Baton Rouge, Louisiana, and other rivers flowing to the Gulf of Mexico) differ from the standard U.S. Aids to Navigation System?",
+    "choice_a": "Western Rivers System markers use triple-digit numbers unique to each individual river",
+    "choice_b": "Western Rivers System markers are numbered in descending order heading upstream",
+    "choice_c": "The numbering system is identical to the standard lateral marker system nationwide",
+    "choice_d": "Western Rivers System markers are not numbered; numbers shown below daymarks instead indicate distance from a reference point",
+    "correct_choice": "D",
+    "explanation": "Unlike the standard U.S. Aids to Navigation System, navigation markers on the Western Rivers System are not numbered; any number shown below a daymark represents a mileage distance from a set reference point, not a channel-position number.",
+    "weight": 2,
+    "source_note": "WA Boating handbook (boat-ed.com/washington), Western Rivers System"
+  },
+  {
+    "topic": "Aids to Navigation (ATON)",
+    "question": "On the Western Rivers System, from what reference point is the mileage number below a daymark measured on the Upper Mississippi River, compared to the Ohio River?",
+    "choice_a": "From Cairo, Illinois (the Ohio River junction) on the Upper Mississippi River; from the headwaters on the Ohio River",
+    "choice_b": "From the Gulf of Mexico on both rivers",
+    "choice_c": "From Lake Itasca, Minnesota on both rivers",
+    "choice_d": "Mileage is not tracked on either river",
+    "correct_choice": "A",
+    "explanation": "On the Upper Mississippi River, mileage below a daymark is measured from Cairo, Illinois (where the Ohio River joins), while on the Ohio River it is measured from the headwaters; the Mississippi River and other Gulf-bound rivers measure from the river's mouth.",
+    "weight": 2,
+    "source_note": "WA Boating handbook (boat-ed.com/washington), Western Rivers System"
+  }
+]

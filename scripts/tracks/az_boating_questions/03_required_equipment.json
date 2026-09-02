@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Required Safety Equipment",
+    "question": "A gasoline-powered boat built after July 31, 1980 with an enclosed engine compartment is generally required to have what kind of ventilation system?",
+    "choice_a": "No ventilation system is ever required on any gasoline boat",
+    "choice_b": "A ventilation system is only required on diesel-powered vessels",
+    "choice_c": "An air conditioning unit for passenger comfort",
+    "choice_d": "A powered or natural ventilation system designed to remove flammable gasoline vapors that can collect in the bilge and engine compartment",
+    "correct_choice": "D",
+    "explanation": "Gasoline vapors are heavier than air and can pool in an enclosed bilge or engine compartment, creating an explosion hazard. Federal and NASBLA-based standards require a ventilation system to help clear these fumes before starting the engine.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Ventilation Systems'"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is a backfire flame arrestor, and which vessels typically need one?",
+    "choice_a": "A device fitted to the carburetor air intake of most gasoline inboard engines to prevent an engine backfire from igniting fuel vapors in the engine compartment",
+    "choice_b": "A device that puts out engine fires automatically without operator action",
+    "choice_c": "A required device only on electric trolling motors",
+    "choice_d": "A type of navigation light",
+    "correct_choice": "A",
+    "explanation": "A backfire flame arrestor is mounted on the carburetor of most gasoline inboard engines to contain any backfire flame and prevent it from igniting vapors that may have accumulated in the engine compartment.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Backfire Flame Arrestors'"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "How does the number of USCG-approved fire extinguishers a recreational vessel must carry generally get determined?",
+    "choice_a": "Fire extinguishers are never required on recreational vessels",
+    "choice_b": "By the vessel's length class and whether it has a fixed fire-extinguishing system in the engine compartment",
+    "choice_c": "By the color of the hull",
+    "choice_d": "By the number of passengers only, regardless of vessel size",
+    "correct_choice": "B",
+    "explanation": "Federal and state boating law scales the required number and type (B-I or B-II) of fire extinguishers to a vessel's length class, with credit given if the vessel has an approved fixed fire-extinguishing system in the machinery space.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Fire Extinguisher Requirements'"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What should a boater check periodically on a dry-chemical fire extinguisher kept aboard?",
+    "choice_a": "Only the expiration date printed on the boat's registration decal",
+    "choice_b": "The extinguisher's paint color",
+    "choice_c": "The charge indicator gauge, to confirm it still shows the extinguisher is fully charged and ready to use",
+    "choice_d": "Nothing -- once purchased, a fire extinguisher never needs to be checked again",
+    "correct_choice": "C",
+    "explanation": "Extinguishers should be inspected regularly to confirm the charge indicator gauge still reads in the operable range, that the pin and seal are intact, and that the unit is accessible and free of corrosion.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Fire Extinguisher Maintenance'"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under Arizona law, what type of sound-producing device must most vessels be able to carry or produce?",
+    "choice_a": "A musical instrument of the operator's choice",
+    "choice_b": "A siren identical to those used by emergency vehicles",
+    "choice_c": "No sound-producing device is ever required",
+    "choice_d": "A device capable of producing an efficient sound signal audible for a reasonable distance, such as a whistle, horn, or bell",
+    "correct_choice": "D",
+    "explanation": "Arizona law requires most vessels to carry some means of making an efficient sound signal -- such as a whistle, horn, or bell -- audible for a reasonable distance, for use as required navigation and distress signals.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Sound-Producing Devices'; A.R.S. Title 5 Chapter 3"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "One prolonged blast of a vessel's horn generally signals what?",
+    "choice_a": "A warning signal, often used when leaving a dock, slip, or blind bend, or approaching another vessel from a position where the other operator may not see you",
+    "choice_b": "A request to dock immediately",
+    "choice_c": "A signal that the vessel is anchored for the night",
+    "choice_d": "A celebratory signal with no operational meaning",
+    "correct_choice": "A",
+    "explanation": "One prolonged blast (four to six seconds) is a warning signal commonly used when leaving a slip or dock, or when approaching a blind bend or obstruction where other vessels may not be able to see the operator's boat.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Common Sound Signals'"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Which vessels are generally required to carry U.S. Coast Guard-approved visual distress signals (such as flares) when operating on coastal waters or the Great Lakes?",
+    "choice_a": "Only vessels operated exclusively at night",
+    "choice_b": "Most vessels operating on those waters, though the specific requirement differs for waters like Arizona's reservoirs, which are not coastal waters",
+    "choice_c": "No vessel is ever required to carry visual distress signals anywhere in the country",
+    "choice_d": "Only commercial vessels over 100 feet",
+    "correct_choice": "B",
+    "explanation": "Federal law requires visual distress signals on coastal waters, the Great Lakes, and waters connected to them; many boaters nonetheless carry flares or other signaling devices on inland waters like Arizona's reservoirs as a sound safety practice even where not federally mandated.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Visual Distress Signals'"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is the purpose of a diver-down flag?",
+    "choice_a": "To indicate a vessel is racing and has right-of-way over all other traffic",
+    "choice_b": "To signal that a vessel is for sale",
+    "choice_c": "To warn boaters that a diver or snorkeler is in the water nearby, so operators should slow down and keep well clear",
+    "choice_d": "To mark a vessel that is out of fuel",
+    "correct_choice": "C",
+    "explanation": "A diver-down flag (a red flag with a white diagonal stripe, or the alternate blue-and-white 'Alpha' flag) warns nearby boaters that a diver or snorkeler is in the water and that vessels should operate at slow, no-wake speed and keep a safe distance.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Diver-Down and Skier-Down Flags'"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why do federal and Arizona equipment rules require mufflers or other effective noise-suppression on most gasoline-powered vessels?",
+    "choice_a": "Because loud engines attract more fish",
+    "choice_b": "Mufflers are required only on sailboats",
+    "choice_c": "There is no muffler or noise requirement for any recreational vessel",
+    "choice_d": "To limit excessive engine and exhaust noise, both for the comfort of other boaters and shoreline residents and because unmuffled operation is often separately restricted",
+    "correct_choice": "D",
+    "explanation": "Most gasoline-powered vessels must be equipped with an effective muffling system, and operating without one (or bypassing it, such as with a 'cutout') is generally restricted, both to control noise levels and reduce nuisance complaints near shorelines.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Mufflers and Noise Level Limits'"
+  }
+]

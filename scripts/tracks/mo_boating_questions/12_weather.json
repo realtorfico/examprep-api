@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "What visual warning signs should a boater on a Missouri lake watch for that may indicate an approaching thunderstorm?",
+    "choice_a": "Darkening skies, particularly towering cumulonimbus clouds, a sudden drop in temperature, and an abrupt shift in wind direction or speed",
+    "choice_b": "A clear blue sky with no clouds at all",
+    "choice_c": "Calm water with absolutely no wind",
+    "choice_d": "Weather changes cannot be predicted visually in any way",
+    "correct_choice": "A",
+    "explanation": "Darkening or towering cumulonimbus clouds, a sudden temperature drop, and shifting or intensifying wind are classic visual warning signs of an approaching thunderstorm, and boaters should head for safe harbor well before the storm arrives rather than waiting for rain to start.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (severe weather recognition), applied to Missouri lake conditions"
+  },
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "Why do Missouri's large reservoirs, such as the Lake of the Ozarks, pose a particular hazard when a sudden thunderstorm develops?",
+    "choice_a": "Large lakes are always safer than small ponds during storms",
+    "choice_b": "Their large, open surface area allows wind to quickly build dangerous waves and chop, and boaters in coves or on the main channel may be a long distance from the nearest safe harbor or ramp",
+    "choice_c": "Storms never affect large bodies of water",
+    "choice_d": "Reservoirs eliminate the need for weather monitoring altogether",
+    "correct_choice": "B",
+    "explanation": "A large reservoir's open water allows wind to rapidly build steep, choppy waves once a storm front moves through, and depending on where a boater is positioned relative to coves and ramps, reaching safe harbor before the storm hits can be a real challenge -- underscoring the value of checking forecasts before heading out.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (large-reservoir storm hazards), applied to Missouri's major lakes"
+  },
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "What is the best practice for checking weather conditions before and during a boating trip?",
+    "choice_a": "Rely solely on how the sky looks at the moment of departure, with no forecast check",
+    "choice_b": "Weather monitoring is unnecessary on inland lakes",
+    "choice_c": "Check a marine or local weather forecast before departing and monitor a NOAA weather radio or reliable weather app throughout the trip for changing conditions",
+    "choice_d": "Only check the weather after a storm has already begun",
+    "correct_choice": "C",
+    "explanation": "Checking a forecast before departure and continuing to monitor conditions with a NOAA weather radio or weather app while underway gives a boater the best chance to return to harbor before a storm arrives rather than being caught in open water.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (weather monitoring best practices)"
+  },
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "What should a boater do if caught on open water when a thunderstorm with lightning develops?",
+    "choice_a": "Speed up to try to outrun the storm at maximum throttle",
+    "choice_b": "Stand up and hold a metal fishing rod as high as possible",
+    "choice_c": "Anchor in the middle of open water and wait it out with no other precautions",
+    "choice_d": "Reduce speed, put on PFDs, lower antennas or fishing rods, stay low and away from metal objects, and head for the nearest safe shelter if possible",
+    "correct_choice": "D",
+    "explanation": "When caught in a lightning storm, boaters should reduce speed for control, ensure everyone has a PFD on, lower antennas and fishing rods, stay low and away from metal fittings that can conduct electricity, and head for the nearest safe shelter rather than remaining in open, exposed water.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (lightning storm response on the water)"
+  },
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "How can wind and wave action combine to increase capsizing risk for a small, low-freeboard boat?",
+    "choice_a": "Wind-driven waves striking the boat broadside (beam-on) can rock or swamp a low-freeboard vessel, so operators are generally advised to angle the bow into oncoming waves rather than run parallel to them",
+    "choice_b": "Wind and waves have no effect on a boat's stability",
+    "choice_c": "Waves are only dangerous to vessels longer than 40 feet",
+    "choice_d": "Running parallel to waves is always safer than angling into them",
+    "correct_choice": "A",
+    "explanation": "Waves striking a boat broadside can rock it violently or cause swamping, especially in a low-freeboard vessel; taking waves at a controlled angle off the bow, rather than running parallel (beam-on) to them, generally gives better stability and control.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (wave-handling technique)"
+  },
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "What hazard does fog present to boaters on Missouri waters, and how should it be managed?",
+    "choice_a": "Fog has no effect on boating safety",
+    "choice_b": "Fog drastically reduces visibility for collision avoidance, so boaters should slow to a safe speed, sound the appropriate fog signal, and use radar or GPS as an aid -- not a replacement -- for a vigilant lookout",
+    "choice_c": "Boaters should speed up in fog to clear the area faster",
+    "choice_d": "Sound signals are unnecessary in fog if GPS is aboard",
+    "correct_choice": "B",
+    "explanation": "Fog significantly reduces the distance at which other vessels, obstacles, or shoreline can be seen; the Navigation Rules require reduced speed and appropriate sound signals in restricted visibility, and while radar or GPS chartplotters help, they never substitute for careful lookout and prudent seamanship.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (fog and restricted visibility), consistent with Navigation Rules Rule 19"
+  },
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "Why might a Missouri river such as the Missouri or Mississippi River present different hazards from a reservoir lake for boaters?",
+    "choice_a": "Rivers and lakes present exactly the same hazards with no meaningful differences",
+    "choice_b": "Rivers never have current and are always calmer than lakes",
+    "choice_c": "Rivers have current, changing water levels, submerged debris (such as downed trees or 'strainers'), and commercial barge traffic that reservoirs generally do not",
+    "choice_d": "Commercial vessel traffic is unique to lakes, never rivers",
+    "correct_choice": "C",
+    "explanation": "Missouri's major rivers add hazards not typically found on a stillwater reservoir: current and changing water levels, submerged debris or 'strainers' that can trap a capsized boat or swimmer, and commercial barge and tow traffic that requires extra right-of-way awareness and following distance.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (river hazards vs. lake hazards), applied to Missouri's river systems"
+  },
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "Why should boaters on Missouri lakes take precautions against heat-related illness during hot, humid summer months?",
+    "choice_a": "Heat has no meaningful effect on a boater's judgment or physical condition",
+    "choice_b": "Sunscreen and hydration are unnecessary as long as a hat is worn",
+    "choice_c": "Heat-related illness can only occur on land, never on the water",
+    "choice_d": "Prolonged sun exposure, heat, and dehydration can cause heat exhaustion or heat stroke, impairing judgment and reaction time just as much as fatigue or intoxication",
+    "correct_choice": "D",
+    "explanation": "Missouri summers bring intense heat and humidity on open water with little shade; dehydration, heat exhaustion, and heat stroke can impair a boater's judgment, coordination, and reaction time in ways similar to fatigue, making regular hydration, sun protection, and rest breaks part of safe boating practice.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (heat-related illness prevention), applied to Missouri summer boating conditions"
+  },
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "Why can wind chill make cold-water immersion even more dangerous for a boater in wet clothing on a cool, windy day?",
+    "choice_a": "Wind passing over wet skin and clothing accelerates evaporative heat loss, lowering body temperature faster than the air temperature alone would suggest",
+    "choice_b": "Wind has no effect on body temperature once someone is already wet",
+    "choice_c": "Wind chill only matters for dry clothing, never wet clothing",
+    "choice_d": "Wet clothing insulates the body better than dry clothing in wind",
+    "correct_choice": "A",
+    "explanation": "Wind accelerates evaporation from wet skin and clothing, which pulls heat away from the body faster than still air at the same temperature would; a boater who falls in cold water and is then exposed to wind while wet faces a much faster path toward hypothermia than the air temperature alone implies.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (wind chill and evaporative heat loss)"
+  }
+]

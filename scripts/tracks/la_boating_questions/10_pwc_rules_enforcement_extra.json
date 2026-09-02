@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "PWC Rules and LDWF Enforcement",
+    "question": "Federal law now requires PWC operators to attach and use the engine cut-off switch (ECOS) lanyard because it:",
+    "choice_a": "Increases the PWC's top speed",
+    "choice_b": "Automatically stops the engine if the operator falls off or is thrown from the PWC",
+    "choice_c": "Is only a recommendation with no legal requirement behind it",
+    "choice_d": "Improves fuel efficiency during normal operation",
+    "correct_choice": "B",
+    "explanation": "The federally mandated engine cut-off switch (ECOS) lanyard connects to the operator and is designed to immediately kill the engine if the operator is thrown off, preventing a runaway, unmanned PWC from continuing to circle or strike someone in the water.",
+    "weight": 4,
+    "source_note": "Coast Guard Authorization Act of 2020 / 33 CFR 175.410 federal engine cut-off switch requirement, applied to Louisiana PWC operation"
+  },
+  {
+    "topic": "PWC Rules and LDWF Enforcement",
+    "question": "The number of people who may legally ride a given personal watercraft is limited by:",
+    "choice_a": "State law alone, with no reference to the manufacturer",
+    "choice_b": "The manufacturer's rated passenger capacity for that specific PWC model",
+    "choice_c": "Whatever number of PFDs happen to be aboard",
+    "choice_d": "There is no occupancy limit for any PWC",
+    "correct_choice": "B",
+    "explanation": "A PWC must not be operated with more people aboard than the manufacturer's rated passenger capacity for that specific model, since exceeding it can affect handling and stability just as overloading a conventional boat does.",
+    "weight": 3,
+    "source_note": "Standard PWC occupancy/capacity fundamentals used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "PWC Rules and LDWF Enforcement",
+    "question": "Because many PWCs lose steering control when the throttle is fully released, operators are trained that:",
+    "choice_a": "Releasing the throttle always improves the PWC's ability to turn away from an obstacle",
+    "choice_b": "Maintaining some throttle while steering is often necessary to actually turn away from a hazard, rather than simply letting off the throttle",
+    "choice_c": "Steering ability is completely unaffected by throttle position on any PWC",
+    "choice_d": "The engine should always be fully shut off to avoid a collision",
+    "correct_choice": "B",
+    "explanation": "Jet-drive PWCs steer by directing thrust, so releasing the throttle can reduce or eliminate steering response at the worst possible moment; operators are trained to counter this natural instinct by maintaining some throttle while steering away from an obstacle.",
+    "weight": 4,
+    "source_note": "Standard PWC off-throttle steering-loss fundamentals used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "PWC Rules and LDWF Enforcement",
+    "question": "Deliberately using a PWC to swamp or splash another vessel, or to cut closely in front of another boat, is:",
+    "choice_a": "A legal maneuver as long as no collision actually occurs",
+    "choice_b": "A separate punishable violation of Louisiana's reckless-operation rules, distinct from ordinary weaving through congested traffic",
+    "choice_c": "Only prohibited if the other vessel is a PWC as well",
+    "choice_d": "Permitted so long as the PWC operator is over 18",
+    "correct_choice": "B",
+    "explanation": "Deliberately swamping, splashing, or cutting closely in front of another vessel with a PWC falls within Louisiana's broader reckless-operation prohibition, and is treated as its own punishable violation regardless of whether an actual collision results.",
+    "weight": 3,
+    "source_note": "LDWF, Boating Regulations (wlf.louisiana.gov/page/boating-regulations)"
+  }
+]

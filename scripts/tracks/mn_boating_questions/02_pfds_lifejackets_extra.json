@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a Type II PFD, and how does it compare to a Type I offshore life jacket?",
+    "choice_a": "A near-shore buoyant vest that will turn many unconscious wearers face-up but with less buoyancy and turning reliability than a Type I, making it suited to calmer, closer-to-shore waters where rescue is likely to come quickly",
+    "choice_b": "A device identical to a Type I in every respect except color",
+    "choice_c": "A throwable cushion rather than a wearable jacket",
+    "choice_d": "A device that never requires Coast Guard approval",
+    "correct_choice": "A",
+    "explanation": "A Type II near-shore buoyant vest offers turning ability for many unconscious wearers, like a Type I, but with less buoyancy and less reliable turning, which is why it is intended for calmer inland waters where help is expected to arrive quickly rather than remote or rough offshore conditions.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (USCG PFD type classifications)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What limitation applies to many inflatable PFDs that a Minnesota boater should know before relying on one?",
+    "choice_a": "Inflatable PFDs are approved for use by children of any age",
+    "choice_b": "Inflatable PFDs never need any inspection once purchased",
+    "choice_c": "Most inflatable PFDs are not approved for persons under 16 and are not approved for high-impact activities such as PWC riding or waterskiing unless the specific model's label says otherwise, and their CO2 inflation cartridge must be checked and in place",
+    "choice_d": "Inflatable PFDs provide less buoyancy than any foam PFD once inflated",
+    "correct_choice": "C",
+    "explanation": "Coast Guard approval for most inflatable PFDs excludes use by children under 16 and excludes high-impact activities like PWC operation or water skiing unless the label specifically allows it, and the wearer must regularly verify the CO2 cartridge and inflation mechanism are properly armed.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (USCG inflatable PFD approval limitations)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "How is the correct size of a PFD, especially for a child, primarily determined?",
+    "choice_a": "By the child's age alone, regardless of size",
+    "choice_b": "By the wearer's body weight and chest size as labeled on the PFD, not simply by age, since children of the same age can vary widely in size",
+    "choice_c": "By the color the child prefers",
+    "choice_d": "All PFDs are one universal size for every wearer",
+    "correct_choice": "B",
+    "explanation": "PFD manufacturers size devices by weight range and chest size printed on the label rather than by age, because children of the same age can differ greatly in size, and a PFD that is too large can slip off in the water while one too small will not provide adequate buoyancy.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (PFD sizing by weight and chest size)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What additional PFD-related equipment must a Minnesota boat 16 feet or longer generally carry, beyond one wearable PFD for each person aboard?",
+    "choice_a": "A second full set of wearable PFDs stored separately",
+    "choice_b": "At least one Coast Guard-approved throwable device, such as a ring buoy or buoyant cushion, immediately accessible for use",
+    "choice_c": "No additional device is ever required regardless of length",
+    "choice_d": "A PFD rated for offshore use only",
+    "correct_choice": "B",
+    "explanation": "In addition to a properly sized wearable PFD for every person aboard, boats at or above 16 feet must generally carry at least one throwable device that can be tossed immediately to a person who falls overboard, supplementing the wearable PFDs already required.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (throwable device requirement by vessel length), consistent with Minnesota's PFD equipment framework under Minn. Stat. 86B.501"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is the Minnesota DNR's \"Kids Don't Float\" program, referenced at some public water accesses?",
+    "choice_a": "A DNR-supported life jacket loaner program that provides free child-sized PFDs for borrowing at participating boat accesses and beaches",
+    "choice_b": "A mandatory swimming lesson curriculum required before any child may board a boat",
+    "choice_c": "A ban on children under 10 being present at any public water access",
+    "choice_d": "A boat registration discount program unrelated to PFDs",
+    "correct_choice": "A",
+    "explanation": "\"Kids Don't Float\" style loaner programs, supported by the Minnesota DNR and local partners, place stations of free, borrowable child-sized life jackets at participating public accesses and beaches so a family without a properly fitting PFD can still equip a child before heading out on the water.",
+    "weight": 2,
+    "source_note": "Minnesota DNR boat and water safety program (life jacket loaner program partnerships)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why do boating safety courses caution against using a PFD as a boat cushion, kneeling pad, or fender?",
+    "choice_a": "Because repeatedly compressing a PFD's foam over time can permanently reduce its buoyancy, so a PFD used this way may not perform properly in an actual emergency",
+    "choice_b": "Because it is illegal to sit on a PFD under any circumstance",
+    "choice_c": "Because PFDs are not strong enough to be used as fenders even briefly, causing immediate failure",
+    "choice_d": "There is no functional concern with this practice",
+    "correct_choice": "A",
+    "explanation": "Repeated compression from being sat, knelt, or leaned on -- or used as a fender between the boat and a dock -- can gradually crush a foam PFD's flotation material and reduce its buoyancy long before it looks visibly damaged, so PFDs should be stored and used only for their intended wearable purpose.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (PFD foam degradation from misuse), consistent with NASBLA-aligned course guidance"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under U.S. Coast Guard guidance commonly applied on Minnesota lakes, is a stand-up paddleboard (SUP) used beyond a designated swimming, surfing, or bathing area considered a vessel requiring a PFD aboard?",
+    "choice_a": "No, SUPs are never considered vessels under any circumstance",
+    "choice_b": "Yes -- once used beyond a narrow, designated swimming or surfing area, a SUP is generally treated as a vessel, and its rider must have a wearable PFD readily available",
+    "choice_c": "Only paddleboards longer than 20 feet are considered vessels",
+    "choice_d": "PFDs are prohibited on paddleboards",
+    "correct_choice": "B",
+    "explanation": "Once a stand-up paddleboard is used outside a narrowly designated swimming, surfing, or bathing area, it is generally treated the same as a canoe or kayak -- a vessel -- meaning the rider must have a Coast Guard-approved, properly sized wearable PFD readily available.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (USCG vessel classification of paddleboards outside designated swim areas)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What makes a PFD legally \"Coast Guard-approved\" rather than just any flotation product sold at a store?",
+    "choice_a": "Any orange-colored vest is automatically considered approved",
+    "choice_b": "Approval is based solely on the retail price of the device",
+    "choice_c": "The device carries a U.S. Coast Guard approval label identifying its type, size range, and intended use, confirming it was tested and certified to meet federal performance standards",
+    "choice_d": "Approval status cannot be determined from the device itself",
+    "correct_choice": "C",
+    "explanation": "A Coast Guard-approved PFD carries a label showing its approval number, type classification, size range, and intended use, which confirms the device was tested against federal buoyancy and performance standards -- a plain flotation toy or novelty vest without this label does not satisfy a boat's legal PFD requirement.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (USCG PFD approval labeling)"
+  }
+]

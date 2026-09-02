@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "If a Florida coroner learns that a death in their jurisdiction resulted from a boating accident, which agency must the coroner immediately notify?",
+    "choice_a": "The FWC Division of Law Enforcement only, never any other agency",
+    "choice_b": "The National Transportation Safety Board",
+    "choice_c": "The nearest office of the Florida Department of Law Enforcement (FDLE)",
+    "choice_d": "No notification duty applies to coroners under Florida boating law",
+    "correct_choice": "C",
+    "explanation": "Florida Statutes 327.30 places a specific duty on coroners: upon learning that a death in their jurisdiction resulted from a boating accident, the coroner must immediately notify the nearest office of the Florida Department of Law Enforcement -- distinct from the accident-notice duty the same statute places on vessel operators, which runs to FWC, the county sheriff, or municipal police.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.30, coroner notification duty"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "Does a boater's statutory duty to report a boating accident or give information about it require the boater to provide self-incriminating information?",
+    "choice_a": "Yes, the reporting duty completely overrides any privilege against self-incrimination",
+    "choice_b": "The privilege applies only to written reports, never to anything said verbally at the scene",
+    "choice_c": "Only a licensed attorney aboard the vessel may invoke this protection on the operator's behalf",
+    "choice_d": "No -- the duty to report or give information to a law enforcement officer does not extend to information that would violate the person's privilege against self-incrimination",
+    "correct_choice": "D",
+    "explanation": "Florida Statutes 327.30 expressly states that the statutory duty to report an accident or give information to a law enforcement officer does not extend to information that would violate the person's privilege against self-incrimination.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.30, self-incrimination limitation on the report duty"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "Under Florida Statutes 782.072, what is 'vessel homicide' and what is the baseline felony degree for the offense absent any aggravating factors?",
+    "choice_a": "Killing a human being (including the death of an unborn child caused by injury to the mother) by operating a vessel in a reckless manner likely to cause death or great bodily harm -- a second-degree felony absent aggravating factors",
+    "choice_b": "Any boating fatality at all, regardless of how carefully the vessel was operated -- a first-degree misdemeanor",
+    "choice_c": "It applies only to personal watercraft operators, and only when alcohol was involved",
+    "choice_d": "It is a noncriminal infraction similar to a careless-operation citation",
+    "correct_choice": "A",
+    "explanation": "Florida Statutes 782.072 defines vessel homicide as killing a human being -- including an unborn child's death caused by injury to the mother -- by operating a vessel in a reckless manner likely to cause death or great bodily harm; without aggravating circumstances it is charged as a second-degree felony.",
+    "weight": 4,
+    "source_note": "Florida Statutes 782.072(1), vessel homicide definition and base felony degree"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "When does a Florida vessel homicide charge escalate from a second-degree felony to a first-degree felony based on the operator's conduct after a fatal accident?",
+    "choice_a": "It never escalates, regardless of what the operator does after the accident",
+    "choice_b": "When the operator knew or should have known the accident occurred and failed to give information and render aid as required by Florida's boating accident report law",
+    "choice_c": "Only if the operator was using a rented vessel rather than one they owned",
+    "choice_d": "Only if the accident occurred more than three miles from shore",
+    "correct_choice": "B",
+    "explanation": "Florida Statutes 782.072 elevates vessel homicide to a first-degree felony when the operator knew or should have known an accident occurred and failed to give information and render aid as required by the accident duties in Florida Statutes 327.30(1) -- effectively punishing a fatal hit-and-run more severely.",
+    "weight": 4,
+    "source_note": "Florida Statutes 782.072(2), vessel homicide elevation for failing to render aid"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "Besides fleeing the scene of a fatal accident without rendering aid, what other circumstance elevates a Florida vessel homicide charge to a first-degree felony?",
+    "choice_a": "The vessel involved was less than 16 feet long",
+    "choice_b": "The accident happened on an inland lake rather than in coastal waters",
+    "choice_c": "The person has a prior conviction for vessel homicide, or for certain related reckless-boating, BUI, or vehicular/DUI homicide offenses",
+    "choice_d": "There is no other circumstance that elevates the charge",
+    "correct_choice": "C",
+    "explanation": "Florida Statutes 782.072 also elevates vessel homicide to a first-degree felony when the person has a prior conviction under the vessel homicide statute itself, or under related reckless-boating-under-the-influence or vehicular/DUI homicide provisions -- treating repeat offenders more severely.",
+    "weight": 3,
+    "source_note": "Florida Statutes 782.072(2), vessel homicide elevation for a prior qualifying conviction"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "Under Florida Statutes 327.70, what authority do FWC officers and other law enforcement officers have over a vessel that is an interference or a hazard to public safety?",
+    "choice_a": "They may only issue a written warning and must leave the vessel in place",
+    "choice_b": "They have no authority to act unless a private citizen first files a formal written complaint",
+    "choice_c": "Only the vessel's insurer, never law enforcement, can order its removal",
+    "choice_d": "They may order the removal of the vessel",
+    "correct_choice": "D",
+    "explanation": "Florida Statutes 327.70 authorizes FWC officers, county sheriffs and their deputies, and municipal police officers to order the removal of vessels deemed an interference or a hazard to public safety, in addition to their general enforcement and inspection powers.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.70, authority to order removal of hazardous vessels"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "Under Florida Statutes 327.70, what general powers and duties do FWC officers, sheriffs, and municipal police share in connection with violations of Florida's boating law chapter?",
+    "choice_a": "The power and duty to issue orders and to make investigations, reports, and arrests in connection with violations of the boating law chapter",
+    "choice_b": "They may only refer a suspected violation to a state attorney and may never personally investigate or arrest",
+    "choice_c": "Only FWC, and no other named agency, may investigate or arrest for any boating law violation",
+    "choice_d": "Investigative and arrest power exists only when a violation involves a fatality",
+    "correct_choice": "A",
+    "explanation": "Florida Statutes 327.70 gives FWC's Division of Law Enforcement, county sheriffs and their deputies, and municipal police officers the power and duty to issue orders and to make investigations, reports, and arrests connected with violations of Florida's boating law chapter, alongside their vessel inspection authority.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.70, general investigation and arrest authority"
+  }
+]

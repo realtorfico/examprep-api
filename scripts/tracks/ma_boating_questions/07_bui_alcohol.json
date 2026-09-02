@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Is operating a vessel while intoxicated by alcohol or drugs illegal in Massachusetts?",
+    "choice_a": "It is illegal only for operators of vessels longer than 40 feet",
+    "choice_b": "It is illegal only between sunset and sunrise",
+    "choice_c": "Yes -- operating under the influence (OUI) on the water is illegal in Massachusetts, similar to operating a motor vehicle under the influence on the road",
+    "choice_d": "No -- Massachusetts has no law addressing intoxicated boat operation",
+    "correct_choice": "C",
+    "explanation": "Massachusetts law prohibits operating a vessel while under the influence of alcohol or drugs, applying the state's operating-under-the-influence framework to boating just as it does to motor vehicles on the road.",
+    "weight": 3,
+    "source_note": "Massachusetts General Laws Chapter 90B, operating under the influence (marine OUI) provisions, consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Why is alcohol considered especially dangerous when combined with boating, compared to driving a car?",
+    "choice_a": "Alcohol has no different effect on the water than on land",
+    "choice_b": "Boats are inherently safer than cars, so impairment is not a meaningful safety concern",
+    "choice_c": "Alcohol only affects a boat operator's ability to read a chart, not physical coordination",
+    "choice_d": "Sun, wind, engine vibration, noise, and motion ('boater's fatigue') intensify alcohol's effects and impair balance, judgment, and reaction time faster than on land",
+    "correct_choice": "D",
+    "explanation": "The combined stressors of sun, wind, glare, engine noise, and a moving deck -- sometimes called 'boater's fatigue' -- amplify the impairing effects of alcohol more quickly than on land, degrading balance, judgment, vision, and reaction time.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (alcohol/boater's fatigue interaction), consistent with U.S. Coast Guard and NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "What can happen to a boat operator's Massachusetts boat operation privileges or boater education certificate if convicted of operating under the influence on the water?",
+    "choice_a": "The operator can face penalties similar to a motor vehicle OUI, potentially including fines, license/certificate consequences, and even jail time for repeat or aggravated offenses",
+    "choice_b": "There are no consequences of any kind for a marine OUI conviction in Massachusetts",
+    "choice_c": "Only a verbal warning is ever issued, regardless of the circumstances",
+    "choice_d": "Consequences apply only if the operator was also driving a car earlier that day",
+    "correct_choice": "A",
+    "explanation": "A marine OUI conviction in Massachusetts can carry penalties similar to those for a motor vehicle OUI -- fines, potential loss of boating privileges, and in serious or repeat cases, criminal penalties including jail time.",
+    "weight": 3,
+    "source_note": "Massachusetts General Laws Chapter 90B, marine OUI penalty provisions, consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Does a boat operator's failure of a field sobriety or chemical test on the water carry legal consequences similar to a similar failure while driving in Massachusetts?",
+    "choice_a": "Test refusal has no consequence for a boat operator in Massachusetts",
+    "choice_b": "Yes -- Massachusetts applies an implied-consent-style framework to boating, and a positive or refused chemical test can be used as evidence and carry penalties analogous to motor vehicle OUI law",
+    "choice_c": "No -- chemical tests are never administered to boat operators under any circumstances",
+    "choice_d": "Only breath tests are permitted; blood tests are legally prohibited on the water",
+    "correct_choice": "B",
+    "explanation": "Massachusetts extends an implied-consent-style approach to marine OUI enforcement, meaning a chemical or field sobriety test result -- or a refusal -- can be used against an operator and carries consequences similar to those in motor vehicle OUI cases.",
+    "weight": 3,
+    "source_note": "Massachusetts General Laws Chapter 90B, implied consent/marine OUI enforcement, consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Besides the operator, can passengers' alcohol use create safety risks on a boat?",
+    "choice_a": "Passenger alcohol use is completely regulated the same way as commercial vessel crew alcohol policy",
+    "choice_b": "Alcohol use by passengers is illegal on every vessel in Massachusetts, even when the vessel is not underway",
+    "choice_c": "Yes -- intoxicated passengers face a higher risk of falling overboard, and impaired judgment can also affect how they use PFDs or interact with moving parts like propellers",
+    "choice_d": "No -- only the operator's alcohol use has any bearing on boating safety",
+    "correct_choice": "C",
+    "explanation": "Even when a passenger is not operating the vessel, intoxication significantly raises the risk of falling overboard (a major cause of boating fatalities), and impaired passengers may also fail to correctly wear PFDs or exercise caution around propellers and other hazards.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (alcohol-related overboard risk), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "What is the recommended practice for the operator of a boat carrying passengers who plan to drink alcohol?",
+    "choice_a": "There is no recommended practice since alcohol has no bearing on boat operation",
+    "choice_b": "The operator should drink the same amount as passengers to 'match' the group's pace",
+    "choice_c": "Only drink after anchoring, regardless of whether the vessel will get underway again that day",
+    "choice_d": "Designate a sober operator who does not drink, similar to the 'designated driver' practice for cars",
+    "correct_choice": "D",
+    "explanation": "Just as with driving, boaters are encouraged to designate a sober operator when alcohol will be consumed aboard, since operating any vessel while impaired significantly increases the risk of a fatal accident.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (designated sober operator practice), consistent with NASBLA-aligned course curricula"
+  }
+]

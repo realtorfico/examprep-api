@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Accident Reporting",
+    "question": "Under Wisconsin DNR guidance, which of the following makes a boating accident \"reportable\"?",
+    "choice_a": "Only accidents involving a fatality; injuries and property damage are never reportable",
+    "choice_b": "Only accidents involving personal watercraft",
+    "choice_c": "Loss of life, an injury requiring medical treatment beyond first aid, property damage exceeding $2,000, or complete loss of the boat",
+    "choice_d": "Any accident at all, no matter how minor, including small scratches to a hull",
+    "correct_choice": "C",
+    "explanation": "Wisconsin DNR defines a reportable boating incident as one involving loss of life, an injury requiring medical treatment beyond first aid by a medical professional, property damage exceeding $2,000, or the complete loss of a vessel.",
+    "weight": 3,
+    "source_note": "Wisconsin DNR boating accident reporting guidance (dnr.wisconsin.gov/Topic/Boat/CrashInfo)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "When must a Wisconsin boat operator make an initial report of a reportable boating accident to law enforcement?",
+    "choice_a": "Within 30 days, with no urgency for the initial report",
+    "choice_b": "Only if requested by the other party involved",
+    "choice_c": "There is no requirement to report to law enforcement at all, only to insurance",
+    "choice_d": "Immediately, without delay",
+    "correct_choice": "D",
+    "explanation": "Wisconsin requires an operator involved in a reportable accident to notify law enforcement immediately, without delay, in addition to later filing the required written report.",
+    "weight": 3,
+    "source_note": "Wisconsin DNR boating accident reporting guidance (dnr.wisconsin.gov/Topic/Boat/CrashInfo)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "After the initial verbal report, how many days does a Wisconsin operator have to submit the written Boat Operator Incident Report (Form 4100-020)?",
+    "choice_a": "10 days",
+    "choice_b": "48 hours",
+    "choice_c": "30 days",
+    "choice_d": "90 days",
+    "correct_choice": "A",
+    "explanation": "Following the immediate verbal notification to law enforcement, Wisconsin requires the operator to submit a written report using Form 4100-020 (Boat Operator Incident Report) within 10 days.",
+    "weight": 3,
+    "source_note": "Wisconsin DNR boating accident reporting guidance (dnr.wisconsin.gov/Topic/Boat/CrashInfo)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Where can a completed Wisconsin Boat Operator Incident Report be sent, according to DNR guidance?",
+    "choice_a": "Only through a private insurance adjuster",
+    "choice_b": "By mail to the Wisconsin DNR Boating Program (PO Box 7921, Madison, WI) or by email to DNRCrash@wi.gov",
+    "choice_c": "It cannot be submitted electronically under any circumstances",
+    "choice_d": "Only in person at any state park office",
+    "correct_choice": "B",
+    "explanation": "DNR accepts the written incident report by mail to its Boating Program (Law Enforcement Division, PO Box 7921, Madison WI 53707-7921) or by email to DNRCrash@wi.gov.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR boating accident reporting guidance (dnr.wisconsin.gov/Topic/Boat/CrashInfo)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "What is the general penalty exposure in Wisconsin for failing to comply with boating accident reporting requirements?",
+    "choice_a": "Automatic loss of the boat's registration for life",
+    "choice_b": "A mandatory one-year jail sentence with no fine option",
+    "choice_c": "A fine of up to $326",
+    "choice_d": "There is no penalty for failing to report",
+    "correct_choice": "C",
+    "explanation": "DNR guidance states that failing to comply with the accident reporting requirements can result in a penalty of up to $326, reinforcing that reporting is a legal obligation, not optional.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR boating accident reporting guidance (dnr.wisconsin.gov/Topic/Boat/CrashInfo)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Under Wisconsin Statute 30.67(4), how is information contained in a boating accident report treated in later legal proceedings?",
+    "choice_a": "It is automatically admissible as conclusive proof of fault in any lawsuit",
+    "choice_b": "It can only be used against the operator who filed it, never in their favor",
+    "choice_c": "The statute has no bearing on the use of accident reports in legal proceedings",
+    "choice_d": "It cannot be used as evidence in a civil or criminal trial arising from the accident",
+    "correct_choice": "D",
+    "explanation": "Wisconsin Statute 30.67(4) provides that information from a boating accident report cannot be used as evidence in a civil or criminal trial, which is intended to encourage full and honest reporting without fear that the report itself will be weaponized in litigation.",
+    "weight": 3,
+    "source_note": "Wisconsin DNR boating accident reporting guidance citing Wis. Stat. 30.67(4) (dnr.wisconsin.gov/Topic/Boat/CrashInfo)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "If a boating accident results only in minor property damage well under $2,000 and no injuries, what is generally true about the DNR reporting requirement?",
+    "choice_a": "It likely does not meet the reportable threshold, since the defined triggers are death, injury beyond first aid, damage over $2,000, or total loss",
+    "choice_b": "Every accident, regardless of damage amount, must be reported the same way",
+    "choice_c": "Minor damage accidents must be reported within one hour or not at all",
+    "choice_d": "Property damage is never a factor in Wisconsin's reporting threshold",
+    "correct_choice": "A",
+    "explanation": "Because DNR's defined reportable thresholds are death, an injury requiring treatment beyond first aid, property damage exceeding $2,000, or total vessel loss, a minor incident with damage well under that dollar amount and no injury generally would not meet the mandatory reporting trigger.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR boating accident reporting guidance (dnr.wisconsin.gov/Topic/Boat/CrashInfo)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Besides mailing or emailing a written report, to whom can an operator make the required immediate verbal report of a serious boating accident?",
+    "choice_a": "No immediate verbal report is ever required in Wisconsin",
+    "choice_b": "Law enforcement officials, including local police or sheriff's departments",
+    "choice_c": "Only a private boat insurance company",
+    "choice_d": "Only the marina where the boat is docked",
+    "correct_choice": "B",
+    "explanation": "The immediate report of a reportable accident goes to law enforcement -- local police or the sheriff's department -- with the follow-up written report later going to DNR or the applicable law enforcement agency.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR boating accident reporting guidance (dnr.wisconsin.gov/Topic/Boat/CrashInfo)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "What broader statewide safety function do Wisconsin's accident reports serve, beyond the individual case?",
+    "choice_a": "Reports are used exclusively for tax assessment purposes",
+    "choice_b": "Accident reports have no connection to any statewide safety program",
+    "choice_c": "They feed into DNR's fatality reports and annual boating safety data, helping identify trends and target enforcement or education efforts",
+    "choice_d": "Accident reports are destroyed immediately after filing and serve no further purpose",
+    "correct_choice": "C",
+    "explanation": "DNR compiles boating accident reports into its fatality reports and annual boating safety data, which the agency uses to identify accident trends and target its safety education and enforcement efforts, including Patrol Grant funding decisions.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR boating safety data and fatality reporting framework (dnr.wisconsin.gov/topic/Boat)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Who typically has the primary duty to file the required accident report after a Wisconsin boating accident involving multiple vessels?",
+    "choice_a": "Only the operator of the larger vessel needs to report",
+    "choice_b": "Reporting duty falls solely on any injured passenger, never the operators",
+    "choice_c": "No one has to report if both operators mutually agree not to",
+    "choice_d": "Each operator involved in the accident generally shares responsibility for ensuring the required report is filed",
+    "correct_choice": "D",
+    "explanation": "In a multi-vessel accident meeting the reportable thresholds, each operator generally carries a responsibility to ensure a report is made -- the duty isn't limited to just one party regardless of vessel size or fault.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR boating accident reporting guidance (dnr.wisconsin.gov/Topic/Boat/CrashInfo)"
+  }
+]

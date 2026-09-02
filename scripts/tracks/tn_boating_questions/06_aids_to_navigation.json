@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "What buoy and marker system does Tennessee use on its lakes and rivers?",
+    "choice_a": "The standard U.S. Aids to Navigation System",
+    "choice_b": "A system unique to Tennessee not used elsewhere",
+    "choice_c": "The International Association of Lighthouse Authorities System B, used only in Europe",
+    "choice_d": "No standardized system; each marina sets its own markers",
+    "correct_choice": "A",
+    "explanation": "Tennessee waters use the standard U.S. Aids to Navigation System, the same lateral and regulatory marker system used nationwide, so boaters see familiar markers across state lines.",
+    "weight": 2,
+    "source_note": "TWRA Regulations & Safety Concerns"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "In the \"red, right, returning\" rule, when should a boater keep red markers on the right (starboard) side?",
+    "choice_a": "The rule applies only to sailboats",
+    "choice_b": "When returning from open water toward a harbor, marina, or upstream",
+    "choice_c": "When heading out to open water from a harbor",
+    "choice_d": "Only at night",
+    "correct_choice": "B",
+    "explanation": "\"Red, right, returning\" means a boater should keep red markers on the right (starboard) side when returning from open water, heading upstream, or entering a harbor from the main channel.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (U.S. Aids to Navigation System)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What shape and color is a typical lateral marker showing the left side of a channel when returning from open water?",
+    "choice_a": "A solid black marker with no numbers",
+    "choice_b": "A yellow diamond",
+    "choice_c": "A green, square-topped marker (can)",
+    "choice_d": "A red, cone-topped marker (nun)",
+    "correct_choice": "C",
+    "explanation": "Green, square-topped markers (cans) mark the left side of a channel when returning from open water, while red, cone-topped markers (nuns) mark the right side.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (U.S. Aids to Navigation System)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy or sign with an orange diamond symbol typically warn boaters about?",
+    "choice_a": "A designated swimming beach",
+    "choice_b": "A fueling station",
+    "choice_c": "A no-fishing zone only",
+    "choice_d": "A danger, such as a rock, shoal, dam, or other hazard",
+    "correct_choice": "D",
+    "explanation": "A white marker with an orange diamond is a regulatory marker warning of a danger, such as rocks, a shoal, a dam, or other hazards to navigation.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (U.S. Aids to Navigation System)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy or sign with an orange diamond containing a cross mean?",
+    "choice_a": "Boats are excluded from the marked area entirely",
+    "choice_b": "The area is safe for high-speed activities",
+    "choice_c": "The marker indicates a fueling dock",
+    "choice_d": "The marker is purely decorative and carries no restriction",
+    "correct_choice": "A",
+    "explanation": "An orange diamond containing a cross on a white background marks an area where boats are excluded entirely, such as swimming areas or dam safety zones.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (U.S. Aids to Navigation System)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy or sign with an orange circle indicate?",
+    "choice_a": "The boundary of a national park",
+    "choice_b": "A controlled area, such as a speed zone, idle-speed, or no-wake zone",
+    "choice_c": "A prohibited fishing area",
+    "choice_d": "A designated anchorage with no other restrictions",
+    "correct_choice": "B",
+    "explanation": "An orange circle on a white marker denotes a controlled area, such as a speed zone or no-wake zone, where boaters must follow the posted restriction.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (U.S. Aids to Navigation System)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is a white sign with an orange square used to display, according to the U.S. Aids to Navigation System?",
+    "choice_a": "A mandatory stop, like a highway stop sign",
+    "choice_b": "A restricted military zone",
+    "choice_c": "General information, such as directions, distances, or a marina's presence",
+    "choice_d": "A speed limit that changes hourly",
+    "correct_choice": "C",
+    "explanation": "An orange square on a white background is an information marker, used to display general information such as directions or the location of services.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (U.S. Aids to Navigation System)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "According to Tennessee's boating regulations, is it legal to tie your boat to a channel marker overnight because it is convenient?",
+    "choice_a": "Yes, any buoy may be used as a free overnight mooring point",
+    "choice_b": "Yes, but only on weekends",
+    "choice_c": "It is legal only for vessels under 16 feet",
+    "choice_d": "No -- mooring or fastening a vessel to any buoy or marker other than a designated mooring buoy is prohibited except in an emergency",
+    "correct_choice": "D",
+    "explanation": "Tennessee law prohibits mooring or fastening a vessel to any buoy or marker other than a mooring buoy, except in an emergency, because doing so can damage the aid to navigation and mislead other boaters.",
+    "weight": 3,
+    "source_note": "TWRA Regulations & Safety Concerns"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What kind of restricted area might a control buoy mark on a Tennessee reservoir, such as a posted 5 MPH zone?",
+    "choice_a": "A slow, no-wake speed restriction, often near marinas, docks, or swimming areas",
+    "choice_b": "An area reserved exclusively for sailboats",
+    "choice_c": "A required refueling stop",
+    "choice_d": "An area where anchoring is mandatory",
+    "correct_choice": "A",
+    "explanation": "Control buoys on Tennessee waters commonly mark slow, no-wake speed restrictions, such as a posted 5 MPH zone near marinas, swimming areas, or congested shoreline development.",
+    "weight": 3,
+    "source_note": "TWRA Regulations & Safety Concerns"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a mooring buoy typically look like under the U.S. Aids to Navigation System, distinguishing it from a regulatory marker?",
+    "choice_a": "A solid black, unlit can",
+    "choice_b": "A white buoy with a blue horizontal band",
+    "choice_c": "An orange diamond on a white background",
+    "choice_d": "A red and white vertically striped buoy",
+    "correct_choice": "B",
+    "explanation": "A mooring buoy is typically white with a blue horizontal band, distinguishing it from the white-and-orange regulatory markers used for warnings, controlled areas, or exclusion zones.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (U.S. Aids to Navigation System)"
+  }
+]

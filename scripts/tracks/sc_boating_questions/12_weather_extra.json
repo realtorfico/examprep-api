@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Weather",
+    "question": "How does a National Weather Service Gale Warning generally compare to a Small Craft Advisory for South Carolina's coastal waters?",
+    "choice_a": "A Gale Warning indicates significantly stronger sustained winds than a Small Craft Advisory, signaling conditions dangerous to most recreational vessels, not just smaller ones",
+    "choice_b": "A Gale Warning and a Small Craft Advisory mean exactly the same thing",
+    "choice_c": "A Gale Warning is always less severe than a Small Craft Advisory",
+    "choice_d": "Gale Warnings are never issued for coastal South Carolina",
+    "correct_choice": "A",
+    "explanation": "The National Weather Service uses an escalating scale of marine warnings; a Gale Warning signals significantly stronger sustained wind conditions than a Small Craft Advisory, indicating a level of danger that extends beyond just smaller recreational vessels to larger boats as well.",
+    "weight": 3,
+    "source_note": "NOAA National Weather Service marine warning escalation (Small Craft Advisory vs. Gale Warning), applied to South Carolina's coastal boating"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why should a boater near South Carolina's Atlantic beaches and inlets be aware of rip current risk, even when planning to boat rather than swim?",
+    "choice_a": "Rip currents only affect swimmers and have no relevance to anyone operating a boat",
+    "choice_b": "Rip currents can affect anyone who ends up in the surf zone, such as a boater who capsizes or falls overboard near the beach, and understanding how to recognize and respond to one improves the odds of a safe self-rescue",
+    "choice_c": "Rip currents never occur anywhere along the South Carolina coast",
+    "choice_d": "Rip currents are strongest during the calmest, flattest sea conditions",
+    "correct_choice": "B",
+    "explanation": "While rip currents are typically discussed as a swimmer hazard, anyone who ends up in the surf zone near a South Carolina beach or inlet -- including a boater who capsizes or falls overboard close to shore -- can be affected, so understanding how to recognize a rip current and swim parallel to shore to escape one is relevant boating safety knowledge as well.",
+    "weight": 3,
+    "source_note": "NOAA rip current safety guidance, applied to South Carolina's Atlantic coast boating and surf zones"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why is a marine VHF radio, tuned to NOAA Weather Radio broadcast channels, a valuable tool for staying informed of changing conditions while on South Carolina's water?",
+    "choice_a": "VHF radios cannot receive weather broadcasts of any kind",
+    "choice_b": "NOAA Weather Radio broadcasts continuous, updated weather and marine forecast information on dedicated channels, letting a boater monitor conditions in real time without needing a cell signal",
+    "choice_c": "Weather information is only available through a cell phone app, never over VHF radio",
+    "choice_d": "NOAA Weather Radio broadcasts are updated only once per week",
+    "correct_choice": "B",
+    "explanation": "NOAA Weather Radio provides continuous, regularly updated weather and marine forecast broadcasts on dedicated VHF channels, giving a boater a way to monitor developing conditions in real time that does not depend on having cell phone signal, which can be unreliable on open water or in remote areas.",
+    "weight": 3,
+    "source_note": "NOAA Weather Radio / marine VHF broadcast guidance, universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Weather",
+    "question": "Besides visible cloud and wind changes, what instrument-based warning sign can alert a boater to approaching severe weather?",
+    "choice_a": "A rapidly falling barometric pressure reading, which often precedes deteriorating weather and can be monitored even before visual storm signs appear",
+    "choice_b": "Barometric pressure has no relationship to approaching weather",
+    "choice_c": "A rising barometer always signals an approaching storm",
+    "choice_d": "Barometers are illegal to carry aboard a recreational vessel",
+    "correct_choice": "A",
+    "explanation": "A rapidly falling barometric pressure reading is a classic early warning sign of deteriorating weather, often becoming noticeable before the visible cloud buildup or wind shift a boater might otherwise rely on, giving an attentive operator with an onboard barometer or weather app extra lead time to head for shelter.",
+    "weight": 3,
+    "source_note": "General meteorological principle (falling barometric pressure preceding storms), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Weather",
+    "question": "What is a waterspout, and what should a boater do if one is spotted nearby on South Carolina's warm coastal or lake waters?",
+    "choice_a": "A waterspout is harmless and requires no response",
+    "choice_b": "A waterspout is a tornado-like rotating column of air over water; a boater who spots one should move away from its path at a right angle rather than trying to outrun it in a straight line or cross in front of it",
+    "choice_c": "A waterspout can only form over the open ocean, never near a coastline or inland lake",
+    "choice_d": "The correct response to a waterspout is to steer directly toward it to get a closer look",
+    "correct_choice": "B",
+    "explanation": "A waterspout is a tornado-like, rotating column of air extending from a cloud down to the water's surface, capable of forming over both warm coastal waters and, less commonly, large inland lakes; the recommended response is to move away from its path at a right angle rather than attempting to outrun it in a straight line or risk crossing its unpredictable track.",
+    "weight": 3,
+    "source_note": "NOAA waterspout safety guidance, universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Weather",
+    "question": "What is a \"king tide\" (perigean spring tide), and why might it matter to a South Carolina coastal boater beyond routine daily tide checking?",
+    "choice_a": "King tides are a myth with no basis in actual tidal patterns",
+    "choice_b": "A king tide is an unusually high tide caused by the alignment of the sun, moon, and Earth combined with the moon's closest approach to Earth, and it can flood low-lying docks, ramps, and roads well beyond what a boater might expect from an ordinary daily tide cycle",
+    "choice_c": "King tides only ever produce unusually low water levels, never high water",
+    "choice_d": "King tides affect only ocean water, never coastal marshes or tidal creeks",
+    "correct_choice": "B",
+    "explanation": "A king tide, or perigean spring tide, occurs when the sun, moon, and Earth align near the new or full moon while the moon is also at its closest approach to Earth, producing unusually high water that can flood low-lying docks, boat ramps, and access roads well beyond typical daily tidal ranges, which is worth checking for in addition to routine tide tables.",
+    "weight": 2,
+    "source_note": "NOAA tidal science on perigean spring (\"king\") tides, applied to South Carolina's tidal coast"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why can a cool, windy, and wet day on South Carolina's water increase hypothermia risk for a boater even if no one ever falls into the water?",
+    "choice_a": "Hypothermia can only occur from direct immersion in water; ambient air conditions have no effect",
+    "choice_b": "Wind combined with wet clothing or spray dramatically increases the rate of body heat loss through evaporative and convective cooling, so a boater can become dangerously chilled from prolonged exposure alone",
+    "choice_c": "Wind and wetness only affect comfort, never core body temperature",
+    "choice_d": "This type of exposure risk applies only during winter months, never in cooler spring or fall conditions",
+    "correct_choice": "B",
+    "explanation": "Wind combined with wet clothing or spray significantly accelerates heat loss from the body through evaporative and convective cooling, meaning a boater exposed for a long period on a cool, wet, windy day can develop hypothermia from ambient exposure alone, without ever having fallen into the water.",
+    "weight": 3,
+    "source_note": "Universal cold-weather exposure and hypothermia curriculum, NASBLA-aligned, distinct from cold-water immersion"
+  }
+]

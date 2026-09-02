@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Starting January 6, 2025, what major change did the U.S. Coast Guard and Transport Canada make to how newly manufactured life jackets are labeled?",
+    "choice_a": "All existing Type-labeled life jackets became illegal to own immediately",
+    "choice_b": "Life jackets were required to be a single standard color nationwide",
+    "choice_c": "The Type I through Type V system was replaced for new PFDs with icon-based \"Performance Level\" labels (50, 70, 100, 150) describing how the device performs in water, with existing Type-labeled PFDs still legal to keep using",
+    "choice_d": "Life jackets were banned from being sold with any buoyancy rating at all",
+    "correct_choice": "C",
+    "explanation": "The U.S. Coast Guard and Transport Canada began phasing in a new labeling system for newly manufactured PFDs on January 6, 2025, replacing the Type I-V classifications with icon-based Performance Levels (50, 70, 100, 150) describing water performance; a life jacket already labeled with the old Type system does not need to be replaced.",
+    "weight": 3,
+    "source_note": "Universal U.S. Coast Guard/Transport Canada 2025 PFD labeling system update, applied under Nevada watercraft law's PFD requirements"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Why is an inflatable life jacket not an acceptable substitute for a foam-style life jacket for a young child boating on Lake Mead or Lake Tahoe?",
+    "choice_a": "Inflatable life jackets are not U.S. Coast Guard-approved for anyone younger than 16, and there are no child-sized inflatable or hybrid life jackets approved at all, so children need an inherently buoyant, foam-style device",
+    "choice_b": "Inflatable life jackets are illegal for anyone of any age",
+    "choice_c": "Foam-style life jackets are less reliable than inflatables for children",
+    "choice_d": "There is no meaningful difference for children between the two designs",
+    "correct_choice": "A",
+    "explanation": "U.S. Coast Guard rules do not approve inflatable life jackets for use by anyone under 16, and no child-sized inflatable or hybrid device is Coast Guard-approved, so a child must instead wear an inherently buoyant, foam-style life jacket sized to their weight.",
+    "weight": 3,
+    "source_note": "Universal U.S. Coast Guard inflatable PFD age restriction, applied under Nevada's life-jacket-for-passengers-under-13 requirement (NRS 488.575)"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "What does it mean for a life jacket to be \"readily accessible\" as required aboard a Nevada vessel, rather than merely present somewhere on board?",
+    "choice_a": "It can be locked in a cabin with the only key left onshore",
+    "choice_b": "It can remain sealed in its original manufacturer's packaging",
+    "choice_c": "It must be quickly reachable in an emergency, not buried under gear, sealed away, or otherwise difficult to retrieve when needed",
+    "choice_d": "Accessibility has no bearing on whether the requirement is satisfied",
+    "correct_choice": "C",
+    "explanation": "A life jacket that is technically aboard but locked away, sealed in packaging, or buried under gear does not satisfy the carriage requirement; it must be readily accessible so it can be retrieved and put on quickly in an emergency.",
+    "weight": 2,
+    "source_note": "Universal PFD accessibility standard (federal PFD carriage requirement, 33 CFR 175), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Is a stand-up paddleboard (SUP) user on Lake Tahoe required to have a life jacket aboard once they paddle beyond a designated swimming, surfing, or bathing area?",
+    "choice_a": "No, paddleboards are never treated as vessels under any circumstance",
+    "choice_b": "Yes; a SUP is legally treated as a vessel once outside a swimming/surfing area, and federal rules require it to carry a wearable, Coast Guard-approved life jacket just like a canoe or kayak",
+    "choice_c": "Only if the paddleboard is longer than 20 feet",
+    "choice_d": "Only at night, never during the day",
+    "correct_choice": "B",
+    "explanation": "Once a stand-up paddleboard is used beyond a designated swimming, surfing, or bathing area, it is treated as a vessel under federal law and must carry a wearable, Coast Guard-approved life jacket, the same requirement that applies to a canoe or kayak.",
+    "weight": 3,
+    "source_note": "Universal federal PFD carriage requirement applied to paddleboards (33 CFR 175), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "How should a life jacket be properly sized for a child, beyond simply checking a chest-size range on the label?",
+    "choice_a": "By the child's shoe size only",
+    "choice_b": "Sizing should be based primarily on the child's body weight range on the label, and fit should be checked by lifting the child by the shoulders of the jacket to confirm it does not ride up over the chin or ears",
+    "choice_c": "Any adult-sized life jacket is acceptable for a child as long as it is buckled",
+    "choice_d": "Age alone, with no weight or fit check needed",
+    "correct_choice": "B",
+    "explanation": "A child's life jacket should be selected using the weight range on its label, and its fit should be checked by lifting the child gently by the jacket's shoulders to make sure it stays in place and does not ride up over the chin or ears, which would let the child slip out in the water.",
+    "weight": 2,
+    "source_note": "Universal child PFD sizing and fit-check guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "How does a Type II \"near-shore\" life jacket generally compare to a Type III \"flotation aid\"?",
+    "choice_a": "A Type II offers some ability to turn an unconscious wearer face-up in calm water, while a Type III is generally more comfortable for continuous, active wear but has little or no turning ability",
+    "choice_b": "A Type II and Type III are legally identical devices with different colors",
+    "choice_c": "A Type III always provides more buoyancy than a Type II",
+    "choice_d": "A Type II is designed exclusively for offshore, rough-water use",
+    "correct_choice": "A",
+    "explanation": "A Type II near-shore life jacket offers some capability to turn an unconscious wearer face-up in calm, inland water, while a Type III flotation aid is generally more comfortable for continuous wear during activities like fishing or paddling but offers little or no turning ability.",
+    "weight": 2,
+    "source_note": "Universal PFD type classifications (USCG), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Under NRS 488.575, the life-jacket-must-be-worn rule for a passenger under 13 applies while the vessel is \"underway.\" What does \"underway\" generally exclude?",
+    "choice_a": "A vessel that is moored, securely anchored, or aground, since it is not actually underway at that moment",
+    "choice_b": "Every moment the child is anywhere on or near the water",
+    "choice_c": "Only nighttime operation",
+    "choice_d": "Only operation on Lake Tahoe specifically",
+    "correct_choice": "A",
+    "explanation": "\"Underway\" generally means a vessel is not moored, securely anchored, or aground; NRS 488.575's requirement that a passenger under 13 wear a life jacket applies specifically while the vessel is underway, subject to the statute's other stated exceptions.",
+    "weight": 3,
+    "source_note": "NRS 488.575 (wearing of life jacket by passenger younger than 13) combined with the general boating-law concept of a vessel \"underway\""
+  }
+]

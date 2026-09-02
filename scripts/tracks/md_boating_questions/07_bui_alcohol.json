@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Boating Under the Influence",
+    "question": "What does Maryland Natural Resources Article Sec. 8-738 prohibit?",
+    "choice_a": "Only operating a vessel while under the influence of prescription medication",
+    "choice_b": "Operating a vessel while under the influence of alcohol, while impaired by alcohol, or while impaired by drugs or a combination of drugs and alcohol to a degree that the person cannot operate a vessel safely",
+    "choice_c": "Operating a vessel with any amount of food or beverage aboard",
+    "choice_d": "Operating a vessel with passengers who have consumed alcohol, regardless of the operator's own condition",
+    "correct_choice": "B",
+    "explanation": "Maryland Natural Resources Article Sec. 8-738 makes it illegal to operate or attempt to operate a vessel while under the influence of alcohol, impaired by alcohol, or impaired by drugs, a combination of drugs, or drugs and alcohol together to the point the person cannot safely operate the vessel.",
+    "weight": 3,
+    "source_note": "Maryland Natural Resources Article Sec. 8-738 (boating under the influence)"
+  },
+  {
+    "topic": "Boating Under the Influence",
+    "question": "What can happen if a Maryland Natural Resources Police officer has reasonable grounds to believe a boat operator involved in an accident causing death or life-threatening injury is impaired?",
+    "choice_a": "Testing may only be requested if the operator volunteers",
+    "choice_b": "Only a Breathalyzer test may ever be requested, never a blood test",
+    "choice_c": "The operator can be required to submit to a breath test, a blood test, or both, under Maryland's implied consent-style testing provisions",
+    "choice_d": "The officer has no authority to require any testing without a court order first",
+    "correct_choice": "C",
+    "explanation": "Under Maryland Natural Resources Article Sec. 8-738.1, if an accident causes death or a life-threatening injury and an officer has reasonable grounds to believe the operator was impaired, the operator can be directed to submit to a breath test, a blood test, or both.",
+    "weight": 3,
+    "source_note": "Maryland Natural Resources Article Sec. 8-738.1 (post-accident impairment testing)"
+  },
+  {
+    "topic": "Boating Under the Influence",
+    "question": "Why is alcohol considered especially dangerous when combined with boating, compared to driving a car?",
+    "choice_a": "Alcohol has no additional effect on a person operating a boat compared to driving a car",
+    "choice_b": "Boats move so slowly that alcohol's effects are irrelevant to safety",
+    "choice_c": "Alcohol only affects a boat operator's ability to read charts, not their physical coordination",
+    "choice_d": "Sun, wind, vibration, motion, and noise on the water ('boater's fatigue') can intensify alcohol's effects on balance, judgment, and reaction time faster than on land",
+    "correct_choice": "D",
+    "explanation": "Environmental stressors on the water, often called 'boater's fatigue,' such as sun, wind, engine noise, vibration, and the motion of the boat, can intensify the impairing effects of alcohol more quickly than similar amounts would affect a driver on land.",
+    "weight": 3,
+    "source_note": "Universal 'boater's fatigue' and alcohol-impairment guidance used across boating safety curricula (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Boating Under the Influence",
+    "question": "Which of the following abilities is commonly impaired by alcohol use while boating, increasing the risk of an accident?",
+    "choice_a": "Balance, coordination, judgment, and reaction time, all of which are also affected by sun, wind, and motion on the water",
+    "choice_b": "Alcohol has no measurable effect on any of these abilities while on a boat",
+    "choice_c": "Only eyesight is affected; balance and judgment are unaffected",
+    "choice_d": "Alcohol improves reaction time in emergency situations on the water",
+    "correct_choice": "A",
+    "explanation": "Alcohol impairs balance, coordination, judgment, and reaction time, all of which are critical to safely operating a vessel, avoiding a fall overboard, or reacting to another vessel or hazard.",
+    "weight": 2,
+    "source_note": "Universal alcohol-impairment fundamentals used across boating safety curricula (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Boating Under the Influence",
+    "question": "What is 'Operation Dry Water,' a campaign that the Maryland Natural Resources Police participates in?",
+    "choice_a": "A program exclusively for commercial fishing vessels",
+    "choice_b": "A national boating-under-the-influence awareness and enforcement campaign, often timed around holiday weekends, aimed at reducing alcohol- and drug-related boating accidents",
+    "choice_c": "A program that bans all alcohol sales at marinas year-round",
+    "choice_d": "A drought-relief water conservation initiative unrelated to boating safety",
+    "correct_choice": "B",
+    "explanation": "Operation Dry Water is a national campaign, supported by Maryland's Natural Resources Police, focused on heightened BUI enforcement and public awareness, often timed to holiday weekends such as the Fourth of July when boating traffic and alcohol use both increase.",
+    "weight": 2,
+    "source_note": "Maryland Natural Resources Police 'Operation Dry Water' participation as described on dnr.maryland.gov"
+  },
+  {
+    "topic": "Boating Under the Influence",
+    "question": "Can a boat operator be charged with boating under the influence in Maryland even if the vessel is not a motorboat, such as a sailboat?",
+    "choice_a": "No; sailboats are entirely exempt from all Maryland boating laws",
+    "choice_b": "Only powerboats over 40 feet can be charged with BUI in Maryland",
+    "choice_c": "Yes; Maryland's BUI law applies to operating or attempting to operate a vessel, which is not limited to motorized vessels alone",
+    "choice_d": "No; BUI charges in Maryland apply only to personal watercraft",
+    "correct_choice": "C",
+    "explanation": "Maryland's BUI statute refers broadly to operating or attempting to operate a 'vessel,' which is not restricted to powerboats, meaning an impaired sailboat operator can also be charged.",
+    "weight": 2,
+    "source_note": "Maryland Natural Resources Article Sec. 8-738 (boating under the influence, vessel-neutral scope)"
+  },
+  {
+    "topic": "Boating Under the Influence",
+    "question": "What escalating penalty structure applies under Maryland Natural Resources Article Sec. 8-738.3 to a person who continues operating a vessel while prohibited from doing so under Sec. 8-738(e)(3)(i)?",
+    "choice_a": "A flat $50 fine regardless of how many times the person offends",
+    "choice_b": "No penalty exists for a repeat violation of this specific provision",
+    "choice_c": "Only a warning is issued no matter how many times the violation recurs",
+    "choice_d": "Increasing fines and jail time for repeated violations, with a first offense subject to a fine up to $1,000 or up to 1 year imprisonment, rising for second and third-or-subsequent offenses",
+    "correct_choice": "D",
+    "explanation": "Maryland Natural Resources Article Sec. 8-738.3 escalates penalties for repeated violations of the operating prohibition: up to $1,000/1 year for a first offense, up to $2,000/2 years for a second, and up to $3,000/3 years for a third or subsequent offense.",
+    "weight": 2,
+    "source_note": "Maryland Natural Resources Article Sec. 8-738.3 (escalating penalties for prohibited operation)"
+  },
+  {
+    "topic": "Boating Under the Influence",
+    "question": "Why do many boating safety courses recommend a 'designated skipper' who abstains from alcohol, similar to a designated driver?",
+    "choice_a": "So at least one sober, capable person aboard can operate the vessel safely and respond to an emergency if others aboard have been drinking",
+    "choice_b": "Because Maryland law requires exactly one passenger to remain seated at all times",
+    "choice_c": "Because a designated skipper has no legal responsibility for the vessel's operation",
+    "choice_d": "Because alcohol has no effect on the ability to operate a vessel",
+    "correct_choice": "A",
+    "explanation": "Just as with driving, having a sober designated skipper ensures someone capable is in control of the vessel and able to respond to an emergency, even if other passengers choose to drink responsibly while not operating the boat.",
+    "weight": 1,
+    "source_note": "Universal designated-skipper safety guidance used across boating safety curricula (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Boating Under the Influence",
+    "question": "Besides the operator, why can alcohol use by passengers also increase risk aboard a recreational vessel?",
+    "choice_a": "Alcohol use only matters if the passenger is also licensed to operate the vessel",
+    "choice_b": "Impaired passengers are more likely to fall overboard, lose balance while moving around the boat, or make poor decisions in an emergency",
+    "choice_c": "Passenger alcohol use has zero effect on overall vessel safety",
+    "choice_d": "Passengers are legally barred from ever consuming alcohol on a Maryland vessel",
+    "correct_choice": "B",
+    "explanation": "Even when someone else is operating the vessel, an impaired passenger faces a higher risk of losing balance and falling overboard, and is less able to assist effectively in an emergency, which is why boating safety courses caution all occupants, not just operators, about alcohol use.",
+    "weight": 2,
+    "source_note": "Universal passenger alcohol-risk guidance used across boating safety curricula (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Boating Under the Influence",
+    "question": "How does fatigue interact with alcohol consumption to increase risk for a boat operator?",
+    "choice_a": "Fatigue actually counteracts and reduces the effects of alcohol",
+    "choice_b": "Fatigue only affects passengers, never the vessel operator",
+    "choice_c": "Fatigue from sun, heat, wind, and vibration compounds alcohol's impairing effects, making a boat operator more dangerously impaired than the same amount of alcohol would cause on land",
+    "choice_d": "Fatigue and alcohol act completely independently and never combine to increase risk",
+    "correct_choice": "C",
+    "explanation": "The combined effect of environmental fatigue factors on the water and alcohol consumption, sometimes summarized as 'boater's fatigue,' means an operator can become dangerously impaired at blood alcohol levels that might have a smaller effect on land.",
+    "weight": 2,
+    "source_note": "Universal 'boater's fatigue' and alcohol-impairment guidance used across boating safety curricula (NASBLA-aligned course content)"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the recommended \"huddle\" position for two or more people wearing PFDs together in cold water while awaiting rescue?",
+    "choice_a": "Swim in opposite directions to cover more area and increase the chance of being spotted",
+    "choice_b": "Group closely together with arms around one another, pressing chests together to reduce each person's exposed body surface and share body heat, similar in purpose to the individual HELP position",
+    "choice_c": "Spread out as far as possible from one another",
+    "choice_d": "Remove PFDs to swim more efficiently as a group",
+    "correct_choice": "B",
+    "explanation": "The huddle position brings multiple PFD-wearing people close together, chests in and arms around one another, to reduce the total body surface exposed to cold water and share body heat, serving the same heat-conservation purpose for a group that the individual HELP position serves for one person.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (group huddle position for cold-water immersion)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "If a small boat capsizes or swamps but remains floating, does it still provide useful safety benefit even filled with water?",
+    "choice_a": "No, a swamped boat provides no benefit and should be abandoned immediately",
+    "choice_b": "Yes -- many small boats retain enough built-in flotation to stay at or near the surface even when swamped, so holding onto or climbing partly onto the hull can still help occupants stay afloat and visible",
+    "choice_c": "A swamped boat always sinks completely within seconds",
+    "choice_d": "A swamped boat is dangerous to be near and should be avoided entirely",
+    "correct_choice": "B",
+    "explanation": "Many recreational boats are built with flotation foam or sealed compartments that keep the hull at or near the surface even when swamped, so occupants who hold onto or climb partly onto the capsized or flooded hull can often stay afloat and remain more visible to rescuers than if they swam away from it.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (built-in flotation of swamped or capsized small boats)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the recommended first response if a Minnesota boat runs aground on a rocky shoal or sandbar?",
+    "choice_a": "Immediately gun the throttle at full power to force the boat free",
+    "choice_b": "Check occupants for injuries and check the hull for damage or leaking before attempting anything else, since powering off aggressively can worsen hull damage or push the boat harder onto the obstruction",
+    "choice_c": "Abandon the boat immediately regardless of water depth or distance to shore",
+    "choice_d": "Continue forward at normal cruising speed since grounding rarely causes damage",
+    "correct_choice": "B",
+    "explanation": "After running aground, checking for injuries and hull damage first is safer than immediately powering off at full throttle, which can grind the hull further against the obstruction, worsen any damage, or drive the propeller into rocks before the situation has even been assessed.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (running-aground emergency response)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What should an operator do first upon discovering the boat is taking on water faster than expected?",
+    "choice_a": "Increase speed toward open water regardless of the leak's location",
+    "choice_b": "Locate the source of the water intake if possible, use a bilge pump or manual bailer to remove water, redistribute weight to keep the affected area higher if practical, and head toward the nearest safe shore",
+    "choice_c": "Wait without taking any action since bilge pumps are illegal in Minnesota",
+    "choice_d": "Open all hatches to let the water drain out on its own",
+    "correct_choice": "B",
+    "explanation": "Responding to unexpected flooding means locating the source of the intake when possible, actively removing water with a bilge pump or manual bailer, shifting weight to help keep the affected area of the hull higher, and heading for the nearest safe shore rather than continuing the planned route.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (onboard flooding response)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What communication tools are commonly recommended for a Minnesota boater to have available in case of an on-water emergency?",
+    "choice_a": "A VHF marine radio (monitoring channel 16 for distress calls where available) and a cell phone as backup, recognizing that cell coverage can be limited on remote lakes, plus a whistle or air horn for close-range signaling",
+    "choice_b": "No communication device is useful on an inland lake",
+    "choice_c": "Only smoke signals are considered a reliable distress method",
+    "choice_d": "A land-line telephone carried aboard",
+    "correct_choice": "A",
+    "explanation": "A VHF marine radio using distress channel 16 where monitored, a cell phone kept as a backup despite limited signal in remote areas, and a whistle or air horn for close-range attention-getting together give a boater layered options for summoning help during an on-water emergency.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (on-water emergency communication tools)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What should a boater do if a passenger near a running engine or generator shows symptoms such as headache, dizziness, or nausea that could indicate carbon monoxide exposure?",
+    "choice_a": "Assume it is simple seasickness and continue the trip unchanged",
+    "choice_b": "Get the person into fresh air immediately, shut down the source of exhaust if possible, and seek medical attention, since these symptoms can indicate dangerous carbon monoxide exposure",
+    "choice_c": "Have the person lie down inside the enclosed cabin near the engine compartment",
+    "choice_d": "Increase engine speed to clear the air faster",
+    "correct_choice": "B",
+    "explanation": "Headache, dizziness, and nausea near a running engine or generator can signal carbon monoxide exposure, so the appropriate response is to move the person into fresh air right away, address the exhaust source if possible, and seek medical attention rather than assuming a milder cause.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (recognizing and responding to carbon monoxide exposure symptoms), consistent with Minnesota's Sophia's Law safety awareness"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is a safe general approach when towing a disabled boat back to a dock or shore on a Minnesota lake?",
+    "choice_a": "Attach a short, rigid connection and tow at normal cruising speed",
+    "choice_b": "Use a proper tow line of adequate length and strength, proceed at a slow, controlled speed, and if possible have someone aboard the disabled boat help steer it to keep it tracking behind the towing vessel",
+    "choice_c": "Push the disabled boat from behind using the towing boat's bow",
+    "choice_d": "Towing another vessel is prohibited on all Minnesota lakes",
+    "correct_choice": "B",
+    "explanation": "Towing a disabled boat safely calls for an adequately rated tow line, a slow and controlled speed to avoid swamping either vessel, and ideally a person aboard the disabled boat to help steer it so it tracks properly behind the towing vessel instead of swinging unpredictably.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (towing a disabled vessel to safety)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "Who should a Minnesota boater generally try to contact first to summon help during a serious on-water emergency?",
+    "choice_a": "The boat's original manufacturer",
+    "choice_b": "The county sheriff's water patrol or 911 emergency dispatch, and, if radio or phone contact is not possible, hailing or signaling nearby boats for assistance",
+    "choice_c": "There is no appropriate agency to contact for a boating emergency",
+    "choice_d": "Only the federal Environmental Protection Agency",
+    "correct_choice": "B",
+    "explanation": "A boater facing a serious emergency should generally try to reach the county sheriff's water patrol or 911 dispatch by radio or phone, and if that is not possible, hail or visually signal nearby boats, since other boaters are often the closest available help on a busy Minnesota lake.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (summoning emergency help on the water), consistent with Minnesota county sheriff water patrol response roles"
+  }
+]

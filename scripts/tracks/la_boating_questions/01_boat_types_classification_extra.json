@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Boat Types and Classification",
+    "question": "Under the traditional federal vessel-length classification referenced in Louisiana equipment requirements, which length range defines a \"Class 1\" motorboat?",
+    "choice_a": "40 to 65 feet",
+    "choice_b": "16 feet up to (but not including) 26 feet",
+    "choice_c": "Under 16 feet",
+    "choice_d": "26 feet up to (but not including) 40 feet",
+    "correct_choice": "B",
+    "explanation": "The federal length classification runs Class A (under 16 ft), Class 1 (16 to under 26 ft), Class 2 (26 to under 40 ft), and Class 3 (40 to 65 ft); Class 1 covers the common range of mid-sized recreational runabouts and bass boats.",
+    "weight": 2,
+    "source_note": "LDWF, Required Boating Equipment (wlf.louisiana.gov/page/required-boating-equipment); federal vessel length classification"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "Unlike sailboats 12 feet or longer, which LDWF's rule specifically pulls into mandatory registration, ordinary non-motorized canoes and kayaks are:",
+    "choice_a": "Automatically registered the moment they are purchased from a dealer",
+    "choice_b": "Required to display the same two decals as a motorized vessel",
+    "choice_c": "Generally not required to be registered with LDWF, since the registration requirement targets motorized vessels, sailboats 12 feet and longer, and non-motorized houseboats specifically",
+    "choice_d": "Banned from operating on any Louisiana public waterway",
+    "correct_choice": "C",
+    "explanation": "LDWF's registration requirement is scoped to motorized vessels, sailboats 12 feet or longer, and non-motorized houseboats -- it does not sweep in ordinary paddle craft like canoes and kayaks that fall outside those categories.",
+    "weight": 3,
+    "source_note": "LDWF, Title or Register Your Boat (wlf.louisiana.gov/page/title-or-register-your-boat)"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "A vessel that has been federally documented with the U.S. Coast Guard (generally available to vessels of five net tons or more) is typically treated under state boat-registration frameworks as:",
+    "choice_a": "Requiring double the usual state registration fee",
+    "choice_b": "Ineligible to operate on any inland state waterway",
+    "choice_c": "Subject to an entirely separate hull-inspection requirement not applied to any other vessel",
+    "choice_d": "Exempt from state numbering, since the federal documentation itself serves as the vessel's official identification",
+    "correct_choice": "D",
+    "explanation": "Federal vessel documentation is a nationally recognized form of registration that generally exempts a vessel from a state's separate numbering (registration-number) system, distinguishing it from LDWF's standard state registration and titling process for undocumented vessels.",
+    "weight": 2,
+    "source_note": "Federal vessel documentation framework (46 U.S.C. Chapter 121), general state numbering exemption principle applied alongside LDWF's registration system"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "A johnboat, a flat-bottomed, shallow-draft vessel frequently used for fishing in Louisiana's marshes and small bayous, is generally best suited to:",
+    "choice_a": "Calm, shallow water where a flat bottom's stability and minimal draft matter more than rough-water seaworthiness",
+    "choice_b": "High-speed offshore Gulf racing",
+    "choice_c": "Towing water skiers at high speed",
+    "choice_d": "Deep-water diving support operations exclusively",
+    "correct_choice": "A",
+    "explanation": "A johnboat's flat bottom and shallow draft make it stable and easy to pole or motor through skinny marsh and bayou water, but that same flat-bottom design gives it poor performance and reduced seaworthiness in rough or open water.",
+    "weight": 2,
+    "source_note": "General knowledge of Louisiana's shallow-water bayou/marsh boating environment, applied to standard vessel-type fundamentals"
+  }
+]

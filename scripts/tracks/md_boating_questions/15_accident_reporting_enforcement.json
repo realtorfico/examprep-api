@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "Under the federal baseline that Maryland and most states apply, within what time frame must a boating accident involving a death be reported to authorities?",
+    "choice_a": "As soon as possible, generally within 48 hours",
+    "choice_b": "Within 30 days",
+    "choice_c": "There is no reporting requirement for a death resulting from a boating accident",
+    "choice_d": "Only if the vessel itself was a total loss",
+    "correct_choice": "A",
+    "explanation": "The widely applied federal boating-accident-reporting baseline, which Maryland follows, requires that an accident resulting in death be reported as soon as possible, generally within 48 hours, to the appropriate authority such as the Maryland Natural Resources Police.",
+    "weight": 3,
+    "source_note": "Universal federal boating-accident-reporting deadline baseline (48 hours for death/serious injury, 10 days for property damage/lesser injury), presented as the general standard since a Maryland-specific deviation from this federal threshold was not independently verified in this build"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "Under the same federal accident-reporting baseline, within what time frame must a boating accident involving only property damage above a set dollar threshold, or an injury requiring medical treatment beyond first aid, generally be reported?",
+    "choice_a": "Such accidents never need to be reported",
+    "choice_b": "Within 10 days",
+    "choice_c": "Within 1 hour",
+    "choice_d": "Within 1 year",
+    "correct_choice": "B",
+    "explanation": "For accidents involving only property damage above the reporting threshold, or injuries requiring more than first aid but not resulting in death, the general federal reporting deadline that Maryland follows is 10 days.",
+    "weight": 2,
+    "source_note": "Universal federal boating-accident-reporting deadline baseline (48 hours for death/serious injury, 10 days for property damage/lesser injury), presented as the general standard since a Maryland-specific deviation from this federal threshold was not independently verified in this build"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "What is a boat operator's legal duty immediately after being involved in a collision or accident on Maryland waters?",
+    "choice_a": "There is no duty to stop or assist after a boating accident",
+    "choice_b": "Only commercial vessel operators have any duty to stop after an accident",
+    "choice_c": "Stop and render reasonable assistance to anyone injured, provide identifying information, and avoid leaving the scene if it would endanger others",
+    "choice_d": "Leave the scene immediately to avoid liability",
+    "correct_choice": "C",
+    "explanation": "Like drivers involved in a car accident, boat operators involved in a collision have a duty to stop, render reasonable assistance to anyone injured, and exchange identifying information, consistent with universal boating-accident duty-to-assist principles that Maryland law reflects.",
+    "weight": 3,
+    "source_note": "Universal duty-to-assist-after-a-boating-accident principle (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "Who typically investigates a serious recreational boating accident on Maryland waters, such as one involving a fatality?",
+    "choice_a": "Only the vessel's insurance company, with no law enforcement involvement",
+    "choice_b": "No agency has authority to investigate a boating accident in Maryland",
+    "choice_c": "Only the county public works department",
+    "choice_d": "The Maryland Natural Resources Police, as the DNR's enforcement arm with statewide police authority",
+    "correct_choice": "D",
+    "explanation": "The Natural Resources Police, with statewide police authority as the enforcement arm of the Maryland DNR, is the agency responsible for investigating serious boating accidents on the state's waters.",
+    "weight": 2,
+    "source_note": "Maryland Natural Resources Police statewide boating-accident investigation authority as described on dnr.maryland.gov"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "Why do boating safety courses emphasize prompt and accurate accident reporting, beyond simply satisfying a legal requirement?",
+    "choice_a": "Accurate reporting helps identify accident causes and hazards, supporting future safety improvements, education, and enforcement efforts",
+    "choice_b": "Accident reports serve no purpose beyond bureaucratic paperwork",
+    "choice_c": "Reporting is discouraged because it increases insurance premiums for everyone",
+    "choice_d": "Reports are destroyed immediately after filing and never reviewed",
+    "correct_choice": "A",
+    "explanation": "Beyond the legal obligation, accurate boating-accident reports help agencies like the Maryland DNR identify common hazards and causes, informing future safety campaigns, education priorities, and targeted enforcement.",
+    "weight": 1,
+    "source_note": "Universal boating-accident-reporting rationale (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "What littering restriction applies to Maryland's waters under Natural Resources Article Sec. 8-726?",
+    "choice_a": "There is no littering restriction under Maryland boating law",
+    "choice_b": "A person may not throw, dump, deposit, or cause to be thrown, dumped, or deposited any trash, junk, or other refuse on any waters of the state",
+    "choice_c": "Littering is permitted as long as the item sinks immediately",
+    "choice_d": "Littering restrictions apply only to commercial vessels, not recreational boaters",
+    "correct_choice": "B",
+    "explanation": "Maryland Natural Resources Article Sec. 8-726 makes it unlawful to throw, dump, or deposit trash, junk, or other refuse into any of the state's waters, protecting water quality and marine life in the Bay and its tributaries.",
+    "weight": 2,
+    "source_note": "Maryland Natural Resources Article Sec. 8-726 (littering prohibition on state waters)"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "What must a boat operator do if they witness another vessel in distress or involved in an accident on Maryland waters?",
+    "choice_a": "Only licensed captains are permitted to offer assistance to a distressed vessel",
+    "choice_b": "Assisting another vessel is illegal without prior written permission from the Natural Resources Police",
+    "choice_c": "Render reasonable assistance if it can be done safely, consistent with the maritime and boating-safety duty to assist those in danger on the water",
+    "choice_d": "There is no expectation to assist another vessel in distress",
+    "correct_choice": "C",
+    "explanation": "Consistent with longstanding maritime tradition and boating safety principles, an operator who can safely do so is expected to render reasonable assistance to a vessel in distress or involved in an accident.",
+    "weight": 2,
+    "source_note": "Universal maritime duty-to-assist principle (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "What penalty framework applies under Maryland Natural Resources Article Sec. 8-725.2 to a person who unlawfully abandons a vessel in state waters?",
+    "choice_a": "There is no penalty for abandoning a vessel in Maryland waters",
+    "choice_b": "A mandatory 10-year prison sentence with no fine option",
+    "choice_c": "A civil-only fine of exactly $10 with no criminal liability",
+    "choice_d": "A misdemeanor with a fine up to $1,000 or up to 6 months imprisonment for a first offense, rising to $2,000/1 year for a second or subsequent offense, plus liability for removal costs",
+    "correct_choice": "D",
+    "explanation": "Maryland's vessel abandonment statute sets misdemeanor penalties starting at up to $1,000/6 months for a first offense and rising for repeat offenses, and it also makes the responsible person liable for the cost of removing the abandoned vessel.",
+    "weight": 2,
+    "source_note": "Maryland Natural Resources Article Sec. 8-725.2 (vessel abandonment penalties)"
+  }
+]

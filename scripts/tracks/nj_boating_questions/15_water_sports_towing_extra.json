@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under New Jersey's water-skiing regulations, can a wide-angle rearview mirror be used in place of a second person acting as observer when towing a skier?",
+    "choice_a": "Yes, a wide-angle mirror is always an acceptable substitute for an observer under New Jersey rules",
+    "choice_b": "No -- New Jersey requires the tow vessel to carry a competent observer in addition to the operator, and a mirror does not satisfy this requirement",
+    "choice_c": "Yes, but only if the vessel is longer than 26 feet",
+    "choice_d": "No observer or mirror is required in New Jersey as long as the skier wears a PFD",
+    "correct_choice": "B",
+    "explanation": "New Jersey's towing regulation (N.J.A.C. 13:82-3.1) requires the tow vessel to carry the operator plus a separate competent observer whose job is to watch the person being towed; unlike some states, a wide-angle rearview mirror does not satisfy this requirement in New Jersey.",
+    "weight": 3,
+    "source_note": "N.J.A.C. 13:82-3.1 water-skiing/towing observer requirement, cross-referenced via aceboater.com and boat-ed.com New Jersey regulation summaries"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under New Jersey regulations, what must a person being towed on water skis, a tube, or a similar device wear?",
+    "choice_a": "Any flotation item, including an inflatable pool toy",
+    "choice_b": "No PFD is required for towed water-sport participants in New Jersey",
+    "choice_c": "A properly fitted, USCG-approved Type I, II, III, or Type V PFD",
+    "choice_d": "Only a Type IV throwable seat cushion",
+    "correct_choice": "C",
+    "explanation": "New Jersey requires every person being towed behind a vessel on water skis, aquaplanes, tubes, or similar devices to wear a properly fitted, USCG-approved Type I, II, III, or Type V PFD -- carrying one aboard is not enough, it must be worn.",
+    "weight": 3,
+    "source_note": "N.J.A.C. 13:82-3.1 towed-person PFD requirement, cross-referenced via boat-ed.com and aceboater.com New Jersey PFD requirement pages"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "While towing a skier, tuber, or wakeboarder in New Jersey, how far must the tow vessel generally stay from any wharf, dock, pier, marina, bridge structure, or person in the water?",
+    "choice_a": "At least 20 feet",
+    "choice_b": "There is no minimum distance required as long as an observer is aboard",
+    "choice_c": "At least 500 feet",
+    "choice_d": "At least 200 feet",
+    "correct_choice": "D",
+    "explanation": "New Jersey's towing regulation requires a vessel engaged in water skiing or towing to stay at least 200 feet from any wharf, dock, pier, marina, bridge structure or abutment, and persons in the water.",
+    "weight": 2,
+    "source_note": "N.J.A.C. 13:82-3.1 towing distance requirements, cross-referenced via aceboater.com New Jersey towed-water-sports summary"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Besides the 200-foot rule for docks, piers, and persons in the water, how far must a New Jersey tow vessel generally stay from other vessels, the shoreline, aids to navigation, and moorings while towing a skier?",
+    "choice_a": "At least 100 feet",
+    "choice_b": "At least 10 feet",
+    "choice_c": "There is no separate distance rule for other vessels, only for docks and piers",
+    "choice_d": "At least 1,000 feet",
+    "correct_choice": "A",
+    "explanation": "In addition to the 200-foot clearance from docks, piers, and persons in the water, New Jersey's towing regulation requires the tow vessel to stay at least 100 feet from other vessels, the shore, approved aids to navigation, and moorings while a skier is being towed.",
+    "weight": 2,
+    "source_note": "N.J.A.C. 13:82-3.1 towing distance requirements, cross-referenced via aceboater.com New Jersey towed-water-sports summary"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is the minimum length required for a tow rope used to pull a water skier or similar rider in New Jersey?",
+    "choice_a": "The tow rope must be at least 150 feet long",
+    "choice_b": "The tow rope must be at least 35 feet long",
+    "choice_c": "There is no minimum tow rope length in New Jersey",
+    "choice_d": "The tow rope must be shorter than 5 feet",
+    "correct_choice": "B",
+    "explanation": "New Jersey's water-skiing regulation sets a minimum tow rope length of at least 35 feet, keeping the towed skier a safe distance behind the vessel's engine, propeller, and wake.",
+    "weight": 2,
+    "source_note": "N.J.A.C. 13:82-3.1 minimum towline length, cross-referenced via aceboater.com and boat-ed.com New Jersey requirements-to-tow pages"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What are New Jersey's specifications for the orange ski flag a vessel must display while towing or retrieving a skier?",
+    "choice_a": "Any color flag of any size is acceptable as long as it is raised",
+    "choice_b": "A round red flag no larger than 6 inches across",
+    "choice_c": "An orange, triangular flag at least 12 inches in each dimension, displayed at least 4 feet above the highest part of the vessel",
+    "choice_d": "New Jersey has no flag specification, only a verbal hail is required",
+    "correct_choice": "C",
+    "explanation": "New Jersey requires vessels towing or retrieving a skier to display an orange, triangular ski flag measuring at least 12 inches in each dimension, mounted so it shows at least 4 feet above the highest point of the vessel, so it can be seen by other boaters.",
+    "weight": 2,
+    "source_note": "N.J.A.C. 13:82-3.1 ski flag specification, cross-referenced via aceboater.com and boat-ed.com New Jersey towed-water-sports pages"
+  }
+]

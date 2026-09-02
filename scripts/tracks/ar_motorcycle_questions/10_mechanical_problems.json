@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Mechanical Problems",
+    "question": "How does the manual say a front-tire flat typically feels to the rider?",
+    "choice_a": "The rear of the motorcycle jerks side to side",
+    "choice_b": "The steering feels \"heavy\"",
+    "choice_c": "There is no noticeable change in handling",
+    "choice_d": "The throttle sticks open",
+    "correct_choice": "B",
+    "explanation": "The manual states that if the front tire goes flat, the steering will feel heavy, which is particularly hazardous because it affects steering and balance.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Tire Failure, p.31-32"
+  },
+  {
+    "topic": "Mechanical Problems",
+    "question": "How does a rear-tire flat typically feel, according to the manual?",
+    "choice_a": "It causes no detectable change at all",
+    "choice_b": "The steering becomes unusually heavy",
+    "choice_c": "The back of the motorcycle may jerk or sway from side to side",
+    "choice_d": "It immediately locks the front wheel",
+    "correct_choice": "C",
+    "explanation": "The manual notes that if the rear tire goes flat, the back of the motorcycle may jerk or sway from side to side.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Tire Failure, p.32"
+  },
+  {
+    "topic": "Mechanical Problems",
+    "question": "If either tire goes flat while riding, what braking guidance does the manual give?",
+    "choice_a": "Only use the front brake regardless of which tire is flat",
+    "choice_b": "Apply both brakes firmly and immediately",
+    "choice_c": "Never brake; coast to a complete stop",
+    "choice_d": "Gradually apply the brake of the tire that isn't flat, if you're sure which one it is",
+    "correct_choice": "D",
+    "explanation": "The manual instructs that if braking is required after a flat, gradually apply the brake of the tire that is not flat, if the rider is sure which one it is.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Tire Failure, p.31-32"
+  },
+  {
+    "topic": "Mechanical Problems",
+    "question": "What is a common cause of a motorcycle \"wobble,\" according to the manual?",
+    "choice_a": "Improper loading, unsuitable accessories, or incorrect tire pressure",
+    "choice_b": "Riding too slowly in first gear",
+    "choice_c": "Using the horn too frequently",
+    "choice_d": "Overinflated brake lines",
+    "correct_choice": "A",
+    "explanation": "The manual states that most wobbles can be traced to improper loading, unsuitable accessories, or incorrect tire pressure.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Wobble, p.32"
+  },
+  {
+    "topic": "Mechanical Problems",
+    "question": "What does the manual say will happen if a rider tries to accelerate out of a wobble?",
+    "choice_a": "It will immediately correct the wobble",
+    "choice_b": "It will only make the motorcycle more unstable",
+    "choice_c": "It has no effect either way",
+    "choice_d": "It is the officially recommended technique",
+    "correct_choice": "B",
+    "explanation": "The manual warns that trying to accelerate out of a wobble will only make the motorcycle more unstable.",
+    "weight": 3,
+    "source_note": "Motorcycle Operator Manual, Wobble, p.32-33"
+  },
+  {
+    "topic": "Mechanical Problems",
+    "question": "What is the correct response to a wobble, according to the manual?",
+    "choice_a": "Let go of the handlebars to let the motorcycle self-correct",
+    "choice_b": "Apply the front brake hard and immediately",
+    "choice_c": "Grip the handlebars firmly without fighting the wobble, and close the throttle gradually without braking",
+    "choice_d": "Downshift rapidly through multiple gears at once",
+    "correct_choice": "C",
+    "explanation": "The manual instructs gripping the handlebars firmly without fighting the wobble and closing the throttle gradually, since braking could make the wobble worse.",
+    "weight": 3,
+    "source_note": "Motorcycle Operator Manual, Wobble, p.32-33"
+  },
+  {
+    "topic": "Mechanical Problems",
+    "question": "If the throttle becomes stuck, what does the manual instruct a rider to do if twisting it back and forth doesn't free it?",
+    "choice_a": "Turn off the headlight to reduce electrical load",
+    "choice_b": "Continue riding normally until it clears itself",
+    "choice_c": "Apply the front brake as hard as possible",
+    "choice_d": "Immediately operate the engine cut-off switch and squeeze the clutch lever at the same time",
+    "correct_choice": "D",
+    "explanation": "The manual instructs that if the throttle stays stuck, the rider should immediately operate the engine cut-off switch and squeeze the clutch lever at the same time to remove power from the rear wheel.",
+    "weight": 3,
+    "source_note": "Motorcycle Operator Manual, Stuck Throttle, p.32-33"
+  },
+  {
+    "topic": "Mechanical Problems",
+    "question": "What can happen if a motorcycle's drive chain or belt slips or breaks while riding?",
+    "choice_a": "It could lock the rear wheel and cause the motorcycle to skid",
+    "choice_b": "It has no effect on the rear wheel",
+    "choice_c": "It automatically shifts the transmission into neutral",
+    "choice_d": "It only affects fuel economy",
+    "correct_choice": "A",
+    "explanation": "The manual warns that a chain or belt that slips or breaks while riding could lock the rear wheel and cause the motorcycle to skid.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Drive Train Problems, p.33"
+  },
+  {
+    "topic": "Mechanical Problems",
+    "question": "What is usually the cause when an engine \"locks\" or \"freezes\" (engine seizure)?",
+    "choice_a": "The fuel tank is overfilled",
+    "choice_b": "The engine is low on oil",
+    "choice_c": "The tires are underinflated",
+    "choice_d": "The headlight bulb has failed",
+    "correct_choice": "B",
+    "explanation": "The manual states that when an engine locks or freezes, it is usually low on oil, causing moving parts to grind and the engine to overheat.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Engine Seizure, p.33"
+  },
+  {
+    "topic": "Mechanical Problems",
+    "question": "What should a rider do immediately upon suspecting engine seizure, according to the manual?",
+    "choice_a": "Shut off the fuel valve only",
+    "choice_b": "Continue accelerating to reach a service station",
+    "choice_c": "Squeeze the clutch lever to disengage the engine from the rear wheel, then pull off the road and stop",
+    "choice_d": "Apply the rear brake hard without using the clutch",
+    "correct_choice": "C",
+    "explanation": "The manual instructs squeezing the clutch lever to disengage the engine from the rear wheel and pulling off the road to stop and check the oil.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Engine Seizure, p.33"
+  }
+]

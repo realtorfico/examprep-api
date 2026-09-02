@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a preferred channel marker (a junction buoy) painted with both red and green horizontal bands indicate?",
+    "choice_a": "The point where a channel splits, with the topmost color band indicating the preferred (primary) channel to follow",
+    "choice_b": "A permanent boat exclusion zone",
+    "choice_c": "A designated anchorage area only",
+    "choice_d": "A speed-restriction zone",
+    "correct_choice": "A",
+    "explanation": "A preferred channel (junction) marker, painted with red and green horizontal bands, marks a point where a channel splits or a smaller channel joins the main one; the color of the topmost band indicates which side to treat the marker as if it were, showing boaters the preferred, or primary, channel to follow.",
+    "weight": 4,
+    "source_note": "General U.S. Aids to Navigation System fundamentals, universal NASBLA-aligned boating safety curriculum, applied to Connecticut's channels"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a safe water marker, painted with red and white vertical stripes, indicate?",
+    "choice_a": "Unobstructed, safe water on all sides, often marking a channel entrance, landfall, or mid-channel point; it may be passed on either side",
+    "choice_b": "A mandatory exclusion zone that no vessel may enter",
+    "choice_c": "A speed restriction area only",
+    "choice_d": "The location of a private mooring field",
+    "correct_choice": "A",
+    "explanation": "A safe water marker, identified by its red-and-white vertical stripes, indicates unobstructed water on all sides -- commonly used to mark a channel entrance, landfall, or the middle of a wide channel -- and unlike lateral markers, it may safely be passed on either side.",
+    "weight": 3,
+    "source_note": "General U.S. Aids to Navigation System fundamentals, universal NASBLA-aligned boating safety curriculum, applied to Connecticut's channels"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a solid yellow \"special marker\" indicate under the Aids to Navigation system used in Connecticut?",
+    "choice_a": "A special area or feature, such as an anchorage, traffic separation zone, or a scientific/military exercise area, rather than a navigational hazard",
+    "choice_b": "A navigational danger that must never be approached under any circumstance",
+    "choice_c": "A federal boat-exclusion area identical to the diamond-and-bar marker",
+    "choice_d": "A marker used exclusively to mark fire hydrants along a shoreline",
+    "correct_choice": "A",
+    "explanation": "A solid yellow special marker denotes a special area or feature not directly related to navigational hazards -- such as an anchorage area, a traffic separation zone, or a military or scientific exercise area -- distinguishing it from the white regulatory markers used for hazards and restrictions.",
+    "weight": 3,
+    "source_note": "General U.S. Aids to Navigation System fundamentals, universal NASBLA-aligned boating safety curriculum, applied to Connecticut's channels"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is the difference between a daybeacon and a buoy as aids to navigation?",
+    "choice_a": "A daybeacon is a fixed structure permanently mounted to the bottom or shore displaying a dayboard, while a buoy is a floating aid anchored in place, which can shift somewhat with current, tide, or ice",
+    "choice_b": "A daybeacon and a buoy are simply two different names for the exact same fixed structure",
+    "choice_c": "A daybeacon always has a light, while a buoy never does",
+    "choice_d": "Buoys are found only on rivers, while daybeacons are found only at sea",
+    "correct_choice": "A",
+    "explanation": "A daybeacon is a fixed aid, permanently affixed to the bottom or a structure on shore and displaying a dayboard for daytime identification, whereas a buoy is a floating aid that is anchored to the bottom but can shift position somewhat due to current, tide, wind, or ice -- an important distinction when relying on a chart's plotted position for either type.",
+    "weight": 3,
+    "source_note": "General U.S. Aids to Navigation System fundamentals, universal NASBLA-aligned boating safety curriculum, applied to Connecticut's channels"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "In the lateral aids to navigation system, what shape and color distinguish a \"nun\" buoy from a \"can\" buoy?",
+    "choice_a": "A nun buoy is a red, cone-shaped (conical-topped) buoy marking the starboard side returning from sea, while a can buoy is a green, flat-topped cylindrical buoy marking the port side",
+    "choice_b": "A nun and a can buoy are identical in shape and color, differing only in their assigned number",
+    "choice_c": "A nun buoy is always green, and a can buoy is always red",
+    "choice_d": "Nun and can buoys are used only for mooring, never for marking a channel",
+    "correct_choice": "A",
+    "explanation": "A nun buoy is red and cone-shaped on top, marking the starboard side of a channel when returning from seaward (paired with even numbers), while a can buoy is green and flat-topped/cylindrical, marking the port side (paired with odd numbers) -- the shape difference lets boaters identify the side even without color in low light.",
+    "weight": 3,
+    "source_note": "General U.S. Aids to Navigation System fundamentals, universal NASBLA-aligned boating safety curriculum, applied to Connecticut's channels"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is the purpose of a pair of range markers (also called leading lights or leading marks) sometimes seen along a Connecticut channel?",
+    "choice_a": "When the two markers are visually lined up one above or behind the other, they show a boater the exact centerline of a channel to follow",
+    "choice_b": "They are used only to mark the outer boundary of a swim area",
+    "choice_c": "Range markers indicate the location of a fuel dock exclusively",
+    "choice_d": "They have no navigational purpose and are purely decorative",
+    "correct_choice": "A",
+    "explanation": "A range consists of two fixed markers positioned so that, when a boater lines them up one directly above or behind the other, the vessel is on the safe centerline of a channel -- a simple, highly precise way to hold a course through a narrow or dredged channel without relying solely on buoys.",
+    "weight": 3,
+    "source_note": "General U.S. Aids to Navigation System fundamentals, universal NASBLA-aligned boating safety curriculum, applied to Connecticut's channels"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does an orange square or orange circle marker with black lettering, displayed on a white background, typically communicate to boaters?",
+    "choice_a": "Informational or directional messages, such as distances or the location of a marina, food, or other facilities -- distinct from the diamond and circle shapes used to mark danger or restricted areas",
+    "choice_b": "A mandatory speed limit, using the same meaning as a circle-shaped regulatory marker",
+    "choice_c": "A federal boat-exclusion zone identical to a diamond-and-bar marker",
+    "choice_d": "The presence of a shipwreck directly beneath the marker",
+    "correct_choice": "A",
+    "explanation": "Within the regulatory marker system, an orange square or circle with black lettering on white is used for informational or directional purposes -- such as showing distances or pointing the way to a marina or services -- distinct from the orange diamond (danger) and orange circle (restricted operation) shapes used elsewhere in the same system.",
+    "weight": 2,
+    "source_note": "General U.S. Aids to Navigation System fundamentals, universal NASBLA-aligned boating safety curriculum, applied to Connecticut's channels"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "During daylight hours, what shape must a vessel display when at anchor outside a designated anchorage, to visually signal its status to nearby boaters?",
+    "choice_a": "A single black ball, hoisted in the forepart of the vessel where it can best be seen",
+    "choice_b": "No daytime shape is required if the anchor light is already installed",
+    "choice_c": "A red triangle flown from the stern",
+    "choice_d": "A white square flag on the bow",
+    "correct_choice": "A",
+    "explanation": "By day, a vessel at anchor (outside a designated anchorage) should display a single black ball where it can best be seen, the daytime counterpart to the all-around white anchor light required at night -- both signal to approaching vessels that the boat is anchored rather than underway.",
+    "weight": 3,
+    "source_note": "General Navigation Rules (day shapes, Inland Rule 30), universal NASBLA-aligned boating safety curriculum, applied to Connecticut waters"
+  }
+]

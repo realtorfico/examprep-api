@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Crash Avoidance",
+    "question": "The manual says studies show most crash-involved riders make which braking error?",
+    "choice_a": "They overbrake the front tire and underbrake the rear",
+    "choice_b": "They underbrake the front tire and overbrake the rear",
+    "choice_c": "They apply both brakes exactly equally, which is unsafe",
+    "choice_d": "They never use the rear brake at all",
+    "correct_choice": "B",
+    "explanation": "Studies show that most crash-involved riders underbrake the front tire and overbrake the rear, or did not separate braking from swerving or choose swerving when it was appropriate.",
+    "weight": 3,
+    "source_note": "PennDOT Motorcycle Operator Manual (Pub 147, 11-24), p.23, 'Crash Avoidance'"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "To stop quickly, the manual says you should squeeze the front brake lever:",
+    "choice_a": "As hard and suddenly as possible",
+    "choice_b": "Only after the rear brake is already locked",
+    "choice_c": "Barely at all, relying mainly on the rear brake",
+    "choice_d": "Firmly and progressively, without grabbing it",
+    "correct_choice": "D",
+    "explanation": "To stop quickly, apply both brakes at the same time. Don't be shy about using the front brake, but don't 'grab' it -- squeeze the brake lever firmly and progressively.",
+    "weight": 3,
+    "source_note": "PennDOT Motorcycle Operator Manual (Pub 147, 11-24), p.23, 'Quick Stops'"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "If the front wheel locks during a quick stop, the manual instructs you to:",
+    "choice_a": "Release the front brake immediately, then reapply it firmly",
+    "choice_b": "Keep the front brake locked until you stop completely",
+    "choice_c": "Release both brakes and coast to a stop",
+    "choice_d": "Immediately apply full rear brake only",
+    "correct_choice": "A",
+    "explanation": "If the front wheel locks, release the front brake immediately then reapply it firmly. At the same time, press down on the rear brake.",
+    "weight": 3,
+    "source_note": "PennDOT Motorcycle Operator Manual (Pub 147, 11-24), p.23, 'Quick Stops'"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "If you accidentally lock the rear brake on a good traction surface, the manual says you should:",
+    "choice_a": "Release it immediately to avoid a skid",
+    "choice_b": "Pump the rear brake rapidly",
+    "choice_c": "Keep it locked until you have completely stopped",
+    "choice_d": "Shift to neutral immediately",
+    "correct_choice": "C",
+    "explanation": "If you accidentally lock the rear brake on a good traction surface, keep it locked until you have completely stopped. Even with a locked rear wheel, you can control the motorcycle on a straightaway if it is upright and going straight.",
+    "weight": 3,
+    "source_note": "PennDOT Motorcycle Operator Manual (Pub 147, 11-24), p.23-24, 'Quick Stops'"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "If you must stop quickly while turning or riding a curve, the manual's best technique is to:",
+    "choice_a": "Brake hard while fully leaned, then straighten up",
+    "choice_b": "Straighten the motorcycle upright first, then brake",
+    "choice_c": "Use the rear brake only while leaned",
+    "choice_d": "Continue the turn and brake at the same lean angle throughout",
+    "correct_choice": "B",
+    "explanation": "If you must stop quickly while turning or riding a curve, the best technique is to straighten the motorcycle upright first and then brake; if that isn't possible, apply light brakes and reduce the throttle while leaned.",
+    "weight": 3,
+    "source_note": "PennDOT Motorcycle Operator Manual (Pub 147, 11-24), p.24, 'Quick Stops'"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "A swerve, as defined by the manual, is:",
+    "choice_a": "Only a gradual lane change over several seconds",
+    "choice_b": "A maneuver that always requires braking at the same time",
+    "choice_c": "Only used when riding above the speed limit",
+    "choice_d": "Any sudden change in direction, such as two quick turns or a rapid shift to the side",
+    "correct_choice": "D",
+    "explanation": "A swerve is any sudden change in direction. It can be two quick turns, or a rapid shift to the side.",
+    "weight": 2,
+    "source_note": "PennDOT Motorcycle Operator Manual (Pub 147, 11-24), p.24, 'Swerving or Turning Quickly'"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "The manual's most important rule about combining braking and swerving is:",
+    "choice_a": "Separate them -- brake before or after, never while swerving",
+    "choice_b": "Always brake and swerve at the exact same instant",
+    "choice_c": "Only swerve; never brake in an emergency",
+    "choice_d": "Brake with the rear brake while swerving with the front",
+    "correct_choice": "A",
+    "explanation": "If braking is required, separate it from swerving. Brake before or after -- never while swerving.",
+    "weight": 3,
+    "source_note": "PennDOT Motorcycle Operator Manual (Pub 147, 11-24), p.24, 'Swerving or Turning Quickly'"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "While swerving, the manual says you should keep your body upright and:",
+    "choice_a": "Lean your body in the same direction as the motorcycle, exaggerating the lean",
+    "choice_b": "Stand up on the footpegs",
+    "choice_c": "Allow the motorcycle to lean in the direction of the turn while your knees stay against the tank",
+    "choice_d": "Close your eyes briefly to focus on balance",
+    "correct_choice": "C",
+    "explanation": "Keep your body upright and allow the motorcycle to lean in the direction of the turn while keeping your knees against the tank and your feet solidly on the pegs.",
+    "weight": 2,
+    "source_note": "PennDOT Motorcycle Operator Manual (Pub 147, 11-24), p.24-25, 'Swerving or Turning Quickly'"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "The manual identifies which of the following as a primary cause of single-vehicle motorcycle crashes?",
+    "choice_a": "Motorcycles being struck from behind while stopped",
+    "choice_b": "Motorcyclists running wide in a curve or turn and colliding with the roadway or a fixed object",
+    "choice_c": "Mechanical failure of the front brake",
+    "choice_d": "Riding with a passenger",
+    "correct_choice": "B",
+    "explanation": "A primary cause of single-vehicle crashes is motorcyclists running wide in a curve or turn and colliding with the roadway or a fixed object.",
+    "weight": 3,
+    "source_note": "PennDOT Motorcycle Operator Manual (Pub 147, 11-24), p.25, 'Cornering'"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "Before entering a curve with no traffic present, the manual suggests starting at the outside of the curve because it:",
+    "choice_a": "Is required by law on all curves",
+    "choice_b": "Keeps you closer to oncoming traffic for visibility",
+    "choice_c": "Reduces the need to look through the turn",
+    "choice_d": "Increases your line of sight and the effective radius of the turn",
+    "correct_choice": "D",
+    "explanation": "If no traffic is present, start at the outside of a curve to increase your line of sight and the effective radius of the turn; as you turn, move toward the inside, and as you pass the center, move to the outside to exit.",
+    "weight": 2,
+    "source_note": "PennDOT Motorcycle Operator Manual (Pub 147, 11-24), p.25, 'Cornering'"
+  }
+]

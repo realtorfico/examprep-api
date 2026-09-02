@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "As of 2026, what is the course fee for Illinois's DNR-accepted online boating safety course at boat-ed.com/illinois?",
+    "choice_a": "$19.95",
+    "choice_b": "$54.95",
+    "choice_c": "$99.95",
+    "choice_d": "The course is free",
+    "correct_choice": "B",
+    "explanation": "Illinois's DNR-accepted online boating safety course through boat-ed.com carries a course fee of $54.95.",
+    "weight": 2,
+    "source_note": "boat-ed.com/illinois/faq/ (DNR-accepted NASBLA-approved provider); confirmed live 2026"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "According to the boat-ed.com Illinois FAQ, how long is a pay-up-front registration for the online boating safety course valid before it expires?",
+    "choice_a": "30 days from registration",
+    "choice_b": "1 year from registration",
+    "choice_c": "90 days from the time of registration and payment",
+    "choice_d": "The registration never expires",
+    "correct_choice": "C",
+    "explanation": "A student may complete the self-paced online course all at once or a little at a time, but a pay-up-front registration remains available for 90 days from the time of registration and payment.",
+    "weight": 2,
+    "source_note": "boat-ed.com/illinois/faq/ (DNR-accepted NASBLA-approved provider); confirmed live 2026"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "Must a person be an Illinois resident to enroll in the state's DNR-accepted online boating safety course?",
+    "choice_a": "Yes, only Illinois residents may register",
+    "choice_b": "Only non-residents may take it; residents must use a classroom course",
+    "choice_c": "Only active-duty military residents may register",
+    "choice_d": "No -- non-residents may take the Illinois course",
+    "correct_choice": "D",
+    "explanation": "Illinois's DNR-accepted online boating safety course does not require Illinois residency; a person does not have to be a resident of Illinois to take the course.",
+    "weight": 2,
+    "source_note": "boat-ed.com/illinois/faq/ (DNR-accepted NASBLA-approved provider); confirmed live 2026"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "What proof of completion can a student immediately print after passing and paying for Illinois's DNR-accepted online boating safety course?",
+    "choice_a": "A Temporary Boating Safety Certificate",
+    "choice_b": "A permanent laminated card",
+    "choice_c": "Nothing -- no proof is available until the mailed card arrives",
+    "choice_d": "A commercial vessel operator's license",
+    "correct_choice": "A",
+    "explanation": "Once a student passes and pays for the online course, they can immediately print a Temporary Boating Safety Certificate to serve as proof of completion while the permanent certificate is being processed.",
+    "weight": 2,
+    "source_note": "boat-ed.com/illinois/faq/ (DNR-accepted NASBLA-approved provider); confirmed live 2026"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "About how long after completing all certification requirements does the permanent Illinois Boating Safety Certificate typically arrive by mail?",
+    "choice_a": "Same day",
+    "choice_b": "3 to 5 weeks",
+    "choice_c": "6 months",
+    "choice_d": "1 year",
+    "correct_choice": "B",
+    "explanation": "The permanent Boating Safety Certificate, which is proof of having completed all education requirements, typically arrives within 3 to 5 weeks after all certification requirements are completed.",
+    "weight": 2,
+    "source_note": "boat-ed.com/illinois/faq/ (DNR-accepted NASBLA-approved provider); confirmed live 2026"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "Under boating reciprocity rules, which additional credential -- beyond NASBLA-compliant cards from other U.S. states, territories, and provinces -- will Illinois recognize from a visiting boater?",
+    "choice_a": "Any foreign driver's license",
+    "choice_b": "An out-of-state fishing license",
+    "choice_c": "A Canadian Pleasure Craft Operator Card that meets Transport Canada's requirements",
+    "choice_d": "Illinois recognizes no credentials besides its own certificate",
+    "correct_choice": "C",
+    "explanation": "Boating reciprocity means all states, territories, and provinces recognize boating education cards meeting NASBLA requirements, and also recognize Canadian Pleasure Craft Operator Cards that meet Transport Canada's requirements.",
+    "weight": 3,
+    "source_note": "boat-ed.com/illinois (DNR-accepted NASBLA-approved provider); NASBLA reciprocity policy; confirmed live 2026"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "If a boater's Illinois Boating Safety Certificate is lost, destroyed, or damaged, what resource does the DNR-accepted course provider direct them to for a replacement?",
+    "choice_a": "The Illinois Secretary of State's office",
+    "choice_b": "A local police station",
+    "choice_c": "There is no way to obtain a replacement certificate",
+    "choice_d": "ilostmycard.com",
+    "correct_choice": "D",
+    "explanation": "To replace a lost, destroyed, or damaged Boating Safety Certificate, boat-ed.com's Illinois FAQ directs students to ilostmycard.com.",
+    "weight": 1,
+    "source_note": "boat-ed.com/illinois/faq/ (DNR-accepted NASBLA-approved provider); confirmed live 2026"
+  }
+]

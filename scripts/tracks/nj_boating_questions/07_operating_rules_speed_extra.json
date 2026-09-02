@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Beyond the standing 'slow speed/no wake' situations for marinas, bridges, and narrow waterways, how can the New Jersey State Police add another mandatory no-wake area under N.J.A.C. 13:82-1.7?",
+    "choice_a": "New Jersey has no mechanism to designate additional no-wake areas beyond the standing list",
+    "choice_b": "By posting an authorized 'Slow Speed/No Wake' sign or buoy, which creates a no-wake requirement within 200 feet of it",
+    "choice_c": "Only the U.S. Coast Guard, never the State Police, may designate a no-wake area",
+    "choice_d": "Only an act of the State Legislature can create a new no-wake area",
+    "correct_choice": "B",
+    "explanation": "N.J.A.C. 13:82-1.7 lets the State Police designate additional slow speed/no wake areas by posting an authorized sign or buoy; boaters must observe no-wake speed within 200 feet of it, and the regulation also allows removal of unauthorized buoys that falsely mark such a zone.",
+    "weight": 3,
+    "source_note": "N.J.A.C. 13:82-1.7 (speed regulation)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Besides marinas, bridge openings 400 feet or less wide, and waterways under 200 feet wide, in which situation must a New Jersey boater also slow to minimum headway (no-wake) speed?",
+    "choice_a": "Only when passing a vessel flying a solid red flag",
+    "choice_b": "There are no other situations requiring no-wake speed",
+    "choice_c": "When passing an anchored vessel, a work barge or construction float, or an emergency vessel displaying flashing lights",
+    "choice_d": "Only when another vessel is traveling faster than 10 mph",
+    "correct_choice": "C",
+    "explanation": "New Jersey's no-wake requirements extend beyond marinas, bridges, and narrow waterways to passing anchored vessels, work barges or construction floats, and emergency vessels showing flashing lights, since a wake in these situations can create a hazard.",
+    "weight": 3,
+    "source_note": "boat-ed.com New Jersey course, 'Improper Speed or Distance'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under N.J.S.A. 12:7-47, what is the penalty for a first offense of reckless operation of a vessel in New Jersey?",
+    "choice_a": "A fine of exactly $1,000 with no possibility of jail time",
+    "choice_b": "Automatic permanent loss of boating privileges with no fine",
+    "choice_c": "A written warning only, with no fine or jail time possible",
+    "choice_d": "Imprisonment for up to 60 days, a fine of $50 to $200, or both",
+    "correct_choice": "D",
+    "explanation": "N.J.S.A. 12:7-47 sets the penalty for a first reckless-operation conviction at imprisonment not to exceed 60 days, a fine of not less than $50 nor more than $200, or both.",
+    "weight": 3,
+    "source_note": "N.J.S.A. 12:7-47, reckless operation of vessel; penalties, fines"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "How does the penalty under N.J.S.A. 12:7-47 change for a second or subsequent conviction for reckless operation of a vessel?",
+    "choice_a": "It increases to imprisonment for up to three months, a fine of $100 to $500, or both",
+    "choice_b": "The penalty stays exactly the same as a first offense",
+    "choice_c": "A second offense is automatically downgraded to a warning",
+    "choice_d": "A second offense can only be punished by license suspension, never a fine or jail time",
+    "correct_choice": "A",
+    "explanation": "On a second or subsequent conviction, N.J.S.A. 12:7-47 raises the penalty to imprisonment not to exceed three months, a fine of not less than $100 nor more than $500, or both.",
+    "weight": 3,
+    "source_note": "N.J.S.A. 12:7-47, reckless operation of vessel; penalties, fines"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under New Jersey's careless-operation statute, N.J.S.A. 12:7-76, which specific act is expressly identified as an example of careless operation?",
+    "choice_a": "Operating a vessel with a full fuel tank",
+    "choice_b": "Loading a vessel beyond the maximum capacity stated on its U.S. Coast Guard or manufacturer capacity label",
+    "choice_c": "Operating a vessel that is more than five years old",
+    "choice_d": "Carrying more anchors aboard than required",
+    "correct_choice": "B",
+    "explanation": "N.J.S.A. 12:7-76 defines careless operation as operating without due caution in a manner that endangers a person or property, and it expressly includes loading a vessel beyond the maximum capacity on its USCG or manufacturer capacity label as an example.",
+    "weight": 3,
+    "source_note": "N.J.S.A. 12:7-76, careless operation of vessel"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "After a conviction for careless operation of a vessel in New Jersey, what must a person do before a suspended or revoked privilege to operate a vessel can be restored?",
+    "choice_a": "Nothing further is required once the fine is paid",
+    "choice_b": "Wait exactly one year with no other requirement",
+    "choice_c": "Complete a boat safety course from the list approved by the Superintendent of State Police",
+    "choice_d": "Pass a written re-test administered by the U.S. Coast Guard only",
+    "correct_choice": "C",
+    "explanation": "N.J.S.A. 12:7-76 requires a person convicted of careless operation to complete a boat safety course approved by the Superintendent of State Police before a suspended or revoked privilege to operate a vessel is restored; failing to do so continues the revocation.",
+    "weight": 2,
+    "source_note": "N.J.S.A. 12:7-76, careless operation of vessel"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Who is generally held responsible for damage caused by a vessel's wake, such as to a moored boat, dock, or shoreline?",
+    "choice_a": "No one, since wake damage is considered unavoidable",
+    "choice_b": "Only the owner of the property that was damaged",
+    "choice_c": "Only the manufacturer of the vessel that produced the wake",
+    "choice_d": "The operator or owner of the vessel that produced the wake, regardless of whether the area had a posted no-wake sign",
+    "correct_choice": "D",
+    "explanation": "New Jersey boating guidance holds the operator/owner of a vessel responsible for damage caused by its wake, since an operator is expected to control speed and wake for the conditions whether or not a specific no-wake sign is posted.",
+    "weight": 2,
+    "source_note": "boat-ed.com New Jersey course, 'Careless or Reckless Operation'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under New Jersey boating law, approaching within 50 feet of a diver-down flag while operating a vessel or on water skis, without being part of the diving operation, is treated as what?",
+    "choice_a": "An act of careless or reckless operation",
+    "choice_b": "A minor courtesy violation with no legal consequence",
+    "choice_c": "Perfectly legal as long as the vessel's engine is idling",
+    "choice_d": "Only a concern for personal watercraft, not other vessels",
+    "correct_choice": "A",
+    "explanation": "New Jersey's careless/reckless operation guidance specifically lists approaching within 50 feet of a diver's flag on a vessel or water skis, unless part of the diving operation, as an example of careless or reckless operation because it endangers the diver below.",
+    "weight": 2,
+    "source_note": "boat-ed.com New Jersey course, 'Careless or Reckless Operation'"
+  }
+]

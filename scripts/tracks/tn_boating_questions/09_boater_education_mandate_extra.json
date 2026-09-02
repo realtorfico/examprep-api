@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "TN Boater Education Mandate",
+    "question": "Is a Tennessee resident born on or before January 1, 1989 required to obtain a TWRA Boating Safety Education Certificate before operating a vessel with more than 8.5 horsepower?",
+    "choice_a": "No -- the education mandate applies only to residents born after that cutoff date, regardless of the vessel's horsepower",
+    "choice_b": "Yes, every operator regardless of birth date must obtain the certificate",
+    "choice_c": "Only if the vessel is used on a TVA reservoir",
+    "choice_d": "Only if the operator is under age 30",
+    "correct_choice": "A",
+    "explanation": "Tennessee's boater education requirement is tied to the January 1, 1989 birth-date cutoff; a resident born on or before that date is not required to hold the certificate to operate a qualifying vessel, regardless of horsepower.",
+    "weight": 3,
+    "source_note": "TWRA Boating Education page"
+  },
+  {
+    "topic": "TN Boater Education Mandate",
+    "question": "Once a boater successfully earns a TWRA Boating Safety Education Certificate, does it need to be periodically renewed like a driver's license?",
+    "choice_a": "No -- like most state boating safety certificates aligned with the NASBLA education standard, it is generally a one-time credential that does not need periodic renewal",
+    "choice_b": "Yes, it must be renewed every single year",
+    "choice_c": "Yes, but only for personal watercraft operators",
+    "choice_d": "It expires automatically after 90 days",
+    "correct_choice": "A",
+    "explanation": "Consistent with the NASBLA-aligned boating education standard used across most states, Tennessee's Boating Safety Education Certificate is generally a one-time credential that a boater keeps for life once earned, rather than a license requiring periodic renewal.",
+    "weight": 2,
+    "source_note": "TWRA Boating Education page / NASBLA-aligned boater education card convention"
+  },
+  {
+    "topic": "TN Boater Education Mandate",
+    "question": "What subject areas does TWRA's boater education content generally cover, consistent with the NASBLA-approved curriculum used for its exam and any approved course?",
+    "choice_a": "Boat handling and navigation rules, required safety equipment, weather and emergency preparedness, and legal responsibilities such as BUI and accident reporting",
+    "choice_b": "Only fishing regulations and license requirements",
+    "choice_c": "Only the mechanical repair of outboard motors",
+    "choice_d": "Only Tennessee's hunting regulations",
+    "correct_choice": "A",
+    "explanation": "TWRA's boater education content, like other NASBLA-approved boating safety curricula, covers boat handling and navigation rules, required equipment, weather and emergency preparedness, and legal responsibilities such as BUI laws and accident reporting -- the same broad topic areas tested throughout this track.",
+    "weight": 2,
+    "source_note": "TWRA Boating Education page / NASBLA-approved curriculum standard"
+  },
+  {
+    "topic": "TN Boater Education Mandate",
+    "question": "If a boater does not pass TWRA's boater education exam on the first attempt, what is the general expectation consistent with NASBLA-aligned state boater education programs?",
+    "choice_a": "The boater is generally allowed to retake the exam, though the exact permitted attempts and any additional fee are set by the exam provider",
+    "choice_b": "The boater is permanently barred from ever obtaining a Tennessee boating certificate",
+    "choice_c": "Failing the exam automatically results in a criminal citation",
+    "choice_d": "There is no possibility of retaking any Tennessee boater education exam under any circumstance",
+    "correct_choice": "A",
+    "explanation": "Consistent with how NASBLA-aligned state boater education programs are generally administered, a boater who does not pass on the first attempt is generally allowed to retake the exam, though the specific retake policy and any added fee depend on the exam provider used.",
+    "weight": 2,
+    "source_note": "General NASBLA-aligned boater education program convention; TWRA's own exact retake policy for its delegated exam was not independently published on TWRA's site"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under Arizona law (A.R.S. 5-331), what must nearly all watercraft carry aboard?",
+    "choice_a": "A life jacket only for the operator, not passengers",
+    "choice_b": "Any type of flotation cushion, regardless of Coast Guard approval",
+    "choice_c": "United States Coast Guard-approved personal flotation devices of the type and category required by regulation, for each person aboard",
+    "choice_d": "A life jacket only if the vessel is over 26 feet long",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-331 requires all watercraft, with narrow exceptions such as sailboards, to carry a U.S. Coast Guard-approved personal flotation device of the required type and category for each person aboard.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-331, 'Personal flotation devices; requirements; exceptions'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under Arizona law, which children must wear a wearable PFD at all times while a watercraft is underway?",
+    "choice_a": "Only children under age five",
+    "choice_b": "Only children who cannot swim, regardless of age",
+    "choice_c": "No specific age group -- it is left entirely to parental discretion",
+    "choice_d": "Children who are twelve years of age or under",
+    "correct_choice": "D",
+    "explanation": "A.R.S. 5-331 requires that a child twelve years of age or under who is aboard a watercraft must wear a properly fitting, U.S. Coast Guard-approved wearable personal flotation device whenever the watercraft is underway.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-331, 'Personal flotation devices; requirements; exceptions'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under Arizona law, what PFD rule applies to a person being towed behind a watercraft (for example, water-skiing or tubing)?",
+    "choice_a": "The person being towed must wear a wearable personal flotation device, with a narrow exception for certain professional performers",
+    "choice_b": "No PFD is required for anyone being towed, regardless of age",
+    "choice_c": "A PFD is required only if the person being towed is under age 18",
+    "choice_d": "A PFD is required only on lakes, not rivers",
+    "correct_choice": "A",
+    "explanation": "A.R.S. 5-331 requires anyone being towed behind a watercraft to wear a wearable personal flotation device while being towed, with a limited exception for professional performers engaged in a performance.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-331, 'Personal flotation devices; requirements; exceptions'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a Type I (offshore life jacket) PFD best suited for?",
+    "choice_a": "Only for children under age five",
+    "choice_b": "Rough or remote water where rescue may be delayed, because it is designed to turn most unconscious wearers face-up in the water",
+    "choice_c": "Only calm inland ponds where rescue is immediate",
+    "choice_d": "Use exclusively while the wearer is being towed",
+    "correct_choice": "B",
+    "explanation": "An offshore life jacket (formerly called Type I) provides the most buoyancy and is designed to turn most unconscious wearers face-up, making it best suited for open, rough, or remote water where help may not arrive quickly.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'PFD Types'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a throwable flotation device (such as a ring buoy or buoyant cushion) designed to do?",
+    "choice_a": "Be worn on the body at all times while underway",
+    "choice_b": "Serve only as a boat fender at the dock",
+    "choice_c": "Be thrown to a person in the water to help keep them afloat and assist rescue -- it supplements, but does not replace, a wearable PFD",
+    "choice_d": "Replace the need for wearable PFDs on board entirely",
+    "correct_choice": "C",
+    "explanation": "A throwable device is designed to be thrown to a person in the water to help them stay afloat until they can be rescued. It supplements wearable PFDs and generally does not satisfy a wearable-PFD requirement on its own.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Throwable Devices'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under Arizona's PWC-specific rules, when must every person aboard a personal watercraft wear a PFD?",
+    "choice_a": "Only when operating at night",
+    "choice_b": "Only if the PWC is more than one mile from shore",
+    "choice_c": "PWC riders are exempt from PFD requirements entirely",
+    "choice_d": "At all times while the PWC is underway, regardless of age",
+    "correct_choice": "D",
+    "explanation": "Arizona's PWC-specific requirements call for every person aboard a personal watercraft to wear a properly fitting, Coast Guard-approved PFD at all times while underway, regardless of the rider's age.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'PWC-Specific Requirements'; A.R.S. Title 5 Chapter 3"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Which of these factors most affects how well a PFD will perform for its wearer?",
+    "choice_a": "A snug, properly adjusted fit sized to the wearer's weight and chest size, with all straps and zippers secured",
+    "choice_b": "The color of the PFD",
+    "choice_c": "The brand name printed on the PFD",
+    "choice_d": "Whether the PFD matches the color of the boat",
+    "correct_choice": "A",
+    "explanation": "A PFD only performs as designed when it is the correct size for the wearer and properly fastened and adjusted; an ill-fitting or unsecured PFD can slip off or fail to keep the wearer's head above water.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Selecting and Fitting a PFD'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Besides the type and category, what should a boater always check on a PFD before relying on it?",
+    "choice_a": "That it is the same color as every other PFD on board",
+    "choice_b": "That it is in good, serviceable condition -- free of rips, waterlogging, broken straps, or mildew -- and is the correct size for the intended wearer",
+    "choice_c": "That it was manufactured in the current calendar year only",
+    "choice_d": "That it has never been worn in water before",
+    "correct_choice": "B",
+    "explanation": "A PFD in poor condition -- torn, waterlogged, with broken straps or buckles, or heavily mildewed -- may not provide adequate buoyancy in an emergency, so boaters should inspect condition and correct sizing regularly.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'PFD Care and Maintenance'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Is simply having enough PFDs stored in a locker on board enough to satisfy Arizona's requirement for children twelve and under?",
+    "choice_a": "Yes, as long as the vessel is under 16 feet long",
+    "choice_b": "Yes, as long as an adult is also aboard",
+    "choice_c": "No -- a child twelve or under must actually be wearing a properly fitting PFD whenever the watercraft is underway, not just have one available",
+    "choice_d": "Yes, as long as the PFDs are the correct size",
+    "correct_choice": "C",
+    "explanation": "Arizona's PFD law for children twelve and under requires the PFD to actually be worn while the vessel is underway -- simply carrying enough PFDs on board does not satisfy this requirement for that age group.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-331, 'Personal flotation devices; requirements; exceptions'"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "Once issued by NDOW, does a Nevada boater education card expire and require periodic renewal?",
+    "choice_a": "No; the Boat-Ed-issued Nevada boater education card is valid for life and does not need to be renewed",
+    "choice_b": "Yes, it must be renewed every single year",
+    "choice_c": "It expires after exactly 5 years",
+    "choice_d": "It expires the moment the holder turns 21",
+    "correct_choice": "A",
+    "explanation": "A Nevada boater education card issued after successfully completing an approved course is valid for life and does not need to be renewed, unlike a driver's license or many other credentials.",
+    "weight": 3,
+    "source_note": "Boat-Ed official Nevada course page (boat-ed.com/nevada) on boater education card validity"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "If a boater is subject to NRS 488.730's education requirement, must they carry their boater education card aboard while operating a covered vessel?",
+    "choice_a": "No, the card never needs to be carried or shown to anyone",
+    "choice_b": "Yes; a covered operator must carry the card aboard and have it available for inspection, and not carrying it when required can result in a fine",
+    "choice_c": "The card only needs to be carried while operating on Lake Tahoe, not elsewhere",
+    "choice_d": "Carrying the card is optional but recommended for insurance purposes only",
+    "correct_choice": "B",
+    "explanation": "An operator subject to NRS 488.730's education requirement must carry their boater education card aboard the vessel and have it available for inspection by an enforcement officer; failing to carry it when required can result in a fine.",
+    "weight": 3,
+    "source_note": "NRS 488.730/488.750 framework combined with Boat-Ed's official Nevada course guidance on carrying the boater education card"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "Is a boater born before January 1, 1983 subject to NRS 488.730's boater education requirement when operating on Nevada's interstate waters?",
+    "choice_a": "No; a person born before January 1, 1983 is permanently exempt from NRS 488.730's education requirement, regardless of the vessel's horsepower",
+    "choice_b": "Yes, everyone regardless of birth date must complete the course",
+    "choice_c": "Only if they were born in Nevada",
+    "choice_d": "Only if their vessel has a motor under 15 horsepower",
+    "correct_choice": "A",
+    "explanation": "Because NRS 488.730 specifically applies to a person born on or after January 1, 1983, a boater born before that date is permanently exempt from the education requirement, regardless of their vessel's horsepower.",
+    "weight": 3,
+    "source_note": "NRS 488.730 (birth-date cutoff for the boater education requirement)"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "Does a person renting a boat from a Nevada livery need to independently hold a Nevada boater education card before operating the rental vessel?",
+    "choice_a": "Yes, no rental is ever permitted without a card, with no alternative",
+    "choice_b": "Generally no; a signed rental agreement covering the rental period, combined with the livery's own recordkeeping and equipment-check duties, serves as the qualifying arrangement rather than requiring the renter to independently hold a card",
+    "choice_c": "Rental boats are entirely exempt from every Nevada boating law",
+    "choice_d": "Only Nevada residents may ever rent a boat in the state",
+    "correct_choice": "B",
+    "explanation": "A renter generally does not need to independently hold a Nevada boater education card, since a signed rental agreement for the rental period, together with the livery's own recordkeeping and pre-departure equipment checks under NRS 488.295, serves as the qualifying arrangement in that context.",
+    "weight": 3,
+    "source_note": "General Nevada boat rental/livery practice combined with NRS 488.295 (boat livery recordkeeping and equipment-check duties)"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "Under Nevada Administrative Code (NAC) 488.559, what specific term used throughout NRS 488.730 and NRS 488.750 is formally defined?",
+    "choice_a": "\"Motorboat\"",
+    "choice_b": "\"Boater education card\"",
+    "choice_c": "\"Interstate waters\"",
+    "choice_d": "\"Personal watercraft\"",
+    "correct_choice": "B",
+    "explanation": "NAC 488.559 formally defines \"boater education card,\" the credential referenced throughout NRS 488.730 and NRS 488.750 as proof that a person has completed an approved safe-boating course or passed a proficiency exam.",
+    "weight": 2,
+    "source_note": "NAC 488.559 (\"boater education card\" defined), implementing NRS 488.730/488.750"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "Under Nevada Administrative Code (NAC) 488.576, how may NDOW issue a Nevada boater education card to a person without requiring them to take a full Nevada-specific course?",
+    "choice_a": "NDOW may never issue a card without a completed Nevada course under any circumstance",
+    "choice_b": "By allowing the person to submit certain qualifying documentation, such as proof of a recognized out-of-state or equivalent credential, in place of retaking the Nevada course",
+    "choice_c": "Only by personal appointment with the Governor's office",
+    "choice_d": "By requiring a separate fee with no documentation of any kind",
+    "correct_choice": "B",
+    "explanation": "NAC 488.576 sets out a documentation-based pathway allowing NDOW to issue a Nevada boater education card to a person who submits qualifying proof of an equivalent credential, without requiring them to retake a full Nevada-specific course.",
+    "weight": 2,
+    "source_note": "NAC 488.576 (issuance of boater education card to person who submits certain documentation)"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "What is the practical relationship between NRS 488.730 and the \"Education in Safe Boating\" provisions found in the Nevada Administrative Code (NAC) Chapter 488?",
+    "choice_a": "The NAC provisions are unrelated to NRS 488.730 and cover a completely different subject",
+    "choice_b": "The NAC's Education in Safe Boating provisions implement and fill in operational detail for the statutory education mandate set out in NRS 488.730, such as card definitions and documentation-based issuance",
+    "choice_c": "NAC provisions override and replace NRS 488.730 entirely",
+    "choice_d": "The NAC has no legal effect and is purely advisory",
+    "correct_choice": "B",
+    "explanation": "The Education in Safe Boating provisions of NAC Chapter 488 implement the statutory mandate in NRS 488.730 by supplying operational detail, such as the formal definition of a boater education card and the documentation-based issuance pathway, that the statute itself does not spell out.",
+    "weight": 2,
+    "source_note": "NAC Chapter 488 (Education in Safe Boating), implementing NRS 488.730"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "What geographic distinction does the Chesapeake Bay hold that is relevant to boaters planning a longer trip on its waters?",
+    "choice_a": "It is the largest estuary in the United States, meaning conditions, traffic, and water depth can vary significantly across its length, so trip planning should account for changing conditions over long distances",
+    "choice_b": "It is the smallest bay on the East Coast",
+    "choice_c": "It has no tributaries of any kind",
+    "choice_d": "It is entirely landlocked with no connection to the ocean",
+    "correct_choice": "A",
+    "explanation": "The Chesapeake Bay is the largest estuary in the United States, and its size means conditions, traffic patterns, and water depth can vary considerably from one end to the other, which boaters should factor into trip planning.",
+    "weight": 1,
+    "source_note": "Chesapeake Bay geographic scale as general Maryland Bay-boating knowledge"
+  },
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "What are submerged aquatic vegetation (SAV) beds in the Chesapeake Bay, and why do boaters need to be aware of them?",
+    "choice_a": "Underwater grass beds important to the Bay's ecology that can also indicate very shallow water, posing a grounding or propeller-fouling hazard, with some areas protected from motorized traffic",
+    "choice_b": "A type of navigational buoy",
+    "choice_c": "Deep-water channels marked for high-speed boat traffic",
+    "choice_d": "An artificial structure built to dock commercial ships",
+    "correct_choice": "A",
+    "explanation": "Submerged aquatic vegetation beds are shallow underwater grass beds that support the Bay's ecology; they often mark very shallow water that can ground a boat or foul a propeller, and some are designated as protected areas limiting motorized traffic.",
+    "weight": 2,
+    "source_note": "Chesapeake Bay submerged aquatic vegetation (SAV) awareness (Maryland DNR boating safety/ecological messaging)"
+  },
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "Besides shoals and sandbars, what other type of shallow, hard hazard is common in Chesapeake Bay tributaries and can damage a hull or propeller if struck?",
+    "choice_a": "Submerged oyster bars or reefs, which can be hard and shallow enough to cause serious damage on impact",
+    "choice_b": "Oyster bars pose no hazard because they are always deeply submerged",
+    "choice_c": "Oyster bars are found only in the open ocean, never in the Bay",
+    "choice_d": "Oyster bars are soft and pose no risk to a hull",
+    "correct_choice": "A",
+    "explanation": "Submerged oyster bars and reefs are common in the Bay's shallower tributaries and can be hard enough to seriously damage a hull, lower unit, or propeller if a vessel strikes one, making careful chart-reading important.",
+    "weight": 2,
+    "source_note": "Chesapeake Bay oyster bar/reef navigation hazard guidance (Maryland DNR boating safety messaging)"
+  },
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "During Maryland's fall and winter waterfowl hunting seasons, what additional traffic should Bay-area boaters watch for in marshes and shallow coves?",
+    "choice_a": "Hunters in small boats, skiffs, or blinds along with decoy spreads, requiring extra caution and a wider berth in those areas",
+    "choice_b": "There is no seasonal change in Bay-area boat traffic",
+    "choice_c": "All hunting activity on the Bay occurs only in summer",
+    "choice_d": "Waterfowl hunters never use boats on the Bay",
+    "correct_choice": "A",
+    "explanation": "Maryland's fall and winter waterfowl hunting seasons bring hunters in small boats, skiffs, and shoreline or floating blinds, along with decoy spreads, into Bay marshes and coves, so boaters should watch for and keep a wider berth from this seasonal traffic.",
+    "weight": 1,
+    "source_note": "Chesapeake Bay seasonal waterfowl-hunting traffic awareness (general Maryland Bay-boating knowledge)"
+  },
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "Where does the Chesapeake Bay connect to the open Atlantic Ocean, a consideration for Maryland boaters planning to head offshore?",
+    "choice_a": "The Bay has no connection to the Atlantic Ocean",
+    "choice_b": "At its mouth near Virginia Beach/Cape Henry, where sheltered Bay conditions give way to open-ocean swells and different navigational considerations",
+    "choice_c": "Only through a series of landlocked canals with no ocean access",
+    "choice_d": "At its northernmost point near the Susquehanna River",
+    "correct_choice": "B",
+    "explanation": "The Chesapeake Bay opens to the Atlantic Ocean at its southern mouth near Cape Henry and Virginia Beach, where boaters transition from the Bay's generally more sheltered conditions to open-ocean swells and different navigational demands.",
+    "weight": 1,
+    "source_note": "Chesapeake Bay geography and its connection to the Atlantic Ocean (general Maryland/Mid-Atlantic Bay-boating knowledge)"
+  }
+]

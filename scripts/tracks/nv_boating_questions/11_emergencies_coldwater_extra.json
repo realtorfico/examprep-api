@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "What is the \"huddle\" position used when a group of people, rather than a single person, is awaiting rescue in cold water such as Lake Tahoe?",
+    "choice_a": "Everyone should swim in separate directions to increase the chance one person is found",
+    "choice_b": "Several people face each other with chests close together and arms over one another's shoulders, helping to conserve body heat and stay together as a larger, more visible group",
+    "choice_c": "Each person should remove their life jacket to swim more efficiently",
+    "choice_d": "The group should dive underwater together periodically",
+    "correct_choice": "B",
+    "explanation": "The huddle position brings several people together, chests close and arms over each other's shoulders, helping to conserve body heat between them and creating a larger, more visible target for rescuers, an important technique in Lake Tahoe's cold water.",
+    "weight": 3,
+    "source_note": "Universal cold-water immersion group \"huddle\" technique, NASBLA-aligned boating safety curriculum, applied to Lake Tahoe's cold water"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "Why does a capsized or swamped recreational boat usually still float rather than sink outright, giving occupants a reason to stay with it?",
+    "choice_a": "Federal regulations require certain small recreational boats to have built-in flotation foam that keeps the hull at the surface even when capsized or full of water",
+    "choice_b": "All boats are legally required to sink immediately after capsizing",
+    "choice_c": "Flotation has nothing to do with why a capsized boat stays afloat",
+    "choice_d": "Only sailboats have built-in flotation; motorboats always sink",
+    "correct_choice": "A",
+    "explanation": "Federal regulations require many small recreational boats to have built-in flotation foam so the hull remains at or near the surface even when swamped or capsized, which is a key reason staying with the boat is generally safer than trying to swim for shore.",
+    "weight": 3,
+    "source_note": "Universal federal recreational boat flotation requirement (33 CFR 183), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "Why is getting cold-shock breathing under control in the first minute of sudden cold-water immersion so critical, as described in the \"1-10-1\" principle?",
+    "choice_a": "Cold shock has no physical effect on breathing",
+    "choice_b": "Sudden cold immersion can trigger an involuntary gasp reflex and rapid, uncontrolled breathing, which, if it happens underwater or amid waves, can lead to inhaling water before a person regains control",
+    "choice_c": "The first minute is only relevant for body temperature, not breathing",
+    "choice_d": "Cold shock only affects people who cannot swim",
+    "correct_choice": "B",
+    "explanation": "Sudden cold-water immersion can trigger an involuntary gasp reflex and rapid, hard-to-control breathing; if this happens while a wave washes over the person's face or they are briefly underwater, it can lead to inhaling water before they regain control of their breathing, making the first minute of the 1-10-1 principle critical.",
+    "weight": 3,
+    "source_note": "Universal cold-water immersion cold-shock/gasp-reflex physiology, NASBLA-aligned boating safety curriculum, applied to Lake Tahoe's cold surface temperatures"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "Why is carrying a basic first-aid kit and having some knowledge of first aid or CPR recommended for boaters heading to remote stretches of Lake Mead or Lake Mohave?",
+    "choice_a": "First aid has no relevance to boating trips",
+    "choice_b": "In remote areas with limited cell coverage and potentially long emergency-response times, being able to provide basic first aid or CPR before help arrives can make a meaningful difference in an emergency",
+    "choice_c": "NDOW requires every boater to be a certified paramedic",
+    "choice_d": "First-aid kits are only useful for sunburns",
+    "correct_choice": "B",
+    "explanation": "Because emergency response can take longer to reach remote, limited-cell-coverage stretches of Lake Mead or Lake Mohave, carrying a basic first-aid kit and knowing fundamental first aid or CPR can make a real difference in the time before professional help arrives.",
+    "weight": 2,
+    "source_note": "General remote-water medical-preparedness guidance applied to Lake Mead/Lake Mohave's remote terrain and limited cell coverage"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "Why is a sudden weight shift, such as several people standing up and moving to one side of a small boat, a real capsizing risk?",
+    "choice_a": "Weight distribution has no effect on a boat's stability",
+    "choice_b": "Shifting weight suddenly toward one side can reduce a small boat's stability and cause it to capsize, especially in a boat that is already near its rated capacity",
+    "choice_c": "Small boats are incapable of capsizing under any circumstance",
+    "choice_d": "Only overloaded houseboats are ever affected by weight shifts",
+    "correct_choice": "B",
+    "explanation": "A sudden shift in weight, such as several occupants standing and moving to one side, can reduce a small boat's stability enough to cause it to capsize, a risk that grows when the boat is already near its rated passenger and weight capacity.",
+    "weight": 2,
+    "source_note": "Universal small-boat stability and capsizing-risk guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "If a person falls overboard into cold water without already wearing a life jacket, what should they try to do if a wearable device is not immediately reachable?",
+    "choice_a": "Immediately remove all clothing to swim faster",
+    "choice_b": "Grab onto any floating object, such as a seat cushion or throwable device, to help stay at the surface while awaiting rescue or reaching the boat",
+    "choice_c": "Swim as far as possible from the boat as quickly as possible",
+    "choice_d": "There is nothing useful to do besides tread water indefinitely",
+    "correct_choice": "B",
+    "explanation": "If a wearable life jacket is not immediately available, grabbing onto any floating object, such as a throwable cushion or ring, can help a person stay at the surface and conserve energy while awaiting rescue, underscoring why wearing a life jacket in the first place is strongly recommended.",
+    "weight": 2,
+    "source_note": "Universal cold-water immersion improvised-flotation guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "In a nighttime emergency on Lake Mead or Lake Tahoe, what type of visual distress signal is generally intended for nighttime use rather than daytime use?",
+    "choice_a": "Orange smoke signals, which work best in daylight",
+    "choice_b": "A red flare, which is visible in the dark, as opposed to a daytime signal like orange smoke that is most effective against a light sky",
+    "choice_c": "Any color of smoke works equally well day or night",
+    "choice_d": "Visual distress signals are never used after dark",
+    "correct_choice": "B",
+    "explanation": "A red flare is intended for nighttime distress signaling because its light is visible in the dark, while a daytime signal like orange smoke is most effective against a light sky and much harder to see at night.",
+    "weight": 2,
+    "source_note": "Universal federal visual distress signal day/night usage guidance (33 CFR 175), NASBLA-aligned boating safety curriculum"
+  }
+]

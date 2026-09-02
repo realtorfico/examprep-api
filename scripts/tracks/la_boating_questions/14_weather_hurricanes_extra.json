@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Weather and Hurricanes",
+    "question": "A NOAA Weather Radio, tuned to a dedicated VHF weather channel while underway, provides:",
+    "choice_a": "Continuous, updated marine weather broadcasts, distinct from checking a forecast only once before departure",
+    "choice_b": "Only entertainment programming with no weather content",
+    "choice_c": "A single forecast issued once per week",
+    "choice_d": "Information relevant only to aircraft",
+    "correct_choice": "A",
+    "explanation": "Unlike a one-time pre-departure forecast check, a NOAA Weather Radio tuned in while underway gives continuously updated marine weather information, letting a boater catch a fast-developing hazard mid-trip.",
+    "weight": 3,
+    "source_note": "Standard NOAA Weather Radio marine-monitoring guidance used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Weather and Hurricanes",
+    "question": "A rip current near a Louisiana Gulf coast beach or pass can often be recognized by:",
+    "choice_a": "Perfectly calm, glassy water with no visible movement",
+    "choice_b": "A channel of choppier or discolored water moving noticeably away from shore",
+    "choice_c": "A uniform, unbroken line of small waves along the entire beach",
+    "choice_d": "Rip currents cannot be visually identified under any conditions",
+    "correct_choice": "B",
+    "explanation": "A rip current often appears as a visibly different, choppier or discolored channel of water moving away from shore, a recognizable warning sign for swimmers and small-craft operators near Gulf beaches and passes.",
+    "weight": 3,
+    "source_note": "NOAA rip current safety guidance, applied to Louisiana's Gulf coast"
+  },
+  {
+    "topic": "Weather and Hurricanes",
+    "question": "The Saffir-Simpson Hurricane Wind Scale, used by the National Hurricane Center to describe a hurricane's intensity, ranges from:",
+    "choice_a": "Category 1 (weakest) to Category 5 (strongest)",
+    "choice_b": "Category 1 (strongest) to Category 5 (weakest)",
+    "choice_c": "Level A to Level F",
+    "choice_d": "Zero to ten, with no upper bound",
+    "correct_choice": "A",
+    "explanation": "The Saffir-Simpson scale rates hurricane wind intensity from Category 1, the weakest, up to Category 5, the strongest, helping communicate a storm's potential wind damage to the public.",
+    "weight": 3,
+    "source_note": "National Hurricane Center Saffir-Simpson Hurricane Wind Scale, applied to Louisiana's Gulf coast boating conditions"
+  },
+  {
+    "topic": "Weather and Hurricanes",
+    "question": "The National Hurricane Center distinguishes a \"hurricane watch\" from a \"hurricane warning\" mainly by:",
+    "choice_a": "A watch means hurricane conditions are possible, typically within about 48 hours, while a warning means they are expected, typically within about 36 hours",
+    "choice_b": "The two terms mean exactly the same thing",
+    "choice_c": "A warning is only issued after the storm has already passed",
+    "choice_d": "A watch always covers a wider geographic area with more certainty than a warning",
+    "correct_choice": "A",
+    "explanation": "A hurricane watch signals that hurricane conditions are possible within the watch area, generally within about 48 hours, while a hurricane warning signals that such conditions are expected, generally within about 36 hours -- a boater should treat a warning with greater urgency.",
+    "weight": 4,
+    "source_note": "National Hurricane Center watch/warning terminology, applied to Louisiana's Gulf coast boating conditions"
+  },
+  {
+    "topic": "Weather and Hurricanes",
+    "question": "Waterspouts, tornado-like columns that can form over Louisiana's warm Gulf and coastal waters, should be treated by a boater as:",
+    "choice_a": "Harmless visual phenomena that can be safely approached for a closer look",
+    "choice_b": "A hazard to steer well clear of and avoid the path of",
+    "choice_c": "A guaranteed sign of calm weather ahead",
+    "choice_d": "Something that only threatens aircraft, never vessels",
+    "correct_choice": "B",
+    "explanation": "A waterspout can produce damaging winds similar to a weak tornado, so boaters encountering one over Louisiana's Gulf or coastal waters should steer well clear rather than approach it.",
+    "weight": 4,
+    "source_note": "National Weather Service waterspout safety guidance, applied to Louisiana's Gulf coast"
+  }
+]

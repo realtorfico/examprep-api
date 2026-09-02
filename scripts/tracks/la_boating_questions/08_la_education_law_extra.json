@@ -1,0 +1,38 @@
+[
+  {
+    "topic": "Louisiana Boater Education Law",
+    "question": "BoatUS.org's Louisiana boater education course independently confirms a final exam consisting of how many questions?",
+    "choice_a": "60 questions",
+    "choice_b": "25 questions",
+    "choice_c": "150 questions",
+    "choice_d": "10 questions",
+    "correct_choice": "A",
+    "explanation": "BoatUS.org's Louisiana course page independently confirms a 60-question final exam, a specific figure that Boat-Ed's own Louisiana course page does not itself publish, which is why this exam-length figure is attributed to BoatUS rather than asserted as a universal cross-vendor number.",
+    "weight": 3,
+    "source_note": "BoatUS.org, Louisiana boater education course"
+  },
+  {
+    "topic": "Louisiana Boater Education Law",
+    "question": "BoatUS.org describes its Louisiana boater education course as structured around approximately how many lessons and how much total course time?",
+    "choice_a": "20 lessons and roughly 40 hours",
+    "choice_b": "5 lessons and roughly 3 to 5 hours",
+    "choice_c": "1 lesson and roughly 30 minutes",
+    "choice_d": "2 lessons and roughly 15 hours",
+    "correct_choice": "B",
+    "explanation": "BoatUS.org's Louisiana course page describes a 5-lesson structure taking roughly 3 to 5 hours to complete, giving a concrete sense of the course's scope beyond just its final exam.",
+    "weight": 3,
+    "source_note": "BoatUS.org, Louisiana boater education course"
+  },
+  {
+    "topic": "Louisiana Boater Education Law",
+    "question": "Unlike Boat-Ed's Louisiana course, which states specific 70%/80% passing thresholds, BoatUS.org's Louisiana course page:",
+    "choice_a": "Requires a 100% score with no retakes",
+    "choice_b": "Does not publish its own official passing-percentage figure",
+    "choice_c": "States an identical 70%/80% threshold word-for-word",
+    "choice_d": "Requires no exam of any kind",
+    "correct_choice": "B",
+    "explanation": "While both Boat-Ed and BoatUS confirm the same underlying birth-date mandate and vessel/HP scope, BoatUS.org's own course page does not publish a fixed passing-percentage figure the way Boat-Ed's page does, which is why the specific 70%/80% thresholds are attributed to Boat-Ed rather than treated as identical across every approved vendor.",
+    "weight": 3,
+    "source_note": "Boat-Ed Louisiana (boat-ed.com/louisiana); BoatUS.org, Louisiana boater education course"
+  }
+]

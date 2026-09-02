@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why should a boater check trailer wheel bearings periodically, especially after repeated launches at a boat ramp?",
+    "choice_a": "Wheel bearings never need maintenance on a boat trailer",
+    "choice_b": "Submerging hot wheel bearings in cool water at a ramp can draw water past the seals into the bearing, washing out grease and causing corrosion or premature failure, so bearings should be inspected and greased (or fitted with a bearing protector) regularly",
+    "choice_c": "Wheel bearings are only a concern for trailers used exclusively on saltwater ramps",
+    "choice_d": "Checking bearings only matters after the trailer has traveled over 10,000 miles",
+    "correct_choice": "B",
+    "explanation": "Repeatedly launching a boat causes hot trailer wheel bearings to cool suddenly in the water, which can draw water past the seals into the bearing housing and wash out or contaminate the grease, leading to corrosion and eventual bearing failure -- a common, preventable cause of trailer breakdowns that periodic inspection and greasing (or a bearing protector device) helps avoid.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (trailer wheel bearing maintenance), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why does proper 'tongue weight' -- how gear and the boat are distributed on the trailer relative to the hitch -- matter for safe highway towing?",
+    "choice_a": "Tongue weight has no effect on how a trailer tows",
+    "choice_b": "Too little tongue weight can cause the trailer to sway dangerously at highway speed, while too much can overload the hitch and tow vehicle's rear axle, so gear and the boat's position should be balanced appropriately fore and aft",
+    "choice_c": "Tongue weight only matters when towing uphill",
+    "choice_d": "The trailer's tongue weight is fixed by the manufacturer and cannot be affected by loading",
+    "correct_choice": "B",
+    "explanation": "Tongue weight -- the downward force the trailer exerts on the hitch -- needs to fall within a safe range; too little can let the trailer sway or fishtail at speed, while too much can overload the hitch and the tow vehicle's rear suspension, so boaters should distribute gear and check the boat's position on the trailer to keep it balanced.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (trailer tongue weight and towing stability), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Before towing a boat and trailer, what should a driver confirm about the tow vehicle?",
+    "choice_a": "The tow vehicle's rated towing capacity meets or exceeds the combined weight of the loaded trailer, boat, motor, fuel, and gear",
+    "choice_b": "Only that the tow vehicle has a trailer hitch installed, regardless of its rated capacity",
+    "choice_c": "Towing capacity is not a real consideration as long as the vehicle can physically move",
+    "choice_d": "Any vehicle can safely tow any size boat trailer",
+    "correct_choice": "A",
+    "explanation": "A driver should confirm the tow vehicle's manufacturer-rated towing capacity meets or exceeds the fully loaded combined weight of the trailer, boat, engine, fuel, and gear -- towing beyond a vehicle's rated capacity can compromise braking, steering control, and overall safety.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (tow vehicle rated capacity), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What ramp etiquette helps keep a busy Massachusetts public boat ramp moving efficiently for everyone waiting?",
+    "choice_a": "Taking as much time as needed on the ramp itself regardless of how many boaters are waiting behind",
+    "choice_b": "Waiting your turn in line, not using the ramp lane for fishing, swimming, or extended socializing, and moving promptly once your boat is launched or loaded so the next boater can use the lane",
+    "choice_c": "Parking the tow vehicle directly on the ramp while unloading gear",
+    "choice_d": "There is no expected etiquette; ramps operate on a first-come, unlimited-time basis",
+    "correct_choice": "B",
+    "explanation": "Good ramp etiquette includes waiting your turn, avoiding fishing, swimming, or other activities that occupy the ramp lane itself, and moving promptly once launched or loaded so the ramp stays available for the next boater in a busy queue.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (boat ramp queue etiquette), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "At many Massachusetts Department of Conservation and Recreation (DCR)-managed boat ramps, what is commonly required of a boater in addition to a valid vessel registration?",
+    "choice_a": "Nothing further is ever required at any state-managed ramp",
+    "choice_b": "A parking fee or permit/sticker for the tow vehicle at the ramp's parking area, since many DCR-managed launch sites charge for or require a permit for vehicle-and-trailer parking",
+    "choice_c": "A separate state boating license distinct from vessel registration",
+    "choice_d": "Proof of a completed fishing license, even for boaters who do not intend to fish",
+    "correct_choice": "B",
+    "explanation": "Many boat ramps managed by the Massachusetts Department of Conservation and Recreation charge a parking fee or require a permit/sticker for the tow vehicle and trailer using the parking area, separate from the vessel's own registration requirement.",
+    "weight": 2,
+    "source_note": "Massachusetts Department of Conservation and Recreation boat ramp parking fee/permit practice, relevant to Massachusetts's state-managed public boat launches"
+  }
+]

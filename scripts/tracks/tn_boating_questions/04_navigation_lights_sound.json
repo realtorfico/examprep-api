@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Navigation Lights",
+    "question": "When must a boat operating on Tennessee waters display navigation lights?",
+    "choice_a": "Only when another vessel signals with a horn",
+    "choice_b": "Only on holidays and weekends",
+    "choice_c": "Navigation lights are optional at all times in Tennessee",
+    "choice_d": "Between sunset and sunrise, and during periods of restricted visibility",
+    "correct_choice": "D",
+    "explanation": "All boats operating between sunset and sunrise, and in conditions of restricted visibility such as fog, must display proper navigation lights.",
+    "weight": 3,
+    "source_note": "TWRA Regulations & Safety Concerns"
+  },
+  {
+    "topic": "Navigation Lights",
+    "question": "What do a vessel's red and green sidelights indicate to other boaters at night?",
+    "choice_a": "Red marks the port (left) side and green marks the starboard (right) side of the vessel",
+    "choice_b": "Red means the vessel is anchored and green means it is underway",
+    "choice_c": "Red and green together mean the vessel has no engine",
+    "choice_d": "The colors indicate the vessel's registration state",
+    "correct_choice": "A",
+    "explanation": "A vessel's red sidelight marks its port (left) side and its green sidelight marks its starboard (right) side, helping other boaters judge the vessel's heading at night.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (Navigation Rules)"
+  },
+  {
+    "topic": "Navigation Lights",
+    "question": "What does it mean if you see both a red and a green sidelight on another vessel ahead of you at night?",
+    "choice_a": "The other vessel has lost engine power",
+    "choice_b": "The vessel is heading roughly toward you, showing both sidelights at once",
+    "choice_c": "The vessel is anchored for the night",
+    "choice_d": "The other vessel is a sailboat under sail alone",
+    "correct_choice": "B",
+    "explanation": "Seeing both red and green sidelights means the other vessel's bow is oriented roughly toward you, indicating a meeting or crossing situation that requires prompt action to avoid collision.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (Navigation Rules)"
+  },
+  {
+    "topic": "Navigation Lights",
+    "question": "What is a white stern light used for on a power-driven vessel underway at night?",
+    "choice_a": "It marks the location of the anchor",
+    "choice_b": "It is only used on personal watercraft",
+    "choice_c": "It shows other boaters approaching from behind that the vessel is ahead of them",
+    "choice_d": "It indicates the vessel is out of fuel",
+    "correct_choice": "C",
+    "explanation": "A white stern light, visible from behind, warns an overtaking vessel that another boat is ahead of it, helping prevent a stern collision at night.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (Navigation Rules)"
+  },
+  {
+    "topic": "Navigation Lights",
+    "question": "What additional white light does a power-driven vessel underway display that a sailboat under sail alone does not?",
+    "choice_a": "A green sidelight",
+    "choice_b": "An anchor light",
+    "choice_c": "A stern light",
+    "choice_d": "A masthead (steaming) light",
+    "correct_choice": "D",
+    "explanation": "A power-driven vessel underway must display a white masthead (steaming) light in addition to sidelights and a stern light; a sailboat operating under sail alone does not show this light because it signals mechanical propulsion.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (Navigation Rules)"
+  },
+  {
+    "topic": "Navigation Lights",
+    "question": "What light must a vessel anchored outside a designated special anchorage area display at night in Tennessee?",
+    "choice_a": "An all-round white anchor light",
+    "choice_b": "A flashing red light",
+    "choice_c": "No light is required while anchored",
+    "choice_d": "The same sidelights used while underway",
+    "correct_choice": "A",
+    "explanation": "A vessel at anchor outside a designated special anchorage area must display an all-round white anchor light so other boaters can see and avoid it in the dark.",
+    "weight": 3,
+    "source_note": "TWRA Regulations & Safety Concerns"
+  },
+  {
+    "topic": "Navigation Lights",
+    "question": "Why do navigation light requirements vary by vessel type and construction date in Tennessee, as noted on TWRA's boating safety pages?",
+    "choice_a": "Because only vessels over 65 feet need lights",
+    "choice_b": "Because federal Navigation Rules set different light configurations for vessel size, propulsion type, and activity (such as towing or fishing)",
+    "choice_c": "Because TWRA lets each boat owner design their own lighting",
+    "choice_d": "Because older boats are exempt from all lighting rules",
+    "correct_choice": "B",
+    "explanation": "Navigation light configurations differ based on federal Navigation Rules that account for a vessel's size, propulsion (power vs. sail), and activity, such as towing, fishing, or restricted maneuverability.",
+    "weight": 2,
+    "source_note": "TWRA Regulations & Safety Concerns"
+  },
+  {
+    "topic": "Navigation Lights",
+    "question": "At night, if you see only a white light and cannot make out any sidelights, what does this most likely indicate about the other vessel's position relative to you?",
+    "choice_a": "The vessel has no navigation lights installed",
+    "choice_b": "The vessel is a personal watercraft",
+    "choice_c": "You are likely overtaking the vessel from behind, or it is anchored",
+    "choice_d": "The vessel is definitely crossing directly in front of you",
+    "correct_choice": "C",
+    "explanation": "Seeing only a stern light (or an anchor light with no sidelights) generally means you are approaching from behind an underway vessel, or the vessel is anchored -- either way, you are the burdened vessel and must keep clear.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (Navigation Rules)"
+  },
+  {
+    "topic": "Navigation Lights",
+    "question": "Under Tennessee's equipment rules, in addition to lights, what sound-producing capability must every vessel maintain for use in restricted visibility or close-quarters situations?",
+    "choice_a": "A CB radio broadcasting on a marine emergency channel",
+    "choice_b": "A recorded voice announcement system",
+    "choice_c": "No sound signal is required if navigation lights are working",
+    "choice_d": "Some means of making an efficient sound signal, appropriate to the vessel's size",
+    "correct_choice": "D",
+    "explanation": "Every vessel must maintain some means of making an efficient sound signal, scaled to its size, for use in restricted visibility and to signal intentions to other vessels in close quarters.",
+    "weight": 2,
+    "source_note": "TWRA Regulations & Safety Concerns"
+  }
+]

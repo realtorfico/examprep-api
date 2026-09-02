@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Registration & Titling",
+    "question": "Which New Jersey agency handles boat registration and titling, a role most other states assign to a natural-resources or wildlife agency instead?",
+    "choice_a": "The New Jersey Motor Vehicle Commission (MVC)",
+    "choice_b": "The New Jersey Department of Environmental Protection",
+    "choice_c": "The New Jersey State Police Marine Services Bureau",
+    "choice_d": "New Jersey does not register or title boats at all",
+    "correct_choice": "A",
+    "explanation": "New Jersey centralizes recreational vessel registration and titling at the Motor Vehicle Commission (MVC), the same agency that handles cars and driver licensing, rather than at a wildlife or environmental agency as many other states do.",
+    "weight": 4,
+    "source_note": "New Jersey Motor Vehicle Commission (MVC) vessel registration and titling authority"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What is the general purpose of a boat title, separate from its registration?",
+    "choice_a": "A title is required only for canoes and kayaks",
+    "choice_b": "It legally establishes ownership of the vessel, which is separate from the registration that shows the boat is authorized to operate on the water",
+    "choice_c": "A title and a registration are legally identical documents",
+    "choice_d": "A title only matters for vessels used commercially",
+    "correct_choice": "B",
+    "explanation": "A vessel's title documents legal ownership (similar to a car title), while registration authorizes the vessel to be operated on public waters and typically requires a visible decal or number displayed on the hull.",
+    "weight": 3,
+    "source_note": "Universal title-vs-registration distinction applied to New Jersey MVC vessel documentation"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Where must a New Jersey vessel's registration number and validation decals generally be displayed?",
+    "choice_a": "Only on paperwork carried aboard, never on the hull itself",
+    "choice_b": "On the transom of the vessel only, facing backward",
+    "choice_c": "On both sides of the forward half of the hull, in a plainly visible and legible manner",
+    "choice_d": "Hidden inside a storage compartment",
+    "correct_choice": "C",
+    "explanation": "Registered vessels must display their assigned registration number and current validation decals on both sides of the forward half of the hull so the numbers are clearly visible to enforcement officers and other boaters.",
+    "weight": 3,
+    "source_note": "Universal state vessel-registration display convention, applied to New Jersey MVC registration"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Which type of vessel is generally exempt from New Jersey's motorized-vessel registration requirement?",
+    "choice_a": "A personal watercraft",
+    "choice_b": "Any powerboat, regardless of size or horsepower",
+    "choice_c": "Every vessel in New Jersey must be registered, with no exceptions",
+    "choice_d": "A non-motorized canoe, kayak, or rowboat used only for paddling or rowing",
+    "correct_choice": "D",
+    "explanation": "Non-motorized vessels such as canoes, kayaks, and rowboats propelled only by paddle or oar are generally exempt from New Jersey's motorized vessel registration requirement, unlike powered vessels and PWCs.",
+    "weight": 3,
+    "source_note": "New Jersey Motor Vehicle Commission (MVC) vessel registration exemption for non-motorized craft"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Why should a boater keep proof of current registration aboard the vessel while operating in New Jersey?",
+    "choice_a": "Because a marine law enforcement officer may request it during a routine safety check or after an accident, and operating without it can result in a citation",
+    "choice_b": "Registration paperwork has no practical use once decals are applied to the hull",
+    "choice_c": "Proof of registration is only needed when purchasing fuel",
+    "choice_d": "New Jersey does not require any proof of registration to be carried",
+    "correct_choice": "A",
+    "explanation": "Carrying proof of current registration allows an operator to demonstrate compliance if stopped by NJSP Marine Services Bureau or another marine law enforcement officer, and failing to have it can lead to a citation.",
+    "weight": 3,
+    "source_note": "Universal vessel-registration-carriage practice enforced by NJSP Marine Services Bureau on New Jersey waters"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What generally happens to a vessel's title and registration when ownership of the boat changes hands in New Jersey?",
+    "choice_a": "Only the seller needs to update any paperwork",
+    "choice_b": "The title must be transferred to the new owner, and the vessel must be re-registered in the new owner's name through the MVC",
+    "choice_c": "The registration automatically stays valid indefinitely regardless of who owns the boat",
+    "choice_d": "No paperwork changes are required when a boat is sold",
+    "correct_choice": "B",
+    "explanation": "When a New Jersey vessel is sold, the title must be transferred and the boat re-registered in the new owner's name through the MVC, similar to how a car's title and registration transfer at sale.",
+    "weight": 2,
+    "source_note": "New Jersey Motor Vehicle Commission (MVC) vessel ownership transfer process"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Is a federally documented vessel (documented through the U.S. Coast Guard) also required to be titled through the New Jersey MVC?",
+    "choice_a": "Federally documented vessels can never legally operate on New Jersey waters",
+    "choice_b": "Federal documentation automatically requires an additional state title in every case",
+    "choice_c": "Generally, a federally documented vessel is exempt from state titling, though it may still need to be registered or display a decal depending on its use",
+    "choice_d": "Federal documentation has no bearing on any state requirement",
+    "correct_choice": "C",
+    "explanation": "A vessel documented with the U.S. Coast Guard is generally exempt from state titling requirements since federal documentation itself serves as the ownership record, though the vessel may still be subject to certain state registration/decal rules depending on its use.",
+    "weight": 2,
+    "source_note": "USCG National Vessel Documentation Center interaction with state titling systems, including New Jersey MVC"
+  }
+]

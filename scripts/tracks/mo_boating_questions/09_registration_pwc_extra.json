@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Besides issuing a certificate of number, what additional document does the Missouri Department of Revenue generally issue for many vessels under RSMo 306.030, similar to a motor vehicle title?",
+    "choice_a": "No additional document is ever issued for any Missouri vessel",
+    "choice_b": "A certificate of title, establishing legal ownership of the vessel separately from the certificate of number that authorizes its operation on the water",
+    "choice_c": "A commercial driver's license",
+    "choice_d": "A federal passport",
+    "correct_choice": "B",
+    "explanation": "In addition to the certificate of number that authorizes a vessel to be operated on Missouri waters, the Department of Revenue generally issues a certificate of title establishing legal ownership, paralleling how a motor vehicle has both a title (ownership) and a license plate/registration (authorization to operate).",
+    "weight": 3,
+    "source_note": "RSMo 306.030 (vessel titling through the Department of Revenue)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "What should the seller of a registered Missouri vessel generally do when transferring ownership to a buyer?",
+    "choice_a": "Nothing at all; registration automatically transfers with no paperwork",
+    "choice_b": "Properly complete and provide the title transfer and notify the Department of Revenue of the sale, so the vessel's registration record reflects the new owner rather than the seller",
+    "choice_c": "Destroy the certificate of number so no one can use it",
+    "choice_d": "Transfer registration is only required if the buyer lives in a different county",
+    "correct_choice": "B",
+    "explanation": "When a Missouri vessel changes hands, the seller should properly complete the title transfer and ensure the Department of Revenue is notified, keeping the ownership record accurate and helping avoid the seller being associated with any future registration or liability issue involving a vessel they no longer own.",
+    "weight": 2,
+    "source_note": "RSMo 306.030 (title transfer on sale of a registered vessel)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Why is it important for a Missouri boat owner to promptly report a stolen vessel to the Water Patrol Division or local law enforcement?",
+    "choice_a": "Reporting a stolen vessel is never useful since vessels cannot be tracked",
+    "choice_b": "A prompt report allows law enforcement to flag the vessel's registration number and be alert for it, similar to reporting a stolen car, improving the chance of recovery and helping the owner document the loss",
+    "choice_c": "Missouri law prohibits ever reporting a stolen vessel",
+    "choice_d": "Stolen vessel reports can only be filed after one full year has passed",
+    "correct_choice": "B",
+    "explanation": "Just as with a stolen vehicle, promptly reporting a stolen vessel and its registration/hull identification information to law enforcement improves the odds of recovery, since officers and other agencies can watch for the specific numbered vessel, and creates a record useful for insurance purposes.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (stolen vessel reporting), consistent with Missouri State Highway Patrol Water Patrol Division enforcement role"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Under RSMo 306.030's registration fee schedule, what special provision exists for certain homemade wooden vessels?",
+    "choice_a": "Homemade wooden vessels are completely banned from registration in Missouri",
+    "choice_b": "Missouri's fee schedule includes a specially reduced registration rate for certain homemade wooden vessels, distinct from the standard length-based fee schedule that applies to manufactured vessels",
+    "choice_c": "Wooden vessels must pay double the standard registration fee",
+    "choice_d": "Wooden vessels are exempt from registration entirely regardless of size",
+    "correct_choice": "B",
+    "explanation": "Missouri's vessel registration fee schedule under RSMo 306.030 includes a specially reduced rate for certain homemade wooden vessels, recognizing that owner-built wooden boats are typically lower in value and more modest in scale than most manufactured recreational vessels.",
+    "weight": 2,
+    "source_note": "RSMo 306.030 (reduced registration fee for homemade wooden vessels)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "How are vessels documented with the U.S. Coast Guard generally treated with respect to Missouri's state vessel numbering requirement?",
+    "choice_a": "Federally documented vessels are still required to obtain a completely separate Missouri number in every case with no exception",
+    "choice_b": "A vessel that holds valid federal documentation through the U.S. Coast Guard is generally exempt from a state's own numbering (registration) requirement, since the documentation itself serves as the vessel's official identification",
+    "choice_c": "Federal documentation has no legal significance for state boating law purposes",
+    "choice_d": "Documented vessels may never be operated on any state's inland waters",
+    "correct_choice": "B",
+    "explanation": "A vessel that is documented with the U.S. Coast Guard -- generally larger vessels meeting federal tonnage and use requirements -- is typically exempt from a state's separate numbering (certificate of number) requirement, since the vessel's federal documentation number already serves as its official identification nationwide.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (federal vessel documentation), consistent with state numbering exemption practices nationwide"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "What responsibility does a PWC rental business on a Missouri lake generally have toward customers beyond simply renting the equipment?",
+    "choice_a": "No responsibility whatsoever once payment is received",
+    "choice_b": "Providing a basic safety orientation covering operation, required PFDs, and the PWC's specific operating restrictions, since many renters may be unfamiliar with Missouri's PWC-specific rules under RSMo 306.142",
+    "choice_c": "Rental businesses are legally prohibited from giving any instructions to renters",
+    "choice_d": "Rental PWCs are exempt from all operating rules that apply to privately owned PWCs",
+    "correct_choice": "B",
+    "explanation": "Because many PWC renters are unfamiliar with Missouri's specific rules -- including the lanyard cutoff switch, minimum age and supervision requirements, and prohibited unsafe maneuvers under RSMo 306.142 -- rental operators commonly provide a basic safety orientation before customers depart, even though a rented PWC remains subject to the same operating laws as a privately owned one.",
+    "weight": 3,
+    "source_note": "RSMo 306.142 (PWC operating rules applied to rental customers), general rental safety practice"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Separate from the permanent hull identification number painted on the bow, what other marking does a currently registered Missouri vessel typically display?",
+    "choice_a": "No additional marking of any kind",
+    "choice_b": "A validation decal showing the current registration/expiration status, displayed near the permanent identification number, distinct from the number itself which does not change",
+    "choice_c": "A second, completely different identification number issued every single year",
+    "choice_d": "A barcode that replaces the identification number entirely",
+    "correct_choice": "B",
+    "explanation": "In addition to the permanent bow-mounted identification number, a currently registered Missouri vessel typically displays a validation decal reflecting the current registration period, giving a quick visual indicator -- separate from the unchanging identification number -- that the vessel's registration is up to date.",
+    "weight": 2,
+    "source_note": "RSMo 306.030 (registration validation decal, distinct from the permanent identification number)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Besides the annual personal property tax documentation required for registration, what other type of tax does Missouri generally apply to the purchase of a new or used vessel?",
+    "choice_a": "No tax of any kind applies to purchasing a vessel in Missouri",
+    "choice_b": "A one-time sales or use tax due at the time of purchase, similar to the tax applied when buying a motor vehicle",
+    "choice_c": "Only a federal excise tax applies, with no state-level tax",
+    "choice_d": "A tax is charged only if the vessel is purchased from a dealership outside Missouri",
+    "correct_choice": "B",
+    "explanation": "Beyond the ongoing personal property tax documentation required at registration renewal, Missouri generally applies a sales or use tax at the time a vessel is purchased, paralleling how a motor vehicle purchase is taxed, separate from the recurring personal property tax obligation.",
+    "weight": 2,
+    "source_note": "RSMo 306.030 (vessel purchase taxation), general Missouri Department of Revenue vessel transaction practice"
+  }
+]

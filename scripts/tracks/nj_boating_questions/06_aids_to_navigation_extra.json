@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy or marker with red vertical stripes indicate under the U.S. Aids to Navigation System?",
+    "choice_a": "Unobstructed, safe water all around the aid, often marking a mid-channel, fairway, or the seaward end of a channel, and it may be passed on either side",
+    "choice_b": "A mandatory speed-limit zone enforced by local regulation",
+    "choice_c": "A hazard such as a shoal or wreck that must be avoided entirely",
+    "choice_d": "The boundary of a designated swimming-only area",
+    "correct_choice": "A",
+    "explanation": "A safe water marker is white with red vertical stripes and indicates unobstructed, navigable water on all sides. It is commonly used to mark mid-channels, fairways, or the seaward approach to a channel, and a boater may pass it on either side.",
+    "weight": 3,
+    "source_note": "New Jersey Boat-Ed course, 'Waterway With Buoys and Markers'; U.S. Aids to Navigation System (USATONS) safe water marker convention"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What color pattern identifies a mooring buoy, and what is its designated use?",
+    "choice_a": "Solid orange with no markings; it marks a designated swimming area",
+    "choice_b": "White with a blue horizontal band; it is the only type of buoy a boater may legally tie up to",
+    "choice_c": "Red and white checkered; it marks the location of a sunken vessel",
+    "choice_d": "Black with a single yellow band; it marks an isolated danger",
+    "correct_choice": "B",
+    "explanation": "A mooring buoy is white with a blue horizontal band. It is the only type of buoy a recreational boater is permitted to tie up to; other aids to navigation, such as channel markers, must never be used for mooring.",
+    "weight": 2,
+    "source_note": "New Jersey Boat-Ed course, 'Waterway With Buoys and Markers'; U.S. Aids to Navigation System (USATONS) mooring buoy convention"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "A white buoy with black vertical stripes marks what kind of hazard, and how should a boater respond to it?",
+    "choice_a": "A safe, unobstructed anchorage where the boater may pass on any side",
+    "choice_b": "A no-fishing zone with no restriction on where a boater may pass",
+    "choice_c": "An obstruction that extends from the shore out to the buoy's position; the boater must not pass between the buoy and the shore",
+    "choice_d": "A fuel dock, which the boater should approach from the shore side",
+    "correct_choice": "C",
+    "explanation": "A white buoy marked with black vertical stripes is an inland-waters obstruction marker. It signals that a hazard extends from the shoreline out to the buoy, so a boater must not pass between the marker and the shore.",
+    "weight": 2,
+    "source_note": "New Jersey Boat-Ed course, 'Waterway With Buoys and Markers'; U.S. Aids to Navigation System (USATONS) inland obstruction marker convention"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "On the New Jersey Intracoastal Waterway (NJICW), what do yellow triangle and yellow square symbols added to a standard lateral marker mean?",
+    "choice_a": "They indicate the marker is temporarily out of service and should be disregarded",
+    "choice_b": "They mark the location of a public boat launch ramp",
+    "choice_c": "They are purely decorative and carry no navigational meaning",
+    "choice_d": "A yellow triangle means keep the marker to starboard and a yellow square means keep it to port when following the ICW route, regardless of the marker's own color, shape, or number",
+    "correct_choice": "D",
+    "explanation": "NJICW buoys and beacons are marked like standard U.S. lateral aids, but a yellow triangle or yellow square is added to show the ICW route. A yellow triangle is kept to starboard and a yellow square to port when southbound, regardless of the underlying mark's own color or shape.",
+    "weight": 3,
+    "source_note": "New Jersey Intracoastal Waterway navigation guide (offshoreblue.com); New Jersey Boat-Ed course materials"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "The New Jersey Intracoastal Waterway (NJICW), where markers carry added yellow ICW symbols, runs between which two points along the New Jersey coast?",
+    "choice_a": "Manasquan Inlet and Cape May",
+    "choice_b": "Sandy Hook and Atlantic City",
+    "choice_c": "Delaware Bay and Raritan Bay only",
+    "choice_d": "The entire New Jersey coast from the New York border to Delaware",
+    "correct_choice": "A",
+    "explanation": "The New Jersey Intracoastal Waterway (NJICW) runs from Manasquan Inlet south to Cape May, with lateral markers along that stretch carrying added yellow triangle or square symbols to mark the ICW route.",
+    "weight": 2,
+    "source_note": "New Jersey Intracoastal Waterway navigation guide (offshoreblue.com)"
+  }
+]

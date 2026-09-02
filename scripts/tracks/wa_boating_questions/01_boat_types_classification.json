@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Under the traditional vessel length classes still referenced in Washington's boating handbook, which class covers vessels less than 16 feet long?",
+    "choice_a": "Class A",
+    "choice_b": "Class 1",
+    "choice_c": "Class 2",
+    "choice_d": "Class 3",
+    "correct_choice": "A",
+    "explanation": "Class A covers vessels less than 16 feet, Class 1 covers 16 to less than 26 feet, Class 2 covers 26 to less than 40 feet, and Class 3 covers 40 to less than 65 feet.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Vessel Length Classes"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How is a vessel's length measured for purposes of Washington's length classes?",
+    "choice_a": "Including the outboard motor and any swim platform",
+    "choice_b": "From the tip of the bow in a straight line to the stern, not including outboard motors, brackets, rudders, bow attachments, or swim platforms/ladders that are not a molded part of the hull",
+    "choice_c": "From the waterline to the highest point of the vessel",
+    "choice_d": "By the manufacturer's advertised model number only",
+    "correct_choice": "B",
+    "explanation": "Length is measured bow to stern in a straight line, excluding attachments such as outboard motors, brackets, rudders, bow attachments, and non-molded swim platforms or ladders.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Vessel Length Classes"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What information does a vessel's capacity plate provide?",
+    "choice_a": "Only the manufacturer's warranty period",
+    "choice_b": "Only the vessel's hull color code",
+    "choice_c": "Maximum weight capacity, maximum number of people, and maximum horsepower",
+    "choice_d": "The vessel's resale value",
+    "correct_choice": "C",
+    "explanation": "The capacity plate, usually near the operator's position or on the transom, shows the maximum weight, maximum number of persons, and maximum horsepower the vessel can safely carry.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Vessel Capacity"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "For a vessel under 20 feet long with no capacity plate, what is the rule-of-thumb formula for the number of people it can carry safely in good weather?",
+    "choice_a": "Vessel length (ft.) divided by 2",
+    "choice_b": "Vessel width (ft.) times 10",
+    "choice_c": "A flat maximum of four people regardless of size",
+    "choice_d": "Vessel length (ft.) times vessel width (ft.), divided by 15",
+    "correct_choice": "D",
+    "explanation": "The rule of thumb is number of people = vessel length (ft.) x vessel width (ft.) divided by 15, assuming persons weighing about 150 pounds each in good weather conditions.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Vessel Capacity"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "When counting the number of people aboard a vessel against its capacity limit, how should persons on water skis or inner tubes being towed be counted?",
+    "choice_a": "They must be counted as passengers and included in the maximum number allowed",
+    "choice_b": "They are never counted because they are not physically inside the boat",
+    "choice_c": "They only count if they are children",
+    "choice_d": "They count double because of the added risk",
+    "correct_choice": "A",
+    "explanation": "Persons on water skis, inner tubes, or similar devices being towed count as passengers and must be included in the vessel's maximum capacity, per Washington's overloading rules.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Vessel Capacity"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Which vessels are NOT required to have a capacity plate?",
+    "choice_a": "All vessels over 26 feet long",
+    "choice_b": "Personal watercraft (PWC) and some other vessels, which instead follow the capacity recommended in the owner's manual and manufacturer's warning decal",
+    "choice_c": "Only vessels used exclusively for racing",
+    "choice_d": "Every vessel registered after 2010",
+    "correct_choice": "B",
+    "explanation": "PWC and some other vessel types are exempt from the capacity plate requirement; operators should follow the recommended capacity in the owner's manual and on the manufacturer's warning decal instead.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Vessel Capacity"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "According to the Washington handbook's definitions found in WAC Chapter 352-60, what does 'power-driven vessel' mean?",
+    "choice_a": "Only a vessel with an outboard motor over 50 horsepower",
+    "choice_b": "Any vessel that can exceed 30 miles per hour",
+    "choice_c": "Any vessel propelled by machinery",
+    "choice_d": "A vessel used only for towing water skiers",
+    "correct_choice": "C",
+    "explanation": "The handbook defines a power-driven vessel simply as any vessel propelled by machinery, which includes vessels under sail if being run by their engine.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Definitions in This Handbook"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Per the handbook's definitions, what does 'vessel' NOT include?",
+    "choice_a": "Motorboats of any horsepower",
+    "choice_b": "Sailboats under sail power",
+    "choice_c": "Canoes and kayaks",
+    "choice_d": "Inner tubes, air mattresses, sailboards, small rafts, flotation devices, or toys customarily used by swimmers",
+    "correct_choice": "D",
+    "explanation": "The handbook's definition of 'vessel' specifically excludes inner tubes, air mattresses, sailboards, small rafts, flotation devices, and swimmer's toys, even though these are used on the water.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Definitions in This Handbook"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What does the term 'underway' mean under Washington's boating definitions?",
+    "choice_a": "A vessel that is not at anchor, not made fast to the shore, and not aground",
+    "choice_b": "A vessel that is currently being fueled",
+    "choice_c": "A vessel that is docked with its engine running",
+    "choice_d": "A vessel that has passengers aboard, regardless of motion",
+    "correct_choice": "A",
+    "explanation": "'Underway' means the vessel is not anchored, not tied to shore, and not aground -- it applies whether the vessel is moving under power, sail, or drifting.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Definitions in This Handbook"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Who is legally responsible for making sure a vessel does not exceed the limits shown on its capacity plate?",
+    "choice_a": "Only the manufacturer of the vessel",
+    "choice_b": "The vessel operator, and this requirement also applies to owners who let others operate the vessel",
+    "choice_c": "Only passengers who bring extra gear aboard",
+    "choice_d": "No one -- the capacity plate is only a suggestion",
+    "correct_choice": "B",
+    "explanation": "The operator is responsible for loading and powering the vessel safely within its capacity limits, and this duty also extends to owners who allow someone else to operate the boat.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Vessel Capacity"
+  }
+]

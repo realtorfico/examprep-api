@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Why is operating a vessel loaded beyond the person or weight capacity shown on its capacity plate considered a violation of Missouri's general operating standard under RSMo 306.125?",
+    "choice_a": "Capacity plates are purely advisory suggestions with no connection to Missouri's operating law",
+    "choice_b": "Overloading a vessel beyond its rated capacity reduces freeboard and stability, increasing the risk of swamping or capsizing, which conflicts with the statutory duty to operate with care and prudence so as not to endanger others",
+    "choice_c": "Capacity plates only apply while the vessel is docked, not underway",
+    "choice_d": "Overloading has no effect on a vessel's stability or safety",
+    "correct_choice": "B",
+    "explanation": "Operating a vessel beyond its manufacturer-rated person or weight capacity reduces freeboard and stability and is a leading cause of swamping and capsizing incidents -- doing so runs contrary to Missouri's general requirement under RSMo 306.125 to operate with care and prudence so as not to endanger the life, limb, or property of others.",
+    "weight": 3,
+    "source_note": "RSMo 306.125 (general care-and-prudence standard), applied to overloading and capacity-plate limits"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What operating precaution is generally expected of a boater passing near a designated swimming area or people swimming in open water on a Missouri lake?",
+    "choice_a": "Maintain full speed since swimmers are responsible for watching for boats, not the other way around",
+    "choice_b": "Reduce speed to no-wake or slow-idle speed and keep a safe distance, since swimmers are difficult to see, have no protection from a hull or propeller, and cannot maneuver quickly to avoid a boat",
+    "choice_c": "Only reduce speed if a lifeguard is physically present and waving",
+    "choice_d": "There is no operating precaution expected near swimmers",
+    "correct_choice": "B",
+    "explanation": "Because a swimmer's head is low in the water, hard to see, and a person in the water has essentially no ability to avoid an approaching boat, prudent operation requires slowing to no-wake or idle speed and maintaining a generous distance from any designated swim area or people swimming in open water, consistent with Missouri's general care-and-prudence operating standard.",
+    "weight": 3,
+    "source_note": "RSMo 306.125 (general operating standard), applied to swimmer safety on Missouri lakes"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Why should boaters below a hydroelectric dam on a Missouri reservoir, such as Bagnell Dam at the Lake of the Ozarks or Table Rock Dam, watch for sudden changes in water level or current?",
+    "choice_a": "Water levels below a hydroelectric dam never change once released",
+    "choice_b": "Scheduled or unscheduled generation releases can rapidly raise water levels and current speed in the tailwater area with little warning, creating hazards for boaters, waders, and anglers positioned there",
+    "choice_c": "Dams have no effect on downstream water conditions",
+    "choice_d": "This hazard applies only to swimmers, never to boaters",
+    "correct_choice": "B",
+    "explanation": "When a hydroelectric dam like Bagnell Dam or Table Rock Dam begins generating power, water releases can cause a rapid, sometimes sudden rise in downstream water level and current speed; boaters and anglers operating in a dam's tailwater area should stay alert to warning signals or sirens and give themselves a safety margin.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (hydroelectric dam release hazards), applied to Missouri's Bagnell and Table Rock Dams"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "How does Missouri's 'careless operation' generally differ from the more serious 'negligent operation' offense under RSMo 577.025?",
+    "choice_a": "The two terms describe identical conduct with identical penalties in every case",
+    "choice_b": "Careless or imprudent operation describes conduct that falls short of the statutory care-and-prudence standard without necessarily causing injury or property damage, while negligent operation under RSMo 577.025 specifically requires that the negligent conduct actually cause physical injury or property damage",
+    "choice_c": "Careless operation is always a more serious offense than negligent operation",
+    "choice_d": "Neither offense exists under Missouri law",
+    "correct_choice": "B",
+    "explanation": "Operating below Missouri's general care-and-prudence standard can be addressed under RSMo 306.125's general operating rule even without resulting harm, while the negligent-operation offense under RSMo 577.025 is triggered specifically when negligent conduct actually causes physical injury or property damage to another person, carrying escalating criminal penalties.",
+    "weight": 3,
+    "source_note": "RSMo 306.125 and RSMo 577.025 (general operating standard versus negligent-operation offense)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What following-distance precaution should a boater observe behind a vessel that is towing a water-skier, tuber, or wakeboarder?",
+    "choice_a": "Following as closely as possible improves visibility of the towed rider",
+    "choice_b": "Maintain a generous following distance and avoid crossing directly behind the tow boat, since the towed rider can swing wide of the boat's wake and following too closely limits reaction time if the rider falls",
+    "choice_c": "There is no following-distance concern with a towing vessel",
+    "choice_d": "Following distance only matters for vessels towing another boat, not a skier",
+    "correct_choice": "B",
+    "explanation": "A towed skier, tuber, or wakeboarder can swing well outside the tow boat's own path, particularly while carving across the wake, so another vessel following too closely behind risks a collision with the rider or the tow line if the rider falls or the tow boat slows suddenly.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (following distance behind towed water sports), consistent with RSMo 306.125's general prudent-operation standard"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "How does distracted operation, such as using a cell phone while underway, relate to Missouri's general care-and-prudence operating standard under RSMo 306.125?",
+    "choice_a": "Cell phone use has no bearing on safe vessel operation",
+    "choice_b": "Distracted operation that takes an operator's attention away from maintaining a proper lookout and controlling the vessel undermines the statutory duty to operate with care and prudence, and can support a careless or negligent operation finding if it contributes to an accident",
+    "choice_c": "Missouri law affirmatively encourages phone use while operating a vessel",
+    "choice_d": "Only PWC operators are subject to any distraction-related standard",
+    "correct_choice": "B",
+    "explanation": "Any activity, including cell phone use, that pulls an operator's attention away from maintaining a proper lookout and controlling the vessel undermines the basic care-and-prudence standard that RSMo 306.125 imposes on every Missouri boater, and distracted operation contributing to a collision can support a careless or negligent operation finding.",
+    "weight": 2,
+    "source_note": "RSMo 306.125 (general care-and-prudence standard), applied to distracted operation"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Why should a boater reduce speed when approaching a blind cove entrance or a point of land that blocks visibility on a Missouri reservoir?",
+    "choice_a": "Reduced visibility around a blind point or cove entrance increases the chance of an unseen vessel approaching from the other direction, so slowing down provides more time and distance to react and avoid a collision",
+    "choice_b": "Blind points and cove entrances always have unlimited visibility for every boater",
+    "choice_c": "Speed reduction is required only in officially marked no-wake zones, never near a blind point",
+    "choice_d": "There is no additional risk at a blind cove entrance compared to open water",
+    "correct_choice": "A",
+    "explanation": "A point of land or the mouth of a narrow cove can completely block a boater's view of oncoming traffic; reducing speed in these blind areas gives an operator more time to see, be seen, and react if another vessel appears suddenly from around the obstruction, consistent with the safe-speed principles applied throughout Missouri's reservoir system.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (safe speed near blind points and coves), applied to Missouri reservoir navigation"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "How does the duty to operate at a 'safe speed' interact with changing wind and wave conditions on a Missouri lake during a single outing?",
+    "choice_a": "A speed that was safe in calm morning conditions may no longer be safe once afternoon winds build waves and chop, so the operator has an ongoing duty to adjust speed to match the current conditions rather than a speed set once at departure",
+    "choice_b": "Once a safe speed is chosen at the start of a trip, no further adjustment is ever required",
+    "choice_c": "Speed adjustments are required only if another vessel specifically requests them",
+    "choice_d": "Wind and wave conditions have no bearing on what speed is safe",
+    "correct_choice": "A",
+    "explanation": "Safe speed is not a fixed number chosen once at the dock; Missouri's general operating standard and universal safe-speed principles require an operator to continually reassess and adjust speed as conditions change, since a speed that was safe on calm morning water can become dangerous once afternoon wind and waves develop.",
+    "weight": 3,
+    "source_note": "RSMo 306.125 and universal boating safety fundamentals (dynamic safe-speed duty), applied to changing Missouri lake conditions"
+  }
+]

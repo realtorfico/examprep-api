@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why should a trailer's safety chains always be crossed under the tongue when connecting a boat trailer to a tow vehicle?",
+    "choice_a": "Crossed chains improve fuel economy while towing",
+    "choice_b": "Chains should never be crossed under any circumstance",
+    "choice_c": "So that if the hitch coupling fails, the crossed chains cradle the tongue and help prevent the trailer from separating completely from the vehicle",
+    "choice_d": "Crossing chains has no safety purpose and is purely cosmetic",
+    "correct_choice": "C",
+    "explanation": "Crossing the safety chains under the trailer tongue means that if the primary hitch connection fails, the chains form a cradle that can catch the tongue and keep it from dropping to the road or fully separating from the tow vehicle.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Trailering Your Boat"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What pre-launch check should a boater perform on trailer tires and wheel bearings before a trip?",
+    "choice_a": "No inspection is necessary since trailers are maintenance-free",
+    "choice_b": "Only the boat's engine needs to be checked, not the trailer",
+    "choice_c": "Wheel bearings only need attention after 10 years of use",
+    "choice_d": "Inspect tire pressure and tread condition, and check that wheel bearings are properly greased and not overheating",
+    "correct_choice": "D",
+    "explanation": "Trailer tires and wheel bearings take significant wear and heat stress, especially on long tows, so checking tire condition and pressure and ensuring bearings are properly lubricated helps prevent a blowout or bearing failure on the road.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Trailering Your Boat"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is proper boat ramp etiquette regarding preparing the boat before backing down the ramp?",
+    "choice_a": "Prepare the boat fully -- load gear, remove tie-downs, insert the drain plug -- in a staging area before backing onto the ramp itself",
+    "choice_b": "Back onto the ramp first, then spend time loading gear while blocking the launch lane",
+    "choice_c": "There is no need to prepare in advance; ramps are designed for extended staging",
+    "choice_d": "The drain plug should always be removed after the boat is already in the water",
+    "correct_choice": "A",
+    "explanation": "Good ramp etiquette calls for doing all prep work -- loading gear, removing tie-down straps, and installing the drain plug -- in a staging or parking area before pulling onto the ramp, so the launch lane stays clear for other boaters.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Trailering Your Boat"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What happens if a boater forgets to insert the drain plug before launching?",
+    "choice_a": "It only affects fuel efficiency, not buoyancy",
+    "choice_b": "Water can flood into the bilge through the open plug hole, potentially swamping or sinking the boat",
+    "choice_c": "Nothing -- the drain plug has no effect on water intake",
+    "choice_d": "The engine will simply refuse to start until the plug is in",
+    "correct_choice": "B",
+    "explanation": "The drain plug seals the hole used to drain bilge water while the boat is stored on the trailer; forgetting to install it before launching leaves an open path for water to flood in, which is a common and preventable cause of boats swamping or sinking at the dock.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Trailering Your Boat"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is the recommended approach for backing a trailer down a launch ramp when other boaters are waiting?",
+    "choice_a": "Only experienced trailer owners are permitted to use public ramps",
+    "choice_b": "It's acceptable to leave the tow vehicle parked on the ramp indefinitely",
+    "choice_c": "Back down efficiently and directly, having already staged and prepared the boat, to minimize time occupying the ramp",
+    "choice_d": "Take as much time as needed regardless of a line forming behind you",
+    "correct_choice": "C",
+    "explanation": "Because ramps are shared, limited resources, boaters are taught to prepare fully beforehand and then back down and launch efficiently, minimizing the time spent occupying the ramp while others wait their turn.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Trailering Your Boat"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why should a driver check trailer lights (brake, turn signal, and running lights) before towing a boat on the road?",
+    "choice_a": "Trailer lights are optional accessories with no functional or legal importance",
+    "choice_b": "Trailer lights are only required for trailers over 40 feet",
+    "choice_c": "Boat trailers are exempt from all vehicle lighting laws",
+    "choice_d": "Malfunctioning trailer lights create a serious road hazard by failing to alert other drivers to braking or turning, and can result in a citation",
+    "correct_choice": "D",
+    "explanation": "Functioning trailer lights are both a legal towing requirement and a critical safety feature, alerting following drivers to braking and turning; a burned-out light or bad wiring connection can lead to a rear-end collision or a traffic citation.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Trailering Your Boat"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "After retrieving a boat from the water onto a trailer, where should the tow vehicle and trailer be moved before the boat is unloaded, cleaned, or re-secured with straps?",
+    "choice_a": "Away from the ramp to a designated parking or staging area, clearing the ramp for the next boater",
+    "choice_b": "The vehicle should remain parked on the ramp for as long as needed",
+    "choice_c": "It makes no difference where the vehicle is parked after retrieval",
+    "choice_d": "The boat must be fully re-secured with tie-downs before the vehicle can leave the water's edge",
+    "correct_choice": "A",
+    "explanation": "Just as with launching, retrieval etiquette calls for pulling the trailer away from the ramp into a staging area before securing straps, removing the drain plug, or loading gear, so the ramp stays open for the next person in line.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Trailering Your Boat"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why is a proper hitch ball size and class match between the trailer coupler and the tow vehicle's hitch ball critical?",
+    "choice_a": "Ball size matters only for trailers carrying PWCs, not boats",
+    "choice_b": "A mismatched ball size can allow the coupler to disconnect from the ball while towing, causing the trailer to detach",
+    "choice_c": "Hitch ball size only affects the trailer's appearance",
+    "choice_d": "Any ball size will work interchangeably with any coupler",
+    "correct_choice": "B",
+    "explanation": "The trailer coupler must match the hitch ball's exact diameter and the connection must be rated for the trailer's weight class; a mismatch can let the coupler pop off the ball while underway, resulting in a dangerous trailer separation.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Trailering Your Boat"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should a boater check regarding the trailer's tie-down straps or winch strap before towing on the highway?",
+    "choice_a": "Only the bow strap matters; stern tie-downs are optional",
+    "choice_b": "Straps should be as loose as possible to avoid stressing the hull",
+    "choice_c": "That the bow strap/winch line and stern tie-downs are secure, in good condition, and properly tensioned so the boat cannot shift during transport",
+    "choice_d": "Tie-down straps are unnecessary if the boat trailer has bunks or rollers",
+    "correct_choice": "C",
+    "explanation": "Both the bow winch strap and stern tie-down straps need to be secure, undamaged, and properly tensioned before towing, since a boat that shifts or bounces on the trailer during transport is a serious road hazard.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Trailering Your Boat"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What basic knot skill does boater education recommend mastering for securing a boat to a dock, trailer, or piling?",
+    "choice_a": "Any random knot works equally well for securing a boat",
+    "choice_b": "Knots are unnecessary if the boat has a working anchor",
+    "choice_c": "Duct tape is an acceptable substitute for line and knots",
+    "choice_d": "Common nautical knots such as a cleat hitch or bowline, which hold securely under load yet can still be untied when needed",
+    "correct_choice": "D",
+    "explanation": "Boater education teaches basic nautical knots -- like the cleat hitch for securing a line to a dock cleat or the bowline for forming a secure, non-slipping loop -- because these knots hold reliably under load while still being possible to untie afterward.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Tying Nautical Knots"
+  }
+]

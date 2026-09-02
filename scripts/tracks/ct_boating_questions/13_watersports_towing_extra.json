@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Water Sports and Towing",
+    "question": "How does a typical wakeboarding tow rope length compare to the maximum towline length allowed for water skiing in Connecticut?",
+    "choice_a": "Wakeboarding tow ropes are generally shorter (often in the 65-75 foot range) than the 100-foot maximum allowed for skiing, since wakeboarders ride closer to the boat's wake",
+    "choice_b": "Wakeboarding tow ropes must always be exactly 100 feet, identical to the ski maximum",
+    "choice_c": "There is no typical difference in tow rope length between wakeboarding and water skiing",
+    "choice_d": "Wakeboarding tow ropes are always longer than 100 feet",
+    "correct_choice": "A",
+    "explanation": "While Connecticut caps the water-skiing towline at 100 feet, wakeboarders typically use a noticeably shorter rope -- commonly in the 65 to 75 foot range -- because wakeboarding technique relies on riding closer to the wake the boat produces, unlike the longer, flatter-water technique used in traditional water skiing.",
+    "weight": 2,
+    "source_note": "General water-sports-towing fundamentals (NASBLA-aligned boating safety curriculum) applied to Connecticut's 100-foot ski towline cap"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What hand signal does a water skier commonly use to indicate to the observer and driver that they are ready to go or that everything is okay?",
+    "choice_a": "A thumbs-up or a hand formed into a circle (the \"OK\" sign)",
+    "choice_b": "Waving both arms rapidly overhead, which actually signals distress, not readiness",
+    "choice_c": "There is no standard hand signal used in water skiing",
+    "choice_d": "Pointing directly at the boat's engine",
+    "correct_choice": "A",
+    "explanation": "A thumbs-up or an \"OK\" circle formed with the thumb and forefinger is a widely used hand signal in water skiing to tell the observer and driver that the skier is ready to start or that everything is fine, helping the crew and skier communicate clearly over engine noise and distance.",
+    "weight": 2,
+    "source_note": "General water-sports-towing fundamentals (NASBLA-aligned boating safety curriculum) applied to Connecticut's water skiing rules"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "If a water skier falls, what widely taught practice helps other boaters see them in the water?",
+    "choice_a": "Holding one ski or the board upright and out of the water as a visual marker of the skier's location",
+    "choice_b": "Immediately swimming toward the tow boat regardless of traffic",
+    "choice_c": "Removing the life jacket to swim more easily toward shore",
+    "choice_d": "Diving underwater until the tow boat circles back",
+    "correct_choice": "A",
+    "explanation": "A fallen skier is taught to hold one ski or their board upright out of the water, since a low swimmer's head can be very hard for other boaters to spot, while an upright ski or board provides a taller, more visible marker of the skier's exact location until the tow boat can safely return.",
+    "weight": 3,
+    "source_note": "General water-sports-towing fundamentals (NASBLA-aligned boating safety curriculum) applied to Connecticut's water skiing rules"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "When a tow boat approaches a fallen skier, tuber, or wakeboarder in the water to pick them up, what should the operator do with the engine as it closes the final distance?",
+    "choice_a": "Shift the engine to neutral so the propeller stops turning, eliminating the risk of a propeller strike to the person in the water",
+    "choice_b": "Keep the engine engaged in forward gear at cruising speed the entire time to save time",
+    "choice_c": "Shut off the boat's electrical system entirely, including the bilge pump",
+    "choice_d": "Accelerate sharply just before reaching the person to create a wake that pushes them toward the boat",
+    "correct_choice": "A",
+    "explanation": "As a tow boat closes in on a fallen skier, tuber, or wakeboarder to bring them aboard, standard practice is to shift the engine to neutral well before reaching them so the propeller stops turning, removing the serious risk of a propeller strike to someone in the water near the stern.",
+    "weight": 3,
+    "source_note": "General water-sports-towing safety fundamentals (NASBLA-aligned boating safety curriculum) applied to Connecticut's water skiing and towing rules"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "How do the numbers on lateral (red and green) markers generally change as a boater proceeds from open water into a harbor or upstream?",
+    "choice_a": "Numbers have no consistent pattern and must simply be memorized individually",
+    "choice_b": "Numbers generally increase, giving a boater a rough sense of progress along the channel in addition to the colors telling which side to keep them on",
+    "choice_c": "Numbers always decrease when heading into a harbor",
+    "choice_d": "Only red markers are numbered; green markers never carry numbers",
+    "correct_choice": "B",
+    "explanation": "In the U.S. lateral system, marker numbers generally increase as a boater moves from open water toward a harbor or upstream, so the numbering sequence -- alongside the red/green coloring -- helps a boater confirm they are proceeding in the correct direction along the channel.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, lateral marker numbering convention), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a diamond shape containing a cross (a diamond with a horizontal and vertical bar through it) on a white regulatory marker mean, as opposed to a plain diamond?",
+    "choice_a": "It has the identical meaning to a plain diamond, marking only a hazard",
+    "choice_b": "Boats are completely excluded from the marked area -- for example, a swimming area, dam, or other zone vessels must not enter -- rather than merely a hazard to be cautious around",
+    "choice_c": "It marks a fuel dock",
+    "choice_d": "It indicates a preferred anchorage",
+    "correct_choice": "B",
+    "explanation": "While a plain orange diamond warns of a danger to be navigated carefully around, a diamond with a cross inside means the marked area is completely off-limits to boats -- such as a swimming area, a dam apron, or a restricted zone -- and vessels must not enter it at all.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, regulatory exclusion marker), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is a pair of 'range markers' (or range lights) used for?",
+    "choice_a": "Two fixed markers that, when visually lined up one behind the other by the boater, indicate the centerline of a safe channel to follow",
+    "choice_b": "A pair of buoys marking the two outer edges of a swimming area",
+    "choice_c": "A device used only to measure wind speed",
+    "choice_d": "Markers that indicate a mandatory no-wake zone",
+    "correct_choice": "A",
+    "explanation": "Range markers are two fixed structures placed at different distances along a channel's intended centerline; when a boater lines up the near and far markers so they appear stacked one above the other, the vessel is on the safe centerline of the channel.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, range markers/range lights), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What do the numbers printed at various points on a nautical chart generally represent?",
+    "choice_a": "Water depth (soundings) at that location, typically referenced to a specific low-water tidal datum such as mean lower low water",
+    "choice_b": "The exact number of boats currently in that area",
+    "choice_c": "Distances to the nearest boat ramp",
+    "choice_d": "The chart's page number",
+    "correct_choice": "A",
+    "explanation": "Numbers scattered across a nautical chart are soundings -- water depths at that location -- typically referenced to a specific low-water datum such as mean lower low water, so a boater knows the actual depth may be somewhat greater at higher stages of the tide but should never be assumed to be less than charted at low water.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (nautical chart soundings and tidal datum), relevant to Massachusetts's tide-influenced coastal waters"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is a key practical difference between a 'daybeacon' (a fixed dayboard mounted on a piling) and a floating buoy?",
+    "choice_a": "A daybeacon is fixed permanently to the bottom and cannot drift out of position, making its charted location more reliable than a buoy, which is anchored but can shift position or go missing (especially after storms or ice)",
+    "choice_b": "Daybeacons and buoys are functionally identical in every respect",
+    "choice_c": "Buoys are always more precisely positioned than daybeacons",
+    "choice_d": "Daybeacons are only used in the middle of the ocean, never in coastal channels",
+    "correct_choice": "A",
+    "explanation": "A daybeacon is a fixed structure mounted on a piling driven into the bottom, so it stays exactly at its charted position, while a floating buoy is anchored to the bottom but can drag, shift, or be damaged or dislodged -- particularly after storms, strong currents, or winter ice on Massachusetts waters -- so a prudent boater treats a buoy's position as approximate.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (fixed vs. floating aids to navigation), relevant to Massachusetts's storm- and ice-affected coastal and inland waters"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What role does a lighthouse generally serve in the Aids to Navigation system, and what is a notable Massachusetts example?",
+    "choice_a": "A lighthouse is a fixed, prominent, high-intensity light marking an important point such as a harbor entrance, headland, or hazard, often visible much farther than a typical buoy light; Boston Light, on Little Brewster Island, is the oldest light station site in the United States",
+    "choice_b": "Lighthouses are purely historic tourist attractions with no ongoing navigational function",
+    "choice_c": "A lighthouse marks only the exact center of a channel, never a headland or hazard",
+    "choice_d": "Massachusetts has no historically significant lighthouses",
+    "correct_choice": "A",
+    "explanation": "Lighthouses are fixed, high-intensity aids marking especially important navigational points -- harbor entrances, prominent headlands, or major hazards -- visible from much greater distances than an ordinary buoy light; Massachusetts is home to Boston Light on Little Brewster Island, the oldest light station site in the United States (first lit in 1716), still an active aid to navigation today.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (lighthouse function within the Aids to Navigation System), relevant to Massachusetts's Boston Light and other historic Massachusetts lighthouses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Why does 'red, right, returning' apply the way it does in the United States, rather than the opposite convention used in some other parts of the world?",
+    "choice_a": "The United States uses the IALA Maritime Buoyage System's Region B lateral convention, under which red markers are kept to a boater's right (starboard) when returning from sea, the opposite of Region A (used in Europe and much of the rest of the world), where red is kept to the left when returning",
+    "choice_b": "There is no international standard; every country invented its own system independently with no shared logic",
+    "choice_c": "The convention is based on which side of the road Americans drive on, with no connection to any maritime standard",
+    "choice_d": "Red and green mean the same thing everywhere in the world with no regional variation",
+    "correct_choice": "A",
+    "explanation": "The United States follows the IALA Maritime Buoyage System's Region B convention, which places red markers to starboard when returning from seaward; Region A, used in Europe, Africa, and much of Asia and Oceania, reverses this, placing red to port when returning -- a distinction boaters should know if they ever navigate abroad.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (IALA Maritime Buoyage System Region A/B lateral convention), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a yellow buoy or marker (a 'special mark') generally indicate, as distinct from the standard red/green lateral system?",
+    "choice_a": "It is used for purposes other than the standard lateral or safe-water/regulatory system, such as marking a traffic separation point, an anchorage area boundary, or a scientific or fish-aggregating device",
+    "choice_b": "Yellow markers always indicate a swimming-only area",
+    "choice_c": "Yellow markers have the identical meaning to green lateral markers",
+    "choice_d": "Yellow is not used anywhere in the U.S. Aids to Navigation System",
+    "correct_choice": "A",
+    "explanation": "Yellow 'special marks' are used for purposes outside the normal lateral (red/green) and safe-water/regulatory marker system -- for example, marking anchorage area limits, traffic separation points, or other designated purposes described in local notices to mariners -- and are not meant to convey standard channel-side or hazard information.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, special/yellow marks), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is a 'Local Notice to Mariners,' published by each U.S. Coast Guard district, and why should a boater check it periodically?",
+    "choice_a": "A weekly or periodic publication reporting changes to aids to navigation -- such as a buoy being moved, discontinued, damaged, or a new hazard identified -- so a boater's chart and expectations stay current between chart updates",
+    "choice_b": "A one-time publication issued only when a boater first registers a vessel",
+    "choice_c": "A private commercial newsletter with no connection to navigational safety",
+    "choice_d": "A document required only for vessels over 300 gross tons",
+    "correct_choice": "A",
+    "explanation": "The Local Notice to Mariners is published periodically by each U.S. Coast Guard district to inform boaters of changes affecting aids to navigation -- a buoy moved off station, a light temporarily extinguished, a new hazard reported, or a channel dredging project -- helping boaters keep their charts and expectations current between official chart updates.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (U.S. Coast Guard Local Notice to Mariners publication), consistent with NASBLA-aligned course curricula"
+  }
+]

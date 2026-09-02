@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "What does a National Weather Service 'small craft advisory' generally signal to boaters on a Missouri reservoir?",
+    "choice_a": "A small craft advisory has no relevance to recreational boaters, only to commercial shipping",
+    "choice_b": "Sustained winds and/or wave conditions have reached a level that may create hazardous conditions for smaller vessels, and boaters, particularly in smaller or less seaworthy boats, should consider postponing their trip or exercising extra caution",
+    "choice_c": "A small craft advisory means all boating is legally banned",
+    "choice_d": "It only applies to ocean coastal waters and is never issued for any Missouri location",
+    "correct_choice": "B",
+    "explanation": "A small craft advisory is issued by the National Weather Service when sustained winds and/or wave conditions reach a threshold that can be hazardous to smaller vessels; it is not a legal boating ban, but a strong signal that boaters -- especially those in smaller, less stable boats -- should reconsider heading out or take extra precautions.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (National Weather Service small craft advisory), applied to Missouri reservoir boating"
+  },
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "How can a boater roughly estimate wind speed just by observing the appearance of waves on a Missouri lake, using principles similar to the Beaufort wind scale?",
+    "choice_a": "Wave appearance has no relationship to wind speed",
+    "choice_b": "The appearance of scattered whitecaps generally begins to form as sustained wind speeds climb into roughly the 10-15 knot range, giving boaters a rough visual cue of building wind even without an instrument",
+    "choice_c": "Whitecaps only ever form when there is no wind at all",
+    "choice_d": "Wave height is always identical regardless of wind speed",
+    "correct_choice": "B",
+    "explanation": "Similar to the classic Beaufort wind scale used by mariners for centuries, the appearance of scattered whitecaps on open water is a rough visual indicator that sustained winds have climbed into approximately the 10-15 knot range, giving a boater without an anemometer a practical way to estimate rising wind conditions.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (Beaufort wind scale wave-based estimation)"
+  },
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "What makes a 'squall line' particularly dangerous compared to an ordinary, slower-developing thunderstorm?",
+    "choice_a": "A squall line is a fast-moving band of severe thunderstorms that can develop and arrive with very little warning, bringing sudden, intense wind shifts and gusts that can catch boaters off guard even after they noticed some early warning signs",
+    "choice_b": "A squall line always takes several days to arrive after it first forms, giving ample warning",
+    "choice_c": "Squall lines never produce strong wind or sudden weather changes",
+    "choice_d": "Squall lines are a phenomenon exclusive to ocean coastlines and never occur over Missouri's inland lakes",
+    "correct_choice": "A",
+    "explanation": "A squall line is a fast-moving line of severe thunderstorms capable of producing a sudden, dramatic wind shift and intense gusts with comparatively little lead time, making it especially dangerous for boaters caught in open water on a Missouri reservoir who may only get a short window to reach shelter once it becomes visible.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (squall line hazard), applied to Missouri reservoir weather"
+  },
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "Why should boaters on Missouri lakes remain alert to floating debris and occasional ice hazards in very early spring or late fall?",
+    "choice_a": "Debris and ice pose no risk to hulls or propellers at any time of year",
+    "choice_b": "Cooler-season conditions can bring floating debris washed in by runoff and, in early spring or late fall, occasional patches of thin ice or ice fragments near shorelines and coves, both of which can damage a hull or propeller or create a navigation hazard",
+    "choice_c": "Ice is only ever a concern for boaters in tropical climates",
+    "choice_d": "Debris and ice hazards only occur in the middle of summer",
+    "correct_choice": "B",
+    "explanation": "In the shoulder seasons, Missouri lakes can carry more floating debris from spring runoff and, especially in sheltered coves in very early spring or late fall, occasional thin ice or ice fragments that pose a hazard to hulls and propellers, calling for reduced speed and extra vigilance during these transitional periods.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (seasonal debris and ice hazards), applied to Missouri lake conditions"
+  },
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "Although rare, what severe-weather phenomenon can occasionally form over a large body of open water like a Missouri reservoir during a severe thunderstorm?",
+    "choice_a": "A waterspout, a rotating column of air over water similar to a tornado, which can develop during severe thunderstorm conditions and poses a serious hazard to any vessel in its path",
+    "choice_b": "Waterspouts exclusively occur over deserts and never over water",
+    "choice_c": "This phenomenon is completely impossible over any inland lake",
+    "choice_d": "A waterspout is simply another name for an ordinary wave",
+    "correct_choice": "A",
+    "explanation": "A waterspout is a rotating column of air extending from a cloud to the water's surface, functioning much like a tornado over water; while less common over inland reservoirs than over larger bodies of water, one can form during severe thunderstorm conditions and poses a serious hazard to any vessel caught in its path, reinforcing the importance of getting off the water before severe weather arrives.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (waterspout hazard during severe thunderstorms)"
+  },
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "Besides thunderstorms and wind, what environmental hazard tied to water quality can occasionally affect recreational use of Missouri lakes during warm summer months?",
+    "choice_a": "Harmful algal blooms, which can develop in warm, nutrient-rich water and may prompt state environmental agency advisories against swimming or close water contact in affected areas",
+    "choice_b": "Algae blooms have no relevance to boater or swimmer safety",
+    "choice_c": "This hazard only ever occurs in salt water, never in a freshwater lake",
+    "choice_d": "Algae blooms only occur during winter months",
+    "correct_choice": "A",
+    "explanation": "Warm, nutrient-rich conditions during Missouri's summer months can occasionally promote harmful algal blooms on certain lakes, prompting state environmental agencies to issue advisories recommending against swimming or close water contact in affected coves or shoreline areas until conditions clear.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (harmful algal bloom environmental hazard), applied to Missouri summer lake conditions"
+  },
+  {
+    "topic": "Weather & Environmental Hazards",
+    "question": "Why can sun glare on the water be a significant visibility hazard for boaters, particularly around sunrise or sunset?",
+    "choice_a": "Sun glare has no effect on a boater's ability to see other vessels or hazards",
+    "choice_b": "Low-angle sunlight reflecting directly off the water's surface can temporarily blind or severely reduce a boater's ability to see other vessels, swimmers, or obstacles directly ahead, especially when traveling toward the sun",
+    "choice_c": "Glare is only a concern for boaters wearing sunglasses",
+    "choice_d": "Glare exclusively affects boats traveling away from the sun, never toward it",
+    "correct_choice": "B",
+    "explanation": "When the sun sits low on the horizon near sunrise or sunset, its light can reflect directly off the water's surface into a boater's eyes, dramatically reducing visibility of other vessels, swimmers, or obstacles directly ahead -- reducing speed and using polarized sunglasses can help manage this seasonal and time-of-day hazard.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (sun glare visibility hazard)"
+  }
+]

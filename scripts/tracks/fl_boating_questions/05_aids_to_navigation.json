@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "Under the U.S. Aids to Navigation System, what do red buoys mark when returning from open water toward a harbor ('red right returning')?",
+    "choice_a": "They should be kept on the boater's right (starboard) side when returning from sea",
+    "choice_b": "They should be kept on the boater's left (port) side when returning from sea",
+    "choice_c": "They mark a swimming area only",
+    "choice_d": "They indicate open, unrestricted deep water in every direction",
+    "correct_choice": "A",
+    "explanation": "The 'red right returning' rule means a boater heading upstream or into a harbor from open water keeps red markers on the starboard (right) side and green markers on the port (left) side.",
+    "weight": 5,
+    "source_note": "U.S. Aids to Navigation System, lateral markers"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What shape and color characterize a green 'can' buoy?",
+    "choice_a": "A diamond-shaped orange buoy",
+    "choice_b": "A flat-topped, cylindrical green buoy marking the port (left) side of a channel when returning from open water",
+    "choice_c": "A cone-shaped red buoy",
+    "choice_d": "A square white buoy with no markings",
+    "correct_choice": "B",
+    "explanation": "Green 'can' buoys have a flat top and mark the port side of a channel for a vessel returning from open water, complementing red conical 'nun' buoys on the starboard side.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, can and nun buoy shapes"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a red-and-white vertically striped buoy or daymark indicate?",
+    "choice_a": "A no-wake zone boundary exclusively",
+    "choice_b": "A swimming-only area",
+    "choice_c": "A safe-water mark indicating navigable water on all sides, often marking a channel's midpoint or approach",
+    "choice_d": "A hazard directly ahead that must be avoided entirely",
+    "correct_choice": "C",
+    "explanation": "Red-and-white vertically striped markers are safe-water marks, indicating that a boater may find safe, navigable water all around, often used at the start of a channel or a mid-channel approach point.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, safe-water marks"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does an orange diamond symbol on a white sign or buoy typically indicate on Florida waterways?",
+    "choice_a": "A designated swimming area",
+    "choice_b": "A fuel dock",
+    "choice_c": "An area with no boating restrictions",
+    "choice_d": "A danger such as a rock, shoal, dam, or other hazard requiring caution",
+    "correct_choice": "D",
+    "explanation": "An orange diamond on a white background is a regulatory marker warning of a danger -- such as rocks, a shoal, a dam, or a submerged obstruction -- requiring boaters to proceed with caution or avoid the area.",
+    "weight": 3,
+    "source_note": "U.S. Uniform State Waterway Marking System, regulatory markers"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does an orange circle on a white sign or buoy indicate?",
+    "choice_a": "A controlled area, such as a speed zone, idle-speed zone, or no-wake zone",
+    "choice_b": "A restricted swimming area only",
+    "choice_c": "An anchorage with unlimited speed",
+    "choice_d": "A commercial shipping lane with no speed limits",
+    "correct_choice": "A",
+    "explanation": "An orange circle marks a controlled area such as a speed zone, slow-speed/no-wake zone, or idle-speed zone, common around Florida manatee habitat, marinas, and swimming areas.",
+    "weight": 4,
+    "source_note": "U.S. Uniform State Waterway Marking System, controlled-area markers"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does an orange crossed-diamond symbol (a diamond with a cross inside) indicate?",
+    "choice_a": "The area is a fueling station",
+    "choice_b": "Boats are excluded entirely from the marked area, such as a swimming beach",
+    "choice_c": "Unlimited high-speed boating is allowed",
+    "choice_d": "The area is a designated anchorage",
+    "correct_choice": "B",
+    "explanation": "A crossed diamond (a diamond symbol with a cross through it) marks a boat-exclusion area, such as a swimming beach or designated no-boat zone, that vessels must stay out of entirely.",
+    "weight": 3,
+    "source_note": "U.S. Uniform State Waterway Marking System, exclusion markers"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is a preferred-channel (junction) marker used to indicate?",
+    "choice_a": "A location where anchoring is mandatory",
+    "choice_b": "A marina fuel dock",
+    "choice_c": "A point where a channel splits, with the marker's top color indicating the preferred (primary) channel",
+    "choice_d": "The exact center of open ocean with no channels nearby",
+    "correct_choice": "C",
+    "explanation": "A preferred-channel marker (banded red and green) marks a junction where a channel splits; the color of the top band indicates which side to favor for the preferred route.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, junction/preferred-channel markers"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "How are green lights and red lights typically numbered on lighted channel markers?",
+    "choice_a": "Numbers on channel markers are random and carry no navigational meaning",
+    "choice_b": "All channel markers use the same single number",
+    "choice_c": "Numbers decrease heading upstream on every waterway",
+    "choice_d": "Green (odd numbers) generally mark the port side and red (even numbers) generally mark the starboard side when returning from sea, increasing in number heading upstream",
+    "correct_choice": "D",
+    "explanation": "Odd numbers are assigned to green (port-side, returning) markers and even numbers to red (starboard-side, returning) markers, with numbers generally increasing as a vessel proceeds upstream or into a harbor.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, numbering convention"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is an 'information' marker (a square or rectangular sign, often blue or white) typically used for?",
+    "choice_a": "To provide directions, distances, locations of services, or other general information to boaters",
+    "choice_b": "To mark a hazard requiring immediate avoidance",
+    "choice_c": "To indicate the boundary of a manatee protection zone exclusively",
+    "choice_d": "To indicate a federal shipping channel only",
+    "correct_choice": "A",
+    "explanation": "Information markers, often square or rectangular, provide boaters with directions, mileage, locations of marinas or services, and other general navigational information rather than a hazard or regulation.",
+    "weight": 2,
+    "source_note": "U.S. Uniform State Waterway Marking System, information markers"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Why should a Florida boater always check a current nautical chart in addition to relying on buoys and markers?",
+    "choice_a": "Charts are only useful for offshore ocean navigation, never inland waters",
+    "choice_b": "Buoys can shift position, be damaged, or go missing (especially after storms), so a chart provides an independent, more permanent reference for depths and hazards",
+    "choice_c": "Charts are purely decorative and buoys are always 100% reliable",
+    "choice_d": "Florida waterways never change and old charts are always accurate",
+    "correct_choice": "B",
+    "explanation": "Buoys can drag off station, be damaged by storms (a real concern in hurricane-prone Florida), or be temporarily removed, so a current chart gives an independent reference for depths, hazards, and channel locations.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course navigation/chart-reliability guidance"
+  }
+]

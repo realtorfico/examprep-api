@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a preferred channel (junction) marker, showing both red and green horizontal bands, indicate?",
+    "choice_a": "That the boater has entered a no-wake zone",
+    "choice_b": "The junction of two channels, where the top-most color band indicates which side to treat as the preferred (primary) channel",
+    "choice_c": "A permanent no-boating area",
+    "choice_d": "A location reserved exclusively for seaplane landings",
+    "correct_choice": "B",
+    "explanation": "A preferred channel marker, banded in both red and green, marks a junction where a channel splits; the color of the topmost band tells the operator which side to favor as the preferred, primary channel.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System (ATON) preferred channel markers, applied in NASBLA-aligned Wisconsin boater education curriculum, Unit 3"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a red-and-white vertically striped buoy (a safe water mark) indicate?",
+    "choice_a": "Safe water on all sides -- often marking a mid-channel or fairway approach",
+    "choice_b": "A swimming-only area",
+    "choice_c": "A hazard directly beneath the buoy",
+    "choice_d": "The boundary of a slow-no-wake zone",
+    "correct_choice": "A",
+    "explanation": "A safe water mark, shown with red-and-white vertical stripes, indicates navigable water is available all around it, and is often used to mark a mid-channel approach or fairway.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System (ATON) safe water marks, applied in NASBLA-aligned Wisconsin boater education curriculum, Unit 3"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "How does a white buoy marked with an orange diamond containing a cross differ in meaning from a plain orange diamond marker?",
+    "choice_a": "There is no difference; both mean the identical thing",
+    "choice_b": "The plain diamond warns of a general danger, while the diamond with a cross inside means \"boats keep out\" of the marked area entirely",
+    "choice_c": "The cross variant means the area is safe for high-speed operation",
+    "choice_d": "The cross variant is used exclusively to mark fuel docks",
+    "correct_choice": "B",
+    "explanation": "While a plain orange diamond warns of a general hazard, adding a cross inside the diamond strengthens the message to \"boats keep out\" -- meaning the marked area, such as a swimming zone or restricted shoal, must not be entered at all.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System (ATON) regulatory markers, applied in NASBLA-aligned boater education curriculum, Unit 3"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is a navigational \"range,\" and how is it used?",
+    "choice_a": "The maximum distance a radio can transmit",
+    "choice_b": "Two fixed markers positioned so that, when visually aligned one above or behind the other, they show a boater the centerline of a safe channel",
+    "choice_c": "The maximum speed permitted in a channel",
+    "choice_d": "A single floating buoy marking the deepest point of a lake",
+    "correct_choice": "B",
+    "explanation": "A range consists of two fixed markers set up so that when an operator lines them up visually, one directly above or behind the other, the boat is on the centerline of a safe, charted channel.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System (ATON) ranges, applied in NASBLA-aligned Wisconsin boater education curriculum, Unit 3"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "How are numbers assigned to lateral channel markers as a boater proceeds upstream or returns from open water?",
+    "choice_a": "Numbers decrease as the boater proceeds farther into the channel",
+    "choice_b": "Numbers increase as the boater proceeds upstream or returns from open water, with green (odd) numbers on one side and red (even) numbers on the other",
+    "choice_c": "Numbers are assigned randomly with no directional pattern",
+    "choice_d": "Only red markers are numbered; green markers never carry numbers",
+    "correct_choice": "B",
+    "explanation": "Lateral markers are numbered so the sequence increases as a boater heads upstream or returns from open water, with odd numbers on green (port-side) markers and even numbers on red (starboard-side) markers, helping a boater track progress along a channel.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System (ATON) numbering convention, applied in NASBLA-aligned Wisconsin boater education curriculum, Unit 3"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "How do lighted aids to navigation convey the same lateral meaning as their unlighted daytime counterparts?",
+    "choice_a": "A lighted aid's light color generally matches its daytime color -- red light for a red aid, green light for a green aid -- often with a distinctive flash pattern",
+    "choice_b": "Lighted aids abandon color coding entirely and use only flash timing",
+    "choice_c": "All lighted aids display the same white light regardless of which side of the channel they mark",
+    "choice_d": "Lighted aids are used only on the Great Lakes, never on inland lakes",
+    "correct_choice": "A",
+    "explanation": "A lighted aid typically shows a light color matching its daytime marker color -- red light on a red aid, green light on a green aid -- often combined with a specific flash characteristic, letting a boater identify the same lateral meaning at night as during the day.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System (ATON) lighted-aid characteristics, applied in NASBLA-aligned boater education curriculum, Unit 3"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Beyond buoys and daymarks on inland lakes, what other aids to navigation help guide vessels along Wisconsin's Lake Michigan and Lake Superior shoreline?",
+    "choice_a": "Lighthouses and harbor entrance range lights, which mark harbor entrances and hazards along the Great Lakes coast",
+    "choice_b": "Wisconsin's Great Lakes shoreline has no aids to navigation of any kind",
+    "choice_c": "Only GPS satellite markers, with no physical aids",
+    "choice_d": "Exclusively unlit daymarks, with no lighted structures permitted",
+    "correct_choice": "A",
+    "explanation": "Along Wisconsin's Lake Michigan and Lake Superior coastline, historic lighthouses and harbor entrance range lights supplement the standard buoy and daymark system, helping guide vessels safely into harbors and around coastal hazards on open Great Lakes water.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System (ATON), applied to Wisconsin's Great Lakes shoreline features (Lake Michigan and Lake Superior harbors)"
+  }
+]

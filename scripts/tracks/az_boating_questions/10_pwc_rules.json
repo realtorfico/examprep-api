@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under Arizona law, at what age may a person independently operate a PWC (a motor-powered watercraft) without an adult or parent/guardian aboard, absent an emergency?",
+    "choice_a": "There is no minimum age for independent PWC operation in Arizona",
+    "choice_b": "12 years of age or older (the same threshold that applies to operating any watercraft with a motor greater than 8 horsepower)",
+    "choice_c": "Any age, as long as the rider is tall enough to reach the handlebars",
+    "choice_d": "18 years of age, with no exceptions",
+    "correct_choice": "B",
+    "explanation": "A.R.S. 5-341 makes it unlawful for a person under 12 to independently operate a watercraft (including a PWC) with a motor greater than 8 horsepower unless an emergency exists or a parent/guardian or another person 18 or older is aboard.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-341, subsections E-F, watercraft operator age restrictions"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under Arizona law, is it lawful to allow a person under 12 to operate a motor-powered watercraft under any circumstances?",
+    "choice_a": "It is lawful only on weekends",
+    "choice_b": "It is lawful only if the vessel is painted a bright color",
+    "choice_c": "It is generally unlawful to allow it, except under the specific emergency or supervised conditions described in the statute (parent/guardian or another adult aboard)",
+    "choice_d": "It is always completely lawful with no restriction whatsoever",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-341(F) makes it unlawful for anyone to allow a person under 12 to operate a motor-powered watercraft, except as permitted under the supervised or emergency conditions set out in subsection E.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-341, subsection F"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Must everyone aboard a PWC in Arizona wear a PFD?",
+    "choice_a": "No, only the operator is required to wear one",
+    "choice_b": "No, PFDs are optional on PWC because riders sit on top of them rather than inside a hull",
+    "choice_c": "Only passengers under age 5 must wear a PFD on a PWC",
+    "choice_d": "Yes -- every person aboard a PWC must wear an approved PFD at all times while the PWC is underway",
+    "correct_choice": "D",
+    "explanation": "Because a PWC rider can be thrown clear in a collision or wave impact, every person aboard -- operator and passengers alike -- is required to wear a properly fitted PFD at all times the PWC is underway.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'PWC PFD Requirements'"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What is an engine cutoff switch (also called a kill switch or lanyard) commonly used for on a PWC?",
+    "choice_a": "It is attached to the operator so that if the operator falls off, the engine automatically shuts down, preventing an unmanned PWC from continuing to circle at speed",
+    "choice_b": "It permanently disables the PWC once used a single time",
+    "choice_c": "It is only used to start the engine, never to stop it",
+    "choice_d": "It has no safety function and is purely decorative",
+    "correct_choice": "A",
+    "explanation": "An engine cutoff switch lanyard clips to the operator; if the operator is thrown off or falls, the lanyard pulls free and immediately shuts down the engine, preventing a runaway PWC from circling back and striking the operator or others.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Engine Cutoff Switches'"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Why is checking behind and to the sides especially important when operating a PWC compared to some larger boats?",
+    "choice_a": "PWC operators are legally exempt from maintaining a lookout",
+    "choice_b": "PWC are highly maneuverable and often operate in tighter groups at higher relative speeds, and their tight turning radius means hazards can appear suddenly from a blind spot",
+    "choice_c": "PWC never have blind spots because riders sit up higher than in a normal boat",
+    "choice_d": "Checking behind is unnecessary since PWC cannot go in reverse",
+    "correct_choice": "B",
+    "explanation": "PWC are fast, agile, and often operated in close proximity to other PWC and swimmers, so operators must actively check blind spots and surroundings because hazards can close distance very quickly.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'PWC Traffic Awareness'"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "How does steering a PWC differ from steering many conventional boats when the throttle is released?",
+    "choice_a": "Releasing the throttle always improves steering control on a PWC",
+    "choice_b": "PWC have no steering mechanism at all",
+    "choice_c": "Most PWC rely on water thrust from the jet pump to steer, so releasing the throttle can significantly reduce or eliminate the rider's ability to steer effectively",
+    "choice_d": "PWC steer identically to a car, using only the handlebars regardless of throttle",
+    "correct_choice": "C",
+    "explanation": "Because PWC steering depends on directing water thrust from the jet pump, releasing the throttle reduces or eliminates steering control -- a critical safety concept, since a new rider's instinct in an emergency is often to let go of the throttle.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'PWC Steering and Stopping'"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Is jumping the wake of another vessel closely, or weaving close behind another vessel on a PWC, generally considered acceptable riding practice?",
+    "choice_a": "Yes, wake jumping is always encouraged behavior with no restriction",
+    "choice_b": "It is acceptable only after obtaining a special AZGFD wake-jumping permit",
+    "choice_c": "It has no bearing on safety because PWC cannot capsize",
+    "choice_d": "No -- following too closely or jumping a wake near another vessel is a common example of reckless PWC operation because visibility and reaction time are severely limited",
+    "correct_choice": "D",
+    "explanation": "Closely following or jumping the wake of another vessel is commonly cited as reckless PWC operation, since the towing vessel's operator may not see the PWC and neither operator has time to react to a sudden collision risk.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'PWC Reckless Operation Examples'"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Do PWC operating hours face any special restriction under many state and local rules?",
+    "choice_a": "Yes -- PWC operation is commonly restricted to daylight hours only, since most PWC lack the navigation lighting required for safe nighttime operation",
+    "choice_b": "No, PWC may always be legally operated at any hour with no lighting concerns",
+    "choice_c": "PWC may only operate between midnight and 4 a.m.",
+    "choice_d": "Operating hours apply only to sailboats, never to PWC",
+    "correct_choice": "A",
+    "explanation": "Because most PWC are not equipped with the navigation lights required for nighttime operation, PWC use is commonly limited to daylight hours under state and local regulations.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'PWC Operating Hours'"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "How should a capsized PWC generally be righted?",
+    "choice_a": "PWC are incapable of capsizing under any circumstances",
+    "choice_b": "By following the manufacturer's specified rotation direction, since PWC are often designed to be flipped back only one way to avoid flooding the engine or exhaust system",
+    "choice_c": "It does not matter which direction a PWC is rolled back over",
+    "choice_d": "A capsized PWC should never be righted and must be towed to shore upside down",
+    "correct_choice": "B",
+    "explanation": "Many PWC manufacturers specify a particular direction to roll the craft back upright (often marked with a decal near the stern) to prevent water from entering the engine or exhaust system.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'PWC Capsize Recovery'"
+  }
+]

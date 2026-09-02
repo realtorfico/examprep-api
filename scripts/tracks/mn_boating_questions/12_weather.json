@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Weather",
+    "question": "What is a recommended practice for a Minnesota boater before leaving the dock, related to weather?",
+    "choice_a": "Weather forecasts are unreliable and should be ignored entirely",
+    "choice_b": "Check a current marine or local weather forecast, including wind speed and any watches or warnings, rather than relying only on the sky's appearance at the moment of departure",
+    "choice_c": "Only check the weather if planning to be out for more than a week",
+    "choice_d": "It is unnecessary to check weather before boating on an inland lake",
+    "correct_choice": "B",
+    "explanation": "A current forecast checked immediately before departure gives far better information than the sky's appearance at a single moment, since conditions on Minnesota's lakes can shift quickly as storm systems move through, and a forecast can reveal watches or warnings not yet visible.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (pre-departure weather check), consistent with NASBLA-aligned course guidance"
+  },
+  {
+    "topic": "Weather",
+    "question": "What visual sign can warn a Minnesota boater that a thunderstorm may be approaching?",
+    "choice_a": "A clear blue sky with no clouds at all",
+    "choice_b": "Calm, glassy water with no wind whatsoever",
+    "choice_c": "Darkening clouds building vertically (towering cumulus or cumulonimbus), a sudden drop in temperature, and an increasingly gusty or shifting wind",
+    "choice_d": "Consistently warm, stable temperatures with no wind change",
+    "correct_choice": "C",
+    "explanation": "Towering, darkening cumulus or cumulonimbus clouds, a sudden temperature drop, and shifting or increasingly gusty winds are classic early warning signs of an approaching thunderstorm, giving a boater time to head for shelter before conditions deteriorate on open water.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (recognizing approaching thunderstorms)"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why can afternoon thunderstorms be a particular concern for boaters on Minnesota's larger lakes during summer?",
+    "choice_a": "Minnesota never experiences summer thunderstorms",
+    "choice_b": "Thunderstorms only occur at night in Minnesota",
+    "choice_c": "Storm cells always take more than 24 hours to develop, giving ample warning",
+    "choice_d": "Summer heating can trigger fast-developing storm cells that bring sudden strong wind gusts, lightning, and rough waves to open water with relatively little warning, especially on large, exposed lakes",
+    "correct_choice": "D",
+    "explanation": "Summer daytime heating over Minnesota's land and water can fuel fast-developing convective storm cells, which can bring strong, sudden wind gusts, lightning, and rough water conditions to a large, open lake with relatively short warning, making rapid situational awareness important.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (summer convective storm development), applied to Minnesota's large lake systems"
+  },
+  {
+    "topic": "Weather",
+    "question": "What should a boater do if caught on open water when a thunderstorm with lightning develops?",
+    "choice_a": "Head for the nearest safe shore, lower any tall antennas or fishing rods, put on PFDs, and stay low and away from metal objects until the storm passes",
+    "choice_b": "Continue fishing normally since lightning rarely strikes open water",
+    "choice_c": "Anchor in the middle of the lake and wait out the storm without changing position",
+    "choice_d": "Raise all antennas and metal gear to get a better view of the storm",
+    "correct_choice": "A",
+    "explanation": "When lightning threatens, heading to the nearest safe shore, lowering tall metal objects like antennas or fishing rods that can attract a strike, putting on PFDs, and staying low and clear of metal fittings reduces the risk of a lightning strike or a capsizing in sudden rough water.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (lightning safety on open water)"
+  },
+  {
+    "topic": "Weather",
+    "question": "How can wind speed and direction affect a small boat's stability on a Minnesota lake, even without a thunderstorm present?",
+    "choice_a": "Wind never has any meaningful effect on small boat handling",
+    "choice_b": "Strong or gusty wind can build wave height and steepness over open water, increase the risk of swamping a low-freeboard boat, and make it harder to control heading, especially when running broadside to the waves",
+    "choice_c": "Wind direction only matters for sailboats, never for motorboats",
+    "choice_d": "Wave height is completely unrelated to wind conditions",
+    "correct_choice": "B",
+    "explanation": "Sustained or gusty wind builds wave height and steepness across open water, which can swamp a low-freeboard small boat or make it difficult to hold a heading, particularly if the boat ends up broadside (beam-on) to the waves, so wind awareness matters even on a sunny day without storms.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (wind and wave effects on small-boat stability), applied to Minnesota's open lake conditions"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why might fog be a hazard on Minnesota's lakes, particularly in early morning during certain seasons?",
+    "choice_a": "Fog has no effect on visibility for boaters",
+    "choice_b": "Fog only forms over land, never over water",
+    "choice_c": "Fog can drastically reduce visibility, making it hard to see other boats, navigation markers, or shoreline hazards, increasing collision and grounding risk",
+    "choice_d": "Fog improves radar and eyesight-based navigation equally",
+    "correct_choice": "C",
+    "explanation": "Temperature differences between air and water, common on Minnesota lakes especially in early morning during spring and fall, can produce fog that sharply reduces visibility, raising the risk of colliding with another vessel, running aground, or striking a navigation marker or shoreline structure.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (fog hazards), applied to Minnesota seasonal lake conditions"
+  },
+  {
+    "topic": "Weather",
+    "question": "What action should a boater take if visibility drops sharply due to fog while underway on a Minnesota lake?",
+    "choice_a": "Increase speed to get through the fog bank as quickly as possible",
+    "choice_b": "Turn off all lights to avoid drawing attention",
+    "choice_c": "Continue at normal cruising speed since fog rarely affects small lakes",
+    "choice_d": "Slow to a safe speed, sound the appropriate fog signal, turn on navigation lights, and proceed cautiously (or anchor if conditions are severe) while listening carefully for other vessels",
+    "correct_choice": "D",
+    "explanation": "In fog, slowing down, sounding the proper fog signal, using navigation lights even during the day, and proceeding cautiously (or anchoring in severe conditions) while listening for other traffic gives an operator the best chance to avoid a collision when visual detection of other vessels is compromised.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (restricted visibility operating procedure)"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why should a Minnesota boater pay attention to changing cloud patterns and barometric pressure trends during a long day on the water?",
+    "choice_a": "A rapidly falling barometric pressure combined with darkening or building clouds often signals an approaching weather system, giving advance warning to head to shelter before conditions worsen",
+    "choice_b": "Barometric pressure has no relationship to approaching weather",
+    "choice_c": "Cloud patterns are purely decorative and carry no forecasting value",
+    "choice_d": "Weather changes only occur overnight, never during daylight hours",
+    "correct_choice": "A",
+    "explanation": "A noticeably and rapidly falling barometric pressure, paired with darkening or vertically building clouds, is a classic early indicator that a weather system or storm is approaching, giving an attentive boater time to plan a return to shelter before conditions become dangerous.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (barometric pressure and cloud pattern awareness)"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why is it important for a Minnesota boater to know how to identify safe harbors or sheltering points before setting out on a large lake?",
+    "choice_a": "Shelter points are irrelevant since weather on Minnesota lakes never changes quickly",
+    "choice_b": "Knowing nearby shelter options in advance allows a quicker, safer response if weather deteriorates suddenly, rather than searching for shelter for the first time while already caught in worsening conditions",
+    "choice_c": "Every point on every large lake is equally safe in any weather",
+    "choice_d": "Only commercial vessels need to identify shelter points",
+    "correct_choice": "B",
+    "explanation": "Identifying potential shelter points -- coves, marinas, or protected shorelines -- before departure means a boater caught by fast-developing weather can react quickly and confidently rather than losing critical time deciding where to go once conditions have already turned dangerous.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (pre-trip shelter planning), consistent with NASBLA-aligned course guidance"
+  }
+]

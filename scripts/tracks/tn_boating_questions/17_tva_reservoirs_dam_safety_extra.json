@@ -1,0 +1,38 @@
+[
+  {
+    "topic": "TVA Reservoirs & Dam Safety",
+    "question": "Besides recreation, what primary purposes do TVA's Tennessee reservoirs serve that can directly affect boating conditions?",
+    "choice_a": "Flood control, hydroelectric power generation, and navigation on the Tennessee River system, all of which can change water levels and current with little advance notice to boaters",
+    "choice_b": "TVA reservoirs exist solely for recreational boating with no other function",
+    "choice_c": "Only irrigation for nearby farmland, unrelated to water levels boaters experience",
+    "choice_d": "Reservoirs have no functional purpose beyond scenic value",
+    "correct_choice": "A",
+    "explanation": "TVA reservoirs are managed for flood control, hydroelectric power generation, and navigation along the Tennessee River system, and operations tied to those purposes -- like scheduled water releases -- can change water levels and current conditions that boaters need to anticipate.",
+    "weight": 2,
+    "source_note": "General TVA reservoir-management purpose applied to Tennessee boating safety"
+  },
+  {
+    "topic": "TVA Reservoirs & Dam Safety",
+    "question": "Why should a boater stay well clear of a dam's intake structure, separate from the spillway and tailwater hazards already covered by Tennessee's below-dam PFD rule?",
+    "choice_a": "A dam's water intake can create strong suction currents that pull objects and swimmers toward the intake structure",
+    "choice_b": "Intake structures pose no additional hazard beyond what the spillway already presents",
+    "choice_c": "Intake structures are always located far outside any reservoir and are never a boating concern",
+    "choice_d": "Only scuba divers, never surface boaters, need to be concerned about intake structures",
+    "correct_choice": "A",
+    "explanation": "A dam's water intake structure can generate strong suction currents that pull nearby objects, and potentially swimmers or small craft, toward the intake, presenting a distinct hazard from the turbulence and undertow found at a spillway or tailrace.",
+    "weight": 3,
+    "source_note": "General dam safety guidance applied to Tennessee's TVA dam system"
+  },
+  {
+    "topic": "TVA Reservoirs & Dam Safety",
+    "question": "After a period of heavy rain or a significant TVA water release raises reservoir levels, what floating hazard often increases for boaters?",
+    "choice_a": "Floating debris, such as displaced logs, branches, and loosened dock or shoreline material, washed into the reservoir by rising water",
+    "choice_b": "Water clarity always improves immediately after a heavy rain",
+    "choice_c": "Floating debris is never a concern on any TVA reservoir",
+    "choice_d": "Rising water permanently removes all submerged hazards from a reservoir",
+    "correct_choice": "A",
+    "explanation": "Heavy rain or a significant water release can wash logs, branches, and loosened dock or shoreline debris into a reservoir, creating a temporary but real floating-hazard risk for boaters that is separate from the submerged-stump risk tied to low water levels.",
+    "weight": 2,
+    "source_note": "General TVA reservoir-management characteristics applied to Tennessee boating safety"
+  }
+]

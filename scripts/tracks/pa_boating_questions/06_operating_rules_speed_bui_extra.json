@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Operating Rules, Speed, and BUI",
+    "question": "Within what distance of the shoreline, docks, launch ramps, swimmers, downed skiers, persons wading, anchored or moored boats, or floats must a Pennsylvania boat operator maintain slow, no-wake speed?",
+    "choice_a": "100 feet",
+    "choice_b": "25 feet",
+    "choice_c": "500 feet",
+    "choice_d": "There is no set distance -- it is left entirely to the operator's judgment",
+    "correct_choice": "A",
+    "explanation": "Pennsylvania powered-boat regulations require slow, no-wake speed within 100 feet of the shoreline, docks, launch ramps, swimmers, downed skiers, persons wading, anchored or moored boats, and floats.",
+    "weight": 3,
+    "source_note": "PA Fish and Boat Commission powered boat regulations, pa.gov"
+  },
+  {
+    "topic": "Operating Rules, Speed, and BUI",
+    "question": "When passing near another underway vessel in Pennsylvania, within what distance to its rear or to its side must an operator reduce to slow, no-wake speed (outside of narrow channels)?",
+    "choice_a": "Within 10 feet to the rear or 5 feet to the side",
+    "choice_b": "Within 100 feet to the rear or 50 feet to the side of the other vessel",
+    "choice_c": "Within 1,000 feet in any direction",
+    "choice_d": "Distance from other underway vessels is not regulated in Pennsylvania",
+    "correct_choice": "B",
+    "explanation": "Pennsylvania regulations require slow, no-wake speed within 100 feet to the rear or 50 feet to the side of another underway vessel, except where narrow channels make this impractical.",
+    "weight": 3,
+    "source_note": "PA Fish and Boat Commission powered boat regulations, pa.gov"
+  },
+  {
+    "topic": "Operating Rules, Speed, and BUI",
+    "question": "If another boat is towing a skier or tuber, how close may a passing boat come to the person in the water before it must slow to no-wake speed?",
+    "choice_a": "There is no restriction as long as the towboat is visible",
+    "choice_b": "Only PWCs are required to slow near a towed person",
+    "choice_c": "It must slow to no-wake speed within 100 feet of the person being towed",
+    "choice_d": "It may pass at full speed as long as it does not touch the tow rope",
+    "correct_choice": "C",
+    "explanation": "Pennsylvania regulations require any vessel to operate at slow, no-wake speed within 100 feet of a person being towed behind another boat, protecting the towed skier or tuber from wake and collision risk created by passing traffic.",
+    "weight": 3,
+    "source_note": "PA Fish and Boat Commission powered boat regulations, pa.gov"
+  },
+  {
+    "topic": "Operating Rules, Speed, and BUI",
+    "question": "For a motorboat under 20 feet in length, what speed restriction applies whenever a person is standing on or in the boat while it is underway?",
+    "choice_a": "There is no restriction as long as the person is holding onto a rail",
+    "choice_b": "The restriction only applies to boats longer than 20 feet",
+    "choice_c": "Standing while underway is completely prohibited on any size boat",
+    "choice_d": "The operator may not exceed slow, no-wake speed while that person is standing",
+    "correct_choice": "D",
+    "explanation": "Pennsylvania regulations prohibit a motorboat under 20 feet from exceeding slow, no-wake speed while a person is standing on or in the boat, reducing the risk of that person being thrown overboard.",
+    "weight": 2,
+    "source_note": "PA Fish and Boat Commission powered boat regulations, pa.gov"
+  },
+  {
+    "topic": "Operating Rules, Speed, and BUI",
+    "question": "Under Pennsylvania's prohibited reckless-operation rules, what specific act involving another vessel's wake is called out as dangerous, in addition to general wake-jumping?",
+    "choice_a": "Deliberately causing the boat to become airborne or completely leave the water while crossing within 100 feet of another vessel's wake",
+    "choice_b": "Slowing down before crossing another vessel's wake",
+    "choice_c": "Crossing a wake more than 500 feet behind the other vessel",
+    "choice_d": "Reckless operation rules do not mention wakes at all",
+    "correct_choice": "A",
+    "explanation": "Pennsylvania's reckless-operation prohibitions specifically identify causing a vessel to become airborne or to completely leave the water while crossing within 100 feet of another vessel's wake as dangerous, careless operation.",
+    "weight": 3,
+    "source_note": "PA Fish and Boat Commission powered boat regulations, prohibited reckless operation, pa.gov"
+  },
+  {
+    "topic": "Operating Rules, Speed, and BUI",
+    "question": "While a Pennsylvania powerboat is underway, where are passengers prohibited from riding?",
+    "choice_a": "Passengers may ride anywhere on the boat with no restriction while underway",
+    "choice_b": "On the bow decking, gunwales, transom, motor covers, or swim platform/ladder",
+    "choice_c": "Only the bow decking is off-limits; all other exterior surfaces are permitted",
+    "choice_d": "The restriction applies only to PWCs, not conventional powerboats",
+    "correct_choice": "B",
+    "explanation": "Pennsylvania regulations prohibit riding on the bow decking, gunwales, transom, motor covers, or swim platform/ladder of a powerboat while it is underway, since a sudden stop, wave, or turn can throw an unsecured passenger overboard or into the propeller.",
+    "weight": 3,
+    "source_note": "PA Fish and Boat Commission powered boat regulations, passenger positioning rule, pa.gov"
+  },
+  {
+    "topic": "Operating Rules, Speed, and BUI",
+    "question": "When a boat is actively towing a skier, tuber, or wakeboarder in Pennsylvania, within what distance of the shoreline, docks, launch ramps, or swimmers must it maintain slow, no-wake speed -- a stricter distance than the general operating rule for boats not towing anyone?",
+    "choice_a": "100 feet, the same as any other boat",
+    "choice_b": "10 feet",
+    "choice_c": "200 feet",
+    "choice_d": "There is no distinct distance rule for boats towing a skier",
+    "correct_choice": "C",
+    "explanation": "Pennsylvania's boat-towed watersports regulations require slow, no-wake speed within 200 feet of the shoreline, docks, launch ramps, and swimmers -- double the general 100-foot rule -- reflecting the added risk of a skier or tuber swinging wide near congested areas.",
+    "weight": 2,
+    "source_note": "PA Fish and Boat Commission boat-towed watersports regulations, pa.gov"
+  },
+  {
+    "topic": "Operating Rules, Speed, and BUI",
+    "question": "Does Pennsylvania's prohibition on operating a vessel while under the influence of alcohol or drugs apply to non-motorized craft like canoes, kayaks, and paddleboards, or only to powered boats?",
+    "choice_a": "It applies only to boats with a motor greater than 25 horsepower",
+    "choice_b": "It applies only to personal watercraft (PWCs)",
+    "choice_c": "Unpowered, manually propelled craft are entirely exempt from Pennsylvania's BUI law",
+    "choice_d": "It applies to canoes, kayaks, and paddleboards as well as powered boats -- the prohibition is not limited to motorized vessels",
+    "correct_choice": "D",
+    "explanation": "Pennsylvania's unpowered-boat regulations explicitly prohibit operating a canoe, kayak, rowboat, or paddleboard while under the influence of alcohol or drugs, confirming that BUI law is not limited to motorized vessels.",
+    "weight": 3,
+    "source_note": "PA Fish and Boat Commission unpowered boat regulations, DUI/drug operating prohibition, pa.gov"
+  }
+]

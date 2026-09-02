@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a red-and-white vertically striped marker, sometimes topped with a red sphere, indicate in the U.S. Aids to Navigation System?",
+    "choice_a": "It marks a swimming-only area closed to boats",
+    "choice_b": "It marks a hazard that must always be passed on the boat's starboard side",
+    "choice_c": "It marks a mooring field reserved for permitted boats",
+    "choice_d": "It marks a safe water channel or fairway with unobstructed, navigable water on all sides, and may be passed on either side",
+    "correct_choice": "D",
+    "explanation": "Red-and-white vertically striped markers are safe water (fairway) marks. They indicate unobstructed water on all sides -- often at the start of a channel or a mid-channel landfall -- and can be passed safely on either side.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System, safe water (fairway) marks, PA-approved boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What color is used for a 'special mark' in the U.S. Aids to Navigation System, and what does it generally indicate?",
+    "choice_a": "Solid yellow, indicating a special area or feature not related to channel navigation, such as an anchorage, dredging operation, or traffic separation zone",
+    "choice_b": "Solid black, indicating an isolated hazard only",
+    "choice_c": "Solid blue, indicating a designated swimming beach",
+    "choice_d": "Solid white, indicating open water with no restrictions",
+    "correct_choice": "A",
+    "explanation": "Special marks are solid yellow and denote an area or feature that is not part of the lateral channel system, such as anchorage areas, dredging zones, traffic separations, or other special-purpose areas.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System, special marks, PA-approved boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What color scheme distinguishes a mooring buoy from other regulatory markers in the U.S. Aids to Navigation System?",
+    "choice_a": "White with an orange diamond, marking a hazard",
+    "choice_b": "White with a single horizontal blue band, marking a location designated for a boat to tie up",
+    "choice_c": "Solid red, marking a no-boating zone",
+    "choice_d": "Green and red stripes, marking a channel junction",
+    "correct_choice": "B",
+    "explanation": "A mooring buoy is white with a horizontal blue band -- the only aid in the system that uses blue -- and marks a location where a vessel may secure itself, unlike other white regulatory markers, which use orange symbols to warn or inform boaters.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System, mooring buoys, PA-approved boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "As a boater heads upstream on a Pennsylvania river or into a channel from open water, how do the numbers on lateral aids to navigation typically change?",
+    "choice_a": "The numbers generally decrease the farther the boater travels upstream or into the channel",
+    "choice_b": "The numbers reset to zero at every mile",
+    "choice_c": "The numbers generally increase the farther the boater travels upstream or into the channel",
+    "choice_d": "Numbers are assigned randomly and carry no directional meaning",
+    "correct_choice": "C",
+    "explanation": "Numbers on lateral aids to navigation increase as a boater proceeds upstream or into a channel from open water, helping boaters track their progress and identify their position relative to charted aids.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System, lateral marker numbering, PA-approved boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "On a fixed daybeacon rather than a floating buoy, what shape and color dayboard corresponds to the green, odd-numbered 'can' marking the left side of a channel when returning from open water?",
+    "choice_a": "A triangular, red dayboard",
+    "choice_b": "A round, yellow dayboard",
+    "choice_c": "A diamond-shaped, white dayboard with an orange border",
+    "choice_d": "A square, green dayboard",
+    "correct_choice": "D",
+    "explanation": "Fixed daybeacons use dayboard shapes that mirror buoy meanings: a square green dayboard corresponds to a green can, marking the left side of a channel when returning from open water, while a triangular red dayboard corresponds to a red nun on the right side.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System, daybeacon dayboard shapes, PA-approved boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "If a red nun buoy is fitted with a navigation light, what color will that light be?",
+    "choice_a": "Red, matching the color of the buoy",
+    "choice_b": "Green, to contrast with the buoy's color for visibility",
+    "choice_c": "White, since all navigational lights on buoys are white",
+    "choice_d": "Blue, to indicate it is a lighted hazard marker",
+    "correct_choice": "A",
+    "explanation": "When a lateral aid to navigation is lighted, the light's color matches the color of the aid itself -- red lights on red markers (nuns) and green lights on green markers (cans) -- so the color coding stays consistent day or night.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System, lighted lateral markers, PA-approved boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Regardless of the specific black symbol displayed on it (diamond, circle, square, etc.), what is the general color pattern of a white regulatory marker in the Uniform State Waterway Marking System?",
+    "choice_a": "A solid orange background with a white symbol in the center",
+    "choice_b": "A white background with international orange horizontal bands near the top and bottom of the marker",
+    "choice_c": "Alternating red and white vertical stripes",
+    "choice_d": "A blue background with a yellow symbol",
+    "correct_choice": "B",
+    "explanation": "Regulatory markers share a common white body with international orange horizontal bands near the top and bottom; the shape and color of the symbol placed between the bands (diamond, circle, square, etc.) conveys the marker's specific meaning.",
+    "weight": 2,
+    "source_note": "Uniform State Waterway Marking System, regulatory marker color pattern, PA-approved boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is the purpose of a pair of 'range markers' sometimes found along a Pennsylvania river channel?",
+    "choice_a": "They mark the two ends of a no-wake zone",
+    "choice_b": "They indicate the boater has left Pennsylvania waters and entered another state's jurisdiction",
+    "choice_c": "When the front (lower) and rear (higher) markers are visually lined up, one above the other, they show the boater is positioned on the safe centerline of the channel",
+    "choice_d": "They are used exclusively to mark swimming areas",
+    "correct_choice": "C",
+    "explanation": "Range markers work in pairs -- a lower, closer front marker and a higher, more distant rear marker. When a boater sees them aligned vertically, the vessel is on the safe centerline track through the channel; if they appear offset from one another, the boater has drifted off that centerline.",
+    "weight": 2,
+    "source_note": "Aids to navigation, range markers, PA-approved boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "If a boater notices that an aid to navigation on a Pennsylvania waterway is damaged, missing, or out of position, what should the boater do?",
+    "choice_a": "Ignore it, since aids to navigation are not maintained once installed",
+    "choice_b": "Reposition the marker personally to where it seems it should be",
+    "choice_c": "Remove the marker entirely so it does not confuse other boaters",
+    "choice_d": "Report the discrepancy to the responsible authority, such as the U.S. Coast Guard or the Pennsylvania Fish and Boat Commission, so it can be repaired or repositioned",
+    "correct_choice": "D",
+    "explanation": "Aids to navigation depend on accurate positioning to remain useful and safe. Boaters who notice a damaged, missing, or displaced aid should report it to the maintaining authority -- the U.S. Coast Guard for federal aids or the Pennsylvania Fish and Boat Commission for state-maintained aids -- rather than attempting to fix or move it themselves.",
+    "weight": 2,
+    "source_note": "Aids to navigation, reporting discrepancies, PA Fish and Boat Commission safety guidance"
+  }
+]

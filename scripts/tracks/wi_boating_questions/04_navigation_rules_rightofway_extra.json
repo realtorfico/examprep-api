@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What does two short horn blasts mean when signaling a maneuvering intention under the Inland Navigation Rules?",
+    "choice_a": "\"I am anchoring\"",
+    "choice_b": "\"I am altering course to port\" (I intend to leave you on my starboard side)",
+    "choice_c": "\"I am altering course to starboard\"",
+    "choice_d": "\"Danger, keep clear\"",
+    "correct_choice": "B",
+    "explanation": "Two short horn blasts signal that a vessel intends to leave the other vessel on its starboard side, meaning it is altering course to port -- the counterpart to one short blast, which signals a turn to starboard.",
+    "weight": 3,
+    "source_note": "U.S. Inland Navigation Rules maneuvering signals, applied in NASBLA-aligned Wisconsin boater education curriculum, Unit 2: Sound Signals"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What does three short horn blasts indicate under the Inland Navigation Rules?",
+    "choice_a": "\"I am operating astern propulsion\" (backing down)",
+    "choice_b": "\"I am overtaking on your port side\"",
+    "choice_c": "\"All clear to proceed\"",
+    "choice_d": "\"I am at anchor\"",
+    "correct_choice": "A",
+    "explanation": "Three short blasts tell nearby vessels that the signaling vessel is operating its engine astern (backing down), which is important information since a boat backing up may move unpredictably relative to its heading.",
+    "weight": 2,
+    "source_note": "U.S. Inland Navigation Rules maneuvering signals, applied in NASBLA-aligned Wisconsin boater education curriculum, Unit 2: Sound Signals"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What is a \"vessel not under command\" (NUC), and how does it rank in the Navigation Rules' right-of-way hierarchy?",
+    "choice_a": "A vessel with no operator at all aboard, which has no right-of-way status",
+    "choice_b": "A vessel that, through some exceptional circumstance such as a mechanical or steering failure, cannot maneuver as required, and which sits at the very top of the right-of-way hierarchy that other vessels must avoid",
+    "choice_c": "Any vessel operating without a licensed captain, ranked lowest in priority",
+    "choice_d": "A term used only for vessels that have run out of fuel",
+    "correct_choice": "B",
+    "explanation": "A vessel not under command is one that cannot maneuver as required by an exceptional circumstance, such as a disabled engine or steering failure -- because it has no ability to avoid other traffic, it holds the highest right-of-way priority, and virtually every other vessel must keep clear of it.",
+    "weight": 3,
+    "source_note": "U.S. Inland Navigation Rules vessel-priority categories, applied in NASBLA-aligned boater education curriculum, Unit 2: Navigation Rules"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What does it mean for a large vessel to be \"constrained by her draft,\" a category relevant on the Great Lakes waters Wisconsin borders?",
+    "choice_a": "The vessel's captain has voluntarily chosen to slow down",
+    "choice_b": "The vessel is a personal watercraft operating in shallow water",
+    "choice_c": "A deep-draft vessel, such as a Great Lakes freighter, is severely restricted in its ability to deviate from a safe, deep channel because of its draft in relation to the available water depth, and other vessels must give it priority",
+    "choice_d": "The vessel has lost its anchor",
+    "correct_choice": "C",
+    "explanation": "A vessel constrained by its draft -- such as a large freighter transiting a Great Lakes shipping channel near Wisconsin's ports -- has little to no room to leave the deep water of the channel without running aground, so smaller, more maneuverable recreational vessels must give it a wide berth and priority.",
+    "weight": 3,
+    "source_note": "U.S. Inland Navigation Rules vessel-priority categories, applied to Great Lakes shipping traffic near Wisconsin's Lake Michigan and Lake Superior ports"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "How does a vessel engaged in commercial fishing (actively working nets, trawls, or lines that restrict its maneuverability) rank in the Navigation Rules' right-of-way hierarchy relative to an ordinary recreational powerboat?",
+    "choice_a": "It has no special priority and must always yield to recreational traffic",
+    "choice_b": "It ranks above an ordinary power-driven vessel, since its fishing gear limits its ability to maneuver freely",
+    "choice_c": "Fishing vessels are excluded entirely from the Navigation Rules",
+    "choice_d": "Recreational anglers trolling with a rod and reel receive this same elevated priority",
+    "correct_choice": "B",
+    "explanation": "A vessel actively engaged in fishing with gear such as nets, trawls, or lines that restricts its maneuverability ranks above an ordinary power-driven vessel in the right-of-way hierarchy -- this does not include recreational anglers simply trolling with a rod and reel, who are treated as ordinary power-driven vessels.",
+    "weight": 2,
+    "source_note": "U.S. Inland Navigation Rules vessel-priority categories, applied in NASBLA-aligned boater education curriculum, Unit 2: Navigation Rules"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What is the general order of priority, from highest to lowest, among vessel categories recognized by the Navigation Rules?",
+    "choice_a": "Power-driven vessel, sailing vessel, fishing vessel, restricted-maneuverability vessel, constrained-by-draft vessel, not-under-command vessel",
+    "choice_b": "All vessel types have exactly equal priority at all times",
+    "choice_c": "Vessel not under command, restricted in ability to maneuver, constrained by draft, engaged in fishing, sailing vessel, power-driven vessel",
+    "choice_d": "Priority is determined solely by which vessel is largest",
+    "correct_choice": "C",
+    "explanation": "The Navigation Rules establish a general priority order -- from a vessel not under command (highest), through restricted in ability to maneuver, constrained by draft, engaged in fishing, sailing, down to an ordinary power-driven vessel (generally lowest) -- reflecting each category's relative ability to get out of the way.",
+    "weight": 3,
+    "source_note": "U.S. Inland Navigation Rules general vessel-priority hierarchy, applied in NASBLA-aligned boater education curriculum, Unit 2: Navigation Rules"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "How should an operator underway treat a vessel that is anchored or securely moored in open water?",
+    "choice_a": "As a stationary obstacle to be seen and avoided, since the anchored vessel has no ability to maneuver out of the way",
+    "choice_b": "As the give-way vessel in every encounter, since it is not moving",
+    "choice_c": "Anchored vessels have no bearing on other traffic and may be passed at any speed or distance",
+    "choice_d": "An anchored vessel automatically has the same priority as a vessel not under command",
+    "correct_choice": "A",
+    "explanation": "A vessel at anchor is not maneuvering and cannot take avoiding action, so the responsibility falls entirely on any vessel underway to see it and steer well clear, rather than expecting the anchored vessel to move.",
+    "weight": 2,
+    "source_note": "U.S. Inland Navigation Rules general collision-avoidance principle, applied in NASBLA-aligned boater education curriculum"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What is the recommended default action if an operator is unsure whether they are the stand-on or give-way vessel in a developing situation?",
+    "choice_a": "Assume stand-on status and hold course regardless of the other vessel's actions",
+    "choice_b": "Speed up to clear the area before the situation becomes clearer",
+    "choice_c": "Slow down, stop if necessary, or otherwise take early, cautious action to avoid a close-quarters situation until the other vessel's intentions are clear",
+    "choice_d": "Turn off running lights so the other vessel cannot see you",
+    "correct_choice": "C",
+    "explanation": "When right-of-way status is unclear or in doubt, the safe default is to slow down, stop, or otherwise take early cautious action rather than assuming a stand-on role, since guessing wrong in a close-quarters situation can lead directly to a collision.",
+    "weight": 3,
+    "source_note": "U.S. Inland Navigation Rules general collision-avoidance principle, applied in NASBLA-aligned boater education curriculum, Unit 2: Navigation Rules"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What must an operator do when proceeding in fog or another condition of restricted visibility, under the Navigation Rules?",
+    "choice_a": "Proceed at a safe speed adapted to the reduced visibility, and sound the appropriate fog signal at the required intervals",
+    "choice_b": "Increase speed to clear the foggy area as quickly as possible",
+    "choice_c": "Turn off all lights and sound signals to avoid confusing other vessels",
+    "choice_d": "Restricted-visibility rules apply only to commercial vessels, not recreational boats",
+    "correct_choice": "A",
+    "explanation": "In fog or other restricted visibility, the Navigation Rules require proceeding at a safe speed adapted to the conditions and sounding the prescribed fog signal at regular intervals, since other vessels may not be able to see you and must rely on sound to detect your presence.",
+    "weight": 3,
+    "source_note": "U.S. Inland Navigation Rules restricted-visibility rule, applied in NASBLA-aligned boater education curriculum, Unit 2: Navigation Rules"
+  }
+]

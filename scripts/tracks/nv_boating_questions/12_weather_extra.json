@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Weather Awareness",
+    "question": "What does a National Weather Service \"Small Craft Advisory\" generally warn boaters about on a body of water like Lake Mead or Lake Tahoe?",
+    "choice_a": "Sustained winds and/or wave conditions, commonly in the range of roughly 20 to 33 knots, that can create hazardous conditions for smaller recreational vessels",
+    "choice_b": "A ban on all boating regardless of vessel size",
+    "choice_c": "A notice that fish are not biting",
+    "choice_d": "A warning relevant only to commercial shipping on the ocean",
+    "correct_choice": "A",
+    "explanation": "A National Weather Service Small Craft Advisory generally warns of sustained winds and/or wave conditions, commonly in the roughly 20-to-33-knot range, that can be hazardous for smaller recreational vessels, a real concern on open, wind-exposed water like Lake Mead or Lake Tahoe.",
+    "weight": 3,
+    "source_note": "Universal National Weather Service marine forecast terminology (Small Craft Advisory), applied to Lake Mead/Lake Tahoe open-water conditions"
+  },
+  {
+    "topic": "Weather Awareness",
+    "question": "What is the safest response if lightning is observed while out on open water in a small boat with no cabin?",
+    "choice_a": "Continue boating normally since lightning cannot strike a boat",
+    "choice_b": "Get off the water as quickly as possible and seek shelter in a substantial building or hard-topped vehicle, since there is no reliably safe place on a small open boat during a lightning storm",
+    "choice_c": "Anchor in the middle of the lake and wait it out, since open water is safer than shore",
+    "choice_d": "Stand up to get a better view of the storm's direction",
+    "correct_choice": "B",
+    "explanation": "There is no reliably safe place on a small, open boat during a lightning storm, so the safest response is to get off the water as quickly as possible and seek shelter in a substantial building or a hard-topped vehicle.",
+    "weight": 3,
+    "source_note": "Universal lightning safety guidance, NASBLA-aligned boating safety curriculum, applied to Lake Mead/Lake Tahoe open-water boating"
+  },
+  {
+    "topic": "Weather Awareness",
+    "question": "Why can a desert wash or canyon area near Lake Mead flood suddenly during monsoon season even if it is not currently raining at the boater's own location?",
+    "choice_a": "Flash floods can result from rain falling miles away in higher terrain, with runoff funneling quickly into washes and canyons that eventually reach the lake",
+    "choice_b": "Flash floods only occur during winter snowmelt, never during summer monsoon storms",
+    "choice_c": "Desert washes cannot flood under any circumstance",
+    "choice_d": "Flooding near Lake Mead is entirely unrelated to weather in surrounding areas",
+    "correct_choice": "A",
+    "explanation": "A flash flood in a desert wash or canyon can be caused by rain falling miles away in higher terrain, with the runoff funneling quickly downstream into washes and canyons that empty toward Lake Mead, even when the boater's own location is dry.",
+    "weight": 2,
+    "source_note": "General Southwest desert flash-flood fundamentals applied to Lake Mead's surrounding wash and canyon terrain during monsoon season"
+  },
+  {
+    "topic": "Weather Awareness",
+    "question": "What recurring seasonal hazard, beyond wind and thunderstorms, can reduce visibility and air quality for boaters on Lake Tahoe in late summer and fall?",
+    "choice_a": "Regional wildfire smoke, which can drift into the Lake Tahoe basin and reduce visibility and air quality during fire season",
+    "choice_b": "Lake Tahoe is entirely unaffected by any regional wildfire activity",
+    "choice_c": "Volcanic ash, which is a regular occurrence at Lake Tahoe",
+    "choice_d": "Ocean fog, which frequently rolls into the Sierra Nevada",
+    "correct_choice": "A",
+    "explanation": "Regional wildfire smoke can drift into the Lake Tahoe basin during late summer and fall fire season, reducing visibility and air quality for boaters, a recurring seasonal hazard distinct from the area's wind and thunderstorm patterns.",
+    "weight": 2,
+    "source_note": "General documented Sierra Nevada/Lake Tahoe wildfire smoke season, applied to boater visibility and air-quality awareness"
+  },
+  {
+    "topic": "Weather Awareness",
+    "question": "Once already out on the water with unreliable cell service, how can a boater on Lake Mead or Lake Mohave monitor for changing weather conditions?",
+    "choice_a": "Weather cannot be monitored once a boater has left the dock",
+    "choice_b": "By using a marine VHF radio tuned to a NOAA weather channel, which broadcasts continuous weather information independent of cell coverage",
+    "choice_c": "By waiting for another boater to physically deliver a printed forecast",
+    "choice_d": "Only by returning to the dock every hour to check a posted forecast",
+    "correct_choice": "B",
+    "explanation": "A marine VHF radio tuned to a NOAA weather channel provides continuous weather broadcasts independent of cell coverage, letting a boater monitor changing conditions even while out on remote stretches of Lake Mead or Lake Mohave.",
+    "weight": 2,
+    "source_note": "Universal NOAA weather radio broadcast guidance, NASBLA-aligned boating safety curriculum, applied to Lake Mead/Lake Mohave's limited cell coverage"
+  },
+  {
+    "topic": "Weather Awareness",
+    "question": "Why might a boater still face a real cold-water risk on Lake Mead during a mild spring or fall day, even though air temperatures feel comfortable?",
+    "choice_a": "Water temperature always matches air temperature exactly",
+    "choice_b": "Water warms and cools more slowly than air, so the lake's water can still be significantly colder than a mild spring or fall day's air temperature, creating a cold-shock or hypothermia risk if someone falls in",
+    "choice_c": "Cold-water risk applies only during winter, never in spring or fall",
+    "choice_d": "Lake Mead's water temperature is constant year-round regardless of season",
+    "correct_choice": "B",
+    "explanation": "Because water warms and cools more slowly than air, Lake Mead's water can remain significantly colder than a comfortable spring or fall air temperature would suggest, so a fall overboard on a mild-feeling day can still pose a real cold-shock or hypothermia risk.",
+    "weight": 2,
+    "source_note": "General water-versus-air thermal lag fundamentals applied to Lake Mead's seasonal temperature patterns"
+  }
+]

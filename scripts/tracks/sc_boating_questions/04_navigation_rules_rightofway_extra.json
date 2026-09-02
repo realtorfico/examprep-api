@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Under Rule 7 of the Navigation Rules, how can an operator tell that risk of collision exists with an approaching vessel?",
+    "choice_a": "Risk of collision can never be assessed before the vessels are within 50 feet of each other",
+    "choice_b": "If the compass bearing to the approaching vessel does not appreciably change while the range decreases, risk of collision is considered to exist",
+    "choice_c": "Only radar, never a visual compass bearing check, can indicate risk of collision",
+    "choice_d": "Risk of collision exists only if both vessels are traveling at maximum speed",
+    "correct_choice": "B",
+    "explanation": "Rule 7 explains that if the compass bearing of an approaching vessel does not appreciably change while the distance between the vessels is decreasing, risk of collision must be deemed to exist, a practical technique boaters can use with a hand compass or by watching a fixed point on their own vessel.",
+    "weight": 4,
+    "source_note": "Universal Navigation Rules (Inland Rules, 33 CFR 83, Rule 7 - risk of collision)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Under Rule 8, what qualities must an action taken to avoid collision have to satisfy the Navigation Rules?",
+    "choice_a": "It must be delayed until the last possible moment to conserve fuel",
+    "choice_b": "It has no required qualities as long as some action is eventually taken",
+    "choice_c": "It must be positive, made in ample time, and readily apparent to the other vessel, so there is no doubt about the maneuver being made",
+    "choice_d": "It must always involve stopping the engine completely",
+    "correct_choice": "C",
+    "explanation": "Rule 8 requires that any action taken to avoid collision be positive, taken in ample time, and readily apparent to the other vessel, so the other operator can clearly recognize the maneuver rather than being left uncertain about what the first vessel intends to do.",
+    "weight": 4,
+    "source_note": "Universal Navigation Rules (Inland Rules, 33 CFR 83, Rule 8 - action to avoid collision)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Under Rule 16, what standard applies specifically to the give-way vessel's obligation once it is required to keep clear of another vessel?",
+    "choice_a": "It should wait until the stand-on vessel signals before doing anything",
+    "choice_b": "It must take early and substantial action to keep well clear of the other vessel",
+    "choice_c": "It only needs to act if a collision is already unavoidable",
+    "choice_d": "It has no specific obligation beyond what the stand-on vessel does",
+    "correct_choice": "B",
+    "explanation": "Rule 16 requires the give-way vessel to take early and substantial action to keep well clear of the vessel it must avoid, rather than making a minor, late, or ambiguous adjustment that leaves too little margin for safety.",
+    "weight": 4,
+    "source_note": "Universal Navigation Rules (Inland Rules, 33 CFR 83, Rule 16 - action by give-way vessel)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Under Rule 19, what general standard applies to vessels operating in restricted visibility that are not in sight of one another, such as in dense fog on a South Carolina lake?",
+    "choice_a": "No rules apply until the vessels can actually see each other",
+    "choice_b": "Every vessel must proceed at a safe speed adapted to the prevailing circumstances and conditions of restricted visibility, and must have engines ready for immediate maneuvering",
+    "choice_c": "Vessels not in sight of each other may travel at maximum speed since no visual right-of-way applies",
+    "choice_d": "Only commercial vessels must slow down in restricted visibility",
+    "correct_choice": "B",
+    "explanation": "Rule 19 requires every vessel operating in or near an area of restricted visibility to proceed at a safe speed adapted to the circumstances and to have its engines ready for immediate maneuvering, since the normal visual give-way/stand-on rules cannot be applied when vessels cannot see one another.",
+    "weight": 4,
+    "source_note": "Universal Navigation Rules (Inland Rules, 33 CFR 83, Rule 19 - conduct in restricted visibility)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Under Rule 30, what must a vessel anchored on South Carolina waters display to warn other boaters of its position?",
+    "choice_a": "Nothing; anchored vessels are exempt from all lighting and shape requirements",
+    "choice_b": "A red flashing light only, regardless of time of day",
+    "choice_c": "An all-round white anchor light at night, and a black ball shape during the day",
+    "choice_d": "A green sidelight at all times",
+    "correct_choice": "C",
+    "explanation": "Rule 30 requires a vessel at anchor to display an all-round white anchor light after dark and a single black ball shape during daylight hours, so that approaching vessels can recognize from a distance that the vessel is stationary rather than underway.",
+    "weight": 4,
+    "source_note": "Universal Navigation Rules (Inland Rules, 33 CFR 83, Rule 30 - anchored vessel lights and shapes)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Under Rule 35, what sound signal should a vessel at anchor in restricted visibility, such as fog on Lake Marion, sound to warn nearby traffic?",
+    "choice_a": "One long, continuous blast held for the entire period of low visibility",
+    "choice_b": "Rapid ringing of a bell for about five seconds at intervals of not more than one minute",
+    "choice_c": "No sound signal is required of an anchored vessel under any circumstance",
+    "choice_d": "Three short horn blasts every ten minutes",
+    "correct_choice": "B",
+    "explanation": "Rule 35 requires a vessel at anchor in restricted visibility to sound rapid ringing of a bell for about five seconds at intervals of not more than one minute, a distinctly different signal from the prolonged horn blast used by a vessel that is underway and making way.",
+    "weight": 3,
+    "source_note": "Universal Navigation Rules (Inland Rules, 33 CFR 83, Rule 35 - anchored vessel sound signal in restricted visibility)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Under Rule 2 of the Navigation Rules, when may an operator depart from the strict letter of a navigation rule?",
+    "choice_a": "Whenever it is more convenient or saves time",
+    "choice_b": "Never; the rules must be followed exactly in every situation with no exception",
+    "choice_c": "When necessary to avoid immediate danger, consistent with the ordinary practice of seamen and the special circumstances of the case",
+    "choice_d": "Only if no other vessel is anywhere nearby",
+    "correct_choice": "C",
+    "explanation": "Rule 2 recognizes that a rigid, literal application of the rules is not always safest; it allows -- and in some cases requires -- an operator to depart from the rules when necessary to avoid immediate danger, guided by the ordinary practice of seamen and the special circumstances actually present.",
+    "weight": 3,
+    "source_note": "Universal Navigation Rules (Inland Rules, 33 CFR 83, Rule 2 - responsibility)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Under Rule 27, how does a vessel \"not under command\" -- one temporarily unable to maneuver due to some exceptional circumstance, such as a mechanical failure -- signal its status to nearby traffic?",
+    "choice_a": "Two black ball shapes displayed vertically by day, and two all-round red lights displayed vertically by night",
+    "choice_b": "A single green light regardless of the time of day",
+    "choice_c": "It has no way to signal this status and must rely on other vessels simply noticing",
+    "choice_d": "A continuously sounding siren with no visual signal",
+    "correct_choice": "A",
+    "explanation": "Rule 27 requires a vessel not under command to display two black balls in a vertical line during the day and two all-round red lights in a vertical line at night, alerting nearby vessels that it cannot maneuver as required and that they must keep clear rather than expect it to give way.",
+    "weight": 4,
+    "source_note": "Universal Navigation Rules (Inland Rules, 33 CFR 83, Rule 27 - vessels not under command)"
+  }
+]

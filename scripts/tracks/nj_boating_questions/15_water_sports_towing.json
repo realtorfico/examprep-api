@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "When towing a water skier or wakeboarder, why is New Jersey law generally understood to require either an observer in addition to the operator, or a wide-angle rearview mirror?",
+    "choice_a": "There is no such requirement for towing skiers",
+    "choice_b": "Because the operator cannot safely watch both the direction of travel ahead and the skier behind at the same time without help",
+    "choice_c": "Because observers are only required when towing at night",
+    "choice_d": "Because a mirror or observer is only needed on vessels over 40 feet",
+    "correct_choice": "B",
+    "explanation": "An observer (or, where allowed, a wide-angle rearview mirror) lets the operator keep watch on a skier's condition and signals, such as a fall, while still safely watching the direction of travel, which is why towing rules generally require one or the other.",
+    "weight": 4,
+    "source_note": "Universal water-skiing observer/mirror requirement taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What does an orange flag raised by a boat or observer typically signal when a skier has fallen?",
+    "choice_a": "The vessel intends to anchor immediately",
+    "choice_b": "It signals that towing is now complete for the day",
+    "choice_c": "A downed skier is in the water nearby, warning other boaters to slow down and steer clear",
+    "choice_d": "The boat is requesting fuel assistance",
+    "correct_choice": "C",
+    "explanation": "A raised orange flag is the standard signal that a person is down in the water near a tow boat, alerting nearby vessels to slow down, keep clear, and watch for the person until they are recovered.",
+    "weight": 4,
+    "source_note": "Universal downed-skier orange flag signal taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Is towing a skier or tuber generally permitted after sunset or before sunrise?",
+    "choice_a": "Yes, as long as the boat has its navigation lights on",
+    "choice_b": "Towing at night is encouraged because visibility is calmer",
+    "choice_c": "There is no restriction on towing at night",
+    "choice_d": "No -- towing a person on water skis, a tube, or similar equipment is generally prohibited between sunset and sunrise",
+    "correct_choice": "D",
+    "explanation": "Towing a water skier, tuber, or similar rider is generally prohibited from sunset to sunrise because the towed person cannot be adequately seen by other vessels or effectively supervised in darkness.",
+    "weight": 4,
+    "source_note": "Universal nighttime towing prohibition taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is a key safety concern when a PWC is used to tow a tuber or wakeboarder?",
+    "choice_a": "The PWC operator must still comply with the same observer/mirror and no-wake-zone rules as any other towing vessel, and passenger capacity limits still apply",
+    "choice_b": "PWCs are exempt from all towing rules that apply to other boats",
+    "choice_c": "PWCs cannot legally tow anyone under any circumstance",
+    "choice_d": "Towing with a PWC requires no supervision of the towed rider",
+    "correct_choice": "A",
+    "explanation": "A PWC used to tow a skier or tuber must still meet observer or mirror requirements, avoid no-wake zones while towing, and respect the PWC's rated passenger/towing capacity, just like any other vessel engaged in towing.",
+    "weight": 3,
+    "source_note": "Universal PWC towing rule parity with conventional towing vessels"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why should a boat operator maintain a wide, cautious distance from swimmers, anchored vessels, and other water-sport participants while towing a skier?",
+    "choice_a": "Only the towing boat's position matters, not the skier's position",
+    "choice_b": "A skier being towed can swing wide of the boat's own path, and a fallen skier or debris like a ski rope can create additional hazards for nearby people and vessels",
+    "choice_c": "Skiers always travel in a perfectly straight line directly behind the boat with no side-to-side movement",
+    "choice_d": "Distance from other water users is not a safety concern while towing",
+    "correct_choice": "B",
+    "explanation": "A towed skier can swing well outside the towing boat's direct wake path, and a fall or a floating tow rope can create hazards for nearby swimmers, anchored boats, or other vessels, so extra clearance is needed when towing.",
+    "weight": 3,
+    "source_note": "Universal towed-water-sport clearance guidance taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What should be checked about a tow rope and ski equipment before a water-sport activity begins?",
+    "choice_a": "Any type of rope, regardless of strength rating, is acceptable for towing a person",
+    "choice_b": "Equipment checks are only necessary for competitive skiing events",
+    "choice_c": "That the rope, handle, and any tow harness or bridle are in good condition, properly sized, and rated for the intended activity",
+    "choice_d": "Rope condition has no bearing on towing safety",
+    "correct_choice": "C",
+    "explanation": "A worn, frayed, or undersized tow rope or handle can fail or slip unexpectedly under load, so checking equipment condition and appropriateness for the activity before starting reduces the risk of injury.",
+    "weight": 2,
+    "source_note": "Universal tow-equipment inspection guidance taught in NASBLA-aligned boating courses"
+  }
+]

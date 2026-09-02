@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Inland Lighting Rules & Waterway Markers",
+    "question": "Per the Guide's Skin and Scuba Divers section, who is required to display the diver's flag, and when?",
+    "choice_a": "Persons engaged in, or assisting, skin or scuba diving in waters open to boating, at the place of diving",
+    "choice_b": "Only commercial dive charter operators, at all times while underway",
+    "choice_c": "Any vessel operator passing near a dive site, regardless of whether diving is occurring",
+    "choice_d": "Only spearfishing divers, and only between sunset and sunrise",
+    "correct_choice": "A",
+    "explanation": "The Guide states that persons engaged in, or assisting, skin or scuba diving in waters open to boating must display the diver's flag at the place of diving.",
+    "weight": 3,
+    "source_note": "NC Vessel Operator's Guide, Skin and Scuba Divers section"
+  },
+  {
+    "topic": "Inland Lighting Rules & Waterway Markers",
+    "question": "Under the Guide, in which situation(s) would a diver's flag be improperly displayed?",
+    "choice_a": "When not engaged in diving, or at any location where it will unreasonably obstruct navigation",
+    "choice_b": "Whenever it is displayed from a fixed structure rather than from a vessel",
+    "choice_c": "Only if it is displayed after sunset",
+    "choice_d": "There are no restrictions on when a diver's flag may be displayed",
+    "correct_choice": "A",
+    "explanation": "The Guide provides that divers may not display the diver's flag when not engaged in diving, or at any location where it will unreasonably obstruct navigation.",
+    "weight": 3,
+    "source_note": "NC Vessel Operator's Guide, Skin and Scuba Divers section"
+  },
+  {
+    "topic": "Inland Lighting Rules & Waterway Markers",
+    "question": "How closely may a vessel approach a structure displaying a diver's flag, per the Guide, and what is the exception?",
+    "choice_a": "No closer than 50 feet, except when the flag's location itself constitutes an unreasonable obstruction to navigation",
+    "choice_b": "No closer than 100 feet, with no exceptions",
+    "choice_c": "No closer than 25 feet, except in a narrow channel",
+    "choice_d": "There is no minimum approach distance specified for a diver's flag",
+    "correct_choice": "A",
+    "explanation": "The Guide states vessels may not approach closer than 50 feet to any structure on which a diver's flag is displayed, except when it is located so as to constitute an unreasonable obstruction to navigation.",
+    "weight": 4,
+    "source_note": "NC Vessel Operator's Guide, Skin and Scuba Divers section"
+  },
+  {
+    "topic": "Inland Lighting Rules & Waterway Markers",
+    "question": "Besides serving as an anchoring aid, what may a mooring buoy bear, per the Guide's Regulatory Markers section?",
+    "choice_a": "Ownership identification",
+    "choice_b": "A regulatory speed-limit number",
+    "choice_c": "The name of the nearest state boating access area",
+    "choice_d": "A federally assigned aid-to-navigation serial number",
+    "correct_choice": "A",
+    "explanation": "The Guide notes a mooring buoy is used as an anchoring aid and may bear ownership identification.",
+    "weight": 2,
+    "source_note": "NC Vessel Operator's Guide, Regulatory Markers, Mooring Buoy entry"
+  },
+  {
+    "topic": "Inland Lighting Rules & Waterway Markers",
+    "question": "According to the Guide, is lighting required on a mooring buoy?",
+    "choice_a": "Lighting is normally optional, but it may be required depending upon the buoy's location in the waterway",
+    "choice_b": "Lighting is always mandatory on every mooring buoy, regardless of location",
+    "choice_c": "Lighting is never permitted on a mooring buoy",
+    "choice_d": "Lighting is required only on mooring buoys used by commercial vessels",
+    "correct_choice": "A",
+    "explanation": "The Guide states that lighting on a mooring buoy is normally optional, but lighting may be required depending upon location in the waterway.",
+    "weight": 2,
+    "source_note": "NC Vessel Operator's Guide, Regulatory Markers, Mooring Buoy entry"
+  },
+  {
+    "topic": "Inland Lighting Rules & Waterway Markers",
+    "question": "A 6-meter jon boat anchors overnight in a narrow, well-traveled creek channel where other vessels normally navigate after dark. Under the Guide, must it display an anchor light even though it is less than 7 meters in length?",
+    "choice_a": "Yes -- the under-7-meter exemption does not apply because the vessel is anchored in a narrow channel where other vessels normally navigate",
+    "choice_b": "No -- vessels under 7 meters are always exempt from anchor lights regardless of where they are anchored",
+    "choice_c": "No -- only vessels 12 meters or longer are ever required to show anchor lights",
+    "choice_d": "Yes, but only if the vessel happens to be a sailboat",
+    "correct_choice": "A",
+    "explanation": "The Guide exempts vessels less than 7 meters (23 ft.) from anchor lights unless anchored in or near a narrow channel, fairway or anchorage, or where other vessels normally navigate. Because this jon boat is anchored in exactly such a location, the exemption does not apply and it must display an anchor light.",
+    "weight": 4,
+    "source_note": "NC Vessel Operator's Guide, Inland Lighting Rules, Vessel at Anchor section"
+  }
+]

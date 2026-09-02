@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Under Wisconsin law, how broadly is the term \"boat\" (vessel) defined for registration purposes?",
+    "choice_a": "Every description of watercraft used or capable of being used as a means of transportation on water, including motorboats, sailboats, jet skis, pontoons, canoes, and kayaks",
+    "choice_b": "Only motorboats with an inboard engine",
+    "choice_c": "Only vessels longer than 16 feet",
+    "choice_d": "Only vessels that are Coast Guard documented",
+    "correct_choice": "A",
+    "explanation": "Wisconsin DNR defines a \"boat\" or \"vessel\" very broadly as every description of watercraft used or capable of being used as a means of transportation on water -- motorboats, sailboats, jet skis, pontoons, canoes, and kayaks are all included, with narrow exceptions such as seaplanes and fishing rafts.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR boat registration guidance (dnr.wisconsin.gov/permits/registrations/boat)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Which two watercraft types are specifically exempted from Wisconsin's broad statutory definition of a \"vessel\"?",
+    "choice_a": "Sailboats and rowboats",
+    "choice_b": "Seaplanes and fishing rafts",
+    "choice_c": "Canoes and kayaks",
+    "choice_d": "Pontoons and jet skis",
+    "correct_choice": "B",
+    "explanation": "While Wisconsin's vessel definition covers nearly every kind of watercraft, DNR guidance specifically calls out seaplanes and fishing rafts as exceptions that fall outside the definition.",
+    "weight": 3,
+    "source_note": "Wisconsin DNR boat registration guidance (dnr.wisconsin.gov/permits/registrations/boat)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a \"motorboat\" as understood under Wisconsin boating law and the NASBLA-aligned boater education curriculum used statewide?",
+    "choice_a": "Only a vessel with an inboard/outboard drive",
+    "choice_b": "Any vessel over 40 feet long",
+    "choice_c": "Any vessel propelled by machinery, whether or not that machinery is the vessel's principal means of propulsion",
+    "choice_d": "Only a vessel with two or more engines",
+    "correct_choice": "C",
+    "explanation": "A motorboat is any vessel propelled by machinery, including a sailboat with an auxiliary motor -- once that motor is engaged, the vessel is legally operating as a motorboat.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1 (Boat-Ed Wisconsin course, boat-ed.com/wisconsin)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Which hull type is designed to plane and lift up out of the water at higher speeds, rather than always pushing through it?",
+    "choice_a": "Displacement hull",
+    "choice_b": "Semi-submersible hull",
+    "choice_c": "Barge hull",
+    "choice_d": "Planing hull",
+    "correct_choice": "D",
+    "explanation": "A planing hull is designed to rise up and glide across the water's surface as speed increases, in contrast to a displacement hull, which always pushes through the water and is limited to slower \"hull speeds.\"",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Types of Boat Hulls (Boat-Ed Wisconsin course)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "A displacement hull, common on many pontoon boats and larger cruisers, behaves in which of the following ways?",
+    "choice_a": "It always pushes through the water rather than rising onto plane, limiting top speed",
+    "choice_b": "It always rises fully out of the water at any speed",
+    "choice_c": "It has no effect on top speed",
+    "choice_d": "It is only used on personal watercraft",
+    "correct_choice": "A",
+    "explanation": "Displacement hulls push through the water rather than planing on top of it, which limits their maximum speed but generally gives a smoother, more stable ride -- a common design for pontoons and larger cruising boats popular on Wisconsin's lakes.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Types of Boat Hulls"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "On a personal watercraft (PWC), what typically provides both propulsion and steering control?",
+    "choice_a": "A rudder controlled by foot pedals",
+    "choice_b": "A jet drive that draws in and expels water through a steerable nozzle",
+    "choice_c": "A traditional exposed propeller",
+    "choice_d": "An outboard lower unit",
+    "correct_choice": "B",
+    "explanation": "PWCs use a jet drive: an engine-driven pump draws in water and forces it out through a steerable nozzle, which is why a PWC loses steering control if the throttle is released -- a key safety concept taught in Wisconsin's approved boating courses.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Personal Watercraft"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Why is it important for a boat operator to know their vessel's overall length?",
+    "choice_a": "It only matters for insurance discounts",
+    "choice_b": "It only matters when painting the hull",
+    "choice_c": "Because required safety equipment (like fire extinguishers and sound-signaling devices) and some operating rules scale up with vessel length",
+    "choice_d": "Length has no bearing on any boating requirement",
+    "correct_choice": "C",
+    "explanation": "Many federal and state equipment requirements -- fire extinguisher count and type, sound-signaling devices, navigation lights -- are tied to specific vessel length brackets, so knowing your boat's length is essential to knowing what you're legally required to carry.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Boat Length"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a \"float plan,\" and why do Wisconsin boater safety courses recommend leaving one with someone on shore?",
+    "choice_a": "A diagram of how to load the boat onto a trailer",
+    "choice_b": "A required government registration filed before every outing",
+    "choice_c": "A nautical chart of local buoys",
+    "choice_d": "A written description of the trip -- destination, expected return time, persons aboard, and boat description -- so authorities know where to search if you're overdue",
+    "correct_choice": "D",
+    "explanation": "A float plan left with a responsible person on shore records your destination, route, return time, and who is aboard, which can dramatically speed up search-and-rescue efforts if you don't return as expected.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Float Plans"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is the safest practice when fueling a gasoline-powered boat?",
+    "choice_a": "Shut off the engine, all electrical equipment, and open flames; close hatches and ports; and ventilate the bilge after fueling before starting the engine",
+    "choice_b": "Fuel with the engine running so you can monitor the gauge",
+    "choice_c": "Fuel with all hatches closed the entire time",
+    "choice_d": "Fuel only at night for visibility",
+    "correct_choice": "A",
+    "explanation": "Safe fueling means shutting down the engine and anything that could spark, keeping hatches open to prevent vapor buildup while fueling, then closing them and running the blower to ventilate the bilge before restarting the engine.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Fuel Your Boat...Safely"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What does a boat's capacity plate tell an operator?",
+    "choice_a": "The recommended fuel brand",
+    "choice_b": "The maximum number of persons and/or maximum weight the boat can safely carry, as determined by the manufacturer",
+    "choice_c": "The boat's resale value",
+    "choice_d": "The boat's hull identification number only",
+    "correct_choice": "B",
+    "explanation": "The capacity plate, required on most monohull boats less than 20 feet, states the maximum recommended number of persons and/or total weight capacity, and overloading beyond it is a leading cause of capsizing.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1: Your Boat's Capacity"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should a boater clean, drain, and dry their boat, trailer, and gear before moving between Nevada water bodies, such as from Lake Mead to Lake Tahoe?",
+    "choice_a": "To prevent the spread of aquatic invasive species like quagga mussels, which can survive in bilge water, live wells, or on wet gear and infest a new water body",
+    "choice_b": "Cleaning the boat has no bearing on invasive species and is purely cosmetic",
+    "choice_c": "Nevada law requires cleaning only for vessels over 26 feet",
+    "choice_d": "Draining the boat is only necessary if the vessel will not be used again for a year",
+    "correct_choice": "A",
+    "explanation": "The clean-drain-dry practice removes standing water and residue that can harbor invasive species like quagga mussel larvae, preventing their transfer from an infested water body such as Lake Mead to an uninfested one like Lake Tahoe.",
+    "weight": 4,
+    "source_note": "General clean-drain-dry aquatic invasive species prevention practice applied to NRS 488.530-488.536 and Nevada's Lake Mead/Lake Tahoe inspection programs"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What is a key safety step before backing a trailer down a launch ramp?",
+    "choice_a": "Leave all tie-down straps attached until after the boat is floating free",
+    "choice_b": "Complete pre-launch preparations such as installing the drain plug, loading gear, and disconnecting tie-downs in the staging area, not blocking the ramp itself",
+    "choice_c": "Wait until the boat is floating to insert the drain plug",
+    "choice_d": "Back down the ramp as fast as possible to minimize time in the water",
+    "correct_choice": "B",
+    "explanation": "Completing preparation steps like installing the drain plug and loading gear in a staging area, away from the ramp itself, keeps the launch ramp clear for other boaters and reduces the risk of a forgotten drain plug or dangerous last-minute scramble.",
+    "weight": 3,
+    "source_note": "Universal launch-ramp etiquette and preparation sequence, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why is checking trailer tire pressure and wheel bearings especially important before a long desert drive to Lake Mead or Lake Mohave?",
+    "choice_a": "Trailer maintenance is only necessary in winter conditions",
+    "choice_b": "Nevada law exempts trailers from any maintenance requirement",
+    "choice_c": "Extreme summer heat on desert highways increases tire pressure and heat buildup in bearings, raising the risk of a blowout or bearing failure during the drive",
+    "choice_d": "Tire pressure and wheel bearing condition have no relationship to ambient temperature",
+    "correct_choice": "C",
+    "explanation": "High desert road temperatures around Lake Mead and Lake Mohave increase heat buildup in tires and wheel bearings, raising the risk of a blowout or bearing failure on a long tow, so a pre-trip check of both is an important safety step.",
+    "weight": 2,
+    "source_note": "General trailer-maintenance guidance applied to desert highway conditions near Lake Mead/Lake Mohave"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What should a boater do if the launch ramp is crowded and other boats are waiting?",
+    "choice_a": "Take as much time as needed on the ramp regardless of others waiting",
+    "choice_b": "Ask other boaters to launch from a different lake instead",
+    "choice_c": "Leave the tow vehicle blocking the ramp while parking",
+    "choice_d": "Prepare the boat fully before backing onto the ramp, launch efficiently, and move the tow vehicle and trailer promptly out of the ramp area",
+    "correct_choice": "D",
+    "explanation": "Ramp courtesy means doing preparation work off the ramp, launching efficiently once it is your turn, and clearing the ramp and parking area promptly so others can use it, which matters especially at high-traffic launch points on Lake Mead and Lake Tahoe.",
+    "weight": 2,
+    "source_note": "Universal launch-ramp courtesy guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What should be checked on the trailer's coupler and safety chains before towing a boat?",
+    "choice_a": "That the coupler is properly latched onto the hitch ball and the safety chains are crossed and securely attached, providing backup if the coupler fails",
+    "choice_b": "Safety chains are optional decorative items with no functional purpose",
+    "choice_c": "Only the coupler needs checking; safety chains are never required",
+    "choice_d": "The chains should be left as loose as possible to allow for the widest turning radius",
+    "correct_choice": "A",
+    "explanation": "A securely latched coupler and properly crossed, tightly attached safety chains provide critical backup support if the coupler fails during towing, helping keep the trailer connected to the tow vehicle.",
+    "weight": 3,
+    "source_note": "Universal trailer coupler/safety chain inspection guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should a boater check Lake Mead's current water level and boat ramp status before a launch trip?",
+    "choice_a": "Water level only matters for houseboats, not for trailered boats",
+    "choice_b": "Lake Mead's water level has fluctuated significantly with drought conditions, and some ramps have closed or been extended, so confirming ramp status and water depth before heading out avoids getting stranded at a dry or inaccessible ramp",
+    "choice_c": "Lake Mead's water level never changes so this check is unnecessary",
+    "choice_d": "Ramp status information is classified and unavailable to the public",
+    "correct_choice": "B",
+    "explanation": "Lake Mead's water level has dropped substantially during periods of drought, leading to ramp closures, extensions, and shifting hazards, so checking current conditions before a trip helps avoid arriving at an unusable or relocated ramp.",
+    "weight": 3,
+    "source_note": "General pre-trip planning guidance applied to Lake Mead's documented drought-driven water-level fluctuations and ramp changes"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What is the purpose of a trailer's bow safety chain or winch strap, separate from the main winch cable, when retrieving a boat?",
+    "choice_a": "It is required only on trailers longer than 30 feet",
+    "choice_b": "It replaces the need for a winch entirely",
+    "choice_c": "It acts as a backup restraint to keep the boat from sliding off the trailer if the winch cable or hook fails during towing",
+    "choice_d": "It exists purely as decoration with no safety function",
+    "correct_choice": "C",
+    "explanation": "A separate bow safety chain or strap serves as a backup restraint so the boat cannot slide off the trailer if the primary winch cable or hook fails while towing, an important redundancy for long highway trips to Nevada's lakes.",
+    "weight": 2,
+    "source_note": "Universal trailer safety chain/winch backup guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Before driving away from a launch ramp with the boat loaded on the trailer, what should the operator confirm?",
+    "choice_a": "Nothing further is needed once the boat is physically on the trailer bunks",
+    "choice_b": "Only the drain plug needs checking; tie-downs are optional for short drives",
+    "choice_c": "Trailer lights are unnecessary during daylight hours",
+    "choice_d": "The winch strap or cable is secured, the transom tie-downs are fastened, the drain plug status is noted, and the trailer lights are functioning",
+    "correct_choice": "D",
+    "explanation": "A complete pre-departure check, securing the winch strap, fastening transom tie-downs, confirming the drain plug, and testing trailer lights, prevents the boat from shifting or detaching and keeps the trailer visible and legal on the highway.",
+    "weight": 3,
+    "source_note": "Universal post-launch trailer securing checklist, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What hazard is common at reservoirs like Lake Mead and Lake Mohave where water levels fluctuate seasonally, that a boater should watch for at the base of the ramp?",
+    "choice_a": "Exposed rocks, mud, or a steep drop-off at the waterline where the ramp surface ends and natural lakebed begins",
+    "choice_b": "Ramps at fluctuating reservoirs never present any hazard at the waterline",
+    "choice_c": "The hazard only affects PWCs, not trailered boats",
+    "choice_d": "This hazard is unique to salt water and does not occur on freshwater reservoirs",
+    "correct_choice": "A",
+    "explanation": "When a reservoir's water level drops, a launch ramp's paved surface may end well short of the actual waterline, exposing rocks, mud, or a steep drop-off that can strand a trailer or damage a boat's hull if the operator is not careful.",
+    "weight": 2,
+    "source_note": "General reservoir ramp-hazard guidance applied to Lake Mead/Lake Mohave's fluctuating water levels"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What should a boater do with loose gear, coolers, and cushions before towing on the highway?",
+    "choice_a": "Gear should always be placed on the trailer tongue for easy access",
+    "choice_b": "Secure or stow them inside the boat so they cannot shift, fall out, or become road hazards during transport",
+    "choice_c": "Leave them loose on deck since wind resistance will hold them in place",
+    "choice_d": "Loose gear has no bearing on safe towing",
+    "correct_choice": "B",
+    "explanation": "Unsecured gear can shift or fall out of the boat during transport, creating a road hazard for other drivers and a risk of losing or damaging equipment, so everything loose should be stowed securely before towing.",
+    "weight": 2,
+    "source_note": "Universal trailer-transport gear-securing guidance, NASBLA-aligned boating safety curriculum"
+  }
+]

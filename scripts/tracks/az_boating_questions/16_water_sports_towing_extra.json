@@ -1,0 +1,38 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under Arizona law, what must be displayed after a person being towed on water skis, a surfboard, or a similar device falls into the water?",
+    "choice_a": "A bright or brilliant orange or red flag measuring no less than twelve inches on each side, raised to warn other vessels of the person in the water",
+    "choice_b": "A white anchor light, even during the day",
+    "choice_c": "Nothing needs to be displayed as long as the boat stops nearby",
+    "choice_d": "A sound signal of five short blasts repeated continuously",
+    "correct_choice": "A",
+    "explanation": "Arizona law requires that after a towed skier, surfboarder, or similar rider falls into the water, a flag of a bright or brilliant orange or red color measuring at least twelve inches on each side be displayed to warn other watercraft of the person's location.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes Title 5, Chapter 3, ARS 5-346 (Water skiing), azleg.gov -- downed-skier flag requirement"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Arizona's water skiing statute (ARS 5-346) specifically prohibits towing a person on water skis, a surfboard, or a similar device in what manner?",
+    "choice_a": "At any speed above five miles per hour",
+    "choice_b": "So close to other watercraft, swimmers, or structures as to constitute a hazard",
+    "choice_c": "In water deeper than fifty feet",
+    "choice_d": "Within one mile of a public boat launch",
+    "correct_choice": "B",
+    "explanation": "ARS 5-346 states that a watercraft shall not tow a person on water skis, a surfboard, or a similar contrivance so close to other watercraft, swimmers, or structures as to constitute a hazard -- a specific statutory reckless-towing prohibition separate from the general duty to watch out for other water users.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes Title 5, Chapter 3, ARS 5-346 (Water skiing), azleg.gov -- hazardous proximity prohibition"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under Arizona law, does the careless, reckless, or negligent operation prohibition that applies to towing water sports fall only on the vessel operator?",
+    "choice_a": "Yes, the statute applies exclusively to the vessel operator and never to the person being towed",
+    "choice_b": "No such standard exists for anyone involved in towed water sports under Arizona law",
+    "choice_c": "No -- Arizona law separately states that no person on water skis, a surfboard, or a similar contrivance shall behave in a careless, reckless, or negligent manner, placing a duty on the person being towed as well as the operator",
+    "choice_d": "The standard applies only to observers, never to operators or the person being towed",
+    "correct_choice": "C",
+    "explanation": "ARS 5-341 provides that no person on water skis, a surfboard, or a similar contrivance shall behave in a careless, reckless, or negligent manner, meaning the towed rider -- not just the boat operator -- can be held responsible for reckless conduct while being towed.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes Title 5, Chapter 3, ARS 5-341 (Negligent operation of watercraft or water skis), azleg.gov, subsection D"
+  }
+]

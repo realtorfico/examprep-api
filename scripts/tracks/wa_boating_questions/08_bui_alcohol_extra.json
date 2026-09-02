@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Under Washington's boating laws, how does the criminal classification of reckless vessel operation compare to operating a vessel under the influence (BUI)?",
+    "choice_a": "Both are treated as identical civil infractions",
+    "choice_b": "Reckless operation is always a felony",
+    "choice_c": "Reckless operation is a misdemeanor, while BUI is a gross misdemeanor",
+    "choice_d": "BUI is only a civil infraction unless someone is injured",
+    "correct_choice": "C",
+    "explanation": "RCW 79A.60.040 classifies operating a vessel in a reckless manner as a misdemeanor, while operating a vessel under the influence of alcohol or drugs is the more serious offense of a gross misdemeanor.",
+    "weight": 2,
+    "source_note": "RCW 79A.60.040"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What does Washington's 'implied consent' provision mean for someone operating a vessel on state waters?",
+    "choice_a": "It means boaters must sign a written consent form before every trip",
+    "choice_b": "It only applies to commercial vessel operators, not recreational boaters",
+    "choice_c": "It means officers need a court order before requesting any test",
+    "choice_d": "By operating a vessel, a person is deemed to have already consented to a breath test if lawfully arrested for BUI",
+    "correct_choice": "D",
+    "explanation": "Under RCW 79A.60.040, operating a vessel constitutes deemed consent to a breath test for alcohol/drug concentration if the operator is lawfully arrested for BUI.",
+    "weight": 3,
+    "source_note": "RCW 79A.60.040(4)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Under what circumstances can law enforcement require a blood sample (rather than just a breath test) from a person suspected of BUI in Washington?",
+    "choice_a": "Only with the person's actual consent and a valid waiver, or under a search warrant or exigent circumstances -- particularly when the arrest involves death, serious bodily injury, or suspected drug impairment",
+    "choice_b": "Officers may always draw blood without consent or a warrant",
+    "choice_c": "Blood tests are never permitted under Washington's BUI law",
+    "choice_d": "Blood tests may only be requested by the vessel owner",
+    "correct_choice": "A",
+    "explanation": "Washington's BUI statute allows blood testing only with consent and a valid waiver, or pursuant to a search warrant or exigent circumstances, particularly where the incident involved death, serious bodily injury, or suspected drug impairment.",
+    "weight": 3,
+    "source_note": "RCW 79A.60.040(4)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Is it a legal defense to a BUI charge that the operator was legally entitled to use the drug involved (such as a prescription medication or legal cannabis)?",
+    "choice_a": "Yes, any legally obtained drug is a complete defense",
+    "choice_b": "No -- legal entitlement to use the drug is not a defense to a BUI charge",
+    "choice_c": "Only prescription drugs qualify as a defense",
+    "choice_d": "Yes, but only for first-time offenders",
+    "correct_choice": "B",
+    "explanation": "RCW 79A.60.040 specifically states that a person's legal entitlement to use a drug under Washington law does not constitute a defense to a BUI charge.",
+    "weight": 2,
+    "source_note": "RCW 79A.60.040(3)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Besides criminal penalties like fines and jail time, what else may a court order for a BUI conviction that caused damage or injury?",
+    "choice_a": "Nothing -- courts cannot order anything beyond the statutory fine",
+    "choice_b": "Automatic seizure of the operator's home",
+    "choice_c": "Restitution for the damages or injuries resulting from the offense",
+    "choice_d": "A mandatory public apology",
+    "correct_choice": "C",
+    "explanation": "In addition to the statutory penalties, RCW 79A.60.040 allows courts to order restitution for damages or injuries resulting from a BUI offense.",
+    "weight": 2,
+    "source_note": "RCW 79A.60.040(6)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What procedure must a Washington officer follow when administering a breath test to someone suspected of BUI?",
+    "choice_a": "Officers may use any informal method with no set procedure",
+    "choice_b": "The test must be administered by a judge",
+    "choice_c": "There is no procedure -- refusal is not allowed to have any consequence",
+    "choice_d": "The same implied consent testing procedures required under RCW 46.20.308, the law used for DUI stops on the road",
+    "correct_choice": "D",
+    "explanation": "Washington's BUI law requires breath tests to be administered following the same procedures set out in RCW 46.20.308, the implied consent statute used for driving under the influence stops.",
+    "weight": 2,
+    "source_note": "RCW 79A.60.040(5)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "In addition to breath and blood tests, what other tool may a Washington officer use to help assess whether a boat operator is impaired?",
+    "choice_a": "Field sobriety tests",
+    "choice_b": "A written essay explaining the operator's day",
+    "choice_c": "A polygraph test administered on the water",
+    "choice_d": "Officers may use no other assessment tools",
+    "correct_choice": "A",
+    "explanation": "Washington's BUI statute allows officers to administer field sobriety tests in addition to breath or blood testing when assessing impairment.",
+    "weight": 2,
+    "source_note": "RCW 79A.60.040(4)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What can happen to a vessel when its operator is arrested for BUI in Washington, after reasonable alternatives (like finding a qualified operator) have been considered?",
+    "choice_a": "The vessel is always immediately sold at auction with no notice",
+    "choice_b": "The vessel may be impounded, with the owner notified and given a chance to redeem it or contest the impoundment",
+    "choice_c": "Impoundment is never allowed under Washington law",
+    "choice_d": "Only vessels over 40 feet may be impounded",
+    "correct_choice": "B",
+    "explanation": "RCW 79A.60.045 allows a vessel to be impounded when its operator is arrested for BUI, after officers consider reasonable alternatives; the owner must be notified and has redemption and hearing rights before any forfeiture.",
+    "weight": 3,
+    "source_note": "RCW 79A.60.045"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What is 'Homicide by Watercraft' under Washington law, and how is it classified?",
+    "choice_a": "A civil infraction with a small fine",
+    "choice_b": "A gross misdemeanor identical to a standard BUI charge",
+    "choice_c": "A class A felony that occurs when a death results, within three years, from operating a vessel while under the influence, recklessly, or with disregard for the safety of others",
+    "choice_d": "A charge that only applies to commercial vessel captains",
+    "correct_choice": "C",
+    "explanation": "RCW 79A.60.050 defines Homicide by Watercraft as a class A felony, applying when a death occurs within three years as a proximate result of operating a vessel under the influence, recklessly, or with disregard for the safety of others, with an exception for a death caused by a towed skier.",
+    "weight": 3,
+    "source_note": "RCW 79A.60.050"
+  }
+]

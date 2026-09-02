@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Weather",
+    "question": "What should a boater do before heading out on an Illinois lake, river, or Lake Michigan, regarding weather information?",
+    "choice_a": "Weather forecasts are unnecessary since conditions on inland lakes never change quickly",
+    "choice_b": "Only check the forecast if planning to be out longer than a week",
+    "choice_c": "Rely solely on other boaters' opinions rather than an official forecast",
+    "choice_d": "Check a current marine or local weather forecast and watch the sky for changing conditions throughout the outing",
+    "correct_choice": "D",
+    "explanation": "Checking a current forecast before departure, and continuing to monitor sky and wind conditions throughout the trip, helps boaters avoid being caught in fast-developing storms, which are common on both inland lakes and Lake Michigan.",
+    "weight": 3,
+    "source_note": "Universal pre-departure weather-check guidance used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Weather",
+    "question": "Which weather channel, broadcast continuously by the National Weather Service, provides boaters with updated marine forecasts and warnings?",
+    "choice_a": "NOAA Weather Radio",
+    "choice_b": "A dedicated boating-only AM radio station",
+    "choice_c": "Only television news broadcasts",
+    "choice_d": "There is no dedicated weather broadcast for boaters",
+    "correct_choice": "A",
+    "explanation": "NOAA Weather Radio broadcasts continuous, updated forecasts and warnings and is a standard tool recommended for boaters to monitor changing conditions on the water.",
+    "weight": 2,
+    "source_note": "Universal NOAA Weather Radio guidance used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Weather",
+    "question": "What visual signs on the water or in the sky can warn a boater of an approaching thunderstorm?",
+    "choice_a": "Steadily rising barometric pressure with no other changes",
+    "choice_b": "Darkening clouds building upward, a sudden drop in temperature, an abrupt wind shift, or flashes of lightning in the distance",
+    "choice_c": "A perfectly clear, cloudless sky",
+    "choice_d": "Calm, glassy water with no wind at all",
+    "correct_choice": "B",
+    "explanation": "Towering dark clouds, sudden temperature drops, shifting winds, and distant lightning are all classic early warning signs of an approaching thunderstorm that should prompt a boater to head for shelter.",
+    "weight": 3,
+    "source_note": "Universal storm-warning-sign guidance used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Weather",
+    "question": "If caught on open water when a thunderstorm approaches, what is the recommended action?",
+    "choice_a": "Increase speed to try to outrun the storm across open water",
+    "choice_b": "Continue the planned route since Illinois storms rarely produce lightning",
+    "choice_c": "Head for the nearest safe shore, put on PFDs, and if lightning is a risk, stay low and avoid touching metal objects or the water",
+    "choice_d": "Anchor in open water and wait out the storm regardless of duration",
+    "correct_choice": "C",
+    "explanation": "Getting to the nearest safe shore, wearing PFDs, and minimizing lightning exposure by staying low and avoiding metal or contact with the water are the standard recommended responses to an approaching storm on open water.",
+    "weight": 3,
+    "source_note": "Universal storm-response guidance used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Weather",
+    "question": "How can wind direction and strength affect boat handling on Illinois's larger lakes and Lake Michigan?",
+    "choice_a": "Wind has no measurable effect on small recreational boats",
+    "choice_b": "Wind direction matters only for sailboats, not for powerboats",
+    "choice_c": "Wind only matters when operating a PWC",
+    "choice_d": "Strong or shifting wind can build significant waves, affect steering and stability, and make returning to a launch point more difficult than the outbound trip",
+    "correct_choice": "D",
+    "explanation": "Wind can build wave height and chop quickly on large open waters, affecting a boat's handling and stability, and a boater should plan the return trip accounting for wind and wave conditions that may worsen through the day.",
+    "weight": 2,
+    "source_note": "Universal wind-and-wave boat-handling guidance used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Weather",
+    "question": "What is a 'small craft advisory,' as issued by the National Weather Service for Lake Michigan and other large waters?",
+    "choice_a": "A warning that sustained winds and/or wave conditions may create hazardous conditions for smaller vessels",
+    "choice_b": "A notice that all boating is legally banned until further notice",
+    "choice_c": "A reminder to renew a vessel's registration",
+    "choice_d": "A requirement that only vessels under 16 feet may operate",
+    "correct_choice": "A",
+    "explanation": "A small craft advisory warns that wind and wave conditions could be hazardous for smaller or less-seaworthy vessels, and prudent operators of smaller boats should consider postponing their trip.",
+    "weight": 2,
+    "source_note": "National Weather Service small craft advisory definitions, used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why is fog considered especially hazardous for boaters on Illinois waterways?",
+    "choice_a": "Fog automatically triggers a state-wide boating ban",
+    "choice_b": "It sharply reduces visibility, making it harder to see other vessels, navigation aids, and shoreline hazards in time to react",
+    "choice_c": "Fog has no effect on visibility for boaters",
+    "choice_d": "Fog only affects aircraft, not vessels",
+    "correct_choice": "B",
+    "explanation": "Fog dramatically reduces visibility, increasing the risk of collision with other vessels, navigation aids, or shoreline features, and calls for reduced speed, sound signals, and heightened lookout, per navigation-light and rules-of-the-road requirements for restricted visibility.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/4-2 restricted-visibility navigation light requirement; universal fog-hazard guidance"
+  },
+  {
+    "topic": "Weather",
+    "question": "What temperature-related risk is specific to early-spring and late-fall boating on Illinois waters, even on a mild, sunny day?",
+    "choice_a": "There is no cold-water risk once air temperature exceeds 60 degrees Fahrenheit",
+    "choice_b": "Cold water risk applies only in December and January",
+    "choice_c": "Water temperatures can remain dangerously cold even when air temperatures feel warm, increasing cold-water immersion risk if someone falls in",
+    "choice_d": "Water temperature always matches air temperature exactly",
+    "correct_choice": "C",
+    "explanation": "Water warms and cools more slowly than air, so early spring and late fall days can feel mild while the water remains dangerously cold, a key reason PFD use is especially critical during shoulder-season boating.",
+    "weight": 3,
+    "source_note": "Universal seasonal cold-water risk guidance, relevant to Illinois's spring/fall boating season"
+  },
+  {
+    "topic": "Weather",
+    "question": "What should a boater do if dark clouds and distant thunder are noticed while still far from a dock or landing?",
+    "choice_a": "Continue the planned route at normal speed",
+    "choice_b": "Anchor immediately in open water regardless of distance from shore",
+    "choice_c": "Wait for the storm to become severe before taking any action",
+    "choice_d": "Begin heading toward the nearest safe shore promptly rather than waiting to see if the storm actually arrives",
+    "correct_choice": "D",
+    "explanation": "Acting early on approaching storm signs -- heading toward the nearest safe shore rather than waiting -- gives boaters the best chance of reaching shelter before conditions deteriorate.",
+    "weight": 2,
+    "source_note": "Universal storm-response guidance used across NASBLA-based boating safety courses"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Is a fluorescent orange 'skier down' flag legally mandatory for New York boaters towing a water skier, in contrast to some other states?",
+    "choice_a": "Yes, New York requires a skier-down flag on every towing vessel with no exceptions",
+    "choice_b": "New York bans the use of any water-sports flags",
+    "choice_c": "No, New York does not mandate a skier-down flag by law, though using one to mark a fallen skier's position is still a widely recommended safety practice",
+    "choice_d": "The flag is required only for PWCs, never for conventional boats",
+    "correct_choice": "C",
+    "explanation": "Unlike some states that legally mandate a skier-down flag, New York does not require one by law, but deploying a bright orange flag to mark a skier in the water remains a strongly recommended safety practice to alert other boaters.",
+    "weight": 2,
+    "source_note": "NY water sports regulations research; skier-down flag not state-mandated but recommended"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "When picking up a fallen water skier, why should the operator approach so the skier is visible on the operator's side of the boat, and shut off the engine before the skier reaches the boat?",
+    "choice_a": "Engine shutdown and approach angle have no safety relevance",
+    "choice_b": "The engine should be left running at full throttle to save time",
+    "choice_c": "The skier should always be approached from directly behind at speed",
+    "choice_d": "It keeps the fallen skier in clear view throughout the approach and eliminates the risk of a propeller strike as they near or touch the boat",
+    "correct_choice": "D",
+    "explanation": "Approaching from an angle that keeps the skier visible, then shutting off the engine before they are near the boat, eliminates the serious risk of a propeller strike as the fallen skier is retrieved.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course water-skier pickup safety guidance"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is a commonly used hand signal from a skier to the boat operator meaning 'speed up'?",
+    "choice_a": "Thumbs up",
+    "choice_b": "A flat hand moved horizontally, palm down",
+    "choice_c": "A closed fist held motionless",
+    "choice_d": "Pointing at the shore",
+    "correct_choice": "A",
+    "explanation": "A thumbs-up is a commonly recognized signal from a water skier to the boat operator meaning 'faster' or 'speed up,' part of a standard set of hand signals used since verbal communication is impractical while under tow.",
+    "weight": 1,
+    "source_note": "Standard NASBLA-course water-skiing hand-signal conventions"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is a commonly used hand signal meaning 'slow down' or 'cut the engine' from a skier to the operator?",
+    "choice_a": "Thumbs up",
+    "choice_b": "A flat hand patted downward, palm facing down",
+    "choice_c": "A raised fist pumped upward repeatedly",
+    "choice_d": "Pointing both thumbs at the sky",
+    "correct_choice": "B",
+    "explanation": "A downward-patting flat hand is a standard signal for 'slow down,' distinct from the thumbs-up 'speed up' signal, helping the skier communicate quickly and clearly with the operator.",
+    "weight": 1,
+    "source_note": "Standard NASBLA-course water-skiing hand-signal conventions"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why should a tow boat operator confirm the towline length and condition before starting to tow a tuber or skier?",
+    "choice_a": "Towline condition has no bearing on safety",
+    "choice_b": "Any length or condition of rope is acceptable for towing",
+    "choice_c": "A frayed, knotted, or improperly sized towline can fail unexpectedly or behave unpredictably, risking injury to the rider or damage if it snaps under tension",
+    "choice_d": "Towlines should always be replaced with metal chain for durability",
+    "correct_choice": "C",
+    "explanation": "A worn, frayed, or improperly rated towline can fail under the sudden loads of towing, creating a whip-back hazard or dropping the rider unexpectedly; inspecting the line before use is a basic safety step.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course towing equipment safety guidance"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why should tubing riders be matched to an appropriate tow speed based on their age, weight, and experience?",
+    "choice_a": "Speed should always be the same regardless of who is being towed",
+    "choice_b": "Faster speeds are always safer for all riders regardless of age or size",
+    "choice_c": "Rider weight and age have no relationship to appropriate tow speed",
+    "choice_d": "Excessive speed relative to the rider's size and experience increases the chance of a hard fall, being thrown off the tube, or losing control, especially for younger or lighter riders",
+    "correct_choice": "D",
+    "explanation": "Younger, lighter, or less experienced riders are at greater risk of injury from hard falls or losing control at high speed, so operators should moderate speed based on who is actually being towed.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course tubing safety guidance"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why should a boat towing a skier or tuber avoid congested areas near docks, swim zones, or other boat traffic?",
+    "choice_a": "Towed riders can swing wide of the boat's own path, are harder to see than the boat itself, and cannot easily control their own trajectory to avoid a collision",
+    "choice_b": "Congested areas pose no additional risk for towed water sports",
+    "choice_c": "Towed riders always follow the exact same path as the tow boat with no swing",
+    "choice_d": "Water sports are safest specifically in high-traffic marina channels",
+    "correct_choice": "A",
+    "explanation": "A towed skier or tuber can swing well outside the tow boat's own track and has no way to independently steer clear of obstacles, making congested traffic areas, docks, and swim zones particularly hazardous for towed water sports.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course towing hazard-avoidance guidance"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What legal requirement applies to the hours during which a person may be towed on water skis, a tube, or a wakeboard in New York?",
+    "choice_a": "Towing may occur at any hour, day or night",
+    "choice_b": "Towing is limited to daylight hours, between sunrise and sunset",
+    "choice_c": "Towing is limited to nighttime hours only",
+    "choice_d": "There is no time restriction of any kind on towing",
+    "correct_choice": "B",
+    "explanation": "New York restricts water skiing and other towed water sports to daylight hours, since visibility for both the operator, observer, and rider is essential to towing safely.",
+    "weight": 2,
+    "source_note": "NY Navigation Law daylight-hours restriction on towed water sports"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Should a boater plan to tow a skier or tuber through a marked no-wake zone?",
+    "choice_a": "Yes, no-wake zones are the ideal place for towing water sports",
+    "choice_b": "Towing speed requirements do not apply within no-wake zones",
+    "choice_c": "No, towing requires enough speed to keep the rider up, which is inherently incompatible with a no-wake zone's slow-speed requirement",
+    "choice_d": "No-wake zones are reserved exclusively for towed water sports",
+    "correct_choice": "C",
+    "explanation": "Towing a skier or tuber requires enough speed to keep them up and planing, which directly conflicts with a no-wake zone's minimal-wake, reduced-speed requirement, so towing should be planned for open water outside such zones.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course guidance on no-wake zones and towed water sports"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why is a pre-planned route or 'ski course' area useful when regularly towing skiers or tubers on a given lake?",
+    "choice_a": "A planned route has no safety benefit over towing anywhere at random",
+    "choice_b": "Ski courses are required by federal law on all New York lakes",
+    "choice_c": "Pre-planning a route eliminates the need for an observer",
+    "choice_d": "It lets the operator select a stretch of water with adequate room, away from congestion, docks, and shallow hazards, reducing the chance of surprises during towing",
+    "correct_choice": "D",
+    "explanation": "Choosing a known stretch of open water in advance -- clear of congestion, shallow spots, and other hazards -- reduces the chance of an unexpected obstacle or crowded area appearing mid-tow.",
+    "weight": 1,
+    "source_note": "Standard NASBLA-course towed water sports planning guidance"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "What shape and color characterize a 'nun' buoy in the U.S. Aids to Navigation System, and what does it mark?",
+    "choice_a": "A flat-topped cylindrical buoy that is always green",
+    "choice_b": "A spherical buoy used exclusively to mark safe water",
+    "choice_c": "A cone-shaped (pointed-top) buoy, typically red and even-numbered, marking the starboard side of a channel when returning from open water",
+    "choice_d": "A buoy with no defined shape, numbered only with letters",
+    "correct_choice": "C",
+    "explanation": "Nun buoys are red, cone-shaped (pointed on top) aids, generally even-numbered, marking the starboard side of a channel for a vessel returning from open water; their counterpart, the flat-topped green can buoy, is odd-numbered and marks the port side.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System, buoy shape/color conventions"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What do red-and-green horizontal bands on a buoy or daymark indicate, and how does the color of the topmost band help a boater?",
+    "choice_a": "A hazard marker with no relationship to channel direction",
+    "choice_b": "A marker reserved exclusively for the entrance to a marina fuel dock",
+    "choice_c": "A sign that the channel is permanently closed to all traffic",
+    "choice_d": "A preferred channel (junction) marker showing where a channel splits; if the top band is red, treat the mark like a nun and keep it to starboard to follow the preferred channel, and if the top band is green, treat it like a can and keep it to port",
+    "correct_choice": "D",
+    "explanation": "Preferred channel (junction) marks use both red and green horizontal bands to show where a channel splits into a preferred (primary) route and a secondary route; the color of the topmost band tells the boater which lateral convention to follow -- red on top means treat it as a nun (keep to starboard) to stay in the preferred channel, green on top means treat it as a can (keep to port).",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System, preferred channel (junction) markers"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "How are numbers generally assigned to lateral aids to navigation (buoys and daybeacons) along a channel?",
+    "choice_a": "Numbers generally increase from the seaward end of the channel toward the head of navigation (upstream or into a harbor), with even numbers on red aids and odd numbers on green aids",
+    "choice_b": "Numbers always start at 100 and count down regardless of direction",
+    "choice_c": "Numbers are assigned randomly and carry no directional meaning",
+    "choice_d": "Only red aids are numbered; green aids are never numbered",
+    "correct_choice": "A",
+    "explanation": "Along a channel, lateral aid numbers generally increase from the entrance (seaward end) toward the head of navigation, with even numbers on red aids and odd numbers on green aids; numbers may skip or use letters where an aid is added later, but the increasing sequence still indicates the direction toward the upper end of the waterway.",
+    "weight": 1,
+    "source_note": "U.S. Aids to Navigation System, numbering conventions"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is the purpose of a pair of 'range' markers (front and rear markers) sometimes used along a channel?",
+    "choice_a": "They mark the two ends of a no-wake zone",
+    "choice_b": "When the boater lines up the front and rear markers directly one above/behind the other, that alignment shows the exact centerline of a safe channel",
+    "choice_c": "They are used only to display the channel's speed limit",
+    "choice_d": "They indicate that the channel is temporarily closed for dredging",
+    "correct_choice": "B",
+    "explanation": "Range markers are placed in a fixed pair on shore or on structures; when a boater sights the front marker lined up directly with the rear marker behind it, that alignment marks the exact centerline of a safe, often dredged, channel, which is especially useful in narrow or winding waterways.",
+    "weight": 1,
+    "source_note": "U.S. Aids to Navigation System, range markers"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "How can a boater identify a mooring buoy, which -- unlike other aids to navigation -- is legal to tie a boat to?",
+    "choice_a": "A mooring buoy looks identical to a regulatory marker with an orange diamond",
+    "choice_b": "A mooring buoy is red with a green horizontal band",
+    "choice_c": "A mooring buoy is white with a blue horizontal band; it is specifically intended for a vessel to make fast to, unlike navigational aids such as channel buoys",
+    "choice_d": "There is no visual way to distinguish a mooring buoy from a channel buoy",
+    "correct_choice": "C",
+    "explanation": "A mooring buoy is white with a blue horizontal band around it, distinguishing it from lateral, regulatory, and other aids to navigation; it is the only type of buoy a boater may legally secure a vessel to, since it is specifically designed and anchored for that purpose.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System, mooring buoy identification"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is the purpose of a yellow buoy or marker in the U.S. Aids to Navigation System?",
+    "choice_a": "It always marks the safest, most direct route through a channel",
+    "choice_b": "It indicates a fueling station",
+    "choice_c": "It has the same meaning as a red nun buoy",
+    "choice_d": "It is a special mark used to indicate a feature such as an anchorage area, traffic separation zone, spoil ground, or underwater cable/pipeline, rather than to guide a vessel through a channel",
+    "correct_choice": "D",
+    "explanation": "Special marks are yellow and may take various shapes; they are not intended to assist with the safe navigation of a channel but instead identify a special feature such as an anchorage area, traffic separation scheme, dredge spoil area, or a submerged cable or pipeline.",
+    "weight": 1,
+    "source_note": "U.S. Aids to Navigation System, special marks"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a black buoy or daymark with one or more broad red horizontal bands and a black double-sphere topmark indicate?",
+    "choice_a": "An isolated danger mark, showing a specific hazard such as a wreck or rock with navigable water all around it -- boaters should keep well clear of the immediate area",
+    "choice_b": "A safe anchorage where boats are encouraged to raft together",
+    "choice_c": "The centerline of the main channel",
+    "choice_d": "A marina entrance",
+    "correct_choice": "A",
+    "explanation": "An isolated danger mark is black with one or more broad red horizontal bands and, where fitted, a black double-sphere topmark; it is placed on or near a specific isolated hazard, such as a wreck or rock, that has navigable water around it, warning boaters to stay clear of the immediate area rather than approach it.",
+    "weight": 1,
+    "source_note": "U.S. Aids to Navigation System, isolated danger mark"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "What does Navigation Rule 5, the \"lookout\" rule, require of every vessel operator at all times?",
+    "choice_a": "A lookout is required only when another vessel is already visible",
+    "choice_b": "Maintaining a proper lookout by sight and hearing, as well as by all other available means, appropriate to the prevailing circumstances and conditions",
+    "choice_c": "Only the largest vessel in a group needs to keep a lookout",
+    "choice_d": "A lookout is required only at night",
+    "correct_choice": "B",
+    "explanation": "Navigation Rule 5 requires every vessel to maintain a proper lookout by sight and hearing, and by all other available means, at all times, so that a full assessment of the risk of collision can be made.",
+    "weight": 3,
+    "source_note": "Universal Navigation Rules (Inland Rule 5, lookout), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Under Navigation Rule 6, what determines a vessel's \"safe speed,\" rather than a single posted numeric limit?",
+    "choice_a": "Safe speed is always the vessel's maximum rated speed",
+    "choice_b": "Factors such as visibility, traffic density, the vessel's own maneuverability and stopping distance, and background lighting or glare at night",
+    "choice_c": "Only the type of fuel the engine uses",
+    "choice_d": "Safe speed never changes regardless of conditions",
+    "correct_choice": "B",
+    "explanation": "Rule 6 requires every vessel to proceed at a safe speed determined by the actual circumstances, including visibility, how much traffic is nearby, the vessel's own maneuverability and stopping distance, and background light or glare, not simply a fixed numeric limit.",
+    "weight": 3,
+    "source_note": "Universal Navigation Rules (Inland Rule 6, safe speed), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Under Navigation Rule 7, what should an operator do if there is any doubt about whether risk of collision exists with another vessel?",
+    "choice_a": "Assume risk of collision exists and use all available means, including radar if fitted, rather than relying on a quick visual glance alone",
+    "choice_b": "Assume no risk exists unless the other vessel sounds a horn",
+    "choice_c": "Wait for the other vessel to confirm its intentions by radio before taking any action",
+    "choice_d": "Risk of collision can only be judged by eye, never by any instrument",
+    "correct_choice": "A",
+    "explanation": "Rule 7 directs an operator to assume risk of collision exists if there is any doubt, and to use all available means, including radar where fitted, rather than a scanty visual observation alone, to properly assess the situation.",
+    "weight": 3,
+    "source_note": "Universal Navigation Rules (Inland Rule 7, risk of collision), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "What does five or more short, rapid horn blasts (the \"danger\" or \"doubt\" signal) mean under the Navigation Rules?",
+    "choice_a": "A greeting between passing vessels",
+    "choice_b": "A request to refuel at the nearest marina",
+    "choice_c": "The sounding vessel doubts the other vessel's intentions or actions, does not understand them, or believes insufficient action is being taken to avoid a collision",
+    "choice_d": "An announcement that the vessel is dropping anchor for the night",
+    "correct_choice": "C",
+    "explanation": "Five or more short, rapid blasts is the danger or doubt signal, used when an operator doubts another vessel's intentions or actions, does not understand a signal given, or believes the other vessel is not doing enough to avoid a collision.",
+    "weight": 3,
+    "source_note": "Universal Navigation Rules sound signals (Inland Rule 34, danger/doubt signal), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "How does a vessel properly indicate that it is anchored rather than underway, both during the day and after dark?",
+    "choice_a": "By displaying a black ball-shaped day shape forward during daylight, and an all-round white anchor light after dark",
+    "choice_b": "By turning off all lights so other boaters know to keep clear",
+    "choice_c": "By sounding its horn continuously while at anchor",
+    "choice_d": "No signal is required for an anchored vessel of any size",
+    "correct_choice": "A",
+    "explanation": "An anchored vessel is required to display a black ball-shaped day shape forward during daylight and an all-round white anchor light after dark, letting other boaters recognize that the vessel is not underway.",
+    "weight": 3,
+    "source_note": "Universal Navigation Rules (Inland Rule 30, anchored vessel day shapes and lights), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "In a narrow channel, how does an overtaking vessel properly signal its intent to pass, and what must the vessel being overtaken do in response?",
+    "choice_a": "The overtaking vessel signals with two prolonged blasts plus one short blast (intent to pass on the overtaken vessel's starboard side) or two prolonged plus two short blasts (port side); the overtaken vessel, if in agreement, sounds the same signal back or, if it disagrees, sounds the danger signal",
+    "choice_b": "No signal is ever required or expected in a narrow channel",
+    "choice_c": "The vessel being overtaken must always come to a full stop",
+    "choice_d": "Overtaking signals are only used by sailing vessels",
+    "correct_choice": "A",
+    "explanation": "In a narrow channel, an overtaking vessel signals its intended side of passage with two prolonged blasts plus one short (starboard) or two prolonged plus two short (port); the vessel being overtaken agrees by repeating the same signal or sounds the danger signal if it disagrees with the proposed passing.",
+    "weight": 3,
+    "source_note": "Universal Navigation Rules sound signals (Inland Rule 34, overtaking in a narrow channel), NASBLA-aligned boating safety curriculum applied to Nevada's narrow river stretches"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Do the Navigation Rules' right-of-way provisions ever excuse an operator from taking whatever action ordinary good seamanship requires to avoid a collision?",
+    "choice_a": "No; the Rules do not excuse a departure from the ordinary practice of careful operators required by the special circumstances of a situation, meaning strict right-of-way never overrides the basic duty to avoid a collision",
+    "choice_b": "Yes, a stand-on vessel may always ignore an obvious, developing collision risk",
+    "choice_c": "The Rules apply only when both operators agree to follow them",
+    "choice_d": "Right-of-way status legally guarantees that a collision cannot occur",
+    "correct_choice": "A",
+    "explanation": "The Navigation Rules make clear that following right-of-way status does not excuse an operator from the ordinary caution and good seamanship required by the specific circumstances of a case, so avoiding a collision remains the overriding duty even for a stand-on vessel.",
+    "weight": 3,
+    "source_note": "Universal Navigation Rules (Inland Rule 2, general prudence/ordinary practice of seamen), NASBLA-aligned boating safety curriculum"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Environment & NJ Waters",
+    "question": "What is a 'no-discharge zone,' and how does it apply to some New Jersey coastal and bay waters?",
+    "choice_a": "A zone where anchoring is completely prohibited",
+    "choice_b": "An area where fishing is banned outright",
+    "choice_c": "A zone where only sailing vessels may operate",
+    "choice_d": "An area where it is illegal to discharge treated or untreated sewage from a vessel's marine sanitation device, requiring use of a pump-out facility instead",
+    "correct_choice": "D",
+    "explanation": "A no-discharge zone prohibits releasing any sewage, treated or untreated, from a vessel's marine sanitation device into the water; New Jersey has designated no-discharge zones along parts of its coastal and bay waters, requiring boaters to use pump-out stations instead.",
+    "weight": 4,
+    "source_note": "EPA/NJDEP no-discharge zone designations for New Jersey coastal and bay waters"
+  },
+  {
+    "topic": "Environment & NJ Waters",
+    "question": "Why should boaters clean, drain, and dry their boat, trailer, and gear between uses in different New Jersey waterways?",
+    "choice_a": "To prevent spreading aquatic invasive species, such as certain invasive plants or mussels, from one waterway to another",
+    "choice_b": "Cleaning a boat between trips has no environmental purpose",
+    "choice_c": "It is required only for vessels used in organized fishing tournaments",
+    "choice_d": "It is purely a cosmetic practice with no ecological benefit",
+    "correct_choice": "A",
+    "explanation": "Cleaning, draining, and drying a boat, trailer, and gear between trips to different waterways helps prevent hitchhiking aquatic invasive species, such as invasive mussels or plant fragments, from being unintentionally transported and spreading to new lakes, rivers, or bays.",
+    "weight": 3,
+    "source_note": "Universal 'Clean, Drain, Dry' invasive species prevention practice applicable to New Jersey waterways"
+  },
+  {
+    "topic": "Environment & NJ Waters",
+    "question": "What environmentally responsible practice should a boater follow regarding trash and fishing line while on New Jersey's waters?",
+    "choice_a": "There is no expectation to manage trash while boating",
+    "choice_b": "Store all trash and used fishing line aboard for proper disposal on shore, rather than discarding it in the water",
+    "choice_c": "Discarding trash overboard is acceptable as long as it sinks",
+    "choice_d": "Fishing line poses no risk to wildlife once discarded",
+    "correct_choice": "B",
+    "explanation": "Discarded fishing line and trash can entangle or be ingested by wildlife such as birds, fish, and marine mammals, so boaters are expected to store waste aboard and dispose of it properly on shore rather than throwing it overboard.",
+    "weight": 3,
+    "source_note": "Universal marine debris/wildlife protection boating practice applicable to New Jersey waters"
+  },
+  {
+    "topic": "Environment & NJ Waters",
+    "question": "Why do New Jersey's coastal salt marshes and back-bay wetlands matter to boaters, beyond their ecological value?",
+    "choice_a": "Wetlands are always deep enough for any size vessel",
+    "choice_b": "Wake from boats has no effect on marsh shorelines",
+    "choice_c": "They often border narrow, shallow channels that require careful low-wake operation to avoid erosion damage to marsh banks and grounding in skinny water",
+    "choice_d": "Salt marshes have no interaction with boating activity",
+    "correct_choice": "C",
+    "explanation": "New Jersey's extensive back-bay salt marshes often line shallow, narrow channels; boat wake can erode fragile marsh banks over time, and the shallow depths themselves create a real grounding hazard, both of which call for cautious, reduced-wake operation.",
+    "weight": 3,
+    "source_note": "New Jersey coastal salt-marsh/back-bay boating environmental consideration"
+  },
+  {
+    "topic": "Environment & NJ Waters",
+    "question": "What is a pump-out station, and why is it important for boaters operating in New Jersey's no-discharge zones?",
+    "choice_a": "A fueling station exclusively for gasoline",
+    "choice_b": "A device used only to remove bilge water",
+    "choice_c": "Pump-out stations do not exist in New Jersey",
+    "choice_d": "A shoreside or floating facility that removes sewage waste from a boat's holding tank so it isn't discharged into the water",
+    "correct_choice": "D",
+    "explanation": "A pump-out station empties a vessel's sewage holding tank into a shoreside treatment system, giving boaters a legal way to dispose of waste within a no-discharge zone instead of releasing it into the water.",
+    "weight": 3,
+    "source_note": "Universal pump-out facility function, applicable to New Jersey no-discharge zone compliance"
+  },
+  {
+    "topic": "Environment & NJ Waters",
+    "question": "Why should boaters avoid operating at high speed or creating heavy wake near shellfish beds or eelgrass beds in New Jersey's bays?",
+    "choice_a": "Excess turbidity and wake energy can damage sensitive habitat like eelgrass beds and disturb or smother shellfish beds important to the bay ecosystem",
+    "choice_b": "Shellfish and eelgrass beds are unaffected by boat activity",
+    "choice_c": "This concern applies only to commercial fishing vessels",
+    "choice_d": "High speed near these areas is specifically encouraged to aerate the water",
+    "correct_choice": "A",
+    "explanation": "Heavy boat wake and increased water turbidity from high-speed operation can physically damage eelgrass beds and disturb or smother shellfish beds, both of which are ecologically important to New Jersey's bay systems.",
+    "weight": 2,
+    "source_note": "New Jersey bay habitat protection consideration, universal shallow-water wake-impact guidance"
+  }
+]

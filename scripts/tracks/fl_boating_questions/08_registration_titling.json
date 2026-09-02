@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Registration & Titling",
+    "question": "How long does a vessel owner have to apply for a Florida certificate of title after purchasing a vessel or bringing it into the state?",
+    "choice_a": "There is no deadline; titling is entirely optional",
+    "choice_b": "24 hours",
+    "choice_c": "30 days",
+    "choice_d": "One year",
+    "correct_choice": "C",
+    "explanation": "Florida law gives a vessel owner 30 days from purchase (or from bringing the vessel into Florida) to apply for a certificate of title through the county tax collector or a license plate agent.",
+    "weight": 3,
+    "source_note": "FLHSMV vessel titling requirements, 30-day window"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Which agency issues Florida vessel titles and oversees vessel registration?",
+    "choice_a": "The Florida Fish and Wildlife Conservation Commission (FWC) issues titles directly",
+    "choice_b": "The U.S. Coast Guard issues all Florida vessel titles",
+    "choice_c": "Vessel titles are issued by individual marinas",
+    "choice_d": "The Florida Department of Highway Safety and Motor Vehicles (FLHSMV), through county tax collectors and license plate agents",
+    "correct_choice": "D",
+    "explanation": "FLHSMV oversees vessel titling and registration in Florida, with the actual application process handled through county tax collector offices or license plate agents.",
+    "weight": 3,
+    "source_note": "FLHSMV vessel titling/registration administration"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Where must a current Florida vessel registration decal be displayed?",
+    "choice_a": "On the port (left) side of the vessel, within six inches fore or aft of the registration number",
+    "choice_b": "Anywhere on the vessel, including below the waterline",
+    "choice_c": "Only on the trailer, never the vessel itself",
+    "choice_d": "Decals are not required to be displayed at all",
+    "correct_choice": "A",
+    "explanation": "The current-year registration decal must be affixed on the port side of the vessel, within six inches of the registration number, and any expired decals should be removed.",
+    "weight": 3,
+    "source_note": "FLHSMV vessel registration decal placement"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What is a Hull Identification Number (HIN), and where is it typically located?",
+    "choice_a": "A number assigned only to PWCs, not other vessel types",
+    "choice_b": "A unique, permanent serial number identifying the vessel, generally affixed to the outboard side of the transom (or the outermost starboard side near the stern if there is no transom)",
+    "choice_c": "A temporary sticker that changes every registration cycle",
+    "choice_d": "The same number as the vessel's engine serial number",
+    "correct_choice": "B",
+    "explanation": "The HIN is a permanent, unique 12-character identifier for the hull, typically found on the outboard side of the transom, similar in function to a car's VIN.",
+    "weight": 3,
+    "source_note": "FLHSMV Hull Identification Number requirements"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Which small vessels are commonly exempt from Florida titling requirements?",
+    "choice_a": "Every vessel under 40 feet, motorized or not",
+    "choice_b": "No vessel is ever exempt from Florida titling",
+    "choice_c": "Non-motorized vessels less than 16 feet, such as canoes, kayaks, and other small paddle craft",
+    "choice_d": "All PWCs, since they are considered toys rather than vessels",
+    "correct_choice": "C",
+    "explanation": "Florida generally exempts small, non-motorized vessels under 16 feet (canoes, kayaks, and similar paddle craft) from the titling requirement, while most other vessels must be titled.",
+    "weight": 3,
+    "source_note": "FLHSMV vessel titling exemptions"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What must a person provide to register a vessel in Florida for the first time?",
+    "choice_a": "No documentation is needed; registration is automatic upon purchase",
+    "choice_b": "Only a verbal statement of ownership",
+    "choice_c": "A commercial fishing license, regardless of vessel use",
+    "choice_d": "Proof of ownership (such as a bill of sale, manufacturer's certificate of origin, or prior registration) and, for many first-time registrations, a watercraft safety inspection decal",
+    "correct_choice": "D",
+    "explanation": "First-time Florida vessel registration requires proof of ownership documentation, and many vessels also require a physical safety inspection to obtain a watercraft safety decal before registration is completed.",
+    "weight": 3,
+    "source_note": "FLHSMV first-time vessel registration requirements"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Where must a vessel's assigned registration number be displayed on the hull?",
+    "choice_a": "On both sides of the forward half of the vessel, in plain, block characters clearly contrasting with the hull color and reading left to right",
+    "choice_b": "Only on the transom, never the sides",
+    "choice_c": "Anywhere the owner prefers, including in a color matching the hull",
+    "choice_d": "Registration numbers do not need to be visible from outside the vessel",
+    "correct_choice": "A",
+    "explanation": "Florida requires the registration number to be painted or permanently attached to both sides of the forward half of the vessel, in plain block letters/numbers contrasting with the hull color, reading left to right.",
+    "weight": 3,
+    "source_note": "FLHSMV vessel registration number display requirements"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Must an out-of-state vessel that is used in Florida waters for an extended period be registered in Florida?",
+    "choice_a": "Registration reciprocity does not exist between any states",
+    "choice_b": "Yes -- once an out-of-state vessel is used in Florida beyond a limited reciprocity period (generally 90 days), it must be registered/titled in Florida",
+    "choice_c": "No, out-of-state vessels are permanently exempt from Florida registration",
+    "choice_d": "Only commercial out-of-state vessels must register in Florida",
+    "correct_choice": "B",
+    "explanation": "Florida honors visiting out-of-state registrations only for a limited reciprocity period (commonly 90 days); a vessel kept and used in Florida beyond that period must be titled and registered in Florida.",
+    "weight": 3,
+    "source_note": "FLHSMV reciprocity period for visiting/out-of-state vessels"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What happens if a vessel owner sells their boat in Florida?",
+    "choice_a": "The vessel must be re-registered by the seller in the buyer's name",
+    "choice_b": "Selling a titled vessel is not permitted in Florida",
+    "choice_c": "The seller must sign over the title to the buyer, and the buyer has 30 days to retitle and re-register the vessel in their own name",
+    "choice_d": "Nothing needs to be done; registration and title automatically transfer with no paperwork",
+    "correct_choice": "C",
+    "explanation": "A title transfer requires the seller to properly sign over the title, after which the new owner has 30 days to apply for a title and registration in their own name.",
+    "weight": 2,
+    "source_note": "FLHSMV vessel title transfer process"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Why does Florida require most motorized vessels and many non-motorized ones to be titled and registered?",
+    "choice_a": "Titling and registration serve no real regulatory purpose in Florida",
+    "choice_b": "Only to generate paperwork with no funding or ownership function",
+    "choice_c": "To track vessels for federal tax purposes exclusively",
+    "choice_d": "To establish clear legal ownership, deter theft and fraud, and fund boating safety and waterway management programs through registration fees",
+    "correct_choice": "D",
+    "explanation": "Vessel titling and registration establish legal ownership, help combat theft and fraud, and registration fees help fund boating safety programs, law enforcement, and waterway/aquatic habitat management in Florida.",
+    "weight": 2,
+    "source_note": "General rationale for FLHSMV/FWC vessel titling and registration"
+  }
+]

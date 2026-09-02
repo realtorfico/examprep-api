@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is the purpose of a boat's capacity plate?",
+    "choice_a": "It indicates the maximum weight capacity and maximum number of people the vessel can carry safely",
+    "choice_b": "It lists the boat's resale value",
+    "choice_c": "It records the date of the vessel's last oil change",
+    "choice_d": "It shows the owner's insurance policy number",
+    "correct_choice": "A",
+    "explanation": "The capacity plate, usually mounted near the operator's station or on the transom, states the maximum weight and/or maximum number of persons the vessel can carry safely under normal conditions.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Vessel Capacity'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a Hull Identification Number (HIN)?",
+    "choice_a": "The horsepower rating of the vessel's engine",
+    "choice_b": "A permanent, unique 12-character serial number molded or affixed to a vessel's hull that identifies it much like a VIN identifies a car",
+    "choice_c": "The vessel's Arizona registration decal number",
+    "choice_d": "A number the owner chooses and paints on the hull for decoration",
+    "correct_choice": "B",
+    "explanation": "A Hull Identification Number is a unique 12-character number assigned to a vessel by its manufacturer (or by AZGFD for homemade vessels), permanently affixed to the transom, that serves as the vessel's lifetime identifier for registration and title records.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Hull Identification Numbers'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is the key difference between a displacement hull and a planing hull?",
+    "choice_a": "There is no meaningful difference between the two hull types",
+    "choice_b": "A planing hull can never be used in open water",
+    "choice_c": "A displacement hull pushes through the water and is limited in top speed by its waterline length, while a planing hull is designed to rise up and glide across the water's surface at higher speeds",
+    "choice_d": "A displacement hull is only found on personal watercraft",
+    "correct_choice": "C",
+    "explanation": "Displacement hulls (common on sailboats, trawlers, and larger cruisers) push through the water and are speed-limited by their waterline length, while planing hulls (common on many powerboats) rise and glide across the surface as speed increases.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Types of Hulls'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How is a personal watercraft (PWC) generally defined?",
+    "choice_a": "Any small rowboat used for fishing",
+    "choice_b": "Any sailboat under 20 feet",
+    "choice_c": "A vessel that can only be operated by licensed captains",
+    "choice_d": "A vessel less than 16 feet long that uses an inboard motor powering a water-jet pump as its primary source of propulsion and is designed to be operated by a person sitting, standing, or kneeling on it, rather than sitting or standing inside it",
+    "correct_choice": "D",
+    "explanation": "A PWC (personal watercraft, such as a Jet Ski or WaveRunner) is a vessel of less than 16 feet that uses an inboard motor powering a water-jet pump for propulsion and is operated by a person positioned on top of it rather than inside a hull.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Personal Watercraft'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is the difference between an outboard motor and a stern drive (inboard/outboard, or I/O) engine?",
+    "choice_a": "An outboard motor is a self-contained unit mounted on the outside of the transom, while a stern drive combines an engine mounted inside the hull with an outdrive unit mounted outside the transom",
+    "choice_b": "They are two names for the exact same type of engine",
+    "choice_c": "An outboard motor is always larger than a stern drive engine",
+    "choice_d": "A stern drive is only used on personal watercraft",
+    "correct_choice": "A",
+    "explanation": "An outboard motor is a self-contained propulsion unit clamped or bolted to the transom, while a stern drive (I/O) pairs an inboard-mounted engine with an outdrive/lower unit outside the hull that steers and propels the boat.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Types of Engines and Drives'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "On a boat, which direction is the 'bow'?",
+    "choice_a": "The right side of the vessel when facing forward",
+    "choice_b": "The front of the vessel",
+    "choice_c": "The rear of the vessel",
+    "choice_d": "The left side of the vessel when facing forward",
+    "correct_choice": "B",
+    "explanation": "The bow is the forward, or front, part of a vessel; the stern is the rear, port is the left side facing forward, and starboard is the right side facing forward.",
+    "weight": 1,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Vessel Terminology'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Which side of a vessel is the 'port' side?",
+    "choice_a": "The very back of the vessel",
+    "choice_b": "The bottom of the hull",
+    "choice_c": "The left side when facing the bow (front)",
+    "choice_d": "The right side when facing the bow (front)",
+    "correct_choice": "C",
+    "explanation": "Port is always the left side of a vessel when facing forward toward the bow; starboard is the right side. These terms do not change no matter which way the operator is actually facing.",
+    "weight": 1,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Vessel Terminology'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Why does the traditional federal length-class system (Class A: under 16 ft; Class 1: 16 to under 26 ft; Class 2: 26 to under 40 ft; Class 3: 40 to under 65 ft) matter to a recreational boater?",
+    "choice_a": "It determines the color the hull must be painted",
+    "choice_b": "It sets the minimum age of the operator",
+    "choice_c": "It determines which specific lake the vessel may be used on",
+    "choice_d": "A vessel's length class determines which safety equipment -- such as fire extinguishers, lights, and sound-signaling devices -- it is required to carry",
+    "correct_choice": "D",
+    "explanation": "The federal vessel length classes underlying most state and NASBLA-based course material determine what equipment -- number of fire extinguishers, navigation lights, sound-producing devices, and more -- a vessel must carry to comply with the law.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Vessel Length Classes'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Do PWC and some other small vessels typically have a capacity plate like a conventional boat?",
+    "choice_a": "No -- PWC and some other vessels are not required to carry a capacity plate, so operators should follow the capacity recommended in the owner's manual and on the manufacturer's warning decal",
+    "choice_b": "Yes, every PWC has a capacity plate identical to a larger cruiser",
+    "choice_c": "No, PWC have no weight or passenger limit at all",
+    "choice_d": "Yes, but only PWC manufactured before 1990",
+    "correct_choice": "A",
+    "explanation": "PWC and certain other vessels are not required to display a capacity plate. Instead, operators should follow the maximum capacity recommended in the owner's manual and on the manufacturer's warning decal.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Vessel Capacity'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "For registration and equipment purposes, how does Arizona law generally treat a personal watercraft?",
+    "choice_a": "As safety equipment rather than a vessel",
+    "choice_b": "As a motorized watercraft that falls under the same general vessel requirements as any other boat, with additional PWC-specific rules layered on top",
+    "choice_c": "As exempt from nearly all boating regulations",
+    "choice_d": "As a non-motorized vessel similar to a canoe or kayak",
+    "correct_choice": "B",
+    "explanation": "Under Arizona law, a PWC is a motorized watercraft subject to the same general registration, equipment, and operating requirements as other vessels, plus a set of additional rules written specifically for PWC operation.",
+    "weight": 2,
+    "source_note": "A.R.S. Title 5, Chapter 3 boating statutes and NASBLA-based course material, 'Personal Watercraft'"
+  }
+]

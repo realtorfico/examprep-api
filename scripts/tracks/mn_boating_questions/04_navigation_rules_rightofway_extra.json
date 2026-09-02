@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What does a signal of three short blasts mean under the Navigation Rules?",
+    "choice_a": "\"I am operating astern propulsion\" (backing up)",
+    "choice_b": "\"I am anchoring immediately\"",
+    "choice_c": "\"I am approaching a fuel dock\"",
+    "choice_d": "\"I intend to overtake you on your port side\"",
+    "correct_choice": "A",
+    "explanation": "Three short blasts is a maneuvering signal meaning the signaling vessel is operating astern propulsion, or backing up, letting nearby vessels know to expect the boat to move in reverse rather than forward.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Navigation Rules, sound signals)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "When is a single prolonged blast (four to six seconds) commonly used under the Navigation Rules?",
+    "choice_a": "To signal a vessel is leaving a dock or slip, or to warn of a vessel's presence when approaching a bend or obstruction with restricted visibility",
+    "choice_b": "Only to signal the end of a boating day",
+    "choice_c": "Exclusively to request fuel dock service",
+    "choice_d": "To indicate the vessel intends to anchor for the night",
+    "correct_choice": "A",
+    "explanation": "A single prolonged blast is commonly used when a vessel is getting underway from a dock or slip, or when approaching a blind bend or obstruction where other traffic might not be visible, alerting any oncoming vessel to its presence before visual contact is possible.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Navigation Rules, prolonged blast signal)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "As a general right-of-way practice, what should a boater leaving a dock or mooring do relative to vessels already underway in the surrounding fairway or channel?",
+    "choice_a": "Assume traffic already underway must always stop and wait",
+    "choice_b": "Pull out at full throttle to merge quickly",
+    "choice_c": "Give way to vessels already underway and moving through the fairway, entering only when it can be done without creating a close-quarters or collision risk",
+    "choice_d": "There is no expected practice when leaving a dock",
+    "correct_choice": "C",
+    "explanation": "A vessel leaving a dock, slip, or mooring is generally expected to give way to traffic already moving through the surrounding fairway or channel, entering only when a safe gap exists, rather than assuming approaching boats must yield to it.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (Navigation Rules, vessel leaving a berth versus traffic underway)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "When several boats are converging on a busy Minnesota lake at once, what should an operator keep in mind beyond the standard two-vessel right-of-way rules?",
+    "choice_a": "Only the nearest vessel needs to be considered; farther vessels can be ignored",
+    "choice_b": "Right-of-way rules stop applying entirely once more than two vessels are involved",
+    "choice_c": "The operator should evaluate the position, speed, and likely path of every nearby vessel, not just the closest one, since a maneuver to avoid one boat could create a new close-quarters situation with another",
+    "choice_d": "The largest vessel present automatically directs traffic for everyone else",
+    "correct_choice": "C",
+    "explanation": "The two-vessel right-of-way rules for head-on, crossing, and overtaking situations still apply, but in a multi-vessel encounter an operator must track every nearby vessel's position and likely path, since avoiding one boat by turning or slowing could inadvertently create a new close-quarters situation with another.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Navigation Rules, multi-vessel situational awareness)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "On a narrow river channel with a noticeable current, which vessel is generally given priority: one traveling downbound with the current, or one traveling upbound against it?",
+    "choice_a": "The upbound vessel always has priority regardless of current",
+    "choice_b": "Neither vessel is ever given priority based on current direction",
+    "choice_c": "The downbound vessel, since a following current reduces its ability to slow down or maneuver quickly, is generally given priority to maintain safe steerageway in the narrow channel",
+    "choice_d": "Priority depends solely on which vessel is larger",
+    "correct_choice": "C",
+    "explanation": "A vessel moving downbound with a following current has less ability to slow down or stop than one moving against the current, so in a narrow channel it is generally given priority to maintain steerageway, with the upbound vessel expected to maneuver to allow safe passage.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (Navigation Rules, downbound-with-current priority in narrow channels)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "How can an operator judge whether an approaching vessel poses a real risk of collision, even before the situation feels urgent?",
+    "choice_a": "By assuming risk only exists once the two vessels are within a few boat-lengths of each other",
+    "choice_b": "If the compass bearing to the other vessel stays roughly constant while the distance between the two boats is clearly decreasing, a risk of collision generally exists and requires action",
+    "choice_c": "By checking only the other vessel's flag color",
+    "choice_d": "Risk of collision cannot be judged before the vessels are adjacent",
+    "correct_choice": "B",
+    "explanation": "A classic Navigation Rules technique is watching the compass bearing to an approaching vessel: if that bearing does not appreciably change while the range steadily closes, the two vessels are on a collision course and early action is needed, even if the danger does not yet feel obvious.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Navigation Rules, determining risk of collision by constant bearing)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "How should a non-participating boater treat a marked regatta or boat race course area on a Minnesota lake?",
+    "choice_a": "Ignore the markings and pass through the course at normal speed",
+    "choice_b": "Avoid entering or crossing the marked event area, since race boats and participants inside it may be moving at high speed or in unpredictable patterns unrelated to normal right-of-way expectations",
+    "choice_c": "Enter freely as long as the boater has the right-of-way under the standard crossing rule",
+    "choice_d": "Regatta areas have no special status under the Navigation Rules",
+    "correct_choice": "B",
+    "explanation": "A permitted regatta or race course area involves participants moving at speed and in patterns that don't follow the usual give-way/stand-on expectations, so a non-participating boater should steer clear of the marked event area entirely rather than relying on ordinary right-of-way rules.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (Navigation Rules, marine event and regatta area avoidance)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "When a give-way vessel does take action to avoid another boat, what quality should that action have to satisfy the Navigation Rules?",
+    "choice_a": "It should be as small and subtle as possible so as not to alarm the other operator",
+    "choice_b": "It only needs to happen at the last possible moment before contact",
+    "choice_c": "It should be made early and be large enough to be obvious to the other vessel, rather than a late or minor adjustment that could be missed or misread",
+    "choice_d": "Any course change, however small, satisfies the requirement regardless of timing",
+    "correct_choice": "C",
+    "explanation": "The Navigation Rules expect a give-way vessel's action to avoid collision to be taken early and be substantial enough that the other vessel can readily see and understand it, since a late or barely perceptible adjustment risks being missed or misinterpreted by the other operator.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Navigation Rules, action to avoid collision must be early and obvious)"
+  }
+]

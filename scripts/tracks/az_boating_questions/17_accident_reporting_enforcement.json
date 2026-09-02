@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under Arizona law, what must a watercraft operator do immediately after being involved in a collision, accident, or other casualty?",
+    "choice_a": "Wait 24 hours before taking any action",
+    "choice_b": "Stop immediately, render assistance to any injured persons, and provide their name, address, and vessel identification to affected parties",
+    "choice_c": "Leave the scene immediately to avoid liability",
+    "choice_d": "Only stop if another vessel involved is larger than their own",
+    "correct_choice": "B",
+    "explanation": "A.R.S. 5-349 requires an operator involved in a watercraft collision, accident, or casualty to stop immediately, render aid to anyone injured, and exchange identifying information -- name, address, and vessel ID -- with affected parties.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-349, 'Watercraft casualties; violation; classification'"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under Arizona law, within how many days must a written report be filed for a watercraft collision involving property damage exceeding $500 (with no death or injury)?",
+    "choice_a": "One year",
+    "choice_b": "No report is ever required for property-damage-only incidents",
+    "choice_c": "Five days",
+    "choice_d": "Thirty days",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-349 requires a written report within five days for any watercraft collision, accident, or other casualty involving property damage exceeding $500 where no death or injury occurred.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-349, property damage reporting threshold"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under Arizona law, within how many hours must a written report be filed when a watercraft accident results in death or injury?",
+    "choice_a": "One week",
+    "choice_b": "72 hours",
+    "choice_c": "There is no time limit for reporting a death or injury",
+    "choice_d": "48 hours",
+    "correct_choice": "D",
+    "explanation": "A.R.S. 5-349 requires that whenever death or injury results from a watercraft collision, accident, or casualty, a written report must be submitted within 48 hours, a much shorter window than the five-day property-damage threshold.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-349, death/injury reporting timeline"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What can happen to an operator under Arizona law who fails to stop and comply with reporting duties after an accident involving death or serious injury?",
+    "choice_a": "It can be charged as a class 5 felony, reflecting the seriousness of failing to stop and render aid after a death or serious injury",
+    "choice_b": "It is treated as a minor traffic infraction with a small fine regardless of the outcome",
+    "choice_c": "No criminal penalty applies under any circumstances",
+    "choice_d": "It is only punishable by a warning letter from AZGFD",
+    "correct_choice": "A",
+    "explanation": "A.R.S. 5-349 classifies failure to stop and comply after an accident involving death or serious injury as a class 5 felony, with lesser classifications (class 6 felony for other injury, class 3 misdemeanor for property damage only) for less severe outcomes.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-349, criminal penalty classifications"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "On what form must Arizona watercraft casualty reports be submitted?",
+    "choice_a": "Reports may only be submitted verbally over the phone",
+    "choice_b": "A form approved by the commission (the Arizona Game and Fish Commission)",
+    "choice_c": "Any handwritten note on plain paper is acceptable with no standard form",
+    "choice_d": "A federal Coast Guard form exclusively, with no state form permitted",
+    "correct_choice": "B",
+    "explanation": "A.R.S. 5-349 specifies that watercraft casualty reports must be submitted on a form approved by the commission, ensuring consistent information is captured for every reported incident.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-349, reporting form requirement"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What authority does an AZGFD boating law enforcement officer generally have on Arizona waters?",
+    "choice_a": "Authority limited strictly to issuing fishing license citations",
+    "choice_b": "Authority that applies only on land, never on the water itself",
+    "choice_c": "Authority to stop and board vessels for safety and registration inspections, investigate accidents, and enforce boating statutes including BUI, equipment, and registration requirements",
+    "choice_d": "No authority to stop or board any vessel under any circumstances",
+    "correct_choice": "C",
+    "explanation": "AZGFD boating law enforcement officers are authorized to stop and board vessels to check safety equipment and registration, investigate accidents, and enforce the full range of Arizona's boating statutes, including BUI and reckless-operation provisions.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes Title 5, Chapter 3, enforcement authority provisions"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Why does Arizona regulate the discharge of sewage, trash, and oil or other hazardous substances from vessels on its waters?",
+    "choice_a": "Discharge of any substance from a vessel is completely unregulated in Arizona",
+    "choice_b": "These rules apply only to commercial shipping vessels, never recreational boats",
+    "choice_c": "Discharge regulations exist only for saltwater vessels",
+    "choice_d": "To protect drinking water supplies and recreational water quality, since many Arizona reservoirs -- including Lake Pleasant and others -- serve as municipal water sources in addition to being recreation destinations",
+    "correct_choice": "D",
+    "explanation": "Arizona's reservoirs often serve dual roles as recreation sites and municipal water supplies, so discharge of sewage, trash, oil, or other hazardous substances from vessels is restricted to protect both water quality and public health.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Discharge of Sewage and Waste'"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What is the purpose of Arizona's aquatic invasive species (AIS) rules for boaters moving between water bodies?",
+    "choice_a": "To prevent species such as quagga mussels from spreading between Arizona reservoirs and rivers by requiring boaters to clean, drain, and dry their vessels and equipment",
+    "choice_b": "AIS rules exist only to generate registration revenue and have no ecological purpose",
+    "choice_c": "AIS only affects saltwater vessels and has no relevance to Arizona's freshwater reservoirs",
+    "choice_d": "AIS rules apply only to vessels longer than 65 feet",
+    "correct_choice": "A",
+    "explanation": "Aquatic invasive species like quagga mussels, once established in a lake such as Lake Mead or Lake Havasu, can spread rapidly if boaters move contaminated vessels or equipment between water bodies without cleaning, draining, and drying them first.",
+    "weight": 3,
+    "source_note": "AZGFD aquatic invasive species prevention program"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What kind of federal jurisdiction issue can arise for boaters on waters like Lake Mead and Lake Powell that fall within a National Recreation Area?",
+    "choice_a": "Only county law applies within a National Recreation Area",
+    "choice_b": "Federal National Park Service regulations can apply in addition to state law, since these waters are managed as part of a federally administered National Recreation Area",
+    "choice_c": "Federal law never applies on any water managed by a National Recreation Area",
+    "choice_d": "National Recreation Area status eliminates all state boating law on that water",
+    "correct_choice": "B",
+    "explanation": "Because Lake Mead and Lake Powell are managed as National Recreation Areas administered by the National Park Service, federal regulations can apply on top of the relevant state boating laws, adding another layer boaters should be aware of.",
+    "weight": 2,
+    "source_note": "National Park Service Lake Mead and Glen Canyon National Recreation Area boating guidance; NASBLA-based curriculum, 'Federally Controlled Waters'"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Paddlecraft & Non-Motorized Vessels",
+    "question": "Why are paddlecraft like canoes and kayaks often harder for other boaters to see on a busy Tennessee reservoir?",
+    "choice_a": "Their low profile, small size, and lack of a motor-driven wake make them easy to overlook, especially in glare, chop, or near larger vessel traffic",
+    "choice_b": "Paddlecraft are required to be painted bright orange, making visibility a non-issue",
+    "choice_c": "Paddlecraft are always required to display a radar reflector",
+    "choice_d": "Paddlecraft move too fast to be missed by other boaters",
+    "correct_choice": "A",
+    "explanation": "A canoe or kayak sits low in the water and creates little to no wake, making it harder for operators of larger, faster vessels to spot, especially in glare, choppy conditions, or congested reservoir traffic -- which is why paddlers are encouraged to wear brightly colored gear and stay alert to boat traffic.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned) applied to paddlecraft visibility"
+  },
+  {
+    "topic": "Paddlecraft & Non-Motorized Vessels",
+    "question": "What basic safety precaution is recommended for a paddler heading out onto a large, open-water Tennessee reservoir alone?",
+    "choice_a": "Telling someone on shore the planned route and expected return time, in addition to wearing a PFD",
+    "choice_b": "Paddling only after dark to avoid other boat traffic entirely",
+    "choice_c": "No precautions are necessary for non-motorized vessels since they cannot capsize",
+    "choice_d": "Leaving the PFD on shore to save weight, since paddlecraft rarely swamp",
+    "correct_choice": "A",
+    "explanation": "A solo paddler heading onto open water is encouraged to tell someone on shore their planned route and expected return time, in addition to wearing a PFD, so help can be directed appropriately if the paddler does not return as expected.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned) applied to paddlecraft"
+  },
+  {
+    "topic": "Paddlecraft & Non-Motorized Vessels",
+    "question": "Why should a paddler avoid crossing directly in front of a large vessel, such as a pontoon boat or a commercial tow, on a Tennessee reservoir?",
+    "choice_a": "A large vessel needs more distance and time to slow, stop, or change course, and may not be able to see or avoid a low-profile paddlecraft in time",
+    "choice_b": "Large vessels are legally required to always stop for any paddlecraft",
+    "choice_c": "It is completely safe as long as the paddler waves first",
+    "choice_d": "Paddlecraft always have the right of way over every other vessel type",
+    "correct_choice": "A",
+    "explanation": "A larger vessel needs significantly more time and distance to slow, stop, or maneuver, and its operator may have limited ability to spot a low-profile paddlecraft crossing close in front, so paddlers should give large vessels a wide, early berth rather than assuming they will be seen in time.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (Navigation Rules) applied to paddlecraft"
+  },
+  {
+    "topic": "Paddlecraft & Non-Motorized Vessels",
+    "question": "What weather-related risk is especially relevant to a canoe or kayak paddler on a large, open Tennessee reservoir compared to a larger, heavier boat?",
+    "choice_a": "Wind can push a lightweight paddlecraft off course or make paddling back to shore much harder, even in conditions a larger boat could handle easily",
+    "choice_b": "Paddlecraft are unaffected by wind due to their low profile",
+    "choice_c": "Wind only affects vessels with sails, never paddlecraft",
+    "choice_d": "Rain is the only weather condition that affects paddlecraft",
+    "correct_choice": "A",
+    "explanation": "Because a canoe or kayak is lightweight and sits low in the water, wind can push it off course or make the return paddle to shore much more difficult, even in conditions that a larger, heavier motorized vessel could handle without much trouble.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned) applied to paddlecraft"
+  }
+]

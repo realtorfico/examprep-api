@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Registration & Titling",
+    "question": "If a Tennessee boat owner loses their Certificate of Number or it becomes illegible, what should they do?",
+    "choice_a": "Apply to TWRA for a duplicate registration card rather than continuing to operate without valid proof of registration",
+    "choice_b": "Nothing; a lost Certificate of Number has no effect on the vessel's legal registration status",
+    "choice_c": "Immediately re-register the vessel as if it were newly purchased",
+    "choice_d": "Wait until the next renewal cycle with no other action needed",
+    "correct_choice": "A",
+    "explanation": "A boat owner whose Certificate of Number is lost or becomes illegible should apply to TWRA for a duplicate, since the vessel must have a valid, legible registration card available for inspection while in use.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals / TWRA registration replacement principle"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "How is the validation decal that accompanies a Tennessee vessel's registration numbers meant to be used?",
+    "choice_a": "Affixed near the registration numbers to show the registration is current for the applicable period",
+    "choice_b": "Placed only on the operator's vehicle, never on the boat itself",
+    "choice_c": "It is optional artwork with no connection to registration status",
+    "choice_d": "It replaces the need to display registration numbers at all",
+    "correct_choice": "A",
+    "explanation": "The validation decal is affixed near a vessel's displayed registration numbers to show at a glance that the registration is current, complementing the numbers themselves and the Certificate of Number carried aboard.",
+    "weight": 2,
+    "source_note": "TWRA Watercraft Equipment Checklist / Boating Registration page"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Why might a boat owner in Tennessee need to update their vessel's registration record with TWRA even without selling the boat or moving states?",
+    "choice_a": "Changes such as the owner's mailing address, or modifications like a hull or engine replacement, may need to be reported to keep the registration record accurate",
+    "choice_b": "Registration records can never be updated once issued",
+    "choice_c": "Only a change in the boat's paint color requires an update",
+    "choice_d": "TWRA automatically updates all records without any owner action, in every circumstance",
+    "correct_choice": "A",
+    "explanation": "An owner should keep TWRA's registration record accurate by reporting relevant changes, such as an updated mailing address or a significant modification to the vessel, since inaccurate records can complicate registration renewal or a future ownership transfer.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals / TWRA registration recordkeeping principle"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What generally happens if a Tennessee vessel owner operates their boat after the registration's expiration date without renewing it?",
+    "choice_a": "The vessel is being operated with lapsed registration and the operator can be cited, in addition to owing renewal fees to bring the registration current",
+    "choice_b": "Nothing; Tennessee registrations never expire once issued",
+    "choice_c": "The registration automatically extends itself for another full term with no owner action",
+    "choice_d": "Only the vessel's insurance is affected, never its legal registration status",
+    "correct_choice": "A",
+    "explanation": "Operating a vessel on a lapsed Tennessee registration exposes the operator to a citation for a registration violation, and the owner still owes the applicable fees to bring the registration current, similar to letting a vehicle's registration expire.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals / TWRA registration renewal principle"
+  }
+]

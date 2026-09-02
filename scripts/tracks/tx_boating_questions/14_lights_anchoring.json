@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Navigation Lights & Anchoring",
+    "question": "Between what hours must a vessel operating on Texas waters display proper navigation lights?",
+    "choice_a": "From sunset to sunrise, and during periods of restricted visibility such as fog or heavy rain",
+    "choice_b": "Navigation lights are never required on recreational vessels",
+    "choice_c": "Only between midnight and 4:00 a.m.",
+    "choice_d": "Only when the vessel is anchored, never while underway",
+    "correct_choice": "A",
+    "explanation": "Navigation lights must be displayed from sunset to sunrise and during any period of reduced visibility, such as fog, so other vessels can identify a boat's position, heading, and type at a glance.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules -- navigation light requirements, as taught in TPWD boater education"
+  },
+  {
+    "topic": "Navigation Lights & Anchoring",
+    "question": "On a power-driven vessel underway at night, what do red and green sidelights indicate to another boater?",
+    "choice_a": "Red and green sidelights are purely decorative and carry no navigational meaning",
+    "choice_b": "Red marks the vessel's port (left) side and green marks its starboard (right) side, helping another boater judge the vessel's heading and which side is approaching",
+    "choice_c": "Red marks the stern and green marks the bow",
+    "choice_d": "The colors are reversed from what is described in choice A",
+    "correct_choice": "B",
+    "explanation": "A power-driven vessel's red sidelight marks its port side and green marks its starboard side; seeing both lights together tells another boater the vessel is heading roughly toward them, while seeing only one color indicates which side is nearer.",
+    "weight": 4,
+    "source_note": "Inland Navigation Rules -- sidelight colors and meaning"
+  },
+  {
+    "topic": "Navigation Lights & Anchoring",
+    "question": "What does an all-around white light on a small powerboat at anchor at night typically signal to approaching vessels?",
+    "choice_a": "The vessel is underway at high speed",
+    "choice_b": "The vessel is a commercial fishing vessel actively trawling",
+    "choice_c": "The vessel is anchored, and other vessels should navigate around it with caution",
+    "choice_d": "An anchor light has no specific navigational meaning",
+    "correct_choice": "C",
+    "explanation": "A single all-around white anchor light displayed at night indicates the vessel is anchored rather than underway, alerting other boaters to steer clear of a stationary obstruction.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules -- anchor light requirement"
+  },
+  {
+    "topic": "Navigation Lights & Anchoring",
+    "question": "What lighting configuration is typically used on a vessel less than 12 meters (about 39.4 feet) underway at night, as an alternative to separate sidelights and a masthead light?",
+    "choice_a": "Small vessels are exempt from displaying any navigation lights",
+    "choice_b": "Small vessels must use only a single white light with no color distinction at all",
+    "choice_c": "Only sailboats under 12 meters can use combined lights; powerboats cannot",
+    "choice_d": "A combined bi-color (red/green) light at the bow and a separate all-around or stern light may be used, simplifying the lighting setup for smaller vessels",
+    "correct_choice": "D",
+    "explanation": "Vessels under 12 meters are permitted a simplified lighting configuration, such as a combined bi-color bow light plus a stern or all-around light, rather than the full separate sidelight and masthead arrangement required on larger vessels.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules -- lighting requirements for vessels under 12 meters"
+  },
+  {
+    "topic": "Navigation Lights & Anchoring",
+    "question": "Where should a boater generally avoid anchoring on a Texas lake or river?",
+    "choice_a": "In or near a marked channel, swimming area, or other high-traffic area where the anchored vessel could create a hazard or obstruction",
+    "choice_b": "Anchoring location makes no difference as long as the anchor line is long enough",
+    "choice_c": "Boaters must always anchor in the middle of the main channel",
+    "choice_d": "Anchoring is prohibited everywhere in Texas",
+    "correct_choice": "A",
+    "explanation": "A boater should avoid anchoring in a marked navigation channel, swim area, or other high-traffic zone, since a stationary boat there could create a serious collision hazard for passing traffic.",
+    "weight": 2,
+    "source_note": "TPWD Boater Education Manual -- anchoring location practices"
+  },
+  {
+    "topic": "Navigation Lights & Anchoring",
+    "question": "What is one important step when setting an anchor to ensure it holds securely?",
+    "choice_a": "Use the shortest anchor line possible to save space",
+    "choice_b": "Let out an adequate length of anchor line (scope), typically several times the water depth, so the anchor pulls horizontally along the bottom rather than straight up",
+    "choice_c": "Anchor scope has no effect on whether an anchor holds",
+    "choice_d": "Always drop the anchor at full boat speed for the best hold",
+    "correct_choice": "B",
+    "explanation": "Proper anchor scope -- letting out several times the water's depth in anchor rode -- lets the anchor pull along the bottom horizontally, which is what allows most anchor designs to dig in and hold.",
+    "weight": 2,
+    "source_note": "TPWD Boater Education Manual -- anchoring technique"
+  },
+  {
+    "topic": "Navigation Lights & Anchoring",
+    "question": "Why should a boater check that all navigation lights are functioning before departing at dusk or for a nighttime trip?",
+    "choice_a": "Navigation lights only matter for boats longer than 65 feet",
+    "choice_b": "Working lights are required only if returning after midnight",
+    "choice_c": "Non-functioning lights can prevent other vessels from seeing or correctly identifying the boat, greatly increasing collision risk after dark",
+    "choice_d": "Checking lights before departure has no safety benefit",
+    "correct_choice": "C",
+    "explanation": "A pre-departure check of navigation lights is important because other vessels rely entirely on those lights after dark to see, identify, and predict the movement of a boat -- a burned-out light greatly increases collision risk.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- pre-departure light check"
+  },
+  {
+    "topic": "Navigation Lights & Anchoring",
+    "question": "What type of light must a vessel display if it is towing another vessel or object at night?",
+    "choice_a": "No additional lighting is required for a vessel that is towing",
+    "choice_b": "The towed object must display the same lights as the towing vessel, with no distinction",
+    "choice_c": "Towing lights are required only during daylight hours",
+    "choice_d": "Additional towing lights, such as a second masthead light and a yellow towing light at the stern, beyond its normal running lights",
+    "correct_choice": "D",
+    "explanation": "A vessel towing another vessel or object at night is required to display additional lighting -- typically a second masthead light and a yellow towing light aft -- beyond its ordinary running lights, so other boaters recognize the towing situation.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules -- lights for a vessel towing"
+  },
+  {
+    "topic": "Navigation Lights & Anchoring",
+    "question": "What is a float plan, and why is it a recommended safety practice before a Texas boating trip?",
+    "choice_a": "A written or verbal plan left with a trusted person on shore describing the trip's destination, route, and expected return time, so help can be alerted if the boat is overdue",
+    "choice_b": "A plan required only for vessels over 65 feet",
+    "choice_c": "A document filed exclusively with the U.S. Coast Guard for every recreational trip",
+    "choice_d": "A plan for how to keep the boat afloat if it takes on water",
+    "correct_choice": "A",
+    "explanation": "A float plan left with someone on shore -- describing where a boater is going, the planned route, and expected return time -- allows that person to alert authorities if the boater does not return as expected.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- float plan recommendation"
+  }
+]

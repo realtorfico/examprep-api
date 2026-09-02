@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "South Carolina Boater Education Law",
+    "question": "What format does SCDNR's own free, instructor-led boater education course typically take?",
+    "choice_a": "A six-hour, one-day classroom session combining instruction with hands-on training and certification testing",
+    "choice_b": "A single ten-minute video with no testing component",
+    "choice_c": "A mandatory six-month program spread over weekly sessions",
+    "choice_d": "SCDNR does not offer any instructor-led course option",
+    "correct_choice": "A",
+    "explanation": "SCDNR's own instructor-led boater education course is offered as a six-hour, one-day session that combines classroom instruction with hands-on training, concluding with the certification testing needed to satisfy South Carolina's boater education mandate.",
+    "weight": 4,
+    "source_note": "SCDNR boater education program (dnr.sc.gov/education/boated.html), in-person course format"
+  },
+  {
+    "topic": "South Carolina Boater Education Law",
+    "question": "Besides holding a South Carolina boating safety certificate, which of the following can also satisfy Section 50-21-95's education requirement for a person born on or after July 1, 2007?",
+    "choice_a": "A valid U.S. Coast Guard vessel operator license or merchant mariner credential, a valid out-of-state boating certificate, a valid boat rental safety certificate, or supervision by a certified adult",
+    "choice_b": "Nothing else may ever substitute for the South Carolina certificate itself",
+    "choice_c": "Only a state driver's license, with no boating-specific credential accepted",
+    "choice_d": "A hunting license issued by SCDNR",
+    "correct_choice": "A",
+    "explanation": "Section 50-21-95 recognizes several alternatives to a South Carolina boating safety certificate, including a valid U.S. Coast Guard operator license or merchant mariner credential, a valid out-of-state boating certificate, a valid rental safety certificate, or being accompanied by a certified adult, giving covered boaters more than one path to compliance.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-95 (accepted alternative credentials)"
+  },
+  {
+    "topic": "South Carolina Boater Education Law",
+    "question": "How long is a South Carolina boat rental safety certificate valid once issued?",
+    "choice_a": "One full calendar year",
+    "choice_b": "30 days from the date of issuance",
+    "choice_c": "It never expires once issued",
+    "choice_d": "Only for the exact hour it was issued",
+    "correct_choice": "B",
+    "explanation": "A South Carolina boat rental safety certificate is valid for 30 days from its date of issuance and applies only to commercial rental operations, giving a short-term renter a time-limited alternative to completing the full boater education course.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-95 and SCDNR boater education program (30-day rental safety certificate validity)"
+  },
+  {
+    "topic": "South Carolina Boater Education Law",
+    "question": "Besides NASBLA-approved commercial vendors such as Boat-Ed, which of the following also appears on SCDNR's list of approved South Carolina boater education course providers?",
+    "choice_a": "BoatUS and the United States Power Squadrons, in addition to SCDNR's own free instructor-led course",
+    "choice_b": "No provider besides SCDNR itself is ever approved",
+    "choice_c": "Only for-profit driving schools that teach automobile driver's education",
+    "choice_d": "Approved providers change completely every single year with no continuity",
+    "correct_choice": "A",
+    "explanation": "SCDNR's approved-provider list includes its own free, instructor-led course alongside multiple accepted commercial and organizational options such as BoatUS and the United States Power Squadrons, giving South Carolina boaters a range of cost and format choices to satisfy the education mandate.",
+    "weight": 3,
+    "source_note": "SCDNR boater education program (dnr.sc.gov/education/boated.html), approved course provider list"
+  },
+  {
+    "topic": "South Carolina Boater Education Law",
+    "question": "What is the penalty for a first violation of South Carolina's boater education mandate itself -- that is, operating a covered vessel without holding a required certificate or accepted equivalent?",
+    "choice_a": "A fine of $50 to $300, with no suspension of privileges, court costs, or criminal record resulting from the violation",
+    "choice_b": "Immediate mandatory imprisonment of at least one year",
+    "choice_c": "Permanent, lifetime revocation of all boating privileges",
+    "choice_d": "There is no penalty at all for violating the education mandate",
+    "correct_choice": "A",
+    "explanation": "A first violation of Section 50-21-95's education requirement carries a relatively modest fine of $50 to $300, with no suspension of boating privileges and no court costs or criminal record attached, distinguishing it from South Carolina's much harsher penalties for offenses like reckless operation or BUI.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-95 (penalty for a first education-mandate violation)"
+  },
+  {
+    "topic": "South Carolina Boater Education Law",
+    "question": "Under S.C. Code Section 50-21-90, what recordkeeping and certificate-issuance duties does SCDNR carry out as part of the state's boating safety and educational program?",
+    "choice_a": "SCDNR issues both physical and electronic boating safety certificates and maintains a database of certificate holders",
+    "choice_b": "SCDNR issues certificates but keeps no records of who holds them",
+    "choice_c": "Certificates are issued only in physical paper form, with no electronic option ever available",
+    "choice_d": "SCDNR has no role in issuing certificates at all; that function belongs entirely to private course vendors",
+    "correct_choice": "A",
+    "explanation": "Section 50-21-90 directs SCDNR to issue South Carolina boating safety certificates in both physical and electronic form to those who complete an approved course, obtain equivalency from another state, or hold qualifying U.S. Coast Guard credentials, and to maintain a database of certificate holders.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-90 (SCDNR certificate issuance and recordkeeping duties)"
+  }
+]

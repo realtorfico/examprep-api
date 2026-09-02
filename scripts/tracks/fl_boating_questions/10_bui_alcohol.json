@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "At what blood or breath alcohol concentration (BAC) is a Florida boat operator legally considered under the influence?",
+    "choice_a": "0.02% or greater for all ages",
+    "choice_b": "Florida has no defined BAC threshold for boating",
+    "choice_c": "0.08% or greater",
+    "choice_d": "0.15% or greater",
+    "correct_choice": "C",
+    "explanation": "Florida applies the same 0.08% BAC threshold to boating under the influence (BUI) as it does to driving under the influence on the road.",
+    "weight": 5,
+    "source_note": "Florida Statutes 327.35, BUI legal alcohol threshold"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What BAC threshold applies to a boat operator under 21 years old in Florida?",
+    "choice_a": "The same 0.08% threshold applies regardless of age",
+    "choice_b": "Operators under 21 are exempt from BUI laws entirely",
+    "choice_c": "0.10% or higher",
+    "choice_d": "Any measurable BAC of 0.02% or higher is unlawful",
+    "correct_choice": "D",
+    "explanation": "Florida applies a zero-tolerance-style standard to boaters under 21: any BAC of 0.02% or greater is unlawful, a much lower threshold than the 0.08% standard for adult operators.",
+    "weight": 4,
+    "source_note": "Florida BUI zero-tolerance provision for boaters under 21"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Besides BAC, what other legal standard can support a BUI charge in Florida?",
+    "choice_a": "Operating a vessel while a person's normal faculties are impaired by alcohol, drugs, or a combination of the two, regardless of the exact BAC reading",
+    "choice_b": "Only a breath test result counts; impairment observations are legally irrelevant",
+    "choice_c": "BUI can only be charged if a breathalyzer was administered within 10 minutes",
+    "choice_d": "BUI requires an accident to have occurred",
+    "correct_choice": "A",
+    "explanation": "Florida law defines BUI as operating a vessel while impaired to the extent that normal faculties are affected by alcohol, drugs, or both -- an impairment-based standard independent of a specific chemical test result -- or by having a BAC of 0.08% or more.",
+    "weight": 4,
+    "source_note": "Florida Statutes 327.35, BUI impairment standard"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What is a typical penalty range for a first-time BUI conviction in Florida?",
+    "choice_a": "A fixed $50 fine with no other consequences",
+    "choice_b": "A fine generally between $500 and $1,000, up to six months in jail, probation, a mandatory boating safety course, and possible vessel impoundment",
+    "choice_c": "No penalty at all for a first offense",
+    "choice_d": "Automatic permanent loss of the right to own any vessel",
+    "correct_choice": "B",
+    "explanation": "A first BUI conviction in Florida can bring a fine in roughly the $500 to $1,000 range, up to six months in jail, probation, a required boating safety course, and vessel impoundment for a period of time.",
+    "weight": 3,
+    "source_note": "Florida BUI first-offense penalty structure"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Besides state law enforcement and FWC officers, what federal agency also has authority to enforce BUI laws on Florida waters?",
+    "choice_a": "The Internal Revenue Service",
+    "choice_b": "No federal agency has any BUI enforcement role",
+    "choice_c": "The U.S. Coast Guard",
+    "choice_d": "The Federal Aviation Administration",
+    "correct_choice": "C",
+    "explanation": "Boating under the influence is also a federal offense, so the U.S. Coast Guard enforces BUI in addition to Florida state and county law enforcement agencies.",
+    "weight": 3,
+    "source_note": "Federal BUI enforcement authority, U.S. Coast Guard"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What happens if a boater refuses a lawfully requested breath, blood, or urine test after being lawfully stopped on suspicion of BUI?",
+    "choice_a": "There is no consequence for refusing any chemical test",
+    "choice_b": "Refusal automatically dismisses any BUI investigation",
+    "choice_c": "Refusal is only relevant for commercial vessel operators",
+    "choice_d": "Refusal can lead to a civil penalty and be used as evidence against the operator, similar to implied-consent consequences for driving under the influence",
+    "correct_choice": "D",
+    "explanation": "Florida's implied consent framework extends to BUI: refusing a lawfully requested chemical test can result in a civil penalty and can be introduced as evidence in a BUI proceeding.",
+    "weight": 3,
+    "source_note": "Florida implied consent law applied to BUI investigations"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Why can alcohol impairment be especially dangerous on the water compared to driving a car?",
+    "choice_a": "Sun, wind, engine vibration, noise, and motion cause 'boater's fatigue,' which can intensify alcohol's effects and impair judgment, balance, and reaction time faster than on land",
+    "choice_b": "Alcohol has no additional effect on the water compared to on land",
+    "choice_c": "Boats are inherently more stable than cars, eliminating any added risk from impairment",
+    "choice_d": "Impairment on the water only affects vision, not balance or judgment",
+    "correct_choice": "A",
+    "explanation": "The combination of sun, wind, glare, engine noise, and a vessel's motion, sometimes called 'boater's fatigue,' can amplify alcohol's impairing effects on balance, judgment, and reaction time faster than in a car.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course boater's fatigue / alcohol content"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Can a boat passenger who is not operating the vessel be arrested for BUI?",
+    "choice_a": "BUI can only be charged against PWC operators, never other vessel types",
+    "choice_b": "No -- BUI applies to the person operating the vessel, though an impaired passenger may face other charges such as open-container or public-intoxication violations depending on circumstances",
+    "choice_c": "Yes, every person aboard a vessel where alcohol is present can be charged with BUI",
+    "choice_d": "BUI charges apply equally to the vessel's owner even if they are not aboard",
+    "correct_choice": "B",
+    "explanation": "BUI specifically targets the person operating the vessel while impaired; a non-operating passenger would not be charged with BUI itself, though other laws could still apply to their conduct.",
+    "weight": 2,
+    "source_note": "Florida Statutes 327.35, BUI applies to the operator"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What is the safest practice regarding alcohol for the operator of a vessel, even where consumption by passengers is legal?",
+    "choice_a": "There is no meaningful safety benefit to the operator avoiding alcohol",
+    "choice_b": "Alcohol only impairs operation of vessels over 26 feet",
+    "choice_c": "The operator should avoid alcohol entirely and designate a sober operator if others aboard choose to drink",
+    "choice_d": "The operator should match passengers drink-for-drink to be sociable",
+    "correct_choice": "C",
+    "explanation": "Because BUI carries the same 0.08% threshold and serious safety risks as impaired driving, the safest and legally clearest practice is for the vessel's operator to avoid alcohol and designate a sober operator for the outing.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course BUI prevention guidance"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Does completing the mandatory FWC-approved boating safety course substitute for compliance with BUI law?",
+    "choice_a": "Yes, a completed safety course card is a legal defense to any BUI charge",
+    "choice_b": "BUI law only applies to boaters who have not completed the safety course",
+    "choice_c": "The safety course replaces the need for any BUI enforcement",
+    "choice_d": "No -- the education requirement and BUI law are separate; completing a safety course does not excuse or prevent a BUI violation",
+    "correct_choice": "D",
+    "explanation": "The boater education/ID card requirement and BUI law address different things -- one is a prerequisite to legally operate certain vessels, the other criminalizes impaired operation -- and completing the course provides no defense to a BUI charge.",
+    "weight": 2,
+    "source_note": "General relationship between FWC education mandate and BUI enforcement"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why does a boat trailer need the correct amount of 'tongue weight' (downward force on the tow vehicle's hitch), roughly 10-15% of the total loaded trailer weight?",
+    "choice_a": "Tongue weight has no effect on towing safety",
+    "choice_b": "Too little or too much tongue weight can cause the trailer to sway dangerously or handle poorly while being towed",
+    "choice_c": "Tongue weight should always be as close to zero as possible",
+    "choice_d": "Tongue weight is only a concern for trailers over 10,000 pounds",
+    "correct_choice": "B",
+    "explanation": "Correct tongue weight, typically around 10-15% of the total loaded trailer weight, helps keep the trailer tracking straight; too little can cause dangerous sway, while too much can overload the hitch and strain the tow vehicle.",
+    "weight": 2,
+    "source_note": "Universal boat trailer towing-safety fundamentals (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What is a common technique for steering a boat trailer while backing up, since the trailer turns opposite to how a car normally turns?",
+    "choice_a": "Turning the steering wheel in the direction the driver wants the back of the trailer to go (often taught as placing a hand at the bottom of the wheel and moving it in the desired trailer direction)",
+    "choice_b": "Steering has no effect on trailer direction while backing",
+    "choice_c": "The trailer should never be backed up; it must always be pulled forward into position",
+    "choice_d": "Backing a trailer requires turning the wheel in the same way as backing a car with no trailer at all",
+    "correct_choice": "A",
+    "explanation": "Because a trailer pivots opposite to a car's normal steering response when backing, drivers are often taught to place a hand at the bottom of the wheel and move it in the direction they want the trailer's rear to go.",
+    "weight": 1,
+    "source_note": "Universal boat trailer backing-technique guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Before backing a trailer down a Maryland boat ramp, what should a boater check about the ramp itself?",
+    "choice_a": "Ramp conditions, such as slope, depth relative to the tide, and slickness from algae, since these can affect whether the tow vehicle and trailer can safely launch or retrieve the boat",
+    "choice_b": "Ramp conditions never need to be checked before launching",
+    "choice_c": "Only the ramp's paint color matters",
+    "choice_d": "Ramps are identical everywhere in Maryland with no need to check conditions",
+    "correct_choice": "A",
+    "explanation": "Ramp slope, tide-dependent water depth, and slick surface conditions such as algae can all affect whether a tow vehicle and trailer can safely and successfully launch or retrieve a boat, so checking these before backing down is good practice.",
+    "weight": 2,
+    "source_note": "Universal boat ramp condition-assessment guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "While preparing to launch at a ramp, why should a driver set the tow vehicle's parking brake (and use wheel chocks if needed) rather than leaving it in neutral or park alone on a sloped ramp?",
+    "choice_a": "This has no safety benefit on a boat ramp",
+    "choice_b": "To prevent the tow vehicle and trailer from rolling unexpectedly on the ramp's slope, which could be dangerous to people nearby or damage the boat",
+    "choice_c": "Parking brakes should never be used near water",
+    "choice_d": "It is required only for vehicles without trailers",
+    "correct_choice": "B",
+    "explanation": "A properly set parking brake, and wheel chocks if needed, help prevent an unintended rollback on a sloped ramp, which could injure bystanders or damage the boat, trailer, or tow vehicle.",
+    "weight": 1,
+    "source_note": "Universal boat ramp vehicle-safety guidance (NASBLA-aligned course content)"
+  }
+]

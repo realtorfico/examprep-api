@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Can factors such as a prior impaired-operation conviction, an especially high alcohol concentration, or a child aboard increase the severity of a Minnesota boating-while-impaired charge?",
+    "choice_a": "No, every BWI charge carries an identical penalty regardless of circumstances",
+    "choice_b": "Yes -- because Minn. Stat. 86B.33 cross-applies the impaired-driving framework, aggravating factors such as a prior conviction, a markedly high alcohol concentration, or a child passenger can increase the severity of the offense, similar to an aggravated DWI",
+    "choice_c": "Aggravating factors apply only to vehicle DWI charges, never to boating",
+    "choice_d": "A child aboard has no bearing on any boating offense",
+    "correct_choice": "B",
+    "explanation": "Because Minnesota's boating-while-impaired law incorporates the impaired-driving framework from Chapter 169A, the same kinds of aggravating circumstances used in DWI cases -- prior convictions, a markedly elevated alcohol concentration, or a child passenger -- can likewise increase the severity of a BWI charge.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.33 (incorporation of aggravating-factor framework from Chapter 169A impaired-driving law)"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "What consequence can follow if a Minnesota boat operator refuses to submit to a chemical test after being lawfully suspected of boating while impaired?",
+    "choice_a": "There is no consequence for refusing a test on the water",
+    "choice_b": "Refusal automatically dismisses any pending charge",
+    "choice_c": "Because Minnesota's implied consent framework is cross-applied to boating under Minn. Stat. 86B.33, refusing a lawfully requested test can itself carry license and legal consequences, similar to refusing a test after a DWI stop",
+    "choice_d": "Refusal is only relevant for PWC operators, not other motorboats",
+    "correct_choice": "C",
+    "explanation": "Minnesota's implied consent principles, which impose consequences for refusing a lawfully requested chemical test, are cross-applied to the boating-while-impaired context, meaning refusal on the water can carry its own legal and license-related consequences much like refusing a test during a DWI stop.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.33 (cross-application of implied consent/testing framework from Chapter 169A)"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Does Minnesota law generally prohibit passengers from possessing or drinking alcohol aboard a recreational motorboat, the way some states impose a \"dry boat\" rule?",
+    "choice_a": "Yes, Minnesota bans any alcohol aboard any recreational vessel",
+    "choice_b": "Minnesota's boating law is focused on prohibiting impaired operation of the vessel rather than banning passengers from possessing or consuming alcohol aboard",
+    "choice_c": "Alcohol is banned only on personal watercraft, never on other motorboats",
+    "choice_d": "Alcohol possession aboard is banned only after sunset",
+    "correct_choice": "B",
+    "explanation": "Minnesota's core boating alcohol law targets impaired operation of the vessel by Minn. Stat. 86B.33, rather than imposing a blanket ban on passengers possessing or consuming alcohol aboard the way some states' \"dry boat\" statutes do.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.33 (targets impaired operation rather than passenger alcohol possession)"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Does Minnesota's boating-while-impaired law under Minn. Stat. 86B.33 cover impairment from alcohol only, or also from other substances?",
+    "choice_a": "It covers alcohol impairment only; drugs are entirely unregulated on the water",
+    "choice_b": "It covers impairment from alcohol, a controlled substance, or another intoxicating substance, not alcohol alone",
+    "choice_c": "It applies only to prescription medications",
+    "choice_d": "It applies only to illegal drugs, never alcohol",
+    "correct_choice": "B",
+    "explanation": "Minnesota's boating-while-impaired statute reaches operation while impaired by alcohol, a controlled substance, or another intoxicating substance, mirroring the broader scope of the state's impaired-driving law rather than being limited to alcohol alone.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.33 (impairment standard covers alcohol, controlled substances, and other intoxicating substances)"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Do Minnesota's general underage alcohol laws still apply to a minor aboard a boat on state waters?",
+    "choice_a": "No, being on a boat exempts a minor from the state's underage alcohol consumption and possession laws",
+    "choice_b": "Underage alcohol laws apply only on land, never on the water",
+    "choice_c": "Yes -- the same general underage possession and consumption laws that apply anywhere else in Minnesota continue to apply to a minor aboard a vessel on the state's waters",
+    "choice_d": "Underage laws apply only to PWC operators",
+    "correct_choice": "C",
+    "explanation": "Minnesota's general underage alcohol possession and consumption laws are not limited to dry land; a minor aboard a boat on the state's waters remains subject to the same statewide restrictions as anywhere else.",
+    "weight": 2,
+    "source_note": "General Minnesota underage alcohol law, applicable on state waters as elsewhere"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Why is it more difficult for a Minnesota law enforcement officer to administer standard field sobriety tests to a suspected impaired boat operator while still on the water?",
+    "choice_a": "Field sobriety testing is never used in a boating impairment investigation",
+    "choice_b": "Standard balance- and coordination-based field tests are hard to administer reliably on a moving vessel, so an officer may instead rely on other observations (such as speech, eyes, and behavior) or bring the operator to a dock before testing",
+    "choice_c": "Officers are legally barred from evaluating a boat operator's impairment in any way",
+    "choice_d": "Balance tests work identically on a moving boat and on solid ground",
+    "correct_choice": "B",
+    "explanation": "Because a moving or rocking vessel makes standard balance-based field sobriety tests unreliable, an officer investigating a suspected impaired boat operator often relies more heavily on other observations, such as speech and eye behavior, or waits until reaching a dock to conduct standard testing.",
+    "weight": 2,
+    "source_note": "Universal law enforcement practice (adapting impairment evaluation to on-water conditions), consistent with Minn. Stat. 86B.33 enforcement"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Can a Minnesota boat operator be charged with impaired operation even if a chemical test shows an alcohol concentration below 0.08?",
+    "choice_a": "No, a charge is legally impossible below 0.08 under any circumstance",
+    "choice_b": "Yes -- similar to the vehicle DWI framework, an operator can still be charged based on evidence of actual impairment (behavior, coordination, and other indicators), separate from the 0.08 per se threshold",
+    "choice_c": "A charge below 0.08 can only ever be brought against a PWC operator",
+    "choice_d": "Below 0.08, an operator is automatically presumed sober regardless of behavior",
+    "correct_choice": "B",
+    "explanation": "As with the vehicle DWI framework it incorporates, Minnesota's boating impairment law allows a charge to be based on evidence that the operator was actually impaired, even at an alcohol concentration below the 0.08 per se threshold, rather than requiring the numeric threshold in every case.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.33 (impairment-based charge available independent of the 0.08 per se threshold, per the cross-applied Chapter 169A framework)"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Does Minnesota's motorboat-specific impairment statute (Minn. Stat. 86B.33) apply the same way to a person paddling a canoe or kayak with no motor?",
+    "choice_a": "Yes, identically, since all watercraft are treated as motorboats for impairment purposes",
+    "choice_b": "The motorboat-specific impairment statute is written around \"motorboat\" operation, so a non-motorized canoe or kayak generally falls outside that particular statute's scope, even though impaired paddling remains a serious safety concern and other laws could still apply",
+    "choice_c": "Canoes and kayaks are entirely exempt from any Minnesota law regarding alcohol",
+    "choice_d": "The statute applies only to sailboats, never to canoes",
+    "correct_choice": "B",
+    "explanation": "Because Minn. Stat. 86B.33 is framed around impaired operation of a \"motorboat,\" a non-motorized canoe or kayak generally sits outside that specific statute's direct scope, though impaired paddling remains hazardous and other general laws could still come into play depending on the circumstances.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.33 (motorboat-specific scope of the boating impairment statute)"
+  }
+]

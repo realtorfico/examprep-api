@@ -1,0 +1,6 @@
+{
+  "examType": "pa_boating",
+  "questionsDir": "C:\\claudews\\PassExamHQ\\Workers\\passexamhq-api\\scripts\\tracks\\pa_boating_questions",
+  "priceCents": 799,
+  "handbookNote": "Pennsylvania Fish and Boat Commission (PFBC) boating safety education program and PFBC-published boating regulations (30 Pa.C.S. Fish and Boat Code, 58 Pa. Code Ch. 111) -- Pennsylvania has no single official PFBC-administered boating exam; boaters born on or after January 1, 1982 who operate a motorboat over 25 horsepower, and all personal watercraft operators regardless of age, must earn a Boating Safety Education Certificate through a NASBLA-approved third-party course provider (Boat-Ed, BOATERexam, Aceboater, BOATsmart!, etc.), whose embedded final exam is the de facto test -- PA-approved vendors (Boat-Ed, Aceboater) converge tightly on a 60-question final exam with an 80% passing score (48/60), consistent with CA/FL's tight convergence pattern -- price matches this project's Motorcycle-tier boating convention ($7.99), not a placeholder"
+}

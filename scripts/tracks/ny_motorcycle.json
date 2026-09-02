@@ -1,0 +1,6 @@
+{
+  "examType": "ny_motorcycle",
+  "questionsDir": "C:\\claudews\\PassExamHQ\\Workers\\passexamhq-api\\scripts\\tracks\\ny_motorcycle_questions",
+  "priceCents": 799,
+  "handbookNote": "NYS DMV Motorcycle Manual (cached copy dated to the Cuomo administration, verified against the live dmv.ny.gov/motorcycle-manual/ chapter pages this session -- table of contents, chapter structure, license classes, equipment rules, and practice-hour recommendations all matched the live site, so the cached text was used as the primary grounding source with numeric facts cross-checked live) -- price matches this project's established Motorcycle tier ($7.99), not a placeholder. EXAM MECHANICS CONFIRMED (not hedged): NY DMV's official page (dmv.ny.gov/driver-license/get-a-motorcycle-learner-permit-and-license) states the Class M written/knowledge test has 20 multiple-choice questions, requires at least 14 correct (70%) to pass, AND requires at least 2 of the 4 road-sign questions correct as a separate sub-requirement. Per preliminary research, NY's written knowledge test is NOT broadly waived by course completion -- the MSF Basic RiderCourse waiver (manual, 'Waiver of Skills Test') applies only to the on-cycle ROAD/SKILLS test, not the written knowledge test, which remains mandatory for all standard-path applicants."
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "Before backing a trailer down a launch ramp in Illinois, what should a boater do first?",
+    "choice_a": "Wait until the boat is floating to insert the drain plug",
+    "choice_b": "Back down the ramp first, then begin loading gear once the trailer is in the water",
+    "choice_c": "Remove the tie-down straps only after the trailer is fully submerged",
+    "choice_d": "Prepare the boat in the parking area -- load gear, insert the drain plug, attach lines, and raise the outdrive or motor -- so the ramp is occupied as briefly as possible",
+    "correct_choice": "D",
+    "explanation": "Preparing the boat -- loading gear, inserting the drain plug, and readying lines -- before backing down the ramp keeps the launch ramp clear for other boaters and reduces the chance of a forgotten drain plug causing the boat to swamp.",
+    "weight": 3,
+    "source_note": "Universal launch-ramp etiquette and preparation sequence used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Under Illinois's restricted-area rule, how close to a public launching ramp must a vessel already in the water slow to no-wake speed?",
+    "choice_a": "Within 150 feet of the ramp",
+    "choice_b": "Within 10 feet of the ramp",
+    "choice_c": "Within one mile of the ramp",
+    "choice_d": "There is no distance restriction near launch ramps",
+    "correct_choice": "A",
+    "explanation": "Illinois law makes it illegal to exceed slow, no wake speed within 150 feet of a public launching ramp, protecting other boaters who are launching or retrieving vessels nearby.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-7 and 45/5-12; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is the single most commonly forgotten step that causes a newly launched boat to swamp or sink at the dock?",
+    "choice_a": "Forgetting to disconnect the trailer's safety chains",
+    "choice_b": "Forgetting to insert the boat's drain (bilge) plug before launching",
+    "choice_c": "Forgetting to check the tire pressure on the tow vehicle",
+    "choice_d": "Forgetting to raise the outboard motor while trailering",
+    "correct_choice": "B",
+    "explanation": "A missing drain plug is one of the most common and preventable launch mistakes, allowing water to flood the bilge and potentially sink the boat at the dock.",
+    "weight": 2,
+    "source_note": "Universal launch-checklist guidance used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why should a boater check trailer wheel bearings and tires before towing a boat to an Illinois waterway?",
+    "choice_a": "Illinois law requires bearing inspection only once every five years",
+    "choice_b": "Trailer tires never need air pressure checks",
+    "choice_c": "Worn bearings or tires can overheat or fail during towing, creating a roadside hazard and potentially damaging the boat and trailer",
+    "choice_d": "Trailer bearings and tires have no effect on towing safety",
+    "correct_choice": "C",
+    "explanation": "Trailer bearings and tires endure significant heat and stress during towing; a pre-trip check helps prevent bearing failure, blowouts, and roadside breakdowns that can damage the boat or endanger other drivers.",
+    "weight": 2,
+    "source_note": "Universal trailer-maintenance guidance used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is good etiquette when a launch ramp has other boaters waiting to launch or retrieve their vessels?",
+    "choice_a": "Take as much time as needed at the ramp regardless of others waiting",
+    "choice_b": "Block the ramp entrance while loading gear",
+    "choice_c": "Launch parking has no bearing on ramp etiquette",
+    "choice_d": "Move your boat and trailer away from the ramp to the parking or tie-up area as soon as it is launched or loaded, rather than lingering at the ramp",
+    "correct_choice": "D",
+    "explanation": "Promptly clearing the ramp after launching or loading -- moving to a parking or tie-up area to finish preparations -- keeps the ramp available for the next boater in line.",
+    "weight": 2,
+    "source_note": "Universal launch-ramp etiquette used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should a driver verify about trailer lights before towing a boat on Illinois roads at night or in low visibility?",
+    "choice_a": "That the trailer's brake lights, turn signals, and running lights are properly connected and functioning",
+    "choice_b": "Trailer lights are optional equipment in every state",
+    "choice_c": "Only the tow vehicle's lights need to work; trailer lights are not required",
+    "choice_d": "Trailer lights only need to work during daylight hours",
+    "correct_choice": "A",
+    "explanation": "Functioning trailer brake lights, turn signals, and running lights are essential for road safety and are legally required, just as they are on any other towed vehicle.",
+    "weight": 2,
+    "source_note": "Universal trailer road-safety guidance used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Before backing a boat trailer into the water, what should a driver do regarding trailer wheel bearings and the vehicle's parking brake situation?",
+    "choice_a": "Bearing temperature has no effect on trailer safety",
+    "choice_b": "Avoid dunking hot wheel bearings into cold water right after highway towing, since the temperature shock can draw water into the bearing and damage it",
+    "choice_c": "Always apply the trailer's parking brake before backing down the ramp",
+    "choice_d": "Submerge the bearings as quickly as possible to cool them",
+    "correct_choice": "B",
+    "explanation": "Wheel bearings heated by highway towing can crack or draw in water if suddenly submerged in cool water, so experienced trailer-boaters let bearings cool briefly, or use bearing protectors, before backing into the water.",
+    "weight": 2,
+    "source_note": "Universal trailer-maintenance guidance used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "When retrieving a boat from the water onto its trailer, what is a recommended safe practice?",
+    "choice_a": "Retrieval technique does not matter as long as the winch is strong enough",
+    "choice_b": "Always retrieve the boat with the engine off and no steering control",
+    "choice_c": "Line up the boat with the trailer in open water first, then winch it on slowly and evenly rather than gunning the engine onto a poorly aligned trailer",
+    "choice_d": "Approach the trailer as fast as possible to drive straight up onto the bunks",
+    "correct_choice": "C",
+    "explanation": "Aligning the boat with the trailer before approaching, then winching it on slowly, reduces the risk of damaging the hull, trailer, or nearby boats and people compared with powering onto a misaligned trailer.",
+    "weight": 2,
+    "source_note": "Universal launch-ramp retrieval guidance used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What Illinois-specific document should a boater keep accessible while trailering to and from the water, in case of a law enforcement stop or ramp check?",
+    "choice_a": "The vessel's original bill of sale only",
+    "choice_b": "A printed copy of the U.S. Coast Guard Navigation Rules",
+    "choice_c": "No documentation is required while trailering",
+    "choice_d": "The vessel's Certificate of Number (registration card)",
+    "correct_choice": "D",
+    "explanation": "Illinois requires the Certificate of Number to be aboard and available for inspection whenever the vessel is being operated, and it is good practice to keep it with the boat during transport as well.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/3; Handbook of Illinois Boating Laws and Responsibilities"
+  }
+]

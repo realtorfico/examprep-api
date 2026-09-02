@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What are the penalties for a second BUI conviction in Florida within 5 years of a first conviction?",
+    "choice_a": "A fine of $1,000 to $2,000, up to 9 months in jail (with a minimum of 10 days, 48 hours of which must be consecutive), and 30 days of vessel impoundment",
+    "choice_b": "The exact same penalties as a first offense, with no increase",
+    "choice_c": "An automatic third-degree felony regardless of the 5-year window",
+    "choice_d": "Only a warning letter from the FWC with no fine or jail exposure",
+    "correct_choice": "A",
+    "explanation": "A second BUI conviction within 5 years of a first carries a heavier fine ($1,000-$2,000), up to 9 months in jail with a mandatory minimum of 10 days (48 hours of which must be served consecutively), and 30 days of vessel impoundment -- all steeper than the penalties for a first offense.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.35, second-offense BUI penalties"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "How is a third BUI conviction within 10 years of a prior conviction classified under Florida law?",
+    "choice_a": "A first-time civil infraction",
+    "choice_b": "A third-degree felony",
+    "choice_c": "A second-degree misdemeanor, the same as a first offense",
+    "choice_d": "It cannot be prosecuted if 10 years have passed since the prior conviction",
+    "correct_choice": "B",
+    "explanation": "A third BUI conviction occurring within 10 years of a prior conviction is elevated to a third-degree felony in Florida, a significant step up from the misdemeanor-level penalties that apply to a first or second offense.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.35, third-offense BUI felony classification"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What is true of a fourth or subsequent BUI conviction in Florida?",
+    "choice_a": "It is treated identically to a first offense once enough years have passed",
+    "choice_b": "It results only in a civil fine with no possibility of imprisonment",
+    "choice_c": "It is a third-degree felony with a minimum fine of $2,000, regardless of how much time has passed since the prior convictions",
+    "choice_d": "Florida law does not address a fourth BUI conviction",
+    "correct_choice": "C",
+    "explanation": "A fourth or subsequent BUI conviction is a third-degree felony carrying a minimum fine of $2,000, and this enhanced classification applies regardless of the timing between offenses.",
+    "weight": 2,
+    "source_note": "Florida Statutes 327.35, fourth-and-subsequent-offense BUI penalties"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Under what circumstances does Florida impose enhanced BUI penalties beyond the standard first- or second-offense range?",
+    "choice_a": "Enhanced penalties apply only when the vessel exceeds 26 feet in length",
+    "choice_b": "Enhanced penalties apply only during daylight hours",
+    "choice_c": "Florida has no enhanced-penalty provisions for BUI",
+    "choice_d": "When the operator's BAC is 0.15 or higher, or when a minor under 18 is aboard the vessel",
+    "correct_choice": "D",
+    "explanation": "Florida increases BUI fines and jail exposure when the operator's BAC reaches 0.15 or higher or when a minor under 18 is aboard the vessel at the time of the offense -- for example, a first offense under these enhanced circumstances can carry a $1,000-$2,000 fine and up to 9 months in jail.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.35, BUI enhanced-penalty provisions (high BAC / minor aboard)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "How is a BUI offense classified in Florida if it causes serious bodily injury to another person?",
+    "choice_a": "A third-degree felony",
+    "choice_b": "A non-criminal traffic-style infraction",
+    "choice_c": "The same misdemeanor penalty as a standard first offense",
+    "choice_d": "Florida law only addresses BUI deaths, not injuries",
+    "correct_choice": "A",
+    "explanation": "When boating under the influence causes serious bodily injury to another person, the offense is elevated to a third-degree felony, reflecting the added harm beyond a standard impairment-only BUI charge.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.35, BUI causing serious bodily injury"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What is 'BUI manslaughter' under Florida law?",
+    "choice_a": "A civil, non-criminal designation with no prison exposure",
+    "choice_b": "Causing the death of another person while operating a vessel under the influence, a second-degree felony (or first-degree under aggravating factors such as failing to render aid or having prior BUI convictions) carrying a mandatory minimum prison term",
+    "choice_c": "A charge that only applies to commercial vessel captains, never recreational boaters",
+    "choice_d": "An informal term with no basis in Florida statute",
+    "correct_choice": "B",
+    "explanation": "Causing the death of another person while operating a vessel under the influence is charged as BUI manslaughter, a second-degree felony that can be elevated to a first-degree felony if the operator failed to render aid or has prior BUI convictions, and it carries a mandatory minimum prison sentence of 4 years.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.35, BUI manslaughter provisions"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "How does Florida's vessel impoundment period for a BUI conviction typically change with repeat offenses, and who bears the cost?",
+    "choice_a": "Impoundment length is always the same regardless of offense number",
+    "choice_b": "Impoundment only applies if the vessel is a personal watercraft (PWC)",
+    "choice_c": "It scales upward with each offense (for example, roughly 10 days for a first offense up to around 90 days for a later offense), and the vessel owner is generally responsible for the impoundment costs",
+    "choice_d": "The state of Florida always pays impoundment and storage costs",
+    "correct_choice": "C",
+    "explanation": "Florida courts must order impoundment or immobilization of the vessel used in a BUI offense, with the length of impoundment increasing for repeat convictions, and the vessel's owner is generally responsible for bearing the impoundment costs unless the case is dismissed.",
+    "weight": 2,
+    "source_note": "Florida Statutes 327.35, BUI vessel impoundment/immobilization provisions"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Besides fines, jail time, and vessel impoundment, what additional requirement applies to every BUI conviction in Florida?",
+    "choice_a": "No requirements beyond the fine and jail time ever apply",
+    "choice_b": "Mandatory surrender of a Florida driver's license",
+    "choice_c": "Automatic enrollment in a federal witness protection program",
+    "choice_d": "Completion of substance abuse coursework and a referral for evaluation or treatment, at the offender's own expense",
+    "correct_choice": "D",
+    "explanation": "Every BUI conviction in Florida requires the offender to complete substance abuse coursework and undergo a referral for evaluation or treatment as needed, with the associated costs borne by the offender.",
+    "weight": 2,
+    "source_note": "Florida Statutes 327.35, mandatory substance abuse coursework for BUI convictions"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "In addition to a fine and potential jail time, what community-based requirement does Florida impose on a first-time BUI offender?",
+    "choice_a": "A minimum of 50 hours of community service",
+    "choice_b": "No community service requirement exists for a first BUI offense",
+    "choice_c": "Community service is required only for offenders under age 21",
+    "choice_d": "Community service replaces the fine entirely for a first offense",
+    "correct_choice": "A",
+    "explanation": "A first BUI conviction in Florida requires a minimum of 50 hours of community service in addition to the fine, potential jail time, probation, and vessel impoundment that apply to the offense.",
+    "weight": 2,
+    "source_note": "Florida Statutes 327.35, first-offense BUI community service requirement"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What is 'Operation Dry Water,' which the Florida Fish and Wildlife Conservation Commission (FWC) participates in each year?",
+    "choice_a": "A Florida-only program that provides free bottled water to boaters",
+    "choice_b": "A national, multi-agency awareness and enforcement campaign focused on reducing impaired boating, coordinated with increased on-water patrols",
+    "choice_c": "A federal grant program that funds new boat ramps",
+    "choice_d": "A one-time historical event with no ongoing enforcement activity",
+    "correct_choice": "B",
+    "explanation": "Operation Dry Water is a national impaired-boating awareness and enforcement campaign that the FWC participates in alongside other state and federal agencies, involving heightened on-water patrols aimed at reducing BUI incidents, typically timed around a major boating holiday weekend.",
+    "weight": 2,
+    "source_note": "FWC boating safety resources, Operation Dry Water campaign"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under A.R.S. 5-350, what type of personal flotation device (PFD) must each person aboard a personal watercraft (PWC) wear?",
+    "choice_a": "Any flotation device is acceptable, including a throwable seat cushion or ring that is not worn",
+    "choice_b": "A Coast Guard-approved PFD is required only for the operator; passengers are not required to wear one",
+    "choice_c": "A wearable PFD approved by the U.S. Coast Guard -- a throwable cushion or ring alone does not satisfy this requirement",
+    "choice_d": "PFDs are required only for children under age 12 aboard a PWC, not for adults",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-350(A) specifically requires a 'wearable' Coast Guard-approved PFD for each person aboard a PWC, meaning a throwable device such as a seat cushion or ring buoy does not meet the requirement.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-350, subsection A (personal watercraft PFD requirement)"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under A.R.S. 5-350, if a PWC is equipped by the manufacturer with a lanyard-type engine cutoff switch, what does Arizona law require of the operator?",
+    "choice_a": "Using the lanyard is only a manufacturer suggestion in Arizona, not a legal requirement",
+    "choice_b": "The lanyard must be left unattached and stored in a dry compartment unless an emergency occurs",
+    "choice_c": "Only passengers, never the operator, are required to attach the lanyard",
+    "choice_d": "The operator must attach the lanyard to his or her body, clothing, or PFD as appropriate for that specific watercraft",
+    "correct_choice": "D",
+    "explanation": "A.R.S. 5-350(B) makes it a legal requirement -- not merely good practice -- that an operator of a PWC equipped with a lanyard-type engine cutoff switch attach that lanyard to his or her body, clothing, or PFD as appropriate for the specific watercraft.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-350, subsection B (engine cutoff switch lanyard requirement)"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under A.R.S. 5-350, what equipment-related restriction applies if a PWC's manufacturer installed a spring-loaded throttle mechanism?",
+    "choice_a": "The operator may not operate the PWC unless that spring-loaded throttle mechanism functions so it immediately returns the engine to idle speed when the operator's hand releases the control, or unless another manufacturer-installed engine cutoff feature is functioning",
+    "choice_b": "Arizona law prohibits any PWC from being equipped with a spring-loaded throttle",
+    "choice_c": "The spring-loaded throttle may be permanently disabled once the PWC passes its initial registration",
+    "choice_d": "This requirement applies only to PWC used by rental companies, never to privately owned PWC",
+    "correct_choice": "A",
+    "explanation": "A.R.S. 5-350(D) prohibits operating a PWC, if equipped by the manufacturer with a spring-loaded throttle or other engine cutoff feature, unless that feature is functioning as designed to return the engine to idle when the operator releases the control.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-350, subsection D (throttle/engine cutoff feature requirement)"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under A.R.S. 5-350(C), when does prima facie evidence of reckless PWC operation exist based on the specific list of maneuvers in the statute?",
+    "choice_a": "Only after a person has received three or more documented citations within a single calendar year",
+    "choice_b": "When the operator commits two or more of the statute's specifically listed acts (such as close-proximity operation, obstructing another operator's visibility, wake-jumping, or sharp turning near another vessel) simultaneously",
+    "choice_c": "Only if an actual collision or injury results from the maneuver",
+    "choice_d": "Reckless operation under this statute cannot be established unless the operator admits fault",
+    "correct_choice": "B",
+    "explanation": "A.R.S. 5-350(C) states that prima facie evidence of reckless or negligent PWC operation exists when a person commits two or more of the statute's listed acts simultaneously, without requiring an actual collision or a citation history.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-350, subsection C (prima facie reckless operation standard)"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under A.R.S. 5-350(C)(1), operating a PWC closer than 60 feet to another watercraft is listed as a reckless-operation act unless what condition is met?",
+    "choice_a": "The operator sounds a horn or whistle before closing to that distance",
+    "choice_b": "Both watercraft are registered to the same owner",
+    "choice_c": "Both watercraft are leaving a flat wake or are traveling at five nautical miles per hour or less",
+    "choice_d": "The operation occurs during daylight hours",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-350(C)(1) lists operating within a 60-foot zone of proximity to another watercraft as a reckless-operation act, unless both watercraft are leaving a flat wake or traveling at 5 nautical mph or less.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-350, subsection C, paragraph 1 (60-foot proximity / flat-wake exception)"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under A.R.S. 5-350(C)(3), which specific maneuver near a motorboat's wake is listed as contributing to a finding of reckless PWC operation?",
+    "choice_a": "Idling motionless directly behind a motorboat that has come to a complete stop",
+    "choice_b": "Following a motorboat's wake from a distance of more than 200 feet",
+    "choice_c": "Traveling parallel to a motorboat's wake without ever crossing it",
+    "choice_d": "Heading into the wake of a motorboat that is within a 60-foot zone of proximity in a way that causes one-half or more of the PWC's length to leave the water",
+    "correct_choice": "D",
+    "explanation": "A.R.S. 5-350(C)(3) specifically lists heading into a motorboat's wake within 60 feet in a way that causes half or more of the PWC's length to become airborne as a listed reckless-operation act.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-350, subsection C, paragraph 3 (wake-jumping / airborne threshold)"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under A.R.S. 5-350(C)(4), maneuvering quickly, turning sharply, or swerving within 60 feet of another watercraft is listed as a reckless-operation act, except under what circumstance?",
+    "choice_a": "When the maneuver is necessary to avoid a collision",
+    "choice_b": "When the PWC operator is wearing an approved helmet",
+    "choice_c": "When both watercraft are owned by the same person",
+    "choice_d": "There is no exception -- the statute treats it as reckless in every circumstance",
+    "correct_choice": "A",
+    "explanation": "A.R.S. 5-350(C)(4) lists quick maneuvering, sharp turning, or swerving within 60 feet of another watercraft as a reckless-operation act, but excepts a maneuver that is necessary to avoid a collision.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-350, subsection C, paragraph 4 (sharp-turn/swerve exception for collision avoidance)"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under A.R.S. 5-350(E), what capacity restriction applies to loading a PWC with passengers or cargo?",
+    "choice_a": "Capacity limits under this statute apply only to PWC that are 16 feet in length or longer",
+    "choice_b": "A PWC shall not be loaded and operated with passengers or cargo beyond its safe carrying capacity or the manufacturer's recommended limits",
+    "choice_c": "There is no legally enforceable capacity restriction on a PWC, only an informal manufacturer suggestion",
+    "choice_d": "Capacity limits apply only to PWC that are being rented, not to privately owned PWC",
+    "correct_choice": "B",
+    "explanation": "A.R.S. 5-350(E) prohibits loading and operating a PWC with passengers or cargo beyond its safe carrying capacity or the manufacturer's recommended limits.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-350, subsection E (safe carrying capacity requirement)"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under A.R.S. 5-350(F), can the owner of a PWC be held responsible for how it is used even when the owner is not the one operating it at the time?",
+    "choice_a": "No, Arizona law holds only the individual operator responsible and never extends liability to the owner",
+    "choice_b": "Only commercial rental companies, never private individual owners, can be held responsible under this statute",
+    "choice_c": "Yes -- a person who owns, leases, or hires a PWC, or who has charge or control over it, may not authorize or knowingly permit it to be operated in violation of the statute",
+    "choice_d": "Owner responsibility applies only if the owner happens to be physically aboard the PWC at the time of the violation",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-350(F) prohibits a person who owns, leases, or hires a PWC, or who has charge or control over it, from authorizing or knowingly permitting it to be operated in violation of the section -- regardless of who is actually driving.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-350, subsection F (owner/lessor liability)"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under A.R.S. 5-350(G), who is exempt from the requirements of Arizona's personal watercraft statute?",
+    "choice_a": "Anyone operating a PWC for personal recreation on a weekend or holiday",
+    "choice_b": "All PWC operators over the age of 21, regardless of activity",
+    "choice_c": "There are no exemptions of any kind under Arizona's personal watercraft statute",
+    "choice_d": "A performer engaged in a professional exhibition, or a person participating in an officially sanctioned regatta, race, marine parade, tournament, or exhibition",
+    "correct_choice": "D",
+    "explanation": "A.R.S. 5-350(G) exempts a performer in a professional exhibition, or a participant in an officially sanctioned regatta, race, marine parade, tournament, or exhibition, from the section's requirements.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-350, subsection G (professional exhibition / sanctioned event exemption)"
+  }
+]

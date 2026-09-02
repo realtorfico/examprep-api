@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "Beyond simply falling below the formal report threshold, what does leaving the scene of a boating accident without rendering aid or exchanging information generally constitute under Missouri law?",
+    "choice_a": "An entirely legal option with no consequence, as long as the accident caused less than $500 in damage",
+    "choice_b": "A separate violation of the operator's duty under RSMo 306.140 to render practicable assistance and exchange identifying information, independent of whether the incident also meets the threshold for a formal written accident report",
+    "choice_c": "Leaving the scene is only a violation if a Water Patrol officer happens to witness it directly",
+    "choice_d": "There is no such duty under Missouri boating law",
+    "correct_choice": "B",
+    "explanation": "RSMo 306.140 imposes a duty to render practicable assistance and exchange identifying information after any collision, accident, or casualty, regardless of whether the incident is severe enough to trigger the separate formal-report threshold; leaving the scene without doing so is itself a violation of that independent duty.",
+    "weight": 3,
+    "source_note": "RSMo 306.140 (leaving the scene as an independent violation of the duty to render aid and exchange information)"
+  },
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "Why would knowingly submitting false information in a boating accident report to the Water Patrol Division be treated as a serious matter?",
+    "choice_a": "False reports have no consequence since the Water Patrol Division does not review report contents",
+    "choice_b": "Providing false or misleading information in an official accident report undermines the investigation and is treated seriously, consistent with the general principle that knowingly false statements to law enforcement in an official report carry their own legal consequences",
+    "choice_c": "Reports may contain any information, true or false, without any expectation of accuracy",
+    "choice_d": "Only reports involving a fatality are ever checked for accuracy",
+    "correct_choice": "B",
+    "explanation": "An accident report filed with the Water Patrol Division is an official record used to investigate the cause of a collision or casualty; knowingly submitting false information undermines that investigation and is treated seriously, consistent with the general legal principle that knowingly false statements in an official report to law enforcement carry their own consequences.",
+    "weight": 2,
+    "source_note": "Missouri State Highway Patrol Water Patrol Division reporting integrity requirements, consistent with RSMo 306.140's reporting framework"
+  },
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "Why does the Water Patrol Division's authority to enforce Missouri boating law extend across county lines and, on boundary waters, involve cooperation with neighboring states?",
+    "choice_a": "Boating incidents and violations occur on rivers and lakes that do not respect county or state boundaries, so effective enforcement requires the Water Patrol Division to operate statewide and coordinate with neighboring states' agencies on shared waters like the Mississippi River",
+    "choice_b": "The Water Patrol Division's authority stops precisely at each county line with no ability to pursue a violation further",
+    "choice_c": "Missouri has no boundary waters shared with any other state",
+    "choice_d": "Interstate cooperation on boating enforcement has never occurred in Missouri's history",
+    "correct_choice": "A",
+    "explanation": "Because rivers and lakes often span or border multiple counties -- and Missouri's boundary waters like the Mississippi River are shared with neighboring states -- the Water Patrol Division's statewide enforcement authority and cooperation with neighboring states' agencies allow it to pursue boating law violations and coordinate accident response across these jurisdictional lines.",
+    "weight": 2,
+    "source_note": "Missouri State Highway Patrol Water Patrol Division statewide and interstate enforcement cooperation, consistent with RSMo 306.010"
+  },
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "How does a vessel's registration record, maintained under RSMo 306.030, assist a Water Patrol officer investigating a boating accident?",
+    "choice_a": "Registration records are sealed and unavailable to Water Patrol officers under any circumstance",
+    "choice_b": "The certificate of number and its associated ownership record let an investigating officer quickly identify the vessel's registered owner and confirm vessel details, supporting the accident investigation and any required follow-up",
+    "choice_c": "Registration records exist only for tax purposes and have no investigative use",
+    "choice_d": "A vessel's registration record is destroyed automatically the moment an accident occurs",
+    "correct_choice": "B",
+    "explanation": "The vessel identification number and associated Department of Revenue registration record let a Water Patrol officer investigating an accident quickly confirm the registered owner and vessel details, supporting the investigation and follow-up required under RSMo 306.140's accident-reporting framework.",
+    "weight": 2,
+    "source_note": "RSMo 306.030 and RSMo 306.140 (use of registration records in accident investigation)"
+  },
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "When should a boater in an emergency on a large Missouri reservoir choose to call 911 on a cell phone rather than broadcast on VHF Channel 16, or use both?",
+    "choice_a": "A boater should use whichever method is available and most likely to be received given the circumstances -- cell service may be unreliable in remote coves while VHF has better range on open water, so using both when possible maximizes the chance of reaching help quickly",
+    "choice_b": "Cell phones always work perfectly everywhere on every Missouri lake, making VHF radio entirely unnecessary",
+    "choice_c": "VHF Channel 16 should never be used if a cell phone is aboard",
+    "choice_d": "Only one communication method may ever be used during a single emergency",
+    "correct_choice": "A",
+    "explanation": "Cell phone coverage can be unreliable in remote coves or low-lying areas of a large reservoir, while a VHF radio broadcast on Channel 16 can reach any nearby vessel or the Coast Guard monitoring that frequency regardless of cellular coverage; using both, when both are available, maximizes the chance that a distress call is received quickly.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (911 versus VHF Channel 16 emergency communication choice), applied to Missouri reservoir boating"
+  },
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "Beyond investigating individual accidents, what broader public-safety role does the Water Patrol Division play regarding missing boaters or swimmers on Missouri waters?",
+    "choice_a": "The Water Patrol Division has no role in search and rescue of any kind",
+    "choice_b": "The Water Patrol Division coordinates and conducts aquatic search-and-rescue operations for missing boaters or swimmers, often working alongside local fire, dive rescue, and other agencies on Missouri's larger lakes and rivers",
+    "choice_c": "Search and rescue is handled exclusively by the U.S. Coast Guard, with no Missouri state agency involvement",
+    "choice_d": "Search-and-rescue operations occur only for incidents involving a registered commercial vessel",
+    "correct_choice": "B",
+    "explanation": "In addition to investigating individual accidents, the Water Patrol Division plays a central coordinating role in aquatic search-and-rescue operations for missing boaters or swimmers, frequently working alongside local fire departments, dive rescue teams, and other agencies on Missouri's larger lakes and rivers.",
+    "weight": 2,
+    "source_note": "Missouri State Highway Patrol Water Patrol Division search-and-rescue coordination role (mshp.dps.mo.gov), consistent with RSMo 306.010"
+  }
+]

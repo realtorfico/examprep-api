@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Operating Rules, Speed Zones, and BUI",
+    "question": "What blood alcohol concentration (BAC) is legally prohibited for operating a vessel on Alabama waters under the state's boating-under-the-influence law?",
+    "choice_a": "There is no BAC threshold for boating in Alabama",
+    "choice_b": "0.15% or higher only",
+    "choice_c": "0.08% or higher, the same threshold used for operating a motor vehicle",
+    "choice_d": "0.02% or higher",
+    "correct_choice": "C",
+    "explanation": "Alabama law prohibits operating a vessel with a blood alcohol concentration of 0.08% or higher, mirroring the threshold used for driving a motor vehicle, in addition to prohibiting operation while under the influence of alcohol or drugs to a degree that renders the operator incapable of safely operating the vessel.",
+    "weight": 5,
+    "source_note": "ALEA boating rules and regulations (BUI 0.08% BAC threshold)"
+  },
+  {
+    "topic": "Operating Rules, Speed Zones, and BUI",
+    "question": "What happens under Alabama law if a boat operator refuses to submit to a chemical test after being suspected of boating under the influence?",
+    "choice_a": "Refusal automatically results in a not-guilty verdict",
+    "choice_b": "Refusal has no consequence at all in Alabama",
+    "choice_c": "Refusal is only a concern for commercial vessel operators",
+    "choice_d": "Refusal results in automatic suspension of the operator's vessel license, identical in structure to the implied-consent penalty for refusing a test while driving a motor vehicle",
+    "correct_choice": "D",
+    "explanation": "Alabama applies an implied-consent framework to boating: refusing to submit to a chemical test when suspected of BUI results in automatic suspension of the operator's vessel license, just as refusing a test while driving results in a driver's license suspension.",
+    "weight": 4,
+    "source_note": "ALEA boating rules and regulations (BUI refusal/implied consent penalty)"
+  },
+  {
+    "topic": "Operating Rules, Speed Zones, and BUI",
+    "question": "Besides a specific BAC threshold, what other standard makes operating a vessel illegal under Alabama's BUI law?",
+    "choice_a": "Operating while under the influence of alcohol or any substance to a degree that renders the operator incapable of safely operating the vessel, even below the 0.08% BAC threshold",
+    "choice_b": "Nothing else matters; only the exact BAC number is relevant",
+    "choice_c": "BUI only applies if the operator is also driving a car at the same time",
+    "choice_d": "BUI only applies to operators under age 21",
+    "correct_choice": "A",
+    "explanation": "Alabama's BUI law also prohibits operating a vessel while impaired by alcohol or drugs to a degree that makes the operator incapable of operating it safely, which can apply even to an operator below the 0.08% BAC line if their driving ability is genuinely impaired.",
+    "weight": 4,
+    "source_note": "ALEA boating rules and regulations (BUI impairment standard)"
+  },
+  {
+    "topic": "Operating Rules, Speed Zones, and BUI",
+    "question": "What is one specific example of \"reckless operation\" that Alabama law identifies for personal watercraft, carrying a minimum fine of $150?",
+    "choice_a": "Operating at idle speed in a marked no-wake zone",
+    "choice_b": "Weaving through congested vessel traffic, jumping the wake of another vessel too closely, or cutting between a tow vessel and the person being towed",
+    "choice_c": "Wearing a PFD while operating",
+    "choice_d": "Reporting a boating accident to Marine Patrol",
+    "correct_choice": "B",
+    "explanation": "Alabama law specifically identifies reckless PWC maneuvers -- weaving through congested traffic, jumping another vessel's wake too closely, and cutting between a tow boat and the person it is towing -- as reckless operation, each carrying a minimum $150 fine.",
+    "weight": 4,
+    "source_note": "ALEA boating rules and regulations (PWC reckless operation examples and minimum fine)"
+  },
+  {
+    "topic": "Operating Rules, Speed Zones, and BUI",
+    "question": "What general speed standard applies to every vessel operating on Alabama waters, regardless of a specific posted limit?",
+    "choice_a": "All vessels must maintain exactly the same speed at all times",
+    "choice_b": "There is no general speed standard; only posted numeric limits matter",
+    "choice_c": "A vessel must always be operated at a speed that is reasonable and prudent for the traffic, weather, visibility, and other conditions present",
+    "choice_d": "Speed is entirely unregulated on any Alabama lake",
+    "correct_choice": "C",
+    "explanation": "Beyond any specific posted speed zone, Alabama law requires every operator to run at a speed that is reasonable and prudent given the actual conditions -- traffic density, weather, visibility, and known hazards -- much like the \"reasonable and prudent\" standard used for vehicle speed on land.",
+    "weight": 4,
+    "source_note": "ALEA boating rules and regulations (reasonable and prudent speed standard)"
+  },
+  {
+    "topic": "Operating Rules, Speed Zones, and BUI",
+    "question": "Why are no-wake zones commonly posted near marinas, boat ramps, and swimming areas on Alabama lakes such as Lake Martin?",
+    "choice_a": "No-wake zones apply only to personal watercraft, never to other vessels",
+    "choice_b": "To make it illegal to launch a boat anywhere in Alabama",
+    "choice_c": "No-wake zones exist only to reduce noise, not for safety",
+    "choice_d": "To reduce a vessel's wake in areas with concentrated small-boat traffic, docked vessels, swimmers, and moored boats that could be damaged or endangered by a large wake",
+    "correct_choice": "D",
+    "explanation": "No-wake zones near marinas, ramps, and swimming areas exist because a large wake can swamp small boats, damage moored vessels and docks, and endanger swimmers close to shore -- exactly the crowded, close-quarters conditions found around Alabama's busy lake marinas.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (no-wake zone purpose) applied to Alabama lake marina areas"
+  },
+  {
+    "topic": "Operating Rules, Speed Zones, and BUI",
+    "question": "Which agency's officers are primarily responsible for enforcing speed zones, reckless-operation laws, and BUI on Alabama's public waterways?",
+    "choice_a": "The Alabama Law Enforcement Agency's Marine Patrol Division",
+    "choice_b": "The Federal Aviation Administration",
+    "choice_c": "Local homeowners' associations",
+    "choice_d": "The United States Postal Service",
+    "correct_choice": "A",
+    "explanation": "ALEA's Marine Patrol Division is the primary state agency patrolling Alabama's inland lakes, rivers, and coastal waters, enforcing boating laws including speed restrictions, reckless operation, and BUI across its Northern, Central, and Southern Districts.",
+    "weight": 4,
+    "source_note": "ALEA Marine Patrol Division enforcement scope (alea.gov/dps/marine-patrol/marine-patrol-contact-information)"
+  },
+  {
+    "topic": "Operating Rules, Speed Zones, and BUI",
+    "question": "Why is jumping closely behind another vessel's wake on a PWC treated as reckless operation under Alabama law rather than just poor etiquette?",
+    "choice_a": "Because Alabama law bans PWCs from ever crossing another vessel's wake under any circumstance",
+    "choice_b": "Because it creates a genuine collision and injury risk -- the operator loses sight of the vessel ahead momentarily and can land on or collide with it or nearby traffic",
+    "choice_c": "It is not actually addressed by Alabama law at all",
+    "choice_d": "Because it damages the water surface itself",
+    "correct_choice": "B",
+    "explanation": "Jumping a wake too closely behind another vessel creates a real risk of collision, since the PWC operator can briefly lose visibility of the vessel ahead and other nearby traffic during the jump, which is why Alabama law treats it as a specific example of reckless operation with a real fine attached.",
+    "weight": 3,
+    "source_note": "ALEA boating rules and regulations (PWC reckless operation rationale)"
+  },
+  {
+    "topic": "Operating Rules, Speed Zones, and BUI",
+    "question": "On Alabama's inland reservoirs near hydroelectric dams, why do operating rules typically impose stricter speed or no-entry restrictions close to the dam structure?",
+    "choice_a": "Because Alabama law wants to prevent all fishing on any reservoir",
+    "choice_b": "Because dams have no bearing on water conditions and the restriction is purely aesthetic",
+    "choice_c": "Because currents, turbulence, and water releases near a dam face and tailrace can be dangerous and unpredictable, and dam infrastructure must be protected from vessel contact",
+    "choice_d": "Because there is no additional restriction near any Alabama dam",
+    "correct_choice": "C",
+    "explanation": "Water releases and generation activity at a hydroelectric dam can create fast, unpredictable currents near the dam face and tailrace, and Alabama's boating rules reflect special requirements near these areas both to protect boaters from dangerous water conditions and to protect the dam infrastructure itself.",
+    "weight": 3,
+    "source_note": "ALEA boating rules and regulations (special requirements near hydroelectric dams)"
+  },
+  {
+    "topic": "Operating Rules, Speed Zones, and BUI",
+    "question": "A boat operator on Wilson Lake is stopped by a Marine Patrol officer who smells alcohol and observes erratic steering. What can the officer do under Alabama's BUI framework?",
+    "choice_a": "Immediately impound the vessel with no testing or investigation of any kind",
+    "choice_b": "Nothing -- Marine Patrol officers have no authority to investigate suspected impairment on the water",
+    "choice_c": "Only issue a warning with no further action possible",
+    "choice_d": "Request the operator submit to field sobriety and/or chemical testing, with refusal triggering automatic vessel license suspension, and pursue BUI charges if impairment is confirmed",
+    "correct_choice": "D",
+    "explanation": "Marine Patrol officers can investigate suspected BUI much like a traffic stop for suspected DUI, including requesting sobriety or chemical testing; refusing the test carries the same automatic vessel-license suspension penalty as refusing a test on the road, and confirmed impairment can lead to BUI charges.",
+    "weight": 4,
+    "source_note": "ALEA boating rules and regulations (BUI enforcement and implied-consent penalty)"
+  }
+]

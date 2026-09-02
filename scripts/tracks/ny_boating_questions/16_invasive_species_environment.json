@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "Which invasive species, notorious for clogging boat engine water intakes and altering lake ecosystems, is a major concern in many New York lakes?",
+    "choice_a": "Zebra mussels (and the related quagga mussel)",
+    "choice_b": "Largemouth bass",
+    "choice_c": "Common loon",
+    "choice_d": "Eastern white pine",
+    "correct_choice": "A",
+    "explanation": "Zebra mussels and quagga mussels are aquatic invasive species that attach to hard surfaces including boat hulls and engine intakes, clogging cooling systems and disrupting native lake ecosystems -- a major reason behind New York's Clean, Drain, Dry requirements.",
+    "weight": 2,
+    "source_note": "NYSDEC invasive species program, zebra/quagga mussel impact"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "What is 'water chestnut,' and why is it a concern for New York boaters on some lakes and slow-moving rivers?",
+    "choice_a": "A native New York fish species with no ecological concerns",
+    "choice_b": "An invasive aquatic plant that forms dense floating mats, which can choke waterways, block boat traffic, and crowd out native plant life",
+    "choice_c": "A type of boat fuel additive",
+    "choice_d": "A legally required piece of safety equipment",
+    "correct_choice": "B",
+    "explanation": "Water chestnut is an invasive floating plant that can form dense mats on the water's surface, hindering boat navigation, reducing oxygen for fish, and outcompeting native aquatic vegetation in New York waters.",
+    "weight": 1,
+    "source_note": "NYSDEC invasive aquatic plant program, water chestnut"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "What are New York's designated 'No Discharge Zones,' and what do they prohibit?",
+    "choice_a": "Areas where boats are prohibited from discharging exhaust fumes only",
+    "choice_b": "Zones where fishing is completely banned",
+    "choice_c": "Areas covering most of New York's coastal waters and major waterways (including the Hudson River, Long Island Sound, the Great Lakes, and the NYS Canal System) where discharging treated or untreated sewage from a boat is illegal",
+    "choice_d": "Areas that exist only on paper with no legal effect",
+    "correct_choice": "C",
+    "explanation": "New York has designated the vast majority of its coastal waters and major connected waterways as No Discharge Zones, where discharging any sewage -- treated or untreated -- from a boat's marine sanitation device is illegal.",
+    "weight": 3,
+    "source_note": "NYSDEC No Discharge Zones program; NY Navigation Law Section 33-e"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "If a boat has a marine sanitation device (MSD) capable of discharging sewage directly overboard, what must an operator do with that discharge valve while operating within a No Discharge Zone?",
+    "choice_a": "Nothing; the valve may be left open as long as it is rarely used",
+    "choice_b": "The valve must be left fully open at all times for ventilation",
+    "choice_c": "MSDs are banned entirely from New York waters",
+    "choice_d": "Secure the valve closed in a readily visible manner, such as with a padlock, non-resealable tape, wire-tie, or by removing the valve handle",
+    "correct_choice": "D",
+    "explanation": "New York law requires that a direct-overboard discharge valve on a vessel's MSD be secured in the closed position -- by padlock, non-resealable tape, wire-tie, or handle removal -- whenever operating in a designated No Discharge Zone.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 33-e, marine sanitation device valve-securing requirement"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "Is it legal to discharge oil or oily bilge water into New York waters?",
+    "choice_a": "No, discharging oil or oily waste into any U.S. waters, including New York's, is prohibited under federal and state law",
+    "choice_b": "Yes, as long as the amount is small",
+    "choice_c": "Yes, without restriction, as long as it happens more than 100 feet from shore",
+    "choice_d": "Oil discharge is only restricted in the Great Lakes, not elsewhere in New York",
+    "correct_choice": "A",
+    "explanation": "Federal law (the Clean Water Act's oil pollution provisions) and New York state law prohibit discharging oil or oily bilge water into any waters of the state, with penalties for violations and a requirement to report any spill.",
+    "weight": 2,
+    "source_note": "Federal Clean Water Act oil discharge prohibition; aceboater.com Marine Toilets/Oil Spills New York summary"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "What must every New York vessel with an installed marine toilet have, regardless of whether it discharges into a No Discharge Zone?",
+    "choice_a": "No equipment requirement applies to boats with installed toilets",
+    "choice_b": "A functioning pollution control device (a holding tank or approved treatment device) approved by the state, in operating condition",
+    "choice_c": "A permit renewed annually from the local municipality",
+    "choice_d": "A requirement to remove the toilet before entering New York waters",
+    "correct_choice": "B",
+    "explanation": "Every marine toilet installed on a New York vessel must be equipped with an approved pollution control device -- either a holding tank or treatment device -- kept in operating condition, regardless of the specific discharge zone rules.",
+    "weight": 2,
+    "source_note": "NY Navigation Law marine sanitation device equipment requirement"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "Why is dumping trash, fishing line, or other debris overboard harmful beyond simply being illegal littering?",
+    "choice_a": "Debris dissolves harmlessly and has no ecological effect",
+    "choice_b": "Only debris dumped near a marina causes any harm",
+    "choice_c": "Debris such as fishing line and plastic can entangle or be ingested by wildlife, and it degrades water quality and habitat for fish and other species",
+    "choice_d": "Trash thrown overboard automatically sinks and disappears with no impact",
+    "correct_choice": "C",
+    "explanation": "Beyond violating littering laws, debris like fishing line and plastic can entangle, injure, or be ingested by fish, birds, and other wildlife, while also degrading water quality and habitat.",
+    "weight": 1,
+    "source_note": "Standard NASBLA-course environmental stewardship guidance; NY littering prohibitions"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "Why should boaters avoid operating at high speed close to marshy shorelines, nesting areas, or shallow vegetated coves?",
+    "choice_a": "High-speed operation near shorelines has no ecological effect",
+    "choice_b": "Shoreline vegetation grows back instantly regardless of disturbance",
+    "choice_c": "Nesting wildlife is unaffected by boat wake or noise",
+    "choice_d": "Wake and noise can erode shoreline habitat, disturb nesting birds and wildlife, and damage sensitive shallow vegetation that fish and other species depend on",
+    "correct_choice": "D",
+    "explanation": "Boat wake and engine noise near marshy shorelines and shallow vegetated areas can erode banks, disturb nesting wildlife, and damage submerged vegetation that serves as habitat for fish and other species.",
+    "weight": 1,
+    "source_note": "Standard NASBLA-course shoreline/habitat stewardship guidance"
+  }
+]

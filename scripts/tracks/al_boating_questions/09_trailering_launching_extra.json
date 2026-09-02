@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should a boater check trailer running lights, brake lights, and turn signal wiring before any road trip, especially after the trailer has been backed into water?",
+    "choice_a": "Trailer lights never need checking once installed",
+    "choice_b": "Submerged bulbs, sockets, and wiring connectors are a common failure point, since repeated dunking corrodes contacts and can cause lights to fail exactly when they are needed most on the highway",
+    "choice_c": "Trailer lights are purely decorative and have no functional or legal purpose",
+    "choice_d": "Only the tow vehicle's lights matter for road safety",
+    "correct_choice": "B",
+    "explanation": "Trailer wiring connectors, bulb sockets, and grounds are frequently submerged during launch and retrieval, which accelerates corrosion; checking that all running lights, brake lights, and turn signals work before towing catches a failure before it becomes a hazard or a citation on the highway.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (trailer light and wiring maintenance)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What is \"tongue weight,\" and why does getting it right matter when loading a boat onto its trailer for towing?",
+    "choice_a": "It refers only to the weight of the trailer's tires and has no bearing on towing stability",
+    "choice_b": "The downward force the trailer's coupler exerts on the tow vehicle's hitch; too little or too much tongue weight (generally targeted around 10-15% of total trailer weight) can cause dangerous fishtailing or sway at highway speed",
+    "choice_c": "A measurement used only for airplanes, not boat trailers",
+    "choice_d": "The total combined weight of the boat, motor, and trailer with no separate significance",
+    "correct_choice": "B",
+    "explanation": "Tongue weight is the downward force the trailer coupler places on the tow vehicle's hitch ball, generally targeted around 10-15% of the total loaded trailer weight; too little tongue weight can cause the trailer to sway or fishtail at highway speed, while too much can overload the tow vehicle's rear axle and hitch.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (trailer tongue weight)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should a boater use a transom saver or motor support device when trailering a boat with an outboard motor over the road?",
+    "choice_a": "It has no real function and is purely a cosmetic accessory",
+    "choice_b": "It stabilizes the outboard motor against the transom and steering/tilt mechanism during transport, reducing vibration damage that can occur when the motor bounces on rough roads",
+    "choice_c": "It is required only for inboard engines, never outboards",
+    "choice_d": "It replaces the need for any tie-down straps on the boat itself",
+    "correct_choice": "B",
+    "explanation": "A transom saver or motor support bar braces an outboard motor against the trailer frame during road transport, reducing the vibration and bouncing that can otherwise stress and damage the transom, steering linkage, and tilt/trim mechanism over repeated trips.",
+    "weight": 2,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (outboard motor transport support)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What precaution should a boater take with the trailer's wheels before unhooking it from the tow vehicle on a sloped ramp or driveway?",
+    "choice_a": "No precaution is needed since trailers cannot roll on their own",
+    "choice_b": "Chock the trailer wheels, or otherwise ensure the tow vehicle's parking brake is firmly set, before unhooking, to prevent an unattended trailer from rolling away on the slope",
+    "choice_c": "Remove all four wheels before unhooking",
+    "choice_d": "Always unhook on the steepest available slope for easier positioning",
+    "correct_choice": "B",
+    "explanation": "On a sloped launch ramp or driveway, an unhooked trailer with no chocks or an unset parking brake can roll away unattended, creating a real hazard to people and property -- chocking the wheels or confirming the tow vehicle's brake is firmly set before disconnecting prevents this.",
+    "weight": 2,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (trailer wheel chocking)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What technique helps a boater back a trailer safely, given that steering a reversing trailer is counterintuitive compared to backing a car alone?",
+    "choice_a": "Always back up as fast as possible to minimize time spent maneuvering",
+    "choice_b": "Use a spotter positioned where the driver can see them in the mirror, with hand signals agreed on beforehand, since turning the steering wheel one way swings a reversing trailer the opposite way from normal intuition",
+    "choice_c": "Backing a trailer requires no special technique different from backing a car alone",
+    "choice_d": "Always remove the trailer's safety chains before backing to allow more turning radius",
+    "correct_choice": "B",
+    "explanation": "Because turning the tow vehicle's steering wheel while backing up swings a trailer in the opposite direction from what feels intuitive, using a visible spotter with pre-agreed hand signals helps a driver back a trailer safely and avoid a jackknife or a collision with other boaters at a busy ramp.",
+    "weight": 2,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (trailer backing technique)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why is it important to add separate tie-down straps to secure a boat on its trailer, beyond relying only on the winch strap connecting the bow to the winch post?",
+    "choice_a": "A winch strap alone is fully rated to prevent the boat from shifting or launching forward under hard braking, so additional straps are never necessary",
+    "choice_b": "The winch strap is designed mainly to pull the boat onto the trailer and hold it snug at the bow -- it is not rated to withstand the forward momentum of the boat under hard braking or a sudden stop, so separate transom tie-down straps are needed for that purpose",
+    "choice_c": "Tie-down straps are required only for boats longer than 40 feet",
+    "choice_d": "Tie-down straps exist purely to prevent theft, not to secure the boat during towing",
+    "correct_choice": "B",
+    "explanation": "A winch strap is meant to pull the boat forward onto the trailer and keep the bow snug against the bow stop -- it is not designed to restrain the boat's full weight under hard braking or a sudden stop, which is why separate rear tie-down straps anchored to the trailer frame are needed to keep the boat from sliding or launching forward in an emergency stop.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (winch strap versus tie-down strap function)"
+  }
+]

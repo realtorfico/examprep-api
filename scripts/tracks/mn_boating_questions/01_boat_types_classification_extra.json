@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How does Minnesota law classify an airboat (a flat-hulled craft propelled by an aircraft-type propeller mounted above the hull) operated on a lake or marsh?",
+    "choice_a": "As a motorboat, since it is a watercraft propelled by machinery, subject to the same general registration and equipment rules as other motor-propelled vessels of its length",
+    "choice_b": "As a personal watercraft regardless of its hull design",
+    "choice_c": "As a category entirely exempt from Chapter 86B",
+    "choice_d": "As legal only when operated on dry land",
+    "correct_choice": "A",
+    "explanation": "An airboat is propelled by machinery even though the propeller sits above rather than below the hull, so it meets Minnesota's broad motorboat definition and is registered and equipped the same as any other motor-propelled vessel of its size.",
+    "weight": 2,
+    "source_note": "Minnesota Statutes Chapter 86B (motorboat definition applied to propeller-driven craft such as airboats)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How does Minnesota treat a recreational vessel that holds valid federal (U.S. Coast Guard) vessel documentation instead of state registration numbers?",
+    "choice_a": "Federal documentation replaces every state safety requirement, including PFDs and fire extinguishers",
+    "choice_b": "A federally documented vessel used on Minnesota waters is generally exempt from state numbering but the owner must still comply with Minnesota's equipment, operating, and safety laws",
+    "choice_c": "Federal documentation is not recognized and the vessel must still display state numbers",
+    "choice_d": "Only commercial ships may be documented; recreational boats cannot be",
+    "correct_choice": "B",
+    "explanation": "A vessel documented with the U.S. Coast Guard is generally excused from carrying state-assigned registration numbers, but documentation does not exempt the owner from Minnesota's substantive safety requirements such as PFDs, fire extinguishers, or navigation lights.",
+    "weight": 2,
+    "source_note": "Minnesota DNR watercraft registration guidance (federally documented vessel exemption from state numbering)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a \"watercraft livery\" under Minnesota law, and how is it regulated?",
+    "choice_a": "An informal term with no legal meaning in Minnesota",
+    "choice_b": "A private dock that never rents equipment to the public",
+    "choice_c": "A business that rents watercraft to the public, which Minnesota requires to be licensed and to meet safety-equipment and vessel-condition standards for its rental fleet",
+    "choice_d": "A category of personal watercraft",
+    "correct_choice": "C",
+    "explanation": "A watercraft livery -- a business renting boats, canoes, or PWCs to the public -- is a distinct, licensed category under Minnesota's boating law, with the DNR holding rental operators to specific safety-equipment and vessel-condition standards beyond what a private owner must meet.",
+    "weight": 2,
+    "source_note": "Minnesota Statutes Chapter 86B (watercraft livery licensing); Minnesota DNR livery program guidance"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Does a homemade or kit-built boat need to meet the same identification requirements as a factory-built Minnesota boat before it can be legally operated?",
+    "choice_a": "No, homemade boats are exempt from all registration",
+    "choice_b": "Only if it is painted a bright color",
+    "choice_c": "Only if it is longer than 40 feet",
+    "choice_d": "Yes -- a homemade or kit-built boat generally must be assigned a hull identification number and registered like any other motorboat before legal operation",
+    "correct_choice": "D",
+    "explanation": "Minnesota does not exempt homebuilt or kit-assembled boats from its identification and registration framework; the owner must obtain a hull identification number and register the vessel the same as a factory-built boat of the same type and length.",
+    "weight": 2,
+    "source_note": "Minnesota DNR watercraft registration guidance (hull identification number requirement for homebuilt vessels)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Are iceboats (sailing craft with runners used to travel across frozen Minnesota lakes) regulated the same way as open-water motorboats under Chapter 86B?",
+    "choice_a": "Yes, identically, including PFD and fire extinguisher rules",
+    "choice_b": "No -- because Minnesota's watercraft law generally applies to craft operated on the water, an iceboat used solely on ice generally falls outside the state's open-water boat registration and equipment requirements",
+    "choice_c": "Iceboats are banned outright in Minnesota",
+    "choice_d": "Iceboats require the same permit as a personal watercraft",
+    "correct_choice": "B",
+    "explanation": "Minnesota's boating statutes are built around craft operated on the water, so an iceboat used exclusively on frozen lake surfaces generally falls outside the open-water registration and equipment scheme, consistent with the DNR's separate treatment of ice-season recreation.",
+    "weight": 2,
+    "source_note": "Minnesota Statutes Chapter 86B (watercraft law scope limited to craft operated on the water); Minnesota DNR guidance distinguishing ice-based recreation"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Does using a motorboat for waterfowl hunting exempt it from Minnesota's standard motorboat registration and equipment rules?",
+    "choice_a": "Yes, hunting use exempts a boat entirely from Chapter 86B",
+    "choice_b": "Only camouflage-painted boats are exempt",
+    "choice_c": "No -- a hunting boat with a motor is still a motorboat under Chapter 86B and must be registered and equipped like any other motor-propelled vessel of its size",
+    "choice_d": "Hunting boats may skip the PFD requirement only",
+    "correct_choice": "C",
+    "explanation": "A motorized hunting boat still meets the statutory definition of a motorboat, so it must carry the same registration decals, PFDs, and other required equipment scaled to its length as any other motor-propelled vessel, regardless of its recreational purpose.",
+    "weight": 2,
+    "source_note": "Minnesota Statutes Chapter 86B (motorboat definition and equipment rules apply regardless of the vessel's recreational purpose)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How is an inflatable boat with an attached outboard motor classified under Minnesota law?",
+    "choice_a": "As exempt from all boating law because the hull is inflatable",
+    "choice_b": "As a personal watercraft regardless of size",
+    "choice_c": "As a non-motorized vessel because the hull can be deflated for storage",
+    "choice_d": "As a motorboat, since Minnesota's motorboat definition depends on propulsion by machinery rather than on hull material or rigidity",
+    "correct_choice": "D",
+    "explanation": "Because Minnesota's motorboat definition turns on whether the craft is propelled by machinery, an inflatable boat fitted with an outboard motor is a motorboat like any other, regardless of its soft-sided or collapsible hull construction.",
+    "weight": 2,
+    "source_note": "Minnesota Statutes Chapter 86B (motorboat definition not limited by hull material)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How broadly does Minnesota's Chapter 86B define the term \"watercraft\"?",
+    "choice_a": "Narrowly, limited only to boats over 26 feet",
+    "choice_b": "Only to vessels registered in another state",
+    "choice_c": "Broadly, to include essentially any contrivance used or capable of being used for navigation on water, whether or not it is motorized",
+    "choice_d": "Only to commercial fishing vessels",
+    "correct_choice": "C",
+    "explanation": "Minnesota's statutory definition of \"watercraft\" is intentionally broad, covering essentially any device used or designed for navigation on water regardless of size or propulsion, which is why the chapter's rules can reach everything from a canoe to a houseboat.",
+    "weight": 2,
+    "source_note": "Minnesota Statutes Chapter 86B (broad definition of watercraft)"
+  }
+]

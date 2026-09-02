@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "What is Wisconsin DNR's core message about alcohol consumption while operating a boat?",
+    "choice_a": "Alcohol is only a concern for PWC operators, not larger boats",
+    "choice_b": "Alcohol impairment on the water matches impairment thresholds for pedestrians, not drivers",
+    "choice_c": "Avoid alcohol completely while boating",
+    "choice_d": "One or two drinks are considered safe for any operator",
+    "correct_choice": "C",
+    "explanation": "Wisconsin DNR's boating safety guidance is direct: avoid alcohol completely while boating, since impairment on the water is compounded by sun, wind, noise, vibration, and motion -- effects sometimes called \"boater's fatigue.\"",
+    "weight": 3,
+    "source_note": "Wisconsin DNR Boating Safety Overview (dnr.wisconsin.gov/topic/Boat/safety)"
+  },
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "In Wisconsin, operating a boat while under the influence of alcohol or drugs (BUI) is treated by state law as which kind of offense?",
+    "choice_a": "Legal on the water, since Wisconsin's OWI laws apply only to motor vehicles",
+    "choice_b": "A minor civil infraction with no possibility of criminal penalties",
+    "choice_c": "Only enforceable against commercial vessel operators, not recreational boaters",
+    "choice_d": "A specific statutory offense under Wisconsin's boating law (Wis. Stat. ch. 30), generally applying the same 0.08% BAC threshold used nationwide for impaired operation",
+    "correct_choice": "D",
+    "explanation": "Wisconsin makes operating a boat while intoxicated a specific offense under its boating statutes, applying the same 0.08% blood alcohol concentration threshold used nationwide for impaired driving and boating; this general framework is well established, though the exact statutory citation and full penalty schedule were not independently re-verified against the current statute text in this build.",
+    "weight": 3,
+    "source_note": "General BUI framework under Wis. Stat. ch. 30, cross-referenced to the uniform national 0.08% BAC standard applied by all states; combined with Wisconsin DNR's alcohol-avoidance safety messaging (dnr.wisconsin.gov/topic/Boat/safety) -- statutory citation not independently re-verified in this build"
+  },
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "Why can the effects of alcohol be more pronounced and more dangerous on a boat than in a car, even at the same blood alcohol level?",
+    "choice_a": "Sun, wind, engine noise, vibration, and motion combine to cause fatigue that intensifies alcohol's impairing effects, a phenomenon often called \"boater's fatigue\"",
+    "choice_b": "Alcohol has no different effect on the water than on land",
+    "choice_c": "Boats move more slowly than cars, eliminating any added risk",
+    "choice_d": "Water reflects sunlight in a way that counteracts alcohol's effects",
+    "correct_choice": "A",
+    "explanation": "The combination of sun exposure, wind, engine noise, vibration, and the boat's motion produces a fatigue effect that intensifies alcohol's impact on balance, judgment, and reaction time -- meaning a boater can be more impaired than a driver at the same BAC.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Alcohol and Drugs"
+  },
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "Which is a well-documented statistical link between alcohol and fatal boating accidents, referenced across NASBLA-aligned boating safety curricula nationwide?",
+    "choice_a": "Alcohol-related boating incidents are exclusively tied to nighttime operation",
+    "choice_b": "Alcohol use by an operator or passenger is consistently one of the leading contributing factors in fatal boating accidents",
+    "choice_c": "Alcohol has been shown to have no measurable link to boating fatalities",
+    "choice_d": "Alcohol only affects a boat's fuel efficiency, not safety",
+    "correct_choice": "B",
+    "explanation": "National boating accident data consistently identifies alcohol use as one of the top contributing factors in fatal boating accidents, which is why avoiding alcohol entirely is a central safety message in every state's approved boater education course, including Wisconsin's.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Alcohol and Drugs; consistent with Wisconsin DNR's own alcohol-avoidance messaging"
+  },
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "Besides the operator, whose alcohol or drug use can also create safety risks on a boat, according to boater education guidance?",
+    "choice_a": "Passenger alcohol use is illegal under all circumstances even when the boat is docked",
+    "choice_b": "Passengers cannot legally consume alcohol on any Wisconsin waterway",
+    "choice_c": "Any passenger's impairment can increase the risk of falling overboard, being struck by the propeller, or interfering with the operator",
+    "choice_d": "Only the operator's alcohol use matters; passenger impairment carries no risk",
+    "correct_choice": "C",
+    "explanation": "An impaired passenger faces a much higher risk of falling overboard, being struck by a propeller during a fall, or otherwise distracting or endangering the operator, so boater education addresses passenger impairment as well as the operator's.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Alcohol and Drugs"
+  },
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "What is the general legal consequence structure for a BUI conviction, as applied broadly across states including Wisconsin?",
+    "choice_a": "Every BUI conviction, first or repeat, carries an identical fixed penalty with no escalation",
+    "choice_b": "A BUI conviction carries no penalty beyond a written warning",
+    "choice_c": "BUI penalties decrease with each subsequent offense",
+    "choice_d": "Penalties typically increase in severity for repeat offenses, similar to the escalating-penalty structure used for impaired driving",
+    "correct_choice": "D",
+    "explanation": "As with impaired-driving laws, BUI penalty structures generally escalate for repeat offenders -- higher fines, longer license or operating restrictions, and potential jail time -- though the precise Wisconsin penalty table was not independently re-verified against current statute text in this build.",
+    "weight": 2,
+    "source_note": "General escalating BUI/OWI penalty framework, applied broadly across states; Wisconsin-specific figures not independently re-verified against statute text in this build"
+  },
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "Why does boater education recommend designating a sober operator before a day of boating that will involve alcohol consumption by other passengers?",
+    "choice_a": "So there is always someone capable of safely operating the vessel and responding to an emergency",
+    "choice_b": "A sober operator is only needed for trips longer than 8 hours",
+    "choice_c": "Designated operators are required only on vessels over 26 feet",
+    "choice_d": "This precaution applies only to PWC outings",
+    "correct_choice": "A",
+    "explanation": "Just as with driving, designating a sober operator ensures someone is always capable of running the boat safely and handling an emergency if it arises, rather than relying on an impaired person's judgment or reflexes.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Alcohol and Drugs"
+  },
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "How do sun exposure and dehydration commonly interact with alcohol consumption during a day of boating?",
+    "choice_a": "Dehydration only affects passengers, never operators",
+    "choice_b": "They can accelerate impairment and worsen its effects, making a boater feel more intoxicated than the same amount of alcohol would cause on land",
+    "choice_c": "Sun and dehydration counteract alcohol's effects entirely",
+    "choice_d": "Sun exposure has no interaction with alcohol",
+    "correct_choice": "B",
+    "explanation": "Sun exposure and dehydration common on the water can intensify alcohol's impairing effects, contributing to the \"boater's fatigue\" phenomenon that makes on-water impairment more dangerous than the same blood alcohol level would be on land.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Alcohol and Drugs"
+  },
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "If a conservation warden suspects a boat operator is impaired, what authority do they generally have under Wisconsin law?",
+    "choice_a": "Only municipal police, never DNR wardens, may enforce BUI laws",
+    "choice_b": "A warrant is required before a warden may ever approach a vessel",
+    "choice_c": "To stop and board the vessel, investigate, and if appropriate, conduct field sobriety or chemical testing consistent with the state's BUI enforcement framework",
+    "choice_d": "Wardens have no authority to stop or board a recreational vessel for any reason",
+    "correct_choice": "C",
+    "explanation": "Wisconsin DNR conservation wardens have statutory authority to stop, board, and inspect vessels, and to investigate suspected impairment as part of enforcing the state's boating laws, including BUI.",
+    "weight": 2,
+    "source_note": "General DNR conservation warden enforcement authority framework, applied consistently across Wisconsin boating law enforcement"
+  },
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "What is the safest way to handle alcohol on a boat if the operator plans to drink after the boat is safely secured for the day?",
+    "choice_a": "It is always fine to drink and continue operating as long as the operator feels capable",
+    "choice_b": "Alcohol should be consumed before departure to \"get it out of the way\"",
+    "choice_c": "Alcohol consumption timing has no bearing on operating safety",
+    "choice_d": "Wait to consume any alcohol until the vessel is docked, anchored securely, and no further operation is planned",
+    "correct_choice": "D",
+    "explanation": "The safest approach is to save alcohol consumption until the boat is done being operated for the day, ensuring the person responsible for the vessel is never impaired while underway.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Alcohol and Drugs"
+  }
+]

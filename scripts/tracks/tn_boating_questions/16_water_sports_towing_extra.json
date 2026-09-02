@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is a recommended practice for the length and condition of a ski or wakeboard tow rope before use?",
+    "choice_a": "Inspecting it for fraying or damage before each outing, and using a rope of appropriate length for the activity and the number of riders",
+    "choice_b": "Rope condition and length have no bearing on towing safety",
+    "choice_c": "Any length of rope is equally safe for every activity",
+    "choice_d": "A damaged rope is acceptable as long as it has not fully snapped",
+    "correct_choice": "A",
+    "explanation": "A tow rope should be inspected for fraying, knots, or other damage before each use, and an appropriately sized rope for the specific activity and number of riders helps keep the tow at a safe, predictable distance behind the vessel.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why should a boat operator avoid towing a skier or tuber through a marked no-wake or idle-speed zone on a Tennessee reservoir?",
+    "choice_a": "Towing at speed through a no-wake zone violates the posted speed restriction and endangers swimmers, docked boats, and other vessels in the controlled area",
+    "choice_b": "No-wake zones do not apply to vessels that are towing someone",
+    "choice_c": "Towing through a no-wake zone is always required for safety",
+    "choice_d": "No-wake zones apply only to personal watercraft, never to towing vessels",
+    "correct_choice": "A",
+    "explanation": "A vessel towing a skier or tuber must still obey posted no-wake or idle-speed restrictions like any other vessel; towing at speed through such a zone both violates the posted rule and creates a serious hazard for swimmers, moored boats, and other traffic in the controlled area.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned) applied to towing operations"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What should a boat operator do before starting to accelerate with a skier or wakeboarder in the water behind the boat?",
+    "choice_a": "Confirm the towed person is ready with a clear hand signal, and check that the tow line is not tangled around a limb or the propeller area",
+    "choice_b": "Accelerate immediately without any communication, since the towed person will adjust automatically",
+    "choice_c": "Signals and rope checks are unnecessary as long as the boat has an observer aboard",
+    "choice_d": "Only the observer needs to be ready; the skier's readiness does not matter",
+    "correct_choice": "A",
+    "explanation": "Before accelerating, the operator should confirm the towed person is ready through a clear hand signal and make sure the tow line is not tangled around a limb or near the propeller, since starting too soon or with a fouled line can cause a serious injury.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why is it considered unsafe for a person to be towed on a tube or skis directly behind a boat that is also crossing paths with other vessel traffic?",
+    "choice_a": "The towed person and tow rope extend well behind the boat, creating an extended hazard zone that other vessels may not anticipate or see in time",
+    "choice_b": "Other vessels are always required by law to stop for any towing vessel",
+    "choice_c": "There is no additional hazard created by a person being towed behind a boat",
+    "choice_d": "Tow ropes are required to be shorter than the boat itself, eliminating any extended hazard",
+    "correct_choice": "A",
+    "explanation": "A towed skier, tuber, or wakeboarder extends the effective length and hazard footprint of the towing vessel well beyond the boat itself, and other vessels crossing nearby may not anticipate or see the towed person in time, making crossing traffic near an active tow especially dangerous.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned) applied to towing operations"
+  }
+]

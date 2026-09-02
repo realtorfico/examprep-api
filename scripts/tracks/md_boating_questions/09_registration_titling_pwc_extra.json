@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Where must a Maryland vessel's certificate-of-number registration numbers generally be displayed?",
+    "choice_a": "Nowhere; display is optional in Maryland",
+    "choice_b": "On the vessel's stern only, facing backward",
+    "choice_c": "In block letters on both sides of the forward half of the vessel (bow area), clearly visible and legible, along with the current validation decal",
+    "choice_d": "Hidden below deck for security",
+    "correct_choice": "C",
+    "explanation": "Maryland's registration numbers must be displayed in plain, legible block letters on both sides of the forward half of the vessel, together with the current validation decal, so the vessel can be readily identified on the water.",
+    "weight": 2,
+    "source_note": "Universal vessel numbering display convention, applied to Maryland's certificate-of-number system (Nat. Res. Art. Sec. 8-712)"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "If a Maryland-registered vessel owner moves and their address changes, what should they do regarding their vessel's registration?",
+    "choice_a": "Nothing; registration is not tied to an owner's address",
+    "choice_b": "Notify the Maryland DNR of the address change so registration records remain current",
+    "choice_c": "Re-register the vessel in the new home state immediately, even if still a Maryland resident",
+    "choice_d": "Destroy the old certificate of number with no replacement needed",
+    "correct_choice": "B",
+    "explanation": "A vessel owner should notify the Maryland DNR of a change of address so the state's registration and emergency-contact records for the vessel stay accurate and current.",
+    "weight": 1,
+    "source_note": "Universal vessel registration record-keeping guidance, applied to Maryland's certificate-of-number system (Nat. Res. Art. Sec. 8-712)"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Where is a vessel's 12-character hull identification number (HIN) generally required to be permanently affixed, under the federal Boat Safety Act requirement referenced in Maryland law?",
+    "choice_a": "On the outer starboard side of the transom (or elsewhere as specified for certain vessels) so it can be easily read",
+    "choice_b": "Hidden inside the bilge, out of view",
+    "choice_c": "On the underside of the hull only, visible only when hauled out",
+    "choice_d": "HINs are not required to be affixed anywhere on the vessel",
+    "correct_choice": "A",
+    "explanation": "The federal Boat Safety Act requires a vessel's 12-character HIN to be permanently affixed to the outer starboard side of the transom (with specified alternate locations for certain vessel types) so it remains visible and legible.",
+    "weight": 2,
+    "source_note": "Maryland Natural Resources Article Sec. 8-711 (hull identification number requirement), citing the federal Boat Safety Act HIN placement standard"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Since a federally documented vessel does not carry a Maryland state number, what must it carry instead to show its registration status?",
+    "choice_a": "Nothing at all is required aboard a documented vessel",
+    "choice_b": "A copy of its valid U.S. Coast Guard documentation papers",
+    "choice_c": "A Maryland boater education certificate in place of documentation",
+    "choice_d": "A state number is always still required in addition to documentation",
+    "correct_choice": "B",
+    "explanation": "A federally documented vessel is exempt from Maryland's state numbering requirement, but it must instead carry a copy of its current, valid U.S. Coast Guard documentation papers aboard.",
+    "weight": 2,
+    "source_note": "Maryland Natural Resources Article Sec. 8-712 (documented-vessel exemption from state numbering)"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Since a personal watercraft (PWC) is a motorized vessel, what does Maryland's vessel numbering law require of it?",
+    "choice_a": "PWCs are exempt from numbering because of their small size",
+    "choice_b": "PWCs must be numbered and registered through the Maryland DNR just like any other motorized vessel, since the numbering exemption applies to manually propelled and certain other specific vessel types, not to motorized PWCs",
+    "choice_c": "Only PWCs used commercially require numbering",
+    "choice_d": "PWCs are documented federally instead of being numbered by the state",
+    "correct_choice": "B",
+    "explanation": "Because a PWC is propelled by an inboard engine and water-jet pump, it is a motorized vessel subject to Maryland's numbering requirement, unlike the manually propelled or otherwise specifically exempted vessel types.",
+    "weight": 2,
+    "source_note": "Maryland Natural Resources Article Sec. 8-712 (vessel numbering requirement and exceptions) applied to PWCs"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Similar to a vehicle's registration card, what should a vessel operator have available regarding the certificate of number while the vessel is in use?",
+    "choice_a": "The certificate of number (or a copy) should be carried aboard the vessel or otherwise available for inspection by law enforcement",
+    "choice_b": "The certificate must be mailed to the DNR before every outing",
+    "choice_c": "There is no expectation to have the certificate of number accessible while boating",
+    "choice_d": "The certificate must be left permanently at the owner's home",
+    "correct_choice": "A",
+    "explanation": "Much like a vehicle's registration card, a vessel's certificate of number (or a copy of it) should be kept aboard and available for inspection if a Natural Resources Police officer requests to see it.",
+    "weight": 2,
+    "source_note": "Universal vessel registration carry-and-display convention, applied to Maryland's certificate-of-number system (Nat. Res. Art. Sec. 8-712)"
+  }
+]

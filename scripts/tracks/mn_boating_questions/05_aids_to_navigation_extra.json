@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with a blue horizontal band typically indicate on a Minnesota lake?",
+    "choice_a": "A hazard requiring boats to stop completely",
+    "choice_b": "A designated mooring buoy, meant for a specific vessel to tie up to rather than for general navigation",
+    "choice_c": "The edge of the main navigable channel",
+    "choice_d": "A public fishing pier",
+    "correct_choice": "B",
+    "explanation": "A white buoy with a blue band marks an authorized mooring buoy meant for a specific vessel to tie to, and boaters should not use it for their own mooring or treat it as a channel or hazard marker.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System, mooring buoys)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "How can a Minnesota boater identify the meaning of a lighted aid to navigation after dark?",
+    "choice_a": "Lighted aids display no distinguishing color or pattern at night",
+    "choice_b": "All lighted buoys flash the same color and pattern regardless of their daytime meaning",
+    "choice_c": "A lighted buoy generally uses a light color and flashing pattern consistent with its daytime color and purpose, such as a red light on a red channel marker, so its meaning can still be read at night",
+    "choice_d": "Lighted aids are used only to mark airports near a lake",
+    "correct_choice": "C",
+    "explanation": "Lighted buoys and markers are designed so their nighttime light color and flash pattern correspond to their daytime color and function, allowing a boater to identify a channel edge, hazard, or other marker's meaning even after dark.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System, lighted aids at night)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a buoy marked with alternating horizontal red and green bands generally indicate?",
+    "choice_a": "A junction or bifurcation in the channel, where the top-most color indicates which side is the preferred (primary) channel",
+    "choice_b": "A location banned to all vessels",
+    "choice_c": "A designated water-skiing course",
+    "choice_d": "A charging station for electric boats",
+    "correct_choice": "A",
+    "explanation": "A preferred channel (junction) marker uses horizontal bands of both red and green, with the topmost band's color showing which side is the preferred, primary route when a channel splits, while the other side remains passable but secondary.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System, preferred channel/junction markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Why might a Minnesota river or narrow channel use fixed daymarks mounted on pilings instead of floating buoys?",
+    "choice_a": "Fixed daymarks carry an entirely different meaning system than floating buoys",
+    "choice_b": "Floating buoys are illegal on rivers",
+    "choice_c": "A fixed daymark cannot be shifted out of position by current or wind the way a floating buoy can, making it more reliable for marking a precise channel edge in moving water",
+    "choice_d": "Daymarks are used only where no channel exists",
+    "correct_choice": "C",
+    "explanation": "In a river or channel with meaningful current, a fixed daymark mounted on a piling stays precisely in place, unlike a floating buoy that can drag or shift, while still using the same color and shape conventions to convey the same channel information.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (fixed daymarks versus floating buoys in current-affected channels)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a red-and-white \"diver down\" flag displayed on the water mean to a nearby Minnesota boater?",
+    "choice_a": "A swimmer or diver is in the water nearby, and boaters should stay a safe, generous distance away and operate at reduced speed to avoid a propeller strike",
+    "choice_b": "A fishing tournament weigh-in station is nearby",
+    "choice_c": "The area is closed permanently to all watercraft",
+    "choice_d": "A buoy maintenance crew is working and boats must stop completely",
+    "correct_choice": "A",
+    "explanation": "A diver-down flag warns nearby boaters that a diver or snorkeler is in the water below, and operators should give the flagged area a wide, cautious berth at reduced speed to avoid a serious or fatal propeller injury to the person in the water.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (diver-down flag), consistent with NASBLA-aligned course guidance"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "If a boater encounters a privately placed marker near a dock or resort that is not an official DNR-maintained aid, how should its color and shape generally be interpreted?",
+    "choice_a": "Private markers should be assumed meaningless and entirely ignored",
+    "choice_b": "Private markers are automatically illegal and must be reported before proceeding",
+    "choice_c": "A private marker is generally expected to follow the same Uniform State Waterway Marking System color and shape conventions, so its color and shape should still be read for the hazard or guidance information it conveys",
+    "choice_d": "Only markers with a printed license number carry any meaning",
+    "correct_choice": "C",
+    "explanation": "Even a privately placed marker near a resort, marina, or dock is generally expected to follow the same standardized color and shape conventions used by official aids, so a boater should still read and respect what its color and shape indicate rather than assuming it is meaningless.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (private aids expected to follow Uniform State Waterway Marking System conventions)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Why do boating safety courses recommend carrying a current nautical or lake chart for large Minnesota lakes such as Mille Lacs, Lake of the Woods, or Leech Lake?",
+    "choice_a": "Charts are decorative and provide no navigational benefit",
+    "choice_b": "A chart shows underwater hazards, channel locations, and depth information that cannot always be judged from the buoys alone, especially in unfamiliar or hazard-prone areas of a large lake",
+    "choice_c": "Charts are required only for boats longer than 40 feet",
+    "choice_d": "Charts replace the need to observe any buoys at all",
+    "correct_choice": "B",
+    "explanation": "A current chart of a large lake shows depth contours, submerged hazards, and channel locations that a boater cannot always infer from a limited number of buoys alone, making it a valuable planning and cross-reference tool on Minnesota's larger, hazard-prone lakes.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (use of navigational charts), applied to Minnesota's large lake systems"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Are navigational buoys on Minnesota lakes guaranteed to be in place at the very start or end of the boating season?",
+    "choice_a": "Yes, all buoys remain in place year-round without exception",
+    "choice_b": "No -- the DNR and local authorities generally place seasonal buoys after ice-out and remove them before freeze-up, so a boater on the water very early or late in the season should not assume every marker is present",
+    "choice_c": "Buoys are placed only in winter for ice safety",
+    "choice_d": "Seasonal buoy placement has no effect on navigation planning",
+    "correct_choice": "B",
+    "explanation": "Because many Minnesota lakes freeze part of the year, navigational buoys are typically installed after ice-out and pulled before freeze-up, so a boater operating very early or late in the season should be aware that not every hazard or channel marker may yet be in place.",
+    "weight": 2,
+    "source_note": "Minnesota DNR aids-to-navigation program (seasonal buoy placement and removal around ice-out/freeze-up)"
+  }
+]

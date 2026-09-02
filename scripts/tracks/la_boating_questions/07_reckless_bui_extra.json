@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Louisiana's boating-under-the-influence law applies to:",
+    "choice_a": "Operators of any vessel underway, not just motorized boats -- a person impaired while operating a canoe or sailboat can still be charged",
+    "choice_b": "Motorized vessels exceeding 26 feet exclusively",
+    "choice_c": "Only vessels operating after midnight",
+    "choice_d": "Only vessels registered to a commercial operator",
+    "correct_choice": "A",
+    "explanation": "Louisiana's BUI framework is not limited to motorboats -- an operator impaired while at the helm of any vessel, including a sailboat or a manually propelled craft, can be subject to a BUI charge.",
+    "weight": 3,
+    "source_note": "LDWF, Boating Regulations (wlf.louisiana.gov/page/boating-regulations)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Alcohol impairment is especially dangerous for nighttime or low-light boating because it also degrades:",
+    "choice_a": "Only a person's sense of smell",
+    "choice_b": "Only a person's hearing",
+    "choice_c": "Night vision, depth perception, and peripheral vision, on top of its effects on balance and judgment",
+    "choice_d": "Nothing beyond what it affects during daytime operation",
+    "correct_choice": "C",
+    "explanation": "Beyond impairing balance and judgment generally, alcohol specifically degrades night vision, depth perception, and peripheral vision, compounding the risks of operating after dark or in low-light, low-visibility conditions.",
+    "weight": 3,
+    "source_note": "Standard BUI-risk fundamentals used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Slower reaction time under alcohol's influence is especially dangerous on the water because:",
+    "choice_a": "Boats never encounter sudden hazards requiring a fast response",
+    "choice_b": "Avoiding sudden hazards, such as a submerged stump or a crossing vessel, requires a quick response that impaired reflexes cannot reliably provide",
+    "choice_c": "Reaction time has no bearing on collision avoidance",
+    "choice_d": "Slower reaction time only matters for vessels traveling in reverse",
+    "correct_choice": "B",
+    "explanation": "Because avoiding a sudden hazard like a submerged stump, a crossing vessel, or a swimmer depends on quick reaction, alcohol-slowed reflexes meaningfully raise the risk of a collision or grounding.",
+    "weight": 3,
+    "source_note": "Standard BUI-risk fundamentals used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "LDWF Wildlife Agents' authority to investigate and enforce boating-under-the-influence violations extends to:",
+    "choice_a": "Federally maintained navigation channels only",
+    "choice_b": "All Louisiana waterways -- bayous, lakes, rivers, and coastal waters alike -- not just a specific subset of waters",
+    "choice_c": "Only waters located entirely within a single parish",
+    "choice_d": "Only vessels that have already been involved in a collision",
+    "correct_choice": "B",
+    "explanation": "LDWF's Enforcement Division authority to investigate and cite BUI violations is not limited to any particular type of waterway, but extends across the state's full range of bayous, lakes, rivers, and coastal waters.",
+    "weight": 3,
+    "source_note": "LDWF, Boating Regulations (wlf.louisiana.gov/page/boating-regulations); LDWF enforcement authority"
+  }
+]

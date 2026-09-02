@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Beyond requiring one PFD for each person aboard, what does A.R.S. 5-331 specifically require about the condition and placement of those PFDs?",
+    "choice_a": "PFDs may be locked in a cabin as long as the boat also carries a spare key",
+    "choice_b": "The statute sets no requirement for condition or accessibility, only for quantity",
+    "choice_c": "Each PFD must be in good and serviceable condition and readily accessible for immediate use, not stowed somewhere it cannot be quickly reached",
+    "choice_d": "PFDs only need to be accessible if the vessel is more than one mile from shore",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-331(A) requires that each required personal flotation device be 'in good and serviceable condition' and 'readily accessible for immediate use' -- simply having enough PFDs somewhere aboard is not enough if they cannot be reached quickly.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-331(A), 'Personal flotation devices; requirements; exceptions'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under A.R.S. 5-331, which vessel qualifies for an exception to the rule that a child twelve years of age or under must actually wear a PFD while underway?",
+    "choice_a": "Any pontoon boat traveling at idle speed",
+    "choice_b": "Any vessel operating on a designated no-wake lake",
+    "choice_c": "Any vessel equipped with a canopy or cabin that provides shade",
+    "choice_d": "A small passenger vessel that is not for hire, holds a Coast Guard certificate of inspection, is operated by a licensed pilot, stays within one-fourth mile of shore, and is on a trip lasting ten minutes or less",
+    "correct_choice": "D",
+    "explanation": "A.R.S. 5-331(D) exempts a not-for-hire small passenger vessel from the child PFD-wearing requirement only when it holds a Coast Guard certificate of inspection, is piloted by a licensed operator, stays within one-fourth mile of shore, and the trip does not exceed ten minutes.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-331(D), 'Personal flotation devices; requirements; exceptions'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under A.R.S. 5-331, what must be true for a rowing shell to be exempt from the requirement that a child twelve years of age or under wear a PFD while underway?",
+    "choice_a": "The shell must be used for practice or competition under the supervision of an association-certified coach in a nearby launch that meets association standards and carries lifesaving equipment, and the shell's operator must have passed an association-certified swimming test",
+    "choice_b": "The shell must be used only during daylight hours",
+    "choice_c": "The shell must weigh less than fifty pounds",
+    "choice_d": "A parent must sign a written waiver excusing the PFD requirement",
+    "correct_choice": "A",
+    "explanation": "A.R.S. 5-331(D) exempts rowing shells from the child PFD-wearing rule only when used for practice or competition with a certified coach supervising from a nearby launch that meets association standards and carries lifesaving equipment, and only when the shell's operator has passed an association-certified swimming test.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-331(D), 'Personal flotation devices; requirements; exceptions'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "How does a Type II (near-shore buoyant vest) PFD compare to a Type I offshore life jacket?",
+    "choice_a": "It provides more buoyancy than a Type I and is designed for offshore conditions where rescue may be delayed",
+    "choice_b": "It provides less buoyancy and is designed to turn only some unconscious wearers face-up, making it best suited to calm inland water where rescue is likely to come quickly",
+    "choice_c": "It is a throwable device meant to be tossed to a swimmer rather than worn",
+    "choice_d": "It is approved only for use aboard personal watercraft",
+    "correct_choice": "B",
+    "explanation": "A Type II near-shore buoyant vest has less inherent buoyancy than a Type I offshore life jacket and is designed to turn only some unconscious wearers face-up, which is why it is recommended for calm inland waters where a quick rescue is likely rather than open or remote water.",
+    "weight": 2,
+    "source_note": "U.S. Coast Guard boating safety resources (uscgboating.org), 'Life Jacket Wear'; NASBLA-based boating safety curriculum used by AZGFD-approved course providers"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a defining limitation of a Type III flotation aid compared with a Type I or Type II PFD?",
+    "choice_a": "It provides more inherent buoyancy than a Type I offshore life jacket",
+    "choice_b": "It automatically inflates the moment it contacts water",
+    "choice_c": "It is not designed to turn an unconscious wearer face-up, so it is intended for a conscious wearer in calm water where rescue is likely to be quick",
+    "choice_d": "It may legally be used only by children age five and under",
+    "correct_choice": "C",
+    "explanation": "A Type III flotation aid is not designed to turn an unconscious wearer face-up the way Type I and II devices are, so it is intended for a conscious wearer in calm water where help is close by; it is popular for activities like fishing and water sports because it allows more freedom of movement.",
+    "weight": 2,
+    "source_note": "U.S. Coast Guard boating safety resources (uscgboating.org), 'Life Jacket Wear'; NASBLA-based boating safety curriculum used by AZGFD-approved course providers"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What must a boater do for a Type V special-use PFD to legally count as meeting a required flotation device?",
+    "choice_a": "Nothing extra -- it may be used interchangeably with any other PFD type at any time",
+    "choice_b": "Only carry it aboard; it never needs to actually be worn",
+    "choice_c": "Replace it with a Type I life jacket before it can count toward the requirement",
+    "choice_d": "Use and wear it strictly according to the conditions and activities printed on its label, since it is approved only for those specific circumstances",
+    "correct_choice": "D",
+    "explanation": "A Type V special-use device (such as certain deck suits, boardsailing vests, or restricted-use inflatables) is approved only for the specific activities and conditions stated on its label, and it counts as meeting a PFD requirement only when used according to those label conditions.",
+    "weight": 2,
+    "source_note": "U.S. Coast Guard boating safety resources (uscgboating.org), 'PFD Labels & POS Graphics'; NASBLA-based boating safety curriculum used by AZGFD-approved course providers"
+  }
+]

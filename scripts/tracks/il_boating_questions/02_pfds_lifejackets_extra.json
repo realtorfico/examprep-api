@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a Type II PFD (near-shore buoyant vest) designed to do?",
+    "choice_a": "Provide no turning capability at all, even for a conscious wearer",
+    "choice_b": "Function only when paired with a Type IV throwable device",
+    "choice_c": "Replace the need for any wearable PFD on vessels under 16 feet",
+    "choice_d": "Turn some unconscious persons from a face-down position in the water to a position where their respiration is not impeded, though with less certainty than a Type I",
+    "correct_choice": "D",
+    "explanation": "A Type II PFD is intended to turn some unconscious persons from face-down to a position where breathing is not impeded, but it is less reliable at turning a wearer than a Type I offshore life jacket.",
+    "weight": 2,
+    "source_note": "USCG PFD performance-type classifications (uscgboating.org), used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "How does a Type III PFD (flotation aid) differ from a Type I or Type II life jacket in what it is designed to do for an unconscious wearer?",
+    "choice_a": "A Type III is intended to support a conscious person upright in the water, but it is not required to turn an unconscious wearer face-up the way Type I and Type II devices are",
+    "choice_b": "A Type III turns unconscious wearers face-up more reliably than a Type I",
+    "choice_c": "A Type III is designed exclusively for unconscious wearers and cannot be used by a conscious person",
+    "choice_d": "There is no functional difference between a Type III and a Type I",
+    "correct_choice": "A",
+    "explanation": "Type III flotation aids are intended to support a conscious person in an upright position in the water; unlike Type I and Type II devices, they are not required to turn an unconscious wearer face-up.",
+    "weight": 2,
+    "source_note": "USCG PFD performance-type classifications (uscgboating.org), used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a Type IV PFD, such as a buoyant cushion or ring buoy?",
+    "choice_a": "A wearable vest intended only for children",
+    "choice_b": "A throwable device that is not designed to be worn, meant to be thrown to a person in the water rather than put on",
+    "choice_c": "An inflatable device that must be worn by every PWC operator",
+    "choice_d": "A device that automatically turns an unconscious wearer face-up",
+    "correct_choice": "B",
+    "explanation": "Type IV PFDs, like buoyant cushions and ring buoys, are throwable devices rather than wearable ones; they are intended to be thrown to a person in trouble, not worn.",
+    "weight": 2,
+    "source_note": "USCG PFD performance-type classifications (uscgboating.org), used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What should a boater keep in mind about a Type V PFD, such as one labeled for boardsailing or commercial white-water rafting?",
+    "choice_a": "It can be substituted for any Type I, II, or III device in any boating situation",
+    "choice_b": "It never needs to meet USCG approval",
+    "choice_c": "It is approved only for the restricted use or activity stated on its label and may not be suitable for other boating activities",
+    "choice_d": "It is required equipment on every vessel regardless of activity",
+    "correct_choice": "C",
+    "explanation": "Type V PFDs are approved only for the restricted use or activity identified on the device's label, such as boardsailing or commercial white-water rafting, and may not be suitable for other boating activities.",
+    "weight": 2,
+    "source_note": "USCG PFD performance-type classifications (uscgboating.org), used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What distinguishes an inherently buoyant (foam-filled) PFD from an inflatable PFD in terms of available sizes?",
+    "choice_a": "Inflatable PFDs are made in more sizes than inherently buoyant PFDs",
+    "choice_b": "Both types are available only in a single universal size",
+    "choice_c": "Inherently buoyant PFDs are made only for infants",
+    "choice_d": "Inherently buoyant PFDs are made in adult, youth, child, and infant sizes, while inflatable PFDs are sized only for adults",
+    "correct_choice": "D",
+    "explanation": "Inherently buoyant, foam-filled PFDs are manufactured in adult, youth, child, and infant sizes, while inflatable PFDs are sized only for adults.",
+    "weight": 2,
+    "source_note": "USCG PFD buoyancy-type guidance (uscgboating.org), used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "For an inflatable PFD to be considered serviceable and to satisfy the requirement to carry a life jacket, what must be true of it?",
+    "choice_a": "It must have a full cylinder and all status indicators on the inflator must be green",
+    "choice_b": "It only needs to be less than five years old",
+    "choice_c": "It must be stored inflated at all times",
+    "choice_d": "It needs no cylinder at all if it is a newer model",
+    "correct_choice": "A",
+    "explanation": "An inflatable life jacket or buoyancy aid must have a full cylinder with all status indicators on the inflator showing green; otherwise it is not serviceable and does not satisfy the requirement to carry a life jacket.",
+    "weight": 3,
+    "source_note": "USCG inflatable PFD maintenance guidance (uscgboating.org), used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "For which boaters are inflatable life jackets and buoyancy aids generally considered not appropriate?",
+    "choice_a": "Strong swimmers only",
+    "choice_b": "Weak or non-swimmers",
+    "choice_c": "Anyone operating a vessel longer than 26 feet",
+    "choice_d": "Anyone wearing a Type I PFD already",
+    "correct_choice": "B",
+    "explanation": "Inflatable life jackets and buoyancy aids are generally considered not appropriate for weak or non-swimmers, since they require the wearer to be conscious and able to activate or verify inflation.",
+    "weight": 2,
+    "source_note": "USCG inflatable PFD guidance (uscgboating.org), used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "How often should foam-filled life jackets or buoyancy aids generally be tested for wear and buoyancy, and what should be done with a damaged one?",
+    "choice_a": "They never need testing once purchased",
+    "choice_b": "They should be tested only after being submerged in saltwater",
+    "choice_c": "They should be tested at least once a year, and waterlogged, faded, or otherwise damaged devices should be discarded",
+    "choice_d": "A faded PFD is still considered fully serviceable and should be kept in use",
+    "correct_choice": "C",
+    "explanation": "Foam-filled life jackets or buoyancy aids should be tested for wear and buoyancy at least once a year, and any device that is waterlogged, faded, or otherwise damaged should be discarded.",
+    "weight": 2,
+    "source_note": "USCG PFD inspection guidance (uscgboating.org), used across NASBLA-based boating safety courses"
+  }
+]

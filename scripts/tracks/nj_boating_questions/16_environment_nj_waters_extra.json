@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Environment & NJ Waters",
+    "question": "Which of the following New Jersey waterways has been officially designated a federal no-discharge zone (NDZ), prohibiting the discharge of treated or untreated vessel sewage?",
+    "choice_a": "Raritan Bay",
+    "choice_b": "Delaware Bay",
+    "choice_c": "Great Egg Harbor Bay",
+    "choice_d": "Barnegat Bay",
+    "correct_choice": "D",
+    "explanation": "New Jersey has five federally designated no-discharge zones under Clean Water Act Section 312(f)(3): the Shark River, Manasquan River, Navesink River, Shrewsbury River, and Barnegat Bay. In these waters, boaters must retain all sewage aboard and use a pump-out station rather than discharging from a marine sanitation device.",
+    "weight": 2,
+    "source_note": "EPA Clean Water Act Section 312(f)(3) No-Discharge Zone designations for New Jersey (Shark River, Manasquan River, Navesink River, Shrewsbury River, Barnegat Bay)"
+  },
+  {
+    "topic": "Environment & NJ Waters",
+    "question": "Under the federal 'sheen rule' (40 CFR 110.3), what makes a fuel or oil spill on New Jersey waters a reportable violation?",
+    "choice_a": "The discharge causes a visible film, sheen, or discoloration on the water's surface or an adjoining shoreline, regardless of the exact quantity spilled",
+    "choice_b": "Only spills of 50 gallons or more are ever considered reportable",
+    "choice_c": "Only spills that occur inside a marina basin must be reported",
+    "choice_d": "A fuel spill is never reportable if the vessel is under 26 feet in length",
+    "correct_choice": "A",
+    "explanation": "Under 40 CFR 110.3, a discharge of oil is treated as harmful, and therefore reportable, if it violates applicable water quality standards or causes a film, sheen, or discoloration on the surface of the water or an adjoining shoreline -- there is no minimum gallon threshold for this visual standard.",
+    "weight": 3,
+    "source_note": "40 CFR 110.3 (Clean Water Act Section 311(b)(4)) 'sheen rule' for discharges of oil"
+  },
+  {
+    "topic": "Environment & NJ Waters",
+    "question": "If a boater's vessel discharges oil or fuel into New Jersey waters in a reportable quantity, federal law requires the person in charge to immediately notify which agency?",
+    "choice_a": "The vessel's insurance company only",
+    "choice_b": "The National Response Center, at 1-800-424-8802",
+    "choice_c": "No outside notification is required as long as the boater cleans it up personally",
+    "choice_d": "Only the nearest marina's dockmaster",
+    "correct_choice": "B",
+    "explanation": "Under the Clean Water Act (33 U.S.C. Section 1321(b)(5)) and 33 CFR 153.203, the person in charge of a vessel must immediately notify the National Response Center at 1-800-424-8802 upon learning of a reportable oil or hazardous substance discharge; failing to report can bring criminal penalties, including fines or imprisonment of up to five years.",
+    "weight": 3,
+    "source_note": "Clean Water Act 33 U.S.C. 1321(b)(5); 33 CFR 153.203 National Response Center reporting requirement"
+  },
+  {
+    "topic": "Environment & NJ Waters",
+    "question": "Under federal law implementing MARPOL Annex V, what must a manned U.S. vessel 26 feet or longer display regarding garbage and plastic disposal?",
+    "choice_a": "Nothing; there is no federal placard requirement for recreational vessels of any size",
+    "choice_b": "A placard stating the vessel's registration number in place of any garbage-disposal notice",
+    "choice_c": "A durable placard notifying crew and passengers that discharging plastic into any waters is prohibited and that discharging other garbage into navigable waters is restricted",
+    "choice_d": "A placard authorizing garbage disposal anywhere once the vessel is more than one mile from shore",
+    "correct_choice": "C",
+    "explanation": "Under 33 CFR 151.59, implementing MARPOL Annex V, a manned U.S. vessel 26 feet or more in length must display a durable placard, at least 8 by 5 inches, in a prominent location stating that discharge of all forms of plastic is prohibited in all waters and that discharge of other garbage into navigable waters is restricted, with civil and criminal penalties for violations.",
+    "weight": 2,
+    "source_note": "33 CFR 151.59 (MARPOL Annex V) placard requirement for vessels 26 feet or longer"
+  },
+  {
+    "topic": "Environment & NJ Waters",
+    "question": "What seasonal federal protection measure applies to vessels near the Port of New York/New Jersey entrance to protect North Atlantic right whales?",
+    "choice_a": "A complete closure of the area to all vessel traffic each winter",
+    "choice_b": "A rule limiting the area to sailing vessels only during winter months",
+    "choice_c": "There are no seasonal vessel protections for whales near New Jersey ports",
+    "choice_d": "A mandatory 10-knot speed limit for vessels 65 feet or longer within a 20-nautical-mile radius of the port, in effect November 1 through April 30",
+    "correct_choice": "D",
+    "explanation": "NOAA Fisheries has designated a Seasonal Management Area within a 20-nautical-mile radius of the Port of New York/New Jersey entrance where vessels 65 feet or longer must travel at 10 knots or less from November 1 through April 30 each year, when endangered North Atlantic right whales migrate through the area; boaters of all sizes are encouraged to voluntarily comply since any vessel can strike a whale.",
+    "weight": 2,
+    "source_note": "NOAA Fisheries North Atlantic Right Whale vessel speed rule (50 CFR 224.105), Port of NY/NJ Seasonal Management Area"
+  }
+]

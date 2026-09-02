@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Handling Dangerous Surfaces",
+    "question": "If a rider must ride over a small obstacle, at what angle should they approach it, per the manual?",
+    "choice_a": "As close to a 90-degree angle as possible",
+    "choice_b": "At a shallow 15-degree angle",
+    "choice_c": "The angle does not matter",
+    "choice_d": "Always at a 45-degree angle",
+    "correct_choice": "A",
+    "explanation": "The manual advises approaching a small obstacle at as close to a 90-degree angle as possible, and looking where you want to go to control your path of travel.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Handling Dangerous Surfaces, Uneven Surfaces and Obstacles"
+  },
+  {
+    "topic": "Handling Dangerous Surfaces",
+    "question": "When riding over an unavoidable obstacle, what body position does the manual recommend?",
+    "choice_a": "Sit down firmly and lock your arms straight",
+    "choice_b": "Rise slightly off the seat with weight on the footrests, absorbing shock with knees and elbows",
+    "choice_c": "Stand fully upright with weight entirely off the footrests",
+    "choice_d": "Lean forward onto the handlebars",
+    "correct_choice": "B",
+    "explanation": "The manual instructs riders to slow down as much as possible before contact, keep the motorcycle straight, and rise slightly off the seat with weight on the footrests to absorb shock with the knees and elbows.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Handling Dangerous Surfaces, Uneven Surfaces and Obstacles"
+  },
+  {
+    "topic": "Handling Dangerous Surfaces",
+    "question": "Which of the following does the manual list as a surface that provides poor traction?",
+    "choice_a": "Freshly paved and cured concrete",
+    "choice_b": "Dry, clean asphalt on a sunny day",
+    "choice_c": "Wet pavement, particularly just after rain starts and before surface oil washes away",
+    "choice_d": "A dry gravel-free parking lot",
+    "correct_choice": "C",
+    "explanation": "The manual lists wet pavement (especially right after rain starts, before surface oil washes to the side), gravel, mud, leaves, snow, ice, and painted lane markings or steel plates when wet as poor-traction surfaces.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Handling Dangerous Surfaces, Slippery Surfaces"
+  },
+  {
+    "topic": "Handling Dangerous Surfaces",
+    "question": "What does the manual recommend when riding on slippery surfaces regarding braking?",
+    "choice_a": "Apply maximum brake pressure immediately for a shorter stopping distance",
+    "choice_b": "Use only the rear brake, since the front brake is unsafe on any wet surface",
+    "choice_c": "Avoid braking entirely and coast to a stop",
+    "choice_d": "Use both brakes, squeezing the front lever gradually to avoid locking the front wheel",
+    "correct_choice": "D",
+    "explanation": "The manual advises using both brakes on slippery surfaces, noting the front brake is still effective even when slippery, but the lever should be squeezed gradually to avoid locking the front wheel.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Handling Dangerous Surfaces, Slippery Surfaces"
+  },
+  {
+    "topic": "Handling Dangerous Surfaces",
+    "question": "When it starts to rain, where does the manual suggest riding within the lane?",
+    "choice_a": "In the tire tracks left by vehicles, often the left tire track",
+    "choice_b": "Always in the exact center of the lane regardless of conditions",
+    "choice_c": "As close to the shoulder as possible",
+    "choice_d": "Position doesn't matter once it starts raining",
+    "correct_choice": "A",
+    "explanation": "The manual states that when it starts to rain, ride in the tire tracks left by vehicles; often the left tire track will be the best position depending on traffic and roadway conditions, since the center of the lane can be hazardous when wet.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Handling Dangerous Surfaces, Slippery Surfaces"
+  },
+  {
+    "topic": "Handling Dangerous Surfaces",
+    "question": "Where do patches of ice tend to develop, according to the manual?",
+    "choice_a": "Only in direct sunlight",
+    "choice_b": "In low or shaded areas and on bridges and overpasses",
+    "choice_c": "Exclusively on gravel roads",
+    "choice_d": "Ice patches are unpredictable and cannot be anticipated",
+    "correct_choice": "B",
+    "explanation": "The manual notes that rain dries and snow melts faster on some sections of road than others, and patches of ice tend to develop in low or shaded areas and on bridges and overpasses.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Handling Dangerous Surfaces, Slippery Surfaces"
+  },
+  {
+    "topic": "Handling Dangerous Surfaces",
+    "question": "If a rider cannot avoid riding on ice or snow, what does the manual recommend?",
+    "choice_a": "Accelerate quickly to get across the slippery section",
+    "choice_b": "Lean the motorcycle aggressively to maintain traction",
+    "choice_c": "Keep the motorcycle straight up, proceed as slowly as possible, and stay off the brakes",
+    "choice_d": "Apply the front brake firmly and continuously",
+    "correct_choice": "C",
+    "explanation": "The manual advises keeping the motorcycle straight up and proceeding as slowly as possible on ice or snow, staying off the brakes, and squeezing the clutch to coast if traveling at a walking pace.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Handling Dangerous Surfaces, Slippery Surfaces"
+  },
+  {
+    "topic": "Handling Dangerous Surfaces",
+    "question": "How does the manual recommend crossing railroad tracks, trolley tracks, or pavement seams that run parallel to your path?",
+    "choice_a": "Stop completely before crossing any tracks",
+    "choice_b": "Always turn to cross tracks at a full 90-degree angle",
+    "choice_c": "Ride straight within your lane without any angle adjustment, since angling is always more dangerous",
+    "choice_d": "Move far enough away to cross at an angle of at least 45 degrees, then make a deliberate turn",
+    "correct_choice": "D",
+    "explanation": "The manual states that for tracks, ruts, or seams running parallel to your path, move far enough away to cross at an angle of at least 45 degrees, then make a deliberate turn so you're not thrown off balance; turning to take tracks at a full 90-degree angle can put you into another lane of traffic.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Handling Dangerous Surfaces, Railroad Tracks"
+  },
+  {
+    "topic": "Handling Dangerous Surfaces",
+    "question": "What does the manual say about riding over rain grooves or bridge gratings?",
+    "choice_a": "The uneasy, wandering feeling is generally not hazardous; relax and ride straight across at a steady speed",
+    "choice_b": "You should always zigzag to stay in the lane",
+    "choice_c": "Riders should stop and walk the motorcycle across",
+    "choice_d": "Grooves and gratings always cause a crash if crossed above 10 mph",
+    "correct_choice": "A",
+    "explanation": "The manual explains that riding over rain grooves or bridge gratings may cause a motorcycle to weave, but the uneasy feeling is generally not hazardous; riders should relax, maintain steady speed, and ride straight across, since zigzagging is far more hazardous.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Handling Dangerous Surfaces, Grooves and Gratings"
+  }
+]

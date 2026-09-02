@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "Why can Tennessee's TVA reservoirs present a cold-water immersion risk even on a warm spring or fall day when the air temperature feels comfortable?",
+    "choice_a": "Deep reservoir water can remain much colder than the air temperature well into spring and again in fall, so a warm day does not guarantee warm water",
+    "choice_b": "Water temperature always matches air temperature exactly",
+    "choice_c": "Cold-water immersion is only a risk during winter months when air temperature is also cold",
+    "choice_d": "TVA reservoirs never experience cold water at any time of year",
+    "correct_choice": "A",
+    "explanation": "Deep reservoir water warms more slowly than air, so a warm, sunny spring or fall day can mask genuinely cold water below the surface, catching boaters off guard if they fall in and experience cold shock despite comfortable air temperatures.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (cold water immersion) applied to Tennessee's TVA reservoir system"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the recommended body position, sometimes called the H.E.L.P. position, for a single person wearing a PFD to conserve body heat while waiting for rescue in cold water?",
+    "choice_a": "Drawing the knees toward the chest and holding the arms close against the sides of the body to reduce heat loss from the torso",
+    "choice_b": "Swimming continuously to generate body heat",
+    "choice_c": "Spreading arms and legs as wide as possible to maximize surface area",
+    "choice_d": "Removing the PFD to swim more efficiently toward shore",
+    "correct_choice": "A",
+    "explanation": "The Heat Escape Lessening Posture (H.E.L.P.) has a person in a PFD draw their knees toward their chest and hold their arms close to their body, protecting the torso's major heat-loss areas and helping conserve core body heat while awaiting rescue.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (cold water immersion, NASBLA-aligned)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "When several people are in the water together after a capsizing in cold conditions, what group technique helps them conserve heat while waiting for rescue?",
+    "choice_a": "Huddling together in a close circle, keeping torsos in contact, rather than spreading out separately",
+    "choice_b": "Each person should swim in a different direction to maximize the chance one of them reaches help",
+    "choice_c": "Removing PFDs and linking arms only, with no other formation",
+    "choice_d": "Group huddling has no effect on heat loss in cold water",
+    "correct_choice": "A",
+    "explanation": "Multiple people in cold water can huddle together in a tight circle with torsos close, which helps conserve body heat collectively and keeps the group together and easier for rescuers to spot, rather than scattering and losing heat individually.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (cold water immersion, NASBLA-aligned)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "If a vessel begins taking on water rapidly and sinking is imminent, what should occupants do before entering the water, if time allows?",
+    "choice_a": "Put on PFDs if not already worn, and if possible, send a distress call or activate a visual distress signal before abandoning the vessel",
+    "choice_b": "Remove all clothing to swim faster",
+    "choice_c": "Wait inside an enclosed cabin until the vessel is fully submerged",
+    "choice_d": "There is nothing useful to do before a vessel sinks",
+    "correct_choice": "A",
+    "explanation": "If time allows before a sinking vessel must be abandoned, occupants should make sure PFDs are worn and, if possible, send a distress call or activate a visual distress signal, since alerting others to the emergency significantly improves the chances of a quick rescue.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  }
+]

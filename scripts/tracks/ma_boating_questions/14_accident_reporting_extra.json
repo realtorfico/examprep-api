@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Accident Reporting",
+    "question": "For a reportable boating accident, is a phone call to authorities generally sufficient, or is something more usually required within the reporting deadline?",
+    "choice_a": "A phone call alone is always sufficient and no written documentation is ever required",
+    "choice_b": "A formal written boating accident report, using the state's accident report form, is generally required to be submitted within the applicable reporting deadline, beyond any initial phone notification",
+    "choice_c": "Reporting requires only a social media post describing what happened",
+    "choice_d": "No documentation of any kind is ever required for a boating accident",
+    "correct_choice": "B",
+    "explanation": "Under the general federal-baseline framework that most states, including Massachusetts, follow, a reportable boating accident requires submitting a formal written accident report on the appropriate state form within the applicable deadline, not merely an informal phone call.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (federal boating accident written report requirement, 33 CFR 173), consistent with NASBLA-aligned course curricula; Massachusetts-specific form requirements not independently re-verified against the exact state statute in this build and presented as the general/federal baseline"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "If the operator of a vessel involved in a reportable accident is physically unable to file the required accident report (for example, due to injury), who is generally responsible for ensuring the report is filed?",
+    "choice_a": "No one; the reporting requirement is simply excused entirely",
+    "choice_b": "The vessel's owner is generally responsible for ensuring the accident report is filed if the operator is unable to do so",
+    "choice_c": "Only a passenger who was not operating the vessel may file the report",
+    "choice_d": "The manufacturer of the vessel must file the report",
+    "correct_choice": "B",
+    "explanation": "Under the general federal-baseline framework, if the operator cannot file the required accident report because of incapacitation or another valid reason, the responsibility for ensuring the report is filed generally passes to the vessel's owner, so the reporting obligation is not simply excused.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (federal boating accident reporting responsibility, owner backup obligation, 33 CFR 173), consistent with NASBLA-aligned course curricula; presented as the general/federal baseline"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Under the general federal-baseline reporting framework, how is a death that occurs more than 24 hours after a boating accident generally treated for reporting-deadline purposes?",
+    "choice_a": "It is generally handled under the longer property-damage-style reporting window rather than the shorter 48-hour deadline that applies specifically to a death occurring within 24 hours of the accident",
+    "choice_b": "It is never reportable under any circumstance once more than 24 hours have passed",
+    "choice_c": "It must always be reported within one hour regardless of timing",
+    "choice_d": "The timing of death relative to the accident has no bearing on which reporting deadline applies",
+    "correct_choice": "A",
+    "explanation": "The general federal-baseline framework distinguishes a death occurring within 24 hours of the accident (triggering the shorter 48-hour reporting deadline) from a later death resulting from the same accident, which is generally handled under the longer reporting window rather than the 48-hour rule.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (federal boating accident reporting deadline distinctions by death timing, 33 CFR 173), consistent with NASBLA-aligned course curricula; presented as the general/federal baseline"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Can leaving the scene of a boating accident that caused injury or death, without stopping to render aid or identify oneself, be a separate offense on its own, independent of whether the operator was at fault in causing the accident?",
+    "choice_a": "No -- leaving the scene only matters if the operator caused the accident",
+    "choice_b": "Yes -- failing to stop, render aid, and identify oneself after an accident involving injury or death can itself constitute a separate offense, similar in principle to a 'hit and run' on the road, regardless of who was actually at fault for the underlying collision",
+    "choice_c": "Leaving the scene is only a civil matter with no possible criminal consequence",
+    "choice_d": "The duty to stop applies only if the other vessel is registered in Massachusetts",
+    "correct_choice": "B",
+    "explanation": "Failing to stop, render assistance, and provide identifying information after an accident involving injury or death is treated as its own separate offense -- comparable to a motor vehicle 'hit and run' -- regardless of whether the operator who left the scene was actually at fault for causing the original accident.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (duty to stop after an accident as an independent offense), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "What do national recreational boating accident statistics generally show about the vessels and operators most often involved in fatal boating accidents?",
+    "choice_a": "Fatal accidents disproportionately involve larger vessels over 40 feet operated by licensed professional captains",
+    "choice_b": "Fatal accidents disproportionately involve smaller vessels (commonly under about 26 feet) and operators who had not completed any boating safety education, underscoring the safety rationale behind mandatory boater education laws like Massachusetts's",
+    "choice_c": "Vessel size and operator training have no statistical relationship to fatal accident rates",
+    "choice_d": "Fatal accidents occur with equal frequency regardless of whether the operator had any boating education",
+    "correct_choice": "B",
+    "explanation": "National recreational boating accident data compiled from state accident reports consistently shows that fatal accidents disproportionately involve smaller vessels and operators without any boating safety instruction, a pattern that underlies the safety rationale for mandatory boater education requirements like the one Massachusetts is phasing in.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (U.S. Coast Guard recreational boating accident statistics profile), consistent with the safety rationale for boater education mandates including Massachusetts's"
+  }
+]

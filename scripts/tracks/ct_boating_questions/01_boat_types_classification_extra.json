@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Boat Types and Classification",
+    "question": "How does Connecticut General Statutes Section 15-127 define \"vessel\" for boating law purposes?",
+    "choice_a": "Every description of watercraft, other than a seaplane on the water, used or capable of being used as a means of transportation on water",
+    "choice_b": "Only craft longer than 16 feet that are federally documented",
+    "choice_c": "Any object floating on water, including docks and swim rafts",
+    "choice_d": "Only craft equipped with a motor of any kind",
+    "correct_choice": "A",
+    "explanation": "CGS Section 15-127 defines \"vessel\" broadly as every description of watercraft, other than a seaplane on the water, used or capable of being used as a means of transportation on water -- the statutory foundation for who and what Connecticut's boating laws apply to.",
+    "weight": 3,
+    "source_note": "Connecticut General Statutes Section 15-127 (Definitions), Title 15, Chapter 268"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "Under Public Act 26-60, effective May 20, 2026, what new requirement applies to unregistered, human-propelled paddlecraft such as kayaks, canoes, and stand-up paddleboards in Connecticut?",
+    "choice_a": "They must display the owner's current contact information, such as through DEEP's free \"If Found\" sticker",
+    "choice_b": "They must be registered and numbered exactly like a motorboat",
+    "choice_c": "They are banned from all Connecticut waters",
+    "choice_d": "They must carry a fire extinguisher at all times",
+    "correct_choice": "A",
+    "explanation": "Public Act 26-60 requires unregistered paddlecraft -- kayaks, canoes, and stand-up paddleboards -- to display current owner contact information; DEEP provides a free waterproof \"If Found\" sticker for this purpose, since these craft otherwise carry no registration number to identify an owner.",
+    "weight": 4,
+    "source_note": "Connecticut Public Act 26-60 (2026); CT DEEP \"If Found\" Sticker page, portal.ct.gov/DEEP/Boating/Safety/If-Found-Sticker"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "What is a rigid inflatable boat (RIB), a hull type commonly seen on Connecticut waters as both recreational tenders and law enforcement/rescue craft?",
+    "choice_a": "A vessel with a solid, rigid hull (typically fiberglass or aluminum) combined with inflatable air-filled tubes forming the upper sides, giving it both stability and high buoyancy",
+    "choice_b": "A fully inflatable boat with no rigid components anywhere in its construction",
+    "choice_c": "A rigid fiberglass hull with no inflatable components at all",
+    "choice_d": "A type of personal watercraft rather than a boat",
+    "correct_choice": "A",
+    "explanation": "A rigid inflatable boat (RIB) pairs a solid, rigid hull bottom with inflatable tubes around the sides, combining the stability and durability of a hard hull with the buoyancy, light weight, and impact-absorption of an inflatable collar -- a common choice for dinghies, rescue boats, and small patrol craft.",
+    "weight": 2,
+    "source_note": "General hull-design fundamentals (NASBLA-aligned boating safety curriculum)"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "What distinguishes an airboat, a specialized vessel type, from an ordinary motorboat?",
+    "choice_a": "It is propelled by an above-water aircraft-type propeller powered by an automotive or aircraft engine, rather than an underwater propeller or water-jet",
+    "choice_b": "It has no engine and relies entirely on sail power",
+    "choice_c": "It is legally classified as an aircraft rather than a vessel",
+    "choice_d": "It can only legally operate on land, never on water",
+    "correct_choice": "A",
+    "explanation": "An airboat is propelled by a large, above-water aircraft-style propeller (an air propeller) rather than a submerged propeller or water-jet, allowing it to operate in very shallow or vegetation-choked water where a conventional propeller would foul or be damaged.",
+    "weight": 2,
+    "source_note": "General vessel-classification fundamentals (NASBLA-aligned boating safety curriculum)"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "Why does a catamaran or trimaran (multi-hull vessel) generally offer greater initial stability than a monohull boat of similar length?",
+    "choice_a": "Its wider overall beam, spread across two or more separated hulls, resists tipping (heeling) far more than a single narrow hull",
+    "choice_b": "Multi-hull vessels are always heavier, and weight alone is what creates stability",
+    "choice_c": "Multi-hulls have no meaningful stability advantage over monohulls",
+    "choice_d": "Multi-hulls are stable only because they are required to carry extra ballast",
+    "correct_choice": "A",
+    "explanation": "A catamaran or trimaran's stability comes primarily from its wide overall beam -- spreading buoyancy across two or three separated hulls resists heeling (tipping) far more effectively than a single monohull of similar length, which is why multi-hulls are popular for both sailing and powered platforms that prioritize a stable, level ride.",
+    "weight": 2,
+    "source_note": "General hull-design fundamentals (NASBLA-aligned boating safety curriculum)"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "What is the primary purpose of a fixed ballast keel on a sailboat, a feature that distinguishes many keelboats from small sailing dinghies?",
+    "choice_a": "It adds weight low and outside the hull to counteract the heeling force of the wind on the sails, providing stability and helping prevent a capsize",
+    "choice_b": "It exists only to improve the boat's top speed under engine power",
+    "choice_c": "It is a purely decorative fin with no effect on stability",
+    "choice_d": "It replaces the need for a rudder entirely",
+    "correct_choice": "A",
+    "explanation": "A ballast keel places substantial weight low and outboard of the hull's centerline, generating a righting moment that counteracts the wind's heeling force on the sails; this is why many keelboats can heel significantly without capsizing, while a small centerboard dinghy without ballast relies on crew weight and skill to stay upright.",
+    "weight": 2,
+    "source_note": "General sailboat-design fundamentals (NASBLA-aligned boating safety curriculum)"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "Under the Navigation Rules, how is a sailboard or windsurfer generally treated when it is being propelled by its sail?",
+    "choice_a": "As a sailing vessel, subject to the same general right-of-way principles that apply to other vessels under sail",
+    "choice_b": "As a personal watercraft, requiring a CPWO to operate",
+    "choice_c": "As debris rather than a vessel, with no navigation rules applying to it",
+    "choice_d": "As a motorboat, regardless of how it is propelled",
+    "correct_choice": "A",
+    "explanation": "A sailboard or windsurfer under sail is generally treated as a sailing vessel for right-of-way purposes, subject to the same general navigation principles that apply to other sail-powered craft, even though it lacks a traditional hull, cabin, or rigging.",
+    "weight": 2,
+    "source_note": "General Navigation Rules fundamentals (NASBLA-aligned boating safety curriculum) applied to sailboards/windsurfers"
+  }
+]

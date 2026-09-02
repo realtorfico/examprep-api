@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Registration & Titling",
+    "question": "What is the standard validity period for a New Jersey vessel registration before it must be renewed?",
+    "choice_a": "One year -- registration must be renewed annually",
+    "choice_b": "Ten years",
+    "choice_c": "New Jersey vessel registrations never expire once issued",
+    "choice_d": "Five years, matching a driver's license renewal cycle",
+    "correct_choice": "A",
+    "explanation": "New Jersey vessel registrations are valid for one year and must be renewed annually through the MVC, by mail, online, or in person at an MVC office.",
+    "weight": 3,
+    "source_note": "New Jersey Motor Vehicle Commission (MVC) annual vessel registration renewal cycle"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "For how long may a vessel that is registered in another state, and not based in New Jersey, operate on New Jersey waters without also obtaining New Jersey registration?",
+    "choice_a": "30 consecutive days",
+    "choice_b": "Up to 180 consecutive days, provided it carries valid current out-of-state registration",
+    "choice_c": "A full calendar year",
+    "choice_d": "Out-of-state registration is never honored on New Jersey waters",
+    "correct_choice": "B",
+    "explanation": "A vessel that is not based in New Jersey and carries valid registration from its home state may operate on New Jersey waters for up to 180 consecutive days before New Jersey registration becomes required.",
+    "weight": 3,
+    "source_note": "New Jersey Motor Vehicle Commission (MVC) non-resident/out-of-state vessel reciprocity period"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Within how many working days of purchase must a New Jersey boat owner title the vessel, and what happens if that window is missed?",
+    "choice_a": "Within 10 working days, but there is no consequence at all for missing it",
+    "choice_b": "Owners have a full year to title a newly purchased boat",
+    "choice_c": "Within 10 working days of purchase, or the owner faces a $25 late-titling penalty",
+    "choice_d": "Titling can be completed any time before the vessel is ever resold",
+    "correct_choice": "C",
+    "explanation": "New Jersey requires a newly purchased boat to be titled within 10 working days of the purchase date; missing that deadline results in a $25 penalty.",
+    "weight": 2,
+    "source_note": "New Jersey Motor Vehicle Commission (MVC) titling deadline and late-titling penalty"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Which vessels are exempt from New Jersey registration while operating outside the general non-motorized/under-12-foot exemptions?",
+    "choice_a": "Any vessel used commercially, regardless of size",
+    "choice_b": "Any vessel operated only after sunset",
+    "choice_c": "There is no such additional exemption -- every vessel outside the general exemptions must register",
+    "choice_d": "Vessels competing in a race held under a permit issued by the New Jersey State Police Marine Services Bureau",
+    "correct_choice": "D",
+    "explanation": "Vessels competing in a race held under a permit from the New Jersey State Police Marine Services Bureau are exempt from registration while competing, an exemption separate from the general non-motorized and under-12-foot exemptions.",
+    "weight": 2,
+    "source_note": "New Jersey State Police Marine Services Bureau racing-vessel registration exemption"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What format must the registration numbers marked on a New Jersey vessel's bow follow?",
+    "choice_a": "Block-style characters at least 3 inches tall, in a color that contrasts with the hull",
+    "choice_b": "Any font is acceptable as long as the numbers are legible from a distance",
+    "choice_c": "The numbers must be handwritten in permanent marker",
+    "choice_d": "There is no minimum size requirement, only a placement requirement",
+    "correct_choice": "A",
+    "explanation": "New Jersey requires vessel registration numbers to be marked in block-style characters at least three inches tall, in a color contrasting with the hull, so they stay legible to enforcement officers and other boaters.",
+    "weight": 2,
+    "source_note": "New Jersey Motor Vehicle Commission (MVC) vessel registration number format and minimum size requirement"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Is a sailboat equipped with an auxiliary engine (inboard or outboard) treated as a motorized vessel for New Jersey registration purposes?",
+    "choice_a": "No -- any sailboat is automatically exempt from registration regardless of engine",
+    "choice_b": "Yes -- an engine-equipped sailboat is a power vessel and must be registered like any other mechanically propelled vessel",
+    "choice_c": "Only if the sailboat exceeds 65 feet in length",
+    "choice_d": "Only during an organized racing season",
+    "correct_choice": "B",
+    "explanation": "New Jersey requires any mechanically propelled vessel to be registered, including a sailboat fitted with an inboard or outboard auxiliary engine, regardless of the vessel's overall length.",
+    "weight": 2,
+    "source_note": "New Jersey Motor Vehicle Commission (MVC) mechanically-propelled-vessel registration standard applied to auxiliary-powered sailboats"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What is the New Jersey MVC's standard title fee for a boat that is fully paid for, with no lien?",
+    "choice_a": "$250 regardless of financing status",
+    "choice_b": "There is no separate title fee, only a registration fee",
+    "choice_c": "$60, compared with $85 for a boat that is still being financed",
+    "choice_d": "$18, the same as the motorboat/jet ski operator's license fee",
+    "correct_choice": "C",
+    "explanation": "The New Jersey MVC charges $60 to title an unencumbered boat versus $85 for a boat with an active lien, in addition to the separate operator's license fee.",
+    "weight": 2,
+    "source_note": "New Jersey Motor Vehicle Commission (MVC) vessel title fee schedule (standard vs. financed)"
+  }
+]

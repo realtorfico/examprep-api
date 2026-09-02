@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "When towing a water-skier or tuber, what is one of the most important crew requirements beyond the operator?",
+    "choice_a": "A dedicated observer facing backward to watch the person being towed and relay their signals to the operator",
+    "choice_b": "No additional crew member is ever needed regardless of vessel size",
+    "choice_c": "Only a rearview mirror is legally sufficient, with no live observer allowed",
+    "choice_d": "The observer's only job is to hold the tow rope",
+    "correct_choice": "A",
+    "explanation": "Boater education strongly recommends (and many states require) a dedicated observer, facing the rear, to continuously watch the person being towed, spot falls immediately, and relay signals to the operator, since the operator alone often cannot safely watch both the water ahead and the skier behind.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 6: Water-Skiing and Tubing"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What does a raised, brightly colored (often orange) skier-down flag signal to other boaters?",
+    "choice_a": "The flagged boat is requesting a tow itself",
+    "choice_b": "A person is in the water near the flag -- typically a fallen skier or tuber -- and other vessels should steer well clear and reduce speed",
+    "choice_c": "The towing vessel is inviting other boats to raft up alongside",
+    "choice_d": "The flag has no standardized meaning and can be ignored",
+    "correct_choice": "B",
+    "explanation": "A skier-down flag alerts nearby vessels that someone is in the water near the flagged boat -- most often a fallen water-skier or tuber -- so other operators should give the area a wide, slow berth until the person is safely back aboard.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 6: Water-Skiing and Tubing"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Is a person being towed on water skis, a tube, or a similar device required to wear a life jacket?",
+    "choice_a": "Only tubers must wear one; water-skiers are exempt",
+    "choice_b": "A life jacket is optional for towed riders over age 18",
+    "choice_c": "Yes -- a properly fitted USCG-approved life jacket is required for anyone being towed behind a boat",
+    "choice_d": "No -- towed riders are exempt from all PFD requirements",
+    "correct_choice": "C",
+    "explanation": "Anyone being towed on skis, a tube, wakeboard, or similar device must wear a properly fitted, USCG-approved life jacket, since falls at towing speed are common and sudden.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 6: Water-Skiing and Tubing"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "During what general hours is water-skiing or towing typically restricted to, under common state and NASBLA-aligned safety standards?",
+    "choice_a": "Only during nighttime hours, using towing lights",
+    "choice_b": "There is no time-of-day restriction on towing activities anywhere",
+    "choice_c": "Only between noon and 2 p.m.",
+    "choice_d": "Daylight hours only -- from sunrise to sunset",
+    "correct_choice": "D",
+    "explanation": "Water-skiing and similar towed activities are generally restricted to daylight hours, from sunrise to sunset, because visibility for both the operator and the towed rider is essential for safety at towing speeds.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 6: Water-Skiing and Tubing"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why should an operator avoid towing a skier or tuber close to swimming areas, docks, or other boats?",
+    "choice_a": "A wide tow rope arc and fast-moving towed rider create a serious collision or injury risk to bystanders and other vessels in confined areas",
+    "choice_b": "There is no additional risk from towing near congested areas",
+    "choice_c": "Towing near docks is specifically encouraged for convenience",
+    "choice_d": "Only PWC-based towing requires this caution, not boat-based towing",
+    "correct_choice": "A",
+    "explanation": "A towed skier or tuber can swing wide on turns and moves fast, so towing near swimmers, docks, or other vessels creates a serious risk of collision or injury -- open, uncongested water is the appropriate place for these activities.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 6: Water-Skiing and Tubing"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What responsibility does a boat operator have toward paddlecraft such as canoes and kayaks sharing the same water?",
+    "choice_a": "Canoes and kayaks are required to leave the water whenever a motorboat approaches",
+    "choice_b": "To keep a safe distance and reduce wake and speed near them, since paddlecraft sit low, are less visible, and are more easily swamped by wake",
+    "choice_c": "Paddlecraft have no special vulnerability compared to larger motorboats",
+    "choice_d": "Motorized boats always have unconditional right-of-way over any paddlecraft",
+    "correct_choice": "B",
+    "explanation": "Canoes, kayaks, and rafts sit low in the water, are harder to see, and can easily be swamped by another boat's wake, so operators are taught to slow down and give paddlecraft a wide, considerate berth.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 6: Small Boats and Paddlecraft"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What safety signal should scuba divers or snorkelers use to alert boaters to their presence in the water?",
+    "choice_a": "Divers rely solely on personal visibility with no flag system",
+    "choice_b": "A green flag indicates a diver is present",
+    "choice_c": "A diver-down flag (a red flag with a white diagonal stripe, or the alpha flag) displayed on the vessel or a floating marker",
+    "choice_d": "No standardized signal exists for divers",
+    "correct_choice": "C",
+    "explanation": "A diver-down flag -- most commonly a red flag with a white diagonal stripe, or the international alpha flag -- warns boaters that divers or snorkelers are in the water nearby, and operators should stay well clear and reduce speed in the area.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 6: Scuba Diving and Snorkeling"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What special hazard is associated with towing on a personal watercraft (PWC), compared to towing behind a larger boat?",
+    "choice_a": "PWCs are inherently safer for towing than any larger boat",
+    "choice_b": "Towing behind a PWC carries no unique considerations",
+    "choice_c": "PWC towing eliminates the need for the rider to wear a life jacket",
+    "choice_d": "Many PWCs require a specific minimum seating capacity or manufacturer rating to safely tow a skier or tuber, and a PWC-specific observer requirement may also apply",
+    "correct_choice": "D",
+    "explanation": "Because PWCs are smaller and have specific seating/rated-capacity limits, not every PWC is equipped or rated to tow a skier, and where towing is done from a PWC, the observer requirement and rider PFD rules still apply just as with a larger boat.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 3/Unit 6: Personal Watercraft and Water-Skiing and Tubing"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why is windsurfing or sailing near busy motorized traffic areas a particular safety concern that boater education addresses?",
+    "choice_a": "Wind-powered craft can be less maneuverable in certain wind conditions and are harder for powerboat operators to anticipate, increasing collision risk in congested areas",
+    "choice_b": "Windsurfers and sailors are always faster than any motorboat, eliminating collision risk",
+    "choice_c": "Wind-powered craft are legally invisible to navigation rules",
+    "choice_d": "There is no meaningful interaction risk between sail and motor traffic",
+    "correct_choice": "A",
+    "explanation": "Windsurfers and sailboats depend on wind direction and can behave less predictably to powerboat operators unfamiliar with sailing maneuvers, which is why courses emphasize extra caution and understanding sailing right-of-way rules in shared, congested water.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 6: Windsurfing and Sailing"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What should an operator do before beginning to accelerate to pull up a water-skier from a stationary position in the water?",
+    "choice_a": "Reverse the boat first to build speed before going forward",
+    "choice_b": "Confirm the skier is ready with a clear signal, check that the area ahead and around is clear of other traffic and obstacles, and take up rope slack slowly before applying full power",
+    "choice_c": "Apply full throttle immediately regardless of the skier's readiness",
+    "choice_d": "Skip checking surrounding traffic since the skier is responsible for their own safety",
+    "correct_choice": "B",
+    "explanation": "A safe ski start involves confirming the skier's readiness, scanning the area for other boats, swimmers, or obstacles, and gently taking up rope slack before smoothly accelerating -- jerking the rope or gunning the throttle with slack in the line can injure the skier.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 6: Water-Skiing and Tubing"
+  }
+]

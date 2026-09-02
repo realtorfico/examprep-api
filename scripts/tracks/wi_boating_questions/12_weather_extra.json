@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Weather",
+    "question": "Why can wind blowing against a current or strong water flow create especially dangerous conditions?",
+    "choice_a": "Wind and current moving in opposite directions have no combined effect on wave conditions",
+    "choice_b": "It can produce steeper, more closely spaced, and more dangerous waves than either wind or current would create alone",
+    "choice_c": "It always cancels out and produces perfectly flat water",
+    "choice_d": "This effect is unique to saltwater and never occurs on inland lakes or rivers",
+    "correct_choice": "B",
+    "explanation": "When wind blows against a current or strong flow, the opposing forces can build steeper, more closely spaced waves than either factor would produce alone, creating rougher and more hazardous conditions than the wind speed alone would suggest.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Weather Emergencies"
+  },
+  {
+    "topic": "Weather",
+    "question": "If a boater is caught on open water in a thunderstorm and cannot reach shore in time, what lightning-safety steps should they take?",
+    "choice_a": "Stand at the highest point of the boat to get a better view of the storm",
+    "choice_b": "Stay as low as possible in the boat, avoid contact with metal railings, rigging, or the outboard motor, and disconnect antennas or electronic equipment where possible",
+    "choice_c": "Jump into the water, since it is safer than staying in the boat during lightning",
+    "choice_d": "There are no additional safety steps to take beyond continuing to operate normally",
+    "correct_choice": "B",
+    "explanation": "If shore can't be reached before a storm arrives, boaters are taught to get as low as possible, stay away from metal fittings, railings, or the motor that could conduct a strike, and disconnect antennas or unnecessary electronics until the storm passes.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Weather Emergencies (Lightning Safety)"
+  },
+  {
+    "topic": "Weather",
+    "question": "Can waterspouts -- rotating columns of air over water similar to tornadoes -- form over the Great Lakes waters along Wisconsin's shoreline?",
+    "choice_a": "No, waterspouts occur only over tropical ocean waters and never over the Great Lakes",
+    "choice_b": "Yes -- waterspouts, while relatively uncommon, can and do occasionally form over the Great Lakes, including Lake Michigan and Lake Superior",
+    "choice_c": "Waterspouts can form only on small inland lakes, never on the Great Lakes",
+    "choice_d": "Waterspouts are purely a myth with no documented occurrence anywhere in the Midwest",
+    "correct_choice": "B",
+    "explanation": "Although relatively uncommon, waterspouts have been documented forming over the Great Lakes, including Lake Michigan and Lake Superior along Wisconsin's shoreline, particularly in late summer and early fall when conditions favor their development.",
+    "weight": 2,
+    "source_note": "National Weather Service waterspout climatology for the Great Lakes region, applied to Wisconsin's Lake Michigan and Lake Superior shoreline"
+  },
+  {
+    "topic": "Weather",
+    "question": "How can wave conditions on Lake Michigan or Lake Superior differ from those on a typical smaller Wisconsin inland lake?",
+    "choice_a": "The Great Lakes never develop waves larger than a small inland lake",
+    "choice_b": "Because of their much larger size, the Great Lakes can develop significantly larger, more powerful, and more hazardous waves than typical inland lakes, requiring greater caution and different risk judgment",
+    "choice_c": "Wave height is identical everywhere in Wisconsin regardless of water body size",
+    "choice_d": "Only saltwater bodies can produce large waves; the Great Lakes cannot",
+    "correct_choice": "B",
+    "explanation": "The sheer size of Lake Michigan and Lake Superior allows much larger waves to build than on a typical Wisconsin inland lake, so boaters accustomed to calmer inland waters need to apply greater caution and different risk judgment when venturing onto the open Great Lakes.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Weather Emergencies, applied to Wisconsin's Great Lakes shoreline (Lake Michigan and Lake Superior)"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why is a rapid drop in barometric pressure considered a reliable warning sign of an approaching storm?",
+    "choice_a": "Barometric pressure has no established relationship to storm development",
+    "choice_b": "A falling barometer often indicates an approaching low-pressure weather system, which is commonly associated with storms, increased wind, and precipitation",
+    "choice_c": "Barometric pressure only matters for aircraft, not boats",
+    "choice_d": "Rising pressure, not falling pressure, is the sign boaters should watch for",
+    "correct_choice": "B",
+    "explanation": "A rapidly falling barometric reading often signals an approaching low-pressure system, which is commonly linked to deteriorating weather -- increased wind, cloud cover, and precipitation -- giving boaters an instrument-based warning to complement visual storm signs.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Weather Emergencies"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why does fog commonly form over Wisconsin's lakes on cool mornings in early spring and fall?",
+    "choice_a": "Fog only occurs over saltwater and never forms over Wisconsin's freshwater lakes",
+    "choice_b": "When relatively warmer lake water meets cooler air, or cooler water meets warmer humid air, condensation can form a layer of fog that is especially common on calm mornings during the shoulder seasons",
+    "choice_c": "Fog formation has no connection to water or air temperature differences",
+    "choice_d": "Fog occurs uniformly at every hour of the day with no seasonal or time-of-day pattern",
+    "correct_choice": "B",
+    "explanation": "Temperature differences between the water and the air above it can cause condensation to form fog, a pattern especially common on calm mornings during Wisconsin's early spring and fall shoulder seasons, when lake and air temperatures often diverge sharply.",
+    "weight": 2,
+    "source_note": "General fog-formation principles applied to Wisconsin's inland lake climate, NASBLA-aligned boater education curriculum, Unit 5: Weather Emergencies"
+  }
+]

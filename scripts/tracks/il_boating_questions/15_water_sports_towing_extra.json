@@ -1,0 +1,38 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under 625 ILCS 45/4-1, what personal flotation device (PFD) requirement applies to a person being towed on water skis in Illinois, in addition to those on board the vessel?",
+    "choice_a": "No PFD is required for a towed skier as long as an observer is watching",
+    "choice_b": "Only the vessel operator needs a PFD; towed skiers are exempt",
+    "choice_c": "A USCG-approved wearable PFD must be available for the person being towed, just as for each person on board",
+    "choice_d": "A PFD is only required for towed skiers under age 13",
+    "correct_choice": "C",
+    "explanation": "Illinois requires at least one USCG-approved wearable PFD for each person on board or being towed, so a towed water skier must have an appropriately sized, USCG-approved wearable PFD, just like anyone counted under the vessel's PFD requirement.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/4-1; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under Illinois's PFD equipment law, does the USCG-approved throwable flotation device required on larger vessels satisfy the wearable-PFD requirement for a person being towed on skis?",
+    "choice_a": "Yes, a throwable cushion fully satisfies the requirement for a towed skier",
+    "choice_b": "Yes, but only on vessels under 16 feet in length",
+    "choice_c": "The throwable device requirement replaces the wearable PFD requirement entirely",
+    "choice_d": "No -- the throwable device is a separate piece of required equipment and does not substitute for the wearable PFD required for each person on board or being towed",
+    "correct_choice": "D",
+    "explanation": "The USCG-approved throwable device required on vessels 16 feet or longer (except canoes and kayaks) is an additional item of equipment -- it does not count toward, or substitute for, the separate requirement that a wearable PFD be available for each person on board or being towed.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/4-1; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Besides the specific towing-collision prohibition in 625 ILCS 45/5-14, how does Illinois law elsewhere treat reckless manipulation of water skis, a surfboard, or a similar device?",
+    "choice_a": "It is classified as Reckless Operation under 625 ILCS 45/5-2 if it causes danger to the life, limb, or property of any person",
+    "choice_b": "It is not addressed anywhere else in Illinois boating law",
+    "choice_c": "It is only a civil matter between the skier and the boat operator",
+    "choice_d": "It is treated the same as a parking violation",
+    "correct_choice": "A",
+    "explanation": "Illinois's Reckless Operation statute, 625 ILCS 45/5-2, separately covers reckless manipulation of water skis, a surfboard, or a similar device that causes danger to the life, limb, or property of any person -- distinct from the specific towing-collision provision in 625 ILCS 45/5-14.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-2; Handbook of Illinois Boating Laws and Responsibilities"
+  }
+]

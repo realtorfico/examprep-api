@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "How does an orange diamond WITHOUT a cross inside it differ from an orange diamond WITH a cross inside it in the Uniform State Waterway Marking System?",
+    "choice_a": "They mean exactly the same thing",
+    "choice_b": "A plain diamond warns of a hazard (such as a rock, shoal, or submerged object) that a boater may pass with caution, while a diamond with a cross marks an area vessels must not enter at all",
+    "choice_c": "The plain diamond is only decorative",
+    "choice_d": "The diamond with a cross means a safe anchorage",
+    "correct_choice": "B",
+    "explanation": "A plain orange diamond warns of a hazard such as a rock, shoal, or submerged obstruction that a boater may pass if careful, while the same diamond with a cross added inside means the marked area is off-limits to vessels entirely.",
+    "weight": 3,
+    "source_note": "Universal Uniform State Waterway Marking System, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is the purpose of a pair of \"range markers\" or daybeacons set at different heights along a channel, such as the Colorado River corridor between Lake Mead and Lake Mohave?",
+    "choice_a": "A boater keeps the two markers vertically aligned to stay on the centerline of a safe, charted channel",
+    "choice_b": "They mark two separate, unrelated hazards",
+    "choice_c": "They indicate a swimming area",
+    "choice_d": "They have no navigational function and are purely scenic",
+    "correct_choice": "A",
+    "explanation": "Range markers are placed at different heights so that, when a boater lines them up vertically, the boat is on the centerline of the safe, charted channel, a technique especially useful in narrow river stretches like the Colorado River between Lake Mead and Lake Mohave.",
+    "weight": 2,
+    "source_note": "Universal U.S. Aids to Navigation System (range markers), NASBLA-aligned boating safety curriculum, applied to the Colorado River corridor"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Beyond \"red right returning,\" what does the general numbering convention on lateral markers tell a boater about their direction of travel?",
+    "choice_a": "Numbers have no relationship to direction",
+    "choice_b": "Numbers generally increase as a boater proceeds upstream or into a harbor from open water, helping confirm the direction of travel along with the red/green colors",
+    "choice_c": "Numbers always count down to zero at every marker regardless of direction",
+    "choice_d": "Only red markers are numbered; green markers never carry numbers",
+    "correct_choice": "B",
+    "explanation": "Lateral marker numbers generally increase as a boater heads upstream or into a harbor from open water, giving an additional way, along with the red/green coloring, to confirm direction of travel and position along the channel.",
+    "weight": 2,
+    "source_note": "Universal U.S. Aids to Navigation System (lateral marker numbering convention), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "How does a fixed dayboard mounted on a piling differ from a floating buoy carrying the same color and shape meaning?",
+    "choice_a": "A dayboard holds a constant, fixed position, while a floating buoy is anchored but can shift somewhat on its mooring with wind, current, or a reservoir's changing water level",
+    "choice_b": "A dayboard can move freely with the current just like a buoy",
+    "choice_c": "There is no functional difference between the two",
+    "choice_d": "Dayboards are used only at night and buoys only during the day",
+    "correct_choice": "A",
+    "explanation": "A fixed dayboard mounted on a piling stays in a constant position, while a floating buoy, though anchored, can shift somewhat on its mooring due to wind, current, or a reservoir's fluctuating water level, which boaters should keep in mind on a lake like Lake Mead.",
+    "weight": 2,
+    "source_note": "Universal U.S. Aids to Navigation System (fixed dayboards vs. floating buoys), NASBLA-aligned boating safety curriculum, applied to Lake Mead's fluctuating water levels"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "If a new underwater hazard appears on Lake Mead after a sudden drop in water level, how might it initially be marked before a permanent aid is placed?",
+    "choice_a": "It will never be marked and boaters must simply guess",
+    "choice_b": "With a temporary or replacement marker, and boaters should watch for official notices identifying newly charted hazards as reservoir conditions change",
+    "choice_c": "Only by word of mouth among marina staff, with no official marking of any kind",
+    "choice_d": "New hazards are always outside any navigable area and never need marking",
+    "correct_choice": "B",
+    "explanation": "When a permanent aid to navigation is missing, damaged, or a new hazard emerges, a temporary or replacement marker may be placed, and boaters should stay alert to official hazard notices, which matters especially on a reservoir like Lake Mead where fluctuating water levels can expose new obstructions.",
+    "weight": 2,
+    "source_note": "General temporary/replacement aids-to-navigation guidance applied to Lake Mead's documented fluctuating water levels"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Under NRS 488.285, may a boater tie their vessel to a federal or state navigational aid, such as a channel marker near Hoover Dam, without authorization?",
+    "choice_a": "Yes, any navigational aid may be used as a free mooring point",
+    "choice_b": "No; mooring to a federal or state navigational aid or government buoy without written authorization is unlawful, and penalties can range up to a felony if death results",
+    "choice_c": "Only PWCs are prohibited from doing this",
+    "choice_d": "This restriction applies only outside of Nevada",
+    "correct_choice": "B",
+    "explanation": "NRS 488.285 prohibits mooring a vessel to a federal or state navigational aid or government buoy without written authorization, with penalties ranging from a misdemeanor up to a felony if the conduct results in death, protecting navigational aids like those near Hoover Dam from being used as unauthorized mooring points.",
+    "weight": 3,
+    "source_note": "NRS 488.285 (prohibition against mooring to federal/government navigational aids without authorization)"
+  }
+]

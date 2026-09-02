@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Weather",
+    "question": "Why can wind blowing against an opposing tidal current create especially steep, dangerous waves at a Massachusetts inlet or river mouth?",
+    "choice_a": "Wind and current direction have no combined effect on wave shape",
+    "choice_b": "When wind blows against the direction water is flowing, it steepens and shortens the wave period, creating closely spaced, breaking waves that are far rougher than the same wind would produce with the current, or in open water",
+    "choice_c": "Opposing wind and current always cancel each other out, producing calmer water",
+    "choice_d": "This effect only occurs in freshwater lakes, never in tidal or coastal waters",
+    "correct_choice": "B",
+    "explanation": "When wind blows against an opposing tidal current -- common at Massachusetts inlets, river mouths, and narrow passages -- the opposing forces compress and steepen waves, producing short, closely spaced, often breaking seas that are considerably rougher than the wind alone would create, catching many boaters off guard.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (wind-against-current wave effects), relevant to Massachusetts's tidal inlets and river mouths"
+  },
+  {
+    "topic": "Weather",
+    "question": "What does a rapidly falling barometric pressure reading generally indicate to a boater?",
+    "choice_a": "Falling pressure has no relationship to upcoming weather",
+    "choice_b": "An approaching low-pressure system, often associated with worsening weather, increasing wind, and a higher chance of storms",
+    "choice_c": "Guaranteed calm weather for the next 24 hours",
+    "choice_d": "A drop in water temperature only, with no wind or storm implication",
+    "correct_choice": "B",
+    "explanation": "A rapidly dropping barometric pressure reading is a classic sign that a low-pressure system is approaching, which is often associated with worsening weather -- increasing wind, cloud cover, and a greater likelihood of storms -- making it a useful early warning a boater can check even without internet or radio access.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (barometric pressure as a weather indicator), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Weather",
+    "question": "What should a boater do if caught on open water during a lightning storm?",
+    "choice_a": "Stay as low as possible in the boat, avoid being the highest point on the water, stay clear of metal railings, outriggers, or antennas, and head for shore or shelter as quickly as safely possible",
+    "choice_b": "Stand up to get a better view of the approaching storm",
+    "choice_c": "Jump into the water, since it is safer than staying in a metal-fitted boat",
+    "choice_d": "Grab onto the tallest metal object on the boat since it is the most stable handhold",
+    "correct_choice": "A",
+    "explanation": "During a lightning storm, boaters should get low in the boat, avoid touching or standing near metal fittings such as railings, outriggers, or antennas that can conduct a strike, and head for shore or a safe harbor as quickly as conditions safely allow, since an open boat on the water offers little natural lightning protection.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (lightning safety on the water), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Weather",
+    "question": "What precaution is especially important for boaters during hot Massachusetts summer days to avoid heat-related illness?",
+    "choice_a": "Heat-related illness is not a real risk while boating because of the water and breeze",
+    "choice_b": "Staying well hydrated, seeking shade or shelter periodically, and recognizing early symptoms of heat exhaustion (heavy sweating, dizziness, nausea, weakness) before it progresses to more dangerous heat stroke",
+    "choice_c": "Drinking alcohol steadily throughout the day to stay cool",
+    "choice_d": "Wearing dark, heavy clothing to block sunlight completely",
+    "correct_choice": "B",
+    "explanation": "Sun exposure, heat, and physical activity on the water can lead to dehydration and heat exhaustion even with a breeze off the water; boaters should drink water regularly, take breaks in shade, and recognize early symptoms like heavy sweating, dizziness, or nausea before they progress toward the more dangerous heat stroke.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (heat-related illness prevention while boating), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Weather",
+    "question": "How does NOAA Weather Radio typically deliver continuous marine weather information to boaters equipped with a VHF radio?",
+    "choice_a": "NOAA Weather Radio broadcasts continuously on a set of dedicated VHF weather channels, providing routinely updated forecasts, warnings, and advisories that a boater can monitor throughout a trip",
+    "choice_b": "NOAA Weather Radio broadcasts are available only once per day at a fixed time",
+    "choice_c": "NOAA Weather Radio is accessible only through a paid satellite subscription",
+    "choice_d": "NOAA Weather Radio broadcasts exclusively on Channel 16, the same as the distress and hailing channel",
+    "correct_choice": "A",
+    "explanation": "NOAA Weather Radio broadcasts continuously on a set of dedicated VHF weather channels (separate from Channel 16), giving boaters ongoing access to updated forecasts, small craft advisories, and severe weather warnings throughout a trip without needing a separate internet or cellular connection.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (NOAA Weather Radio dedicated VHF broadcast channels), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Weather",
+    "question": "During Massachusetts's hurricane season (roughly August through October), what should boaters monitor and plan for?",
+    "choice_a": "Hurricane season has no relevance to Massachusetts, since tropical systems never reach New England",
+    "choice_b": "Tropical storm and hurricane forecasts and advisories, since Massachusetts's coast has historically been affected by significant storms (such as Hurricane Bob in 1991), and boaters should plan in advance to haul out, secure, or relocate vessels well before a storm's arrival",
+    "choice_c": "Only inland boaters need to be concerned about hurricanes, not coastal boaters",
+    "choice_d": "Hurricanes in Massachusetts are only a winter phenomenon",
+    "correct_choice": "B",
+    "explanation": "Massachusetts's coast has a real history of significant tropical storm and hurricane impacts, including Hurricane Bob in 1991, generally occurring within the broader August-through-October hurricane season; boaters should monitor tropical forecasts during this period and plan well ahead of a storm's arrival to haul out, double up mooring lines, or otherwise secure their vessel.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (Atlantic hurricane season awareness), relevant to Massachusetts's historical coastal hurricane exposure (e.g., Hurricane Bob, 1991)"
+  },
+  {
+    "topic": "Weather",
+    "question": "What is a squall or microburst, and why is it a particularly dangerous weather hazard for small boats?",
+    "choice_a": "A squall is a sudden, often short-lived burst of strong wind (sometimes associated with a thunderstorm's downdraft) that can arrive with little warning and generate a rapid spike in wind speed capable of capsizing or swamping a small, lightly loaded boat",
+    "choice_b": "A squall is simply another word for a light, steady breeze with no sudden characteristics",
+    "choice_c": "Squalls only occur over land, never over open water",
+    "choice_d": "A squall always lasts several hours with a slow, predictable buildup",
+    "correct_choice": "A",
+    "explanation": "A squall (which can include a microburst, a concentrated downdraft from a thunderstorm) is a sudden, often brief burst of intense wind that can develop with very little warning, and the abrupt spike in wind speed and chop it produces poses a serious capsizing or swamping risk to small or lightly loaded boats caught unprepared.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (squall/microburst sudden wind hazard), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Weather",
+    "question": "What weather mechanism commonly produces the dense sea fog boaters encounter along the Massachusetts coast, particularly in late spring and early summer?",
+    "choice_a": "Fog forms only over land and never develops over open coastal water",
+    "choice_b": "Advection fog, which forms when relatively warm, moist air moves horizontally over the significantly colder ocean water typical of the Massachusetts and Gulf of Maine coast, cooling the air to its dew point and condensing it into fog",
+    "choice_c": "Fog is caused exclusively by boat engine exhaust accumulating over the water",
+    "choice_d": "Fog can only form at night, never during daylight hours",
+    "correct_choice": "B",
+    "explanation": "The dense sea fog common along the Massachusetts coast in late spring and early summer is typically advection fog, forming when warm, moist air moves over the much colder ocean water offshore, cooling the air below its dew point and condensing water vapor into a fog bank that can roll in over the water with little warning.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (advection fog formation mechanism), relevant to Massachusetts's cold coastal waters (Gulf of Maine influence)"
+  }
+]

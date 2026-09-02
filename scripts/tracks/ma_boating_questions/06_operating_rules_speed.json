@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What does a 'no-wake zone' require of vessel operators?",
+    "choice_a": "Shut off the engine completely and drift through the area",
+    "choice_b": "No-wake zones apply only to sailboats, not powerboats",
+    "choice_c": "Operate at the slowest speed needed to maintain steering control, so the vessel produces minimal to no wake, typically near marinas, docks, swimmers, or narrow channels",
+    "choice_d": "Operate at maximum throttle to clear the area as quickly as possible",
+    "correct_choice": "C",
+    "explanation": "In a no-wake zone, operators must slow to the minimum speed needed to maintain steerage, producing little or no wake, because excess wake near docks, moorings, swimmers, or narrow waterways can cause damage or capsize smaller craft.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (no-wake zone operating rules), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Who is legally responsible for damage or injury caused by a vessel's wake in Massachusetts?",
+    "choice_a": "No one is ever responsible for wake damage since it is considered an unavoidable natural hazard",
+    "choice_b": "Only the vessel manufacturer can be held responsible",
+    "choice_c": "Wake responsibility depends solely on which vessel was moving faster overall that day",
+    "choice_d": "The operator of the vessel creating the wake is generally responsible for any damage or injury it causes",
+    "correct_choice": "D",
+    "explanation": "An operator is responsible for the effects of their own wake; operating in a way that causes a wake to damage other boats, docks, or property, or injure people, can result in liability regardless of whether the vessel was technically within a posted speed limit.",
+    "weight": 3,
+    "source_note": "Massachusetts General Laws Chapter 90B, operator responsibility for wake, consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What defines 'reckless or negligent operation' of a vessel under Massachusetts law?",
+    "choice_a": "Operating in a manner that endangers or is likely to endanger the life, limb, or property of any person, such as excessive speed near other vessels, swimmers, or the shoreline",
+    "choice_b": "Any operation faster than 5 miles per hour, regardless of location",
+    "choice_c": "Only operating a vessel while it is out of the water on a trailer",
+    "choice_d": "Reckless operation is not addressed anywhere in Massachusetts boating law",
+    "correct_choice": "A",
+    "explanation": "Massachusetts law prohibits operating a vessel in a reckless or negligent manner that endangers or is likely to endanger the life, limb, or property of a person, which can include excessive speed near congested areas, swimmers, or in close proximity to other vessels.",
+    "weight": 3,
+    "source_note": "Massachusetts General Laws Chapter 90B, reckless/negligent operation provisions, consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "How close should a vessel operate to a swimmer, diver's flag, or designated swimming area?",
+    "choice_a": "Speed near swimmers is unrestricted if the vessel is under 16 feet",
+    "choice_b": "Well clear of the area, maintaining a safe, slow speed and staying outside marked swimming or dive-flag boundaries entirely when possible",
+    "choice_c": "As close as possible to give swimmers a better view of the boat",
+    "choice_d": "Distance from swimmers does not matter as long as the horn is sounded once",
+    "correct_choice": "B",
+    "explanation": "Operators must give swimmers, divers, and designated swim areas a wide, slow-speed berth, since a person in the water is difficult to see and propeller strikes are a leading cause of serious boating injury.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (safe distance from swimmers/dive flags), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What is the general legal responsibility every vessel operator has toward capsized, disabled, or overturned vessels and their occupants?",
+    "choice_a": "Only law enforcement vessels are permitted to assist a vessel in distress",
+    "choice_b": "Assistance is required only if the disabled vessel is registered in the same state",
+    "choice_c": "Render assistance to the extent that can be done safely, as long as doing so does not seriously endanger their own vessel or crew",
+    "choice_d": "There is no duty to assist another vessel in distress under any circumstances",
+    "correct_choice": "C",
+    "explanation": "Boating law generally requires operators to render reasonable assistance to persons in danger from a vessel casualty, so long as doing so does not seriously endanger their own vessel, crew, or passengers -- similar to a maritime duty to assist.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (duty to render assistance), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "How are speed zones and no-wake zones typically posted on Massachusetts waters?",
+    "choice_a": "Speed limits on the water are never posted and must be guessed by the operator",
+    "choice_b": "Only through radio broadcasts with no visible markers",
+    "choice_c": "Speed zones apply nationwide uniformly with no local variation",
+    "choice_d": "With regulatory markers or signs showing the applicable speed limit or restriction, placed by the harbormaster, Massachusetts Environmental Police, or other authorized agency",
+    "correct_choice": "D",
+    "explanation": "Local harbormasters, the Massachusetts Environmental Police, and other authorized bodies post regulatory markers or signage establishing speed limits and no-wake zones in specific areas -- such as harbor entrances, marinas, and swimming areas -- and operators are responsible for observing them.",
+    "weight": 2,
+    "source_note": "Massachusetts General Laws Chapter 90B and local harbormaster authority, consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Why is 'assured clear distance' an important operating principle even in open water with no posted speed limit?",
+    "choice_a": "An operator must always be able to stop or maneuver in time to avoid a collision with any object or vessel that could reasonably be anticipated",
+    "choice_b": "It only applies to vessels equipped with radar",
+    "choice_c": "It means an operator may travel at any speed as long as no other boats are currently visible",
+    "choice_d": "It is a rule that applies only to sailing vessels, not powerboats",
+    "correct_choice": "A",
+    "explanation": "Even without a posted limit, an operator must run at a speed that allows them to avoid a collision with anything that could reasonably be expected to appear -- another vessel, a swimmer, a partially submerged object, or a change in conditions.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (safe speed / assured clear distance principle), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What local Massachusetts authority commonly has jurisdiction to regulate mooring fields, local speed limits, and boating activity within a harbor?",
+    "choice_a": "No local authority may regulate a harbor -- only the state legislature can",
+    "choice_b": "The local harbormaster, working alongside the Massachusetts Environmental Police",
+    "choice_c": "The federal Department of Transportation exclusively",
+    "choice_d": "Only the individual boat owner's insurance company",
+    "correct_choice": "B",
+    "explanation": "Massachusetts coastal and many inland communities appoint a harbormaster who regulates local mooring fields, some speed restrictions, and general boating activity within town waters, working alongside the statewide enforcement authority of the Massachusetts Environmental Police.",
+    "weight": 2,
+    "source_note": "Massachusetts General Laws Chapter 90B and harbormaster authority provisions, consistent with Massachusetts Environmental Police-reviewed course materials"
+  }
+]

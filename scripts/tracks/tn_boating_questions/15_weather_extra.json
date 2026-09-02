@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Weather",
+    "question": "What is a \"small craft advisory,\" and what should a boater on a Tennessee reservoir do when one is issued?",
+    "choice_a": "A National Weather Service warning of sustained winds and wave conditions that can be hazardous to small boats, suggesting operators postpone or cut short their outing",
+    "choice_b": "A mandatory boat registration renewal notice",
+    "choice_c": "A notice that only affects vessels over 65 feet",
+    "choice_d": "A guarantee that the water will remain perfectly calm",
+    "correct_choice": "A",
+    "explanation": "A small craft advisory is issued by the National Weather Service when sustained wind speeds and wave conditions could be hazardous to smaller vessels, and boaters are advised to postpone their trip or return to safe harbor rather than risk being caught in worsening conditions.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (National Weather Service marine advisories, NASBLA-aligned)"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why can a sudden wind shift combined with a rapid temperature drop signal an approaching cold front while boating?",
+    "choice_a": "A passing cold front commonly brings a shift in wind direction, a temperature drop, and sometimes gusty winds or thunderstorms along its leading edge",
+    "choice_b": "Wind shifts and temperature drops have no connection to changing weather systems",
+    "choice_c": "Cold fronts only occur during winter and never affect boating conditions",
+    "choice_d": "A wind shift always means the weather is about to improve",
+    "correct_choice": "A",
+    "explanation": "A passing cold front frequently brings a noticeable wind shift, a temperature drop, and sometimes gusty winds or thunderstorms along its leading edge, making these combined signs a useful warning that conditions on the water may deteriorate quickly.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why is haze or reduced visibility from summer heat and humidity a concern for boaters on a large Tennessee reservoir, even without fog or rain?",
+    "choice_a": "Reduced visibility from haze can make it harder to spot other vessels, shoreline hazards, or channel markers at a safe distance",
+    "choice_b": "Haze has no effect on a boater's ability to see other vessels",
+    "choice_c": "Haze only affects sailboats, never powerboats",
+    "choice_d": "Haze is illegal to boat in under Tennessee law",
+    "correct_choice": "A",
+    "explanation": "Even without fog or rain, summer haze and humidity can meaningfully reduce visibility on open water, making it harder to spot other vessels, floating hazards, or navigation markers early enough to react safely.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Weather",
+    "question": "What role does checking a marine or lake forecast the morning of a trip play, compared to checking it only the night before?",
+    "choice_a": "Weather conditions, especially the chance of afternoon thunderstorms common in the Tennessee summer, can change significantly overnight, so a same-day check gives more reliable, current information",
+    "choice_b": "A forecast checked the night before is always more accurate than one checked the same morning",
+    "choice_c": "Forecasts never change once issued, regardless of timing",
+    "choice_d": "There is no value in checking weather more than once before a trip",
+    "correct_choice": "A",
+    "explanation": "Because conditions, particularly the likelihood of afternoon thunderstorms common in Tennessee summers, can shift significantly overnight, checking an updated forecast the morning of a trip gives boaters more current and reliable information than relying only on a forecast checked the night before.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Crash Avoidance",
+    "question": "What do studies show most crash-involved riders do incorrectly, per the manual?",
+    "choice_a": "Brake too gradually in every situation",
+    "choice_b": "Use the front brake too aggressively and never touch the rear brake",
+    "choice_c": "Underbrake the front tire and overbrake the rear, or fail to separate braking from swerving",
+    "choice_d": "Swerve when they should have used the horn instead",
+    "correct_choice": "C",
+    "explanation": "The manual states studies show most crash-involved riders underbrake the front tire and overbrake the rear, and did not separate braking from swerving or did not choose swerving when it was appropriate.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Crash Avoidance"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "In a Quick Stop, what should a rider do if the front wheel locks?",
+    "choice_a": "Downshift twice before adjusting the front brake",
+    "choice_b": "Keep the lever squeezed and add more pressure",
+    "choice_c": "Immediately apply the rear brake instead and release the front for good",
+    "choice_d": "Release the front brake lever immediately, then reapply it firmly",
+    "correct_choice": "D",
+    "explanation": "The manual instructs that if the front wheel locks during a quick stop, release the front brake lever immediately then reapply it firmly, while also pressing down on the rear brake.",
+    "weight": 4,
+    "source_note": "Ride Within Your Abilities - Crash Avoidance, Quick Stops"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "What does the manual say about a locked rear wheel on a good traction surface during a quick stop?",
+    "choice_a": "You can keep it locked until completely stopped, and can still control the motorcycle if upright and going straight",
+    "choice_b": "You must release it immediately or the motorcycle will always crash",
+    "choice_c": "It is illegal to lock the rear wheel under any circumstance",
+    "choice_d": "A locked rear wheel always causes a high-side crash regardless of alignment",
+    "correct_choice": "A",
+    "explanation": "The manual notes that if you accidentally lock the rear brake on a good traction surface, you can keep it locked until completely stopped, since a motorcycle can be controlled with a locked rear wheel if it is upright and going in a straight line.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Crash Avoidance, Quick Stops"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "If a rider must stop quickly while in a curve, what does the manual recommend doing first, when conditions allow?",
+    "choice_a": "Increase lean angle to shorten the stopping distance",
+    "choice_b": "Straighten and square the handlebars, then stop",
+    "choice_c": "Apply only the rear brake throughout the curve",
+    "choice_d": "Accelerate briefly before braking to stabilize the motorcycle",
+    "correct_choice": "B",
+    "explanation": "The manual states that if you must stop quickly while in a curve, first straighten and square the handlebars, then stop; if that isn't possible, brake smoothly and gradually while reducing lean angle as you slow.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Crash Avoidance, Stopping Quickly in a Curve"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "What is a 'swerve,' as defined by the manual?",
+    "choice_a": "A type of emergency stop using only the rear brake",
+    "choice_b": "A gradual, gentle lane change over several seconds",
+    "choice_c": "A sudden change in direction, made by applying hand pressure to the handgrip on the side of the intended escape direction",
+    "choice_d": "A maneuver used exclusively on three-wheel motorcycles",
+    "correct_choice": "C",
+    "explanation": "The manual defines a swerve as a sudden change in direction, executed by applying a small amount of hand pressure to the handgrip on the side of your intended direction of escape, causing the motorcycle to lean quickly.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Crash Avoidance, Swerving or Turning Quickly"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "If the situation allows, how should braking and swerving be combined, per the manual?",
+    "choice_a": "Braking should always come after a completed swerve, with no exceptions",
+    "choice_b": "Always brake and swerve at the exact same moment for maximum effect",
+    "choice_c": "Swerving replaces the need for braking entirely",
+    "choice_d": "Separate them -- brake before or after, never during an aggressive swerve",
+    "correct_choice": "D",
+    "explanation": "The manual advises that if the situation allows, separate braking from swerving -- brake before or after, but never during an aggressive swerve.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Crash Avoidance"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "What immediately results from a front-wheel skid, per the manual?",
+    "choice_a": "Immediate loss of steering control and balance",
+    "choice_b": "No real change in handling",
+    "choice_c": "An automatic increase in traction",
+    "choice_d": "A gradual, easily corrected drift",
+    "correct_choice": "A",
+    "explanation": "The manual states front-wheel skids result in immediate loss of steering control and balance, and failure to fully release the brake lever immediately will result in a crash.",
+    "weight": 4,
+    "source_note": "Ride Within Your Abilities - Crash Avoidance, Front-Wheel Skids"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "What is a 'high-side crash,' as described by the manual in the context of rear-wheel skids?",
+    "choice_a": "A crash that only occurs on highways above 55 mph",
+    "choice_b": "The motorcycle abruptly snaps upright when a misaligned, locked rear wheel is released, throwing the rider into the air",
+    "choice_c": "A minor low-speed tip-over in a parking lot",
+    "choice_d": "A crash caused exclusively by front-wheel lockup",
+    "correct_choice": "B",
+    "explanation": "The manual explains that if the rear wheel is out of alignment with the front and a locked rear wheel is released, the motorcycle can abruptly snap upright, throwing the rider into the air ahead of the motorcycle's path -- a high-side crash.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Crash Avoidance, Rear-Wheel Skids"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "What is described as a primary cause of single-vehicle motorcycle crashes, per the manual's discussion of curves?",
+    "choice_a": "Other vehicles turning left in front of the rider",
+    "choice_b": "Mechanical failure of the front brake",
+    "choice_c": "Motorcyclists running wide in a curve or turn",
+    "choice_d": "Riding with a passenger",
+    "correct_choice": "C",
+    "explanation": "The manual identifies motorcyclists running wide in a curve or turn as a primary cause of single-vehicle crashes, recommending riders be alert to how a curve changes and ride within their skill level.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Crash Avoidance, Curves"
+  },
+  {
+    "topic": "Crash Avoidance",
+    "question": "Where does the manual suggest moving before entering a curve to best spot approaching traffic?",
+    "choice_a": "Lane position in a curve makes no difference",
+    "choice_b": "The far outside edge of the lane at all times",
+    "choice_c": "Directly against the center line regardless of oncoming traffic",
+    "choice_d": "The center of your lane, staying there until you exit the curve",
+    "correct_choice": "D",
+    "explanation": "The manual suggests moving to the center of your lane before entering a curve and staying there until you exit, which permits you to spot approaching traffic as soon as possible.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Crash Avoidance, Curves"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Wisconsin Boater Education Law",
+    "question": "Does Wisconsin's boating safety certification mandate apply only to Wisconsin residents, or also to visitors operating on Wisconsin waters?",
+    "choice_a": "It applies only to Wisconsin residents; nonresidents are fully exempt regardless of birth date",
+    "choice_b": "The birth-date-based certification requirement applies to anyone operating a motorboat or PWC on Wisconsin waters, resident or nonresident, subject to Wisconsin's recognition of equivalent out-of-state or NASBLA-standard certificates",
+    "choice_c": "Nonresidents may never operate a motorboat or PWC on Wisconsin waters under any circumstance",
+    "choice_d": "The requirement applies only to nonresidents, not to Wisconsin residents",
+    "correct_choice": "B",
+    "explanation": "Wisconsin's age-based certification requirement is tied to the operator's birth date and applies to anyone operating a covered vessel on Wisconsin waters, not just residents -- nonresidents satisfy it by holding an equivalent NASBLA-standard certificate recognized under Wisconsin's reciprocity policy.",
+    "weight": 3,
+    "source_note": "Wisconsin DNR boater education guidance on age-based operating requirements and reciprocity (dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation)"
+  },
+  {
+    "topic": "Wisconsin Boater Education Law",
+    "question": "Does Wisconsin's boating safety certification requirement extend to non-motorized craft such as canoes, kayaks, or sailboats without an engine?",
+    "choice_a": "No -- the certification mandate is specifically tied to operating a motorboat or personal watercraft, not to non-motorized paddlecraft or sailboats without a motor",
+    "choice_b": "Yes -- every canoe or kayak paddler born after 1989 must be certified",
+    "choice_c": "The requirement applies only to non-motorized craft, exempting motorboats entirely",
+    "choice_d": "Certification is required for any vessel over 12 feet regardless of propulsion",
+    "correct_choice": "A",
+    "explanation": "Wisconsin's certification mandate specifically targets operators of motorboats and personal watercraft; a canoe, kayak, or sailboat with no engine falls outside that particular requirement, even though such craft are still subject to other rules like PFD carriage.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR boater education guidance on the scope of the certification mandate (dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation)"
+  },
+  {
+    "topic": "Wisconsin Boater Education Law",
+    "question": "Is Wisconsin's certification requirement based on an operator's birth date alone, or does years of boating experience provide an exemption?",
+    "choice_a": "The requirement is triggered strictly by birth date -- an operator born on or after January 1, 1989 must be certified regardless of how many years they have already been boating",
+    "choice_b": "Anyone with more than 10 years of boating experience is automatically exempt",
+    "choice_c": "Experience level alone determines the requirement, with birth date being irrelevant",
+    "choice_d": "The requirement only applies during an operator's first year of boating",
+    "correct_choice": "A",
+    "explanation": "Because the mandate is defined entirely by birth date, an operator born on or after the January 1, 1989 cutoff must complete certification regardless of how long they have already been operating boats informally.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR boater education guidance (dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation)"
+  },
+  {
+    "topic": "Wisconsin Boater Education Law",
+    "question": "After passing an approved online boating course's final exam, can an operator get proof of certification before the permanent card arrives by mail?",
+    "choice_a": "No proof of any kind is available until the physical card arrives, which can take several weeks",
+    "choice_b": "Approved vendors typically let the student print a temporary certificate or boating education certificate immediately upon passing, usable while the permanent card is processed and mailed",
+    "choice_c": "Temporary proof is never accepted by Wisconsin DNR or law enforcement",
+    "choice_d": "The permanent card must be picked up in person at a DNR Service Center before any operation is allowed",
+    "correct_choice": "B",
+    "explanation": "Approved course vendors generally allow a student who has passed the final exam to print a temporary certificate immediately, giving them usable proof of completion while the permanent Boater Education Card is processed and mailed.",
+    "weight": 2,
+    "source_note": "Boat-Ed Wisconsin and iLearntoBoat Wisconsin course completion process, consistent with Wisconsin DNR's approved-provider framework (dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation)"
+  },
+  {
+    "topic": "Wisconsin Boater Education Law",
+    "question": "Does Wisconsin's boater certification mandate itself vary from one lake or water body to another within the state?",
+    "choice_a": "Yes -- some lakes are entirely exempt from the certification mandate",
+    "choice_b": "No -- the certification mandate applies uniformly statewide to covered operators on any Wisconsin water, unlike certain operating rules (such as slow-no-wake speed restrictions) that can be modified lake by lake under NR 5",
+    "choice_c": "The certification requirement applies only on designated \"training lakes\"",
+    "choice_d": "Certification requirements are set independently by each county",
+    "correct_choice": "B",
+    "explanation": "Unlike operating rules such as slow-no-wake speed zones, which Wisconsin Administrative Code NR 5 allows to be modified on specific lakes, the underlying boater certification mandate itself is a uniform statewide requirement that does not vary by water body.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR boater education guidance (dnr.wisconsin.gov/Education/OutdoorSkills/safetyEducation), contrasted with Wisconsin Administrative Code NR 5.20-5.21's lake-specific speed rule framework"
+  }
+]

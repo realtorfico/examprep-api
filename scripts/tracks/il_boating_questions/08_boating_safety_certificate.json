@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "What is the minimum age at which a person may operate any motorized vessel, including a PWC, in Illinois?",
+    "choice_a": "8 years old",
+    "choice_b": "13 years old",
+    "choice_c": "16 years old",
+    "choice_d": "10 years old",
+    "correct_choice": "D",
+    "explanation": "Illinois law prohibits anyone under the age of 10 from operating any motorized vessel, including a personal watercraft, under any circumstances.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/5-18; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "Under 625 ILCS 45/5-18, how may a person at least 10 but less than 12 years old operate a motorized vessel with more than 10 hp, including a PWC?",
+    "choice_a": "Only if accompanied by and under the direct control of a parent, guardian, or a person at least 18 designated by the parent or guardian",
+    "choice_b": "They may operate freely once they turn 10 with no supervision",
+    "choice_c": "Only if they hold a valid driver's license",
+    "choice_d": "They may never operate a motorized vessel at that age",
+    "correct_choice": "A",
+    "explanation": "A 10- or 11-year-old may operate a motorized vessel over 10 hp, including a PWC, only while accompanied by and under the direct control of a parent, guardian, or an adult designee at least 18 years old.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/5-18; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "Under 625 ILCS 45/5-18, a person at least 12 but less than 18 years old may operate a motorized vessel over 10 hp, including a PWC, only if:",
+    "choice_a": "They obtain written permission from any adult, regardless of relationship",
+    "choice_b": "They have completed a boating safety course and hold a Boating Safety Certificate accepted by the DNR, or are accompanied by and under the direct control of a parent, guardian, or designated adult",
+    "choice_c": "They are always exempt from any supervision or certification requirement",
+    "choice_d": "They simply promise to wear a PFD",
+    "correct_choice": "B",
+    "explanation": "Illinois gives 12-to-17-year-olds two paths to legally operate a motorized vessel over 10 hp: complete a boating safety course and hold a certificate, or be accompanied by and under the direct control of a parent, guardian, or their adult designee.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/5-18; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "What special requirement applies to a parent, guardian, or designee born on or after January 1, 1998 who supervises a 10-to-17-year-old operating a motorized vessel over 10 hp?",
+    "choice_a": "The supervising adult must be a licensed boat captain",
+    "choice_b": "The supervising adult must be the vessel's registered owner",
+    "choice_c": "That supervising adult must also hold a valid Boating Safety Certificate",
+    "choice_d": "No additional requirement applies to the supervising adult",
+    "correct_choice": "C",
+    "explanation": "Because the certificate requirement is tied to birth date, a supervising parent, guardian, or designee born on or after January 1, 1998 must also hold a valid Boating Safety Certificate to legally supervise a minor operator.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/5-18; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "Why does Illinois use a birth-date cutoff of January 1, 1998, rather than a simple current-age threshold, for its Boating Safety Certificate requirement?",
+    "choice_a": "It only affects people who are currently minors",
+    "choice_b": "It has no real effect and is purely symbolic",
+    "choice_c": "It applies only to people who purchase a new vessel",
+    "choice_d": "It grandfathers in older boaters who were already operating vessels before the education mandate took effect, while requiring certification for everyone born on or after that date regardless of how old they later become",
+    "correct_choice": "D",
+    "explanation": "A fixed birth-date cutoff means the requirement permanently applies to everyone born on or after that date as they age, while boaters born before the cutoff remain grandfathered in, a common approach nationwide for phasing in boater education mandates.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-18; general birth-date-cutoff mandate design used across many states' boater education laws"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "According to Illinois's DNR-approved online course provider, what is the passing score required to earn an Illinois Boating Safety Certificate?",
+    "choice_a": "At least 80% on the final exam",
+    "choice_b": "At least 50% on the final exam",
+    "choice_c": "A perfect 100% score is required",
+    "choice_d": "There is no passing score; completion alone earns the certificate",
+    "correct_choice": "A",
+    "explanation": "Illinois's DNR-accepted online course requires a minimum score of 80% on the certification exam to pass and earn the Boating Safety Certificate.",
+    "weight": 3,
+    "source_note": "boat-ed.com/illinois course requirements (DNR-accepted NASBLA-approved provider); confirmed live 2026"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "Does the Illinois Department of Natural Resources itself administer a single, official statewide boating knowledge exam?",
+    "choice_a": "No, Illinois has no boater education requirement at all",
+    "choice_b": "No -- the DNR sets the education mandate and accepts certificates from NASBLA-approved third-party course providers, rather than administering one official exam itself",
+    "choice_c": "Yes, all boaters must travel to a DNR office to take a state-proctored written exam",
+    "choice_d": "Yes, but only for PWC operators",
+    "correct_choice": "B",
+    "explanation": "Like most states, Illinois does not run its own single boating exam; instead, IDNR approves boater education providers under national NASBLA standards, and the provider's own course exam is what produces the accepted Boating Safety Certificate.",
+    "weight": 4,
+    "source_note": "IDNR boater education program structure; NASBLA-approved provider model referenced in Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "According to Illinois's DNR-accepted online boating course, how many attempts does a student get to pass the certification exam?",
+    "choice_a": "Exactly two attempts",
+    "choice_b": "Three attempts per calendar year",
+    "choice_c": "Unlimited attempts",
+    "choice_d": "Exactly one attempt",
+    "correct_choice": "C",
+    "explanation": "Illinois's DNR-accepted online provider allows unlimited attempts to pass the certification exam, though each unit quiz along the way must also be passed with a minimum score of 70%.",
+    "weight": 2,
+    "source_note": "boat-ed.com/illinois course requirements; confirmed live 2026"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "What is the minimum age to enroll in Illinois's DNR-accepted online boating safety course?",
+    "choice_a": "6 years old",
+    "choice_b": "14 years old",
+    "choice_c": "18 years old",
+    "choice_d": "10 years old",
+    "correct_choice": "D",
+    "explanation": "Illinois's DNR-accepted online course sets a minimum enrollment age of 10, matching the minimum age at which a person may ever operate a motorized vessel in the state.",
+    "weight": 2,
+    "source_note": "boat-ed.com/illinois course requirements; confirmed live 2026"
+  },
+  {
+    "topic": "Boating Safety Certificate & Education",
+    "question": "Besides the online course, what alternative does the official Illinois boating handbook point boaters toward for meeting the boating safety education requirement?",
+    "choice_a": "A classroom course, which boaters can locate by calling a dedicated DNR phone number listed in the handbook",
+    "choice_b": "There is no alternative; every boater must complete the identical online course",
+    "choice_c": "A classroom option exists only for PWC operators",
+    "choice_d": "Classroom courses are only offered to active-duty military members",
+    "correct_choice": "A",
+    "explanation": "The official Handbook of Illinois Boating Laws and Responsibilities directs boaters to call a listed DNR classroom-course phone number as an alternative to taking the online course at boat-ed.com/illinois.",
+    "weight": 2,
+    "source_note": "Handbook of Illinois Boating Laws and Responsibilities (2023), 'Prepare for Safety' section"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How does federal and Florida law define a 'vessel'?",
+    "choice_a": "Every description of watercraft, including PWCs, used or capable of being used as a means of transportation on water",
+    "choice_b": "Only craft longer than 26 feet with an inboard engine",
+    "choice_c": "Only craft that are documented with the U.S. Coast Guard",
+    "choice_d": "Only craft that carry passengers for hire",
+    "correct_choice": "A",
+    "explanation": "Florida Statute 327.02 and federal law define a vessel broadly as any watercraft used or capable of being used as a means of transportation on water, which includes PWCs, canoes, and rowboats along with larger powerboats.",
+    "weight": 3,
+    "source_note": "Florida Statutes Chapter 327, definitions"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a 'personal watercraft' (PWC) as defined under Florida law?",
+    "choice_a": "A vessel used exclusively for water skiing",
+    "choice_b": "A vessel less than 16 feet that uses an inboard motor powering a water jet pump as its primary source of propulsion and is designed to be operated by a person sitting, standing, or kneeling on it rather than in the conventional manner of sitting or standing inside the vessel",
+    "choice_c": "Any vessel with an outboard motor regardless of size",
+    "choice_d": "A sailboat under 20 feet",
+    "correct_choice": "B",
+    "explanation": "Florida defines a PWC as a vessel that uses a jet-pump-driven inboard motor and is designed for an operator to sit, stand, or kneel on rather than inside the hull, such as a WaveRunner, Jet Ski, or Sea-Doo.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.02(19), PWC definition"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "For registration purposes, how are Florida vessels commonly classified by length?",
+    "choice_a": "By horsepower only, never by length",
+    "choice_b": "By hull material only (fiberglass, aluminum, wood)",
+    "choice_c": "Class A (under 16 ft), Class 1 (16 to less than 26 ft), Class 2 (26 to less than 40 ft), and Class 3 (40 ft and over)",
+    "choice_d": "Only 'small' and 'large' with no defined cutoffs",
+    "correct_choice": "C",
+    "explanation": "Florida's vessel registration fee structure follows the traditional length classes: Class A under 16 feet, Class 1 from 16 to less than 26 feet, Class 2 from 26 to less than 40 feet, and Class 3 at 40 feet and over.",
+    "weight": 2,
+    "source_note": "FLHSMV vessel registration fee classes"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What distinguishes a displacement hull from a planing hull?",
+    "choice_a": "A displacement hull is always faster than a planing hull",
+    "choice_b": "There is no meaningful difference between the two hull types",
+    "choice_c": "A planing hull can only be used on PWCs",
+    "choice_d": "A displacement hull pushes through the water and is limited in speed by its waterline length, while a planing hull is designed to rise up and glide on top of the water at higher speeds",
+    "correct_choice": "D",
+    "explanation": "Displacement hulls (common on trawlers, sailboats, and canoes) push through the water and are speed-limited by hull length, while planing hulls (common on powerboats) are designed to rise and skim across the surface as speed increases.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course hull design content"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is the transom of a boat?",
+    "choice_a": "The flat, vertical surface across the stern to which an outboard motor is often mounted",
+    "choice_b": "The pointed front section of the hull",
+    "choice_c": "The steering wheel assembly",
+    "choice_d": "The anchor locker",
+    "correct_choice": "A",
+    "explanation": "The transom is the flat surface forming the stern (back) of many boats, and it is where outboard motors and the hull identification number are commonly mounted or affixed.",
+    "weight": 2,
+    "source_note": "Standard boat-anatomy terminology"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What does 'beam' refer to on a vessel?",
+    "choice_a": "The height of the mast",
+    "choice_b": "The vessel's width at its widest point",
+    "choice_c": "The vessel's total length from bow to stern",
+    "choice_d": "The depth of the hull below the waterline",
+    "correct_choice": "B",
+    "explanation": "Beam is the measurement of a vessel's width at its widest point, an important figure for stability and for fitting a boat on a trailer.",
+    "weight": 2,
+    "source_note": "Standard boat-anatomy terminology"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is 'draft' as it relates to a boat?",
+    "choice_a": "The angle at which the hull meets the waterline",
+    "choice_b": "The amount of fuel the vessel carries",
+    "choice_c": "The minimum depth of water needed to float the vessel without touching bottom",
+    "choice_d": "The vessel's maximum speed",
+    "correct_choice": "C",
+    "explanation": "Draft is the minimum depth of water a vessel needs to float free without touching the bottom, an important consideration in Florida's many shallow bays, flats, and manatee habitat areas.",
+    "weight": 2,
+    "source_note": "Standard boat-anatomy terminology"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Which of the following is classified as a non-motorized vessel that still must follow Florida navigation rules?",
+    "choice_a": "A pontoon boat with a 25-horsepower outboard",
+    "choice_b": "A PWC",
+    "choice_c": "A center-console boat with twin outboards",
+    "choice_d": "A canoe or kayak under paddle power",
+    "correct_choice": "D",
+    "explanation": "Even a paddle-powered canoe or kayak is a 'vessel' under Florida law and must comply with applicable navigation rules, though its education and equipment requirements differ from motorized vessels.",
+    "weight": 3,
+    "source_note": "Florida Statutes Chapter 327, vessel definitions applied to paddle craft"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is an inflatable vessel typically used for in Florida boating, and what safety consideration applies?",
+    "choice_a": "It is a legitimate vessel type (dinghies, rafts) subject to the same basic safety-equipment rules as its length and propulsion class, and should be checked for proper inflation and puncture-resistance before use",
+    "choice_b": "Inflatable vessels are exempt from all Florida boating regulations",
+    "choice_c": "Inflatable vessels may never be registered in Florida",
+    "choice_d": "Inflatable vessels are illegal in Florida",
+    "correct_choice": "A",
+    "explanation": "Inflatable boats and dinghies are legitimate vessels subject to registration and equipment requirements matching their size and propulsion, and operators should inspect air chambers and material condition before heading out.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course vessel-type content"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Why is it important for a new boater to understand their specific vessel's classification (length, hull type, propulsion)?",
+    "choice_a": "Classification only matters for insurance purposes, not legal compliance",
+    "choice_b": "Because Florida's registration fees, required safety equipment, and some operating restrictions (such as manatee zone speed limits applying differently by vessel type) depend on these characteristics",
+    "choice_c": "Classification has no bearing on any Florida boating requirement",
+    "choice_d": "Only commercial vessels are subject to different rules based on classification",
+    "correct_choice": "B",
+    "explanation": "A vessel's length class and propulsion type determine its registration fee, the specific safety equipment it must carry, and how certain operating rules apply, making accurate classification a practical necessity for every owner.",
+    "weight": 2,
+    "source_note": "General FLHSMV/FWC vessel classification rationale"
+  }
+]

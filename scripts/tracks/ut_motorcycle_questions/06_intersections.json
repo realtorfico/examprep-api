@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Intersections",
+    "question": "According to the manual, where is the greatest potential for conflict between a rider and other traffic?",
+    "choice_a": "At intersections",
+    "choice_b": "On straight open highways",
+    "choice_c": "In parking lots only",
+    "choice_d": "On dirt roads",
+    "correct_choice": "A",
+    "explanation": "The manual states the greatest potential for conflict between a rider and other traffic is at intersections, which can be in an urban area or at a residential driveway -- anywhere traffic may cross the rider's path.",
+    "weight": 4,
+    "source_note": "Ride Within Your Abilities - Intersections"
+  },
+  {
+    "topic": "Intersections",
+    "question": "What proportion of motorcycle/car crashes does the manual attribute to drivers violating a rider's right-of-way?",
+    "choice_a": "About one-tenth",
+    "choice_b": "Over one-half",
+    "choice_c": "Nearly all of them",
+    "choice_d": "None; most are caused by rider error alone",
+    "correct_choice": "B",
+    "explanation": "The manual states over one-half of motorcycle/car crashes are caused by drivers violating a rider's right-of-way, including cars that turn left in front of the rider.",
+    "weight": 4,
+    "source_note": "Ride Within Your Abilities - Intersections"
+  },
+  {
+    "topic": "Intersections",
+    "question": "What does the manual say about relying on eye contact with another driver at an intersection?",
+    "choice_a": "Eye contact is unnecessary since drivers always yield to motorcycles",
+    "choice_b": "Eye contact guarantees the other driver will yield",
+    "choice_c": "There are no guarantees that others see you; too often a driver looks right at a motorcyclist and still fails to 'see' them",
+    "choice_d": "Eye contact should be avoided because it distracts the rider",
+    "correct_choice": "C",
+    "explanation": "The manual warns never to count on 'eye contact,' since too often a driver looks right at a motorcyclist and still fails to see them; the only eyes a rider can count on are their own.",
+    "weight": 4,
+    "source_note": "Ride Within Your Abilities - Intersections"
+  },
+  {
+    "topic": "Intersections",
+    "question": "What should a rider do when approaching an intersection where a vehicle driver is preparing to cross their path?",
+    "choice_a": "Turn off the headlight to avoid startling the other driver",
+    "choice_b": "Speed up to clear the intersection before the vehicle can move",
+    "choice_c": "Change speed and position radically to appear unpredictable",
+    "choice_d": "Slow, select a lane position to increase visibility, and cover the clutch and both brakes",
+    "correct_choice": "D",
+    "explanation": "The manual advises slowing and selecting a lane position to increase visibility to a driver preparing to cross your path, and covering the clutch lever and both brakes to reduce reaction time, without changing speed or position radically.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Intersections"
+  },
+  {
+    "topic": "Intersections",
+    "question": "When approaching a blind intersection, what does the manual recommend?",
+    "choice_a": "Move to the portion of the lane that brings you into another driver's field of vision at the earliest possible moment",
+    "choice_b": "Stop completely regardless of any traffic signal or sign",
+    "choice_c": "Accelerate through quickly before cross traffic can react",
+    "choice_d": "Always take the center lane position regardless of visibility",
+    "correct_choice": "A",
+    "explanation": "The manual advises moving to the portion of the lane that brings you into another driver's field of vision at the earliest possible moment when approaching a blind intersection, such as moving away from a parked car blocking sightlines.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Intersections, Blind Intersections"
+  },
+  {
+    "topic": "Intersections",
+    "question": "At a large intersection with a stop sign, what does the manual recommend?",
+    "choice_a": "Stop only once, as far back from the intersection as possible",
+    "choice_b": "Stop at the stop line, then edge forward and stop again just short of where the cross-traffic lane meets your lane",
+    "choice_c": "Never stop twice, since it confuses drivers behind you",
+    "choice_d": "Proceed without stopping if no vehicles are visible",
+    "correct_choice": "B",
+    "explanation": "The manual describes stopping at the stop line or sign first, then edging forward and stopping again just short of where the cross-traffic lane meets your lane, leaning forward to look around obstructions.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Intersections, Large Intersections"
+  },
+  {
+    "topic": "Intersections",
+    "question": "When passing parked cars, where should a rider position within the lane, per the manual?",
+    "choice_a": "It makes no difference where you position within the lane",
+    "choice_b": "As close to the parked cars as possible to leave room for opposing traffic",
+    "choice_c": "Toward the left of the lane, to avoid doors opening or people stepping from between cars",
+    "choice_d": "In the center of the lane, regardless of oncoming traffic",
+    "correct_choice": "C",
+    "explanation": "The manual advises staying toward the left of your lane when passing parked cars, to avoid problems from doors opening, drivers getting out, or people stepping from between cars; if oncoming traffic is present, staying centered may be best instead.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Intersections, Passing Parked Cars"
+  },
+  {
+    "topic": "Intersections",
+    "question": "What should a rider do if a parked car's driver may be about to pull away from the curb without checking traffic?",
+    "choice_a": "Sound the horn continuously until the car pulls away",
+    "choice_b": "Assume the driver has already seen you and continue at the same speed",
+    "choice_c": "Speed up to pass before the car can move",
+    "choice_d": "Slow down or change lanes to make room in case the driver cuts into your path",
+    "correct_choice": "D",
+    "explanation": "The manual warns that even if a driver looks before pulling away from a curb, they may fail to see a rider, and recommends slowing down or changing lanes to make room in case the driver cuts in.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Intersections, Passing Parked Cars"
+  },
+  {
+    "topic": "Intersections",
+    "question": "What warning does the manual give about a car making a sudden U-turn near a rider?",
+    "choice_a": "It can cut you off entirely, blocking the whole roadway; slow, get the driver's attention, and continue with caution",
+    "choice_b": "U-turns pose no unique risk compared to other turns",
+    "choice_c": "You should always pass on the inside of a U-turning vehicle",
+    "choice_d": "U-turns are illegal everywhere, so riders need not anticipate them",
+    "correct_choice": "A",
+    "explanation": "The manual warns that cars making sudden U-turns are dangerous and may cut a rider off entirely, blocking the whole roadway; since you cannot predict the driver's action, slow down, get their attention, and continue with caution.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Intersections, Passing Parked Cars"
+  },
+  {
+    "topic": "Intersections",
+    "question": "How should a motorcycle be positioned when parking in a parallel parking space next to a curb, per the manual (absent a local ordinance requiring otherwise)?",
+    "choice_a": "Perpendicular to the curb at all times",
+    "choice_b": "At an angle with the rear wheel to the curb",
+    "choice_c": "Parallel to the curb, exactly like a car",
+    "choice_d": "Facing away from traffic with the front wheel touching the curb",
+    "correct_choice": "B",
+    "explanation": "The manual states that when parking in a parallel parking space next to a curb, position the motorcycle at an angle with the rear wheel to the curb, noting some cities require parking parallel to the curb instead.",
+    "weight": 2,
+    "source_note": "Ride Within Your Abilities - Intersections, Parking at the Roadside"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "Under NRS 488.730, who is required to complete a boater safety course or pass a proficiency exam before operating certain power-driven vessels on Nevada's interstate waters?",
+    "choice_a": "Every boater in Nevada regardless of age or vessel horsepower",
+    "choice_b": "Only commercial vessel operators",
+    "choice_c": "Only operators under the age of 18",
+    "choice_d": "A person born on or after January 1, 1983 who will operate a vessel with a motor over 15 horsepower",
+    "correct_choice": "D",
+    "explanation": "NRS 488.730 requires a person born on or after January 1, 1983 to complete an approved safe-boating course or pass a proficiency exam before operating a power-driven vessel with a motor exceeding 15 horsepower on Nevada's interstate waters.",
+    "weight": 5,
+    "source_note": "NRS 488.730 (operation of certain power-driven vessels on interstate waters by persons born on or after January 1, 1983); confirmed by Boat-Ed's official Nevada course page (boat-ed.com/nevada)"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "What is the key geographic scope written into NRS 488.730's boater education mandate, based on the statute's own title and NRS 488.035's definition of \"interstate waters\"?",
+    "choice_a": "The mandate is written to apply specifically to Nevada's interstate waters, meaning waters forming the boundary between Nevada and an adjoining state, such as Lake Tahoe (shared with California) and Lake Mead/Lake Mohave and the Colorado River (shared with Arizona), rather than to every water body in Nevada",
+    "choice_b": "The mandate applies only to waters entirely within Nevada and specifically excludes Lake Tahoe, Lake Mead, and Lake Mohave",
+    "choice_c": "Nevada's boater education law makes no distinction between interstate and purely intrastate waters",
+    "choice_d": "The mandate applies only to federally owned waters, not to any state-managed reservoir",
+    "correct_choice": "A",
+    "explanation": "NRS 488.730 is titled to apply to power-driven vessel operation \"on interstate waters of State,\" and NRS 488.035(10) defines \"interstate waters of this State\" as waters forming the boundary between Nevada and an adjoining state -- which, in practice, covers essentially all of Nevada's major recreational boating destinations, since Lake Tahoe borders California and Lake Mead/Lake Mohave/the Colorado River border Arizona.",
+    "weight": 5,
+    "source_note": "NRS 488.730 and NRS 488.035(10) (definition of interstate waters of this State), Nevada Legislature official statute text (leg.state.nv.us); interstate-waters scope independently confirmed by BoatUS Foundation's Nevada boating law summary (boatus.org)"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "Does Nevada operate its own official, state-administered boating knowledge test that all boaters must take at an NDOW office?",
+    "choice_a": "The DMV administers Nevada's boating exam alongside driver's license tests",
+    "choice_b": "No; Nevada law requires completion of an approved safe-boating course or proficiency exam, and NDOW certifies third-party NASBLA-aligned course providers rather than administering a single government-run exam itself",
+    "choice_c": "Yes, every Nevada boater must appear in person at an NDOW office to take a state-written exam",
+    "choice_d": "Nevada has no boater education requirement of any kind",
+    "correct_choice": "B",
+    "explanation": "NRS 488.740 authorizes NDOW to certify persons and organizations to provide safe-boating instruction, and NRS 488.750 requires submission of certification of completion or passage of a proficiency exam; in practice, boaters complete a NASBLA-approved third-party course (such as Boat-Ed) whose own final exam serves as the qualifying test, since there is no single official NDOW-administered exam.",
+    "weight": 4,
+    "source_note": "NRS 488.740 and NRS 488.750 (Department certification of instruction providers and course completion), confirmed by Boat-Ed's Nevada course structure (boat-ed.com/nevada)"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "What passing score does Nevada's most common NASBLA-approved course vendor (Boat-Ed) require on its final exam?",
+    "choice_a": "A passing score is not required at all; completion alone is sufficient",
+    "choice_b": "50%, with only one attempt allowed",
+    "choice_c": "At least 80%, matching the same 80% threshold required on the course's unit quizzes, with unlimited retake attempts allowed",
+    "choice_d": "A flat 100% with no retakes permitted",
+    "correct_choice": "C",
+    "explanation": "Boat-Ed's Nevada course requires scoring at least 80% on both unit quizzes and the final exam to earn a boater education card, and allows unlimited attempts if a learner does not pass on the first try.",
+    "weight": 4,
+    "source_note": "Boat-Ed official Nevada course page (boat-ed.com/nevada) -- exact final-exam question count is not consistently published across approved vendors and is left unconfirmed rather than asserted"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "Once a boater successfully completes an NDOW-approved boating safety course, what document do they receive, and how is it recognized outside Nevada?",
+    "choice_a": "A card that is valid only within Nevada and is not honored anywhere else",
+    "choice_b": "No card is issued; completion is tracked only verbally",
+    "choice_c": "A driver's license endorsement rather than a separate card",
+    "choice_d": "A boater education card, which is recognized by other states, territories, and provinces that honor NASBLA-standard boating education cards under reciprocity",
+    "correct_choice": "D",
+    "explanation": "A Nevada boater education card, once issued through an NDOW-approved course, is generally recognized in other states, territories, and Canadian provinces that accept NASBLA-standard boating education credentials.",
+    "weight": 3,
+    "source_note": "Boat-Ed official Nevada course page (boat-ed.com/nevada) on NASBLA reciprocity"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "Is there a minimum age required to enroll in and take an approved Nevada boating safety course, separate from the minimum age to operate a vessel?",
+    "choice_a": "No, there is no minimum age to take the course itself, though a PWC operator must still be at least 14 to legally operate on the water",
+    "choice_b": "Yes, a person must be at least 18 to take the course",
+    "choice_c": "Yes, a person must be at least 21 to take the course",
+    "choice_d": "The course may only be taken by adults who already hold a driver's license",
+    "correct_choice": "A",
+    "explanation": "Boat-Ed's Nevada course confirms there is no minimum age to take the safety course itself, though operating a PWC on Nevada waters separately requires the operator to be at least 14 years old.",
+    "weight": 3,
+    "source_note": "Boat-Ed official Nevada course page (boat-ed.com/nevada); PWC minimum age confirmed by BoatUS Foundation Nevada boating law summary (boatus.org)"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "Which Nevada state agency certifies boating safety course providers and maintains records of completed certifications under NRS 488.740 and 488.750?",
+    "choice_a": "The National Park Service exclusively, with no state role",
+    "choice_b": "The Nevada Department of Wildlife (NDOW)",
+    "choice_c": "The Nevada Department of Motor Vehicles (DMV)",
+    "choice_d": "The Nevada Gaming Control Board",
+    "correct_choice": "B",
+    "explanation": "NRS 488.740 gives the Nevada Department of Wildlife authority to certify instructors and safe-boating courses, and NRS 488.750 has NDOW maintain a database of completed boater education certifications.",
+    "weight": 3,
+    "source_note": "NRS 488.740 and NRS 488.750 (Department of Wildlife certification authority and database of certificates)"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "Since virtually all of Nevada's most heavily trafficked recreational boating destinations are shared boundary waters, what is the practical effect of NRS 488.730's interstate-waters wording for most Nevada boaters?",
+    "choice_a": "The interstate-waters wording eliminates any boater education requirement on Lake Mead specifically",
+    "choice_b": "The interstate-waters wording means only Arizona and California residents are bound by Nevada's requirement",
+    "choice_c": "Because Lake Mead, Lake Mohave, and Lake Tahoe are all interstate waters under NRS 488.035(10), the education requirement effectively reaches the large majority of Nevada's popular boating locations even though the statute is not framed as a blanket, every-water-body-in-the-state mandate",
+    "choice_d": "Because the mandate is limited to interstate waters, it has essentially no real-world reach in Nevada",
+    "correct_choice": "C",
+    "explanation": "Because Lake Tahoe (with California) and Lake Mead/Lake Mohave/the Colorado River (with Arizona) are all interstate boundary waters, NRS 488.730's education mandate reaches the overwhelming majority of Nevada's actual recreational boating activity, even though the statute's letter is scoped to interstate waters rather than framed as a universal statewide requirement covering every lake in Nevada.",
+    "weight": 4,
+    "source_note": "NRS 488.730 and NRS 488.035(10), applied to the practical geography of Nevada's major boating destinations (Lake Mead, Lake Mohave, Lake Tahoe)"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "Approximately how long does Boat-Ed's Nevada online course typically take to complete?",
+    "choice_a": "A minimum of one full week of daily in-person classes",
+    "choice_b": "The course has no defined format and could take months",
+    "choice_c": "It must be completed in a single continuous sitting of no more than 30 minutes",
+    "choice_d": "A few hours, since it is a self-paced online course built around Nevada's required content and vendor-reported completion times, not a multi-day in-person class",
+    "correct_choice": "D",
+    "explanation": "Nevada's approved online boating safety courses, like other NASBLA-approved vendor courses used across this project's boating tracks, are self-paced and generally completed in a few hours rather than requiring a multi-day in-person class.",
+    "weight": 2,
+    "source_note": "General self-paced online NASBLA-course format, consistent with Boat-Ed's published Nevada course structure (boat-ed.com/nevada)"
+  },
+  {
+    "topic": "Nevada Boater Education Law",
+    "question": "If a boater already holds a boating safety certificate from another NASBLA-member state, do they need to retake Nevada's course to legally operate on Nevada's interstate waters?",
+    "choice_a": "Generally no, since Nevada recognizes boating education cards from other states, territories, and provinces that meet NASBLA standards",
+    "choice_b": "Yes, every boater must always take Nevada's specific course regardless of any other state's certification",
+    "choice_c": "Out-of-state certificates are accepted only if the boater is over 65",
+    "choice_d": "Nevada does not recognize any credential issued outside its own borders",
+    "correct_choice": "A",
+    "explanation": "Because Nevada participates in the NASBLA reciprocity framework, a boating education card issued by another NASBLA-recognizing state, territory, or province is generally accepted in Nevada without requiring the boater to retake Nevada's own course.",
+    "weight": 3,
+    "source_note": "Boat-Ed official Nevada course page (boat-ed.com/nevada) on NASBLA reciprocity"
+  }
+]

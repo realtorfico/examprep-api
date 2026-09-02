@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Connecticut's Boater's Guide notes that Type V life jackets differ from Types I, II, and III in one important respect -- what is it?",
+    "choice_a": "A Type V must actually be worn to satisfy the law; simply carrying one aboard does not count toward the required PFD, unlike some other approved uses",
+    "choice_b": "A Type V never needs to be Coast Guard approved",
+    "choice_c": "A Type V is exempt from the serviceable-condition requirement",
+    "choice_d": "A Type V may be substituted with a ski belt",
+    "correct_choice": "A",
+    "explanation": "Connecticut's PFD guidance specifically flags that a Type V life jacket must be worn to count toward the legal requirement -- merely having one stowed aboard does not satisfy the law, a special-use restriction that does not apply the same way to a Type I, II, or III jacket carried aboard for general use.",
+    "weight": 4,
+    "source_note": "CT DEEP Boating Safety, \"Life Jackets/Personal Flotation Devices (PFDs)\" page, portal.ct.gov/DEEP/Boating/Safety/Personal-Flotation-Devices"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Connecticut's October 1 through May 31 mandatory-wear rule for manually propelled vessels specifies which PFD types satisfy the requirement?",
+    "choice_a": "Type I, II, III, or V -- a Type IV throwable device does not count, because it is not designed to be worn",
+    "choice_b": "Only a Type IV throwable cushion satisfies the rule",
+    "choice_c": "Any object that floats, including a foam boat cushion",
+    "choice_d": "Only a Type I offshore jacket satisfies the rule",
+    "correct_choice": "A",
+    "explanation": "Connecticut's cold-season wear rule for manually propelled vessels requires a wearable Type I, II, III, or V PFD; a Type IV throwable device (like a ring buoy or cushion) is designed to be thrown to a person in the water, not worn, so it does not satisfy this specific wear requirement even though it remains separately required equipment on larger vessels.",
+    "weight": 4,
+    "source_note": "CT DEEP Boating Safety, \"Life Jackets/Personal Flotation Devices (PFDs)\" page, portal.ct.gov/DEEP/Boating/Safety/Personal-Flotation-Devices"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Regarding personal watercraft in Connecticut, what does DEEP's PFD guidance require of the operator and every passenger?",
+    "choice_a": "They must wear a Coast Guard approved PFD at all times while underway, regardless of age",
+    "choice_b": "Only the operator must wear a PFD; passengers are exempt",
+    "choice_c": "A PFD is only required for PWC riders under age 13",
+    "choice_d": "No PFD is required on a PWC as long as it is carried aboard",
+    "correct_choice": "A",
+    "explanation": "Connecticut requires the operator and every passenger of a personal watercraft to wear a Coast Guard approved PFD at all times while underway, regardless of age -- a stricter \"must wear\" standard than the general rule for larger motorboats, where an accessible PFD aboard can be enough for adult passengers outside the cold-season window.",
+    "weight": 5,
+    "source_note": "CT DEEP Boating Safety, \"Life Jackets/Personal Flotation Devices (PFDs)\" page, portal.ct.gov/DEEP/Boating/Safety/Personal-Flotation-Devices"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "According to Connecticut's PFD guidance, roughly how much buoyancy does the average adult need from a life jacket to stay afloat?",
+    "choice_a": "7 to 12 pounds of buoyancy",
+    "choice_b": "50 to 60 pounds of buoyancy",
+    "choice_c": "1 pound of buoyancy",
+    "choice_d": "Buoyancy needs are identical for every adult regardless of body composition",
+    "correct_choice": "A",
+    "explanation": "DEEP's PFD guidance notes that most adults need only about 7 to 12 pounds of buoyancy to stay afloat, which is why even a compact, low-profile Type III or inflatable PFD can keep an average-sized adult safely at the surface.",
+    "weight": 2,
+    "source_note": "CT DEEP Boating Safety, \"Life Jackets/Personal Flotation Devices (PFDs)\" page, portal.ct.gov/DEEP/Boating/Safety/Personal-Flotation-Devices"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "How do Type I and Type II PFDs compare in their ability to turn an unconscious wearer face-up in the water?",
+    "choice_a": "A Type I is designed to turn most unconscious wearers face-up more reliably than a Type II, making it the preferred choice for rough or remote offshore water",
+    "choice_b": "A Type II always turns an unconscious wearer face-up more reliably than a Type I",
+    "choice_c": "Neither Type I nor Type II is designed to turn an unconscious wearer face-up",
+    "choice_d": "Turning ability is identical between the two types",
+    "correct_choice": "A",
+    "explanation": "Both Type I (offshore) and Type II (nearshore) life jackets are designed to turn most unconscious wearers face-up, but a Type I does so more reliably, which is why it is recommended for offshore or remote water where rescue may be delayed, while a Type II is considered adequate for calmer, closer-to-shore conditions.",
+    "weight": 3,
+    "source_note": "General PFD-classification fundamentals (NASBLA-aligned boating safety curriculum) applied to Connecticut's PFD guidance"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "When fitting a life jacket to a child, what should determine the correct size, according to standard PFD-fitting guidance?",
+    "choice_a": "The child's weight, since PFDs are sized by weight range rather than by age",
+    "choice_b": "The child's age in years, since all PFDs are sized strictly by age",
+    "choice_c": "The child's favorite color, since sizing does not otherwise matter",
+    "choice_d": "The parent's own PFD size, since a child can safely wear an adult-sized PFD",
+    "correct_choice": "A",
+    "explanation": "Life jackets are manufactured and labeled by weight range, not age, because buoyancy needs and how a jacket fits are tied to body weight; an oversized PFD (such as an adult jacket on a small child) can slip off or fail to keep the child's head above water.",
+    "weight": 3,
+    "source_note": "General PFD-fitting fundamentals (NASBLA-aligned boating safety curriculum)"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "What routine maintenance is unique to an inflatable PFD that is not needed for a standard foam-filled Type III jacket?",
+    "choice_a": "Checking and periodically replacing the CO2 inflation cartridge and inspecting the automatic or manual inflation mechanism",
+    "choice_b": "Inflatables require no maintenance of any kind, unlike foam jackets",
+    "choice_c": "Inflatables must be machine washed monthly",
+    "choice_d": "Inflatables must be stored fully inflated at all times",
+    "correct_choice": "A",
+    "explanation": "An inflatable PFD relies on a CO2 cartridge and an inflation mechanism (automatic or manual pull) to deploy, so it requires periodic inspection of the cartridge, firing mechanism, and bladder for leaks -- maintenance that a solid foam-filled Type III jacket, which has no moving parts, does not need.",
+    "weight": 3,
+    "source_note": "General inflatable-PFD maintenance fundamentals (NASBLA-aligned boating safety curriculum)"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Why do many Type III life jackets include an adjustable crotch or leg strap as an available feature?",
+    "choice_a": "To help keep the jacket from riding up over the wearer's head or shoulders while in the water",
+    "choice_b": "To allow the jacket to double as a swim harness for water skiing exclusively",
+    "choice_c": "Leg straps are purely a fashion feature with no safety function",
+    "choice_d": "To reduce the jacket's overall buoyancy rating",
+    "correct_choice": "A",
+    "explanation": "A crotch or leg strap on a Type III vest helps prevent the jacket from riding up over the wearer's head or slipping off entirely while they are in the water, particularly important for a looser-fitting or lower-buoyancy design.",
+    "weight": 2,
+    "source_note": "General PFD-fitting fundamentals (NASBLA-aligned boating safety curriculum)"
+  }
+]

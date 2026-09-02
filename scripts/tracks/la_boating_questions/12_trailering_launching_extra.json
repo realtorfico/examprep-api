@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Trailering and Launching",
+    "question": "A trailer hitch and coupler's weight rating should be:",
+    "choice_a": "Irrelevant, since any hitch can tow any trailer",
+    "choice_b": "Lower than the combined weight of the trailer, boat, and gear, to save on equipment cost",
+    "choice_c": "Equal to or greater than the combined weight of the trailer, boat, and gear being towed",
+    "choice_d": "Based solely on the tow vehicle's paint color and trim level",
+    "correct_choice": "C",
+    "explanation": "A hitch and coupler rated below the actual combined weight of the loaded trailer risks a dangerous failure while towing, so the rating must meet or exceed the real combined weight being pulled.",
+    "weight": 3,
+    "source_note": "Standard trailer-safety practice used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "As the combined weight of a boat and trailer increases, many trailers are required to have:",
+    "choice_a": "No braking system at all, since the tow vehicle's brakes are always considered sufficient",
+    "choice_b": "Their own separate trailer brakes, in addition to the tow vehicle's brakes",
+    "choice_c": "A second spare tire mounted at the bow of the boat",
+    "choice_d": "An entirely different hitch class for every trip",
+    "correct_choice": "B",
+    "explanation": "Heavier boat-and-trailer combinations often require the trailer to have its own functioning brakes, separate from the tow vehicle's braking system, to safely stop the added weight.",
+    "weight": 2,
+    "source_note": "Standard trailer-safety practice used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "While a boat is being towed on its trailer on a Louisiana highway, passengers should:",
+    "choice_a": "Ride inside the boat for a better view",
+    "choice_b": "Never ride inside the boat itself; everyone should ride inside the tow vehicle",
+    "choice_c": "Ride in the boat only on rural highways",
+    "choice_d": "Ride in the boat as long as they are wearing a PFD",
+    "correct_choice": "B",
+    "explanation": "A boat on a trailer offers no protection or restraint appropriate for highway travel, so no one should ride inside the boat itself while it is being towed -- everyone should ride in the tow vehicle instead.",
+    "weight": 3,
+    "source_note": "Standard trailer-safety practice used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "When backing a trailer down a ramp where the boat blocks the driver's direct rearview, it is good practice to:",
+    "choice_a": "Back up as quickly as possible to minimize time spent reversing",
+    "choice_b": "Use a spotter positioned where they can see both the driver and the area behind the trailer",
+    "choice_c": "Rely solely on the trailer's brake lights for guidance",
+    "choice_d": "Remove the side mirrors entirely for a cleaner view",
+    "correct_choice": "B",
+    "explanation": "When a large boat blocks the direct rearview, a spotter who can see both the driver and the area behind the trailer helps prevent a collision with people, vehicles, or ramp structures during the backing maneuver.",
+    "weight": 2,
+    "source_note": "Standard boat-ramp safety practice used across NASBLA-aligned boating courses"
+  }
+]

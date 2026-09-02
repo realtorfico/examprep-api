@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Registration, PWC Rules, and Marine Patrol Authority",
+    "question": "Is it legal to operate, or to allow someone else to operate, a vessel in Alabama that is not currently registered and numbered as required by law?",
+    "choice_a": "Registration is required only for vessels used commercially",
+    "choice_b": "Yes, registration is entirely optional in Alabama",
+    "choice_c": "Only vessels over 40 feet need to be registered",
+    "choice_d": "No -- Alabama law prohibits operating or giving permission for the operation of any vessel unless it is currently registered and numbered in accordance with state law",
+    "correct_choice": "D",
+    "explanation": "Alabama boating law makes it unlawful to operate, or to permit the operation of, any vessel unless it is currently registered and numbered in accordance with state requirements -- a rule enforced by ALEA Marine Patrol on the water.",
+    "weight": 5,
+    "source_note": "ALEA boating rules and regulations (registration requirement)"
+  },
+  {
+    "topic": "Registration, PWC Rules, and Marine Patrol Authority",
+    "question": "Which agency is responsible for the registration of pleasure boats and the licensing of boat operators in Alabama?",
+    "choice_a": "The Alabama Law Enforcement Agency's Marine Patrol Division",
+    "choice_b": "The county school board",
+    "choice_c": "The U.S. Fish and Wildlife Service",
+    "choice_d": "There is no agency responsible for boat registration in Alabama",
+    "correct_choice": "A",
+    "explanation": "ALEA's Marine Patrol Division states directly that it handles \"registration of all pleasure boats and the licensing of all boat operators\" in Alabama, alongside its patrol, education, and waterway-marking responsibilities.",
+    "weight": 4,
+    "source_note": "alea.gov/dps/marine-patrol (Marine Patrol Division responsibilities)"
+  },
+  {
+    "topic": "Registration, PWC Rules, and Marine Patrol Authority",
+    "question": "At what minimum age may a person operate a personal watercraft alone on Alabama waters, holding the required vessel license?",
+    "choice_a": "8 years old",
+    "choice_b": "14 years old",
+    "choice_c": "21 years old",
+    "choice_d": "There is no minimum age for operating a PWC alone",
+    "correct_choice": "B",
+    "explanation": "Alabama requires a PWC operator to be at least 14 years old and hold a vessel license to operate alone; operators aged 12-13 must have a person at least 21 years old with a valid vessel license aboard, consistent with the state's general motorized-vessel age structure.",
+    "weight": 5,
+    "source_note": "ALEA boating rules and regulations (PWC operator age requirement)"
+  },
+  {
+    "topic": "Registration, PWC Rules, and Marine Patrol Authority",
+    "question": "What emergency engine cut-off equipment must most personal watercraft operating in Alabama have?",
+    "choice_a": "A manual key that must be physically removed after every stop",
+    "choice_b": "No cut-off equipment is required on any PWC",
+    "choice_c": "A lanyard-type engine cut-off switch attached to the operator, unless the PWC is equipped with a self-circling safety feature instead",
+    "choice_d": "A fire extinguisher mounted to the handlebars",
+    "correct_choice": "C",
+    "explanation": "Alabama requires PWCs to have a lanyard-type engine cut-off switch attached to the operator (so the engine stops if the operator is thrown off), unless the PWC instead has a self-circling design that serves the same safety function.",
+    "weight": 4,
+    "source_note": "ALEA boating rules and regulations (PWC engine cut-off switch requirement)"
+  },
+  {
+    "topic": "Registration, PWC Rules, and Marine Patrol Authority",
+    "question": "What Marine Patrol enforcement power allows an officer to check for compliance with registration, licensing, and equipment requirements on Alabama waters?",
+    "choice_a": "Vessels may only be inspected while permanently docked at a marina",
+    "choice_b": "Marine Patrol officers have no authority to stop any vessel under any circumstance",
+    "choice_c": "Only county sheriffs, never Marine Patrol officers, may stop a vessel",
+    "choice_d": "ALEA Marine Patrol officers may stop and board vessels on Alabama's public waterways to check for registration, licensing, and safety equipment compliance, similar to a traffic stop on the road",
+    "correct_choice": "D",
+    "explanation": "ALEA Marine Patrol officers patrol Alabama's inland lakes, rivers, and coastal waters and have the authority to stop and board vessels to check registration, operator licensing, and required safety equipment, functioning much like a traffic stop for on-water compliance.",
+    "weight": 4,
+    "source_note": "ALEA Marine Patrol Division enforcement authority and district patrol structure"
+  },
+  {
+    "topic": "Registration, PWC Rules, and Marine Patrol Authority",
+    "question": "How can a boater report a waterway incident, such as a suspected safety violation or emergency, to ALEA Marine Patrol?",
+    "choice_a": "Through ALEA's dedicated online \"Make A Report\" waterway incident reporting system, or by contacting the applicable district office directly",
+    "choice_b": "There is no way to report a waterway incident to any Alabama agency",
+    "choice_c": "Only by mailing a paper letter with a 6-week processing delay",
+    "choice_d": "Only through a private third-party hotline unaffiliated with the state",
+    "correct_choice": "A",
+    "explanation": "ALEA provides a dedicated online waterway incident reporting system through its \"Make A Report\" section, in addition to direct district office contact numbers for Alabama's Northern, Central, and Southern Marine Patrol Districts.",
+    "weight": 3,
+    "source_note": "alea.gov/dps/marine-patrol/marine-patrol-contact-information (waterway incident reporting)"
+  },
+  {
+    "topic": "Registration, PWC Rules, and Marine Patrol Authority",
+    "question": "Why does Alabama's PWC-specific rule set (minimum operating age, PFD requirement, and engine cut-off switch) exist separately from the general motorized-vessel rules?",
+    "choice_a": "Because PWCs are not actually considered vessels under Alabama law",
+    "choice_b": "Because PWCs have unique handling characteristics, are commonly operated by younger and less experienced riders, and present a distinct combination of speed and injury risk that general boat rules do not fully address",
+    "choice_c": "Because PWC rules are identical in every respect to general motorized vessel rules, with no meaningful differences",
+    "choice_d": "Because PWCs are banned outright in Alabama",
+    "correct_choice": "B",
+    "explanation": "PWCs handle differently from conventional boats, are frequently operated by younger or newer boaters, and their design (an exposed rider close to the water at speed) creates injury risks that warrant PWC-specific rules on minimum age, mandatory PFD use, and required engine cut-off equipment.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned PWC safety rationale applied to Alabama's PWC-specific rules"
+  },
+  {
+    "topic": "Registration, PWC Rules, and Marine Patrol Authority",
+    "question": "If a Marine Patrol officer finds a vessel operating in Alabama waters without current registration numbers displayed, what is a likely consequence?",
+    "choice_a": "The vessel is automatically destroyed",
+    "choice_b": "No consequence is possible because registration is unenforceable on the water",
+    "choice_c": "A citation for violating Alabama's vessel registration requirement, since operating an unregistered, unnumbered vessel is itself a boating law violation",
+    "choice_d": "Only a warning can ever be issued, regardless of circumstances",
+    "correct_choice": "C",
+    "explanation": "Because Alabama law makes it unlawful to operate an unregistered, unnumbered vessel, a Marine Patrol officer who finds one on the water can issue a citation for the registration violation as part of routine enforcement.",
+    "weight": 3,
+    "source_note": "ALEA boating rules and regulations (registration violation enforcement)"
+  },
+  {
+    "topic": "Registration, PWC Rules, and Marine Patrol Authority",
+    "question": "What must a 12- or 13-year-old operator of a PWC in Alabama have aboard, in addition to a Vessel Learner License, before they may legally operate it?",
+    "choice_a": "Written permission from ALEA headquarters carried on their person at all times",
+    "choice_b": "Nothing further is required once they have a learner license",
+    "choice_c": "A commercial captain's license",
+    "choice_d": "A person at least 21 years old holding a valid vessel license, physically present aboard the PWC or accompanying vessel",
+    "correct_choice": "D",
+    "explanation": "Consistent with the general motorized-vessel supervision rule, a 12- or 13-year-old with a Vessel Learner License operating a PWC must have someone at least 21 years old holding a valid vessel license present, since independent PWC operation is not permitted until age 14.",
+    "weight": 4,
+    "source_note": "ALEA boating rules and regulations; alea.gov/dps/driver-license/license-and-id-cards/boatvessel-license-requirements (supervision requirement extended to PWC)"
+  },
+  {
+    "topic": "Registration, PWC Rules, and Marine Patrol Authority",
+    "question": "Besides registration and operator licensing, what other major responsibility does ALEA's Marine Patrol Division carry out on Alabama's waterways?",
+    "choice_a": "Placing and maintaining over 1,500 hazard and control aids to navigation across the state's waterways, in addition to conducting public safety patrols across three districts",
+    "choice_b": "Marine Patrol has no responsibilities beyond issuing registration stickers",
+    "choice_c": "Marine Patrol is solely responsible for federal income tax collection",
+    "choice_d": "Marine Patrol exclusively manages state park campgrounds",
+    "correct_choice": "A",
+    "explanation": "ALEA Marine Patrol maintains more than 1,500 hazard and control markers/zones across Alabama's waterways and conducts public waterway patrols through its Northern, Central, and Southern Districts, in addition to its registration, licensing, and education functions.",
+    "weight": 3,
+    "source_note": "alea.gov/dps/marine-patrol (waterway marking and patrol responsibilities)"
+  }
+]

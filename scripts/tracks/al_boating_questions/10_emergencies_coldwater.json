@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "If a small boat capsizes on an Alabama lake, what is generally the safest action for the occupants to take?",
+    "choice_a": "Always swim for the nearest shore immediately, no matter the distance",
+    "choice_b": "Stay with the boat, since it provides flotation and is far easier for rescuers to spot than a swimmer in the water, unless staying with it is clearly more dangerous than swimming to a very close shore",
+    "choice_c": "Dive underneath the capsized hull and remain submerged until help arrives",
+    "choice_d": "Remove all PFDs immediately to swim faster",
+    "correct_choice": "B",
+    "explanation": "A capsized boat, even upside down, generally still floats and is far more visible to rescuers than a lone swimmer; the standard safety guidance is to stay with the boat unless shore is clearly very close and safely reachable.",
+    "weight": 5,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (capsizing response)"
+  },
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "What is the correct technique for using a fire extinguisher if a fire breaks out aboard a boat on the Alabama River?",
+    "choice_a": "Throw the extinguisher into the fire without discharging it",
+    "choice_b": "Aim directly into the smoke above the flames",
+    "choice_c": "Aim at the base of the flames, not the top, and sweep side to side while standing with an escape route at your back",
+    "choice_d": "Point the extinguisher directly at another person on board",
+    "correct_choice": "C",
+    "explanation": "Effective extinguisher use means aiming at the base of the flames (where the fuel is burning) while sweeping side to side, and positioning yourself with a clear escape route in case the fire cannot be controlled -- the same PASS technique (Pull, Aim, Squeeze, Sweep) used in any fire emergency.",
+    "weight": 4,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (onboard fire response, PASS technique)"
+  },
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "If a boat catches fire on Alabama waters, what should the operator do with the vessel's position relative to the wind before attempting to fight the fire?",
+    "choice_a": "Shut off all engines and drift with no attempt to reposition",
+    "choice_b": "Wind direction is irrelevant to fighting a boat fire",
+    "choice_c": "Always point the bow directly into the fire regardless of wind",
+    "choice_d": "Maneuver so the fire is downwind of the occupants, keeping smoke and flames blowing away from people rather than toward them",
+    "correct_choice": "D",
+    "explanation": "Positioning the boat so the fire and its smoke are downwind of the occupants helps keep the air breathable and gives people a safer area to retreat to while the fire is fought or the vessel is abandoned if necessary.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (onboard fire response, wind positioning)"
+  },
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "What is the first thing a boat operator should do if a passenger falls overboard on Alabama waters?",
+    "choice_a": "Immediately reduce speed, shift into neutral, and assign someone to keep constant visual contact with the person in the water while maneuvering back",
+    "choice_b": "Continue at the same speed and circle back later",
+    "choice_c": "Speed up to reach shore and get help before returning",
+    "choice_d": "Throw the anchor toward the person to help them float",
+    "correct_choice": "A",
+    "explanation": "The immediate priorities in a man-overboard situation are reducing speed and shifting to neutral to avoid propeller injury, and having a dedicated person maintain constant visual contact with the victim so they are not lost from sight while the boat maneuvers back.",
+    "weight": 5,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (man overboard response)"
+  },
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "Why should a boat approach a person overboard from downwind or with the engine off/in neutral during the final approach?",
+    "choice_a": "Approach direction has no bearing on a man-overboard rescue",
+    "choice_b": "To avoid the propeller striking the person in the water and to prevent the wind from pushing the boat over top of them during the final approach",
+    "choice_c": "The boat should always approach at full throttle for a fast rescue",
+    "choice_d": "The engine should always remain running at full power throughout the entire rescue",
+    "correct_choice": "B",
+    "explanation": "Shutting down or idling the engine during the final approach, and accounting for wind pushing the hull, reduces the serious risk of the propeller striking the person in the water or the boat drifting directly onto them.",
+    "weight": 4,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (man overboard approach technique)"
+  },
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "What is the \"1-10-1\" rule referenced in cold-water immersion safety training, relevant to an early-spring or late-fall fall-overboard on an Alabama lake?",
+    "choice_a": "It is a required speed limit near swimming areas",
+    "choice_b": "It refers to the number of PFDs required per person",
+    "choice_c": "Roughly 1 minute to control the initial cold-shock gasp response, about 10 minutes of meaningful muscle movement before losing effective swimming ability, and about 1 hour before hypothermia may cause unconsciousness",
+    "choice_d": "It refers to the number of fire extinguishers required aboard",
+    "correct_choice": "C",
+    "explanation": "The 1-10-1 principle describes cold-water immersion's timeline: about 1 minute to get cold shock and breathing under control, about 10 minutes of useful muscle function to self-rescue or reach flotation before hands and limbs stop responding, and roughly 1 hour before hypothermia can cause unconsciousness -- underscoring why staying calm and getting flotation immediately matters most.",
+    "weight": 4,
+    "source_note": "Universal cold-water immersion safety curriculum (1-10-1 principle), NASBLA-aligned"
+  },
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "What is the H.E.L.P. (Heat Escape Lessening Posture) position, and when should a boater use it?",
+    "choice_a": "A method for tying a boat to a dock",
+    "choice_b": "A technique for restarting a stalled engine",
+    "choice_c": "A hand signal used only to request a tow",
+    "choice_d": "Drawing the knees up to the chest and arms in close to the body while wearing a PFD in the water, to reduce heat loss from the body's core while awaiting rescue",
+    "correct_choice": "D",
+    "explanation": "H.E.L.P. involves drawing the knees to the chest and arms close against the torso while afloat in a PFD, protecting the body's major heat-loss areas (torso, groin, armpits) and slowing hypothermia onset while awaiting rescue.",
+    "weight": 3,
+    "source_note": "Universal cold-water immersion safety curriculum (H.E.L.P. posture), NASBLA-aligned"
+  },
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "Why is a distress call or use of visual distress signals especially important for boaters on Alabama's Gulf waters near Orange Beach or Mobile Bay compared to a small, closely watched inland pond?",
+    "choice_a": "Larger and busier waters mean help may not be nearby, and hazards like currents, tides, shipping traffic, and greater distance from shore raise the stakes of an emergency going unnoticed",
+    "choice_b": "Distress signaling is never necessary anywhere in Alabama",
+    "choice_c": "Only commercial vessels are permitted to signal distress on the Gulf",
+    "choice_d": "Visual distress signals only work on freshwater, not saltwater",
+    "correct_choice": "A",
+    "explanation": "On open Gulf and bay waters, an emergency may occur farther from shore, other boaters, or immediate help than on a small inland pond, and factors like currents, tides, and shipping traffic raise the consequences of a problem going unnoticed -- making a working VHF radio, visual distress signals, and a float plan especially valuable there.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum applied to Alabama's Gulf Coast/Mobile Bay conditions"
+  },
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "What should a boater do if their vessel begins taking on water faster than it can be bailed, on an Alabama lake far from the nearest ramp?",
+    "choice_a": "Wait until the boat is fully submerged before taking any action",
+    "choice_b": "Put on PFDs immediately, call for help using a VHF radio or cell phone, and try to run the boat toward the nearest shore or shallow water while continuing to bail if possible",
+    "choice_c": "Remove PFDs so they do not get in the way of bailing",
+    "choice_d": "Continue at full cruising speed away from shore",
+    "correct_choice": "B",
+    "explanation": "When a boat is swamping faster than it can be bailed, the priority is getting PFDs on everyone immediately, calling for help, and trying to reach shore or shallow water while continuing to bail or plug the leak if it is safe to do so -- delaying PFD use until the situation worsens is a common and dangerous mistake.",
+    "weight": 4,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (swamping/flooding response)"
+  }
+]

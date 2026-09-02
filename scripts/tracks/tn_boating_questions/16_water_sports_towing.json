@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "When towing a water skier, wakeboarder, or tuber, what should a boat have in addition to the operator?",
+    "choice_a": "A second flag mounted at the bow only",
+    "choice_b": "An observer to watch the person being towed, or a wide-angle rearview mirror if no observer is aboard",
+    "choice_c": "Nothing extra is needed as long as the operator glances back occasionally",
+    "choice_d": "A second engine for backup power",
+    "correct_choice": "B",
+    "explanation": "A vessel towing a skier, wakeboarder, or tuber should have an observer watching the towed person at all times, or use a wide-angle rearview mirror if towing solo, since the operator alone cannot safely watch both the water ahead and the person behind.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is a widely followed safety practice regarding the hours during which a skier should be towed behind a boat?",
+    "choice_a": "Time of day has no bearing on ski-towing safety",
+    "choice_b": "Skiing should only be done during a full moon for visibility",
+    "choice_c": "Towing a skier should be avoided between sunset and sunrise, since low light makes it very difficult to see the skier and nearby hazards",
+    "choice_d": "Skiing is actually safer at night because waters are less crowded",
+    "correct_choice": "C",
+    "explanation": "Because low-light conditions make it very hard to see a skier in the water and any hazards nearby, standard boating safety practice is to avoid towing a skier between sunset and sunrise.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What does it mean when a downed water skier or their boat raises an orange or red \"skier down\" flag?",
+    "choice_a": "It signals that the boat is out of fuel",
+    "choice_b": "It means the skier is finished for the day and heading to the dock",
+    "choice_c": "It has no meaning and is purely decorative",
+    "choice_d": "It warns other boaters that a person is in the water nearby and to steer clear or slow down",
+    "correct_choice": "D",
+    "explanation": "A raised orange or red \"skier down\" flag warns other boaters that a person is in the water near the vessel, so they should slow down and steer well clear to avoid a collision.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "When picking up a fallen water skier, why should the operator approach from a specific side and shut off the engine before the skier is close to the boat?",
+    "choice_a": "So the operator can keep the skier in clear view at all times and the propeller cannot injure the skier while they board",
+    "choice_b": "Because it is a faster way to pick up a skier than approaching from any angle",
+    "choice_c": "The approach side and engine status have no bearing on skier safety",
+    "choice_d": "So the boat can maintain higher speed while the skier climbs aboard",
+    "correct_choice": "A",
+    "explanation": "Approaching a fallen skier so the operator keeps them in clear sight, and shutting off the engine before the skier nears the boat, prevents the propeller from causing a serious injury during pickup.",
+    "weight": 4,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Does a boat towing a water skier get special right-of-way privileges over other vessels under the Navigation Rules?",
+    "choice_a": "Towing vessels are exempt from all right-of-way rules entirely",
+    "choice_b": "No -- a vessel towing a skier must still follow the standard Navigation Rules like any other vessel",
+    "choice_c": "Yes, towing vessels always have the right of way over every other vessel",
+    "choice_d": "Yes, but only on weekends",
+    "correct_choice": "B",
+    "explanation": "A vessel towing a skier does not receive any special right-of-way privileges; it remains subject to the same standard Navigation Rules -- meeting, crossing, and overtaking -- as any other vessel.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (Navigation Rules)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is \"teak surfing,\" and why does TWRA specifically warn against it?",
+    "choice_a": "A synonym for water skiing that carries no additional risk",
+    "choice_b": "A regulated competitive sport requiring a special TWRA permit",
+    "choice_c": "Riding a wake by holding onto a moving boat's swim platform or transom, which exposes the surfer to a fatal concentration of carbon monoxide from the exhaust",
+    "choice_d": "A style of woodworking used on boat decks that has no water-safety relevance",
+    "correct_choice": "C",
+    "explanation": "Teak surfing involves holding onto a moving boat's swim platform or transom to ride its wake, which places the surfer directly in the path of engine exhaust and its dangerous, potentially fatal, carbon monoxide concentration.",
+    "weight": 4,
+    "source_note": "TWRA Regulations & Safety Concerns"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "When towing an inflatable tube behind a boat, what should the operator confirm about the tube itself?",
+    "choice_a": "That it has been dyed to match the boat's paint job",
+    "choice_b": "That it weighs more than the boat's anchor",
+    "choice_c": "That it has no manufacturer rating printed on it",
+    "choice_d": "That it is not overloaded beyond its manufacturer-rated capacity for riders",
+    "correct_choice": "D",
+    "explanation": "An inflatable tube should never be loaded with more riders than its manufacturer-rated capacity, since overloading increases the risk of the tube flipping or riders being thrown off unpredictably.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Before starting to tow a skier, wakeboarder, or tube, what should the operator confirm about the vessel's overall capacity?",
+    "choice_a": "That the total number of people aboard, including the operator, observer, and the person about to be towed, does not exceed the vessel's rated capacity",
+    "choice_b": "Only the towed person's weight matters, not anyone else aboard",
+    "choice_c": "Vessel capacity limits do not apply to towing activities",
+    "choice_d": "As long as the boat floats, capacity is not a safety concern",
+    "correct_choice": "A",
+    "explanation": "The operator should confirm that everyone aboard, including the operator, an observer, and the person about to be towed, keeps the vessel within its rated capacity, since towing activities are physically demanding on the boat and its passengers.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  }
+]

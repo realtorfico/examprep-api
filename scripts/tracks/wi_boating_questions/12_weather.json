@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Weather",
+    "question": "What does Wisconsin DNR's boating safety guidance recommend a boater do before heading out on the water?",
+    "choice_a": "Check weather conditions in advance",
+    "choice_b": "Weather checks are unnecessary if the outing is only a few hours long",
+    "choice_c": "Only check weather if traveling more than 10 miles from shore",
+    "choice_d": "Weather forecasts are not reliable enough to be useful for boating",
+    "correct_choice": "A",
+    "explanation": "DNR's boating safety overview specifically recommends checking weather conditions before departure as one of the critical rules for safe boating.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR Boating Safety Overview (dnr.wisconsin.gov/topic/Boat/safety)"
+  },
+  {
+    "topic": "Weather",
+    "question": "Which visual signs on the water or in the sky should alert a boater to a possible approaching storm?",
+    "choice_a": "Rising barometric pressure and warming temperatures",
+    "choice_b": "Darkening clouds, a sudden drop in temperature, and abrupt shifts in wind direction or speed",
+    "choice_c": "A clear blue sky with no clouds at all",
+    "choice_d": "Calm water with no wind whatsoever",
+    "correct_choice": "B",
+    "explanation": "Darkening or towering clouds, a sudden temperature drop, and abrupt changes in wind speed or direction are classic warning signs of an approaching storm that boaters are trained to watch for and respond to quickly.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Weather Emergencies"
+  },
+  {
+    "topic": "Weather",
+    "question": "What should a boater do if a thunderstorm develops while they are out on a Wisconsin lake?",
+    "choice_a": "Anchor in open water and wait it out regardless of lightning risk",
+    "choice_b": "Increase speed to try to outrun the storm across open water",
+    "choice_c": "Head to the nearest safe shore as quickly and safely as possible, and avoid being the highest point on open water",
+    "choice_d": "Continue the planned route since storms typically pass quickly",
+    "correct_choice": "C",
+    "explanation": "When a thunderstorm threatens, the safest response is to get to shore as quickly and safely as possible, since an open boat on open water is a relatively exposed, elevated point that increases lightning risk.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Weather Emergencies"
+  },
+  {
+    "topic": "Weather",
+    "question": "What resource can help a boater monitor real-time weather updates and marine forecasts while on the water?",
+    "choice_a": "Reading cloud shapes is the only reliable method and no broadcast resources exist",
+    "choice_b": "Weather updates are never broadcast for inland lakes",
+    "choice_c": "Only satellite television can provide marine weather updates",
+    "choice_d": "A NOAA weather radio or marine VHF radio's weather channel broadcast",
+    "correct_choice": "D",
+    "explanation": "NOAA weather radio broadcasts, often accessible through a marine VHF radio's dedicated weather channels, provide continuously updated forecasts and watches/warnings that help boaters make real-time decisions about changing conditions.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Weather Emergencies"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why can sudden wind shifts be especially dangerous for smaller boats and PWCs on open water?",
+    "choice_a": "A sudden gust or shift can quickly build wave height and chop, increasing the risk of swamping or capsizing a lighter, less stable craft",
+    "choice_b": "Wind shifts have no meaningful effect on smaller vessels",
+    "choice_c": "Wind only affects sailboats, never powerboats or PWCs",
+    "choice_d": "Sudden wind changes only matter for vessels over 26 feet",
+    "correct_choice": "A",
+    "explanation": "A sudden increase or shift in wind can rapidly build waves and chop on open water, and smaller, lighter craft like PWCs and small boats have less freeboard and stability to handle that chop safely, raising the risk of swamping or capsizing.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Weather Emergencies"
+  },
+  {
+    "topic": "Weather",
+    "question": "What is a \"small craft advisory,\" and why should recreational boaters take it seriously?",
+    "choice_a": "A marketing term used by boat dealers, with no connection to weather",
+    "choice_b": "A National Weather Service alert indicating wind and wave conditions that could be hazardous to smaller vessels",
+    "choice_c": "A mandatory registration category for boats under 16 feet",
+    "choice_d": "An advisory that applies only to commercial shipping, never recreational boats",
+    "correct_choice": "B",
+    "explanation": "A small craft advisory is issued by the National Weather Service when winds and/or waves are expected to reach levels that could be hazardous to smaller boats, and recreational boaters -- especially in open, exposed lake water -- should treat it as a signal to delay or cancel their outing.",
+    "weight": 3,
+    "source_note": "National Weather Service small craft advisory framework, applied in NASBLA-aligned boater education curriculum, Unit 5: Weather Emergencies"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why does Wisconsin's inland lake geography make localized weather changes especially important to monitor during a boating trip?",
+    "choice_a": "Inland lakes never experience thunderstorms",
+    "choice_b": "Weather monitoring is unnecessary on any lake smaller than the Great Lakes",
+    "choice_c": "Weather over inland lakes can change quickly and vary from one part of the state to another, so a calm morning on one lake doesn't guarantee calm conditions later or elsewhere",
+    "choice_d": "Wisconsin's weather is perfectly uniform statewide at all times",
+    "correct_choice": "C",
+    "explanation": "Localized, fast-moving weather systems are common over Wisconsin's inland lakes, so conditions can shift significantly within just a few hours -- reinforcing why boaters are taught to keep checking forecasts and sky conditions throughout a trip, not just before departure.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Weather Emergencies, applied to Wisconsin's inland lake environment"
+  },
+  {
+    "topic": "Weather",
+    "question": "What should an operator do if fog or heavy rain suddenly reduces visibility while underway?",
+    "choice_a": "Maintain full speed since radar is standard equipment on all recreational boats",
+    "choice_b": "Turn off all lights to avoid confusing other vessels",
+    "choice_c": "Visibility conditions require no change in operating behavior",
+    "choice_d": "Slow down, turn on navigation lights and sound signals as required, and proceed with heightened caution or seek safe anchorage",
+    "correct_choice": "D",
+    "explanation": "Reduced visibility from fog or heavy rain calls for slowing down, using navigation lights and sound signals appropriate for restricted visibility, and proceeding cautiously -- or anchoring safely if conditions become too hazardous to continue.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 2/Unit 5: Night Navigation and Weather Emergencies"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "If a boat swamps (fills with water) but does not fully sink, what should those aboard generally do?",
+    "choice_a": "Immediately abandon the boat and swim for shore, no matter the distance",
+    "choice_b": "Stay with the swamped boat if it remains at or near the surface -- most recreational powerboats contain built-in flotation foam that keeps them from sinking completely even when full of water -- since it still offers something to hold onto and is easier for rescuers to spot than a swimmer",
+    "choice_c": "Try to bail out a fully submerged boat before doing anything else",
+    "choice_d": "Remove PFDs since a swamped boat provides no benefit to staying nearby",
+    "correct_choice": "B",
+    "explanation": "Most recreational powerboats are built with flotation foam that keeps the hull at or near the surface even when swamped; staying with the boat gives people something to hold onto and makes them far easier for rescuers to locate than if they had left the boat to swim for shore.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (swamped vessel response), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "Why is a slow, controlled entry into cold water (when possible) safer than jumping or falling in suddenly?",
+    "choice_a": "A slow entry gives the body a moment to begin adjusting and reduces the severity of the involuntary gasp reflex triggered by cold shock, lowering the risk of inhaling water during that first uncontrolled gasp",
+    "choice_b": "The speed of entry into cold water has no effect on the body's physiological response",
+    "choice_c": "A controlled entry eliminates the need to wear a PFD",
+    "choice_d": "Sudden entry always causes less physical shock than a slow entry",
+    "correct_choice": "A",
+    "explanation": "Sudden immersion in cold water triggers an involuntary gasp reflex that can cause a person to inhale water if their airway is not clear of the surface; a slower, more controlled entry when circumstances allow can help lessen the intensity of the initial cold-shock gasp response.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (cold shock gasp reflex and safer water entry), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "When multiple people wearing PFDs are together in cold water awaiting rescue, what group technique helps them conserve body heat, as an alternative to each person using the individual HELP posture alone?",
+    "choice_a": "Swimming in different directions to search for help independently",
+    "choice_b": "Huddling closely together, side by side with arms around one another, to share body heat and present a larger, more visible group to searchers",
+    "choice_c": "Removing PFDs and linking arms underwater",
+    "choice_d": "Spreading as far apart as possible to cover more search area",
+    "correct_choice": "B",
+    "explanation": "When more than one person is in the water together, huddling closely side by side with arms around each other helps conserve shared body heat (similar in principle to the individual HELP posture) and also creates a larger, more visible target for search-and-rescue than scattered individuals.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (group huddle position for cold-water immersion), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is a recommended precaution when rewarming someone who has been rescued after significant cold-water exposure and shows signs of hypothermia (confusion, lethargy, loss of coordination)?",
+    "choice_a": "Immerse them immediately in very hot water to warm them as fast as possible",
+    "choice_b": "Handle them gently, remove wet clothing, and warm them gradually (dry blankets, warm dry layers) rather than vigorously rubbing the limbs or applying sudden intense heat, since rough handling or rapid rewarming of the extremities can trigger 'afterdrop' and dangerous heart rhythm changes",
+    "choice_c": "Give them alcohol to warm them from the inside",
+    "choice_d": "No special care is needed; simply place them back in the boat seat",
+    "correct_choice": "B",
+    "explanation": "A person with significant hypothermia should be handled gently and rewarmed gradually with dry insulation rather than vigorous limb massage or sudden intense heat, because rough handling or rapid peripheral rewarming can push cold, acidic blood from the extremities back to the heart ('afterdrop'), which can trigger dangerous cardiac arrhythmias.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (hypothermia recognition and safe rewarming technique), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "Why is carbon monoxide poisoning a serious hidden hazard near a boat's swim platform, exhaust outlets, or an idling generator?",
+    "choice_a": "Carbon monoxide is a visible, strong-smelling gas that is easy to detect before it becomes dangerous",
+    "choice_b": "Carbon monoxide is a colorless, odorless gas that can accumulate near exhaust outlets, under swim platforms, or in enclosed cabins with a running generator, and swimmers or passengers lingering near these areas ('teak surfing' or 'platform dragging' behind a moving or idling boat) have died from exposure",
+    "choice_c": "Carbon monoxide only poses a risk when a boat's engine is completely shut off",
+    "choice_d": "Carbon monoxide risk applies only to diesel engines, never gasoline engines",
+    "correct_choice": "B",
+    "explanation": "Carbon monoxide is colorless and odorless, and it can build up to dangerous or lethal concentrations near exhaust outlets, under a swim platform, or inside an enclosed cabin with a generator running; activities like swimming or 'teak surfing' close behind a boat's exhaust, or lingering on a swim platform while the engine idles, have caused fatal carbon monoxide poisoning.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (carbon monoxide poisoning hazards aboard boats), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is a 'float plan,' and why is leaving one with a family member or friend before departing recommended?",
+    "choice_a": "A written or verbal record of a trip's details -- planned route, destination, expected return time, and vessel/passenger description -- left with someone ashore so they can alert authorities if the boat is overdue",
+    "choice_b": "A document required only for vessels over 65 feet",
+    "choice_c": "A legal document that must be filed with the Massachusetts Environmental Police before every trip",
+    "choice_d": "A plan for how to keep the boat afloat if it starts taking on water",
+    "correct_choice": "A",
+    "explanation": "A float plan is a simple record -- describing the planned route, destination, expected return time, and details about the vessel and people aboard -- left with a responsible person ashore, so that if the boat fails to return as expected, that person can promptly notify the Massachusetts Environmental Police or Coast Guard with the information needed to begin a search.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (float plan practice), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "When making a 'Mayday' distress call on VHF Channel 16, what key information should be included?",
+    "choice_a": "Only the boat's name, with no other details",
+    "choice_b": "The word 'Mayday' repeated three times, the vessel's name and description, its position (or last known position), the nature of the emergency, and the number of people aboard",
+    "choice_c": "A weather report for the surrounding area",
+    "choice_d": "The boater's home mailing address",
+    "correct_choice": "B",
+    "explanation": "A proper Mayday call opens with 'Mayday' repeated three times to clearly signal a life-threatening emergency, followed by the vessel's name/description, its position or last known position, the nature of the emergency, and the number of people aboard, giving responders the essential information needed to launch an effective search and rescue.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (VHF Mayday distress call procedure), consistent with NASBLA-aligned course curricula"
+  }
+]

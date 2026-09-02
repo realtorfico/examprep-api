@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Boat Types and Classification",
+    "question": "Separate from the general definition in NRS 488.035, how does NRS 488.580 itself define a \"personal watercraft\" for purposes of that section's own operating rules?",
+    "choice_a": "As any vessel capable of exceeding 30 miles per hour",
+    "choice_b": "As a non-motorized paddle craft used only for racing",
+    "choice_c": "As a Class A motorboat less than 13 feet in length, designed to be operated by a person sitting, standing, or kneeling on it rather than within it, capable of sharp turns or quick maneuvers, and having a motor exceeding 10 horsepower",
+    "choice_d": "As a vessel used exclusively for towing water skiers",
+    "correct_choice": "C",
+    "explanation": "NRS 488.580 supplies its own specific definition tied to that section's operating rules, describing a personal watercraft as a Class A motorboat under 13 feet designed for a rider sitting, standing, or kneeling on it, capable of sharp turns, with a motor exceeding 10 horsepower.",
+    "weight": 3,
+    "source_note": "NRS 488.580 (operation of personal watercraft; definition for purposes of that section)"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "What safety advantage does a jet-drive (impeller) personal watercraft or small boat have over a conventional propeller-driven outboard in shallow, rocky stretches of Lake Mohave?",
+    "choice_a": "It automatically avoids all underwater obstructions",
+    "choice_b": "It has no exposed external propeller blades, reducing (though not eliminating) the risk of a strike to a swimmer or diver near the surface",
+    "choice_c": "It cannot be damaged by striking a rock",
+    "choice_d": "It requires no engine maintenance",
+    "correct_choice": "B",
+    "explanation": "Jet-drive propulsion draws water through an internal impeller and expels it through a nozzle rather than turning an exposed propeller, reducing the risk of a propeller strike to a swimmer or diver near the surface, an advantage in shallow, rocky water like parts of Lake Mohave.",
+    "weight": 2,
+    "source_note": "General jet-drive vs. propeller-drive propulsion fundamentals, NASBLA-aligned boating safety curriculum, applied to Lake Mohave's shallow rocky stretches"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "Why are pontoon boats especially popular in Lake Mead's calmer coves and marinas, but less ideal on Lake Tahoe's open, wind-exposed main basin?",
+    "choice_a": "Their flat deck mounted on buoyant tubes gives excellent stability and deck space in calm water, but that same flat, high-profile design catches wind and handles wave chop less predictably than a deep-V hull in open water",
+    "choice_b": "Pontoon boats are legally prohibited on Lake Tahoe",
+    "choice_c": "Pontoon boats perform identically to a deep-V hull in any wind or wave condition",
+    "choice_d": "Pontoon boats cannot legally carry passengers on any Nevada reservoir",
+    "correct_choice": "A",
+    "explanation": "A pontoon boat's flat deck and buoyant tubes give it great stability and space for calm-water use in sheltered coves like those on Lake Mead, but the same flat, high-profile hull is more affected by wind and handles open-water chop less predictably than a deep-V hull, making it less ideal for Lake Tahoe's exposed basin.",
+    "weight": 2,
+    "source_note": "General pontoon-hull design fundamentals, NASBLA-aligned boating safety curriculum, applied to Lake Mead's sheltered coves versus Lake Tahoe's open, wind-exposed basin"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "What type of vessel, combining inflatable buoyancy tubes with a rigid hull, is commonly used by rescue and patrol agencies on Lake Mead because it resists swamping and can run at higher speed than a fully inflatable craft?",
+    "choice_a": "A houseboat",
+    "choice_b": "A sailing dinghy",
+    "choice_c": "A rigid-hull inflatable boat (RIB)",
+    "choice_d": "A canoe",
+    "correct_choice": "C",
+    "explanation": "A rigid-hull inflatable boat (RIB) pairs a solid hull bottom with inflatable buoyancy tubes along the sides, giving it stability, resistance to swamping, and higher-speed capability than a fully inflatable craft, which is why patrol and rescue agencies commonly use RIBs on busy waters like Lake Mead.",
+    "weight": 2,
+    "source_note": "General rigid-hull inflatable boat (RIB) vessel-type fundamentals, NASBLA-aligned boating safety curriculum, applied to Lake Mead patrol/rescue vessel use"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "What is a federally \"documented\" vessel, and how does it relate to Nevada's state numbering system under NRS 488.065?",
+    "choice_a": "A vessel documented with the U.S. Coast Guard, generally a larger vessel meeting federal tonnage criteria, is exempt from state numbering but must still display its documentation number, while most recreational Nevada boats are instead numbered and titled through NDOW",
+    "choice_b": "Documentation and state numbering are the exact same process under a different name",
+    "choice_c": "A documented vessel is automatically exempt from every Nevada boating law",
+    "choice_d": "Documentation applies only to non-motorized vessels",
+    "correct_choice": "A",
+    "explanation": "Federal vessel documentation through the U.S. Coast Guard generally applies to larger vessels meeting tonnage criteria and substitutes for state numbering, though the vessel must still display its documentation number; most Nevada recreational boats instead go through NDOW's state numbering and titling system under NRS 488.065.",
+    "weight": 2,
+    "source_note": "NRS 488.065 (state numbering and titling) combined with the universal federal vessel documentation system, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "What distinguishes a stern-drive (inboard/outboard) propulsion system from a true inboard or a true outboard?",
+    "choice_a": "A stern drive has no propeller at all",
+    "choice_b": "A stern drive is only used on personal watercraft",
+    "choice_c": "A stern drive mounts the engine inside the hull like an inboard, but drives the propeller through an external, trimmable and tiltable drive unit similar to an outboard",
+    "choice_d": "A stern drive is legally classified as a sailing vessel",
+    "correct_choice": "C",
+    "explanation": "A stern-drive (inboard/outboard) system mounts the engine inside the hull as a true inboard would, but connects it to an external drive unit that can be trimmed and tilted like an outboard's lower unit, combining features of both propulsion types.",
+    "weight": 2,
+    "source_note": "Universal propulsion-system classification fundamentals, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "Beyond serving as a unique serial number, what other information is typically encoded within a vessel's 12-character hull identification number (HIN)?",
+    "choice_a": "The vessel's current owner's home address",
+    "choice_b": "The exact GPS coordinates where the vessel was built",
+    "choice_c": "A manufacturer identification code and a date-of-certification or model-year segment, useful when verifying a vessel's age and origin during an NDOW title transfer",
+    "choice_d": "The vessel's insurance policy number",
+    "correct_choice": "C",
+    "explanation": "A federal HIN encodes more than a random serial number: it includes a manufacturer identification code and a date-of-certification or model-year segment, which is useful for verifying a vessel's age and origin, including during an NDOW title transfer in Nevada.",
+    "weight": 2,
+    "source_note": "Universal federal hull identification number (HIN) format fundamentals, NASBLA-aligned boating safety curriculum, applied to NDOW title-transfer verification"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "Under 6 NYCRR Part 575, New York's invasive species regulation that took effect in 2015, what is generally prohibited or regulated for species on the state's regulated invasive species list?",
+    "choice_a": "The possession, transport, importation, sale, purchase, and introduction of the regulated species",
+    "choice_b": "Only the sale of the species in pet stores",
+    "choice_c": "Nothing; the regulation is purely advisory with no legal restrictions",
+    "choice_d": "Only commercial fishing operations are covered; recreational boaters are exempt",
+    "correct_choice": "A",
+    "explanation": "6 NYCRR Part 575, effective in 2015, prohibits or regulates the possession, transport, importation, sale, purchase, and introduction of select invasive species -- including plants, animals, invertebrates, fungi, algae, and cyanobacteria -- which can make it illegal for a boater to knowingly transport certain regulated species between waterbodies.",
+    "weight": 2,
+    "source_note": "NYSDEC Invasive Species Resources and Regulations page, 6 NYCRR Part 575 (effective 2015)"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "What is the New York Invasive Species Council, and when was it created?",
+    "choice_a": "A private boating club with no government role",
+    "choice_b": "A statutory body created in 2008 under Environmental Conservation Law Title 17, Section 9, to coordinate invasive species management across state agencies and partners",
+    "choice_c": "A federal agency with no connection to New York State government",
+    "choice_d": "An informal group with no legal basis that was disbanded in 2010",
+    "correct_choice": "B",
+    "explanation": "The Invasive Species Council is a statutory body created in 2008 by Title 17, Section 9 of the Environmental Conservation Law to coordinate invasive species prevention and management efforts across New York State agencies and partner organizations.",
+    "weight": 1,
+    "source_note": "NYSDEC Invasive Species Resources and Regulations page, ECL Title 17 Section 9"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "What are New York's PRISMs, which boaters may encounter through regional invasive species prevention programs and boat steward outreach?",
+    "choice_a": "A type of required boat registration sticker",
+    "choice_b": "A federal boating safety course requirement",
+    "choice_c": "Eight regional Partnerships for Regional Invasive Species Management that coordinate invasive species prevention and control efforts across different parts of New York State, working with DEC, NGOs, resource managers, and recreational groups",
+    "choice_d": "A single statewide agency that replaced all local invasive species programs",
+    "correct_choice": "C",
+    "explanation": "New York operates through eight regional Partnerships for Regional Invasive Species Management (PRISMs), which bring together DEC, non-governmental organizations, resource managers, and recreational groups to coordinate invasive species prevention and management within their regions -- often including boat launch outreach and steward programs.",
+    "weight": 1,
+    "source_note": "NYSDEC Invasive Species aquatic species page, PRISM network"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "Why is hydrilla considered especially difficult for New York boaters and resource managers to control once it becomes established in a waterbody?",
+    "choice_a": "Hydrilla is harmless and does not require any control effort",
+    "choice_b": "Hydrilla only grows in salt water and cannot survive in New York's freshwater lakes",
+    "choice_c": "Hydrilla is regulated only in the Great Lakes and nowhere else in New York",
+    "choice_d": "NYSDEC identifies hydrilla as one of the most difficult aquatic invasive species to control and eradicate, since even small plant fragments can take root and regrow into new infestations",
+    "correct_choice": "D",
+    "explanation": "NYSDEC identifies hydrilla as one of the most difficult aquatic invasive species to control and eradicate. Because it can regenerate from tiny plant fragments, activity that breaks the plant apart -- including boat propellers and trailers -- can inadvertently spread a new infestation to another waterbody.",
+    "weight": 2,
+    "source_note": "NYSDEC Aquatic Invasive Species page, hydrilla profile"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "What is 'starry stonewort,' an invasive species boaters should be able to recognize on New York waters?",
+    "choice_a": "An invasive algae native to Eurasia that was introduced to the Great Lakes via ballast water and has since spread to inland New York lakes, where it can form dense mats",
+    "choice_b": "A native New York wildflower with no ecological impact",
+    "choice_c": "A type of approved boat anchor",
+    "choice_d": "A fish species that is beneficial to New York's ecosystem",
+    "correct_choice": "A",
+    "explanation": "Starry stonewort is an invasive algae native to Eurasia that reached the Great Lakes through ballast water discharge and has since spread to inland New York lakes, where it can form dense mats that interfere with navigation and crowd out native aquatic plants.",
+    "weight": 1,
+    "source_note": "NYSDEC Aquatic Invasive Species page, starry stonewort profile"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "How does the invasive spiny waterflea typically spread from one New York lake to another, in a way that is distinct from how zebra mussels spread?",
+    "choice_a": "It spreads only through the municipal water supply system",
+    "choice_b": "It clings in gelatinous, jelly-like clusters to fishing lines, downrigger cables, and other fishing and boating gear, rather than attaching to hard hull surfaces the way mussels do",
+    "choice_c": "It cannot spread between waterbodies at all",
+    "choice_d": "It only spreads by being intentionally released by aquarium owners",
+    "correct_choice": "B",
+    "explanation": "Unlike zebra and quagga mussels, which attach to hard surfaces such as hulls and engine intakes, the invasive spiny waterflea is a zooplankton that clings in gelatinous clusters to fishing line, downrigger cables, and other angling and boating gear, making thorough gear cleaning as important as hull cleaning.",
+    "weight": 2,
+    "source_note": "NYSDEC Aquatic Invasive Species page, spiny waterflea profile"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "Under federal regulation 33 CFR 155.450, which recreational vessels are required to display an 'Discharge of Oil Prohibited' placard, and where must it be posted?",
+    "choice_a": "Only commercial cargo ships over 500 feet in length",
+    "choice_b": "All vessels regardless of size, posted on the outside of the hull",
+    "choice_c": "Vessels 26 feet or more in length with machinery spaces, with the placard posted in the machinery space or at the bilge and ballast pump control station",
+    "choice_d": "Only vessels operating exclusively on the open ocean, never on inland lakes",
+    "correct_choice": "C",
+    "explanation": "Under 33 CFR 155.450, vessels 26 feet or more in length with machinery spaces (with a narrow exception for smaller vessels) must display a durable placard at least 5 by 8 inches, in a conspicuous place in the machinery space or at the bilge and ballast pump control station, stating that discharge of oil is prohibited and citing the Federal Water Pollution Control Act.",
+    "weight": 2,
+    "source_note": "33 CFR 155.450, oil discharge placard requirement"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "Under the federal MARPOL Annex V garbage placard requirement (33 CFR 151.59), what must a required placard on a covered U.S. recreational vessel state about plastic?",
+    "choice_a": "That plastic may be discharged freely once a boat is more than 3 miles offshore",
+    "choice_b": "That plastic discharge is only restricted in New York, not under federal law",
+    "choice_c": "The placard requirement does not mention plastic at all",
+    "choice_d": "That the discharge of all plastic into any waters -- not just U.S. navigable waters -- is forbidden",
+    "correct_choice": "D",
+    "explanation": "A manned U.S. vessel 26 feet or more in length must display a durable placard, at least 8 by 5 inches, in a prominent location such as the galley or deck, stating that discharge of garbage into navigable U.S. waters is generally prohibited and that discharge of plastic into any waters whatsoever is absolutely forbidden, with civil and criminal penalties for violations.",
+    "weight": 2,
+    "source_note": "33 CFR 151.59, MARPOL Annex V garbage placard requirement"
+  },
+  {
+    "topic": "Invasive Species & Environment",
+    "question": "What does the federal Clean Vessel Act fund, and how are those funds primarily generated?",
+    "choice_a": "It funds state boating agencies for the construction, renovation, operation, and maintenance of pump-out stations and waste reception facilities, financed largely through the Sport Fish Restoration and Boating Trust Fund (excise taxes on fishing equipment and motorboat/small-engine fuels), with states required to contribute at least 25% of project costs",
+    "choice_b": "It funds new highway construction projects near lakes",
+    "choice_c": "It is funded entirely by voluntary private donations with no federal excise tax component",
+    "choice_d": "It funds free boat registrations for all vessel owners nationwide",
+    "correct_choice": "A",
+    "explanation": "The Clean Vessel Act provides federal funding to state boating agencies to build, renovate, operate, and maintain pump-out stations and waste reception facilities that protect waterways and public health from sewage discharge. It draws from the Sport Fish Restoration and Boating Trust Fund -- fed by excise taxes on fishing equipment and motorboat/small-engine fuels, import duties, and interest earnings -- and requires states to contribute at least 25% of project costs.",
+    "weight": 2,
+    "source_note": "U.S. Fish & Wildlife Service, Clean Vessel Act program page"
+  }
+]

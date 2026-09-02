@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under NRS 488.570, what speed and wake restriction applies to a vessel OTHER than the towing boat itself when operating within 100 feet of a person being towed on water skis or a similar device?",
+    "choice_a": "It must operate at a speed that produces only a flat wake, never exceeding 5 nautical miles per hour",
+    "choice_b": "It may operate at any speed as long as it does not touch the tow rope",
+    "choice_c": "It must come to a complete stop and remain motionless",
+    "choice_d": "There is no restriction on other vessels near a towed skier",
+    "correct_choice": "A",
+    "explanation": "NRS 488.570 requires a vessel other than the towing vessel to operate at a speed producing only a flat wake, and no faster than 5 nautical miles per hour, whenever it is within 100 feet of a person being towed on water skis or a similar device.",
+    "weight": 3,
+    "source_note": "NRS 488.570 (operation of vessel within 100 feet of person being towed)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why does towing a water skier at higher speeds, such as for barefoot skiing, require extra caution beyond standard water skiing?",
+    "choice_a": "Higher speeds have no bearing on fall risk",
+    "choice_b": "Falls at higher speed carry more force and can cause more serious injury, so this activity requires more open, hazard-free water and heightened attention from the operator and observer",
+    "choice_c": "Barefoot skiing is always slower than conventional water skiing",
+    "choice_d": "Speed has no relationship to the amount of open water needed",
+    "correct_choice": "B",
+    "explanation": "Because a fall at higher towing speeds, such as those used for barefoot skiing, carries significantly more force, this activity calls for more open, hazard-free water and heightened attention from both the operator and the observer to reduce injury risk.",
+    "weight": 2,
+    "source_note": "General high-speed towed water-sport risk guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "How does wakesurfing differ from traditional water skiing or tubing in a way that requires extra operator caution?",
+    "choice_a": "A wakesurfer typically rides much closer to the boat's stern, near the propeller and engine, requiring extra caution when the rider approaches the boat or falls close behind it",
+    "choice_b": "Wakesurfing involves no rope or towline of any kind",
+    "choice_c": "Wakesurfers are always positioned farther from the boat than a water skier",
+    "choice_d": "Wakesurfing carries no additional risk compared to standard towed water sports",
+    "correct_choice": "A",
+    "explanation": "A wakesurfer typically rides on the boat's wake much closer to the stern than a water skier or tuber on a longer line, so the operator must take extra care around the propeller and engine, particularly when the rider approaches the boat or falls nearby.",
+    "weight": 2,
+    "source_note": "General wakesurfing-specific safety guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why should a tow rope be matched to a rated breaking strength appropriate for the activity, such as tubing with multiple riders versus single-skier water skiing?",
+    "choice_a": "Rope strength has no relevance to towed water sports",
+    "choice_b": "An undersized rope for the load and speed involved risks snapping under strain, which can injure the rider or someone in the boat",
+    "choice_c": "All tow ropes are rated identically regardless of activity",
+    "choice_d": "A stronger rope always increases the risk of injury",
+    "correct_choice": "B",
+    "explanation": "A tow rope should be rated for the load and speed of the intended activity; an undersized rope for a heavier load, such as tubing with multiple riders, risks snapping under strain, which can cause injury to the rider or someone aboard the boat.",
+    "weight": 2,
+    "source_note": "General tow-rope rating and selection guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why is a functioning engine cut-off switch (ECOS) particularly important for the operator of a boat that is actively towing a skier or tuber?",
+    "choice_a": "If the operator is thrown from their seat while someone is being towed in the water, the ECOS shuts off the engine, helping prevent a runaway boat from endangering the person being towed or others nearby",
+    "choice_b": "The ECOS has no relevance to towing activities specifically",
+    "choice_c": "The ECOS is required only on vessels that never tow anyone",
+    "choice_d": "The ECOS increases the boat's towing speed",
+    "correct_choice": "A",
+    "explanation": "If a towing vessel's operator is thrown from their seat, an engine cut-off switch immediately shuts off the engine, helping prevent a runaway boat from circling back and endangering the person being towed or others nearby, which is especially important during active towing.",
+    "weight": 2,
+    "source_note": "NRS 488.585 (engine cut-off switch requirement) applied to the specific context of active towed water sports"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "During the final approach to pick up a tuber or skier who has signaled they are okay, what should the operator do with the engine just before the person reboards over the swim platform or ladder?",
+    "choice_a": "Keep the engine running at cruising speed the entire time",
+    "choice_b": "Shift the engine to neutral or shut it off before the person comes close to or climbs aboard near the stern, preventing a spinning propeller hazard",
+    "choice_c": "Accelerate briefly as the person reaches the boat",
+    "choice_d": "There is no need to change the engine's state during a pickup",
+    "correct_choice": "B",
+    "explanation": "Shifting the engine to neutral or shutting it off before a swimmer approaches or climbs aboard near the stern prevents a spinning propeller from becoming a serious hazard during the final approach and pickup.",
+    "weight": 3,
+    "source_note": "Universal safe-pickup engine-handling guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "How should a towing vessel handle passing through a posted no-wake zone on the way to open water for water skiing or tubing?",
+    "choice_a": "The boat may tow a skier through the no-wake zone at full speed since the activity is exempt",
+    "choice_b": "The boat should transit the no-wake zone at idle speed without a skier or tuber up, and begin the actual tow only once clear of the zone",
+    "choice_c": "No-wake zones do not apply to any vessel involved in towing",
+    "choice_d": "The tow rope should be attached and the skier in position while still inside the no-wake zone",
+    "correct_choice": "B",
+    "explanation": "A towing vessel must observe posted no-wake zones like any other vessel, so the proper practice is to transit the zone at idle speed with no skier or tuber up, and begin towing only once clear of the restricted area.",
+    "weight": 2,
+    "source_note": "NRS 488.600 (reduced speed in certain areas) applied to towed water-sports procedure"
+  }
+]

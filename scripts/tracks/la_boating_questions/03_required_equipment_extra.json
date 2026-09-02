@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Required Safety Equipment",
+    "question": "In USCG fire-extinguisher classification, what generally distinguishes a B-2 extinguisher from a B-1 extinguisher?",
+    "choice_a": "A B-2 extinguisher has a larger fire-extinguishing capacity than a B-1",
+    "choice_b": "B-2 extinguishers are only rated for electrical fires, never fuel fires",
+    "choice_c": "A B-1 extinguisher has a larger capacity than a B-2",
+    "choice_d": "The B-1/B-2 designation refers only to extinguisher color, not capacity",
+    "correct_choice": "A",
+    "explanation": "In the B-class (flammable liquid) fire-extinguisher rating system used in Louisiana's equipment rules, a B-2 unit has a greater extinguishing capacity than a B-1, which is why larger vessels are required to carry either more B-1 units or the equivalent B-2 capacity.",
+    "weight": 3,
+    "source_note": "LDWF, Required Boating Equipment (wlf.louisiana.gov/page/required-boating-equipment); USCG fire-extinguisher classification"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "A vessel 40 to 65 feet in length (Class 3), meeting the qualifying inboard-engine/fuel/compartment conditions, must carry what minimum fire-extinguishing equipment?",
+    "choice_a": "No extinguisher requirement at all for vessels this size",
+    "choice_b": "Exactly one B-1 extinguisher, same as a small boat",
+    "choice_c": "Three B-1 extinguishers, or one B-1 combined with one B-2",
+    "choice_d": "Two B-1 extinguishers only",
+    "correct_choice": "C",
+    "explanation": "Louisiana's fire-extinguisher scale continues to increase with vessel size: a Class 3 vessel (40 to 65 feet) meeting the qualifying conditions must carry three B-1 extinguishers, or the equivalent combination of one B-1 and one B-2.",
+    "weight": 3,
+    "source_note": "LDWF, Required Boating Equipment (wlf.louisiana.gov/page/required-boating-equipment)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "The exhaust-blower ventilation requirement for an enclosed engine compartment applies specifically to:",
+    "choice_a": "Compartments with a permanently installed gasoline engine, since gasoline vapors are especially prone to pooling and igniting",
+    "choice_b": "Every compartment on the vessel regardless of engine type or fuel",
+    "choice_c": "Diesel-powered vessels exclusively",
+    "choice_d": "Electric trolling-motor compartments only",
+    "correct_choice": "A",
+    "explanation": "Because gasoline vapors are heavier than air and can pool in an enclosed compartment, Louisiana's blower-ventilation requirement targets compartments with a permanently installed gasoline engine; diesel engines are not subject to this same requirement due to diesel's much higher flash point.",
+    "weight": 3,
+    "source_note": "LDWF, Required Boating Equipment (wlf.louisiana.gov/page/required-boating-equipment)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Pyrotechnic visual distress signals, such as flares, carried to satisfy Louisiana's equipment requirements must be:",
+    "choice_a": "Discarded once opened, regardless of remaining shelf life",
+    "choice_b": "Within their manufacturer's marked expiration date to count toward the carriage requirement",
+    "choice_c": "Used once per season for practice, then replaced automatically",
+    "choice_d": "Stored underwater in a sealed compartment",
+    "correct_choice": "B",
+    "explanation": "Pyrotechnic visual distress signals carry a manufacturer expiration date, and expired flares do not satisfy the visual distress signal carriage requirement, since they may fail to ignite or perform reliably.",
+    "weight": 3,
+    "source_note": "LDWF, Required Boating Equipment (wlf.louisiana.gov/page/required-boating-equipment); standard VDS expiration guidance"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "A portable fire extinguisher carried to meet Louisiana's equipment requirements should be mounted or stowed:",
+    "choice_a": "Wherever there happens to be leftover space, even if buried under other gear",
+    "choice_b": "In a readily accessible location so it can be reached quickly in an emergency",
+    "choice_c": "Only inside a locked cabin accessible solely to the vessel's owner",
+    "choice_d": "Disassembled, to be reassembled only when a fire actually starts",
+    "correct_choice": "B",
+    "explanation": "A fire extinguisher that is technically aboard but hard to reach in a hurry provides little real protection, so it should be mounted or stowed in a readily accessible spot rather than buried under gear.",
+    "weight": 2,
+    "source_note": "LDWF, Required Boating Equipment (wlf.louisiana.gov/page/required-boating-equipment)"
+  }
+]

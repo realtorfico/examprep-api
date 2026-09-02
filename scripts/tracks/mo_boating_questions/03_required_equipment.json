@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under RSMo 306.100, which Missouri vessel classes are required to carry a sound-signaling device (such as a horn or whistle)?",
+    "choice_a": "No Missouri vessel is required to carry any sound-signaling device",
+    "choice_b": "Only Class A vessels under 16 feet must carry a bell",
+    "choice_c": "Class 1 and Class 2 vessels must carry a sounding device, and Class 3 vessels must carry both a sounding device and a bell",
+    "choice_d": "Sound-signaling devices are required only on sailboats",
+    "correct_choice": "C",
+    "explanation": "Missouri's vessel equipment statute requires Class 1 and Class 2 vessels to carry a sounding device (such as a horn or whistle), while Class 3 vessels (40 feet and over) must carry both a sounding device and a bell, reflecting their greater size and the added visibility/audibility needs of larger vessels.",
+    "weight": 4,
+    "source_note": "RSMo 306.100 (sound-signaling device requirements by vessel class)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What fire extinguisher requirement applies to Missouri Class A and Class 1 motorboats carrying flammable materials, under RSMo 306.100?",
+    "choice_a": "No fire extinguisher is required regardless of vessel class",
+    "choice_b": "A residential-grade household extinguisher is acceptable",
+    "choice_c": "Two fixed CO2 suppression systems, regardless of size",
+    "choice_d": "At least one B-1 type fire extinguisher",
+    "correct_choice": "D",
+    "explanation": "Missouri's equipment statute requires Class A and Class 1 motorboats carrying flammable materials to carry at least one B-1 type fire extinguisher; larger vessels (Class 2 and Class 3) must carry additional extinguishers or fixed extinguishing systems.",
+    "weight": 4,
+    "source_note": "RSMo 306.100 (fire extinguisher requirements by vessel class)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "When must a Missouri vessel display navigation lights, under RSMo 306.100?",
+    "choice_a": "From sunset to sunrise, and also during periods of restricted visibility such as fog",
+    "choice_b": "Only when the vessel is anchored during daylight hours",
+    "choice_c": "Only when another vessel signals with a horn",
+    "choice_d": "Navigation lights are never required in Missouri",
+    "correct_choice": "A",
+    "explanation": "Navigation lights must be displayed from sunset to sunrise and during any period of reduced visibility, such as fog, heavy rain, or haze; specific colors and visibility distances vary by vessel class and propulsion method under Missouri and federal Navigation Rules.",
+    "weight": 4,
+    "source_note": "RSMo 306.100 (navigation light requirements)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why does Missouri law require an efficient ventilation system on enclosed vessels carrying flammable or toxic fluids?",
+    "choice_a": "To keep the cabin cool for passenger comfort only",
+    "choice_b": "To remove hazardous fuel vapors that can accumulate in an enclosed engine or fuel compartment and ignite, causing an explosion",
+    "choice_c": "To reduce engine noise",
+    "choice_d": "Ventilation systems are not required by Missouri law",
+    "correct_choice": "B",
+    "explanation": "Gasoline vapors are heavier than air and can pool in an enclosed engine or fuel compartment; without adequate natural or powered ventilation, those vapors can ignite from a spark and cause a fire or explosion, which is why Missouri law requires an efficient ventilation system on covered vessels carrying flammable or toxic fluids.",
+    "weight": 4,
+    "source_note": "RSMo 306.100 (ventilation system requirement)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Before starting a gasoline inboard or sterndrive engine after fueling, what safety step should a boater take besides running the ventilation blower?",
+    "choice_a": "Immediately start the engine without any check, since modern engines cannot ignite fumes",
+    "choice_b": "Light a match near the fuel fill to check for leaks",
+    "choice_c": "Open the engine compartment and sniff for fuel vapors, and run the blower for several minutes before starting the engine",
+    "choice_d": "Skip ventilation entirely if docked at a marina",
+    "correct_choice": "C",
+    "explanation": "After fueling, boaters should open hatches, sniff for fuel vapor odor, and run the engine compartment blower for at least four minutes before starting a gasoline inboard or sterndrive engine, since trapped vapors are a leading cause of onboard fires and explosions.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (fueling and ventilation safety procedure), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is a 'backfire flame arrestor' and why is it required on most gasoline-powered inboard engines?",
+    "choice_a": "A device that increases engine horsepower",
+    "choice_b": "A type of navigation light",
+    "choice_c": "A cooling fan for the propeller shaft",
+    "choice_d": "A device fitted to the carburetor air intake that prevents an engine backfire from igniting fuel vapors in the engine compartment",
+    "correct_choice": "D",
+    "explanation": "A backfire flame arrestor is mounted on the carburetor air intake of a gasoline inboard engine to stop flames from an engine backfire from reaching flammable vapors in the surrounding compartment, reducing fire and explosion risk.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (backfire flame arrestor requirement, 33 CFR)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What visual distress signal equipment is commonly required for vessels operating on federally controlled or coastal waters, and is recommended safe-boating practice on large Missouri reservoirs?",
+    "choice_a": "USCG-approved devices such as flares, an orange distress flag, or an electric distress light, appropriate for both day and night use",
+    "choice_b": "A bright-colored towel waved by hand, which satisfies all federal requirements",
+    "choice_c": "No visual distress equipment is ever useful on inland lakes",
+    "choice_d": "A car emergency road flare is always an acceptable substitute",
+    "correct_choice": "A",
+    "explanation": "Visual distress signals -- such as USCG-approved pyrotechnic flares, an orange distress flag for daytime use, or an electric distress light for night use -- help boaters in distress attract attention on large bodies of water where cell service may be unreliable, such as the Lake of the Ozarks or Table Rock Lake.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (visual distress signals), applied to Missouri's large reservoir lakes"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is the purpose of carrying a first-aid kit, anchor, and extra line aboard a recreational vessel, even though not all three are always mandated by statute?",
+    "choice_a": "They are decorative items with no safety function",
+    "choice_b": "They allow the crew to treat minor injuries, hold position safely if the engine fails, and secure the boat or assist another vessel in an emergency",
+    "choice_c": "They are required only for vessels racing competitively",
+    "choice_d": "They replace the need for PFDs",
+    "correct_choice": "B",
+    "explanation": "A basic first-aid kit, a properly sized anchor with adequate rode, and spare line are standard recommended safety gear: the anchor lets a disabled boat hold position safely rather than drift into a hazard, extra line helps in towing or mooring emergencies, and a first-aid kit addresses common injuries before help arrives.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (recommended safety equipment), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What should a boater check regularly regarding a fire extinguisher kept aboard a Missouri vessel?",
+    "choice_a": "Nothing -- fire extinguishers never need inspection once purchased",
+    "choice_b": "Only the color of the extinguisher body",
+    "choice_c": "The gauge pressure, expiration or service date, and that the mounting bracket keeps it quickly accessible in an emergency",
+    "choice_d": "Whether it matches the color of the boat's interior",
+    "correct_choice": "C",
+    "explanation": "A fire extinguisher that has lost pressure, expired, or is buried in a hard-to-reach locker will not help in an emergency; boaters should periodically check the gauge, replace or service extinguishers per the manufacturer's schedule, and mount them for quick access.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (fire extinguisher maintenance)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why do Missouri's required-equipment rules apply an escalating standard as vessel class increases from Class A up to Class 3?",
+    "choice_a": "Larger vessels are exempt from all equipment requirements",
+    "choice_b": "Vessel class has no bearing on required equipment in Missouri",
+    "choice_c": "Equipment requirements decrease as vessel size increases",
+    "choice_d": "Larger vessels typically carry more people, travel farther from shore, and pose greater fire, collision, and signaling risks, so the law requires additional or higher-capacity safety equipment",
+    "correct_choice": "D",
+    "explanation": "Missouri's tiered classification system (Class A through Class 3) scales fire extinguisher counts, sound-signaling devices, and other equipment to the greater risks and passenger loads typically carried by larger vessels, which is why a 45-foot Class 3 cruiser must carry more equipment than a 14-foot Class A jon boat.",
+    "weight": 3,
+    "source_note": "RSMo 306.100 (rationale for class-based equipment scaling)"
+  }
+]

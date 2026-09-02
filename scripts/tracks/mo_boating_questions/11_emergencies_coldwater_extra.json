@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the recommended immediate response if a vessel runs aground on a submerged sandbar or rocky shoal on a Missouri lake or river?",
+    "choice_a": "Immediately apply full throttle in an attempt to power off the obstruction",
+    "choice_b": "Shift into neutral, check for signs of hull damage or leaking, and assess the situation carefully before attempting to back off gently, since aggressive throttle can worsen hull or propeller damage and drive the vessel further aground",
+    "choice_c": "Abandon the boat immediately regardless of water depth or distance from shore",
+    "choice_d": "Grounding requires no particular response since it poses no risk",
+    "correct_choice": "B",
+    "explanation": "After running aground, shifting to neutral and checking for hull damage or leaking before attempting to move the vessel helps avoid making the situation worse; applying aggressive throttle can drive the boat harder onto the obstruction or cause further damage to the hull or propeller.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (grounding response), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "How does hypothermia's symptom progression generally differ from the near-instant reflex of 'cold-water shock'?",
+    "choice_a": "Hypothermia is a progressive drop in core body temperature over minutes to hours, moving from shivering to confusion, loss of coordination, and eventually unconsciousness, whereas cold-water shock is an immediate involuntary gasp reflex occurring within seconds of sudden immersion",
+    "choice_b": "Hypothermia and cold-water shock describe the exact same physical process with no timing difference",
+    "choice_c": "Hypothermia occurs instantly upon immersion, while cold-water shock takes hours to develop",
+    "choice_d": "Neither hypothermia nor cold-water shock has any connection to water temperature",
+    "correct_choice": "A",
+    "explanation": "Cold-water shock is the body's near-instant gasp and hyperventilation reflex in the first seconds after sudden cold immersion, while hypothermia is a slower, progressive loss of core body temperature that can take anywhere from minutes to over an hour to advance from shivering through confusion and loss of coordination to unconsciousness -- both are distinct dangers of cold-water immersion requiring different immediate responses.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (hypothermia progression versus cold-water shock)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What does the cold-water safety guideline sometimes described as the '1-10-1 principle' emphasize about the phases of cold-water immersion?",
+    "choice_a": "That death occurs within exactly 1 minute of any cold-water immersion with no exceptions",
+    "choice_b": "Roughly 1 minute to get breathing under control after the initial cold shock, about 10 minutes of meaningful muscle movement before losing the ability to self-rescue or swim effectively, and about 1 hour before hypothermia is likely to cause unconsciousness -- underscoring that panic in the first minute is often the greater immediate threat than hypothermia itself",
+    "choice_c": "That a PFD becomes unnecessary after the first 10 minutes in cold water",
+    "choice_d": "That boaters have unlimited time in cold water as long as they keep swimming",
+    "correct_choice": "B",
+    "explanation": "The 1-10-1 cold-water immersion principle highlights that the first minute's gasp reflex and breathing control are the most immediate threat, the following roughly 10 minutes offer a limited window of useful muscle function to self-rescue or signal for help, and only after about an hour does hypothermia typically progress to unconsciousness -- emphasizing that panic and drowning in the first minute, not hypothermia, is often the more immediate danger.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (cold-water immersion phases, the '1-10-1' principle)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "How does a 'swamped' vessel differ from a fully capsized vessel, and what should occupants generally do if their boat becomes swamped?",
+    "choice_a": "A swamped vessel has filled with water but remains upright and afloat, unlike a fully capsized boat that has rolled over; occupants should generally stay low, keep weight centered and distributed evenly, and bail if possible rather than adding movement that risks tipping the unstable, waterlogged hull further",
+    "choice_b": "A swamped vessel and a capsized vessel are identical in every respect",
+    "choice_c": "Occupants of a swamped vessel should always stand up and move to one side",
+    "choice_d": "A swamped vessel automatically sinks within seconds with no time to respond",
+    "correct_choice": "A",
+    "explanation": "A swamped vessel has taken on significant water but is still floating right-side up, unlike a capsized vessel that has rolled over entirely; because a swamped hull is far less stable, occupants should stay low, keep their weight centered and evenly distributed, and bail water if possible rather than shifting position in ways that could tip the unstable boat further or cause it to capsize.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (swamped vessel response), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "Why is carbon monoxide poisoning a documented hazard near the swim platform or rear deck of houseboats and pontoon boats popular on the Lake of the Ozarks?",
+    "choice_a": "Carbon monoxide from engine or generator exhaust can accumulate near the stern and swim platform, especially when the vessel is idling or moored, posing a poisoning risk to people swimming, sitting, or 'teak surfing' close behind the boat",
+    "choice_b": "Carbon monoxide is not produced by any boat engine or generator",
+    "choice_c": "This hazard applies only to sailboats with no engine",
+    "choice_d": "Carbon monoxide only poses a risk while a boat is traveling at full planing speed, never at idle",
+    "correct_choice": "A",
+    "explanation": "Engine and generator exhaust can accumulate near a vessel's stern and swim platform area, particularly when idling, moored, or running a generator for extended periods, creating a documented carbon monoxide poisoning risk for people swimming or lingering close behind the boat -- a hazard especially relevant to the many houseboats and pontoon boats used for extended stays on the Lake of the Ozarks.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (carbon monoxide hazard near swim platforms and idling generators), applied to Lake of the Ozarks houseboat and pontoon boat use"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "In an actual emergency on open water, when should a boater choose to deploy a nighttime electric distress light versus a daytime orange distress flag?",
+    "choice_a": "The choice should match the actual lighting conditions at the time of the emergency -- an electric distress light or flare for nighttime or low-visibility use when it can be seen from a distance, and an orange distress flag for daytime use when a light would be far less visible against a bright sky",
+    "choice_b": "Both devices work identically regardless of the time of day",
+    "choice_c": "The distress flag should only ever be used at night",
+    "choice_d": "Visual distress signals should never actually be deployed during a real emergency",
+    "correct_choice": "A",
+    "explanation": "Because visibility conditions differ dramatically between day and night, an electric distress light or pyrotechnic flare is far more effective after dark or in low light, while a bright orange distress flag is more visible against daylight conditions when a light source would be washed out -- boaters should choose (and be ready to use) the device matched to the actual conditions during an emergency.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (visual distress signal deployment by condition), applied to Missouri's large reservoir lakes"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the recommended first-aid priority for a boater who suffers a significant cut or laceration injury, such as from a propeller or sharp equipment, while awaiting rescue or return to shore?",
+    "choice_a": "Ignore the wound entirely until reaching a hospital, no matter how severe",
+    "choice_b": "Apply firm, direct pressure to the wound with a clean cloth or bandage to control bleeding, and keep the injured area elevated if possible, while arranging to get the person to medical care as quickly as safely possible",
+    "choice_c": "Submerge the wound in lake water to clean it before doing anything else",
+    "choice_d": "Only a licensed physician present on the boat may ever attempt to control bleeding",
+    "correct_choice": "B",
+    "explanation": "For a significant cut or laceration, applying firm, direct pressure with a clean cloth or first-aid dressing and elevating the injured area if practical are the immediate priorities to control bleeding, while the boat should head for the nearest help or medical care as quickly as safety allows.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (basic first aid for bleeding control), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What towing technique consideration is important when helping a disabled vessel back to a Missouri marina or ramp?",
+    "choice_a": "Tow line length and technique should be adjusted for conditions -- a short, taut line for close-quarters maneuvering near a marina, and a longer line in open water -- while everyone stays clear of the line's path, since a tow line under tension can snap back with significant force if it breaks",
+    "choice_b": "The exact same tow line length and technique should always be used regardless of location or conditions",
+    "choice_c": "Tow lines pose no danger even if they break under tension",
+    "choice_d": "Only the disabled vessel's occupants need to worry about the tow line, not the towing vessel's",
+    "correct_choice": "A",
+    "explanation": "Towing a disabled vessel calls for adjusting the tow line's length to the situation -- shorter and more controlled near a crowded marina, longer in open water for a smoother tow -- and everyone aboard both vessels should stay clear of the line's path, since a tow line under heavy tension can snap back with dangerous force if it parts.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (towing a disabled vessel technique), applied to Missouri marina and open-water conditions"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Does Minnesota's specific 150-foot slow-no-wake distance rule (Minn. Stat. 86B.313) apply to every motorboat, or only to personal watercraft?",
+    "choice_a": "It applies to every motorboat and canoe on any Minnesota lake",
+    "choice_b": "It is a PWC-specific requirement; general motorboats are instead governed by reckless/negligent-operation standards and any local no-wake zone ordinances rather than one uniform statewide numeric distance",
+    "choice_c": "It applies only to sailboats",
+    "choice_d": "It has been repealed and no longer applies to any vessel",
+    "correct_choice": "B",
+    "explanation": "The specific 150-foot slow-no-wake distance is written into Minnesota's personal watercraft statute; general motorboats are instead subject to the state's negligent- and reckless-operation standards, plus whatever local no-wake zones a county or lake association has adopted, rather than one single statewide numeric buffer.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.313 (PWC-specific slow-no-wake distance) contrasted with the general negligent-operation standard for other motorboats"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Is \"idle speed\" the same thing as \"slow-no-wake speed\" in practical boating terms?",
+    "choice_a": "They are legally unrelated concepts with no practical overlap",
+    "choice_b": "Idle speed always produces a larger wake than slow-no-wake speed",
+    "choice_c": "They are closely related in practice -- idle speed (the engine's lowest steady rpm) is generally slow enough to produce the minimal or no wake required in a slow-no-wake zone, though a boat could technically still throttle up slightly and remain compliant as long as no real wake is produced",
+    "choice_d": "Idle speed refers only to a stationary, anchored boat",
+    "correct_choice": "C",
+    "explanation": "Idle speed -- the engine's lowest rpm that still maintains steering -- is generally slow enough to satisfy a slow-no-wake requirement, though the legal standard is about the wake actually produced rather than a specific throttle position, so an operator should watch the wake itself, not just the tachometer.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (idle speed versus slow-no-wake speed)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "How does a Minnesota county or lake association generally go about establishing a new local no-wake zone or horsepower restriction on a specific lake?",
+    "choice_a": "By simply posting a sign with no other process required",
+    "choice_b": "By petitioning for and obtaining DNR approval of a local surface use ordinance, typically following a public process before the restriction becomes enforceable",
+    "choice_c": "Local governments have no authority to initiate this process at all",
+    "choice_d": "Only the state legislature can create any lake-specific restriction",
+    "correct_choice": "B",
+    "explanation": "A county or lake association seeking a lake-specific restriction generally must go through a local surface use ordinance process that requires DNR review and approval, rather than simply posting a sign, ensuring the restriction is legally enforceable once adopted.",
+    "weight": 2,
+    "source_note": "Minnesota DNR local surface use zoning guidance (ordinance adoption and approval process)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "How are many Minnesota county sheriff water patrol units funded to help enforce boating laws such as registration, safety equipment, and reckless operation?",
+    "choice_a": "Entirely through voluntary boater donations",
+    "choice_b": "Water patrols receive no funding of any kind and operate purely as a volunteer effort",
+    "choice_c": "In part through state boat and water safety grant funding administered through the DNR, which supports county sheriff water patrol operations",
+    "choice_d": "Exclusively through federal taxation unrelated to boating",
+    "correct_choice": "C",
+    "explanation": "Minnesota's boat and water safety grant program, administered through the DNR, helps fund county sheriff water patrol units, supporting the on-the-water enforcement presence that checks registration, required equipment, and operating-rule compliance across the state's lakes.",
+    "weight": 2,
+    "source_note": "Minnesota DNR boat and water safety grant program (funding for county sheriff water patrols)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under the federal engine cutoff switch (ECOS) use requirement now generally applied to covered recreational vessels, what must an operator of a motorboat under 26 feet with an engine cutoff switch installed do while operating at planing speed or above idle?",
+    "choice_a": "Attach the engine cutoff lanyard to their body, clothing, or PFD, using it as intended whenever the vessel is underway at more than idle/displacement speed",
+    "choice_b": "The switch is optional decorative equipment with no use requirement",
+    "choice_c": "Only passengers, never the operator, must use the cutoff switch",
+    "choice_d": "The requirement applies only to sailboats",
+    "correct_choice": "A",
+    "explanation": "Federal law generally requires the operator of a covered recreational vessel less than 26 feet equipped with an engine cutoff switch to use the attached lanyard while operating above idle or displacement speed, so the engine shuts off automatically if the operator is thrown from the helm, applying alongside Minnesota's own PWC-specific lanyard rule.",
+    "weight": 3,
+    "source_note": "Federal engine cutoff switch (ECOS) use requirement (33 CFR, per the 2021 U.S. Coast Guard Authorization Act), applied to covered vessels operated on Minnesota waters"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What does it mean for a vessel to be \"underway\" for purposes of applying Minnesota's operating rules?",
+    "choice_a": "A vessel is underway only while its engine is at full throttle",
+    "choice_b": "A vessel is underway whenever it is not at anchor, made fast to the shore, or aground -- meaning it is underway even while drifting with its engine off",
+    "choice_c": "A vessel is never considered underway on an inland lake",
+    "choice_d": "Underway status applies only to vessels longer than 26 feet",
+    "correct_choice": "B",
+    "explanation": "A vessel is considered underway whenever it is not anchored, tied to shore or a dock, or aground, which means a boat drifting with its engine shut off is still legally underway and subject to applicable operating and right-of-way rules.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (definition of \"underway\" for operating-rule purposes)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Can a Minnesota boater legally enter and operate through a marked swimming area, as long as they slow to no-wake speed?",
+    "choice_a": "Yes, as long as the boat produces no wake while inside the marked area",
+    "choice_b": "Marked swimming areas generally prohibit boat entry outright, regardless of speed, rather than merely restricting speed within them",
+    "choice_c": "Only PWCs are barred from swimming areas; other motorboats may enter freely",
+    "choice_d": "Swimming areas have no operating restrictions at all",
+    "correct_choice": "B",
+    "explanation": "A marked swimming area's \"boats keep out\" designation is a complete prohibition on boat entry, not just a speed restriction, distinguishing it from a general no-wake zone where boats may still operate cautiously at reduced speed.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (marked swimming areas prohibit entry, not just speed), consistent with Uniform State Waterway Marking System \"boats keep out\" markers"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Can a boat legally tow a water-skier or wakeboarder through a posted slow-no-wake zone by having the skier simply hold on without planing?",
+    "choice_a": "Yes, as long as the tow rope is shortened",
+    "choice_b": "Towing a skier or wakeboarder up on plane inherently requires speed well above slow-no-wake, so towing that activity through a posted no-wake zone is effectively incompatible with the zone's speed restriction and generally not permitted",
+    "choice_c": "No-wake zones do not apply to boats that are towing someone",
+    "choice_d": "It is always allowed regardless of the towed person's activity",
+    "correct_choice": "B",
+    "explanation": "Getting a skier, wakeboarder, or similar rider up on plane requires speeds well beyond slow-no-wake, so operating a boat that way inside a posted no-wake zone is fundamentally incompatible with the zone's purpose and is treated as a violation of the speed restriction.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (towed planing sports incompatible with slow-no-wake zones)"
+  }
+]

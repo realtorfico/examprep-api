@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why must an operator account for a much wider turning radius when towing two or more riders side by side on a single line, such as multiple tubers?",
+    "choice_a": "Multiple riders on one line have no effect on the boat's turning behavior",
+    "choice_b": "During a turn, the rider on the outside of the turn swings through a much wider arc at higher speed than the boat itself, so the operator must turn more gradually and allow far more clearance from docks, shorelines, and other vessels than when towing a single rider",
+    "choice_c": "Towing multiple riders side by side actually tightens the turning radius compared to a single rider",
+    "choice_d": "Turning radius only matters when towing a single water skier, not multiple tubers",
+    "correct_choice": "B",
+    "explanation": "When two or more people are towed side by side on one line, the outermost rider swings through a significantly wider arc and higher relative speed during a turn than the boat or an inside rider, so the operator must turn gradually and give much more clearance to docks, shoreline, swimmers, and other vessels than towing a single skier would require.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (multi-rider towing turn dynamics), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Where should a tow rope be attached on the boat for towing a skier, tuber, or wakeboarder?",
+    "choice_a": "To an approved tow eye, tow bar, or pylon specifically rated for the loads of towing a person, never to a general-purpose cleat, rail, or other fitting not designed for that stress",
+    "choice_b": "To any convenient cleat on the boat, regardless of its rated strength",
+    "choice_c": "Directly around a passenger's waist inside the boat",
+    "choice_d": "It does not matter where the line is attached as long as it is tied securely",
+    "correct_choice": "A",
+    "explanation": "A tow rope must be attached to a tow eye, tow bar, or pylon specifically engineered and rated to handle the sudden, high loads of towing a person -- attaching it to an ordinary cleat, rail, or other fitting not rated for that stress risks a sudden failure of the fitting itself under load.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (proper tow line attachment point), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why do wake surfing boats (which use ballast to intentionally build a large wake) generally need to operate farther from shore, docks, swimmers, and other vessels than typical water skiing?",
+    "choice_a": "Wake surfing produces a significantly larger, more powerful wake by design, which can be more disruptive or hazardous to docks, moored boats, swimmers, and shallow shoreline areas at a given distance than an ordinary ski wake",
+    "choice_b": "Wake surfing boats produce a smaller wake than any other towed water sport",
+    "choice_c": "There is no meaningful difference between a wake surfing wake and a typical ski wake",
+    "choice_d": "Wake surfing is required by law to be performed only in the open ocean",
+    "correct_choice": "A",
+    "explanation": "Because wake surfing boats are intentionally ballasted to produce a large, shaped wake for the surfer to ride, that wake carries significantly more energy than a typical ski wake at the same distance, which is why operators are encouraged to move farther from shorelines, docks, moored boats, and swimmers than they might for ordinary water skiing.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (wake surfing wake energy and distance considerations), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Before applying throttle to get underway with a skier or tuber still in the water near the stern, what must the operator confirm?",
+    "choice_a": "That the towed person and the tow line are clear of the propeller and at a safe distance behind the boat before advancing the throttle",
+    "choice_b": "Nothing extra is needed; throttle can be applied as soon as the observer says the rider is holding the rope",
+    "choice_c": "Only that the engine is warmed up, regardless of the rider's position",
+    "choice_d": "That the rider has removed their PFD for a faster start",
+    "correct_choice": "A",
+    "explanation": "Before accelerating away with a skier or tuber starting from the water, the operator (aided by the observer) must confirm the person and the tow line are clear of the propeller and at a safe distance behind the boat, since applying throttle too soon while someone is still close to the stern risks a serious propeller injury.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (propeller safety when departing with a towed person starting in the water), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why is a properly attached engine cut-off switch lanyard especially important for the operator of a boat that is towing a skier, tuber, or wakeboarder?",
+    "choice_a": "It has no particular added importance while towing compared to any other type of boating",
+    "choice_b": "Because the operator's attention is divided between steering and monitoring the towed rider (or relying on an observer), an unexpected ejection from the helm is more likely to go unnoticed momentarily, so the cut-off switch shutting down the engine immediately if the operator is thrown from the seat is an important backstop",
+    "choice_c": "The lanyard is only useful for stopping the boat once it has already returned to the dock",
+    "choice_d": "Kill switch lanyards are prohibited during towed water sports",
+    "correct_choice": "B",
+    "explanation": "Because towing divides the operator's attention between steering the boat and monitoring the towed rider, an operator thrown from the helm during a sudden maneuver might not be able to reach the throttle immediately; a properly attached engine cut-off switch lanyard automatically stops the engine the instant the operator leaves the seat, preventing a runaway boat from continuing toward the rider or other people in the water.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (engine cut-off switch importance during towed water sports), consistent with NASBLA-aligned course curricula and federal engine cut-off switch regulation"
+  }
+]

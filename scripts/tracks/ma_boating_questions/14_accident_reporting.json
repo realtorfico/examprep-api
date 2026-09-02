@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Accident Reporting",
+    "question": "Under the federal boating accident reporting framework that most states, including Massachusetts, generally follow, within what time frame must an accident be reported if a person dies within 24 hours, is injured and requires medical treatment beyond first aid, or disappears from the vessel?",
+    "choice_a": "Within 48 hours of the occurrence",
+    "choice_b": "Within 30 days of the occurrence",
+    "choice_c": "There is no reporting deadline for these situations",
+    "choice_d": "Only if a lawyer advises reporting",
+    "correct_choice": "A",
+    "explanation": "The federal framework used as the baseline for boating accident reports (and generally followed by states, though some vary) requires reporting within 48 hours when a death occurs within 24 hours, an injury requires treatment beyond first aid, or a person disappears from the vessel under circumstances suggesting death or injury.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (federal boating accident reporting deadlines, 33 CFR 173), consistent with NASBLA-aligned course curricula; Massachusetts-specific deadline not independently re-verified against the exact state statute in this build and presented as the general/federal baseline"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Under the federal boating accident reporting framework used as a general baseline, within what time frame must a property-damage-only accident (without death, disappearance, or injury requiring treatment beyond first aid) generally be reported?",
+    "choice_a": "Within one year of the occurrence",
+    "choice_b": "Within 10 days of the occurrence",
+    "choice_c": "Within one hour of the occurrence",
+    "choice_d": "Reporting is never required for property-damage-only accidents",
+    "correct_choice": "B",
+    "explanation": "For accidents involving only property damage above the applicable reporting threshold (without death, disappearance, or a serious injury), the federal baseline framework generally allows a longer 10-day reporting window rather than the 48-hour window used for more serious incidents.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (federal boating accident reporting deadlines, 33 CFR 173), consistent with NASBLA-aligned course curricula; Massachusetts-specific threshold not independently re-verified against the exact state statute in this build and presented as the general/federal baseline"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "To which agency should a Massachusetts boater generally report a reportable boating accident?",
+    "choice_a": "No agency needs to be notified under any circumstances",
+    "choice_b": "Only the boat's insurance company, with no government notification of any kind",
+    "choice_c": "The Massachusetts Environmental Police, the state agency responsible for boating law enforcement and accident reporting",
+    "choice_d": "The federal Internal Revenue Service",
+    "correct_choice": "C",
+    "explanation": "As Massachusetts's designated boating law enforcement agency, the Massachusetts Environmental Police is the appropriate agency to notify of a reportable boating accident, consistent with the role state boating law administrators play under the national accident-reporting framework.",
+    "weight": 3,
+    "source_note": "Massachusetts Environmental Police's role as the state boating law enforcement agency, consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "What should an operator involved in a boating accident do at the scene, regardless of whether the accident later needs to be formally reported to authorities?",
+    "choice_a": "Leave the scene immediately without providing any information",
+    "choice_b": "Only exchange information if the other vessel is registered in Massachusetts",
+    "choice_c": "There is no duty to stop or assist after a boating accident",
+    "choice_d": "Stop and render assistance if it can be done safely, provide identification to other involved parties, and avoid leaving the scene of an accident involving injury or significant damage",
+    "correct_choice": "D",
+    "explanation": "Similar to the duty following a motor vehicle accident, a boat operator involved in an accident must stop, render assistance if it can be done safely, and provide identifying information to others involved; leaving the scene of a serious accident can itself be a separate offense.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (duty to stop and render assistance after an accident), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Why does accurate and prompt boating accident reporting matter beyond the immediate legal requirement?",
+    "choice_a": "Accident data collected by states and the U.S. Coast Guard is used to identify hazards, improve boating safety education, and target enforcement or infrastructure improvements",
+    "choice_b": "Accident reports serve no purpose beyond paperwork",
+    "choice_c": "Reporting is only used to raise a boater's registration fees",
+    "choice_d": "Accident data is discarded immediately after an incident is closed",
+    "correct_choice": "A",
+    "explanation": "Boating accident reports feed into state and national databases (compiled and published by the U.S. Coast Guard) that help identify common causes of accidents, dangerous locations, and trends -- informing safety education, enforcement priorities, and sometimes infrastructure or marking changes.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (purpose of boating accident data collection), consistent with U.S. Coast Guard recreational boating statistics reporting"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "What authority does a Massachusetts Environmental Police officer generally have when it comes to enforcing boating laws on the water?",
+    "choice_a": "Authority that applies only to commercial fishing vessels, never recreational boats",
+    "choice_b": "The authority to stop and board vessels to check for compliance with registration, safety equipment, boater education certification, and other boating law requirements, and to issue citations for violations",
+    "choice_c": "No authority to stop or board any vessel under any circumstances",
+    "choice_d": "Authority limited exclusively to issuing parking tickets at boat ramps",
+    "correct_choice": "B",
+    "explanation": "Massachusetts Environmental Police officers are empowered to stop and board vessels to check for compliance with registration, required safety equipment, boater education certification, and other boating law requirements, and to issue citations or take enforcement action for violations, including suspected OUI.",
+    "weight": 3,
+    "source_note": "Massachusetts Environmental Police enforcement authority, consistent with Massachusetts General Laws Chapter 90B and Massachusetts Environmental Police-reviewed course materials"
+  }
+]

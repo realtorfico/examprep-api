@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Accident Reporting",
+    "question": "Does Minnesota's boating accident reporting duty under Minn. Stat. 86B.341 require an actual confirmed death or injury, or can a person's disappearance from a vessel also trigger the duty?",
+    "choice_a": "Only a confirmed death triggers any reporting duty",
+    "choice_b": "The duty generally extends to a person's disappearance from a vessel under circumstances suggesting death or injury, not just to cases where death or injury has already been confirmed",
+    "choice_c": "Disappearance is never treated as a reportable event under any circumstance",
+    "choice_d": "Only property damage, never a missing person, triggers the reporting duty",
+    "correct_choice": "B",
+    "explanation": "Minnesota's accident-duties framework generally extends reporting obligations to a person's disappearance from a vessel under circumstances suggesting death or injury, not solely to situations where a death or injury has already been confirmed, ensuring unexplained disappearances still get reported and investigated.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.341 (accident duties extend to disappearance under circumstances suggesting death or injury)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "In a Minnesota boating accident involving two vessels, does the duty to stop, render aid, and exchange information apply only to the operator who was at fault?",
+    "choice_a": "Yes, only the operator later found at fault has any duty",
+    "choice_b": "No -- the duties to stop, assist, and exchange information generally apply to every operator involved in the accident, regardless of who ultimately turns out to be at fault",
+    "choice_c": "The duties apply only if both vessels sink",
+    "choice_d": "Only the vessel owner, never the operator, has any duty regardless of fault",
+    "correct_choice": "B",
+    "explanation": "Minnesota's accident-duties statute imposes its stop, render-aid, and information-exchange obligations on every operator involved in the accident, not just on whichever operator is later determined to have caused it, since fault often is not clear until after an investigation.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.341 (duties apply to all operators involved in an accident, regardless of fault)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Is submitting false or misleading information in a required Minnesota boating accident report itself a separate legal problem, beyond any liability for the accident?",
+    "choice_a": "No, the content of an accident report has no legal consequence of its own",
+    "choice_b": "Yes -- knowingly providing false or misleading information in a required accident report can expose the reporting party to separate legal consequences, distinct from any liability connected to the underlying accident",
+    "choice_c": "False information is only a problem if the accident involved a fatality",
+    "choice_d": "Only the sheriff, never the boat operator, can be held responsible for report accuracy",
+    "correct_choice": "B",
+    "explanation": "Submitting knowingly false or misleading information in a required boating accident report is treated as its own legal problem, separate from whatever liability may or may not exist for causing the underlying accident itself.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.341 (integrity of required accident reports; false reporting is a separate concern)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Beyond receiving the initial report from an operator, what role can Minnesota DNR conservation officers play in a serious boating accident?",
+    "choice_a": "None; only the county sheriff has any investigative role",
+    "choice_b": "DNR conservation officers can independently investigate a serious boating accident, working alongside the county sheriff's office, particularly where the accident may involve criminal violations such as BWI or reckless operation",
+    "choice_c": "Conservation officers may only investigate accidents on land, never on water",
+    "choice_d": "Conservation officers are barred from any involvement once a sheriff's report is filed",
+    "correct_choice": "B",
+    "explanation": "In addition to receiving accident data forwarded from the county sheriff, DNR conservation officers can independently investigate serious boating accidents, often coordinating with the sheriff's office, especially where the incident may involve criminal conduct such as boating while impaired or reckless operation.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.341 (DNR conservation officer investigative role in serious boating accidents)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Unlike Minnesota's requirement for auto insurance, does the state require recreational boat owners to carry liability insurance on their watercraft?",
+    "choice_a": "Yes, boat liability insurance is mandatory statewide, identical to the auto insurance requirement",
+    "choice_b": "Minnesota does not generally mandate liability insurance for recreational boats the way it requires auto insurance, though carrying coverage is still a widely recommended practice, including in the event of an accident",
+    "choice_c": "Insurance is required only for boats over 40 feet",
+    "choice_d": "Insurance is required only for personal watercraft, never for other motorboats",
+    "correct_choice": "B",
+    "explanation": "Minnesota does not generally require recreational boat owners to carry liability insurance the way it mandates auto insurance for vehicles, though boating safety guidance still recommends carrying coverage given the potential costs an accident, injury, or property damage claim could create.",
+    "weight": 2,
+    "source_note": "Minnesota boating regulatory framework (no general mandatory liability insurance requirement for recreational boats, contrasted with mandatory auto insurance)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "What practical information should a boater try to gather at the scene of an accident, in addition to fulfilling the legal duties to stop, assist, and exchange information?",
+    "choice_a": "No additional information is ever useful once basic information is exchanged",
+    "choice_b": "Contact information for any witnesses, photos of the vessels and scene, and the other vessel's registration number, which can support the required report and any later insurance or legal follow-up",
+    "choice_c": "Only the other operator's favorite fishing spot",
+    "choice_d": "Information gathering is solely the sheriff's responsibility and boaters should not attempt it",
+    "correct_choice": "B",
+    "explanation": "Beyond satisfying the legal duties to stop, render aid, and exchange basic information, a prudent boater gathers witness contact information, photographs of the vessels and scene, and the other vessel's registration number, all of which can support the required accident report and any later insurance or legal proceedings.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (practical scene documentation), consistent with Minn. Stat. 86B.341's reporting framework"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Does the coroner reporting duty under Minn. Stat. 86B.335 apply only to a death that occurs at the accident scene itself, or also to a later death from injuries sustained in a boating accident?",
+    "choice_a": "It applies only to a death occurring at the exact moment and location of the accident",
+    "choice_b": "It generally applies to any death that appears to have resulted from a watercraft accident, which can include a later death, such as one occurring at a hospital, from injuries sustained in that accident",
+    "choice_c": "The coroner reporting duty applies only to drowning deaths and never to trauma injuries",
+    "choice_d": "The duty expires if the death occurs more than one hour after the accident",
+    "correct_choice": "B",
+    "explanation": "Minnesota's coroner reporting statute is framed around a death that appears to have resulted from a watercraft accident or drowning, a scope broad enough to include a death occurring later, such as at a hospital, from injuries originally sustained in the accident, not solely an immediate on-scene death.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.335 (coroner reporting duty covers deaths resulting from a watercraft accident, including later deaths from resulting injuries)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "What should a boater do to fulfill the information-exchange duty under Minn. Stat. 86B.341 if another person involved in the accident is unconscious or otherwise unable to receive the information directly?",
+    "choice_a": "The duty is automatically excused and no further action is needed",
+    "choice_b": "Report the required information to a nearby law enforcement officer or otherwise ensure it reaches the appropriate person or authority, and still comply with the duty to notify the county sheriff, rather than treating an unconscious victim as ending the obligation",
+    "choice_c": "Leave immediately since there is no one able to receive the information",
+    "choice_d": "Wait until the unconscious person wakes up before doing anything further",
+    "correct_choice": "B",
+    "explanation": "When a person involved in the accident cannot directly receive the exchanged information because they are unconscious or incapacitated, the operator should still ensure the information reaches a nearby officer or the appropriate authority and must still comply with the duty to notify the county sheriff, rather than treating the victim's condition as excusing the obligation entirely.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.341 (information exchange duty when a party cannot directly receive the information)"
+  }
+]

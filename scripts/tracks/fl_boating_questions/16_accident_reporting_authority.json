@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "What is the dollar threshold of property damage that generally triggers a mandatory Florida boating accident report?",
+    "choice_a": "There is no property-damage threshold; all incidents must be reported",
+    "choice_b": "$50,000 or more",
+    "choice_c": "More than $2,000 in combined property damage, including damage to the vessels involved",
+    "choice_d": "$100 or more",
+    "correct_choice": "C",
+    "explanation": "Florida requires a written boating accident report when property damage (including to the vessels themselves) exceeds $2,000, even if no one was injured.",
+    "weight": 4,
+    "source_note": "Florida Statutes 327.30, boating accident reporting threshold"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "Within how many days must a Florida boating accident involving only property damage over the threshold (and no injury, death, or disappearance) be reported?",
+    "choice_a": "90 days",
+    "choice_b": "There is no deadline for property-damage-only accidents",
+    "choice_c": "Immediately, within one hour",
+    "choice_d": "10 days",
+    "correct_choice": "D",
+    "explanation": "A boating accident causing more than $2,000 in property damage but no death, disappearance, or injury requiring medical treatment beyond first aid must be reported to FWC or another appropriate law enforcement agency within 10 days.",
+    "weight": 4,
+    "source_note": "Florida Statutes 327.30(2), 10-day property-damage reporting window"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "When must a Florida boating accident be reported immediately (as soon as possible) rather than within 10 days?",
+    "choice_a": "When the accident involves a death, a disappearance of a person from the vessel, or an injury requiring medical treatment beyond simple first aid",
+    "choice_b": "Immediate reporting is never required for any boating accident",
+    "choice_c": "Only when the vessel is a total loss with no injuries",
+    "choice_d": "Only when a PWC, but no other vessel type, is involved",
+    "correct_choice": "A",
+    "explanation": "Florida law requires immediate notification to FWC or law enforcement when a boating accident results in death, a person's disappearance from the vessel, or an injury needing more than basic first aid.",
+    "weight": 5,
+    "source_note": "Florida Statutes 327.30(1), immediate-report triggers"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "What is the legal consequence in Florida of failing to file a required boating accident report?",
+    "choice_a": "It is treated the same as a parking violation",
+    "choice_b": "It is a first-degree misdemeanor, punishable by up to one year in jail and a fine of up to $1,000",
+    "choice_c": "There is no penalty for failing to report a boating accident",
+    "choice_d": "It results only in a warning letter with no fine or jail exposure",
+    "correct_choice": "B",
+    "explanation": "Failing to file a required Florida boating accident report is a first-degree misdemeanor under Florida Statutes 327.30(5), carrying up to one year in jail and fines up to $1,000.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.30(5), penalty for failure to report"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "What must a vessel operator involved in any boating accident do at the scene, regardless of the damage or injury level?",
+    "choice_a": "Only stop if a law enforcement officer happens to already be present",
+    "choice_b": "No action is required at the scene of any boating accident",
+    "choice_c": "Stop and render reasonable assistance to anyone injured, and provide identification and vessel information to other involved parties, similar to a car-accident duty",
+    "choice_d": "Leave the scene immediately to avoid liability",
+    "correct_choice": "C",
+    "explanation": "Florida law imposes a duty on vessel operators involved in an accident to stop, render reasonable assistance, and exchange identifying and vessel information, similar to a driver's duties after a car accident.",
+    "weight": 4,
+    "source_note": "Florida Statutes 327.30, duty to render assistance and exchange information"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "What general enforcement authority do FWC officers have over recreational vessels on Florida waters?",
+    "choice_a": "FWC officers have no authority over recreational boaters, only commercial fishing vessels",
+    "choice_b": "Only county sheriffs, never FWC, may stop a recreational vessel",
+    "choice_c": "FWC officers may only issue warnings, never citations or arrests",
+    "choice_d": "They may stop, board, and inspect vessels for safety equipment, registration, and education-card compliance, and enforce boating laws including BUI, reckless operation, and manatee zone violations",
+    "correct_choice": "D",
+    "explanation": "FWC officers are sworn law enforcement with broad authority to stop, board, and inspect vessels for safety and compliance issues, and to enforce the full range of Florida boating laws, from equipment and registration to BUI and manatee zone violations.",
+    "weight": 4,
+    "source_note": "FWC Division of Law Enforcement, boating enforcement authority"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "Besides FWC officers, which other agencies commonly enforce Florida boating laws on state waters?",
+    "choice_a": "County sheriff's offices, municipal marine patrol units, and the U.S. Coast Guard, in addition to FWC",
+    "choice_b": "No agency other than FWC has any boating enforcement role in Florida",
+    "choice_c": "Only the Florida Highway Patrol enforces boating laws",
+    "choice_d": "Only federal agencies, never state or local ones, may enforce Florida boating law",
+    "correct_choice": "A",
+    "explanation": "Florida boating law enforcement is shared among FWC, county sheriff's marine units, municipal marine patrols, and the U.S. Coast Guard, giving broad coverage of the state's extensive waterways.",
+    "weight": 3,
+    "source_note": "General Florida multi-agency boating law enforcement structure"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "What may an FWC officer do if a vessel operator refuses to submit to a lawful vessel safety inspection?",
+    "choice_a": "Only the vessel's owner, not the operator, can be asked to comply with an inspection",
+    "choice_b": "The officer may still require the vessel to stop and may take enforcement action, since safety-equipment inspection is a lawful exercise of their boating law enforcement authority",
+    "choice_c": "The officer has no power to require a vessel to stop for any reason",
+    "choice_d": "Vessel safety inspections are always voluntary with no consequence for refusal",
+    "correct_choice": "B",
+    "explanation": "FWC officers have lawful authority to stop and inspect vessels for compliance with safety-equipment, registration, and other boating law requirements, and refusing a lawful command can itself lead to enforcement action.",
+    "weight": 3,
+    "source_note": "FWC vessel stop-and-inspection authority"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "What should a boater do if they witness another vessel involved in a serious accident but were not involved themselves?",
+    "choice_a": "Only report the accident if specifically asked to by another boater",
+    "choice_b": "Wait 30 days before considering whether to report what was witnessed",
+    "choice_c": "Render reasonable assistance if safe to do so, and notify FWC or another law enforcement agency as soon as possible",
+    "choice_d": "Continue on their way with no obligation to assist or report",
+    "correct_choice": "C",
+    "explanation": "A witnessing boater is encouraged to render safe assistance and promptly notify FWC or law enforcement, helping ensure injured people get help and the accident gets properly documented.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course bystander-assistance and reporting guidance"
+  },
+  {
+    "topic": "Accident Reporting & FWC Officer Authority",
+    "question": "Why does Florida require detailed accident reports (vessel info, parties involved, description of what happened) rather than just a phone call?",
+    "choice_a": "Accident reports serve no purpose beyond paperwork",
+    "choice_b": "Reports are used exclusively to increase registration fees",
+    "choice_c": "A phone call is legally sufficient and no written report is ever required",
+    "choice_d": "Detailed written reports create an accurate record used for enforcement, statistics that inform boating safety policy (such as manatee zone or equipment rule changes), and any legal or insurance proceedings",
+    "correct_choice": "D",
+    "explanation": "Written accident reports give FWC an accurate record for enforcement and for statistical analysis that shapes boating safety policy (including speed zones and equipment rules), and they matter for later legal or insurance purposes.",
+    "weight": 2,
+    "source_note": "General rationale for FWC boating accident reporting requirements"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Boat Types and Classification",
+    "question": "How does S.C. Code Section 50-21-10 define a \"vessel\" for purposes of South Carolina's boating chapter?",
+    "choice_a": "Every description of watercraft, other than a seaplane regulated by the federal government, used or capable of being used as a means of transportation on water",
+    "choice_b": "Only craft that are federally documented",
+    "choice_c": "Only craft longer than 26 feet",
+    "choice_d": "Any structure permanently fixed to the shoreline",
+    "correct_choice": "A",
+    "explanation": "Section 50-21-10 defines \"vessel\" broadly as every description of watercraft, other than a federally regulated seaplane, used or capable of being used as a means of transportation on water, a definition wide enough to cover everything from a canoe to a large cabin cruiser.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-10 (definition of \"vessel\")"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "Under Section 50-21-10, which items are specifically excluded from the statutory definition of \"watercraft\"?",
+    "choice_a": "Nothing is ever excluded from the definition of watercraft",
+    "choice_b": "Only vessels over 65 feet are excluded",
+    "choice_c": "Water skis, aquaplanes, surfboards, windsurfers, tubes, rafts, and similar devices, along with seaplanes, are excluded from the \"watercraft\" definition even though some of them are separately regulated elsewhere in the chapter",
+    "choice_d": "Only sailboats are excluded",
+    "correct_choice": "C",
+    "explanation": "Section 50-21-10 defines \"watercraft\" as anything used or capable of being used as a means of transportation on water, but specifically carves out seaplanes and towed/human-powered recreational items such as water skis, aquaplanes, surfboards, windsurfers, tubes, and rafts, which are instead addressed by the chapter's separate water-skiing provisions.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-10 (definition of \"watercraft\" and its exclusions)"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "Under Section 50-21-10, how broadly does South Carolina law define the term \"operate\" as applied to a vessel or watercraft?",
+    "choice_a": "It applies only to a person physically holding a steering wheel",
+    "choice_b": "It has no defined meaning in the statute",
+    "choice_c": "To navigate, steer, drive, or be in control, a definition that also extends to manipulating moving water skis, a moving aquaplane, a moving surfboard, or a similar moving device",
+    "choice_d": "It applies only to commercial vessel captains",
+    "correct_choice": "C",
+    "explanation": "Section 50-21-10 defines \"operate\" broadly to mean navigating, steering, driving, or otherwise being in control of a vessel, and it explicitly extends this control concept to a person manipulating a moving water ski, aquaplane, surfboard, or similar device, tying that towed activity back into the chapter's operator-focused rules.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-10 (definition of \"operate\")"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "How does Section 50-21-10 define an \"owner\" of a vessel or outboard motor?",
+    "choice_a": "Only a bank or lienholder financing the purchase",
+    "choice_b": "A person, other than a lienholder, who claims lawful possession of a vessel or outboard motor by virtue of legal title or equitable interest",
+    "choice_c": "Only the person who most recently operated the vessel",
+    "choice_d": "Whoever is physically aboard the vessel at a given moment",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-10 defines \"owner\" as a person, other than a lienholder, who claims lawful possession of a vessel or outboard motor through legal title or an equitable interest, distinguishing true ownership from a lender's security interest or a temporary operator's control.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-10 (definition of \"owner\")"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "According to Section 50-21-10, what is a \"marina\" under South Carolina's boating chapter?",
+    "choice_a": "Any body of water regardless of facilities",
+    "choice_b": "A facility that provides mooring or dry storage for watercraft",
+    "choice_c": "A term reserved exclusively for U.S. Coast Guard installations",
+    "choice_d": "Only a facility that sells fuel",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-10 defines a \"marina\" as a facility that provides mooring or dry storage for watercraft, a definition broad enough to cover everything from a full-service marina with fuel and repair services to a simple dry-stack storage yard.",
+    "weight": 2,
+    "source_note": "S.C. Code Ann. Section 50-21-10 (definition of \"marina\")"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "How does Section 50-21-10 define a \"marine dealer\" in South Carolina?",
+    "choice_a": "Only a manufacturer that builds vessels overseas",
+    "choice_b": "A business that engages in buying or selling, exchanging, brokering, manufacturing, or servicing watercraft or outboard motors",
+    "choice_c": "Any individual boat owner who sells a personal vessel once",
+    "choice_d": "Only SCDNR itself",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-10 defines a \"marine dealer\" as a business engaged in buying, selling, exchanging, brokering, manufacturing, or servicing watercraft or outboard motors, a commercial-activity definition distinct from a private individual selling their own boat.",
+    "weight": 2,
+    "source_note": "S.C. Code Ann. Section 50-21-10 (definition of \"marine dealer\")"
+  },
+  {
+    "topic": "Boat Types and Classification",
+    "question": "Under Section 50-21-10, what makes a propulsion unit an \"outboard motor\" rather than an inboard engine?",
+    "choice_a": "Whether the motor is gasoline- or diesel-powered",
+    "choice_b": "Whether the motor was manufactured in the United States",
+    "choice_c": "Whether it is a combustion engine or electric propulsion system used to propel a watercraft that is detachable from the watercraft as a unit",
+    "choice_d": "Whether the motor is painted black",
+    "correct_choice": "C",
+    "explanation": "Section 50-21-10 defines an \"outboard motor\" as a combustion engine or electric propulsion system used to propel a watercraft that is detachable from the watercraft as a complete unit, capturing the key structural distinction from a fixed inboard engine mounted inside the hull.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-10 (definition of \"outboard motor\")"
+  }
+]

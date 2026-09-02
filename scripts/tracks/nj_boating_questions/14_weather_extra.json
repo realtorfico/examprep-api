@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "What does the Small Craft Advisory weather warning display signal indicate to boaters?",
+    "choice_a": "A red triangular flag displayed by day (or red-over-white lights at night), warning that winds of about 21 to 33 knots (24 to 38 mph) are expected, which can be hazardous to small boats",
+    "choice_b": "A black square centered on a red flag, warning that winds of 48 knots or greater are expected",
+    "choice_c": "Two red triangular flags, warning that winds of 34 to 47 knots are expected",
+    "choice_d": "A signal used exclusively for hurricane conditions with winds of 64 knots or greater",
+    "correct_choice": "A",
+    "explanation": "A Small Craft Advisory is displayed as a single red triangular flag by day or red-over-white lights at night, and it warns of winds in the range of roughly 21 to 33 knots (24 to 38 mph) that can be hazardous to smaller vessels. The two-flag, black-square, and hurricane signals described in the other choices represent the higher-threshold Gale Warning, Storm Warning, and Hurricane Warning signals.",
+    "weight": 3,
+    "source_note": "boat-ed.com New Jersey official boater safety course, 'Weather Warning Display Signals'"
+  },
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "On the coastal weather warning display system, what does a Gale Warning signal (two red triangular flags by day, or two red lights at night) indicate?",
+    "choice_a": "Winds in the range of about 21 to 33 knots (24 to 38 mph) are expected",
+    "choice_b": "Winds in the range of about 34 to 47 knots (39 to 54 mph) are expected",
+    "choice_c": "Winds of 64 knots (74 mph) or greater are expected",
+    "choice_d": "The signal only warns of dense fog, not wind",
+    "correct_choice": "B",
+    "explanation": "A Gale Warning, shown as two red triangular flags by day or two red lights at night, indicates expected winds of roughly 34 to 47 knots (39 to 54 mph) -- stronger than a Small Craft Advisory but below Storm Warning thresholds.",
+    "weight": 3,
+    "source_note": "boat-ed.com New Jersey official boater safety course, 'Weather Warning Display Signals'"
+  },
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "While boating, how can you estimate roughly how far away a lightning strike is?",
+    "choice_a": "Lightning distance cannot be estimated without onboard radar",
+    "choice_b": "Multiply the number of lightning flashes seen per minute by ten to get the distance in miles",
+    "choice_c": "Count the number of seconds between seeing the lightning flash and hearing the thunder, then divide by five to get the approximate distance in miles",
+    "choice_d": "Count only the seconds between successive thunderclaps, ignoring when the lightning is seen",
+    "correct_choice": "C",
+    "explanation": "Boaters are taught to count the seconds from seeing a lightning flash to hearing the thunder and divide by five to approximate the storm's distance in miles, helping gauge how close a thunderstorm is and how urgently to seek safety.",
+    "weight": 3,
+    "source_note": "boat-ed.com New Jersey official boater safety course, 'Severe Weather: Prepare Your Boat and Passengers'"
+  },
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "If you are caught in open water during severe weather and cannot safely reach shore, how should a powerboat generally be positioned while riding out the storm?",
+    "choice_a": "Turn the boat broadside (sideways) to the waves for a smoother ride",
+    "choice_b": "Run with the waves directly behind the stern at full throttle to outrun the storm",
+    "choice_c": "Shut off the engine and simply drift without maintaining any heading",
+    "choice_d": "Head the bow into the waves at about a 45-degree angle while keeping a lookout for other vessels and hazards (a personal watercraft should instead head directly into the waves)",
+    "correct_choice": "D",
+    "explanation": "When a storm cannot be outrun to shore, the recommended technique is to head the bow into the waves at roughly a 45-degree angle (personal watercraft head directly into the waves) while watching for other traffic and hazards, since running broadside or stern-to the waves greatly increases the risk of swamping or capsizing.",
+    "weight": 3,
+    "source_note": "boat-ed.com New Jersey official boater safety course, 'Severe Weather: Go to Shore or Ride it Out?'"
+  },
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "If your engine fails during severe weather and the boat begins drifting, what is recommended to help keep the bow into the wind and waves and reduce further drifting?",
+    "choice_a": "Deploy a sea anchor from the bow -- in an emergency, even a bucket can work as an improvised sea anchor",
+    "choice_b": "Deploy an anchor from the stern to speed the drift toward the nearest shore",
+    "choice_c": "Nothing can be done; simply allow the boat to turn stern-to the waves",
+    "choice_d": "Move all passengers to the bow to weigh it down as far forward as possible",
+    "correct_choice": "A",
+    "explanation": "Without engine power, a conventional powerboat tends to drift stern-to the waves, which increases capsizing risk. Deploying a sea anchor (or an improvised one such as a bucket) from the bow helps hold the bow into the wind and waves and slows drifting into danger.",
+    "weight": 2,
+    "source_note": "boat-ed.com New Jersey official boater safety course, 'Severe Weather: Go to Shore or Ride it Out?'"
+  },
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "What are recommended precautions for preparing your boat and passengers when severe weather threatens?",
+    "choice_a": "Increase speed to try to outrun the storm and have passengers stand near the bow for a better view",
+    "choice_b": "Reduce speed while keeping enough power to steer, close all hatches and ports, have everyone put on a properly secured USCG-approved PFD, and have passengers sit low near the centerline",
+    "choice_c": "Open all hatches and ports to reduce wind resistance on the cabin",
+    "choice_d": "There is nothing a boater can do to prepare; simply wait for the weather to pass",
+    "correct_choice": "B",
+    "explanation": "Recommended severe-weather preparation includes reducing speed while retaining enough power for steering, closing hatches and ports to keep water out, stowing loose gear, making sure everyone is wearing a properly secured USCG-approved PFD, and having passengers sit low near the centerline for stability.",
+    "weight": 3,
+    "source_note": "boat-ed.com New Jersey official boater safety course, 'Severe Weather: Prepare Your Boat and Passengers'"
+  },
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "When watching the sky for approaching bad weather in the continental United States, which general direction should boaters pay particular attention to, since most bad weather tends to arrive from that direction?",
+    "choice_a": "The east",
+    "choice_b": "Bad weather has no typical direction of approach and can arrive equally from any direction",
+    "choice_c": "The west",
+    "choice_d": "The south, but only during winter months",
+    "correct_choice": "C",
+    "explanation": "In the continental United States, most bad weather systems move from west to east, so boaters are taught to keep an eye on the western sky, along with watching for wind direction shifts, as an early clue that conditions may be changing.",
+    "weight": 2,
+    "source_note": "boat-ed.com New Jersey official boater safety course, 'How to Avoid Severe Weather'"
+  },
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "NOAA Weather Radio provides continuous, regularly updated marine forecasts and warnings to boaters over how many dedicated VHF frequencies, and across what frequency range?",
+    "choice_a": "A single fixed frequency of 121.500 MHz",
+    "choice_b": "Twelve frequencies spanning the entire VHF marine communication band",
+    "choice_c": "AM broadcast frequencies only, with no dedicated VHF channels",
+    "choice_d": "Seven dedicated frequencies, spanning 162.400 to 162.550 MHz",
+    "correct_choice": "D",
+    "explanation": "NOAA Weather Radio broadcasts official warnings, watches, and forecasts 24 hours a day over seven dedicated VHF frequencies spanning 162.400 to 162.550 MHz, and boaters are advised to tune a portable radio to these frequencies before and during a trip.",
+    "weight": 2,
+    "source_note": "NOAA Weather Radio (weather.gov/nwr) frequency listing; boat-ed.com New Jersey official boater safety course, 'How to Avoid Severe Weather'"
+  },
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "What causes tides, and roughly how often does a coastal area such as New Jersey experience a high-to-low tide cycle?",
+    "choice_a": "The gravitational pull of the sun and moon on the earth, producing a predictable rise and fall roughly twice a day at about six-hour intervals",
+    "choice_b": "Tides are caused entirely by local wind and have no predictable pattern",
+    "choice_c": "Tides occur only once a month, driven solely by the phase of the moon",
+    "choice_d": "Tides are caused by ocean currents alone and occur at random, unpredictable intervals",
+    "correct_choice": "A",
+    "explanation": "Tides are created by the gravitational pull of the sun and moon on the earth, producing a predictable rise and fall that typically cycles roughly twice a day at about six-hour intervals -- knowledge boaters need to read tide tables and anticipate changing water levels and currents.",
+    "weight": 2,
+    "source_note": "boat-ed.com New Jersey official boater safety course, 'Tides on Coastal Waters'"
+  }
+]

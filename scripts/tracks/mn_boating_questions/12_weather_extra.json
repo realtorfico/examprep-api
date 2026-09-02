@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Weather",
+    "question": "Why can the period right after a thunderstorm passes over a Minnesota lake still pose a hypothermia risk, even if the air temperature seems to recover quickly?",
+    "choice_a": "Hypothermia risk disappears the instant a storm ends",
+    "choice_b": "Wet clothing combined with post-storm wind can continue drawing heat away from the body well after the rain stops, so a soaked, windblown boater can still face a real hypothermia risk despite a seemingly mild air temperature",
+    "choice_c": "Air temperature is the only factor that matters for hypothermia risk",
+    "choice_d": "Post-storm conditions always warm the body faster than before the storm",
+    "correct_choice": "B",
+    "explanation": "Wet clothing dramatically increases the rate of body heat loss, and wind chill from post-storm gusts can compound that effect, so a boater soaked during a thunderstorm can remain at real risk of hypothermia even after the storm passes and the air temperature seems to have recovered.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (wet-clothing and wind chill risk after a storm passes)"
+  },
+  {
+    "topic": "Weather",
+    "question": "What is a derecho, and why is it relevant to Minnesota boaters?",
+    "choice_a": "A slow-moving, gentle rain system with no wind risk",
+    "choice_b": "A widespread, long-lived, fast-moving band of damaging straight-line thunderstorm winds that can strike a large lake with little warning and generate dangerous waves and wind gusts over a wide area",
+    "choice_c": "A type of navigational buoy used only on Lake Superior",
+    "choice_d": "A term describing calm, glassy summer lake conditions",
+    "correct_choice": "B",
+    "explanation": "A derecho is a widespread, fast-moving band of damaging straight-line winds associated with a severe thunderstorm complex, capable of striking a large Minnesota lake with limited warning and generating dangerous wind gusts and wave conditions over a broad area, making general storm awareness especially important during Minnesota's summer severe weather season.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (derecho and straight-line wind events), applied to Minnesota's summer severe weather pattern"
+  },
+  {
+    "topic": "Weather",
+    "question": "How can a NOAA Weather Radio or marine weather broadcast help a Minnesota boater beyond a single pre-departure forecast check?",
+    "choice_a": "It provides continuous, updated forecast and warning information while already out on the water, which a single check made before leaving the dock cannot provide",
+    "choice_b": "Marine weather broadcasts are unavailable anywhere in Minnesota",
+    "choice_c": "It only broadcasts information relevant to ocean-going vessels",
+    "choice_d": "It replaces the need to ever look at the sky",
+    "correct_choice": "A",
+    "explanation": "Unlike a single forecast check made before leaving the dock, a NOAA Weather Radio or marine weather broadcast can be monitored continuously while already on the water, giving a boater updated warnings or changing forecasts in real time as conditions develop during the outing.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (continuous marine weather monitoring while underway)"
+  },
+  {
+    "topic": "Weather",
+    "question": "What is a waterspout, and how should a boater respond if one is sighted on a large Minnesota lake?",
+    "choice_a": "A waterspout is a harmless visual phenomenon that boaters can safely approach for a closer look",
+    "choice_b": "A waterspout is a rotating column of air over water, similar to a tornado, and a boater who spots one should move away from its path at a right angle rather than trying to outrun it in a straight line or approach it",
+    "choice_c": "Waterspouts occur only over saltwater and can never form over an inland lake",
+    "choice_d": "The correct response is to head directly toward the waterspout to shelter behind it",
+    "correct_choice": "B",
+    "explanation": "A waterspout is a rotating column of air extending from a cloud to the water's surface, similar in nature to a tornado; while rare, they can occur over large Minnesota lakes during severe weather, and the recommended response is to move away at a right angle to its apparent path rather than attempting to outrun or approach it directly.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (waterspout hazard and avoidance technique)"
+  },
+  {
+    "topic": "Weather",
+    "question": "Besides storms, what other weather-related risk should a Minnesota boater guard against during a long, sunny day on the water?",
+    "choice_a": "Heat-related illness from sun and heat exposure, which boaters can reduce through adequate hydration, shade or covered clothing, and sunscreen",
+    "choice_b": "There is no weather-related risk on a clear, sunny day",
+    "choice_c": "Heat exposure is a concern only for boaters wearing dark clothing",
+    "choice_d": "Sunscreen use has no bearing on boating safety",
+    "correct_choice": "A",
+    "explanation": "A long day exposed to sun, heat, wind, and reflected glare off the water raises the risk of dehydration and heat-related illness, so boating safety guidance recommends adequate hydration, shade or protective clothing, and sunscreen as part of preparing for a day on a sunny Minnesota lake.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (heat-related illness prevention as a weather-related safety topic)"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why does Lake Superior's north shore present a distinct weather pattern compared to Minnesota's smaller inland lakes?",
+    "choice_a": "Lake Superior never experiences fog or temperature-related weather effects",
+    "choice_b": "Lake Superior's very cold, deep water creates its own microclimate that can generate fog and sharp temperature differences between the shoreline and open water even during summer, a pattern less pronounced on Minnesota's smaller, shallower inland lakes",
+    "choice_c": "Lake Superior's weather is identical year-round to any small Minnesota lake",
+    "choice_d": "Only wind, never temperature or fog, differs near Lake Superior",
+    "correct_choice": "B",
+    "explanation": "Lake Superior's exceptional depth and cold water temperature create a distinct microclimate along its shore, capable of producing fog and sharp temperature swings between the immediate shoreline and open water even in summer, a more pronounced effect than typically seen on Minnesota's smaller, shallower inland lakes.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (large deep-lake microclimate effects), applied to Minnesota's Lake Superior north shore"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why is Mille Lacs Lake specifically known among Minnesota boaters as a lake requiring extra weather caution?",
+    "choice_a": "Because it never experiences any wind or waves",
+    "choice_b": "Its large surface area combined with relatively shallow average depth allows wind to build steep, dangerous chop more quickly than on many other Minnesota lakes, catching boaters off guard",
+    "choice_c": "Mille Lacs is a small, sheltered pond with no open-water exposure",
+    "choice_d": "Weather conditions on Mille Lacs are always identical to conditions on small wooded lakes",
+    "correct_choice": "B",
+    "explanation": "Mille Lacs Lake's combination of a large open surface area and comparatively shallow average depth allows wind to whip up steep, choppy waves faster than on many smaller or deeper Minnesota lakes, which is why it has a well-known reputation among boaters for turning dangerous quickly once wind picks up.",
+    "weight": 2,
+    "source_note": "Minnesota DNR and boating safety guidance (Mille Lacs Lake's susceptibility to rapid, dangerous wave buildup)"
+  },
+  {
+    "topic": "Weather",
+    "question": "What is a \"small craft advisory,\" and why should a Minnesota boater pay attention to one before heading onto a large lake?",
+    "choice_a": "A National Weather Service product warning that sustained winds or waves are expected to reach a level that could be hazardous to smaller recreational boats, signaling that a trip should be postponed or limited to more sheltered water",
+    "choice_b": "A mandatory registration category for boats under 16 feet",
+    "choice_c": "A warning that applies only to ocean-going vessels, never to inland lakes",
+    "choice_d": "An advisory that has no bearing on recreational boating decisions",
+    "correct_choice": "A",
+    "explanation": "A small craft advisory is issued by the National Weather Service when wind speeds or wave heights are expected to reach a level that poses a meaningful hazard to smaller recreational vessels, and a prudent Minnesota boater checks for one before heading onto a large, open lake and adjusts or postpones the trip accordingly.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (National Weather Service small craft advisory), applied to Minnesota's large lakes"
+  }
+]

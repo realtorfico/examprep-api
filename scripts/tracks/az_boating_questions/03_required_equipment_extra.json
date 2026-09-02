@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under Arizona law (A.R.S. 5-332), what actually triggers the requirement to carry a readily accessible, USCG-approved fire extinguisher aboard a watercraft?",
+    "choice_a": "The watercraft uses a fuel with a flash point of 110 degrees Fahrenheit or below (a volatile, gasoline-type fuel), unless the commission grants an exemption",
+    "choice_b": "The watercraft's hull color",
+    "choice_c": "Only whether the watercraft is registered in Arizona",
+    "choice_d": "Only whether the watercraft has more than six seats",
+    "correct_choice": "A",
+    "explanation": "A.R.S. 5-332 requires watercraft using a volatile fuel with a flash point of 110 degrees Fahrenheit or below to carry a readily accessible, U.S. Coast Guard-approved fire extinguisher kept in condition for immediate and effective use, unless the Arizona Game and Fish Commission grants an exemption; for vessels over 26 feet using such fuel, the specific number and type are set by U.S. Coast Guard regulation.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes Title 5, Chapter 3, Article 4, A.R.S. 5-332 (Fire extinguishers)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under Arizona law, which body has the authority to grant an exemption from the fire extinguisher requirement in A.R.S. 5-332?",
+    "choice_a": "The marina where the boat is docked",
+    "choice_b": "The Arizona Game and Fish Commission",
+    "choice_c": "The boat's manufacturer",
+    "choice_d": "No exemption from this requirement is ever possible under Arizona law",
+    "correct_choice": "B",
+    "explanation": "A.R.S. 5-332 allows the Arizona Game and Fish Commission (defined in Title 5, Chapter 3 as 'the Arizona game and fish commission') to grant exemptions from the fire extinguisher carriage requirement.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes Title 5, Chapter 3, A.R.S. 5-301 (definitions) and A.R.S. 5-332 (Fire extinguishers)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under Arizona law (A.R.S. 5-334), which gasoline-powered watercraft are specifically exempt from the backfire flame arrestor requirement?",
+    "choice_a": "Watercraft powered by inboard engines",
+    "choice_b": "No gasoline-powered watercraft is ever exempt",
+    "choice_c": "Watercraft powered by outboard motors",
+    "choice_d": "Watercraft under 16 feet only",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-334 requires a flame arrestor on the carburetor of 'all watercraft using gasoline as fuel, except outboard motors,' since an outboard's carburetor and any backfire vent outside the hull rather than into an enclosed engine compartment.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes Title 5, Chapter 3, Article 4, A.R.S. 5-334 (Flame arrestor)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under Arizona law, what construction standard and function must a required backfire flame arrestor meet?",
+    "choice_a": "It only needs to be made of any lightweight plastic that fits the carburetor opening",
+    "choice_b": "It must be painted a bright, visible color for inspection purposes",
+    "choice_c": "It must automatically shut off the engine whenever a backfire occurs",
+    "choice_d": "It must be of metallic construction with flame-tight connections, firmly secured to withstand vibration, shock, and engine backfire, and must disperse any backfire flame outside the watercraft without endangering the vessel, persons aboard, or nearby watercraft and structures",
+    "correct_choice": "D",
+    "explanation": "A.R.S. 5-334 requires the flame arrestor to be of metallic construction with flame-tight connections, firmly secured against vibration, shock, and backfire, and built so backfire flames are dispersed to the atmosphere outside the watercraft in a way that does not endanger the vessel, its occupants, or nearby boats and structures.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes Title 5, Chapter 3, Article 4, A.R.S. 5-334 (Flame arrestor)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under Arizona law (A.R.S. 5-335), which watercraft using a volatile liquid fuel are exempt from the ventilation system requirement?",
+    "choice_a": "Open boats",
+    "choice_b": "Personal watercraft only",
+    "choice_c": "Any watercraft registered before 1990",
+    "choice_d": "No watercraft using volatile fuel is ever exempt",
+    "correct_choice": "A",
+    "explanation": "A.R.S. 5-335 requires 'all watercraft, except open boats,' that use a volatile liquid fuel to have a ventilation system that properly and efficiently ventilates the bilges of the engine and fuel tank compartments to remove explosive or flammable gases; open boats are specifically exempted because they lack the enclosed compartments where such gases would collect.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes Title 5, Chapter 3, Article 4, A.R.S. 5-335 (Ventilation)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under Arizona law (A.R.S. 5-336), is a boater ever allowed to operate a motor-driven watercraft during a sanctioned boat race without complying with the normal muffling/noise requirement?",
+    "choice_a": "No -- the muffling requirement can never be waived for any reason, including sanctioned races",
+    "choice_b": "Yes -- watercraft competing in a regatta, boat race, or official speed trial recognized by a national or regional governing body can be exempted for the duration of the event if the department issues a permit specifying the location and time",
+    "choice_c": "Yes, but only if the watercraft is operated at night",
+    "choice_d": "Yes, and no permit or authorization is ever required",
+    "correct_choice": "B",
+    "explanation": "A.R.S. 5-336 exempts watercraft entered in a regatta, boat race, or official speed trial sanctioned by a recognized national or regional governing body from the standard noise-suppression requirement, but only for the authorized event, and only after the department issues a permit specifying the time and location.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes Title 5, Chapter 3, Article 4, A.R.S. 5-336 (Muffling devices)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Does Arizona's muffling-device law (A.R.S. 5-336) require every motor-driven watercraft to use a specific type of exhaust system, such as one with water discharge?",
+    "choice_a": "Yes -- only water-cooled, water-discharge exhaust systems are legal in Arizona",
+    "choice_b": "Yes -- only completely open, unmuffled exhaust is legal in Arizona",
+    "choice_c": "No -- the law does not prohibit a particular kind of exhaust system, including one without water discharge, as long as it is effective, kept in good working order, and continuously prevents excessive or unusual noise",
+    "choice_d": "The law does not address exhaust systems at all",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-336 requires effective noise-suppression equipment in good working order and constant operation on all motor-driven watercraft, but explicitly does not ban any particular exhaust system or device -- including one without water discharge -- as long as it meets the noise-control standard.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes Title 5, Chapter 3, Article 4, A.R.S. 5-336 (Muffling devices)"
+  }
+]

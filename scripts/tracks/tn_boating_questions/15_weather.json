@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Weather",
+    "question": "What should every boater do before heading out onto a Tennessee lake or reservoir?",
+    "choice_a": "Only check the forecast if planning to be out longer than a week",
+    "choice_b": "Rely solely on how the sky looks at the dock",
+    "choice_c": "Check the current weather forecast and marine or lake conditions",
+    "choice_d": "Weather has no bearing on small-craft safety",
+    "correct_choice": "C",
+    "explanation": "Checking the forecast before departure is one of the simplest and most effective ways to avoid getting caught in dangerous weather on the water.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Weather",
+    "question": "What are common early warning signs of an approaching storm while out on the water?",
+    "choice_a": "A clear blue sky with no clouds at all",
+    "choice_b": "Calm water with absolutely no wind",
+    "choice_c": "Rising water temperature only",
+    "choice_d": "Darkening clouds building on the horizon, a sudden drop in temperature, and a noticeable shift in wind direction or speed",
+    "correct_choice": "D",
+    "explanation": "Darkening or towering clouds, a sudden temperature drop, and shifting wind are classic early warning signs that a storm is approaching and it is time to head to safety.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Weather",
+    "question": "If a boater on a Tennessee reservoir notices a storm building, what should they do?",
+    "choice_a": "Make sure everyone is wearing a PFD, secure loose gear, reduce speed, and head to the nearest safe shore",
+    "choice_b": "Increase speed to try to outrun the storm across open water",
+    "choice_c": "Anchor in the middle of the widest part of the lake and wait it out",
+    "choice_d": "Continue the planned route without any changes",
+    "correct_choice": "A",
+    "explanation": "When a storm is building, boaters should put on PFDs, secure loose gear, reduce speed for the conditions, and head for the nearest safe shore rather than trying to beat the storm across open water.",
+    "weight": 4,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Weather",
+    "question": "What is the safest action if a boater is caught on open water during a lightning storm?",
+    "choice_a": "Jump into the water, since lightning cannot strike a swimmer",
+    "choice_b": "Get as low in the boat as possible, stay away from metal objects and the water, and try to reach shore or shelter",
+    "choice_c": "Stand up to get a better view of the lightning",
+    "choice_d": "Hold onto the highest metal railing on the boat",
+    "correct_choice": "B",
+    "explanation": "During a lightning storm, boaters should crouch low in the boat, avoid touching metal objects and the water, and try to reach shore or a substantial shelter as quickly as safely possible.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why can wind and waves build up unexpectedly on large Tennessee reservoirs like Kentucky Lake or Norris Lake?",
+    "choice_a": "Wave height on a reservoir is always capped at a few inches by law",
+    "choice_b": "Reservoirs are too small for wind to have any effect on wave size",
+    "choice_c": "A long, open stretch of water (fetch) allows wind to build larger waves than boaters might expect on an inland lake",
+    "choice_d": "TVA reservoirs never experience wind because they are inland",
+    "correct_choice": "C",
+    "explanation": "On long, open stretches of large reservoirs like Kentucky Lake or Norris Lake, wind has enough uninterrupted distance (fetch) to build waves that can surprise boaters expecting calmer inland-lake conditions.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals applied to Tennessee's TVA reservoir system"
+  },
+  {
+    "topic": "Weather",
+    "question": "What should a boater do if caught in sudden fog on a Tennessee waterway?",
+    "choice_a": "Speed up to get through the fog bank as quickly as possible",
+    "choice_b": "Turn off all navigation lights so they do not reflect off the fog",
+    "choice_c": "Anchor in the middle of a marked navigation channel",
+    "choice_d": "Slow down, sound the appropriate fog signal periodically, and post a lookout",
+    "correct_choice": "D",
+    "explanation": "In fog, a boater should slow to a safe speed, sound the appropriate fog signal at intervals, and post a lookout, since visual detection of other vessels is severely limited.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (Navigation Rules, restricted visibility)"
+  },
+  {
+    "topic": "Weather",
+    "question": "What resource can boaters monitor for continuous, updated weather and marine forecast information while on the water?",
+    "choice_a": "A NOAA weather radio or marine weather broadcast",
+    "choice_b": "Yesterday's newspaper weather section",
+    "choice_c": "The boat's speedometer",
+    "choice_d": "A land-based road traffic report",
+    "correct_choice": "A",
+    "explanation": "NOAA weather radio and marine weather broadcasts provide continuously updated forecasts and warnings that boaters can monitor while out on the water.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  }
+]

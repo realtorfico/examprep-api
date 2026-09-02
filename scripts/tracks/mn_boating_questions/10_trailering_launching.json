@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "Under Minnesota's aquatic invasive species law (Minn. Stat. 84D.10), what must a boater do to drain plugs, bailers, and valves before transporting a watercraft away from any Minnesota water access?",
+    "choice_a": "Drain plugs may be left in place as long as the boat is covered",
+    "choice_b": "Only livewells need to be drained; bilges and ballast tanks are exempt",
+    "choice_c": "Remove or open the drain plug and any devices controlling water drainage from ballast tanks, bilges, and live wells before transporting the watercraft",
+    "choice_d": "This requirement applies only to watercraft leaving designated \"infested waters\"",
+    "correct_choice": "C",
+    "explanation": "Minnesota's invasive species statute requires boaters to remove the drain plug and open any valves or devices controlling drainage from ballast tanks, bilges, and live wells before transporting a boat away from any water access -- not just waters officially listed as infested -- to prevent unintentionally moving invasive species in trapped water.",
+    "weight": 4,
+    "source_note": "Minn. Stat. 84D.10 (aquatic invasive species; drain plug and water-draining requirement)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What authority does a Minnesota conservation officer have if aquatic macrophytes or prohibited invasive species are found attached to a boat or trailer at a water access?",
+    "choice_a": "Officers have no authority to act; the boater may leave with the material still attached",
+    "choice_b": "The boat must be permanently confiscated on the first offense",
+    "choice_c": "Only the boat owner, and never an officer, can decide whether to decontaminate",
+    "choice_d": "The officer may order removal of the material, including decontamination with hot water or high-pressure equipment, before the equipment is transported",
+    "correct_choice": "D",
+    "explanation": "Minnesota law empowers conservation officers and other peace officers to order the removal of aquatic macrophytes or prohibited invasive species from a boat or trailer, including requiring decontamination with hot water or high-pressure equipment, before the equipment leaves the access site.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 84D.10 (invasive species removal and decontamination authority)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What can happen to a boater's watercraft if a Minnesota officer finds prohibited invasive species attached and the violation is not remedied?",
+    "choice_a": "The equipment can be prohibited from being placed back into state waters, or confined and removed from the water, until the violation is corrected",
+    "choice_b": "Nothing at all; there is no consequence for leaving invasive species attached",
+    "choice_c": "The vessel's registration is automatically and permanently revoked nationwide",
+    "choice_d": "The owner is barred from ever registering a boat again in Minnesota",
+    "correct_choice": "A",
+    "explanation": "Minnesota's invasive species law lets officers confine or remove non-compliant equipment from the water and prohibit its relaunch until the boater corrects the violation, giving enforcement real teeth without requiring a full criminal prosecution for every violation.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 84D.10 (consequences for uncorrected invasive species violations)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why does Minnesota place such a strong legal emphasis on cleaning boats and trailers between different lakes?",
+    "choice_a": "Because cleaning has no ecological purpose and exists solely to generate registration revenue",
+    "choice_b": "Because invasive species such as zebra mussels and Eurasian watermilfoil can spread between Minnesota's more than 10,000 lakes on boats, trailers, and live wells if not removed, permanently damaging native ecosystems and fisheries once established",
+    "choice_c": "Because Minnesota has no invasive species problem",
+    "choice_d": "Because trailers are more likely to rust if not cleaned, which is a purely mechanical concern unrelated to the law",
+    "correct_choice": "B",
+    "explanation": "With more than 10,000 lakes, Minnesota faces a serious risk of invasive species like zebra mussels or Eurasian watermilfoil spreading from an infested lake to a previously clean one via a boat, trailer, or live well, which is why the law requires draining and, when needed, decontaminating equipment between launches.",
+    "weight": 3,
+    "source_note": "Minnesota DNR invasive species prevention program (context for Minn. Stat. 84D.10 requirements)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What pre-launch check helps prevent a trailer or boat from becoming a hazard on a Minnesota highway on the way to the lake?",
+    "choice_a": "None of these checks matter as long as the boat looks secure",
+    "choice_b": "Trailer lights are optional accessories with no legal significance",
+    "choice_c": "Checking that trailer tires are properly inflated, safety chains are correctly attached, trailer lights work, and the boat is secured with tie-downs before driving",
+    "choice_d": "Safety chains are unnecessary if the hitch is new",
+    "correct_choice": "C",
+    "explanation": "A properly prepared trailer needs inflated tires, correctly attached safety chains (crossed underneath the tongue to catch it if the hitch fails), functioning lights, and secure tie-downs, all of which prevent the boat or trailer from becoming a road hazard.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (trailer pre-launch inspection), consistent with NASBLA-aligned course guidance"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What boat ramp etiquette helps keep a busy Minnesota public water access moving efficiently on a summer weekend?",
+    "choice_a": "Perform all boat preparation while parked directly on the ramp, regardless of how many boats are waiting",
+    "choice_b": "There is no expected etiquette at public boat launches",
+    "choice_c": "Boaters should back down the ramp as slowly as possible to maximize their time occupying it",
+    "choice_d": "Prepare the boat (load gear, remove tie-downs except the winch strap, insert the drain plug) in the staging area before pulling onto the ramp itself, then move promptly clear of the ramp after launching",
+    "correct_choice": "D",
+    "explanation": "Preparing the boat -- loading gear, releasing tie-downs except the winch strap, and inserting the drain plug -- in a staging area before backing onto the ramp itself, then promptly moving clear after launching, keeps a busy access point moving and reduces frustration and collision risk among waiting boaters.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (boat ramp etiquette), consistent with Minnesota DNR boating etiquette guidance"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why should a boater double-check that the drain plug is properly inserted immediately before launching, right after having removed it for the invasive-species transport requirement?",
+    "choice_a": "Because Minnesota's own invasive-species law requires removing the plug for transport, so a boater must remember to reinsert it before launching or risk the boat swamping or sinking at the dock",
+    "choice_b": "The drain plug has no functional purpose once a boat is in the water",
+    "choice_c": "Drain plugs are only relevant to non-motorized canoes",
+    "choice_d": "Reinserting the plug is illegal under Minnesota law",
+    "correct_choice": "A",
+    "explanation": "Because Minnesota law requires the drain plug to be removed for transport to prevent spreading invasive species, boaters must consciously remember to reinsert it before launching; forgetting this step is a common and entirely avoidable cause of a boat swamping or sinking right at the ramp.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 84D.10 (drain plug removal requirement) combined with universal pre-launch safety practice"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is a recommended practice when backing a trailer down a boat ramp with other boaters waiting?",
+    "choice_a": "It is acceptable to take unlimited time regardless of how many vehicles are waiting",
+    "choice_b": "Back down slowly and steadily, using a spotter if available, and pull forward again promptly if the approach needs correcting rather than repeatedly struggling in front of a line of waiting vehicles",
+    "choice_c": "Trailer backing technique has no bearing on ramp safety or efficiency",
+    "choice_d": "A spotter is prohibited from assisting the driver at any public ramp",
+    "correct_choice": "B",
+    "explanation": "Backing a trailer takes practice; using a spotter and being willing to pull forward and reset rather than repeatedly struggling keeps the line moving and reduces the risk of jackknifing the trailer or striking another vehicle or dock structure.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (trailer backing and ramp courtesy)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "After retrieving a boat from a Minnesota lake, in what order should invasive-species compliance steps generally occur before towing away?",
+    "choice_a": "Compliance steps can be completed at home days later with no urgency",
+    "choice_b": "Only the trailer needs inspection; the hull itself never needs checking",
+    "choice_c": "Remove visible aquatic plants and debris from the hull, trailer, and motor; drain live wells, bilges, and ballast by removing the plug; and drain any other water-holding compartments -- all before leaving the access",
+    "choice_d": "There is no required order or process at all",
+    "correct_choice": "C",
+    "explanation": "Minnesota's invasive species framework expects boaters to clear visible plants and debris and drain water-holding areas at the access site itself, before departure, since transporting water or attached vegetation even a short distance can introduce a new species to the next lake visited.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 84D.10 (clean, drain, and dispose sequence for invasive species prevention)"
+  }
+]

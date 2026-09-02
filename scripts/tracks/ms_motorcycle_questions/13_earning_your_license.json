@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Earning Your License",
+    "question": "To earn a motorcycle license or endorsement, what two tests does the manual say a rider must pass?",
+    "choice_a": "Only a written test; no riding skill test is ever required",
+    "choice_b": "Only a vision test",
+    "choice_c": "A written essay describing motorcycle safety",
+    "choice_d": "A knowledge test and an on-cycle skill test",
+    "correct_choice": "D",
+    "explanation": "The manual states that to earn your license, you must pass a knowledge test and an on-cycle skill test.",
+    "weight": 3,
+    "source_note": "MS Motorcycle Operator Manual (MSF 17th Ed.), p.47, 'Earning Your License'"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "What does the manual say knowledge test questions are based on?",
+    "choice_a": "Information, practices and ideas from the manual, requiring knowledge and understanding of road rules and safe riding practices",
+    "choice_b": "Random general trivia unrelated to motorcycling",
+    "choice_c": "Only information about a specific motorcycle brand",
+    "choice_d": "Questions are based solely on personal riding experience, not the manual",
+    "correct_choice": "A",
+    "explanation": "The manual states that knowledge test questions are based on information, practices and ideas from the manual, and require that a rider know and understand road rules and safe riding practices.",
+    "weight": 3,
+    "source_note": "MS Motorcycle Operator Manual (MSF 17th Ed.), p.47, 'Earning Your License'"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "Where can the on-cycle skill test be conducted, according to the manual?",
+    "choice_a": "Only on a closed racetrack",
+    "choice_b": "Either in an actual traffic environment or in a controlled, off-street area",
+    "choice_c": "Only in the applicant's own driveway",
+    "choice_d": "The skill test is always conducted entirely by written questionnaire",
+    "correct_choice": "B",
+    "explanation": "The manual states that an on-cycle skill test will either be conducted in an actual traffic environment or in a controlled, off-street area.",
+    "weight": 2,
+    "source_note": "MS Motorcycle Operator Manual (MSF 17th Ed.), p.47, 'Earning Your License'"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "In Mississippi, what must an applicant do in order to obtain a motorcycle endorsement, according to the Mississippi DPS Driver Service Bureau?",
+    "choice_a": "Only complete an online course with no in-person testing",
+    "choice_b": "Only pass a skills test; no written test is required in Mississippi",
+    "choice_c": "Pass both a written (knowledge) test and a driving skills test, and pay the applicable fee",
+    "choice_d": "Simply present a valid out-of-state motorcycle license with no further steps",
+    "correct_choice": "C",
+    "explanation": "Mississippi's Driver Service Bureau states that an applicant who wants to operate a motorcycle must obtain a motorcycle endorsement, which requires passing both the written test and a driving skills test and paying the appropriate fee.",
+    "weight": 4,
+    "source_note": "MS DPS Driver Service Bureau, 'Motorcycle License Requirements' (driverservicebureau.dps.ms.gov/Drivers/Motorcycle_License_Reqs) and 'Motorcycle Endorsement' (node/299), checked directly this session"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "According to Mississippi DPS, if an applicant has successfully completed a motorcycle safety class endorsed by AAMVA, which test is waived?",
+    "choice_a": "Both the knowledge test and the skills test are waived",
+    "choice_b": "Only the knowledge test is waived; the skills test is still required",
+    "choice_c": "Neither test is ever waived, regardless of any completed safety course",
+    "choice_d": "Only the skills (road) test is waived; the applicant is still required to complete the knowledge test",
+    "correct_choice": "D",
+    "explanation": "Mississippi DPS's Driver Service Bureau states that applicants who have successfully completed an AAMVA-endorsed motorcycle safety class are not required to take the skills test, but are still required to complete the knowledge test -- the knowledge test itself is not waived by an approved course.",
+    "weight": 4,
+    "source_note": "MS DPS Driver Service Bureau, 'Motorcycle Endorsement' (driverservicebureau.dps.ms.gov/node/299), checked directly this session"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "According to Mississippi DPS, what may happen to the written and skills test requirements if an applicant holds a valid out-of-state license that covers motorcycle operation?",
+    "choice_a": "The written and skills tests may be waived",
+    "choice_b": "An out-of-state motorcycle-endorsed license has no bearing on Mississippi's testing requirements",
+    "choice_c": "Only the fee is waived; both tests are still always required",
+    "choice_d": "Out-of-state applicants must retake both tests twice",
+    "correct_choice": "A",
+    "explanation": "Mississippi DPS's Driver Service Bureau states that if you hold an out-of-state license which is valid for the operation of motorcycles, the written and skills tests may be waived.",
+    "weight": 3,
+    "source_note": "MS DPS Driver Service Bureau, 'Motorcycle License Requirements' (driverservicebureau.dps.ms.gov/Drivers/Motorcycle_License_Reqs), checked directly this session"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "Is the exact number of questions and passing score for Mississippi's motorcycle knowledge test officially published by MS DPS or stated in the manual?",
+    "choice_a": "Yes -- the manual states in bold print that the test has exactly 25 questions and requires 80% to pass",
+    "choice_b": "No -- neither the Mississippi Motorcycle Operator Manual nor the official MS DPS Driver Service Bureau pages checked publish an official question count or passing score for the knowledge test",
+    "choice_c": "Yes -- MS DPS's website prominently displays the exact question count and passing score on its homepage",
+    "choice_d": "The test has no passing score requirement at all in Mississippi",
+    "correct_choice": "B",
+    "explanation": "A direct check of the Mississippi Motorcycle Operator Manual and the official driverservicebureau.dps.ms.gov pages (Motorcycle License Requirements, Motorcycle Endorsement) found no officially published question count or passing score for the motorcycle knowledge test. Third-party test-prep sites commonly cite 25 questions and an 80% (20-correct) passing score, but this figure is not confirmed by an official Mississippi state source and should be treated as an unconfirmed, third-party-reported figure only.",
+    "weight": 3,
+    "source_note": "Checked directly this session: MS Motorcycle Operator Manual (MSF 17th Ed.), 'Earning Your License,' plus driverservicebureau.dps.ms.gov/Drivers/Motorcycle_License_Reqs and /node/299 -- neither source states an item count or passing score; commonly-cited 25-question/80% figure traces only to third-party test-prep sites, not to MS DPS itself"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "During an on-cycle skill test, which of the following may an examiner evaluate a rider's ability to do?",
+    "choice_a": "Recite the entire operator's manual from memory",
+    "choice_b": "Change the motorcycle's oil unassisted",
+    "choice_c": "Accelerate, brake and turn safely, and make critical decisions and carry them out",
+    "choice_d": "Only parallel park the motorcycle",
+    "correct_choice": "C",
+    "explanation": "The manual lists several skills an examiner may test, including the ability to accelerate, brake and turn safely, to see, be seen and communicate with others, and to make critical decisions and carry them out.",
+    "weight": 3,
+    "source_note": "MS Motorcycle Operator Manual (MSF 17th Ed.), p.48, 'On-Motorcycle Skill Test'"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "What factors related to safety may examiners use to score the on-cycle skill test, according to the manual?",
+    "choice_a": "Only the total time taken to complete the course",
+    "choice_b": "Only the make and model of the motorcycle used",
+    "choice_c": "Examiners do not use any specific scoring factors",
+    "choice_d": "Selecting safe speeds to perform maneuvers, and choosing the correct path while staying within boundaries",
+    "correct_choice": "D",
+    "explanation": "The manual states examiners may score on factors related to safety, such as selecting safe speeds to perform maneuvers and choosing the correct path and staying within boundaries, in addition to completing normal and quick stops, turns, or swerves.",
+    "weight": 3,
+    "source_note": "MS Motorcycle Operator Manual (MSF 17th Ed.), p.48, 'On-Motorcycle Skill Test'"
+  }
+]

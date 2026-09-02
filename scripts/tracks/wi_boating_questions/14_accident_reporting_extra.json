@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Accident Reporting",
+    "question": "Beyond eventually filing a report, what immediate duty does a boat operator have toward others involved in an accident?",
+    "choice_a": "A duty to stop and render reasonable assistance to anyone injured or endangered by the accident, so far as this can be done safely",
+    "choice_b": "No duty exists beyond eventually mailing the written report",
+    "choice_c": "The duty to render aid applies only if the operator is personally uninjured and financially able to pay for it",
+    "choice_d": "Only a passing third-party vessel has any duty to assist; the operators involved do not",
+    "correct_choice": "A",
+    "explanation": "Beyond the formal reporting requirement, an operator involved in a boating accident has a duty to stop and render reasonable assistance to anyone injured or endangered, to the extent this can be done without serious danger to themselves or others.",
+    "weight": 3,
+    "source_note": "General duty to render assistance after a boating accident, consistent with Wisconsin DNR's boating accident framework (dnr.wisconsin.gov/Topic/Boat/CrashInfo)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "What information must operators involved in a Wisconsin boating accident generally exchange with each other before leaving the scene?",
+    "choice_a": "No exchange of information is required as long as both parties agree to leave",
+    "choice_b": "Name, address, and vessel registration number, similar to the information exchange required after a motor vehicle accident",
+    "choice_c": "Only insurance company names need to be exchanged, nothing else",
+    "choice_d": "Only the larger vessel's operator must provide information to the other party",
+    "correct_choice": "B",
+    "explanation": "Consistent with the information-exchange duty familiar from motor vehicle accidents, operators involved in a Wisconsin boating accident are generally expected to exchange identifying information -- name, address, and vessel registration number -- before leaving the scene.",
+    "weight": 2,
+    "source_note": "General post-accident information exchange duty, consistent with Wisconsin DNR's boating accident reporting framework (dnr.wisconsin.gov/Topic/Boat/CrashInfo)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "What risk does an operator face if they leave the scene of a reportable boating accident without rendering aid or exchanging information?",
+    "choice_a": "No additional risk beyond simply failing to file the later written report",
+    "choice_b": "Leaving the scene without rendering aid or exchanging information can itself constitute a separate violation, distinct from and in addition to the written-report requirement",
+    "choice_c": "Leaving the scene is only a problem if a fatality occurred",
+    "choice_d": "This obligation applies only to commercial vessels, not recreational boaters",
+    "correct_choice": "B",
+    "explanation": "Failing to stop, render aid, or exchange information at the scene of a reportable accident is treated as its own violation, separate from -- and in addition to -- the later duty to submit a written accident report.",
+    "weight": 2,
+    "source_note": "General post-accident duty framework, consistent with Wisconsin DNR's boating accident reporting guidance (dnr.wisconsin.gov/Topic/Boat/CrashInfo)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Does Wisconsin's accident-reporting threshold apply only to motorboat accidents, or more broadly?",
+    "choice_a": "It applies only to motorboats; canoes, sailboats, and PWCs are exempt regardless of the outcome",
+    "choice_b": "It applies to any vessel type -- a canoe, sailboat, or PWC accident that meets the death, injury, property-damage, or total-loss thresholds is reportable just like a motorboat accident",
+    "choice_c": "It applies only to accidents involving a personal watercraft",
+    "choice_d": "The threshold applies only to accidents on the Great Lakes, not inland lakes",
+    "correct_choice": "B",
+    "explanation": "The reportable-accident thresholds -- death, an injury requiring treatment beyond first aid, property damage exceeding $2,000, or total loss of the vessel -- apply regardless of vessel type, so a canoe, sailboat, or PWC accident meeting those criteria is just as reportable as one involving a larger motorboat.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR boating accident reporting guidance (dnr.wisconsin.gov/Topic/Boat/CrashInfo)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Is photographing the scene of a boating accident -- vessel positions, damage, and conditions -- a formally mandated step under Wisconsin's reporting requirements?",
+    "choice_a": "Yes, DNR requires a minimum number of photographs to be submitted with every written report",
+    "choice_b": "No -- it is not itself a separate mandatory step, but documenting the scene is good practice that can help support the accuracy of the required written report",
+    "choice_c": "Photography is prohibited at the scene of any boating accident",
+    "choice_d": "Photographing the scene replaces the need to file the written Form 4100-020 report entirely",
+    "correct_choice": "B",
+    "explanation": "While Wisconsin's formal accident-reporting requirement centers on the immediate verbal report and the written Form 4100-020 filed within 10 days, documenting the scene with photos and notes on conditions and vessel positions is a practical, recommended step that can help ensure the required report is accurate and complete -- it is not itself a separately mandated legal requirement.",
+    "weight": 1,
+    "source_note": "Wisconsin DNR boating accident reporting guidance (dnr.wisconsin.gov/Topic/Boat/CrashInfo); photographic documentation presented as good practice, not a separate legal mandate"
+  }
+]

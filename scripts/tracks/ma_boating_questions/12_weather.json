@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Weather",
+    "question": "What is a nor'easter, and why is it a significant weather hazard for Massachusetts boaters?",
+    "choice_a": "A minor, gentle breeze unique to summer afternoons with no boating impact",
+    "choice_b": "A term describing only wind direction, never storm intensity",
+    "choice_c": "A weather pattern that occurs exclusively in the Great Lakes region",
+    "choice_d": "A powerful coastal storm system, common along New England and the Massachusetts coast especially in fall through spring, that brings strong winds from the northeast, heavy precipitation, and dangerous seas",
+    "correct_choice": "D",
+    "explanation": "Nor'easters are large, powerful storms that regularly affect the Massachusetts and broader New England coast, especially from fall through spring, bringing strong sustained northeast winds, heavy rain or snow, and hazardous, often long-lasting rough seas that can catch boaters off guard.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (regional storm systems), particularly relevant to Massachusetts's New England coastal weather patterns"
+  },
+  {
+    "topic": "Weather",
+    "question": "What visible sky signs commonly warn of an approaching thunderstorm while boating?",
+    "choice_a": "Darkening or towering cumulonimbus clouds, a sudden drop in temperature, increasing wind, and distant thunder or lightning",
+    "choice_b": "A perfectly clear blue sky with no cloud cover of any kind",
+    "choice_c": "Thunderstorms never give any visible warning before they arrive",
+    "choice_d": "A steady, light wind from a constant direction with no cloud buildup",
+    "correct_choice": "A",
+    "explanation": "Darkening or towering clouds, a sudden temperature drop, strengthening or shifting wind, and audible thunder or visible lightning in the distance are all warning signs that a thunderstorm is approaching and that boaters should head to safe harbor.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (thunderstorm warning signs), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why is dense fog, common along the Massachusetts coast, especially dangerous for recreational boaters?",
+    "choice_a": "Fog is a purely inland weather phenomenon that never occurs on Massachusetts's coastal waters",
+    "choice_b": "It drastically reduces visibility, making it hard to see other vessels, navigational hazards, or the shoreline, and increases the risk of collision or running aground",
+    "choice_c": "Fog has no meaningful effect on visibility or navigation",
+    "choice_d": "Fog only affects sailing vessels, not powerboats",
+    "correct_choice": "B",
+    "explanation": "Fog is a frequent hazard along the Massachusetts coast, particularly in areas like Cape Cod and Massachusetts Bay, and severely limits visibility, raising the risk of collisions with other vessels or running aground on unseen hazards; boaters caught in fog should slow down, sound proper fog signals, and use radar or GPS if available.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (fog navigation hazards), particularly relevant to Massachusetts's frequent coastal fog conditions"
+  },
+  {
+    "topic": "Weather",
+    "question": "Where should a boater check for reliable, up-to-date marine weather forecasts before and during a trip?",
+    "choice_a": "Weather forecasts are unnecessary since conditions never change once a boater is underway",
+    "choice_b": "Social media posts from other boaters are the only reliable source of marine forecasts",
+    "choice_c": "NOAA weather radio/marine forecasts, official marine weather apps, and posted small craft advisories, checked both before departure and periodically during the outing",
+    "choice_d": "Only the general appearance of the sky at the moment of departure, with no other information source",
+    "correct_choice": "C",
+    "explanation": "NOAA weather radio and marine forecasts, along with posted small craft advisories and warnings, provide the most reliable source of current and forecast marine conditions; boaters should check before departing and continue monitoring conditions throughout the trip, since weather on the water can change quickly.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (marine weather forecast sources, NOAA), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Weather",
+    "question": "What does a 'small craft advisory' issued by the National Weather Service generally indicate?",
+    "choice_a": "It is a mandatory closure of all waterways to every type of vessel, including large ships",
+    "choice_b": "It means conditions are calm and ideal for boating",
+    "choice_c": "It applies only to vessels smaller than a kayak",
+    "choice_d": "Sustained winds and/or sea conditions have reached a threshold that could be hazardous to small boats, and operators of smaller or less seaworthy vessels should use caution or avoid going out",
+    "correct_choice": "D",
+    "explanation": "A small craft advisory warns that wind and/or wave conditions may create hazardous conditions for smaller recreational vessels; it is not a mandatory closure but a strong caution that operators of smaller or less capable boats should reconsider heading out.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (National Weather Service small craft advisory), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Weather",
+    "question": "What should a boater do if caught offshore in sudden severe weather or high waves?",
+    "choice_a": "Have passengers put on PFDs if not already worn, reduce speed, head the bow into waves at a safe angle, secure loose gear, and head for the nearest safe harbor",
+    "choice_b": "Increase speed to try to outrun the storm regardless of sea conditions",
+    "choice_c": "Turn broadside to the waves to make better time toward shore",
+    "choice_d": "Anchor immediately in open, deep water regardless of conditions",
+    "correct_choice": "A",
+    "explanation": "In sudden rough weather, boaters should make sure everyone is wearing a PFD, slow down, take waves at a safe angle (often bow-to or at a slight angle rather than broadside, which risks capsizing), secure loose equipment, and make for the nearest safe harbor rather than trying to outrun the storm.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (severe weather response), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why can Massachusetts's coastal waters, including areas like Cape Cod Bay and Buzzards Bay, develop rough conditions relatively quickly even on an otherwise sunny day?",
+    "choice_a": "Only nighttime hours see any change in sea conditions along the coast",
+    "choice_b": "Strong local sea breezes, tidal currents, and fast-moving weather systems common to the New England coast can build wind and chop rapidly, even when a storm is not obviously approaching",
+    "choice_c": "Massachusetts coastal waters are always perfectly calm and never change conditions during the day",
+    "choice_d": "Weather along the Massachusetts coast is identical to inland weather with no maritime influence",
+    "correct_choice": "B",
+    "explanation": "Local sea breezes, strong tidal currents in areas like Cape Cod Bay and Buzzards Bay, and fast-developing weather systems typical of the New England coast can turn a calm morning into choppy, hazardous conditions by afternoon, which is why continually monitoring conditions while underway is important.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (coastal weather dynamics), relevant to Massachusetts's specific coastal geography (Cape Cod Bay, Buzzards Bay, Massachusetts Bay)"
+  }
+]

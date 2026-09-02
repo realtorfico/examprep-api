@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under Massachusetts law, how many wearable U.S. Coast Guard-approved personal flotation devices (PFDs) must be carried aboard a recreational vessel?",
+    "choice_a": "PFDs are only required for the operator, not passengers",
+    "choice_b": "One properly fitting, wearable PFD of the appropriate size for each person aboard",
+    "choice_c": "Only one PFD total, regardless of the number of people aboard",
+    "choice_d": "PFDs are only required if the vessel is over 26 feet long",
+    "correct_choice": "B",
+    "explanation": "Massachusetts, like federal law, requires one wearable, properly sized, U.S. Coast Guard-approved PFD for every person aboard a recreational vessel, in addition to a throwable device on larger boats.",
+    "weight": 3,
+    "source_note": "Massachusetts General Laws Chapter 90B and federal PFD carriage requirements (33 CFR 175), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "In Massachusetts, what is generally required of children regarding PFDs while a vessel is underway?",
+    "choice_a": "PFDs for children are recommended but never legally required",
+    "choice_b": "Children only need a PFD if they cannot swim, regardless of age",
+    "choice_c": "Children age 12 and under must wear a properly fitting, U.S. Coast Guard-approved PFD at all times while the vessel is underway",
+    "choice_d": "Only children under age 2 must wear a PFD",
+    "correct_choice": "C",
+    "explanation": "Massachusetts law requires children 12 and under to wear a properly fitting, U.S. Coast Guard-approved PFD anytime the vessel is underway, reflecting the higher drowning risk for young children if they fall overboard.",
+    "weight": 3,
+    "source_note": "Massachusetts General Laws Chapter 90B, PFD requirements for children, consistent with Massachusetts Environmental Police-reviewed course materials (boat-ed.com Massachusetts)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a Type I PFD (offshore life jacket) best suited for?",
+    "choice_a": "Calm, inland water close to shore where help is always immediately available",
+    "choice_b": "Use only by strong swimmers who do not need extra buoyancy",
+    "choice_c": "Water skiing exclusively",
+    "choice_d": "Open, rough, or remote water where rescue may be delayed, because it is designed to turn most unconscious wearers face-up and provides the most buoyancy",
+    "correct_choice": "D",
+    "explanation": "Type I PFDs offer the highest buoyancy and are designed to turn most unconscious wearers face-up, making them best suited to open or rough water and remote areas where rescue could take longer.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (USCG PFD type classifications)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a key limitation of a Type III PFD (flotation aid), the most common style used for general boating and water sports?",
+    "choice_a": "It is designed for calm, inland water where rescue is likely to be quick, and it is not intended to reliably turn an unconscious wearer face-up",
+    "choice_b": "It provides more flotation than any other PFD type",
+    "choice_c": "It cannot legally be worn while boating in Massachusetts",
+    "choice_d": "It automatically inflates when submerged",
+    "correct_choice": "A",
+    "explanation": "Type III PFDs are comfortable and popular for activities like fishing and water skiing, but unlike a Type I, they are not designed to turn an unconscious wearer face-up and are intended for calmer waters where help is nearby.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (USCG PFD type classifications)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a Type IV PFD, such as a boat cushion or ring buoy?",
+    "choice_a": "A device required only on PWCs",
+    "choice_b": "A throwable device intended to be thrown to a person in the water, not worn, and it does not replace the wearable PFD requirement for persons aboard",
+    "choice_c": "A wearable jacket intended for children",
+    "choice_d": "An inflatable device that must be worn at all times by the operator",
+    "correct_choice": "B",
+    "explanation": "A Type IV is a throwable flotation device -- a cushion or ring buoy -- meant to be tossed to someone in the water; boats 16 feet and longer must carry one in addition to, not instead of, wearable PFDs for each person aboard.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (USCG PFD type classifications, throwable device requirement), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is required of every person being towed behind a vessel in Massachusetts, such as while water skiing, tubing, or wakeboarding?",
+    "choice_a": "A PFD is required only if towing occurs after sunset",
+    "choice_b": "A PFD is never required for towed water sports",
+    "choice_c": "The person being towed must wear a U.S. Coast Guard-approved wearable PFD",
+    "choice_d": "A PFD is optional for anyone over age 18 who is being towed",
+    "correct_choice": "C",
+    "explanation": "Massachusetts requires anyone being towed behind a vessel -- skiing, tubing, wakeboarding -- to wear a wearable, Coast Guard-approved PFD, since falls at speed are common and a person in the water can be difficult to spot.",
+    "weight": 3,
+    "source_note": "Massachusetts General Laws Chapter 90B, water skiing/towing PFD requirement, consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "In Massachusetts, what PFD rule applies specifically to a person operating or riding on a personal watercraft (PWC)?",
+    "choice_a": "PFDs are optional on a PWC as long as the rider stays within 100 feet of shore",
+    "choice_b": "Only the operator needs a PFD, not passengers",
+    "choice_c": "PFDs are not required on a PWC if it has a kill-switch lanyard",
+    "choice_d": "Every person aboard a PWC must wear a wearable, U.S. Coast Guard-approved PFD at all times the PWC is underway",
+    "correct_choice": "D",
+    "explanation": "Everyone aboard a PWC in Massachusetts, operator and passengers alike, must wear a properly fitting wearable PFD whenever the PWC is underway, given the higher fall/ejection risk of PWCs.",
+    "weight": 3,
+    "source_note": "Massachusetts General Laws Chapter 90B, PWC-specific PFD requirement, consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What should a boater check periodically to make sure a PFD will perform as intended in an emergency?",
+    "choice_a": "That it is properly sized for the wearer, has no rips, waterlogging, or broken straps/hardware, and still holds air or buoyant material properly",
+    "choice_b": "Only that it is the same color as the boat",
+    "choice_c": "Only that it was purchased within the last month",
+    "choice_d": "PFDs never need inspection once purchased",
+    "correct_choice": "A",
+    "explanation": "A PFD that is torn, waterlogged, missing buckles, or the wrong size for the wearer may fail exactly when needed; boaters should inspect condition and fit before each season and before each outing.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (PFD maintenance/inspection)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a key advantage of an inflatable PFD compared to an inherently buoyant (foam) PFD?",
+    "choice_a": "It can be worn by children under 12 in place of a wearable foam PFD in all circumstances",
+    "choice_b": "It is generally more comfortable to wear for long periods because it is lighter and less bulky, though it typically requires the wearer to be conscious (for manual models) or a functioning CO2 cartridge (for automatic models) to inflate",
+    "choice_c": "It never needs to be inspected or have its cartridge replaced",
+    "choice_d": "It provides more buoyancy than any Type I foam PFD in every case",
+    "correct_choice": "B",
+    "explanation": "Inflatable PFDs are lighter and less bulky, encouraging more consistent wear, but manual models require the wearer to pull a cord to inflate and automatic models rely on a properly maintained CO2 cartridge and bobbin -- both need regular inspection and are generally not approved for children under a certain age or weight.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (inflatable PFD characteristics and limitations)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why do drowning statistics consistently emphasize wearing a PFD at all times on the water rather than just having one available in a storage compartment?",
+    "choice_a": "Wearing a PFD is only useful in whitewater rivers, not on open water",
+    "choice_b": "Statistics show PFDs make no measurable difference in survival",
+    "choice_c": "Most boating drowning victims are found not wearing a PFD, and falls overboard or capsizing often happen suddenly, leaving no time to retrieve and put one on",
+    "choice_d": "PFDs stored in a compartment are actually more effective than one already worn",
+    "correct_choice": "C",
+    "explanation": "National boating fatality data consistently shows the large majority of drowning victims were not wearing a PFD; because capsizing and falls overboard often happen with no warning, a PFD stowed away is far less useful than one already worn.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (U.S. Coast Guard recreational boating statistics), consistent with NASBLA-aligned course curricula"
+  }
+]

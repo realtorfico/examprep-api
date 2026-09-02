@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "If a boat swamps (fills with water) but does not fully sink or capsize, what is generally the safest action for those aboard?",
+    "choice_a": "Stay with the swamped vessel, since it may still provide flotation and is easier for rescuers to spot than swimmers in open water",
+    "choice_b": "Immediately abandon the vessel and swim to the nearest shore regardless of distance",
+    "choice_c": "Continue operating the engine at full throttle",
+    "choice_d": "Swamping poses no risk and requires no response",
+    "correct_choice": "A",
+    "explanation": "A swamped vessel, like a capsized one, often still provides some flotation and is far more visible to rescuers than a swimmer, so staying with it is generally safer than attempting to swim away.",
+    "weight": 2,
+    "source_note": "Universal swamping-response guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "Why is carbon monoxide (CO) buildup a hazard aboard a boat, particularly near exhaust outlets, swim platforms, or enclosed cabins with a generator running?",
+    "choice_a": "Carbon monoxide is a colorless, odorless gas that can accumulate near exhaust vents or under swim platforms ('teak surfing') and cause sudden illness, unconsciousness, or death",
+    "choice_b": "Carbon monoxide has a strong, easily noticeable odor that always warns boaters in time",
+    "choice_c": "Boat engines cannot produce carbon monoxide",
+    "choice_d": "Carbon monoxide is only a concern for vehicles, never for boats",
+    "correct_choice": "A",
+    "explanation": "Carbon monoxide from engine or generator exhaust is colorless and odorless, and it can accumulate near exhaust outlets, under swim platforms, or in enclosed cabins, causing sudden illness, unconsciousness, or death without warning.",
+    "weight": 3,
+    "source_note": "Universal USCG carbon monoxide hazard guidance for recreational vessels (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "As hypothermia progresses in a person immersed in cold water, what is a typical symptom pattern beyond the initial cold shock response?",
+    "choice_a": "Symptoms have no typical pattern and are completely random",
+    "choice_b": "Uncontrollable shivering, followed by progressively worsening confusion, loss of coordination, and eventually unconsciousness if the person is not rescued and rewarmed",
+    "choice_c": "A brief period of shivering that spontaneously resolves without further effects",
+    "choice_d": "Immediate unconsciousness with no earlier warning signs",
+    "correct_choice": "B",
+    "explanation": "As hypothermia sets in beyond the initial cold shock response, a person typically progresses from uncontrollable shivering to worsening confusion and loss of coordination, and can eventually lose consciousness if not rescued and rewarmed.",
+    "weight": 2,
+    "source_note": "Universal cold-water immersion/hypothermia progression physiology (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "When caring for a person just rescued from cold-water immersion, why should rescuers handle them gently and avoid vigorous movement or rapid rewarming?",
+    "choice_a": "Rough handling or overly rapid rewarming of a severely chilled person can trigger a dangerous heart rhythm disturbance",
+    "choice_b": "Rough handling always speeds recovery with no risk",
+    "choice_c": "Hypothermia victims should be rewarmed as fast as possible with no other precautions",
+    "choice_d": "Gentle handling has no bearing on a hypothermia victim's condition",
+    "correct_choice": "A",
+    "explanation": "A severely chilled person's heart can be vulnerable to a dangerous rhythm disturbance if handled roughly or rewarmed too quickly, so rescuers are trained to move and rewarm hypothermia victims gently and gradually.",
+    "weight": 2,
+    "source_note": "Universal cold-water immersion victim-care guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "Besides making a voice mayday call on Channel 16, what feature on many modern VHF marine radios can also transmit an automated distress alert with the vessel's GPS position?",
+    "choice_a": "Digital Selective Calling (DSC), typically activated by a dedicated distress button on the radio",
+    "choice_b": "A standard AM/FM radio tuner",
+    "choice_c": "Bluetooth pairing with a smartphone music app",
+    "choice_d": "There is no such feature on marine VHF radios",
+    "correct_choice": "A",
+    "explanation": "Many modern VHF marine radios include Digital Selective Calling (DSC), which can send an automated distress alert with the vessel's GPS position and identity when a dedicated distress button is activated, supplementing a voice mayday call.",
+    "weight": 2,
+    "source_note": "Universal VHF marine radio Digital Selective Calling (DSC) distress feature (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Emergencies and Cold-Water Immersion",
+    "question": "Why do boating safety courses recommend practicing a man-overboard drill and knowing how to use a boarding ladder or reboarding platform before an emergency happens?",
+    "choice_a": "Drills and reboarding devices have no practical value in a real emergency",
+    "choice_b": "A calm, practiced response and a working way to get a person back aboard, especially on a higher-freeboard vessel, can be the difference between a quick recovery and a life-threatening delay",
+    "choice_c": "Reboarding devices are illegal to use except by professional rescuers",
+    "choice_d": "Man-overboard situations never require any special plan",
+    "correct_choice": "B",
+    "explanation": "Practicing a man-overboard response in advance, and knowing how to use a boarding ladder or reboarding platform, helps a crew react quickly and effectively rather than losing critical time figuring out a plan during a real emergency.",
+    "weight": 2,
+    "source_note": "Universal man-overboard preparedness and reboarding-device guidance (NASBLA-aligned course content)"
+  }
+]

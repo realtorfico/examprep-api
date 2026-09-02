@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under O.C.G.A. § 52-7-14, what penalty applies to an operator who knowingly fails to stop and fulfill the required accident-scene duties when the accident causes death, disappearance of a person, or injury requiring medical treatment?",
+    "choice_a": "A felony punishable by imprisonment for not less than one nor more than five years",
+    "choice_b": "A simple warning with no further consequence",
+    "choice_c": "A civil fine only, capped at $500, with no possibility of jail time",
+    "choice_d": "Automatic loss of vessel registration for 90 days, but no criminal charge",
+    "correct_choice": "A",
+    "explanation": "Knowingly failing to stop and comply with the required accident-scene duties after an accident causing death, disappearance, or an injury requiring medical treatment is a felony punishable by imprisonment for not less than one nor more than five years.",
+    "weight": 3,
+    "source_note": "O.C.G.A. § 52-7-14 (Georgia Code, 'Accident, collision, or other casualty; salvage rights')"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What is 'Homicide by Vessel in the First Degree' under Georgia law, and what penalty does it carry?",
+    "choice_a": "Any boating accident that results in a fatality, regardless of fault, punishable only by a fine",
+    "choice_b": "Causing the death of another person without malice, including by leaving the scene of a fatal boating accident, punishable by imprisonment of not less than three nor more than 15 years",
+    "choice_c": "A misdemeanor charge that applies only when the operator was uninsured",
+    "choice_d": "A charge that can only be brought by the U.S. Coast Guard, never by Georgia authorities",
+    "correct_choice": "B",
+    "explanation": "Homicide by Vessel in the First Degree applies when an operator causes another person's death without malice aforethought, including by leaving the scene of a fatal collision or accident in violation of the accident-scene duties statute; it is a felony punishable by imprisonment for not less than three nor more than 15 years.",
+    "weight": 3,
+    "source_note": "O.C.G.A. § 52-7-12.2 (Georgia Code, 'Homicide by vessel')"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under Georgia's accident-scene duty statute, is an operator ever permitted to leave the scene of a boating accident before completing all the legally required duties there?",
+    "choice_a": "Yes, an operator may leave at any time for any reason as long as they return within 24 hours",
+    "choice_b": "No, an operator may never leave the scene of an accident for any reason whatsoever",
+    "choice_c": "Yes, but only to notify emergency medical services or local law enforcement, and only if the operator is unable to make that notification from the scene, after having already fulfilled the other requirements",
+    "choice_d": "Yes, but only if the other vessel involved has already left first",
+    "correct_choice": "C",
+    "explanation": "An operator must remain at the scene of a boating accident until fulfilling the required duties, except that the operator may leave the scene solely to notify emergency medical services or local law enforcement when unable to do so from the scene, after first fulfilling the other requirements.",
+    "weight": 2,
+    "source_note": "O.C.G.A. § 52-7-14 (Georgia Code, 'Accident, collision, or other casualty; salvage rights')"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "When a vessel has been involved in a reportable boating accident, what specific authority does a Georgia law enforcement officer have regarding that particular vessel?",
+    "choice_a": "The officer may only photograph the vessel from a distance and must never board it",
+    "choice_b": "The officer must wait for a court order before boarding the vessel involved in the accident",
+    "choice_c": "The officer's authority is limited to vessels still underway; a beached or docked vessel cannot be boarded",
+    "choice_d": "The officer may stop, board, and detain the vessel, continuing the detention for as long as reasonably necessary for evidentiary purposes",
+    "correct_choice": "D",
+    "explanation": "An officer empowered to enforce Georgia's boating laws has the authority to stop, board, and detain a vessel involved in a reportable boating accident, and may continue that detention for as long as reasonably necessary for evidentiary purposes.",
+    "weight": 2,
+    "source_note": "O.C.G.A. § 52-7-14 (Georgia Code, 'Accident, collision, or other casualty; salvage rights')"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Besides violating boating safety rules directly, what other conduct toward an enforcement officer is specifically made unlawful under the Georgia Boat Safety Act's enforcement provisions?",
+    "choice_a": "Resisting or interfering by force, menace, or threat with an officer performing enforcement duties, or refusing to accompany the officer after a lawful arrest has been made",
+    "choice_b": "Politely declining to answer optional survey questions asked by an officer",
+    "choice_c": "Asking an officer to identify themselves before boarding",
+    "choice_d": "Requesting that an inspection be rescheduled to a more convenient time",
+    "correct_choice": "A",
+    "explanation": "Georgia's boating enforcement statute makes it unlawful to resist or interfere by force, menace, or threat with a law enforcement officer performing duties under the Boat Safety Act, or to refuse to accompany an officer after a lawful arrest has been made.",
+    "weight": 3,
+    "source_note": "O.C.G.A. § 52-7-25 (Georgia Code, 'Enforcement of article')"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What must the operator of a vessel underway do when hailed by a Georgia law enforcement officer authorized to enforce boating laws?",
+    "choice_a": "Continue on course and wait for the officer to catch up unassisted",
+    "choice_b": "Stop immediately and lay to, or maneuver in a way that permits the officer to come aboard",
+    "choice_c": "Only stop if the officer displays a written warrant",
+    "choice_d": "Head immediately to the nearest shore before allowing the officer aboard",
+    "correct_choice": "B",
+    "explanation": "Any vessel underway and hailed by a designated law enforcement officer must stop immediately and lay to, or maneuver so as to permit the officer to come aboard.",
+    "weight": 3,
+    "source_note": "O.C.G.A. § 52-7-25 (Georgia Code, 'Enforcement of article')"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Beyond checking for basic compliance, what additional inspection and search authority does O.C.G.A. § 52-7-25 give Georgia enforcement officers boarding a vessel?",
+    "choice_a": "They may only look at the vessel's exterior paint and registration numbers, nothing else",
+    "choice_b": "They must obtain written consent from every passenger individually before examining any equipment",
+    "choice_c": "They may examine required documents and safety equipment, and may search the vessel without first obtaining a warrant when a violation is reasonably suspected",
+    "choice_d": "They may search only if the vessel owner is a repeat offender with a prior conviction",
+    "correct_choice": "C",
+    "explanation": "Under O.C.G.A. § 52-7-25, officers may board a vessel to examine required documents and safety equipment, and may search the vessel without a warrant when a violation of the boating laws is reasonably suspected.",
+    "weight": 2,
+    "source_note": "O.C.G.A. § 52-7-25 (Georgia Code, 'Enforcement of article')"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Aside from the 48-hour deadline that applies when an accident causes death, disability lasting more than 24 hours, injury requiring medical treatment, or disappearance of a person, what is the standard deadline for filing a required Georgia boating accident report in other reportable cases, such as property damage exceeding $2,000?",
+    "choice_a": "Within 60 days of the accident",
+    "choice_b": "There is no deadline for these other reportable cases",
+    "choice_c": "Within 1 hour of the accident",
+    "choice_d": "Within 5 days of the accident",
+    "correct_choice": "D",
+    "explanation": "For reportable boating accidents that do not trigger the 48-hour deadline, Georgia law requires the accident report to be filed within 5 days of the accident.",
+    "weight": 3,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Reporting an Accident'"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under Georgia law, what obligation applies to medical facility personnel who treat a patient they suspect was injured in a boating accident?",
+    "choice_a": "They must report the matter, including the patient's name, address, and the nature of the injuries, to facility management, who must then notify local law enforcement",
+    "choice_b": "They have no reporting obligation at all under the boating laws",
+    "choice_c": "They must personally file the DNR accident report form themselves within 48 hours",
+    "choice_d": "They are only required to report the incident if the patient specifically asks them to",
+    "correct_choice": "A",
+    "explanation": "Physicians, nurses, and other treatment staff who suspect a patient's injuries resulted from a boating accident must report the matter, including the patient's name, address, and nature of injuries, to facility management, which must then notify local law enforcement.",
+    "weight": 2,
+    "source_note": "O.C.G.A. § 52-7-14 (Georgia Code, 'Accident, collision, or other casualty; salvage rights')"
+  }
+]

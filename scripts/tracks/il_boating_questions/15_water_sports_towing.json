@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under 625 ILCS 45/5-14, what must a vessel operator have on board while towing a person on water skis or a similar device in Illinois?",
+    "choice_a": "A competent observer, in addition to the operator, to watch the person being towed",
+    "choice_b": "No additional crew member is required if the operator uses mirrors",
+    "choice_c": "At least four passengers besides the operator",
+    "choice_d": "A second boat following behind at all times",
+    "correct_choice": "A",
+    "explanation": "Illinois law requires a competent observer on board, separate from the operator, whenever a vessel is towing a person on water skis, aquaplanes, or similar devices.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/5-14; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under Illinois law, when is it illegal to tow a person on water skis relative to sunset and sunrise?",
+    "choice_a": "Only on weekdays",
+    "choice_b": "From a half-hour after sunset to a half-hour before sunrise",
+    "choice_c": "Only between noon and 6 p.m.",
+    "choice_d": "There is no time-of-day restriction on towing skiers",
+    "correct_choice": "B",
+    "explanation": "Illinois prohibits towing a person on water skis, aquaplanes, or similar devices from a half-hour after sunset until a half-hour before sunrise, when visibility is too limited for safe towing.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/5-14; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under 625 ILCS 45/5-14, what must a vessel towing a skier display?",
+    "choice_a": "The vessel's registration decal, enlarged",
+    "choice_b": "No special flag is required for towing skiers",
+    "choice_c": "A skier-towing flag, bright orange and at least 12 inches by 12 inches, shown from the highest point at the helm so it is visible from all directions",
+    "choice_d": "A red anchor light",
+    "correct_choice": "C",
+    "explanation": "Illinois requires a bright orange skier-towing flag, at least 12 inches by 12 inches, displayed from the highest point at the vessel's helm so it is visible from all directions while a skier is in the water or being towed.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-14; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "How long must the skier-towing flag remain displayed after a skier falls or finishes skiing?",
+    "choice_a": "It may be lowered as soon as the skier releases the tow rope",
+    "choice_b": "It only needs to be displayed while the boat is docked",
+    "choice_c": "The flag is not required once skiing begins",
+    "choice_d": "Until the towed person has fully re-entered the vessel",
+    "correct_choice": "D",
+    "explanation": "The skier-towing flag must remain visible while a person is in the water preparing to be towed, while being towed, and until the person has fully re-entered the vessel -- signaling to other boaters that a skier may still be in the water.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-14; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "May a vessel's skier-towing flag be used for any other purpose under Illinois law?",
+    "choice_a": "No -- the flag may not be used for any purpose other than indicating a towed skier",
+    "choice_b": "Yes, it may double as a general distress signal",
+    "choice_c": "Yes, it may be used to mark an anchored vessel",
+    "choice_d": "Yes, it may be flown purely as a decoration at any time",
+    "correct_choice": "A",
+    "explanation": "Illinois law specifically restricts the skier-towing flag to its intended purpose, since using it for anything else could confuse other boaters about whether a skier is actually in the water.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-14; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What design requirement applies to any vessel, including a PWC, that tows a person on water skis or similar equipment in Illinois?",
+    "choice_a": "PWCs are legally prohibited from ever towing a skier",
+    "choice_b": "It must be designed and recommended by the manufacturer to accommodate the operator, the observer, and the person(s) being towed",
+    "choice_c": "There is no capacity or design requirement for towing vessels",
+    "choice_d": "Only vessels longer than 26 feet may tow skiers",
+    "correct_choice": "B",
+    "explanation": "Illinois requires that any vessel used to tow a skier, including a PWC, be manufacturer-rated to safely carry the operator, the required observer, and the person or persons being towed.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-14; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What safe-distance requirement applies to a vessel towing a skier when passing near other people or property?",
+    "choice_a": "Towing vessels may pass as close as desired to swimmers",
+    "choice_b": "The distance requirement only applies to PWCs, not conventional boats",
+    "choice_c": "The vessel must maintain a reasonable distance from other persons and property so as not to endanger life or property",
+    "choice_d": "There is no minimum distance requirement while towing",
+    "correct_choice": "C",
+    "explanation": "Illinois law requires vessels towing water skiers to maintain a reasonable distance from other people and property, preventing the towed skier or tow rope from endangering anyone nearby.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-14; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Is it illegal in Illinois to maneuver a towing vessel or manipulate the tow rope, skis, or other device so that the towed person collides with another person or object?",
+    "choice_a": "No, this is unregulated as long as no injury results",
+    "choice_b": "Only illegal if the collision happens with another skier",
+    "choice_c": "Only illegal at speeds above 30 mph",
+    "choice_d": "Yes -- Illinois law specifically makes this illegal under the towing-skiers statute",
+    "correct_choice": "D",
+    "explanation": "Illinois law specifically prohibits operating a towing vessel or manipulating the tow rope, skis, or other device in a way that causes the towed person or device to collide with another person or object.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-14; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why is a dedicated observer, separate from the operator, important when towing a water skier?",
+    "choice_a": "The observer can continuously watch the skier for falls or signals while the operator focuses on steering, throttle, and watching for other traffic ahead",
+    "choice_b": "The observer's only job is to hold the tow rope",
+    "choice_c": "An observer is unnecessary since mirrors provide an equivalent view",
+    "choice_d": "The observer replaces the need for the skier to wear a PFD",
+    "correct_choice": "A",
+    "explanation": "A dedicated observer allows the operator to keep their attention on navigation and hazards ahead, while the observer continuously monitors the skier for falls, signals, or trouble in the water.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-14 observer requirement; universal water-sports safety guidance"
+  }
+]

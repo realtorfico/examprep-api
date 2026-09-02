@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "Before towing a boat trailer on New Jersey roads, what should an operator check regarding the trailer's lights and hitch?",
+    "choice_a": "Only the tow vehicle's lights matter, not the trailer's",
+    "choice_b": "Safety chains are optional accessories with no real function",
+    "choice_c": "That the trailer's brake lights, turn signals, and running lights function correctly, and that the hitch, safety chains, and coupler are properly secured",
+    "choice_d": "None of this needs to be checked before towing",
+    "correct_choice": "C",
+    "explanation": "A pre-tow check should confirm the trailer's lighting works and that the hitch, coupler, and safety chains are properly attached, since a failed hitch connection or unlit trailer creates a serious road hazard.",
+    "weight": 3,
+    "source_note": "Universal pre-tow trailer safety checklist taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is a recommended practice when approaching a public boat launch ramp with other boaters waiting?",
+    "choice_a": "Back down the ramp first and do all boat preparation once blocking the ramp",
+    "choice_b": "There is no need to consider other boaters waiting to launch",
+    "choice_c": "Only the last boater of the day needs to prepare in advance",
+    "choice_d": "Prepare the boat (remove tie-downs, load gear, insert the drain plug) before backing down the ramp, to keep the ramp lane moving efficiently for others",
+    "correct_choice": "D",
+    "explanation": "Courteous and efficient ramp use means preparing the boat, such as removing tie-down straps and loading gear, in a staging area before backing down the ramp, so the ramp itself isn't occupied longer than necessary while other boaters wait.",
+    "weight": 3,
+    "source_note": "Universal boat ramp etiquette taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why is it critical to insert the boat's drain plug before launching?",
+    "choice_a": "Without the drain plug in place, water can flood into the hull once the boat is in the water, potentially causing it to swamp or sink",
+    "choice_b": "The drain plug only affects fuel efficiency, not safety",
+    "choice_c": "The drain plug is only relevant to sailboats",
+    "choice_d": "Drain plugs have no functional purpose",
+    "correct_choice": "A",
+    "explanation": "The drain plug seals the hull's drainage hole; forgetting to insert it before launching is a common and preventable mistake that lets water flood the bilge and can cause the boat to swamp or sink at the dock.",
+    "weight": 4,
+    "source_note": "Universal pre-launch checklist item taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should a trailer-boat operator do immediately after retrieving the boat from the water at the end of a trip?",
+    "choice_a": "Ramp courtesy does not matter once a boater is done for the day",
+    "choice_b": "Pull the trailer well clear of the ramp before securing tie-downs and loading gear, so the ramp remains available for the next boater",
+    "choice_c": "Stay on the ramp as long as needed to organize gear",
+    "choice_d": "Leave the boat partially in the water indefinitely",
+    "correct_choice": "B",
+    "explanation": "Just as when launching, a boater retrieving their vessel should move clear of the ramp area before securing the boat for the road, keeping the ramp available for others waiting to launch or retrieve.",
+    "weight": 2,
+    "source_note": "Universal boat ramp etiquette taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is a key reason to check tire condition and wheel bearing lubrication on a boat trailer before a long tow, especially in coastal New Jersey areas?",
+    "choice_a": "Wheel bearings have no relationship to saltwater exposure",
+    "choice_b": "This check is only necessary once a decade",
+    "choice_c": "Saltwater exposure and ramp submersion accelerate corrosion and bearing wear, increasing the risk of a blowout or bearing failure on the road",
+    "choice_d": "Trailer tires never wear out regardless of use",
+    "correct_choice": "C",
+    "explanation": "Coastal New Jersey ramp use regularly submerges trailer wheels in saltwater, which accelerates corrosion and can degrade wheel bearing grease faster than freshwater use, making regular tire and bearing inspection especially important.",
+    "weight": 3,
+    "source_note": "Universal trailer maintenance guidance, with added relevance to New Jersey's saltwater coastal ramps"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is the purpose of transom tie-downs and bow safety chains when trailering a boat?",
+    "choice_a": "They are decorative and have no safety function",
+    "choice_b": "They are only required for trailers longer than 40 feet",
+    "choice_c": "They replace the need for a working trailer hitch",
+    "choice_d": "They secure the boat firmly to the trailer so it cannot shift, bounce loose, or detach while being towed on the road",
+    "correct_choice": "D",
+    "explanation": "Transom tie-down straps and a bow safety chain work together with the trailer winch strap to keep the boat firmly attached to the trailer during transport, preventing it from shifting or coming loose on the road.",
+    "weight": 3,
+    "source_note": "Universal trailer securement guidance taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Before backing a trailer down a launch ramp, why should an operator check the ramp surface and water depth?",
+    "choice_a": "To avoid getting the tow vehicle's wheels or exhaust submerged, and to confirm the ramp surface is not too steep, slick, or short for a safe launch",
+    "choice_b": "Ramp conditions never vary and do not need to be checked",
+    "choice_c": "Water depth is only relevant to the boat, never to the tow vehicle",
+    "choice_d": "Checking the ramp is only necessary at night",
+    "correct_choice": "A",
+    "explanation": "An operator should assess the ramp's slope, surface condition, and water depth before backing down, since submerging the tow vehicle's wheels or exhaust, or launching on a ramp that is too steep or short, can cause a breakdown or accident.",
+    "weight": 2,
+    "source_note": "Universal launch-ramp safety guidance taught in NASBLA-aligned boating courses"
+  }
+]

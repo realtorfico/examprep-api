@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under Connecticut's implied consent statute for boating (CGS Sec. 15-140q), what does a person automatically agree to simply by operating a vessel in the state?",
+    "choice_a": "To submit a breath, blood, or urine sample for chemical analysis if arrested for boating under the influence",
+    "choice_b": "Nothing -- Connecticut has no implied consent law for boat operators",
+    "choice_c": "To automatically forfeit the vessel upon any BUI arrest",
+    "choice_d": "To pay a fixed $75 fee before any BUI investigation may begin",
+    "correct_choice": "A",
+    "explanation": "Connecticut General Statutes Section 15-140q establishes implied consent for boat operators: by operating a vessel within the state, a person has automatically consented to provide a breath, blood, or urine sample for chemical analysis if arrested for boating under the influence.",
+    "weight": 5,
+    "source_note": "Connecticut General Statutes Section 15-140q, \"Consent for chemical test and nontestimonial portion of drug influence evaluation\""
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "What is a key consequence of refusing a chemical test after a Connecticut BUI arrest, separate from simply failing the test?",
+    "choice_a": "The refusal itself can trigger boating certificate suspension procedures and can be used as evidence against the operator, in addition to any penalty for the underlying BUI",
+    "choice_b": "Refusing a chemical test carries no consequence at all in Connecticut",
+    "choice_c": "A refusal automatically clears the operator of any BUI charge",
+    "choice_d": "Refusal only matters if the operator is under 18",
+    "correct_choice": "A",
+    "explanation": "Refusing a chemical test after a BUI arrest is not a way to avoid consequences: the refusal itself can be used against the operator and can trigger the certificate suspension process under Connecticut's implied consent framework, on top of whatever penalty follows from the underlying BUI charge.",
+    "weight": 4,
+    "source_note": "Connecticut General Statutes Section 15-140q, \"Consent for chemical test and nontestimonial portion of drug influence evaluation\""
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under CGS Sec. 15-156, what happens if a person operates a vessel in Connecticut while their boating certificate is suspended, revoked, or refused?",
+    "choice_a": "It is generally an infraction, but carries a significantly enhanced penalty -- a fine of $500 to $1,000 and up to one year of imprisonment, with 30 consecutive non-suspendable days -- if the suspension stems from a reckless-operation-while-intoxicated or vessel-manslaughter conviction",
+    "choice_b": "There is no penalty at all for operating during a suspension",
+    "choice_c": "The penalty is always identical regardless of why the certificate was suspended",
+    "choice_d": "Operating during a suspension is legal as long as the vessel is not a personal watercraft",
+    "correct_choice": "A",
+    "explanation": "CGS Sec. 15-156 makes operating while refused, suspended, or revoked generally an infraction, but imposes a much harsher penalty -- a $500 to $1,000 fine and up to a year in prison, with 30 consecutive days that may not be suspended absent mitigating circumstances -- when the underlying suspension came from a conviction for reckless operation while intoxicated or manslaughter with a vessel.",
+    "weight": 4,
+    "source_note": "Connecticut General Statutes Section 15-156, \"Penalties. Operation of vessel while safe boating certificate...refused, suspended or revoked\""
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Connecticut law recognizes both first-degree and second-degree reckless operation of a vessel while under the influence as distinct offenses. What does this degree structure reflect?",
+    "choice_a": "The severity of the offense can vary (for example, based on factors like resulting injury or repeat-offense circumstances), with the statutes assigning correspondingly different penalty levels",
+    "choice_b": "The degrees refer only to the size of the vessel involved",
+    "choice_c": "There is only one single, undivided reckless-operation-while-intoxicated offense in Connecticut",
+    "choice_d": "The degree is determined solely by the operator's age",
+    "correct_choice": "A",
+    "explanation": "By dividing reckless operation of a vessel while under the influence into first- and second-degree offenses, Connecticut law allows more serious circumstances to be charged and penalized more heavily than a baseline violation, similar in structure to how many states tier their drunk-driving-related offenses.",
+    "weight": 3,
+    "source_note": "Connecticut General Statutes Sections 15-140l and 15-140n, referenced in CGS Sec. 15-156"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "What is \"manslaughter in the second degree with a vessel\" under Connecticut law (CGS Sec. 15-132a), and how is it distinct from a general BUI charge?",
+    "choice_a": "A more severe homicide-level offense that can apply when a person's operation of a vessel (including while intoxicated) causes another person's death, carrying penalties well beyond a standard BUI charge",
+    "choice_b": "A minor infraction identical in severity to a standard noise-limit violation",
+    "choice_c": "A charge that can never be brought against a boat operator in Connecticut",
+    "choice_d": "An offense that applies only to commercial vessels, never recreational boats",
+    "correct_choice": "A",
+    "explanation": "Manslaughter in the second degree with a vessel is a distinct, more severe homicide-level offense that can be charged when a person's operation of a vessel causes another's death, reflecting a much higher level of culpability and penalty than an ordinary BUI or reckless operation charge alone.",
+    "weight": 4,
+    "source_note": "Connecticut General Statutes Section 15-132a, referenced in CGS Sec. 15-156"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Can a Connecticut boating law enforcement officer support a BUI arrest based on visible signs of impairment, even before administering a chemical test?",
+    "choice_a": "Yes -- observable signs such as slurred speech, poor balance, or erratic operation of the vessel can support an officer's decision to investigate and arrest, independent of the chemical test result that typically follows",
+    "choice_b": "No -- a chemical test result is the only evidence an officer may ever consider",
+    "choice_c": "No -- officers may not approach a vessel unless a chemical test has already been completed",
+    "choice_d": "Visible impairment is legally irrelevant to any BUI investigation",
+    "correct_choice": "A",
+    "explanation": "As with impaired-driving enforcement generally, an officer's direct observations -- slurred speech, difficulty maintaining balance, erratic steering, or the smell of alcohol -- can support probable cause for a BUI investigation and arrest, with the chemical test (governed by Connecticut's implied consent law) typically following the arrest rather than preceding it.",
+    "weight": 3,
+    "source_note": "General impaired-operation enforcement fundamentals, applied to Connecticut's BUI framework under CGS Sec. 15-140q"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Before administering a chemical test, why might a Connecticut marine enforcement officer first ask a boat operator suspected of impairment to perform simple balance or coordination checks?",
+    "choice_a": "To help the officer form an initial assessment of impairment and probable cause, similar to field sobriety checks used in impaired-driving stops, before proceeding to a formal chemical test",
+    "choice_b": "Such checks are purely recreational and have no bearing on any BUI investigation",
+    "choice_c": "Balance and coordination checks are legally required to replace the chemical test entirely",
+    "choice_d": "Officers are prohibited from observing an operator's behavior before a chemical test",
+    "correct_choice": "A",
+    "explanation": "Simple balance and coordination checks give an officer an initial, observable basis for suspecting impairment -- much like standardized field sobriety tests used in impaired-driving stops -- helping establish probable cause before the more formal chemical test process under Connecticut's implied consent law begins.",
+    "weight": 2,
+    "source_note": "General impaired-operation enforcement fundamentals, applied to Connecticut's BUI framework under CGS Sec. 15-140q"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "Who must complete a DNR-approved boating education course before legally operating a motorized vessel on Georgia state waters?",
+    "choice_a": "Any person born on or after January 1, 1998",
+    "choice_b": "Only persons over the age of 65",
+    "choice_c": "Only commercial vessel operators",
+    "choice_d": "No one -- boating education is entirely optional in Georgia",
+    "correct_choice": "A",
+    "explanation": "Georgia's mandatory education requirement applies to any person born on or after January 1, 1998, who must complete a DNR-approved boating education course before legally operating a motorized vessel on state waters.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Mandatory Education Requirement'; confirmed current on Boat-Ed's official Georgia course page"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "Which of these is a recognized exemption from Georgia's mandatory boater education requirement?",
+    "choice_a": "Owning a boat longer than 40 feet",
+    "choice_b": "Being licensed by the USCG as a master of a vessel",
+    "choice_c": "Having a valid driver's license from any state",
+    "choice_d": "Being over the age of 25",
+    "correct_choice": "B",
+    "explanation": "A person is exempt from the mandatory education requirement if licensed by the USCG as a master of a vessel, if operating on a private lake or pond, or if a non-resident with proof of an equivalent out-of-state course.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Mandatory Education Requirement'"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "May a non-resident operate a motorized vessel in Georgia without completing a Georgia-approved course?",
+    "choice_a": "No, all non-residents must retake a Georgia-specific course regardless of prior certification",
+    "choice_b": "Yes, but only if they are over 21 years old",
+    "choice_c": "Yes, if the non-resident has proof of completing a NASBLA-approved boating education course or equivalency exam in another state",
+    "choice_d": "No, non-residents may never legally operate a vessel in Georgia",
+    "correct_choice": "C",
+    "explanation": "A non-resident is exempt from Georgia's mandatory education requirement if they have proof of completing a NASBLA-approved boating education course or equivalency examination in another state.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Mandatory Education Requirement'"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "Under what condition may a person less than 12 years of age legally operate a vessel less than 16 feet long powered by a motor of 30 horsepower or less?",
+    "choice_a": "Never, regardless of supervision",
+    "choice_b": "Only if they have completed a boating education course, with no adult required",
+    "choice_c": "Only on weekends",
+    "choice_d": "Only if accompanied by a competent adult",
+    "correct_choice": "D",
+    "explanation": "Persons less than 12 years of age may operate a vessel less than 16 feet long with a motor of 30 hp or less only if accompanied by a competent adult; they may not operate any vessel 16 feet or longer at all.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Who May Operate a Boat'"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "How does Georgia law define a 'competent adult' for supervising a minor operator?",
+    "choice_a": "A person age 18 or older who is not under the influence of alcohol or drugs and who is carrying proper identification",
+    "choice_b": "Any adult family member regardless of age",
+    "choice_c": "A person age 21 or older with a boating certificate",
+    "choice_d": "Any licensed driver, regardless of age",
+    "correct_choice": "A",
+    "explanation": "A 'competent adult' is defined as a person 18 years or older who is not under the influence of alcohol or drugs and who carries proper identification.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Who May Operate a Boat'"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "How may a person 12 through 15 years of age legally operate a PWC or a vessel less than 16 feet long in Georgia?",
+    "choice_a": "By simply being taller than 5 feet",
+    "choice_b": "By having passed a DNR-approved boating education course, or by being accompanied by a competent adult",
+    "choice_c": "There is no way for a 12-to-15-year-old to legally operate a PWC",
+    "choice_d": "By having a note from a parent, with no other requirement",
+    "correct_choice": "B",
+    "explanation": "Persons 12 through 15 years old may operate a PWC or a vessel less than 16 feet long only if they have passed a DNR-approved boating education course or are accompanied by a competent adult; they may never operate any vessel 16 feet or longer.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Who May Operate a Boat'"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "What must a person 16 years of age or older have on board to legally operate any boat on Georgia state waters?",
+    "choice_a": "A certified boating instructor as a passenger",
+    "choice_b": "Nothing -- 16-year-olds face no identification requirement",
+    "choice_c": "Proper identification, such as a driver's license or other government-issued ID containing a description, photograph, and date of birth",
+    "choice_d": "A notarized letter of parental consent",
+    "correct_choice": "C",
+    "explanation": "Persons 16 or older may operate any boat on Georgia waters if they have proper identification on board -- a driver's license or other government-issued ID with a description, photo, and date of birth.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Who May Operate a Boat'"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "Because there is no single official DNR-administered boating exam, how do most Georgians actually satisfy the boating education requirement?",
+    "choice_a": "By passing a written test administered exclusively at DNR regional offices",
+    "choice_b": "By taking a road test at a Department of Driver Services office",
+    "choice_c": "There is no way to satisfy the requirement short of a college course",
+    "choice_d": "By completing a NASBLA-approved course from a DNR-approved provider (such as the online Boat-Ed course DNR itself directs boaters to) or an in-person classroom course",
+    "correct_choice": "D",
+    "explanation": "Georgia has no single state-run boating exam; the DNR directs boaters to complete an approved online course (such as Boat-Ed) or a classroom course through the DNR Boating Education Office, and the vendor's own final exam is what boaters actually complete.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, inside front cover ('Georgia Safe Boating Program'); confirmed on gadnrle.org and boat-ed.com/georgia"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "On the Georgia Required Equipment Checklist, when is the Boating Safety Certificate marked as applicable on board for a PWC operator?",
+    "choice_a": "If the operator is 12 to 15 years of age",
+    "choice_b": "Only if the PWC is longer than 16 feet",
+    "choice_c": "It is never required for PWC operators of any age",
+    "choice_d": "Only for rental PWC",
+    "correct_choice": "A",
+    "explanation": "Georgia's required equipment checklist notes the Boating Safety Certificate as applicable on board specifically when the operator is 12 to 15 years of age.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Georgia Required Equipment Checklist'"
+  },
+  {
+    "topic": "Boating Safety Certificate & Age Requirements",
+    "question": "Can a person less than 12 years of age ever legally operate a vessel 16 feet in length or longer in Georgia?",
+    "choice_a": "Yes, if accompanied by any adult",
+    "choice_b": "No, this is prohibited regardless of adult supervision or education course completion",
+    "choice_c": "Yes, if the child has completed a boating safety course",
+    "choice_d": "Yes, on weekends only",
+    "correct_choice": "B",
+    "explanation": "Persons less than 12 years of age may not legally operate any vessel 16 feet in length or longer under any circumstance, including with adult supervision.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Who May Operate a Boat'"
+  }
+]

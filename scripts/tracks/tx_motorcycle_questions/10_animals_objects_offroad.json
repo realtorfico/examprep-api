@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Animals, Flying Objects & Getting Off the Road",
+    "question": "If you are in traffic and an animal darts into your path, the manual advises to:",
+    "choice_a": "Remain in your lane, since hitting something small is less dangerous than hitting something big like a car",
+    "choice_b": "Swerve into another lane regardless of traffic",
+    "choice_c": "Stop immediately no matter what is behind you",
+    "choice_d": "Accelerate to pass over it quickly",
+    "correct_choice": "A",
+    "explanation": "If in traffic, remain in your lane; hitting something small is less dangerous to you than hitting something big, like a car.",
+    "weight": 2,
+    "source_note": "TDLR Motorcycle Operator Training Manual 2020-2021, p.37, 'Animals'"
+  },
+  {
+    "topic": "Animals, Flying Objects & Getting Off the Road",
+    "question": "If chased by a dog, the manual recommends riders:",
+    "choice_a": "Kick at the animal to drive it away",
+    "choice_b": "Downshift, approach slowly, then accelerate and leave the animal behind",
+    "choice_c": "Stop completely and wait for it to leave",
+    "choice_d": "Swerve sharply from side to side to lose it",
+    "correct_choice": "B",
+    "explanation": "If chased by a dog, downshift and approach the animal slowly, then accelerate to leave it behind, without kicking at it.",
+    "weight": 2,
+    "source_note": "TDLR Motorcycle Operator Training Manual 2020-2021, p.37, 'Animals'"
+  },
+  {
+    "topic": "Animals, Flying Objects & Getting Off the Road",
+    "question": "For larger animals such as deer, elk, or cattle, the manual recommends riders:",
+    "choice_a": "Accelerate to pass them quickly",
+    "choice_b": "Sound the horn continuously and proceed",
+    "choice_c": "Brake and prepare to stop, since they are unpredictable",
+    "choice_d": "Ignore them and maintain speed",
+    "correct_choice": "C",
+    "explanation": "For larger animals like deer, elk, and cattle, brake and prepare to stop because they are unpredictable.",
+    "weight": 2,
+    "source_note": "TDLR Motorcycle Operator Training Manual 2020-2021, p.37, 'Animals'"
+  },
+  {
+    "topic": "Animals, Flying Objects & Getting Off the Road",
+    "question": "If struck by a flying object such as an insect or pebble, the manual advises the rider to:",
+    "choice_a": "Immediately let go of the handlebars to check for injury",
+    "choice_b": "Close the eyes momentarily",
+    "choice_c": "Swerve immediately regardless of traffic",
+    "choice_d": "Keep eyes on the road and hands on the handlebars, then pull off when safe to repair damage",
+    "correct_choice": "D",
+    "explanation": "Whatever happens, keep your eyes on the road and hands on the handlebars; when safe, pull off the road and repair the damage.",
+    "weight": 2,
+    "source_note": "TDLR Motorcycle Operator Training Manual 2020-2021, p.37, 'Flying Objects'"
+  },
+  {
+    "topic": "Animals, Flying Objects & Getting Off the Road",
+    "question": "Before pulling off the road, the manual advises riders to first:",
+    "choice_a": "Check that the roadside surface is firm enough to ride on",
+    "choice_b": "Accelerate hard to build momentum",
+    "choice_c": "Remove their helmet",
+    "choice_d": "Turn off the headlight",
+    "correct_choice": "A",
+    "explanation": "Check the roadside to make sure the surface is firm enough to ride on; slow way down if it's soft grass or loose sand, or if unsure.",
+    "weight": 2,
+    "source_note": "TDLR Motorcycle Operator Training Manual 2020-2021, p.37-38, 'Getting Off the Road'"
+  },
+  {
+    "topic": "Animals, Flying Objects & Getting Off the Road",
+    "question": "When pulling off the road, the manual recommends signaling because:",
+    "choice_a": "It is required only on highways",
+    "choice_b": "Drivers behind might not expect you to slow down and change direction",
+    "choice_c": "It increases your speed",
+    "choice_d": "It is optional and rarely necessary",
+    "correct_choice": "B",
+    "explanation": "Drivers behind might not expect you to slow down; give a clear signal, check your mirror, and make a head check before acting.",
+    "weight": 2,
+    "source_note": "TDLR Motorcycle Operator Training Manual 2020-2021, p.38, 'Getting Off the Road'"
+  },
+  {
+    "topic": "Animals, Flying Objects & Getting Off the Road",
+    "question": "When pulling off the road, the manual recommends getting as far off the road as possible because:",
+    "choice_a": "It improves gas mileage",
+    "choice_b": "It is a legal requirement to be at least 50 feet from the road",
+    "choice_c": "It can be very hard for others to spot a motorcycle by the roadside",
+    "choice_d": "It reduces engine wear",
+    "correct_choice": "C",
+    "explanation": "Get as far off the road as you can; it can be very hard to spot a motorcycle by the side of the road, and you don't want someone else pulling off at the same place.",
+    "weight": 2,
+    "source_note": "TDLR Motorcycle Operator Training Manual 2020-2021, p.38, 'Getting Off the Road'"
+  },
+  {
+    "topic": "Animals, Flying Objects & Getting Off the Road",
+    "question": "When parking after pulling off the road, the manual warns that:",
+    "choice_a": "All shoulders are equally firm and safe",
+    "choice_b": "Parking off-road is always illegal",
+    "choice_c": "The center stand should never be used off-road",
+    "choice_d": "Loose and sloped shoulders can make setting the side or center stand difficult",
+    "correct_choice": "D",
+    "explanation": "Park carefully -- loose and sloped shoulders can make setting the side or center stand difficult.",
+    "weight": 2,
+    "source_note": "TDLR Motorcycle Operator Training Manual 2020-2021, p.38, 'Getting Off the Road'"
+  }
+]

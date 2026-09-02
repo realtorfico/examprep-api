@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "What sound signal does a power-driven vessel give to indicate its intent to alter course to port while in sight of another vessel?",
+    "choice_a": "One short blast",
+    "choice_b": "One prolonged blast",
+    "choice_c": "Two short blasts",
+    "choice_d": "Three short blasts",
+    "correct_choice": "C",
+    "explanation": "Two short blasts signal an intent to alter course to port, the counterpart to the one-short-blast starboard-turn signal under the Inland Navigation Rules.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules (33 CFR 83, Rule 34), standard content across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "In a narrow channel, when one vessel intends to overtake another and desires to pass on that vessel's port side, the overtaking vessel signals its intent with:",
+    "choice_a": "One prolonged blast followed by one short blast",
+    "choice_b": "Five or more short, rapid blasts",
+    "choice_c": "One short blast",
+    "choice_d": "Two short blasts",
+    "correct_choice": "D",
+    "explanation": "Under the narrow-channel overtaking signal rules, one short blast signals intent to pass on the other vessel's starboard side, while two short blasts signal intent to pass on its port side; the vessel being overtaken sounds the same signal in agreement.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules (33 CFR 83, Rule 34), standard content across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "A vessel that has lost the ability to maneuver as required by the navigation rules due to some exceptional circumstance, such as a mechanical failure, is classified as:",
+    "choice_a": "Restricted in ability to maneuver, the lowest-priority category",
+    "choice_b": "A give-way vessel under all circumstances, with no special status",
+    "choice_c": "\"Not under command,\" a category that ranks near the very top of the right-of-way priority hierarchy",
+    "choice_d": "Simply anchored, with no distinct classification",
+    "correct_choice": "C",
+    "explanation": "A vessel \"not under command\" -- one unable to maneuver as required due to an exceptional circumstance like engine failure -- ranks near the top of the vessel priority hierarchy, above ordinary power-driven, sailing, and even most restricted-in-maneuverability vessels.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules (33 CFR 83, Rule 18), standard content across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "A vessel properly anchored in a recognized anchorage area does not hold conventional \"right-of-way,\" but other vessels underway are still expected to:",
+    "choice_a": "Treat the anchored vessel exactly like an unmarked navigational hazard to be crossed as closely as convenient",
+    "choice_b": "Maintain a proper lookout and give the anchored vessel a wide, safe berth as they pass",
+    "choice_c": "Assume the anchored vessel will move out of the way",
+    "choice_d": "Ignore the anchored vessel entirely, since anchored vessels have no rules protecting them",
+    "correct_choice": "B",
+    "explanation": "Even though an anchored vessel is not the \"stand-on\" vessel in the traditional sense, general collision-avoidance duties still apply, so passing vessels must keep a proper lookout and steer well clear rather than passing dangerously close.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules (33 CFR 83), standard content across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "In restricted visibility, such as fog, a power-driven vessel making way through the water must sound what signal, and how often?",
+    "choice_a": "Five short blasts, once every 10 minutes",
+    "choice_b": "One short blast, once per hour",
+    "choice_c": "Two prolonged blasts, only when another vessel is heard nearby",
+    "choice_d": "One prolonged blast, at intervals of not more than two minutes",
+    "correct_choice": "D",
+    "explanation": "Under the restricted-visibility sound-signal rule, a power-driven vessel underway and making way must sound one prolonged blast at intervals of no more than two minutes so nearby vessels can detect its presence even when it cannot be seen.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules (33 CFR 83, Rule 35), standard content across NASBLA-aligned boating courses"
+  }
+]

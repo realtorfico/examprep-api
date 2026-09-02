@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "What is the recommended \"huddle\" position for two or more people wearing PFDs who are together in cold water awaiting rescue?",
+    "choice_a": "Everyone should swim in different directions to increase the chance one person is spotted",
+    "choice_b": "Group together facing each other with arms over one another's shoulders and chests close together, conserving heat similarly to the solo H.E.L.P. posture but using shared body warmth",
+    "choice_c": "Spread out as far as possible from one another to maximize the search area",
+    "choice_d": "Remove PFDs and link arms while floating on backs only",
+    "correct_choice": "B",
+    "explanation": "When multiple people wearing PFDs are together in cold water, the recommended huddle position has them face each other with arms over shoulders and chests close together, conserving body heat through shared warmth in a group version of the same heat-loss-reduction principle behind the solo H.E.L.P. posture.",
+    "weight": 3,
+    "source_note": "Universal cold-water immersion survival curriculum (group huddle position), NASBLA-aligned"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "What is the general idea behind the widely taught \"1-10-1\" cold water immersion survival principle?",
+    "choice_a": "It describes roughly one minute to get breathing under control after the initial cold shock, about ten minutes of meaningful movement before muscles lose function, and about one hour before unconsciousness from hypothermia may set in",
+    "choice_b": "It means a person can only survive exactly one minute in any water below 50 degrees",
+    "choice_c": "It refers to the number of PFDs required per person",
+    "choice_d": "It has nothing to do with cold water and instead describes a boat's fuel efficiency rule of thumb",
+    "correct_choice": "A",
+    "explanation": "The \"1-10-1\" principle is a widely taught cold water immersion framework: about one minute to bring the initial cold shock gasp reflex under control, roughly ten minutes of meaningful muscle function for self-rescue before cold incapacitation sets in, and around one hour before hypothermia can lead to unconsciousness -- a rough guide, not an exact guarantee, that emphasizes acting quickly in the first minutes.",
+    "weight": 3,
+    "source_note": "Universal cold-water immersion survival curriculum (\"1-10-1\" principle), NASBLA-aligned"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "Why shouldn't rescuers give up on resuscitation attempts too quickly for a person pulled from cold water after an extended submersion, particularly a child?",
+    "choice_a": "Resuscitation should never be attempted on anyone pulled from cold water",
+    "choice_b": "Cold water can slow the body's metabolism and, especially in children, trigger a protective mammalian dive reflex, meaning some victims have been successfully revived even after longer submersion times than would be survivable in warm water",
+    "choice_c": "Cold water immersion makes resuscitation completely impossible in every case",
+    "choice_d": "Only adults, never children, can benefit from cold-water-related resuscitation success",
+    "correct_choice": "B",
+    "explanation": "Cold water immersion can slow metabolism and, particularly in children, trigger a protective mammalian dive reflex that redirects blood flow to vital organs, meaning some cold-water submersion victims have been successfully resuscitated after longer periods than would be survivable in warm water, so rescuers should not abandon resuscitation efforts prematurely.",
+    "weight": 3,
+    "source_note": "Universal cold-water immersion physiology curriculum (mammalian dive reflex and resuscitation), NASBLA-aligned"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "What is the proper technique for safely towing a disabled vessel to help another South Carolina boater in distress?",
+    "choice_a": "Attach the tow line directly to any convenient cleat and proceed at normal cruising speed",
+    "choice_b": "Use a properly rigged bridle or towing point, proceed at a slow, steady speed, and avoid sudden jerks on the line that could snap it or damage either vessel",
+    "choice_c": "Towing another vessel is never advisable under any circumstance",
+    "choice_d": "Speed and technique make no difference when towing a disabled boat",
+    "correct_choice": "B",
+    "explanation": "Safely towing a disabled vessel calls for a properly rigged bridle or dedicated towing point, a slow and steady towing speed, and avoiding sudden jerks on the line, which could otherwise snap the tow line or cause structural damage to either the towing or the disabled vessel.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on safely towing a disabled vessel"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "What is a prudent response if a South Carolina boater runs out of fuel while underway in a busy channel or current?",
+    "choice_a": "Panic and abandon the vessel immediately regardless of location",
+    "choice_b": "Anchor if safe to do so, avoid drifting into a channel, hazard, or another vessel's path, and signal for assistance using available visual, sound, or radio distress signals",
+    "choice_c": "Running out of fuel requires no particular response since the boat will simply stop safely on its own",
+    "choice_d": "Immediately jump overboard and swim for the nearest shore",
+    "correct_choice": "B",
+    "explanation": "A boater who runs out of fuel should anchor if it is safe to do so to avoid drifting into a channel, hazard, or another vessel's path, and use available visual, sound, or radio distress signals to call for assistance, rather than simply drifting unchecked or taking an unnecessary risk by entering the water.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on running out of fuel while underway"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "If a South Carolina boat is taking on water faster than it can be bailed or pumped out, what should occupants do?",
+    "choice_a": "Continue normal activities since bailing alone will always resolve the situation",
+    "choice_b": "Ensure everyone puts on a PFD immediately, radio a mayday call with the vessel's position if possible, and prepare to abandon ship only as a last resort if the situation continues to worsen",
+    "choice_c": "Remove all PFDs to make swimming easier if the boat sinks",
+    "choice_d": "Wait quietly with no action since help will always arrive before the boat sinks",
+    "correct_choice": "B",
+    "explanation": "When a vessel is taking on water faster than it can be controlled, occupants should immediately don PFDs, radio a mayday call with their position if possible, and treat abandoning ship as a last resort only if the situation continues to deteriorate, prioritizing survival gear and communication over any other action.",
+    "weight": 4,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on a rapidly flooding vessel"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "Why is carbon monoxide poisoning a hidden danger on boats, particularly near a running generator or engine exhaust outlet?",
+    "choice_a": "Carbon monoxide is a visible, strong-smelling gas that is always easy to detect before it becomes dangerous",
+    "choice_b": "Carbon monoxide is colorless and odorless, can accumulate near exhaust outlets such as the swim platform of an idling boat, and its early symptoms -- headache, dizziness, nausea -- can be mistaken for seasickness or fatigue",
+    "choice_c": "Carbon monoxide poses no risk on any vessel with an outboard engine",
+    "choice_d": "Carbon monoxide only becomes dangerous after several days of continuous exposure",
+    "correct_choice": "B",
+    "explanation": "Carbon monoxide is colorless and odorless and can build up dangerously near an idling engine or generator's exhaust outlet, including at a swim platform where people may be swimming or lounging close to the exhaust; its early symptoms of headache, dizziness, and nausea are easily mistaken for seasickness or ordinary fatigue, delaying recognition of the real danger.",
+    "weight": 4,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on carbon monoxide poisoning hazards"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "Why is heat-related illness a real safety concern for boaters during a hot South Carolina summer day on the water, even without ever falling in?",
+    "choice_a": "Being on the water in summer provides automatic protection against heat-related illness",
+    "choice_b": "Prolonged sun exposure, reflected glare off the water, wind, and limited shade can accelerate dehydration and heat exhaustion, which can progress to life-threatening heat stroke if not recognized and treated early",
+    "choice_c": "Heat exhaustion and heat stroke can only occur on land, never aboard a boat",
+    "choice_d": "Drinking alcohol is an effective way to prevent heat-related illness while boating",
+    "correct_choice": "B",
+    "explanation": "A day on South Carolina's summer waters combines direct sun, glare reflected off the water's surface, wind, and often limited shade, all of which can accelerate dehydration and heat exhaustion; recognizing early symptoms and responding with shade, hydration, and rest is important since untreated heat exhaustion can progress to life-threatening heat stroke.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on heat-related illness, applied to South Carolina's summer boating season"
+  }
+]

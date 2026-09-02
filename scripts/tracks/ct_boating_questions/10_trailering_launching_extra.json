@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Trailering and Launching",
+    "question": "Under Connecticut General Statute Section 15-180 and Public Act 12-167, what must a person do before transporting a vessel or trailer in Connecticut, and what is the fine for failing to do so?",
+    "choice_a": "First inspect the vessel and trailer for vegetation and aquatic invasive species and properly remove and dispose of any that are visible and identifiable; violations are fined up to $100 per violation",
+    "choice_b": "Nothing is required before transporting a vessel in Connecticut",
+    "choice_c": "The vessel must be power-washed at a licensed commercial car wash before every transport",
+    "choice_d": "The fine for skipping inspection is a mandatory one-year loss of registration",
+    "correct_choice": "A",
+    "explanation": "Connecticut General Statute Section 15-180, together with Public Act 12-167, requires that no person transport a vessel or trailer in the state without first inspecting it for vegetation and aquatic invasive species and properly removing and disposing of anything visible and identifiable, with violations fined up to $100 each.",
+    "weight": 4,
+    "source_note": "CT DEEP, Aquatic Invasive Species page, portal.ct.gov/DEEP/Fishing/General-Information/Aquatic-Invasive-Species, citing CGS Sec. 15-180 and Public Act 12-167"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Beyond simply removing visible mud and plants, which specific onboard locations does Connecticut's \"Clean, Drain, Dry\" guidance say should be drained of all water before leaving a launch?",
+    "choice_a": "Live wells, bilge, ballast tanks, transom wells, and the motor",
+    "choice_b": "Only the fuel tank needs to be drained",
+    "choice_c": "No specific locations are mentioned; \"drain\" refers only to rinsing the hull's exterior",
+    "choice_d": "Only the anchor locker needs draining",
+    "correct_choice": "A",
+    "explanation": "Connecticut's Clean, Drain, Dry guidance specifically calls for draining water from live wells, the bilge, ballast tanks, transom wells, and the motor before leaving a launch, since standing water in any of these locations can carry aquatic invasive species to the next waterbody.",
+    "weight": 3,
+    "source_note": "CT DEEP, Aquatic Invasive Species page, portal.ct.gov/DEEP/Fishing/General-Information/Aquatic-Invasive-Species, \"Clean, Drain, Dry\" guidance"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should a boat trailer's safety chains be crossed in an \"X\" pattern underneath the trailer tongue when hitching up, even though the trailer also has a coupler locked onto the hitch ball?",
+    "choice_a": "If the coupler ever fails or separates from the ball, the crossed chains form a cradle that can catch the falling tongue and help keep the trailer connected to the tow vehicle",
+    "choice_b": "Crossing the chains has no functional purpose and is done purely by convention",
+    "choice_c": "Crossed chains are required only for trailers under 500 pounds",
+    "choice_d": "The X pattern is designed to reduce the tow vehicle's fuel consumption",
+    "correct_choice": "A",
+    "explanation": "Crossing a trailer's safety chains in an X pattern beneath the tongue means that if the primary coupler ever fails or comes loose from the hitch ball, the crossed chains form a supportive cradle that can catch the tongue before it drops to the road, rather than the chains simply running straight and providing no such backstop.",
+    "weight": 3,
+    "source_note": "General trailer-safety fundamentals (NASBLA-aligned boating safety curriculum) applied to towing to Connecticut launches"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should a boater avoid leaving a trailer's wheel bearings, hubs, and tires submerged in saltwater longer than necessary at a Connecticut coastal launch?",
+    "choice_a": "Saltwater accelerates corrosion of metal components and can compromise wheel bearings and hardware faster than freshwater exposure",
+    "choice_b": "Saltwater exposure has no different effect on a trailer than freshwater",
+    "choice_c": "Saltwater is illegal to use at any Connecticut boat launch",
+    "choice_d": "Prolonged saltwater exposure only affects the trailer's paint color, not its function",
+    "correct_choice": "A",
+    "explanation": "Saltwater is significantly more corrosive to metal trailer components -- wheel bearings, hubs, axles, and hardware -- than freshwater, so minimizing how long a trailer sits submerged at a coastal Connecticut launch, and rinsing it with fresh water afterward, helps prevent accelerated corrosion and premature failure.",
+    "weight": 2,
+    "source_note": "General trailer-maintenance fundamentals (NASBLA-aligned boating safety curriculum) applied to Connecticut's coastal boat launches"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What launch-ramp etiquette is recommended before backing a trailer down a Connecticut boat ramp, to avoid blocking other boaters?",
+    "choice_a": "Prepare the boat fully in the parking or staging area first -- loading gear, removing tie-down straps, and inserting the drain plug -- before backing down the ramp",
+    "choice_b": "Preparation should always be done while the trailer occupies the ramp itself, regardless of the line of waiting boaters",
+    "choice_c": "There is no recommended order of operations at a boat launch",
+    "choice_d": "The drain plug should always be inserted only after the boat is already floating in the water",
+    "correct_choice": "A",
+    "explanation": "Standard launch-ramp courtesy calls for fully preparing the boat -- loading gear, removing tie-downs, inserting the drain plug, and readying the engine -- in the parking or staging area before backing down the ramp, so the ramp itself is occupied only briefly and other boaters are not kept waiting.",
+    "weight": 2,
+    "source_note": "2026 CT DEEP Boater's Guide, \"Courtesy\" sidebar note, p.21, and general launch-ramp etiquette fundamentals"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Beyond the drain plug and tie-downs, why should a boater also check that the trailer's tail lights, brake lights, and turn signals are working before towing to a Connecticut launch?",
+    "choice_a": "Functioning trailer lighting is required for safe and legal towing on public roads, alerting other drivers to the trailer's presence, braking, and turns",
+    "choice_b": "Trailer lighting has no legal or safety relevance as long as it is daytime",
+    "choice_c": "Trailer lights are purely decorative and are never checked by law enforcement",
+    "choice_d": "Only the tow vehicle's lights matter; the trailer's own lights are never inspected",
+    "correct_choice": "A",
+    "explanation": "A trailer's tail lights, brake lights, and turn signals must function properly for safe and legal towing on public roads, since they are often the only signal other drivers have of the trailer's presence, braking, and turning intentions -- a routine pre-trip check recommended before any road trip to a launch.",
+    "weight": 2,
+    "source_note": "General trailer-safety fundamentals (NASBLA-aligned boating safety curriculum) applied to towing to Connecticut launches"
+  }
+]

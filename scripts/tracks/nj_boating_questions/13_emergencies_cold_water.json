@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "If a small boat capsizes, what is the generally recommended action for the occupants?",
+    "choice_a": "Capsized boats always sink immediately, so swimming is the only option",
+    "choice_b": "Stay with the boat, since most recreational boats float even when swamped or capsized, and a boat is far easier for rescuers to spot than a swimmer",
+    "choice_c": "Immediately swim for the nearest shore, no matter the distance",
+    "choice_d": "Remove PFDs to swim faster",
+    "correct_choice": "B",
+    "explanation": "Most recreational vessels retain enough flotation to stay at or near the surface even when capsized or swamped, so staying with the boat and climbing onto or holding it is generally safer than attempting a long swim, and it makes the group far more visible to rescuers.",
+    "weight": 4,
+    "source_note": "Universal capsizing response guidance taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What does the '1-10-1' principle describe in cold-water immersion emergencies?",
+    "choice_a": "A requirement to wait 1 hour before calling for help",
+    "choice_b": "A fixed formula for how many PFDs must be aboard a vessel",
+    "choice_c": "About 1 minute to get breathing under control after cold shock, about 10 minutes of meaningful muscle movement before losing dexterity, and about 1 hour before losing consciousness in cold water",
+    "choice_d": "A rule requiring exactly one rescuer per ten passengers",
+    "correct_choice": "C",
+    "explanation": "The 1-10-1 principle is a rough survival guide for cold-water immersion: about 1 minute to control the initial gasping cold-shock response, about 10 minutes of useful muscle function before losing the ability to self-rescue, and about 1 hour before hypothermia can cause unconsciousness, though actual times vary by water temperature and individual.",
+    "weight": 5,
+    "source_note": "Universal cold-water immersion survival principle, especially relevant given NJ's Nov 1-May 1 PFD-wear rule"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the Heat Escape Lessening Posture (HELP), used by a lone person in cold water wearing a PFD?",
+    "choice_a": "Swimming continuously to generate body heat",
+    "choice_b": "Removing clothing to reduce weight in the water",
+    "choice_c": "Floating face-down to minimize drag",
+    "choice_d": "Drawing the knees up to the chest and arms in close to the body to reduce heat loss from the torso while floating",
+    "correct_choice": "D",
+    "explanation": "HELP involves drawing the knees toward the chest and keeping the arms close to the sides while floating in a PFD, which helps reduce heat loss from major areas of the body like the torso and preserves body warmth longer.",
+    "weight": 4,
+    "source_note": "Universal cold-water immersion HELP position guidance taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the 'huddle' position used for when multiple people are in cold water together wearing PFDs?",
+    "choice_a": "Grouping closely together, chest to chest, to conserve collective body heat and stay together for visibility until rescue arrives",
+    "choice_b": "Spreading out as far apart as possible to cover more area for searchers",
+    "choice_c": "Taking turns submerging to rest",
+    "choice_d": "Removing PFDs to swim in formation",
+    "correct_choice": "A",
+    "explanation": "The huddle position brings multiple people together closely to conserve shared body heat and keeps the group together as a larger, more visible target for rescuers, similar in purpose to the solo HELP position.",
+    "weight": 3,
+    "source_note": "Universal cold-water immersion group survival guidance taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "If a person falls overboard, what should the first action of others aboard be?",
+    "choice_a": "Speed away from the area to avoid a collision",
+    "choice_b": "Immediately shout 'person overboard,' throw a flotation device toward them, and assign someone to keep watching them without losing sight",
+    "choice_c": "Wait several minutes before doing anything to confirm the person is actually in trouble",
+    "choice_d": "Immediately jump in after them without a flotation device",
+    "correct_choice": "B",
+    "explanation": "A quick response to a person overboard includes alerting everyone aboard, throwing a Type IV throwable flotation device toward the person, and designating someone to keep continuous visual contact with them while the vessel maneuvers back.",
+    "weight": 4,
+    "source_note": "Universal man-overboard response procedure taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "When maneuvering a boat back to a person overboard, from which direction should the operator generally approach the person?",
+    "choice_a": "It does not matter which direction the boat approaches from",
+    "choice_b": "Always from directly upwind at full speed",
+    "choice_c": "From downwind or downcurrent, approaching slowly with the engine in neutral or shut off as final contact is made",
+    "choice_d": "At full throttle directly toward the person from any direction",
+    "correct_choice": "C",
+    "explanation": "Approaching a person in the water from downwind or downcurrent, and slowing to idle or shutting off the engine on final approach, reduces the risk that wind or current pushes the boat into the person or that the propeller injures them.",
+    "weight": 4,
+    "source_note": "Universal man-overboard recovery approach technique taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "If a fire breaks out aboard a boat, what should the operator do with the vessel's position relative to the wind?",
+    "choice_a": "Position the boat so the wind blows the fire directly toward the occupants",
+    "choice_b": "Wind direction has no bearing on fighting a boat fire",
+    "choice_c": "Turn off the bilge blower immediately to smother the fire",
+    "choice_d": "Maneuver so the wind carries the flames and smoke away from people and unburned parts of the boat",
+    "correct_choice": "D",
+    "explanation": "Positioning the boat so the wind carries flames and smoke away from occupants and the rest of the vessel helps prevent the fire from spreading toward people or additional fuel sources while it is fought or as passengers evacuate.",
+    "weight": 3,
+    "source_note": "Universal onboard fire response guidance taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "When using a fire extinguisher on a boat fire, where should the extinguisher be aimed?",
+    "choice_a": "At the base of the flames, sweeping side to side",
+    "choice_b": "Directly at the top of the flames",
+    "choice_c": "Into the air above the fire",
+    "choice_d": "Aim direction does not affect extinguisher effectiveness",
+    "correct_choice": "A",
+    "explanation": "Fire extinguishers are most effective when aimed at the base of the flames with a side-to-side sweeping motion, which targets the actual burning fuel rather than the visible flame tips.",
+    "weight": 3,
+    "source_note": "Universal fire extinguisher technique (PASS method) taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "Why does cold-water immersion pose a serious risk even to a strong swimmer wearing a PFD?",
+    "choice_a": "Cold-water risk only applies to non-swimmers",
+    "choice_b": "Cold shock can cause involuntary gasping and hyperventilation, and rapidly falling muscle function can prevent even a strong swimmer from self-rescuing, regardless of swimming ability",
+    "choice_c": "Cold water has no different effect on a strong swimmer than warm water",
+    "choice_d": "A PFD eliminates all risk of drowning in cold water",
+    "correct_choice": "B",
+    "explanation": "Cold shock triggers an involuntary gasp reflex and can cause water inhalation even before hypothermia sets in, and rapidly declining muscle coordination can make swimming or even grabbing onto something impossible within minutes, regardless of a person's swimming skill.",
+    "weight": 4,
+    "source_note": "Universal cold-water immersion physiology, relevant to New Jersey's seasonal PFD-wear rule"
+  }
+]

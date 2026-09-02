@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Trailering, Fueling & Launching",
+    "question": "When is it acceptable to fuel a vessel at night, according to the Georgia boating handbook?",
+    "choice_a": "Fueling at night is always preferred to avoid crowds",
+    "choice_b": "Never, unless it is an emergency, and only electric lights should be used if refueling after dark",
+    "choice_c": "Only if the dock has floodlights installed",
+    "choice_d": "Any time, since fuel vapors are not a concern in darkness",
+    "correct_choice": "B",
+    "explanation": "You should never fuel at night unless it is an emergency; if you must refuel after dark, use only electric lights, and try to refuel away from the water or at a commercial fueling ramp.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Fueling a Vessel'"
+  },
+  {
+    "topic": "Trailering, Fueling & Launching",
+    "question": "Before fueling a boat, what should be done regarding passengers and potential spark sources?",
+    "choice_a": "Passengers should remain on board and keep the engine running to save time",
+    "choice_b": "Only the fuel cap needs to be opened; no other precautions are necessary",
+    "choice_c": "Dock the boat securely, ask all passengers to exit, and turn off anything that might cause a spark such as engines, fans, or electrical equipment",
+    "choice_d": "Smoking is permitted as long as it happens away from the fuel nozzle",
+    "correct_choice": "C",
+    "explanation": "Before fueling, dock the boat securely, have passengers exit, prohibit smoking or open flames, check fuel lines and vents, and turn off anything that could spark, such as engines, fans, or electrical equipment.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Fueling a Vessel'"
+  },
+  {
+    "topic": "Trailering, Fueling & Launching",
+    "question": "What is the single most important safe fueling practice mentioned in the Georgia boating handbook?",
+    "choice_a": "Always fill the tank completely to the very brim",
+    "choice_b": "Keep the engine running the entire time fuel is added",
+    "choice_c": "Fuel only from portable containers, never from a dock pump",
+    "choice_d": "If equipped with a power ventilation system, run it for at least four minutes after fueling and before starting the engine to remove gas vapors from the bilge",
+    "correct_choice": "D",
+    "explanation": "The handbook singles out running the power ventilation system for at least four minutes after fueling and before starting the engine as the most important safe fueling practice, to clear gas vapors from the bilge.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Fueling a Vessel'"
+  },
+  {
+    "topic": "Trailering, Fueling & Launching",
+    "question": "What should a boater do immediately before starting the engine after fueling?",
+    "choice_a": "Open all windows, ports, doors, and other openings, then sniff the bilge and engine compartment for fuel vapors",
+    "choice_b": "Immediately start the engine to burn off any residual fumes",
+    "choice_c": "Close all hatches tightly and wait 24 hours",
+    "choice_d": "Nothing extra is needed once the tank is capped",
+    "correct_choice": "A",
+    "explanation": "After fueling, open all windows, ports, doors, and other openings, and sniff the bilge and engine compartment for fuel vapors before starting the engine.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Fueling a Vessel'"
+  },
+  {
+    "topic": "Trailering, Fueling & Launching",
+    "question": "What information should a float plan include before heading out on a Georgia vessel?",
+    "choice_a": "Only the boat's paint color",
+    "choice_b": "A description of the vessel (registration number, length, make, horsepower, engine type), the planned route and departure/return times, and the names and contact info of everyone on board plus an emergency contact",
+    "choice_c": "Only the name of the marina where you launched",
+    "choice_d": "Float plans are not useful and are not recommended",
+    "correct_choice": "B",
+    "explanation": "A float plan should describe the vessel, state the planned route and departure/return times, and give the names, addresses, and phone numbers of everyone aboard plus an emergency contact, and should be left with a relative, friend, or marina.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Filing a Float Plan'"
+  },
+  {
+    "topic": "Trailering, Fueling & Launching",
+    "question": "Which of these is part of the Georgia pre-departure checklist before operating a vessel?",
+    "choice_a": "Confirm the vessel's paint job matches the trailer color",
+    "choice_b": "Only check that the radio is tuned to a music station",
+    "choice_c": "Check the weather forecast, verify steering/throttle/lights work properly, check for fuel and oil leaks, and confirm the bilge plug is replaced and secure",
+    "choice_d": "No pre-departure checks are recommended if the trip is short",
+    "correct_choice": "C",
+    "explanation": "The pre-departure checklist includes checking the weather forecast, verifying steering/throttle controls and lights work, checking for fuel and oil leaks, draining engine-compartment water, and confirming the bilge plug is secure, among other steps.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Pre-Departure Checklist'"
+  },
+  {
+    "topic": "Trailering, Fueling & Launching",
+    "question": "What should a boater check regarding an engine cut-off switch (ECOS) as part of the pre-departure checklist, if the vessel has one?",
+    "choice_a": "ECOS checks are not part of any pre-departure routine",
+    "choice_b": "Only check the ECOS after returning from the trip",
+    "choice_c": "Replace the ECOS lanyard with a standard shoelace if needed",
+    "choice_d": "Make sure the ECOS and wrist lanyard are in good order",
+    "correct_choice": "D",
+    "explanation": "If the vessel is equipped with an ECOS, the pre-departure checklist calls for making sure the switch and its wrist lanyard are in good working order before heading out.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Pre-Departure Checklist'"
+  },
+  {
+    "topic": "Trailering, Fueling & Launching",
+    "question": "While fueling, what should be done to prevent producing a static spark that could ignite fuel vapors?",
+    "choice_a": "Keep the nozzle of the fuel-pump hose in contact with the tank opening",
+    "choice_b": "Hold the nozzle at least a foot above the tank opening",
+    "choice_c": "Wear rubber gloves while fueling",
+    "choice_d": "Fuel only using a metal funnel with no other contact",
+    "correct_choice": "A",
+    "explanation": "While filling the fuel tank, keep the nozzle of the fuel-pump hose in contact with the tank opening to prevent producing a static spark.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Fueling a Vessel'"
+  },
+  {
+    "topic": "Trailering, Fueling & Launching",
+    "question": "Why should a fuel tank never be filled all the way to the brim?",
+    "choice_a": "A full tank makes the boat float higher",
+    "choice_b": "Fuel needs room to expand, and overfilling risks spilling fuel into the bilge or water",
+    "choice_c": "A full tank voids the manufacturer's warranty",
+    "choice_d": "There is no reason; filling to the brim is recommended",
+    "correct_choice": "B",
+    "explanation": "You should never fill a fuel tank to the brim -- leaving room for the fuel to expand helps avoid spills into the boat's bilge or the surrounding water.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Fueling a Vessel'"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why is it important to use a trailer and hitch ball rated for at least the combined weight of the boat, motor, and gear being towed?",
+    "choice_a": "Weight rating only matters for the vehicle's own cargo, never for a towed trailer",
+    "choice_b": "An undersized hitch or trailer can fail under load, causing loss of control, a detached trailer, or a serious highway accident, so its rated capacity must meet or exceed the actual towed weight",
+    "choice_c": "Trailer weight ratings are purely a manufacturer marketing figure with no safety basis",
+    "choice_d": "Any hitch ball size works with any trailer coupler",
+    "correct_choice": "B",
+    "explanation": "A trailer, coupler, and hitch ball rated below the actual combined weight of the boat, motor, fuel, and gear risk mechanical failure or detachment while towing, so matching or exceeding the rated capacity to the real towed weight is a basic highway-safety requirement before ever leaving for the lake.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (trailer and hitch weight rating), consistent with NASBLA-aligned course guidance"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why do some boaters let trailer wheel hubs cool briefly before backing a hot trailer into a cold Minnesota lake?",
+    "choice_a": "Cooling the hubs has no real safety or mechanical purpose",
+    "choice_b": "Submerging very hot wheel bearings suddenly in cold water can cause rapid contraction that draws water past the seals (sometimes called bearing shock), potentially damaging the bearings over time",
+    "choice_c": "Cooling the hubs is required by Minnesota statute before every launch",
+    "choice_d": "Hot bearings make the boat float higher in the water",
+    "correct_choice": "B",
+    "explanation": "Rapidly cooling very hot wheel bearings by submerging them in cold lake water can draw water past the bearing seals through thermal contraction, a phenomenon sometimes called bearing shock that can accelerate bearing wear or failure over repeated launches.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (trailer wheel bearing care), practical trailer maintenance guidance"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Does Minnesota's aquatic invasive species transport law apply only at the water access itself, or also while a boat is being hauled down a public highway afterward?",
+    "choice_a": "It applies only inside the boundaries of a designated water access",
+    "choice_b": "The prohibition on transporting aquatic plants and undrained water applies broadly to transporting the equipment away from any water access, meaning an officer can also stop and cite a vehicle towing a boat with visible aquatic plants attached anywhere on a public road",
+    "choice_c": "The law only applies to vessels being shipped out of state",
+    "choice_d": "It applies only to registered watercraft, never to trailers",
+    "correct_choice": "B",
+    "explanation": "Minnesota's invasive species transport prohibition is not limited to the moment of leaving the access; it covers transporting the equipment generally, so a conservation officer or other peace officer can stop and cite a vehicle found towing a boat with visible aquatic plants anywhere on a public roadway.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 84D.10 (aquatic invasive species transport prohibition applies broadly, not only at the access)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Does Minnesota's aquatic invasive species law define \"water-related equipment\" narrowly as just the boat's hull, or more broadly?",
+    "choice_a": "Narrowly, covering only the boat's hull and nothing else",
+    "choice_b": "Broadly, generally covering the trailer, downriggers, anchors, and other equipment that comes into contact with the water, not just the boat's hull itself",
+    "choice_c": "The term applies only to fishing rods",
+    "choice_d": "The term has no defined scope under Minnesota law",
+    "correct_choice": "B",
+    "explanation": "Minnesota's invasive species law defines water-related equipment broadly enough to reach the trailer, downriggers, anchors, and other gear that contacts the water, not just the boat's hull, since invasive species and larvae can cling to any of these surfaces.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 84D.10 (broad definition of water-related equipment subject to drain and inspection requirements)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Under Minnesota's aquatic invasive species framework, what should a boater do with water remaining in a bait bucket or livewell before leaving a lake access?",
+    "choice_a": "The water can be kept indefinitely with no restriction",
+    "choice_b": "Livewell and bait bucket water is entirely outside the scope of the invasive species law",
+    "choice_c": "Dispose of the lake water rather than transporting it away from the access, since it can carry invasive species larvae, and use bottled or tap water instead if live bait needs to be kept",
+    "choice_d": "Bait water must always be dumped directly back into the same lake regardless of location",
+    "correct_choice": "C",
+    "explanation": "Because untreated lake water in a bait bucket or livewell can carry invasive species larvae or fragments, Minnesota's invasive species framework calls for disposing of that water before transporting equipment away from the access and replacing it with bottled or tap water for keeping bait alive.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 84D.10 (livewell and bait container water disposal, aquatic invasive species prevention)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What courtesy should a boater follow immediately after successfully launching at a busy Minnesota public access, before parking the tow vehicle?",
+    "choice_a": "Tie up at the launch area itself to organize gear and clean fish at leisure",
+    "choice_b": "Move the boat promptly away from the ramp to a designated tie-up area or dock, freeing the ramp for the next boater in line rather than lingering there",
+    "choice_c": "There is no expectation to move away from the ramp after launching",
+    "choice_d": "Circle near the ramp repeatedly until ready to depart",
+    "correct_choice": "B",
+    "explanation": "After launching, a considerate boater moves promptly to a designated tie-up area away from the ramp itself, freeing the launch point for the next boater in line rather than blocking it while organizing gear, fishing, or socializing.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (boat ramp courtesy after launching), consistent with Minnesota DNR access etiquette guidance"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why should a boater check a specific Minnesota DNR public water access's size and depth information before towing a large boat there?",
+    "choice_a": "All Minnesota public accesses are built to an identical, universal standard suitable for any boat size",
+    "choice_b": "Some public accesses have single-lane ramps, limited courtesy dock space, or shallow approach depths that may not accommodate a larger boat or trailer, making pre-trip research useful before towing a big rig to an unfamiliar lake",
+    "choice_c": "Access size and depth are irrelevant since all Minnesota lakes have the same depth near shore",
+    "choice_d": "Checking access details is required only for personal watercraft",
+    "correct_choice": "B",
+    "explanation": "Public water accesses vary considerably across Minnesota, with some having only a single-lane ramp, minimal courtesy dock space, or shallow approach depths, so checking an unfamiliar access's specifics before towing a larger boat there can avoid an unsafe or unworkable launch attempt.",
+    "weight": 2,
+    "source_note": "Minnesota DNR public water access information (variation in ramp size, dock space, and approach depth by location)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Does Minnesota's drain-and-clean invasive species requirement apply only to trailered boats, or also to hand-carried craft like canoes and kayaks?",
+    "choice_a": "It applies only to boats that arrive on a trailer",
+    "choice_b": "It applies to water-related equipment generally, including hand-launched canoes and kayaks, not just trailered motorboats, since invasive species can cling to any watercraft's hull or gear",
+    "choice_c": "Canoes and kayaks are entirely exempt from the invasive species law",
+    "choice_d": "The requirement applies only to personal watercraft",
+    "correct_choice": "B",
+    "explanation": "Minnesota's invasive species prevention requirements are not limited to trailered motorboats; they extend to water-related equipment broadly, meaning a canoeist or kayaker carrying their craft by hand must also clean off visible plants and avoid transporting standing water, just like a motorboat owner.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 84D.10 (drain and clean requirements apply to water-related equipment generally, including hand-launched craft)"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Under NRS 488.075, how are Nevada's vessel registration fees generally structured?",
+    "choice_a": "A single flat fee applies to every vessel regardless of size",
+    "choice_b": "Fees are scaled by vessel length, generally ranging from about $20 to $100, plus a separate ownership certificate fee of about $20",
+    "choice_c": "Fees are based solely on the vessel's engine horsepower, with length playing no role",
+    "choice_d": "There is no registration fee at all in Nevada",
+    "correct_choice": "B",
+    "explanation": "NRS 488.075 sets Nevada's vessel registration fees on a scale generally tied to vessel length, roughly from $20 to $100, along with a separate ownership certificate fee of about $20, administered by NDOW.",
+    "weight": 3,
+    "source_note": "NRS 488.075 (application for vessel number and ownership certificate; fee schedule by length)"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Under NRS 488.125, how long is a Nevada vessel's certificate of number generally valid before it must be renewed?",
+    "choice_a": "It never needs to be renewed once issued",
+    "choice_b": "Generally 1 to 2 years, renewed through a validation decal at the same fee schedule",
+    "choice_c": "Exactly 10 years with no decal needed",
+    "choice_d": "Only 30 days",
+    "correct_choice": "B",
+    "explanation": "NRS 488.125 provides that a certificate of number is valid for a set term, generally 1 to 2 years, and is renewed through a validation decal charged at the same fee schedule used for the original registration.",
+    "weight": 2,
+    "source_note": "NRS 488.125 (validity period of certificate of number; renewal by validation decal)"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Under NRS 488.165, is it lawful to display an unauthorized or altered number or decal on a vessel's bow?",
+    "choice_a": "Yes, any markings are acceptable as long as some number is displayed",
+    "choice_b": "No; NRS 488.165 prohibits displaying an unauthorized or invalid number or decal on a vessel's bow",
+    "choice_c": "This rule applies only to vessels longer than 40 feet",
+    "choice_d": "Altered decals are permitted if the vessel is used only on Lake Tahoe",
+    "correct_choice": "B",
+    "explanation": "NRS 488.165 prohibits displaying an unauthorized number or decal on a vessel's bow, ensuring that the markings NDOW and enforcement officers rely on for identification remain accurate and valid.",
+    "weight": 2,
+    "source_note": "NRS 488.165 (prohibition against displaying unauthorized numbers or decals)"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Under NRS 488.1803, within how many days must a Nevada vessel dealer generally report a sale or transfer to NDOW?",
+    "choice_a": "Within 3 days, except for transfers made between dealers",
+    "choice_b": "There is no reporting deadline for dealers",
+    "choice_c": "Within one calendar year",
+    "choice_d": "Only if the buyer requests it",
+    "correct_choice": "A",
+    "explanation": "NRS 488.1803 requires a Nevada vessel dealer to report a sale or transfer to NDOW within 3 days on the Department's form, with an exception for transfers made between dealers.",
+    "weight": 2,
+    "source_note": "NRS 488.1803 (dealer reporting of vessel sales and transfers)"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Under NRS 488.257-488.263, what is generally required before placing a mooring buoy on Nevada waters, and what limited exception exists?",
+    "choice_a": "No permit is ever required for any mooring buoy",
+    "choice_b": "An NDOW permit is generally required, except for a temporary buoy that is removed within 72 hours",
+    "choice_c": "A permit is required only for buoys placed on Lake Mead",
+    "choice_d": "Permits are issued only to marina operators, never to individual boat owners",
+    "correct_choice": "B",
+    "explanation": "NRS 488.257 through 488.263 generally require an NDOW permit before placing a mooring buoy on Nevada waters, with a limited exception for a temporary buoy that is removed within 72 hours.",
+    "weight": 2,
+    "source_note": "NRS 488.257-488.263 (mooring buoy permit requirements; temporary buoy exception)"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Under NRS 488.257-488.263, how must a permitted mooring buoy generally be marked, and what fee may apply?",
+    "choice_a": "It must be colored white with a blue horizontal band, generally needs a flashing white light after sunset, and its placement can carry an annual fee up to a statutory cap",
+    "choice_b": "It must be entirely black with no lighting requirement",
+    "choice_c": "No specific color or lighting scheme applies to mooring buoys",
+    "choice_d": "Only orange mooring buoys are legal in Nevada",
+    "correct_choice": "A",
+    "explanation": "A permitted mooring buoy is marked white with a blue horizontal band, generally requires a flashing white light after sunset, and its placement can carry an annual fee up to a statutory cap, roughly $100 per year.",
+    "weight": 2,
+    "source_note": "NRS 488.257-488.263 (mooring buoy color/light marking and placement fee)"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Under NRS 488.291, who remains liable for the removal costs of a vessel abandoned on public waters or property without consent?",
+    "choice_a": "No one is ever liable for an abandoned vessel's removal",
+    "choice_b": "The registered owner remains liable for removal costs",
+    "choice_c": "Only the marina where it was last docked is liable",
+    "choice_d": "Removal costs are always paid by NDOW with no recovery from the owner",
+    "correct_choice": "B",
+    "explanation": "NRS 488.291 prohibits abandoning a vessel on public waterways or property without consent and holds the registered owner liable for the costs of removing it.",
+    "weight": 2,
+    "source_note": "NRS 488.291 (abandonment prohibited; registered owner liable for removal costs)"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Under NRS 488.293, what happens if a peace officer identifies an abandoned vessel but the registered owner does not reclaim it within the statutory notice window (generally 180 days)?",
+    "choice_a": "The vessel must be returned to the owner no matter how much time has passed",
+    "choice_b": "Failing to reclaim the vessel within the notice window can constitute a waiver, with ownership transferring to the responsible agency",
+    "choice_c": "The vessel is destroyed immediately with no notice process at all",
+    "choice_d": "Nothing happens; the vessel remains in legal limbo indefinitely",
+    "correct_choice": "B",
+    "explanation": "NRS 488.293 requires a peace officer to attempt to notify the registered owner of an abandoned vessel, generally within a 180-day window; if the owner fails to reclaim it in that time, the failure can constitute a waiver of ownership, transferring the vessel to the responsible agency.",
+    "weight": 2,
+    "source_note": "NRS 488.293 (peace officer notification of abandoned vessel owner; waiver and transfer of ownership)"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Does NRS 488.580, the personal watercraft operating statute, connect PWC operators back to Nevada's general boater education mandate?",
+    "choice_a": "No, NRS 488.580 makes no reference to any education requirement",
+    "choice_b": "Yes; NRS 488.580 itself requires a PWC operator to also satisfy any applicable requirement of NRS 488.730, tying the PWC-specific statute directly to the general education mandate",
+    "choice_c": "NRS 488.580 exempts all PWC operators from ever needing an education card",
+    "choice_d": "The two statutes address entirely unrelated subjects with no cross-reference",
+    "correct_choice": "B",
+    "explanation": "NRS 488.580, which governs personal watercraft operation, expressly requires a PWC operator to also satisfy any applicable requirement of NRS 488.730, directly linking the PWC-specific statute to Nevada's general boater education mandate.",
+    "weight": 3,
+    "source_note": "NRS 488.580 (operation of personal watercraft; cross-reference to NRS 488.730)"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Beyond the general reckless-operation prohibition in NRS 488.400, does Nevada law contain a PWC-specific reckless or negligent operation provision?",
+    "choice_a": "No, PWCs are addressed only by the general statute, never by a dedicated provision",
+    "choice_b": "Yes; NRS 488.580 separately prohibits operating, or authorizing another person to operate, a personal watercraft in a reckless or negligent manner that endangers the life or property of another",
+    "choice_c": "PWCs are entirely exempt from any reckless-operation standard",
+    "choice_d": "The PWC-specific rule applies only to operators over age 30",
+    "correct_choice": "B",
+    "explanation": "In addition to the general reckless-operation prohibition in NRS 488.400, NRS 488.580 contains its own PWC-specific provision prohibiting a person from operating, or authorizing another to operate, a personal watercraft in a reckless or negligent manner that endangers the life or property of another.",
+    "weight": 3,
+    "source_note": "NRS 488.580 (reckless or negligent operation of personal watercraft), distinct from the general NRS 488.400 prohibition"
+  }
+]

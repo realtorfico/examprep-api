@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Arizona Boater Education",
+    "question": "Does Arizona currently require a general boater education card or certificate to legally operate a motorized vessel on its waters?",
+    "choice_a": "Yes, and the requirement is administered as a single in-person AZGFD-proctored exam",
+    "choice_b": "No -- unlike many other states, Arizona does not have a general age-based mandatory boater education law; the Arizona Revised Statutes' boating chapter does not include a boater-education requirement section",
+    "choice_c": "Yes, every operator born after 1990 must complete a course before operating any vessel",
+    "choice_d": "Yes, but only boaters over age 65 are exempt",
+    "correct_choice": "B",
+    "explanation": "A review of Arizona Revised Statutes Title 5, Chapter 3 (Boating and Water Sports) shows no general mandatory boater-education statute; AZGFD-approved third-party course providers themselves describe Arizona boater education as optional/recommended rather than legally required, which sets Arizona apart from many birth-date-gated states.",
+    "weight": 4,
+    "source_note": "Arizona Revised Statutes Title 5, Chapter 3 (no boater-education section present); Boat-Ed Arizona and iLearnToBoat Arizona course pages, which state boating education 'is not required in Arizona'"
+  },
+  {
+    "topic": "Arizona Boater Education",
+    "question": "Even though Arizona has no general mandatory boater-education law, why might an Arizona resident still choose to complete a NASBLA-approved course?",
+    "choice_a": "It is required to purchase fuel at any Arizona marina",
+    "choice_b": "It replaces the need for vessel registration",
+    "choice_c": "Benefits can include potential boat insurance discounts, nationwide recognition of the certificate under NASBLA reciprocity, and -- as covered elsewhere in this course -- compliance obligations that can arise on shared interstate waters like Lake Mead or Lake Powell",
+    "choice_d": "There is no benefit whatsoever to completing a boating course in Arizona",
+    "correct_choice": "C",
+    "explanation": "Even without an Arizona mandate, a NASBLA-approved course certificate is recognized nationwide, may qualify a boater for an insurance discount, and can matter on interstate waters shared with a state that does have its own education requirement.",
+    "weight": 3,
+    "source_note": "Boat-Ed Arizona / iLearnToBoat Arizona course pages, 'Benefits of Completing a Boating Safety Course'"
+  },
+  {
+    "topic": "Arizona Boater Education",
+    "question": "Since Arizona has no single AZGFD-administered boating knowledge exam, how is a NASBLA-approved boater education certificate typically obtained by an Arizona resident who wants one?",
+    "choice_a": "By passing a written test administered exclusively at AZGFD regional offices statewide",
+    "choice_b": "By mailing in a form with no test of any kind",
+    "choice_c": "Only active-duty military personnel are eligible to take any Arizona boating course",
+    "choice_d": "Through a third-party vendor course (such as Boat-Ed, BOATERexam, or iLearnToBoat) approved by AZGFD, which embeds its own graded unit quizzes and a final certification exam within the course itself",
+    "correct_choice": "D",
+    "explanation": "As with most states, Arizona does not run its own centralized boating exam. Instead, AZGFD approves independent NASBLA-standard course providers, and the vendor's own embedded quizzes and final exam function as the de facto knowledge test.",
+    "weight": 3,
+    "source_note": "Boat-Ed Arizona 'AZGFD-Approved' course page; NASBLA course-approval model description"
+  },
+  {
+    "topic": "Arizona Boater Education",
+    "question": "Across AZGFD-approved course vendors, what passing score is commonly reported for the final certification exam?",
+    "choice_a": "At least 80%, which multiple AZGFD-approved vendors (Boat-Ed and iLearnToBoat) report as their final exam passing threshold, generally with unlimited retake attempts",
+    "choice_b": "Exactly 50%, with only one attempt allowed",
+    "choice_c": "100%, with no retakes of any kind permitted",
+    "choice_d": "There is no passing score because Arizona courses are ungraded",
+    "correct_choice": "A",
+    "explanation": "Boat-Ed's Arizona course and iLearnToBoat's Arizona course both independently report an 80% passing threshold on the final certification exam with unlimited attempts, which is the clearest point of convergence found across AZGFD-approved vendors.",
+    "weight": 3,
+    "source_note": "Boat-Ed Arizona course page ('you must score at least 80% on the exam to pass ... unlimited attempts') and iLearnToBoat Arizona course page (same 80% threshold)"
+  },
+  {
+    "topic": "Arizona Boater Education",
+    "question": "Is the exact number of questions on an AZGFD-approved vendor's final certification exam consistently published?",
+    "choice_a": "The exam has no fixed question count because it is entirely oral",
+    "choice_b": "No -- the specific question count is not consistently published across AZGFD-approved vendor sites, even though the 80% passing threshold is consistently reported",
+    "choice_c": "Yes, every vendor publishes an identical fixed question count of exactly 60",
+    "choice_d": "Yes, the count is fixed by Arizona statute at 100 questions",
+    "correct_choice": "B",
+    "explanation": "While AZGFD-approved vendors converge on an 80% passing score, the exact number of questions on their final exams was not consistently published in the vendor materials reviewed, so that figure is treated as unconfirmed rather than asserted as a fixed number.",
+    "weight": 3,
+    "source_note": "Review of Boat-Ed Arizona and iLearnToBoat Arizona course pages; question count not specified in either"
+  },
+  {
+    "topic": "Arizona Boater Education",
+    "question": "What minimum score do AZGFD-approved course unit quizzes (the shorter quizzes given after each lesson, distinct from the final certification exam) commonly require?",
+    "choice_a": "There is no minimum score for unit quizzes",
+    "choice_b": "Exactly 90%, identical to the final exam requirement",
+    "choice_c": "At least 70%, a threshold reported by Boat-Ed's Arizona course for its lesson-level unit quizzes",
+    "choice_d": "100%, with the course locking the student out permanently after any wrong answer",
+    "correct_choice": "C",
+    "explanation": "Boat-Ed's Arizona course structure requires at least 70% on each lesson's unit quiz before moving on, which is a lower bar than the 80% required on the final certification exam.",
+    "weight": 2,
+    "source_note": "Boat-Ed Arizona course page, unit quiz passing threshold"
+  },
+  {
+    "topic": "Arizona Boater Education",
+    "question": "What does 'NASBLA-approved' mean when applied to a boating safety course?",
+    "choice_a": "It means the course was written directly by the U.S. Coast Guard with no state or vendor involvement",
+    "choice_b": "It means the course is only valid in the state where it was purchased",
+    "choice_c": "It has no bearing on whether a state boating agency will accept the course",
+    "choice_d": "The course meets national education standards set by the National Association of State Boating Law Administrators, which most states -- including Arizona through AZGFD -- rely on when approving third-party vendors",
+    "correct_choice": "D",
+    "explanation": "NASBLA (the National Association of State Boating Law Administrators) sets model education standards; state agencies like AZGFD approve individual vendor courses that meet those standards, which is why a NASBLA-approved card is broadly recognized across states.",
+    "weight": 2,
+    "source_note": "NASBLA course-approval model; Boat-Ed Arizona 'Arizona Game and Fish Department Approved' page"
+  },
+  {
+    "topic": "Arizona Boater Education",
+    "question": "What is the minimum age to enroll in an AZGFD-approved online boating course, according to vendor course pages?",
+    "choice_a": "There is no minimum age requirement to take the online course",
+    "choice_b": "18 years old",
+    "choice_c": "21 years old, the same as Arizona's minimum drinking age",
+    "choice_d": "16 years old, matching Arizona's driver's license age",
+    "correct_choice": "A",
+    "explanation": "AZGFD-approved vendor course pages (Boat-Ed and iLearnToBoat) both state there is no minimum age requirement to take the online boating safety course itself.",
+    "weight": 2,
+    "source_note": "Boat-Ed Arizona and iLearnToBoat Arizona course pages, 'Age Requirements'"
+  }
+]

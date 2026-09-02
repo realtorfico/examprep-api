@@ -1,0 +1,38 @@
+[
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What basic information should a boat operator involved in a reportable accident be prepared to exchange with the other party, similar to a car accident?",
+    "choice_a": "Name, address, and vessel registration information for each operator and vessel involved",
+    "choice_b": "Only insurance company names, with no other identifying information",
+    "choice_c": "No information needs to be exchanged unless a law enforcement officer is present",
+    "choice_d": "Only the make and model of each vessel, with no personal information",
+    "correct_choice": "A",
+    "explanation": "As with a motor vehicle accident, operators involved in a reportable boating accident should be prepared to exchange names, addresses, and vessel registration information, which supports both the accident report and any follow-up between the parties.",
+    "weight": 2,
+    "source_note": "General boating law fundamentals (accident information exchange, consistent with TN's boating accident framework)"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Why might TWRA increase patrols and safety checks on Tennessee reservoirs during major holiday weekends?",
+    "choice_a": "Higher boat traffic volume during peak recreational periods increases the likelihood of accidents, equipment violations, and BUI incidents",
+    "choice_b": "TWRA patrols are reduced during busy weekends to avoid crowding",
+    "choice_c": "Holiday weekends have no effect on boating enforcement activity",
+    "choice_d": "Enforcement only occurs on weekdays in Tennessee",
+    "correct_choice": "A",
+    "explanation": "Because major holiday weekends bring significantly higher boat traffic to Tennessee's reservoirs, TWRA and other law enforcement typically increase patrols and safety checks during these periods to address the greater risk of accidents, equipment violations, and BUI incidents.",
+    "weight": 2,
+    "source_note": "General boating law enforcement fundamentals applied to Tennessee's peak recreational boating periods"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "If a boating accident happens in a remote stretch of a large Tennessee reservoir with no cell signal, what should occupants do before a formal accident report can be filed?",
+    "choice_a": "Use onboard visual distress signals, sound signaling equipment, or a marine radio to summon nearby help, then file the required report once possible",
+    "choice_b": "Wait silently until another boat happens to pass by, without attempting to signal for help",
+    "choice_c": "The reporting duty is waived entirely if cell signal is unavailable at the scene",
+    "choice_d": "Only TWRA officers may initiate any response, so no immediate action is needed",
+    "correct_choice": "A",
+    "explanation": "In a remote area without cell signal, occupants should use whatever onboard equipment is available -- visual distress signals, sound signals, or a marine radio -- to summon nearby help, and still complete the required accident report once they are able to, since a lack of cell service does not waive the underlying reporting duty.",
+    "weight": 2,
+    "source_note": "General boating law fundamentals (accident response and reporting duty, consistent with TN's boating accident framework)"
+  }
+]

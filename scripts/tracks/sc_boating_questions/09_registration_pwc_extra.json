@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Registration and PWC Rules",
+    "question": "Under S.C. Code Section 50-21-100, what records must a South Carolina boat livery (rental) owner keep about each vessel rental?",
+    "choice_a": "Only the total dollar amount charged for the rental",
+    "choice_b": "No records are required to be kept by boat livery owners",
+    "choice_c": "The name and address of the person hiring the vessel, the vessel's identification number, and the departure and expected return date and time, preserved for at least six months",
+    "choice_d": "Only a photograph of the renter, with no written information required",
+    "correct_choice": "C",
+    "explanation": "Section 50-21-100 requires boat livery owners to record the renter's name and address, the vessel's identification number, and the departure date/time along with the expected return, and to preserve those records for at least six months, creating an accountability trail for rental vessels on South Carolina's waters.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-100 (boat livery recordkeeping requirements)"
+  },
+  {
+    "topic": "Registration and PWC Rules",
+    "question": "What is a vessel's Hull Identification Number (HIN), as referenced in Section 50-21-10?",
+    "choice_a": "A random decorative code with no official meaning",
+    "choice_b": "The letter and number combination required by the United States Coast Guard, permanently affixed to the hull to uniquely identify the vessel",
+    "choice_c": "A number that changes every time the vessel is registered in a new state",
+    "choice_d": "A code used only for vessels manufactured outside the United States",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-10 defines the Hull Identification Number as the letter and number combination required by the U.S. Coast Guard, permanently affixed to the vessel's hull, functioning much like a vehicle's VIN to uniquely identify that specific boat across its ownership history.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-10 (definition of Hull Identification Number)"
+  },
+  {
+    "topic": "Registration and PWC Rules",
+    "question": "What does it mean for a vessel to have a \"registered owner\" for purposes of South Carolina's boating chapter, such as when identifying who is responsible for an abandoned or derelict vessel?",
+    "choice_a": "The registered owner is whichever person is aboard the vessel most recently, regardless of paperwork",
+    "choice_b": "The registered owner is the person listed on the vessel's state registration or U.S. Coast Guard documentation records, which is how SCDNR identifies who to notify or hold responsible for the vessel",
+    "choice_c": "South Carolina has no concept of a \"registered owner\" distinct from whoever is physically holding the vessel's keys",
+    "choice_d": "Only a marine dealer can ever be listed as a registered owner",
+    "correct_choice": "B",
+    "explanation": "A vessel's registered owner is the person shown on the state registration or U.S. Coast Guard documentation records, which is exactly the information SCDNR relies on to notify an owner of an issue -- such as an abandoned or derelict vessel -- or to hold that person accountable, making it important for owners to keep registration records current.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-210 (\"registered owner\" definition, Article 2 - abandoned/derelict vessels)"
+  },
+  {
+    "topic": "Registration and PWC Rules",
+    "question": "Why should a South Carolina PWC operator never exceed the manufacturer's rated passenger capacity, even for a short trip?",
+    "choice_a": "Exceeding rated capacity has no effect on how a PWC handles",
+    "choice_b": "Overloading a PWC beyond its rated capacity can affect its stability, handling, and freeboard, increasing the risk of swamping or losing control, especially in chop or during a turn",
+    "choice_c": "Rated capacity applies only to large motorboats, never to PWCs",
+    "choice_d": "PWC manufacturers do not publish any capacity rating",
+    "correct_choice": "B",
+    "explanation": "A PWC's manufacturer-rated capacity reflects the design's stability and handling limits; carrying more riders than rated can reduce freeboard, affect balance, and make the craft harder to control in chop or during turns, increasing the risk of swamping or a loss of control.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned PWC safety curriculum on manufacturer-rated capacity"
+  },
+  {
+    "topic": "Registration and PWC Rules",
+    "question": "What is a recommended technique for a PWC rider who falls off and needs to reboard in open water?",
+    "choice_a": "Attempt to climb up over the bow or the side of the PWC, which is normally less stable for reboarding",
+    "choice_b": "Reboard from the stern, following the manufacturer's specific reboarding instructions, since PWCs are generally designed to be re-entered from the rear for better stability",
+    "choice_c": "Reboarding technique makes no difference to a PWC's stability",
+    "choice_d": "Never attempt to reboard; always wait motionless for a tow regardless of distance to shore",
+    "correct_choice": "B",
+    "explanation": "Most PWCs are designed to be reboarded from the stern following the manufacturer's specific instructions, since attempting to climb up from the side or bow is typically far less stable and can risk capsizing the craft or injuring the person trying to climb back on.",
+    "weight": 2,
+    "source_note": "Universal NASBLA-aligned PWC safety curriculum on reboarding technique"
+  },
+  {
+    "topic": "Registration and PWC Rules",
+    "question": "Why should a South Carolina vessel owner promptly update their registration information with SCDNR after selling the vessel, moving, or otherwise changing ownership or address?",
+    "choice_a": "Registration information never needs to be updated once initially filed",
+    "choice_b": "Outdated registration information can misdirect official notices (such as renewal reminders or accident-related correspondence) to the wrong person or address, and can complicate proving current ownership",
+    "choice_c": "SCDNR automatically updates every owner's address itself with no owner action required",
+    "choice_d": "Only a change of vessel color needs to be reported to SCDNR",
+    "correct_choice": "B",
+    "explanation": "Keeping SCDNR registration records current after a sale, ownership transfer, or address change ensures official notices reach the right person and helps a new or current owner avoid confusion or delay if questions about ownership or registration status arise later.",
+    "weight": 2,
+    "source_note": "SCDNR vessel registration and titling program (dnr.sc.gov), general registration-update guidance"
+  },
+  {
+    "topic": "Registration and PWC Rules",
+    "question": "Under S.C. Code Section 50-21-10's definition of \"waters of the State,\" does South Carolina's boating chapter apply the same way to a purely private, non-public lake or pond as it does to a public lake?",
+    "choice_a": "The chapter applies identically everywhere with no distinction for private water bodies",
+    "choice_b": "\"Waters of the State\" is defined as waters within the state's territorial limits but excludes private lakes or ponds, meaning some of the chapter's public-waters provisions are framed around waters other than purely private, non-public bodies",
+    "choice_c": "Private lakes and ponds are subject to a completely separate and unrelated federal statute",
+    "choice_d": "South Carolina has no statutory definition of \"waters of the State\" at all",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-10 defines \"waters of the State\" as waters within South Carolina's territorial limits but specifically excludes private lakes or ponds, a distinction boaters should understand since many of the chapter's operating and marking provisions are framed around the broader \"waters of the State\" concept rather than a strictly private body of water.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-10 (definition of \"waters of the State\")"
+  }
+]

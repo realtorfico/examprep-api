@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "Under the U.S. Aids to Navigation System, what does the phrase 'red, right, returning' remind a boater to do?",
+    "choice_a": "Red markers indicate a swimming area",
+    "choice_b": "The phrase refers only to sunset navigation lighting",
+    "choice_c": "Keep red, even-numbered markers to the vessel's right (starboard) side when returning from open water or heading upstream",
+    "choice_d": "Always steer toward any red marker no matter the direction of travel",
+    "correct_choice": "C",
+    "explanation": "'Red, right, returning' is the classic memory aid meaning a boater heading upstream or returning from open water should keep red, even-numbered markers on the vessel's starboard (right) side.",
+    "weight": 4,
+    "source_note": "U.S. Aids to Navigation System (USATONS) lateral marker convention"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What shape and color characterize a green 'can' buoy in the U.S. lateral system?",
+    "choice_a": "A cone-shaped red buoy marked with an even number",
+    "choice_b": "A white buoy with an orange diamond",
+    "choice_c": "A buoy shape and color are never used to convey information",
+    "choice_d": "A flat-topped, cylindrical green buoy marked with an odd number, kept to a vessel's port (left) side when returning from open water",
+    "correct_choice": "D",
+    "explanation": "A green can buoy is flat-topped and cylindrical, carries an odd number, and marks the port side of a channel for a vessel returning from open water or heading upstream.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System (USATONS) can buoy specification"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What shape characterizes a red 'nun' buoy, and which side of the channel does it mark?",
+    "choice_a": "A cone-shaped top, marking the starboard side of a channel when returning from open water, with an even number",
+    "choice_b": "A flat top, marking the port side of a channel",
+    "choice_c": "A square shape used only for regulatory purposes",
+    "choice_d": "Nun buoys carry no numbers",
+    "correct_choice": "A",
+    "explanation": "A red nun buoy has a cone-shaped top, is marked with an even number, and indicates the starboard side of the channel for a vessel returning from open water or heading upstream.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System (USATONS) nun buoy specification"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a preferred-channel (junction) marker with horizontal red and green bands indicate?",
+    "choice_a": "A marker with no navigational meaning",
+    "choice_b": "The junction of two channels, where the topmost color band indicates the preferred (primary) channel side to keep that color on",
+    "choice_c": "A swimming-only area",
+    "choice_d": "A speed-limit zone",
+    "correct_choice": "B",
+    "explanation": "A preferred-channel marker shows horizontal bands of red and green; the color of the topmost band tells the boater which side to treat as the primary/preferred channel, following the same 'keep to that color' logic as a solid marker of that color.",
+    "weight": 4,
+    "source_note": "U.S. Aids to Navigation System (USATONS) preferred-channel/junction marker convention"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange diamond symbol typically warn boaters about?",
+    "choice_a": "A refueling station",
+    "choice_b": "A no-wake zone specifically",
+    "choice_c": "A danger, such as a rock, shoal, dam, or other obstruction to be avoided",
+    "choice_d": "A designated anchorage area",
+    "correct_choice": "C",
+    "explanation": "Regulatory markers with an orange diamond on a white background warn boaters of a danger such as rocks, a shoal, a dam, or other hazards to be avoided.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System (USATONS) regulatory marker symbols"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange circle symbol indicate?",
+    "choice_a": "A marker showing the location of a shipwreck only",
+    "choice_b": "A swimming beach with no other restrictions",
+    "choice_c": "It has no defined meaning under the aids to navigation system",
+    "choice_d": "A controlled area, such as a no-wake, idle-speed, or speed-limit zone described by wording on the buoy",
+    "correct_choice": "D",
+    "explanation": "An orange circle on a white regulatory marker denotes a controlled area, such as a no-wake zone or speed zone, with the specific restriction spelled out in the accompanying wording.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System (USATONS) regulatory marker symbols"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange crossed diamond symbol mean?",
+    "choice_a": "Boats are excluded from the marked area entirely",
+    "choice_b": "The area is a preferred anchorage for all vessel types",
+    "choice_c": "The marker indicates a fueling dock",
+    "choice_d": "It marks a safe water channel with no restriction",
+    "correct_choice": "A",
+    "explanation": "An orange crossed diamond (a diamond with a cross inside it) on a white regulatory marker means boats are excluded from the area entirely, such as a swimming area or a dam approach.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System (USATONS) regulatory marker symbols"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange square symbol generally convey to boaters?",
+    "choice_a": "A high-speed racing zone",
+    "choice_b": "General information, such as directions or the location of services, spelled out in the wording on the marker",
+    "choice_c": "A mandatory stop for a checkpoint",
+    "choice_d": "A permanent no-boating zone",
+    "correct_choice": "B",
+    "explanation": "An orange square on a white regulatory marker provides general information to boaters, such as directions, distances, or the location of services, with the details spelled out in the marker's text.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System (USATONS) regulatory marker symbols"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is a daybeacon, and how does it differ from a lighted buoy?",
+    "choice_a": "A daybeacon and a buoy are identical in every respect",
+    "choice_b": "Daybeacons are used exclusively to mark PWC-only zones",
+    "choice_c": "A daybeacon is a fixed structure, permanently attached to the bottom or shore, displaying a colored/numbered dayboard, unlike a buoy which floats and is anchored in place",
+    "choice_d": "A daybeacon only operates at night",
+    "correct_choice": "C",
+    "explanation": "A daybeacon is a fixed aid to navigation mounted on a pile or other permanent structure, displaying a colored dayboard that follows the same red/green lateral system as buoys, whereas a buoy is a floating aid anchored to the bottom.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System (USATONS) daybeacon vs. buoy distinction"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What color and light characteristic is typically associated with a green lateral aid to navigation at night?",
+    "choice_a": "A steady red light",
+    "choice_b": "A white flashing light exclusively",
+    "choice_c": "Green aids never display a light at night",
+    "choice_d": "A green light, which may flash in a distinct pattern to help identify the specific aid",
+    "correct_choice": "D",
+    "explanation": "Lighted green aids to navigation display a green light at night, often with a specific flash pattern noted on nautical charts, helping boaters both identify the aid and confirm their position after dark.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System (USATONS) lighted aid conventions"
+  }
+]

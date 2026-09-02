@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "What must a boat operator do immediately after being involved in a boating accident, before anything else?",
+    "choice_a": "Only stop if a passenger insists on it",
+    "choice_b": "Wait for another boat to arrive before doing anything",
+    "choice_c": "Stop the vessel and render whatever assistance is practical to anyone injured, so long as it does not seriously endanger their own boat or passengers",
+    "choice_d": "Leave the scene immediately to avoid involvement",
+    "correct_choice": "C",
+    "explanation": "Just as with a car accident, a boat operator involved in a collision has a legal duty to stop and render aid to anyone injured, as long as doing so does not put their own vessel or crew in serious danger.",
+    "weight": 3,
+    "source_note": "Duty to stop and render aid, PA-approved boating courses"
+  },
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "What information must a boat operator involved in an accident provide to the other party involved?",
+    "choice_a": "No information is legally required to be exchanged",
+    "choice_b": "Only their first name",
+    "choice_c": "Only the boat's engine serial number",
+    "choice_d": "Their name, address, and the identification/registration number of their vessel",
+    "correct_choice": "D",
+    "explanation": "Similar to a traffic accident, a boater involved in a collision must provide their name, address, and vessel identification to other people involved before leaving the scene.",
+    "weight": 2,
+    "source_note": "Accident information-exchange duty, PA-approved boating courses"
+  },
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "In what kind of situations must a Pennsylvania boater report a boating accident to the PFBC or the nearest law enforcement agency?",
+    "choice_a": "When the accident involves a death, an injury requiring medical treatment beyond simple first aid, or a person's disappearance from the vessel",
+    "choice_b": "Only if the boat sinks completely",
+    "choice_c": "Reporting is never required for any boating accident",
+    "choice_d": "Only accidents that occur on Lake Erie must be reported",
+    "correct_choice": "A",
+    "explanation": "Pennsylvania requires reporting a boating accident to the PFBC or local law enforcement when it results in death, an injury needing more than basic first aid, or a person disappearing from the vessel under circumstances suggesting death or injury.",
+    "weight": 3,
+    "source_note": "PA boating accident reporting duty, PFBC regulations"
+  },
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "Why is it illegal to leave the scene of a boating accident without identifying yourself, similar to a 'hit and run' on the road?",
+    "choice_a": "The law only applies to commercial vessels",
+    "choice_b": "It denies injured parties the ability to identify who was responsible and can prevent them from getting timely help",
+    "choice_c": "There is no penalty for leaving a boating accident scene",
+    "choice_d": "Leaving the scene is only a problem if witnesses are present",
+    "correct_choice": "B",
+    "explanation": "Leaving the scene of a boating accident without providing identification and rendering aid can leave injured people without help and without recourse, which is why it is treated as a serious violation, much like a hit-and-run.",
+    "weight": 2,
+    "source_note": "Duty to remain at accident scene, PA-approved boating courses"
+  },
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "What is one purpose served by requiring boaters to formally report serious boating accidents to the PFBC?",
+    "choice_a": "Reports are used only to raise registration fees",
+    "choice_b": "Accident reporting is required solely for insurance company convenience",
+    "choice_c": "It helps the agency track accident causes and trends to guide future boating safety education, enforcement, and equipment requirements",
+    "choice_d": "Accident reports serve no practical purpose and are simply filed away",
+    "correct_choice": "C",
+    "explanation": "Accident report data helps the PFBC and NASBLA-affiliated agencies nationally identify patterns -- such as common causes or high-risk locations -- that inform future boating safety campaigns, course content, and regulations.",
+    "weight": 2,
+    "source_note": "Purpose of accident-reporting data, PA-approved boating courses"
+  },
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "If a boating accident results only in minor property damage and no injuries, is the operator still expected to exchange information with the other party involved?",
+    "choice_a": "No, information exchange is required only when someone is injured",
+    "choice_b": "No exchange of any kind is ever required for a boating incident",
+    "choice_c": "Only the owner of the more expensive boat must provide information",
+    "choice_d": "Yes, exchanging identifying and vessel information is still expected even when the accident causes only property damage",
+    "correct_choice": "D",
+    "explanation": "Even a property-damage-only accident still calls for boaters to exchange names, addresses, and vessel information, so that any resulting insurance or damage claims can be properly documented.",
+    "weight": 2,
+    "source_note": "Accident information-exchange for property damage, PA-approved boating courses"
+  },
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "Who, besides the PFBC, might a boater need to notify if a serious boating accident occurs on federally regulated navigable waters, such as certain stretches used by commercial traffic?",
+    "choice_a": "The U.S. Coast Guard may also have jurisdiction or reporting requirements in addition to state authorities",
+    "choice_b": "No federal agency ever has any role in boating accidents",
+    "choice_c": "Only the boat manufacturer needs to be notified",
+    "choice_d": "The accident never needs to be reported to any agency",
+    "correct_choice": "A",
+    "explanation": "On certain federally regulated navigable waterways, the U.S. Coast Guard may share jurisdiction with the state, and serious accidents can carry both state (PFBC) and federal reporting considerations.",
+    "weight": 2,
+    "source_note": "Overlapping state/federal accident-reporting jurisdiction, PA-approved boating courses"
+  },
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "What should a boater do to prepare in advance for the possibility of needing to file an accurate accident report later?",
+    "choice_a": "Only professional boat captains need to keep any records",
+    "choice_b": "Keep the vessel's registration, safety-course certificate, and basic incident details (like time, location, and other parties involved) organized and accessible",
+    "choice_c": "There is no benefit to keeping any records related to boating",
+    "choice_d": "Accident reports never require any specific details about the incident",
+    "correct_choice": "B",
+    "explanation": "Having registration, certificate, and basic trip/incident information readily available makes it much easier to complete an accurate and timely report if an accident does occur.",
+    "weight": 1,
+    "source_note": "Accident-report preparedness, PA-approved boating courses"
+  }
+]

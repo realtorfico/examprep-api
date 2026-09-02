@@ -1,0 +1,26 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under New York boating safety requirements, must a person being towed on water skis, a tube, or a wakeboard behind a pleasure boat wear a PFD?",
+    "choice_a": "No, towed riders are exempt from PFD requirements as long as they are strong swimmers",
+    "choice_b": "Only towed riders under age 12 must wear a PFD",
+    "choice_c": "Yes -- New York State requires a PFD to be worn by anyone who is being towed by a pleasure boat",
+    "choice_d": "A PFD is required only when towing occurs at night",
+    "correct_choice": "C",
+    "explanation": "New York State Parks' official boating safety guidance states that a PFD must be worn by anyone who is being towed by a pleasure boat, a standalone requirement that applies regardless of the towed person's age or swimming ability, distinct from the separate under-12 and cold-season PFD rules.",
+    "weight": 2,
+    "source_note": "NYS Parks, Recreation & Historic Preservation, official Boating page (parks.ny.gov/recreation/boating), 'Required Safety Equipment' section: 'A PFD must be worn by anyone who is being towed by a pleasure boat.'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What standard must the PFD worn by a towed water skier, tuber, or wakeboarder in New York meet?",
+    "choice_a": "Any buoyant item, such as a pool noodle or inflatable toy, satisfies the requirement",
+    "choice_b": "Coast Guard approval is only required if the rider is towed more than 100 feet from shore",
+    "choice_c": "New York allows the towed rider to simply hold the PFD rather than wear it",
+    "choice_d": "It must be a U.S. Coast Guard-approved life jacket, properly sized for the wearer -- the same standard New York sets for all its mandatory PFD-wear requirements",
+    "correct_choice": "D",
+    "explanation": "New York's boating safety standards specify that life jackets satisfying its mandatory-wear requirements -- including the requirement covering a towed water skier, tuber, or wakeboarder -- must be U.S. Coast Guard approved and properly sized for the wearer, not simply any floating object.",
+    "weight": 1,
+    "source_note": "NYS Parks, Recreation & Historic Preservation, official Boating page (parks.ny.gov/recreation/boating), 'Personal Flotation Devices' section: life jackets must be 'U.S. Coast Guard approved' and 'the proper size for the intended wearer,' applied alongside the towing-specific PFD mandate."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "What is the minimum age to legally operate a personal watercraft (PWC) in Florida?",
+    "choice_a": "14 years old",
+    "choice_b": "12 years old",
+    "choice_c": "16 years old",
+    "choice_d": "There is no minimum age for PWC operation in Florida",
+    "correct_choice": "A",
+    "explanation": "Florida law sets 14 as the absolute minimum age to operate a PWC, and no exception -- including adult supervision -- allows someone younger than 14 to operate one.",
+    "weight": 5,
+    "source_note": "Florida Statutes 327.395, PWC minimum operating age"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Can a Boating Safety Education Identification Card allow a person under 14 to legally operate a PWC in Florida?",
+    "choice_a": "Yes, but only during daylight hours",
+    "choice_b": "No -- the age-14 minimum applies regardless of whether the person holds an ID card",
+    "choice_c": "Yes, holding the ID card overrides the age minimum",
+    "choice_d": "Yes, but only if a parent is riding as a passenger",
+    "correct_choice": "B",
+    "explanation": "No one under 14 may legally operate a PWC in Florida under any circumstance, even with a Boating Safety Education ID Card; knowingly allowing it is a second-degree misdemeanor for the responsible adult.",
+    "weight": 4,
+    "source_note": "Florida Statutes 327.395, absolute PWC age minimum"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "What is the minimum age to legally rent a personal watercraft in Florida?",
+    "choice_a": "16 years old",
+    "choice_b": "There is no minimum age to rent a PWC",
+    "choice_c": "18 years old",
+    "choice_d": "14 years old",
+    "correct_choice": "C",
+    "explanation": "A person must be at least 18 years old to rent a PWC in Florida, a higher threshold than the 14-year minimum to operate one that is not rented.",
+    "weight": 3,
+    "source_note": "Florida PWC rental age requirement"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "What must every PWC operator do with the engine cutoff switch (ECOS) lanyard before getting underway?",
+    "choice_a": "Leave it disconnected to prevent accidental shutoff",
+    "choice_b": "Attach it to the dock instead of themselves",
+    "choice_c": "Only attach it if operating alone with no passengers",
+    "choice_d": "Attach it to their person, clothing, or PFD",
+    "correct_choice": "D",
+    "explanation": "Florida and federal law require a PWC operator to physically attach the ECOS lanyard to themselves so the engine shuts off automatically if they are separated from the PWC.",
+    "weight": 4,
+    "source_note": "33 CFR 175 ECOS requirement applied to PWCs; Florida PWC equipment law"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "What PFD rule applies to every person operating or riding on a PWC in Florida?",
+    "choice_a": "Each person must wear a USCG-approved wearable PFD at all times",
+    "choice_b": "A PFD only needs to be carried aboard, not worn",
+    "choice_c": "Only the operator must wear a PFD; passengers do not need one",
+    "choice_d": "PFDs are optional if the PWC has an ECOS lanyard",
+    "correct_choice": "A",
+    "explanation": "Every person aboard a PWC in Florida, operator and passengers alike, must wear (not just carry) a USCG-approved PFD at all times while underway.",
+    "weight": 4,
+    "source_note": "Florida PWC equipment law, mandatory PFD wear"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "During what hours is PWC operation prohibited on Florida waters?",
+    "choice_a": "Only during officially declared holidays",
+    "choice_b": "From sunset to sunrise",
+    "choice_c": "From noon to 6 p.m.",
+    "choice_d": "PWC operation has no hour restrictions in Florida",
+    "correct_choice": "B",
+    "explanation": "Florida prohibits PWC operation between sunset and sunrise, consistent with the higher-risk profile of PWCs operating in darkness among other recreational traffic.",
+    "weight": 3,
+    "source_note": "Florida PWC hours-of-operation restriction"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Is 'weaving through congested vessel traffic' or jumping another vessel's wake unreasonably close to it considered reckless operation when done on a PWC?",
+    "choice_a": "Only if a collision actually results",
+    "choice_b": "This is legal as long as it is done at idle speed",
+    "choice_c": "Yes -- Florida's reckless/careless operation law specifically identifies this kind of conduct regardless of vessel type, including PWCs",
+    "choice_d": "No, PWCs are exempt from Florida's reckless operation statute",
+    "correct_choice": "C",
+    "explanation": "Florida's careless/reckless operation statute applies to all vessels, and weaving through congested traffic or jumping another vessel's wake too closely is explicitly identified as an example of reckless conduct.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.33, reckless operation examples applied to PWCs"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Why do PWC-specific rules (age minimum, ECOS use, hours of operation) exist in addition to general boating rules?",
+    "choice_a": "PWC rules exist purely to generate registration revenue",
+    "choice_b": "PWCs are considered inherently safer, so extra rules are just precautionary paperwork",
+    "choice_c": "There is no meaningful safety rationale behind PWC-specific rules",
+    "choice_d": "PWCs are highly maneuverable, fast-accelerating craft that are statistically over-represented in certain collision types, particularly among younger and less-experienced operators",
+    "correct_choice": "D",
+    "explanation": "PWCs' quick acceleration, tight turning radius, and popularity with younger or newer operators contribute to their over-representation in certain collision statistics, driving targeted rules beyond general boating law.",
+    "weight": 2,
+    "source_note": "General PWC safety rationale, standard NASBLA-course content"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "What is a common, dangerous mistake new PWC operators make when trying to avoid a collision?",
+    "choice_a": "Releasing the throttle without also steering away, which can reduce or eliminate steering control on many PWC designs",
+    "choice_b": "Operating below the posted speed limit",
+    "choice_c": "Steering too early, well before any hazard appears",
+    "choice_d": "Wearing a PFD, which reduces reaction time",
+    "correct_choice": "A",
+    "explanation": "Many PWCs steer using directed thrust from the jet drive; releasing the throttle in a panic can reduce steering response exactly when a turn is needed most, so operators are taught to steer away while maintaining some throttle.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course PWC handling fundamentals"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Does a rented PWC in Florida still have to comply with the same PFD, ECOS, and hours-of-operation rules as a privately owned PWC?",
+    "choice_a": "Rental PWCs may be operated at any hour, day or night",
+    "choice_b": "Yes -- rental status does not exempt a PWC from any equipment or operating requirement",
+    "choice_c": "No, rental PWCs are exempt from all state boating laws",
+    "choice_d": "Only the PFD rule applies to rentals",
+    "correct_choice": "B",
+    "explanation": "Whether privately owned or rented, a PWC in Florida must comply with the same PFD, ECOS-lanyard, age, and hours-of-operation rules -- rental businesses are additionally regulated as liveries.",
+    "weight": 3,
+    "source_note": "FWC livery regulations; general PWC rental compliance"
+  }
+]

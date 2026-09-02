@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "Which motorized vessels are generally required to be registered in Massachusetts?",
+    "choice_a": "Only vessels used exclusively for commercial fishing",
+    "choice_b": "No motorized vessel is required to register in Massachusetts",
+    "choice_c": "Only vessels longer than 65 feet",
+    "choice_d": "Motorboats and PWCs operated on public waters, which must display a valid registration number and decal on the hull",
+    "correct_choice": "D",
+    "explanation": "Massachusetts requires motorboats and PWCs operating on public waters to be registered, with a registration number and current decal displayed on the hull, similar to license plates on a car.",
+    "weight": 3,
+    "source_note": "Massachusetts General Laws Chapter 90B, vessel registration requirement, consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "How must a Massachusetts vessel registration number typically be displayed on the hull?",
+    "choice_a": "In plain, block letters and numbers of a contrasting color, positioned on each side of the forward half of the vessel, legible from a distance",
+    "choice_b": "In cursive script anywhere on the vessel",
+    "choice_c": "Only on the stern, in any size",
+    "choice_d": "Registration numbers do not need to be visible from outside the vessel",
+    "correct_choice": "A",
+    "explanation": "Registration numbers must be displayed in plain block characters, in a color that contrasts with the hull, positioned on the forward half of each side of the vessel so they are clearly legible to enforcement officers or other boaters.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (registration number display requirements), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "What agency issues motorboat and PWC registrations in Massachusetts?",
+    "choice_a": "The town clerk in every Massachusetts municipality independently, with no state-level coordination",
+    "choice_b": "The Massachusetts Environmental Police, through its Office of Law Enforcement boat registration program",
+    "choice_c": "The federal Bureau of Land Management",
+    "choice_d": "A private national vessel registry with no state involvement",
+    "correct_choice": "B",
+    "explanation": "The Massachusetts Environmental Police administers the state's motorboat and PWC registration program, which is separate from -- but works alongside -- the boater education certificate requirement.",
+    "weight": 3,
+    "source_note": "Massachusetts vessel registration administration by Massachusetts Environmental Police, consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "Is a canoe, kayak, or other non-motorized vessel typically required to be registered in Massachusetts the same way a motorboat is?",
+    "choice_a": "Only kayaks longer than 20 feet must register",
+    "choice_b": "Registration for non-motorized craft is determined solely by the color of the hull",
+    "choice_c": "No -- non-motorized vessels like canoes and kayaks are generally exempt from the state motorboat registration requirement",
+    "choice_d": "Yes -- every canoe and kayak must display a state registration decal identical to a motorboat's",
+    "correct_choice": "C",
+    "explanation": "Massachusetts's motorboat/PWC registration requirement generally does not extend to unpowered vessels like canoes, kayaks, and rowboats, which are treated differently from motorized craft under the registration statute.",
+    "weight": 2,
+    "source_note": "Massachusetts General Laws Chapter 90B, registration scope (motorized vessels), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "What operating-hours restriction commonly applies to PWCs in many states, including reflecting Massachusetts's general approach to PWC-specific rules?",
+    "choice_a": "PWCs may only be operated between midnight and 4 a.m.",
+    "choice_b": "There is no operating-hours distinction anywhere for PWCs versus other motorboats",
+    "choice_c": "PWCs may only be operated on weekdays",
+    "choice_d": "PWCs are typically restricted to operating only during daylight hours, unlike some other motorboats which may operate at night with proper lighting",
+    "correct_choice": "D",
+    "explanation": "Many states, reflecting the general national approach to PWC regulation, restrict PWC operation to daylight hours because of the added risk of operating a small, low-profile, quickly maneuvering craft at night; boaters should confirm the specific local rule before operating after dusk.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (PWC daylight-only operation, a common state-law pattern), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "What is a common rule regarding how closely a PWC may approach another vessel, dock, swimmer, or shoreline structure?",
+    "choice_a": "PWC operators must maintain a slow, no-wake speed and safe distance when approaching other vessels, people, or structures, the same as any other motorboat",
+    "choice_b": "PWCs are exempt from all speed and distance rules because of their small size",
+    "choice_c": "PWCs may pass within a few feet of swimmers at full throttle as long as no contact occurs",
+    "choice_d": "Distance rules apply only to PWCs longer than 12 feet",
+    "correct_choice": "A",
+    "explanation": "PWC operators are held to the same no-wake, safe-distance, and reckless-operation standards as other motorboat operators when approaching people, vessels, or structures -- weaving through congested areas or buzzing swimmers at speed is a common and dangerous violation.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (PWC operating distance rules), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "Why do PWC manufacturers and safety courses emphasize that a PWC continues moving in the direction it was heading when the throttle is released?",
+    "choice_a": "This is a myth with no basis in how PWCs are designed",
+    "choice_b": "Most PWCs steer using directed thrust from the water jet, so releasing the throttle removes steering control, meaning a panicked rider who lets go of the throttle can still travel straight into a hazard",
+    "choice_c": "Because PWCs have traditional rudders like a sailboat that steer independently of the throttle",
+    "choice_d": "Because PWCs automatically brake to a stop the instant the throttle is released",
+    "correct_choice": "B",
+    "explanation": "Because PWC steering depends on directing the thrust of the water jet, releasing the throttle in a panic removes the ability to steer, so the craft continues coasting in a straight line -- a leading cause of PWC collisions -- and operators are trained to keep the throttle engaged to maintain steering.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (PWC steering-while-throttle mechanics), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "What is required regarding lanyard-style engine cut-off devices on PWCs specifically?",
+    "choice_a": "The lanyard should be attached to a fixed dock cleat, not the operator",
+    "choice_b": "Lanyards are required only on PWCs manufactured before 2000",
+    "choice_c": "The lanyard should be attached to the operator's body or PFD at all times the PWC is running, so the engine shuts off automatically if the operator falls off",
+    "choice_d": "PWC lanyards are optional accessories with no safety function",
+    "correct_choice": "C",
+    "explanation": "PWCs are built to run only while their engine cut-off lanyard is attached; keeping it clipped to the operator's PFD or wrist ensures the engine stops automatically if the operator is thrown off, preventing a riderless PWC from circling back dangerously.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (PWC engine cut-off lanyard use), consistent with NASBLA-aligned course curricula and federal engine cut-off switch regulation"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "May a person rent or lease a PWC to someone younger than the state's minimum PWC operating age in Massachusetts?",
+    "choice_a": "Yes -- rental businesses are entirely exempt from all age restrictions",
+    "choice_b": "Age restrictions apply only to privately owned PWCs, not rentals",
+    "choice_c": "Rental companies may set their own minimum age with no reference to state law",
+    "choice_d": "No -- rental and livery operators are expected to comply with the state's minimum age requirement for PWC operation just as any other operator must",
+    "correct_choice": "D",
+    "explanation": "Massachusetts's minimum age requirement for PWC operation applies regardless of whether the PWC is privately owned or rented from a livery; rental operators must still comply with the state's age minimum for who may operate the craft.",
+    "weight": 2,
+    "source_note": "Massachusetts General Laws Chapter 90B, PWC age-minimum enforcement scope, consistent with Massachusetts Environmental Police-reviewed course materials"
+  }
+]

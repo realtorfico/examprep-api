@@ -1,0 +1,14 @@
+[
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Besides weaving through congested traffic and jumping another vessel's wake unreasonably close, what other specific maneuver does Illinois's PWC-operation law identify as dangerous and prohibited?",
+    "choice_a": "Slowing to idle speed when approaching a no-wake buoy",
+    "choice_b": "Keeping a consistent, predictable heading across open water",
+    "choice_c": "Stopping completely before entering a marked channel",
+    "choice_d": "Waiting until the last possible moment to swerve and avoid a collision",
+    "correct_choice": "D",
+    "explanation": "Illinois's PWC operating-responsibility provision specifically names waiting until the last possible moment to swerve and avoid a collision, alongside weaving through traffic and jumping wakes too closely, as a prohibited, dangerous maneuver -- because it leaves no margin for the operator or others to react safely.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-2 and 45/5-20; Handbook of Illinois Boating Laws and Responsibilities"
+  }
+]

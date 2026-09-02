@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is a capacity plate, required by federal standards on most monohull boats less than 20 feet long, and why does it matter to a South Carolina boater?",
+    "choice_a": "A plate listing the manufacturer's maximum recommended persons, weight, and horsepower for the boat, which helps an operator avoid dangerously overloading the vessel",
+    "choice_b": "A decorative plaque with no safety information",
+    "choice_c": "A plate that lists only the boat's paint color code",
+    "choice_d": "A plate required only on vessels over 65 feet",
+    "correct_choice": "A",
+    "explanation": "Federal regulations require most monohull boats under 20 feet to display a capacity plate stating the manufacturer's maximum recommended number of persons, total weight, and horsepower, giving an operator a clear, boat-specific limit to avoid overloading that could reduce stability and freeboard.",
+    "weight": 4,
+    "source_note": "Federal capacity plate requirements (33 CFR 183.1) applied under S.C. Code Ann. Section 50-21-610"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What federal equipment requirement applies to a South Carolina vessel that has an installed toilet, rather than a portable one?",
+    "choice_a": "No requirement of any kind applies to installed toilets",
+    "choice_b": "It must have a functioning Marine Sanitation Device (MSD) that meets federal standards, since discharging untreated sewage directly into the water is restricted",
+    "choice_c": "Installed toilets are banned outright on all recreational vessels",
+    "choice_d": "Only commercial vessels are ever subject to any sanitation equipment standard",
+    "correct_choice": "B",
+    "explanation": "Federal law requires vessels with installed toilets to have an approved Marine Sanitation Device that treats or holds sewage rather than discharging it untreated, a standard that applies on South Carolina's waters just as it does nationwide.",
+    "weight": 3,
+    "source_note": "Federal Marine Sanitation Device requirements (33 CFR 159) applied under S.C. Code Ann. Section 50-21-610"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Although not part of the strict federal carriage checklist, why is carrying an anchor with sufficient anchor line a widely recommended piece of safety equipment on South Carolina waters?",
+    "choice_a": "An anchor has no safety value and is purely for convenience",
+    "choice_b": "It allows a disabled or waiting vessel to hold position rather than drift into a hazard such as a channel, rocks, or another vessel's path",
+    "choice_c": "Anchors are required only on vessels used exclusively for racing",
+    "choice_d": "An anchor is useful only for overnight stays and never for an emergency",
+    "correct_choice": "B",
+    "explanation": "While not on the strict federally mandated equipment list for most small recreational boats, a properly sized anchor and adequate line are widely recommended so a disabled, waiting, or anchored vessel can hold its position rather than drift into a channel, shoal, or another vessel's path.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on recommended (non-mandatory) safety equipment"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why is a manual bilge pump or bailer a recommended piece of equipment even on a boat with a working electric bilge pump?",
+    "choice_a": "A manual backup provides a way to remove water if the electric pump fails or the battery dies, which is exactly when bailing capacity matters most",
+    "choice_b": "Manual bailers are illegal to carry alongside an electric pump",
+    "choice_c": "An electric bilge pump can never fail, making a backup pointless",
+    "choice_d": "Manual bailers are required to be stored on shore, not aboard",
+    "correct_choice": "A",
+    "explanation": "An electric bilge pump depends on a working battery and wiring; carrying a manual bilge pump or bailer as a backup ensures a boater can still remove water taking on through a leak or rough conditions if the electrical system fails, which is often exactly when the extra pumping capacity is needed most.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on recommended (non-mandatory) safety equipment"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why is carrying a basic first aid kit recommended for a South Carolina boater heading out on a lake or coastal trip?",
+    "choice_a": "First aid kits are legally banned aboard recreational vessels",
+    "choice_b": "It has no practical value since injuries never occur while boating",
+    "choice_c": "It allows minor injuries -- cuts, hook injuries, sunburn, or minor burns -- to be treated promptly, which matters most on the water since professional medical help may be a significant distance or time away",
+    "choice_d": "A first aid kit is required only for vessels over 40 feet",
+    "correct_choice": "C",
+    "explanation": "A basic first aid kit lets a boater treat minor injuries such as cuts, fishing hook injuries, sunburn, or minor burns right away, which is especially valuable on the water where reaching a hospital or clinic can take considerably longer than it would on land.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on recommended (non-mandatory) safety equipment"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why do experienced South Carolina boaters recommend carrying basic spare parts and tools, such as a spare propeller, fuses, and belts?",
+    "choice_a": "A common mechanical failure, such as hitting submerged debris and damaging a propeller, can otherwise leave a boater stranded far from a marina or launch ramp with no way to safely make repairs and return",
+    "choice_b": "Spare parts have no effect on whether a boater can get back to shore",
+    "choice_c": "Carrying tools and spare parts is required by federal law on every vessel",
+    "choice_d": "Mechanical failures never occur on well-maintained boats",
+    "correct_choice": "A",
+    "explanation": "South Carolina's lakes and coastal waters can put a boat far from the nearest ramp or marina; a basic set of spare parts and tools -- such as a spare propeller, fuses, and belts -- lets a boater address a common mechanical failure themselves rather than being stranded and needing a tow.",
+    "weight": 2,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on recommended (non-mandatory) safety equipment"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why is a compass and a paper chart or other non-electronic navigation reference recommended for longer trips on South Carolina's coastal waters or large lakes, even when a GPS chartplotter is aboard?",
+    "choice_a": "Compasses and charts are purely decorative navigation items with no practical use",
+    "choice_b": "GPS units never fail, so a backup is unnecessary",
+    "choice_c": "Electronic navigation equipment can fail due to battery loss, water damage, or a lost satellite signal, so a basic compass and chart provide a backup way to maintain a safe heading and general position",
+    "choice_d": "Paper charts are illegal to carry aboard a recreational vessel",
+    "correct_choice": "C",
+    "explanation": "Because electronic navigation equipment can fail from a dead battery, water intrusion, or a lost signal, carrying a basic compass and a paper chart or route reference gives a boater a reliable backup method to maintain a safe heading and general position on a longer trip.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on recommended (non-mandatory) safety equipment"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "Under RSMo 306.140, what must a Missouri vessel operator involved in a collision, accident, or other casualty do at the scene?",
+    "choice_a": "Leave the scene immediately to avoid liability",
+    "choice_b": "Only provide information if asked directly by a Water Patrol officer",
+    "choice_c": "Render assistance as practicable to other persons affected, and provide their name, address, and vessel identification in writing to injured parties and property owners",
+    "choice_d": "There is no duty to render assistance or provide identifying information",
+    "correct_choice": "C",
+    "explanation": "Missouri law requires an operator involved in a collision, accident, or other casualty to render practicable assistance to affected persons and to provide their name, address, and vessel identifying information in writing to any injured person or owner of damaged property.",
+    "weight": 4,
+    "source_note": "RSMo 306.140 (operator duties at the scene of a boating accident)"
+  },
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "Under RSMo 306.140, what threshold triggers a mandatory formal accident report to the water patrol division?",
+    "choice_a": "Any incident, no matter how minor, including a scraped hull with no injury or measurable damage",
+    "choice_b": "Only incidents involving a fatality; injuries and property damage never require reporting",
+    "choice_c": "Reports are required only if a PWC is involved",
+    "choice_d": "An incident resulting in death or injury to a person, or property damage in excess of $500",
+    "correct_choice": "D",
+    "explanation": "Missouri requires a formal report to the water patrol division when a collision, accident, or casualty results in death or injury to a person, or property damage exceeding $500 -- below that threshold, the general duty to render aid and exchange information under RSMo 306.140 still applies, but a formal report is not mandated.",
+    "weight": 4,
+    "source_note": "RSMo 306.140 (mandatory accident reporting threshold)"
+  },
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "Under RSMo 306.140, is an operator excused from rendering assistance after a boating accident?",
+    "choice_a": "Yes, if rendering assistance would create serious danger to the operator's own vessel, crew, or passengers",
+    "choice_b": "No, an operator must always render assistance no matter the danger to themselves or others aboard",
+    "choice_c": "Yes, an operator may always simply choose not to assist for any reason",
+    "choice_d": "The duty to render assistance never applies to any Missouri boater",
+    "correct_choice": "A",
+    "explanation": "Missouri's accident-response statute recognizes an exception: an operator is not required to render assistance if doing so would create serious danger to their own vessel, crew, or passengers, balancing the duty to help with reasonable self-preservation.",
+    "weight": 3,
+    "source_note": "RSMo 306.140 (exception to the duty to render assistance)"
+  },
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "What agency receives and processes formal boating accident reports required under RSMo 306.140?",
+    "choice_a": "The county sheriff's department exclusively, with no state role",
+    "choice_b": "The water patrol division of the Missouri State Highway Patrol",
+    "choice_c": "The Missouri Department of Revenue",
+    "choice_d": "The National Transportation Safety Board",
+    "correct_choice": "B",
+    "explanation": "Formal boating accident reports required under RSMo 306.140 are filed with the water patrol division, which may by regulation specify additional information it requires as part of a full description of the collision, accident, or casualty.",
+    "weight": 3,
+    "source_note": "RSMo 306.140 (water patrol division as the accident-reporting authority)"
+  },
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "Under RSMo 306.010, which division is designated as responsible for enforcing Missouri's boating law chapter on the waters of the state?",
+    "choice_a": "The Missouri National Guard",
+    "choice_b": "The Missouri Department of Natural Resources exclusively",
+    "choice_c": "The water patrol division of the state highway patrol",
+    "choice_d": "Local municipal courts",
+    "correct_choice": "C",
+    "explanation": "Missouri statute specifically designates the water patrol division of the state highway patrol as the division responsible for enforcing the boating law chapter (RSMo Chapter 306) on the waters of the state, giving it primary boating law enforcement authority.",
+    "weight": 3,
+    "source_note": "RSMo 306.010 (water patrol division enforcement designation)"
+  },
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "What kind of authority does a Water Patrol officer generally have to stop and board a vessel on Missouri waters?",
+    "choice_a": "No authority to stop any vessel under any circumstances",
+    "choice_b": "Authority limited exclusively to issuing verbal warnings, never citations",
+    "choice_c": "Authority only over vessels longer than 40 feet",
+    "choice_d": "Authority to stop a vessel for a safety or registration check and to enforce boating laws, similar to how a highway patrol trooper may stop a vehicle on a road",
+    "correct_choice": "D",
+    "explanation": "Water Patrol officers, as sworn members of the Missouri State Highway Patrol, have authority to stop vessels for safety and registration checks and to enforce boating laws on the waters of the state, paralleling a trooper's authority over vehicles on the highway.",
+    "weight": 3,
+    "source_note": "Missouri State Highway Patrol Water Patrol Division enforcement authority, consistent with RSMo Chapter 306"
+  },
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "Why does the Lake of the Ozarks, a Missouri reservoir with over 1,100 miles of shoreline, receive particular Water Patrol attention during peak boating season?",
+    "choice_a": "Its extensive shoreline, numerous narrow coves, and very high concentration of recreational boat traffic during summer weekends and holidays create elevated collision, wake, and BUI enforcement needs",
+    "choice_b": "The lake sees virtually no recreational boat traffic and requires minimal enforcement",
+    "choice_c": "Water Patrol has no jurisdiction over the Lake of the Ozarks because it is privately owned",
+    "choice_d": "Enforcement is limited to the winter off-season only",
+    "correct_choice": "A",
+    "explanation": "The Lake of the Ozarks is one of the largest reservoirs in the country by shoreline length and draws extremely heavy recreational boat traffic, particularly on summer weekends and holidays; the Water Patrol Division concentrates significant enforcement resources there, including BUI patrols and speed/no-wake enforcement in its many narrow, congested coves.",
+    "weight": 3,
+    "source_note": "Missouri State Highway Patrol Water Patrol Division public safety focus on the Lake of the Ozarks (mshp.dps.mo.gov)"
+  },
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "What information should a boater involved in even a minor accident on a Missouri lake still document, even if it falls below the $500/injury reporting threshold?",
+    "choice_a": "Nothing needs to be documented if there is no visible injury",
+    "choice_b": "The other party's name, contact information, and vessel registration number, along with photos of any damage, in case the situation escalates or is needed for insurance purposes",
+    "choice_c": "Only the make and model of the other boat's motor",
+    "choice_d": "Documentation is illegal without a Water Patrol officer present",
+    "correct_choice": "B",
+    "explanation": "Even when an incident falls below Missouri's formal reporting threshold, exchanging contact and registration information and documenting any damage protects a boater if the other party later files an insurance claim or if injuries or damage are discovered later to exceed the threshold.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (accident documentation best practice), applied to RSMo 306.140's threshold"
+  },
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "Besides Water Patrol officers, what other type of assistance is commonly available on a large reservoir like the Lake of the Ozarks or Table Rock Lake in a marine emergency?",
+    "choice_a": "No emergency response is available on any Missouri lake",
+    "choice_b": "Only the U.S. Coast Guard, which has no role on Missouri's inland reservoirs",
+    "choice_c": "Local fire department marine/dive rescue units, and in some areas, U.S. Army Corps of Engineers park rangers who patrol federally managed shoreline and facilities",
+    "choice_d": "Only private towing companies, with no public safety response available",
+    "correct_choice": "C",
+    "explanation": "In addition to the Water Patrol, local fire departments with marine or dive rescue capability and, on federally managed Corps of Engineers reservoirs, park rangers, can respond to boating emergencies on Missouri's larger lakes -- knowing to call 911 or hail on VHF channel 16 helps route a request to the right responder quickly.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (multi-agency marine emergency response), applied to Missouri Corps of Engineers reservoirs"
+  },
+  {
+    "topic": "Accident Reporting & Water Patrol Authority",
+    "question": "What is VHF Channel 16 used for in a boating emergency?",
+    "choice_a": "It is used exclusively for playing music while underway",
+    "choice_b": "It is a channel reserved only for commercial fishing vessels",
+    "choice_c": "It has no standardized purpose and varies by manufacturer",
+    "choice_d": "It is the international marine distress, safety, and calling channel, monitored by the Coast Guard and other vessels, used to broadcast a Mayday or urgent call for help",
+    "correct_choice": "D",
+    "explanation": "VHF Channel 16 is the internationally recognized distress, safety, and hailing channel; a boater in an emergency should broadcast on Channel 16 to reach the widest possible audience of nearby vessels and rescue authorities monitoring that frequency.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (VHF Channel 16 distress protocol)"
+  }
+]

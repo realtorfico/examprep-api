@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Group Riding",
+    "question": "If a riding group grows larger than four or five riders, the handbook recommends:",
+    "choice_a": "Riding two abreast to shorten the overall group length",
+    "choice_b": "Dividing into two or more smaller groups",
+    "choice_c": "Adding more group leaders at the front of the same group",
+    "choice_d": "Increasing speed to reduce the group's total length",
+    "correct_choice": "B",
+    "explanation": "If your group is larger than four or five riders, divide it up into two or more smaller groups; small groups are easier and safer for other drivers to get around.",
+    "weight": 3,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.36, 'Keep the Group Small'"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "In a group ride, the handbook advises that inexperienced riders should be positioned:",
+    "choice_a": "At the very back of the group",
+    "choice_b": "Riding beside the leader",
+    "choice_c": "Just behind the leader, so more experienced riders can watch them from the back",
+    "choice_d": "Mixed randomly throughout the group",
+    "correct_choice": "C",
+    "explanation": "Put beginners up front, just behind the leader, so the more experienced riders can watch them from the back.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.36, 'Keep the Group Together'"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "According to the handbook, a group's riding pace should generally be set by:",
+    "choice_a": "Whichever rider wants to go the fastest",
+    "choice_b": "The leader alone, regardless of who falls behind",
+    "choice_c": "A predetermined fixed speed that never changes",
+    "choice_d": "The tailender, with the group slowing if that rider falls behind",
+    "correct_choice": "D",
+    "explanation": "Follow those behind -- let the tailender set the pace, and if a rider falls behind, everyone should slow down a little to stay with the tailender.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.36, 'Keep the Group Together'"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "Why does the handbook recommend that everyone in a group know the planned route?",
+    "choice_a": "So a separated rider won't feel rushed to catch up or risk getting lost",
+    "choice_b": "So individual riders can take independent shortcuts",
+    "choice_c": "It is a legal requirement for any group ride",
+    "choice_d": "So the fastest rider can choose a different route",
+    "correct_choice": "A",
+    "explanation": "Make sure everyone knows the route -- if someone is separated they won't have to hurry to keep from getting lost or taking a wrong turn.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.36, 'Keep the Group Together'"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "The handbook advises against \"pairing up\" -- riding directly alongside another rider -- because:",
+    "choice_a": "It is against the law in every state",
+    "choice_b": "There is no place to go if you need to avoid a car or hazard",
+    "choice_c": "It uses more fuel than staggered riding",
+    "choice_d": "It makes hand signals impossible for others to see",
+    "correct_choice": "B",
+    "explanation": "Don't pair up -- never operate directly alongside another rider, since there is no place to go if you have to avoid a car or something on the road.",
+    "weight": 3,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.36, 'Keep Your Distance'"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "In a staggered formation, where does the leader typically ride within the lane?",
+    "choice_a": "The right side of the lane",
+    "choice_b": "Dead center of the lane",
+    "choice_c": "The left side of the lane",
+    "choice_d": "Straddling the centerline",
+    "correct_choice": "C",
+    "explanation": "In staggered formation, the leader rides in the left side of the lane, while the second rider stays one second behind in the right side of the lane.",
+    "weight": 3,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.36, 'Keep Your Distance'"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "In staggered formation, where does the second rider typically ride relative to the leader?",
+    "choice_a": "Directly beside the leader",
+    "choice_b": "Two seconds ahead of the leader",
+    "choice_c": "In the center of the lane, level with the leader",
+    "choice_d": "One second behind the leader, on the right side of the lane",
+    "correct_choice": "D",
+    "explanation": "The second rider stays one second behind the leader, positioned on the right side of the lane.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.36, 'Keep Your Distance'"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "When passing in a staggered formation, the handbook says riders should pass:",
+    "choice_a": "One at a time",
+    "choice_b": "Two at a time, side by side",
+    "choice_c": "All at once, as a full group",
+    "choice_d": "Only when the entire group can pass in a single maneuver",
+    "correct_choice": "A",
+    "explanation": "Riders in a staggered formation should pass one at a time.",
+    "weight": 3,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.37, 'Keep Your Distance'"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "After the lead rider passes a vehicle in a group formation, the handbook says the leader should:",
+    "choice_a": "Move to the right side of the lane to make room",
+    "choice_b": "Return to the left position and continue at passing speed to open room for the next rider",
+    "choice_c": "Slow down immediately back to the group's original speed",
+    "choice_d": "Wait in the oncoming lane until the whole group has passed",
+    "correct_choice": "B",
+    "explanation": "After passing, the leader should return to the left position and continue riding at passing speed to open room for the next rider.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.37, 'Keep Your Distance'"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "According to the handbook, when is single-file formation recommended for a group?",
+    "choice_a": "At all times, regardless of road conditions",
+    "choice_b": "Only when riding at night",
+    "choice_c": "When riding curves, turning, or entering or leaving a highway",
+    "choice_d": "Only when the group has more than ten riders",
+    "correct_choice": "C",
+    "explanation": "It is best to move into a single-file formation when riding curves, turning, or entering or leaving a highway.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.37, 'Keep Your Distance'"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Trailering and Launching",
+    "question": "What is the purpose of a boat's transom tie-down straps, separate from the bow winch strap or safety chain?",
+    "choice_a": "They keep the stern of the boat pulled down and secured to the trailer, preventing the boat from bouncing or shifting on the trailer bunks during transport",
+    "choice_b": "They serve no functional purpose and are purely for appearance",
+    "choice_c": "They replace the need for a winch strap entirely",
+    "choice_d": "They are required only on trailers longer than 30 feet",
+    "correct_choice": "A",
+    "explanation": "Transom tie-down straps secure the stern of the boat down to the trailer, preventing it from bouncing or shifting during transport, which is a different function from the bow winch strap or safety chain that keeps the boat from sliding forward off the trailer.",
+    "weight": 2,
+    "source_note": "Universal trailer tie-down guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should a boater be cautious about backing a trailer with hot incandescent light bulbs quickly into cold lake water at a launch ramp?",
+    "choice_a": "Incandescent bulbs are unaffected by temperature changes of any kind",
+    "choice_b": "A hot bulb suddenly submerged in cold water can crack from thermal shock, so allowing lights to cool briefly, or using sealed/LED trailer lights, helps prevent premature bulb failure",
+    "choice_c": "Cold water always improves bulb performance",
+    "choice_d": "Trailer lights should never be tested before launching",
+    "correct_choice": "B",
+    "explanation": "A hot incandescent trailer light bulb suddenly hitting cold lake water can crack from thermal shock, so letting the lights cool for a moment before backing down the ramp, or using sealed or LED trailer lights, helps avoid premature bulb failure.",
+    "weight": 2,
+    "source_note": "General trailer-light thermal shock guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why is carrying a spare tire and lug wrench for the trailer, not just the tow vehicle, especially important for a long desert drive to Lake Mead or Lake Mohave?",
+    "choice_a": "Trailer tires never fail regardless of conditions",
+    "choice_b": "A trailer tire failure on a remote desert highway can leave a boater stranded far from help, so a trailer-specific spare and the tools to change it are important, separate from the tow vehicle's own spare",
+    "choice_c": "Nevada law prohibits carrying any spare tire",
+    "choice_d": "Only the tow vehicle's tires matter for a safe trip",
+    "correct_choice": "B",
+    "explanation": "A trailer tire failure on a remote desert highway leading to Lake Mead or Lake Mohave can leave a boater stranded far from assistance, so carrying a trailer-specific spare tire and the correct lug wrench, separate from the tow vehicle's own spare, is an important preparation step.",
+    "weight": 2,
+    "source_note": "General trailer-maintenance and preparedness guidance applied to Lake Mead/Lake Mohave's remote desert highway access"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Roughly what percentage of the total trailer and boat weight should rest on the trailer's tongue (hitch) for stable towing?",
+    "choice_a": "Roughly 10 to 15 percent of the total weight",
+    "choice_b": "0 percent; the tongue should carry no weight at all",
+    "choice_c": "Over 75 percent of the total weight",
+    "choice_d": "Tongue weight has no effect on towing stability",
+    "correct_choice": "A",
+    "explanation": "A properly loaded trailer generally carries roughly 10 to 15 percent of its total weight on the tongue; too little tongue weight can cause dangerous trailer sway, while too much can overload the tow vehicle's hitch and rear axle.",
+    "weight": 2,
+    "source_note": "Universal trailer tongue-weight guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why might a boater need to use an extended trailer tongue or a step-plate technique at some Lake Mead launch ramps?",
+    "choice_a": "Extended tongues are purely a matter of personal preference with no practical benefit",
+    "choice_b": "Drought-driven drops in Lake Mead's water level have left some ramps ending well short of the actual waterline, so an extended tongue or step plate can help launch or retrieve a boat without submerging the tow vehicle",
+    "choice_c": "Extended tongues are required by law on every Nevada trailer",
+    "choice_d": "This technique is used only for houseboats",
+    "correct_choice": "B",
+    "explanation": "Because Lake Mead's water level has dropped substantially during periods of drought, some ramps now end well short of the actual waterline; an extended trailer tongue or a step-plate launching technique can help a boater reach the water without submerging the tow vehicle's wheels.",
+    "weight": 2,
+    "source_note": "General reservoir low-water launching technique applied to Lake Mead's documented drought-driven water-level drops"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Before towing a boat and trailer to Lake Tahoe or Lake Mead, why should a boater confirm the tow vehicle's hitch class and weight rating match the combined weight of the trailer and boat?",
+    "choice_a": "Hitch rating has no bearing on towing safety",
+    "choice_b": "A hitch rated below the combined trailer-and-boat weight can fail or cause dangerous handling, so matching or exceeding that combined weight is an essential towing safety check",
+    "choice_c": "All hitches are rated for unlimited weight",
+    "choice_d": "Only the trailer's rating matters, never the tow vehicle's hitch",
+    "correct_choice": "B",
+    "explanation": "A tow vehicle's hitch is rated for a maximum towing weight, and using a hitch rated below the combined weight of the trailer and boat risks hitch failure or dangerous handling, making this an essential pre-trip safety check before a long tow to Lake Tahoe or Lake Mead.",
+    "weight": 2,
+    "source_note": "Universal tow vehicle hitch rating guidance, NASBLA-aligned boating safety curriculum"
+  }
+]

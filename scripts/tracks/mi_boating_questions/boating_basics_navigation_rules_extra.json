@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Boating Basics & Navigation Rules",
+    "question": "On Michigan waters not marked by well-defined channels, canals, rivers, or stream courses, what direction of travel does the law require to avoid an 'Improper Direction' violation?",
+    "choice_a": "Counterclockwise",
+    "choice_b": "Clockwise",
+    "choice_c": "Directly toward the nearest shoreline at all times",
+    "choice_d": "There is no required direction of travel on unmarked waters",
+    "correct_choice": "A",
+    "explanation": "Michigan law defines 'Improper Direction' as the failure to operate in a counterclockwise direction on the waters of this state in areas not marked by well-defined channels, canals, rivers, or stream courses.",
+    "weight": 3,
+    "source_note": "Michigan Boating Laws and Responsibilities (2026), 'Unlawful and Dangerous Operation' -- Improper Direction"
+  },
+  {
+    "topic": "Boating Basics & Navigation Rules",
+    "question": "How does the Michigan handbook define 'slow, no wake speed'?",
+    "choice_a": "A very slow speed at which the wake or wash created by the vessel would be minimal",
+    "choice_b": "Exactly 5 mph on all inland lakes",
+    "choice_c": "Any speed under 25 mph",
+    "choice_d": "The vessel's idle speed with the engine in neutral",
+    "correct_choice": "A",
+    "explanation": "'Slow, no wake speed' means a very slow speed whereby the wake or wash created by the vessel would be minimal; several distance and operating restrictions in Michigan law are triggered whenever a vessel exceeds this speed.",
+    "weight": 2,
+    "source_note": "Michigan Boating Laws and Responsibilities (2026), 'Unlawful and Dangerous Operation' -- Failure to Regulate Speed"
+  },
+  {
+    "topic": "Boating Basics & Navigation Rules",
+    "question": "Under Michigan's speed regulations, where may a vessel legally exceed 55 mph?",
+    "choice_a": "Only on the Great Lakes or Lake St. Clair, and only at least one mile offshore",
+    "choice_b": "On any inland lake larger than 500 acres",
+    "choice_c": "Anywhere at night when few other boats are present",
+    "choice_d": "Michigan has no vessel speed limit anywhere on its waters",
+    "correct_choice": "A",
+    "explanation": "Failure to Regulate Speed makes it illegal to operate a vessel in excess of 55 mph unless the operator is at least one mile offshore on the Great Lakes or Lake St. Clair.",
+    "weight": 3,
+    "source_note": "Michigan Boating Laws and Responsibilities (2026), 'Unlawful and Dangerous Operation' -- Failure to Regulate Speed"
+  },
+  {
+    "topic": "Boating Basics & Navigation Rules",
+    "question": "When operating at greater than 'slow, no wake speed' in an area not marked by well-defined channels, canals, rivers, or stream courses, how close may a vessel legally come to a dock, raft, or moored vessel under Michigan's 'Improper Distance' rule?",
+    "choice_a": "No closer than 100 feet",
+    "choice_b": "No closer than 25 feet",
+    "choice_c": "No closer than 500 feet",
+    "choice_d": "There is no minimum distance as long as the operator maintains control",
+    "correct_choice": "A",
+    "explanation": "Improper Distance requires that, at greater than slow-no-wake speed in unmarked areas, a vessel or towed person stay at least 100 feet away from a shoreline (in water less than three feet deep), any moored or anchored vessel, a dock or raft, or a marked swimming area or person in the water.",
+    "weight": 3,
+    "source_note": "Michigan Boating Laws and Responsibilities (2026), 'Unlawful and Dangerous Operation' -- Improper Distance"
+  },
+  {
+    "topic": "Boating Basics & Navigation Rules",
+    "question": "While a motorboat is operating at greater than 'slow, no wake speed,' what does Michigan law say about passengers riding on the bow, gunwales, or transom?",
+    "choice_a": "Persons may not sit, stand, or walk on any portion of the motorboat not designed for that purpose, including the gunwale",
+    "choice_b": "It is allowed as long as the passenger wears a PFD",
+    "choice_c": "It is allowed only for passengers over age 16",
+    "choice_d": "It is allowed only in flat, calm water conditions",
+    "correct_choice": "A",
+    "explanation": "While operating at greater than slow-no-wake speed, persons on a motorboat may not sit, stand, or walk on any portion of the motorboat not designed for that purpose, which includes riding on the gunwale, bow, or transom, due to the risk of falling overboard.",
+    "weight": 2,
+    "source_note": "Michigan Boating Laws and Responsibilities (2026), 'Unlawful and Dangerous Operation' -- Riding on the Bow, Gunwales, or Transom"
+  },
+  {
+    "topic": "Boating Basics & Navigation Rules",
+    "question": "At night, you see only a single white light from another vessel and no colored sidelights. What does this tell you?",
+    "choice_a": "You are overtaking the other vessel, which is the stand-on vessel whether it is underway or anchored, and you may go around it on either side",
+    "choice_b": "The other vessel is a sailboat under sail and you must give way",
+    "choice_c": "The other vessel is approaching you head-on and both boats must turn to starboard",
+    "choice_d": "The other vessel is disabled and adrift with no lights required",
+    "correct_choice": "A",
+    "explanation": "When you see only a white light at night, you are overtaking another vessel; it is the stand-on vessel whether underway or anchored, and you may go around it on either side.",
+    "weight": 3,
+    "source_note": "Michigan Boating Laws and Responsibilities (2026), 'Encountering Other Vessels at Night'"
+  },
+  {
+    "topic": "Boating Basics & Navigation Rules",
+    "question": "At night you see only a single red light, or only a single green light, from another vessel with no white light visible. What should you conclude and do?",
+    "choice_a": "You may be approaching a sailboat under sail, which is always the stand-on vessel, so you must give way",
+    "choice_b": "You are approaching a power-driven vessel at anchor and may proceed on your current course",
+    "choice_c": "The other vessel is overtaking you and you should maintain course and speed",
+    "choice_d": "The light configuration is not meaningful and can be disregarded",
+    "correct_choice": "A",
+    "explanation": "When you see only a red light or only a green light at night, you may be approaching a sailboat under sail; the sailboat under sail is always the stand-on vessel, so you must give way.",
+    "weight": 3,
+    "source_note": "Michigan Boating Laws and Responsibilities (2026), 'Encountering a Sailboat at Night'"
+  },
+  {
+    "topic": "Boating Basics & Navigation Rules",
+    "question": "Michigan law defines 'Reckless Operation' of a vessel as operation that disregards the safety or rights of others or endangers persons or property. Which of the following is listed as an example of reckless operation?",
+    "choice_a": "Weaving your vessel through congested waterway traffic or swerving at the last possible moment to avoid a collision",
+    "choice_b": "Operating at idle speed near a marina",
+    "choice_c": "Anchoring in an open area of a lake away from traffic",
+    "choice_d": "Displaying navigation lights before sunset",
+    "correct_choice": "A",
+    "explanation": "Reckless Operation includes weaving your vessel through congested waterway traffic or swerving at the last possible moment to avoid collision, jumping the wake of another vessel unnecessarily close to it or when visibility is restricted, and chasing, harassing, or disturbing wildlife.",
+    "weight": 3,
+    "source_note": "Michigan Boating Laws and Responsibilities (2026), 'Unlawful and Dangerous Operation' -- Reckless Operation"
+  },
+  {
+    "topic": "Boating Basics & Navigation Rules",
+    "question": "Under Michigan's rules for 'Obstructing Navigation,' which of the following is illegal?",
+    "choice_a": "Mooring or attaching a vessel to a buoy, beacon, light, or other navigational aid placed on public waters by proper authorities",
+    "choice_b": "Anchoring a vessel well clear of the traveled portion of a channel",
+    "choice_c": "Reporting a damaged or missing navigational aid to the DNR",
+    "choice_d": "Using a chart to identify the location of a channel marker",
+    "correct_choice": "A",
+    "explanation": "Obstructing Navigation makes it illegal to moor or attach a vessel to a buoy, beacon, light, or any other navigational aid placed on public waters by proper authorities, as well as to anchor in the traveled portion of a river or channel in a way that interferes with other vessels, or to move, displace, tamper with, damage, or destroy any navigational aid.",
+    "weight": 3,
+    "source_note": "Michigan Boating Laws and Responsibilities (2026), 'Obstructing Navigation'"
+  }
+]

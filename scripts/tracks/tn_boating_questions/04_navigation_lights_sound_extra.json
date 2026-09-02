@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Navigation Lights",
+    "question": "What navigation light configuration must a vessel that is towing another vessel or a skier after dark display, beyond the standard lights for its own size and type?",
+    "choice_a": "Additional towing lights as specified by the Navigation Rules, so other boaters recognize the restricted maneuverability of a vessel engaged in towing",
+    "choice_b": "No different lighting is required for a vessel towing another vessel or object",
+    "choice_c": "Only a flashing blue light, matching law enforcement vessels",
+    "choice_d": "The towing vessel must turn off all lights to avoid blinding the towed person",
+    "correct_choice": "A",
+    "explanation": "A vessel towing another vessel or object after dark must display additional towing lights required by the Navigation Rules, alerting other boaters that the towing vessel has restricted maneuverability and a length that may extend well beyond what is visible.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (Navigation Rules, towing lights)"
+  },
+  {
+    "topic": "Navigation Lights",
+    "question": "What is the practical purpose of the 225-degree arc specified for a vessel's sidelights under the Navigation Rules?",
+    "choice_a": "It defines the forward-facing zone in which each sidelight must be visible, so other vessels approaching from ahead or the side (but not from behind) can judge the vessel's heading",
+    "choice_b": "It has no navigational purpose and is purely a manufacturing specification",
+    "choice_c": "It only applies to sailboats, never to power-driven vessels",
+    "choice_d": "It measures the maximum speed a vessel may travel at night",
+    "correct_choice": "A",
+    "explanation": "Sidelights are designed to be visible across a defined forward arc (from dead ahead to well aft of the beam on each side), which lets an approaching vessel judge another boat's heading and position at night, while the stern light covers the remaining arc astern.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (Navigation Rules, light arcs)"
+  },
+  {
+    "topic": "Navigation Lights",
+    "question": "Why must navigation lights be kept clean and in good working order, beyond simply being installed on the vessel?",
+    "choice_a": "A dim, cracked, or burned-out light may not be visible to other vessels at the required distance, defeating the purpose of the lighting requirement",
+    "choice_b": "Navigation lights have no minimum visibility requirement once installed",
+    "choice_c": "Lights are only inspected once, at the time of vessel registration",
+    "choice_d": "Dirty lenses improve visibility in fog",
+    "correct_choice": "A",
+    "explanation": "Navigation lights must actually be visible at the distances required by the Navigation Rules to serve their purpose; a dirty lens, cracked housing, or burned-out bulb can render an otherwise-installed light ineffective at warning other boaters.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (Navigation Rules)"
+  },
+  {
+    "topic": "Navigation Lights",
+    "question": "What must a personal watercraft operated after dark in Tennessee display, given that PWCs are mechanically propelled vessels subject to the general lighting rule?",
+    "choice_a": "The same navigation lights required of any other power-driven vessel of its size operating between sunset and sunrise",
+    "choice_b": "No lights, since PWCs are exempt from all lighting rules",
+    "choice_c": "Only a single flashing strobe light",
+    "choice_d": "Lights are optional if the PWC operator wears a reflective vest",
+    "correct_choice": "A",
+    "explanation": "Because PWCs are mechanically propelled vessels, they are subject to the same general navigation light requirements as other power-driven vessels of comparable size when operated between sunset and sunrise -- though most PWC manufacturers do not equip them for extended nighttime use, and PWC night operation is otherwise discouraged for safety reasons.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (Navigation Rules) applied to PWC lighting requirements"
+  }
+]

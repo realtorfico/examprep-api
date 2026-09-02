@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "When two power-driven vessels are approaching each other head-on on an Alabama lake, what is each operator required to do?",
+    "choice_a": "Neither vessel needs to alter course; they should hold their exact heading",
+    "choice_b": "Both vessels should turn to port (left) and pass starboard-to-starboard",
+    "choice_c": "Each vessel should alter course to starboard (right) so they pass port-to-port, keeping right as if meeting oncoming traffic on a road",
+    "choice_d": "Whichever vessel is faster has the right to choose which side to pass on",
+    "correct_choice": "C",
+    "explanation": "In a head-on meeting situation, the Navigation Rules require each power-driven vessel to alter course to starboard so the two vessels pass port side to port side, just as vehicles keep to the right on a two-way road.",
+    "weight": 5,
+    "source_note": "ALEA boating rules and regulations (\"rules of the road\"); Inland Navigation Rules, Rule 14 (head-on situation)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "In a crossing situation between two power-driven vessels on Alabama waters, which vessel must yield?",
+    "choice_a": "Neither vessel is required to yield; both may proceed on the same course",
+    "choice_b": "The larger of the two vessels always has the right of way regardless of position",
+    "choice_c": "The faster vessel always has the right of way",
+    "choice_d": "The vessel that has the other vessel approaching on its own starboard (right) side must give way and yield to the vessel on its right",
+    "correct_choice": "D",
+    "explanation": "When two power-driven vessels are crossing so as to involve risk of collision, the vessel that has the other on its own starboard side is the give-way vessel and must yield, while the other becomes the stand-on vessel and generally maintains course and speed.",
+    "weight": 5,
+    "source_note": "ALEA boating rules and regulations; Inland Navigation Rules, Rule 15 (crossing situation)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Under the Navigation Rules, what must an overtaking vessel do when passing a slower vessel ahead of it on Alabama waters?",
+    "choice_a": "The overtaking vessel must keep out of the way of the vessel being overtaken, regardless of which side it passes on, until it is well clear",
+    "choice_b": "The vessel being overtaken must always get out of the way of the faster vessel behind it",
+    "choice_c": "Overtaking is prohibited everywhere in Alabama",
+    "choice_d": "The overtaking vessel may pass at any speed with no wake restriction",
+    "correct_choice": "A",
+    "explanation": "The vessel doing the overtaking is always the give-way vessel and must keep clear of the vessel being overtaken until safely past and clear, regardless of which side the pass occurs on -- and Alabama's speed rules still require reducing speed to avoid a hazardous wake near the other vessel.",
+    "weight": 4,
+    "source_note": "Inland Navigation Rules, Rule 13 (overtaking); ALEA boating rules and regulations (hazardous wake requirement)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Under the general priority hierarchy of the Navigation Rules, which vessel generally has the right of way over a power-driven vessel operating under engine power alone?",
+    "choice_a": "A power-driven vessel always outranks every sailing vessel",
+    "choice_b": "A sailing vessel under sail alone, as well as vessels that are less maneuverable, such as one restricted in its ability to maneuver or not under command",
+    "choice_c": "The larger power-driven vessel always outranks the smaller",
+    "choice_d": "No vessel type ever outranks another; right-of-way is decided purely by which one arrives first",
+    "correct_choice": "B",
+    "explanation": "The Navigation Rules establish a hierarchy where less maneuverable vessels generally have priority: a vessel not under command, one restricted in its ability to maneuver, and a sailing vessel under sail alone generally rank above an ordinary power-driven vessel, which must keep clear of them.",
+    "weight": 4,
+    "source_note": "Inland Navigation Rules, Rule 18 (responsibilities between vessels)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "On the Gulf Intracoastal Waterway through Mobile Bay, why must a small recreational boat give a wide berth to a commercial tug pushing a barge?",
+    "choice_a": "Tugs and barges are not required to follow any right-of-way rules",
+    "choice_b": "Because commercial vessels always have lower priority than recreational boats under the Navigation Rules",
+    "choice_c": "Because a tug and tow are considered restricted in their ability to maneuver, cannot stop or turn quickly, and often cannot see small boats close ahead of them",
+    "choice_d": "There is no special caution needed since barges move slower than recreational boats",
+    "correct_choice": "C",
+    "explanation": "A tug pushing or towing a barge has very limited maneuverability, long stopping distances, and significant blind spots close to the bow of the tow -- recreational boaters on Mobile Bay's Intracoastal Waterway segment should stay well clear rather than assume the tug can react quickly.",
+    "weight": 4,
+    "source_note": "Universal Navigation Rules vessel-priority principles applied to Alabama's Gulf Intracoastal Waterway commercial traffic"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "What general speed and wake rule does Alabama impose when a vessel approaches other vessels, harbor areas, or a shoreline?",
+    "choice_a": "Wake is never a legal concern in Alabama",
+    "choice_b": "Full speed is always permitted regardless of proximity to other vessels or the shoreline",
+    "choice_c": "Speed limits only apply on the Gulf of Mexico, not on inland lakes",
+    "choice_d": "Operators must reduce speed to avoid creating a hazardous wake and must operate at a speed that is reasonable and prudent for the conditions",
+    "correct_choice": "D",
+    "explanation": "Alabama's boating rules require operators to reduce speed near other vessels and harbor areas to avoid producing a hazardous wake, and more generally to operate at a speed that is reasonable and prudent given the traffic, weather, and visibility conditions present.",
+    "weight": 4,
+    "source_note": "ALEA boating rules and regulations (speed and wake requirement)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "What unusual right-of-way rule does Alabama boating law state regarding aircraft?",
+    "choice_a": "No vessel shall obstruct or interfere with the take-off, landing, or taxiing of an aircraft",
+    "choice_b": "Vessels always have the right of way over any aircraft operating on the water",
+    "choice_c": "Aircraft are banned from operating on any Alabama waterway",
+    "choice_d": "Alabama law does not address aircraft on the water in any way",
+    "correct_choice": "A",
+    "explanation": "Alabama's boating regulations specifically state that no vessel may obstruct or interfere with an aircraft's take-off, landing, or taxiing, which matters on waters near seaplane bases and along the Gulf Coast and larger lakes where floatplanes may operate.",
+    "weight": 3,
+    "source_note": "ALEA boating rules and regulations (aircraft interference prohibition)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "What is a \"stand-on vessel\" under the Navigation Rules, and what is it generally required to do?",
+    "choice_a": "The vessel that must always come to a complete stop whenever another vessel is nearby",
+    "choice_b": "The vessel with right-of-way in a given encounter, which should generally maintain its course and speed so the give-way vessel can safely maneuver around it",
+    "choice_c": "A vessel that is anchored and not moving at all",
+    "choice_d": "A vessel with mechanical problems that cannot get underway",
+    "correct_choice": "B",
+    "explanation": "The stand-on vessel is the one with right-of-way in a meeting, crossing, or overtaking situation and is expected to hold its course and speed so the give-way vessel can take early, obvious action to keep clear -- though the stand-on vessel must still act to avoid collision if the give-way vessel fails to do so.",
+    "weight": 4,
+    "source_note": "Inland Navigation Rules, Rule 17 (action by stand-on vessel)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "What must every vessel operator on Alabama waters maintain at all times under the Navigation Rules, regardless of right-of-way status?",
+    "choice_a": "No lookout is required if the operator has radar",
+    "choice_b": "A constant radio broadcast announcing the vessel's position",
+    "choice_c": "A proper lookout by sight and hearing to fully assess the risk of collision",
+    "choice_d": "A lookout is only required at night",
+    "correct_choice": "C",
+    "explanation": "Every vessel must maintain a proper lookout by sight and hearing at all times, using all available means appropriate to the circumstances, so the operator can fully assess the risk of collision -- a duty that applies regardless of which vessel technically has the right of way.",
+    "weight": 4,
+    "source_note": "Inland Navigation Rules, Rule 5 (look-out)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "On Lake Guntersville, a fishing boat under power meets a sailboat under sail alone, with risk of collision. Who must give way?",
+    "choice_a": "Whichever vessel is closest to shore has the right of way",
+    "choice_b": "The sailboat, because sailing vessels must always yield to power-driven vessels",
+    "choice_c": "Neither vessel needs to take any action",
+    "choice_d": "The fishing boat, because a sailing vessel under sail alone generally outranks an ordinary power-driven vessel in the Navigation Rules' priority hierarchy",
+    "correct_choice": "D",
+    "explanation": "Under the Navigation Rules' general priority hierarchy, a sailing vessel operating under sail alone ranks above an ordinary power-driven vessel, so the power-driven fishing boat is the give-way vessel and must take early action to avoid the sailboat.",
+    "weight": 4,
+    "source_note": "Inland Navigation Rules, Rule 18 (responsibilities between vessels)"
+  }
+]

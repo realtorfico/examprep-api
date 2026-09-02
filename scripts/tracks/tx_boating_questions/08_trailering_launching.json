@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "Before backing a trailer down a boat ramp, what should an operator do first?",
+    "choice_a": "Wait until the boat is floating to load any gear or pull tie-downs",
+    "choice_b": "Prepare the boat completely on land -- load gear, disconnect tie-down straps except the winch line, and raise the outdrive or motor -- so the ramp is occupied for the shortest time possible",
+    "choice_c": "Back down the ramp first and prepare the boat while blocking the lane",
+    "choice_d": "Preparation on land is unnecessary since the ramp is designed for it",
+    "correct_choice": "B",
+    "explanation": "Courteous and efficient ramp use means preparing the boat on land first -- loading gear, releasing tie-downs, raising the motor or outdrive, and attaching the bow/stern lines -- before backing down, so the ramp isn't blocked for other boaters.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- launching etiquette and procedure"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why should a driver check that trailer lights and safety chains are properly connected before towing a boat on Texas roads?",
+    "choice_a": "They are optional accessories with no legal or safety significance",
+    "choice_b": "Only the trailer license plate matters; lights and chains are irrelevant",
+    "choice_c": "Because functioning lights and chains are legally required and prevent the trailer from disconnecting or becoming invisible to other drivers",
+    "choice_d": "Safety chains are required only for trailers hauling boats over 40 feet",
+    "correct_choice": "C",
+    "explanation": "Functional trailer lights and properly connected safety chains are required by law for towing on public roads and are critical safety features if the trailer hitch were to fail.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- trailer safety checks"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should a boater check about a trailer's tires and wheel bearings before a long tow, especially in Texas summer heat?",
+    "choice_a": "Nothing; trailer tires never need inspection",
+    "choice_b": "Only the spare tire needs to be checked, not the tires currently mounted",
+    "choice_c": "Bearings only need greasing once, at the time of trailer purchase",
+    "choice_d": "Tire pressure, tread condition, and bearing lubrication, since heat and highway speeds increase the risk of blowouts or bearing failure",
+    "correct_choice": "D",
+    "explanation": "Trailer tires and wheel bearings are prone to heat-related failure, especially during hot Texas summers and on long highway tows, making pre-trip inspection of tire condition and bearing lubrication important.",
+    "weight": 2,
+    "source_note": "TPWD Boater Education Manual -- trailer maintenance"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is the recommended practice when backing a trailer down a ramp with other boaters waiting?",
+    "choice_a": "Back down efficiently, launch promptly, and immediately move the tow vehicle and trailer out of the ramp area to a parking spot",
+    "choice_b": "Take as much time as needed with no regard for other boaters waiting in line",
+    "choice_c": "Leave the tow vehicle parked on the ramp while loading gear into the boat",
+    "choice_d": "It is acceptable to leave the trailer blocking the ramp indefinitely",
+    "correct_choice": "A",
+    "explanation": "Ramp courtesy calls for backing down efficiently, launching the boat promptly, and clearing the ramp and dock area quickly so other boaters waiting in line can launch or retrieve their own vessels.",
+    "weight": 2,
+    "source_note": "TPWD Boater Education Manual -- ramp courtesy"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why is it important to secure the boat's drain plug before launching?",
+    "choice_a": "The drain plug has no effect on whether the boat takes on water",
+    "choice_b": "Without the drain plug in place, water will flood into the bilge as soon as the boat is launched, which can quickly swamp or sink it",
+    "choice_c": "The drain plug is only relevant when trailering, not when launching",
+    "choice_d": "Texas law prohibits installing the drain plug until the boat is already in open water",
+    "correct_choice": "B",
+    "explanation": "The drain plug must be inserted before launching; without it, water floods directly into the bilge, which can quickly swamp or sink the boat right at the ramp.",
+    "weight": 4,
+    "source_note": "TPWD Boater Education Manual -- launching checklist"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Under Texas's statewide invasive species rule, at what point in the trailering process must a boater have the drain plug removed?",
+    "choice_a": "The drain plug should be removed only when the boat is in storage for the winter",
+    "choice_b": "Texas requires the drain plug to remain in year-round while trailering",
+    "choice_c": "Before leaving the ramp area after retrieving the boat from the water, all water must be drained and the plug kept out until re-launching",
+    "choice_d": "The drain plug removal rule applies only to PWCs, not other boats",
+    "correct_choice": "C",
+    "explanation": "Texas's statewide clean-drain-dry rule requires boaters to drain all water from the vessel, including live wells and bilges, and keep the drain plug out while leaving or transporting away from public fresh water to prevent spreading invasive species like zebra mussels.",
+    "weight": 4,
+    "source_note": "31 TAC Chapter 57, Subchapter N -- statewide drain requirement"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is a common practice for balancing a trailer load to ensure safe towing?",
+    "choice_a": "Load all the weight as far to the rear of the trailer as possible",
+    "choice_b": "Weight distribution has no effect on towing stability",
+    "choice_c": "The boat's weight should always be entirely behind the axle",
+    "choice_d": "Position the boat so roughly 60% of its weight is forward of the trailer axle, giving the tow vehicle's hitch a modest positive tongue weight",
+    "correct_choice": "D",
+    "explanation": "Proper trailer loading puts a bit more weight forward of the axle to create positive tongue weight, which improves towing stability; too much rear weight can cause dangerous trailer sway.",
+    "weight": 2,
+    "source_note": "TPWD Boater Education Manual -- trailer weight distribution"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should an operator do with the boat's engine or outdrive while trailering on the highway?",
+    "choice_a": "Trim or tilt it up to the recommended travel position to avoid road debris damage and maintain ground clearance",
+    "choice_b": "Leave the motor in the fully lowered running position",
+    "choice_c": "Remove the motor entirely for every tow, regardless of distance",
+    "choice_d": "Engine position while trailering makes no difference",
+    "correct_choice": "A",
+    "explanation": "Trimming or tilting the outboard or outdrive up to its travel position during trailering protects it from striking the road and maintains proper ground clearance.",
+    "weight": 2,
+    "source_note": "TPWD Boater Education Manual -- trailering preparation"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why should boaters avoid using the boat's engine to power itself onto or off the trailer at the ramp when possible?",
+    "choice_a": "Using the engine on the ramp is always required and never discouraged",
+    "choice_b": "Because the propeller can strike the ramp, damage the lower unit, or churn up sediment, so a winch and gravity/hand power are generally preferred",
+    "choice_c": "There is no risk to the propeller or lower unit from doing this",
+    "choice_d": "It is illegal in Texas to use a winch under any circumstance",
+    "correct_choice": "B",
+    "explanation": "Powering a boat onto a trailer under its own engine risks striking the propeller or lower unit on the ramp and can churn up bottom sediment; using the winch is generally the safer, recommended method.",
+    "weight": 2,
+    "source_note": "TPWD Boater Education Manual -- ramp propeller safety"
+  }
+]

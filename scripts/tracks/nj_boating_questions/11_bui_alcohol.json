@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "BUI & Alcohol",
+    "question": "What blood alcohol concentration (BAC) is the nationwide legal threshold for boating under the influence (BUI), which New Jersey's boating-while-intoxicated law also applies on the water?",
+    "choice_a": "0.20%",
+    "choice_b": "0.02%",
+    "choice_c": "There is no BAC threshold for operating a boat",
+    "choice_d": "0.08%",
+    "correct_choice": "D",
+    "explanation": "New Jersey's boating-while-intoxicated statute mirrors the nationwide legal threshold of 0.08% BAC used for driving, and a boat operator can also be charged based on observed impairment even without a chemical test.",
+    "weight": 5,
+    "source_note": "Nationwide 0.08% BAC BUI/BWI standard; New Jersey boating-while-intoxicated law (N.J.S.A. 12:7-46)"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Why is alcohol considered especially dangerous when combined with boating, beyond its effects on land?",
+    "choice_a": "Sun, wind, noise, vibration, and motion on the water intensify alcohol's effects and speed up impairment, a phenomenon often called 'boater's fatigue' or marine environment stress",
+    "choice_b": "Alcohol has no different effect on the water than on land",
+    "choice_c": "Alcohol only affects a boat operator's eyesight, not judgment or reaction time",
+    "choice_d": "Alcohol is only dangerous for PWC operators, not conventional boaters",
+    "correct_choice": "A",
+    "explanation": "Environmental stressors like sun, wind, engine noise, vibration, and the constant motion of the water combine to intensify alcohol's impairing effects faster than on land, reducing balance, judgment, and reaction time even at BAC levels that might seem manageable driving a car.",
+    "weight": 4,
+    "source_note": "Universal boater's-fatigue/marine-stressor alcohol impairment concept in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "What does an 'implied consent' law mean in the context of New Jersey boating enforcement?",
+    "choice_a": "It requires a court order before any test can ever be administered",
+    "choice_b": "By operating a vessel on New Jersey waters, an operator has already agreed to submit to a chemical test for alcohol or drugs if lawfully requested by an officer",
+    "choice_c": "It means alcohol testing can never be requested on the water",
+    "choice_d": "It only applies to commercial vessel operators",
+    "correct_choice": "B",
+    "explanation": "Implied consent means that by operating a vessel on New Jersey's waters, an operator has already legally agreed to submit to chemical testing for alcohol or drug impairment if a law enforcement officer has proper grounds to request it.",
+    "weight": 4,
+    "source_note": "Implied consent doctrine as applied to New Jersey boating-while-intoxicated enforcement"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Can a boat operator be charged with boating while intoxicated in New Jersey even without submitting to a chemical BAC test?",
+    "choice_a": "BUI charges require a confession from the operator",
+    "choice_b": "New Jersey cannot charge BUI without video evidence",
+    "choice_c": "Yes -- officers can also base a charge on observed signs of impairment, such as erratic operation, slurred speech, or failed field sobriety indicators",
+    "choice_d": "No, a chemical test result is the only possible basis for a BUI charge",
+    "correct_choice": "C",
+    "explanation": "Just as with impaired driving, a marine law enforcement officer can charge boating while intoxicated based on observed impairment evidence, such as erratic vessel operation, slurred speech, or failed sobriety indicators, independent of or in addition to a chemical test.",
+    "weight": 4,
+    "source_note": "New Jersey boating-while-intoxicated enforcement standard (N.J.S.A. 12:7-46)"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Does New Jersey's boating-while-intoxicated law apply to non-motorized vessels such as canoes and sailboats, not just powerboats?",
+    "choice_a": "No, BUI laws only apply to vessels with a motor",
+    "choice_b": "BUI laws only apply to personal watercraft",
+    "choice_c": "BUI laws only apply to vessels longer than 26 feet",
+    "choice_d": "Yes -- boating-while-intoxicated laws generally apply to the operation of any vessel, motorized or not",
+    "correct_choice": "D",
+    "explanation": "New Jersey's boating-while-intoxicated statute is not limited to powerboats -- operating any vessel, including a canoe, kayak, or sailboat, while impaired can result in a BUI/BWI charge.",
+    "weight": 3,
+    "source_note": "New Jersey boating-while-intoxicated law scope (N.J.S.A. 12:7-46)"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "What is a responsible practice for a boat's designated operator regarding alcohol consumption during a day on the water?",
+    "choice_a": "Designate a sober operator for the entire outing and avoid alcohol until the vessel is docked for the day",
+    "choice_b": "Drink normally and rely on personal judgment about impairment while still operating",
+    "choice_c": "Alcohol consumption has no bearing on safe vessel operation",
+    "choice_d": "Only the passengers need to avoid alcohol, not the operator",
+    "correct_choice": "A",
+    "explanation": "Just as with driving, the safest and legally soundest approach is to designate a sober operator for the entire time the vessel is underway and to save alcohol consumption for after the boat is secured for the day.",
+    "weight": 3,
+    "source_note": "Universal designated-sober-operator boating safety guidance"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "What penalty consequence, beyond fines, can a New Jersey boating-while-intoxicated conviction carry, similar to an impaired-driving conviction?",
+    "choice_a": "BUI convictions never affect driving privileges",
+    "choice_b": "Loss of boat operating privileges and/or driver's license for a period, depending on the offense and any prior convictions",
+    "choice_c": "No penalties beyond a small fine apply to any BUI conviction",
+    "choice_d": "Only a formal written warning is issued for a first offense",
+    "correct_choice": "B",
+    "explanation": "A New Jersey boating-while-intoxicated conviction can carry escalating consequences similar to impaired driving, including fines, loss of boating privileges, and in some cases an effect on driver's license status, particularly for repeat offenses.",
+    "weight": 3,
+    "source_note": "New Jersey boating-while-intoxicated penalty structure (N.J.S.A. 12:7-46)"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Missouri Boater Education Law",
+    "question": "How does RSMo 306.127's boating safety identification card requirement treat someone who operates a vessel only on a private lake that does not meet the statutory definition of 'waters of this state'?",
+    "choice_a": "The requirement applies with no exceptions regardless of where the vessel is operated",
+    "choice_b": "Operation confined to a privately owned body of water that falls outside the statutory 'waters of this state' definition is one of the exemption categories from the mandatory boating safety identification card requirement",
+    "choice_c": "Private lakes are automatically classified as state waters requiring the same card as the Lake of the Ozarks",
+    "choice_d": "There is no such thing as a private-lake exemption under Missouri law",
+    "correct_choice": "B",
+    "explanation": "Because Missouri's boating law generally applies to 'waters of this state' as specifically defined -- excluding privately owned water bodies -- RSMo 306.127 lists operation confined to such a private lake among its exemption categories from the mandatory boating safety identification card requirement.",
+    "weight": 3,
+    "source_note": "RSMo 306.127 and RSMo 306.010 (private-lake exemption tied to the 'waters of this state' definition)"
+  },
+  {
+    "topic": "Missouri Boater Education Law",
+    "question": "In practice, how is Missouri's boating safety identification card requirement typically checked or enforced on the water?",
+    "choice_a": "Every boater must pass through a dedicated identification checkpoint before launching at any Missouri ramp",
+    "choice_b": "The requirement is generally verified as part of the Water Patrol Division's routine safety and registration checks, or when a boater is stopped for another violation or involved in an accident, rather than through a separate dedicated checkpoint system",
+    "choice_c": "The card is never actually checked by anyone under any circumstances",
+    "choice_d": "Only insurance companies are authorized to verify the card",
+    "correct_choice": "B",
+    "explanation": "Missouri does not operate dedicated boating safety identification card checkpoints; compliance is typically verified when a Water Patrol officer conducts a routine safety or registration check, stops a vessel for a suspected violation, or investigates an accident, consistent with the Water Patrol Division's general enforcement authority.",
+    "weight": 3,
+    "source_note": "Missouri State Highway Patrol Water Patrol Division enforcement practice, consistent with RSMo 306.127 and RSMo 306.010"
+  },
+  {
+    "topic": "Missouri Boater Education Law",
+    "question": "If a Missouri resident already holds a boating safety card or certificate from completing a NASBLA-approved course while living in or visiting another state, does Missouri require them to retake a separate Missouri-specific course?",
+    "choice_a": "Yes, every Missouri resident must retake a Missouri-only course regardless of any other state's certification",
+    "choice_b": "No -- because NASBLA course approval reflects a nationally recognized curriculum standard rather than a state-specific one, a card or certificate from a NASBLA-approved course completed anywhere generally satisfies Missouri's requirement",
+    "choice_c": "Missouri does not recognize any other state's boating education certificate under any circumstance",
+    "choice_d": "Only courses physically completed within Missouri's borders count toward the requirement",
+    "correct_choice": "B",
+    "explanation": "Because NASBLA approval reflects a nationally recognized curriculum and testing standard adopted across states rather than a purely Missouri-specific one, a boater who has completed any NASBLA-approved course -- in Missouri or elsewhere -- generally satisfies Missouri's RSMo 306.127 education requirement without needing to repeat a separate Missouri-only course.",
+    "weight": 3,
+    "source_note": "RSMo 306.127 (NASBLA-approved course portability), consistent with boat-ed.com/missouri course-recognition guidance"
+  },
+  {
+    "topic": "Missouri Boater Education Law",
+    "question": "What is NASBLA, the organization referenced throughout Missouri's boater education framework under RSMo 306.127?",
+    "choice_a": "A private for-profit company that sells boats",
+    "choice_b": "A federal law enforcement agency",
+    "choice_c": "The National Association of State Boating Law Administrators, a national organization of state boating officials that sets model curriculum and approval standards for boating safety courses adopted by states, including Missouri",
+    "choice_d": "A branch of the U.S. Coast Guard with direct regulatory authority over Missouri",
+    "correct_choice": "C",
+    "explanation": "NASBLA (the National Association of State Boating Law Administrators) is the national organization through which state boating officials, including Missouri's, develop model curriculum and course-approval standards; Missouri's education mandate relies on NASBLA's approval process to determine which third-party courses satisfy RSMo 306.127.",
+    "weight": 3,
+    "source_note": "RSMo 306.127 (NASBLA course approval framework), general NASBLA organizational background"
+  },
+  {
+    "topic": "Missouri Boater Education Law",
+    "question": "According to Boat-Ed's described process for its Missouri course, what typically happens immediately after a boater passes the course's final exam, before the physical Missouri boating safety identification card arrives?",
+    "choice_a": "Nothing is issued and the boater must wait with no proof of completion",
+    "choice_b": "A temporary proof-of-completion certificate is generally made available right away so the boater has evidence of completing the course while the state-issued card is processed and mailed",
+    "choice_c": "The boater is immediately mailed a duplicate of someone else's card",
+    "choice_d": "The final exam result is void unless the physical card arrives within 24 hours",
+    "correct_choice": "B",
+    "explanation": "Consistent with how NASBLA-approved online courses like Boat-Ed generally operate, a boater who passes the Missouri course's final exam typically receives some form of immediate proof-of-completion, since the physical, state-issued boating safety identification card takes additional processing time to arrive by mail.",
+    "weight": 2,
+    "source_note": "boat-ed.com/missouri course completion process, current as of 2026"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Paddlecraft & Non-Motorized Vessels",
+    "question": "Who must obtain a Non-Motorized Vessel (NMV) outfitter permit from TWRA?",
+    "choice_a": "Any business, joint venture, or individual that leases or rents canoes, kayaks, or paddleboards for public use on Tennessee waters",
+    "choice_b": "Every individual who personally owns a canoe or kayak for private use",
+    "choice_c": "Only manufacturers of paddlecraft",
+    "choice_d": "No one; paddlecraft rentals are entirely unregulated in Tennessee",
+    "correct_choice": "A",
+    "explanation": "An NMV outfitter permit is required for any business, joint venture, or individual that leases or rents non-motorized vessels such as canoes, kayaks, or standup paddleboards to the public on Tennessee waters.",
+    "weight": 3,
+    "source_note": "TWRA Non-Motorized Vessel (Paddlecraft) Permit page"
+  },
+  {
+    "topic": "Paddlecraft & Non-Motorized Vessels",
+    "question": "Which commercial outfitters are exempt from Tennessee's NMV permit requirement because of a federal land-use permit?",
+    "choice_a": "All outfitters based outside Tennessee",
+    "choice_b": "Outfitters operating with U.S. Forest Service permits on Cherokee National Forest waters",
+    "choice_c": "Outfitters operating on any privately owned lake",
+    "choice_d": "Outfitters that only rent paddleboards, never canoes",
+    "correct_choice": "B",
+    "explanation": "Commercial outfitters operating under a U.S. Forest Service permit on Cherokee National Forest waters are exempt from also needing a separate TWRA NMV permit.",
+    "weight": 2,
+    "source_note": "TWRA Non-Motorized Vessel (Paddlecraft) Permit page"
+  },
+  {
+    "topic": "Paddlecraft & Non-Motorized Vessels",
+    "question": "Which other type of outfitter is exempt from Tennessee's NMV permit requirement?",
+    "choice_a": "Outfitters that only operate on weekdays",
+    "choice_b": "Outfitters that charge less than $20 per rental",
+    "choice_c": "Outfitters at lakes or ponds located wholly within Tennessee Department of Environment and Conservation (TDEC) property",
+    "choice_d": "Any outfitter that rents fewer than 100 boats per year",
+    "correct_choice": "C",
+    "explanation": "Commercial outfitters operating at lakes or ponds located entirely within TDEC property are exempt from Tennessee's NMV outfitter permit requirement.",
+    "weight": 2,
+    "source_note": "TWRA Non-Motorized Vessel (Paddlecraft) Permit page"
+  },
+  {
+    "topic": "Paddlecraft & Non-Motorized Vessels",
+    "question": "Besides certain federal- and state-land-based outfitters, what other category is exempt from needing Tennessee's NMV permit?",
+    "choice_a": "Any business with a website",
+    "choice_b": "Any outfitter that has been in business for more than 10 years",
+    "choice_c": "Outfitters that only rent to Tennessee residents",
+    "choice_d": "State governmental entities",
+    "correct_choice": "D",
+    "explanation": "Tennessee's NMV permit rule also exempts state governmental entities from needing the outfitter permit.",
+    "weight": 2,
+    "source_note": "TWRA Non-Motorized Vessel (Paddlecraft) Permit page"
+  },
+  {
+    "topic": "Paddlecraft & Non-Motorized Vessels",
+    "question": "How must an inflatable belt-pack style life jacket be worn to work properly for a paddler in Tennessee?",
+    "choice_a": "In front of the body, so it can be quickly activated and provide flotation as designed",
+    "choice_b": "Behind the back, so it does not interfere with paddling",
+    "choice_c": "It can be worn in any position with no effect on performance",
+    "choice_d": "It should be left unbuckled for comfort",
+    "correct_choice": "A",
+    "explanation": "An inflatable belt-pack PFD must be worn in front of the body so it inflates and functions properly to keep the wearer afloat in an emergency.",
+    "weight": 3,
+    "source_note": "TWRA Non-Motorized Vessel (Paddlecraft) Permit page"
+  },
+  {
+    "topic": "Paddlecraft & Non-Motorized Vessels",
+    "question": "What kind of documentation must a business submit when applying for Tennessee's NMV outfitter permit?",
+    "choice_a": "Only a list of employee names",
+    "choice_b": "Vessel counts, intended waterways and access areas, months of operation, Secretary of State number, business license, Department of Revenue registration, and proof of liability insurance",
+    "choice_c": "Only a copy of the owner's personal driver's license",
+    "choice_d": "Nothing; the permit is issued automatically upon request",
+    "correct_choice": "B",
+    "explanation": "TWRA's NMV permit application requires detailed business documentation, including vessel counts, waterways and access areas used, months of operation, state business registration numbers, and proof of liability insurance.",
+    "weight": 2,
+    "source_note": "TWRA Non-Motorized Vessel (Paddlecraft) Permit page"
+  },
+  {
+    "topic": "Paddlecraft & Non-Motorized Vessels",
+    "question": "Does an individual who personally owns a canoe and paddles it on Tennessee waters, without renting it to anyone, need an NMV permit?",
+    "choice_a": "Only if the canoe is longer than 14 feet",
+    "choice_b": "Only if the person paddles more than once per month",
+    "choice_c": "No -- the NMV permit applies to commercial outfitters that rent or lease non-motorized vessels to the public, not to private personal use",
+    "choice_d": "Yes, every paddlecraft owner in Tennessee must hold an NMV permit",
+    "correct_choice": "C",
+    "explanation": "The NMV outfitter permit targets commercial rental and lease operations, not private individuals paddling their own canoe or kayak for personal recreation.",
+    "weight": 2,
+    "source_note": "TWRA Non-Motorized Vessel (Paddlecraft) Permit page"
+  }
+]

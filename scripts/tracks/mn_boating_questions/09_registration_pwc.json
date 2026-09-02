@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "How long does a standard Minnesota watercraft registration remain valid before it must be renewed (Minn. Stat. 86B.401)?",
+    "choice_a": "Three calendar years",
+    "choice_b": "One month",
+    "choice_c": "Ten calendar years",
+    "choice_d": "Registrations never expire once issued",
+    "correct_choice": "A",
+    "explanation": "Minnesota watercraft registrations are valid for three calendar years (for example, January 1 of one year through December 31 two years later), after which the owner must renew online, by mail, or through a deputy registrar.",
+    "weight": 4,
+    "source_note": "Minn. Stat. 86B.401 (watercraft licenses; three-year registration cycle)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Which watercraft are generally exempt from Minnesota's registration requirement?",
+    "choice_a": "Every canoe or kayak regardless of length or motor",
+    "choice_b": "Non-motorized watercraft 10 feet or less in length",
+    "choice_c": "All personal watercraft",
+    "choice_d": "No watercraft of any kind are exempt",
+    "correct_choice": "B",
+    "explanation": "Minnesota exempts small non-motorized watercraft 10 feet or less (such as small canoes, kayaks, and rowboats) from the registration requirement, along with certain out-of-state vessels present under 90 consecutive days, but requires registration for most other motorized and larger non-motorized vessels.",
+    "weight": 3,
+    "source_note": "Minnesota DNR watercraft registration guidance (exemption for small non-motorized watercraft)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "At what length does Minnesota generally require a boat to have a certificate of title, in addition to registration (Minn. Stat. 86B.825)?",
+    "choice_a": "Over 100 feet",
+    "choice_b": "Titling is never required for any Minnesota watercraft",
+    "choice_c": "Over 16 feet",
+    "choice_d": "Only for vessels under 5 feet",
+    "correct_choice": "C",
+    "explanation": "Minnesota requires a certificate of title, generally dealer-applied at the point of sale, for boats over 16 feet, giving these larger vessels a paper trail similar to a car title that documents ownership and helps with lien and transfer records.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.825 (certificate of title required)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "What document is generally needed to transfer title on a used Minnesota boat sold by a private seller?",
+    "choice_a": "No documentation is required for any private transfer",
+    "choice_b": "A verbal agreement between the buyer and seller is legally sufficient on its own",
+    "choice_c": "Only a receipt for the purchase price, with no title needed at all",
+    "choice_d": "The original certificate of title (or a manufacturer's statement of origin for a new boat), properly signed over to the buyer",
+    "correct_choice": "D",
+    "explanation": "Transferring ownership of a titled Minnesota boat requires the original certificate of title (or the manufacturer's statement of origin if the boat is new) signed over to the buyer, who then applies for a new title in their own name.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.830 (applying for and issuing certificate of title)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Which registration fee category applies specifically to personal watercraft (PWCs) in Minnesota, distinct from ordinary pleasure boats?",
+    "choice_a": "PWCs carry their own registration fee tier, which as of the DNR's late-2023 fee schedule was higher than the base fee for many small pleasure boats, reflecting the higher registration fee the legislature set for this vessel class",
+    "choice_b": "PWCs pay no registration fee at all in Minnesota",
+    "choice_c": "PWCs are charged the identical fee as a canoe under 16 feet",
+    "choice_d": "PWC fees are set entirely by the county, with no statewide fee schedule",
+    "correct_choice": "A",
+    "explanation": "Minnesota's watercraft registration fee schedule sets personal watercraft in their own fee category, which under the fee schedule effective in late 2023 was higher than the base registration fee for many smaller pleasure boats, plus the same invasive species surcharge applied to other registered vessels.",
+    "weight": 3,
+    "source_note": "Minnesota DNR watercraft registration fee schedule (effective 12/01/2023; PWC fee tier)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "In addition to the base registration fee, what additional statewide surcharge is added to most Minnesota watercraft registrations?",
+    "choice_a": "A snow removal surcharge",
+    "choice_b": "An invasive species surcharge",
+    "choice_c": "No additional surcharge is ever added",
+    "choice_d": "A road maintenance surcharge",
+    "correct_choice": "B",
+    "explanation": "Minnesota adds an invasive species surcharge on top of the base registration fee for most watercraft categories, with the revenue supporting the state's aquatic invasive species prevention and management programs.",
+    "weight": 3,
+    "source_note": "Minnesota DNR watercraft registration fee schedule (invasive species surcharge)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Where must a Minnesota registration decal be displayed on a registered watercraft?",
+    "choice_a": "Decals are optional and can be left in the glove compartment",
+    "choice_b": "Only on the motor cover, never on the hull",
+    "choice_c": "On the forward half of each side of the hull, near the registration number, in the location specified by DNR guidance so it is clearly visible",
+    "choice_d": "Decals are attached to the trailer, never the boat itself",
+    "correct_choice": "C",
+    "explanation": "Minnesota requires the current validation decal to be displayed on the hull near the registration number, generally on the forward half of each side, so a conservation officer or sheriff's deputy can quickly verify at a glance that the registration is current.",
+    "weight": 2,
+    "source_note": "Minnesota DNR watercraft registration guidance (decal placement)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Can an out-of-state resident legally operate an unregistered-in-Minnesota watercraft on Minnesota waters?",
+    "choice_a": "No, every vessel on Minnesota waters must have a Minnesota registration regardless of residency or duration",
+    "choice_b": "Yes, permanently, with no limitation on how long the vessel may stay",
+    "choice_c": "Only Canadian residents are ever granted this exemption",
+    "choice_d": "Yes, temporarily, if their home state does not require watercraft licensing/registration and the vessel remains in Minnesota fewer than 90 consecutive days",
+    "correct_choice": "D",
+    "explanation": "Minnesota grants a limited exemption for out-of-state vessels whose home state does not require watercraft registration, so long as the vessel does not remain in Minnesota more than 90 consecutive days; beyond that window, Minnesota registration is generally required.",
+    "weight": 3,
+    "source_note": "Minnesota DNR watercraft registration guidance (nonresident 90-day exemption)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "What is the general legal minimum age to operate a personal watercraft in Minnesota, and is any exception available?",
+    "choice_a": "12 years old, with no exception -- unlike ordinary motorboats, a younger child cannot operate a PWC even with an adult accompanying them",
+    "choice_b": "There is no minimum age for PWC operation in Minnesota",
+    "choice_c": "16 years old, with a supervised exception down to age 10",
+    "choice_d": "8 years old, unsupervised",
+    "correct_choice": "A",
+    "explanation": "Minnesota sets a strict minimum age of 12 for PWC operation with no accompanying-operator exception, unlike ordinary motorboats under 75 horsepower where a younger child may operate with an adult aboard; this reflects PWCs' higher speed and maneuvering risk.",
+    "weight": 4,
+    "source_note": "Minn. Stat. 86B.313 (personal watercraft; strict minimum operator age of 12)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Why does Minnesota register personal watercraft in a distinct category from other small motorized boats?",
+    "choice_a": "PWCs are not actually considered watercraft under Minnesota law",
+    "choice_b": "PWCs have their own statutory operating rules (age, hours, distance-based slow-no-wake zones, towing equipment) that differ from general motorboat rules, so treating them as a distinct registration and regulatory category makes those rules easier to apply and enforce",
+    "choice_c": "There is no meaningful difference between PWC and general motorboat registration",
+    "choice_d": "PWCs are registered by a completely separate state agency unrelated to the DNR",
+    "correct_choice": "B",
+    "explanation": "Because Minnesota's law imposes PWC-specific rules on age, permitted operating hours, close-approach slow-no-wake distances, and towing safety equipment, keeping PWCs as a distinct registration and regulatory class helps the DNR and enforcement officers apply and check the right set of rules for this vessel type.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.313 (PWC-specific regulatory framework), Minnesota DNR registration fee schedule"
+  }
+]

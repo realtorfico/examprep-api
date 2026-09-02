@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "As a general baseline consistent with federal boating accident reporting standards, within roughly what timeframe must a boating accident involving death, disappearance, or an injury requiring medical treatment beyond first aid typically be reported?",
+    "choice_a": "There is never a reporting deadline for a serious accident",
+    "choice_b": "48 hours",
+    "choice_c": "30 days",
+    "choice_d": "6 months",
+    "correct_choice": "B",
+    "explanation": "The widely used federal baseline for boating accident reporting calls for a report within 48 hours when an accident involves death, disappearance, or an injury requiring medical treatment beyond first aid; this is presented as the general federal-standard baseline rather than a verified Tennessee-specific deviation.",
+    "weight": 3,
+    "source_note": "Federal boating accident reporting baseline (48-hour / 10-day standard); a Tennessee-specific deviation from this federal threshold was not independently re-verified in this build"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "As a general baseline consistent with federal standards, within roughly what timeframe must a boating accident involving only property damage above a set dollar threshold, with no injury, typically be reported?",
+    "choice_a": "1 hour",
+    "choice_b": "Property-damage-only accidents never require a report",
+    "choice_c": "10 days",
+    "choice_d": "1 year",
+    "correct_choice": "C",
+    "explanation": "The widely used federal baseline calls for a property-damage-only accident above a set dollar threshold to be reported within about 10 days; this is presented as the general federal-standard baseline rather than a verified Tennessee-specific figure.",
+    "weight": 2,
+    "source_note": "Federal boating accident reporting baseline (48-hour / 10-day standard); a Tennessee-specific deviation from this federal threshold was not independently re-verified in this build"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Who has the authority to stop and board a vessel on Tennessee's public waters to check for safety-equipment compliance or investigate a suspected violation?",
+    "choice_a": "Only the vessel's own registered owner",
+    "choice_b": "Any private citizen who witnesses a violation",
+    "choice_c": "No one may board a vessel without a court order",
+    "choice_d": "TWRA wildlife officers and other authorized law enforcement",
+    "correct_choice": "D",
+    "explanation": "TWRA wildlife officers, along with other authorized law enforcement, have the legal authority to stop and board vessels on Tennessee's public waters to check for safety-equipment compliance or investigate a suspected violation.",
+    "weight": 3,
+    "source_note": "TWRA law enforcement / report-a-violation resources"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Does TWRA make Tennessee boating accident and incident data available to the public?",
+    "choice_a": "Yes -- TWRA publishes yearly boating accident and incident statistical reports",
+    "choice_b": "No, all boating accident data in Tennessee is kept confidential from the public",
+    "choice_c": "Only federal agencies may access any Tennessee boating accident data",
+    "choice_d": "TWRA has never published any boating accident statistics",
+    "correct_choice": "A",
+    "explanation": "TWRA publishes yearly boating accident and incident statistical reports, making trends in Tennessee boating accidents available to the public.",
+    "weight": 2,
+    "source_note": "TWRA Boating Accident/Incident Reports page"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "How can a member of the public request a copy of an official Tennessee boating accident or incident report?",
+    "choice_a": "By calling 911 and asking the dispatcher to read it aloud",
+    "choice_b": "By submitting a request through TWRA's designated online request system",
+    "choice_c": "Only by filing a lawsuit first",
+    "choice_d": "Accident reports are never released to anyone outside TWRA",
+    "correct_choice": "B",
+    "explanation": "TWRA provides a designated online system for the public to request a copy of a specific Tennessee boating accident or incident report.",
+    "weight": 2,
+    "source_note": "TWRA Boating Accident/Incident Reports page"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What is a boat operator's basic legal duty if their vessel is involved in a collision with another boat or a person, similar to the duty imposed after a car accident?",
+    "choice_a": "Only stop if the other vessel is more expensive than their own",
+    "choice_b": "There is no duty to stop after a boating collision",
+    "choice_c": "Stop and render reasonable assistance, and exchange identifying information, rather than leaving the scene",
+    "choice_d": "Leave the scene immediately to avoid liability",
+    "correct_choice": "C",
+    "explanation": "As with a motor vehicle accident, a boat operator involved in a collision has a basic duty to stop, render reasonable assistance to anyone injured, and exchange identifying information rather than leaving the scene.",
+    "weight": 3,
+    "source_note": "General boating law fundamentals (duty to stop and render aid, consistent with TN's boating accident framework)"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "How can a Tennessee resident report a suspected boating violation, such as reckless operation or a possible BUI, to TWRA?",
+    "choice_a": "There is no mechanism to report a suspected boating violation in Tennessee",
+    "choice_b": "Only by mailing a written letter to the state capitol",
+    "choice_c": "Only sworn law enforcement officers may report violations to TWRA",
+    "choice_d": "By calling TWRA's regional violation-reporting phone lines",
+    "correct_choice": "D",
+    "explanation": "TWRA provides regional phone lines specifically for the public to report suspected hunting, fishing, or boating violations, including reckless operation or suspected BUI.",
+    "weight": 3,
+    "source_note": "TWRA Report a Violation page"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "If a boating accident occurs and it is not entirely clear whose vessel is at fault, does the reporting duty still apply to all vessel operators involved?",
+    "choice_a": "Yes -- the duty to report a qualifying accident generally applies to any operator involved, not just an operator later found to be at fault",
+    "choice_b": "Only the operator determined to be at fault has any duty to report",
+    "choice_c": "No operator has any reporting duty until a lawsuit is filed",
+    "choice_d": "The reporting duty only applies if TWRA officers happen to witness the accident directly",
+    "correct_choice": "A",
+    "explanation": "The duty to report a qualifying boating accident generally attaches to any operator involved in it, not only to whichever operator is later determined to have been at fault.",
+    "weight": 2,
+    "source_note": "General boating law fundamentals (accident reporting duty, consistent with TN's boating accident framework)"
+  }
+]

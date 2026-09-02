@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "Under 625 ILCS 45/5-16, at what blood or breath alcohol concentration is a person considered to be operating a vessel under the influence in Illinois?",
+    "choice_a": "0.02% or more",
+    "choice_b": "Illinois has no specific BAC threshold for boating",
+    "choice_c": "0.08% or more",
+    "choice_d": "0.15% or more",
+    "correct_choice": "C",
+    "explanation": "Illinois sets the same 0.08% blood or breath alcohol concentration threshold for boating under the influence as it does for driving under the influence.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/5-16; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "By operating a vessel on Illinois waters, what have you legally agreed to under the state's implied consent provision?",
+    "choice_a": "Automatic forfeiture of the vessel upon any traffic stop",
+    "choice_b": "A mandatory boating safety course regardless of any violation",
+    "choice_c": "Nothing -- Illinois has no implied consent law for boating",
+    "choice_d": "Alcohol and/or drug testing if you are arrested for operating under the influence",
+    "correct_choice": "D",
+    "explanation": "Illinois's implied consent provision means that simply operating a vessel on state waters constitutes agreement to alcohol and/or drug testing if you are arrested on suspicion of operating under the influence.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-16; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "Besides a 0.08% BAC, what other condition can make a person guilty of operating under the influence in Illinois?",
+    "choice_a": "Being under the influence of any other drug or combination of drugs and/or alcohol to a degree that renders them incapable of operating the vessel safely",
+    "choice_b": "Having consumed any food within the past hour",
+    "choice_c": "Wearing sunglasses while operating at night",
+    "choice_d": "Operating a vessel with passengers who have been drinking, even if the operator has not",
+    "correct_choice": "A",
+    "explanation": "Illinois law also covers impairment from any drug or combination of drugs and/or alcohol that renders the operator incapable of safely operating the vessel, even below the 0.08% BAC threshold.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-16; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "Under Illinois's BUI law, what is the rule regarding cannabis or controlled substances found in an operator's blood or urine?",
+    "choice_a": "Controlled substances are only regulated for commercial vessel operators",
+    "choice_b": "Any amount resulting from unlawful use or consumption of cannabis, a controlled substance, or an intoxicating compound is a violation",
+    "choice_c": "Cannabis is treated identically to caffeine and is unregulated for boaters",
+    "choice_d": "Only amounts above 0.08% of any drug are considered a violation",
+    "correct_choice": "B",
+    "explanation": "Illinois applies a zero-tolerance standard: any amount of a drug, substance, or compound in the operator's blood or urine resulting from unlawful use of cannabis, a controlled substance, or an intoxicating compound establishes a BUI violation.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/5-16; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "Why is alcohol considered especially dangerous when combined with boating, beyond its effects on driving?",
+    "choice_a": "Boats cannot capsize, so impairment poses no added risk",
+    "choice_b": "Alcohol only affects swimmers, not vessel operators",
+    "choice_c": "Sun, wind, noise, vibration, and motion on the water ('boater's fatigue') can intensify alcohol's impairing effects on balance, judgment, and reaction time",
+    "choice_d": "Alcohol has no additional effect on the water compared with driving",
+    "correct_choice": "C",
+    "explanation": "Environmental stressors on the water -- sun, wind, engine noise, vibration, and constant motion -- combine to accelerate fatigue and can heighten alcohol's impairing effects compared with the same amount consumed on land.",
+    "weight": 3,
+    "source_note": "Universal 'boater's fatigue' and alcohol-impairment guidance used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "What is the simple message Illinois's official boating handbook uses to summarize its alcohol and drug policy?",
+    "choice_a": "Boat responsibly, drink moderately",
+    "choice_b": "One drink per hour is always safe on the water",
+    "choice_c": "Alcohol is banned only for PWC operators",
+    "choice_d": "Don't Drink and Boat!",
+    "correct_choice": "D",
+    "explanation": "The Handbook of Illinois Boating Laws and Responsibilities summarizes the state's zero-tolerance approach to impaired boating with the simple reminder: 'Don't Drink and Boat!'",
+    "weight": 1,
+    "source_note": "Handbook of Illinois Boating Laws and Responsibilities (2023)"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "If a passenger, rather than the operator, is impaired by alcohol on an Illinois vessel, is the operator responsible for that passenger's safety?",
+    "choice_a": "Yes -- the operator is responsible for the overall safe operation of the vessel and must account for the condition and safety of everyone aboard",
+    "choice_b": "No, an operator has no responsibility for any passenger's condition",
+    "choice_c": "Only the passenger themselves can be held liable, never the operator",
+    "choice_d": "Responsibility only applies if the passenger is under 13",
+    "correct_choice": "A",
+    "explanation": "As the person in control of the vessel, the operator bears overall responsibility for safe operation, including accounting for the safety of an impaired passenger who could fall overboard or otherwise be endangered.",
+    "weight": 2,
+    "source_note": "General operator-responsibility principle underlying 625 ILCS 45/5-1 careless operation"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "Which best explains why Illinois law enforcement officers can stop and board a vessel to check for BUI compliance?",
+    "choice_a": "Only U.S. Coast Guard personnel may board any vessel in Illinois",
+    "choice_b": "DNR officers and other law enforcement officers have statutory authority to stop and board vessels to verify compliance with state and federal boating laws",
+    "choice_c": "Officers may only board a vessel with a signed warrant obtained in advance",
+    "choice_d": "Officers have no authority to board a privately owned vessel under any circumstance",
+    "correct_choice": "B",
+    "explanation": "Illinois law gives DNR officers and other law enforcement officers authority to stop and board vessels to check compliance with state and federal laws, including alcohol and drug regulations.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/2 and 45/5-22; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "How does Illinois's 0.08% BAC threshold for boating compare with its threshold for driving a motor vehicle?",
+    "choice_a": "The boating threshold is half the driving threshold",
+    "choice_b": "Illinois has no BAC threshold for driving, only for boating",
+    "choice_c": "It is the same 0.08% threshold used for driving under the influence",
+    "choice_d": "The boating threshold is twice as high as the driving threshold",
+    "correct_choice": "C",
+    "explanation": "Illinois applies the same 0.08% BAC standard to boating under the influence as it applies to driving under the influence on the road.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-16; Handbook of Illinois Boating Laws and Responsibilities"
+  }
+]

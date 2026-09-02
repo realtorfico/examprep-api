@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "At what blood alcohol level is a person under age 21 considered illegally impaired while operating a boat or PWC in Georgia?",
+    "choice_a": "0.02% or more",
+    "choice_b": "0.08% or more",
+    "choice_c": "0.10% or more",
+    "choice_d": "Any amount is legal for a minor to operate a boat",
+    "correct_choice": "A",
+    "explanation": "Georgia law makes it illegal for a person under age 21 to operate a boat or PWC with a blood alcohol level of 0.02% or more.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Alcohol and Drugs...Zero Tolerance!'"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "At what blood alcohol level is a person 21 or older considered to be operating a boat or PWC under the influence in Georgia?",
+    "choice_a": "0.15% or more only",
+    "choice_b": "0.08% or more, or if drugs are detected",
+    "choice_c": "0.02% or more, same as minors",
+    "choice_d": "There is no legal blood alcohol threshold for adults on the water",
+    "correct_choice": "B",
+    "explanation": "Those 21 or older are considered under the influence, and may not operate a boat or PWC, if their blood alcohol level is 0.08% or more or if drugs are detected.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Alcohol and Drugs...Zero Tolerance!'"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "By operating a boat or PWC on Georgia waters, what have you consented to regarding alcohol or drug testing?",
+    "choice_a": "You have consented only if you sign a separate written form beforehand",
+    "choice_b": "You have consented to testing only if involved in an accident with injuries",
+    "choice_c": "You have consented to be tested for alcohol or drugs if requested by a law enforcement official (implied consent)",
+    "choice_d": "No consent is implied; testing always requires a warrant",
+    "correct_choice": "C",
+    "explanation": "By operating a boat or PWC on Georgia waters, an operator has given implied consent to be tested for alcohol or drugs if requested by a law enforcement official.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Alcohol and Drugs...Zero Tolerance!'"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What happens if a boat operator refuses alcohol or drug testing when requested by law enforcement in Georgia?",
+    "choice_a": "There is no consequence for refusing a test",
+    "choice_b": "The operator is only fined $25",
+    "choice_c": "Refusal automatically dismisses any BUI charge",
+    "choice_d": "The operator will lose the privilege to operate a boat or PWC for up to one year, and the refusal may be used as evidence at trial",
+    "correct_choice": "D",
+    "explanation": "Refusing alcohol or drug testing results in losing the privilege to operate a boat or PWC for up to one year, and the refusal may be offered as evidence against the operator at trial.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Alcohol and Drugs...Zero Tolerance!'"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What separate charge applies to a person operating a boat or PWC under the influence with a child under 14 on board?",
+    "choice_a": "Endangering a child",
+    "choice_b": "No separate charge applies -- BUI covers everything",
+    "choice_c": "Reckless driving on a public highway",
+    "choice_d": "Failure to register a vessel",
+    "correct_choice": "A",
+    "explanation": "A person found operating a boat or PWC under the influence while a child under 14 is on board is also guilty of the separate charge of endangering a child.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Alcohol and Drugs...Zero Tolerance!'"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Which vessels and devices are covered by Georgia's Boating Under the Influence (BUI) prohibition?",
+    "choice_a": "Only powerboats over 26 feet",
+    "choice_b": "Any boat, sailboat, PWC, water skis, sailboard, or similar device",
+    "choice_c": "Only PWC, not conventional boats",
+    "choice_d": "Only vessels registered commercially",
+    "correct_choice": "B",
+    "explanation": "The Georgia Boat Safety Act prohibits operating any boat, sailboat, PWC, water skis, sailboard, or similar device while intoxicated -- BUI is not limited to powerboats.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Alcohol and Drugs...Zero Tolerance!'"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Is it legal for a boat or PWC owner to knowingly allow someone under the influence of alcohol or drugs to operate their vessel?",
+    "choice_a": "Yes, as long as the owner is present as a passenger",
+    "choice_b": "Yes, if the operator is a family member",
+    "choice_c": "No, it is unlawful for an owner to allow anyone else to operate their boat or PWC while that person is under the influence",
+    "choice_d": "This rule only applies to rental companies, not private owners",
+    "correct_choice": "C",
+    "explanation": "It is unlawful for a boat or PWC owner to allow anyone else to operate their boat or PWC while that person is under the influence of alcohol or drugs.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Alcohol and Drugs...Zero Tolerance!'"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What must a person arrested for BUI in Georgia complete before regaining the privilege to operate a boat or PWC?",
+    "choice_a": "Nothing further is required after the arrest",
+    "choice_b": "A one-time written apology submitted to the DNR",
+    "choice_c": "A boat safety inspection only",
+    "choice_d": "A DUI Alcohol or Drug Use Risk Reduction Program approved by the Georgia Department of Driver Services",
+    "correct_choice": "D",
+    "explanation": "Those arrested for BUI may lose their privilege to operate a boat or PWC until they successfully complete a DUI Alcohol or Drug Use Risk Reduction Program approved by the Georgia Department of Driver Services, in addition to facing misdemeanor penalties.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Alcohol and Drugs...Zero Tolerance!'"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What are the potential criminal penalties for a BUI conviction described in the Georgia handbook?",
+    "choice_a": "A misdemeanor punishable by fines of up to $1,000 and/or prison time for up to one year",
+    "choice_b": "A simple warning with no fine or jail time",
+    "choice_c": "Automatic permanent loss of a driver's license",
+    "choice_d": "A mandatory fine of exactly $100 with no possibility of jail time",
+    "correct_choice": "A",
+    "explanation": "The Georgia Boat Safety Act sets BUI penalties that include a misdemeanor charge punishable by fines of up to $1,000 and/or up to one year of prison time.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Alcohol and Drugs...Zero Tolerance!'"
+  }
+]

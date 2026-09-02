@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "Who is generally responsible for filing the required written boating accident report with authorities such as the Maryland Natural Resources Police?",
+    "choice_a": "No one; boating accidents do not require any written report",
+    "choice_b": "The operator of the vessel at the time of the accident, or the owner if the operator is unable to do so",
+    "choice_c": "Only witnesses who were not aboard either vessel",
+    "choice_d": "Only the vessel's insurance company",
+    "correct_choice": "B",
+    "explanation": "The vessel's operator at the time of the accident is generally responsible for filing the required accident report, with the owner expected to file it if the operator is unable to do so themselves.",
+    "weight": 2,
+    "source_note": "Universal boating-accident report-filing responsibility (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "What can happen to a boat operator who fails to file a required accident report, or who knowingly provides false information in one?",
+    "choice_a": "There is no consequence beyond the original accident itself",
+    "choice_b": "Failing to report, or falsifying a required accident report, can itself be treated as a separate violation subject to its own penalty",
+    "choice_c": "Only civil lawsuits can result, never any enforcement action",
+    "choice_d": "The report requirement only applies if the operator wants to file an insurance claim",
+    "correct_choice": "B",
+    "explanation": "Failing to file a required accident report, or knowingly submitting false information in one, is treated as a separate enforcement matter apart from any liability arising from the accident itself.",
+    "weight": 2,
+    "source_note": "Universal boating-accident reporting compliance and falsification enforcement guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "What general authority do Maryland Natural Resources Police officers have to board and inspect a recreational vessel for safety-equipment and registration compliance?",
+    "choice_a": "They have no authority to board or inspect a vessel under any circumstance",
+    "choice_b": "As law enforcement officers with statewide authority over boating laws, they may conduct routine safety and compliance checks on vessels operating on Maryland waters",
+    "choice_c": "They may only inspect a vessel after obtaining a search warrant for each stop",
+    "choice_d": "Only U.S. Coast Guard officers, never NRP, may board a recreational vessel",
+    "correct_choice": "B",
+    "explanation": "As the DNR's enforcement arm with statewide police authority, Natural Resources Police officers may conduct routine safety and compliance inspections of vessels operating on Maryland waters, including checks of required equipment and registration.",
+    "weight": 2,
+    "source_note": "Maryland Natural Resources Police statewide boating enforcement and inspection authority as described on dnr.maryland.gov"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "Is operating a motorized vessel in Maryland with an expired or missing certificate of number a violation that Natural Resources Police can cite?",
+    "choice_a": "No; registration status is never checked or enforced on the water",
+    "choice_b": "Yes; operating without a valid, current certificate of number is a citable violation enforced during routine stops and safety checks",
+    "choice_c": "Only commercial vessels can be cited for registration issues",
+    "choice_d": "Registration violations can only be cited if an accident has occurred",
+    "correct_choice": "B",
+    "explanation": "Operating a motorized vessel without a valid, current certificate of number is a citable violation that Natural Resources Police routinely enforce during on-water stops and safety checks, not only after an accident.",
+    "weight": 2,
+    "source_note": "Maryland Natural Resources Police registration-compliance enforcement, applied to the Nat. Res. Art. Sec. 8-712 numbering requirement"
+  }
+]

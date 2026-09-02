@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under S.C. Code Section 50-21-110, what is an explicit example of \"negligent operation\" of a vessel?",
+    "choice_a": "Operating a water device at more than idle speed within a designated no-wake zone",
+    "choice_b": "Anchoring in open water away from other traffic",
+    "choice_c": "Wearing a properly fitted PFD at all times",
+    "choice_d": "Displaying working navigation lights at night",
+    "correct_choice": "A",
+    "explanation": "Section 50-21-110 identifies operating a water device at more than idle speed within a no-wake zone as a specific example of negligent operation, alongside more generally operating too fast for existing conditions, distinguishing this lesser offense from the willful-or-wanton standard required for reckless operation.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-110 (negligent operation, no-wake-zone speed example)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "What is the penalty range for a negligent operation conviction under Section 50-21-110?",
+    "choice_a": "A fine of $50 to $200 or up to 30 days imprisonment",
+    "choice_b": "A mandatory minimum of one year in prison with no fine option",
+    "choice_c": "No penalty at all; negligent operation is not a punishable offense",
+    "choice_d": "A flat $10,000 fine regardless of circumstances",
+    "correct_choice": "A",
+    "explanation": "Section 50-21-110 sets a negligent operation penalty of a $50 to $200 fine or up to 30 days imprisonment, a lower range than reckless operation under Section 50-21-111, reflecting negligent operation's lesser culpability standard.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-110 (negligent operation penalty)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under Section 50-21-110, what happens if a South Carolina boater accumulates three negligent operation convictions within a five-year period?",
+    "choice_a": "Nothing beyond the fine for the third conviction",
+    "choice_b": "The boater must complete an approved boating safety program at their own expense and their boating privileges are suspended until that course is completed",
+    "choice_c": "Their vessel is permanently confiscated with no possibility of return",
+    "choice_d": "All prior convictions are automatically erased",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-110 imposes an added consequence for repeat negligent operators: three convictions within five years triggers a mandatory boating safety course, paid for by the violator, with boating privileges suspended until the course is successfully completed.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-110 (mandatory course after three negligent-operation convictions in five years)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under S.C. Code Section 50-21-113, what penalty applies to a boating-under-the-influence violation that causes great bodily injury to another person?",
+    "choice_a": "A misdemeanor with a $50 fine and no possibility of imprisonment",
+    "choice_b": "A felony with a $5,000 to $10,000 fine and imprisonment of 30 days to 15 years",
+    "choice_c": "No specific penalty is defined for causing injury",
+    "choice_d": "A civil fine only, with the matter never going through criminal court",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-113 elevates the offense sharply when impaired boat operation causes great bodily injury, making it a felony punishable by a $5,000 to $10,000 fine and imprisonment ranging from 30 days to 15 years, well beyond the penalties for ordinary BUI under Section 50-21-112.",
+    "weight": 5,
+    "source_note": "S.C. Code Ann. Section 50-21-113 (BUI resulting in great bodily injury)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under Section 50-21-113, what penalty applies when boating under the influence results in another person's death?",
+    "choice_a": "A felony with a $10,000 to $25,000 fine and imprisonment of 1 to 25 years",
+    "choice_b": "The same misdemeanor penalty as a first-offense BUI with no injury",
+    "choice_c": "There is no distinct penalty for a death resulting from BUI beyond the standard first-offense fine",
+    "choice_d": "A fine only, with imprisonment never authorized regardless of the facts",
+    "correct_choice": "A",
+    "explanation": "Section 50-21-113 makes a BUI violation that results in death a felony carrying a $10,000 to $25,000 fine and imprisonment of 1 to 25 years, reflecting the most serious tier of South Carolina's impaired-boating penalty structure.",
+    "weight": 5,
+    "source_note": "S.C. Code Ann. Section 50-21-113 (BUI resulting in death)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under S.C. Code Section 50-21-114, what does simply operating a vessel on South Carolina's waters mean a person has already agreed to, if later arrested on a BUI-related charge?",
+    "choice_a": "Nothing; a separate written consent form must be signed before any testing can ever occur",
+    "choice_b": "Implied consent to a chemical test or analysis of the person's breath, blood, or urine to determine alcohol or drug content",
+    "choice_c": "Automatic conviction with no right to contest the charge",
+    "choice_d": "Consent applies only to a breathalyzer and never to a blood or urine test under any circumstance",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-114 establishes that operating a vessel on South Carolina's waters constitutes implied consent to a chemical test of breath, blood, or urine if the operator is later arrested for a BUI-related offense, mirroring the implied consent framework used for impaired driving on the road.",
+    "weight": 5,
+    "source_note": "S.C. Code Ann. Section 50-21-114 (implied consent to chemical testing)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under Section 50-21-114, what consequence follows if a boater refuses to submit to a properly requested chemical test after a BUI-related arrest?",
+    "choice_a": "There is no consequence for refusing a chemical test",
+    "choice_b": "A 180-day suspension of boating privileges, effective the day after notice unless a hearing is timely requested",
+    "choice_c": "Refusal automatically results in acquittal of any related charge",
+    "choice_d": "A refusal simply delays testing with no suspension consequence at all",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-114 imposes a 180-day suspension of boating privileges for refusing a properly requested chemical test, effective the day after notice unless the person timely requests a hearing to contest it, creating a strong incentive to comply with lawfully requested testing.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-114 (180-day suspension for refusing chemical testing)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under S.C. Code Section 50-21-115, what is \"reckless homicide by operation of a boat\"?",
+    "choice_a": "Any accident resulting only in property damage, regardless of injury",
+    "choice_b": "A death occurring within three years as the proximate result of an injury caused by operating a boat in reckless disregard of the safety of others",
+    "choice_c": "A term with no legal definition in South Carolina's boating chapter",
+    "choice_d": "Any death that occurs on a boat regardless of cause, including natural causes",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-115 defines reckless homicide by boat operation as a death occurring within three years as the proximate result of an injury inflicted by operating a boat in reckless disregard of others' safety, tying the timing of the death to the original reckless act.",
+    "weight": 5,
+    "source_note": "S.C. Code Ann. Section 50-21-115 (reckless homicide by boat operation, definition)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under Section 50-21-115, besides a fine and imprisonment, what additional consequence may a court impose after a conviction for reckless homicide, involuntary manslaughter, manslaughter, or murder involving a boat?",
+    "choice_a": "The court has no authority to restrict future boat operation under any circumstance",
+    "choice_b": "The court may prohibit the person from operating any boat for up to five years following the conviction",
+    "choice_c": "The court may only suspend privileges for 48 hours",
+    "choice_d": "The court must permanently and irrevocably revoke the person's driver's license for unrelated highway driving",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-115 gives the court discretion to prohibit a person convicted of reckless homicide, involuntary manslaughter, manslaughter, or murder involving a boat from operating any boat for up to five years after the conviction, on top of any fine or imprisonment imposed.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-115 (up to five-year boat-operation prohibition after conviction)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under S.C. Code Section 50-21-117, what is the penalty for a first violation of operating a vessel while boating privileges are suspended?",
+    "choice_a": "A fine of $200 or up to 30 days imprisonment",
+    "choice_b": "Automatic permanent revocation with no fine option",
+    "choice_c": "No penalty, since a suspension alone is considered sufficient",
+    "choice_d": "A mandatory 5-year prison sentence with no fine option",
+    "correct_choice": "A",
+    "explanation": "Section 50-21-117 penalizes a first offense of operating while boating privileges are suspended with a $200 fine or up to 30 days imprisonment, with penalties escalating substantially for second and subsequent violations, including additional suspension time added by the department.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-117 (penalty for operating while privileges are suspended)"
+  }
+]

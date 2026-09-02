@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a solid red, cylindrical (\"nun\") buoy mark under the Uniform State Waterway Marking System used on Minnesota's inland lakes?",
+    "choice_a": "A public swimming beach",
+    "choice_b": "An area completely closed to all boat traffic",
+    "choice_c": "A fueling station",
+    "choice_d": "It marks the edge of the navigable channel and should be kept on the boat's starboard (right) side when returning from open water toward the main body of the lake or upstream",
+    "correct_choice": "D",
+    "explanation": "Following the \"red, right, returning\" convention, red nun buoys mark the right side of a channel when a boater is returning from open water or heading upstream, helping a Minnesota boater stay within the safe, navigable portion of a marked channel.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System), used on Minnesota inland lakes"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a solid green, can-shaped buoy mark on a Minnesota lake channel?",
+    "choice_a": "The opposite edge of the channel from a red nun buoy, which should be kept on the boat's port (left) side when returning from open water or heading upstream",
+    "choice_b": "A hazard requiring boats to stop completely",
+    "choice_c": "A designated water-skiing zone",
+    "choice_d": "A location where anchoring is mandatory",
+    "correct_choice": "A",
+    "explanation": "Green can buoys mark the opposite side of a channel from red nuns and are kept on the boat's port side when returning from open water or heading upstream, working together with red markers to define the safe navigable channel.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange diamond shape and black lettering warn a Minnesota boater about?",
+    "choice_a": "A designated PWC-only zone",
+    "choice_b": "A danger, such as a rock, shoal, dam, or other hazard, described in the wording printed on the buoy",
+    "choice_c": "An approved fishing pier",
+    "choice_d": "A gas station on the lake",
+    "correct_choice": "B",
+    "explanation": "A white buoy with an orange diamond is a hazard marker warning of dangers such as rocks, shoals, dams, or submerged objects; the specific hazard is usually described in black lettering on the buoy itself.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System, hazard markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange circle typically indicate on a Minnesota lake?",
+    "choice_a": "A public boat launch only",
+    "choice_b": "A location where fishing is banned",
+    "choice_c": "A restricted operating area, such as a speed zone, no-wake zone, or other controlled-use area described by the wording on the buoy",
+    "choice_d": "The deepest point of the lake",
+    "correct_choice": "C",
+    "explanation": "A white buoy marked with an orange circle indicates a controlled or restricted operating area, such as a no-wake zone or speed-restricted area, with the specific restriction spelled out in the lettering on the buoy.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System, controlled-area markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange square (or crossed diamond) generally mean?",
+    "choice_a": "It marks a mandatory anchorage",
+    "choice_b": "It is used only to mark shipwrecks",
+    "choice_c": "It always signals a swimming area",
+    "choice_d": "It gives information, such as directions, distances, or the location of services",
+    "correct_choice": "D",
+    "explanation": "An information marker, shown as a white buoy with an orange square symbol, is used to communicate directions, distances, locations of marinas or services, or other useful information to boaters rather than to mark a hazard or restricted zone.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System, information markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "How are swimming areas typically marked on a Minnesota lake to warn boaters to stay clear?",
+    "choice_a": "With white buoys bearing an orange crossed-diamond symbol meaning \"boats keep out,\" often paired with a line of small floating markers around the swimming area itself",
+    "choice_b": "With unmarked buoys identical to channel markers",
+    "choice_c": "Swimming areas are never marked in Minnesota",
+    "choice_d": "With red nun buoys only",
+    "correct_choice": "A",
+    "explanation": "A \"boats keep out\" marker uses the orange crossed-diamond symbol on a white buoy to warn operators away from a restricted area such as a swimming beach, and many swimming areas are further outlined with a line of small floats to make the boundary visually obvious from a distance.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System, \"boats keep out\" markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Why does Minnesota, with over 10,000 lakes, rely heavily on the Uniform State Waterway Marking System rather than the federal lateral marking system used on coastal and Great Lakes waters?",
+    "choice_a": "Minnesota's lakes have no need for any navigational markers",
+    "choice_b": "The uniform system was developed specifically to mark inland state waters like lakes and rivers that are not part of federally maintained coastal or Great Lakes navigation channels, giving states a consistent way to mark hazards and channels on their own waters",
+    "choice_c": "The federal system is illegal to use anywhere in Minnesota",
+    "choice_d": "Uniform state markers are only decorative and carry no navigational meaning",
+    "correct_choice": "B",
+    "explanation": "The Uniform State Waterway Marking System was created so states could mark inland lakes and rivers not covered by the federal aids-to-navigation system used on coastal waters and the Great Lakes, giving Minnesota's thousands of inland lakes a standardized way to flag hazards, channels, and restricted areas.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System origin and purpose), applied to Minnesota's extensive inland lake system"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What should a Minnesota boater do upon seeing a regulatory buoy whose lettering is too faded or damaged to read clearly?",
+    "choice_a": "Ignore the buoy completely since its message cannot be confirmed",
+    "choice_b": "Assume the marker has been removed from service and no restriction applies",
+    "choice_c": "Slow down and proceed with caution, treating the marker's general shape and color as a warning of a possible hazard or restriction even if the exact wording cannot be read",
+    "choice_d": "Speed up to get past it quickly",
+    "correct_choice": "C",
+    "explanation": "The shape and color-coding of Uniform State Waterway Marking System buoys convey basic meaning (hazard, controlled area, or information) even without readable lettering, so a prudent operator slows down and proceeds cautiously rather than assuming no restriction exists.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (interpreting Uniform State Waterway Marking System symbols)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "On a river or channel with a current, what does it mean to keep red markers on the starboard side while \"returning\"?",
+    "choice_a": "Traveling in reverse gear only",
+    "choice_b": "Returning refers only to trips that end before sunset",
+    "choice_c": "It has no defined meaning in the marking system",
+    "choice_d": "Traveling from open/downstream water back toward the upper part of a river, marina, or main lake body -- the direction in which red markers should be kept to the boat's right",
+    "correct_choice": "D",
+    "explanation": "\"Returning\" in \"red, right, returning\" refers to the direction of travel from open or downstream water back toward the upstream portion of a waterway, a harbor, or the main body of a lake, which is the convention boaters use to know which side to keep red markers on.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System, direction of \"returning\")"
+  }
+]

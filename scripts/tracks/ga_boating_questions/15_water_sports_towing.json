@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "During what hours is it illegal to tow a person on water skis, a skiboard, or a similar device in Georgia?",
+    "choice_a": "Between noon and 2 p.m. only",
+    "choice_b": "Towing is illegal at all hours in Georgia",
+    "choice_c": "Between sunset and sunrise",
+    "choice_d": "There is no restriction on towing hours",
+    "correct_choice": "C",
+    "explanation": "It is illegal for boats or PWC to tow persons on water skis, a skiboard, or a similar device between sunset and sunrise.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Requirements for Towing Skiers, Tubes, etc.'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Besides the boat operator, what must be on board a boat towing a water skier?",
+    "choice_a": "Nothing additional -- a mirror or observer is not required",
+    "choice_b": "A second set of skis in case the first pair breaks",
+    "choice_c": "A lifeguard certification for the operator",
+    "choice_d": "A person capable of observing the towed person at all times, or a wide-angle rearview mirror mounted so the operator can observe the towed person",
+    "correct_choice": "D",
+    "explanation": "Every boat towing a water skier or similar must have on board either a person, in addition to the operator, who can observe the towed person at all times, or a properly mounted wide-angle rearview mirror.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Requirements for Towing Skiers, Tubes, etc.'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "May a PWC use a wide-angle mirror in place of an observer when towing a water skier in Georgia?",
+    "choice_a": "No, a wide-angle mirror may not be used in place of an observer on a PWC towing a skier",
+    "choice_b": "Yes, mirrors are treated identically for PWC and conventional boats",
+    "choice_c": "Yes, but only mirrors rated for highway use",
+    "choice_d": "PWC are prohibited from towing skiers under any circumstance",
+    "correct_choice": "A",
+    "explanation": "Unlike a conventional boat, a PWC towing a skier may not substitute a wide-angle mirror for an observer; it must have an observer on board in addition to the operator, and must be rated to carry three or more persons.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Requirements for Towing Skiers, Tubes, etc.'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What must a PWC towing a water skier be rated to carry, in addition to having an observer aboard?",
+    "choice_a": "Exactly one person, the operator only",
+    "choice_b": "Three or more persons",
+    "choice_c": "There is no minimum capacity rating required for towing",
+    "choice_d": "At least six persons",
+    "correct_choice": "B",
+    "explanation": "A PWC towing a person on water skis or a similar device must be rated by the manufacturer to carry three or more persons and must have an observer on board in addition to the operator.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Requirements for Towing Skiers, Tubes, etc.'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What hand signal does a skier use to indicate 'Skier down -- watch!' or that something is wrong?",
+    "choice_a": "There is no standard signal for a skier down; skiers must shout instead",
+    "choice_b": "Skiers wave both arms overhead only when they want to speed up",
+    "choice_c": "A distinct hand signal shown in Georgia's official hand-signal chart, warning the boat operator and observer that the skier is down and other boaters should watch out",
+    "choice_d": "A raised fist means 'stop the boat entirely and cut the engine at once'",
+    "correct_choice": "C",
+    "explanation": "Georgia's handbook illustrates standard hand signals for skiers, including a distinct signal for 'skier down, watch!' that alerts the operator, observer, and other boaters to the situation.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Hand Signals for Skiers'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why is it important for skiers, boat operators, and observers to know standard water-skiing hand signals?",
+    "choice_a": "They are purely ceremonial and have no practical safety purpose",
+    "choice_b": "They are required only for professional ski show performers",
+    "choice_c": "They replace the need for a PFD",
+    "choice_d": "They help the skier communicate clearly with the boat operator or observer about speed, direction, and safety status",
+    "correct_choice": "D",
+    "explanation": "Standard hand signals let a skier communicate essentials -- OK, stop, speed up, slow down, turn -- clearly to the boat operator or observer, which is an important safety practice.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Hand Signals for Skiers'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "May the operator of a towing vessel or the person being towed be under the influence of alcohol or drugs in Georgia?",
+    "choice_a": "No, it is illegal for either the operator or the person(s) being towed to be under the influence of alcohol or drugs",
+    "choice_b": "Only the operator is restricted; the person being towed may be impaired",
+    "choice_c": "Only the person being towed is restricted; the operator may be impaired",
+    "choice_d": "There is no restriction for water-skiing activities specifically",
+    "correct_choice": "A",
+    "explanation": "Georgia law makes it illegal for either the operator of the towing vessel or the person(s) being towed on water skis to be under the influence of alcohol or drugs.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Requirements for Towing Skiers, Tubes, etc.'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "How close may a boat tow a water skier to a dock, pier, bridge, or person in the water at greater than idle speed?",
+    "choice_a": "Towing at full speed is allowed as close as 25 feet",
+    "choice_b": "It may not tow a skier at greater than idle speed within 100 feet of these areas",
+    "choice_c": "There is no distance restriction for towing skiers",
+    "choice_d": "The restriction only applies to PWC, not conventional boats",
+    "correct_choice": "B",
+    "explanation": "A boat or PWC must not tow a person on water skis or a similar device at greater than idle speed within 100 feet of a dock, pier, bridge, person in the water, or similar area listed under the improper distance rules.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Requirements for Towing Skiers, Tubes, etc.'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Scuba divers or snorkelers in Georgia must display which type of flag to mark the diving area on state waters?",
+    "choice_a": "A solid yellow flag with no markings",
+    "choice_b": "A blue-and-white checkered racing flag",
+    "choice_c": "A rectangular red flag, at least 15\" x 15\", with a white diagonal stripe (the 'Divers Flag')",
+    "choice_d": "No flag is required for divers on state waters",
+    "correct_choice": "C",
+    "explanation": "On state waters, divers must display the Divers Flag -- a rectangular red flag at least 15 by 15 inches with a white diagonal stripe -- to mark the diving area.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Diver-Down Flags'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "How far away must vessels stay from a person in the water marked by a diver-down flag?",
+    "choice_a": "At least 10 feet",
+    "choice_b": "There is no minimum distance required",
+    "choice_c": "At least 1,000 feet",
+    "choice_d": "At least 100 feet",
+    "correct_choice": "D",
+    "explanation": "Vessels must remain at least 100 feet away from a person in the water marked by a diver-down flag.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Diver-Down Flags'"
+  }
+]

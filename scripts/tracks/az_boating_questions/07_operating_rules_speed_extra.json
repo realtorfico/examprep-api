@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What does A.R.S. 5-341 broadly prohibit regarding how any watercraft may be operated on Arizona waters?",
+    "choice_a": "Operating a watercraft with fewer than four passengers aboard",
+    "choice_b": "Operating a watercraft in a careless, reckless or negligent manner",
+    "choice_c": "Operating a watercraft that was built before 1990",
+    "choice_d": "Operating a watercraft without a spare propeller on board",
+    "correct_choice": "B",
+    "explanation": "A.R.S. 5-341 sets the baseline operating-conduct rule for Arizona waters: no person may operate a watercraft in a careless, reckless or negligent manner, a broader standard than the specific speed and wake requirements found in a companion statute.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-341, 'Reckless or negligent operation; classification'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under A.R.S. 5-341, what classification of offense generally applies to careless, reckless or negligent operation of a watercraft?",
+    "choice_a": "A class 6 felony",
+    "choice_b": "A civil infraction with no criminal penalty",
+    "choice_c": "A class 2 misdemeanor",
+    "choice_d": "A federal offense prosecuted only by the U.S. Coast Guard",
+    "correct_choice": "C",
+    "explanation": "Arizona law classifies a violation of the careless, reckless or negligent operation provision of A.R.S. 5-341 as a class 2 misdemeanor.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-341, 'Reckless or negligent operation; classification'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Besides watercraft operators, who else does A.R.S. 5-341 specifically prohibit from behaving in a careless, reckless or negligent manner?",
+    "choice_a": "Only licensed charter boat captains",
+    "choice_b": "Only passengers seated in the cabin of a houseboat",
+    "choice_c": "The statute applies only to the vessel's owner, never to the operator",
+    "choice_d": "A person on water skis, a surfboard, or a similar contrivance being towed behind a vessel",
+    "correct_choice": "D",
+    "explanation": "A.R.S. 5-341 extends its careless/reckless/negligent standard beyond the vessel operator to a person on water skis, a surfboard, or a similar towed device, who may not behave in a careless, reckless or negligent manner either.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-341, 'Reckless or negligent operation; classification'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under A.R.S. 5-341, where are passengers generally prohibited from riding while a motorized watercraft is underway at speed?",
+    "choice_a": "On the gunwales, transom, or bow, unless the vessel is designed for passengers to ride there at speed or the vessel is at rest, anchoring, or mooring",
+    "choice_b": "Anywhere other than the exact center of the deck",
+    "choice_c": "There is no restriction on where passengers may ride at any speed",
+    "choice_d": "Only in the cabin, with all outdoor riding banned outright",
+    "correct_choice": "A",
+    "explanation": "Arizona law restricts riding on the gunwales, transom, or bow of a motor-powered watercraft while underway at speeds that are unsafe for that position, except on vessels specifically designed for passengers to occupy those areas or while the vessel is at rest, anchoring, or mooring.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-341, 'Reckless or negligent operation; classification'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What additional restriction applies to a bow rider under A.R.S. 5-341, even on a vessel designed to carry passengers there?",
+    "choice_a": "The bow passenger must always face backward",
+    "choice_b": "The bow passenger may not obstruct the operator's view",
+    "choice_c": "The bow passenger must wear a helmet at all times",
+    "choice_d": "There is no additional restriction once a vessel is designed for bow seating",
+    "correct_choice": "B",
+    "explanation": "Even on a vessel built for bow seating, Arizona law requires that a bow passenger not obstruct the operator's view, since a blocked line of sight forward creates a serious collision hazard.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-341, 'Reckless or negligent operation; classification'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under A.R.S. 5-341, when may a child under twelve years old operate a motor exceeding eight horsepower on Arizona waters?",
+    "choice_a": "At any time, with no supervision required",
+    "choice_b": "Only between sunrise and 10:00 a.m.",
+    "choice_c": "Only while directly supervised aboard by a parent, guardian, or another adult at least eighteen years old, except in an emergency",
+    "choice_d": "Only if the motor is factory-rated below eight horsepower, which makes the question moot",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-341 bars a child under twelve from operating a motor exceeding eight horsepower unless a parent, guardian, or adult of at least eighteen is aboard directly supervising, with a narrow exception for emergencies.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-341, 'Reckless or negligent operation; classification'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under A.R.S. 5-341, can a responsible adult lawfully let an unsupervised child under twelve run a watercraft motor over eight horsepower?",
+    "choice_a": "Yes, as long as the child is wearing a life jacket",
+    "choice_b": "Yes, with no conditions at all",
+    "choice_c": "Yes, but only on a lake smaller than 100 acres",
+    "choice_d": "No -- an adult may not knowingly permit a minor to operate in violation of the age and horsepower supervision requirement",
+    "correct_choice": "D",
+    "explanation": "The same statute that sets the age/horsepower supervision rule also makes it unlawful for an adult to knowingly allow a minor to operate a watercraft motor in violation of that requirement, closing off the obvious workaround of an adult simply looking the other way.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-341, 'Reckless or negligent operation; classification'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under A.R.S. 5-347, what does Arizona law say about anchoring or swimming in a heavily traveled boating channel or launching area?",
+    "choice_a": "It is specifically identified as unreasonable interference with the free and proper use of the waterway",
+    "choice_b": "It is always allowed, since channels are open to any use",
+    "choice_c": "It is allowed only for boats over 26 feet",
+    "choice_d": "Arizona law has no rule addressing this situation",
+    "correct_choice": "A",
+    "explanation": "A.R.S. 5-347 prohibits unreasonably or unnecessarily interfering with other watercraft, the free use of state waterways, or launching areas, and specifically calls out anchoring or swimming in heavily traveled channels or launching areas as constituting that interference.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-347, 'Interference with navigation or launching areas'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under A.R.S. 5-347, what is prohibited at a designated boat launching area?",
+    "choice_a": "Backing a trailer down the ramp",
+    "choice_b": "Camping or parking a vehicle there, or otherwise restricting or preventing free access to the area",
+    "choice_c": "Waiting in a vehicle for less than five minutes",
+    "choice_d": "Nothing -- launch areas are entirely unregulated under state law",
+    "correct_choice": "B",
+    "explanation": "A.R.S. 5-347 also bars camping or parking a vehicle on a boat launching area, or otherwise restricting or preventing free access to it, so that the ramp stays usable for the boaters who need it.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-347, 'Interference with navigation or launching areas'"
+  }
+]

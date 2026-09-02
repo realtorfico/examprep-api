@@ -1,0 +1,6 @@
+{
+  "examType": "tx_boating",
+  "questionsDir": "C:\\claudews\\PassExamHQ\\Workers\\passexamhq-api\\scripts\\tracks\\tx_boating_questions",
+  "priceCents": 799,
+  "handbookNote": "Texas Boater Education Program (Texas Parks & Wildlife Department) and Texas Water Safety Act / Parks & Wildlife Code Chapter 31 -- Texas has no single official TPWD-administered boating exam; TPWD approves NASBLA-standard third-party courses (Boat-Ed, BOATERexam, BOATsmart!, etc.) whose embedded quiz is the de facto test, with question counts varying 50-75 by vendor (the TPWD-affiliated classroom course uses 60: 50 national + 10 Texas-specific) but converging consistently on an 80%-to-pass standard -- price matches this project's Motorcycle-tier boating convention ($7.99), not a placeholder"
+}

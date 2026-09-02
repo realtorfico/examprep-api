@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "What level of offense is a first-time conviction for operating a watercraft under the influence in Illinois?",
+    "choice_a": "A Class A misdemeanor",
+    "choice_b": "A petty offense with no criminal record",
+    "choice_c": "A Class 2 felony",
+    "choice_d": "A civil infraction only, similar to a parking ticket",
+    "correct_choice": "A",
+    "explanation": "A first BUI conviction in Illinois is a Class A misdemeanor, the same base classification used for a first DUI conviction on the road.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-16"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "How is a BUI offense classified in Illinois if the person has a prior BUI (or similar) conviction?",
+    "choice_a": "It remains a Class A misdemeanor no matter how many prior convictions exist",
+    "choice_b": "A Class 4 felony",
+    "choice_c": "A simple traffic citation",
+    "choice_d": "A Class B misdemeanor",
+    "correct_choice": "B",
+    "explanation": "A subsequent BUI offense, committed after a prior conviction under the Section or a similar local ordinance or federal regulation, is elevated to a Class 4 felony.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-16"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "If a BUI violation is a proximate cause of great bodily harm, permanent disability, or disfigurement to another person, how is the offense classified and sentenced?",
+    "choice_a": "A simple misdemeanor with no possibility of prison time",
+    "choice_b": "A Class 4 felony capped at a maximum of 1 year in jail",
+    "choice_c": "A Class 4 felony, with a prison term (if imposed) of not less than 1 year and not more than 12 years",
+    "choice_d": "An infraction resolved only through civil settlement between the parties",
+    "correct_choice": "C",
+    "explanation": "When a BUI violation is a proximate cause of another person's great bodily harm, permanent disability, or disfigurement, it becomes a Class 4 felony carrying a statutory prison term, if imposed, of 1 to 12 years.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/5-16"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "How is a BUI offense classified and sentenced in Illinois when it results in another person's death?",
+    "choice_a": "A Class A misdemeanor with a maximum of one year in jail",
+    "choice_b": "A civil wrongful-death claim only, with no criminal charge",
+    "choice_c": "A Class 4 felony with a maximum sentence of 3 years",
+    "choice_d": "A Class 2 felony, with a prison term (if imposed) of not less than 3 years and not more than 14 years",
+    "correct_choice": "D",
+    "explanation": "A BUI violation that results in another person's death is a Class 2 felony, carrying a prison term, if imposed, of 3 to 14 years -- among the most severe penalties in the Boat Registration and Safety Act.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/5-16"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "Does every person found guilty of BUI in Illinois pay a fine, even if they are placed on court supervision instead of formally convicted?",
+    "choice_a": "Yes -- anyone found guilty of BUI, including a person placed on court supervision, must pay a mandatory $100 fine",
+    "choice_b": "No, court supervision always eliminates any fine",
+    "choice_c": "A fine is charged only if the person is under age 21",
+    "choice_d": "The fine is optional and left entirely to the judge's discretion whether to impose any amount at all",
+    "correct_choice": "A",
+    "explanation": "Illinois law imposes a mandatory $100 fine on every person found guilty of a BUI violation, including someone who receives court supervision rather than a formal conviction.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-16"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "What additional mandatory penalty applies if a person is convicted of BUI while a child under age 16 was aboard the watercraft?",
+    "choice_a": "No additional penalty -- having a child aboard is not addressed by the law",
+    "choice_b": "A mandatory minimum $500 fine plus a mandatory minimum of 5 days of community service",
+    "choice_c": "Automatic permanent loss of watercraft operating privileges with no possibility of reinstatement",
+    "choice_d": "A mandatory minimum fine of $50 and no other requirement",
+    "correct_choice": "B",
+    "explanation": "A BUI conviction (or a conviction under a similar local ordinance) while a child under 16 was aboard carries an added mandatory minimum $500 fine and a mandatory minimum of 5 days of community service, on top of the other penalties for the offense.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-16"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "Does a first-time misdemeanor BUI conviction automatically trigger a suspension of watercraft operating privileges in Illinois?",
+    "choice_a": "Yes, every misdemeanor conviction, first or repeat, triggers an automatic 5-year suspension",
+    "choice_b": "No, misdemeanor convictions never result in any suspension under any circumstance",
+    "choice_c": "No -- a first-time offender is specifically exempted from the mandatory one-year suspension that otherwise applies to a misdemeanor BUI conviction",
+    "choice_d": "Yes, but only if the person was also driving a motor vehicle that day",
+    "correct_choice": "C",
+    "explanation": "Illinois law directs DNR to suspend watercraft operating privileges for one year after a misdemeanor BUI conviction, but specifically exempts a first-time offender from that mandatory one-year suspension.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-16"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "For how long does the Illinois Department of Natural Resources suspend a person's watercraft operating privileges following a felony BUI conviction?",
+    "choice_a": "30 days",
+    "choice_b": "10 years",
+    "choice_c": "There is no suspension for a felony conviction, only for a misdemeanor",
+    "choice_d": "3 years",
+    "correct_choice": "D",
+    "explanation": "A felony BUI conviction (or a similar local-ordinance or federal conviction) results in DNR suspending the person's watercraft operating privileges for 3 years.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-16"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "Before requesting a chemical test from a suspected BUI operator, what must the law enforcement officer verbally advise the person of?",
+    "choice_a": "That refusing to submit to the test will result in suspension of the person's privilege to operate a watercraft for a minimum of 2 years",
+    "choice_b": "That refusal carries no consequence at all",
+    "choice_c": "That the person may choose to be tested at a later date of their own convenience",
+    "choice_d": "That only a passenger, not the operator, can be asked to submit to testing",
+    "correct_choice": "A",
+    "explanation": "Before a chemical test is administered, the officer must verbally advise the person that refusing the test will result in a minimum 2-year suspension of their privilege to operate a watercraft in Illinois.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-16"
+  },
+  {
+    "topic": "Alcohol, Drugs & BUI",
+    "question": "After receiving notice that their watercraft operating privileges will be suspended for refusing a chemical test, how many days does a person have to request a hearing to contest the suspension?",
+    "choice_a": "90 days",
+    "choice_b": "28 days",
+    "choice_c": "3 days",
+    "choice_d": "There is no hearing process available -- the suspension cannot be contested",
+    "correct_choice": "B",
+    "explanation": "A person notified that their watercraft privileges will be suspended for refusing chemical testing has 28 days from the date of the notice to request a hearing in writing, or the 2-year suspension takes effect.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-16"
+  }
+]

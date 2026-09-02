@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "Why must recreational boaters give large, deep-draft commercial ships extra clearance when operating within the Chesapeake Bay's dredged shipping channels?",
+    "choice_a": "The shipping channels are exclusively used by recreational boats, not commercial traffic",
+    "choice_b": "Large ships in the channel can stop or turn just as quickly as a small powerboat",
+    "choice_c": "These ships are often confined to the channel by their draft, cannot leave it without grounding, and require a very long distance to slow down or stop",
+    "choice_d": "Commercial ships in the Bay's channels are legally required to always yield to recreational boats",
+    "correct_choice": "C",
+    "explanation": "Because deep-draft commercial vessels can run aground if they leave the marked, dredged channel, and because their size makes stopping or maneuvering slow, recreational boaters need to anticipate their movements early and stay well clear.",
+    "weight": 3,
+    "source_note": "Chesapeake Bay commercial shipping traffic navigation guidance (Maryland DNR/NRP boating safety messaging)"
+  },
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "What are crab pots and trotlines, common gear found throughout Maryland's Chesapeake Bay waters?",
+    "choice_a": "Navigational aids placed by the Maryland DNR to mark shipping channels",
+    "choice_b": "Equipment used exclusively by the Natural Resources Police for law enforcement",
+    "choice_c": "A type of personal flotation device unique to the Chesapeake Bay",
+    "choice_d": "Commercial and recreational crabbing gear marked by floating buoys on the surface, connected by lines to traps or baited lines below, which can foul a boat's propeller if struck",
+    "correct_choice": "D",
+    "explanation": "Crab pots and trotlines are widely used crabbing gear on the Bay, marked at the surface by small floating buoys; a boat that runs over the line or float risks fouling its propeller or rudder, so boaters are advised to watch for and steer around them, especially in shallower tributaries.",
+    "weight": 3,
+    "source_note": "Chesapeake Bay crab-pot/trotline navigation hazard guidance (Maryland DNR boating safety messaging)"
+  },
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "Why should a boater reduce speed and watch carefully when transiting a Maryland tributary known for active watermen working crab pots or trotlines?",
+    "choice_a": "Slower speeds give the operator more time to spot and avoid pot buoys and working watermen's vessels, reducing the risk of striking gear or people",
+    "choice_b": "Watermen's vessels have no right to be on the water when recreational boaters are present",
+    "choice_c": "Crab pot buoys are always brightly lit and easy to see at any speed",
+    "choice_d": "Speed has no bearing on the ability to spot or avoid crab-pot gear",
+    "correct_choice": "A",
+    "explanation": "Reducing speed in areas with active watermen and crab-pot gear gives an operator more time to identify and avoid floating buoys, lines, and working vessels, lowering the risk of a costly or dangerous collision or fouled propeller.",
+    "weight": 2,
+    "source_note": "Chesapeake Bay crab-pot/trotline and working-waterman navigation hazard guidance (Maryland DNR boating safety messaging)"
+  },
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "What is the practical difference between operating a boat on the Chesapeake Bay's 'tidal' waters versus Maryland's 'non-tidal' inland waters, such as many reservoirs and upstream river sections?",
+    "choice_a": "Tidal waters are found only outside of Maryland",
+    "choice_b": "Tidal waters experience regular rising and falling water levels and currents driven by the tides, which can affect channel depth, current strength, and navigation timing, while non-tidal waters generally do not",
+    "choice_c": "There is no meaningful difference between tidal and non-tidal waters for boaters",
+    "choice_d": "Non-tidal waters always have stronger currents than tidal waters",
+    "correct_choice": "B",
+    "explanation": "Tidal waters, including the Chesapeake Bay and its tidal tributaries, experience regular water-level and current changes tied to the tide cycle, which boaters must account for when navigating shallow areas or timing a trip, unlike Maryland's non-tidal lakes, reservoirs, and upper river reaches.",
+    "weight": 3,
+    "source_note": "Maryland tidal versus non-tidal waters distinction (Maryland DNR boating safety and waterway management guidance)"
+  },
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "Why is checking a tide table useful before boating in the Chesapeake Bay's shallower coves and tributaries?",
+    "choice_a": "Tide tables only matter for scheduling fishing tournaments, not for navigation safety",
+    "choice_b": "Water depth never changes with the tide in Maryland's tidal waters",
+    "choice_c": "Water depth over shoals and near docks can change significantly between high and low tide, affecting whether a vessel can safely pass through certain areas",
+    "choice_d": "Tide tables are irrelevant to Chesapeake Bay boating since tides do not affect the Bay",
+    "correct_choice": "C",
+    "explanation": "Because tidal fluctuation changes water depth over shoals, sandbars, and near shorelines, checking tide tables helps a boater judge whether a shallow area will be passable and avoid running aground at low tide.",
+    "weight": 2,
+    "source_note": "Chesapeake Bay tidal-water navigation guidance (Maryland DNR boating safety messaging)"
+  },
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "Which agency's officers patrol the Chesapeake Bay and Maryland's other waters to enforce boating laws, conduct safety checks, and respond to accidents?",
+    "choice_a": "The Maryland Motor Vehicle Administration",
+    "choice_b": "Only the U.S. Coast Guard, with no state-level enforcement presence",
+    "choice_c": "Local county tax assessors",
+    "choice_d": "The Maryland Natural Resources Police (NRP), the enforcement arm of the Department of Natural Resources with statewide police authority",
+    "correct_choice": "D",
+    "explanation": "The Maryland Natural Resources Police, operating under the DNR with statewide police authority, is the primary agency patrolling the Chesapeake Bay and Maryland's other waterways for boating law enforcement, safety checks, and accident response.",
+    "weight": 2,
+    "source_note": "Maryland Natural Resources Police statewide boating enforcement authority as described on dnr.maryland.gov"
+  },
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "Why does the mix of large commercial shipping, recreational boating, and working watermen make the Chesapeake Bay a uniquely demanding environment for new boaters?",
+    "choice_a": "It requires awareness of Navigation Rules for large-vessel right-of-way, hazard avoidance for crab-pot gear, and general safe operation around a high volume and variety of vessel traffic all in the same waters",
+    "choice_b": "The Bay has so little vessel traffic that most navigation rules rarely apply",
+    "choice_c": "Commercial shipping and recreational boating never occupy the same waters in Maryland",
+    "choice_d": "Working watermen operate on a completely separate body of water from recreational boaters",
+    "correct_choice": "A",
+    "explanation": "The Chesapeake Bay's combination of deep-draft commercial shipping in marked channels, extensive recreational boating traffic, and working watermen's crabbing and fishing gear means boaters must apply right-of-way rules, hazard-avoidance skills, and general vigilance simultaneously.",
+    "weight": 2,
+    "source_note": "Chesapeake Bay mixed-traffic boating environment description (Maryland DNR/NRP boating safety messaging)"
+  },
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "What should a recreational boater do upon seeing a working waterman actively hauling a crab pot or trotline from their vessel nearby?",
+    "choice_a": "Working watermen have no special consideration under Maryland boating etiquette",
+    "choice_b": "Slow down, keep well clear, and avoid crossing close behind or in front of the working vessel or its gear",
+    "choice_c": "Pass as closely as possible to get a better view of the operation",
+    "choice_d": "Speed up to clear the area quickly, regardless of the resulting wake",
+    "correct_choice": "B",
+    "explanation": "Slowing down and giving working watermen a wide berth avoids damaging their gear, generating a dangerous wake near their vessel, or accidentally running over lines and buoys connected to pots being actively worked.",
+    "weight": 2,
+    "source_note": "Chesapeake Bay working-waterman courtesy and hazard-avoidance guidance (Maryland DNR boating safety messaging)"
+  },
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "Why is the Chesapeake Bay Bridge (William Preston Lane Jr. Memorial Bridge) area considered an important navigational feature for Maryland recreational boaters to understand?",
+    "choice_a": "Boats are never permitted anywhere near the Bay Bridge",
+    "choice_b": "The bridge only affects air traffic, not boat traffic",
+    "choice_c": "It marks a major crossing point on the Bay with defined channel spans and can concentrate significant vessel traffic, requiring extra attention to navigation and right-of-way near the bridge pilings and channels",
+    "choice_d": "The bridge has no effect on boat traffic patterns",
+    "correct_choice": "C",
+    "explanation": "As a major crossing of the Chesapeake Bay with defined navigational spans, the Bay Bridge area often sees concentrated boat traffic and requires extra awareness of channel markers, right-of-way, and bridge piling clearances.",
+    "weight": 1,
+    "source_note": "Chesapeake Bay Bridge navigational-landmark awareness (general Maryland Bay-boating knowledge, combined with universal channel-navigation fundamentals)"
+  },
+  {
+    "topic": "Chesapeake Bay Boating",
+    "question": "What role does the Chesapeake Bay's brackish (mixed salt and fresh) water play in a boater's maintenance considerations?",
+    "choice_a": "Brackish water has no different effect on a boat's hardware than pure fresh water",
+    "choice_b": "Brackish water eliminates the need for any engine maintenance",
+    "choice_c": "The Chesapeake Bay contains only fresh water with no salinity at all",
+    "choice_d": "Brackish water can accelerate corrosion of unprotected metal fittings and engine components compared to fresh water alone, making regular rinsing and corrosion protection important",
+    "correct_choice": "D",
+    "explanation": "The Chesapeake Bay's brackish water, a mix of ocean salinity and river freshwater, can be more corrosive to unprotected metal fittings and engine parts than pure fresh water, so Bay boaters are encouraged to rinse their vessels and maintain corrosion protection regularly.",
+    "weight": 1,
+    "source_note": "Chesapeake Bay brackish-water characteristics and vessel-maintenance guidance (general Maryland Bay-boating knowledge)"
+  }
+]

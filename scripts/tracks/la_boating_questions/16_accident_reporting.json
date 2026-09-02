@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Accident Reporting",
+    "question": "In Louisiana, a written boating accident report must be submitted if the incident results in which of the following?",
+    "choice_a": "Only if a vessel worth over $1 million is involved",
+    "choice_b": "Only when a fatality occurs, not for injuries or property damage",
+    "choice_c": "Louisiana has no boating accident reporting requirement",
+    "choice_d": "Death or injury to a person, disappearance of a person from a vessel, property damage exceeding $500, or complete loss of a vessel",
+    "correct_choice": "D",
+    "explanation": "LDWF requires a written incident report for boating accidents involving death, injury, disappearance of a person from a vessel, property damage over $500, or total loss of a vessel.",
+    "weight": 5,
+    "source_note": "LDWF, Report Boat Crash, Collision, or Casualty (wlf.louisiana.gov/page/report-boat-crash-collision-or-casualty)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Following a boating accident involving death, injury, or significant damage in Louisiana, the operator must:",
+    "choice_a": "Immediately contact LDWF's Law Enforcement Division, the nearest law enforcement agency, or state police",
+    "choice_b": "Wait until returning home to make any report",
+    "choice_c": "Only notify their insurance company, with no law enforcement contact required",
+    "choice_d": "There is no immediate notification requirement in Louisiana",
+    "correct_choice": "A",
+    "explanation": "Louisiana requires immediate notification of LDWF's Law Enforcement Division, the nearest law enforcement agency, or state police for accidents involving death, injury, disappearance, or significant damage.",
+    "weight": 5,
+    "source_note": "LDWF, Report Boat Crash, Collision, or Casualty (wlf.louisiana.gov/page/report-boat-crash-collision-or-casualty)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "After a reportable boating accident, within how many days must the operator submit a written Incident Report Form to LDWF?",
+    "choice_a": "There is no deadline for the written report",
+    "choice_b": "5 days",
+    "choice_c": "30 days",
+    "choice_d": "90 days",
+    "correct_choice": "B",
+    "explanation": "Louisiana requires the written Incident Report Form to be submitted within 5 days of a reportable boating accident.",
+    "weight": 5,
+    "source_note": "LDWF, Report Boat Crash, Collision, or Casualty (wlf.louisiana.gov/page/report-boat-crash-collision-or-casualty)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "At the scene of a boating accident causing injury or property damage in Louisiana, the vessel operator must provide their name, address, and vessel identifying number to:",
+    "choice_a": "Only law enforcement, never the other parties involved",
+    "choice_b": "Only if requested by the other party's attorney",
+    "choice_c": "Anyone injured and to the owners of any damaged property",
+    "choice_d": "No one; this information is confidential",
+    "correct_choice": "C",
+    "explanation": "Louisiana requires an operator involved in an accident to give their name, address, and vessel identifying number directly to anyone injured and to owners of damaged property at the scene.",
+    "weight": 4,
+    "source_note": "LDWF, Report Boat Crash, Collision, or Casualty (wlf.louisiana.gov/page/report-boat-crash-collision-or-casualty)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Louisiana's emergency phone number for reporting a serious boating incident to LDWF's Law Enforcement Division is:",
+    "choice_a": "911 only, with no LDWF-specific number available",
+    "choice_b": "A number that changes seasonally",
+    "choice_c": "There is no dedicated number; incidents can only be reported in person",
+    "choice_d": "800-442-2511",
+    "correct_choice": "D",
+    "explanation": "LDWF publishes 800-442-2511 as its Law Enforcement Division contact number for reporting serious boating incidents.",
+    "weight": 3,
+    "source_note": "LDWF, Report Boat Crash, Collision, or Casualty (wlf.louisiana.gov/page/report-boat-crash-collision-or-casualty)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Where should a completed Louisiana boating Incident Report Form ultimately be sent?",
+    "choice_a": "LDWF Boating Safety and Waterway Enforcement, PO Box 98000, Baton Rouge, LA 70898-9000",
+    "choice_b": "The nearest municipal courthouse only",
+    "choice_c": "The vessel's manufacturer",
+    "choice_d": "The U.S. Coast Guard exclusively, with no LDWF involvement",
+    "correct_choice": "A",
+    "explanation": "LDWF's Boating Safety and Waterway Enforcement office at PO Box 98000, Baton Rouge, LA 70898-9000 is the mailing address for completed Incident Report Forms.",
+    "weight": 3,
+    "source_note": "LDWF, Report Boat Crash, Collision, or Casualty (wlf.louisiana.gov/page/report-boat-crash-collision-or-casualty)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "A boating accident causing $500 or less in property damage and no injury, death, or disappearance is generally:",
+    "choice_a": "Reportable only to the vessel's insurance company by law",
+    "choice_b": "Not required to be reported on a formal written incident report, unlike accidents crossing the reporting thresholds",
+    "choice_c": "Always reportable regardless of the damage amount",
+    "choice_d": "Reportable only if a personal watercraft is involved",
+    "correct_choice": "B",
+    "explanation": "Because Louisiana's written-report requirement is triggered by injury, death, disappearance, damage exceeding $500, or total vessel loss, an accident below the $500 property-damage threshold with no injury does not trigger the formal reporting requirement.",
+    "weight": 3,
+    "source_note": "LDWF, Report Boat Crash, Collision, or Casualty (wlf.louisiana.gov/page/report-boat-crash-collision-or-casualty)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Why does Louisiana require prompt reporting of serious boating accidents to LDWF or law enforcement?",
+    "choice_a": "To assign blame automatically without any investigation",
+    "choice_b": "Because federal law requires it and Louisiana has no independent interest in the data",
+    "choice_c": "To enable a timely investigation, support victim assistance, and help identify safety or enforcement trends",
+    "choice_d": "Reporting exists only to generate paperwork with no practical use",
+    "correct_choice": "C",
+    "explanation": "Prompt accident reporting supports timely investigation, helps victims get needed assistance, and lets LDWF track statewide boating safety and enforcement trends over time.",
+    "weight": 3,
+    "source_note": "LDWF, Report Boat Crash, Collision, or Casualty (wlf.louisiana.gov/page/report-boat-crash-collision-or-casualty)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "If a person disappears from a vessel under circumstances suggesting death or injury in Louisiana, this is treated under the accident-reporting law as:",
+    "choice_a": "Not reportable unless a body is recovered",
+    "choice_b": "Only a missing-persons matter with no boating-accident reporting obligation",
+    "choice_c": "Reportable only after 30 days have passed",
+    "choice_d": "A reportable boating accident requiring immediate notification and a written report",
+    "correct_choice": "D",
+    "explanation": "Disappearance of a person from a vessel is explicitly listed among the triggers requiring immediate notification and a written incident report under Louisiana's boating accident reporting rules.",
+    "weight": 4,
+    "source_note": "LDWF, Report Boat Crash, Collision, or Casualty (wlf.louisiana.gov/page/report-boat-crash-collision-or-casualty)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "A vessel operator involved in a Louisiana boating accident who leaves the scene without providing identifying information to the injured party may be:",
+    "choice_a": "In violation of Louisiana's accident-reporting obligations, subject to penalty",
+    "choice_b": "Free of any obligation once the vessel physically leaves the area",
+    "choice_c": "Only liable in a civil lawsuit, never subject to any statutory violation",
+    "choice_d": "Exempt if the accident occurred in a bayou rather than open water",
+    "correct_choice": "A",
+    "explanation": "Louisiana's accident-reporting law requires providing identifying information at the scene, so leaving without doing so is a violation of that duty, regardless of where on Louisiana's waters the accident occurred.",
+    "weight": 4,
+    "source_note": "LDWF, Report Boat Crash, Collision, or Casualty (wlf.louisiana.gov/page/report-boat-crash-collision-or-casualty)"
+  }
+]

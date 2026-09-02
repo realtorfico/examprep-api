@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "Under the \"red right returning\" convention of the U.S. Aids to Navigation System, what should a boater do when returning from open water into a harbor or upstream?",
+    "choice_a": "Keep red markers on the right (starboard) side and green markers on the left (port) side of the vessel",
+    "choice_b": "Keep green markers on the right side and red markers on the left side",
+    "choice_c": "Ignore all markers and rely only on GPS",
+    "choice_d": "Red and green markers mean the same thing and can be passed on either side",
+    "correct_choice": "A",
+    "explanation": "\"Red right returning\" reminds boaters that when heading upstream or into a harbor from open water, red markers should be kept on the starboard (right) side and green markers on the port (left) side.",
+    "weight": 4,
+    "source_note": "Universal U.S. Aids to Navigation System, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What shape and number convention is used on green lateral markers in the U.S. Aids to Navigation System?",
+    "choice_a": "Green markers are used only to mark swimming areas",
+    "choice_b": "Green markers are typically square-shaped (can-shaped buoys) and carry odd numbers",
+    "choice_c": "Green markers are always triangular and carry even numbers",
+    "choice_d": "Green markers have no consistent shape or numbering convention",
+    "correct_choice": "B",
+    "explanation": "Green lateral markers are typically can-shaped (square-topped) and carry odd numbers, while red lateral markers are typically nun-shaped (cone-topped) and carry even numbers, helping boaters judge their position by the numbering sequence.",
+    "weight": 3,
+    "source_note": "Universal U.S. Aids to Navigation System, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does an orange diamond-shaped buoy with a diamond and cross symbol indicate?",
+    "choice_a": "A refueling station",
+    "choice_b": "A permitted swimming zone",
+    "choice_c": "A danger area that vessels should not enter, such as a shoal, dam, or other hazard",
+    "choice_d": "A recommended anchorage",
+    "correct_choice": "C",
+    "explanation": "An orange diamond with a cross inside on a white buoy is a danger marker warning boaters to stay out of the marked area, such as near a dam, shoal, or other hazard, which is especially relevant near Hoover Dam's intake structures on Lake Mead.",
+    "weight": 3,
+    "source_note": "Universal Uniform State Waterway Marking System, NASBLA-aligned boating safety curriculum, applied near Hoover Dam on Lake Mead"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a plain orange circle on a white buoy signify in the Uniform State Waterway Marking System?",
+    "choice_a": "A no-fishing zone with no speed restriction",
+    "choice_b": "A permitted PWC-only zone",
+    "choice_c": "A marina fuel dock",
+    "choice_d": "A restricted operating area, such as a no-wake or controlled-speed zone",
+    "correct_choice": "D",
+    "explanation": "An orange circle marks a controlled or restricted operating area, commonly used to designate no-wake zones or speed-restricted zones near marinas, launch ramps, and swimming beaches.",
+    "weight": 3,
+    "source_note": "Universal Uniform State Waterway Marking System, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does an orange square on a white buoy generally indicate?",
+    "choice_a": "General information, such as directions, distances, or locations",
+    "choice_b": "A mandatory stop for all vessels",
+    "choice_c": "A prohibited fishing zone",
+    "choice_d": "A dam release warning specific to Hoover Dam only",
+    "correct_choice": "A",
+    "explanation": "An orange square on a white buoy is an information marker used to provide directions, locations, or other useful information to boaters, distinct from the diamond (danger) and circle (controlled area) symbols.",
+    "weight": 2,
+    "source_note": "Universal Uniform State Waterway Marking System, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is the purpose of a mooring buoy, typically marked in white with a blue horizontal band?",
+    "choice_a": "It indicates a fuel dock",
+    "choice_b": "It provides an anchor point to which a vessel may be tied, rather than a channel or hazard marker",
+    "choice_c": "It marks a swimming-only zone",
+    "choice_d": "It marks a hazardous shoal that vessels must avoid",
+    "correct_choice": "B",
+    "explanation": "A white buoy with a blue band is a mooring buoy, meant for securing a vessel, and is distinct in color and purpose from the lateral (red/green), danger (orange diamond), or informational (orange square) markers.",
+    "weight": 2,
+    "source_note": "Universal Uniform State Waterway Marking System, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What should a boater assume when passing between a red and green striped junction/preferred channel marker?",
+    "choice_a": "The marker means the channel is permanently closed",
+    "choice_b": "Striped markers are only decorative buoys used at marinas",
+    "choice_c": "The marker indicates a channel junction or obstruction, and the topmost color shows which side is the preferred channel",
+    "choice_d": "Striped red-and-green markers have no navigational meaning",
+    "correct_choice": "C",
+    "explanation": "A red-and-green striped junction marker indicates where a channel splits or an obstruction can be passed on either side, with the top color showing the preferred, or primary, channel side.",
+    "weight": 3,
+    "source_note": "Universal U.S. Aids to Navigation System (junction/preferred channel markers), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Why is careful attention to navigational markers especially important on Lake Mead compared to a small, simple pond?",
+    "choice_a": "Lake Mead has no navigational markers at all",
+    "choice_b": "Water level on Lake Mead never changes, so markers are purely decorative",
+    "choice_c": "Markers on Lake Mead are only used to mark scenic viewpoints",
+    "choice_d": "Lake Mead is a large reservoir with submerged canyons, fluctuating water levels, and old roadbeds and structures that can create underwater hazards, so markers help boaters avoid areas that look open but hide obstructions",
+    "correct_choice": "D",
+    "explanation": "Lake Mead's water level has fluctuated dramatically due to drought and reservoir management, exposing or submerging hazards like old roadbeds, mining structures, and shifting shoals, making attention to markers and updated hazard information especially important.",
+    "weight": 3,
+    "source_note": "General reservoir hazard fundamentals applied to Lake Mead's documented fluctuating water levels and submerged structures"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does it mean if a lateral buoy is unlit at night versus a lighted version of the same marker?",
+    "choice_a": "An unlit buoy still carries the same color/shape meaning by day, but boaters operating at night rely on lighted aids where available since unlit markers can be very hard to see in the dark",
+    "choice_b": "Unlit buoys are never used on any navigable water",
+    "choice_c": "An unlit marker automatically means the channel is closed",
+    "choice_d": "Lighting has no effect on a marker's visibility or usefulness",
+    "correct_choice": "A",
+    "explanation": "Unlit markers retain their daytime shape and color meaning, but they are far harder to spot at night; operators running after dark should rely on lighted aids where available and use extra caution around unlit ones.",
+    "weight": 2,
+    "source_note": "Universal U.S. Aids to Navigation System (lighted vs. unlighted aids), NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is the purpose of a regulatory swim-area marker (white buoy with an orange horizontal band top and bottom)?",
+    "choice_a": "It has no regulatory meaning and is purely aesthetic",
+    "choice_b": "It marks a designated swimming area that boaters must stay out of to protect swimmers",
+    "choice_c": "It marks a safe area for high-speed PWC activity",
+    "choice_d": "It marks the deepest part of the lake",
+    "correct_choice": "B",
+    "explanation": "Swim-area markers use orange bands on a white buoy to cordon off a swimming zone that boaters must avoid, protecting swimmers from vessel traffic near beaches on lakes like Lake Mead and Lake Tahoe.",
+    "weight": 2,
+    "source_note": "Universal Uniform State Waterway Marking System, NASBLA-aligned boating safety curriculum"
+  }
+]

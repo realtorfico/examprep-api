@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Which Missouri agency handles vessel registration applications under RSMo 306.030, rather than the Water Patrol Division?",
+    "choice_a": "The Missouri Department of Revenue",
+    "choice_b": "The Missouri Department of Conservation",
+    "choice_c": "The Missouri Secretary of State",
+    "choice_d": "The U.S. Coast Guard exclusively",
+    "correct_choice": "A",
+    "explanation": "Vessel registration and titling applications in Missouri are filed with the Department of Revenue, which issues the certificate of number, while the Water Patrol Division of the Highway Patrol handles boating law enforcement and boater education certification.",
+    "weight": 4,
+    "source_note": "RSMo 306.030 (vessel registration through the Department of Revenue)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "How long does a standard Missouri vessel certificate of number remain valid before requiring renewal, under RSMo 306.030?",
+    "choice_a": "One year",
+    "choice_b": "Three years",
+    "choice_c": "Ten years",
+    "choice_d": "It never expires under the standard option",
+    "correct_choice": "B",
+    "explanation": "A standard Missouri certificate of number is valid for three years and may be renewed by the owner; a permanent certificate option also exists at triple the standard fee, though it cannot be transferred to a different vessel or owner.",
+    "weight": 3,
+    "source_note": "RSMo 306.030 (certificate of number validity period)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "How are Missouri's vessel registration fees under RSMo 306.030 structured?",
+    "choice_a": "A single flat $500 fee applies to every vessel regardless of size",
+    "choice_b": "Fees are based solely on engine horsepower, never vessel length",
+    "choice_c": "They scale by vessel length, ranging from $25 for vessels under 16 feet up to $150 for vessels 40 feet and over",
+    "choice_d": "There is no registration fee in Missouri",
+    "correct_choice": "C",
+    "explanation": "Missouri's registration fee scales with vessel length: $25 for under 16 feet, $55 for 16 to under 26 feet, $100 for 26 to under 40 feet, and $150 for 40 feet and over, with a special reduced rate for certain homemade wooden vessels.",
+    "weight": 3,
+    "source_note": "RSMo 306.030 (registration fee schedule by vessel length)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Under RSMo 306.030, how must a Missouri vessel's identification number be displayed?",
+    "choice_a": "Displayed only on paperwork kept at home, never on the vessel itself",
+    "choice_b": "Displayed on the stern only, never the bow",
+    "choice_c": "There is no display requirement once a vessel is registered",
+    "choice_d": "Painted on or attached to each side of the bow, maintained in legible condition, with the certificate of number available for inspection on board",
+    "correct_choice": "D",
+    "explanation": "Missouri law requires the assigned identification number to be painted on or attached to each side of the bow and kept legible, and the certificate of number itself must be available aboard the vessel for inspection at any time.",
+    "weight": 3,
+    "source_note": "RSMo 306.030 (identification number display requirement)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "What tax documentation must generally accompany a Missouri vessel registration application under RSMo 306.030?",
+    "choice_a": "A paid personal property tax receipt, or a county/township certification showing personal property taxes were paid for the preceding tax year",
+    "choice_b": "No tax documentation is ever required for vessel registration",
+    "choice_c": "Only federal income tax returns are accepted",
+    "choice_d": "A hunting license",
+    "correct_choice": "A",
+    "explanation": "Missouri requires vessel registration applicants to submit either a paid personal property tax receipt or a county/township certification confirming personal property taxes were paid for the prior tax year, similar to the process for registering a motor vehicle.",
+    "weight": 3,
+    "source_note": "RSMo 306.030 (tax documentation requirement)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Under RSMo 306.142, what is the minimum age to operate a personal watercraft (PWC) in Missouri?",
+    "choice_a": "There is no minimum age for PWC operation in Missouri",
+    "choice_b": "14 years old, unless a person at least 16 years old is also aboard",
+    "choice_c": "21 years old, with no exceptions",
+    "choice_d": "8 years old",
+    "correct_choice": "B",
+    "explanation": "Missouri sets 14 as the minimum age to operate a PWC, but a person under 14 may operate one if someone at least 16 years old is also aboard the vessel to supervise.",
+    "weight": 4,
+    "source_note": "RSMo 306.142 (personal watercraft minimum operating age)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Under RSMo 306.142, what must a PWC operator do with a lanyard-type engine cutoff switch?",
+    "choice_a": "Leave the lanyard disconnected to avoid accidental shutoffs",
+    "choice_b": "Lanyard-type switches are illegal to use on Missouri PWCs",
+    "choice_c": "Attach the lanyard to their body, clothing, or personal flotation device while operating the PWC",
+    "choice_d": "Attach the lanyard to a fixed point on the dock, not the operator",
+    "correct_choice": "C",
+    "explanation": "Missouri law requires a PWC operator whose vessel is equipped with a lanyard-type engine cutoff switch to physically attach that lanyard to their body, clothing, or PFD, so the engine shuts off automatically if the operator is thrown from the vessel.",
+    "weight": 4,
+    "source_note": "RSMo 306.142 (engine cutoff lanyard requirement)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Which of the following unsafe behaviors is specifically prohibited for PWC operators under RSMo 306.142?",
+    "choice_a": "Operating at idle speed near a marina",
+    "choice_b": "Wearing a PFD while operating",
+    "choice_c": "Registering the PWC with the Department of Revenue",
+    "choice_d": "Weaving through congested vessel traffic, jumping the wake of another vessel with obstructed visibility, or becoming airborne within 100 feet of another vessel's wake",
+    "correct_choice": "D",
+    "explanation": "Missouri's PWC statute specifically prohibits weaving through congested traffic, jumping another vessel's wake with obstructed visibility, and becoming airborne within 100 feet of another vessel's wake, in addition to a general requirement that PWCs be operated in a reasonable and prudent manner.",
+    "weight": 4,
+    "source_note": "RSMo 306.142 (prohibited unsafe PWC operating behaviors)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Under RSMo 306.142, what must a PWC operator have aboard (or ensure exists) before towing a person on water skis?",
+    "choice_a": "Either a second person aboard acting as an observer, or an approved ski mirror",
+    "choice_b": "Nothing additional is required to tow a skier from a PWC",
+    "choice_c": "A second engine",
+    "choice_d": "A fire extinguisher rated for Class C fires only",
+    "correct_choice": "A",
+    "explanation": "Missouri requires a PWC towing a water-skier to have either a second person aboard serving as an observer watching the skier, or an approved ski mirror allowing the operator to monitor the skier without a dedicated observer.",
+    "weight": 4,
+    "source_note": "RSMo 306.142 (observer or mirror requirement for PWC-towed skiing)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Which events are exempt from Missouri's standard PWC operating restrictions under RSMo 306.142?",
+    "choice_a": "No event of any kind is ever exempt",
+    "choice_b": "Participants in permitted regattas, races, marine parades, tournaments, or exhibitions",
+    "choice_c": "Only private family gatherings on a dock",
+    "choice_d": "Fishing tournaments are the only exempt category",
+    "correct_choice": "B",
+    "explanation": "Missouri's PWC operating restrictions do not apply to participants in a properly permitted regatta, race, marine parade, tournament, or exhibition, recognizing that sanctioned competitive events operate under their own safety plan and permit conditions.",
+    "weight": 3,
+    "source_note": "RSMo 306.142 (exemption for permitted regattas and competitive events)"
+  }
+]

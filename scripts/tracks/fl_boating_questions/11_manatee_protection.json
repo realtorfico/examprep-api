@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "What state law gave FWC the authority to establish manatee protection zones in Florida waters?",
+    "choice_a": "The Florida Manatee Sanctuary Act",
+    "choice_b": "The Clean Water Act",
+    "choice_c": "The federal Endangered Species Act, with no state-level authority involved",
+    "choice_d": "There is no specific law authorizing manatee zones; they are informal guidelines only",
+    "correct_choice": "A",
+    "explanation": "The Florida Manatee Sanctuary Act (enacted 1978) authorizes FWC to adopt manatee protection zone rules restricting vessel speed and operation in areas important to manatee habitat and travel.",
+    "weight": 4,
+    "source_note": "Florida Manatee Sanctuary Act, 1978"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "Why are manatee protection zones needed on Florida waterways?",
+    "choice_a": "Manatee zones were created to generate ticket revenue with no conservation purpose",
+    "choice_b": "Collisions with boats are the leading cause of manatee injuries and deaths, and slower vessel speeds give both manatees and boaters more time to react and avoid a strike",
+    "choice_c": "Manatees are unaffected by boat traffic and the zones exist purely for aesthetic reasons",
+    "choice_d": "The zones exist only to reduce noise pollution, unrelated to manatee safety",
+    "correct_choice": "B",
+    "explanation": "Watercraft collisions are the leading human-related cause of manatee injury and mortality; slow-speed zones reduce impact force and give both manatees and boat operators more reaction time.",
+    "weight": 4,
+    "source_note": "FWC manatee protection zone rationale, collision statistics"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "What speed range generally characterizes an 'idle speed' manatee zone?",
+    "choice_a": "No speed limit at all; 'idle' only restricts engine noise",
+    "choice_b": "Exactly 15 mph in every idle zone statewide",
+    "choice_c": "Roughly 2 to 5 mph, the slowest speed at which a vessel can maintain steerage",
+    "choice_d": "25 to 30 mph",
+    "correct_choice": "C",
+    "explanation": "Idle-speed manatee zones require the slowest possible speed while still maintaining steering control, generally in the range of about 2 to 5 mph.",
+    "weight": 3,
+    "source_note": "FWC manatee protection zone speed categories"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "What speed range generally characterizes a 'slow speed' manatee zone?",
+    "choice_a": "40 mph or greater",
+    "choice_b": "Slow speed zones have no defined range and are left entirely to operator discretion",
+    "choice_c": "Slow speed is identical to idle speed with no distinction",
+    "choice_d": "Roughly 5 to 7 mph, requiring the vessel to be fully off plane and settled in the water",
+    "correct_choice": "D",
+    "explanation": "A slow-speed manatee zone is somewhat less restrictive than idle speed, generally allowing roughly 5 to 7 mph as long as the vessel is off plane and not producing excessive wake.",
+    "weight": 3,
+    "source_note": "FWC manatee protection zone speed categories"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "How many Florida counties currently have FWC-adopted manatee protection zone rules?",
+    "choice_a": "18 counties",
+    "choice_b": "All 67 counties",
+    "choice_c": "Only 2 counties",
+    "choice_d": "Manatee zones exist statewide with no county-by-county designation",
+    "correct_choice": "A",
+    "explanation": "FWC has adopted manatee protection zone rules in 18 Florida counties, generally those with significant manatee habitat or high boat-traffic risk, since the first county rules (Martin County) were adopted in 1990.",
+    "weight": 2,
+    "source_note": "FWC Manatee Protection Zones program, county coverage"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "Do manatee protection zone speed limits apply to activities like water skiing or tubing that require higher speed?",
+    "choice_a": "Manatee zones only apply between 9 a.m. and 5 p.m.",
+    "choice_b": "Yes -- posted manatee zones restrict all vessel activity, so towed watersports cannot legally be conducted inside them",
+    "choice_c": "No, towed watersports are automatically exempt from manatee zone speed limits",
+    "choice_d": "Manatee zones only apply to vessels over 26 feet",
+    "correct_choice": "B",
+    "explanation": "Manatee protection zones apply to all vessel operation within their boundaries, meaning activities requiring planing speed, like water skiing or tubing, are not permitted inside a posted idle-speed or slow-speed manatee zone.",
+    "weight": 3,
+    "source_note": "FWC manatee zone enforcement scope"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "Can manatee protection zone boundaries or seasonal effective dates change over time?",
+    "choice_a": "Manatee zones are always in effect year-round with no seasonal variation anywhere in Florida",
+    "choice_b": "Only the federal government, never FWC, can change a manatee zone",
+    "choice_c": "Yes -- FWC periodically reviews manatee habitat use, boater traffic, and collision/rescue data, and zone rules can be revised, and some zones are seasonal (in effect only part of the year)",
+    "choice_d": "No, once established a manatee zone boundary can never change",
+    "correct_choice": "C",
+    "explanation": "FWC reviews manatee zone rules using updated habitat, boating-use, and manatee mortality/rescue data, and some zones are seasonal, in effect only during months of higher manatee presence, so boaters should check current charts and signage.",
+    "weight": 3,
+    "source_note": "FWC manatee protection zone review process and seasonal zones"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "What should a boater do if they see a manatee swimming near their vessel?",
+    "choice_a": "Speed up to move past the animal quickly",
+    "choice_b": "Attempt to touch, feed, or ride the manatee for a closer look",
+    "choice_c": "There is no legal restriction on approaching manatees closely",
+    "choice_d": "Slow down, maintain a safe distance, and avoid disturbing or approaching the animal, since it is illegal to harass manatees",
+    "correct_choice": "D",
+    "explanation": "Manatees are protected under both state and federal law; boaters should slow down and keep a respectful distance, since it is illegal to harass, touch, feed, or ride a manatee.",
+    "weight": 3,
+    "source_note": "Florida Manatee Sanctuary Act; federal Marine Mammal Protection Act / Endangered Species Act protections"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "How are manatee protection zone boundaries typically marked for boaters on the water?",
+    "choice_a": "With orange-circle regulatory markers or signs indicating idle-speed or slow-speed zones, matching the standard U.S. Uniform State Waterway Marking System",
+    "choice_b": "There is no marking system; boaters must guess where zones begin and end",
+    "choice_c": "Only by radio announcements, with no visible signage",
+    "choice_d": "With red-and-white vertically striped safe-water marks",
+    "correct_choice": "A",
+    "explanation": "Manatee zones are marked with standard orange-circle regulatory markers or posted signs indicating idle-speed or slow-speed requirements, consistent with the broader Uniform State Waterway Marking System.",
+    "weight": 3,
+    "source_note": "FWC manatee zone signage, Uniform State Waterway Marking System"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "What can happen to a boater who is cited for violating a posted manatee protection zone speed limit?",
+    "choice_a": "Manatee zone violations can only be enforced by federal wildlife agents, never FWC or local police",
+    "choice_b": "They can receive a citation and fine from FWC or another law enforcement agency for violating the posted zone",
+    "choice_c": "There is no enforcement mechanism; manatee zones are purely advisory",
+    "choice_d": "Only commercial vessels can be cited; recreational boaters are exempt",
+    "correct_choice": "B",
+    "explanation": "Manatee protection zones are enforceable regulatory boating-restricted areas, and FWC officers along with other authorized law enforcement can cite and fine boaters who violate a posted zone.",
+    "weight": 3,
+    "source_note": "FWC manatee zone enforcement authority"
+  }
+]

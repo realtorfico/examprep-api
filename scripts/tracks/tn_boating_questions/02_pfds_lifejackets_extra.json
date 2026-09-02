@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "In the standard PFD classification used in boating safety courses, what is a Type II PFD best suited for, compared to a Type III?",
+    "choice_a": "Near-shore, calm inland water where quick rescue is likely, offering some turning ability for an unconscious wearer, unlike the non-turning Type III",
+    "choice_b": "Only for use by certified lifeguards",
+    "choice_c": "Offshore commercial diving exclusively",
+    "choice_d": "Only for use on personal watercraft",
+    "correct_choice": "A",
+    "explanation": "A Type II PFD is intended for calm, near-shore water where rescue is likely to be quick, and it will turn some unconscious wearers face-up, a feature the more comfortable, general-purpose Type III PFD does not reliably provide.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned PFD classification)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a Type V PFD, in the standard classification used in boating safety courses?",
+    "choice_a": "A special-use device, such as a paddling vest or deck suit, approved only for the specific activity stated on its label",
+    "choice_b": "A device that never needs Coast Guard approval",
+    "choice_c": "The same thing as a Type IV throwable device",
+    "choice_d": "A device that can never legally be worn while underway",
+    "correct_choice": "A",
+    "explanation": "A Type V PFD is a special-use device, such as a paddling vest, deck suit, or work vest, that is approved by the Coast Guard only for the specific activity noted on its label and must generally be worn, not just carried, to count toward the wearable-PFD requirement.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned PFD classification)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why is it important to periodically check a PFD's buoyant foam or inflation mechanism for wear before the boating season?",
+    "choice_a": "Foam that has become compressed, waterlogged, or an inflator with an expired or spent cartridge may not provide adequate flotation in an emergency",
+    "choice_b": "PFDs never degrade over time regardless of storage conditions",
+    "choice_c": "It is purely a cosmetic concern",
+    "choice_d": "Only PFDs used on personal watercraft need to be checked",
+    "correct_choice": "A",
+    "explanation": "Foam PFDs can lose buoyancy if the foam becomes compressed or waterlogged over time, and inflatable PFDs rely on a properly charged CO2 cartridge, so both types should be inspected regularly to confirm they will still work in an emergency.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why do most instructors recommend trying on and testing a PFD in the water before relying on it in an emergency?",
+    "choice_a": "It confirms the PFD's size and fit actually keep the wearer's head above water and float comfortably for that specific person",
+    "choice_b": "It is a legal requirement to swim with every PFD before each outing",
+    "choice_c": "It has no practical value and is not recommended",
+    "choice_d": "It only matters for inflatable PFDs, never for foam PFDs",
+    "correct_choice": "A",
+    "explanation": "Testing a PFD in the water ahead of time confirms that its size and fit actually keep that individual wearer's head comfortably above water, since fit and body composition can affect how well a given PFD performs for a specific person.",
+    "weight": 1,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Besides children 12 and under, PWC riders, and persons under 16, who else does general cold-water boating safety guidance strongly recommend wear a PFD at all times, even when not legally mandated?",
+    "choice_a": "Anyone operating or riding in a small boat on cold or rough water, since sudden immersion leaves little time to put one on after falling in",
+    "choice_b": "No one; PFDs are only useful for non-swimmers",
+    "choice_c": "Only boaters operating at night",
+    "choice_d": "Only boaters who cannot afford a larger vessel",
+    "correct_choice": "A",
+    "explanation": "Because sudden immersion, especially in cold or rough water, can incapacitate a person before they have a chance to put on a PFD, safety guidance strongly recommends wearing one continuously in small boats and hazardous conditions, not just when legally required.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  }
+]

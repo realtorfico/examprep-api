@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "How does Connecticut's free \"If Found\" sticker, provided under Public Act 26-60 for unregistered paddlecraft, help reduce unnecessary search-and-rescue callouts?",
+    "choice_a": "By letting rescuers or bystanders who find an empty kayak, canoe, or paddleboard quickly contact the owner directly, helping confirm whether an emergency is actually underway",
+    "choice_b": "It has no relationship to search and rescue and exists purely for decoration",
+    "choice_c": "It automatically alerts the Coast Guard by satellite the moment a paddlecraft capsizes",
+    "choice_d": "It replaces the need for a PFD aboard a kayak or canoe",
+    "correct_choice": "A",
+    "explanation": "Because unregistered paddlecraft carry no registration number to trace an owner, DEEP's free \"If Found\" sticker lets a person who discovers an empty kayak, canoe, or paddleboard reach the owner directly and confirm whether they are safely ashore, helping save lives, recover property, and reduce the time and resources spent on non-emergency search-and-rescue operations.",
+    "weight": 3,
+    "source_note": "CT DEEP, \"If Found\" Sticker page, portal.ct.gov/DEEP/Boating/Safety/If-Found-Sticker; Public Act 26-60 (2026)"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "Why does DEEP's \"If Found\" sticker guidance recommend listing two separate phone numbers rather than just one?",
+    "choice_a": "If the paddler falls overboard, their cell phone may end up in the water with them and stop working, so a second number improves the odds someone can be reached",
+    "choice_b": "Connecticut law requires exactly two phone numbers on every sticker with no stated reason",
+    "choice_c": "One number is reserved for DEEP's own internal use only",
+    "choice_d": "Two numbers are required so the sticker can also serve as a fishing license",
+    "correct_choice": "A",
+    "explanation": "DEEP's guidance explains that a paddler's cell phone may end up in the water with them if they fall overboard and stop working, so listing two phone numbers on the \"If Found\" sticker improves the chance that at least one contact method still reaches someone who can confirm the boater's safety.",
+    "weight": 2,
+    "source_note": "CT DEEP, \"If Found\" Sticker page, portal.ct.gov/DEEP/Boating/Safety/If-Found-Sticker"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "What does the widely taught \"1-10-1\" principle describe about sudden cold-water immersion?",
+    "choice_a": "Roughly 1 minute to get cold-shock breathing under control, about 10 minutes of meaningful muscle movement before losing dexterity, and about 1 hour before losing consciousness -- rough guideposts that vary with water temperature",
+    "choice_b": "A rule stating a boater has exactly 1 hour to swim 10 miles before rescue is impossible",
+    "choice_c": "A requirement that boaters check the weather forecast 1 time every 10 days",
+    "choice_d": "A formula for calculating how many life jackets a vessel must carry",
+    "correct_choice": "A",
+    "explanation": "The \"1-10-1\" principle is a widely taught approximation of the stages of cold-water immersion: about 1 minute to bring the initial cold-shock gasping response under control, roughly 10 minutes of useful muscle function before hands and limbs stop working reliably, and about 1 hour before hypothermia can cause unconsciousness -- underscoring why immediate flotation and self-rescue matter far more than trying to swim a long distance in cold water.",
+    "weight": 3,
+    "source_note": "General cold-water immersion safety fundamentals (NASBLA-aligned boating safety curriculum), applied to Connecticut's cold-season boating"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "Besides riding in the wake directly behind a moving boat (\"teak surfing\"), in what other common situation can carbon monoxide dangerously accumulate around a boat?",
+    "choice_a": "Near the stern, swim platform, or open rear deck of a boat that is idling or running its generator at anchor, even when no one is being towed",
+    "choice_b": "Carbon monoxide can only ever be a hazard while the boat is actively towing someone in the water",
+    "choice_c": "Carbon monoxide only accumulates while a boat is out of the water on a trailer",
+    "choice_d": "Carbon monoxide has a strong, easily detectable odor that always warns swimmers in time",
+    "correct_choice": "A",
+    "explanation": "Carbon monoxide is colorless and odorless, and it can build up dangerously not only while towing a swimmer close behind an idling boat, but also around the stern, swim platform, or rear deck of a boat that is simply idling at anchor or running a generator, putting swimmers or sunbathers near the back of the boat at risk even when no one is being towed.",
+    "weight": 3,
+    "source_note": "General carbon-monoxide-safety fundamentals (NASBLA-aligned boating safety curriculum) applied to Connecticut's \"Teak Surfing and Carbon Monoxide\" guidance"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "When a swamped or capsized boat is still afloat and it is safe to do so, why is climbing back aboard over the stern or transom often recommended over other points of the hull?",
+    "choice_a": "The stern or transom is typically the lowest point of freeboard, making it easier to climb back aboard than trying to pull up over a higher side",
+    "choice_b": "The stern is always the farthest point from any potential hazard, regardless of the boat's design",
+    "choice_c": "Climbing in from the stern is never recommended under any circumstances",
+    "choice_d": "The bow is always the lowest point on every vessel design",
+    "correct_choice": "A",
+    "explanation": "On many recreational boats, the stern or transom sits lowest to the water, so re-boarding there (when it is safe to do so and away from a still-running propeller) generally requires less strength and is easier than trying to climb up and over a higher freeboard side of the hull.",
+    "weight": 2,
+    "source_note": "General capsizing/self-rescue fundamentals (NASBLA-aligned boating safety curriculum) applied to Connecticut waters"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "Besides flares or an orange distress flag, what simple physical distress signal is officially recognized under the Navigation Rules for a person needing help?",
+    "choice_a": "Slowly and repeatedly raising and lowering both arms outstretched to each side",
+    "choice_b": "Waving a single arm quickly overhead is never recognized as a distress signal",
+    "choice_c": "Standing perfectly still with arms at one's sides",
+    "choice_d": "Pointing at the water with one finger",
+    "correct_choice": "A",
+    "explanation": "Among the distress signals officially recognized under the Navigation Rules is a person slowly and repeatedly raising and lowering both arms outstretched to each side -- a simple, equipment-free way to signal distress when flares, an electronic VDS, or a radio are not available or not working.",
+    "weight": 3,
+    "source_note": "General Navigation Rules (Annex IV, distress signals), universal NASBLA-aligned boating safety curriculum, applied to Connecticut waters"
+  }
+]

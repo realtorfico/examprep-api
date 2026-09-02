@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under 625 ILCS 45/6, a vessel operator must make a written accident report when a boating accident results in which of the following?",
+    "choice_a": "Any accident at all, regardless of outcome",
+    "choice_b": "Only accidents involving two or more vessels",
+    "choice_c": "Only accidents occurring on Lake Michigan",
+    "choice_d": "Loss of life or disappearance of a person, injury to any person, or property damage exceeding $2,000",
+    "correct_choice": "D",
+    "explanation": "Illinois requires a written report for boating accidents involving loss of life or disappearance, injury to any person, or property damage in excess of $2,000.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/6; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under Illinois law, within how many hours must a boating accident resulting in death be reported to the DNR?",
+    "choice_a": "48 hours",
+    "choice_b": "5 days",
+    "choice_c": "30 days",
+    "choice_d": "There is no reporting deadline for a fatal accident",
+    "correct_choice": "A",
+    "explanation": "Illinois requires accidents resulting in death to be reported to the DNR by the vessel operator within 48 hours of the accident, a shorter deadline than for other serious injuries.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/6; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under Illinois law, within how many days must other serious injuries and accidents (not involving death) be reported to the DNR?",
+    "choice_a": "There is no reporting requirement for non-fatal accidents",
+    "choice_b": "5 days",
+    "choice_c": "48 hours",
+    "choice_d": "30 days",
+    "correct_choice": "B",
+    "explanation": "Illinois requires non-fatal serious injuries and other reportable accidents to be reported to the DNR within five days, compared with the 48-hour deadline for fatal accidents.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/6; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Where can an Illinois boater obtain the required accident report forms?",
+    "choice_a": "Accident report forms do not exist in Illinois",
+    "choice_b": "Only from a private insurance agent",
+    "choice_c": "From any DNR office or via the Internet",
+    "choice_d": "Only from the county sheriff's department",
+    "correct_choice": "C",
+    "explanation": "Illinois makes accident report forms available from any DNR office or online, streamlining the process of filing a required report after a qualifying boating accident.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/6; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under 625 ILCS 45/2 and 45/5-22, which officers have authority to enforce Illinois boating laws?",
+    "choice_a": "Only officers specifically assigned to Lake Michigan patrols",
+    "choice_b": "Only officers with a boating-specific certification separate from standard police training",
+    "choice_c": "Boating laws in Illinois are not enforced by any law enforcement agency",
+    "choice_d": "Illinois DNR officers and all other law enforcement officers",
+    "correct_choice": "D",
+    "explanation": "Illinois law grants enforcement authority over boating laws to DNR officers as well as all other law enforcement officers, not just a single specialized unit.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/2 and 45/5-22; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What must an operator do if signaled by a law enforcement officer to stop, whether by visual or audible signal?",
+    "choice_a": "Bring the vessel to a stop -- refusing to follow a law enforcement directive is illegal",
+    "choice_b": "Continue operating unless a warrant is presented first",
+    "choice_c": "Only stop if the officer is aboard a DNR-marked vessel",
+    "choice_d": "Ignore the signal if in international or federal waters",
+    "correct_choice": "A",
+    "explanation": "Illinois law makes it illegal to refuse to follow the directive of a person with law enforcement authority; an operator who receives a visual or audible stop signal from an officer must bring the vessel to a stop.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-22; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What can happen to an operator's vessel operating privileges if they fail to yield or slow for an approaching emergency vessel using legal visual signals?",
+    "choice_a": "Automatic permanent revocation of the vessel's registration",
+    "choice_b": "A mandatory suspension of vessel operating privileges for a period of three months up to two years",
+    "choice_c": "No penalty applies, since this is only a recommendation, not a legal requirement",
+    "choice_d": "A warning only, with no further consequence",
+    "correct_choice": "B",
+    "explanation": "Illinois imposes a mandatory suspension of vessel operating privileges, ranging from three months up to two years, on an operator who fails to yield or slow to an approaching emergency vessel using legal visual signals.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/5-22; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What authority do IDNR officers and other law enforcement officers have regarding a vessel on Illinois waters, even absent evidence of a specific violation?",
+    "choice_a": "Authority limited strictly to vessels displaying an expired registration",
+    "choice_b": "Authority only over commercial vessels, not recreational ones",
+    "choice_c": "The authority to stop and board the vessel to check compliance with state and federal boating laws",
+    "choice_d": "No authority to board any vessel without a search warrant",
+    "correct_choice": "C",
+    "explanation": "Illinois grants officers broad authority to stop and board vessels specifically to verify compliance with state and federal boating laws, similar to routine safety inspections in other contexts.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/2 and 45/5-22; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Who is generally responsible for filing the required written accident report after a qualifying Illinois boating accident?",
+    "choice_a": "Only a witness who was not aboard either vessel",
+    "choice_b": "Only the vessel's insurance company",
+    "choice_c": "Reporting is entirely optional in Illinois",
+    "choice_d": "The vessel operator",
+    "correct_choice": "D",
+    "explanation": "Illinois law places the responsibility for filing the required written accident report on the vessel operator, who must submit it to the DNR within the applicable deadline.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/6; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "For accident-reporting purposes, how is the $2,000 property damage threshold under 625 ILCS 45/6 best understood?",
+    "choice_a": "It is the dollar amount of property damage above which a boating accident becomes reportable, even if no one was injured or killed",
+    "choice_b": "It is a fine amount charged for filing a late accident report",
+    "choice_c": "It is the maximum damage amount a vessel's insurance is required to cover",
+    "choice_d": "It only applies to damage to a public launching ramp",
+    "correct_choice": "A",
+    "explanation": "Property damage exceeding $2,000 is one of the three independent triggers -- alongside death/disappearance and injury -- that make an Illinois boating accident legally reportable, regardless of whether anyone was hurt.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/6; Handbook of Illinois Boating Laws and Responsibilities"
+  }
+]

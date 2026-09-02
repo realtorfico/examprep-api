@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Accident Reporting",
+    "question": "Within what timeframe must a boating accident causing a fatality, injury, or property damage exceeding $2,000 be reported to Alabama's Marine Patrol Division?",
+    "choice_a": "Within 30 days",
+    "choice_b": "Reporting is entirely optional and has no deadline",
+    "choice_c": "Within 24 hours of the accident",
+    "choice_d": "Within one calendar year",
+    "correct_choice": "C",
+    "explanation": "Alabama law requires operators involved in a boating accident causing a fatality, an injury, or property damage exceeding $2,000 to submit a report to the Marine Patrol Division within 24 hours of the accident -- a notably tighter window than the multi-day reporting deadlines used in several other states.",
+    "weight": 5,
+    "source_note": "ALEA boating rules and regulations (24-hour accident reporting deadline)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "What three triggering conditions require a boating accident report to be filed in Alabama?",
+    "choice_a": "Only accidents involving personal watercraft require any report",
+    "choice_b": "Only a fatality triggers any reporting requirement",
+    "choice_c": "Any accident at all, regardless of damage or injury, no matter how minor",
+    "choice_d": "A fatality, an injury, or property damage exceeding $2,000",
+    "correct_choice": "D",
+    "explanation": "Alabama's reportable-accident threshold is triggered by any of three conditions: a death, an injury, or property damage exceeding $2,000, distinguishing accidents serious enough to require formal reporting from minor incidents.",
+    "weight": 4,
+    "source_note": "ALEA boating rules and regulations (reportable accident thresholds)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "If a boat operator is involved in a collision on Lake Eufaula that injures a passenger, what is the operator's first duty at the scene, before any formal written report is filed?",
+    "choice_a": "Render reasonable assistance to anyone injured, so long as doing so does not create serious danger to themselves or others, and identify themselves to those involved",
+    "choice_b": "Leave the scene immediately to avoid liability",
+    "choice_c": "Wait for a Marine Patrol officer to arrive before doing anything at all, including basic first aid",
+    "choice_d": "There is no duty to assist an injured person after a boating accident",
+    "correct_choice": "A",
+    "explanation": "As with a vehicle accident on the road, an operator involved in a boating accident has a duty to render reasonable assistance to anyone injured (as long as it does not create serious danger to the operator or others) and to identify themselves, before or alongside any later formal reporting to Marine Patrol.",
+    "weight": 4,
+    "source_note": "Universal NASBLA-aligned boating accident duty-to-assist principle, applied under Alabama's accident reporting framework"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Why might Alabama's boating accident reporting requirement matter even for a relatively minor-looking collision between two small boats on Wheeler Lake?",
+    "choice_a": "Because Alabama requires a report for every incident of any kind, no matter how trivial",
+    "choice_b": "Because Alabama's $2,000 property-damage threshold can be met by even modest hull or motor damage, and injuries that seem minor at first can later prove more serious, so operators should not assume an accident falls below the reporting threshold without a clear assessment",
+    "choice_c": "Because Marine Patrol only investigates accidents involving PWCs",
+    "choice_d": "Because reporting requirements apply only to accidents on the Gulf of Mexico, not on inland lakes",
+    "correct_choice": "B",
+    "explanation": "A $2,000 property-damage threshold is not a high bar given typical hull, motor, or equipment repair costs, and injuries can sometimes worsen or reveal themselves after the fact, so operators should carefully assess whether an accident meets Alabama's reporting thresholds rather than assuming it is too minor to report.",
+    "weight": 3,
+    "source_note": "ALEA boating rules and regulations (reportable accident thresholds), practical application"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Which agency receives and processes Alabama's mandatory boating accident reports?",
+    "choice_a": "The National Weather Service",
+    "choice_b": "The local county school board",
+    "choice_c": "The Alabama Law Enforcement Agency's Marine Patrol Division",
+    "choice_d": "The Federal Communications Commission",
+    "correct_choice": "C",
+    "explanation": "ALEA's Marine Patrol Division is the designated recipient of Alabama's mandatory boating accident reports, consistent with its broader role administering boat registration, operator licensing, and on-water enforcement statewide.",
+    "weight": 4,
+    "source_note": "ALEA boating rules and regulations (accident report recipient agency)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "What kind of evidence might a Marine Patrol officer gather at the scene of a reportable boating accident on Alabama waters?",
+    "choice_a": "Evidence gathering is limited exclusively to photographs of the surrounding scenery",
+    "choice_b": "Officers gather no evidence of any kind at a boating accident scene",
+    "choice_c": "Only insurance company representatives may investigate a boating accident, never Marine Patrol",
+    "choice_d": "Witness statements, vessel damage documentation, operator information, and, if BUI is suspected, potentially field sobriety or chemical testing",
+    "correct_choice": "D",
+    "explanation": "A Marine Patrol officer investigating a reportable accident may gather witness statements, document vessel and property damage, record operator and vessel information, and, if impairment is suspected, pursue BUI testing as part of a thorough on-scene investigation.",
+    "weight": 3,
+    "source_note": "Universal boating accident investigation practice, applied under ALEA's enforcement authority"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "How does Alabama's 24-hour reportable-accident deadline compare with the multi-day deadlines (such as 48 hours or longer) used by some neighboring states for similar accidents?",
+    "choice_a": "Alabama's 24-hour window is notably tighter, requiring operators to report much sooner after a qualifying accident than some other states require",
+    "choice_b": "Alabama actually gives boaters more time than any other state, at 30 days",
+    "choice_c": "There is no meaningful difference; every state uses an identical deadline",
+    "choice_d": "Alabama has no deadline of any kind, unlike its neighboring states",
+    "correct_choice": "A",
+    "explanation": "Alabama's 24-hour reportable-accident deadline is tighter than the roughly 48-hour or longer deadlines used by some other states for comparable accidents, meaning Alabama boaters have less time to file a required report once a qualifying accident occurs.",
+    "weight": 3,
+    "source_note": "ALEA boating rules and regulations (24-hour deadline) compared with other states' longer reporting windows used elsewhere in this project"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "If a boating accident on Alabama waters results only in minor cosmetic damage well under $2,000 and no injuries, is any formal accident report to Marine Patrol legally required?",
+    "choice_a": "Yes, absolutely every collision of any kind must be formally reported regardless of damage",
+    "choice_b": "No -- since none of Alabama's three reporting triggers (fatality, injury, or property damage over $2,000) are met, a formal report is not legally required, though exchanging information with the other party remains good practice",
+    "choice_c": "A report is required only if a passenger requests one",
+    "choice_d": "A report is required only if the accident occurred after sunset",
+    "correct_choice": "B",
+    "explanation": "Because Alabama's reporting requirement is triggered specifically by a fatality, an injury, or property damage exceeding $2,000, an incident that meets none of these thresholds does not legally require a formal Marine Patrol report -- though boaters should still exchange information and use good judgment, especially if damage or injury severity is unclear.",
+    "weight": 3,
+    "source_note": "ALEA boating rules and regulations (reportable accident thresholds, non-reportable minor incidents)"
+  }
+]

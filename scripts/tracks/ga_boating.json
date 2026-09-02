@@ -1,0 +1,6 @@
+{
+  "examType": "ga_boating",
+  "questionsDir": "C:\\claudews\\PassExamHQ\\Workers\\passexamhq-api\\scripts\\tracks\\ga_boating_questions",
+  "priceCents": 799,
+  "handbookNote": "Handbook of Georgia Boating Laws and Responsibilities (Boat-Ed/Kalkomey, 2022, published for the Georgia Department of Natural Resources) and the Georgia Boat Safety Act -- Georgia has no single official DNR-administered boating exam; anyone born on or after January 1, 1998 must complete a DNR-approved boating education course before legally operating a motorized vessel on Georgia state waters (no minimum-horsepower carve-out, unlike some other states), which in practice means completing a NASBLA-approved third-party course -- DNR's own handbook and website direct boaters to Boat-Ed (boat-ed.com/georgia), which confirms an 80% passing score with unlimited retake attempts, converging with BoatUS Foundation's Georgia course, which advertises a 60-question final exam -- this 60q/80% convergence matches this project's CA/FL/PA boating precedent -- price matches this project's Motorcycle-tier boating convention ($7.99), not a placeholder"
+}

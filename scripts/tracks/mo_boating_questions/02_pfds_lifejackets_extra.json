@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is the key difference between a manually inflated and an automatically inflating inflatable PFD?",
+    "choice_a": "A manual model must be triggered by hand (pulling a cord), while an automatic model inflates on its own when submerged in water, without requiring the wearer to act",
+    "choice_b": "Both types inflate identically and there is no functional difference",
+    "choice_c": "An automatic PFD will never inflate even when submerged",
+    "choice_d": "A manual PFD inflates on a timer regardless of whether it touches water",
+    "correct_choice": "A",
+    "explanation": "A manual inflatable PFD requires the wearer to pull a inflation cord to trigger a CO2 cartridge, while an automatic model inflates on its own once a water-sensitive mechanism is submerged, which can be critical if the wearer is unconscious or unable to act after falling overboard.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (inflatable PFD inflation mechanisms), consistent with USCG PFD labeling requirements"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why are most inflatable PFDs labeled as not approved for children, non-swimmers, or use during high-speed watersports?",
+    "choice_a": "Inflatable PFDs are approved for every use without restriction",
+    "choice_b": "Inflatable PFDs are always more buoyant than any inherently buoyant foam PFD",
+    "choice_c": "Inflatable PFDs generally require the wearer to be at least 16 and a capable swimmer, since they provide no flotation until inflated and are not designed for the impact of water skiing, tubing, or PWC use",
+    "choice_d": "Inflatable PFDs are illegal everywhere in Missouri",
+    "correct_choice": "C",
+    "explanation": "Because an inflatable PFD provides no buoyancy until it inflates, its label typically restricts use to swimmers at least 16 years old and excludes activities like water skiing, tubing, or PWC operation where a sudden high-speed impact could damage the inflation mechanism or occur before it deploys.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (inflatable PFD label restrictions), consistent with USCG PFD approval labeling"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "How should a child's PFD generally be sized, rather than by the child's age alone?",
+    "choice_a": "By the child's body weight and chest size, using the ranges printed on the PFD's label, since a jacket sized only by age can be dangerously loose or tight on a particular child",
+    "choice_b": "Age is the only factor that matters; weight is irrelevant",
+    "choice_c": "Any adult PFD may be used on a child as long as it is tightened as far as possible",
+    "choice_d": "PFD sizing has no safety consequence for children",
+    "correct_choice": "A",
+    "explanation": "Children's PFDs are labeled with weight and chest-size ranges rather than age alone, because children of the same age can vary widely in size; a properly fitted PFD should keep the child's chin and face clear of the water and not slip up over the ears when lifted by the shoulders.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (child PFD sizing by weight, not age)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Beyond wearable PFD requirements, what does Missouri law (RSMo 306.100) require regarding accessibility of a Type IV throwable device aboard a vessel?",
+    "choice_a": "It must be stored in a locked cabin compartment inaccessible while underway",
+    "choice_b": "It has no accessibility requirement and may be stowed anywhere",
+    "choice_c": "It must be immediately available for use, not buried under gear or stored somewhere that would delay throwing it to a person in the water during an emergency",
+    "choice_d": "It only needs to be aboard the vessel once per boating season",
+    "correct_choice": "C",
+    "explanation": "Missouri's equipment law requires the throwable Type IV device to be immediately accessible, not just present somewhere on the vessel, since its entire purpose is to be thrown to a person in the water within seconds of them falling overboard.",
+    "weight": 3,
+    "source_note": "RSMo 306.100 (PFD and throwable device accessibility requirement)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a 'hybrid' PFD, as distinguished from a purely inherently buoyant (foam) PFD or a purely inflatable PFD?",
+    "choice_a": "A device combining a small amount of inherent (foam) buoyancy with an inflatable chamber, providing some flotation even before inflation while adding substantial buoyancy once inflated",
+    "choice_b": "A PFD that only works while the boat's engine is running",
+    "choice_c": "A device with no flotation material of any kind",
+    "choice_d": "A PFD approved exclusively for scuba diving",
+    "correct_choice": "A",
+    "explanation": "A hybrid PFD blends a modest amount of inherently buoyant foam with an inflatable bladder, offering some flotation immediately upon entering the water even before the inflatable portion is triggered, combining some of the reliability of foam PFDs with the comfort of an inflatable design.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (USCG hybrid PFD classification)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why is Missouri's PFD carriage requirement under RSMo 306.100 generally about the PFD being 'readily accessible' rather than actually worn, except for specific groups?",
+    "choice_a": "Missouri law requires every occupant to wear a PFD at all times with no exceptions",
+    "choice_b": "General crew and passengers on most vessels must have a wearable PFD available and accessible aboard, but Missouri specifically mandates actual wear only for children under 7 and for anyone aboard a PWC",
+    "choice_c": "Missouri has no PFD requirement of any kind for adults",
+    "choice_d": "PFDs only need to be present at the marina before departure, not during the voyage",
+    "correct_choice": "B",
+    "explanation": "Missouri's general PFD statute requires wearable devices to be carried and readily accessible for adults and older children on most vessels, but singles out children under 7 (RSMo 306.220) and everyone aboard a personal watercraft (RSMo 306.142) for an actual wear requirement, reflecting the higher fall-overboard risk in those situations.",
+    "weight": 4,
+    "source_note": "RSMo 306.100, RSMo 306.220, and RSMo 306.142 (accessibility versus mandatory-wear PFD requirements)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What information must appear on a PFD's manufacturer label for it to count toward a Missouri vessel's required equipment?",
+    "choice_a": "No labeling of any kind is required",
+    "choice_b": "Only a manufacturer's logo, with no other information",
+    "choice_c": "The U.S. Coast Guard approval information, PFD type, and the size or weight range the device is intended for",
+    "choice_d": "Only a price tag from the store of purchase",
+    "correct_choice": "C",
+    "explanation": "A PFD's label identifies its U.S. Coast Guard approval status, its type classification, and the size or weight range it is designed to fit -- a device without this labeling, or one clearly mismatched to the wearer's size, does not satisfy Missouri's PFD carriage requirements.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (USCG PFD approval labeling requirements)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Since April 2021, federal law (33 CFR 175.15) has required operators of many small vessels under 26 feet with the engine running to do what, separate from any Missouri-specific PWC lanyard rule?",
+    "choice_a": "Wear an engine cutoff switch link (kill switch lanyard) whenever operating at planing speed or above on most vessels under 26 feet manufactured with an engine cutoff switch, so the engine stops automatically if the operator is displaced",
+    "choice_b": "Remove all PFDs from the boat before starting the engine",
+    "choice_c": "This federal rule applies only to sailboats without engines",
+    "choice_d": "Nothing changed for any vessel under 26 feet in 2021",
+    "correct_choice": "A",
+    "explanation": "A federal requirement effective April 2021 requires the operator of most motorboats and PWCs under 26 feet built with an engine cutoff switch to use the cutoff switch link (kill switch lanyard) while operating on plane or above displacement speed, a rule that applies nationwide, in addition to Missouri's own PWC-specific lanyard statute under RSMo 306.142.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (federal engine cutoff switch requirement, 33 CFR 175.15, effective April 2021)"
+  }
+]

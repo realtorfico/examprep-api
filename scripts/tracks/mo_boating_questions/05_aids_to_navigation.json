@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "In the U.S. Aids to Navigation System, what does a red, even-numbered buoy mark when returning from open water into a channel (following the 'red, right, returning' rule)?",
+    "choice_a": "A safe-water area open on all sides",
+    "choice_b": "An isolated danger with no safe passage on any side",
+    "choice_c": "The right (starboard) side of the channel as a boater returns from open water",
+    "choice_d": "A designated swimming area",
+    "correct_choice": "C",
+    "explanation": "The 'red, right, returning' rule means a boater heading upstream, into a harbor, or returning from open water should keep red, even-numbered markers on the right (starboard) side and green, odd-numbered markers on the left (port) side.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, lateral markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a green, odd-numbered buoy or daymark indicate when a boater is returning from open water into a channel?",
+    "choice_a": "It should be kept on the boater's right (starboard) side",
+    "choice_b": "It marks a mandatory no-wake zone",
+    "choice_c": "It marks a rock or shoal in the middle of the channel",
+    "choice_d": "It should be kept on the boater's left (port) side",
+    "correct_choice": "D",
+    "explanation": "Following the lateral system, green odd-numbered markers should be kept to the boater's port (left) side when returning from open water or heading upstream, complementing the red 'right returning' markers on the opposite side of the channel.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, lateral markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy or sign with an orange diamond symbol (no additional marking inside) generally indicate on inland waters?",
+    "choice_a": "A general warning of a danger such as rocks, shoals, or a dam, described further by any accompanying text",
+    "choice_b": "A safe area to anchor for the night",
+    "choice_c": "A fuel dock",
+    "choice_d": "A marked ski-only zone",
+    "correct_choice": "A",
+    "explanation": "Under the Uniform State Waterway Marking System used on many inland lakes, a white buoy with an orange diamond is a danger marker warning of a hazard such as rocks, a shoal, a dam, or a submerged structure; boaters should stay away from the indicated area.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System, danger markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange circle typically indicate on inland lakes such as those used in Missouri?",
+    "choice_a": "A safe swimming area for unlimited boat traffic",
+    "choice_b": "A controlled or restricted operating area, such as a speed zone, described by any accompanying text",
+    "choice_c": "A commercial shipping channel",
+    "choice_d": "A fueling station",
+    "correct_choice": "B",
+    "explanation": "A white buoy with an orange circle marks a controlled or restricted area, such as a speed zone or idle-speed area; the specific restriction is usually spelled out in black lettering on the buoy.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System, controlled area markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a white buoy with an orange crossed-diamond (diamond with a cross inside) indicate?",
+    "choice_a": "The area is a designated anchorage for overnight boats",
+    "choice_b": "It marks a preferred main channel",
+    "choice_c": "Boats are excluded from the marked area entirely, such as a swimming beach or dam spillway",
+    "choice_d": "It marks a fishing pier open to boat traffic",
+    "correct_choice": "C",
+    "explanation": "A white buoy marked with an orange diamond containing a cross means the marked area is closed to all vessels, such as a swimming beach, spillway approach, or other exclusion zone.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System, exclusion markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does an orange square on a white buoy or sign generally indicate?",
+    "choice_a": "A wreck lying just below the surface",
+    "choice_b": "A no-boating restriction",
+    "choice_c": "A fuel-only marker",
+    "choice_d": "Directions or information, such as distances, locations, or a marina/facility description",
+    "correct_choice": "D",
+    "explanation": "A white buoy or sign with an orange square provides general information, such as directions to a marina, distance markers, or other helpful navigational information rather than a warning or restriction.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (Uniform State Waterway Marking System, information markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a mooring buoy typically look like, and what is its purpose?",
+    "choice_a": "A white buoy with a horizontal blue band, used to safely secure a vessel rather than mark a hazard",
+    "choice_b": "A red flashing buoy marking a shipwreck",
+    "choice_c": "An all-orange buoy prohibiting anchoring anywhere in the vicinity",
+    "choice_d": "A buoy that only marks fishing line hazards",
+    "correct_choice": "A",
+    "explanation": "A white mooring buoy with a horizontal blue band is intended for securing a vessel; boaters should never tie up to any other type of aid to navigation, since doing so can move or damage the aid and mislead other boaters.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (mooring buoys, Uniform State Waterway Marking System)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is a preferred channel marker (also called a junction or bifurcation marker), typically banded in red and green?",
+    "choice_a": "A marker used exclusively to indicate a fuel dock",
+    "choice_b": "A marker indicating where a channel splits, showing which side is the preferred (primary) route based on which color is on top",
+    "choice_c": "A marker that always means the channel is completely closed",
+    "choice_d": "A marker with no navigational meaning, used only for decoration",
+    "correct_choice": "B",
+    "explanation": "A preferred channel marker uses both red and green horizontal bands; the color of the topmost band indicates which side is the preferred route if the channel splits -- for example, a marker with red on top should generally be treated like a regular red marker for the preferred channel.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (U.S. Aids to Navigation System, preferred channel/junction markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Why should a boater never use an aid to navigation, such as a channel marker or buoy, as a mooring point or fishing platform?",
+    "choice_a": "It is against the law only if the buoy is red, not if it is green",
+    "choice_b": "There is no safety reason -- it is simply considered rude",
+    "choice_c": "Tying up to it can shift its position or damage it, causing it to mislead other boaters about the actual location of the hazard or channel edge it marks",
+    "choice_d": "Aids to navigation are indestructible and cannot be affected by mooring",
+    "correct_choice": "C",
+    "explanation": "Aids to navigation are precisely positioned to mark channels, hazards, or restricted areas; tying a boat to one can drag it out of position or damage it, which then puts every other boater who relies on it at risk of running aground or into a hazard.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (respecting aids to navigation), consistent with NASBLA-aligned course curricula"
+  }
+]

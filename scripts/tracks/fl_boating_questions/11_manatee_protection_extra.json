@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "Which Florida Statute codifies the Florida Manatee Sanctuary Act, the primary state law authorizing manatee protection zones?",
+    "choice_a": "Section 327.46, Florida Statutes (the boating-under-the-influence law)",
+    "choice_b": "There is no codified statute -- manatee zones exist only as unwritten FWC policy",
+    "choice_c": "Section 379.2431, Florida Statutes",
+    "choice_d": "Section 372.86, Florida Statutes (the hunter safety law)",
+    "correct_choice": "C",
+    "explanation": "The Florida Manatee Sanctuary Act is codified at Section 379.2431, Florida Statutes, and implemented through FWC rules in Florida Administrative Code Chapter 68C-22.",
+    "weight": 3,
+    "source_note": "Section 379.2431, Florida Statutes; Fla. Admin. Code Ch. 68C-22"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "Besides speed-regulation zones, what other type of protected area can be designated under the Florida Manatee Sanctuary Act?",
+    "choice_a": "A 'tournament exemption zone' where manatee rules are suspended during permitted fishing tournaments",
+    "choice_b": "A 'commercial-only zone' where only licensed commercial vessels must obey manatee speed limits",
+    "choice_c": "The Act authorizes only speed-regulation zones; no other zone type exists",
+    "choice_d": "A 'safe haven' or 'No Entry'/'Motorboat Prohibited' area set aside for manatees to rest, feed, reproduce, give birth, or nurse undisturbed, though waterfront residents may still transit it at idle speed to reach their property",
+    "correct_choice": "D",
+    "explanation": "In addition to speed regulation zones, the Florida Manatee Sanctuary Act allows FWC to designate 'safe haven' areas -- posted as 'No Entry' or 'Motorboat Prohibited' zones -- where manatees can rest, feed, reproduce, give birth, or nurse without disturbance, while still permitting waterfront residents idle-speed access to their own property.",
+    "weight": 3,
+    "source_note": "Section 379.2431, Florida Statutes -- safe haven/no entry zone provisions"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "Under the Florida Manatee Sanctuary Act, how does the penalty for violating a posted speed-regulation zone differ from violating a posted 'No Entry' or 'Motorboat Prohibited' zone?",
+    "choice_a": "A speed-zone violation is a civil infraction like a standard boating citation, while violating a 'No Entry' or 'Motorboat Prohibited' zone is a misdemeanor criminal offense",
+    "choice_b": "Both violations carry identical civil-infraction penalties with no distinction",
+    "choice_c": "Both violations are treated as felonies regardless of zone type",
+    "choice_d": "Speed-zone violations are criminal misdemeanors, while entering a 'No Entry' zone carries no penalty at all",
+    "correct_choice": "A",
+    "explanation": "The Florida Manatee Sanctuary Act treats a posted speed-limit violation as a civil infraction, similar to a standard boating citation, but violating a posted 'No Entry' or 'Motorboat Prohibited' zone is a misdemeanor criminal offense.",
+    "weight": 3,
+    "source_note": "Section 379.2431, Florida Statutes -- penalty provisions"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "What can happen to a vessel or its equipment upon conviction of certain violations of the Florida Manatee Sanctuary Act?",
+    "choice_a": "Nothing beyond the fine; forfeiture is never possible under Florida law",
+    "choice_b": "The vessel or equipment used in the violation may be subject to forfeiture",
+    "choice_c": "Only the vessel's registration is suspended for one year, with no forfeiture ever possible",
+    "choice_d": "Forfeiture applies only to vessels owned by out-of-state residents",
+    "correct_choice": "B",
+    "explanation": "Upon conviction of certain Florida Manatee Sanctuary Act violations, the vessel and/or equipment used in committing the violation may be subject to forfeiture, in addition to any fine imposed.",
+    "weight": 2,
+    "source_note": "Section 379.2431, Florida Statutes -- forfeiture provisions"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "How long has Florida had a state law on the books protecting manatees?",
+    "choice_a": "Florida had no manatee protection law until the federal Endangered Species Act passed in 1973",
+    "choice_b": "Since 2001, when FWC was first created",
+    "choice_c": "Since 1893, decades before the 1978 Florida Manatee Sanctuary Act",
+    "choice_d": "Florida still has no dedicated manatee protection statute",
+    "correct_choice": "C",
+    "explanation": "Florida has protected manatees under state law since 1893, making it one of the state's earliest wildlife protection laws, long before the modern Florida Manatee Sanctuary Act was enacted in 1978.",
+    "weight": 2,
+    "source_note": "FWC manatee program history, myfwc.com"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "What happened to the West Indian manatee's federal Endangered Species Act status in 2017?",
+    "choice_a": "It was completely removed from the endangered species list with no further federal protection",
+    "choice_b": "It was upgraded from 'threatened' to 'endangered' due to a population decline",
+    "choice_c": "Its federal status is unrelated to Florida boating rules, which are set entirely by county ordinance",
+    "choice_d": "It was reclassified from 'endangered' to 'threatened' -- a status change, not a removal of federal protection",
+    "correct_choice": "D",
+    "explanation": "In 2017 the U.S. Fish and Wildlife Service reclassified the West Indian manatee from 'endangered' to 'threatened' under the federal Endangered Species Act, reflecting population recovery, but the species remains federally protected and Florida's manatee protection zones remain fully in effect.",
+    "weight": 3,
+    "source_note": "U.S. Fish and Wildlife Service, 2017 ESA reclassification"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "At Crystal River's Kings Bay -- one of the few places in Florida where the public may legally get in the water near wild manatees -- which action is specifically prohibited?",
+    "choice_a": "Cornering or surrounding a manatee so that it cannot freely swim away",
+    "choice_b": "Boating through Kings Bay at the posted idle speed",
+    "choice_c": "Observing manatees from a boat while staying outside marked sanctuary boundaries",
+    "choice_d": "Reporting a distressed manatee to FWC or refuge staff",
+    "correct_choice": "A",
+    "explanation": "Kings Bay near Crystal River contains multiple designated manatee sanctuaries where cornering, surrounding, chasing, or otherwise pursuing a manatee -- along with touching a resting or feeding animal -- is specifically prohibited, even in areas where limited in-water observation is otherwise allowed.",
+    "weight": 3,
+    "source_note": "Crystal River National Wildlife Refuge (Kings Bay) manatee sanctuary rules, fws.gov"
+  },
+  {
+    "topic": "Manatee Protection Zones",
+    "question": "How should a boater report an injured, entangled, orphaned, or dead manatee in Florida?",
+    "choice_a": "Manatee incidents cannot be reported; boaters should simply continue on their way",
+    "choice_b": "Call FWC's Wildlife Alert hotline at 888-404-FWCC (888-404-3922), or dial *FWC or #FWC from a cell phone",
+    "choice_c": "Only certified marine biologists are permitted to report manatee incidents",
+    "choice_d": "Post a description on social media, which FWC monitors as its sole intake method",
+    "correct_choice": "B",
+    "explanation": "Boaters who find an injured, entangled, orphaned, sick, or dead manatee should call FWC's Wildlife Alert hotline at 888-404-FWCC (888-404-3922), or dial *FWC or #FWC on a cellular phone, so FWC or partner rescue teams can respond.",
+    "weight": 3,
+    "source_note": "FWC Wildlife Alert hotline, myfwc.com"
+  }
+]

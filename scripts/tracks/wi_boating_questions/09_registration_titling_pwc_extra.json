@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Besides carrying a Boater Education Card, what other document must an operator generally have available aboard a registered Wisconsin vessel?",
+    "choice_a": "The Certificate of Number (registration card) for the vessel, available for inspection upon request",
+    "choice_b": "A copy of the vessel's original bill of sale from the manufacturer, regardless of age",
+    "choice_c": "No documentation is ever required to be aboard the vessel itself",
+    "choice_d": "A notarized letter from the vessel's insurer",
+    "correct_choice": "A",
+    "explanation": "In addition to any required Boater Education Card, an operator should have the vessel's Certificate of Number -- the registration document issued by DNR -- available aboard for inspection, distinct from the operator's own education certification.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR boat registration guidance (dnr.wisconsin.gov/permits/registrations/boat)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "How must a registered Wisconsin boat's registration number generally be displayed on the hull?",
+    "choice_a": "In block characters of a legible size in a color that contrasts with the hull, spaced appropriately, on the forward half of each side of the vessel, consistent with the national NASBLA-aligned display standard",
+    "choice_b": "Displayed only on the stern, in any font style",
+    "choice_c": "There is no display requirement as long as the number is on file with DNR",
+    "choice_d": "Displayed only on paperwork carried aboard, never painted or affixed to the hull",
+    "correct_choice": "A",
+    "explanation": "Registration numbers must be displayed in legible block characters, in a color contrasting with the hull, properly spaced, and placed on the forward half of each side of the vessel -- a display convention consistent with the national standard applied across NASBLA-aligned state boating programs.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR boat registration guidance (dnr.wisconsin.gov/permits/registrations/boat), consistent with the national NASBLA-aligned registration display standard"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Where is a Wisconsin registration validation decal typically affixed on a registered boat?",
+    "choice_a": "On the engine cowling only",
+    "choice_b": "On or near the registration number displayed on the bow, so both can be checked together",
+    "choice_c": "Decals are not used in Wisconsin's registration system",
+    "choice_d": "Only inside the cabin, out of view",
+    "correct_choice": "B",
+    "explanation": "A validation decal is generally affixed on or near the registration number on the bow, allowing an officer or warden to quickly confirm both the assigned number and current registration validity together.",
+    "weight": 1,
+    "source_note": "Wisconsin DNR boat registration guidance (dnr.wisconsin.gov/permits/registrations/boat)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Can a nonresident visiting Wisconsin with a boat currently registered in their home state operate it on Wisconsin waters without immediately registering in Wisconsin?",
+    "choice_a": "No -- every vessel must be re-registered in Wisconsin the moment it enters state waters",
+    "choice_b": "Generally yes, for a limited period, under a reciprocity approach common across states allowing a validly registered out-of-state vessel to operate temporarily before Wisconsin registration would be required",
+    "choice_c": "Reciprocity applies only to personal watercraft, never to larger boats",
+    "choice_d": "Reciprocity is never extended by Wisconsin under any circumstance",
+    "correct_choice": "B",
+    "explanation": "Consistent with the reciprocity approach used broadly across states, a boat currently and validly registered in its home state can generally operate temporarily on Wisconsin waters before Wisconsin registration would be required, though the exact permitted duration was not independently re-verified against current DNR guidance in this build.",
+    "weight": 2,
+    "source_note": "General state boat-registration reciprocity framework, applied broadly across states including Wisconsin; exact duration not independently re-verified in this build"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "What should a registered boat owner generally do if they move and their address changes?",
+    "choice_a": "Nothing -- registration records never need to reflect a current address",
+    "choice_b": "Notify Wisconsin DNR of the address change so registration records stay current, consistent with the general duty applied to state-issued registrations",
+    "choice_c": "Re-register the boat as a brand-new vessel",
+    "choice_d": "Address changes are handled automatically through the U.S. Postal Service with no owner action needed",
+    "correct_choice": "B",
+    "explanation": "Like most state vehicle and vessel registration systems, Wisconsin expects an owner to update DNR with a current address so registration records, renewal notices, and any required correspondence reach the right place.",
+    "weight": 1,
+    "source_note": "General state vessel-registration recordkeeping duty, consistent with Wisconsin DNR's registration administration role (dnr.wisconsin.gov/permits/registrations/boat)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "What should an owner do if their Wisconsin boat registration certificate is lost, stolen, or destroyed?",
+    "choice_a": "Report it to DNR to obtain a replacement, so the vessel's registration record remains accurate and the operator has valid proof aboard",
+    "choice_b": "Nothing is required since the boat's registration remains legally valid without any paperwork aboard",
+    "choice_c": "The vessel must be permanently deregistered",
+    "choice_d": "A replacement can only be obtained by re-purchasing the boat",
+    "correct_choice": "A",
+    "explanation": "An owner whose registration certificate is lost, stolen, or destroyed should contact DNR to obtain a replacement, since operators are expected to have valid proof of registration available for inspection.",
+    "weight": 1,
+    "source_note": "Wisconsin DNR boat registration guidance (dnr.wisconsin.gov/permits/registrations/boat)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "How does Wisconsin DNR generally handle registering a homemade or kit-built boat that has no manufacturer-assigned Hull Identification Number?",
+    "choice_a": "Homemade boats can never legally be registered in Wisconsin",
+    "choice_b": "DNR assigns a Hull Identification Number as part of the registration process for a boat that lacks one from a manufacturer",
+    "choice_c": "Homemade boats are automatically exempt from registration entirely",
+    "choice_d": "The boat must be assigned a HIN by the U.S. Coast Guard before DNR will even review the application",
+    "correct_choice": "B",
+    "explanation": "When a boat -- such as a homemade or kit-built vessel -- doesn't already have a manufacturer-assigned Hull Identification Number, Wisconsin DNR assigns one as part of processing its registration, ensuring every registered vessel has a unique identifying number.",
+    "weight": 2,
+    "source_note": "Wisconsin DNR boat registration guidance on Hull Identification Numbers (dnr.wisconsin.gov/permits/registrations/boat)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "What risk does an owner face for operating a Wisconsin vessel that is legally required to be registered but is not?",
+    "choice_a": "No consequence exists since registration is effectively optional in practice",
+    "choice_b": "A DNR conservation warden can cite the operator for operating an unregistered vessel that is required to be registered",
+    "choice_c": "The only consequence is a warning letter mailed after the fact, with no citation authority",
+    "choice_d": "Unregistered vessels are simply impounded with no possibility of a citation",
+    "correct_choice": "B",
+    "explanation": "Because DNR conservation wardens have authority to stop, board, and inspect vessels for registration compliance, operating a vessel that is required to be registered but isn't can result in a citation, consistent with the state's general boating-law enforcement framework.",
+    "weight": 2,
+    "source_note": "General Wisconsin DNR conservation warden enforcement authority framework, applied to registration compliance (dnr.wisconsin.gov/topic/Boat)"
+  }
+]

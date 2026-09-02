@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "Where has Alabama established a real \"idle speed zone\" for motorized vessels along the Gulf Coast, under its own regulation?",
+    "choice_a": "In two specific areas: from the shoreline to the first sandbar seaward of it, extending from the Florida line west past Fort Morgan to the island's western end (excluding Perdido Pass south of the bridge), and within 100 yards of Dauphin Island's south shoreline from Fort Gaines westward",
+    "choice_b": "Across the entire Gulf of Mexico with no defined boundary",
+    "choice_c": "Only within Mobile Bay's main shipping channel",
+    "choice_d": "Alabama has never established any idle-speed zone on the Gulf Coast",
+    "correct_choice": "A",
+    "explanation": "Alabama's regulation establishes real, geographically defined idle-speed zones along its Gulf Coast: one running from the shoreline to the first sandbar from the Florida line west past Fort Morgan (excluding Perdido Pass south of the bridge), and another within 100 yards of Dauphin Island's south shore from Fort Gaines westward -- in both, motorized vessels including PWCs may not exceed idle speed.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.36 (Idle Speed Zones For Certain Gulf Waters)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "May a private individual, business, or organization place its own regulatory marker or buoy on Alabama's public waters without any government approval?",
+    "choice_a": "Yes, anyone may place a marker freely with no oversight",
+    "choice_b": "No -- it is unlawful to place or maintain a regulatory marker on Alabama's public waters without first obtaining permission from the Marine Police Division, and any approved marker must follow the Division's standard specifications, lettering, and colors",
+    "choice_c": "Only county governments may ever place markers, never private parties",
+    "choice_d": "Permission is required only for markers placed on the Gulf of Mexico, not on inland lakes",
+    "correct_choice": "B",
+    "explanation": "Alabama's aids-to-navigation regulation makes it unlawful for any person, firm, or corporation to place or maintain a regulatory marker on public waters without first securing permission from the Marine Police Division, which specifies the required standard type, lettering, and colors before granting approval.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.19(2) (private placement of regulatory markers requires permission)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What happens when a proposed restricted-area marker in Alabama would affect the interests of another division within the Department of Conservation and Natural Resources, such as a fisheries or wildlife division?",
+    "choice_a": "The Marine Police Division may act entirely on its own without consulting anyone",
+    "choice_b": "The Director of the Marine Police Division must consult the affected division's Director and reach agreement before the restriction takes effect; if no agreement is reached, the Commissioner resolves the dispute",
+    "choice_c": "The matter is automatically referred to the U.S. Coast Guard for a final decision",
+    "choice_d": "The restriction is automatically voided if any other division objects",
+    "correct_choice": "B",
+    "explanation": "Alabama's aids-to-navigation regulation requires the Marine Police Division's Director to consult with the director of any other affected DCNR division and reach agreement before a restriction becomes effective; if the two cannot agree, the Commissioner of Conservation and Natural Resources resolves the difference.",
+    "weight": 2,
+    "source_note": "Alabama Administrative Rule 220-6-.19(1) (interdivision coordination on restricted areas)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What real Alabama location is restricted to only paddled or push-poled vessels under a specific state regulation, barring motorized operation entirely?",
+    "choice_a": "The entire length of the Alabama River",
+    "choice_b": "All of Lake Guntersville",
+    "choice_c": "The area adjacent to Bird Island and Walker Island in the Perdido Pass/Bayou St. John area of Baldwin County",
+    "choice_d": "Every marina in the Southern District",
+    "correct_choice": "C",
+    "explanation": "Alabama's Bird Island/Walker Island regulation bars motorized vessel operation in the signed area adjacent to Bird Island and Walker Island in the Perdido Pass/Bayou St. John area of Baldwin County -- vessels using that specific area must be paddled or push-poled instead.",
+    "weight": 2,
+    "source_note": "Alabama Administrative Rule 220-6-.54 (Bird Island/Walker Island Vessel Restriction)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "How close may a vessel operate to a state-operated saltwater fishing pier on the Gulf of Mexico under Alabama's closure regulation?",
+    "choice_a": "Vessels are barred from operating within 100 yards of any saltwater fishing pier operated by the state Department of Conservation and Natural Resources or its authorized agent",
+    "choice_b": "There is no restriction near any fishing pier",
+    "choice_c": "Only PWCs are restricted near piers; conventional boats may approach freely",
+    "choice_d": "Vessels must stay at least 5 miles away from any pier",
+    "correct_choice": "A",
+    "explanation": "Alabama's regulation closes the waters of the Gulf of Mexico within 100 yards of any state-operated saltwater fishing pier (or one operated by its authorized agent) to vessel and watercraft operation, protecting anglers fishing from the pier from nearby boat traffic.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.59 (Closure To Vessels And Watercraft -- pier waters)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Why can a boater who learns Alabama's orange-and-white regulatory marker symbols in one part of the state rely on that same knowledge anywhere else in Alabama?",
+    "choice_a": "Because each county sets its own separate symbol meanings",
+    "choice_b": "Because Alabama's regulatory markers follow the standardized Uniform State Waterway Marking System, so the same symbol always carries the same legal meaning statewide, whether on a Tennessee River reservoir or a Gulf Coast waterway",
+    "choice_c": "Because regulatory markers are purely decorative and carry no consistent legal meaning",
+    "choice_d": "Because only the Southern District uses regulatory markers at all",
+    "correct_choice": "B",
+    "explanation": "Alabama's regulatory markers use the standardized Uniform State Waterway Marking System, meaning the diamond-with-cross, plain diamond, circle, and square symbols carry the same legally defined meaning wherever they are lawfully placed in the state -- a boater who learns the system on one Alabama waterway can rely on it anywhere else in the state.",
+    "weight": 2,
+    "source_note": "Alabama Administrative Rule 220-6-.19 (Uniform State Waterway Marking System), applied statewide"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "During what part of the year and day does Alabama's Gulf Shores municipal swimming area regulation restrict vessel and watercraft operation within its marked boundary?",
+    "choice_a": "Year-round, 24 hours a day",
+    "choice_b": "From March 1 through October 31 each year, during the hours from sunrise to one hour after sunset",
+    "choice_c": "Only on national holidays",
+    "choice_d": "Only between midnight and 4 a.m.",
+    "correct_choice": "B",
+    "explanation": "Alabama's Gulf Shores swimming-area regulation bars operating a vessel, sailboard, surfboard, windsurfer, water skis, aquaplane, paddleboat, or other watercraft within the defined municipal swimming area from March 1 through October 31 each year, during the hours from sunrise to one hour after sunset -- the peak swimming season and daylight hours when the beach is most heavily used.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.24 (Swimming Area at Gulf Shores)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Besides not entering a marked exclusion zone, what else does Alabama law prohibit regarding a lawfully placed aid-to-navigation or regulatory marker, sign, or buoy?",
+    "choice_a": "Nothing else is prohibited once the exclusion zone itself is respected",
+    "choice_b": "Mooring or fastening a vessel to it (except in an emergency), and willfully damaging, altering, or moving it",
+    "choice_c": "Only photographing the marker without a permit",
+    "choice_d": "Painting a boat the same color as the marker",
+    "correct_choice": "B",
+    "explanation": "Alabama Code Section 33-5-74 separately prohibits mooring or fastening a vessel to a lawfully placed aid-to-navigation, regulatory, or boundary marker except in an emergency, and prohibits willfully damaging, altering, or moving any such marker -- a Class B misdemeanor carrying a minimum $100 fine.",
+    "weight": 3,
+    "source_note": "Code of Alabama Section 33-5-74 (markers, signs, and buoys; mooring and damage prohibited)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What decision does the Director of the Marine Police Division make when determining that a restricted-area sign, such as a \"Boats Keep Out\" marker, is needed on Alabama waters?",
+    "choice_a": "The Director has no authority over restricted-area signage; only the U.S. Coast Guard may designate such areas",
+    "choice_b": "The Director, when public safety requires it, may designate restricted areas -- limiting speed, prohibiting boat entry, or regulating water skiing -- using the standardized diamond-cross, plain-diamond, or circle symbols set by regulation",
+    "choice_c": "Restricted areas in Alabama may only be created by a vote of the state legislature",
+    "choice_d": "Restricted-area signage in Alabama is entirely optional and carries no legal force",
+    "correct_choice": "B",
+    "explanation": "Alabama's aids-to-navigation regulation gives the Director of the Marine Police Division authority to designate restricted areas whenever public safety requires it -- whether to limit speed, bar boat entry, or regulate water skiing -- using the standardized orange-and-white diamond-cross, plain-diamond, or circle symbols the regulation defines.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.19(1) (Director's authority to designate restricted areas)"
+  }
+]

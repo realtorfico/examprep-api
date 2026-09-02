@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "In addition to a PFD, what equipment does New York law require on a personal watercraft to help prevent an engine backfire from igniting fuel vapors?",
+    "choice_a": "A supplemental fire extinguisher rated for gasoline fires only",
+    "choice_b": "A secondary bilge pump wired to a separate battery",
+    "choice_c": "A catalytic converter identical to those used in automobiles",
+    "choice_d": "A Coast Guard-approved backfire flame arrestor",
+    "correct_choice": "D",
+    "explanation": "New York Navigation Law Section 73-a requires PWCs to carry a Coast Guard-approved backfire flame arrestor to help prevent an engine backfire from igniting flammable vapors in the engine compartment.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 73-a(1)(b), backfire arrestor requirement"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What ventilation does New York law require in a PWC's engine and fuel compartments, unless those spaces are naturally exposed to open air?",
+    "choice_a": "At least two ventilator ducts or cowls designed to remove flammable gases and vapors from the compartments",
+    "choice_b": "A single vent hole no larger than one inch in diameter",
+    "choice_c": "No ventilation is required on any PWC under 10 feet long",
+    "choice_d": "A continuously running electric exhaust fan, with no cowl or duct required",
+    "correct_choice": "A",
+    "explanation": "Section 73-a requires at least two ventilator cowls (or an equivalent system) to clear flammable gases from a PWC's enclosed engine and fuel compartments, unless the bilge is naturally exposed to open air.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 73-a(1)(c)(i), ventilation requirement"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What kind of sound-producing device does New York law require a PWC to carry?",
+    "choice_a": "A referee-style whistle only, with no minimum audible distance specified",
+    "choice_b": "A mechanical, non-siren device capable of producing a blast of two seconds or more, audible for at least half a mile in calm conditions",
+    "choice_c": "No sound-producing device is required on a PWC because it has no cabin to store one",
+    "choice_d": "A siren identical to those used on emergency vehicles",
+    "correct_choice": "B",
+    "explanation": "New York Navigation Law Section 73-a requires PWCs to carry a mechanical sound-producing appliance, other than a siren, able to produce a blast of at least two seconds that is audible for at least half a mile under normal conditions.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 73-a(1)(c)(ii), sound device requirement"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Besides a sound device, what visual distress signal must be aboard a personal watercraft in New York?",
+    "choice_a": "A green flare gun loaded with at least three flares",
+    "choice_b": "A white strobe light mounted on the bow that is only required after dark",
+    "choice_c": "A fluorescent-orange distress flag at least one foot square, or an equivalent Coast Guard-approved visual distress signal",
+    "choice_d": "No visual distress signal is required aboard any PWC",
+    "correct_choice": "C",
+    "explanation": "New York Navigation Law Section 73-a requires a fluorescent-orange distress flag measuring at least one foot square, or an equivalent Coast Guard-approved visual distress signal, to be carried aboard a PWC.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 73-a(1)(c)(iii), visual distress signal requirement"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "How close may a PWC operate to a New York designated bathing/swimming area?",
+    "choice_a": "As close as 50 feet, at any speed",
+    "choice_b": "There is no minimum distance as long as the operator sounds the horn first",
+    "choice_c": "PWCs must stay at least one full nautical mile from any bathing area at all times, with no exceptions",
+    "choice_d": "Not within 500 feet, except when launching from a designated site or crossing narrow waters where the opposite shore is closer than 500 feet, in which case speed is capped at 10 mph",
+    "correct_choice": "D",
+    "explanation": "New York Navigation Law Section 73-a bars PWC operation within 500 feet of a designated swimming area, with a narrow-waterway exception that caps speed at 10 mph and permits launching from designated sites.",
+    "weight": 3,
+    "source_note": "NY Navigation Law Section 73-a(1)(f), bathing area distance restriction"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What is the minimum age at which a livery in New York may legally rent a PWC to a customer, separate from the minimum age to operate one?",
+    "choice_a": "16 years old",
+    "choice_b": "14 years old, the same as the minimum operating age",
+    "choice_c": "12 years old, if a parent is present at the livery",
+    "choice_d": "There is no minimum rental age, only a minimum operating age",
+    "correct_choice": "A",
+    "explanation": "While the minimum age to operate a PWC in New York is 14, Section 73-a separately bars liveries from renting a PWC to anyone under 16.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 73-a(2)(a), livery rental age minimum"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Before renting out a personal watercraft, what must a New York livery operator do for the renter?",
+    "choice_a": "Nothing beyond collecting payment for the rental",
+    "choice_b": "Provide instruction and a demonstration of safe operating procedures and required safety equipment, by video or on the water, and confirm the renter can operate competently",
+    "choice_c": "Check only that the renter has a driver's license, with no operating instruction required",
+    "choice_d": "Hand over a printed brochure, with any demonstration left entirely optional",
+    "correct_choice": "B",
+    "explanation": "New York Navigation Law Section 73-a requires liveries to instruct and demonstrate safe operating procedures and safety equipment use to renters, by video or in-water demonstration, and to confirm the renter can operate the PWC and its safety equipment competently before rental.",
+    "weight": 2,
+    "source_note": "NY Navigation Law Section 73-a(2)(b)-(c), livery instruction and competency requirement"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What must a New York PWC livery keep on record for each rental, and for how long?",
+    "choice_a": "Nothing; New York law does not require liveries to keep any rental records",
+    "choice_b": "Only the renter's credit card number, retained indefinitely",
+    "choice_c": "The renter's name, address, and age, along with vessel details, retained for at least one year",
+    "choice_d": "A log of fuel purchased, retained for 30 days",
+    "correct_choice": "C",
+    "explanation": "New York Navigation Law Section 73-a requires liveries to record each renter's name, address, and age, along with vessel information, and to retain those records for at least one year.",
+    "weight": 1,
+    "source_note": "NY Navigation Law Section 73-a(2)(e), livery recordkeeping requirement"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under New York Navigation Law Section 73-a, what is the fine range for a first-time violation of the PWC operating requirements?",
+    "choice_a": "$500 to $1,000",
+    "choice_b": "There is no monetary fine, only a written warning",
+    "choice_c": "$5 to $10",
+    "choice_d": "$50 to $200",
+    "correct_choice": "D",
+    "explanation": "A first violation of Section 73-a's PWC requirements carries a fine of $50 to $200, with higher fines for repeat violations within 24 months and eventual registration revocation for a third or subsequent violation.",
+    "weight": 1,
+    "source_note": "NY Navigation Law Section 73-a(3)(a), penalty schedule"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Does New York's PWC operating law (Navigation Law Section 73-a) apply to a professional performer during an authorized exhibition, or to a participant in an authorized race, regatta, or marine event?",
+    "choice_a": "No, such performers and authorized race, regatta, or marine event participants are exempt from these operating restrictions during the sanctioned activity",
+    "choice_b": "Yes, with no exemption available for any organized event",
+    "choice_c": "Only professional performers are exempt; authorized race participants are not",
+    "choice_d": "Exemptions under this section apply only to law enforcement PWCs",
+    "correct_choice": "A",
+    "explanation": "Section 73-a exempts professional exhibition performers and participants in an authorized race, regatta, or marine event from its standard PWC operating restrictions during the sanctioned activity.",
+    "weight": 1,
+    "source_note": "NY Navigation Law Section 73-a(1)(h), professional/regatta exemption"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Florida Boating Safety ID Card & Education Mandate",
+    "question": "Who is required by Florida law to complete an approved boating safety course and obtain a Boating Safety Education Identification Card?",
+    "choice_a": "Anyone born on or after January 1, 1988 who operates a vessel powered by a motor of 10 horsepower or greater",
+    "choice_b": "Everyone who operates any vessel in Florida, regardless of birth date or horsepower",
+    "choice_c": "Only commercial vessel operators",
+    "choice_d": "Only PWC operators; other motorboat operators are exempt",
+    "correct_choice": "A",
+    "explanation": "Florida requires anyone born on or after January 1, 1988 who operates a vessel with a motor of 10 horsepower or more to complete an approved boating safety course and obtain a Boating Safety Education Identification Card from FWC.",
+    "weight": 5,
+    "source_note": "myfwc.com Boating Safety Education ID card requirement; Florida Statutes 327.395"
+  },
+  {
+    "topic": "Florida Boating Safety ID Card & Education Mandate",
+    "question": "Is there a single official FWC-administered boating exam that every affected Florida boater must take at a state office?",
+    "choice_a": "No exam of any kind is required to obtain the ID card",
+    "choice_b": "No -- FWC approves NASBLA-standard third-party course providers (such as Boat-Ed, BOATERexam, and BOATsmart!), and the course's own final exam satisfies the requirement",
+    "choice_c": "Yes, every affected boater must appear in person at an FWC office to take a standardized state exam",
+    "choice_d": "Yes, but only for vessels registered after 2020",
+    "correct_choice": "B",
+    "explanation": "Like most states, Florida does not run a single centralized boating exam; FWC approves NASBLA-standard course providers, and successfully completing that provider's own course and final exam earns the Boating Safety Education ID Card.",
+    "weight": 4,
+    "source_note": "FWC Boating Safety Education program structure, approved-provider model"
+  },
+  {
+    "topic": "Florida Boating Safety ID Card & Education Mandate",
+    "question": "Does the Florida Boating Safety Education Identification Card ever expire or need to be renewed?",
+    "choice_a": "It expires after five years",
+    "choice_b": "It expires automatically when the holder turns 25",
+    "choice_c": "No -- once issued, the card is valid for life and does not need to be renewed",
+    "choice_d": "It must be renewed every year",
+    "correct_choice": "C",
+    "explanation": "Florida's Boating Safety Education Identification Card, once issued by FWC, does not expire and never needs to be renewed.",
+    "weight": 3,
+    "source_note": "myfwc.com Boating Safety Education ID card, validity"
+  },
+  {
+    "topic": "Florida Boating Safety ID Card & Education Mandate",
+    "question": "What must a person subject to Florida's boater education law have in their possession while operating a covered vessel?",
+    "choice_a": "Nothing; no documentation must ever be carried aboard",
+    "choice_b": "Only their vehicle driver's license, with no boating-specific card",
+    "choice_c": "A separate registration plate mounted to their body",
+    "choice_d": "The FWC-issued Boating Safety Education Identification Card and a photo ID",
+    "correct_choice": "D",
+    "explanation": "A person subject to the education mandate must carry both the FWC-issued Boating Safety Education Identification Card and a valid photo ID while operating a motorboat of 10 horsepower or more.",
+    "weight": 4,
+    "source_note": "myfwc.com Boating Safety Education ID card requirement"
+  },
+  {
+    "topic": "Florida Boating Safety ID Card & Education Mandate",
+    "question": "How long can a course completion certificate (before the official ID card arrives) be used to legally operate a covered vessel in Florida?",
+    "choice_a": "Up to 90 days from the date of issue, when carried along with a photo ID",
+    "choice_b": "It can never be used; only the physical ID card is valid",
+    "choice_c": "Only for 24 hours after completing the course",
+    "choice_d": "Indefinitely, with no time limit",
+    "correct_choice": "A",
+    "explanation": "Since October 1, 2011, Florida allows a course completion certificate, together with photo ID, to serve as valid proof for up to 90 days from its issue date while the permanent ID card is processed.",
+    "weight": 3,
+    "source_note": "myfwc.com temporary certificate provision, effective Oct. 1, 2011"
+  },
+  {
+    "topic": "Florida Boating Safety ID Card & Education Mandate",
+    "question": "What minimum content must an FWC-approved boating safety course include?",
+    "choice_a": "Only a written pledge to boat safely, with no instructional content",
+    "choice_b": "At least five hours of boater safety instruction covering NASBLA's entry-level knowledge requirements, with end-of-module quizzes and a final exam",
+    "choice_c": "A single ten-minute video with no assessment",
+    "choice_d": "No minimum content or length is specified for approved courses",
+    "correct_choice": "B",
+    "explanation": "FWC-approved courses must cover NASBLA's entry-level boating knowledge requirements, generally delivered through at least five hours of instruction, with quizzes and a final exam confirming comprehension.",
+    "weight": 3,
+    "source_note": "FWC approved-course content standards, NASBLA entry-level requirements"
+  },
+  {
+    "topic": "Florida Boating Safety ID Card & Education Mandate",
+    "question": "Does a boating safety course or license from another state satisfy Florida's education requirement?",
+    "choice_a": "Only courses from Georgia and Alabama are accepted",
+    "choice_b": "Out-of-state cards are accepted only for sailboat operators",
+    "choice_c": "Yes, as long as the other state's course was approved by NASBLA",
+    "choice_d": "No, only a Florida-issued card is ever accepted",
+    "correct_choice": "C",
+    "explanation": "Florida recognizes NASBLA-approved boating education completed in any state, reflecting the nationwide reciprocity built into the NASBLA course-approval standard.",
+    "weight": 3,
+    "source_note": "FWC boating education reciprocity policy"
+  },
+  {
+    "topic": "Florida Boating Safety ID Card & Education Mandate",
+    "question": "Is a person who only rents or borrows a boat in Florida ever exempt from the education/ID card requirement?",
+    "choice_a": "Yes, renters are automatically exempt from all boater education requirements",
+    "choice_b": "Only vessel owners must comply; renters never do",
+    "choice_c": "The requirement applies only to vessels purchased new",
+    "choice_d": "No -- if the person was born on or after January 1, 1988 and will operate a motor of 10 horsepower or more, the requirement applies regardless of who owns the vessel, though a temporary certificate/rental exam option may apply for short-term rentals",
+    "correct_choice": "D",
+    "explanation": "The birth-date and horsepower thresholds apply to the operator, not the vessel's ownership status, so a renter born on or after January 1, 1988 operating 10+ hp still must satisfy the education requirement (Florida also offers a temporary boating-safety certificate/rental-boat exam process aimed at short-term visitors).",
+    "weight": 3,
+    "source_note": "FWC Boating Safety Education requirement scope; temporary certificate program for rentals"
+  },
+  {
+    "topic": "Florida Boating Safety ID Card & Education Mandate",
+    "question": "What is the practical effect of the January 1, 1988 birth-date cutoff on who must complete boater education in Florida?",
+    "choice_a": "It grandfathers in boaters born before that date, meaning older, already-experienced boaters are not retroactively required to take the course, while it applies going forward to younger operators",
+    "choice_b": "It requires everyone currently alive to take the course regardless of age",
+    "choice_c": "It only applies to boaters older than 60",
+    "choice_d": "It has no real effect and is purely symbolic",
+    "correct_choice": "A",
+    "explanation": "The birth-date cutoff is a grandfather clause: it phases in mandatory education for newer generations of boaters going forward rather than retroactively requiring lifelong boaters born before 1988 to take a course.",
+    "weight": 3,
+    "source_note": "General rationale for birth-date-based boater education mandates, consistent across NASBLA states"
+  },
+  {
+    "topic": "Florida Boating Safety ID Card & Education Mandate",
+    "question": "Where does a Florida boater send documentation to request their physical Boating Safety Education Identification Card after completing an approved course?",
+    "choice_a": "To the U.S. Coast Guard's national licensing office",
+    "choice_b": "To FWC's Division of Law Enforcement Boating Safety Unit, along with their course completion certificate and identifying information",
+    "choice_c": "To the local county tax collector's vessel titling office only",
+    "choice_d": "No submission is required; the card is generated automatically at birth",
+    "correct_choice": "B",
+    "explanation": "A boater submits their course completion proof and identifying details to FWC's Division of Law Enforcement Boating Safety Unit to receive the official Boating Safety Education Identification Card.",
+    "weight": 2,
+    "source_note": "myfwc.com Boating Safety Education ID card application process"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under Georgia law, when a PWC is operating faster than idle speed, how close may it come to another moving boat or PWC, other than while properly overtaking it?",
+    "choice_a": "No closer than 25 feet, as long as it does not jump the wake",
+    "choice_b": "There is no minimum distance from a moving vessel -- the 100-foot rule only applies to vessels that are not underway",
+    "choice_c": "No closer than 500 feet under all circumstances",
+    "choice_d": "No closer than 100 feet, and it may not run around, ride, or jump the wake of that vessel",
+    "correct_choice": "D",
+    "explanation": "A PWC operating at more than idle speed may not run around, ride, or jump the wake of, or come within 100 feet of, another moving boat or PWC, unless it is overtaking that vessel.",
+    "weight": 3,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Operating a PWC'; Georgia DNR, 'Requirements Specific to Personal Water Craft' (gadnrle.org/pwc-requirements)"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "When a PWC operating above idle speed overtakes another vessel, what does Georgia law require of the PWC operator?",
+    "choice_a": "The PWC must not change course in order to ride or jump the wake of the vessel it is overtaking",
+    "choice_b": "The PWC must drop to idle speed for the entire pass",
+    "choice_c": "The PWC must sound one long blast on a horn before passing",
+    "choice_d": "The PWC may jump the wake freely as long as it stays within 50 feet of the other vessel",
+    "correct_choice": "A",
+    "explanation": "Georgia law allows a PWC to overtake another vessel, but the PWC must not change course in order to ride or jump the wake of the boat being overtaken.",
+    "weight": 2,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Operating a PWC'"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What type of personal flotation device does Georgia law require each person riding on a PWC to wear?",
+    "choice_a": "Any seat cushion or throwable device kept within reach is sufficient",
+    "choice_b": "A U.S. Coast Guard-approved Type I, II, III, or V PFD that is properly fitted and fastened; inflatable Type V PFDs are not permitted for PWC use",
+    "choice_c": "An inflatable Type V PFD is the only style approved for PWC riders",
+    "choice_d": "No PFD is required for a PWC rider once they turn 16",
+    "correct_choice": "B",
+    "explanation": "Each person riding on a PWC in Georgia must wear a U.S. Coast Guard-approved Type I, II, III, or V PFD that is properly fitted and fastened; inflatable PFDs are specifically excluded for PWC use.",
+    "weight": 3,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Specific PFD Requirements'; Georgia DNR, 'Requirements Specific to Personal Water Craft' (gadnrle.org/pwc-requirements)"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What does Georgia law require of a PWC that is towing a person on water skis or a similar device?",
+    "choice_a": "Any PWC may tow a skier as long as the operator glances back periodically",
+    "choice_b": "A wide-angle rearview mirror may always be substituted for an observer",
+    "choice_c": "The PWC must be rated by the manufacturer to carry three or more persons and must have an observer on board, in addition to the operator, watching the person being towed; a wide-angle mirror cannot be used in place of the observer",
+    "choice_d": "Georgia law flatly prohibits a PWC from ever towing a skier",
+    "correct_choice": "C",
+    "explanation": "A PWC towing a person on water skis or a similar device must be rated by the manufacturer to carry three or more persons and must carry an observer, in addition to the operator, capable of watching the person being towed at all times; a wide-angle mirror is not an acceptable substitute for an observer.",
+    "weight": 2,
+    "source_note": "Georgia DNR, 'Requirements Specific to Personal Water Craft' (gadnrle.org/pwc-requirements) and 'Skiers and Towing Skiers' (georgiawildlife.com/tow-skiers)"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Which of the following is specifically identified under Georgia law as an example of reckless PWC operation?",
+    "choice_a": "Slowing to idle speed while passing a marina",
+    "choice_b": "Wearing a properly fastened PFD while operating the PWC",
+    "choice_c": "Shutting off the engine before clearing debris from the pump intake",
+    "choice_d": "Dropping off a water-skier close to swimmers, a launching ramp, or other boaters, or 'buzzing' other boats",
+    "correct_choice": "D",
+    "explanation": "Georgia law treats water-skiing or dropping off water-skiers close to swimmers, launching ramps, or other boaters, as well as 'buzzing' other boats, as examples of reckless operation, a criminal offense.",
+    "weight": 2,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Reckless Operation and Improper Distance'"
+  }
+]

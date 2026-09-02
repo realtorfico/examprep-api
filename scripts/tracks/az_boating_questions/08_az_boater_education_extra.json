@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Arizona Boater Education",
+    "question": "Under Arizona Revised Statutes 5-341, what is the age and horsepower threshold restricting who may operate a motor-powered watercraft?",
+    "choice_a": "No person under 16 may operate any motorized watercraft under any circumstance, with no exceptions",
+    "choice_b": "The threshold is 21 years old and 50 horsepower, matching Arizona's alcohol laws",
+    "choice_c": "No person under the age of 12 may operate a watercraft with a motor greater than 8 horsepower, except in an emergency or when a parent, guardian, or another person at least 18 years old is aboard the vessel",
+    "choice_d": "There is no age or horsepower threshold anywhere in Arizona's boating statutes",
+    "correct_choice": "C",
+    "explanation": "ARS 5-341, titled 'Negligent operation of watercraft or water skis; restriction in operation of watercraft; violation; classification,' restricts operation of a motor exceeding 8 horsepower by anyone under age 12 unless an emergency exists or a parent, guardian, or person 18 or older is aboard supervising.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-341(E)-(F) (azleg.gov)"
+  },
+  {
+    "topic": "Arizona Boater Education",
+    "question": "Does Arizona law set a separate, distinct minimum age specifically for operating a personal watercraft (PWC/jet ski), apart from the general motor-powered watercraft rule?",
+    "choice_a": "Yes, Arizona sets a distinct statutory minimum age of 16 specifically for PWC operators",
+    "choice_b": "Yes, Arizona bans anyone under 18 from operating a PWC under any circumstance",
+    "choice_c": "Yes, but only for PWCs rented from a commercial livery, not privately owned PWCs",
+    "choice_d": "No -- ARS 5-341's under-12/over-8-horsepower restriction (with its parent, guardian, or 18-plus supervision exception) applies to PWCs the same as it applies to any other motor-powered watercraft; Arizona has no separate PWC-specific age statute",
+    "correct_choice": "D",
+    "explanation": "Arizona's boating statutes (ARS Title 5, Chapter 3) do not carve out a separate age minimum for personal watercraft; the same ARS 5-341 under-12/over-8-horsepower supervision rule that applies to motorboats generally also governs PWC operation in Arizona.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes Title 5, Chapter 3; ARS 5-341 (azleg.gov) -- no separate PWC age statute found"
+  },
+  {
+    "topic": "Arizona Boater Education",
+    "question": "An Arizona resident who was born in 1995 plans to operate a 40-horsepower boat on the Nevada portion of Lake Mead. Even though Arizona itself has no mandatory boater-education law, what Nevada requirement could still apply to that person?",
+    "choice_a": "Nevada law requires anyone born on or after January 1, 1983 who operates a vessel over 15 horsepower to complete a NDOW-approved boater education course, and this requirement binds boaters -- including Arizona residents -- while on the Nevada side of shared waters like Lake Mead and Lake Mohave",
+    "choice_b": "Nothing -- Arizona residents are automatically exempt from any other state's boating laws while on any shared lake",
+    "choice_c": "Nevada requires a boater card only for personal watercraft, never for larger motorboats, regardless of horsepower",
+    "choice_d": "Nevada's requirement applies only to Nevada residents, never to visitors from another state",
+    "correct_choice": "A",
+    "explanation": "The National Park Service's Lake Mead/Lake Mohave boating guidance confirms Nevada mandates boater education for anyone born on or after January 1, 1983 operating a vessel over 15 horsepower, and notes boaters on the shared reservoirs must comply with both Nevada's and Arizona's laws -- so an Arizona resident meeting that birth-year and horsepower profile cannot rely on Arizona's lack of a mandate while on the Nevada side.",
+    "weight": 3,
+    "source_note": "National Park Service, Lake Mead National Recreation Area boating/motorized-boating guidance (nps.gov); Nevada Department of Wildlife boater-education requirement as summarized by Boat-Ed Nevada course page"
+  },
+  {
+    "topic": "Arizona Boater Education",
+    "question": "How does Nevada's minimum age to operate a personal watercraft (PWC) compare to Arizona's age-based PWC restriction, and why does this matter on Lake Mead or Lake Mohave?",
+    "choice_a": "Nevada and Arizona have identical PWC age minimums, so there is never any conflict on shared lakes",
+    "choice_b": "Nevada sets a straightforward minimum operating age of 14 for PWCs, which is stricter in effect than Arizona's under-12/over-8-horsepower supervision rule -- so a 12- or 13-year-old who could operate a PWC in Arizona with adult supervision could still be barred from operating one on the Nevada side of a shared lake",
+    "choice_c": "Nevada has no minimum age at all for PWC operation, making it more permissive than Arizona",
+    "choice_d": "Nevada's PWC age minimum is 21, the same as its minimum drinking age",
+    "correct_choice": "B",
+    "explanation": "National Park Service guidance for Lake Mead/Lake Mohave states Nevada requires PWC operators to be at least 14 years old, a flat age floor with no supervised-minor exception -- unlike Arizona's under-12/over-8-horsepower rule which allows younger operation of larger motors under adult supervision. Because boaters on the shared reservoirs must follow both states' rules, the stricter Nevada floor effectively controls PWC operation on the Nevada side.",
+    "weight": 3,
+    "source_note": "National Park Service, Lake Mead National Recreation Area boating regulations summary (nps.gov)"
+  },
+  {
+    "topic": "Arizona Boater Education",
+    "question": "What education requirement does Utah impose on personal watercraft (PWC) operators that could affect an Arizona boater on the Utah portion of Lake Powell?",
+    "choice_a": "Utah requires every boat operator of any age or vessel type to hold a state-issued boating license, similar to a driver's license",
+    "choice_b": "Utah has no PWC-specific rules at all, making its law identical to Arizona's",
+    "choice_c": "Utah requires PWC operators between the ages of 12 and 17 to complete a boating safety education course and obtain a Boating Safety Education Certificate before operating a PWC, a requirement Arizona itself does not impose on any age group",
+    "choice_d": "Utah's requirement applies only to Utah residents, never to out-of-state visitors on Lake Powell",
+    "correct_choice": "C",
+    "explanation": "Utah mandates that PWC operators aged 12 to 17 complete an approved boating safety education course and obtain a certificate, per Utah Division of Natural Resources / Boat-Ed Utah materials. Because Lake Powell straddles Arizona and Utah, a young Arizona resident who faces no such requirement at home could still need Utah's certificate to legally operate a PWC on the Utah side of the lake.",
+    "weight": 3,
+    "source_note": "Utah boating education requirement as summarized by Boat-Ed Utah course page; National Park Service Glen Canyon National Recreation Area (Lake Powell) boating guidance (nps.gov) referencing both Utah and Arizona regulations"
+  },
+  {
+    "topic": "Arizona Boater Education",
+    "question": "As a general principle, when an Arizona boater operates on a reservoir shared with another state -- such as Lake Mead or Lake Mohave (shared with Nevada) or Lake Powell (shared with Utah) -- whose boater-education and age rules control?",
+    "choice_a": "Arizona law always controls on any water Arizona borders, regardless of which state's territory the boater is physically in",
+    "choice_b": "Federal law fully preempts all state boating requirements on any shared reservoir, so no state rule ever applies",
+    "choice_c": "Whichever state issued the boat's registration always controls, regardless of location",
+    "choice_d": "The boater must comply with the rules of whichever state's waters they are actually on, meaning a stricter neighboring state's age or education requirement can apply even though Arizona itself imposes no general boater-education mandate",
+    "correct_choice": "D",
+    "explanation": "Interstate reservoirs like Lake Mead/Lake Mohave (Arizona-Nevada) and Lake Powell (Arizona-Utah) are governed by whichever state's jurisdiction the boater is operating in at that moment; National Park Service guidance for both recreation areas explicitly tells boaters they must comply with the regulations of both bordering states, which is why an Arizona resident can be bound by Nevada's or Utah's stricter age-based or education-based rules while on those states' portions of the lake.",
+    "weight": 2,
+    "source_note": "National Park Service, Lake Mead National Recreation Area and Glen Canyon National Recreation Area (Lake Powell) boating guidance pages (nps.gov)"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under Minnesota's child life jacket law (Minn. Stat. 86B.501), what is required of a child under age 10 aboard a watercraft that is underway?",
+    "choice_a": "No PFD is ever required for children in Minnesota",
+    "choice_b": "The child only needs a PFD if the operator requests it",
+    "choice_c": "The child must wear a U.S. Coast Guard-approved personal flotation device unless the child is below the top deck or inside an enclosed cabin",
+    "choice_d": "The child must wear a PFD only on lakes larger than 500 acres",
+    "correct_choice": "C",
+    "explanation": "Minnesota law requires children under 10 to wear an approved PFD whenever a watercraft is underway, unless they are below the top deck or in an enclosed cabin; the requirement exists because young children can go from fine to submerged in seconds after an unexpected fall overboard.",
+    "weight": 4,
+    "source_note": "Minn. Stat. 86B.501 (personal flotation devices; children under 10)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Which vessels or activities are given a specific exception from Minnesota's general PFD equipment requirements?",
+    "choice_a": "All personal watercraft",
+    "choice_b": "Every rental pontoon boat",
+    "choice_c": "All vessels operating after sunset",
+    "choice_d": "Sailboards, and racing shells whose rowers are accompanied by a chase boat carrying the required devices",
+    "correct_choice": "D",
+    "explanation": "Minnesota's PFD statute carves out narrow exceptions for sailboards and for competitive rowing shells whose crew is accompanied by a chase boat carrying the otherwise-required flotation devices; these are specific, limited exceptions rather than a general opt-out.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.501 (equipment exceptions for sailboards and racing shells)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What PFD rule applies specifically to every person riding on or being towed behind a personal watercraft in Minnesota?",
+    "choice_a": "Each person on board, and each person being towed, must wear a U.S. Coast Guard-approved wearable personal flotation device",
+    "choice_b": "Only the PWC operator needs a PFD; passengers do not",
+    "choice_c": "A PFD is optional if the rider can swim well",
+    "choice_d": "PFDs are only required for PWC riders under age 18",
+    "correct_choice": "A",
+    "explanation": "Minnesota's personal watercraft statute (86B.313) requires every person on board a PWC, as well as anyone being towed behind it (such as a tuber or water-skier), to wear an approved wearable PFD, since PWCs and towed riders both carry a high risk of sudden immersion.",
+    "weight": 4,
+    "source_note": "Minn. Stat. 86B.313 (personal watercraft; PFD requirements)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is the essential difference between a Type I offshore life jacket and a Type III flotation aid?",
+    "choice_a": "A Type I is only sized for children, while a Type III is for adults",
+    "choice_b": "A Type I is designed to turn most unconscious wearers face-up and offers the most buoyancy, while a Type III is more comfortable for continuous wear but will not reliably turn an unconscious person face-up",
+    "choice_c": "There is no meaningful difference; the type numbers are purely cosmetic",
+    "choice_d": "A Type III has more buoyancy than a Type I",
+    "correct_choice": "B",
+    "explanation": "A Type I offshore life jacket provides the highest buoyancy and is designed to turn most unconscious wearers face-up, making it suited to remote water where rescue may be delayed, while a Type III flotation aid is more comfortable for activities like fishing but offers less turning ability.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (USCG PFD type classifications)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a Type IV PFD, and how is it meant to be used?",
+    "choice_a": "A wearable jacket sized only for infants",
+    "choice_b": "A device that never needs Coast Guard approval",
+    "choice_c": "A throwable device, such as a ring buoy or buoyant cushion, meant to be thrown to a person in the water rather than worn",
+    "choice_d": "An underwater breathing apparatus",
+    "correct_choice": "C",
+    "explanation": "A Type IV PFD, such as a ring buoy or buoyant seat cushion, is a throwable device intended to be tossed to a conscious person in the water and held onto until rescued; it supplements but never replaces the wearable PFDs required for everyone aboard.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (USCG PFD type classifications)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a Type V PFD, and what limitation applies to its use?",
+    "choice_a": "A universal device approved for absolutely any use once purchased",
+    "choice_b": "A device intended solely for pets",
+    "choice_c": "A children's pool floatie",
+    "choice_d": "A special-use device, such as an inflatable belt pack or work vest, that only satisfies a vessel's PFD requirement if it is used according to the conditions and activity printed on its label",
+    "correct_choice": "D",
+    "explanation": "Type V PFDs, including many inflatable belt packs, are approved by the Coast Guard only for the specific activity and conditions stated on the label, and many must actually be worn (not merely stowed) to count toward a vessel's required PFD count.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (USCG PFD type classifications)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "For a PFD to legally satisfy a Minnesota watercraft's carriage requirement, what condition must it be in?",
+    "choice_a": "U.S. Coast Guard-approved, in serviceable condition (no rips, waterlogging, or broken straps), the right size for the intended wearer, and readily accessible",
+    "choice_b": "Any PFD anywhere on the boat, regardless of size, fit, or condition",
+    "choice_c": "Locked inside a cabin compartment that cannot be reached while underway",
+    "choice_d": "Only Coast Guard-approved; fit and condition are irrelevant",
+    "correct_choice": "A",
+    "explanation": "A PFD only meets legal and practical requirements when it is Coast Guard-approved, properly sized for its wearer, in good serviceable condition, and stowed where it can be grabbed quickly -- a PFD buried under gear or a rotted, waterlogged jacket does nothing during a real emergency.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (PFD condition and accessibility), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why do Minnesota boating safety courses emphasize wearing a PFD at all times rather than simply keeping it stowed within reach?",
+    "choice_a": "Because Minnesota law makes stowed PFDs illegal",
+    "choice_b": "Because most drowning victims in boating accidents were not wearing a PFD, and falls overboard or capsizings often happen too suddenly to put one on afterward",
+    "choice_c": "Because wearing a PFD is only useful once someone is already in the water",
+    "choice_d": "Because PFDs work better when left dry in storage",
+    "correct_choice": "B",
+    "explanation": "National boating-accident data consistently shows most drowning victims were not wearing a PFD; because a capsizing or sudden fall overboard often gives no warning, there is frequently no time to locate and put one on after the emergency has already started.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (PFD wear rate and drowning statistics), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why is a properly worn PFD especially critical on Minnesota's lakes in early spring or late fall?",
+    "choice_a": "Cold water has no meaningful effect on a boater's ability to swim or stay afloat",
+    "choice_b": "PFDs stop working once water temperature drops below 60 degrees Fahrenheit",
+    "choice_c": "Cold water dramatically speeds the onset of hypothermia and can trigger cold-water shock that impairs swimming ability within minutes, so a PFD keeps a person's airway above water even if they cannot swim effectively",
+    "choice_d": "Only inflatable PFDs function in cold water",
+    "correct_choice": "C",
+    "explanation": "Minnesota's lake water can stay dangerously cold well into late spring even on a warm, sunny day; cold shock can cause involuntary gasping and rapid loss of muscle control and swimming ability, so a worn PFD is often the difference between staying afloat and drowning before help arrives.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (cold-water immersion), applied to Minnesota's northern lake climate"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Which choice best describes how many wearable PFDs a Minnesota motorboat carrying five people must have aboard, in addition to any required throwable device?",
+    "choice_a": "Exactly one PFD regardless of how many people are aboard",
+    "choice_b": "No PFDs are required if the boat has a horn",
+    "choice_c": "Two PFDs, with the rest of the passengers expected to share",
+    "choice_d": "One properly sized, Coast Guard-approved wearable PFD for each of the five people aboard",
+    "correct_choice": "D",
+    "explanation": "Minnesota's equipment rule (implementing Minn. Stat. 86B.501 through commissioner-prescribed standards) requires one appropriately sized wearable PFD for every person aboard, consistent with the nationwide USCG-aligned standard, plus a throwable device on larger vessels.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.501 (personal flotation device quantity requirement, per person aboard)"
+  }
+]

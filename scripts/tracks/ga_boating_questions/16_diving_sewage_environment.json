@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "Where is it legal to pump out sewage from a wastewater holding system or marine sanitation device (MSD) in Georgia?",
+    "choice_a": "Only into an approved pump-out facility or a sewer system located on dry land",
+    "choice_b": "Anywhere in open water more than one mile from shore",
+    "choice_c": "Directly into any lake as long as the boat is moving",
+    "choice_d": "Into any river with a current strong enough to disperse it",
+    "correct_choice": "A",
+    "explanation": "It is illegal to pump sewage from a wastewater holding system, portable toilet, or MSD into surrounding waters; it may only be discharged into an approved pump-out facility or a sewer system located on dry land.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Discharge of Waste'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "What must all vessels equipped with marine toilets be issued from the Georgia DNR?",
+    "choice_a": "A separate license plate for the toilet",
+    "choice_b": "A Marine Toilet Certificate decal, affixed to the hull adjacent to the vessel's registration number",
+    "choice_c": "Nothing -- marine toilets require no DNR certification",
+    "choice_d": "An annual renewal sticker that must be reapplied every year",
+    "correct_choice": "B",
+    "explanation": "Vessels with marine toilets must be registered with the DNR and issued a Marine Toilet Certificate decal, affixed adjacent to the registration number; the one-time fee is $5 and no renewal is required.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Discharge of Waste'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "On certain named Georgia lakes (such as Lake Lanier, Lake Allatoona, and Lake Hartwell), what must a vessel's marine toilet holding tank be built to do?",
+    "choice_a": "Discharge treated waste directly into the lake",
+    "choice_b": "Automatically empty every 24 hours regardless of location",
+    "choice_c": "Be emptied only by being pumped out, with the Y valve removed to prevent discharge",
+    "choice_d": "There is no special holding tank requirement on these lakes",
+    "correct_choice": "C",
+    "explanation": "On lakes including Clarks Hill, Allatoona, Blackshear, Blue Ridge, Hartwell, Russell, Seminole, Sidney Lanier, Sinclair, Walter F. George, and West Point, a vessel's marine toilet holding tank must be emptied only by pump-out, with the Y valve removed to prevent discharge.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Discharge of Waste'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "What record must a boater with a wastewater holding system maintain?",
+    "choice_a": "No records are required for wastewater systems",
+    "choice_b": "A photograph of the empty holding tank after each pump-out",
+    "choice_c": "A record only of the boat's fuel purchases",
+    "choice_d": "A record, going back at least one year, of the name and location of pump-out facilities used and the dates of use",
+    "correct_choice": "D",
+    "explanation": "Boaters must maintain a record, covering at least the past year, of the names and locations of the pump-out facilities used to empty their holding system and the dates of such use.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Discharge of Waste'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "Is it legal to dump oil into a vessel's bilge without a means for proper disposal?",
+    "choice_a": "No, boaters may not dump oil into the bilge without a means for proper disposal, and must dispose of oil waste at an approved reception facility",
+    "choice_b": "Yes, as long as the amount is small",
+    "choice_c": "Yes, if the vessel is more than one mile from shore",
+    "choice_d": "This restriction applies only to commercial vessels",
+    "correct_choice": "A",
+    "explanation": "Boaters are not allowed to dump oil into the bilge without a means for proper disposal, and must dispose of oil waste at an approved reception facility; a bucket or bailer may be used for temporary storage on recreational vessels.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Discharge of Oil and Other Hazardous Substances'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "Who must be called if your vessel discharges oil or hazardous substances into the water?",
+    "choice_a": "Only the nearest marina office",
+    "choice_b": "The National Response Center immediately, and the Georgia Environmental Protection Division within 24 hours",
+    "choice_c": "No one; minor discharges do not need to be reported",
+    "choice_d": "Only your vessel's insurance company",
+    "correct_choice": "B",
+    "explanation": "A discharge of oil or hazardous substances must be reported immediately to the National Response Center, with a follow-up call to the Georgia Environmental Protection Division within 24 hours of the discharge.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Discharge of Oil and Other Hazardous Substances'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "Is it legal to obstruct navigation by anchoring in the traveled portion of a river or channel in a way that blocks other vessels?",
+    "choice_a": "Yes, as long as an anchor light is displayed",
+    "choice_b": "Yes, anchoring anywhere in a channel is always allowed",
+    "choice_c": "No, this is illegal because it interferes with the safe navigation of other vessels",
+    "choice_d": "It is only illegal at night",
+    "correct_choice": "C",
+    "explanation": "Anchoring a vessel in the traveled portion of a river or channel in a way that prevents or interferes with other vessels passing is one of the specifically prohibited forms of obstructing navigation.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Obstructing Navigation'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "What Homeland Security restriction applies when approaching a U.S. Naval vessel on Georgia waters?",
+    "choice_a": "There are no restrictions around Naval vessels on state waters",
+    "choice_b": "Boats may approach as close as they like if flying a white flag",
+    "choice_c": "The restriction applies only to commercial cargo ships, not Naval vessels",
+    "choice_d": "Do not approach within 100 yards and slow to minimum speed within 500 yards; contact the Naval vessel or USCG escort on VHF-FM channel 16 if you need to pass closer",
+    "correct_choice": "D",
+    "explanation": "Boaters must not approach within 100 yards and must slow to minimum speed within 500 yards of a U.S. Naval vessel; if closer passage is needed for safety, they must contact the Naval vessel or USCG escort on VHF-FM channel 16.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Homeland Security Restrictions'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "Is it legal to move, displace, tamper with, damage, or destroy a navigational aid on Georgia waters?",
+    "choice_a": "No, this is specifically prohibited under Georgia's obstructing-navigation rules",
+    "choice_b": "Yes, if the aid appears to be outdated",
+    "choice_c": "Yes, private landowners may remove markers near their property",
+    "choice_d": "Only DNR employees are prohibited from doing this; boaters may do so freely",
+    "correct_choice": "A",
+    "explanation": "It is illegal to move, displace, tamper with, damage, or destroy any navigational aid placed on public waters by proper authorities.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Obstructing Navigation'"
+  }
+]

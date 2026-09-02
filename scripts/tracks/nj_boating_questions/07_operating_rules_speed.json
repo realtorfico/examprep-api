@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under New Jersey's minimum-headway-speed rule, within what distance of a dock, pier, marina, wharf, work float, or barge must a vessel slow to a speed that creates no wake?",
+    "choice_a": "200 feet",
+    "choice_b": "50 feet",
+    "choice_c": "1,000 feet",
+    "choice_d": "There is no defined distance under New Jersey law",
+    "correct_choice": "A",
+    "explanation": "New Jersey requires vessels to operate at minimum headway speed, meaning no wake, within 200 feet of marinas, piers, docks, wharves, work floats, and barges, as well as in bridge openings under 400 feet wide and waterways under 200 feet wide.",
+    "weight": 5,
+    "source_note": "NJSP Marine Services Bureau FAQ; N.J.A.C. 13:82 minimum-headway-speed rule"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "According to New Jersey's Marine Services Bureau, what simple test can a boater use to judge whether they are operating too fast near a no-wake area?",
+    "choice_a": "There is no practical way to judge safe speed",
+    "choice_b": "If the vessel is causing a wake, it is going too fast for that area",
+    "choice_c": "As long as the throttle is below half, wake does not matter",
+    "choice_d": "Speed is only regulated by a vessel's horsepower rating, not its wake",
+    "correct_choice": "B",
+    "explanation": "The Marine Services Bureau's plain-language guidance is that if a vessel is causing a wake in a minimum-headway-speed area, the operator is going too fast and must slow down.",
+    "weight": 3,
+    "source_note": "NJSP Marine Services Bureau FAQ on minimum headway speed"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What must a vessel operator do when approaching a bridge opening narrower than 400 feet wide in New Jersey?",
+    "choice_a": "There is no special speed requirement near narrow bridge openings",
+    "choice_b": "Sound five short blasts and stop completely",
+    "choice_c": "Reduce to minimum headway (no-wake) speed",
+    "choice_d": "Increase speed to clear the bridge opening quickly",
+    "correct_choice": "C",
+    "explanation": "New Jersey's minimum-headway-speed rule applies to bridge openings under 400 feet wide, requiring vessels to slow to no-wake speed to avoid dangerous wake or maneuvering conditions in the confined space.",
+    "weight": 4,
+    "source_note": "NJSP Marine Services Bureau FAQ; N.J.A.C. 13:82 minimum-headway-speed rule"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What generally defines 'reckless or negligent operation' of a vessel under New Jersey boating law?",
+    "choice_a": "Operating a boat at any speed above idle",
+    "choice_b": "Only operating a boat without a current registration decal",
+    "choice_c": "Reckless operation is not a defined offense in New Jersey",
+    "choice_d": "Operating in a manner that endangers the life, limb, or property of any person, such as excessive speed near swimmers, weaving through congested traffic, or ignoring right-of-way rules",
+    "correct_choice": "D",
+    "explanation": "New Jersey law treats reckless or careless boat operation as operating in a way that endangers people or property, which can include excessive speed around other vessels or swimmers, disregarding navigation rules, or dangerous maneuvers, and can result in citation regardless of BUI status.",
+    "weight": 4,
+    "source_note": "New Jersey boating law reckless/careless operation provisions (N.J.S.A. Title 12); NJSP Marine Services Bureau enforcement guidance"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Who has enforcement authority to stop and inspect a vessel, or cite an operator for a boating violation, on New Jersey's waters?",
+    "choice_a": "The New Jersey State Police Marine Services Bureau, along with other authorized state and local marine law enforcement officers",
+    "choice_b": "Only the U.S. Coast Guard, with no state-level enforcement",
+    "choice_c": "No agency has authority to stop a recreational vessel",
+    "choice_d": "Only municipal police departments located directly on the shoreline",
+    "correct_choice": "A",
+    "explanation": "The NJSP Marine Services Bureau is New Jersey's primary boating law enforcement agency, working alongside other authorized state and local marine officers to enforce registration, safety equipment, speed, and BUI laws on the water.",
+    "weight": 3,
+    "source_note": "NJSP Marine Services Bureau enforcement authority and mission"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Why do many New Jersey waterways enforce reduced speeds near swimming beaches even outside a formally marked buoy zone?",
+    "choice_a": "Reduced speed near swimmers is never required in New Jersey",
+    "choice_b": "Because the general duty to operate at a safe speed for conditions and avoid endangering people applies everywhere, not only within marked zones",
+    "choice_c": "Because speed limits only apply inside marked buoy zones and nowhere else",
+    "choice_d": "Because swimmers are legally required to yield to all vessels",
+    "correct_choice": "B",
+    "explanation": "A boat operator always has a general duty to operate at a speed safe for the conditions and to avoid endangering others, which applies near swimmers and congested areas even where no specific numeric speed-zone buoy exists.",
+    "weight": 3,
+    "source_note": "Universal 'safe speed for conditions' operating principle applied under New Jersey reckless-operation law"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What should an operator do before getting underway to reduce the risk of an unsafe departure from a crowded marina?",
+    "choice_a": "There is no need to check surroundings before departing a marina",
+    "choice_b": "Sound the danger signal and depart regardless of nearby traffic",
+    "choice_c": "Check for other boats, swimmers, and obstructions, and depart at idle/no-wake speed until clear of the marina area",
+    "choice_d": "Depart at full throttle to clear the area as quickly as possible",
+    "correct_choice": "C",
+    "explanation": "Because marinas are congested with moored boats, docks, and people, an operator should look around for hazards and depart at idle or no-wake speed until clear, consistent with New Jersey's minimum-headway-speed rule near docks and piers.",
+    "weight": 3,
+    "source_note": "Universal safe-departure practice reinforced by NJ's 200-foot minimum-headway-speed rule"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "How does New Jersey's minimum-headway-speed rule treat a waterway that is less than 200 feet wide?",
+    "choice_a": "Narrow waterways have no speed restriction at all",
+    "choice_b": "Only PWCs must slow down in narrow waterways",
+    "choice_c": "Vessels may exceed normal speed limits in narrow waterways to pass through quickly",
+    "choice_d": "Vessels must operate at minimum headway (no-wake) speed throughout that narrow waterway",
+    "correct_choice": "D",
+    "explanation": "New Jersey's minimum-headway-speed rule specifically extends to waterways narrower than 200 feet, requiring no-wake operation because there is little room to maneuver safely around other boats, docks, or obstructions.",
+    "weight": 3,
+    "source_note": "NJSP Marine Services Bureau FAQ; N.J.A.C. 13:82 minimum-headway-speed rule"
+  }
+]

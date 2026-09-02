@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "Does a Massachusetts motorboat or PWC registration remain valid indefinitely once issued, or must it be periodically renewed?",
+    "choice_a": "It must be periodically renewed, with a current validity decal displayed on the hull showing the registration is up to date, similar to a car's annual or biennial registration sticker",
+    "choice_b": "Once issued, a Massachusetts vessel registration never needs to be renewed under any circumstances",
+    "choice_c": "Renewal is required only if the vessel changes color",
+    "choice_d": "Renewal is optional and left entirely to the owner's discretion",
+    "correct_choice": "A",
+    "explanation": "Like most states, Massachusetts requires motorboat and PWC registrations to be periodically renewed, with a current decal displayed on the hull to show the registration is valid, similar in concept to a motor vehicle's registration renewal sticker.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (vessel registration renewal cycle), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "In addition to displaying the registration decal on the hull, what else must a Massachusetts boater generally do with the vessel's certificate of registration?",
+    "choice_a": "Nothing further is required once the decal is displayed",
+    "choice_b": "Carry the certificate of registration aboard the vessel and be able to present it to an enforcement officer upon request, similar to a vehicle registration card",
+    "choice_c": "Mail the certificate to the state every time the vessel is used",
+    "choice_d": "Frame the certificate and display it publicly at the boater's home, not aboard the vessel",
+    "correct_choice": "B",
+    "explanation": "Beyond displaying the registration decal on the hull, a Massachusetts boater must also carry the certificate of registration itself aboard the vessel, ready to present to a Massachusetts Environmental Police officer or other enforcement official upon request, just as a driver carries a vehicle registration card.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (certificate of registration carriage requirement), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "If a vessel is federally documented with the U.S. Coast Guard rather than state-numbered, is it exempt from all Massachusetts boating requirements?",
+    "choice_a": "Yes -- a federally documented vessel is completely exempt from every Massachusetts boating law",
+    "choice_b": "No -- a federally documented vessel is exempt from Massachusetts's state numbering/registration decal system specifically, but its operator must still comply with other applicable Massachusetts requirements, such as safety equipment carriage and boater education",
+    "choice_c": "Federal documentation applies only to vessels used exclusively overseas",
+    "choice_d": "Documentation replaces the need for any safety equipment aboard",
+    "correct_choice": "B",
+    "explanation": "Federal vessel documentation through the U.S. Coast Guard substitutes for a state registration number and decal, but it does not exempt the vessel's operator from other Massachusetts requirements, such as carrying required safety equipment or complying with the boater education mandate where applicable.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (federal documentation vs. state registration scope), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "When a Massachusetts motorboat or PWC changes ownership, what is generally expected of the new owner regarding registration?",
+    "choice_a": "The new owner must apply to transfer or newly register the vessel within a defined period after the purchase, rather than continuing to operate indefinitely under the previous owner's registration",
+    "choice_b": "No action is ever required; registrations automatically and permanently follow the vessel regardless of ownership",
+    "choice_c": "Only the seller has any registration obligation; the buyer has none",
+    "choice_d": "Registration transfer is optional and has no time limit",
+    "correct_choice": "A",
+    "explanation": "When a registered vessel is sold, the new owner is generally expected to apply for a transferred or new registration within a defined period after the purchase, ensuring the state's registration records accurately reflect current ownership rather than continuing indefinitely under the prior owner's name.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (registration transfer upon change of ownership), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "What additional compliance expectation applies to a boat rental or livery business operating in Massachusetts, beyond what applies to a private boat owner?",
+    "choice_a": "Livery operators are exempt from all registration and safety equipment requirements since renters are responsible for their own compliance",
+    "choice_b": "A livery or rental operation is generally expected to keep its rental vessels properly registered and equipped, display capacity/data information for renters, and ensure the equipment aboard meets the same safety standards required of any operator",
+    "choice_c": "Rental vessels are only inspected once, at the time of original manufacture, and never again",
+    "choice_d": "Livery businesses may set their own independent safety equipment standards that override state requirements",
+    "correct_choice": "B",
+    "explanation": "A Massachusetts boat rental or livery operation is expected to maintain its fleet in compliance with the same registration and required safety equipment standards as any private owner, and to ensure renters have access to accurate capacity information and properly functioning equipment before departure.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (livery/rental operator compliance responsibility), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "What happens to a PWC's handling and stability if it is operated with more riders or gear than its manufacturer-rated capacity allows?",
+    "choice_a": "Handling and stability are unaffected by rider count as long as the total weight is under 1,000 pounds",
+    "choice_b": "Overloading a PWC beyond its rated capacity reduces freeboard and stability, making it more prone to swamping, harder to control, and slower to respond, especially in chop or waves",
+    "choice_c": "Additional riders always make a PWC more stable and easier to control",
+    "choice_d": "PWCs have no manufacturer-rated capacity limit, unlike other motorboats",
+    "correct_choice": "B",
+    "explanation": "Like any vessel, a PWC has a manufacturer-rated maximum person and weight capacity; exceeding it reduces freeboard and stability, making the craft more prone to swamping and harder for the operator to control, particularly in choppy water or waves.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (PWC capacity and overloading effects), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "Are most personal watercraft (PWCs) typically exempt from the federal fire extinguisher carriage requirement in the same way small open outboard boats can be?",
+    "choice_a": "No -- PWCs are always required to carry a fire extinguisher regardless of design",
+    "choice_b": "Often yes -- because most PWCs are small, open designs with no enclosed compartments where fuel vapor could accumulate and are not carrying passengers for hire, they commonly qualify for the same fire extinguisher exemption available to comparable small open outboard boats",
+    "choice_c": "PWCs are the only vessel type never eligible for any federal safety equipment exemption",
+    "choice_d": "The fire extinguisher exemption applies only to sailboats, never to PWCs",
+    "correct_choice": "B",
+    "explanation": "Because most PWCs are small, open craft with no enclosed spaces capable of trapping fuel vapor and are not used to carry passengers for hire, they commonly meet the same federal exemption from the fire extinguisher carriage requirement available to similarly designed small open outboard boats.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (federal fire extinguisher exemption applied to PWC design), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "What maintenance responsibility does a Massachusetts boat owner have regarding the displayed registration numbers on the hull over time?",
+    "choice_a": "None -- once applied, registration numbers require no further attention regardless of condition",
+    "choice_b": "Keep the numbers clean, legible, and unobstructed by equipment such as fishing rod holders or fenders, since faded, damaged, or blocked numbers can prevent identification by enforcement or other boaters",
+    "choice_c": "Registration numbers may be painted over once a year for aesthetic reasons",
+    "choice_d": "Only the decal, not the registration numbers themselves, ever needs upkeep",
+    "correct_choice": "B",
+    "explanation": "A boat owner is responsible for keeping the hull's registration numbers clean, legible, and free from obstruction by mounted equipment like rod holders or fenders, since faded or blocked numbers defeat the purpose of quick identification by enforcement officers or other boaters.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (registration number maintenance/legibility), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Registration & PWC Rules",
+    "question": "Beyond the state registration fee, what annual municipal tax does Massachusetts impose on most documented and numbered recreational vessels?",
+    "choice_a": "A local excise tax, assessed by the city or town where the vessel is principally moored, berthed, or kept, similar in concept to a motor vehicle excise tax",
+    "choice_b": "No vessel in Massachusetts is ever subject to any local tax",
+    "choice_c": "A one-time federal luxury tax paid only at the time of purchase, with no recurring municipal component",
+    "choice_d": "A tax that applies only to vessels used exclusively for commercial fishing",
+    "correct_choice": "A",
+    "explanation": "Massachusetts imposes an annual boat excise tax, assessed by the city or town where the vessel is principally moored, docked, or kept, conceptually similar to the motor vehicle excise tax familiar to Massachusetts drivers -- a separate obligation from the state's vessel registration fee.",
+    "weight": 2,
+    "source_note": "Massachusetts General Laws Chapter 60B, boat excise tax, consistent with Massachusetts municipal taxation practice"
+  }
+]

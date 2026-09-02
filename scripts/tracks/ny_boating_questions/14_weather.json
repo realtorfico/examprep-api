@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Weather",
+    "question": "What should every boater do before departing, regardless of how the sky currently looks?",
+    "choice_a": "Check a current marine or local weather forecast for the specific body of water they plan to use",
+    "choice_b": "Weather forecasts are unreliable and not worth checking before a trip",
+    "choice_c": "Only check weather forecasts if planning to be out overnight",
+    "choice_d": "Rely solely on how the sky looks at the moment of departure",
+    "correct_choice": "A",
+    "explanation": "Conditions on the water can change quickly, so checking a current, water-specific forecast before departure is a basic safety step regardless of how calm conditions appear at the dock.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course pre-departure weather-check guidance"
+  },
+  {
+    "topic": "Weather",
+    "question": "What are common visible warning signs of an approaching thunderstorm that a boater should watch for?",
+    "choice_a": "A gradually brightening sky with no wind changes",
+    "choice_b": "Darkening or towering clouds, a sudden shift or increase in wind, a noticeable temperature drop, and choppy or rapidly changing water conditions",
+    "choice_c": "Storms give no visible warning signs and always arrive without notice",
+    "choice_d": "Rising temperature and calm, clear skies",
+    "correct_choice": "B",
+    "explanation": "Darkening or towering cumulus clouds, sudden wind shifts, dropping temperature, and choppy water are classic early indicators that a storm is approaching and that boaters should head for shelter.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course weather-hazard recognition"
+  },
+  {
+    "topic": "Weather",
+    "question": "If a thunderstorm develops while a boater is on the water, what is the recommended course of action?",
+    "choice_a": "Anchor in open water and wait it out regardless of proximity to shore",
+    "choice_b": "Continue the planned activity since storms pass quickly",
+    "choice_c": "Head for the nearest safe shore or harbor as quickly and safely as possible rather than trying to outrun or ride out the storm in open water",
+    "choice_d": "Speed toward the storm to get through it faster",
+    "correct_choice": "C",
+    "explanation": "When a storm threatens, boaters should head for the nearest safe harbor or shoreline promptly rather than remaining in open water, where lightning risk and wave conditions are more dangerous.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course thunderstorm response guidance"
+  },
+  {
+    "topic": "Weather",
+    "question": "During a thunderstorm on the water, why should people on board avoid touching metal fittings, railings, or fishing rods?",
+    "choice_a": "Metal has no relationship to lightning risk on a boat",
+    "choice_b": "Metal objects attract fish and should be avoided only for that reason",
+    "choice_c": "Touching metal is dangerous only in freshwater, not saltwater",
+    "choice_d": "Metal objects can conduct electricity from a lightning strike, increasing the risk of injury to anyone in contact with them",
+    "correct_choice": "D",
+    "explanation": "Metal fittings, rails, and rods can conduct electrical current if the boat or nearby water is struck by lightning, so minimizing contact with metal and staying low and centered in the boat reduces injury risk.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course lightning-safety guidance"
+  },
+  {
+    "topic": "Weather",
+    "question": "What does a 'small craft advisory' issued by the National Weather Service generally signal to boaters?",
+    "choice_a": "Conditions (such as sustained winds and wave heights) have reached a level that could be hazardous to smaller recreational vessels, and operators should use caution or avoid going out",
+    "choice_b": "Only small non-motorized craft like canoes need to take any precaution",
+    "choice_c": "It indicates a mandatory closure of all boat ramps",
+    "choice_d": "It has no practical meaning for recreational boaters",
+    "correct_choice": "A",
+    "explanation": "A small craft advisory warns that wind and wave conditions could be hazardous to smaller vessels; less experienced or smaller-boat operators should strongly consider postponing their trip until conditions improve.",
+    "weight": 2,
+    "source_note": "National Weather Service marine forecast terminology, standard NASBLA-course content"
+  },
+  {
+    "topic": "Weather",
+    "question": "How can a boater without instruments roughly estimate increasing wind speed by observing the water's surface?",
+    "choice_a": "Water surface appearance has no relationship to wind speed",
+    "choice_b": "Progressively rougher water conditions -- from small ripples, to whitecaps, to larger breaking waves and spray -- correspond to increasing wind speeds, as described by the Beaufort wind scale",
+    "choice_c": "Calm, glassy water always indicates the highest wind speeds",
+    "choice_d": "Wind speed can only be estimated using a formal anemometer, never visually",
+    "correct_choice": "B",
+    "explanation": "The Beaufort wind scale links visual water-surface conditions -- from calm to ripples, whitecaps, and eventually large breaking waves -- to approximate wind speed ranges, giving boaters a practical way to judge conditions without instruments.",
+    "weight": 2,
+    "source_note": "Beaufort wind scale, standard NASBLA-course content"
+  },
+  {
+    "topic": "Weather",
+    "question": "How should an operator adjust their speed and heading when a boat is running with a following sea (waves approaching from behind)?",
+    "choice_a": "Increase speed to outrun the waves entirely",
+    "choice_b": "Following seas require no adjustment to speed or steering",
+    "choice_c": "Reduce speed and maintain careful steering control, since a following sea can cause the stern to slew sideways or the bow to dig in, risking a broach or swamping",
+    "choice_d": "Turn the boat sideways to the waves for a smoother ride",
+    "correct_choice": "C",
+    "explanation": "A following sea can push the stern around (broaching) or cause the bow to bury into the wave ahead if speed is excessive, so reduced speed and attentive steering help maintain control in these conditions.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course heavy-weather boat handling guidance"
+  },
+  {
+    "topic": "Weather",
+    "question": "What should a boater do if caught in sudden fog while underway?",
+    "choice_a": "Increase speed to get through the fog bank as quickly as possible",
+    "choice_b": "Turn off all electronics to conserve battery power",
+    "choice_c": "Fog requires no change in speed or signaling",
+    "choice_d": "Slow to a safe speed, sound the appropriate fog signal at regular intervals, post an extra lookout, and use navigation aids like GPS or a chart to maintain situational awareness",
+    "correct_choice": "D",
+    "explanation": "In sudden fog, reducing speed, sounding required fog signals, posting a lookout, and relying on GPS/charts (since visual references are lost) all help reduce collision and grounding risk until visibility improves.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course restricted-visibility navigation guidance"
+  },
+  {
+    "topic": "Weather",
+    "question": "How can changing cloud patterns, such as a rapidly building tall cumulus cloud with a dark, flattened top, signal an approaching hazard?",
+    "choice_a": "This cloud shape (an anvil-topped cumulonimbus) is characteristic of a mature thunderstorm capable of producing lightning, strong gusts, and heavy rain",
+    "choice_b": "This cloud type always indicates continued clear, calm weather",
+    "choice_c": "Cloud shape has no relationship to weather development",
+    "choice_d": "This cloud type only forms over land and never affects boaters on the water",
+    "correct_choice": "A",
+    "explanation": "A tall cumulus cloud that develops a dark, anvil-shaped flat top has matured into a cumulonimbus cloud, associated with thunderstorms, lightning, gusty winds, and heavy rain -- a clear signal to head for shelter.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course weather-pattern recognition"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why might a sudden drop in wind and an eerie calm actually be a warning sign rather than a relief, in certain thunderstorm situations?",
+    "choice_a": "A sudden calm always means all storm risk has permanently passed",
+    "choice_b": "A brief lull can sometimes precede the strong gust front or outflow winds that arrive just ahead of a thunderstorm's main force",
+    "choice_c": "Wind patterns have no connection to storm development",
+    "choice_d": "Calm conditions before a storm indicate it has already dissipated completely",
+    "correct_choice": "B",
+    "explanation": "An unusual lull in wind can sometimes precede a strong gust front that arrives ahead of a thunderstorm's heavier rain and lightning, so an eerie calm should not be mistaken for the danger having passed.",
+    "weight": 1,
+    "source_note": "Standard NASBLA-course weather-hazard awareness, gust front behavior"
+  }
+]

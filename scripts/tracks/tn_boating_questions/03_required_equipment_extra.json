@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Beyond the extinguisher itself, what routine maintenance should a boat owner perform on a required fire extinguisher?",
+    "choice_a": "Check the pressure gauge and expiration date periodically, and replace or recharge it if the gauge shows low pressure or it is out of date",
+    "choice_b": "No maintenance is ever needed once installed",
+    "choice_c": "Replace it every time the boat is registered",
+    "choice_d": "Only the manufacturer may inspect a boat's fire extinguisher",
+    "correct_choice": "A",
+    "explanation": "A required fire extinguisher should be checked periodically for a charged pressure gauge and a current expiration or service date, since an expired or discharged extinguisher will not perform in an actual fire.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is the purpose of a bilge pump or bailing device aboard a recreational vessel?",
+    "choice_a": "To remove water that accumulates in the lowest part of the hull from rain, waves, or a minor leak, helping prevent swamping",
+    "choice_b": "To pump fuel from the tank to the engine",
+    "choice_c": "To inflate a Type V PFD",
+    "choice_d": "To power the vessel's navigation lights",
+    "correct_choice": "A",
+    "explanation": "A bilge pump or manual bailing device removes water that collects in the bilge, the lowest part of the hull, from sources like rain, spray, or a small leak, helping keep the vessel from taking on enough water to swamp.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What basic first aid supply is strongly recommended to be kept aboard every recreational vessel, even though Tennessee's equipment chart focuses on fire, sound, and flotation equipment?",
+    "choice_a": "A stocked, waterproof first aid kit appropriate for treating minor injuries until help arrives",
+    "choice_b": "A prescription-only medical kit requiring a doctor's signature",
+    "choice_c": "No first aid supplies are ever recommended aboard a boat",
+    "choice_d": "Only a fire extinguisher can double as first aid equipment",
+    "correct_choice": "A",
+    "explanation": "While not always a strict registration-chart requirement, a basic, waterproof first aid kit is universally recommended boating safety equipment for treating cuts, burns, and other minor injuries until professional help can be reached.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why should an anchor and an adequate length of anchor line be considered essential equipment on a Tennessee reservoir, even though not always listed on a minimum equipment chart?",
+    "choice_a": "They allow a disabled or overheated vessel to hold its position safely, away from hazards like channels, dams, or other boat traffic, until help arrives or repairs are made",
+    "choice_b": "An anchor is required only for vessels used exclusively for fishing tournaments",
+    "choice_c": "Anchors are purely decorative on recreational boats",
+    "choice_d": "An anchor replaces the need for a fire extinguisher",
+    "correct_choice": "A",
+    "explanation": "A properly sized anchor and sufficient anchor line let a disabled vessel hold a safe position, away from channels, dam tailwaters, or congested traffic, while repairs are made or help arrives, making it practical safety equipment even where not separately itemized on a minimum-equipment chart.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What basic navigation and communication equipment is recommended for a boater heading out onto a large, open-water Tennessee reservoir where cell signal may be unreliable?",
+    "choice_a": "A charged marine VHF radio or similar reliable communication device, in addition to whatever cell phone coverage may exist",
+    "choice_b": "No communication equipment is ever necessary on inland reservoirs",
+    "choice_c": "A CB radio is legally required equipment on all Tennessee vessels",
+    "choice_d": "Only commercial vessels benefit from carrying a radio",
+    "correct_choice": "A",
+    "explanation": "Because cell phone coverage can be unreliable over large stretches of open reservoir water, a marine VHF radio or other reliable communication device is recommended so boaters can call for help if cell signal fails.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  }
+]

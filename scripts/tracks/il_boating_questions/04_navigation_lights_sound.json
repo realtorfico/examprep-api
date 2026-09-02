@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "Under 625 ILCS 45/4-2, when must a power-driven vessel display its required navigation lights on Illinois waters?",
+    "choice_a": "Only when other vessels are visible nearby",
+    "choice_b": "Only on Lake Michigan",
+    "choice_c": "Navigation lights are optional in Illinois",
+    "choice_d": "Between sunset and sunrise, and during periods of restricted visibility",
+    "correct_choice": "D",
+    "explanation": "Illinois requires navigation lights to be displayed between sunset and sunrise and during periods of restricted visibility, such as fog or heavy rain.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/4-2; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "For a power-driven vessel less than 39.4 feet long underway at night, what combination of lights satisfies Illinois's requirement in place of separate masthead and stern lights?",
+    "choice_a": "An all-round white light, combined with red and green sidelights",
+    "choice_b": "A single green light at the bow only",
+    "choice_c": "No white light is required if sidelights are shown",
+    "choice_d": "A flashing amber light at the stern only",
+    "correct_choice": "A",
+    "explanation": "On power-driven vessels less than 39.4 feet long, the masthead light and sternlight may be combined into a single all-round white light, displayed along with red and green sidelights.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/4-2 and 45/4-8; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "On a power-driven vessel's sidelights, which color is shown on the port (left) side and which on the starboard (right) side?",
+    "choice_a": "Blue on port, yellow on starboard",
+    "choice_b": "Red on port, green on starboard",
+    "choice_c": "Green on port, red on starboard",
+    "choice_d": "Both sides show white",
+    "correct_choice": "B",
+    "explanation": "Standard nautical convention, reflected in Illinois's navigation light rules, places a red sidelight on the port (left) side and a green sidelight on the starboard (right) side of a vessel.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/4-2; universal navigation light convention"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "Under Illinois's navigation light rules, how far must sidelights be visible on a dark, clear night for a power-driven vessel 39.4 feet or longer?",
+    "choice_a": "Only 100 yards away",
+    "choice_b": "Visibility distance does not matter as long as a light is shown",
+    "choice_c": "At least two miles away",
+    "choice_d": "At least ten miles away",
+    "correct_choice": "C",
+    "explanation": "Illinois requires sidelights on power-driven vessels 39.4 feet or longer to be visible from at least two miles away on a dark, clear night; on vessels shorter than 39.4 feet, one mile is sufficient.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/4-2; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "What lights should an unpowered vessel (such as a sailboat, canoe, or rowboat) less than 23.0 feet long display at night if it is impractical to rig full sidelights and a sternlight?",
+    "choice_a": "No light is required for vessels under 23 feet",
+    "choice_b": "A green light only",
+    "choice_c": "A siren instead of a light",
+    "choice_d": "At least one lantern or flashlight shining a white light, to be shown in time to prevent collision",
+    "correct_choice": "D",
+    "explanation": "Small unpowered vessels under 23.0 feet that cannot practically carry full running lights must at minimum have a flashlight or lantern showing a white light ready to display in time to avoid a collision.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/4-2; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "What light must all vessels display when anchored away from a dock or outside a designated mooring area, under Illinois law?",
+    "choice_a": "A white light visible for one mile in all directions",
+    "choice_b": "No light is required while anchored",
+    "choice_c": "A red light visible only from the bow",
+    "choice_d": "Running lights identical to those used while underway",
+    "correct_choice": "A",
+    "explanation": "A vessel anchored away from a dock or outside a designated mooring area must display an all-round white light visible for one mile so other boaters can see it in the dark.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/4-2; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "Illinois law states that vessels may not display which kind of extra lighting while underway at night?",
+    "choice_a": "Anchor lights while underway",
+    "choice_b": "Any lighting not required by law that could interfere with another vessel's ability to identify its navigation lights",
+    "choice_c": "Any lighting is allowed regardless of brightness or color",
+    "choice_d": "Interior cabin lighting only",
+    "correct_choice": "B",
+    "explanation": "Illinois prohibits displaying any lighting not required by law that would interfere with another vessel operator's ability to correctly identify that vessel's navigation lights.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/4-2; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "What kind of vessels are classified as 'unpowered vessels' under Illinois's navigation light rules?",
+    "choice_a": "Personal watercraft",
+    "choice_b": "All vessels registered before 1998",
+    "choice_c": "Sailboats and vessels that are paddled, poled, or rowed",
+    "choice_d": "Any vessel with an outboard motor under 10 hp",
+    "correct_choice": "C",
+    "explanation": "Illinois defines unpowered vessels for navigation-light purposes as sailboats and vessels propelled by paddling, poling, or rowing; note that a sailboat running under engine power is instead treated as a power-driven vessel.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/4-2; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "One accepted alternative to separate sidelights and a sternlight on an unpowered vessel less than 65.6 feet is:",
+    "choice_a": "A single flashing blue light at the bow",
+    "choice_b": "No lights at all if under sail",
+    "choice_c": "A strobe light replacing all running lights",
+    "choice_d": "A single combination red, green, and white light exhibited near the top of the mast",
+    "correct_choice": "D",
+    "explanation": "As an alternative to separate sidelights and a sternlight, an unpowered vessel under 65.6 feet may show a single combination red, green, and white light near the top of the mast.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/4-2; Handbook of Illinois Boating Laws and Responsibilities"
+  }
+]

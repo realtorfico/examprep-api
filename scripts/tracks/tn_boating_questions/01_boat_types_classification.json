@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What length categories does the U.S. Coast Guard use to classify vessels for equipment requirements such as fire extinguishers, as applied under Tennessee's watercraft equipment chart?",
+    "choice_a": "Class A (under 16 ft), Class 1 (16-26 ft), Class 2 (26-40 ft), and Class 3 (40-65 ft)",
+    "choice_b": "Small, Medium, Large, and Extra-Large",
+    "choice_c": "Class I through Class IV based solely on engine horsepower",
+    "choice_d": "Recreational, Commercial, Sail, and Personal Watercraft only",
+    "correct_choice": "A",
+    "explanation": "Tennessee's Legal Watercraft Equipment & Requirements chart applies increasing equipment requirements based on the federal length classes Class A (under 16 ft), Class 1 (16-26 ft), Class 2 (26-40 ft), and Class 3 (40-65 ft).",
+    "weight": 2,
+    "source_note": "TWRA Legal Watercraft Equipment & Requirements Chart"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Under Tennessee law, which of the following counts as a \"mechanically propelled\" vessel that must be registered?",
+    "choice_a": "A raft with no motor of any kind",
+    "choice_b": "A boat powered only by an electric trolling motor",
+    "choice_c": "A canoe propelled only by paddles",
+    "choice_d": "A rowboat propelled only by oars",
+    "correct_choice": "B",
+    "explanation": "Tennessee's registration statute defines mechanical propulsion to include electric trolling motors; vessels powered solely by oars or paddles are excluded from the registration requirement.",
+    "weight": 3,
+    "source_note": "TWRA Boating Registration page"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is Tennessee's Hull Identification Number (HIN) requirement?",
+    "choice_a": "HINs are optional for privately owned recreational vessels",
+    "choice_b": "Only vessels registered before 1973 require a HIN",
+    "choice_c": "All vessels manufactured after 1972 must have a properly formatted HIN provided at registration",
+    "choice_d": "Only vessels over 40 feet need a HIN",
+    "correct_choice": "C",
+    "explanation": "Vessels manufactured after 1972 must carry a properly formatted HIN provided during registration; vessels built before 1973 are exempt from this requirement.",
+    "weight": 2,
+    "source_note": "TWRA Boating Registration page"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Which vessels are exempt from Tennessee's registration requirement?",
+    "choice_a": "All sailboats regardless of size",
+    "choice_b": "All vessels under 40 horsepower",
+    "choice_c": "All rental vessels",
+    "choice_d": "Non-motorized vessels such as canoes, kayaks, and rowboats without a motor",
+    "correct_choice": "D",
+    "explanation": "Non-motorized vessels are exempt from Tennessee registration; sailboats principally used in Tennessee, however, must register even without an engine.",
+    "weight": 3,
+    "source_note": "TWRA Boating Registration page"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Besides motorboats, what other vessel type must be registered in Tennessee if it is principally used in the state?",
+    "choice_a": "Sailboats",
+    "choice_b": "Stand-up paddleboards",
+    "choice_c": "Inner tubes",
+    "choice_d": "Kayaks propelled only by paddle",
+    "correct_choice": "A",
+    "explanation": "Tennessee requires registration of sailboats principally used in the state, not just mechanically propelled vessels, even though a sailboat itself has no motor.",
+    "weight": 3,
+    "source_note": "TWRA Boating Registration page"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What does \"state of principal use\" mean for a vessel operated in more than one state under Tennessee's registration rules?",
+    "choice_a": "The state that issued the vessel's HIN",
+    "choice_b": "The state on whose waters the vessel is used most, whether moored or underway, during a calendar year",
+    "choice_c": "Wherever the vessel was originally purchased",
+    "choice_d": "Wherever the vessel's owner currently resides, regardless of where the vessel is used",
+    "correct_choice": "B",
+    "explanation": "Tennessee defines \"state of principal use\" as the state where a vessel is used most during a calendar year, which determines where the vessel must be registered.",
+    "weight": 2,
+    "source_note": "TWRA Boating Registration page"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Does Tennessee issue titles for boats the way it does for cars?",
+    "choice_a": "Yes, but only sailboats require a title",
+    "choice_b": "Titling is optional and left up to the owner",
+    "choice_c": "No -- Tennessee uses a registration and Certificate of Number system instead of a title",
+    "choice_d": "Yes, all boats over 16 feet require a title",
+    "correct_choice": "C",
+    "explanation": "Tennessee does not title vessels; it registers them and issues a Certificate of Number, which must be carried aboard the boat.",
+    "weight": 2,
+    "source_note": "TWRA Boating Registration page"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is the basic difference between a displacement hull and a planing hull?",
+    "choice_a": "All hull types perform identically regardless of design",
+    "choice_b": "Only inflatable hulls are capable of planing",
+    "choice_c": "Displacement hulls are used exclusively on personal watercraft",
+    "choice_d": "A displacement hull pushes through the water and stays stable at low speed, while a planing hull rises and skims across the surface at higher speed",
+    "correct_choice": "D",
+    "explanation": "A displacement hull pushes through the water and remains stable but slower, while a planing hull lifts and skims on top of the water at higher speed, common on many recreational powerboats.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What information does a vessel's capacity plate provide to the operator?",
+    "choice_a": "The maximum recommended number of persons and/or maximum weight capacity, and sometimes maximum horsepower",
+    "choice_b": "The vessel's current resale value",
+    "choice_c": "The name of the vessel's previous owner",
+    "choice_d": "The date the vessel was last inspected by TWRA",
+    "correct_choice": "A",
+    "explanation": "Federal law requires most monohull boats under 20 feet to display a capacity plate showing maximum recommended persons, weight capacity, and/or horsepower, helping operators avoid overloading the vessel.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals / USCG capacity plate requirement"
+  }
+]

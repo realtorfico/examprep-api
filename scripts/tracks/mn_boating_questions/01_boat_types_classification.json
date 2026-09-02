@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Under Minnesota law, what is a \"motorboat\"?",
+    "choice_a": "Any watercraft propelled by machinery, whether or not the machinery is the vessel's principal means of propulsion",
+    "choice_b": "Only a vessel with an inboard diesel engine",
+    "choice_c": "Only vessels longer than 26 feet",
+    "choice_d": "A term that excludes personal watercraft",
+    "correct_choice": "A",
+    "explanation": "Minnesota defines a motorboat broadly as any watercraft propelled by machinery, including boats with an auxiliary motor such as a sailboat with an outboard; the definition is not limited to a particular size, hull type, or engine placement.",
+    "weight": 3,
+    "source_note": "Minnesota Statutes Chapter 86B (definitions), consistent with DNR boating guide terminology"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a personal watercraft (PWC) as defined and regulated under Minnesota law (Minn. Stat. 86B.313)?",
+    "choice_a": "Any canoe with a trolling motor attached",
+    "choice_b": "A vessel less than 16 feet long that uses an inboard jet-drive as its primary propulsion and is designed to be operated by a person sitting, standing, or kneeling on it rather than in the conventional manner of sitting or standing inside the vessel",
+    "choice_c": "A term interchangeable with houseboat",
+    "choice_d": "A sailboat under 20 feet",
+    "correct_choice": "B",
+    "explanation": "A PWC (such as a Jet Ski, WaveRunner, or Sea-Doo) is a jet-drive vessel under 16 feet designed for an operator who sits, stands, or kneels astride or on it, rather than inside the hull in the conventional way; Minnesota's statute 86B.313 imposes specific operating rules on this class of vessel.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.313 (personal watercraft definitions and regulations)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Which factor most directly determines the minimum required safety equipment aboard a Minnesota watercraft, such as the number of fire extinguishers or PFDs?",
+    "choice_a": "The color of the hull",
+    "choice_b": "The manufacturer's brand name",
+    "choice_c": "The length of the vessel and the type of propulsion (for example, whether it has an inboard engine or enclosed fuel-carrying compartments)",
+    "choice_d": "The number of previous owners",
+    "correct_choice": "C",
+    "explanation": "Minnesota's equipment statutes (Minn. Stat. 86B.501, 86B.531) scale requirements to a vessel's length and to whether it carries fuel or flammable fluids in an enclosure, since larger or enclosed vessels present more fire and swamping risk than a small open boat.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.501, 86B.531 (equipment scaled to vessel type and length)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What distinguishes a houseboat from a typical runabout under Minnesota's boating equipment rules?",
+    "choice_a": "Houseboats are legally exempt from all registration requirements",
+    "choice_b": "A houseboat cannot legally be operated on any Minnesota lake",
+    "choice_c": "There is no meaningful legal distinction between the two",
+    "choice_d": "A houseboat commonly has an enclosed accommodation space (sleeping area, galley, or toilet compartment), which triggers additional requirements such as carbon monoxide detectors under Sophia's Law",
+    "correct_choice": "D",
+    "explanation": "Because houseboats and other motorboats with enclosed accommodation compartments create a carbon monoxide entrapment risk, Minnesota's Sophia's Law (Minn. Stat. 86B.532) requires marine carbon monoxide detectors and warning stickers that an open runabout without an enclosed cabin does not need.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.532 (carbon monoxide detection; system requirements)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Are canoes and kayaks considered watercraft subject to Minnesota's boating safety and registration framework?",
+    "choice_a": "Yes, but small non-motorized canoes and kayaks 10 feet or less are exempt from registration, while larger ones and any with a motor attached generally must register and follow applicable safety rules",
+    "choice_b": "No, canoes and kayaks are entirely outside Minnesota boating law regardless of size or motor",
+    "choice_c": "Only kayaks are regulated; canoes are exempt in every case",
+    "choice_d": "Canoes and kayaks must always be titled like a car",
+    "correct_choice": "A",
+    "explanation": "Minnesota exempts small non-motorized watercraft 10 feet or less from registration, but larger paddlecraft and any canoe or kayak fitted with a motor fall under the same general registration and equipment framework as other motorboats.",
+    "weight": 3,
+    "source_note": "Minnesota DNR watercraft registration guidance (registration exemptions for small non-motorized craft)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Why does Minnesota's boater safety curriculum group sailboats with an auxiliary motor into the \"motorboat\" category for regulatory purposes?",
+    "choice_a": "Because all sailboats are required to remove their sails before registering",
+    "choice_b": "Because the statutory definition of motorboat covers any vessel propelled by machinery, and a sailboat under motor power is being propelled by that machinery even if sails are also used",
+    "choice_c": "Because Minnesota has no sailboats large enough to matter",
+    "choice_d": "Because sailboats are legally identical to canoes",
+    "correct_choice": "B",
+    "explanation": "Since Minnesota's motorboat definition turns on whether the vessel is propelled by machinery, not on whether that machinery is the sole means of propulsion, a sailboat running on its auxiliary outboard or inboard motor is treated as a motorboat and is subject to motorboat equipment rules like Sophia's Law when it has an enclosed cabin.",
+    "weight": 2,
+    "source_note": "Minnesota Statutes Chapter 86B (motorboat definition); Sophia's Law applicability to motor-equipped sailboats"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a \"Class A\" or smallest length category typically used to scale a vessel's minimum safety equipment under state boating frameworks like Minnesota's?",
+    "choice_a": "A category reserved only for personal watercraft",
+    "choice_b": "A designation with no bearing on required equipment",
+    "choice_c": "The shortest length bracket, generally under 16 feet, which still requires PFDs for every person aboard but has lighter equipment obligations than larger vessels",
+    "choice_d": "A category that eliminates all PFD requirements",
+    "correct_choice": "C",
+    "explanation": "Boating safety frameworks, including Minnesota's, scale equipment requirements by vessel length, with the smallest class of vessels (commonly under 16 feet) still needing a wearable PFD for each person aboard even though larger vessels also add requirements like visual distress signals and additional fire-suppression equipment.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (vessel length classes), consistent with Minnesota's length-based equipment scaling"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Why is understanding vessel classification important before a Minnesota boater completes an approved safety course?",
+    "choice_a": "Classification only affects paint color options",
+    "choice_b": "It has no bearing on any rule in Minnesota",
+    "choice_c": "Only registration fees depend on vessel classification",
+    "choice_d": "Because the required equipment, applicable speed rules, and even some age-based operating restrictions differ depending on whether the vessel is a motorboat, a PWC, or a non-motorized craft",
+    "correct_choice": "D",
+    "explanation": "Minnesota law applies different age minimums, equipment lists, and operating restrictions to PWCs versus other motorboats versus non-motorized craft, so correctly identifying a vessel's classification is a foundational step before applying any other boating safety rule.",
+    "weight": 3,
+    "source_note": "Minnesota Statutes Chapter 86B (classification-dependent rules for motorboats, PWCs, and non-motorized craft)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "A pontoon boat with an outboard motor used on a Minnesota lake is legally classified as what?",
+    "choice_a": "A motorboat, subject to the same registration and equipment rules as other motor-propelled vessels of its length",
+    "choice_b": "A personal watercraft",
+    "choice_c": "A non-motorized vessel exempt from registration",
+    "choice_d": "A commercial vessel regardless of use",
+    "correct_choice": "A",
+    "explanation": "A motor-powered pontoon boat meets Minnesota's broad statutory definition of a motorboat and must be registered and equipped according to its length just like any other motorized recreational vessel, despite its distinctive flat-deck hull design.",
+    "weight": 2,
+    "source_note": "Minnesota Statutes Chapter 86B (motorboat definition applied to pontoon boats)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Why do Minnesota's approved boater safety courses spend time distinguishing displacement hulls from planing hulls?",
+    "choice_a": "Because only displacement hulls are legal in Minnesota",
+    "choice_b": "Because understanding how a hull type behaves at speed and in waves (for example, a planing hull rising onto the water's surface versus a displacement hull always pushing through it) helps an operator anticipate handling, wake, and capsizing risks",
+    "choice_c": "Because hull type determines registration fees exclusively",
+    "choice_d": "Hull type has no safety relevance",
+    "correct_choice": "B",
+    "explanation": "A planing hull is designed to rise up and skim across the water at speed, while a displacement hull always pushes through the water and cannot exceed a speed tied to its waterline length; understanding this difference helps a boater anticipate how a vessel will handle waves, following seas, and turns.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (hull design and performance), consistent with NASBLA-aligned course curricula"
+  }
+]

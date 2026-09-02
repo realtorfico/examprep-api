@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the immediate physiological danger of sudden immersion in cold Minnesota lake water, even for a strong swimmer?",
+    "choice_a": "Cold water immersion has no significant physiological effect on a healthy adult",
+    "choice_b": "Only children are affected by cold-water shock",
+    "choice_c": "Cold shock only becomes dangerous after several hours in the water",
+    "choice_d": "Cold shock response, which can cause an involuntary gasp reflex, hyperventilation, and panic that can lead to drowning within the first minute, even before hypothermia sets in",
+    "correct_choice": "D",
+    "explanation": "Sudden immersion in cold water triggers a cold shock response -- an involuntary gasp reflex and hyperventilation -- that can cause a swimmer to inhale water and panic within the first minute, long before classic hypothermia symptoms would appear, making the first 60 seconds the most dangerous period.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (cold-water shock response), applied to Minnesota's DNR cold-water safety guidance"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What does the \"1-10-1\" principle teach about surviving cold-water immersion?",
+    "choice_a": "About 1 minute to get breathing under control during cold shock, about 10 minutes of meaningful movement before muscles weaken too much to self-rescue, and about 1 hour before hypothermia may cause unconsciousness",
+    "choice_b": "It refers to a rule requiring exactly one life jacket per ten passengers",
+    "choice_c": "It means a boater has 1 hour to call for help, 10 hours to swim to shore, and 1 day before any danger begins",
+    "choice_d": "It has nothing to do with cold-water survival",
+    "correct_choice": "A",
+    "explanation": "The 1-10-1 principle is a cold-water survival guideline: about 1 minute to manage the initial gasp/cold shock response, roughly 10 minutes of useful muscle movement to self-rescue or grab a PFD/floating object before cold incapacitates the limbs, and about 1 hour before hypothermia may cause loss of consciousness.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (cold-water immersion survival timeline), relevant to Minnesota's early-season and late-season boating conditions"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "If a Minnesota boat capsizes on a cold lake and the people aboard cannot right it or swim to shore, what is generally the safest action?",
+    "choice_a": "Always attempt to swim to the nearest shore no matter the distance",
+    "choice_b": "Stay with the boat -- it is usually more visible to rescuers than a swimmer's head, and climbing partially onto or holding onto it helps conserve body heat compared to swimming in cold water",
+    "choice_c": "Remove PFDs to swim more efficiently",
+    "choice_d": "Dive underwater to search for the missing drain plug",
+    "correct_choice": "B",
+    "explanation": "A capsized boat is typically far more visible to searchers than a swimmer alone, and staying with it -- climbing onto the hull if possible -- reduces heat loss compared to swimming, which is why boating safety courses generally teach \"stay with the boat\" rather than attempting a long swim in cold water.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (capsizing response, stay-with-the-boat principle), applied to Minnesota cold-water conditions"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What body position, called the Heat Escape Lessening Posture (HELP), helps a person in cold water conserve body heat while wearing a PFD and waiting for rescue?",
+    "choice_a": "Swimming continuously to generate body heat through exertion",
+    "choice_b": "Spreading the arms and legs out as widely as possible",
+    "choice_c": "Drawing the knees up toward the chest and holding the arms close to the sides of the body to protect the torso's major heat-loss areas",
+    "choice_d": "Removing clothing to reduce water resistance",
+    "correct_choice": "C",
+    "explanation": "The HELP position draws the knees toward the chest and the arms close to the body's sides to protect the head, neck, chest, and groin -- areas of high heat loss -- helping a PFD-wearing person in cold water conserve core body heat while awaiting rescue, rather than swimming, which accelerates heat loss.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (Heat Escape Lessening Posture)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the recommended first step if a fire breaks out in a Minnesota boat's engine compartment while underway?",
+    "choice_a": "Immediately jump overboard without attempting to fight the fire or maneuver the boat",
+    "choice_b": "Open all hatches and compartments to let more air reach the fire",
+    "choice_c": "Continue at full throttle toward the nearest shore regardless of wind direction",
+    "choice_d": "Position the boat so wind blows the flames away from people and, if possible, away from fuel sources, then use the onboard fire extinguisher aimed at the base of the flames",
+    "correct_choice": "D",
+    "explanation": "Maneuvering the boat so the wind carries flames away from occupants and fuel, then directing a fire extinguisher at the base of the fire (not just the visible flames), gives the best chance of controlling an engine or fuel fire; opening compartments can instead feed the fire more oxygen.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (onboard fire response)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "If a person falls overboard from a Minnesota boat, what is the recommended immediate response from those still aboard?",
+    "choice_a": "Shout \"person overboard,\" assign someone to keep constant visual contact with the person in the water, throw a Type IV throwable PFD toward them, and maneuver the boat carefully back to them",
+    "choice_b": "Immediately speed away to get help rather than staying near the person",
+    "choice_c": "Wait until reaching shore before doing anything",
+    "choice_d": "There is no recommended procedure for a person overboard",
+    "correct_choice": "A",
+    "explanation": "A person-overboard response should include an immediate alert, assigning a dedicated spotter to keep constant eye contact with the person in the water (since they are easy to lose sight of in waves), throwing a throwable PFD, and carefully bringing the boat back around to retrieve them.",
+    "weight": 4,
+    "source_note": "Universal boating safety fundamentals (person overboard response)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "Why is it dangerous to approach a person in the water directly with the boat's propeller still engaged?",
+    "choice_a": "Propellers pose no risk to a person in the water",
+    "choice_b": "The propeller can cause severe injury to a person in the water, so the engine should generally be shut off or shifted to neutral once the boat is close enough alongside the person",
+    "choice_c": "The propeller must remain engaged at full speed for the entire rescue to succeed",
+    "choice_d": "Only PWC propellers, never boat propellers, pose any injury risk",
+    "correct_choice": "B",
+    "explanation": "A spinning propeller can cause serious or fatal injury to a person in the water, so rescuers should approach carefully and shut off or disengage the engine once close enough to pull the person aboard, rather than maneuvering with the prop engaged right next to them.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (propeller strike hazard during rescue)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "Why does Minnesota's DNR publish separate ice safety guidance in addition to open-water boating safety material?",
+    "choice_a": "Because ice safety and boating safety are functionally identical topics",
+    "choice_b": "Because Minnesota lakes never freeze",
+    "choice_c": "Because many Minnesota lakes freeze for a significant part of the year, creating a distinct season of ice-related recreation (ice fishing, snowmobiling on ice) with its own set of hazards, such as unpredictable ice thickness",
+    "choice_d": "Because ice safety guidance replaces the need for any boating safety education",
+    "correct_choice": "C",
+    "explanation": "Minnesota's long, cold winters mean many of its lakes support a distinct season of ice-based recreation with hazards very different from open-water boating, such as unpredictable ice thickness near inlets or aeration systems, which is why the DNR maintains separate ice safety guidance alongside its boating safety program.",
+    "weight": 2,
+    "source_note": "Minnesota DNR safety program structure (separate ice safety guidance for the state's winter recreation season)"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What should a boater do before departing on a Minnesota lake trip to prepare for a potential emergency?",
+    "choice_a": "No preparation is useful since emergencies cannot be planned for",
+    "choice_b": "Float plans are illegal in Minnesota",
+    "choice_c": "Only commercial vessels benefit from any pre-trip planning",
+    "choice_d": "File a float plan with someone on shore describing the trip's destination, expected return time, and vessel description, and check that all required and recommended safety equipment is aboard and working",
+    "correct_choice": "D",
+    "explanation": "Leaving a float plan with a trusted person on shore -- covering destination, expected return time, and a description of the vessel and occupants -- along with confirming safety equipment is aboard and functional, gives rescuers critical information if a boater fails to return as expected.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (float plan and pre-departure safety check), consistent with NASBLA-aligned course guidance"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is a practical reason Minnesota boating safety education emphasizes checking water temperature, not just air temperature, before a spring outing?",
+    "choice_a": "Because Minnesota lake water often stays dangerously cold for weeks after air temperatures feel warm, meaning cold-water immersion risk can be high even on a pleasant, sunny spring day",
+    "choice_b": "Because water temperature and air temperature always change together instantly",
+    "choice_c": "Because water temperature has no bearing on immersion risk",
+    "choice_d": "Because checking water temperature is only relevant in winter, not spring",
+    "correct_choice": "A",
+    "explanation": "Lake water warms much more slowly than the air above it, so a warm, sunny spring day in Minnesota can mask dangerously cold water that would quickly trigger cold shock and hypothermia risk for anyone who ends up immersed, making pre-trip water temperature awareness an important safety habit.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (spring cold-water lag), applied to Minnesota's northern climate"
+  }
+]

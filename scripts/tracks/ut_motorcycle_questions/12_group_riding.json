@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Group Riding",
+    "question": "What are the most important rules for group riding, per the manual?",
+    "choice_a": "No rider may ever stop until the destination is reached",
+    "choice_b": "Always ride two abreast to save space",
+    "choice_c": "The fastest rider always leads",
+    "choice_d": "No competition, no passing of other riders, and no tailgating",
+    "correct_choice": "D",
+    "explanation": "The manual states the most important rules for group riding are no competition, no passing of other riders, and no tailgating; a rider who wants to go faster should be allowed to ride ahead to an agreed meeting point.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Group Riding"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "Who should be chosen as the lead rider and sweep rider in a group, per the manual?",
+    "choice_a": "The most experienced riders of the group",
+    "choice_b": "Whoever has the newest motorcycle",
+    "choice_c": "The least experienced riders, to build their confidence",
+    "choice_d": "It doesn't matter who takes these roles",
+    "correct_choice": "A",
+    "explanation": "The manual states the lead rider and sweep rider should be the most experienced riders of the group; the lead rider watches for changes ahead and signals early, while the sweep rider is last and sets the group's pace.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Group Riding, Plan"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "Where should inexperienced riders be positioned in a group ride, per the manual?",
+    "choice_a": "At the very back of the group, unsupervised",
+    "choice_b": "Just behind the leader, so more experienced riders can watch them from the back",
+    "choice_c": "In the lead position to set the pace",
+    "choice_d": "Anywhere, since position doesn't matter for skill level",
+    "correct_choice": "B",
+    "explanation": "The manual states inexperienced riders should be placed just behind the leader, ensuring they won't have to chase after the group, while more experienced riders watch them from the back.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Group Riding, Plan"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "In a staggered formation, where does the group leader ride, and how does the second rider position?",
+    "choice_a": "Both the leader and second rider ride side by side in the same position",
+    "choice_b": "The leader rides in the center of the lane at all times",
+    "choice_c": "The leader rides in the left side of the lane; the second rider stays at least one second back in the right side of the lane",
+    "choice_d": "The leader always rides on the right side of the lane",
+    "correct_choice": "C",
+    "explanation": "The manual describes the staggered formation as the group leader riding in the left side of the lane, with the second rider staying at least one second back in the right side of the lane, and so on for subsequent riders.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Group Riding, Staggered Formation"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "When should a group move to single-file formation, per the manual?",
+    "choice_a": "Only at night",
+    "choice_b": "Only when the group has fewer than three riders",
+    "choice_c": "Single file is never appropriate for a group",
+    "choice_d": "When riding in curves, turning, or entering or leaving freeways or highways",
+    "correct_choice": "D",
+    "explanation": "The manual states it is best to move to single-file formation when riding in curves, turning, or entering or leaving freeways or highways, while keeping a proper following distance.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Group Riding, Staggered Formation"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "What does the manual say about riding directly alongside another rider in the same lane ('pairing up')?",
+    "choice_a": "Never do it, since there is no place to go to maneuver away from a car or hazard",
+    "choice_b": "It is the preferred formation for close-knit groups",
+    "choice_c": "It is safe as long as both riders are experienced",
+    "choice_d": "It is only dangerous on two-lane highways",
+    "correct_choice": "A",
+    "explanation": "The manual instructs riders to never ride directly alongside another rider in the same lane, since there is no place to go if you have to maneuver to avoid a car or hazard; wait until both are stopped to talk.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Group Riding, Don't Pair Up"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "At an intersection with a left-turn signal arrow, what does the manual recommend for a group making a left turn?",
+    "choice_a": "Spread out as much as possible before turning",
+    "choice_b": "Tighten the formation and make the turn single file, not side-by-side",
+    "choice_c": "All riders should turn simultaneously side-by-side to clear the intersection faster",
+    "choice_d": "Only the lead rider should turn; the rest should wait for the next cycle regardless of the light",
+    "correct_choice": "B",
+    "explanation": "The manual advises tightening the formation at an intersection with a left-turn arrow to allow as many riders through as possible, making the turn single file rather than side-by-side.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Group Riding, Intersections"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "How should a group enter a freeway or interstate, per the manual?",
+    "choice_a": "Each rider merges independently at a different entrance ramp",
+    "choice_b": "In a tight side-by-side cluster to merge as quickly as possible",
+    "choice_c": "In single file, forming up into staggered formation only after all riders have safely merged",
+    "choice_d": "The staggered formation should be used only after exiting, never when entering",
+    "correct_choice": "C",
+    "explanation": "The manual states a staggered formation is essential on freeways, but the group should enter in single file and form up only after all riders have safely merged into traffic.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Group Riding, Interstate Highways and Freeways"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "On a two-lane highway, how should riders in a staggered formation pass slow traffic, per the manual?",
+    "choice_a": "Passing in a group is always prohibited",
+    "choice_b": "All at once, side by side",
+    "choice_c": "Only the lead rider is permitted to pass",
+    "choice_d": "One at a time, rather than as a unit",
+    "correct_choice": "D",
+    "explanation": "The manual explains that on a two-lane highway, riders in a staggered formation should pass one at a time, while on a freeway or interstate the group may pass slow traffic as a unit.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Group Riding, Passing in Formation"
+  },
+  {
+    "topic": "Group Riding",
+    "question": "Which of the following is listed among the manual's 'Ten Rules of Group Riding'?",
+    "choice_a": "Base the length of the route and segments on the ability of the least experienced rider",
+    "choice_b": "Always ride at the pace of the fastest rider",
+    "choice_c": "Take breaks only if every rider requests one",
+    "choice_d": "Ignore following distance in a staggered formation",
+    "correct_choice": "A",
+    "explanation": "Among the Ten Rules of Group Riding, the manual lists basing the route length and segments on the ability of the least experienced rider, taking timely breaks, and adjusting pace through curves to the least experienced rider's ability.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - Group Riding, Ten Rules of Group Riding"
+  }
+]

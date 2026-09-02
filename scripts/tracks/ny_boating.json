@@ -1,0 +1,6 @@
+{
+  "examType": "ny_boating",
+  "questionsDir": "C:\\claudews\\PassExamHQ\\Workers\\passexamhq-api\\scripts\\tracks\\ny_boating_questions",
+  "priceCents": 799,
+  "handbookNote": "New York State Parks Office of Parks, Recreation and Historic Preservation (OPRHP) Boater Safety Education program and New York Navigation Law (including Brianna's Law, Nav Law Sections 33-c/33-e/44/49-A/73-a) -- New York has no single official OPRHP-administered boating exam; since Brianna's Law's phase-in completed January 1, 2025, all motorized-vessel and PWC operators regardless of age must hold a Boating Safety Certificate earned through a NASBLA-approved third-party course provider (Boat-Ed, BOATERexam, BOATsmart!, etc.), whose embedded final exam is the de facto test, with question counts varying 50-60 by vendor and passing scores converging around 75-80% -- price matches this project's Motorcycle-tier boating convention ($7.99), not a placeholder"
+}

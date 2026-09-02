@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under Arizona law (A.R.S. 5-343), what standard governs how fast a vessel may travel?",
+    "choice_a": "Speed limits apply only to personal watercraft",
+    "choice_b": "No person may operate faster than any posted limit or at a speed greater than is reasonable and prudent given the conditions present",
+    "choice_c": "There is no speed restriction anywhere on Arizona waters",
+    "choice_d": "All vessels must travel at exactly the same speed regardless of conditions",
+    "correct_choice": "B",
+    "explanation": "A.R.S. 5-343 prohibits operating a watercraft faster than any posted speed limit or at a speed greater than is reasonable and prudent under the existing conditions, and requires speed to be controlled to avoid endangering people or property.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-343, 'Speed restrictions; excessive wake'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "In a 'no-wake' or 'idle speed' zone, what is an operator required to do?",
+    "choice_a": "Shut off the engine and drift through the zone",
+    "choice_b": "Idle speed zones do not exist under Arizona law",
+    "choice_c": "Operate at the slowest speed needed to maintain steerage, producing minimal or no wake",
+    "choice_d": "Travel at the vessel's maximum speed to clear the zone quickly",
+    "correct_choice": "C",
+    "explanation": "In a no-wake or idle-speed zone, an operator must slow to the minimum speed needed to maintain steering control, keeping the vessel's wake as minimal as possible to protect docks, swimmers, and other boaters nearby.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'No-Wake Zones'; A.R.S. 5-343"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What is 'reckless operation' of a vessel under Arizona law?",
+    "choice_a": "Any operation at more than five miles per hour",
+    "choice_b": "Only operation while completely stopped",
+    "choice_c": "Reckless operation is not a legal concept in Arizona boating law",
+    "choice_d": "Operating in willful or wanton disregard for the safety of persons or property, such as weaving through congested traffic at high speed or swamping another vessel",
+    "correct_choice": "D",
+    "explanation": "Reckless or negligent operation under Arizona law includes operating a vessel in willful or wanton disregard for the safety of persons or property, such as excessive speed near other vessels, swimmers, or docks.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Negligent and Reckless Operation'; A.R.S. Title 5 Chapter 3"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "How close should a vessel generally operate to a swimmer or a designated swimming area at anything above no-wake/idle speed?",
+    "choice_a": "It should stay well clear and slow to no-wake speed within any distance set by law, local rule, or common-sense safety margin",
+    "choice_b": "There is no need to slow down near swimmers as long as the operator sees them",
+    "choice_c": "Vessels may operate at full speed directly through a marked swim area",
+    "choice_d": "Swimmers are legally required to move out of a vessel's way at any speed",
+    "correct_choice": "A",
+    "explanation": "Operators must keep a safe distance from swimmers and designated swim areas and reduce to no-wake or idle speed nearby, since swimmers are difficult to see and highly vulnerable to a fast-moving vessel or its wake.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Operating Near Swimmers'"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What is a common cause of accidents in narrow or congested waterways, such as marina channels or a busy Colorado River corridor on a holiday weekend?",
+    "choice_a": "Accidents in narrow channels are always the fault of the smallest vessel present",
+    "choice_b": "Operating at excessive speed for the amount of traffic and available maneuvering room",
+    "choice_c": "Operating too slowly is always the sole cause of accidents",
+    "choice_d": "Congested waterways carry no additional risk compared to open water",
+    "correct_choice": "B",
+    "explanation": "Narrow or congested waterways -- like busy marina channels or the Colorado River corridor during peak holiday traffic -- require reduced speed and heightened attention, since there is less time and space to react to other boats.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum applied to Arizona high-traffic waterways"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Why might local speed zones and no-wake areas vary from one Arizona lake or river stretch to another?",
+    "choice_a": "Speed zones only exist on rivers, never on lakes",
+    "choice_b": "Local agencies have no authority to set speed restrictions",
+    "choice_c": "Local managing agencies (such as AZGFD, the National Park Service on Lake Mead/Lake Powell, or a city/county authority) can post zone-specific limits based on local hazards, traffic, and shoreline development",
+    "choice_d": "Speed limits are identical and fixed across every body of water in the country",
+    "correct_choice": "C",
+    "explanation": "Because conditions differ across Arizona's waterways, the managing authority for a given lake or stretch of river -- AZGFD, the National Park Service at Lake Mead or Lake Powell, or a local government -- may post specific speed or no-wake zones suited to local hazards and traffic.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum applied to Arizona waterway management structure"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What responsibility does an operator have for the wake their vessel creates?",
+    "choice_a": "An operator has no responsibility for wake damage under any circumstances",
+    "choice_b": "Wake responsibility only applies to vessels over 40 feet",
+    "choice_c": "Wake damage can never occur on a reservoir",
+    "choice_d": "The operator is generally responsible for any damage or injury the vessel's wake causes, even if operating at a speed that is otherwise legal",
+    "correct_choice": "D",
+    "explanation": "Operators are generally responsible for damage or injury caused by their vessel's wake, meaning that operating at a technically legal speed does not excuse wake-related harm to docks, other vessels, or people in the water.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Excessive Wake'; A.R.S. 5-343"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Why is 'weaving through congested traffic' specifically called out as an example of reckless operation?",
+    "choice_a": "It sharply increases the risk of a sudden, unpredictable collision with other vessels or swimmers who cannot anticipate the erratic movement",
+    "choice_b": "Weaving is only dangerous for the vessel doing it, never for others",
+    "choice_c": "It is illegal only if performed by a PWC and legal for all other vessel types",
+    "choice_d": "It has no connection to collision risk",
+    "correct_choice": "A",
+    "explanation": "Weaving through congested traffic removes the predictability other operators rely on to avoid collisions, dramatically raising the risk of a crash, which is why it is specifically identified as reckless or negligent operation.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Examples of Reckless Operation'"
+  }
+]

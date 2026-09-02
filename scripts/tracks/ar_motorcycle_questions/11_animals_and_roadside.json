@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Animals, Flying Objects, and Roadside Stops",
+    "question": "If chased by a dog, what does the manual recommend a rider do?",
+    "choice_a": "Swerve sharply into the oncoming lane",
+    "choice_b": "Kick at the animal to drive it away",
+    "choice_c": "Stop completely and wait for the dog to leave",
+    "choice_d": "Downshift, approach the animal slowly, then accelerate and leave it behind",
+    "correct_choice": "D",
+    "explanation": "The manual advises that if being chased by a dog, downshift and approach the animal slowly, then accelerate and leave the animal behind without kicking at it.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Animals, p.33"
+  },
+  {
+    "topic": "Animals, Flying Objects, and Roadside Stops",
+    "question": "For larger animals like deer, elk, or cattle, what does the manual recommend?",
+    "choice_a": "Brake and prepare to stop, since they are unpredictable",
+    "choice_b": "Accelerate quickly past them",
+    "choice_c": "Treat them the same as a small animal and stay in lane without slowing",
+    "choice_d": "Sound the horn continuously and maintain speed",
+    "correct_choice": "A",
+    "explanation": "The manual instructs that for larger animals such as deer, elk, or cattle, riders should brake and prepare to stop because they are unpredictable.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Animals, p.33"
+  },
+  {
+    "topic": "Animals, Flying Objects, and Roadside Stops",
+    "question": "Between hitting something small versus something big like a car, what does the manual say about staying in your lane?",
+    "choice_a": "Always swerve out of the lane regardless of size",
+    "choice_b": "Remain in your lane, since hitting something small is less dangerous than hitting something big",
+    "choice_c": "Leave the roadway entirely to avoid any object",
+    "choice_d": "The size of the object makes no difference to the decision",
+    "correct_choice": "B",
+    "explanation": "The manual advises that in traffic, a rider should remain in their lane, since hitting something small is less dangerous to the rider than hitting something big, like a car.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Animals, p.33"
+  },
+  {
+    "topic": "Animals, Flying Objects, and Roadside Stops",
+    "question": "If face protection gets smeared or cracked by a flying object while riding, what does the manual instruct?",
+    "choice_a": "Stop instantly in the current lane of travel",
+    "choice_b": "Remove the face protection immediately while still riding",
+    "choice_c": "Keep your eyes on the road and hands on the handlebars, then pull off the road when safe to repair the damage",
+    "choice_d": "Continue riding without adjusting anything",
+    "correct_choice": "C",
+    "explanation": "The manual instructs that whatever happens with a flying object, keep your eyes on the road and hands on the handlebars, then pull off the road when it's safe to repair the damage.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Flying Objects, p.33"
+  },
+  {
+    "topic": "Animals, Flying Objects, and Roadside Stops",
+    "question": "Before turning onto a soft roadside surface to stop, what does the manual advise?",
+    "choice_a": "Roadside surface condition does not matter",
+    "choice_b": "Maintain full speed and turn sharply",
+    "choice_c": "Only firm paved shoulders may ever be used to pull off",
+    "choice_d": "Slow way down before turning onto it if the surface is soft grass or loose sand or the rider is unsure",
+    "correct_choice": "D",
+    "explanation": "The manual advises checking the roadside and slowing way down before turning onto it if it's soft grass, loose sand, or the rider is unsure about the surface.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Getting Off the Road, p.33-34"
+  },
+  {
+    "topic": "Animals, Flying Objects, and Roadside Stops",
+    "question": "Before pulling off the road, what should a rider do to alert drivers behind, per the manual?",
+    "choice_a": "Signal clearly and check mirrors and make a head check before taking action",
+    "choice_b": "Nothing, since drivers behind will anticipate the move",
+    "choice_c": "Flash the high beam only",
+    "choice_d": "Come to a complete stop in the travel lane first",
+    "correct_choice": "A",
+    "explanation": "The manual instructs signaling clearly that you will be slowing down and changing direction, and checking your mirror and making a head check before taking any action.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Getting Off the Road, p.33-34"
+  },
+  {
+    "topic": "Animals, Flying Objects, and Roadside Stops",
+    "question": "Why does the manual say a rider should get as far off the road as possible when stopping?",
+    "choice_a": "It is only a suggestion with no real safety benefit",
+    "choice_b": "A motorcycle can be very hard to spot at the side of the road",
+    "choice_c": "So other motorcyclists can pull off at the exact same spot",
+    "choice_d": "To comply with a universal minimum-distance law",
+    "correct_choice": "B",
+    "explanation": "The manual explains that it can be very hard to spot a motorcycle by the side of the road, so a rider should get as far off the road as possible and avoid having someone else pull off at the same spot.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Getting Off the Road, p.34"
+  },
+  {
+    "topic": "Animals, Flying Objects, and Roadside Stops",
+    "question": "What roadside parking challenge does the manual mention regarding loose or sloped shoulders?",
+    "choice_a": "They have no effect on parking a motorcycle",
+    "choice_b": "They make it easier to deploy the center stand",
+    "choice_c": "They can make setting the side or center stand difficult",
+    "choice_d": "They are the safest place to always park",
+    "correct_choice": "C",
+    "explanation": "The manual notes that loose and sloped shoulders can make setting the side or center stand difficult, so riders should park carefully when pulling off the road.",
+    "weight": 1,
+    "source_note": "Motorcycle Operator Manual, Getting Off the Road, p.34"
+  }
+]

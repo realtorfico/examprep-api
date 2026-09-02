@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Under California law, may a PWC be legally operated if its lanyard-type engine cut-off switch or throttle has been altered so it no longer works as intended?",
+    "choice_a": "Yes, as long as the operator still wears a PFD",
+    "choice_b": "No -- it is illegal to operate a PWC if the engine cut-off switch or throttle has been altered in a way that would impede or prevent the switch from operating as intended",
+    "choice_c": "Yes, altering the cut-off switch is allowed if done by a licensed marine mechanic",
+    "choice_d": "Yes, but only on PWCs built before December 4, 2019",
+    "correct_choice": "B",
+    "explanation": "California Harbors and Navigation Code Section 655.7(b) prohibits operating a personal watercraft if its engine cut-off switch or throttle has been altered in a way that would impede or prevent the switch from working as intended.",
+    "weight": 2,
+    "source_note": "Cal. Harbors & Navigation Code Section 655.7(b)"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Under California's PWC 'reasonable and prudent manner' operating standard, which specific maneuver near another vessel is expressly identified as reckless operation?",
+    "choice_a": "Following at any distance behind a larger vessel",
+    "choice_b": "Operating parallel to another vessel at a constant distance",
+    "choice_c": "Jumping or attempting to jump the wake of another vessel within 100 feet",
+    "choice_d": "Passing another vessel on its port side at slow-no-wake speed",
+    "correct_choice": "C",
+    "explanation": "Harbors and Navigation Code Section 655.7(c) specifically names jumping or attempting to jump the wake of another vessel within 100 feet as an example of reckless PWC operation.",
+    "weight": 3,
+    "source_note": "Cal. Harbors & Navigation Code Section 655.7(c)"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Which of the following is specifically named in California law as reckless operation of a personal watercraft?",
+    "choice_a": "Maintaining a slow, steady speed while passing through a swimming area at idle",
+    "choice_b": "Idling the engine while anchored offshore",
+    "choice_c": "Operating in a straight line away from other vessels at reduced speed",
+    "choice_d": "Operating the PWC toward a person or vessel in the water and turning sharply at close range so as to spray them",
+    "correct_choice": "D",
+    "explanation": "Section 655.7(c) names operating toward a person or vessel in the water and turning sharply at close range so as to spray the vessel or person as an example of reckless PWC operation.",
+    "weight": 3,
+    "source_note": "Cal. Harbors & Navigation Code Section 655.7(c)"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "California law defines reckless PWC operation to include operating at what kind of speed and proximity relative to another vessel?",
+    "choice_a": "A speed and proximity to another vessel such that either operator is required to swerve at the last minute to avoid a collision",
+    "choice_b": "Any speed above idle within a marked no-wake zone",
+    "choice_c": "Any speed that exceeds the posted speed limit by more than 5 mph",
+    "choice_d": "Operating alongside another vessel while matching its speed and heading",
+    "correct_choice": "A",
+    "explanation": "Section 655.7(c) defines reckless operation to include operating at a rate of speed and proximity to another vessel such that either operator is required to swerve at the last minute to avoid a collision.",
+    "weight": 3,
+    "source_note": "Cal. Harbors & Navigation Code Section 655.7(c)"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "What overall operating standard does California law require of every personal watercraft 'at all times'?",
+    "choice_a": "The PWC must be operated at the vessel's maximum rated speed",
+    "choice_b": "The PWC must be operated in a reasonable and prudent manner",
+    "choice_c": "The PWC must remain within 50 feet of the shoreline at all times",
+    "choice_d": "The PWC must be operated only by its registered owner",
+    "correct_choice": "B",
+    "explanation": "Harbors and Navigation Code Section 655.7(c) requires that every personal watercraft be operated in a reasonable and prudent manner at all times, then gives specific examples of conduct that violates that standard.",
+    "weight": 2,
+    "source_note": "Cal. Harbors & Navigation Code Section 655.7(c)"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Who is exempt from California's sunset-to-sunrise ban on operating a personal watercraft?",
+    "choice_a": "Any PWC displaying a working headlight",
+    "choice_b": "Rental PWCs operated under the supervision of a licensed guide",
+    "choice_c": "Marine patrol, harbor police, or emergency personnel performing their duties",
+    "choice_d": "No one is exempt under any circumstance",
+    "correct_choice": "C",
+    "explanation": "Harbors and Navigation Code Section 655.7(d) exempts marine patrol, harbor police, or emergency personnel performing their duties from the sunset-to-sunrise ban on PWC operation.",
+    "weight": 2,
+    "source_note": "Cal. Harbors & Navigation Code Section 655.7(d)"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "If a PWC is towing a person on water skis, how old must the required observer (in addition to the operator) be under California law?",
+    "choice_a": "At least 21 years old",
+    "choice_b": "There is no minimum age for the observer",
+    "choice_c": "At least 8 years old",
+    "choice_d": "At least 12 years old",
+    "correct_choice": "D",
+    "explanation": "Harbors and Navigation Code Section 658(a) requires a person at least 12 years old, in addition to the operator, to be aboard in a position to observe anyone being towed on water skis.",
+    "weight": 2,
+    "source_note": "Cal. Harbors & Navigation Code Section 658(a)"
+  }
+]

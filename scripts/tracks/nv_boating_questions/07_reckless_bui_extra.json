@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under NRS 488.460, what does a person agree to simply by operating a vessel on Nevada waters, similar to implied consent for driving a motor vehicle?",
+    "choice_a": "Nothing; implied consent does not apply to boating in Nevada",
+    "choice_b": "Implied consent to submit to an evidentiary blood or breath test if lawfully arrested or investigated on suspicion of boating under the influence",
+    "choice_c": "Automatic consent to have the vessel searched for any reason at any time",
+    "choice_d": "Consent to pay a flat fine regardless of guilt",
+    "correct_choice": "B",
+    "explanation": "NRS 488.460 establishes that operating a vessel on Nevada waters carries implied consent to an evidentiary blood or breath test if a person is lawfully arrested or investigated on suspicion of boating under the influence, paralleling implied consent for impaired driving.",
+    "weight": 3,
+    "source_note": "NRS 488.460 (implied consent to evidentiary test)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under NRS 488.500, when is the result of a properly administered blood test for alcohol or drug content admissible in a Nevada BUI prosecution?",
+    "choice_a": "Blood test results are never admissible in any Nevada court",
+    "choice_b": "When properly obtained and administered, blood test results are admissible as evidence in a criminal action under Nevada's boating-under-the-influence law",
+    "choice_c": "Only breath test results are ever admissible, never blood tests",
+    "choice_d": "Test results are admissible only if the operator requests it",
+    "correct_choice": "B",
+    "explanation": "NRS 488.500 provides that the results of a properly obtained and administered blood test for alcohol or drug content are admissible as evidence in a criminal prosecution under Nevada's boating-under-the-influence statutes.",
+    "weight": 2,
+    "source_note": "NRS 488.500 (admissibility of results of blood test in criminal action)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under NRS 488.420, what happens if a boating-under-the-influence incident results in death or substantial bodily harm to another person?",
+    "choice_a": "The offense is treated exactly the same as a first-offense BUI with no additional consequence",
+    "choice_b": "Nevada law imposes an enhanced penalty beyond a standard BUI offense, and plea bargaining down from this enhanced charge is restricted",
+    "choice_c": "The incident is handled only as a civil insurance matter with no criminal consequence",
+    "choice_d": "No additional penalty applies unless the victim is also boating",
+    "correct_choice": "B",
+    "explanation": "NRS 488.420 imposes an enhanced penalty when a boating-under-the-influence incident causes death or substantial bodily harm, and restricts plea bargaining down from that enhanced charge, reflecting how seriously Nevada treats impaired operation that injures others.",
+    "weight": 4,
+    "source_note": "NRS 488.420 (penalty if death or substantial bodily harm results; plea bargaining restricted)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under NRS 488.425, what can causing a death while operating a vessel under the influence be charged as, and how serious is that charge?",
+    "choice_a": "\"Homicide by vessel,\" a category A felony that can carry a lengthy prison sentence, including life imprisonment with the possibility of parole after a minimum term served",
+    "choice_b": "A simple traffic infraction with a small fine",
+    "choice_c": "A charge that cannot be brought unless the victim was also operating a vessel",
+    "choice_d": "An offense with no possible prison time under any circumstance",
+    "correct_choice": "A",
+    "explanation": "NRS 488.425 allows a death caused by operating a vessel under the influence to be charged as \"homicide by vessel,\" a category A felony carrying serious prison exposure, including the possibility of life imprisonment with parole eligibility after a minimum term has been served.",
+    "weight": 4,
+    "source_note": "NRS 488.425 (homicide by vessel: penalty; segregation of offender; plea bargaining prohibited)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Why does Nevada law restrict plea bargaining down from a BUI charge involving death or substantial bodily harm to a lesser offense?",
+    "choice_a": "To make prosecution easier for minor violations",
+    "choice_b": "To reflect the seriousness with which the state treats impaired boating that causes real harm, ensuring such cases are not routinely reduced to lesser charges",
+    "choice_c": "Plea bargaining restrictions apply only to vehicle DUI cases, never to boating",
+    "choice_d": "There is no such restriction anywhere in Nevada boating law",
+    "correct_choice": "B",
+    "explanation": "Restricting plea bargaining in cases where a BUI incident causes death or substantial bodily harm reflects Nevada's intent to treat such outcomes with the seriousness the harm warrants, rather than allowing routine reduction to a lesser offense.",
+    "weight": 2,
+    "source_note": "NRS 488.420/488.425 (plea bargaining restrictions in serious BUI cases)"
+  },
+  {
+    "topic": "Reckless Operation and BUI",
+    "question": "Under Nevada's implied consent framework, can refusing a lawfully requested evidentiary test for suspected BUI carry its own legal consequence, separate from whether the person is ultimately convicted of BUI?",
+    "choice_a": "No, refusal carries absolutely no consequence of any kind",
+    "choice_b": "Yes; similar to implied consent for impaired driving, refusing a lawfully requested test can itself lead to legal consequences apart from any separate BUI conviction",
+    "choice_c": "Refusal is only relevant if the operator is a repeat offender",
+    "choice_d": "Refusal automatically dismisses any BUI investigation",
+    "correct_choice": "B",
+    "explanation": "Consistent with the implied consent principle underlying NRS 488.460, refusing a lawfully requested evidentiary test can carry its own legal consequence, separate from whatever happens with any underlying BUI charge, mirroring how implied consent works for impaired driving.",
+    "weight": 3,
+    "source_note": "NRS 488.460 (implied consent to evidentiary test), general implied consent enforcement principle"
+  }
+]

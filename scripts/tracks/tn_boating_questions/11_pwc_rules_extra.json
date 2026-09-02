@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "How many people may legally ride on a personal watercraft at one time?",
+    "choice_a": "No more than the number of persons the manufacturer rates the PWC to carry, as shown on its capacity information",
+    "choice_b": "An unlimited number, as long as everyone wears a PFD",
+    "choice_c": "Always exactly two people, regardless of the model",
+    "choice_d": "As many as can physically fit on the seat",
+    "correct_choice": "A",
+    "explanation": "A personal watercraft may only carry the number of people it is manufacturer-rated to carry, based on its designed seating capacity; exceeding that rating affects handling and increases the risk of falls or loss of control.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Why is it important for a PWC operator to look behind before making a sharp turn?",
+    "choice_a": "Unlike many boats, a PWC has no rearview mirror by default, so the operator must physically check for other vessels or people in the water before maneuvering",
+    "choice_b": "PWCs are legally required to have a passenger act as a permanent lookout",
+    "choice_c": "Looking behind is unnecessary since PWCs cannot turn sharply",
+    "choice_d": "PWCs are exempt from all collision-avoidance responsibilities",
+    "correct_choice": "A",
+    "explanation": "Because a PWC typically has no rearview mirror unless one is added, the operator must physically look around before turning sharply to check for other vessels, swimmers, or obstacles that could be in the new path of travel.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "What happens to a PWC's steering control if the operator releases the throttle completely while turning?",
+    "choice_a": "Most PWCs lose all or most steering ability without engine thrust, meaning the craft may continue in a straight line despite the handlebars being turned",
+    "choice_b": "The PWC always turns more sharply the moment the throttle is released",
+    "choice_c": "Releasing the throttle has no effect on steering for any PWC model",
+    "choice_d": "The PWC automatically comes to a complete stop within one foot",
+    "correct_choice": "A",
+    "explanation": "Because most personal watercraft steer using engine-driven water thrust rather than a rudder, releasing the throttle removes most steering control, and the craft may continue traveling in the direction it was already headed even as the operator turns the handlebars -- a common cause of collisions among new PWC riders.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Are personal watercraft typically required to carry the same fixed fire extinguisher aboard as a boat with an enclosed engine compartment?",
+    "choice_a": "Generally no -- most PWCs have open, unenclosed engine compartments, so the closed-cabin fire extinguisher requirement that applies to larger boats generally does not apply the same way",
+    "choice_b": "Yes, every PWC must carry three B-I extinguishers regardless of design",
+    "choice_c": "PWCs are exempt from every equipment requirement that applies to any other vessel",
+    "choice_d": "Fire extinguisher rules apply only to sailboats, never to any powered vessel",
+    "correct_choice": "A",
+    "explanation": "Because most personal watercraft have open, unenclosed engine compartments rather than a closed cabin where a fire could smolder undetected, the fixed fire extinguisher requirement that applies to boats with enclosed living or engine space does not carry over to PWCs in the same way -- though an owner should always check equipment requirements specific to their model.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned) applied to PWC equipment"
+  }
+]

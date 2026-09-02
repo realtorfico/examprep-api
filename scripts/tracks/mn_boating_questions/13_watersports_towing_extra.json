@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Besides the stop signal, what other standard hand signals do towed water-skiers commonly use to communicate with the boat operator or observer?",
+    "choice_a": "Skiers have no standardized signals beyond the stop signal",
+    "choice_b": "Thumbs up for speed up, flat hand pushed down for slow down, pointing in a direction for turn, a hand drawn across the neck for cut the motor, a raised circled arm for OK, and a pat on the head for return to dock",
+    "choice_c": "Only verbal shouting is used, with no hand signals at all",
+    "choice_d": "The only permitted signal is releasing the tow rope entirely",
+    "correct_choice": "B",
+    "explanation": "Standard water-ski hand signals include thumbs up for speed up, a flat hand pushed downward for slow down, pointing to indicate a turn, a hand drawn across the neck for cut the motor, a raised circled arm or hand for OK, and a pat on the head for return to dock, giving the skier, observer, and operator a clear shared vocabulary despite engine noise.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (standard water-ski hand signal set)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why is tow rope length important when towing a water-skier or wakeboarder behind a Minnesota boat?",
+    "choice_a": "Rope length has no bearing on safety",
+    "choice_b": "A properly sized tow rope keeps the towed rider within the operator's or observer's clear sightline and within the wake pattern the boat is designed to produce, rather than trailing so far back that visibility and control are compromised",
+    "choice_c": "Longer is always better regardless of the activity",
+    "choice_d": "Rope length is regulated only for PWCs, never for other boats",
+    "correct_choice": "B",
+    "explanation": "A tow rope of appropriate length keeps the skier or wakeboarder within a clear sightline for the operator and observer and positions the rider correctly relative to the boat's wake pattern, since a rope that is too long or too short can compromise both visibility and the rider's control.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (tow rope length and rider visibility)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why does an activity like barefoot waterskiing require extra caution compared to standard two-ski recreational skiing?",
+    "choice_a": "Barefoot skiing requires no special speed or safety considerations",
+    "choice_b": "Barefoot skiing requires significantly higher towing speeds to keep the skier planing without skis, increasing the consequences of a fall and demanding extra caution in site selection, equipment, and observer attentiveness",
+    "choice_c": "Barefoot skiing is always slower than skiing with skis",
+    "choice_d": "Barefoot skiing eliminates the need for an observer",
+    "correct_choice": "B",
+    "explanation": "Because barefoot waterskiing requires notably higher towing speeds to keep the skier planing without the buoyancy of skis, a fall carries greater impact risk, making careful site selection, proper equipment, and an attentive observer especially important for this higher-speed towed activity.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (barefoot waterskiing higher-speed risk profile)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Have any Minnesota counties or lake associations adopted local rules specifically restricting how close to shore wake surfing (which produces an intentionally large wake) may occur?",
+    "choice_a": "No local government in Minnesota has any authority to regulate wake surfing specifically",
+    "choice_b": "Some Minnesota counties and lake associations have used their local surface use ordinance authority to adopt minimum distance-from-shore or similar requirements specifically for wake surfing, given the larger wake it produces",
+    "choice_c": "Wake surfing is banned by state law on every Minnesota lake",
+    "choice_d": "Local rules can regulate horsepower but never wake-surfing distance",
+    "correct_choice": "B",
+    "explanation": "Using the same local surface use ordinance authority (subject to DNR approval) that allows lake-specific no-wake zones or horsepower limits, some Minnesota counties and lake associations have adopted rules specifically addressing wake surfing's larger wake, such as minimum distance-from-shore requirements, reflecting the DNR's broader 'Own Your Wake' responsible-boating themes.",
+    "weight": 3,
+    "source_note": "Minnesota DNR local surface use zoning guidance, applied to wake-surfing-specific local ordinances in some counties"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Is towing a water-skier or tuber at night generally banned in Minnesota the same way personal watercraft operation is banned during restricted hours?",
+    "choice_a": "Yes, an identical statewide statutory night-time ban applies equally to all towed water sports behind any vessel",
+    "choice_b": "There is no identical statewide statutory night-time ban on towing behind a standard motorboat as there is for PWCs, but the observer/mirror visibility requirement and general prudent-operation standards make towing at night a high-risk practice normally limited to daylight",
+    "choice_c": "Night towing is always completely legal with no additional caution needed",
+    "choice_d": "Towing is banned at night only on lakes larger than 10,000 acres",
+    "correct_choice": "B",
+    "explanation": "Unlike the specific statutory hours ban that applies to PWC operation, general motorboat towing of skiers or tubers does not carry an identical statewide night-time ban, but the practical difficulty of maintaining the required observer or mirror visibility in darkness, combined with general reckless-operation standards, makes towing at night a high-risk practice that is effectively limited to daylight hours.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.313 (PWC-specific hours ban) contrasted with general motorboat towing, governed by observer/visibility requirements and negligent-operation standards"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "For higher-speed towed activities like wakeboarding, what PFD characteristic is often recommended beyond simply meeting the basic legal minimum?",
+    "choice_a": "Any Coast Guard-approved PFD type is discouraged for towed sports",
+    "choice_b": "A PFD specifically designed and rated for impact at towing speeds, such as a snug-fitting Type III vest built for water sports, is often recommended over a bulkier general-purpose PFD, given the higher-speed falls involved in activities like wakeboarding",
+    "choice_c": "No PFD is recommended for wakeboarding under any circumstance",
+    "choice_d": "Only a Type IV throwable cushion is appropriate for wakeboarding",
+    "correct_choice": "B",
+    "explanation": "Because falls at wakeboarding or similar towing speeds can hit the water with significant force, a snug-fitting, impact-rated Type III-style vest designed for water sports is often recommended over a bulkier general-purpose PFD, even though both may meet the basic legal wearable-PFD requirement.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (impact-rated PFDs recommended for higher-speed towed water sports)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why should a tow rope be inspected before each outing and replaced if frayed or damaged?",
+    "choice_a": "Tow rope condition has no bearing on towed-sport safety",
+    "choice_b": "A frayed or weakened tow rope can snap unexpectedly under the load and speed involved in towing, creating a hazard for both the skier and anyone in the boat, so it should be replaced rather than used until it fails",
+    "choice_c": "Tow ropes never wear out regardless of use",
+    "choice_d": "Rope inspection is required only for PWC towing, never for other boats",
+    "correct_choice": "B",
+    "explanation": "A tow rope under repeated load and speed can gradually fray or weaken, and a rope that snaps unexpectedly can whip back dangerously toward the boat or leave the skier suddenly and unpredictably adrift, which is why a frayed or damaged rope should be replaced before it fails during use.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (tow rope inspection and replacement)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Can the boat's operator safely serve as their own observer while towing a skier, by periodically glancing back over their shoulder?",
+    "choice_a": "Yes, this is the standard and preferred approach in Minnesota",
+    "choice_b": "No -- the observer or mirror requirement exists specifically because an operator focused on driving, steering, and watching for other traffic cannot also safely and continuously watch a towed rider at the same time",
+    "choice_c": "The operator only needs to check on the skier once per outing",
+    "choice_d": "Observers are needed only when towing more than three people",
+    "correct_choice": "B",
+    "explanation": "The requirement for a dedicated observer or an adequate rearview mirror exists precisely because an operator who is steering, watching for other boats, and managing engine controls cannot also reliably keep continuous watch on a towed rider through occasional glances back, making a distracted-operator approach unsafe.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (observer role cannot be filled by a distracted operator), consistent with Minn. Stat. 86B.313's PWC-specific observer/mirror rule"
+  }
+]

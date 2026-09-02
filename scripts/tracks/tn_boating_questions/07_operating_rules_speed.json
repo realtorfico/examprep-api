@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "In a posted \"slow, no-wake\" zone, what speed must a boat operate at?",
+    "choice_a": "A fixed 15 mph regardless of the vessel",
+    "choice_b": "Full throttle, as long as no other boats are within 100 feet",
+    "choice_c": "The slowest speed that still allows the operator to maintain steering control, producing minimal wake",
+    "choice_d": "Any speed under the vessel's maximum rated horsepower",
+    "correct_choice": "C",
+    "explanation": "In a slow, no-wake zone, an operator must travel at the slowest speed needed to maintain steering control while producing as little wake as possible, typically near idle speed.",
+    "weight": 3,
+    "source_note": "TWRA Regulations & Safety Concerns"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Who is legally responsible for damage or injury caused by a boat's wake in Tennessee?",
+    "choice_a": "The vessel that is damaged by the wake",
+    "choice_b": "TWRA, regardless of who created the wake",
+    "choice_c": "No one; wake damage is never the operator's responsibility",
+    "choice_d": "The operator of the vessel creating the wake",
+    "correct_choice": "D",
+    "explanation": "An operator is responsible for their vessel's wake and any damage or injury it causes, which is why no-wake zones exist near docks, marinas, and swimming areas.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What is generally considered reckless or negligent boat operation under state boating laws, including Tennessee's?",
+    "choice_a": "Weaving through congested waterway traffic, excessive speed near other vessels, or jumping another vessel's wake too closely",
+    "choice_b": "Operating a vessel at idle speed near a marina",
+    "choice_c": "Wearing a PFD while underway",
+    "choice_d": "Reporting a near-collision to TWRA",
+    "correct_choice": "A",
+    "explanation": "Reckless or negligent operation includes behaviors like weaving through congested traffic, excessive speed near other vessels, and jumping too closely behind another vessel's wake -- all of which needlessly endanger other boaters.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Why is loading a vessel beyond the maximum capacity shown on its capacity plate illegal and dangerous?",
+    "choice_a": "Capacity plates are only advisory suggestions with no legal weight",
+    "choice_b": "It reduces freeboard and stability, increasing the risk of swamping or capsizing",
+    "choice_c": "It has no real effect on vessel handling",
+    "choice_d": "It only affects fuel economy, not safety",
+    "correct_choice": "B",
+    "explanation": "Exceeding a vessel's rated capacity reduces its freeboard and stability, making it far more likely to swamp or capsize, especially in rough water or when weight shifts suddenly.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What must an operator do with the engine when swimmers are in the water near the boat?",
+    "choice_a": "Rev the engine periodically to warn swimmers",
+    "choice_b": "Shift into neutral but keep the propeller spinning",
+    "choice_c": "Turn the engine off",
+    "choice_d": "Keep the engine running at idle for a quick getaway",
+    "correct_choice": "C",
+    "explanation": "Tennessee boating safety guidance specifically warns that the engine must be off when people are swimming near the boat, since a spinning propeller can cause severe injury even at low RPM.",
+    "weight": 4,
+    "source_note": "TWRA Regulations & Safety Concerns"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Why is following too closely behind a vessel that is towing a water skier considered unsafe operation?",
+    "choice_a": "It has no bearing on safety since skiers always wear a PFD",
+    "choice_b": "It is required by law to stay within 20 feet of a towing vessel",
+    "choice_c": "It only matters if the skier is a minor",
+    "choice_d": "It reduces reaction time if the skier falls or the towing vessel slows suddenly",
+    "correct_choice": "D",
+    "explanation": "Following too closely behind a vessel towing a skier reduces the following operator's reaction time if the skier falls, drops the tow rope, or the towing vessel suddenly slows or turns.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Why do many marinas, boat ramps, and swimming areas in Tennessee have posted no-wake zones?",
+    "choice_a": "To reduce shoreline erosion and prevent injury to swimmers or damage to moored boats and docks",
+    "choice_b": "Because TWRA collects a toll from boats passing through them",
+    "choice_c": "They exist only to slow down commercial vessels",
+    "choice_d": "No-wake zones are purely decorative and are not enforced",
+    "correct_choice": "A",
+    "explanation": "No-wake zones near marinas, ramps, and swimming areas reduce shoreline erosion and help prevent injuries to swimmers or damage to docked and moored boats from a passing vessel's wake.",
+    "weight": 2,
+    "source_note": "TWRA Regulations & Safety Concerns"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Is it safe or legal for passengers to ride on the bow, gunwale, transom, or seatbacks of a vessel while it is underway at speed?",
+    "choice_a": "It is safe as long as the vessel stays under 5 mph",
+    "choice_b": "No -- riding in these positions while underway is dangerous and can result in the passenger being thrown overboard",
+    "choice_c": "Yes, as long as the passenger is over age 18",
+    "choice_d": "Yes, but only on pontoon boats",
+    "correct_choice": "B",
+    "explanation": "Riding on the bow, gunwale, transom, or seatbacks while a boat is underway at speed is dangerous because a sudden wave, wake, or turn can throw a passenger overboard, often into the path of the propeller.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What should a boat operator do when approaching a blind bend, narrow channel, or area with obstructed visibility on a Tennessee lake?",
+    "choice_a": "Turn off all navigation lights",
+    "choice_b": "There is no special precaution required",
+    "choice_c": "Slow down and, if equipped, sound a prolonged blast to alert any oncoming traffic",
+    "choice_d": "Speed up to clear the area quickly",
+    "correct_choice": "C",
+    "explanation": "Operators approaching a blind bend or area of obstructed view should slow down and sound a prolonged blast, since other boaters approaching from the opposite direction cannot yet be seen.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (Navigation Rules)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What is the general legal standard an operator must meet at all times when operating a vessel in Tennessee, regardless of specific speed zones?",
+    "choice_a": "Maintain the vessel's maximum rated speed whenever waters are open",
+    "choice_b": "Match the speed of the fastest vessel nearby",
+    "choice_c": "There is no general safe-speed standard beyond posted zones",
+    "choice_d": "Operate at a safe speed so the vessel can be stopped within an appropriate distance for the conditions and traffic present",
+    "correct_choice": "D",
+    "explanation": "Beyond posted speed zones, operators must always travel at a safe speed for the conditions, visibility, and traffic density so the vessel can be stopped or maneuvered in time to avoid a collision.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (Navigation Rules)"
+  }
+]

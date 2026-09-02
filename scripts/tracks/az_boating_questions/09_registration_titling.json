@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Registration & Titling",
+    "question": "Which state agency issues watercraft registration numbers in Arizona?",
+    "choice_a": "The county sheriff's office where the boat owner lives",
+    "choice_b": "The Arizona Game and Fish Department (AZGFD)",
+    "choice_c": "The Arizona Department of Transportation Motor Vehicle Division",
+    "choice_d": "The National Park Service",
+    "correct_choice": "B",
+    "explanation": "Unlike vehicle titling (handled by ADOT/MVD), motorized watercraft numbering and registration in Arizona is administered by the Arizona Game and Fish Department under A.R.S. Title 5, Chapter 3.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-321, 5-322, 'Numbering; registration fees'; AZGFD boating registration program"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Under Arizona law, what must the owner of a motorized watercraft requiring numbering do?",
+    "choice_a": "Register only if the vessel is used exclusively on private property",
+    "choice_b": "Register the vessel with the county assessor instead of a state agency",
+    "choice_c": "File an application for a registration number with AZGFD",
+    "choice_d": "Nothing -- motorized watercraft never require registration in Arizona",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-321 requires the owner of each motorized watercraft requiring numbering to file an application for a registration number with the department (AZGFD).",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-321, 'Numbering; registration fees; exemption from taxation'"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What must a motorized watercraft display while being operated on Arizona waters?",
+    "choice_a": "Nothing needs to be displayed once the initial registration is filed",
+    "choice_b": "Only the manufacturer's name plate",
+    "choice_c": "A copy of the owner's driver's license taped to the windshield",
+    "choice_d": "Its assigned registration number and current annual validation decals",
+    "correct_choice": "D",
+    "explanation": "Arizona law prohibits operating a motorized watercraft on state waterways unless it displays its assigned registration number and current annual decals, and the operator must be able to show proof of current registration.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-321/5-322, registration display requirements"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Can a vessel display a number issued by another state or the U.S. Coast Guard while operating in Arizona indefinitely?",
+    "choice_a": "Generally no, unless an exemption or exception applies under Arizona's boating statutes (such as a temporary visiting-boater allowance)",
+    "choice_b": "Yes, any out-of-state number is valid in Arizona forever with no restriction",
+    "choice_c": "Only Nevada-issued numbers are ever accepted in Arizona",
+    "choice_d": "Out-of-state numbers are automatically converted to Arizona numbers at no cost",
+    "correct_choice": "A",
+    "explanation": "Arizona law generally does not allow a vessel to display a number issued by another state or the Coast Guard unless an exemption or exception applies, such as a limited reciprocity period for visiting or newly-relocated boaters.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-321, out-of-state numbering exemptions"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What happens under Arizona law if a watercraft's registration renewal lapses for more than 12 months?",
+    "choice_a": "The owner automatically forfeits the vessel to the state",
+    "choice_b": "Late-renewal penalty fees are generally waived once more than 12 months have elapsed since the registration expired",
+    "choice_c": "The vessel is permanently barred from ever being registered again",
+    "choice_d": "No penalty structure exists for late renewal under any circumstances",
+    "correct_choice": "B",
+    "explanation": "Arizona's registration statute provides that late-renewal penalties are waived if more than twelve months have elapsed since the registration expired (subject to the ownership-transfer conditions in the statute).",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-321, late renewal penalty provisions"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Besides motorized vessels, what other Arizona watercraft rule commonly surprises new boaters?",
+    "choice_a": "Only vessels over 100 feet require any registration",
+    "choice_b": "Registration in Arizona never expires once issued",
+    "choice_c": "Even some non-motorized or human-powered vessels can be subject to registration rules depending on type and use, so owners should confirm requirements before assuming a vessel is exempt",
+    "choice_d": "Every canoe and kayak in Arizona is completely exempt from any state rule",
+    "correct_choice": "C",
+    "explanation": "While the core registration requirement targets motorized watercraft, exemptions and coverage for non-motorized vessels can vary, so owners should verify with AZGFD which rules apply to their specific vessel type rather than assuming automatic exemption.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes Title 5, Chapter 3, registration exemption provisions"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What proof must a watercraft operator generally be able to provide to an enforcement officer regarding registration?",
+    "choice_a": "Nothing -- registration proof is never checked in Arizona",
+    "choice_b": "Only a photo ID with no vessel documentation",
+    "choice_c": "A copy of the vessel's original sales receipt only, regardless of age",
+    "choice_d": "Proof of current registration for the vessel being operated",
+    "correct_choice": "D",
+    "explanation": "Arizona boating law requires the operator to be able to show proof of current registration for the vessel upon request by an enforcement officer.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-321/5-322, registration proof requirements"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "What happens to a vessel's registration when ownership changes in Arizona?",
+    "choice_a": "A transfer fee applies, and the new owner generally must update the registration with AZGFD",
+    "choice_b": "Registration automatically stays valid under the seller's name forever",
+    "choice_c": "Ownership changes have no effect on registration status",
+    "choice_d": "The vessel must be re-registered in a different state before resale",
+    "correct_choice": "A",
+    "explanation": "Arizona's registration statute provides for a transfer fee and updated registration information when ownership of a registered watercraft changes hands.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-321, ownership transfer provisions"
+  }
+]

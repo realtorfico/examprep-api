@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Emergencies",
+    "question": "What is the recommended first action if a small boat capsizes in open water?",
+    "choice_a": "Stay with the boat, since it provides flotation and is much easier for rescuers to spot than a swimmer alone",
+    "choice_b": "Immediately swim for the nearest shore, no matter the distance",
+    "choice_c": "Dive underwater to retrieve any sinking items",
+    "choice_d": "Remove your PFD to swim more easily",
+    "correct_choice": "A",
+    "explanation": "A capsized boat, even swamped, generally continues to float and is far more visible to searchers than a person in the water, so the standard guidance is to stay with the vessel rather than attempt a long swim to shore.",
+    "weight": 4,
+    "source_note": "Standard NASBLA-course capsizing response guidance"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "What should the crew do first if a fire breaks out aboard a boat?",
+    "choice_a": "Add water directly onto a fuel fire",
+    "choice_b": "Position the boat so the fire is downwind, cut off the fuel supply, and use the onboard fire extinguisher aimed at the base of the flames",
+    "choice_c": "Immediately jump overboard without attempting to fight the fire",
+    "choice_d": "Point the extinguisher at the top of the flames rather than the base",
+    "correct_choice": "B",
+    "explanation": "Maneuvering to keep the fire downwind, shutting off fuel, and directing an extinguisher at the base of the flames (not just the visible flame tips) gives the best chance of controlling a boat fire; water should never be used on a fuel fire.",
+    "weight": 4,
+    "source_note": "Standard NASBLA-course onboard fire response guidance"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "What is the first thing a boat operator should do if a person falls overboard?",
+    "choice_a": "Circle at full throttle to create a smaller turning radius",
+    "choice_b": "Wait until reaching shore before taking any action",
+    "choice_c": "Immediately reduce speed, turn toward the person, and keep constant visual contact while assigning a crew member as a dedicated spotter",
+    "choice_d": "Continue at the same speed and course while deciding what to do",
+    "correct_choice": "C",
+    "explanation": "The immediate priorities after a fall overboard are slowing down, turning back toward the person, and keeping continuous eye contact (ideally with a dedicated spotter), since a person in the water can quickly become hard to relocate.",
+    "weight": 4,
+    "source_note": "Standard NASBLA-course man-overboard response guidance"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "Why should an operator approach a person in the water carefully when recovering them, rather than driving straight up to them?",
+    "choice_a": "There is no danger in approaching a swimmer directly at speed",
+    "choice_b": "The engine should be left running at full throttle throughout the recovery",
+    "choice_c": "The person should always be pulled in over the bow at speed",
+    "choice_d": "To avoid striking the person with the hull or propeller, generally shutting off the engine when very close and pulling them aboard from the stern or side, not over a spinning propeller",
+    "correct_choice": "D",
+    "explanation": "A careless approach risks striking the person with the hull or propeller; the safe method is a slow, controlled approach with the engine shut off near the person, recovering them away from the prop, often over the stern or a low side.",
+    "weight": 4,
+    "source_note": "Standard NASBLA-course man-overboard recovery technique"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "What is the immediate physiological danger of sudden immersion in cold water, even for a strong swimmer wearing a PFD?",
+    "choice_a": "Cold shock response can cause an involuntary gasp reflex and hyperventilation, which can lead to inhaling water, along with rapid loss of swimming ability and strength",
+    "choice_b": "Cold water immersion has no meaningful physiological effect on a healthy adult",
+    "choice_c": "Cold shock only affects children, never adults",
+    "choice_d": "A PFD eliminates all danger from cold water immersion",
+    "correct_choice": "A",
+    "explanation": "Sudden cold-water immersion can trigger an involuntary gasp reflex and hyperventilation (cold shock), risking water inhalation, and rapidly saps swimming strength and coordination, even in a strong swimmer wearing a PFD.",
+    "weight": 4,
+    "source_note": "Standard NASBLA-course cold-water immersion physiology (1-10-1 principle)"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "What body position (the H.E.L.P. posture) helps a person in cold water conserve body heat while waiting for rescue?",
+    "choice_a": "Floating face-down to reduce wind exposure",
+    "choice_b": "Heat Escape Lessening Posture -- drawing the knees to the chest and arms close to the sides to protect the body's major heat-loss areas",
+    "choice_c": "Spreading arms and legs as wide as possible to increase surface area contact with warmer surface water",
+    "choice_d": "Removing the PFD to swim vigorously and generate body heat",
+    "correct_choice": "B",
+    "explanation": "The H.E.L.P. (Heat Escape Lessening Posture) position -- knees drawn up and arms held close to the torso -- helps protect the body's major heat-loss areas (groin, sides, chest) and can meaningfully extend survival time in cold water.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course cold-water survival technique, H.E.L.P. posture"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "What should a boater do if their vessel runs aground on a shallow flat or sandbar?",
+    "choice_a": "Ignore the grounding and continue operating normally",
+    "choice_b": "Jump into the water immediately regardless of depth or current",
+    "choice_c": "Stop the engine immediately to avoid propeller and seagrass damage, then assess the situation before attempting to power off",
+    "choice_d": "Immediately apply full throttle to force the boat free",
+    "correct_choice": "C",
+    "explanation": "Applying throttle immediately after grounding can damage the propeller, lower unit, and sensitive seagrass beds (a serious environmental concern in Florida); stopping the engine and assessing conditions first is the safer approach.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course grounding response, Florida seagrass protection concern"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "What information should a float plan left with someone ashore include before a boating trip?",
+    "choice_a": "No information is useful in a float plan; they serve no safety purpose",
+    "choice_b": "Only the boat's registration number, nothing else",
+    "choice_c": "A float plan should only be filed after the trip is completed",
+    "choice_d": "A description of the vessel, planned route and destination, expected return time, and the number and names of people aboard",
+    "correct_choice": "D",
+    "explanation": "A float plan left with a responsible person ashore -- covering vessel description, route, destination, expected return, and passengers aboard -- lets rescuers know where and when to start searching if a boater fails to return.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course float plan guidance"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "What should a boater do upon hearing a Mayday call from another vessel in distress?",
+    "choice_a": "Stay off the radio channel except to assist, note the vessel's position, and relay or respond to the call if able to help or if no response is heard from the Coast Guard",
+    "choice_b": "Immediately switch off the radio to avoid becoming involved",
+    "choice_c": "Respond by talking over the distressed vessel to ask unrelated questions",
+    "choice_d": "Ignore all Mayday calls unless personally addressed by name",
+    "correct_choice": "A",
+    "explanation": "Boaters hearing a Mayday should stay off the channel unless assisting, note the distressed vessel's location, and be ready to relay the call to the Coast Guard or respond directly if best positioned to help.",
+    "weight": 3,
+    "source_note": "Standard marine VHF radio distress-call procedure"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "What is a 'PAN-PAN' radio call used for, as distinguished from a 'Mayday' call?",
+    "choice_a": "PAN-PAN is only used by commercial vessels, never recreational boaters",
+    "choice_b": "PAN-PAN signals an urgent situation that is not yet immediately life-threatening, while Mayday signals a grave and imminent danger to life or the vessel",
+    "choice_c": "PAN-PAN and Mayday mean exactly the same thing",
+    "choice_d": "PAN-PAN is used only for routine, non-urgent radio traffic",
+    "correct_choice": "B",
+    "explanation": "PAN-PAN indicates an urgent message concerning safety that does not yet involve grave and imminent danger, whereas Mayday is reserved for situations of grave and imminent danger requiring immediate assistance.",
+    "weight": 3,
+    "source_note": "Standard marine VHF radio distress-call terminology"
+  }
+]

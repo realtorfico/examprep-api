@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What are the exact statutory specifications for the wide-angle mirror that may substitute for a human observer when towing a water-skier behind a conventional boat (not a PWC) in Alabama?",
+    "choice_a": "A mirror of any size is acceptable as long as it is mounted somewhere on the boat",
+    "choice_b": "A wide-angle mirror with a viewing surface of at least 78 square inches and a field of vision of at least 170 degrees",
+    "choice_c": "A mirror with only a 10-square-inch viewing area, the same specification used for PWCs",
+    "choice_d": "Alabama law does not permit a mirror as a substitute for an observer under any circumstance",
+    "correct_choice": "B",
+    "explanation": "Alabama Code Section 33-5-26(a) specifies that a wide-angle mirror substituting for an observer when towing a skier must have a viewing surface of at least 78 square inches and a field of vision of at least 170 degrees -- a notably larger specification than the 10-square-inch-per-mirror rule that applies specifically to personal watercraft towing under a separate regulation.",
+    "weight": 4,
+    "source_note": "Code of Alabama Section 33-5-26(a) (wide-angle mirror specification for ski towing)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "For purposes of Alabama's PFD and occupant-related requirements, how is a person being towed on water skis, an aquaplane, or a similar device legally treated relative to the towing vessel?",
+    "choice_a": "The towed person has no legal relationship to the towing vessel at all",
+    "choice_b": "The towed person is considered an occupant of the towing vessel",
+    "choice_c": "The towed person is treated as operating a separate, independent vessel",
+    "choice_d": "The towed person is legally invisible until they let go of the tow rope",
+    "correct_choice": "B",
+    "explanation": "Alabama's ski-towing regulation specifically states that any person being towed on skis, an aquaplane, surfboard, spinner, tube, or similar device is considered an occupant of the towing vessel -- tying the towed person's status (including PFD requirements) directly to that of the boat pulling them.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.18(3) (towed person considered occupant of towing vessel)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Do Alabama's ski-towing observer/mirror requirement and sunset-to-sunrise towing restriction apply to a performer in an officially recognized professional exhibition or an approved regatta?",
+    "choice_a": "Yes, without any exception, even for sanctioned professional shows",
+    "choice_b": "No -- these provisions specifically do not apply to a performer engaged in a professional exhibition, or a participant in an official regatta, motorboat race, marine parade, tournament, or exhibition",
+    "choice_c": "The exemption applies only to Olympic-level athletes",
+    "choice_d": "Alabama law makes no exception of any kind for sanctioned events",
+    "correct_choice": "B",
+    "explanation": "Alabama Code Section 33-5-26(c) specifically exempts a performer in a professional exhibition, or a participant in an official regatta, motorboat race, marine parade, tournament, or exhibition, from the observer/mirror requirement and the sunset-to-sunrise towing restriction that otherwise apply to ordinary recreational skiing.",
+    "weight": 3,
+    "source_note": "Code of Alabama Section 33-5-26(c) (professional exhibition and sanctioned event exemption)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "How is a violation of Alabama's water-ski/towing statute (Section 33-5-26) classified, and what is the minimum fine?",
+    "choice_a": "It is a Class A misdemeanor with a $150 minimum fine, identical to general reckless operation",
+    "choice_b": "A Class B misdemeanor with a minimum fine of $100",
+    "choice_c": "There is no criminal classification; it is only a civil infraction",
+    "choice_d": "It is a felony with a mandatory prison sentence",
+    "correct_choice": "B",
+    "explanation": "Alabama Code Section 33-5-26(f) classifies a violation of the water-ski/towing statute as a Class B misdemeanor, carrying a minimum fine of $100 -- a distinct classification from the PWC-specific reckless-operation penalties and from the general reckless-operation statute's Class A misdemeanor/$150 minimum.",
+    "weight": 3,
+    "source_note": "Code of Alabama Section 33-5-26(f) (penalty classification for water-ski law violation)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Besides the general prohibition on operating close enough to endanger a skier, what specific act does Alabama law separately prohibit involving manipulation of a tow rope, vessel, or other device?",
+    "choice_a": "Manipulating a vessel, tow rope, or other device in a manner that causes the towed water skis, aquaplane, or other device -- or the person on it -- to collide with or strike against any object or person, with an exception for jump buoys used in normal competitive or recreational ski jumping",
+    "choice_b": "Using any tow rope longer than 50 feet",
+    "choice_c": "Towing more than one skier at the same time under any circumstance",
+    "choice_d": "Alabama law contains no such separate prohibition",
+    "correct_choice": "A",
+    "explanation": "Alabama Code Section 33-5-26(d) separately makes it unlawful to manipulate a vessel, tow rope, or other device in a way that causes the towed skis, aquaplane, or other recreational device -- or the person on it -- to collide with or strike an object or another person, with a specific exception carved out for jump buoys and similar objects normally used in competitive and recreational ski jumping.",
+    "weight": 3,
+    "source_note": "Code of Alabama Section 33-5-26(d) (prohibition on causing towed device to collide)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "How does a wakesurf boat's ballast system change the handling considerations an operator must account for compared to conventional skiing or tubing on an Alabama lake?",
+    "choice_a": "Ballast tanks have no effect on a boat's weight or handling",
+    "choice_b": "Filled ballast tanks add significant weight, which changes the boat's handling and increases stopping distance, requiring extra caution around swimmers, docks, and shallow water compared to towing without ballast",
+    "choice_c": "Ballast is used only to make the boat lighter and faster",
+    "choice_d": "Wakesurf boats are banned outright on all Alabama lakes",
+    "correct_choice": "B",
+    "explanation": "A wakesurf boat's ballast tanks are deliberately filled with water to shape a larger wake for the surfer, but that added weight also changes the boat's handling characteristics and increases stopping distance -- meaning an operator needs extra caution around swimmers, docked boats, and shallow water compared to unballasted conventional towing.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (wakesurf ballast handling considerations)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why does barefoot skiing require even faster tow speeds than conventional water skiing, and what safety consequence follows for a downed skier?",
+    "choice_a": "Barefoot skiing requires no minimum speed at all",
+    "choice_b": "Barefoot skiing requires higher tow speeds to keep the skier planing without skis, which increases the impact force of a fall, making a prompt, visible downed-skier signal and a careful, quick pickup even more important",
+    "choice_c": "Barefoot skiing is always slower than conventional skiing, reducing fall risk",
+    "choice_d": "Barefoot skiing eliminates the need for any PFD since the skier has no equipment attached",
+    "correct_choice": "B",
+    "explanation": "Because a barefoot skier relies on speed alone (rather than a ski's surface area) to plane across the water, tow speeds run considerably higher than in conventional skiing, which means a fall can hit with much greater force -- making a fast, visible downed-skier signal and a careful, prompt pickup by the tow boat especially important.",
+    "weight": 2,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (barefoot skiing speed and fall-impact risk)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Does wearing a wetsuit or padded impact vest during advanced towed water sports like barefoot skiing eliminate the need for a Coast Guard-approved PFD?",
+    "choice_a": "Yes, a wetsuit or impact vest is always an acceptable substitute for a PFD",
+    "choice_b": "No -- a wetsuit or padded impact vest provides impact protection but does not replace the Coast Guard-approved PFD flotation requirement that applies to anyone being towed",
+    "choice_c": "PFDs are not required for any towed water sport in Alabama, regardless of equipment worn",
+    "choice_d": "A wetsuit satisfies the PFD requirement only if it is brightly colored",
+    "correct_choice": "B",
+    "explanation": "A wetsuit or padded impact vest used in advanced towed sports like barefoot skiing helps absorb impact from a high-speed fall, but it is not a substitute for the Coast Guard-approved wearable PFD that Alabama law requires anyone being towed to wear -- the two devices serve different safety purposes.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (impact gear versus PFD requirement)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why is a properly rated bridle or tow harness used, rather than tying each rider directly to a single tow point, when towing more than one tuber or skier at once?",
+    "choice_a": "A bridle has no functional purpose and is used only for appearance",
+    "choice_b": "A bridle or harness distributes the towing load across multiple riders more evenly, reducing the risk that an uneven pull on a single shared point throws one rider off balance or causes a rope-related injury",
+    "choice_c": "Bridles are required only when towing a single rider, never multiple riders",
+    "choice_d": "Tying multiple riders to one point is always safer than using a bridle",
+    "correct_choice": "B",
+    "explanation": "When towing more than one tuber or skier at once, a properly rated bridle or tow harness spreads the pulling load more evenly across the riders than tying everyone to a single shared point, reducing the risk that an uneven pull throws one rider off balance or creates a dangerous rope-related injury.",
+    "weight": 2,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (multi-rider tow bridle)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What is the core safety rationale behind Alabama's requirement that a towing vessel have either a dedicated observer or a wide-angle mirror aboard?",
+    "choice_a": "The observer or mirror requirement exists purely as a formality with no real safety purpose",
+    "choice_b": "The operator alone, focused on steering the boat and watching the path ahead, cannot reliably also watch a towed person's position and safety at the same time -- a dedicated observer or adequate mirror closes that gap",
+    "choice_c": "The requirement exists only to satisfy insurance companies, not for genuine safety reasons",
+    "choice_d": "The rule applies only when towing children, never adults",
+    "correct_choice": "B",
+    "explanation": "Alabama's observer-or-mirror requirement for towing exists because an operator cannot safely divide full attention between navigating the boat's forward path and continuously watching a towed person behind the boat -- a dedicated observer or an adequately specified mirror closes that safety gap so the towed person's status is monitored at all times.",
+    "weight": 3,
+    "source_note": "Code of Alabama Section 33-5-26(a) (rationale for observer/mirror requirement)"
+  }
+]

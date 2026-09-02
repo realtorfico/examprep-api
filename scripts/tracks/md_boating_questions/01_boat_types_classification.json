@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "Under the federal length-based system used for recreational vessel equipment requirements, a boat measuring 22 feet long falls into which class?",
+    "choice_a": "Class 1 (16 feet to less than 26 feet)",
+    "choice_b": "Class A (less than 16 feet)",
+    "choice_c": "Class 2 (26 feet to less than 40 feet)",
+    "choice_d": "Class 3 (40 feet to 65 feet)",
+    "correct_choice": "A",
+    "explanation": "The federal vessel length classes used to determine required safety equipment are Class A (under 16 ft), Class 1 (16 ft to under 26 ft), Class 2 (26 ft to under 40 ft), and Class 3 (40 ft to 65 ft); a 22-foot boat is Class 1.",
+    "weight": 2,
+    "source_note": "Universal USCG recreational vessel length-classification convention used for equipment carriage requirements"
+  },
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "In Maryland, what is the legal distinction between a 'numbered' vessel and a 'documented' vessel?",
+    "choice_a": "There is no legal distinction; the terms are interchangeable in Maryland law",
+    "choice_b": "A numbered vessel is registered through the Maryland DNR and displays a state registration number, while a documented vessel is federally registered with the U.S. Coast Guard and does not carry a state number",
+    "choice_c": "A numbered vessel is any vessel over 65 feet, while a documented vessel is any vessel under 16 feet",
+    "choice_d": "A numbered vessel is only a personal watercraft, while a documented vessel is only a sailboat",
+    "correct_choice": "B",
+    "explanation": "Maryland's boating safety education law and vessel registration statute (Natural Resources Article) apply to both numbered vessels (state-registered through DNR) and documented vessels (federally registered with the U.S. Coast Guard, typically larger commercial or recreational vessels).",
+    "weight": 3,
+    "source_note": "Maryland Natural Resources Article boating safety education mandate and vessel numbering statute (Md. Code Ann., Nat. Res. Sec. 8-712 and boater education requirement) as summarized by MD DNR-approved course providers"
+  },
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "A personal watercraft (PWC), such as a Jet Ski or WaveRunner, is legally classified as what type of vessel?",
+    "choice_a": "A documented vessel exempt from all state boating laws",
+    "choice_b": "A commercial fishing vessel",
+    "choice_c": "A Class A inboard vessel propelled by a water-jet pump rather than a propeller",
+    "choice_d": "A non-motorized vessel similar to a canoe",
+    "correct_choice": "C",
+    "explanation": "A PWC is a motorized vessel, typically under 16 feet, that uses an inboard engine driving a water-jet pump for propulsion and steering rather than a propeller and rudder, and it is subject to Maryland's boating laws, including its own stricter minimum-age rule.",
+    "weight": 2,
+    "source_note": "Universal NASBLA-aligned PWC classification; Maryland PWC-specific minimum age rule per boat-ed.com Maryland boating law summary"
+  },
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "What best describes a 'displacement hull'?",
+    "choice_a": "A hull design used exclusively on personal watercraft",
+    "choice_b": "A hull that skims across the surface of the water at high speed",
+    "choice_c": "A hull found only on sailboats under 12 feet",
+    "choice_d": "A hull design that pushes water aside and moves through it rather than rising up on top of it, resulting in a lower top speed but a smoother ride in rough water",
+    "correct_choice": "D",
+    "explanation": "Displacement hulls (common on trawlers, sailboats, and larger cruisers) push through the water and are limited by hull speed, while planing hulls are designed to rise up and skim across the surface at higher speeds.",
+    "weight": 2,
+    "source_note": "Universal boating-safety hull-design fundamentals (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "What is a 'planing hull' designed to do?",
+    "choice_a": "Rise up and glide across the top of the water at higher speeds once enough power is applied",
+    "choice_b": "Remain fully submerged at all times",
+    "choice_c": "Operate only in salt water",
+    "choice_d": "Travel exclusively at displacement speed",
+    "correct_choice": "A",
+    "explanation": "A planing hull is shaped to lift the boat up and allow it to skim across the water's surface as speed increases, which is common on powerboats, PWCs, and speedboats used on the Chesapeake Bay and Maryland's rivers.",
+    "weight": 2,
+    "source_note": "Universal boating-safety hull-design fundamentals (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "Which of these vessel types is generally exempt from Maryland's vessel numbering requirement?",
+    "choice_a": "A pontoon boat with a gasoline outboard engine",
+    "choice_b": "A canoe or kayak propelled only by paddle, with no motor attached",
+    "choice_c": "A 24-foot center console powerboat with an outboard motor",
+    "choice_d": "A personal watercraft used on the Choptank River",
+    "correct_choice": "B",
+    "explanation": "Maryland's vessel numbering law exempts manually propelled vessels such as canoes and kayaks (along with certain sailboats, federally documented vessels, and vessels already numbered in another state) from the state numbering requirement that applies to motorized vessels.",
+    "weight": 3,
+    "source_note": "Maryland Natural Resources Article vessel numbering statute, Sec. 8-712 (exceptions to numbering requirement)"
+  },
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "A pontoon boat is best described as which type of vessel?",
+    "choice_a": "A type of personal watercraft",
+    "choice_b": "A sailing vessel with a single hull and a deep keel",
+    "choice_c": "A flat-decked vessel supported by two or more hollow, buoyant tubes (pontoons), popular on Maryland's calmer rivers and lakes for its stability and deck space",
+    "choice_d": "A high-speed racing hull used only in offshore competitions",
+    "correct_choice": "C",
+    "explanation": "Pontoon boats use buoyant tubes to support a flat deck, offering high stability and passenger capacity, making them a common recreational vessel type on Maryland's inland waters, tidal creeks, and reservoirs.",
+    "weight": 1,
+    "source_note": "Universal recreational vessel-type fundamentals (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "What generally distinguishes an inboard engine from an outboard engine?",
+    "choice_a": "An inboard engine is always smaller than an outboard engine",
+    "choice_b": "Outboard engines can only be used on sailboats",
+    "choice_c": "There is no functional difference between the two",
+    "choice_d": "An inboard engine is mounted inside the hull and connects to a propeller shaft, while an outboard engine is mounted outside the transom as a self-contained unit that can be tilted or removed",
+    "correct_choice": "D",
+    "explanation": "Inboard engines sit inside the hull and turn a fixed propeller shaft, while outboard engines mount on the transom as a complete, tiltable unit; sterndrive (inboard/outboard) engines combine features of both.",
+    "weight": 2,
+    "source_note": "Universal boating-safety propulsion-system fundamentals (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "Why does Maryland's boating safety education law apply to operators of both motorboats and personal watercraft rather than only PWC operators?",
+    "choice_a": "Because the certificate mandate is based on the operator's birth date and the vessel being a motorized, numbered, or documented vessel underway on Maryland waters, not on vessel type alone",
+    "choice_b": "Because motorboats are considered more dangerous than PWCs under Maryland law",
+    "choice_c": "Because PWCs are exempt from all Maryland boating laws",
+    "choice_d": "Because only rental vessels require a certificate",
+    "correct_choice": "A",
+    "explanation": "Maryland's certificate-of-boating-safety-education requirement applies broadly to anyone born on or after July 1, 1972 who operates a numbered or documented (i.e., motorized) vessel, including both conventional motorboats and PWCs, on Maryland waters.",
+    "weight": 3,
+    "source_note": "Maryland boater education mandate as confirmed by boat-ed.com Maryland and BoatUS Foundation state boating law summaries"
+  },
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "What is a 'sterndrive' (inboard/outboard) propulsion system?",
+    "choice_a": "An engine that is mounted entirely outside the vessel with no connection to the hull",
+    "choice_b": "A hybrid system with the engine mounted inside the hull like an inboard, but with an outboard-style drive unit and propeller mounted outside the transom that can be tilted and steered",
+    "choice_c": "A propulsion system used only on canoes",
+    "choice_d": "A sail-powered propulsion system",
+    "correct_choice": "B",
+    "explanation": "A sterndrive combines an inboard-mounted engine with an outboard-style outdrive unit outside the transom, common on many mid-size runabouts and cruisers found on Maryland waters.",
+    "weight": 1,
+    "source_note": "Universal boating-safety propulsion-system fundamentals (NASBLA-aligned course content)"
+  }
+]

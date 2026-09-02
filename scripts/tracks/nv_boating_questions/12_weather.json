@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Weather Awareness",
+    "question": "Why is extreme summer heat a significant weather-related hazard for boaters on Lake Mead and Lake Mohave?",
+    "choice_a": "Both reservoirs sit in the Mojave Desert, where summer air temperatures regularly exceed 100 degrees Fahrenheit, raising the risk of dehydration, heat exhaustion, and heat stroke for boaters exposed on open water with little shade",
+    "choice_b": "Heat has no meaningful effect on boater safety",
+    "choice_c": "Lake Mead's water cools the surrounding air enough that heat illness is not a concern",
+    "choice_d": "Extreme heat is a concern only for boaters over age 65",
+    "correct_choice": "A",
+    "explanation": "Lake Mead and Lake Mohave sit within the Mojave Desert, where summer temperatures commonly exceed 100 degrees Fahrenheit; sustained sun exposure and reflected heat off the water increase the real risk of dehydration and heat illness for boaters.",
+    "weight": 4,
+    "source_note": "General desert-heat safety guidance applied to Lake Mead/Lake Mohave's documented Mojave Desert summer climate"
+  },
+  {
+    "topic": "Weather Awareness",
+    "question": "What is the Southwest monsoon season, and why does it matter for boaters on Lake Mead in mid-to-late summer?",
+    "choice_a": "It is a marketing term with no basis in actual weather patterns",
+    "choice_b": "It is a seasonal shift in wind patterns that brings sudden, intense thunderstorms, lightning, high winds, and dust storms to the desert Southwest, conditions that can develop quickly on an otherwise clear day",
+    "choice_c": "It refers only to rainfall along the Nevada-California border and has no effect on Lake Mead",
+    "choice_d": "It is a period when Lake Mead is legally closed to boating",
+    "correct_choice": "B",
+    "explanation": "The North American monsoon brings a seasonal surge of moisture into the desert Southwest, typically from around July through September, producing sudden, powerful thunderstorms, lightning, gusty winds, and dust storms that can develop rapidly over Lake Mead even when the morning started out clear.",
+    "weight": 3,
+    "source_note": "General North American monsoon season fundamentals applied to Lake Mead's Mojave Desert location"
+  },
+  {
+    "topic": "Weather Awareness",
+    "question": "What should a boater do if they see a fast-approaching dust storm (haboob) or thunderstorm while out on Lake Mead?",
+    "choice_a": "Anchor in open water and wait it out regardless of distance from shore",
+    "choice_b": "Increase speed to try to outrun the storm across open water",
+    "choice_c": "Head to the nearest safe shore or marina immediately, secure loose gear, and put on life jackets, since visibility and wind conditions can deteriorate very quickly",
+    "choice_d": "Continue the planned route since desert storms pass quickly and pose no risk",
+    "correct_choice": "C",
+    "explanation": "Desert dust storms and monsoon thunderstorms can reduce visibility to near zero and bring sudden strong winds; heading to the nearest safe shore, securing gear, and having life jackets on is the safest response rather than trying to outrun the storm or wait it out in open water.",
+    "weight": 3,
+    "source_note": "General severe-weather response guidance applied to Lake Mead's dust storm and monsoon conditions"
+  },
+  {
+    "topic": "Weather Awareness",
+    "question": "Why can afternoon winds on Lake Tahoe catch boaters off guard even after a calm morning?",
+    "choice_a": "Lake Tahoe's wind patterns are completely random and unrelated to time of day",
+    "choice_b": "Afternoon wind only affects sailboats, not motorboats",
+    "choice_c": "Lake Tahoe never experiences wind due to its surrounding mountains",
+    "choice_d": "Mountain and lake temperature differences often generate afternoon thermal winds that build steadily through the day, creating choppier conditions later than many boaters expect",
+    "correct_choice": "D",
+    "explanation": "Temperature differences between the surrounding mountains and Lake Tahoe's cold water commonly generate building afternoon winds, so a calm morning can give way to significant chop and gusty conditions by afternoon, a pattern boaters should plan around.",
+    "weight": 3,
+    "source_note": "General alpine-lake afternoon thermal wind pattern applied to Lake Tahoe's documented mountain-lake microclimate"
+  },
+  {
+    "topic": "Weather Awareness",
+    "question": "How does Lake Tahoe's high elevation (roughly 6,225 feet) affect weather conditions compared to Lake Mead's much lower elevation?",
+    "choice_a": "Higher elevation means cooler air temperatures, more rapid weather changes, and greater risk of sudden storms or even summer hail, compared to the hotter, more stable desert conditions at Lake Mead",
+    "choice_b": "Elevation has no effect on weather at either lake",
+    "choice_c": "Higher elevation always means warmer, calmer conditions than at sea level",
+    "choice_d": "Lake Tahoe and Lake Mead experience identical weather patterns year-round",
+    "correct_choice": "A",
+    "explanation": "Lake Tahoe's high elevation contributes to cooler temperatures, thinner air, and quickly changing mountain weather, including the potential for summer hail or sudden storms, in contrast to Lake Mead's lower-elevation, hotter, and generally more stable desert conditions.",
+    "weight": 3,
+    "source_note": "General elevation-weather relationship applied to Lake Tahoe's documented ~6,225-foot elevation versus Lake Mead's much lower elevation"
+  },
+  {
+    "topic": "Weather Awareness",
+    "question": "Why should a boater check a marine or local weather forecast before heading out on Nevada's larger lakes, rather than relying only on current sky conditions?",
+    "choice_a": "Checking forecasts is required only for vessels over 26 feet",
+    "choice_b": "Weather on large lakes can change rapidly, and a forecast provides advance warning of developing storms, wind shifts, or temperature extremes that current conditions alone may not reveal",
+    "choice_c": "Weather forecasts are never accurate enough to be useful for boating",
+    "choice_d": "Current sky conditions always predict the entire day's weather accurately",
+    "correct_choice": "B",
+    "explanation": "Because conditions on large lakes like Lake Mead and Lake Tahoe can shift quickly, a marine or local forecast provides advance notice of approaching storms, winds, or temperature changes that a boater cannot judge from the sky alone at the time of departure.",
+    "weight": 2,
+    "source_note": "Universal pre-departure weather-check guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Weather Awareness",
+    "question": "What is a practical precaution against sun exposure and heat illness on a Lake Mead boating trip?",
+    "choice_a": "Sun exposure poses no risk on a boat because of the surrounding water",
+    "choice_b": "Wearing dark, heavy clothing to block sunlight completely",
+    "choice_c": "Wearing sun-protective clothing and a hat, using sunscreen, seeking shade when possible, and drinking water regularly throughout the trip",
+    "choice_d": "Skipping water intake to avoid needing restroom breaks",
+    "correct_choice": "C",
+    "explanation": "Protective clothing, sunscreen, shade, and regular hydration all help offset the combined risk of strong desert sun and reflected glare off the water, which together can accelerate dehydration and sunburn on a Lake Mead outing.",
+    "weight": 2,
+    "source_note": "General sun/heat protection guidance applied to Lake Mead's Mojave Desert sun exposure"
+  },
+  {
+    "topic": "Weather Awareness",
+    "question": "What should boaters watch for as a warning sign of an approaching thunderstorm while on the water?",
+    "choice_a": "Thunderstorms always arrive without any visible or audible warning",
+    "choice_b": "A rise in temperature is the primary warning sign of a thunderstorm",
+    "choice_c": "Storm warning signs only matter at night, not during the day",
+    "choice_d": "Darkening or towering clouds, a sudden drop in temperature, increasing wind, and distant thunder or lightning",
+    "correct_choice": "D",
+    "explanation": "Darkening or building clouds, a sudden temperature drop, rising wind, and distant thunder or lightning are classic early warning signs that a thunderstorm is approaching, giving boaters time to head for safe shelter.",
+    "weight": 2,
+    "source_note": "Universal thunderstorm warning-sign guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Weather Awareness",
+    "question": "Why might late fall or winter boating on Lake Tahoe present a different risk profile than summer boating on Lake Mead?",
+    "choice_a": "Lake Tahoe's high elevation and alpine climate bring much colder air and water temperatures, snow, and icy conditions in the off-season, while Lake Mead's low desert elevation keeps it milder and open to boating year-round",
+    "choice_b": "Both lakes have identical seasonal risk profiles",
+    "choice_c": "Lake Tahoe becomes warmer than Lake Mead in winter",
+    "choice_d": "Winter boating is entirely risk-free at high elevation",
+    "correct_choice": "A",
+    "explanation": "Lake Tahoe's alpine elevation brings cold air, snow, and icy shoreline conditions in the off-season that create a distinct cold-weather risk profile, while Lake Mead's low desert elevation keeps its climate milder and generally accessible to boaters throughout the year.",
+    "weight": 2,
+    "source_note": "General seasonal climate comparison applied to Lake Tahoe's alpine elevation versus Lake Mead's low desert elevation"
+  },
+  {
+    "topic": "Weather Awareness",
+    "question": "Why is monitoring wind forecasts especially important for a small boat or PWC operator heading onto open sections of Lake Mead?",
+    "choice_a": "Wind conditions on Lake Mead are always identical to those at Lake Tahoe",
+    "choice_b": "Lake Mead's wide, open basin offers little natural wind protection, so gusty conditions can build large waves quickly, especially challenging for a smaller, lower-freeboard vessel",
+    "choice_c": "Wind has no effect on wave conditions on a reservoir like Lake Mead",
+    "choice_d": "Small boats and PWCs are unaffected by wind and wave conditions",
+    "correct_choice": "B",
+    "explanation": "Lake Mead's broad, open basin offers little shelter from wind, so gusty conditions can build significant chop rapidly, a genuine hazard for smaller, lower-freeboard vessels and PWCs that are more easily swamped or capsized than larger boats.",
+    "weight": 2,
+    "source_note": "General open-water wind/wave hazard guidance applied to Lake Mead's broad, exposed basin"
+  }
+]

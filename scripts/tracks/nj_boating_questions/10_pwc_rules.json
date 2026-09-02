@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What is the minimum age to operate a personal watercraft (PWC) in New Jersey under any circumstance?",
+    "choice_a": "12 years old",
+    "choice_b": "10 years old",
+    "choice_c": "There is no minimum age for PWC operation in New Jersey",
+    "choice_d": "16 years old",
+    "correct_choice": "D",
+    "explanation": "New Jersey law flatly prohibits anyone under 16 from operating a PWC, such as a Jet Ski or WaveRunner, regardless of whether they hold a Boat Safety Certificate or are accompanied by an adult.",
+    "weight": 5,
+    "source_note": "NJSP Marine Services Bureau Boat Safety Certificate FAQ, PWC minimum-age prohibition"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Can a 13-to-15-year-old who holds a New Jersey Boat Safety Certificate legally operate a PWC?",
+    "choice_a": "No -- PWC operation is prohibited entirely for anyone under 16, even with a certificate",
+    "choice_b": "Yes, as long as they are accompanied by a parent in a chase boat",
+    "choice_c": "Yes, without any restriction once certified",
+    "choice_d": "Yes, but only on weekends",
+    "correct_choice": "A",
+    "explanation": "New Jersey's Boat Safety Certificate does not lift the PWC age restriction: certificate-holders aged 13 to 15 are still barred from operating a personal watercraft under any circumstances, since the minimum PWC operating age is a hard 16.",
+    "weight": 5,
+    "source_note": "NJSP Marine Services Bureau Boat Safety Certificate FAQ, 13-15 age-tier PWC prohibition"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What motorized vessels, if any, may a certificate-holding 13-to-15-year-old legally operate in New Jersey?",
+    "choice_a": "No motorized vessel of any kind",
+    "choice_b": "An electric-motor vessel, or a vessel at least 12 feet long powered by a motor under 10 horsepower",
+    "choice_c": "Any powerboat regardless of horsepower",
+    "choice_d": "A personal watercraft only, not conventional powerboats",
+    "correct_choice": "B",
+    "explanation": "A New Jersey Boat Safety Certificate holder aged 13 to 15 may operate an electric-motor vessel, or a vessel of at least 12 feet with an engine under 10 horsepower, but is barred from PWCs and from higher-horsepower motorized vessels.",
+    "weight": 5,
+    "source_note": "NJSP Marine Services Bureau Boat Safety Certificate FAQ, 13-15 age-tier vessel restrictions"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "May a child under 13 operate a non-motorized vessel, such as a canoe or sailboat, in New Jersey?",
+    "choice_a": "Only with a Boat Safety Certificate, same as a powerboat",
+    "choice_b": "Non-motorized vessels are entirely banned for anyone under 18",
+    "choice_c": "Yes -- New Jersey does not restrict non-motorized vessels like canoes and sailboats by the same age tiers that apply to powered vessels and PWCs",
+    "choice_d": "No, all vessel operation of any kind is barred under age 16",
+    "correct_choice": "C",
+    "explanation": "New Jersey's age-based operating restrictions target powered vessels and PWCs; non-motorized craft such as canoes and sailboats are not subject to the same age tiers, though normal parental supervision and safety judgment still apply.",
+    "weight": 3,
+    "source_note": "NJSP Marine Services Bureau Boat Safety Certificate FAQ, non-motorized vessel scope"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Do the Navigation Rules on right-of-way and collision avoidance apply differently to a PWC than to a conventional powerboat?",
+    "choice_a": "Yes, PWCs are governed by a completely separate set of rules with no overlap",
+    "choice_b": "PWCs are exempt from all right-of-way obligations",
+    "choice_c": "PWC operators only need to yield to other PWCs",
+    "choice_d": "No -- a PWC is legally a power-driven vessel and its operator must follow the same right-of-way and navigation rules as any other powerboat",
+    "correct_choice": "D",
+    "explanation": "A PWC is classified as a power-driven vessel under the Navigation Rules, so its operator must follow the same collision-avoidance, right-of-way, and speed rules that apply to any other motorized vessel.",
+    "weight": 4,
+    "source_note": "Inland Navigation Rules applicability to PWCs; NJSP Marine Services Bureau PWC operating guidance"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "What is a common, widely recommended safety practice specific to PWC operation regarding a rider who falls off?",
+    "choice_a": "Immediately shut down or idle the engine, then carefully circle back to check on and assist the person in the water before re-approaching",
+    "choice_b": "Continue at the same speed and let the rider swim back on their own",
+    "choice_c": "Only assist if another vessel is not nearby",
+    "choice_d": "There is no recommended procedure for a fallen rider",
+    "correct_choice": "A",
+    "explanation": "If a PWC rider falls off, the operator should reduce speed or idle, turn back carefully, and approach cautiously to help the person, watching for other traffic and avoiding running over the person in the water.",
+    "weight": 3,
+    "source_note": "Universal PWC operator safety practice taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Why is wearing an engine cutoff (kill) switch lanyard especially important on a PWC?",
+    "choice_a": "The lanyard has no safety function on a PWC",
+    "choice_b": "If the operator falls off, the lanyard automatically shuts off the engine, preventing an unmanned PWC from circling back and striking the operator or others",
+    "choice_c": "The lanyard only controls the PWC's stereo system",
+    "choice_d": "Cutoff switches are prohibited on PWCs",
+    "correct_choice": "B",
+    "explanation": "A PWC's engine cutoff lanyard is clipped to the operator; if they are thrown from the craft, it immediately shuts off the engine, preventing a runaway PWC from circling and potentially injuring the operator or bystanders.",
+    "weight": 4,
+    "source_note": "Universal PWC engine cutoff switch safety function; USCG/NASBLA boating safety education"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under Navigation Rules that apply equally to PWCs, is 'weaving through congested traffic' or jumping another vessel's wake at close range generally considered acceptable operation?",
+    "choice_a": "It is acceptable only in designated PWC-only zones with no restriction",
+    "choice_b": "Reckless operation rules only apply to conventional powerboats, not PWCs",
+    "choice_c": "No -- this type of operation is considered reckless or negligent and endangers other people and vessels",
+    "choice_d": "Yes, PWCs are permitted to operate this way since they are highly maneuverable",
+    "correct_choice": "C",
+    "explanation": "Weaving through congested boat traffic or jumping wakes at close range to other vessels is treated as reckless or negligent operation under New Jersey law and applies to PWC operators just as it does to any other vessel operator.",
+    "weight": 3,
+    "source_note": "New Jersey reckless/negligent operation provisions applied to PWC operating conduct"
+  }
+]

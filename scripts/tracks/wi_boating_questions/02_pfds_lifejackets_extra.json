@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is the primary purpose of a USCG Type I offshore life jacket?",
+    "choice_a": "It is designed for rough or remote water where rescue may be delayed, offering the highest buoyancy and turning most unconscious wearers face-up",
+    "choice_b": "It is only intended for use while docked",
+    "choice_c": "It provides no more buoyancy than a Type III flotation aid",
+    "choice_d": "It is designed exclusively for personal watercraft operators",
+    "correct_choice": "A",
+    "explanation": "A Type I offshore life jacket offers the greatest buoyancy of the wearable PFD types and is designed to turn most unconscious wearers face-up in the water, making it best suited for rough, remote, or open water where rescue could take longer.",
+    "weight": 3,
+    "source_note": "USCG PFD type classification, applied in NASBLA-aligned Wisconsin boater education curriculum, Unit 4: PFDs"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "How does a Type II near-shore buoyant vest generally compare to a Type I offshore jacket?",
+    "choice_a": "It offers less bulk and is intended for calmer, near-shore water where rescue is likely to be quick, but turns only some unconscious wearers face-up",
+    "choice_b": "It is illegal to use on any Wisconsin inland lake",
+    "choice_c": "It provides more buoyancy than a Type I jacket",
+    "choice_d": "It is designed exclusively for use by children under age 5",
+    "correct_choice": "A",
+    "explanation": "A Type II near-shore vest is less bulky and more comfortable than a Type I, intended for calm, inland water where help is likely to arrive quickly, but it turns only some -- not most -- unconscious wearers face-up.",
+    "weight": 2,
+    "source_note": "USCG PFD type classification, applied in NASBLA-aligned Wisconsin boater education curriculum, Unit 4: PFDs"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a Type III flotation aid designed for, and what is its main tradeoff compared to Type I or II?",
+    "choice_a": "It is the bulkiest and least comfortable of all PFD types",
+    "choice_b": "It is designed for general boating and water sports comfort, but it does not reliably turn an unconscious wearer face-up",
+    "choice_c": "It cannot legally be worn while operating a PWC",
+    "choice_d": "It is only rated for swimming pools, not open water",
+    "correct_choice": "B",
+    "explanation": "Type III flotation aids are comfortable and popular for general boating, fishing, and water sports because they allow good freedom of movement, but unlike Type I or II jackets they are not designed to reliably turn an unconscious wearer face-up.",
+    "weight": 2,
+    "source_note": "USCG PFD type classification, applied in NASBLA-aligned Wisconsin boater education curriculum, Unit 4: PFDs"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a USCG Type V special-use PFD, and what limitation applies to it?",
+    "choice_a": "It is approved for any use interchangeably with a Type III",
+    "choice_b": "A device approved only for the specific activity or condition stated on its label, such as certain inflatable models, paddling vests, or commercial work vests -- it must be used according to those label restrictions to count toward the carriage requirement",
+    "choice_c": "It provides no buoyancy and is worn only for visibility",
+    "choice_d": "It is legally required on every Wisconsin motorboat regardless of activity",
+    "correct_choice": "B",
+    "explanation": "A Type V device is approved only for the specific use printed on its label (for example, certain inflatables, paddling-specific vests, or work vests); if it isn't used and worn as labeled, it may not satisfy the PFD carriage requirement.",
+    "weight": 2,
+    "source_note": "USCG PFD type classification, applied in NASBLA-aligned Wisconsin boater education curriculum, Unit 4: PFDs"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "A ring buoy or buoyant cushion required on Wisconsin vessels 16 feet and longer falls under which USCG PFD type, and how is it meant to be used?",
+    "choice_a": "Type IV -- it is designed to be thrown to a person already in the water, not worn",
+    "choice_b": "Type I -- it must be worn by the vessel's operator at all times",
+    "choice_c": "Type III -- it must be worn by every passenger",
+    "choice_d": "It has no official USCG type classification",
+    "correct_choice": "A",
+    "explanation": "The throwable device required aboard vessels 16 feet or longer -- typically a ring buoy or buoyant cushion -- is classified as a Type IV device, meant to be thrown to and grasped by someone already in the water rather than worn.",
+    "weight": 2,
+    "source_note": "USCG PFD type classification, applied in NASBLA-aligned Wisconsin boater education curriculum, Unit 4: PFDs"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why do boater education courses recommend choosing a brightly colored life jacket over a dark-colored one?",
+    "choice_a": "Color has no effect on a PFD's function or performance",
+    "choice_b": "Dark colors provide more buoyancy",
+    "choice_c": "Bright colors such as orange or yellow are easier for rescuers to spot in the water, especially in low light or rough conditions",
+    "choice_d": "Bright colors are required only for Type I jackets",
+    "correct_choice": "C",
+    "explanation": "A brightly colored PFD, such as orange or yellow, stands out far better against water and waves than a dark color, making a person in distress easier for rescuers to spot quickly, especially in poor light or choppy conditions.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: PFDs"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What federal equipment requirement, effective nationwide since April 2021 and applicable on Wisconsin waters, requires operators of many smaller motorboats to wear an engine cut-off switch (ECOS) lanyard?",
+    "choice_a": "A rule requiring operators of covered vessels under a certain length with an ECOS installed to attach the lanyard while underway on plane or above displacement speed, so the engine shuts off automatically if the operator is thrown from the helm",
+    "choice_b": "A rule that applies only to commercial passenger vessels, never recreational boats",
+    "choice_c": "A voluntary recommendation with no federal basis",
+    "choice_d": "A rule that applies only to sailboats",
+    "correct_choice": "A",
+    "explanation": "A federal requirement (33 CFR 175.310) took effect in April 2021 requiring the operator of a covered recreational vessel under 26 feet with an engine cut-off switch installed to use the ECOS link/lanyard while operating on plane or above displacement speed, so the engine cuts off automatically if the operator is thrown clear -- a rule that applies on Wisconsin waters as it does nationwide.",
+    "weight": 3,
+    "source_note": "Federal engine cut-off switch requirement, 33 CFR 175.310, applied nationwide including Wisconsin waters; NASBLA-aligned boater education curriculum, Unit 4: Engine Cut-Off Switches"
+  }
+]

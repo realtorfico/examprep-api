@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Accident Reporting",
+    "question": "Under Minnesota law (Minn. Stat. 86B.341), what must a boat operator involved in a collision or accident do first, if it can be done safely?",
+    "choice_a": "Continue on to the nearest marina without stopping",
+    "choice_b": "Wait 24 hours before taking any action",
+    "choice_c": "Only stop if another vessel involved is clearly at fault",
+    "choice_d": "Immediately stop at the scene of the accident or incident, so long as stopping does not further endanger the vessel or its occupants",
+    "correct_choice": "D",
+    "explanation": "Minnesota law requires an operator involved in a boating accident to stop immediately at the scene, provided doing so does not create further danger to the vessel or people aboard, mirroring the duty to stop after a motor vehicle collision.",
+    "weight": 4,
+    "source_note": "Minn. Stat. 86B.341 (duties at accident or incident; duty to stop)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "What is a boat operator required to do for anyone injured in an accident, under Minn. Stat. 86B.341?",
+    "choice_a": "Render assistance that is practicable and necessary under the circumstances",
+    "choice_b": "There is no duty to assist an injured person",
+    "choice_c": "Assistance is only required if the injured person is a family member",
+    "choice_d": "Only a licensed medical professional aboard has any duty to help",
+    "correct_choice": "A",
+    "explanation": "Minnesota's accident-duties statute requires an operator to render practicable and necessary assistance to anyone injured in the accident, a duty comparable to that imposed on motorists after a roadway collision.",
+    "weight": 4,
+    "source_note": "Minn. Stat. 86B.341 (duty to render assistance)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "What identifying information must a Minnesota boat operator exchange with others involved in an accident, under Minn. Stat. 86B.341?",
+    "choice_a": "No identifying information is legally required to be exchanged",
+    "choice_b": "The operator's name and address, the watercraft's license (registration) number, and the vessel owner's name and address",
+    "choice_c": "Only a phone number, with no name or address required",
+    "choice_d": "Only the vessel's registration number, with no personal information at all",
+    "correct_choice": "B",
+    "explanation": "Minnesota requires an operator involved in an accident to provide their name and address, the watercraft's registration number, and the vessel owner's name and address to those affected, giving injured parties and investigators the information needed to follow up.",
+    "weight": 4,
+    "source_note": "Minn. Stat. 86B.341 (information exchange duty after accident)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "To whom must a Minnesota boating accident involving injury, death, or property damage generally be reported, under Minn. Stat. 86B.341?",
+    "choice_a": "Directly to the U.S. Coast Guard only, with no state or local reporting",
+    "choice_b": "No report to any authority is ever required",
+    "choice_c": "Promptly to the sheriff of the county where the accident occurred",
+    "choice_d": "Only to the boat's insurance company",
+    "correct_choice": "C",
+    "explanation": "Minnesota law directs an operator to promptly report a boating accident or incident involving injury, death, or property damage to the sheriff of the county where it occurred, who then forwards the report up through the DNR commissioner.",
+    "weight": 4,
+    "source_note": "Minn. Stat. 86B.341 (accident reporting to county sheriff)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "After a county sheriff receives a Minnesota boating accident report, what happens to that report next?",
+    "choice_a": "The report is destroyed immediately after being filed",
+    "choice_b": "The report never leaves the county sheriff's office",
+    "choice_c": "The report is sent only to the boat manufacturer",
+    "choice_d": "The sheriff forwards it to the commissioner of natural resources, who compiles summaries and transmits boating statistics to the commissioner of public safety and to the U.S. Coast Guard",
+    "correct_choice": "D",
+    "explanation": "Minnesota's accident-reporting chain routes reports from the county sheriff to the DNR commissioner, who compiles summary data and transmits both public safety summaries and boating accident statistics to the U.S. Coast Guard as part of the national boating accident reporting system.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.341 (accident report routing: sheriff to DNR to public safety commissioner and USCG)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Under Minnesota's coroner reporting statute (Minn. Stat. 86B.335), within how many days must a death connected to a watercraft accident or drowning be reported to the DNR?",
+    "choice_a": "15 days",
+    "choice_b": "One year",
+    "choice_c": "There is no time limit for reporting such a death",
+    "choice_d": "Immediately, with no reasonable time allowed at all",
+    "correct_choice": "A",
+    "explanation": "Minnesota requires every coroner or medical examiner to report in writing to the DNR the death of any person that appears to result from a watercraft accident or drowning within 15 days of the death or the recovery of the body, ensuring timely data for the state's boating safety statistics.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.335 (coroner reports; 15-day reporting window)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Why does leaving the scene of a Minnesota boating accident without stopping, rendering aid, and exchanging information carry serious legal consequences?",
+    "choice_a": "Because leaving the scene is legal as long as no one was seriously hurt",
+    "choice_b": "Because Minn. Stat. 86B.341 makes these duties mandatory following an accident, similar to a hit-and-run law for vehicles, and failing to comply can result in criminal charges separate from any liability for causing the accident itself",
+    "choice_c": "Because there are no legal consequences for leaving a boating accident scene in Minnesota",
+    "choice_d": "Because only the vessel owner, never the operator, has any duty to stay",
+    "correct_choice": "B",
+    "explanation": "Minnesota's accident-duties statute imposes an affirmative legal obligation to stop, help, and exchange information after a boating accident, and failing to do so can expose the operator to criminal liability similar to a hit-and-run charge on the road, independent of any fault for the underlying collision.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.341 (legal consequences for failing to fulfill post-accident duties)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Why does the Minnesota DNR compile statewide boating accident data and transmit it to the U.S. Coast Guard?",
+    "choice_a": "The data is collected but never used for any purpose",
+    "choice_b": "Only insurance companies benefit from this reporting requirement",
+    "choice_c": "National boating accident statistics help identify trends (such as common contributing factors like alcohol, speed, or lack of PFD use) that inform boating safety education, equipment standards, and enforcement priorities at both the state and federal level",
+    "choice_d": "The U.S. Coast Guard requires this data only from coastal states, never from Minnesota",
+    "correct_choice": "C",
+    "explanation": "Statewide accident data, compiled and reported up through the DNR to the U.S. Coast Guard, feeds into a national picture of boating accident trends, which shapes education priorities, equipment standards, and enforcement focus, including Minnesota's own emphasis on alcohol-related accidents and PFD use.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.341 (purpose of accident data reporting to USCG); Minnesota DNR boating safety statistics program"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "If a Minnesota boating accident results only in property damage and no injury or death, does the operator still have reporting duties under Minn. Stat. 86B.341?",
+    "choice_a": "No, property-damage-only accidents are entirely excluded from any reporting duty",
+    "choice_b": "Only accidents causing over $1 million in damage must ever be reported",
+    "choice_c": "Reporting is required only if the damaged property belongs to a government entity",
+    "choice_d": "Yes -- the statute's duties, including the requirement to report to the sheriff, apply to accidents involving damage to property as well as those involving injury or death",
+    "correct_choice": "D",
+    "explanation": "Minnesota's accident-duties statute covers accidents resulting in injury or death to a person, or in damage to property, meaning a property-damage-only boating accident still triggers the operator's duty to stop, assist as needed, exchange information, and promptly report to the sheriff.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.341 (accident duties apply to property-damage-only incidents)"
+  }
+]

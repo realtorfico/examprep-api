@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under 625 ILCS 45/4-1, what PFD (personal flotation device) equipment must every vessel in Illinois carry?",
+    "choice_a": "No PFDs are required if everyone on board can swim",
+    "choice_b": "At least one USCG-approved wearable PFD for each person on board or being towed",
+    "choice_c": "One PFD total, regardless of the number of people on board",
+    "choice_d": "PFDs only if the vessel is longer than 26 feet",
+    "correct_choice": "B",
+    "explanation": "Illinois law requires at least one USCG-approved wearable PFD for every person aboard or being towed behind the vessel.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/4-1; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "In addition to a wearable PFD for each person, what additional PFD must vessels 16 feet or longer (except canoes and kayaks) carry in Illinois?",
+    "choice_a": "An inflatable life raft",
+    "choice_b": "A dedicated PFD for the vessel itself",
+    "choice_c": "At least one USCG-approved throwable device",
+    "choice_d": "A second full set of wearable PFDs",
+    "correct_choice": "C",
+    "explanation": "Vessels 16 feet or longer, except canoes and kayaks, must carry at least one USCG-approved throwable flotation device in addition to the wearable PFDs required for every occupant.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/4-1; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under Illinois law, when must a person under the age of 13 wear an appropriately sized, USCG-approved wearable PFD on a watercraft?",
+    "choice_a": "Only when the water is deeper than 10 feet",
+    "choice_b": "Only if the child cannot swim",
+    "choice_c": "Only when the vessel exceeds 20 mph",
+    "choice_d": "At all times on the deck of a watercraft or in an open watercraft while it is underway, with limited exceptions such as being enclosed in a cabin",
+    "correct_choice": "D",
+    "explanation": "Illinois requires every person under 13 to wear a properly fitting, USCG-approved wearable PFD at all times on deck or in an open boat while underway, except when enclosed in a cabin or below deck, on an anchored swim/dive platform, or aboard a licensed charter vessel.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/4-1; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is Illinois's PFD rule for everyone aboard a personal watercraft (PWC) or specialty prop-craft?",
+    "choice_a": "Every person on board must wear a USCG-approved PFD, and inflatable PFDs are not approved for PWC or prop-craft use",
+    "choice_b": "Only the operator needs to wear a PFD",
+    "choice_c": "PFDs are optional if the PWC has an engine cut-off switch",
+    "choice_d": "Inflatable PFDs are preferred for PWC riders",
+    "correct_choice": "A",
+    "explanation": "Illinois requires every occupant of a PWC or specialty prop-craft to wear a USCG-approved PFD, and inflatable PFDs specifically do not meet this requirement because they are not approved for PWC or prop-craft use.",
+    "weight": 4,
+    "source_note": "625 ILCS 45/4-1 and 45/4-11; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Besides being USCG-approved, what other conditions must a PFD meet under Illinois law?",
+    "choice_a": "It must be stored in a locked compartment at all times",
+    "choice_b": "It must be in good and serviceable condition, readily accessible, of the proper size for the wearer, and legibly marked with the USCG approval number",
+    "choice_c": "It only needs to be the correct color",
+    "choice_d": "It must be less than one year old",
+    "correct_choice": "B",
+    "explanation": "Illinois law requires PFDs to be in serviceable condition, readily accessible (able to be put on quickly in an emergency), properly sized based on body weight and chest size, and legibly marked with the USCG approval number.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/4-1; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What does it mean for a PFD to be 'readily accessible' under Illinois's PFD carriage requirement?",
+    "choice_a": "It can be locked in the cabin during operation",
+    "choice_b": "It must be stowed in a sealed dry bag",
+    "choice_c": "It can be put on quickly in an emergency, not stored in its original packaging or buried under other gear",
+    "choice_d": "It must be worn by the boat owner at all times",
+    "correct_choice": "C",
+    "explanation": "'Readily accessible' means a PFD must be quickly retrievable and wearable in an emergency, not stowed in a way that delays putting it on.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/4-1; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "A Type I offshore life jacket is generally designed to do what, compared with other PFD types?",
+    "choice_a": "Provide the least amount of flotation of any PFD type",
+    "choice_b": "Only function properly when worn by children",
+    "choice_c": "Replace the need for a throwable device on any vessel",
+    "choice_d": "Turn most unconscious wearers face-up in the water and provide the most buoyancy, making it best suited for rough or remote waters",
+    "correct_choice": "D",
+    "explanation": "Type I offshore life jackets offer the highest buoyancy and are designed to turn most unconscious wearers face-up, making them the best choice for rough, remote, or open water where rescue may be delayed.",
+    "weight": 2,
+    "source_note": "USCG PFD type classifications used across NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "If a boater chooses to wear a PFD that is not USCG-approved when a wearable PFD is not specifically required, what does Illinois law still require?",
+    "choice_a": "A properly fitting, USCG-approved PFD must still be carried on board to satisfy state and federal carriage requirements",
+    "choice_b": "Nothing further is required once any flotation device is worn",
+    "choice_c": "The non-approved PFD must be registered with the DNR",
+    "choice_d": "The vessel must carry two non-approved PFDs instead",
+    "correct_choice": "A",
+    "explanation": "Wearing a non-approved PFD does not satisfy the carriage requirement; a properly fitting, USCG-approved PFD must still be aboard to meet state and federal law.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/4-1; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "How should a wearable PFD's fit generally be checked before use?",
+    "choice_a": "It should only be checked once per boating season",
+    "choice_b": "It should be snug enough that it does not ride up over the chin or ears when the wearer relaxes in the water, and sized by body weight and chest size",
+    "choice_c": "It should be as loose as possible for comfort",
+    "choice_d": "Fit does not matter as long as the PFD is USCG-approved",
+    "correct_choice": "B",
+    "explanation": "A properly fitted PFD stays snug and does not ride up over the chin or ears; Illinois law explicitly requires PFDs to be of proper size for the intended wearer, based on body weight and chest size.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/4-1; general PFD fit guidance used across NASBLA-based courses"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under Illinois's PFD-for-persons-under-13 rule, which vessel situation is explicitly exempt from requiring the child to wear the PFD while underway?",
+    "choice_a": "The child is riding on a PWC",
+    "choice_b": "The vessel is more than one mile from shore",
+    "choice_c": "The child is enclosed in a cabin or below the top deck of the watercraft",
+    "choice_d": "The vessel is traveling faster than idle speed",
+    "correct_choice": "C",
+    "explanation": "Illinois's under-13 PFD rule does not apply when the child is enclosed in a cabin or below the top deck, on an anchored swim/dive platform, or aboard a licensed charter 'passenger for hire' vessel.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/4-1; Handbook of Illinois Boating Laws and Responsibilities"
+  }
+]

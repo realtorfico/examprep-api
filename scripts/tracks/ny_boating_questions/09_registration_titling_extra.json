@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Registration, Titling & HIN",
+    "question": "Does New York State impose a minimum age requirement for a person to own or register a boat in their own name?",
+    "choice_a": "Yes, a person must be at least 18 years old to own or register a boat",
+    "choice_b": "Yes, a person must be at least 16 years old to own or register a boat",
+    "choice_c": "No, there is no minimum age requirement to own or register a boat in New York",
+    "choice_d": "Yes, a person must be at least 21 years old to own or register a boat",
+    "correct_choice": "C",
+    "explanation": "New York DMV guidance states that no age requirement exists to own or register a boat; this is separate from the age-based operator certificate rules that apply under Brianna's Law to actually operating a motorboat.",
+    "weight": 1,
+    "source_note": "NY DMV, Register a Boat (dmv.ny.gov/registration/register-a-boat)"
+  },
+  {
+    "topic": "Registration, Titling & HIN",
+    "question": "A boater from New Jersey brings their New Jersey-registered boat to New York for a two-month stay. Does the boat need to be registered in New York?",
+    "choice_a": "Yes, any boat present in New York waters for more than 24 hours must obtain New York registration",
+    "choice_b": "No, an out-of-state registration is permanently recognized in New York regardless of how long the boat stays",
+    "choice_c": "Yes, New York never recognizes an out-of-state boat registration under any circumstances",
+    "choice_d": "No, a boat already registered in another state is exempt from New York registration as long as it is not kept in New York for more than 90 consecutive days",
+    "correct_choice": "D",
+    "explanation": "New York exempts a boat that is registered in another state from New York's registration requirement as long as it is not kept in New York for more than 90 consecutive days.",
+    "weight": 2,
+    "source_note": "NY DMV, Register a Boat, nonresident/90-day exemption"
+  },
+  {
+    "topic": "Registration, Titling & HIN",
+    "question": "In addition to non-motorized vessels, which of the following are specifically listed as exempt from New York's boat registration requirement?",
+    "choice_a": "Lifeboats, boats racing in competition, and commercial boats carrying U.S. or foreign documentation",
+    "choice_b": "Any boat that is more than 25 years old",
+    "choice_c": "Any boat purchased for less than $1,000",
+    "choice_d": "Any boat stored on a trailer rather than kept in the water",
+    "correct_choice": "A",
+    "explanation": "New York's registration exemptions specifically include a lifeboat, a boat racing in competition, and a commercial boat carrying either U.S. or foreign documentation, in addition to the separate exemption for non-motorized vessels.",
+    "weight": 2,
+    "source_note": "NY DMV, Register a Boat, exemption list"
+  },
+  {
+    "topic": "Registration, Titling & HIN",
+    "question": "A New York resident registers a 20-foot motorboat for the standard three-year registration period. Under the DMV's length-based fee schedule, which fee tier applies?",
+    "choice_a": "The under-16-feet tier, priced at $22.50",
+    "choice_b": "The 16-feet-to-less-than-26-feet tier, priced at $45.00",
+    "choice_c": "The 26-feet-and-longer tier, priced at $75.00",
+    "choice_d": "New York boat registration fees are a flat rate regardless of vessel length",
+    "correct_choice": "B",
+    "explanation": "New York's three-year boat registration fee is length-based: $22.50 for boats under 16 feet, $45.00 for boats from 16 feet up to less than 26 feet, and $75.00 for boats 26 feet or longer. A 20-foot boat falls in the middle tier at $45.00.",
+    "weight": 2,
+    "source_note": "NY DMV, Register a Boat, registration fee schedule"
+  },
+  {
+    "topic": "Registration, Titling & HIN",
+    "question": "When a New York vessel meets the criteria requiring a title in addition to registration, what fee does the DMV charge to issue that title?",
+    "choice_a": "$5.00",
+    "choice_b": "There is no separate fee for a boat title",
+    "choice_c": "$50.00",
+    "choice_d": "$200.00",
+    "correct_choice": "C",
+    "explanation": "New York charges a $50 title fee when a title is required for a qualifying vessel, on top of the length-based registration fee.",
+    "weight": 2,
+    "source_note": "NY DMV, Register a Boat, title fee"
+  },
+  {
+    "topic": "Registration, Titling & HIN",
+    "question": "Besides the block-letter registration numbers themselves, where does New York require the registration validation stickers to be placed on the boat?",
+    "choice_a": "On the transom only, regardless of distance from the bow",
+    "choice_b": "Inside the boat's cabin, out of public view",
+    "choice_c": "On the underside of the hull",
+    "choice_d": "18 inches back from the bow, on both sides of the boat",
+    "correct_choice": "D",
+    "explanation": "In addition to the 3-inch block-letter registration number displayed on the forward half of the hull, New York requires the registration validation stickers to be placed 18 inches back from the bow on both sides of the boat.",
+    "weight": 2,
+    "source_note": "NY DMV, Register a Boat, validation sticker placement"
+  },
+  {
+    "topic": "Registration, Titling & HIN",
+    "question": "If a New York boat owner has their vessel documented by the U.S. Coast Guard, what does New York issue in place of a New York registration number?",
+    "choice_a": "New York State registration stickers only, without a New York registration number",
+    "choice_b": "A completely separate New York title bearing a newly assigned HIN",
+    "choice_c": "A full New York registration number identical to what a non-documented boat receives",
+    "choice_d": "Nothing; a documented vessel receives no paperwork from New York at all",
+    "correct_choice": "A",
+    "explanation": "A boat documented by the U.S. Coast Guard does not receive a New York State registration number; the owner instead receives New York State registration stickers only.",
+    "weight": 2,
+    "source_note": "NY DMV, Register a Boat, USCG-documented vessels"
+  },
+  {
+    "topic": "Registration, Titling & HIN",
+    "question": "If a New York boat owner loses their vessel's Certificate of Title, what does it cost to obtain a replacement, and which DMV form is used?",
+    "choice_a": "A $100.00 fee, using Form MV-82",
+    "choice_b": "A $20.00 fee, using Form MV-902",
+    "choice_c": "There is no fee to replace a lost title",
+    "choice_d": "A $5.00 fee, with no form required",
+    "correct_choice": "B",
+    "explanation": "Replacing a lost or damaged New York title certificate, including for a boat, costs $20.00, requires Form MV-902, and can be requested online, by mail, or in person at a DMV office.",
+    "weight": 1,
+    "source_note": "NY DMV, Replace a Title Certificate (dmv.ny.gov/titles/replace-a-title-certificate)"
+  },
+  {
+    "topic": "Registration, Titling & HIN",
+    "question": "Can a lender or other party hold a security interest (lien) against a New York-titled motorboat, the way they can against a car?",
+    "choice_a": "No, liens can never be placed on boats in New York, only on cars",
+    "choice_b": "No, only the U.S. Coast Guard can record a lien against a boat",
+    "choice_c": "Yes, a lien can be recorded against a titled motorboat just as it can against a motor vehicle or manufactured home",
+    "choice_d": "Yes, but only for boats 26 feet or longer",
+    "correct_choice": "C",
+    "explanation": "New York treats a lien the same way for a motorboat as for a motor vehicle or manufactured home: it means someone other than the owner holds a recorded security interest that appears on the title.",
+    "weight": 1,
+    "source_note": "NY DMV, Certificate of Title (dmv.ny.gov/titles/certificate-of-title), lien definition"
+  }
+]

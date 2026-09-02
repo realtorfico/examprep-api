@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Maryland Boater Education Law",
+    "question": "If a boater already holds a NASBLA-approved boating safety certificate issued by another state, does Maryland require them to take a separate Maryland-specific course?",
+    "choice_a": "Yes; every operator must retake a Maryland-only course regardless of any other certificate held",
+    "choice_b": "No; Maryland generally recognizes an equivalent boating safety certificate from another NASBLA-approved state program",
+    "choice_c": "Only out-of-state certificates issued more than 20 years ago are accepted",
+    "choice_d": "Maryland does not recognize any out-of-state certificate under any circumstance",
+    "correct_choice": "B",
+    "explanation": "Consistent with the nationwide NASBLA-approved course model, Maryland generally recognizes an equivalent boating safety certificate earned in another state's approved program, rather than requiring a boater to repeat the course.",
+    "weight": 3,
+    "source_note": "Interstate boater-education certificate reciprocity consistent with the NASBLA-approved-course model referenced by boat-ed.com Maryland and other state boating law summaries"
+  },
+  {
+    "topic": "Maryland Boater Education Law",
+    "question": "Once a boater successfully completes an approved course and receives a Maryland Boater Education Certificate/Card, how long does that certificate generally remain valid?",
+    "choice_a": "It expires and must be renewed every year, like vessel registration",
+    "choice_b": "It is valid for life and does not need periodic renewal",
+    "choice_c": "It expires after exactly 5 years",
+    "choice_d": "It is valid only for a single boating season",
+    "correct_choice": "B",
+    "explanation": "Unlike vessel registration, which must be periodically renewed, a Maryland Boater Education Certificate is a one-time credential that remains valid for the boater's lifetime once earned.",
+    "weight": 2,
+    "source_note": "Maryland Boater Education Certificate lifetime-validity model as summarized by boat-ed.com Maryland boating law page"
+  },
+  {
+    "topic": "Maryland Boater Education Law",
+    "question": "What formats are generally accepted for completing Maryland's approved boater education course?",
+    "choice_a": "Only in-person classroom instruction is accepted",
+    "choice_b": "Classroom, home-study, and online courses can all satisfy the requirement, as long as the course is approved (NASBLA-aligned/DNR-recognized)",
+    "choice_c": "Only a course delivered exclusively by mail is accepted",
+    "choice_d": "Video-only courses are never accepted",
+    "correct_choice": "B",
+    "explanation": "Maryland accepts multiple approved course delivery formats, including classroom instruction, home-study materials, and online courses, as long as the specific course and provider are DNR-approved and NASBLA-aligned.",
+    "weight": 2,
+    "source_note": "Maryland DNR-approved course delivery formats as summarized by boat-ed.com Maryland course offerings"
+  },
+  {
+    "topic": "Maryland Boater Education Law",
+    "question": "Does Maryland's boater education certificate requirement apply to a vessel's owner even if the owner never personally operates the vessel?",
+    "choice_a": "Yes; every owner must hold a certificate regardless of who operates the vessel",
+    "choice_b": "The requirement is tied to the person actually operating the vessel, not simply to ownership, though an owner should ensure that anyone who operates the vessel and is subject to the mandate holds a valid certificate",
+    "choice_c": "Ownership status has no bearing on the requirement in either direction",
+    "choice_d": "Only the vessel's insurer needs to hold a certificate",
+    "correct_choice": "B",
+    "explanation": "The certificate requirement attaches to the person operating a qualifying vessel, not to ownership itself, so a non-operating owner does not personally need a certificate but should confirm any operator subject to the mandate has one.",
+    "weight": 2,
+    "source_note": "Maryland boater education operator-based mandate scope as summarized by boat-ed.com Maryland boating law page"
+  },
+  {
+    "topic": "Maryland Boater Education Law",
+    "question": "Does Maryland's boater education mandate apply only to boaters on the Chesapeake Bay, or more broadly?",
+    "choice_a": "It applies only to the Bay itself, not to Maryland's inland lakes, rivers, or reservoirs",
+    "choice_b": "It applies broadly to operators of qualifying numbered or documented vessels on Maryland waters generally, including both tidal waters like the Bay and non-tidal inland waters such as reservoirs",
+    "choice_c": "It applies only to non-tidal waters, not the Bay",
+    "choice_d": "The mandate applies only to federally documented vessels",
+    "correct_choice": "B",
+    "explanation": "Maryland's boater education mandate applies broadly to qualifying vessel operators on the state's waters generally, covering both the tidal Chesapeake Bay and non-tidal inland waters such as reservoirs and upstream river sections.",
+    "weight": 2,
+    "source_note": "Maryland boater education mandate scope across tidal and non-tidal state waters, consistent with the mandate's general 'Maryland waters' framing per boat-ed.com and BoatUS Foundation summaries"
+  }
+]

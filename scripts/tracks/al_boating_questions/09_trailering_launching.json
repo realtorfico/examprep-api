@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Trailering and Launching",
+    "question": "Before backing a boat trailer down a launch ramp on an Alabama lake, what should the operator do with the vessel's drain plug?",
+    "choice_a": "Remove the drain plug before launching so the boat can drain excess water",
+    "choice_b": "Make sure the drain plug is installed and secure before launching, since a missing or loose plug will let water flood into the bilge once the boat is in the water",
+    "choice_c": "The drain plug is only relevant when the boat is being stored, not launched",
+    "choice_d": "Drain plugs are not used on any boat operating in Alabama",
+    "correct_choice": "B",
+    "explanation": "The drain plug must be installed and checked secure before launching; a boat launched with the plug out or loose will begin taking on water immediately, a common and entirely preventable cause of ramp mishaps and even sinkings.",
+    "weight": 4,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (pre-launch drain plug check)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What is a key etiquette and safety rule at a busy Alabama boat ramp, such as those found at Lake Guntersville or Lake Eufaula on a summer weekend?",
+    "choice_a": "Ramp etiquette has no bearing on safety, only convenience",
+    "choice_b": "Take as much time as needed on the ramp itself since other boaters must simply wait",
+    "choice_c": "Prepare the boat (load gear, remove tie-downs, insert the drain plug) in a staging area before pulling onto the ramp itself, so the ramp lane is not blocked for others",
+    "choice_d": "Always launch with the engine already running while still on the trailer",
+    "correct_choice": "C",
+    "explanation": "Prepping the boat -- removing tie-down straps, loading gear, and inserting the drain plug -- before pulling onto the ramp itself keeps the launch lane moving and reduces the chance of a rushed, unsafe launch while other trailers are waiting behind you.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (boat ramp etiquette and safety)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should a boater check trailer tire condition, wheel bearings, and lug nuts before towing a boat any significant distance on Alabama highways?",
+    "choice_a": "Trailer wheel bearings never require any maintenance",
+    "choice_b": "Trailer maintenance has no effect on highway safety",
+    "choice_c": "Only the tow vehicle's tires matter; trailer tires are never inspected",
+    "choice_d": "Trailer tires often sit unused for long periods and can develop dry rot or bearing failure, which can cause a blowout or wheel separation at highway speed",
+    "correct_choice": "D",
+    "explanation": "Trailer tires frequently sit idle between outings and are prone to dry rot even with good tread depth, and wheel bearings can overheat or fail from age or water intrusion during repeated launch-and-retrieve cycles -- both are common causes of highway breakdowns and must be checked before towing.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (trailer maintenance)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What safety chain requirement applies when towing a boat trailer on Alabama roads, in case the trailer hitch fails?",
+    "choice_a": "Safety chains must be properly attached between the trailer and tow vehicle as a backup connection to prevent full separation if the hitch coupler fails",
+    "choice_b": "Safety chains are optional decorative items with no functional purpose",
+    "choice_c": "Only trailers over 10,000 pounds require safety chains",
+    "choice_d": "Safety chains replace the need for a hitch coupler entirely",
+    "correct_choice": "A",
+    "explanation": "Safety chains, crossed and properly attached between the trailer frame and tow vehicle, act as a critical backup if the primary hitch coupler fails or disconnects, helping keep the trailer under some control rather than becoming a fully separated road hazard.",
+    "weight": 3,
+    "source_note": "Universal trailer safety standards, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why is it important to fully back a trailer's wheels into the water only as far as needed, rather than submerging the hub or bearings on a hot trailer?",
+    "choice_a": "There is no reason to be careful about how far the trailer wheels go into the water",
+    "choice_b": "Rapidly cooling hot wheel bearings in cold lake water can crack the bearing or seal from thermal shock, leading to water intrusion and later bearing failure",
+    "choice_c": "Submerging the wheels fully is always required to launch any boat",
+    "choice_d": "This only matters for trailers used in saltwater, never freshwater lakes",
+    "correct_choice": "B",
+    "explanation": "Wheel bearings heated by highway towing friction can crack from thermal shock when suddenly submerged in cooler lake water, letting water seep past the seal and corrode the bearing -- a real cause of trailer breakdowns that boaters can avoid by minimizing dwell time with hot hubs in the water.",
+    "weight": 2,
+    "source_note": "Universal trailer maintenance guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What invasive-species precaution is commonly recommended for boaters moving between different Alabama lakes, such as from Lake Guntersville to another reservoir?",
+    "choice_a": "Boats must be repainted between each lake visit",
+    "choice_b": "No precaution is ever necessary when moving a boat between lakes",
+    "choice_c": "Clean, drain, and dry the boat, trailer, and live wells between different bodies of water to avoid transporting invasive species such as zebra mussels or hydrilla",
+    "choice_d": "Only saltwater vessels need any cleaning between trips",
+    "correct_choice": "C",
+    "explanation": "Cleaning, draining, and drying a boat, trailer, live wells, and bilge before moving between different lakes helps prevent spreading invasive species like zebra mussels or invasive aquatic plants such as hydrilla, a growing concern for reservoirs across the Tennessee and Coosa River systems.",
+    "weight": 3,
+    "source_note": "Universal invasive-species prevention guidance (clean-drain-dry), applied to Alabama's inland reservoir system"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What should a boater verify about their trailer's load capacity rating before towing a fully loaded boat?",
+    "choice_a": "Any trailer can tow any boat regardless of weight",
+    "choice_b": "Load capacity does not matter as long as the trailer has wheels",
+    "choice_c": "Only the boat's weight matters, never the motor, fuel, or gear",
+    "choice_d": "That the trailer's gross vehicle weight rating (GVWR) exceeds the combined weight of the boat, motor, fuel, and gear, and that the tow vehicle's towing capacity exceeds the loaded trailer's total weight",
+    "correct_choice": "D",
+    "explanation": "Overloading a trailer beyond its GVWR, or exceeding the tow vehicle's rated towing capacity, can cause dangerous swaying, brake failure, or structural damage -- boaters should verify both figures against the fully loaded weight of the boat, motor, fuel, and gear before towing.",
+    "weight": 3,
+    "source_note": "Universal trailer and towing safety standards, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "At a crowded launch area, who generally has priority to use the ramp lane?",
+    "choice_a": "Boaters actively launching or retrieving should keep the ramp clear for others and yield the lane promptly once their boat is in the water or back on the trailer",
+    "choice_b": "Whoever arrives can occupy the ramp indefinitely with no obligation to others",
+    "choice_c": "Only registered guides have any right to use a public ramp",
+    "choice_d": "Ramp priority is determined by boat size, with the largest boat always going first",
+    "correct_choice": "A",
+    "explanation": "Good ramp etiquette (and, at many public Alabama facilities, posted rules) expects boaters to move promptly through the launch or retrieval process and clear the ramp lane for the next boater rather than occupying it for extended loading or unloading.",
+    "weight": 2,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (boat ramp etiquette)"
+  }
+]

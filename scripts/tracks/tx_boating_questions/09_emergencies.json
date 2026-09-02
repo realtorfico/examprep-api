@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Emergencies on the Water",
+    "question": "If a small boat capsizes, what is generally the safest action for the occupants to take?",
+    "choice_a": "Always attempt to swim to the nearest shore immediately, regardless of distance",
+    "choice_b": "Dive underwater to try to right the boat from beneath it",
+    "choice_c": "Stay with the boat if it remains afloat, since it is easier for rescuers to spot a capsized boat than swimmers in the water, and swimming to shore can quickly exhaust a person",
+    "choice_d": "Remove your life jacket so you can swim faster",
+    "correct_choice": "C",
+    "explanation": "Staying with a capsized boat, if it continues to float, gives rescuers a much larger and more visible target than a swimmer, and conserves energy compared to a long swim to shore, especially in cold or rough water.",
+    "weight": 4,
+    "source_note": "TPWD Boater Education Manual -- capsizing response"
+  },
+  {
+    "topic": "Emergencies on the Water",
+    "question": "What should a boat operator do first if a fire breaks out on board?",
+    "choice_a": "Continue at full throttle to reach shore as quickly as possible while the fire burns",
+    "choice_b": "Immediately abandon ship without attempting to fight the fire under any circumstance",
+    "choice_c": "Turn the boat so the fire is upwind of the crew",
+    "choice_d": "Stop the boat, position it so the fire is downwind, and use the extinguisher aimed at the base of the flames",
+    "correct_choice": "D",
+    "explanation": "Stopping the boat and orienting it so the wind blows the fire and smoke away from the crew (fire downwind) reduces the fire's ability to spread toward occupants, while aiming the extinguisher at the base of the flames is most effective.",
+    "weight": 4,
+    "source_note": "TPWD Boater Education Manual -- onboard fire response"
+  },
+  {
+    "topic": "Emergencies on the Water",
+    "question": "What is the recommended immediate action if a person falls overboard?",
+    "choice_a": "Reduce speed, throw a floating object toward the person, keep them in sight at all times, and maneuver the boat back carefully to retrieve them",
+    "choice_b": "Continue on course and circle back only after several minutes",
+    "choice_c": "Immediately jump in after them without throwing a flotation device first",
+    "choice_d": "Speed up to reach a marina to report the incident before attempting rescue",
+    "correct_choice": "A",
+    "explanation": "A man-overboard response starts with slowing down, tossing a throwable flotation device toward the person, maintaining constant visual contact, and carefully turning the boat back to retrieve them without endangering them with the propeller.",
+    "weight": 4,
+    "source_note": "TPWD Boater Education Manual -- man overboard procedure"
+  },
+  {
+    "topic": "Emergencies on the Water",
+    "question": "Why does cold water immersion pose a serious danger even in relatively mild air temperatures?",
+    "choice_a": "Cold water is only dangerous when air temperature is also below freezing",
+    "choice_b": "Water conducts heat away from the body roughly 25 times faster than air, which can cause cold shock and rapidly impair swimming ability even when the air feels comfortable",
+    "choice_c": "Cold water immersion has no meaningful physiological effect on the human body",
+    "choice_d": "Cold water danger applies only to swimming pools, not open water",
+    "correct_choice": "B",
+    "explanation": "Because water draws heat from the body far faster than air, sudden immersion in cold water can trigger cold shock response and rapidly reduce swimming ability and coordination, even when the air temperature feels mild.",
+    "weight": 4,
+    "source_note": "TPWD Boater Education Manual / cold water immersion physiology"
+  },
+  {
+    "topic": "Emergencies on the Water",
+    "question": "What is the recommended body position (the H.E.L.P. position) for a single person to reduce heat loss while awaiting rescue in cold water?",
+    "choice_a": "Swim continuously to stay warm",
+    "choice_b": "Float completely spread-eagle to maximize surface area",
+    "choice_c": "Hold the knees to the chest and arms close to the sides, forming a tucked position that protects the body's major heat-loss areas",
+    "choice_d": "Remove clothing to reduce water resistance",
+    "correct_choice": "C",
+    "explanation": "The Heat Escape Lessening Posture (H.E.L.P.) involves drawing the knees to the chest and arms in close to the body to protect the head, neck, sides, and groin -- areas of high heat loss -- while wearing a PFD.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- cold water survival positions"
+  },
+  {
+    "topic": "Emergencies on the Water",
+    "question": "What is 'cold shock response,' and why is it dangerous?",
+    "choice_a": "A term describing a boat engine stalling in cold weather",
+    "choice_b": "A condition that only affects experienced open-water swimmers",
+    "choice_c": "A safety feature built into modern PFDs",
+    "choice_d": "An involuntary gasp reflex and rapid breathing triggered by sudden cold water immersion, which can cause a person to inhale water if their face is submerged",
+    "correct_choice": "D",
+    "explanation": "Cold shock response is an involuntary gasp reflex and hyperventilation triggered by sudden cold-water immersion; if a person's face is underwater during this reflex, they can inhale water and drown within the first minute.",
+    "weight": 4,
+    "source_note": "TPWD Boater Education Manual -- cold shock response"
+  },
+  {
+    "topic": "Emergencies on the Water",
+    "question": "If a boat runs aground on a Texas lake or river, what should the operator do first?",
+    "choice_a": "Check for injuries, check the hull for damage or leaks, and avoid immediately gunning the engine, since that can drive the boat further onto the obstruction or damage the propeller further",
+    "choice_b": "Immediately apply full throttle in reverse regardless of hull condition",
+    "choice_c": "Abandon the boat immediately without checking for injuries or damage",
+    "choice_d": "Running aground requires no particular response since it never causes damage",
+    "correct_choice": "A",
+    "explanation": "After running aground, the priority is checking occupants for injury and the hull for damage before attempting to move the boat, since immediately powering off an obstruction can worsen damage or drive the boat further aground.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- running aground response"
+  },
+  {
+    "topic": "Emergencies on the Water",
+    "question": "What should boaters do if their vessel begins taking on water faster than a bilge pump can remove it?",
+    "choice_a": "Ignore it as long as the engine is still running",
+    "choice_b": "Put on life jackets, attempt to locate and slow the source of flooding, and be prepared to call for help and abandon ship if the situation worsens",
+    "choice_c": "Immediately jump overboard without a life jacket",
+    "choice_d": "Increase speed to try to outrun the flooding",
+    "correct_choice": "B",
+    "explanation": "In an uncontrolled flooding emergency, occupants should don life jackets, attempt to identify and control the source of the leak, and be prepared to call for assistance and abandon ship if flooding cannot be controlled.",
+    "weight": 4,
+    "source_note": "TPWD Boater Education Manual -- flooding/swamping emergency response"
+  },
+  {
+    "topic": "Emergencies on the Water",
+    "question": "What is carbon monoxide (CO) poisoning risk aboard a boat, and where is it most concentrated?",
+    "choice_a": "Carbon monoxide is not a risk on boats since they are always outdoors",
+    "choice_b": "CO poisoning can only occur if a passenger is inside a sealed below-deck cabin",
+    "choice_c": "CO is an odorless, colorless gas from engine and generator exhaust that can accumulate near swim platforms, under canvas enclosures, or in enclosed cabins, and can be fatal even outdoors near the exhaust",
+    "choice_d": "Boat engines do not produce carbon monoxide",
+    "correct_choice": "C",
+    "explanation": "Carbon monoxide from engine or generator exhaust is odorless and colorless, and can build up to dangerous levels near swim platforms, under canvas or exhaust enclosures ('teak surfing' danger), or in enclosed cabins, posing a serious poisoning or fatality risk.",
+    "weight": 4,
+    "source_note": "TPWD Boater Education Manual -- carbon monoxide hazards"
+  },
+  {
+    "topic": "Emergencies on the Water",
+    "question": "What should a boater do to signal distress and call for help if their radio is not working and they are close enough to shore or other boats?",
+    "choice_a": "Distress can only be signaled using a working VHF radio; no other method is recognized",
+    "choice_b": "Sound a single long blast and nothing else",
+    "choice_c": "Wait silently for another vessel to notice on its own",
+    "choice_d": "Use visual distress signals such as flares, an orange distress flag, a mirror to signal, or waving arms in a slow, deliberate up-and-down motion",
+    "correct_choice": "D",
+    "explanation": "If radio communication is unavailable, boaters can use visual distress signals -- flares, an orange distress flag, mirror flashes, or the recognized emergency arm signal of slowly and repeatedly raising and lowering outstretched arms -- to attract attention.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- distress signaling without radio"
+  }
+]

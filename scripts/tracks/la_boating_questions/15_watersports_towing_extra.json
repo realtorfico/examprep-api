@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Water Sports and Towing",
+    "question": "When towing an inflatable tube behind a boat, the number of riders on the tube should:",
+    "choice_a": "Never exceed the tube manufacturer's rated rider capacity",
+    "choice_b": "Be limited only by how many people can physically fit on it",
+    "choice_c": "Always match the number of seats in the towing boat",
+    "choice_d": "Have no meaningful limit as long as everyone wears a PFD",
+    "correct_choice": "A",
+    "explanation": "Just as a PWC has a manufacturer-rated passenger capacity, an inflatable tube has a rated rider capacity, and exceeding it increases the risk of an uncontrolled, dangerous ride.",
+    "weight": 3,
+    "source_note": "Standard towable-tube safety fundamentals used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Compared to a typical water-ski wake, the wake produced by a ballast-laden wake boat for wakeboarding or wake surfing is generally:",
+    "choice_a": "Nonexistent, since wake boats produce no wake at all",
+    "choice_b": "Identical in every respect to a standard ski wake",
+    "choice_c": "Larger and capable of traveling farther, requiring extra distance from shore, docks, and other vessels",
+    "choice_d": "Only relevant to the operator, never to nearby boats or docks",
+    "correct_choice": "C",
+    "explanation": "Because wake boats intentionally load ballast to build a larger wake for wakeboarding and wake surfing, that wake can travel farther and hit harder than a typical ski wake, so operators should keep extra distance from shorelines, docks, and other vessels.",
+    "weight": 3,
+    "source_note": "Standard wake-sport safety fundamentals used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "A tow rope for water skiing is generally kept at a certain minimum length primarily to:",
+    "choice_a": "Match the exact length of the towing boat",
+    "choice_b": "Keep the skier at a safe distance from the boat's propeller and engine exhaust",
+    "choice_c": "Reduce the boat's fuel consumption",
+    "choice_d": "Make the rope easier to store when not in use",
+    "correct_choice": "B",
+    "explanation": "A tow rope of adequate length keeps the skier a safe distance behind the boat, away from the propeller and engine exhaust, reducing the risk of injury if the skier falls close to the boat.",
+    "weight": 2,
+    "source_note": "Standard water-skiing/towing safety fundamentals used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Towing a skier or tuber through a congested area, narrow channel, or near a designated swimming beach is discouraged mainly because:",
+    "choice_a": "Louisiana law has no rules addressing where towing may occur",
+    "choice_b": "The wide turning radius and unpredictable movement of a towed person raises collision risk in tight or crowded spaces",
+    "choice_c": "Towing is always faster in open water regardless of location",
+    "choice_d": "Congested areas never contain swimmers or other vessels",
+    "correct_choice": "B",
+    "explanation": "A towed skier or tuber can swing wide and move unpredictably, which becomes especially dangerous in a narrow channel, congested area, or near a swimming beach where there is little room to react safely.",
+    "weight": 3,
+    "source_note": "Standard water-skiing/towing safety fundamentals used across NASBLA-aligned boating courses"
+  }
+]

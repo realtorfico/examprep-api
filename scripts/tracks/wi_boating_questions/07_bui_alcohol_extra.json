@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "Why do boater education courses warn against combining alcohol with over-the-counter or prescription medications while boating?",
+    "choice_a": "Medications always cancel out alcohol's impairing effects",
+    "choice_b": "Many common medications can interact with alcohol to intensify drowsiness, dizziness, or impaired judgment well beyond the effect of either substance alone",
+    "choice_c": "Medication use is only a concern for vehicle drivers, never boat operators",
+    "choice_d": "This combination has no documented safety concern",
+    "correct_choice": "B",
+    "explanation": "Many over-the-counter and prescription medications carry warnings against combining them with alcohol because the interaction can intensify drowsiness, dizziness, or impaired judgment far beyond what either substance would cause alone -- a real risk for a boat operator already contending with sun, wind, and motion.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Alcohol and Drugs"
+  },
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "Beyond slowing reaction time and coordination, how does alcohol specifically affect a boat operator's decision-making?",
+    "choice_a": "Alcohol only affects physical coordination, never judgment or decision-making",
+    "choice_b": "It tends to increase risk-taking and overconfidence, making an impaired operator more likely to take chances such as excessive speed or ignoring hazards that a sober operator would avoid",
+    "choice_c": "Alcohol has no effect on judgment at blood alcohol levels below the legal limit",
+    "choice_d": "Alcohol improves an operator's ability to assess risk accurately",
+    "correct_choice": "B",
+    "explanation": "Beyond its physical effects, alcohol tends to increase risk-taking and overconfidence, which can lead an impaired operator to attempt maneuvers, speeds, or routes that a sober operator would recognize as unsafe.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Alcohol and Drugs"
+  },
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "Do BUI enforcement frameworks generally rely on chemical testing (such as a breath or blood test) similar to impaired-driving laws?",
+    "choice_a": "No -- chemical testing is never used in any BUI enforcement context",
+    "choice_b": "Yes -- BUI enforcement broadly parallels impaired-driving law by relying on chemical testing when an officer has reasonable grounds, generally under an implied-consent-style framework, though Wisconsin's exact statutory testing procedure was not independently re-verified against current statute text in this build",
+    "choice_c": "Chemical testing is used only for fatal accidents, never for a routine stop",
+    "choice_d": "Only breath tests are recognized; blood or urine tests are never used for BUI",
+    "correct_choice": "B",
+    "explanation": "Consistent with impaired-driving enforcement, BUI frameworks generally allow chemical testing when an officer has reasonable grounds to suspect impairment, typically under an implied-consent-style structure -- though the precise Wisconsin statutory testing procedure was not independently re-verified against current statute text in this build, matching this project's established hedging approach for unconfirmed statutory specifics.",
+    "weight": 2,
+    "source_note": "General implied-consent/chemical-testing BUI framework, applied broadly across states; Wisconsin-specific testing procedure not independently re-verified against statute text in this build"
+  },
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "Does Wisconsin's prohibition on operating a boat while impaired apply only to motorboats, or more broadly?",
+    "choice_a": "It applies only to vessels over 26 feet in length",
+    "choice_b": "It applies broadly to operating any vessel while impaired, not just larger powerboats -- consistent with the general BUI framework applied across vessel types nationwide",
+    "choice_c": "It applies only to personal watercraft, exempting all other vessel types",
+    "choice_d": "Impairment law applies only if the vessel is registered",
+    "correct_choice": "B",
+    "explanation": "BUI laws are generally written to cover operating any vessel while impaired, not just larger motorboats, reflecting that impairment poses a danger regardless of the size or type of watercraft being operated.",
+    "weight": 2,
+    "source_note": "General BUI framework under Wis. Stat. ch. 30, applied broadly across vessel types; consistent with the uniform national approach to boating-under-the-influence law"
+  },
+  {
+    "topic": "Alcohol & Boating Under the Influence",
+    "question": "Boater education courses often say that \"one drink on the water can feel like several\" -- what is the reasoning behind that rule of thumb?",
+    "choice_a": "It is purely a marketing phrase with no basis in how the body responds",
+    "choice_b": "Boats are required to carry a breathalyzer, so any drink is immediately measured",
+    "choice_c": "The combined fatigue from sun, wind, noise, vibration, and motion amplifies alcohol's impairing effect, so a boater can feel and behave more intoxicated than the same amount of alcohol would cause on land",
+    "choice_d": "This saying refers only to the cost of drinks sold at marinas",
+    "correct_choice": "C",
+    "explanation": "Because sun, wind, engine noise, vibration, and the boat's motion all add to fatigue, the combined effect intensifies alcohol's impact, which is the basis for the common boater-education rule of thumb that even a single drink can impair a boater as much as several drinks would on land.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 4: Alcohol and Drugs (\"boater's fatigue\" amplification principle)"
+  }
+]

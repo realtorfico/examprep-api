@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Accident Reporting and SCDNR Enforcement",
+    "question": "Under S.C. Code Section 50-21-85, who is permitted to operate a vessel displaying a rotating, strobing, or flashing blue light on South Carolina waters?",
+    "choice_a": "Any recreational boater who purchases a blue light accessory",
+    "choice_b": "Only a vessel with a duly commissioned law enforcement officer aboard",
+    "choice_c": "Any vessel operating at night, regardless of who is aboard",
+    "choice_d": "Only commercial fishing vessels",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-85 restricts the use of a rotating, strobing, flashing, or intermittently reflecting blue light on a vessel to situations where a duly commissioned law enforcement officer is actually aboard, preventing the light from being used to impersonate law enforcement authority on the water.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-85 (blue light vessel operation restricted to law enforcement)"
+  },
+  {
+    "topic": "Accident Reporting and SCDNR Enforcement",
+    "question": "Under Section 50-21-85, what must other boaters do when approaching an area where a blue-light law enforcement vessel is actively operating, or when signaled by one?",
+    "choice_a": "Speed up to leave the area as quickly as possible",
+    "choice_b": "Slow to no-wake speed when approaching the area, and stop or maneuver to permit boarding without endangering the vessel when signaled",
+    "choice_c": "There is no expected response to a blue-light vessel's presence or signal",
+    "choice_d": "Only commercial vessels are required to respond to a blue-light signal",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-85 requires boaters approaching an area of blue-light vessel activity to slow to no-wake speed, and requires a vessel that is signaled or hailed by a blue-light law enforcement vessel to stop or maneuver so as to permit safe boarding, supporting effective and safe on-water enforcement.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-85 (response duties near blue-light law enforcement vessels)"
+  },
+  {
+    "topic": "Accident Reporting and SCDNR Enforcement",
+    "question": "Under S.C. Code Section 50-21-175, what must the operator and crew of a South Carolina vessel do when signaled or hailed by a law enforcement officer or U.S. Coast Guard personnel?",
+    "choice_a": "Continue on their original course and ignore the signal if they are not currently violating any law",
+    "choice_b": "Heave to and allow boarding, cooperating with the enforcement personnel or Coast Guard as directed",
+    "choice_c": "Only cooperate if the vessel is a commercial vessel; recreational boaters are exempt",
+    "choice_d": "Immediately return to the nearest dock without waiting for further instruction",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-175 requires the operator and crew of a vessel operating on South Carolina's waters to heave to and permit boarding when signaled or hailed by law enforcement or U.S. Coast Guard personnel, and to cooperate with them, a duty separate from and broader than the more specific blue-light-vessel provisions of Section 50-21-85.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-175 (heave-to and cooperation requirement)"
+  },
+  {
+    "topic": "Accident Reporting and SCDNR Enforcement",
+    "question": "What is the penalty for failing to heave to and cooperate with law enforcement or Coast Guard personnel under Section 50-21-175?",
+    "choice_a": "There is no penalty for failing to heave to when signaled",
+    "choice_b": "A misdemeanor with a fine of $500 to $2,500 or up to 30 days imprisonment, with magistrate courts retaining jurisdiction",
+    "choice_c": "A civil-only fine of $5 with no possibility of imprisonment",
+    "choice_d": "Automatic permanent loss of vessel ownership",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-175 sets a meaningful penalty -- a $500 to $2,500 fine or up to 30 days imprisonment, with magistrate courts retaining jurisdiction -- for failing to heave to and cooperate when properly signaled by law enforcement or the Coast Guard, reflecting the importance of on-water enforcement compliance.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-175 (penalty for failing to heave to)"
+  },
+  {
+    "topic": "Accident Reporting and SCDNR Enforcement",
+    "question": "Under S.C. Code Section 50-21-105, what authority does SCDNR have regarding an unattended vessel or one posing a navigation hazard on South Carolina's waters?",
+    "choice_a": "SCDNR has no authority to move or store any vessel under any circumstance",
+    "choice_b": "SCDNR may remove and tow such a vessel, including one left unattended, one with an impaired operator, or one that poses a navigation hazard, and store it at a commercial marina, with the owner able to reclaim it by proving ownership and paying storage fees",
+    "choice_c": "SCDNR may only issue a warning letter and take no physical action regarding the vessel",
+    "choice_d": "Only the U.S. Coast Guard, never SCDNR, may remove a hazardous or unattended vessel",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-105 authorizes SCDNR to remove and tow an unattended vessel, one whose operator is impaired, or one that presents a navigation hazard, storing it at a commercial marina until the owner proves ownership and pays the associated storage fees to reclaim it.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-105 (SCDNR authority to tow and store unattended or hazardous vessels)"
+  },
+  {
+    "topic": "Accident Reporting and SCDNR Enforcement",
+    "question": "Under S.C. Code Section 50-21-146, what is prohibited at South Carolina public boat landings or ramps?",
+    "choice_a": "Fishing from the shoreline near a landing",
+    "choice_b": "Discharging a firearm, which constitutes a misdemeanor under the penalty framework of Section 50-1-130",
+    "choice_c": "Parking a vehicle with a boat trailer attached",
+    "choice_d": "Talking loudly while waiting in line to launch",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-146 makes it a misdemeanor, penalized under the framework of Section 50-1-130, to discharge a firearm at a public boat landing or ramp, addressing a safety hazard to the many people using these often-crowded access points.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-146 (firearm discharge prohibited at boat landings)"
+  },
+  {
+    "topic": "Accident Reporting and SCDNR Enforcement",
+    "question": "Under S.C. Code Section 50-21-148, what is unlawful regarding piers, docks, wharves, boat ramps, or other water access areas in South Carolina?",
+    "choice_a": "Obstructing them, with an obstructing vessel or object subject to removal at the owner's expense and a fine of $25 to $100 or up to 30 days imprisonment for the violation",
+    "choice_b": "Using them for their intended purpose of loading and unloading passengers or cargo",
+    "choice_c": "There is no law addressing obstruction of these facilities",
+    "choice_d": "Only commercial vessels may be cited for obstructing a pier or ramp",
+    "correct_choice": "A",
+    "explanation": "Section 50-21-148 makes it unlawful to obstruct piers, docks, wharves, boat ramps, or other access areas, allowing an obstructing vessel or object to be removed at the owner's expense and imposing a fine of $25 to $100 or up to 30 days imprisonment on the responsible party.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-148 (obstruction of piers, docks, ramps, and access areas)"
+  },
+  {
+    "topic": "Accident Reporting and SCDNR Enforcement",
+    "question": "Under S.C. Code Section 50-21-200, how does South Carolina law classify abandoned, derelict, and sunken vessels left on the state's waters?",
+    "choice_a": "As valuable community assets that SCDNR is required to preserve indefinitely",
+    "choice_b": "As public nuisances that must be abated as provided in the abandoned/derelict/sunken vessel article of the chapter",
+    "choice_c": "As property with no special legal status different from any properly moored vessel",
+    "choice_d": "As vessels automatically transferred to SCDNR's ownership the moment they are abandoned",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-200 declares abandoned vessels, derelict vessels, and sunken vessels to be public nuisances that must be abated under the procedures set out in the chapter's dedicated article addressing these vessels, reflecting the safety, navigation, and environmental problems they can create if left unaddressed.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-200 (abandoned/derelict/sunken vessels declared public nuisances)"
+  },
+  {
+    "topic": "Accident Reporting and SCDNR Enforcement",
+    "question": "Under S.C. Code Section 50-21-220, what penalty applies to a person who intentionally or recklessly causes a vessel to sink on South Carolina's waters, outside of an approved artificial reef program?",
+    "choice_a": "No penalty applies since sinking a vessel is not addressed anywhere in the boating chapter",
+    "choice_b": "A fine of up to $10,000, imprisonment of up to 60 days, and liability for the vessel's removal and disposal costs",
+    "choice_c": "A fine of exactly $5 regardless of the circumstances",
+    "choice_d": "The vessel owner automatically forfeits all other unrelated property they own",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-220 makes it unlawful to intentionally or recklessly sink a vessel on state waters outside of a departmental artificial reef program, with violators facing a fine of up to $10,000, imprisonment of up to 60 days, and liability for the costs of removing and disposing of the sunken vessel.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-220 (penalty for intentionally or recklessly sinking a vessel)"
+  },
+  {
+    "topic": "Accident Reporting and SCDNR Enforcement",
+    "question": "Under S.C. Code Section 50-21-260, once an abandoned or derelict vessel's removal deadline has passed, who may remove it, and what recourse do they have against the responsible party?",
+    "choice_a": "Only SCDNR may ever remove such a vessel, and no cost recovery is available to anyone",
+    "choice_b": "Any person may remove the vessel without liability to the responsible party, and may sue that responsible party within three years to recover removal and disposal costs and attorney's fees",
+    "choice_c": "The vessel must remain in place indefinitely with no removal process available",
+    "choice_d": "Only the original manufacturer of the vessel may remove it",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-260 allows any person to remove an abandoned or derelict vessel once its removal deadline has passed, without incurring liability to the responsible party, and gives that remover a right -- exercisable within three years -- to sue the responsible party for removal and disposal costs along with attorney's fees and court costs.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-260 (removal rights and cost-recovery for abandoned/derelict vessels)"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Registration and Titling",
+    "question": "When a Louisiana registered vessel is sold to a new owner, responsibility for transferring the registration (and title, if applicable) into the new owner's name generally falls to:",
+    "choice_a": "No one; registration automatically follows the vessel regardless of who owns it",
+    "choice_b": "The new owner, who must update LDWF's records to reflect the change in ownership",
+    "choice_c": "The previous owner exclusively, with no action required from the buyer",
+    "choice_d": "The marina where the boat happens to be docked",
+    "correct_choice": "B",
+    "explanation": "As with a vehicle title, responsibility for updating LDWF's registration and title records after a sale falls on the new owner, who must transfer the vessel into their own name.",
+    "weight": 3,
+    "source_note": "LDWF, Title or Register Your Boat (wlf.louisiana.gov/page/title-or-register-your-boat)"
+  },
+  {
+    "topic": "Registration and Titling",
+    "question": "If a Louisiana boat owner's registration certificate or decal is lost or destroyed, the owner should:",
+    "choice_a": "Assume the vessel is now permanently unregistered",
+    "choice_b": "Apply to LDWF for a replacement",
+    "choice_c": "Wait until the next three-year renewal cycle to get a new one",
+    "choice_d": "Purchase an entirely new registration under a different number",
+    "correct_choice": "B",
+    "explanation": "A lost or destroyed registration certificate or decal does not void the underlying registration -- the owner can apply to LDWF for a replacement rather than losing their registered status.",
+    "weight": 2,
+    "source_note": "LDWF, Title or Register Your Boat (wlf.louisiana.gov/page/title-or-register-your-boat)"
+  },
+  {
+    "topic": "Registration and Titling",
+    "question": "A vessel already validly registered in another state generally may operate temporarily on Louisiana waters:",
+    "choice_a": "Only if it is re-registered with LDWF before entering Louisiana waters at all",
+    "choice_b": "Without a separate Louisiana registration, under the interstate reciprocity recognized by federal boat-registration law",
+    "choice_c": "Never, since Louisiana recognizes no other state's registration",
+    "choice_d": "Only if it is a personal watercraft",
+    "correct_choice": "B",
+    "explanation": "Federal boat-registration law generally allows a vessel validly registered in its home state to operate temporarily on another state's waters, including Louisiana's, without obtaining a separate state registration, under a recognized interstate reciprocity principle.",
+    "weight": 3,
+    "source_note": "Federal Boat Safety Act reciprocity standard (46 U.S.C. Chapter 123), applied to Louisiana's registration framework"
+  },
+  {
+    "topic": "Registration and Titling",
+    "question": "Louisiana's vessel titling system, similar to a vehicle title through a motor vehicle office, primarily exists to:",
+    "choice_a": "Generate revenue with no other practical purpose",
+    "choice_b": "Establish clear legal ownership of a vessel and help deter theft and ownership fraud",
+    "choice_c": "Determine how fast a vessel may legally travel",
+    "choice_d": "Replace the need for any equipment inspection",
+    "correct_choice": "B",
+    "explanation": "Like a vehicle title, a boat title exists mainly to establish a clear, LDWF-recorded chain of legal ownership, which helps deter theft and fraudulent sales -- a different purpose from registration's role in tracking a vessel for identification and safety enforcement.",
+    "weight": 3,
+    "source_note": "LDWF, Title or Register Your Boat (wlf.louisiana.gov/page/title-or-register-your-boat)"
+  }
+]

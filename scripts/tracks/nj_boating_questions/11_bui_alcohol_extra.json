@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "BUI & Alcohol",
+    "question": "How does a first-time BUI offense with a BAC of 0.10% or higher (or involving narcotics) compare to a first-time offense with a BAC between 0.08% and 0.10% under New Jersey law?",
+    "choice_a": "It carries a higher fine range and a longer mandatory driver's license suspension (up to a full year) than the lower BAC tier's fine and shorter, three-month suspension",
+    "choice_b": "It results in exactly the same fine and license suspension as the lower BAC tier",
+    "choice_c": "It is treated as a lesser offense because higher BAC readings are considered less reliable",
+    "choice_d": "It carries no license consequence at all, only a fine",
+    "correct_choice": "A",
+    "explanation": "New Jersey's boating-while-intoxicated law, like its driving-while-intoxicated counterpart, escalates penalties at the higher BAC tier: a BAC of 0.10% or above (or operation involving narcotics) brings a higher fine range and a driver's license suspension that can run up to a year, compared to the lower fine and three-month driver's license suspension that applies at 0.08% to 0.10%.",
+    "weight": 3,
+    "source_note": "N.J.S.A. 12:7-46 two-tier BAC penalty structure; corroborated by criminallawyerinnj.com and newjerseydwilawyerblog.com BWI penalty summaries"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "What penalties can a first-time BUI conviction carry in New Jersey when the operator's BAC is between 0.08% and 0.10%?",
+    "choice_a": "A flat $50 fine with no effect on either license",
+    "choice_b": "A fine in roughly the $250-$400 range, a one-year suspension of boating privileges, and a three-month suspension of the operator's driver's license",
+    "choice_c": "An automatic lifetime revocation of the boating license with no fine at all",
+    "choice_d": "No penalty beyond a written warning, since penalties only begin on a second offense",
+    "correct_choice": "B",
+    "explanation": "A first-offense New Jersey BUI conviction in the 0.08%-0.10% BAC range carries a fine of roughly $250 to $400, a one-year suspension of boating privileges, and a three-month suspension of the operator's driver's license.",
+    "weight": 3,
+    "source_note": "N.J.S.A. 12:7-46 first-offense penalties, consistently reported across criminallawyerinnj.com, newjerseydwilawyerblog.com, and nj-dmv-dwi.com BWI penalty summaries"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "What happens if a boat operator refuses to submit to a lawfully requested chemical test under New Jersey's boating implied consent law?",
+    "choice_a": "Refusal carries no consequence as long as the operator was not actually intoxicated",
+    "choice_b": "Refusal can only be penalized if the operator is later convicted of BUI at trial",
+    "choice_c": "Refusal itself is separately penalized, resulting in forfeiture of both boating and driving privileges for roughly 7 to 12 months",
+    "choice_d": "Refusing the test automatically ends the investigation with no further consequence",
+    "correct_choice": "C",
+    "explanation": "Refusing to submit to a lawfully requested chemical test is its own violation under New Jersey's boating implied consent law, resulting in forfeiture of both boating and driving privileges for approximately 7 to 12 months, independent of whether a BUI charge is ultimately proven.",
+    "weight": 4,
+    "source_note": "New Jersey boating implied consent refusal penalty, corroborated by criminallawyerinnj.com and njdwilegal.com BWI summaries"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "Which vessels are covered by New Jersey's implied-consent chemical-testing requirement (N.J.S.A. 12:7-56) for a suspected BUI stop?",
+    "choice_a": "Only vessels longer than 40 feet",
+    "choice_b": "Only personal watercraft such as jet skis",
+    "choice_c": "Only vessels registered as commercial charter or party boats",
+    "choice_d": "Any powered vessel regardless of size, plus any vessel of 12 feet or greater in length even if it is unpowered",
+    "correct_choice": "D",
+    "explanation": "New Jersey's implied-consent testing statute covers operators of any powered vessel, no matter how small, and operators of any vessel -- powered or not -- that is 12 feet or greater in length; a small unpowered craft under 12 feet falls outside this specific testing statute, even though the general prohibition on operating any vessel while impaired still applies to it.",
+    "weight": 3,
+    "source_note": "N.J.S.A. 12:7-56 implied consent vessel scope, corroborated by nj-dmv-dwi.com BWI summary"
+  },
+  {
+    "topic": "BUI & Alcohol",
+    "question": "How does the authority of NJ Marine Police (and other officers) to stop and board a vessel for a routine safety or documentation check compare to the standard needed specifically to request a BUI chemical test?",
+    "choice_a": "Officers may stop and board a vessel for a routine safety/documentation check without needing probable cause or reasonable suspicion of a crime, but they still need reasonable grounds to specifically request a chemical BUI test",
+    "choice_b": "Officers may never board a vessel for any reason without first obtaining a search warrant",
+    "choice_c": "Officers may only board a vessel if the U.S. Coast Guard is also present at the time",
+    "choice_d": "Officers need probable cause of a specific crime before they may even approach or hail a vessel",
+    "correct_choice": "A",
+    "explanation": "Law enforcement officers have broad authority to stop and board vessels for routine safety and documentation checks without needing probable cause or reasonable suspicion of wrongdoing, but that routine-stop authority is distinct from the implied-consent standard, which still requires an officer to have reasonable grounds to believe the operator is impaired before requesting a chemical BUI test.",
+    "weight": 3,
+    "source_note": "Officer boarding/inspection authority distinct from implied-consent testing standard, per criminallawyerinnj.com BWI enforcement summary and N.J.S.A. 12:7-56 reasonable-grounds requirement"
+  }
+]

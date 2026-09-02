@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What additional consideration applies to towing a barefoot water-skier compared to a skier using conventional skis?",
+    "choice_a": "Barefoot skiing requires no meaningful difference in technique or boat speed compared to conventional skiing",
+    "choice_b": "Barefoot skiing generally requires significantly higher boat speed to keep the skier planing on the water's surface without skis, along with careful attention to fall technique, since falls at these higher speeds carry greater impact risk",
+    "choice_c": "Barefoot skiing is always performed at slower speeds than conventional skiing",
+    "choice_d": "Barefoot skiers never need to wear a PFD",
+    "correct_choice": "B",
+    "explanation": "Because a barefoot skier has no ski surface to help them plane, towing typically requires notably higher boat speeds than conventional skiing to keep the skier up on the surface, and the higher speeds involved mean falls carry a greater risk of impact injury, making an observer, proper PFD, and careful technique especially important.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (barefoot water skiing), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What tow rope characteristics are generally recommended for water skiing or wakeboarding, beyond simply having a rope of some kind?",
+    "choice_a": "Any type of rope, regardless of material or stretch, performs identically for towing a skier",
+    "choice_b": "A rope of appropriate length for the activity, made of a low-stretch material, helps give the rider consistent, predictable pull and reduces the whip-back hazard that a highly elastic rope can create if it suddenly releases tension",
+    "choice_c": "Tow ropes should always be made of the same material as an anchor line",
+    "choice_d": "Rope material and length have no bearing on towed-sport safety",
+    "correct_choice": "B",
+    "explanation": "A tow rope designed specifically for water sports, using a low-stretch material and sized to an appropriate length for the activity, gives the rider more predictable, consistent pull; a highly elastic rope can store energy and snap back dangerously if tension suddenly releases, such as after a fall.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (tow rope specifications for water sports)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Beyond simply being present, what makes an observer aboard a tow boat 'qualified' to watch a water-skier or tuber?",
+    "choice_a": "An observer should be capable of clearly and continuously watching the rider, recognizing hand signals and a fall, and communicating that information promptly and clearly to the boat operator so the operator can react appropriately",
+    "choice_b": "Any person aboard automatically counts as a qualified observer regardless of attentiveness or ability to communicate",
+    "choice_c": "An observer's only job is to hold the tow rope before it is thrown to the skier",
+    "choice_d": "Observers are never necessary if the boat has a rearview mirror mounted anywhere",
+    "correct_choice": "A",
+    "explanation": "Simply having another person aboard is not enough; a genuinely qualified observer must be able to watch the rider continuously, recognize hand signals or a fall, and clearly and promptly relay that information to the operator, since the operator cannot safely watch the skier and navigate the boat at the same time.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (qualified observer standard for towed water sports)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why does wakesurfing -- where a rider surfs close behind the boat without holding a rope -- call for particular caution regarding the engine and swim platform?",
+    "choice_a": "The wakesurfer typically rides very close to the stern and propeller area, so the operator must maintain extra awareness of the rider's position and be prepared to shift to neutral or shut off the engine immediately if the rider falls or drifts too close to the propeller",
+    "choice_b": "Wakesurfers always stay far away from the boat and pose no proximity concern",
+    "choice_c": "The engine should always be run at maximum throttle regardless of the surfer's position",
+    "choice_d": "Wakesurfing requires no attention to the boat's stern or propeller area",
+    "correct_choice": "A",
+    "explanation": "Because a wakesurfer rides much closer to the boat's stern than a conventional skier or tuber on a longer tow line, the operator must stay especially alert to the rider's position relative to the propeller and swim platform, ready to shift to neutral or cut the engine immediately if the surfer falls or drifts too close.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (wakesurfing proximity and engine safety)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What towing-speed technique helps reduce the risk of a tube whipping violently side to side behind the boat?",
+    "choice_a": "Maintaining excessive speed and making sharp, sudden turns maximizes rider safety",
+    "choice_b": "Keeping towing speed within a moderate, appropriate range for the number and size of riders, and avoiding sharp, sudden turns that can cause the tube to snap violently to one side, reduces the risk of the rider being thrown off at a dangerous angle or speed",
+    "choice_c": "Tube speed and turning technique have no effect on rider safety",
+    "choice_d": "Tubes should always be towed at the same speed used for barefoot skiing",
+    "correct_choice": "B",
+    "explanation": "An inflatable tube can whip violently to one side if the tow boat makes a sharp or sudden turn, especially at higher speed, potentially throwing the rider off at an uncontrolled angle; keeping speed appropriate to the riders' size and experience and avoiding abrupt turns reduces this risk.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (tubing speed and turning technique)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why might a snug, properly fitted Type III PFD be especially important for someone participating in a high-speed towed water sport, compared to general recreational boating?",
+    "choice_a": "PFD fit has no added importance for towed water sports compared to sitting in a boat",
+    "choice_b": "A loose-fitting PFD is more likely to shift, ride up, or come off entirely during the impact of a high-speed fall, so a snug, properly adjusted fit is especially important to keep the device in place and effective when it is needed most",
+    "choice_c": "Any size PFD works equally well as long as it is worn somewhere on the body",
+    "choice_d": "Towed water sports participants are exempt from wearing a properly sized PFD",
+    "correct_choice": "B",
+    "explanation": "The sudden impact of a fall at towed-sport speeds can cause a loose or improperly adjusted PFD to shift, ride up, or come off entirely at the moment it is most needed, which is why a snug, correctly sized and adjusted fit matters more for water skiing, wakeboarding, or tubing than for calmer recreational boating.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (PFD fit for high-impact towed water sports)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why should a tow rope be properly coiled and stowed, rather than left loose in the water, when a tow boat is idling or maneuvering to pick up a fallen rider?",
+    "choice_a": "A loose tow rope trailing in the water can drift into the propeller while the boat is idling or maneuvering, risking entanglement and potential damage to the propeller or steering",
+    "choice_b": "Rope stowage has no bearing on propeller safety",
+    "choice_c": "Tow ropes should always be left fully extended in the water at all times, even when not towing anyone",
+    "choice_d": "Coiling the rope is purely a cosmetic practice with no safety benefit",
+    "correct_choice": "A",
+    "explanation": "A tow rope left loose and trailing in the water while the boat idles or maneuvers -- such as when approaching a fallen rider -- can easily drift into the spinning propeller, risking entanglement that could damage the propeller, steering, or even injure someone in the water; properly coiling and securing the rope when not actively in use avoids this hazard.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (tow rope stowage and propeller fouling prevention)"
+  }
+]

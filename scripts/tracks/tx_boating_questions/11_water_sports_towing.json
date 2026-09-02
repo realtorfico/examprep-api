@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under Texas law, a vessel towing a water skier must have either an observer on board or what alternative device?",
+    "choice_a": "A rearview mirror at least four inches in size measured from bottom to top and side to side",
+    "choice_b": "A second engine mounted on the stern",
+    "choice_c": "A GPS tracking device to monitor the skier's location",
+    "choice_d": "A second life jacket stored on board",
+    "correct_choice": "A",
+    "explanation": "Texas law requires a vessel towing a skier to have either an observer at least 13 years old aboard, or a rearview mirror measuring at least four inches from bottom to top and side to side.",
+    "weight": 4,
+    "source_note": "Texas Parks & Wildlife Code -- requirements to tow a person with a vessel"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "If an observer, rather than a mirror, is used while towing a skier, what minimum age must that observer be?",
+    "choice_a": "At least 21 years old",
+    "choice_b": "At least 13 years old",
+    "choice_c": "There is no minimum age for an observer",
+    "choice_d": "At least 8 years old",
+    "correct_choice": "B",
+    "explanation": "Texas law requires an observer used to watch a towed skier to be at least 13 years old, in addition to the vessel's operator.",
+    "weight": 3,
+    "source_note": "Texas Parks & Wildlife Code -- observer age requirement for towing"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Is a person being towed by a PWC (such as on a tube or wakeboard) required to wear a life jacket in Texas?",
+    "choice_a": "No, life jackets are optional for anyone being towed",
+    "choice_b": "Only required if towed at speeds over 30 mph",
+    "choice_c": "Yes -- Texas law treats a person towed by a PWC as an occupant of the PWC, requiring a properly fitted USCG-approved life jacket",
+    "choice_d": "Only required for children under 13 who are towed",
+    "correct_choice": "C",
+    "explanation": "Because Texas law considers a person being towed by a PWC an occupant of that PWC, they must wear a USCG-approved life jacket at all times while being towed.",
+    "weight": 3,
+    "source_note": "TPWD Personal Watercraft operation rules -- towed person life jacket requirement"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "How many people must a PWC be legally rated for if it is towing a skier and using an onboard observer?",
+    "choice_a": "The PWC's rated capacity is irrelevant to towing operations",
+    "choice_b": "Exactly one, since the skier is considered to be in the water, not aboard",
+    "choice_c": "At least six, regardless of the PWC's design",
+    "choice_d": "At least three -- the operator, the observer, and the skier being retrieved",
+    "correct_choice": "D",
+    "explanation": "A PWC used to tow a skier with an observer aboard must be rated to carry at least three people: the operator, the observer, and the skier once retrieved onto the PWC.",
+    "weight": 3,
+    "source_note": "TPWD Personal Watercraft towing capacity rules"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "At what time of day is towing a water skier legally prohibited in Texas?",
+    "choice_a": "From official sunset to sunrise, since towed water sports must be conducted during daylight hours",
+    "choice_b": "Towing a skier is permitted at any hour, day or night",
+    "choice_c": "Only prohibited between noon and 2:00 p.m.",
+    "choice_d": "Nighttime towing is allowed as long as the skier wears a headlamp",
+    "correct_choice": "A",
+    "explanation": "Texas law prohibits towing a person on water skis or a similar device between sunset and sunrise, since the activity requires daylight to be conducted safely.",
+    "weight": 3,
+    "source_note": "Texas Parks & Wildlife Code -- towing hours restriction"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is the recognized hand signal a downed skier should give to show they are okay and not in distress?",
+    "choice_a": "Waving both arms rapidly overhead in a panic motion",
+    "choice_b": "Raising one arm straight up with a closed fist or open hand, or forming an 'OK' circle sign to the towboat",
+    "choice_c": "Submerging completely and resurfacing repeatedly",
+    "choice_d": "There is no standard downed-skier signal; boats must guess based on body language",
+    "correct_choice": "B",
+    "explanation": "A downed skier signaling they are unhurt and clear to be approached typically raises an arm with a closed fist, open hand, or forms an 'OK' circle, a widely recognized signal among skiers and boat operators.",
+    "weight": 2,
+    "source_note": "TPWD Boater Education Manual -- water skiing hand signals"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why should a towboat operator approach a downed skier from a particular direction rather than any direction?",
+    "choice_a": "Approach direction has no bearing on skier safety",
+    "choice_b": "Boats should always approach a downed skier from directly behind at full throttle",
+    "choice_c": "The operator should approach from the skier's side, keeping the skier visible at all times and never running directly over the towline or the skier in the water",
+    "choice_d": "Skiers should always be approached from underwater",
+    "correct_choice": "C",
+    "explanation": "A prudent approach to a downed skier keeps the skier visible from the operator's position and avoids running over the skier or the floating towline, reducing the risk of propeller injury.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- approaching a downed skier safely"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why must a towboat maintain a safe, reasonable distance from other vessels, swimmers, and structures while towing a skier or tuber?",
+    "choice_a": "Distance requirements only apply to PWCs, never to conventional towboats",
+    "choice_b": "There is no distance concern since the skier, not the boat, controls their own path",
+    "choice_c": "Towing activities are exempt from all careless-operation rules",
+    "choice_d": "Because an unpredictable skier or tuber can swing wide of the boat's course, creating collision risk with nearby people, docks, or other vessels",
+    "correct_choice": "D",
+    "explanation": "A towed skier or tuber can swing well outside the towboat's own path, so operators must keep a safe distance from other vessels, swimmers, docks, and shoreline structures to avoid a collision or injury.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- towing safety distance"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why is it important for towed tubers and skiers to always wear a properly fitted life jacket, even in warm weather?",
+    "choice_a": "Falls at speed can cause disorientation or injury, and a life jacket keeps the person afloat and visible immediately after a fall",
+    "choice_b": "Life jackets are only a suggestion for towed sports, never a legal requirement",
+    "choice_c": "Warm water eliminates any drowning risk, so life jackets are unnecessary",
+    "choice_d": "Life jackets are needed only if the tow rope breaks",
+    "correct_choice": "A",
+    "explanation": "High-speed falls while being towed can cause disorientation, impact injury, or momentary unconsciousness, making a properly worn life jacket essential to keep the person afloat and visible for pickup.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- towed water sports safety"
+  }
+]

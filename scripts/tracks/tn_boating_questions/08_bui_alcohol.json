@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Alcohol & BUI",
+    "question": "What state agencies does TWRA partner with to combat Boating Under the Influence (BUI) in Tennessee?",
+    "choice_a": "The Tennessee Alcoholic Beverage Commission (ABC)",
+    "choice_b": "The Department of Motor Vehicles only",
+    "choice_c": "The National Park Service exclusively",
+    "choice_d": "No other agency is involved in BUI enforcement",
+    "correct_choice": "A",
+    "explanation": "TWRA publicly partners with the Tennessee Alcoholic Beverage Commission (ABC) in a joint effort against Boating Under the Influence on the state's waterways.",
+    "weight": 3,
+    "source_note": "TWRA Regulations & Safety Concerns"
+  },
+  {
+    "topic": "Alcohol & BUI",
+    "question": "In Tennessee, as in nearly all states, at what blood alcohol concentration (BAC) is a boat operator legally considered under the influence, the same threshold used for driving?",
+    "choice_a": "There is no BAC threshold for boating",
+    "choice_b": "0.08%",
+    "choice_c": "0.20%",
+    "choice_d": "0.02%",
+    "correct_choice": "B",
+    "explanation": "Tennessee applies the same 0.08% blood alcohol concentration standard used for driving under the influence to operating a vessel under the influence, consistent with the nationwide BUI standard.",
+    "weight": 3,
+    "source_note": "General boating law fundamentals (nationwide 0.08% BUI/BAC standard, consistent with TN's BUI statute)"
+  },
+  {
+    "topic": "Alcohol & BUI",
+    "question": "Why is alcohol more impairing on the water than on the road, a concept often called \"boater's fatigue\"?",
+    "choice_a": "Water reflects sunlight in a way that neutralizes alcohol in the bloodstream",
+    "choice_b": "Boats move too slowly for alcohol to have any effect on reaction time",
+    "choice_c": "Sun, wind, engine noise, vibration, and motion combine to accelerate fatigue and intensify alcohol's effects",
+    "choice_d": "Alcohol has no different effect on the water compared to driving",
+    "correct_choice": "C",
+    "explanation": "\"Boater's fatigue\" describes how sun, wind, engine noise, vibration, and constant motion combine to intensify fatigue on the water, which can multiply the impairing effects of even a small amount of alcohol.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Alcohol & BUI",
+    "question": "If a TWRA wildlife officer lawfully requests a chemical sobriety test from a boat operator suspected of BUI, what does Tennessee's implied consent principle generally mean for that operator, consistent with the same principle applied to driving?",
+    "choice_a": "The operator may always refuse with no consequence whatsoever",
+    "choice_b": "Implied consent only applies to vessels over 26 feet",
+    "choice_c": "Only the vessel's registered owner, not the operator, is subject to implied consent",
+    "choice_d": "By operating a vessel, the operator has already agreed to submit to the test, and refusal can carry its own penalties",
+    "correct_choice": "D",
+    "explanation": "As with Tennessee's implied consent law for driving, operating a vessel is treated as consent to a lawfully requested chemical sobriety test, and refusing the test can carry separate consequences.",
+    "weight": 3,
+    "source_note": "General boating law fundamentals (implied consent principle, consistent with TN's BUI enforcement framework)"
+  },
+  {
+    "topic": "Alcohol & BUI",
+    "question": "What is the safest practice for a group of boaters who plan to consume alcohol during a day on a Tennessee lake?",
+    "choice_a": "Designate a sober operator who does not drink for the entire outing",
+    "choice_b": "Allow the operator to drink as long as they feel capable of driving the boat",
+    "choice_c": "Switch operators frequently regardless of who has been drinking",
+    "choice_d": "Only avoid alcohol after sunset",
+    "correct_choice": "A",
+    "explanation": "As with driving, the safest approach is to designate a sober operator for the entire outing, since impairment can build gradually and is worsened by sun, wind, and motion on the water.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Alcohol & BUI",
+    "question": "Does a BUI conviction in Tennessee affect only a person's boating privileges, or can it have broader consequences?",
+    "choice_a": "A BUI conviction has no impact on a person's driving privileges under any circumstances",
+    "choice_b": "It can carry broader consequences, similar to a DUI, including fines, potential jail time, and a criminal record",
+    "choice_c": "It only results in a small fine with no other consequences",
+    "choice_d": "BUI is a civil infraction only, similar to a parking ticket",
+    "correct_choice": "B",
+    "explanation": "A BUI conviction in Tennessee is a criminal offense that can carry consequences similar to a DUI, including fines, potential jail time, and a criminal record, not merely the loss of boating privileges.",
+    "weight": 3,
+    "source_note": "General boating law fundamentals, consistent with TN's BUI statute (T.C.A. Title 69, Chapter 9)"
+  },
+  {
+    "topic": "Alcohol & BUI",
+    "question": "Besides alcohol, what else can impair a boat operator's judgment and reaction time in the same way BUI laws address?",
+    "choice_a": "Wearing polarized sunglasses",
+    "choice_b": "Using a properly fitted PFD",
+    "choice_c": "Certain prescription or over-the-counter drugs and controlled substances",
+    "choice_d": "Drinking water",
+    "correct_choice": "C",
+    "explanation": "BUI laws generally cover impairment from drugs, including some prescription and over-the-counter medications, in addition to alcohol, since both can impair judgment, coordination, and reaction time.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Alcohol & BUI",
+    "question": "Who has the authority to stop and inspect a vessel for a BUI or safety-equipment check on Tennessee's public waters?",
+    "choice_a": "Only U.S. Coast Guard personnel",
+    "choice_b": "Any licensed boat dealer",
+    "choice_c": "No one may stop a vessel without a warrant",
+    "choice_d": "TWRA wildlife officers and other authorized law enforcement",
+    "correct_choice": "D",
+    "explanation": "TWRA wildlife officers, along with other authorized law enforcement, have the authority to stop and board vessels on Tennessee's public waters for safety and equipment checks, including suspected BUI.",
+    "weight": 3,
+    "source_note": "TWRA law enforcement / report-a-violation resources"
+  }
+]

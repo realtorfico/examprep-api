@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "Under the Navigation Rules, what must the give-way vessel do if its early course change does not appear to be resolving a crossing situation?",
+    "choice_a": "Take further, more substantial action, such as slowing, stopping, or reversing, well before risk of collision becomes immediate",
+    "choice_b": "Hold its original course regardless of the developing risk",
+    "choice_c": "Sound the danger signal and continue at the same speed",
+    "choice_d": "Wait for the stand-on vessel to act first",
+    "correct_choice": "A",
+    "explanation": "If an early, obvious course change by the give-way vessel does not appear to be resolving the risk of collision, the Navigation Rules require it to take further and more substantial action -- such as slowing, stopping, or reversing -- well before the situation becomes critical.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (Navigation Rules)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "Under the Navigation Rules, at what point does even a stand-on vessel have a duty to take action to avoid a collision?",
+    "choice_a": "When it becomes apparent the give-way vessel is not taking appropriate action, and collision cannot be avoided by the give-way vessel's actions alone",
+    "choice_b": "A stand-on vessel never has any duty to act, no matter what happens",
+    "choice_c": "Only after a collision has already occurred",
+    "choice_d": "Only if the stand-on vessel is a sailboat",
+    "correct_choice": "A",
+    "explanation": "While a stand-on vessel should generally maintain course and speed, the Navigation Rules require it to take whatever action will best avoid collision once it becomes apparent the give-way vessel is not taking appropriate action on its own.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (Navigation Rules)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "In the standard right-of-way hierarchy taught in boating safety courses, how does a vessel engaged in commercial fishing with gear deployed generally rank relative to an ordinary recreational powerboat?",
+    "choice_a": "The commercial fishing vessel generally ranks higher, since its deployed gear restricts its ability to maneuver freely",
+    "choice_b": "Commercial fishing vessels always rank lowest in the hierarchy",
+    "choice_c": "Recreational powerboats always outrank commercial fishing vessels",
+    "choice_d": "There is no distinction between the two vessel types under the Navigation Rules",
+    "correct_choice": "A",
+    "explanation": "A vessel engaged in commercial fishing with nets, lines, or trawls actually deployed generally ranks above an ordinary recreational powerboat in the right-of-way hierarchy, because its gear substantially restricts its ability to maneuver to avoid other traffic.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (Navigation Rules)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What is the standard definition of a vessel \"not under command,\" a category that ranks near the top of the right-of-way hierarchy?",
+    "choice_a": "A vessel that, through some exceptional circumstance such as mechanical failure, is unable to maneuver as required by the Navigation Rules and therefore cannot keep out of the way of another vessel",
+    "choice_b": "Any vessel whose operator has not completed a boater education course",
+    "choice_c": "A vessel that is simply anchored for the night",
+    "choice_d": "A vessel operating without a current registration decal",
+    "correct_choice": "A",
+    "explanation": "A vessel \"not under command\" is one that, through some exceptional circumstance like engine failure or loss of steering, cannot maneuver as required and therefore cannot keep out of the way of other vessels -- placing it near the top of the right-of-way hierarchy since it has the least ability to avoid a collision.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (Navigation Rules)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "Once a vessel has begun overtaking another vessel and become the overtaking vessel, does its duty to keep clear ever transfer back to the vessel being overtaken during that pass?",
+    "choice_a": "No -- the overtaking vessel remains the give-way vessel for the entire passing maneuver, until it is finally past and clear",
+    "choice_b": "Yes, the duty automatically shifts once the overtaking vessel draws even with the other vessel",
+    "choice_c": "The duty shifts back and forth every 30 seconds during the maneuver",
+    "choice_d": "Neither vessel has any duty once an overtaking situation begins",
+    "correct_choice": "A",
+    "explanation": "Under the Navigation Rules, once a vessel becomes the overtaking vessel, it remains the give-way vessel for the entire passing maneuver, and that obligation does not shift back to the vessel being overtaken until the overtaking vessel is finally past and clear.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (Navigation Rules)"
+  }
+]

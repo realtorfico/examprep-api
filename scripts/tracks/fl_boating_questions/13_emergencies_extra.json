@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Emergencies",
+    "question": "What are common causes of a boat capsizing or swamping?",
+    "choice_a": "Capsizing only happens due to mechanical failure, never operator error",
+    "choice_b": "Overloading the boat beyond its rated capacity, uneven weight distribution, standing up in a small boat, and making sharp turns at high speed",
+    "choice_c": "Keeping weight low and centered in the boat",
+    "choice_d": "Operating at a slow, controlled speed in calm water",
+    "correct_choice": "B",
+    "explanation": "Most capsizing and swamping incidents result from preventable operator choices: exceeding the boat's weight capacity, distributing weight unevenly, standing up in a small or unstable boat, or turning sharply at speed, all of which reduce stability.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course capsizing-prevention guidance"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "What does the Coast Guard-recognized visual distress flag for daytime use look like?",
+    "choice_a": "A solid white flag with no markings",
+    "choice_b": "A blue flag with a yellow anchor symbol",
+    "choice_c": "An orange flag bearing a black square and a black circle (ball)",
+    "choice_d": "A green flag with a red diagonal stripe",
+    "correct_choice": "C",
+    "explanation": "The Coast Guard-approved distress flag for daytime signaling is orange with a black square and a black circle (ball), designed to be highly visible and instantly recognizable as a distress signal.",
+    "weight": 3,
+    "source_note": "USCG-approved visual distress signal specification (33 CFR 175)"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "Besides visual signals, what is a recognized sound-based distress signal on the water?",
+    "choice_a": "A single short blast, which always means distress",
+    "choice_b": "Sound signals are never used to indicate distress on the water",
+    "choice_c": "Two long blasts followed by silence, which is a routine passing signal",
+    "choice_d": "Continuous sounding of any available sound-signaling device, such as a horn, whistle, or bell",
+    "correct_choice": "D",
+    "explanation": "Continuous sounding of a fog horn, whistle, bell, or other sound-signaling device is a recognized distress signal, useful when visual signals cannot be seen, such as in fog, at night, or when help is nearby but out of sight.",
+    "weight": 3,
+    "source_note": "Standard distress-signal guidance, Inland/COLREGS distress signal list"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "What does the '1-10-1' principle describe about sudden cold-water immersion?",
+    "choice_a": "Roughly 1 minute to bring cold shock and breathing under control, about 10 minutes of meaningful muscle movement before losing coordination, and about 1 hour before losing consciousness from hypothermia",
+    "choice_b": "It describes how long a boat can legally be operated without a PFD aboard",
+    "choice_c": "It is the required ratio of adults to children aboard a boat",
+    "choice_d": "It refers to the number of required visual distress signals to carry",
+    "correct_choice": "A",
+    "explanation": "The 1-10-1 principle is a widely taught cold-water survival framework: about 1 minute to control the initial cold shock response, about 10 minutes of useful muscle function before it degrades, and roughly 1 hour before hypothermia can cause unconsciousness -- these are approximate stages, not guarantees, and vary by person and conditions.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course cold-water immersion survival framework"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "If multiple people end up in cold water together, what technique helps them conserve body heat while awaiting rescue?",
+    "choice_a": "Spreading out as far apart as possible to cover more search area",
+    "choice_b": "The huddle position -- grouping closely together, chest to chest, with arms around one another",
+    "choice_c": "Each person swimming continuously to generate warmth",
+    "choice_d": "Removing PFDs and linking legs only",
+    "correct_choice": "B",
+    "explanation": "When several people are in cold water together, huddling closely -- chest to chest with arms around each other -- helps conserve shared body heat and creates a larger, more visible group for rescuers, similar in purpose to the individual H.E.L.P. posture.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course cold-water survival technique, group huddle position"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "How is 'cold water,' as a boating safety hazard, generally defined?",
+    "choice_a": "Only water at or below freezing, 32 degrees Fahrenheit (0 degrees Celsius)",
+    "choice_b": "Water temperature has no bearing on immersion risk",
+    "choice_c": "Any water temperature below about 70 degrees Fahrenheit (21 degrees Celsius), a threshold at which cold shock and rapid strength loss become a meaningful risk",
+    "choice_d": "Any water temperature below 32 degrees Fahrenheit that has visible ice",
+    "correct_choice": "C",
+    "explanation": "Boating safety courses commonly define cold water as any water below roughly 70 degrees Fahrenheit (21 degrees Celsius), since cold shock and rapid loss of swimming ability can begin well above freezing, making this a much lower threshold than people often assume.",
+    "weight": 3,
+    "source_note": "Standard boating safety cold-water immersion threshold guidance"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "Along with maneuvering back toward a person who has fallen overboard, what should crew do as soon as possible to assist them?",
+    "choice_a": "Wait until the boat is directly alongside before offering any flotation",
+    "choice_b": "Instruct the person to swim to shore rather than wait for the boat",
+    "choice_c": "Withhold flotation devices until the person requests one",
+    "choice_d": "Throw a throwable flotation device (such as a buoyant cushion or ring) toward the person to help them stay afloat while the boat maneuvers back",
+    "correct_choice": "D",
+    "explanation": "Throwing a throwable flotation device toward a person in the water as soon as possible -- even before the boat has fully turned back -- gives them something to hold onto immediately, reducing fatigue and the risk of submersion while the recovery maneuver is completed.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course man-overboard response, throwable device use"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "After a boat runs aground, what should the operator check before attempting to get underway again?",
+    "choice_a": "The hull, bilge, and steering/propulsion system for damage or leaks that the grounding may have caused",
+    "choice_b": "Nothing; grounding never causes damage worth checking",
+    "choice_c": "Only the fuel gauge",
+    "choice_d": "Only whether other boaters observed the grounding",
+    "correct_choice": "A",
+    "explanation": "A grounding can crack or puncture the hull, damage the lower unit, bend a shaft, or loosen fittings; checking the bilge for incoming water and inspecting steering and propulsion before resuming operation helps avoid a more serious failure once back underway.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course post-grounding damage assessment guidance"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "As a general principle across boating emergencies, when should the crew actually leave (abandon) the vessel?",
+    "choice_a": "As soon as any problem occurs, regardless of severity",
+    "choice_b": "Only when the vessel is genuinely about to sink, burn, or explode and remaining aboard is no longer safe, since a boat is usually easier for rescuers to locate than swimmers in the water",
+    "choice_c": "Only after all electronics and gear have been retrieved, regardless of danger",
+    "choice_d": "Whenever the boat is more than a mile from shore",
+    "correct_choice": "B",
+    "explanation": "Leaving the boat is generally treated as a last resort, reserved for situations where the vessel itself has become the danger (sinking, fire, explosion risk); otherwise a still-floating vessel gives better visibility, shelter, and flotation than swimmers alone in open water.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course general abandon-ship decision guidance"
+  },
+  {
+    "topic": "Emergencies",
+    "question": "What information should be included when making a Mayday distress call over a VHF marine radio?",
+    "choice_a": "Only the boat operator's name and phone number",
+    "choice_b": "No specific information is needed; simply keying the microphone is sufficient",
+    "choice_c": "The word 'Mayday' repeated, the vessel's name and/or description, its position, the nature of the emergency, the number of people aboard, and the assistance needed, then release the mic to listen for a response",
+    "choice_d": "Only the words 'help me' spoken once",
+    "correct_choice": "C",
+    "explanation": "A proper Mayday call states 'Mayday' repeated, identifies the vessel, gives its position, describes the emergency, states the number of persons aboard and assistance needed, and then the operator releases the transmit key to listen for a response from the Coast Guard or other vessels.",
+    "weight": 3,
+    "source_note": "Standard marine VHF radio Mayday call format"
+  }
+]

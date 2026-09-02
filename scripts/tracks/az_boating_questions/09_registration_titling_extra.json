@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Registration & Titling",
+    "question": "After a motorized watercraft is sold or transferred in Arizona, how long does the new owner have to apply to AZGFD to register it in their name?",
+    "choice_a": "15 days from the date of transfer",
+    "choice_b": "60 days from the date of transfer",
+    "choice_c": "One full year from the date of transfer",
+    "choice_d": "There is no deadline as long as the old decals are still displayed",
+    "correct_choice": "A",
+    "explanation": "A.R.S. 5-321(G) requires the new owner to apply to the department to register the motorized watercraft within fifteen days after the transfer, and a transfer fee is charged at that time.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-321(G), ownership transfer application deadline"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Under A.R.S. 5-321(G), what must a transferee show before AZGFD will issue or transfer a watercraft's numbering certificate if the transferee owes use tax on the purchase?",
+    "choice_a": "Nothing -- use tax status has no bearing on registration",
+    "choice_b": "A receipt showing the applicable use tax has been paid",
+    "choice_c": "A notarized letter from the seller waiving all taxes",
+    "choice_d": "Proof that the vessel was purchased more than five years ago",
+    "correct_choice": "B",
+    "explanation": "A.R.S. 5-321(G) provides that the department shall not issue or transfer a numbering certificate to a person subject to use tax under Title 42 unless the applicable tax has been paid, as shown by a receipt from the collecting officer.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-321(G), use tax payment condition on transfer"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "A boater relocates to Arizona and makes Lake Mead their vessel's new area of principal use, while the boat still displays a valid Nevada number. Under A.R.S. 5-322, how long does that Nevada number remain valid before Arizona numbering is required?",
+    "choice_a": "10 days",
+    "choice_b": "It is valid indefinitely and Arizona numbering is never required",
+    "choice_c": "90 days",
+    "choice_d": "It becomes invalid the moment the vessel first touches Arizona waters",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-322(E) recognizes the validity of a currently valid out-of-state number for ninety days after a watercraft becomes principally used in Arizona, after which the owner must obtain Arizona numbering.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-322(E), 90-day grace period for newly-based watercraft"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Which out-of-state or territorial numbering systems does A.R.S. 5-322(C) recognize as valid while a vessel operates in Arizona (subject to applicable time limits)?",
+    "choice_a": "Only numbers issued by Nevada and Utah, since they border Arizona's shared lakes",
+    "choice_b": "Only U.S. Coast Guard documentation, no state-issued numbers of any kind",
+    "choice_c": "Any number issued by any country in the world without restriction",
+    "choice_d": "Numbers issued under an approved federal numbering system by the U.S. Coast Guard, a state, Puerto Rico, the Virgin Islands, Guam, or the District of Columbia",
+    "correct_choice": "D",
+    "explanation": "A.R.S. 5-322(C) recognizes a current and valid number issued under an approved federal numbering system of the U.S. Coast Guard, a state, the Commonwealth of Puerto Rico, the Virgin Islands, Guam, or the District of Columbia.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-322(C), recognized out-of-state/territorial numbering systems"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Which of the following watercraft is exempt from Arizona's numbering requirement under A.R.S. 5-322(A)?",
+    "choice_a": "A documented watercraft that is already numbered in accordance with United States Coast Guard regulations",
+    "choice_b": "A privately owned ski boat used exclusively for recreation on Lake Pleasant",
+    "choice_c": "A rental pontoon boat operated by a marina on Lake Powell",
+    "choice_d": "A personal watercraft used for daily commuting on a private lake",
+    "correct_choice": "A",
+    "explanation": "A.R.S. 5-322(A)(5) exempts documented watercraft that are already numbered in accordance with United States Coast Guard documentation regulations from Arizona's separate state numbering requirement.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-322(A)(5), documented watercraft exemption"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Under A.R.S. 5-322(A), which category of vessel is exempt from Arizona numbering because it is used solely for that specific safety purpose?",
+    "choice_a": "A houseboat rented out for overnight stays",
+    "choice_b": "A watercraft used solely as a lifeboat",
+    "choice_c": "A bass boat entered in a fishing tournament",
+    "choice_d": "A pontoon boat used for sightseeing tours",
+    "correct_choice": "B",
+    "explanation": "A.R.S. 5-322(A)(3) exempts watercraft used solely as lifeboats from the state numbering requirement.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-322(A)(3), lifeboat exemption"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Under A.R.S. 5-322(A), are military or public vessels of the United States exempt from Arizona's watercraft numbering requirement?",
+    "choice_a": "No, all federal vessels of every kind must be numbered by Arizona with no exceptions",
+    "choice_b": "Yes, with absolutely no exceptions of any kind",
+    "choice_c": "Yes, except for recreational-type public vessels, which are not exempt",
+    "choice_d": "Only Coast Guard vessels are exempt; all other federal vessels must register",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-322(A)(2) exempts military or public vessels of the United States from numbering, except recreational-type public vessels, which remain subject to the requirement.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-322(A)(2), military/public vessel exemption"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "A watercraft owned and operated exclusively by the State of Arizona or one of its political subdivisions still must be numbered. What is it exempt from under A.R.S. 5-322(B)?",
+    "choice_a": "The requirement to display any number at all",
+    "choice_b": "All state and federal safety equipment laws",
+    "choice_c": "The requirement to be operated by a licensed operator",
+    "choice_d": "Payment of the registration fee",
+    "correct_choice": "D",
+    "explanation": "A.R.S. 5-322(B) requires motorized watercraft owned and operated exclusively by the state or a political subdivision to be numbered, but specifies that no registration fee shall be paid on the watercraft.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-322(B), government-owned vessel fee exemption"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "A boat dealership in Arizona wants to use motorized watercraft from its inventory for customer demonstrations on the water. What must the dealership obtain under A.R.S. 5-322(F)?",
+    "choice_a": "One or more dealer watercraft certificates of number with current validating decals",
+    "choice_b": "A separate individual registration for every boat in the entire inventory",
+    "choice_c": "Nothing -- dealership demonstration boats are completely exempt from any numbering",
+    "choice_d": "A commercial captain's license for each customer riding along",
+    "correct_choice": "A",
+    "explanation": "A.R.S. 5-322(F) requires dealers or manufacturers who use motorized watercraft for demonstration to obtain one or more dealer watercraft certificates of number bearing current validating decals, rather than registering each individual boat.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-322(F), dealer/manufacturer demonstration certificates"
+  },
+  {
+    "topic": "Registration & Titling",
+    "question": "Arizona charges an optional additional registration fee tied to a Colorado River program. Under A.R.S. 5-321(D), how may that fee amount be structured?",
+    "choice_a": "It must always be identical for every owner regardless of residency",
+    "choice_b": "It may be set in different amounts for resident and nonresident owners",
+    "choice_c": "It can only be charged to commercial vessel owners, never private boaters",
+    "choice_d": "It is a one-time fee that can never be adjusted once set",
+    "correct_choice": "B",
+    "explanation": "A.R.S. 5-321(D) allows the additional Colorado River-related fee amount to be determined by the commission and imposed in different amounts for resident versus nonresident owners.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-321(D), Colorado River fee resident/nonresident differential"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Weather",
+    "question": "What should a boater do before departing on a trip, regarding weather?",
+    "choice_a": "Check the current marine weather forecast for the specific body of water being visited",
+    "choice_b": "Rely only on how the sky looks at the moment of departure",
+    "choice_c": "Assume weather forecasts do not apply to boating",
+    "choice_d": "Only check the forecast if planning to be out more than a week",
+    "correct_choice": "A",
+    "explanation": "Checking a current marine forecast before departure helps a boater avoid getting caught in dangerous conditions that could have been anticipated.",
+    "weight": 2,
+    "source_note": "General weather-safety fundamentals, standard NASBLA-course content"
+  },
+  {
+    "topic": "Weather",
+    "question": "Which visual sign often indicates an approaching thunderstorm while on the water?",
+    "choice_a": "A gradual, gentle drop in humidity",
+    "choice_b": "Darkening, towering cumulus clouds building rapidly, especially with an anvil-shaped top",
+    "choice_c": "A clear, cloudless sky with no wind",
+    "choice_d": "A steady, light drizzle with no wind change",
+    "correct_choice": "B",
+    "explanation": "Rapidly building, dark cumulus clouds -- especially ones flattening into an anvil shape at the top -- are a classic warning sign of a developing thunderstorm.",
+    "weight": 2,
+    "source_note": "General weather-recognition fundamentals, standard NASBLA-course content"
+  },
+  {
+    "topic": "Weather",
+    "question": "What does a sudden drop in temperature combined with a wind shift often signal to a boater?",
+    "choice_a": "That fog is about to clear immediately",
+    "choice_b": "Nothing significant; temperature changes have no forecasting value",
+    "choice_c": "The approach of a cold front, often bringing gusty winds and rough water",
+    "choice_d": "The end of any weather risk for the day",
+    "correct_choice": "C",
+    "explanation": "A sudden temperature drop paired with a wind direction shift often signals a passing cold front, which can bring gusty winds, rough seas, and thunderstorms.",
+    "weight": 2,
+    "source_note": "General weather-recognition fundamentals, standard NASBLA-course content"
+  },
+  {
+    "topic": "Weather",
+    "question": "What does the boating adage 'when in doubt, don't go out' mean?",
+    "choice_a": "Boaters should always go out regardless of forecast, since conditions rarely change",
+    "choice_b": "It refers only to nighttime boating, never daytime",
+    "choice_c": "It means fuel levels, not weather, should determine whether to depart",
+    "choice_d": "If weather conditions look questionable or unstable, it is safer to delay or cancel a trip than risk getting caught in dangerous conditions",
+    "correct_choice": "D",
+    "explanation": "This common boating safety principle reminds operators that when weather signs are uncertain or worsening, postponing the trip is the safer choice.",
+    "weight": 2,
+    "source_note": "General weather-safety fundamentals, standard NASBLA-course content"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why can wind blowing against a strong current create especially dangerous, steep waves?",
+    "choice_a": "Opposing wind and current compress and steepen waves, which can be hazardous even in areas that seem otherwise calm",
+    "choice_b": "Wind and current opposing each other always cancel out and produce flat water",
+    "choice_c": "This effect only matters for vessels over 65 feet",
+    "choice_d": "This condition never occurs on inland lakes, only at sea",
+    "correct_choice": "A",
+    "explanation": "When wind blows against the direction of a current, wave height and steepness increase significantly, a hazard boaters should watch for in channels, inlets, and river mouths.",
+    "weight": 3,
+    "source_note": "General weather/sea-state fundamentals, standard NASBLA-course content"
+  },
+  {
+    "topic": "Weather",
+    "question": "What is a small craft advisory, as issued by the National Weather Service?",
+    "choice_a": "An advisory that applies only to vessels over 65 feet",
+    "choice_b": "An alert warning that wind and/or wave conditions may create a hazard for smaller vessels",
+    "choice_c": "A notice that all boating is banned in the area",
+    "choice_d": "A guarantee that conditions will remain calm all day",
+    "correct_choice": "B",
+    "explanation": "A small craft advisory warns that expected wind and sea conditions could be hazardous to smaller vessels, prompting operators to use caution or delay their trip.",
+    "weight": 2,
+    "source_note": "National Weather Service marine advisory terminology, standard NASBLA-course content"
+  },
+  {
+    "topic": "Weather",
+    "question": "What should a boater do if caught on the water when a thunderstorm suddenly develops?",
+    "choice_a": "Anchor in open water and stand up to get a better view of the storm",
+    "choice_b": "Grab onto a metal railing or antenna to stay steady",
+    "choice_c": "Reduce speed, put on PFDs if not already worn, head to the nearest safe shelter, and stay low and away from metal objects and the water's edge",
+    "choice_d": "Continue at full speed to try to outrun the storm regardless of distance",
+    "correct_choice": "C",
+    "explanation": "Slowing down, ensuring PFDs are worn, seeking the nearest safe shelter, and staying low and clear of metal fittings (which can attract lightning) are standard thunderstorm precautions.",
+    "weight": 3,
+    "source_note": "General severe-weather response fundamentals, standard NASBLA-course content"
+  },
+  {
+    "topic": "Weather",
+    "question": "What weather-related hazard is especially relevant to boaters on large California reservoirs and lakes surrounded by mountains, such as afternoon conditions common in summer?",
+    "choice_a": "Hurricanes forming directly over inland lakes",
+    "choice_b": "Tidal bores unique to freshwater lakes",
+    "choice_c": "Permanent fog cover year-round",
+    "choice_d": "Rapidly developing afternoon thunderstorms and gusty winds funneled by surrounding terrain",
+    "correct_choice": "D",
+    "explanation": "Mountain and canyon terrain around many California reservoirs can funnel and intensify afternoon winds and storms that build quickly, catching boaters off guard.",
+    "weight": 2,
+    "source_note": "General CA inland-water weather pattern, standard NASBLA-course content"
+  },
+  {
+    "topic": "Weather",
+    "question": "Why is fog especially dangerous for boaters, beyond simply reducing visibility?",
+    "choice_a": "It disorients navigation and increases collision risk with other vessels, obstacles, and shorelines that cannot be seen in time to avoid",
+    "choice_b": "Fog has no effect on boating safety",
+    "choice_c": "Fog only affects sailboats, not powerboats",
+    "choice_d": "Fog automatically triggers a state-wide boating ban",
+    "correct_choice": "A",
+    "explanation": "Fog reduces or eliminates visual reference points, making it hard to navigate and greatly increasing the risk of collision with other vessels or fixed obstacles.",
+    "weight": 2,
+    "source_note": "General weather-hazard fundamentals, standard NASBLA-course content"
+  },
+  {
+    "topic": "Weather",
+    "question": "What should an operator do when visibility drops sharply due to fog while underway?",
+    "choice_a": "Continue at normal cruising speed since fog does not affect right-of-way rules",
+    "choice_b": "Slow to a safe speed, sound the appropriate fog signals, and use radar or GPS if available while posting a lookout",
+    "choice_c": "Increase speed to clear the fog bank as quickly as possible",
+    "choice_d": "Turn off all running lights to avoid glare",
+    "correct_choice": "B",
+    "explanation": "In fog, reducing speed, sounding proper signals, posting a lookout, and using available electronic aids are the standard precautions required under the Navigation Rules for restricted visibility.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules (33 CFR 83), restricted visibility; general weather-safety fundamentals"
+  }
+]

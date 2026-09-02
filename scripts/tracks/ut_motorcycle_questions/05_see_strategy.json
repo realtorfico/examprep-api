@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "SEE Strategy",
+    "question": "What do the three letters of the MSF's SEE strategy stand for?",
+    "choice_a": "Search, Evaluate, Execute",
+    "choice_b": "Signal, Enter, Exit",
+    "choice_c": "Slow, Evaluate, Emergency-brake",
+    "choice_d": "See, Escape, Extract",
+    "correct_choice": "A",
+    "explanation": "The manual describes the SEE strategy as Search, Evaluate, Execute, used to assess traffic and plan the safest course of action as situations change.",
+    "weight": 4,
+    "source_note": "Ride Within Your Abilities - SEE"
+  },
+  {
+    "topic": "SEE Strategy",
+    "question": "What is the 'RiderRadar' technique described in the manual's Search step?",
+    "choice_a": "A radar device installed on newer motorcycles",
+    "choice_b": "Aggressively scanning the environment ahead, to the sides, and behind to spot hazards before they arise",
+    "choice_c": "Checking only the mirrors, never turning your head",
+    "choice_d": "A technique used only at highway speeds",
+    "correct_choice": "B",
+    "explanation": "The manual describes 'RiderRadar' as aggressively scanning the environment ahead, to the sides, and behind you to avoid potential hazards before they arise.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - SEE, Search"
+  },
+  {
+    "topic": "SEE Strategy",
+    "question": "Within how many seconds of your path is a hazard considered 'immediate,' per the manual's SEE discussion?",
+    "choice_a": "1 second",
+    "choice_b": "30 seconds",
+    "choice_c": "4 seconds",
+    "choice_d": "60 seconds",
+    "correct_choice": "C",
+    "explanation": "The manual states anything within 4 seconds of your path is considered immediate, since 4 seconds provides enough time and space to swerve or brake for a hazard.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - SEE, Search"
+  },
+  {
+    "topic": "SEE Strategy",
+    "question": "How far ahead should a rider search for hazards that are 'further out,' according to the manual?",
+    "choice_a": "There is no recommended distance for far-out hazards",
+    "choice_b": "An area about 1 second ahead",
+    "choice_c": "Only as far as the headlight illuminates",
+    "choice_d": "An area about 12 seconds ahead",
+    "correct_choice": "D",
+    "explanation": "The manual recommends searching for hazards further out, looking ahead to an area it would take about 12 seconds to reach, to prepare for a situation before it becomes urgent.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - SEE, Search"
+  },
+  {
+    "topic": "SEE Strategy",
+    "question": "What does the 'Evaluate' step of SEE involve?",
+    "choice_a": "Thinking about how hazards can interact to create risk, and having a plan to reduce that risk",
+    "choice_b": "Physically swerving around an obstacle",
+    "choice_c": "Only checking your speedometer",
+    "choice_d": "Deciding what color helmet to wear",
+    "correct_choice": "A",
+    "explanation": "The manual defines Evaluate as thinking about how hazards can interact to create risks for you, anticipating potential problems, and having a plan to reduce risks.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - SEE, Evaluate"
+  },
+  {
+    "topic": "SEE Strategy",
+    "question": "When dealing with two or more hazards at once, what does the manual recommend?",
+    "choice_a": "Always brake hard immediately for all hazards simultaneously",
+    "choice_b": "Adjust speed to separate the hazards, then deal with them one at a time",
+    "choice_c": "Ignore the less immediate hazard entirely",
+    "choice_d": "Multiple hazards should always be treated identically regardless of position",
+    "correct_choice": "B",
+    "explanation": "The manual advises adjusting speed to permit two hazards to separate, then dealing with them one at a time as single hazards, noting decision-making becomes more complex with three or more hazards.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - SEE, Evaluate"
+  },
+  {
+    "topic": "SEE Strategy",
+    "question": "In potential high-risk areas such as intersections, shopping areas, and school or construction zones, what does the manual recommend doing to reduce reaction time?",
+    "choice_a": "Turn off your headlight to avoid distracting others",
+    "choice_b": "Shift into neutral in advance",
+    "choice_c": "Cover the clutch and both brakes",
+    "choice_d": "Remove your hand from the throttle entirely",
+    "correct_choice": "C",
+    "explanation": "The manual recommends covering the clutch and both brakes in high-risk areas like intersections, shopping areas, and school or construction zones, to reduce the time needed to react.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - SEE, Evaluate"
+  },
+  {
+    "topic": "SEE Strategy",
+    "question": "What does the 'Execute' step of SEE involve, per the manual?",
+    "choice_a": "Only applies when a crash is unavoidable",
+    "choice_b": "Filing an accident report after a crash",
+    "choice_c": "Simply continuing at the same speed and position",
+    "choice_d": "Communicating your presence, adjusting speed, and adjusting position to create space and minimize harm from a hazard",
+    "correct_choice": "D",
+    "explanation": "The manual describes Execute as taking action with smoothness and precision -- communicating your presence with lights or horn, and adjusting speed and position -- to create space and minimize harm from any hazard.",
+    "weight": 3,
+    "source_note": "Ride Within Your Abilities - SEE, Execute"
+  }
+]

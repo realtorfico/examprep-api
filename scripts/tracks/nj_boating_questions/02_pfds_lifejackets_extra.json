@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "In New Jersey, when must a person operating or riding a personal watercraft (PWC) wear a PFD?",
+    "choice_a": "Only between November 1 and May 1, the same as other small vessels",
+    "choice_b": "Only if the PWC is operating more than one mile from shore",
+    "choice_c": "PWC riders are exempt from PFD requirements because the craft itself provides flotation",
+    "choice_d": "At all times while the PWC is underway, year-round, regardless of vessel length or the November-May cold-weather window",
+    "correct_choice": "D",
+    "explanation": "New Jersey requires every person operating or riding a PWC to wear a USCG-approved Type I, II, III, or V PFD at all times whenever the PWC is in operation -- this stand-alone PWC rule applies year-round and is not limited to the seasonal cold-weather window that applies to other small vessels.",
+    "weight": 3,
+    "source_note": "NJSP Marine Services Bureau PWC operating requirements; boat-ed.com/newjersey Specific PFD Requirements"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under New Jersey boating regulations, is a person who is being towed on water skis or another towed device required to wear a PFD?",
+    "choice_a": "Yes -- anyone being towed on water skis or another towed device must wear a properly fitted USCG-approved PFD",
+    "choice_b": "No, towed riders are exempt because the tow rope itself provides safety",
+    "choice_c": "Only if the boat towing them is longer than 26 feet",
+    "choice_d": "Only during the November 1 through May 1 cold-weather period",
+    "correct_choice": "A",
+    "explanation": "New Jersey requires anyone being towed on water skis or another towed device, such as a tube, to wear a properly fitted USCG-approved PFD, the same wear-it standard that applies to PWC operators and riders.",
+    "weight": 2,
+    "source_note": "NJSP Marine Services Bureau / boat-ed.com/newjersey PFD requirements for towed watersports and PWC use"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under New Jersey's child PFD law, what penalty can an operator face for allowing a child 12 years of age or younger to be on an underway vessel without wearing a required PFD?",
+    "choice_a": "It carries no penalty, only a verbal warning",
+    "choice_b": "It is an infraction punishable by a fine of up to $250",
+    "choice_c": "It is punishable only by mandatory boat impoundment",
+    "choice_d": "It is a felony carrying a mandatory jail sentence",
+    "correct_choice": "B",
+    "explanation": "Under New Jersey law, it is an infraction, punishable by a fine of up to $250, to operate a vessel unless every child 12 years of age or younger aboard is wearing a Coast Guard-approved Type I, II, III, or V PFD, except when the child is inside a fully enclosed cabin.",
+    "weight": 3,
+    "source_note": "N.J.A.C. 13:82-1.4 child PFD-wear requirement; NJSP Marine Services Bureau"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why are canoes and kayaks of any length exempt from the Type IV throwable device requirement that applies to boats 16 feet and longer?",
+    "choice_a": "Canoes and kayaks are exempt from all PFD requirements entirely",
+    "choice_b": "Canoes and kayaks under 16 feet must carry two throwable devices instead of one",
+    "choice_c": "New Jersey specifically exempts canoes and kayaks of any length from the throwable-device requirement, though each occupant must still have a wearable PFD",
+    "choice_d": "The throwable device requirement only applies to canoes and kayaks, not to powerboats",
+    "correct_choice": "C",
+    "explanation": "New Jersey exempts canoes and kayaks, regardless of length, from the Type IV throwable device requirement that otherwise applies to vessels 16 feet or longer; occupants of canoes and kayaks still must each have a wearable, USCG-approved PFD.",
+    "weight": 2,
+    "source_note": "NJSP Marine Services Bureau equipment checklist; boat-ed.com/newjersey PFD quantity requirements by vessel size"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What kind of use is a Type II PFD designed for?",
+    "choice_a": "Offshore or remote rough water where rescue may be delayed",
+    "choice_b": "A throwable device tossed to a person already in the water",
+    "choice_c": "Exclusively personal watercraft operation",
+    "choice_d": "Calm, inland water or situations where quick rescue is likely, and it will turn some -- but not as reliably as a Type I -- unconscious wearers face-up",
+    "correct_choice": "D",
+    "explanation": "A Type II near-shore buoyant vest is intended for calm, inland water or where there is a good chance of quick rescue; it will turn some unconscious wearers to a face-up position, but less reliably and less effectively than the more buoyant Type I offshore life jacket.",
+    "weight": 2,
+    "source_note": "USCG PFD classification system, taught in NJ-approved NASBLA boater education courses"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What restriction applies to inflatable PFDs regardless of the wearer's age?",
+    "choice_a": "Inflatable PFDs are not approved for operating or riding a PWC or for towed watersports such as water skiing",
+    "choice_b": "Inflatable PFDs may be substituted for a Type IV throwable device on any vessel",
+    "choice_c": "Inflatable PFDs are illegal to possess anywhere in New Jersey",
+    "choice_d": "Inflatable PFDs count double toward the per-person PFD requirement",
+    "correct_choice": "A",
+    "explanation": "Under Coast Guard approval standards enforced in New Jersey, inflatable PFDs are not approved for use during personal watercraft operation or towed watersports like water skiing, and most inflatable models are approved only for wearers age 16 and older -- non-inflatable, inherently buoyant PFDs are required for these higher-impact activities.",
+    "weight": 3,
+    "source_note": "Federal USCG PFD approval/label restrictions on inflatable PFDs, applied to PWC and towed-watersports use in New Jersey"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Boating Emergencies",
+    "question": "If a small boat capsizes, what is generally the safest thing for occupants wearing PFDs to do?",
+    "choice_a": "Immediately swim toward the nearest shore, no matter the distance",
+    "choice_b": "Remove all PFDs to swim faster",
+    "choice_c": "Dive underneath the capsized hull and remain submerged",
+    "choice_d": "Stay with the boat, since a capsized hull typically still floats and is far easier for rescuers to spot than swimmers alone",
+    "correct_choice": "D",
+    "explanation": "A capsized boat usually retains enough flotation to stay on the surface and is much more visible to rescuers than people in the water alone, so occupants wearing PFDs should generally stay with the vessel rather than attempt a long swim to shore.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Capsizing and Falls Overboard'"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "What is the first thing an operator should do if a fire breaks out on board?",
+    "choice_a": "Stop the boat, position it so the fire is downwind, and try to extinguish the fire while directing passengers away from the flames and toward PFDs",
+    "choice_b": "Immediately jump overboard without alerting anyone",
+    "choice_c": "Accelerate to reach shore as fast as possible while the fire continues to burn",
+    "choice_d": "Pour gasoline on the fire to smother it",
+    "correct_choice": "A",
+    "explanation": "In an onboard fire, stopping the boat and turning so the fire is downwind (keeping flames away from the rest of the boat and people), while attempting to extinguish it and preparing to abandon ship if needed, is the standard emergency response.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Fire Emergencies'"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "What should be the first action if a person falls overboard?",
+    "choice_a": "Radio for help before taking any other action",
+    "choice_b": "Immediately reduce speed, throw a flotation device toward the person, and keep constant visual contact while maneuvering back to them",
+    "choice_c": "Continue at the same speed and circle back later",
+    "choice_d": "Wait for the person to swim to the boat unassisted",
+    "correct_choice": "B",
+    "explanation": "The immediate priorities after a person falls overboard are to reduce speed, throw a flotation device, and maintain constant visual contact with the person in the water while carefully maneuvering the boat back to them.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Person Overboard'"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "Given Arizona's desert climate, what heat-related emergency should boaters on reservoirs like Lake Havasu or Lake Pleasant be especially alert to during summer months?",
+    "choice_a": "Arizona's reservoirs never get warm enough to pose any heat risk",
+    "choice_b": "Sunburn is a purely cosmetic issue with no medical significance",
+    "choice_c": "Heat exhaustion and heat stroke, since extended sun exposure combined with high air and water-surface temperatures can rapidly dehydrate and overheat boaters, especially children and older adults",
+    "choice_d": "Hypothermia is the only heat-related concern in Arizona",
+    "correct_choice": "C",
+    "explanation": "Arizona's extreme summer heat (frequently well over 100°F on desert reservoirs) creates real risk of heat exhaustion and heat stroke for boaters, particularly children and the elderly, making hydration, shade, and rest breaks essential.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum applied to Arizona desert climate; National Weather Service Arizona extreme heat guidance"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "What are common early warning signs of heat exhaustion that a boater should watch for in themselves or passengers?",
+    "choice_a": "Improved energy and increased alertness",
+    "choice_b": "Heat exhaustion produces no noticeable symptoms",
+    "choice_c": "A sudden drop in body temperature below normal",
+    "choice_d": "Heavy sweating, weakness, dizziness, nausea, headache, and cool/clammy skin",
+    "correct_choice": "D",
+    "explanation": "Heat exhaustion commonly presents with heavy sweating, weakness, dizziness, nausea, headache, and cool, clammy skin; recognizing these signs early allows a boater to move the affected person to shade, hydrate them, and cool them down before it progresses to heat stroke.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum applied to Arizona desert climate; general heat-illness first aid guidance"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "What is carbon monoxide poisoning, and why is it a particular concern on enclosed or partially enclosed vessels?",
+    "choice_a": "It results from breathing engine or generator exhaust fumes, which are colorless and odorless and can accumulate to dangerous levels near swim platforms, in cabins, or under bimini tops",
+    "choice_b": "Carbon monoxide has a strong, easily detected odor that makes it easy to avoid",
+    "choice_c": "Carbon monoxide poisoning can only occur when the boat's engine is off",
+    "choice_d": "Carbon monoxide is only a risk in cold climates, not in Arizona's heat",
+    "correct_choice": "A",
+    "explanation": "Carbon monoxide from engine and generator exhaust is colorless and odorless, and can build up to dangerous or lethal concentrations near swim platforms, in cabins, or under canvas tops -- even while a boat is idling or 'teak surfing' behind it.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Carbon Monoxide Poisoning'"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "What is 'cold water immersion' and why can it be a risk even on a warm Arizona day?",
+    "choice_a": "Cold water immersion has no relationship to sudden entry into water",
+    "choice_b": "Sudden immersion in water that is significantly colder than the air (such as spring-fed sections of a reservoir or deep, stratified lake water) can trigger gasping, hyperventilation, and rapid loss of swimming ability, even when the surface air temperature is hot",
+    "choice_c": "Cold water immersion cannot occur anywhere in Arizona because the climate is too hot",
+    "choice_d": "Cold water immersion only affects people who cannot swim",
+    "correct_choice": "B",
+    "explanation": "Even on a hot Arizona day, deep or spring-fed water can be significantly colder than the air; sudden immersion can trigger cold shock -- involuntary gasping, hyperventilation, and impaired swimming ability -- which is a genuine drowning risk regardless of air temperature.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Cold Water Immersion'"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "What is the recommended emergency radio distress call, and on which VHF channel is it commonly monitored?",
+    "choice_a": "A text message sent only to family members",
+    "choice_b": "There is no standard distress call procedure for boaters",
+    "choice_c": "A MAYDAY call, typically on VHF Channel 16, the internationally recognized hailing and distress channel",
+    "choice_d": "A generic honk of the boat's horn with no specific procedure",
+    "correct_choice": "C",
+    "explanation": "A MAYDAY call communicates a life-threatening emergency and is broadcast on VHF Channel 16, the internationally monitored hailing and distress channel, where the Coast Guard and nearby vessels commonly listen.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Emergency Communication'"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "What should an operator do if the vessel runs aground?",
+    "choice_a": "Immediately apply full throttle to force the boat free",
+    "choice_b": "Ignore the grounding and continue the trip at normal speed",
+    "choice_c": "Abandon the vessel immediately regardless of severity",
+    "choice_d": "Stop the engine immediately to avoid further damage, check for injuries and hull damage, and assess water depth and current before attempting to move the boat",
+    "correct_choice": "D",
+    "explanation": "Running aground calls for stopping the engine right away to prevent further hull or propeller damage, checking for injuries and leaks, and carefully assessing the situation before attempting to power off or seek assistance.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Running Aground'"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "Why is filing a float plan with a friend or family member before heading out on a remote body of water like Lake Powell considered a good safety practice?",
+    "choice_a": "It gives someone onshore key details -- destination, expected return time, vessel description, and number of passengers -- so they can alert authorities and provide useful search information if the boaters do not return as expected",
+    "choice_b": "A float plan has no practical safety value",
+    "choice_c": "Float plans are legally required for every trip on any Arizona waterway",
+    "choice_d": "Float plans replace the need for any safety equipment on board",
+    "correct_choice": "A",
+    "explanation": "A float plan left with someone on shore -- covering destination, planned return time, vessel description, and passenger count -- helps search and rescue efforts start quickly and accurately if a boating party fails to return on time, which matters most on large, remote waters.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Float Plans'"
+  }
+]

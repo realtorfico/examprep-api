@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Besides needing to be U.S. Coast Guard-approved, what specific restriction applies to the personal flotation device (PFD) worn by anyone riding on or being towed behind a personal watercraft in Florida?",
+    "choice_a": "It must be an inflatable PFD designed specifically for PWC use",
+    "choice_b": "It must be a non-inflatable wearable PFD -- an inflatable PFD does not satisfy the requirement",
+    "choice_c": "It must be orange or another high-visibility color",
+    "choice_d": "There is no additional restriction beyond USCG approval",
+    "correct_choice": "B",
+    "explanation": "Florida Statute 327.39(1) requires everyone riding on or towed behind a PWC to wear a PFD 'other than an inflatable device' that is USCG-approved -- inflatable PFDs specifically do not count toward this requirement.",
+    "weight": 4,
+    "source_note": "Florida Statutes 327.39(1), non-inflatable PFD requirement for PWC"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Under Florida Statute 327.39(2), when is a PWC operator legally required to attach the engine cutoff switch (ECOS) lanyard to their person, clothing, or PFD?",
+    "choice_a": "Only when the PWC is operating more than one mile from shore",
+    "choice_b": "Only when passengers are aboard the PWC",
+    "choice_c": "Whenever the PWC is equipped by the manufacturer with a lanyard-type engine cutoff switch",
+    "choice_d": "Never -- ECOS lanyard use is always optional in Florida",
+    "correct_choice": "C",
+    "explanation": "The statute conditions the lanyard-attachment duty on the PWC being 'equipped by the manufacturer with a lanyard type engine cutoff switch' -- the requirement is tied to the equipment installed on that specific vessel.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.39(2), ECOS lanyard attachment condition"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Florida law bars PWC operation from a half hour after sunset to a half hour before sunrise. Who is exempt from this restriction?",
+    "choice_a": "Any PWC operator over the age of 21",
+    "choice_b": "Any PWC displaying working navigation lights",
+    "choice_c": "No one -- the nighttime prohibition has no exemptions",
+    "choice_d": "An agent or employee of a fire or emergency rescue service while performing official duties",
+    "correct_choice": "D",
+    "explanation": "Florida Statute 327.39(3) prohibits PWC operation from one-half hour after sunset to one-half hour before sunrise, but explicitly exempts an agent or employee of a fire or emergency rescue service while performing official duties.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.39(3), fire/emergency rescue nighttime exemption"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Besides weaving through congested traffic and jumping another vessel's wake too closely, what other maneuver does Florida Statute 327.39(4) specifically identify as reckless PWC operation?",
+    "choice_a": "Swerving at the last possible moment to avoid a collision",
+    "choice_b": "Operating below the posted no-wake speed",
+    "choice_c": "Anchoring inside a designated mooring field",
+    "choice_d": "Idling the engine while stationary",
+    "correct_choice": "A",
+    "explanation": "Florida Statute 327.39(4) lists three specific examples of reckless PWC maneuvers: weaving through congested vessel traffic, jumping another vessel's wake unreasonably or unnecessarily close (or with obstructed visibility), and swerving at the last possible moment to avoid a collision.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.39(4), reckless PWC maneuver examples"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Before a person may lawfully operate a leased, hired, or rented personal watercraft in Florida, what must that person have received?",
+    "choice_a": "A notarized liability waiver only",
+    "choice_b": "Instruction in the safe handling of personal watercraft, given under rules established by the FWC, along with a written statement attesting to that instruction",
+    "choice_c": "A Florida commercial boating license",
+    "choice_d": "Nothing beyond meeting the 18-year-old PWC rental age minimum",
+    "correct_choice": "B",
+    "explanation": "Florida Statute 327.39(6)(b) makes it unlawful for the owner of a leased, hired, or rented PWC to knowingly permit its operation by someone who has not received instruction in safe PWC handling under FWC rules; the person receiving that instruction must give the owner a written statement attesting to it.",
+    "weight": 4,
+    "source_note": "Florida Statutes 327.39(6)(b), rental PWC instruction requirement"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Florida Statute 327.39(4) requires that reckless PWC maneuvers be treated as reckless operation of a vessel under s.327.33. Under that general reckless-operation law, how does the penalty change if the reckless conduct causes an accident resulting in serious bodily injury?",
+    "choice_a": "The penalty stays a noncriminal infraction regardless of any injury caused",
+    "choice_b": "It is automatically downgraded to a warning for a first-time PWC operator",
+    "choice_c": "It escalates to a third-degree felony, rather than the misdemeanor penalty that applies when there is no such injury",
+    "choice_d": "PWC operators are exempt from this escalation because PWCs are governed only by 327.39",
+    "correct_choice": "C",
+    "explanation": "Under Florida Statute 327.33, reckless vessel operation is ordinarily a second-degree misdemeanor, rising to a first-degree misdemeanor if it causes an accident with property or personal injury, and to a third-degree felony if it causes serious bodily injury -- and 327.39(4) makes this law apply directly to reckless PWC maneuvers.",
+    "weight": 4,
+    "source_note": "Florida Statutes 327.33 penalty structure, applied to PWC via 327.39(4)"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Florida's personal watercraft statute (327.39) does not apply to which of the following?",
+    "choice_a": "Any PWC operator who has completed a boating safety course",
+    "choice_b": "Personal watercraft registered outside of Florida",
+    "choice_c": "Personal watercraft operated within a marina",
+    "choice_d": "A performer in a professional exhibition, or a person preparing for or participating in a regatta, race, marine parade, tournament, or exhibition held in compliance with s.327.48",
+    "correct_choice": "D",
+    "explanation": "Florida Statute 327.39(7) exempts performers in a professional exhibition, and persons preparing to participate or participating in a regatta, race, marine parade, tournament, or exhibition held in compliance with s.327.48, from the PWC section's requirements.",
+    "weight": 2,
+    "source_note": "Florida Statutes 327.39(7), professional exhibition and regatta exemption"
+  }
+]

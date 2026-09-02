@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "Under NRS 488.265, besides never obstructing a passageway ordinarily used by other vessels, where else is anchoring generally restricted?",
+    "choice_a": "Anchoring is never restricted anywhere on Nevada waters",
+    "choice_b": "Generally within a 100-yard radius of a boat ramp built and maintained with public money",
+    "choice_c": "Anywhere within 5 miles of any marina",
+    "choice_d": "Only on Lake Tahoe, never on Lake Mead",
+    "correct_choice": "B",
+    "explanation": "NRS 488.265 restricts anchoring in a passageway ordinarily used by other vessels and generally within a 100-yard radius of a publicly built and maintained boat ramp, keeping launch areas clear for other boaters.",
+    "weight": 3,
+    "source_note": "NRS 488.265 (restrictions on anchoring; obstruction of passageways; distance from public boat ramps)"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "Under NRS 488.265, who has authority to designate special anchoring areas on Nevada waters, and how are they typically marked?",
+    "choice_a": "Individual boaters may designate their own anchoring areas informally",
+    "choice_b": "The Board of Wildlife Commissioners may designate special anchoring areas, which are typically marked with yellow buoys",
+    "choice_c": "Only marina owners may designate anchoring areas",
+    "choice_d": "No authority exists to designate any anchoring area in Nevada",
+    "correct_choice": "B",
+    "explanation": "NRS 488.265 authorizes the Board of Wildlife Commissioners to designate special anchoring areas, which are typically marked with yellow buoys, giving boaters a clear visual cue for where anchoring is specially regulated.",
+    "weight": 2,
+    "source_note": "NRS 488.265 (Board of Wildlife Commissioners authority to designate anchoring areas)"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "Under NRS 488.610, is operating a vessel in a properly designated and marked restricted area unlawful even if the vessel is simply traveling at a slow, careful speed?",
+    "choice_a": "No, slow speed always makes restricted-area entry legal",
+    "choice_b": "Yes; NRS 488.610 makes operation in a designated, properly marked restricted area unlawful regardless of speed, separate from the general reduced-speed rule in NRS 488.600",
+    "choice_c": "Restricted areas apply only to commercial vessels",
+    "choice_d": "There is no such thing as a restricted operating area under Nevada law",
+    "correct_choice": "B",
+    "explanation": "NRS 488.610 separately prohibits operating a vessel in a properly designated and marked restricted area at all, regardless of speed, which is a distinct rule from NRS 488.600's requirement to merely reduce speed in certain areas.",
+    "weight": 3,
+    "source_note": "NRS 488.610 (unlawful operation of vessel in restricted area; designation and marking of restricted areas)"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "Under NRS 488.630, can an operator be cited for operating a vessel that is in an unsafe mechanical condition, even if they are operating it carefully?",
+    "choice_a": "No, careful operation always excuses an unsafe vessel condition",
+    "choice_b": "Yes; operating a vessel in an unsafe condition, such as with a serious leak or faulty steering, is itself a separate violation under NRS 488.630, regardless of how carefully it is being operated",
+    "choice_c": "Unsafe condition only matters if an accident actually occurs",
+    "choice_d": "This rule applies only to vessels used commercially",
+    "correct_choice": "B",
+    "explanation": "NRS 488.630 makes operating a vessel that is in an unsafe condition, such as one with a serious leak or faulty steering, its own violation, independent of how carefully the operator is otherwise handling the vessel.",
+    "weight": 3,
+    "source_note": "NRS 488.630 (operation of vessel in unsafe condition; penalties)"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "If a boat's wake causes damage or injury even outside a posted no-wake zone, is the operator generally responsible?",
+    "choice_a": "No, an operator is never responsible for wake effects outside a posted zone",
+    "choice_b": "Yes; an operator is generally responsible for the effects of their vessel's wake at all times, not only within a posted no-wake zone",
+    "choice_c": "Wake responsibility applies only to vessels longer than 40 feet",
+    "choice_d": "Only the harbor master can ever be held responsible for wake damage",
+    "correct_choice": "B",
+    "explanation": "A boat operator is generally held responsible for the effects of their wake at all times, not just inside a posted no-wake zone, since operating at a speed that creates a dangerous or damaging wake can itself amount to careless or reckless operation regardless of location.",
+    "weight": 2,
+    "source_note": "Universal wake-liability principle, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "What extra caution does NRS 488.600's reduced-speed principle call for when passing near a disabled vessel or one displaying a distress signal?",
+    "choice_a": "No extra caution is required; normal speed is always acceptable",
+    "choice_b": "Operators should slow down and use added caution when passing a disabled or distressed vessel, both to avoid a dangerous wake near it and to be ready to assist if needed",
+    "choice_c": "Boaters should speed away from any distressed vessel immediately",
+    "choice_d": "Only law enforcement vessels are ever expected to slow near a disabled boat",
+    "correct_choice": "B",
+    "explanation": "The reduced-speed principle behind NRS 488.600 extends naturally to passing a disabled or distressed vessel: slowing down avoids compounding the situation with a dangerous wake and keeps the operator ready to render assistance if it is needed.",
+    "weight": 2,
+    "source_note": "NRS 488.600 (reduced speed required in certain areas) combined with the general duty to assist under NRS 488.550"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "Beyond the Nevada Revised Statutes themselves, where are more detailed Nevada boating regulations, such as specific marking standards and program details, adopted by the Board of Wildlife Commissioners?",
+    "choice_a": "In the Nevada Administrative Code (NAC) Chapter 488, which implements and supplements NRS Chapter 488",
+    "choice_b": "In a private vendor's course materials, which carry the force of law",
+    "choice_c": "Nevada has no regulations beyond the statutes themselves",
+    "choice_d": "In federal regulations exclusively, with no Nevada-specific regulatory chapter",
+    "correct_choice": "A",
+    "explanation": "The Nevada Administrative Code (NAC) Chapter 488 contains the detailed regulations adopted by the Board of Wildlife Commissioners under the rulemaking authority granted in NRS Chapter 488, supplementing the statutes with more specific program and marking standards.",
+    "weight": 2,
+    "source_note": "NRS Chapter 488 (rulemaking authority) and Nevada Administrative Code (NAC) Chapter 488 (implementing regulations)"
+  }
+]

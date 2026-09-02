@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "When adding an observer to watch a skier or tuber, what must the towing boat's operator still keep in mind regarding capacity?",
+    "choice_a": "Capacity plate limits do not apply once watersports are involved",
+    "choice_b": "The boat's capacity plate rating for persons and weight still applies, and adding an observer and any other passengers must not push the boat beyond that safe limit",
+    "choice_c": "An observer counts as cargo weight, not a person, for capacity purposes",
+    "choice_d": "Only the towed rider's weight counts toward capacity, not anyone aboard the boat",
+    "correct_choice": "B",
+    "explanation": "Adding a dedicated observer for watersports is important for safety, but it doesn't suspend the towing boat's capacity plate limits -- the total number of people and weight aboard, including the observer, operator, and any other passengers, must still stay within the manufacturer's rated capacity.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 1/Unit 6: Your Boat's Capacity and Water-Skiing and Tubing"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What should an operator inspect on the tow rope or line before starting a water-skiing or tubing activity?",
+    "choice_a": "Nothing -- tow ropes require no inspection since they rarely fail",
+    "choice_b": "The line should be checked for fraying, knots, or wear, and kept clear of the propeller whenever it is not under tension",
+    "choice_c": "Only the color of the rope matters, not its physical condition",
+    "choice_d": "Tow ropes only need inspection once per boating season regardless of use",
+    "correct_choice": "B",
+    "explanation": "A frayed, knotted, or worn tow line can fail unexpectedly under load, and a loose line drifting near the propeller creates an entanglement hazard, so operators are taught to inspect the line's condition and keep it clear of the prop when slack.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 6: Water-Skiing and Tubing"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is the safest way for an operator to approach and pick up a fallen skier or tuber from the water?",
+    "choice_a": "Approach at normal cruising speed and stop only once directly alongside the person",
+    "choice_b": "Approach slowly, shift to neutral or shut off the engine as the person nears the boat, and keep them in clear view throughout rather than idling the boat directly toward them",
+    "choice_c": "Reverse the boat at speed toward the person in the water",
+    "choice_d": "There is no particular technique; any approach angle and speed is acceptable",
+    "correct_choice": "B",
+    "explanation": "A safe pickup means approaching slowly, shifting to neutral or shutting off the engine as the fallen rider nears the boat, and keeping them clearly visible at all times, since idling the boat directly at a swimmer risks propeller injury.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 6: Water-Skiing and Tubing"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Do the same core safety rules -- a worn life jacket and a dedicated observer -- apply to kneeboarding as they do to water-skiing and tubing?",
+    "choice_a": "No -- kneeboarding is exempt from the observer and life jacket requirements that apply to skiing and tubing",
+    "choice_b": "Yes -- kneeboarding is another towed watersport, so it follows the same general life-jacket-and-observer safety principles as skiing and tubing",
+    "choice_c": "Kneeboarding requires a life jacket but never an observer",
+    "choice_d": "Kneeboarding requires an observer but never a life jacket",
+    "correct_choice": "B",
+    "explanation": "Kneeboarding is towed behind a boat much like water-skiing or tubing, so the same core safety principles apply: the person being towed should wear a properly fitted life jacket, and the boat should have a dedicated observer watching the rider.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 6: Water-Skiing and Tubing"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why do high-speed towed activities such as barefooting call for even more caution regarding open, uncongested water than typical water-skiing or tubing?",
+    "choice_a": "Higher towing speeds reduce reaction time for both the operator and rider if something goes wrong, and a fall at higher speed carries a greater risk of injury",
+    "choice_b": "Barefooting is actually done at slower speeds than typical skiing, so no additional caution is needed",
+    "choice_c": "High-speed watersports are exempt from the usual observer and life jacket rules",
+    "choice_d": "Speed has no bearing on the risk level of a towed water sport",
+    "correct_choice": "A",
+    "explanation": "Activities like barefooting are towed at considerably higher speeds than typical skiing or tubing, which reduces the time available to react to a problem and increases the potential severity of an injury from a fall, making wide-open, uncongested water even more important.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 6: Water-Skiing and Tubing"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What should the operator and observer do if a towed rider signals fatigue, injury, or distress rather than simply falling?",
+    "choice_a": "Continue towing until the rider falls on their own",
+    "choice_b": "Stop the tow promptly and bring the rider back aboard, treating a distress signal with the same urgency as a fall",
+    "choice_c": "Ignore hand signals other than a wave, since only a fall requires the boat to stop",
+    "choice_d": "Speed up so the activity ends sooner",
+    "correct_choice": "B",
+    "explanation": "Towed riders use hand signals to communicate their condition -- not just whether they've fallen -- and an operator and observer should treat a signal of fatigue, injury, or distress with the same urgency as a fall, stopping the tow and bringing the rider aboard promptly.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 6: Water-Skiing and Tubing"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why is it important to check that a tow vehicle's hitch, ball size, and trailer coupler all match before towing a boat to a Tennessee lake?",
+    "choice_a": "A mismatched ball size or hitch class can allow the trailer to separate from the tow vehicle while underway, creating a serious road hazard",
+    "choice_b": "Ball size and coupler size have no real safety relevance as long as safety chains are attached",
+    "choice_c": "Trailers can be towed using any hitch or ball size interchangeably with no risk",
+    "choice_d": "This check is only necessary for trailers hauling personal watercraft",
+    "correct_choice": "A",
+    "explanation": "A mismatched hitch class, ball size, or coupler can fail to lock securely, risking a mid-tow separation of the trailer from the tow vehicle, which is why confirming a proper match is a key pre-tow safety check.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why should the load on a boat trailer generally be positioned slightly forward of the trailer's axle (proper tongue weight), rather than too far back?",
+    "choice_a": "Correct tongue weight helps keep the trailer stable during towing and reduces the risk of dangerous side-to-side trailer sway",
+    "choice_b": "Tongue weight has no effect on how a trailer tows",
+    "choice_c": "Positioning the load toward the rear always improves trailer stability",
+    "choice_d": "Tongue weight only matters for trailers longer than 30 feet",
+    "correct_choice": "A",
+    "explanation": "Proper tongue weight, with the load positioned slightly forward of the axle, helps keep a boat trailer stable at highway speed and reduces the risk of dangerous side-to-side sway that can develop with improper weight distribution.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should a boater check about the boat ramp itself before backing a trailer down it for the first time at an unfamiliar Tennessee reservoir access point?",
+    "choice_a": "The ramp's slope, surface condition, and water depth at the end of the ramp, since TVA reservoir water levels can leave a ramp shorter than expected",
+    "choice_b": "Nothing; all boat ramps are built to an identical standard nationwide",
+    "choice_c": "Only the ramp's parking lot size matters",
+    "choice_d": "Ramp conditions never change and require no inspection",
+    "correct_choice": "A",
+    "explanation": "Because TVA reservoir water levels fluctuate seasonally, a boater unfamiliar with a given ramp should check its slope, surface condition, and the actual water depth at the end of the ramp, since a low reservoir level can leave the usable ramp shorter than the boater expects.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals applied to Tennessee's TVA reservoir system"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Before disconnecting the boat trailer's electrical wiring harness to launch, what should the operator confirm?",
+    "choice_a": "That the tow vehicle's parking brake is set and wheels are chocked if necessary, since the trailer will no longer have working brake and running lights once disconnected on land",
+    "choice_b": "That the trailer wiring harness is permanently welded and can never be disconnected",
+    "choice_c": "Nothing needs to be checked before disconnecting trailer wiring",
+    "choice_d": "That the boat's bilge pump is turned off",
+    "correct_choice": "A",
+    "explanation": "Disconnecting the trailer's wiring harness before backing down the ramp is a normal step to protect the connectors from water, but the operator should first ensure the tow vehicle is safely secured (parking brake set, wheels chocked if on a slope), since the trailer will not have working lights during that part of the launch.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  }
+]

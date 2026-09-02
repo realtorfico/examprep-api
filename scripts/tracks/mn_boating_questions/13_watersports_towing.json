@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What equipment does Minnesota law require when towing a water-skier, tuber, or wakeboarder behind a motorboat (not just a PWC)?",
+    "choice_a": "No observer or mirror requirement applies to any towing activity in Minnesota",
+    "choice_b": "Only a tow rope of a specific mandated color is required",
+    "choice_c": "Either an observer aboard, at least 12 years old, watching the person being towed at all times, or a wide-angle rearview mirror allowing the operator to keep the towed person in view",
+    "choice_d": "Towing is entirely prohibited on all Minnesota lakes",
+    "correct_choice": "C",
+    "explanation": "Minnesota requires a boat towing a person on water skis, a tube, or similar equipment to have either an observer aboard who can watch the towed rider continuously, or an appropriate rearview mirror, so the operator always has awareness of the rider's position and condition.",
+    "weight": 4,
+    "source_note": "Minnesota watercraft towing safety requirements (observer or mirror requirement), consistent with 86B.313's PWC-specific version of this rule"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why must every person being towed on water skis, a tube, or a wakeboard behind a Minnesota boat wear a PFD?",
+    "choice_a": "PFDs are not required for towed riders in Minnesota, only for boat occupants",
+    "choice_b": "PFDs are only needed if the rider cannot swim at all",
+    "choice_c": "PFDs interfere with towed water sports and are prohibited",
+    "choice_d": "Because a fall at speed can knock a person unconscious or disoriented, and a PFD keeps them afloat and visible until the boat can circle back safely",
+    "correct_choice": "D",
+    "explanation": "A fall at towing speed can disorient or momentarily stun a rider, so a properly worn PFD keeps them afloat and visible to the boat operator even if they cannot immediately swim or signal for help, which is why Minnesota law requires PFDs for anyone being towed.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (PFD requirement for towed water sports), consistent with Minnesota's PWC towing PFD rule"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under Minnesota's PWC statute, what hours are off-limits for towing a person behind a personal watercraft?",
+    "choice_a": "The same restricted hours that apply to all PWC operation -- between one hour before sunset and 9:30 a.m.",
+    "choice_b": "PWC towing has no time-of-day restriction even though general PWC operation does",
+    "choice_c": "Towing is banned only between noon and 1 p.m.",
+    "choice_d": "Towing is allowed only on weekends",
+    "correct_choice": "A",
+    "explanation": "Because towing with a PWC is still PWC operation, it falls under the same statewide restricted hours -- one hour before sunset until 9:30 a.m. -- during which no PWC activity, towing included, is permitted in Minnesota.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.313 (PWC operating hours restriction applies to towing activity)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What does the Minnesota DNR's \"Own Your Wake\" program encourage boaters to do?",
+    "choice_a": "Maximize wake size regardless of nearby docks or swimmers",
+    "choice_b": "Take personal responsibility for a boat's wake, being mindful of how it affects other boaters, docks, shoreline, and swimmers, particularly relevant to wake-enhanced boats used for wake surfing and wakeboarding",
+    "choice_c": "Register a boat's wake pattern annually with the DNR",
+    "choice_d": "Ban all wake-producing activities statewide",
+    "correct_choice": "B",
+    "explanation": "The DNR's \"Own Your Wake\" program promotes responsible operation of wake-enhanced boats (popular for wake surfing and wakeboarding), encouraging operators to consider how their wake affects shoreline erosion, docks, other boaters, and swimmers, especially on smaller or heavily used Minnesota lakes.",
+    "weight": 3,
+    "source_note": "Minnesota DNR \"Own Your Wake\" boating education program"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why can wake-enhanced boats used for wake surfing raise particular concern on smaller Minnesota lakes?",
+    "choice_a": "Wake-enhanced boats produce identical wakes to any standard boat",
+    "choice_b": "Wake size has no effect on shoreline conditions",
+    "choice_c": "Their intentionally larger wakes can contribute to shoreline erosion, disturb docks and moored boats, and create hazards for nearby swimmers or paddlers, especially in confined or shallow water bodies",
+    "choice_d": "Wake surfing is banned outright everywhere in Minnesota",
+    "correct_choice": "C",
+    "explanation": "Wake-enhanced boats are designed to produce a larger, shapeable wake for wake surfing, and on smaller or shallower lakes that larger wake can accelerate shoreline erosion and create hazards for docks, other boats, and swimmers, which is part of why the DNR promotes voluntary wake-responsibility guidance through programs like \"Own Your Wake.\"",
+    "weight": 3,
+    "source_note": "Minnesota DNR \"Own Your Wake\" program context (wake-enhanced boat impacts on smaller lakes)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What signal should a towed water-skier use to tell the boat operator to stop?",
+    "choice_a": "There is no standard way to signal the boat to stop while being towed",
+    "choice_b": "Shouting alone is always sufficient over engine noise and wind",
+    "choice_c": "Releasing the tow rope is the only acceptable stop signal",
+    "choice_d": "A hand drawn horizontally across the throat, or another clearly pre-arranged stop signal agreed on before starting",
+    "correct_choice": "D",
+    "explanation": "Because engine noise and wind make verbal communication unreliable while towing, water skiers commonly use a hand drawn across the throat as a stop signal, and operators and skiers should always agree on standard hand signals before starting so everyone understands the same signals the same way.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (standard water-ski hand signals)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What safe practice should a boat operator follow when a towed skier or tuber falls off?",
+    "choice_a": "Immediately reduce speed, circle back to check on the person, and approach with the engine idled or shut off, keeping the fallen rider on the operator's side so they remain visible",
+    "choice_b": "Continue towing the rope at the same speed regardless of a fall",
+    "choice_c": "Speed away from the fallen rider to make room for other boats",
+    "choice_d": "There is no special procedure needed after a fall",
+    "correct_choice": "A",
+    "explanation": "After a towed rider falls, the operator should slow down promptly, circle back keeping the person visible on the operator's side of the boat, and approach carefully with the engine idled or off, both to check on the rider's condition and to avoid endangering them with the propeller.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (response to a fallen towed rider)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why is towing multiple riders on inflatable tubes behind a single boat a higher-risk activity that requires extra caution?",
+    "choice_a": "Towing multiple riders carries identical risk to towing a single skier in every respect",
+    "choice_b": "Multiple riders increase the chance that one or more will fall unpredictably, be thrown at an angle away from the wake, or collide with each other, so the observer must watch all riders continuously and the operator must choose speed and turns carefully",
+    "choice_c": "More riders always makes the tube more stable and reduces risk",
+    "choice_d": "There is no additional risk consideration with multiple tube riders",
+    "correct_choice": "B",
+    "explanation": "Multiple tube riders can be thrown off unpredictably and in different directions, including toward each other or away from the boat's wake, so a dedicated observer must track every rider continuously and the operator must moderate speed and turning radius accordingly.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (multi-rider towing risk factors)"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Where should a boat operator generally avoid towing a skier or tuber, out of both safety and legal concern, on a Minnesota lake?",
+    "choice_a": "Location has no bearing on where towing is safe or lawful",
+    "choice_b": "Towing directly through a marked swimming area is acceptable if done quickly",
+    "choice_c": "Close to shorelines, docks, swimming areas, or other boats, since towed water sports at speed near these areas raise collision and injury risk and often violate slow-no-wake zone rules",
+    "choice_d": "Towing near docks is encouraged because docks provide a convenient landmark",
+    "correct_choice": "C",
+    "explanation": "Towing water sports at speed near shorelines, docks, swimming areas, or other vessels creates serious collision and injury risk, and operating at towing speed in those zones typically violates the slow-no-wake requirements that apply near shorelines and swimmers, so operators should choose open, uncongested water for these activities.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (site selection for towed water sports), consistent with Minnesota slow-no-wake zone rules"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Weather and Chesapeake Bay Conditions",
+    "question": "What is a common visual warning sign of an approaching thunderstorm that a boater on the Chesapeake Bay should watch for?",
+    "choice_a": "A steady, unchanging wind from a single direction all day",
+    "choice_b": "Bright sunshine directly overhead at noon",
+    "choice_c": "Darkening clouds building rapidly, especially tall cumulonimbus clouds, along with a noticeable drop in temperature or shift in wind direction",
+    "choice_d": "A clear blue sky with no clouds anywhere",
+    "correct_choice": "C",
+    "explanation": "Building dark cumulonimbus clouds, a sudden temperature drop, or a shifting wind are classic early warning signs of an approaching thunderstorm, giving boaters time to head for safe harbor.",
+    "weight": 2,
+    "source_note": "Universal weather-observation fundamentals for boaters (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Weather and Chesapeake Bay Conditions",
+    "question": "Before heading out on the Chesapeake Bay or Maryland's coastal waters, what should a boater check?",
+    "choice_a": "Only the forecast for a city many miles inland with no coastal relevance",
+    "choice_b": "Weather forecasts are unnecessary since Bay conditions never change quickly",
+    "choice_c": "Only the date, since weather has no bearing on safe boating",
+    "choice_d": "The latest marine weather forecast and warnings, including wind speed, wave height, and any small craft advisories",
+    "correct_choice": "D",
+    "explanation": "Checking the current marine forecast, including wind, wave height, and any small craft advisories, helps a boater decide whether conditions are safe for their vessel and planned route before departing.",
+    "weight": 3,
+    "source_note": "Universal pre-departure marine weather-check guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Weather and Chesapeake Bay Conditions",
+    "question": "What does a NOAA Weather Radio 'small craft advisory' generally indicate?",
+    "choice_a": "Sustained winds or seas have reached or are forecast to reach a level that could be hazardous to smaller recreational boats",
+    "choice_b": "All boat traffic is completely banned regardless of vessel size",
+    "choice_c": "It only applies to vessels longer than 65 feet",
+    "choice_d": "It indicates perfectly calm conditions safe for any vessel",
+    "correct_choice": "A",
+    "explanation": "A small craft advisory warns that wind and/or wave conditions have reached or are expected to reach a level that could be dangerous for smaller recreational vessels, and operators of smaller boats should use caution or consider postponing their trip.",
+    "weight": 2,
+    "source_note": "Universal NOAA marine weather advisory terminology (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Weather and Chesapeake Bay Conditions",
+    "question": "Why can wind-driven waves on the Chesapeake Bay become particularly steep and choppy compared to waves of similar height on the open ocean?",
+    "choice_a": "The Bay never experiences wind-driven waves under any conditions",
+    "choice_b": "The Bay's relatively shallow average depth and confined width can cause waves to become steeper and closer together for a given wind speed",
+    "choice_c": "The Bay is deeper than the open ocean, which naturally smooths out wave action",
+    "choice_d": "Wave characteristics on the Bay are identical to open-ocean swells in every respect",
+    "correct_choice": "B",
+    "explanation": "Because much of the Chesapeake Bay is relatively shallow and bounded by shorelines, wind can generate steep, closely spaced chop that feels rougher and more uncomfortable than similarly sized ocean swells.",
+    "weight": 2,
+    "source_note": "Chesapeake Bay wave-condition characteristics (Maryland DNR/NRP boating safety messaging), combined with universal wind-wave fundamentals"
+  },
+  {
+    "topic": "Weather and Chesapeake Bay Conditions",
+    "question": "If a sudden storm develops while a boater is already out on the water, what is the recommended immediate action?",
+    "choice_a": "Anchor in open water in the middle of the storm rather than seeking shelter",
+    "choice_b": "Continue the planned route without any change",
+    "choice_c": "Have everyone put on a PFD if not already wearing one, reduce speed, head to the nearest safe harbor, and secure loose gear",
+    "choice_d": "Increase speed to try to outrun the storm regardless of distance to shelter",
+    "correct_choice": "C",
+    "explanation": "When a storm develops unexpectedly, boaters should have everyone don PFDs, reduce speed for the rough conditions, head toward the closest safe harbor rather than the original destination if that is closer, and secure loose items on deck.",
+    "weight": 3,
+    "source_note": "Universal sudden-storm response guidance for boaters (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Weather and Chesapeake Bay Conditions",
+    "question": "Why is fog a particular hazard on the Chesapeake Bay's mixed commercial and recreational traffic?",
+    "choice_a": "Fog only affects small recreational boats and has no impact on large commercial ships",
+    "choice_b": "Fog never occurs on the Chesapeake Bay",
+    "choice_c": "Fog improves radar performance for all vessels equally, eliminating any added risk",
+    "choice_d": "Fog drastically reduces visibility, increasing the risk of collision between recreational boats and large, difficult-to-maneuver commercial vessels transiting marked channels",
+    "correct_choice": "D",
+    "explanation": "Reduced visibility in fog increases collision risk generally, and on the Bay this is compounded by its mix of small recreational boats and large commercial vessels confined to shipping channels that cannot maneuver quickly to avoid a hazard.",
+    "weight": 2,
+    "source_note": "Chesapeake Bay fog and mixed-traffic hazard guidance (Maryland DNR/NRP boating safety messaging)"
+  },
+  {
+    "topic": "Weather and Chesapeake Bay Conditions",
+    "question": "How can wind direction relative to tidal current affect wave conditions on the Chesapeake Bay?",
+    "choice_a": "Wind blowing against an opposing tidal current can produce steeper, more dangerous, closely spaced waves than wind and current moving in the same direction",
+    "choice_b": "Tidal current has no effect on wave conditions",
+    "choice_c": "Wind and current always cancel each other out completely",
+    "choice_d": "Wave height depends solely on the time of day, regardless of wind or current",
+    "correct_choice": "A",
+    "explanation": "When wind blows against an opposing tidal current, the resulting wave pattern can become much steeper and choppier than when wind and current run in the same direction, a condition experienced Bay boaters learn to anticipate, especially near inlets and river mouths.",
+    "weight": 2,
+    "source_note": "Chesapeake Bay wind-against-tide wave hazard guidance (Maryland DNR/NRP boating safety messaging), combined with universal marine weather fundamentals"
+  },
+  {
+    "topic": "Weather and Chesapeake Bay Conditions",
+    "question": "What should a boater do if lightning is observed while out on Maryland waters, even if a storm still appears distant?",
+    "choice_a": "Lightning poses no danger to people wearing a PFD",
+    "choice_b": "Head for shore or a safe harbor promptly, since lightning can strike from a storm that appears to still be several miles away",
+    "choice_c": "Continue boating as normal since lightning cannot strike a boat on open water",
+    "choice_d": "Anchor and wait, since movement increases lightning risk",
+    "correct_choice": "B",
+    "explanation": "Lightning can strike well ahead of the visible storm cell, so boaters are advised to head to safe harbor as soon as lightning or thunder is detected rather than waiting for the storm to visibly arrive overhead.",
+    "weight": 2,
+    "source_note": "Universal lightning-hazard guidance for boaters (NASBLA-aligned course content)"
+  }
+]

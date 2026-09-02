@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Boating While Intoxicated (BUI)",
+    "question": "Why do many boating safety courses recommend designating a sober operator for the day, similar to a designated driver, when a group plans to consume alcohol on the water?",
+    "choice_a": "A sober operator ensures someone aboard retains full judgment, coordination, and reaction time to handle the vessel and respond to an emergency, since alcohol impairs the very skills boating requires",
+    "choice_b": "Designating a sober operator is illegal under Missouri law",
+    "choice_c": "It has no safety benefit compared to everyone aboard drinking equally",
+    "choice_d": "A designated operator is required to consume alcohol themselves to remain 'part of the group'",
+    "correct_choice": "A",
+    "explanation": "Just as a designated driver protects a group on the road, a designated sober boat operator preserves the judgment, coordination, and quick reaction time needed to navigate safely, watch for hazards, and respond effectively if an emergency arises, since alcohol directly impairs each of those abilities.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (designated sober operator practice), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Boating While Intoxicated (BUI)",
+    "question": "Under Missouri's implied consent framework, what generally happens if a boater lawfully arrested on suspicion of BUI refuses to submit to a requested chemical test?",
+    "choice_a": "Refusing a chemical test carries its own separate legal consequences, distinct from the underlying BUI charge itself, since implied consent means an operator has already agreed to testing by operating on Missouri waters",
+    "choice_b": "Refusal automatically dismisses any BUI investigation with no consequence",
+    "choice_c": "There is no such thing as chemical test refusal under Missouri boating law",
+    "choice_d": "A refusal makes it legally impossible for an officer to pursue any charges of any kind",
+    "correct_choice": "A",
+    "explanation": "Because operating a vessel on Missouri waters is treated as implied consent to a chemical test when an officer has reasonable grounds for a BUI investigation, refusing that test carries its own separate consequences under Missouri's chemical testing framework, in addition to whatever evidence may otherwise support a BUI charge.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (implied consent, test refusal), consistent with Missouri's chemical testing statutes (RSMo Chapter 577)"
+  },
+  {
+    "topic": "Boating While Intoxicated (BUI)",
+    "question": "Why can alcohol impairment be especially dangerous for a boater operating at night on a Missouri lake?",
+    "choice_a": "Alcohol has no additional effect on a boater's ability to identify navigation lights or aids to navigation in the dark",
+    "choice_b": "Reduced visibility at night already compresses reaction time and makes hazards, lights, and other vessels harder to identify, and alcohol further slows reaction time and impairs the ability to correctly interpret navigation lights and dark shorelines",
+    "choice_c": "Night boating eliminates all risk of collision regardless of impairment",
+    "choice_d": "Missouri law permits a higher BAC threshold for nighttime BUI than for daytime BUI",
+    "correct_choice": "B",
+    "explanation": "Nighttime operation already narrows the margin for error, since hazards, other vessels, and navigation lights are harder to see and reaction time is more critical; adding alcohol's slowed reaction time and impaired judgment on top of already-reduced visibility compounds the danger well beyond either factor alone.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (alcohol impairment combined with nighttime visibility hazards)"
+  },
+  {
+    "topic": "Boating While Intoxicated (BUI)",
+    "question": "Why is swimming away from an anchored vessel after consuming alcohol considered particularly risky?",
+    "choice_a": "Alcohol impairs coordination, judgment about distance and fatigue, and swimming ability, making it easy to underestimate the effort needed to swim back to the boat, especially in a lake's current, wind, or cold water",
+    "choice_b": "Alcohol has no effect on swimming ability under any circumstances",
+    "choice_c": "Swimming after drinking is always completely safe as long as a PFD is not worn",
+    "choice_d": "This risk applies only to professional swimmers, never recreational boaters",
+    "correct_choice": "A",
+    "explanation": "Alcohol impairs coordination, muscle control, and the judgment needed to accurately gauge distance and one's own fatigue, so a boater who swims away from an anchored vessel after drinking can easily misjudge the effort required to swim back, particularly if wind, current, or cold water adds resistance -- a significant contributor to alcohol-related drowning.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (alcohol and swimming impairment risk), consistent with U.S. Coast Guard boating accident statistics"
+  },
+  {
+    "topic": "Boating While Intoxicated (BUI)",
+    "question": "Why might a Water Patrol Division officer request a chemical alcohol test as part of investigating a boating accident that caused injury, even without a prior traffic-stop-style encounter?",
+    "choice_a": "Chemical testing is never part of an accident investigation",
+    "choice_b": "Alcohol involvement is a common contributing factor in boating fatalities and serious injury accidents, so testing the operator's alcohol level is a standard part of determining the accident's cause under the water patrol's investigative authority",
+    "choice_c": "Testing is only permitted if the operator volunteers for it with no legal basis otherwise",
+    "choice_d": "Accident investigations are handled exclusively by insurance companies, not by the Water Patrol Division",
+    "correct_choice": "B",
+    "explanation": "Because alcohol is a well-documented contributing factor in a large share of serious boating accidents, the Water Patrol Division's investigation of an injury or fatal boating accident routinely includes assessing whether alcohol played a role, consistent with its statutory enforcement authority over boating law on Missouri waters.",
+    "weight": 3,
+    "source_note": "Missouri State Highway Patrol Water Patrol Division accident investigation practice, consistent with RSMo 306.010 and RSMo Chapter 577"
+  }
+]

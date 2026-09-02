@@ -1,0 +1,6 @@
+{
+  "examType": "ca_boating",
+  "questionsDir": "C:\\claudews\\PassExamHQ\\Workers\\passexamhq-api\\scripts\\tracks\\ca_boating_questions",
+  "priceCents": 799,
+  "handbookNote": "California Boater Card program (CA State Parks Division of Boating and Waterways) and California Harbors and Navigation Code -- California has no single official DBW-administered boating exam; DBW approves NASBLA-standard third-party courses (Boat-Ed, ACE Boater, etc.) whose embedded quiz is the de facto test, converging on a 60-question / 80%-to-pass format -- price matches this project's Motorcycle-tier boating convention ($7.99), not a placeholder"
+}

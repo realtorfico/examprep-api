@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Weather and Chesapeake Bay Conditions",
+    "question": "What is NOAA Weather Radio, and how can it help a boater on the Chesapeake Bay stay informed of changing conditions?",
+    "choice_a": "It broadcasts continuous, updated marine and weather forecasts on dedicated VHF weather channels, which boaters can monitor for real-time changes",
+    "choice_b": "It is a subscription-only satellite TV service unrelated to boating",
+    "choice_c": "It only provides forecasts once every 24 hours",
+    "choice_d": "It is not accessible from the water",
+    "correct_choice": "A",
+    "explanation": "NOAA Weather Radio broadcasts continuously updated marine and general weather forecasts on dedicated VHF weather channels, letting a boater monitor changing Bay conditions in real time while underway.",
+    "weight": 2,
+    "source_note": "Universal NOAA Weather Radio marine forecast broadcast service (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Weather and Chesapeake Bay Conditions",
+    "question": "Why do boating safety courses caution boaters about heat exhaustion and heat stroke during hot Maryland summer days on the water?",
+    "choice_a": "Sun exposure, heat, and limited shade on the water can increase the risk of dehydration and heat-related illness if boaters do not stay hydrated and take breaks from direct sun",
+    "choice_b": "Heat-related illness is impossible while on open water",
+    "choice_c": "Only swimmers, never boaters, are at risk of heat illness",
+    "choice_d": "Heat exhaustion has no connection to sun or hydration",
+    "correct_choice": "A",
+    "explanation": "Prolonged sun exposure, heat, and often limited shade aboard a boat can lead to dehydration and heat-related illness, so boaters are encouraged to hydrate regularly and take breaks from direct sun on hot days.",
+    "weight": 1,
+    "source_note": "Universal heat-related illness prevention guidance for boaters (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Weather and Chesapeake Bay Conditions",
+    "question": "How does wind chill affect a boater, especially one who is wet from spray, compared to a person on land at the same air temperature?",
+    "choice_a": "Wind combined with wet skin or clothing increases heat loss, so a boater can feel and be affected by cold more severely than the plain air temperature alone would suggest",
+    "choice_b": "Wind chill has no effect on a person who is wet",
+    "choice_c": "Wind chill only matters for air temperatures below freezing",
+    "choice_d": "Being wet reduces the effect of wind chill",
+    "correct_choice": "A",
+    "explanation": "Wind combined with wet skin or clothing accelerates heat loss from the body, so a boater exposed to spray and wind can experience effective cold exposure well beyond what the plain air temperature would suggest.",
+    "weight": 2,
+    "source_note": "Universal wind chill and wet-exposure guidance for boaters (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Weather and Chesapeake Bay Conditions",
+    "question": "What weather change often signals that a cold front is passing through an area of the Chesapeake Bay?",
+    "choice_a": "A sudden shift in wind direction, a temperature drop, and often a brief period of gusty wind or a squall line",
+    "choice_b": "Frontal passages are always gradual and produce no noticeable change over several days",
+    "choice_c": "Cold fronts only affect land areas, never the Bay",
+    "choice_d": "A front passing through causes no change in wind or temperature",
+    "correct_choice": "A",
+    "explanation": "A passing cold front commonly brings a sudden wind shift, a noticeable temperature drop, and sometimes a brief squall line, all of which a Bay boater should watch for as a sign of rapidly changing conditions.",
+    "weight": 2,
+    "source_note": "Universal weather-front recognition guidance for boaters (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Weather and Chesapeake Bay Conditions",
+    "question": "What is 'radiation fog,' a type of fog commonly seen forming over the Chesapeake Bay's calmer waters in the early morning?",
+    "choice_a": "Fog that forms overnight as the ground and water cool, often burning off as the sun warms the area later in the morning",
+    "choice_b": "Fog caused exclusively by nearby industrial emissions",
+    "choice_c": "A type of fog that only occurs far offshore in the ocean, never on the Bay",
+    "choice_d": "Fog that only forms during winter blizzards",
+    "correct_choice": "A",
+    "explanation": "Radiation fog forms overnight as the surface cools under clear, calm conditions, and it commonly burns off as the morning sun warms the air, a pattern often seen over the Bay's calmer tributaries and coves.",
+    "weight": 1,
+    "source_note": "Universal marine fog-formation fundamentals (NASBLA-aligned course content)"
+  }
+]

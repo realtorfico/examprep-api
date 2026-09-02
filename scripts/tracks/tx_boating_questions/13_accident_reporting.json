@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Accident Reporting & Duty to Assist",
+    "question": "Under Texas Parks and Wildlife Code Section 31.104, what must a vessel operator do after being involved in a boating accident, if it can be done safely?",
+    "choice_a": "Stop and render whatever assistance is necessary, unless doing so would seriously endanger the operator's own vessel, crew, or passengers",
+    "choice_b": "Leave the scene immediately and report the accident only if contacted later by authorities",
+    "choice_c": "Only render aid if the other party is a family member",
+    "choice_d": "There is no duty to render aid under Texas law",
+    "correct_choice": "A",
+    "explanation": "Texas Parks and Wildlife Code Section 31.104 requires an operator involved in a boating accident to stop and render necessary assistance, unless doing so would seriously endanger their own vessel, crew, or passengers.",
+    "weight": 4,
+    "source_note": "Texas Parks & Wildlife Code Section 31.104 -- duty to render aid"
+  },
+  {
+    "topic": "Accident Reporting & Duty to Assist",
+    "question": "What information must an operator involved in a boating accident provide in writing to injured persons or owners of damaged property?",
+    "choice_a": "Only a verbal apology, with no requirement for written information",
+    "choice_b": "Their name, address, and the vessel's identification number",
+    "choice_c": "Their insurance company's name only",
+    "choice_d": "No information is legally required to be exchanged",
+    "correct_choice": "B",
+    "explanation": "An operator involved in a boating accident must provide their name, address, and the vessel's identification number in writing to any injured person or the owner of damaged property.",
+    "weight": 3,
+    "source_note": "Texas Parks & Wildlife Code Section 31.104 -- information exchange requirement"
+  },
+  {
+    "topic": "Accident Reporting & Duty to Assist",
+    "question": "Under Texas Parks and Wildlife Code Section 31.105, within how many days must a written boating accident report be filed when the accident meets the reporting thresholds?",
+    "choice_a": "1 year",
+    "choice_b": "90 days",
+    "choice_c": "30 days",
+    "choice_d": "There is no deadline; reports may be filed at any time",
+    "correct_choice": "C",
+    "explanation": "Texas requires a written boating accident report to be filed within 30 days when the accident meets the death, injury, or property-damage thresholds set by law.",
+    "weight": 3,
+    "source_note": "Texas Parks & Wildlife Code Section 31.105 -- accident report deadline"
+  },
+  {
+    "topic": "Accident Reporting & Duty to Assist",
+    "question": "Which of the following boating accidents in Texas requires a written report under Parks and Wildlife Code Section 31.105?",
+    "choice_a": "Only accidents where the vessel is a total loss",
+    "choice_b": "Any accident, regardless of severity, including a scraped hull with no injuries",
+    "choice_c": "Accidents are never required to be reported in Texas",
+    "choice_d": "An accident resulting in death, a missing person, an injury requiring treatment beyond first aid, or property damage exceeding $2,000",
+    "correct_choice": "D",
+    "explanation": "Texas requires a written accident report when a boating accident results in death, a missing person, an injury needing more than first aid, or property damage exceeding $2,000.",
+    "weight": 4,
+    "source_note": "Texas Parks & Wildlife Code Section 31.105 -- accident reporting thresholds"
+  },
+  {
+    "topic": "Accident Reporting & Duty to Assist",
+    "question": "Who can a Texas boater contact to report a serious boating accident?",
+    "choice_a": "A local game warden, local law enforcement agency, or TPWD's 24-hour dispatch line",
+    "choice_b": "Only the vessel's manufacturer",
+    "choice_c": "Only the county tax assessor-collector's office",
+    "choice_d": "Boating accidents cannot be reported to any authority in Texas",
+    "correct_choice": "A",
+    "explanation": "A serious boating accident can be reported to a local game warden, local law enforcement, or TPWD's 24-hour dispatch line, which coordinates the appropriate response.",
+    "weight": 2,
+    "source_note": "TPWD Boating Accidents -- reporting contacts"
+  },
+  {
+    "topic": "Accident Reporting & Duty to Assist",
+    "question": "What criminal classification applies to failing to stop and render aid in a Texas boating accident involving death or serious bodily injury?",
+    "choice_a": "It is not a criminal offense at all",
+    "choice_b": "It constitutes a felony",
+    "choice_c": "It is only a civil matter with no criminal consequence",
+    "choice_d": "It is treated the same as a minor parking violation",
+    "correct_choice": "B",
+    "explanation": "Failing to render aid after a boating accident involving death or serious bodily injury is a felony offense in Texas, reflecting the seriousness of abandoning victims of a boating accident.",
+    "weight": 4,
+    "source_note": "Texas Parks & Wildlife Code Section 31.104 -- penalties for failure to render aid"
+  },
+  {
+    "topic": "Accident Reporting & Duty to Assist",
+    "question": "What criminal classification generally applies to failing to render aid in a boating accident that does not involve death or serious bodily injury?",
+    "choice_a": "A capital felony",
+    "choice_b": "No penalty applies in any lesser-injury accident",
+    "choice_c": "A Class A misdemeanor",
+    "choice_d": "A parking-ticket-level infraction with no court appearance required",
+    "correct_choice": "C",
+    "explanation": "Failing to render aid in a boating accident that does not rise to death or serious bodily injury is generally classified as a Class A misdemeanor under Texas law.",
+    "weight": 3,
+    "source_note": "Texas Parks & Wildlife Code Section 31.104 -- lesser penalty tier"
+  },
+  {
+    "topic": "Accident Reporting & Duty to Assist",
+    "question": "Why should a boater involved in even a minor collision still exchange information and document the incident, even if it does not meet the formal $2,000/injury reporting threshold?",
+    "choice_a": "There is never any reason to document a minor incident",
+    "choice_b": "Only law enforcement is permitted to document any boating incident",
+    "choice_c": "Documentation is required only if a fatality occurred",
+    "choice_d": "Because damage or injuries are not always immediately apparent, and having accurate records protects the operator and any injured party later",
+    "correct_choice": "D",
+    "explanation": "Injuries and property damage are not always immediately obvious after a collision, so documenting the incident and exchanging information protects all parties even when the incident may not meet the formal state reporting threshold.",
+    "weight": 2,
+    "source_note": "TPWD Boater Education Manual -- accident documentation best practice"
+  }
+]

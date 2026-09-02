@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "How must a Minnesota watercraft's registration number generally be displayed on the hull?",
+    "choice_a": "In any font style or size the owner prefers",
+    "choice_b": "In plain block letters and numbers of a specified minimum height in a color contrasting with the hull, with a hyphen or space separating the letter and number groups",
+    "choice_c": "Hand-written in pencil on a removable placard",
+    "choice_d": "Registration numbers are never displayed on the hull itself",
+    "correct_choice": "B",
+    "explanation": "Minnesota requires the registration number to be displayed in plain, block-style letters and numbers of a specified minimum height, in a color that contrasts with the hull, with the letter and number groups separated by a hyphen or space, so the number is clearly and quickly readable by an officer on the water.",
+    "weight": 2,
+    "source_note": "Minnesota DNR watercraft registration guidance (registration number display format and spacing)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "What can a Minnesota boat owner do if their registration card or validation decal is lost, stolen, or destroyed?",
+    "choice_a": "Nothing can be done; the boat can never be legally registered again",
+    "choice_b": "The owner must purchase an entirely new vessel",
+    "choice_c": "Apply for a duplicate registration card or decal through the DNR or a deputy registrar rather than operating without proof of current registration",
+    "choice_d": "Duplicates are never issued under any circumstance",
+    "correct_choice": "C",
+    "explanation": "A Minnesota boat owner whose registration card or decal is lost, stolen, or destroyed can apply for a duplicate through the DNR or a deputy registrar, rather than continuing to operate without valid proof of registration.",
+    "weight": 2,
+    "source_note": "Minnesota DNR watercraft registration guidance (duplicate registration card/decal process)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Is a motorboat used exclusively on a private pond or lake wholly owned by the boat's owner generally subject to Minnesota's standard watercraft registration requirement?",
+    "choice_a": "Yes, without exception, regardless of where the boat is used",
+    "choice_b": "Watercraft used exclusively on private waters wholly owned by the operator are generally treated as exempt from the standard registration requirement that applies to boats used on the state's public waters",
+    "choice_c": "Only PWCs qualify for a private-water exemption",
+    "choice_d": "Private ponds are treated identically to public lakes with no exemption available",
+    "correct_choice": "B",
+    "explanation": "Minnesota's registration scheme is generally aimed at watercraft using the state's public waters; a vessel used exclusively on a private pond or lake wholly owned by its operator is generally treated as falling outside that registration requirement.",
+    "weight": 2,
+    "source_note": "Minnesota DNR watercraft registration guidance (exemption for vessels used exclusively on private waters)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Does a small motorboat powered by a motor rated 25 horsepower or less need to be registered, even though such low-powered motors are excluded from the watercraft operator's permit requirement?",
+    "choice_a": "No, the 25-horsepower exclusion from the permit requirement also excuses the boat from registration",
+    "choice_b": "Yes -- the registration requirement and the education-permit requirement are separate; a motor's exclusion from the permit mandate does not exempt the vessel itself from registration",
+    "choice_c": "Registration is required only for motors over 100 horsepower",
+    "choice_d": "Only PWCs under 25 horsepower must register",
+    "correct_choice": "B",
+    "explanation": "The 25-horsepower cutoff that excludes a motor from the watercraft operator's permit requirement is a separate rule from vessel registration; a motorboat with a small motor generally still must be registered like any other motor-propelled vessel of its type.",
+    "weight": 3,
+    "source_note": "Minn. Stat. 86B.401 (registration requirement) contrasted with Minn. Stat. 86B.302's separate 25-horsepower permit exclusion"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Can a lender record a lien against a titled Minnesota boat, similar to a car loan lien?",
+    "choice_a": "No, Minnesota's boat title system does not support recording any lien",
+    "choice_b": "Yes -- Minnesota's watercraft title system allows a lender financing the purchase to record a lien on the certificate of title, protecting the lender's interest until the loan is satisfied",
+    "choice_c": "Liens can be recorded only on vessels under 16 feet, which are otherwise not titled at all",
+    "choice_d": "Only the DNR itself may ever hold a lien on a boat",
+    "correct_choice": "B",
+    "explanation": "Minnesota's boat titling system, which applies to boats over 16 feet, allows a lender to record a lien on the certificate of title, giving the lender a documented security interest in the vessel until the loan is paid off, similar to a vehicle title lien.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.825, 86B.830 (certificate of title; lien recording)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "What risk does a seller face if they sell a titled Minnesota boat without properly signing over and transferring the certificate of title to the buyer?",
+    "choice_a": "No risk exists; verbal agreements always fully protect the seller",
+    "choice_b": "The seller may remain the boat's owner of record, potentially exposing them to liability or complications (such as unpaid fees or an accident involving the boat) tied to a vessel they no longer possess",
+    "choice_c": "The sale is automatically void and the buyer must return the money",
+    "choice_d": "Only the buyer, never the seller, faces any consequence",
+    "correct_choice": "B",
+    "explanation": "If a seller fails to properly transfer a titled boat's certificate of title, DNR and county records may still show the seller as the owner of record, which can expose the seller to complications such as continuing registration obligations or association with an accident involving a boat they no longer actually own.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.830 (importance of proper title transfer to change owner of record)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "When a new boat is purchased from a licensed Minnesota dealer, who typically handles the initial registration and title paperwork?",
+    "choice_a": "The buyer must always complete every registration and title form independently before leaving the dealership",
+    "choice_b": "The dealer typically assists with or directly handles the initial registration and title application at the point of sale, similar to how a car dealer handles vehicle titling",
+    "choice_c": "No registration or title paperwork is ever required for a dealer-sold boat",
+    "choice_d": "Only the DNR commissioner personally processes every dealer sale",
+    "correct_choice": "B",
+    "explanation": "A licensed Minnesota watercraft dealer typically handles or assists with the initial registration and certificate of title application at the point of sale, similar to how a car dealer manages vehicle titling, streamlining the process for the buyer.",
+    "weight": 2,
+    "source_note": "Minn. Stat. 86B.825, 86B.830 (dealer role in initial title and registration processing)"
+  },
+  {
+    "topic": "Registration, Titling & PWC Rules",
+    "question": "Is the trailer used to haul a boat to a Minnesota lake registered under the same watercraft registration as the boat itself?",
+    "choice_a": "Yes, one combined registration and decal covers both the boat and its trailer",
+    "choice_b": "No -- a boat trailer is generally registered and plated separately as a trailer through Driver and Vehicle Services, distinct from the watercraft's own DNR registration",
+    "choice_c": "Trailers used only for boats are exempt from any registration",
+    "choice_d": "Trailers are registered by the DNR using the same decal issued for the boat",
+    "correct_choice": "B",
+    "explanation": "A boat trailer is its own separate vehicle for registration purposes, generally registered and plated through Driver and Vehicle Services, distinct and separate from the DNR watercraft registration and decal issued for the boat it carries.",
+    "weight": 2,
+    "source_note": "Minnesota vehicle registration framework (boat trailers registered separately from the watercraft's DNR registration)"
+  }
+]

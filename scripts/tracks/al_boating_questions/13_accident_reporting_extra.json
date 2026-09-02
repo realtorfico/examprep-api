@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Accident Reporting",
+    "question": "Can a boating accident report filed with Alabama Marine Patrol generally be used as evidence against the reporting operator in a later civil or criminal trial arising from that accident?",
+    "choice_a": "Yes, the report is automatically admitted as evidence in any related trial",
+    "choice_b": "No -- accident reports are for the confidential use of the Department and other governmental agencies and generally may not be used as evidence in a related civil or criminal trial, though a certificate confirming whether a report was or wasn't filed can be issued on request",
+    "choice_c": "The report becomes public record the moment it is filed, with no confidentiality protection",
+    "choice_d": "Only the injured party may ever view the report; the reporting operator has no access to it",
+    "correct_choice": "B",
+    "explanation": "Alabama Code Section 33-5-25(c) keeps accident reports confidential for the Department's and other government agencies' use and generally bars using the report itself as evidence in a related civil or criminal trial -- though the Department can issue a certificate simply confirming whether or not a specific report was filed, to prove compliance or noncompliance with the filing requirement.",
+    "weight": 3,
+    "source_note": "Code of Alabama Section 33-5-25(c) (accident report confidentiality)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "What does it mean that an Alabama boating accident report is filed \"without prejudice\" to the person reporting?",
+    "choice_a": "It means the reporting person is automatically immune from any liability for the accident",
+    "choice_b": "It means the act of filing the report itself does not count as an admission of fault, encouraging full and honest reporting -- though it does not eliminate liability for the operator's actual underlying conduct in causing the accident",
+    "choice_c": "It means the report can only be filed by an attorney",
+    "choice_d": "It has no practical meaning and is purely a technical legal phrase with no effect",
+    "correct_choice": "B",
+    "explanation": "The \"without prejudice\" language in Alabama's accident-reporting statute means that filing the report itself is not treated as an admission of fault, which encourages complete and honest reporting -- it protects the reporting act, not the underlying conduct, so a person can still be held liable based on the actual facts of the accident established elsewhere.",
+    "weight": 3,
+    "source_note": "Code of Alabama Section 33-5-25(a) (report filed without prejudice)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Can a law enforcement officer arrest a boat operator at the scene of an accident for suspected BUI-related contribution to that accident, even if the officer did not personally witness the impairment?",
+    "choice_a": "No -- an officer may only arrest someone they personally witnessed committing the underlying violation",
+    "choice_b": "Yes -- a uniformed officer, trooper, marine police officer, sheriff/deputy, or municipal officer may arrest a boat operator at the scene of an accident without a warrant if, based on personal investigation and eyewitness information, there are reasonable grounds to believe the operator's BUI-related violation contributed to the accident",
+    "choice_c": "Only a judge may authorize such an arrest, never a law enforcement officer directly",
+    "choice_d": "Arrests at boating accident scenes are never permitted under Alabama law",
+    "correct_choice": "B",
+    "explanation": "Alabama Code Section 33-5-76 specifically authorizes a uniformed officer, state trooper, marine police officer, sheriff or deputy, or municipal police officer to arrest an operator at the scene of a boating accident without a warrant, based on personal investigation and eyewitness information giving reasonable grounds to believe the operator's BUI violation contributed to the accident -- even if the officer did not personally witness the underlying impairment.",
+    "weight": 4,
+    "source_note": "Code of Alabama Section 33-5-76 (authority to arrest at scene of boating accident)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Beyond any fine, what mandatory consequence attaches to a conviction for failing to stop, render aid, or identify oneself after a boating accident causing death or personal injury in Alabama?",
+    "choice_a": "No additional consequence beyond the underlying fine",
+    "choice_b": "Mandatory revocation of the person's boater safety certification or vessel-operating privilege -- this offense is specifically listed among the offenses for which revocation is required upon conviction",
+    "choice_c": "A warning letter is sent, with no effect on the certification",
+    "choice_d": "The person's driver's license (for motor vehicles) is automatically suspended instead",
+    "correct_choice": "B",
+    "explanation": "Alabama Code Section 33-5-75(j)(5) lists failure to stop, render aid, or identify oneself as required following a boating accident resulting in death or personal injury as one of the specific offenses for which the Commissioner must revoke the person's boater safety certification or vessel-operating privilege upon conviction -- a mandatory, not discretionary, consequence.",
+    "weight": 4,
+    "source_note": "Code of Alabama Section 33-5-75(j)(5) (mandatory revocation, failure to stop/render aid/identify)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Besides describing what happened, what level of detail does Alabama's boating accident report regulation require about the vessel and the conditions at the time?",
+    "choice_a": "Only the vessel's registration number is required, with no other detail",
+    "choice_b": "Extensive detail including weather and water conditions, PFD availability and use, the type and amount of any fire extinguisher used, a description of any equipment failure contributing to the accident, and the vessel's hull material, propulsion type, horsepower, and hull identification number",
+    "choice_c": "No vessel-condition detail is required at all, only the names of those involved",
+    "choice_d": "Only whether the vessel was insured",
+    "correct_choice": "B",
+    "explanation": "Alabama's boating accident report regulation requires far more than a basic narrative -- it calls for weather and water conditions, PFD availability and use, details of any fire extinguisher used, a description of any equipment failure contributing to the casualty, and specifics about the reporting operator's own vessel, including hull material, propulsion, horsepower, and hull identification number.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.06(1) (required boating accident report content)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Under Alabama's accident-reporting regulation, must a vessel actually collide with another vessel to count as being \"involved\" in a reportable boating accident?",
+    "choice_a": "Yes, only a direct vessel-to-vessel collision ever counts as an accident",
+    "choice_b": "No -- a vessel is considered involved in a \"boat accident\" whenever the occurrence results in damage to the vessel or its equipment, or any injury, death, or disappearance of a person under circumstances indicating a possible death or injury, even without a collision",
+    "choice_c": "A boating accident can only involve two or more vessels; a single-vessel incident is never reportable",
+    "choice_d": "The definition applies only to accidents occurring after dark",
+    "correct_choice": "B",
+    "explanation": "Alabama's accident-reporting regulation defines a \"boat accident\" broadly: a vessel is considered involved whenever the occurrence results in damage to the vessel or its equipment, or any injury, death, or disappearance of a person under circumstances suggesting a possible death or injury -- covering single-vessel groundings, falls overboard, and disappearances, not just vessel-to-vessel collisions.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.06(1)(b) (definition of \"boat accident\")"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Does Alabama's boating accident reporting requirement apply to a vessel that is not registered in Alabama and not required to be registered under Alabama law?",
+    "choice_a": "No -- only Alabama-registered vessels are ever subject to the reporting regulation",
+    "choice_b": "Yes -- the reporting regulation applies to all vessels operated on Alabama waters, except vessels commercially documented by the federal government, regardless of whether the vessel is registered or required to be registered under Alabama law",
+    "choice_c": "The regulation applies only to vessels registered in a neighboring state",
+    "choice_d": "Reporting is required only for vessels over 40 feet, regardless of registration status",
+    "correct_choice": "B",
+    "explanation": "Alabama's accident-reporting regulation applies broadly to all vessels operating on the state's waters -- except those commercially documented by the federal government -- regardless of whether the vessel is registered, or even required to be registered, under Alabama law, closing a potential gap for out-of-state or informally operated vessels.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.06(4) (regulation applies regardless of registration status)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "If an Alabama-registered vessel is involved in a reportable boating accident while operating in another state, does reporting the accident to that other state's authorities excuse the operator from also reporting it to Alabama?",
+    "choice_a": "Yes, reporting to any state fully satisfies every other state's requirement",
+    "choice_b": "No -- Alabama's regulation specifically states that reporting an accident to another state's officials does not exonerate or excuse a failure to also file the required report in Alabama",
+    "choice_c": "Alabama has no interest in accidents that occur outside its own waters",
+    "choice_d": "The Alabama report is only required if the other state has no reporting law of its own",
+    "correct_choice": "B",
+    "explanation": "Alabama's accident-reporting regulation specifically addresses this scenario: an Alabama-registered vessel involved in a reportable accident in another state must still comply with that other state's own reporting laws, and complying with the other state's requirement does not excuse or exonerate the operator from also filing the required report in Alabama.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.06(3) (dual reporting obligation for Alabama-registered vessels)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Under Alabama's point system for boater safety certification, does failing to submit a required boating accident report carry its own separate point penalty?",
+    "choice_a": "No -- failing to file an accident report carries no point penalty of any kind",
+    "choice_b": "Yes -- failure to submit a required accident report is assessed 3 points under the point system, separate from any penalty tied to the underlying accident itself",
+    "choice_c": "Failing to file a report results in an automatic 6-point penalty, the same as reckless operation",
+    "choice_d": "Points are assessed only for failing to report an accident causing a fatality, never for lesser accidents",
+    "correct_choice": "B",
+    "explanation": "Alabama's point system separately assesses 3 points for failing to submit a required boating accident report, a distinct penalty from whatever points or charges might apply to the underlying accident or any reckless or careless operation involved in causing it.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.29(1)(8) (points for failure to submit accident report)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "How does Alabama tie a boater's accident history to their certification renewal process?",
+    "choice_a": "Accident history has no bearing on certification renewal in any way",
+    "choice_b": "The Commissioner of Conservation and Natural Resources maintains a running individual record for each certification holder covering both convictions and accidents, which is referenced whenever that person applies to renew their certification",
+    "choice_c": "Only convictions are tracked for renewal purposes; accidents are never recorded",
+    "choice_d": "Records are destroyed automatically after each accident report is filed",
+    "correct_choice": "B",
+    "explanation": "Alabama Code Section 33-5-63 requires the Commissioner of Conservation and Natural Resources to maintain accessible individual records for each certification holder covering both accident involvement and convictions, so that this history is available for review whenever that person applies to renew their boater safety certification.",
+    "weight": 2,
+    "source_note": "Code of Alabama Section 33-5-63 (filing and indexing accident reports and conviction records)"
+  }
+]

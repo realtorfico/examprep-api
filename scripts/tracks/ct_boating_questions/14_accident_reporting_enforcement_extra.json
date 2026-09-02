@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "Which state agency has administered Connecticut's Harbor Masters Program since July 1, 2016, and how are Harbor Masters and Deputy Harbor Masters appointed?",
+    "choice_a": "DEEP, after the program's responsibility was transferred from the Connecticut Department of Transportation; Harbor Masters and Deputy Harbor Masters are appointed by the Governor under CGS Sec. 15-1 for three-year terms, which may be extended until a successor is appointed",
+    "choice_b": "The U.S. Coast Guard has always administered Connecticut's Harbor Masters Program",
+    "choice_c": "Harbor Masters are elected directly by popular vote in each coastal town",
+    "choice_d": "The program was eliminated entirely in 2016 and no longer exists",
+    "correct_choice": "A",
+    "explanation": "Responsibility for Connecticut's Harbor Masters Program transferred from the Department of Transportation to DEEP on July 1, 2016; Harbor Masters and Deputy Harbor Masters are appointed by the Governor under CGS Sec. 15-1 for three-year terms, which can be extended as necessary until a successor is appointed.",
+    "weight": 3,
+    "source_note": "CT DEEP, \"The Connecticut Harbor Masters Program,\" portal.ct.gov/DEEP/Coastal-Resources/Harbor-Masters, citing CGS Sec. 15-1"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "Under CGS Sec. 15-154, what arrest authority do harbor masters, conservation officers, state police, and municipal police have when enforcing Connecticut's boating laws?",
+    "choice_a": "They may arrest, without a previous complaint and warrant, any person who fails to comply with the boating statutes' provisions",
+    "choice_b": "They may only issue a written warning and have no arrest authority at all",
+    "choice_c": "An arrest may only be made after a judge has personally reviewed the case in person on the water",
+    "choice_d": "Only U.S. Coast Guard officers may ever arrest a boating law violator in Connecticut",
+    "correct_choice": "A",
+    "explanation": "CGS Sec. 15-154 empowers harbor masters, deputy harbor masters, conservation officers, special conservation officers, state police officers, and municipal police officers to enforce Connecticut's boating statutes and to arrest, without a previous complaint and warrant, any person who fails to comply with those provisions.",
+    "weight": 4,
+    "source_note": "Connecticut General Statutes Section 15-154, \"Enforcement\""
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "How are Connecticut's Environmental Conservation (EnCon) Police Officers certified, and what is the scope of their law enforcement role?",
+    "choice_a": "They are certified as police officers by the Connecticut Police Officer Standards and Training Council (POST), and their duties extend beyond boating to include fishing, hunting, state parks, motor vehicles, and general criminal and public safety enforcement",
+    "choice_b": "They have no formal police certification of any kind and may only issue advisory notices",
+    "choice_c": "Their authority is limited exclusively to boating and does not extend to any other area of law enforcement",
+    "choice_d": "They are certified by the U.S. Coast Guard rather than any Connecticut state authority",
+    "correct_choice": "A",
+    "explanation": "Connecticut's EnCon Police Officers are certified police officers through the state's Police Officer Standards and Training Council (POST), and their enforcement responsibilities span fishing, hunting, boating, state parks, motor vehicles, and general criminal and public safety matters, not boating law alone.",
+    "weight": 3,
+    "source_note": "CT DEEP, \"Environmental Conservation Police\" and \"State Environmental Conservation Police: Who We Are\" pages, portal.ct.gov/DEEP/Environmental-Conservation-Police"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "Who has the authority to appoint Connecticut's conservation officers, and on what basis?",
+    "choice_a": "The Commissioner of Energy and Environmental Protection appoints as many conservation officers as necessary for the efficient execution of the department's duties",
+    "choice_b": "Conservation officers are appointed by individual marina owners",
+    "choice_c": "There is no appointing authority; the position is inherited",
+    "choice_d": "Only the U.S. Secretary of the Interior may appoint a Connecticut conservation officer",
+    "correct_choice": "A",
+    "explanation": "Connecticut law authorizes the Commissioner of Energy and Environmental Protection to appoint as many conservation officers as are necessary for the efficient execution of the department's duties, giving DEEP the staffing authority behind its EnCon Police enforcement presence.",
+    "weight": 2,
+    "source_note": "General statutory framework for DEEP conservation officer appointments, Connecticut General Statutes Title 26"
+  }
+]

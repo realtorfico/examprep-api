@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a preferred-channel marker, combining both red and green colors on the same buoy, tell a boater?",
+    "choice_a": "It marks the junction of two channels and shows which channel is the preferred (primary) route, indicated by which color band is on top",
+    "choice_b": "It always means the channel ahead is completely closed",
+    "choice_c": "It marks a designated swimming area exclusively",
+    "choice_d": "It has no navigational meaning and is purely decorative",
+    "correct_choice": "A",
+    "explanation": "A preferred-channel marker shows both red and green in horizontal bands, marking a point where a channel splits; the color of the topmost band indicates which side to treat the marker as if it were that color, showing the preferred route.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (U.S. Aids to Navigation System)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What number and color pattern is typically found on lateral markers in the U.S. Aids to Navigation System?",
+    "choice_a": "Green markers carry odd numbers and red markers carry even numbers, both increasing as a boater moves upstream or into a harbor",
+    "choice_b": "All markers use the same number sequence regardless of color",
+    "choice_c": "Numbers are never used on lateral markers, only on regulatory markers",
+    "choice_d": "Red markers always carry odd numbers",
+    "correct_choice": "A",
+    "explanation": "In the standard lateral system, green markers carry odd numbers and red markers carry even numbers, with numbers generally increasing as a boater proceeds upstream or into a harbor from open water.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (U.S. Aids to Navigation System)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is the purpose of a daymark mounted on a fixed structure like a piling, as opposed to a floating buoy?",
+    "choice_a": "It provides the same lateral or regulatory information as a buoy, but in a fixed position that does not drift or shift with current and weather",
+    "choice_b": "Daymarks are used only for advertising nearby marinas",
+    "choice_c": "Daymarks replace the need for any lights at night",
+    "choice_d": "Daymarks are only used on rivers, never on reservoirs",
+    "correct_choice": "A",
+    "explanation": "A daymark is a sign mounted on a fixed structure, such as a piling or dolphin, providing the same lateral or regulatory information as a floating buoy but without the risk of drifting out of position due to current, wind, or wave action.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (U.S. Aids to Navigation System)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Why should a boater never rely on a chart or GPS alone without also watching for actual aids to navigation on the water?",
+    "choice_a": "Aids to navigation can be moved, damaged, or go missing due to weather, ice, or collisions, and TVA reservoir levels can change what is actually navigable compared to a chart",
+    "choice_b": "Charts and GPS are always 100% accurate and never need visual confirmation",
+    "choice_c": "Watching for aids to navigation is required only for vessels over 40 feet",
+    "choice_d": "Aids to navigation never change position once installed",
+    "correct_choice": "A",
+    "explanation": "Physical aids to navigation can be knocked out of position, damaged, or removed by storms, ice, or vessel strikes, and on TVA's fluctuating reservoirs actual water depth and navigable channels can differ from what a chart shows, so boaters should always visually confirm markers rather than relying solely on electronic charts.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals applied to Tennessee's TVA reservoir system"
+  }
+]

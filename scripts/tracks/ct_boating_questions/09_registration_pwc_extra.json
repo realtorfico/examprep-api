@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "How can a boater satisfy Connecticut's Aquatic Invasive Species (AIS) Stamp requirement, and what does each option cover?",
+    "choice_a": "An individual AIS Stamp ($7.00 per calendar year) covers that person operating any vessel, while a vessel AIS decal ($25.00, made up of a $20.00 fee plus a $5.00 processing fee) covers all operators of that specific vessel",
+    "choice_b": "There is only one AIS option, a flat $500 annual fee with no per-vessel or per-person choice",
+    "choice_c": "The AIS Stamp is entirely optional with no fine for skipping it",
+    "choice_d": "The AIS Stamp applies only to sailboats, never to motorboats or PWCs",
+    "correct_choice": "A",
+    "explanation": "Connecticut offers two ways to satisfy the AIS Stamp requirement: an individual AIS Stamp for $7.00 per calendar year, which covers that person operating any vessel, or a vessel AIS decal for $25.00 (a $20.00 fee plus a $5.00 processing fee), which covers all operators of that particular vessel.",
+    "weight": 4,
+    "source_note": "CT DEEP, \"FAQ AIS Stamp,\" portal.ct.gov/DEEP/Boating/FAQs/FAQ-AIS-Stamp"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Which Connecticut waters require an AIS Stamp, and what happens if a boater operates there without one?",
+    "choice_a": "Connecticut's inland waters (generally, areas upstream from the first bridge upstream from a river's mouth); non-compliance is an infraction subject to a fine",
+    "choice_b": "The AIS Stamp is required everywhere in the U.S., not just Connecticut, with no fine for noncompliance",
+    "choice_c": "The requirement applies only to vessels under 10 feet long",
+    "choice_d": "The AIS Stamp applies only on Long Island Sound, never on inland lakes or rivers",
+    "correct_choice": "A",
+    "explanation": "The AIS Stamp requirement applies to a vessel required to display a Connecticut registration decal while operating on the state's inland waters, generally defined as the water upstream from the first bridge upstream from a river's mouth; DEEP's own FAQ states that non-compliance is an infraction subject to a fine.",
+    "weight": 3,
+    "source_note": "CT DEEP, \"FAQ AIS Stamp,\" portal.ct.gov/DEEP/Boating/FAQs/FAQ-AIS-Stamp"
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Under CGS Sec. 15-150, what must a Connecticut boat livery (rental business) confirm before letting a renter depart with a vessel?",
+    "choice_a": "That the renter holds the required Safe Boating Certificate or Certificate of Personal Watercraft Operation, if the law requires one for that vessel",
+    "choice_b": "Nothing -- boat liveries are exempt from all certificate requirements",
+    "choice_c": "Only that the renter is over 18, regardless of certification",
+    "choice_d": "Only that the renter has paid in cash",
+    "correct_choice": "A",
+    "explanation": "Connecticut General Statutes Section 15-150 prohibits a boat livery's owner, agent, or employee from permitting a renter to depart without the required Safe Boating Certificate or Certificate of Personal Watercraft Operation, where the operator is legally required to hold one.",
+    "weight": 4,
+    "source_note": "Connecticut General Statutes Section 15-150, \"Rental of vessels. Boat livery requirements\""
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "What documentation must a person renting a vessel from a Connecticut boat livery carry aboard during the rental?",
+    "choice_a": "The original or a copy of the written rental agreement, signed by the livery owner or agent and the renter, stating the rental length, the renter's identity, and the vessel's number",
+    "choice_b": "No documentation is required to be carried aboard a rented vessel",
+    "choice_c": "Only a photocopy of the renter's driver's license, with no reference to the vessel or rental terms",
+    "choice_d": "A notarized will naming a beneficiary in case of an accident",
+    "correct_choice": "A",
+    "explanation": "Under Connecticut's boat livery statute, a renter must carry aboard the original or a copy of the signed written rental agreement stating the length of the rental, the renter's identity, and the vessel's number, giving both the renter and any inspecting officer a clear record of the rental's terms.",
+    "weight": 3,
+    "source_note": "Connecticut General Statutes Section 15-150, \"Rental of vessels. Boat livery requirements\""
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "What recordkeeping does Connecticut law require of a boat livery for each rental, and what is the consequence of violating the livery statute?",
+    "choice_a": "A record of the renter's name and address, the vessel's registration number, the departure date and time, and the expected time of return; violating the statute's provisions is an infraction",
+    "choice_b": "No recordkeeping of any kind is required of a boat livery",
+    "choice_c": "Records must be kept only for rentals lasting longer than 30 days",
+    "choice_d": "A violation results in automatic permanent loss of the livery's business license with no other remedy",
+    "correct_choice": "A",
+    "explanation": "Connecticut requires a boat livery to record each renter's name and address, the vessel's registration number, the departure date and time, and the expected return time, and makes a violation of the livery statute's provisions an infraction.",
+    "weight": 3,
+    "source_note": "Connecticut General Statutes Section 15-150, \"Rental of vessels. Boat livery requirements\""
+  },
+  {
+    "topic": "Registration, Titling, and PWC Rules",
+    "question": "Does Connecticut require a recreational boat owner to carry liability insurance on their vessel?",
+    "choice_a": "No -- Connecticut does not require boat owners to purchase or maintain liability insurance to own, register, or operate a vessel, though a lender or marina may independently require it",
+    "choice_b": "Yes -- every registered vessel in Connecticut must carry a minimum of $500,000 in liability coverage",
+    "choice_c": "Yes, but only for vessels used commercially, never for personal recreational use",
+    "choice_d": "Insurance is required only for personal watercraft, never for other motorboats",
+    "correct_choice": "A",
+    "explanation": "Connecticut does not have a state law requiring boat owners to carry liability insurance to register or operate a vessel; however, a bank financing the purchase, or a marina renting dock or storage space, may independently require proof of insurance as a condition of the loan or storage agreement.",
+    "weight": 3,
+    "source_note": "General Connecticut boat-ownership fundamentals, consistent with the absence of a statutory boat-insurance mandate in Chapter 268 of the Connecticut General Statutes"
+  }
+]

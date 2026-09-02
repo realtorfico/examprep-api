@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under Missouri law (RSMo 306.220), what is required of any child under age 7 aboard a watercraft on Missouri waters?",
+    "choice_a": "The child must wear a U.S. Coast Guard-approved personal flotation device unless in a fully enclosed area designed to prevent falling overboard",
+    "choice_b": "The child must sit in the center of the boat at all times, with no PFD required",
+    "choice_c": "The child must be belowdecks whenever the boat is underway",
+    "choice_d": "There is no PFD requirement for any child under Missouri law",
+    "correct_choice": "A",
+    "explanation": "Missouri law requires every child under age 7 aboard a watercraft on state waters to wear a USCG-approved personal flotation device, unless the child is inside a fully enclosed area of the vessel designed to prevent them from falling overboard or being ejected; violating this is a class C misdemeanor.",
+    "weight": 4,
+    "source_note": "RSMo 306.220 (personal flotation device requirement, children under seven)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What class of offense is it in Missouri to allow a child under 7 aboard a watercraft without a required, properly worn PFD?",
+    "choice_a": "A class A felony",
+    "choice_b": "A class C misdemeanor",
+    "choice_c": "No offense at all -- it is only a recommendation",
+    "choice_d": "A civil infraction with no criminal penalty",
+    "correct_choice": "B",
+    "explanation": "RSMo 306.220 makes it a class C misdemeanor to permit a child under age 7 to be aboard a watercraft on Missouri waters without wearing an approved PFD, absent the fully enclosed area exception.",
+    "weight": 3,
+    "source_note": "RSMo 306.220 (penalty for children under seven without a PFD)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Which PFD types are approved for all persons aboard a personal watercraft (PWC) under Missouri law (RSMo 306.142)?",
+    "choice_a": "Only inflatable Type III belt packs",
+    "choice_b": "Any flotation cushion, whether or not it is Coast Guard-approved",
+    "choice_c": "Type I, Type II, Type III, or Type V U.S. Coast Guard-approved personal flotation devices",
+    "choice_d": "PFDs are not required on a PWC in Missouri",
+    "correct_choice": "C",
+    "explanation": "Missouri's PWC statute requires every person aboard a personal watercraft to wear a Coast Guard-approved Type I, II, III, or V personal flotation device -- inflatable belt-pack PFDs generally do not qualify unless specifically approved for PWC use while worn as designed.",
+    "weight": 4,
+    "source_note": "RSMo 306.142 (personal watercraft PFD requirement)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "How many wearable PFDs must a Missouri Class 1 vessel (16 to less than 26 feet) carry under RSMo 306.100?",
+    "choice_a": "Exactly two PFDs regardless of the number of people aboard",
+    "choice_b": "None -- PFDs are optional on any vessel over 16 feet",
+    "choice_c": "Only a throwable cushion, with no wearable PFDs required",
+    "choice_d": "At least one wearable Type I, II, or III PFD for each person on board, plus one throwable Type IV device",
+    "correct_choice": "D",
+    "explanation": "Missouri's equipment statute requires vessels other than Class A to carry one wearable Type I, II, or III PFD per person aboard, plus at least one throwable Type IV device; the wearable devices must be Coast Guard-approved, in serviceable condition, and readily accessible.",
+    "weight": 4,
+    "source_note": "RSMo 306.100 (PFD carriage requirements by vessel class)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is the main functional difference between a Type I and a Type III PFD?",
+    "choice_a": "A Type I offshore life jacket is designed to turn most unconscious wearers face-up in the water and provides the most buoyancy, while a Type III flotation aid is more comfortable for continuous wear but will not reliably turn an unconscious person face-up",
+    "choice_b": "A Type I is only for children, while a Type III is only for adults",
+    "choice_c": "There is no functional difference; the numbers only indicate color",
+    "choice_d": "A Type III provides more buoyancy than a Type I",
+    "correct_choice": "A",
+    "explanation": "Type I offshore life jackets offer the most buoyancy and are designed to turn most unconscious wearers face-up, making them suited to remote or rough water where rescue may be delayed; Type III flotation aids are more comfortable for activities like fishing or water sports but offer less turning ability.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (USCG PFD type classifications)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a Type IV PFD, and how must it be used?",
+    "choice_a": "A wearable jacket meant only for children under 30 pounds",
+    "choice_b": "A throwable device, such as a ring buoy or buoyant cushion, intended to be thrown to a person in the water rather than worn",
+    "choice_c": "A device that never needs to be Coast Guard-approved",
+    "choice_d": "A scuba diving regulator",
+    "correct_choice": "B",
+    "explanation": "A Type IV PFD is a throwable device, such as a ring buoy or buoyant cushion, designed to be thrown to a conscious person in the water and grasped until rescued; it is a supplement to, not a substitute for, wearable PFDs.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (USCG PFD type classifications)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a Type V PFD?",
+    "choice_a": "A device with unlimited approved uses regardless of the label",
+    "choice_b": "A device intended exclusively for use by pets",
+    "choice_c": "A special-use device (such as an inflatable belt pack, deck suit, or work vest) that is only Coast Guard-approved for the specific activity listed on its label, and often only counts as a substitute for a Type I, II, or III PFD if worn as required by its label",
+    "choice_d": "A children's-only flotation toy",
+    "correct_choice": "C",
+    "explanation": "Type V PFDs are special-use devices, such as inflatable belt packs or deck suits, approved only for the conditions specified on their label; many must be worn (not just carried) to count toward a vessel's PFD requirement.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (USCG PFD type classifications)"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "According to boating safety course guidance, what condition must a PFD be in to satisfy carriage requirements?",
+    "choice_a": "Any personal flotation device regardless of condition, as long as it is on board somewhere",
+    "choice_b": "Locked in a cabin compartment that cannot be reached while underway",
+    "choice_c": "Only required to be Coast Guard-approved; fit and condition do not matter",
+    "choice_d": "U.S. Coast Guard-approved, in serviceable condition (no rips, waterlogging, or broken straps), the correct size for the wearer, and readily accessible",
+    "correct_choice": "D",
+    "explanation": "A PFD only satisfies legal and practical safety requirements if it is Coast Guard-approved, properly sized for the intended wearer, in good serviceable condition, and stored so it can be reached quickly in an emergency -- a PFD buried under gear does no good in a capsizing.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (PFD condition and accessibility), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why is water temperature relevant to choosing a PFD on Missouri's larger lakes, such as the Lake of the Ozarks, especially in early spring?",
+    "choice_a": "Cold water dramatically speeds the onset of hypothermia and can cause cold-water shock that impairs swimming ability within minutes, so wearing a PFD at all times is especially important when water is cold even if air temperature feels warm",
+    "choice_b": "Cold water has no effect on swimming ability or PFD need",
+    "choice_c": "PFDs are not needed once water temperature exceeds 50 degrees Fahrenheit",
+    "choice_d": "Only inflatable PFDs work in cold water",
+    "correct_choice": "A",
+    "explanation": "Water temperature can lag well behind air temperature in spring, and Missouri reservoirs can be dangerously cold even on a warm day; cold-water immersion can cause involuntary gasping and rapid loss of swimming ability, making a worn PFD critical even when conditions on land feel mild.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (cold-water immersion), applied to Missouri reservoir conditions"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why do most boating safety courses recommend wearing a PFD at all times rather than just keeping it stowed on board?",
+    "choice_a": "Wearing a PFD is only required while docked",
+    "choice_b": "Most drowning victims in boating accidents are found not wearing a PFD, and a capsizing or fall overboard often happens too suddenly to put one on afterward",
+    "choice_c": "PFDs are more effective when left in a storage locker",
+    "choice_d": "There is no safety benefit to wearing a PFD before an emergency happens",
+    "correct_choice": "B",
+    "explanation": "National boating-accident statistics consistently show most drowning victims were not wearing a PFD; because falls overboard and capsizings often happen suddenly and without warning, there is frequently no time to locate and put one on after the emergency starts.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (PFD wear rate and drowning statistics), consistent with NASBLA-aligned course curricula"
+  }
+]

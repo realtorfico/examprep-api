@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "In Illinois's navigation rules, what is a 'stand-on vessel' required to do?",
+    "choice_a": "Maintain its current course and speed so the give-way vessel can predictably maneuver around it",
+    "choice_b": "Immediately stop its engine",
+    "choice_c": "Always turn to the right regardless of the situation",
+    "choice_d": "Sound its siren continuously",
+    "correct_choice": "A",
+    "explanation": "The stand-on vessel should hold its course and speed, giving the give-way vessel a predictable path to maneuver around, while remaining ready to act if a collision becomes imminent.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-13; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What must a 'give-way vessel' do under Illinois's navigation rules?",
+    "choice_a": "Maintain its course and speed no matter what",
+    "choice_b": "Take early and substantial action to avoid a collision, such as stopping, slowing down, or changing course",
+    "choice_c": "Speed up to cross in front of the other vessel quickly",
+    "choice_d": "Wait until the last possible moment before reacting",
+    "correct_choice": "B",
+    "explanation": "The give-way vessel must act early and decisively -- by slowing, stopping, or altering course -- to avoid a collision, rather than waiting until the situation becomes critical.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-13; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "When two power-driven vessels are meeting head-on, what should both operators do?",
+    "choice_a": "The larger vessel always has the right of way",
+    "choice_b": "Both vessels should turn to port (left)",
+    "choice_c": "Both vessels should alter course to keep to the starboard (right), passing port-to-port",
+    "choice_d": "Both vessels should stop and wait for instructions",
+    "correct_choice": "C",
+    "explanation": "In a head-on meeting between two power-driven vessels, neither is the stand-on vessel; both should alter course to starboard so they pass each other port side to port side.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-13; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "In a crossing situation between two power-driven vessels, which vessel is the give-way vessel?",
+    "choice_a": "The vessel traveling faster",
+    "choice_b": "The vessel closest to shore",
+    "choice_c": "Neither vessel needs to take action",
+    "choice_d": "The vessel that has the other vessel on its own starboard (right) side must give way",
+    "correct_choice": "D",
+    "explanation": "In a crossing situation between two power-driven vessels, the vessel that has the other approaching from its own starboard side is the give-way vessel, while the vessel on the operator's starboard side is the stand-on vessel.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-13; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "When a powerboat and a sailboat under sail meet, which vessel is generally the stand-on vessel?",
+    "choice_a": "The sailboat, since the powerboat is the give-way vessel",
+    "choice_b": "The powerboat, since it can maneuver more easily",
+    "choice_c": "Whichever vessel is larger",
+    "choice_d": "Neither -- both must always stop",
+    "correct_choice": "A",
+    "explanation": "A sailboat operating under sail alone is generally the stand-on vessel, while a powerboat is the give-way vessel; the exception is a sailboat running under engine power, which is then treated as a power-driven vessel.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-13; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "In an overtaking situation, which vessel is the give-way vessel, regardless of whether both are powerboats or one is a sailboat?",
+    "choice_a": "Neither vessel needs to give way during an overtake",
+    "choice_b": "The vessel that is overtaking (passing) the other vessel",
+    "choice_c": "The vessel being overtaken",
+    "choice_d": "Whichever vessel has right-of-way lights on",
+    "correct_choice": "B",
+    "explanation": "The overtaking vessel is always the give-way vessel and must keep clear of the vessel being overtaken, which remains the stand-on vessel, until it is safely past and clear.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-13; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "Failure to follow Illinois's navigation rules under 625 ILCS 45/5-13 is treated as:",
+    "choice_a": "Only relevant to commercial vessels",
+    "choice_b": "Something only enforced on Lake Michigan",
+    "choice_c": "A specific, separately enforceable violation of Illinois boating law",
+    "choice_d": "A matter of courtesy with no legal consequence",
+    "correct_choice": "C",
+    "explanation": "Illinois's Boat Registration and Safety Act explicitly makes failure to follow navigation rules a violation, alongside careless and reckless operation offenses.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-13; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "In restricted visibility, such as fog or heavy rain, what general approach should a vessel operator take beyond following standard right-of-way rules?",
+    "choice_a": "Speed up to clear the area faster",
+    "choice_b": "Turn off navigation lights to avoid confusing other boats",
+    "choice_c": "Assume no other vessels are on the water",
+    "choice_d": "Slow to a safe speed, post a lookout, and sound appropriate signals, since visual right-of-way rules become harder to apply",
+    "correct_choice": "D",
+    "explanation": "In restricted visibility, safe operation calls for reduced speed, a dedicated lookout, and proper sound signaling, since operators may not be able to see other vessels in time to apply the standard visual right-of-way rules.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/4-2 (restricted-visibility navigation light requirement); universal Rules of the Road guidance"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "All vessel operators share what basic responsibility under Illinois's navigation rules, regardless of which vessel is the stand-on vessel?",
+    "choice_a": "An equal responsibility to take action to avoid a collision",
+    "choice_b": "Only the give-way vessel has any responsibility to avoid collision",
+    "choice_c": "Only the larger vessel has responsibility to avoid collision",
+    "choice_d": "No responsibility exists once the stand-on vessel is identified",
+    "correct_choice": "A",
+    "explanation": "Illinois's handbook emphasizes that all operators are equally responsible for taking action to avoid collisions -- even a stand-on vessel must act if the give-way vessel fails to take appropriate action in time.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-13; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "Between a power-driven vessel and a non-motorized canoe or kayak crossing paths, which vessel is generally treated as having the right-of-way under the give-way/stand-on framework?",
+    "choice_a": "Right-of-way rules do not apply to human-powered vessels",
+    "choice_b": "The canoe or kayak, since a power-driven vessel is more maneuverable and must give way to vessels with less ability to maneuver, similar to how power gives way to sail",
+    "choice_c": "The power-driven vessel, because it is larger",
+    "choice_d": "Whichever vessel entered the waterway first, always",
+    "correct_choice": "B",
+    "explanation": "Consistent with the general principle that more maneuverable power-driven vessels give way to vessels with less capacity to maneuver, a power-driven vessel should give way to a human-powered canoe or kayak in a crossing or meeting situation.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-13; universal Rules of the Road guidance applied to human-powered craft"
+  }
+]

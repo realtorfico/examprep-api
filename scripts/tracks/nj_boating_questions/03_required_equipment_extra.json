@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under federal fire extinguisher rules that apply in New Jersey, how many portable B-I (5-B) fire extinguishers must a motorboat 26 feet to under 40 feet in length carry if it has no fixed extinguishing system?",
+    "choice_a": "Zero, extinguishers are never required at this length",
+    "choice_b": "Two B-I extinguishers, or one B-II extinguisher may be substituted",
+    "choice_c": "One B-I extinguisher, the same as a boat under 16 feet",
+    "choice_d": "Five B-I extinguishers regardless of any fixed system",
+    "correct_choice": "B",
+    "explanation": "Under 33 CFR 175.320, a motorboat 26 feet to under 40 feet without a fixed fire-extinguishing system must carry two B-I (5-B) portable extinguishers, or a single B-II (20-B) extinguisher may be carried instead since it counts as equivalent to two B-I units.",
+    "weight": 3,
+    "source_note": "Federal fire extinguisher carriage table (33 CFR 175.320) enforced in New Jersey"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Is a small outboard-powered boat under 26 feet ever exempt from carrying a portable fire extinguisher?",
+    "choice_a": "No, every recreational vessel of any size and construction must carry a portable extinguisher",
+    "choice_b": "Yes, but only if the boat is registered exclusively for personal watercraft use",
+    "choice_c": "Yes -- if its construction does not permit the entrapment of explosive or flammable gases or vapors, such as an open boat with no enclosed compartments and no permanently installed fuel tank",
+    "choice_d": "Yes, but only on freshwater lakes and never on tidal or coastal waters",
+    "correct_choice": "C",
+    "explanation": "Federal rules exempt an outboard motorboat less than 26 feet from the portable fire extinguisher requirement when its construction will not allow flammable gases or vapors to become trapped, such as a fully open boat with no enclosed compartments or built-in fuel tank; any enclosed space or fixed tank removes the exemption.",
+    "weight": 3,
+    "source_note": "Federal fire extinguisher exemption for open outboard boats (33 CFR 175.320) enforced in New Jersey"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "How does an approved fixed (built-in) fire-extinguishing system in a boat's machinery space affect the number of portable fire extinguishers that must also be carried?",
+    "choice_a": "It has no effect; the full portable extinguisher count is always required in addition",
+    "choice_b": "It doubles the number of portable extinguishers required",
+    "choice_c": "It eliminates the need for any fire extinguisher, portable or fixed, for vessels of any size",
+    "choice_d": "It reduces the required number of portable extinguishers by one unit compared to a boat without a fixed system",
+    "correct_choice": "D",
+    "explanation": "When a vessel has a Coast Guard-approved fixed fire-extinguishing system installed in its machinery space, federal rules credit that system by reducing the number of portable extinguishers otherwise required for that vessel's length by one unit.",
+    "weight": 2,
+    "source_note": "Federal fixed fire-suppression system credit (33 CFR 175.320) enforced in New Jersey"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Under federal law enforced in New Jersey, which boats are required to have an operable ventilation system meeting powered and natural ventilation standards?",
+    "choice_a": "A boat built after July 31, 1980, that has a gasoline engine used for propulsion, mechanical power, or electrical generation",
+    "choice_b": "Only boats built before 1940",
+    "choice_c": "Only diesel-powered boats regardless of age",
+    "choice_d": "No boat is required to have a ventilation system if it has an outboard motor",
+    "correct_choice": "A",
+    "explanation": "Federal regulation prohibits operating a boat built after July 31, 1980, that has a gasoline engine for propulsion, mechanical power, or electrical generation unless it is equipped with an operable ventilation system meeting the applicable powered and natural ventilation standards.",
+    "weight": 3,
+    "source_note": "Federal ventilation operability requirement (33 CFR 175.201) enforced in New Jersey"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "How many pyrotechnic visual distress signal devices, such as hand-held red flares, are generally required to satisfy the federal day-and-night VDS requirement on New Jersey's coastal waters?",
+    "choice_a": "Exactly one device covers both day and night indefinitely",
+    "choice_b": "Three devices approved for both day and night use, such as three hand-held red flares",
+    "choice_c": "Ten devices regardless of type",
+    "choice_d": "No specific quantity is ever specified by federal rule",
+    "correct_choice": "B",
+    "explanation": "Federal rule lists devices such as hand-held red flares as approved for both day and night use, and generally requires three of them (or three of a day-only or night-only type as applicable) to satisfy the visual distress signal carriage requirement.",
+    "weight": 3,
+    "source_note": "Federal VDS device and quantity table (33 CFR 175.130) enforced in New Jersey"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Besides pyrotechnic flares, what non-pyrotechnic combination can satisfy the federal day-and-night visual distress signal requirement?",
+    "choice_a": "A flashlight of any color used alone",
+    "choice_b": "A single air horn used for both day and night signaling",
+    "choice_c": "One electric distress light for night use together with one orange distress flag for day use",
+    "choice_d": "Non-pyrotechnic devices are never accepted under federal rules",
+    "correct_choice": "C",
+    "explanation": "Federal rule allows a non-pyrotechnic electric distress light, approved for night use only, to be paired with an orange distress flag, approved for day use only, as a combination that meets the day-and-night visual distress signal requirement without carrying pyrotechnic flares.",
+    "weight": 2,
+    "source_note": "Federal VDS device table (33 CFR 175.130) non-pyrotechnic alternatives, enforced in New Jersey"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What service-life marking should a boater check on a pyrotechnic visual distress signal, such as a handheld flare, to confirm it is still legally usable?",
+    "choice_a": "Pyrotechnic flares never expire once purchased",
+    "choice_b": "The only marking that matters is the retail price sticker",
+    "choice_c": "Flares are marked with a warranty period but never an expiration date",
+    "choice_d": "A manufacturer-marked expiration date, since Coast Guard-certified pyrotechnic signals are marked with a service life not exceeding 42 months from their date of manufacture",
+    "correct_choice": "D",
+    "explanation": "Coast Guard-certified pyrotechnic visual distress signals are marked with a service life of no more than 42 months from their date of manufacture; once that date passes, the device no longer counts toward the required number of visual distress signals aboard.",
+    "weight": 3,
+    "source_note": "Rutgers NJAES FS1126 (Jersey Summer Shore Safety: Expired Marine Flares); federal pyrotechnic VDS service-life marking"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "According to New Jersey Cooperative Extension (Rutgers NJAES) guidance, how should a boater dispose of expired marine flares rather than simply throwing them in household trash?",
+    "choice_a": "Through a county Household Hazardous Waste collection program, a local fire or police department, or by contacting the U.S. Coast Guard or Auxiliary about donating still-usable flares",
+    "choice_b": "By soaking them in water and placing them in a regular curbside trash bin",
+    "choice_c": "By burying them on the beach above the tide line",
+    "choice_d": "Expired flares require no special disposal method",
+    "correct_choice": "A",
+    "explanation": "Rutgers NJAES guidance explains that expired marine flares are explosive and contain perchlorate, making them hazardous waste; boaters should dispose of them through a county Household Hazardous Waste program, a local fire or police department, or by contacting the Coast Guard or Auxiliary about donating flares that are still within date.",
+    "weight": 2,
+    "source_note": "Rutgers NJAES FS1126 (Jersey Summer Shore Safety: Expired Marine Flares)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What federally required placard must be posted in the machinery space of a vessel 26 feet or longer, and what must it state?",
+    "choice_a": "A placard listing the boat's fuel economy rating",
+    "choice_b": "An oil discharge placard, at least 5 by 8 inches, stating that discharge of oil into navigable waters is prohibited and describing the penalties for violations",
+    "choice_c": "A placard is only required for vessels under 16 feet",
+    "choice_d": "A placard advertising the manufacturer's warranty terms",
+    "correct_choice": "B",
+    "explanation": "Federal regulation requires vessels 26 feet or longer to display a durable oil discharge placard, at least 5 by 8 inches, in a conspicuous place in the machinery space (or at the bilge/ballast pump control station), stating that discharge of oil or oily waste is prohibited and warning of civil and criminal penalties.",
+    "weight": 2,
+    "source_note": "Federal oil discharge placard requirement (33 CFR 155.450) enforced on New Jersey waters"
+  }
+]

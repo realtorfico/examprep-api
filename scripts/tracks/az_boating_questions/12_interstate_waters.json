@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "Lake Mead and Lake Mohave sit within Lake Mead National Recreation Area, which lies in both Arizona and Nevada. What does the National Park Service tell boaters about which state's laws apply there?",
+    "choice_a": "Only Nevada law applies anywhere on Lake Mead or Lake Mohave",
+    "choice_b": "Neither state's law applies because the lakes are entirely federal property",
+    "choice_c": "As a boater, you are responsible for complying with the laws of both states, since the lakes are located in both Nevada and Arizona",
+    "choice_d": "Only Arizona law applies anywhere on Lake Mead or Lake Mohave",
+    "correct_choice": "C",
+    "explanation": "The National Park Service explicitly advises that because Lake Mead and Lake Mohave are located in both Nevada and Arizona, boaters are responsible for complying with the boating laws of both states while on these waters.",
+    "weight": 4,
+    "source_note": "National Park Service, Lake Mead National Recreation Area, 'Motorized Boating' guidance"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "Nevada requires certain operators to complete a boater education course, while Arizona has no general education mandate. What is the practical effect of this difference for an Arizona resident boating on Lake Mead?",
+    "choice_a": "Arizona's lack of a mandate completely overrides Nevada's requirement anywhere on the lake",
+    "choice_b": "Nevada's education requirement only applies to Nevada residents, never to visiting boaters",
+    "choice_c": "Neither state's education law has any effect on Lake Mead because it is a national recreation area",
+    "choice_d": "Because dual-state law applies on Lake Mead, an Arizona boater who meets Nevada's education-requirement criteria (motor over 15 hp and born on or after January 1, 1983) must still comply with Nevada's requirement while on those waters, even though Arizona itself imposes no such mandate",
+    "correct_choice": "D",
+    "explanation": "Because boaters on Lake Mead/Mohave must comply with both Nevada and Arizona law, an Arizona-based boater who falls within Nevada's mandatory-education criteria (motor over 15 horsepower, born on or after January 1, 1983) is still bound by that Nevada requirement while operating on the shared lake, even without any Arizona-specific mandate.",
+    "weight": 4,
+    "source_note": "National Park Service, Lake Mead NRA 'Motorized Boating' guidance (dual-state compliance); Nevada boater-education statute as summarized by NPS"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "What is Nevada's stated boater-education requirement, as summarized by the National Park Service for boaters on Lake Mead?",
+    "choice_a": "All persons who operate vessels powered by a motor over 15 horsepower and who were born on or after January 1, 1983 must take and pass a boater education course or proficiency exam",
+    "choice_b": "Every boater regardless of horsepower or birth date must complete a course",
+    "choice_c": "Only PWC operators are covered; all other vessel types are exempt",
+    "choice_d": "Nevada has no boater education requirement of any kind",
+    "correct_choice": "A",
+    "explanation": "The National Park Service's Lake Mead boating guidance states Nevada's rule precisely: operators of vessels with a motor over 15 horsepower who were born on or after January 1, 1983 must pass a boater education course or proficiency exam.",
+    "weight": 3,
+    "source_note": "National Park Service, Lake Mead National Recreation Area, 'Motorized Boating' guidance"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "Does an Arizona-registered boat need Nevada's aquatic invasive species (AIS) decal to operate on the Nevada side of Lake Mead?",
+    "choice_a": "Only Nevada-registered boats are exempt from Nevada's own decal requirement",
+    "choice_b": "No -- an Arizona-registered vessel is exempt from Nevada's AIS decal requirement when boating in Nevada, under a reciprocal arrangement between the two states",
+    "choice_c": "Yes, every vessel of any registration must buy a separate Nevada AIS decal with no exceptions",
+    "choice_d": "AIS decals do not exist for Lake Mead boaters",
+    "correct_choice": "B",
+    "explanation": "The National Park Service notes that when boating in Nevada, an aquatic invasive species decal is required unless the boat is Arizona-registered, reflecting a reciprocal exemption between the two states on these shared waters.",
+    "weight": 3,
+    "source_note": "National Park Service, Lake Mead National Recreation Area, 'Motorized Boating' guidance"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "How does Nevada's minimum PWC operator age compare to Arizona's general under-12 restriction, and why does this matter on Lake Mead?",
+    "choice_a": "Nevada has no PWC age restriction at all",
+    "choice_b": "Arizona's PWC age restriction is stricter than Nevada's in every respect",
+    "choice_c": "Nevada requires PWC operators to be at least 14, a stricter standard than Arizona's under-12 restriction, so a 12- or 13-year-old permitted to operate under Arizona's rule could still be out of compliance with Nevada's rule on shared Lake Mead waters",
+    "choice_d": "Nevada and Arizona have identical PWC age minimums, so no conflict exists",
+    "correct_choice": "C",
+    "explanation": "Nevada sets a 14-year minimum age for PWC operators, stricter than Arizona's general under-12 threshold for motors over 8 hp; because both states' laws apply on Lake Mead, a boater must satisfy the more restrictive of the two standards.",
+    "weight": 3,
+    "source_note": "National Park Service, Lake Mead National Recreation Area, 'Motorized Boating' guidance (Nevada PWC age minimum)"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "Lake Powell sits within Glen Canyon National Recreation Area, spanning Arizona and Utah. What Utah-specific youth requirement does the National Park Service flag for PWC operators there?",
+    "choice_a": "Utah requires every PWC operator, regardless of age, to complete a certification course",
+    "choice_b": "Utah bans PWC operation by anyone under 18 with no certification option",
+    "choice_c": "Utah has no PWC-specific youth rule of any kind",
+    "choice_d": "Children ages 12-17 who wish to operate a PWC in Utah must take a certification course through Utah State Parks",
+    "correct_choice": "D",
+    "explanation": "Glen Canyon National Recreation Area's boating guidance specifically notes that children ages 12-17 operating a PWC in Utah must complete a certification course through Utah State Parks -- a requirement Arizona does not impose generally.",
+    "weight": 4,
+    "source_note": "National Park Service, Glen Canyon National Recreation Area, 'Boating' guidance"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "For general boating regulations at Glen Canyon National Recreation Area (Lake Powell), which sources does the National Park Service direct boaters to consult?",
+    "choice_a": "The U.S. Coast Guard, the Utah Division of Natural Resources, and Arizona Game and Fish -- reflecting that federal, Utah, and Arizona rules can all be relevant depending on where on the lake a boater is operating",
+    "choice_b": "Only the U.S. Coast Guard; state agencies have no role at Glen Canyon",
+    "choice_c": "Only Arizona Game and Fish; Utah rules never apply on Lake Powell",
+    "choice_d": "No regulatory body oversees boating at Glen Canyon NRA",
+    "correct_choice": "A",
+    "explanation": "Glen Canyon NRA's boating guidance points boaters to three sources of applicable rules -- the U.S. Coast Guard, Utah's Division of Natural Resources, and Arizona Game and Fish -- reflecting the multi-jurisdictional nature of Lake Powell.",
+    "weight": 3,
+    "source_note": "National Park Service, Glen Canyon National Recreation Area, 'Boating' guidance"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "What lifejacket rule does Glen Canyon National Recreation Area highlight for children on Lake Powell?",
+    "choice_a": "Lifejackets are required only after sunset",
+    "choice_b": "Children 12 and under must wear a Coast Guard-approved lifejacket while underway, and PWC operators must wear one regardless of age",
+    "choice_c": "Lifejackets are optional for all ages at Glen Canyon",
+    "choice_d": "Only adults are required to wear lifejackets; children are exempt",
+    "correct_choice": "B",
+    "explanation": "Glen Canyon NRA's boating guidance states that children 12 and under must wear a Coast Guard-approved lifejacket while a vessel is underway, and that PWC operators of any age must wear one -- consistent with Arizona's own PFD statute for children 12 and under.",
+    "weight": 3,
+    "source_note": "National Park Service, Glen Canyon National Recreation Area, 'Boating' guidance"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "The lower Colorado River corridor -- including Lake Havasu and stretches near Parker, Bullhead City, and Yuma -- forms a boundary between Arizona and California. What should a boater operating in this corridor generally understand about jurisdiction?",
+    "choice_a": "The Colorado River corridor is governed exclusively by federal maritime law with no state involvement whatsoever",
+    "choice_b": "Arizona registration is honored nationwide with no boundary-water considerations anywhere",
+    "choice_c": "As on Lake Mead and Lake Powell, boundary and shared waters can bring more than one state's rules into play, so a prudent boater should confirm which side of the river they are on and be aware that requirements can differ across the boundary",
+    "choice_d": "California law has no relevance anywhere near the Colorado River, no matter how close a boater is to the California shoreline",
+    "correct_choice": "C",
+    "explanation": "Following the same dual-jurisdiction pattern documented for Lake Mead (AZ/NV) and Lake Powell (AZ/UT), the Colorado River corridor shared with California is a boundary water where a boater should stay alert to which state's specific rules may apply on a given stretch or side of the river.",
+    "weight": 3,
+    "source_note": "General interstate-boundary-waters principle drawn from NPS Lake Mead/Glen Canyon guidance, applied to the Arizona-California Colorado River boundary"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "Why is it important for an Arizona boater to understand that Arizona itself has no general boater-education mandate before assuming they are fully compliant on interstate waters like Lake Mead or Lake Powell?",
+    "choice_a": "Arizona's lack of a mandate always fully controls, no matter which lake or river a boater is on",
+    "choice_b": "Interstate waters are governed only by whichever state's law is most convenient for the boater to follow",
+    "choice_c": "There is no way for a boater to know which rules might apply on a shared lake",
+    "choice_d": "Because compliance requirements on those specific bodies of water can be driven by the neighboring state's (Nevada's or Utah's) stricter law, not by Arizona's more permissive baseline, so 'no requirement in Arizona' does not always mean 'no requirement on the water you are using'",
+    "correct_choice": "D",
+    "explanation": "Arizona's absence of a general education mandate does not eliminate obligations that arise from a neighboring state's stricter rule on genuinely shared waters like Lake Mead or Lake Powell; a boater must look at the specific water body's dual-jurisdiction guidance, not just their home state's baseline law.",
+    "weight": 4,
+    "source_note": "Synthesis of Arizona Revised Statutes Title 5 Chapter 3 (no education mandate) with NPS Lake Mead/Glen Canyon dual-state compliance guidance"
+  }
+]

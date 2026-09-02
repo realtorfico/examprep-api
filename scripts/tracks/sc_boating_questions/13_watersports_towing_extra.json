@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under S.C. Code Section 50-21-830, who is exempted from the observer/mirror requirement (Section 50-21-810) and the sunset-to-sunrise towing ban (Section 50-21-820)?",
+    "choice_a": "No one is ever exempted from these two requirements under any circumstance",
+    "choice_b": "A performer engaged in a professional exhibition, or a person engaged in an activity authorized under Section 50-21-1010 (regattas, races, and exhibitions)",
+    "choice_c": "Any recreational boater who simply requests an exemption from SCDNR in advance",
+    "choice_d": "Only boaters operating on Lake Moultrie",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-830 exempts a performer engaged in a professional exhibition, and a person engaged in an activity authorized under Section 50-21-1010's regatta/race/exhibition framework, from the general observer/mirror and nighttime towing restrictions that otherwise apply to ordinary recreational towing.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-830 (exemption for professional exhibitions and authorized regattas/races)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under S.C. Code Section 50-21-840, what specific conduct involving a tow rope or towed water skis, surfboard, or similar device is prohibited?",
+    "choice_a": "Towing at any speed above idle in open water",
+    "choice_b": "Operating or manipulating the vessel, tow rope, or device in a way that causes the skis, surfboard, or similar device -- or the person on it -- to collide with or strike an object or another person",
+    "choice_c": "Wearing a PFD while being towed",
+    "choice_d": "Displaying a skier-down flag after a fall",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-840 specifically prohibits operating or manipulating a vessel, tow rope, or towed device in a manner intended to cause the towed skis, surfboard, or similar equipment -- or the person riding it -- to collide with or strike an object or another person, addressing a deliberate, dangerous form of misconduct beyond ordinary negligent towing.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-840 (prohibition on causing a towed person or device to collide with an object or person)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under S.C. Code Section 50-21-850, which specific PFD types are approved for a person being towed on water skis, a surfboard, or similar equipment in South Carolina?",
+    "choice_a": "Type I, Type II, Type III, or Type V, each properly fastened, in good and serviceable condition, and the correct size for the wearer",
+    "choice_b": "Any flotation device regardless of Coast Guard approval status",
+    "choice_c": "Only a Type IV throwable cushion, worn like a vest",
+    "choice_d": "South Carolina law specifies no particular PFD type for towed activities",
+    "correct_choice": "A",
+    "explanation": "Section 50-21-850 specifies that a person being towed must wear a U.S. Coast Guard-approved Type I, Type II, Type III, or Type V PFD that is properly fastened, in good and serviceable condition, and the proper size for that person, tying the towing-specific PFD rule to the same type classifications used elsewhere in PFD law.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-850 (approved PFD types for towed water sports)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under Section 50-21-850, which participants are exempt from the requirement to wear a PFD while being towed on water skis or similar equipment?",
+    "choice_a": "No exemption of any kind exists under this section",
+    "choice_b": "Tournament participants and American Water Ski Association-rated skiers, along with windsurfers and sailboarders addressed separately under Section 50-21-855",
+    "choice_c": "Only professional performers may skip wearing a PFD; all recreational skiers must always wear one",
+    "choice_d": "Anyone over the age of 18 is automatically exempt",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-850 exempts sanctioned tournament participants and American Water Ski Association-rated skiers from its towed-PFD requirement, reflecting the specialized equipment and safety protocols used in competitive skiing, with windsurfers and sailboarders addressed by the separate enforcement carve-out in Section 50-21-855.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-850 (exemptions for tournament participants and AWSA-rated skiers)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under S.C. Code Section 50-21-855, how does South Carolina law treat the towed-PFD requirement as applied to windsurfers and sailboarders?",
+    "choice_a": "Windsurfers and sailboarders are treated identically to water skiers with no special provision",
+    "choice_b": "The department is barred from enforcing the personal flotation device requirement against windsurfers and sailboarders",
+    "choice_c": "Windsurfers and sailboarders are banned outright from all South Carolina waters",
+    "choice_d": "Windsurfers must wear two PFDs simultaneously",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-855 specifically bars SCDNR from enforcing the PFD requirement of Section 50-21-850 against windsurfers and sailboarders, recognizing that this activity's equipment and typical use differ meaningfully from being towed behind a powerboat on skis or a tube.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-855 (non-enforcement of towed-PFD rule against windsurfers/sailboarders)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under S.C. Code Section 50-21-180, where is surfboard riding specifically prohibited within 100 yards of a fishing pier?",
+    "choice_a": "Nowhere in South Carolina; the restriction does not exist",
+    "choice_b": "In Game Zone 7 and Georgetown County, where violators face a fine of up to $100 or up to 30 days imprisonment",
+    "choice_c": "Statewide, on every single South Carolina waterway without exception",
+    "choice_d": "Only on Lake Murray and Lake Hartwell",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-180 prohibits surfboard riding within 100 yards of a fishing pier specifically in Game Zone 7 and Georgetown County, with violators facing a fine of up to $100 or up to 30 days imprisonment, reducing the risk of collision between surfers and anglers casting from a pier.",
+    "weight": 3,
+    "source_note": "S.C. Code Ann. Section 50-21-180 (surfboard restriction near fishing piers in Game Zone 7/Georgetown County)"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why does barefoot water skiing require extra caution and more open water compared to conventional skiing on standard skis?",
+    "choice_a": "Barefoot skiing requires no special precautions since it is performed at slower speeds than skiing on skis",
+    "choice_b": "Barefoot skiing is typically performed at considerably higher speeds to keep the skier planing without skis, meaning a fall carries greater impact force, so it demands more open water, greater following distance, and closer observer attention",
+    "choice_c": "Barefoot skiing is illegal everywhere in the United States",
+    "choice_d": "Barefoot skiers never fall, eliminating the need for an observer",
+    "correct_choice": "B",
+    "explanation": "Barefoot water skiing generally requires much higher boat speeds than skiing on conventional skis in order to keep the skier planing without the buoyancy skis provide, meaning a fall happens at greater speed and impact force, so it calls for more open water, greater following distance from other traffic, and especially attentive observer coverage.",
+    "weight": 2,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on barefoot water skiing risk"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why might the recommended tow rope length differ between water skiing and tubing on South Carolina waters?",
+    "choice_a": "Tow rope length is standardized by law at exactly the same distance for every towed activity",
+    "choice_b": "Skiing typically uses a longer, taut line to let the skier get up on plane and maneuver outside the boat's wake, while tubing often uses a shorter line suited to the tube's stability and the lower speeds involved",
+    "choice_c": "Rope length has no bearing on safety or performance in either activity",
+    "choice_d": "Tubing always requires a longer rope than skiing",
+    "correct_choice": "B",
+    "explanation": "Water skiing typically uses a longer, taut tow rope so the skier can plane and maneuver outside the boat's wake, while tubing often uses a shorter line matched to the tube's stability characteristics and the generally lower speeds involved, meaning the appropriate rope length depends on the specific towed activity rather than being one-size-fits-all.",
+    "weight": 2,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on tow rope length by activity type"
+  }
+]

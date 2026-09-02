@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "When towing a water-skier or tuber, who besides the operator is generally required to help watch the person being towed?",
+    "choice_a": "An observer is required only when towing more than five people at once",
+    "choice_b": "A dedicated observer at least a set minimum age, positioned to face backward and continuously watch the person being towed, unless the vessel has a wide-angle rearview mirror that meets the applicable exception",
+    "choice_c": "No observer is ever needed if the operator glances back occasionally",
+    "choice_d": "Only the person being towed is responsible for their own safety",
+    "correct_choice": "B",
+    "explanation": "Requirements to tow a person generally call for either a rearview mirror meeting specific standards or an observer of a minimum age facing backward to continuously watch the person being towed and relay their condition to the operator.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Requirements to Tow a Person With a Vessel'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "During what hours is towing a person on water skis, a tube, or a wakeboard generally permitted?",
+    "choice_a": "Only between noon and 2 p.m.",
+    "choice_b": "Only when a full moon is visible",
+    "choice_c": "During daylight hours only, from sunrise to sunset",
+    "choice_d": "At any hour of the day or night",
+    "correct_choice": "C",
+    "explanation": "Towing a person behind a vessel for water skiing, tubing, or wakeboarding is generally restricted to daylight hours, since visibility for both the tow boat operator and other traffic is critical to safely watching the person being towed.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Towing a Person With a Vessel'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What hand signal does a water-skier commonly use to indicate they want to stop or that something is wrong?",
+    "choice_a": "Waving both arms overhead always means 'speed up'",
+    "choice_b": "Skiers have no standardized way to communicate with the tow boat",
+    "choice_c": "Pointing at the shore always means 'continue at current speed'",
+    "choice_d": "A patting motion on top of the head, or another prearranged distress signal agreed upon before starting",
+    "correct_choice": "D",
+    "explanation": "Skier hand signals are commonly agreed upon before starting; a pat on top of the head is one widely used signal, though the operator, observer, and skier should confirm their specific signals (stop, speed up, slow down, turn) before beginning.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Skier Hand Signals'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is the 'pendulum effect' that towing operators are taught to understand?",
+    "choice_a": "When a towed skier or tuber falls or cuts sharply to one side, the tow rope can swing back across the wake like a pendulum, posing a hazard to anyone in its path -- including the observer or people in the water nearby",
+    "choice_b": "A term describing how boats naturally slow down over time with no throttle input",
+    "choice_c": "A rule that only applies to sailboats under sail",
+    "choice_d": "A phenomenon that has nothing to do with towing water sports",
+    "correct_choice": "A",
+    "explanation": "The pendulum effect describes how a tow rope can swing sharply across the wake -- like a pendulum -- when a skier or tuber cuts hard to one side or falls, creating a real hazard for anyone caught in the rope's path.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'The Pendulum Effect'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What should a tow boat operator do immediately after a skier or tuber falls?",
+    "choice_a": "Leave the area and return only after completing the full planned route",
+    "choice_b": "Bring the boat around carefully to check on the person, approaching from a direction that lets the skier stay visible on the operator's side, keeping the engine in neutral near the person to avoid propeller injury",
+    "choice_c": "Continue on the same course and speed without checking on the fallen skier",
+    "choice_d": "Immediately reverse at full throttle directly toward the fallen skier",
+    "correct_choice": "B",
+    "explanation": "After a fall, the operator should turn back to check on the person, approach carefully keeping them visible, and shift to neutral before getting close, to avoid any risk of propeller contact with the person in the water.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Responding to a Fallen Skier'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why should a fallen or waiting skier hold a ski or other object upright out of the water while waiting to be picked up?",
+    "choice_a": "It is required only in international ski competitions, not recreational skiing",
+    "choice_b": "It helps the skier float better than a PFD alone",
+    "choice_c": "It makes the skier more visible to the tow boat and to other vessels in the area, reducing the risk of being struck",
+    "choice_d": "It has no safety purpose and is purely a competitive tradition",
+    "correct_choice": "C",
+    "explanation": "A raised ski or paddle acts as a visibility marker, alerting the tow boat and other nearby vessels to the skier's location in the water, which helps prevent a collision while the skier waits to be retrieved.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Skier Visibility'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is a key difference between paddlecraft (canoes, kayaks, and rafts) and motorized vessels in terms of safety equipment considerations?",
+    "choice_a": "Paddlecraft are entirely exempt from all safety requirements",
+    "choice_b": "Paddlecraft require more fire extinguishers than motorized vessels",
+    "choice_c": "PFD requirements never apply to canoes or kayaks",
+    "choice_d": "Paddlecraft still require PFDs for occupants and benefit from many of the same navigation-rule and visibility practices, even though they may not need the same engine-related equipment such as fire extinguishers or backfire flame arrestors",
+    "correct_choice": "D",
+    "explanation": "Paddlecraft occupants still need PFDs and should follow navigation rules and visibility practices, but because they lack engines, they are not subject to engine-related equipment rules like fire extinguishers, ventilation, or backfire flame arrestors.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Paddlecraft Safety'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What responsibility does a boat operator have toward other water users, such as anglers, swimmers, or paddlecraft, when engaging in towed water sports on a shared reservoir?",
+    "choice_a": "The operator must choose an area with enough open space, avoid crowded zones, and keep a safe distance from anglers, swimmers, and other vessels while towing",
+    "choice_b": "Towed water sports may be conducted anywhere on a reservoir with no regard for other users",
+    "choice_c": "Only the person being towed is responsible for avoiding other water users",
+    "choice_d": "Other water users are legally required to move out of the way of any towing activity",
+    "correct_choice": "A",
+    "explanation": "Because towing activities cover a wide swath of water at speed, an operator is responsible for selecting an area with adequate space and keeping well clear of anglers, swimmers, paddlecraft, and other vessels sharing the reservoir.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Operator Responsibility to Other Water Users'"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Weather and Long Island Sound Conditions",
+    "question": "When preparing a boat that will remain afloat for an approaching hurricane on Long Island Sound, what does Connecticut's Boater's Guide recommend to reduce windage?",
+    "choice_a": "Removing covers, dodgers, canvas, and gear stored on deck -- including dinghies, small outboard motors, spare sails, and fuel containers",
+    "choice_b": "Leaving all canvas and deck gear in place, since removing it makes no difference in high winds",
+    "choice_c": "Adding more deck gear to weigh the boat down",
+    "choice_d": "Filling the deck with loose, unsecured equipment to absorb wind energy",
+    "correct_choice": "A",
+    "explanation": "To reduce the surface area a hurricane's wind can catch, the Boater's Guide recommends removing covers, dodgers, canvas, and any gear stored on deck -- including dinghies, small outboard motors, spare sails, and fuel containers -- before the storm arrives.",
+    "weight": 3,
+    "source_note": "CT DEEP, \"Preparing Your Boat for A Hurricane,\" portal.ct.gov/DEEP/Boating/Preparing-Your-Boat-for-a-Hurricane"
+  },
+  {
+    "topic": "Weather and Long Island Sound Conditions",
+    "question": "What does Connecticut's Boater's Guide recommend for a boat that will be stored on land ahead of an approaching hurricane?",
+    "choice_a": "Choose a location clear of trees, overhead wires, or other objects that could fall, avoid ground prone to becoming saturated, and strap the boat down to the ground",
+    "choice_b": "Store the boat directly beneath the largest tree available for wind shelter",
+    "choice_c": "Storage location and ground condition make no difference for a boat kept on land",
+    "choice_d": "Strapping a boat to the ground is discouraged because it prevents proper drainage",
+    "correct_choice": "A",
+    "explanation": "For a boat stored on land during hurricane preparation, the guidance recommends choosing a site clear of trees, overhead wires, and other objects that could come down, avoiding ground that could become saturated (risking the boat toppling), and strapping the boat down to the ground, a method the Guide notes has proven very successful.",
+    "weight": 3,
+    "source_note": "CT DEEP, \"Preparing Your Boat for A Hurricane,\" portal.ct.gov/DEEP/Boating/Preparing-Your-Boat-for-a-Hurricane"
+  },
+  {
+    "topic": "Weather and Long Island Sound Conditions",
+    "question": "For a boat left afloat during hurricane preparation, what does Connecticut's Boater's Guide recommend regarding through-hull valves, batteries, and electrical equipment?",
+    "choice_a": "Close all through-hull valves except automatic bilge drains, ensure batteries are fully charged, and turn off all electrical equipment except the automatic bilge pumps",
+    "choice_b": "Open all through-hull valves fully to let the boat flood evenly",
+    "choice_c": "Disconnect and remove the batteries entirely, leaving the bilge pumps without power",
+    "choice_d": "Leave all electrical equipment running to keep the boat's systems active",
+    "correct_choice": "A",
+    "explanation": "The Boater's Guide's hurricane preparation steps include closing all through-hull valves except for automatic bilge drains, making sure batteries are fully charged, and turning off all electrical equipment except the automatic bilge pumps -- keeping the pumps able to run while minimizing other electrical and flooding risks during the storm.",
+    "weight": 3,
+    "source_note": "CT DEEP, \"Preparing Your Boat for A Hurricane,\" portal.ct.gov/DEEP/Boating/Preparing-Your-Boat-for-a-Hurricane"
+  },
+  {
+    "topic": "Weather and Long Island Sound Conditions",
+    "question": "Even without checking a formal forecast, what barometric pressure change should a boater on Long Island Sound treat as a warning sign of a fast-approaching storm?",
+    "choice_a": "A rapid, noticeable drop in barometric pressure",
+    "choice_b": "A slow, steady rise in barometric pressure over several days",
+    "choice_c": "Barometric pressure has no relationship to approaching weather",
+    "choice_d": "Only a rise in pressure signals worsening weather",
+    "correct_choice": "A",
+    "explanation": "A rapid, noticeable drop in barometric pressure is a classic, instrument-based warning sign that a storm system is approaching quickly, giving a boater with a barometer aboard advance notice even before visible clouds or an official forecast update arrive.",
+    "weight": 2,
+    "source_note": "General marine weather fundamentals (NASBLA-aligned boating safety curriculum) applied to Long Island Sound"
+  },
+  {
+    "topic": "Weather and Long Island Sound Conditions",
+    "question": "What visual cloud formation should a boater on Long Island Sound watch for as a sign that a thunderstorm may be developing on a warm afternoon?",
+    "choice_a": "Tall, dark cumulonimbus clouds building upward",
+    "choice_b": "Thin, wispy, high-altitude clouds with no vertical development",
+    "choice_c": "A completely clear, cloudless sky",
+    "choice_d": "A uniform, flat layer of low gray clouds that shows no vertical growth",
+    "correct_choice": "A",
+    "explanation": "Tall, dark cumulonimbus clouds that build rapidly upward on a warm, humid afternoon are a classic visual warning sign of a developing thunderstorm cell, prompting a prudent boater to head for shelter well before lightning or heavy rain arrives.",
+    "weight": 2,
+    "source_note": "General marine weather fundamentals (NASBLA-aligned boating safety curriculum) applied to Long Island Sound"
+  }
+]

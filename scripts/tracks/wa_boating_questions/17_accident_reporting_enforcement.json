@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What must an operator involved in a boating accident do at the scene?",
+    "choice_a": "Stop the vessel immediately and assist anyone injured or in danger, unless doing so would seriously endanger their own vessel or passengers",
+    "choice_b": "Leave the scene immediately to avoid liability",
+    "choice_c": "Only stop if another vessel demands it",
+    "choice_d": "Contact only their insurance company, with no on-scene duty",
+    "correct_choice": "A",
+    "explanation": "An operator involved in a boating accident must stop immediately at the scene and assist anyone injured or in danger, unless doing so would seriously endanger their own vessel or passengers.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Vessel Accidents"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Is someone who renders assistance at a boating accident scene liable for civil damages from that assistance?",
+    "choice_a": "Yes, they are automatically liable for any outcome",
+    "choice_b": "No, they will not be held liable for civil damages as a result of providing reasonable and prudent assistance",
+    "choice_c": "Only licensed medical professionals are protected from liability",
+    "choice_d": "Liability protection only applies to law enforcement",
+    "correct_choice": "B",
+    "explanation": "Anyone who renders reasonable and prudent assistance at the scene of a boating accident is protected from civil liability for that assistance.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Vessel Accidents"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "A written boating accident report must be submitted if damage to the vessel(s) or other property exceeds what amount, or there is complete loss of a vessel?",
+    "choice_a": "$200",
+    "choice_b": "$20,000",
+    "choice_c": "$2,000",
+    "choice_d": "There is no dollar threshold; any damage requires a report",
+    "correct_choice": "C",
+    "explanation": "A written report is required if property damage exceeds $2,000 or there is a complete loss of a vessel, in addition to reports required for deaths, disappearances, or injuries needing medical treatment beyond first aid.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Vessel Accidents"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Within what time frame must a boating accident report be submitted if a person dies within 24 hours of the accident or disappears from the vessel?",
+    "choice_a": "Within 30 days",
+    "choice_b": "Immediately, with no grace period at all",
+    "choice_c": "There is no deadline for fatal accidents",
+    "choice_d": "Within 48 hours of the accident",
+    "correct_choice": "D",
+    "explanation": "If a person dies within 24 hours, requires medical treatment beyond first aid, or disappears from a vessel, the report must be submitted within 48 hours of the accident.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Vessel Accidents"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Within what time frame must a boating accident report be submitted for accidents that don't meet the 48-hour criteria (e.g., property-damage-only accidents)?",
+    "choice_a": "Within 10 days",
+    "choice_b": "Within 90 days",
+    "choice_c": "Within 24 hours in every case",
+    "choice_d": "No report is ever required for property-only damage",
+    "correct_choice": "A",
+    "explanation": "For all other accidents not involving death, disappearance, or injury requiring medical treatment beyond first aid, the report must be submitted within 10 days.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Vessel Accidents"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Which agencies have authority to enforce Washington's boating laws?",
+    "choice_a": "Only the U.S. Coast Guard",
+    "choice_b": "Washington State Park rangers, Fish and Wildlife officers, city police, deputy sheriffs, and other law enforcement officers, plus the U.S. Coast Guard on federally controlled waters",
+    "choice_c": "Only local marina staff",
+    "choice_d": "No agency has enforcement authority over recreational boating",
+    "correct_choice": "B",
+    "explanation": "Washington State Park rangers, Fish and Wildlife officers, city police, deputy sheriffs, and other law enforcement officers all enforce state boating laws, while the U.S. Coast Guard has enforcement authority on waters under U.S. jurisdiction.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Enforcement"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What must an operator do after receiving a visual or audible stop signal from a law enforcement officer on the water?",
+    "choice_a": "Continue on course if no siren is used",
+    "choice_b": "Only stop if the officer is on a marked Coast Guard vessel",
+    "choice_c": "Bring the vessel to a stop and allow the officer to come alongside",
+    "choice_d": "Ignore the signal if in international waters",
+    "correct_choice": "C",
+    "explanation": "It is illegal to refuse to follow a law enforcement directive; an operator who receives a visual or audible stop signal must bring the vessel to a stop and allow the officer to come alongside.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Enforcement"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Under Washington's Vessel Impound Law (effective 2017), when can officers impound a vessel?",
+    "choice_a": "Any time an officer wants to impound a vessel with no cause",
+    "choice_b": "Only if the vessel's registration decal is expired",
+    "choice_c": "Vessel impound was never authorized in Washington",
+    "choice_d": "When the operator has been arrested for BUI or reckless operation and no one else is available to take control of the vessel",
+    "correct_choice": "D",
+    "explanation": "The 2017 Vessel Impound Law authorizes officers to impound a vessel when the operator is arrested for BUI or reckless operation and no one else is available to take control of the vessel; officers must first try to find someone to take the vessel.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Vessel Impound Law--Effective 2017"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What does the Vessel Impound Law require regarding towing and storage charges after an impound?",
+    "choice_a": "It puts caps on the amounts charged for towing and storage, and sets time limits for redeeming the boat to avoid foreclosure",
+    "choice_b": "There are no limits on towing and storage fees",
+    "choice_c": "The state automatically pays all towing and storage fees",
+    "choice_d": "The boat is destroyed immediately upon impound",
+    "correct_choice": "A",
+    "explanation": "The Vessel Impound Law caps the amounts that can be charged for towing and storage, and sets time limits for the owner to redeem the boat before it is subject to foreclosure.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Vessel Impound Law--Effective 2017"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Besides state and local laws, where else might additional equipment and operational restrictions on Washington waterways come from?",
+    "choice_a": "Washington's boating laws are always fully uniform statewide with no local variation",
+    "choice_b": "Local regulations from the sheriff's office, police department, or local ordinances",
+    "choice_c": "Only from the federal government, never local agencies",
+    "choice_d": "Local governments have no authority to add boating restrictions",
+    "correct_choice": "B",
+    "explanation": "Many Washington waterways have additional local equipment and operational restrictions beyond the statewide handbook; boaters should check with the sheriff's office or police department, or search local ordinances, before boating.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Local Regulations"
+  }
+]

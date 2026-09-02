@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Under O.C.G.A. Section 52-7-16, which towing activities are exempt from Georgia's standard observer/mirror, PFD, and sunset-to-sunrise hour requirements for towing a person on water skis or a similar device?",
+    "choice_a": "Any boat operator who has completed a DNR-approved boating education course",
+    "choice_b": "Any tow taking place on a lake larger than 500 acres",
+    "choice_c": "There are no exemptions; the requirements apply to every towing activity without exception",
+    "choice_d": "A performer engaged in a professional exhibition, or a person engaged in an activity authorized under Code Section 52-7-19, such as a permitted regatta, boat race, marine parade, tournament, or exhibition",
+    "correct_choice": "D",
+    "explanation": "O.C.G.A. Section 52-7-16(d) exempts a performer engaged in a professional exhibition, or a person engaged in an activity authorized under Code Section 52-7-19 (such as a sanctioned regatta, boat race, marine parade, tournament, or exhibition), from the observer/mirror, PFD, and sunset-to-sunrise requirements otherwise imposed on towing in subsections (a) through (c).",
+    "weight": 3,
+    "source_note": "O.C.G.A. Section 52-7-16(d), Georgia Code Title 52, Chapter 7, Article 1"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Georgia's boater safety course teaches that when a towing boat turns, the towed skier or tuber swings outward like a pendulum. Based on this, how far should an operator keep the towed person from the shoreline, docks, hazards, and people in the water?",
+    "choice_a": "At least twice the length of the tow rope",
+    "choice_b": "Exactly the same distance as the tow rope's length, no more",
+    "choice_c": "Half the length of the tow rope",
+    "choice_d": "Distance from shore is irrelevant as long as the boat itself stays 100 feet away",
+    "correct_choice": "A",
+    "explanation": "Because a turn swings a towed skier or tuber outward on the far side of the turn, Georgia's course instructs operators to keep the towed person at a safe distance -- at least twice the length of the tow rope -- from the shoreline, docks, hazards, and people in the water.",
+    "weight": 3,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'While Towing a Skier'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "According to Georgia's boater safety course, what should a boat operator do before changing course while actively towing a skier?",
+    "choice_a": "Nothing extra -- turns require no advance signal to the towed person",
+    "choice_b": "Signal the towed person of the intent to turn before turning the boat",
+    "choice_c": "Bring the boat to a complete stop before ever turning",
+    "choice_d": "Only the observer, never the operator, is permitted to decide when to turn",
+    "correct_choice": "B",
+    "explanation": "Georgia's course instructs the operator to always respond to the skier's signals and, if the boat needs to turn, to signal the skier of that intention beforehand.",
+    "weight": 2,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'While Towing a Skier'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "While towing a skier in Georgia, what division of duties does the boater safety course recommend between the operator and the observer?",
+    "choice_a": "The observer is responsible for steering the boat while the operator watches the skier",
+    "choice_b": "Both the operator and observer should watch only the skier and disregard other boat traffic",
+    "choice_c": "The operator maintains a sharp lookout for other vessels and obstructions in the water, while the observer watches the skier",
+    "choice_d": "Neither the operator nor the observer needs to keep watching the skier once towing begins",
+    "correct_choice": "C",
+    "explanation": "Georgia's course teaches that the operator should maintain a sharp lookout for other vessels and obstructions in the water, letting the observer handle watching the skier at all times.",
+    "weight": 2,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'While Towing a Skier'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Before a fallen or dropped skier is allowed to climb back into the towing boat in Georgia, what must the operator do?",
+    "choice_a": "Shift into neutral but leave the engine running at idle",
+    "choice_b": "Keep the engine running so the boat can hold its position against the current",
+    "choice_c": "Nothing special is required as long as the skier approaches from the bow",
+    "choice_d": "Shut off the engine before the skier is allowed to approach or board the boat",
+    "correct_choice": "D",
+    "explanation": "Georgia's boater safety course instructs operators to always shut off the engine before allowing a skier to approach or board the boat, to prevent propeller injuries.",
+    "weight": 3,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'While Towing a Skier'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is the correct procedure for a boat operator to follow when a towed skier falls or drops the tow line in Georgia?",
+    "choice_a": "Circle back slowly, keeping the skier in view and on the operator's side of the boat, to return the tow line or pick up the skier",
+    "choice_b": "Immediately accelerate away from the skier and circle back later once other boaters have cleared the area",
+    "choice_c": "Reverse straight back toward the skier at cruising speed",
+    "choice_d": "Have the observer jump into the water to swim the tow line back to the skier",
+    "correct_choice": "A",
+    "explanation": "Georgia's course instructs the operator, once a skier has dropped or fallen, to circle the skier slowly to either return the tow line or pick up the skier, always keeping the skier in view and on the operator's side of the boat.",
+    "weight": 2,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'While Towing a Skier'"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What capacity consideration does Georgia's boater safety course highlight specifically for boats towing a rider on an inner tube?",
+    "choice_a": "Inner tube riders are exempt from all vessel passenger-capacity considerations",
+    "choice_b": "The boat must not be overloaded with passengers, so that the towed rider(s) could safely reboard the boat at once without exceeding its rated capacity if the tube were to fail",
+    "choice_c": "Only the tube manufacturer's weight rating matters; the towing boat's passenger capacity is irrelevant",
+    "choice_d": "Capacity limits apply only when towing water skis, never when towing an inner tube",
+    "correct_choice": "B",
+    "explanation": "Georgia's course points out that operators towing someone on an inner tube should make sure the boat is not overloaded with passengers, so that if the tube fails and the rider needs to reboard, doing so will not exceed the vessel's rated capacity.",
+    "weight": 3,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Video: Georgia Water-Skiing Safety and Laws'"
+  }
+]

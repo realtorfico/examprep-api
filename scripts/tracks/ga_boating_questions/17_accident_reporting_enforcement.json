@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What must an operator involved in a boating accident do immediately at the scene?",
+    "choice_a": "Leave the scene immediately and report it within a month",
+    "choice_b": "Stop the vessel immediately, assist anyone injured or in danger unless doing so would seriously endanger the operator's own vessel or passengers, and give written name, address, and vessel ID to anyone injured or whose property was damaged",
+    "choice_c": "Only stop if another vessel was severely damaged",
+    "choice_d": "Wait for law enforcement to arrive before taking any action, even to render aid",
+    "correct_choice": "B",
+    "explanation": "An operator involved in a boating accident must stop immediately, render assistance unless doing so would seriously endanger their own vessel or passengers, and provide written name, address, and vessel identification to injured persons and owners of damaged property.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Boating Accidents'"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What dollar threshold of property damage triggers a mandatory boating accident report in Georgia?",
+    "choice_a": "Any property damage at all, no matter how small",
+    "choice_b": "Property damage exceeding $10,000",
+    "choice_c": "Property damage exceeding $2,000 to all vessels, docks, etc., involved in the accident",
+    "choice_d": "Property damage is never a reportable condition, only injuries are",
+    "correct_choice": "C",
+    "explanation": "A boating accident must be reported if it results in death, injury requiring first aid or medical attention, or property damage exceeding $2,000 to all vessels, docks, etc., involved.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Boating Accidents'"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Within how many hours must a boating accident be reported if a person dies within 24 hours as a result, is disabled more than 24 hours, requires medical treatment, or disappears from a vessel?",
+    "choice_a": "5 days",
+    "choice_b": "30 days",
+    "choice_c": "There is no reporting deadline in these situations",
+    "choice_d": "48 hours",
+    "correct_choice": "D",
+    "explanation": "While most accident reports must be filed within 5 days, a report is required within 48 hours if a person dies within 24 hours, is disabled more than 24 hours, requires medical treatment, or disappears from the vessel.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Boating Accidents'"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Who supplies the accident report form that must be filed for a reportable Georgia boating accident?",
+    "choice_a": "The Georgia DNR",
+    "choice_b": "The vessel's insurance company only",
+    "choice_c": "The county sheriff's office exclusively",
+    "choice_d": "No form exists; a verbal report is always sufficient",
+    "correct_choice": "A",
+    "explanation": "In the case of a reportable accident, the operator or owner must file an accident report form supplied by the Georgia DNR.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Boating Accidents'"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Can a boater be held civilly liable for assistance rendered in good faith after a boating accident?",
+    "choice_a": "Yes, any assistance rendered always creates civil liability",
+    "choice_b": "No, a person cannot be held liable for civil damages for assistance rendered in good faith and in a prudent manner",
+    "choice_c": "Liability depends solely on whether the rescuer is a licensed medical professional",
+    "choice_d": "Liability protection only applies to DNR officers",
+    "correct_choice": "B",
+    "explanation": "A person cannot be held liable for civil damages for assistance rendered in good faith and in a prudent manner at a boating accident scene, encouraging bystanders and other boaters to help.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Boating Accidents'"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Who has primary responsibility for enforcing the Georgia Boat Safety Act?",
+    "choice_a": "Only local city police departments",
+    "choice_b": "Only the U.S. Coast Guard, with no state role",
+    "choice_c": "The Game Wardens of the Georgia DNR, though all peace officers are authorized to enforce the law",
+    "choice_d": "Enforcement is handled entirely by private marina staff",
+    "correct_choice": "C",
+    "explanation": "Primary responsibility for enforcing the Georgia Boat Safety Act rests with the Game Wardens of the Georgia DNR, although all peace officers are authorized to enforce the law.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Enforcement'"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "What authority do Georgia enforcement officers have regarding a vessel on the water?",
+    "choice_a": "They may only issue citations by mail after the fact",
+    "choice_b": "They must obtain a warrant before stopping any vessel",
+    "choice_c": "They have no authority to board a vessel under any circumstance",
+    "choice_d": "They may stop and board a vessel to check compliance with state and federal boating laws",
+    "correct_choice": "D",
+    "explanation": "Officers have the authority to stop and board a vessel to check that the operator is complying with applicable state and federal boating laws.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Enforcement'"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "How far in advance must a Marine Event Permit application typically be submitted for an event on Georgia state-controlled waters?",
+    "choice_a": "At least 30 days in advance (90 days if the event is likely to attract 10,000 or more people)",
+    "choice_b": "No advance notice is required for marine events",
+    "choice_c": "Exactly 24 hours before the event",
+    "choice_d": "Marine events never require a DNR permit",
+    "correct_choice": "A",
+    "explanation": "A Marine Event Permit application must generally be submitted at least 30 days before the event, or at least 90 days in advance if the event is expected to draw 10,000 or more people.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Marine Events'"
+  },
+  {
+    "topic": "Accident Reporting & Enforcement",
+    "question": "Through which agency are permits for marine events held on federally controlled waters granted?",
+    "choice_a": "The Georgia DNR exclusively, regardless of water jurisdiction",
+    "choice_b": "The USCG, applied for at least 30 days in advance",
+    "choice_c": "No permit is required on federally controlled waters",
+    "choice_d": "The local county commission",
+    "correct_choice": "B",
+    "explanation": "Permits for marine events held on federally controlled waters are granted through the USCG, with applications required at least 30 days in advance.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Marine Events'"
+  }
+]

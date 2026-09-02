@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What is generally required to legally tow a water skier or tuber behind a boat, beyond having a rated tow line and tow point?",
+    "choice_a": "The operator alone can legally watch both the towed person and the direction of travel at the same time with no additional aid",
+    "choice_b": "Towing requires a second boat following behind at all times",
+    "choice_c": "Either an observer at least a certain age watching the person being towed at all times, or a wide-angle mirror that provides an equivalent rear view, in addition to the operator",
+    "choice_d": "No observer or mirror is ever required for towing water sports",
+    "correct_choice": "C",
+    "explanation": "Because an operator focused on steering cannot safely also watch a person being towed, towing generally requires either a qualified observer facing backward or a wide-angle rearview mirror, so someone is always keeping an eye on the skier or tuber.",
+    "weight": 4,
+    "source_note": "Universal water-sports observer/mirror requirement, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "During what hours is towing a person on water skis, a tube, or a wakeboard generally permitted?",
+    "choice_a": "Only between midnight and sunrise",
+    "choice_b": "At any hour of the day or night with no restriction",
+    "choice_c": "Only on weekends",
+    "choice_d": "From sunrise to sunset, since towed water sports require good visibility to safely track the person in the water and other traffic",
+    "correct_choice": "D",
+    "explanation": "Towed water sports rely on clear visibility to track the person in the water and avoid other traffic, so they are generally limited to daylight hours between sunrise and sunset.",
+    "weight": 3,
+    "source_note": "Universal sunrise-to-sunset towing restriction, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What hand signal does a skier commonly use to indicate they are okay after a fall?",
+    "choice_a": "A raised, closed fist or a thumbs-up gesture, signaling to the towing boat that they are unharmed",
+    "choice_b": "Splashing water repeatedly with both arms",
+    "choice_c": "Waving both arms rapidly overhead in a circular motion, the universal signal to speed up",
+    "choice_d": "There is no standard signal; the boat should simply guess",
+    "correct_choice": "A",
+    "explanation": "A raised fist or thumbs-up is the widely used signal for \"I'm okay\" after a fall, letting the towing boat and observer know the skier does not need immediate assistance, while waving both arms overhead generally signals distress or a need for help.",
+    "weight": 3,
+    "source_note": "Universal water-skiing hand signal conventions, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why must a boat towing a skier circle back carefully, rather than reversing directly, to pick up a fallen skier?",
+    "choice_a": "Circling back is required only if the skier is more than a mile away",
+    "choice_b": "Approaching directly in reverse risks running over the person in the water or entangling them in the tow line; circling around keeps the propeller and hull well clear while approaching from a controlled angle",
+    "choice_c": "Reversing is always the safest and fastest way to reach a fallen skier",
+    "choice_d": "There is no safety concern with backing directly toward a person in the water",
+    "correct_choice": "B",
+    "explanation": "Backing straight toward a person in the water risks propeller strike or fouling them in the tow line; circling around to approach from a controlled angle, engine idled or off near the person, is the safer standard technique.",
+    "weight": 3,
+    "source_note": "Universal towed-skier pickup technique, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why should a towing vessel's operator be alert to other boat traffic and swim areas before starting a tow on a busy lake like Lake Mead?",
+    "choice_a": "Skiers and tubers always stay in a perfectly straight line directly behind the boat",
+    "choice_b": "Swim areas and other boats pose no additional risk during towing",
+    "choice_c": "A tow line and a skier swinging wide behind the boat can extend well beyond the boat's own path, creating a collision risk with nearby vessels, docks, or swimmers that the operator must account for",
+    "choice_d": "A tow line has no effect on the space a boat and its towed rider occupy",
+    "correct_choice": "C",
+    "explanation": "A skier or tuber can swing well outside the towing boat's own wake path, especially while turning, so the operator must account for that extra swept area to avoid other vessels, docks, or swim zones on a crowded lake like Lake Mead.",
+    "weight": 3,
+    "source_note": "General towed water-sports space-awareness guidance applied to Lake Mead's busy recreational traffic"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What personal flotation device consideration applies specifically to a person being towed on water skis, a tube, or a wakeboard?",
+    "choice_a": "No life jacket is required for anyone being towed if they are a strong swimmer",
+    "choice_b": "Only the boat operator, never the towed person, needs a life jacket",
+    "choice_c": "A life jacket is required only if the towed person is under 13",
+    "choice_d": "The towed person must wear a Coast Guard-approved life jacket suitable for the activity, since standard swimwear alone does not meet the legal safety requirement",
+    "correct_choice": "D",
+    "explanation": "A person being towed on skis, a tube, or a wakeboard is legally required to wear an appropriate Coast Guard-approved life jacket, regardless of swimming ability, since falls at speed can cause disorientation even for strong swimmers.",
+    "weight": 3,
+    "source_note": "Universal towed water-sports PFD requirement, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What should be done with the tow line and handle when not actively towing a skier or tuber?",
+    "choice_a": "Bring it into the boat rather than leaving it trailing in the water, where it can foul the propeller or catch on another vessel",
+    "choice_b": "Leave it trailing freely behind the boat at all times",
+    "choice_c": "Tow lines never present any entanglement risk",
+    "choice_d": "Wrap it around the operator's wrist for safekeeping",
+    "correct_choice": "A",
+    "explanation": "A tow line left trailing in the water when not in use can wrap around the propeller or snag on another vessel or swimmer, so it should be brought aboard and secured when towing has stopped.",
+    "weight": 2,
+    "source_note": "Universal tow-line handling guidance, NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why is towing multiple riders on an inflatable tube behind a powerful boat a particular concern on Nevada's larger reservoirs?",
+    "choice_a": "Nevada law completely prohibits any tube towing",
+    "choice_b": "Higher speeds needed to lift larger or multiple riders increase the force of any fall, raising injury risk, and the operator and observer must judge the wider swing radius of the tube on turns",
+    "choice_c": "Tube towing carries no additional risk compared to towing a single water skier",
+    "choice_d": "Multiple riders on a tube automatically reduce the risk of injury",
+    "correct_choice": "B",
+    "explanation": "Tube towing often involves higher boat speeds and can carry multiple riders whose combined weight and positioning affect handling; falls at these speeds can be forceful, and the tube's wider swing on turns requires extra awareness from the operator and observer.",
+    "weight": 2,
+    "source_note": "General tube-towing risk guidance applied to Nevada's larger reservoirs and higher-speed towing conditions"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What should a boater do before starting to tow a skier near a designated swim beach on Lake Tahoe or Lake Mead?",
+    "choice_a": "Swim beaches have no bearing on where towing may occur",
+    "choice_b": "Towing is permitted inside a marked swim area as long as speed stays low",
+    "choice_c": "Move well away from the swim area first, since towing activities and swimmers should never be mixed in the same space",
+    "choice_d": "Start the tow directly next to the swim beach for convenience",
+    "correct_choice": "C",
+    "explanation": "Because marked swim areas are off-limits to vessel operation under rules like NRS 488.620, a boater must move well clear of a swim beach before beginning to tow a skier, tuber, or wakeboarder.",
+    "weight": 2,
+    "source_note": "NRS 488.620 (operation prohibited near swim/bathing areas) applied to towed water-sports planning"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What role does the observer play if a towed skier falls and signals distress rather than an \"I'm okay\" signal?",
+    "choice_a": "The observer's role ends once towing begins and has no further responsibility",
+    "choice_b": "Only the skier in the water can decide when help is needed, and the observer must wait for direct verbal confirmation",
+    "choice_c": "The boat should continue on its planned course regardless of what the observer sees",
+    "choice_d": "The observer immediately alerts the operator so the boat can safely circle back and assist, and may help raise a rescue signal such as a raised paddle or orange flag if others need to be alerted",
+    "correct_choice": "D",
+    "explanation": "The observer's job continues throughout the tow: watching for a distress signal after a fall and promptly alerting the operator so the boat can respond quickly is central to why an observer or equivalent mirror is required in the first place.",
+    "weight": 2,
+    "source_note": "Universal towed water-sports observer responsibility, NASBLA-aligned boating safety curriculum"
+  }
+]

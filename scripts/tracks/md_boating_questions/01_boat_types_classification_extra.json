@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "Under the same federal length-based vessel classification system, which class covers vessels less than 16 feet long?",
+    "choice_a": "Class 2 (26 feet to less than 40 feet)",
+    "choice_b": "Class A (less than 16 feet)",
+    "choice_c": "Class 1 (16 feet to less than 26 feet)",
+    "choice_d": "Class 3 (40 feet to 65 feet)",
+    "correct_choice": "B",
+    "explanation": "The federal vessel length classes are Class A (under 16 ft), Class 1 (16 ft to under 26 ft), Class 2 (26 ft to under 40 ft), and Class 3 (40 ft to 65 ft); most small recreational runabouts, canoes, and PWCs fall into Class A.",
+    "weight": 2,
+    "source_note": "Universal USCG recreational vessel length-classification convention used for equipment carriage requirements"
+  },
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "What distinguishes a catamaran from most other recreational vessels commonly seen on Maryland waters?",
+    "choice_a": "It has two parallel hulls connected by a deck, offering greater stability than a single-hull (monohull) vessel of similar length",
+    "choice_b": "It is propelled exclusively by oars",
+    "choice_c": "It is legally classified as a personal watercraft",
+    "choice_d": "It cannot legally be registered in Maryland",
+    "correct_choice": "A",
+    "explanation": "A catamaran's twin-hull design spreads buoyancy across two separate hulls, generally giving it greater initial stability than a comparable monohull vessel, whether under sail or power.",
+    "weight": 1,
+    "source_note": "Universal recreational vessel-type fundamentals (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "What type of vessel is a 'jon boat,' commonly used on Maryland's shallow tributaries and marshes?",
+    "choice_a": "A flat-bottomed, low-freeboard utility boat well suited to shallow, calm water",
+    "choice_b": "A high-speed offshore racing boat",
+    "choice_c": "A type of personal watercraft",
+    "choice_d": "A large displacement-hull trawler",
+    "correct_choice": "A",
+    "explanation": "Jon boats have a simple, flat-bottomed hull and low freeboard, making them stable and practical for shallow, calm water such as marshes, coves, and narrow tributaries rather than open, rough water.",
+    "weight": 1,
+    "source_note": "Universal recreational vessel-type fundamentals (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "What makes an airboat suited for operating in shallow Chesapeake Bay marshes and grass flats where a conventional propeller-driven boat could not go?",
+    "choice_a": "It has a submerged propeller that automatically retracts in shallow water",
+    "choice_b": "It is propelled by an above-water, aircraft-style propeller (or fan) rather than a submerged propeller, letting it operate in very shallow water and marsh grass without fouling",
+    "choice_c": "It has no hull at all",
+    "choice_d": "It can only operate in deep offshore water",
+    "correct_choice": "B",
+    "explanation": "An airboat's flat hull and above-water propulsion by an aircraft-style propeller or fan mean it has nothing submerged to strike bottom or foul on vegetation, allowing operation in extremely shallow marsh and grass-flat areas.",
+    "weight": 1,
+    "source_note": "Universal recreational/utility vessel-type fundamentals (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Vessel Types and Classification",
+    "question": "Compared to a flat-bottomed hull, what is a key advantage of a deep-V hull for a vessel that regularly operates on the open Chesapeake Bay?",
+    "choice_a": "It provides a smoother ride by cutting through chop and waves, though it may feel less stable at rest in calm water than a flat-bottomed hull",
+    "choice_b": "It cannot plane at any speed",
+    "choice_c": "It is only used on sailboats",
+    "choice_d": "It has no effect on ride quality in rough water",
+    "correct_choice": "A",
+    "explanation": "A deep-V hull's sharper deadrise angle lets it slice through chop and waves for a smoother ride in rough, open water like the Bay's wider reaches, though it can feel less stable than a flat-bottomed hull when sitting still.",
+    "weight": 2,
+    "source_note": "Universal boating-safety hull-design fundamentals (NASBLA-aligned course content)"
+  }
+]

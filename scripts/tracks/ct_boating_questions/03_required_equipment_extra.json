@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What waters does Connecticut's No Discharge Area (NDA) program cover, and what does it prohibit?",
+    "choice_a": "All of Connecticut's coastal waters, from the Rhode Island boundary in the Pawcatuck River to the New York boundary in the Byram River, where discharge of any vessel sewage -- treated or untreated -- is prohibited",
+    "choice_b": "Only a small stretch of the Connecticut River, and only untreated sewage is prohibited",
+    "choice_c": "No Connecticut waters are designated as No Discharge Areas",
+    "choice_d": "Only marinas, not open water, are covered by the NDA program",
+    "correct_choice": "A",
+    "explanation": "Connecticut has designated all of its coastal waters, from the Rhode Island state boundary in the Pawcatuck River to the New York state boundary in the Byram River, as a No Discharge Area, prohibiting the discharge of any vessel sewage, whether treated or untreated -- broader than the baseline federal Clean Water Act prohibition on untreated sewage alone.",
+    "weight": 4,
+    "source_note": "CT DEEP, \"Connecticut's No Discharge Area Program,\" portal.ct.gov/DEEP/Boating/No-Discharge-Area"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "If a Connecticut vessel's head is plumbed with a \"Y-valve\" that can route waste either overboard or to a holding tank, what must the operator do while in a No Discharge Area?",
+    "choice_a": "Lock or secure the Y-valve in the position that diverts sewage into the holding tank, preventing overboard discharge",
+    "choice_b": "Leave the Y-valve in whatever position is most convenient",
+    "choice_c": "Remove the Y-valve entirely; it is illegal to install one in Connecticut",
+    "choice_d": "The Y-valve only needs to be secured while the vessel is docked, never underway",
+    "correct_choice": "A",
+    "explanation": "Within a No Discharge Area, a vessel's Y-valve must be locked or secured to divert sewage into a holding tank rather than overboard, ensuring compliance with the discharge prohibition even though the plumbing is physically capable of releasing waste directly into the water.",
+    "weight": 4,
+    "source_note": "CT DEEP, \"Sewage Disposal,\" portal.ct.gov/DEEP/Boating/Clean-Marina/Sewage-Disposal"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Roughly how many pump-out facilities are available to boaters throughout Connecticut, and at what typical cost?",
+    "choice_a": "Approximately 90 facilities, offering free service to boaters",
+    "choice_b": "Exactly 3 facilities statewide, each charging a $200 fee",
+    "choice_c": "There are no pump-out facilities anywhere in Connecticut",
+    "choice_d": "Over 1,000 facilities, each requiring a paid annual membership",
+    "correct_choice": "A",
+    "explanation": "Connecticut has approximately 90 pump-out facilities located throughout its waters, and all recreational pump-out facilities in the state offer free service to boaters, funded through the federal Clean Vessel Act using excise taxes on motorboat fuel and related equipment.",
+    "weight": 3,
+    "source_note": "CT DEEP, \"Pumpout Facilities & Clean Boating Information\" and Connecticut Clean Vessel Act (CVA) Program pages, portal.ct.gov/DEEP/Boating/CVA"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is a Type III Marine Sanitation Device (MSD), the type of onboard sewage system most relevant to Connecticut's No Discharge Area rules?",
+    "choice_a": "A holding tank system that retains untreated sewage aboard for later disposal at a pump-out facility, rather than treating or discharging it",
+    "choice_b": "A device that treats sewage well enough to legally discharge it anywhere, including a No Discharge Area",
+    "choice_c": "A type of bilge pump unrelated to sewage",
+    "choice_d": "A device required only on vessels over 65 feet",
+    "correct_choice": "A",
+    "explanation": "A Type III MSD is a holding tank that simply retains untreated sewage aboard until it can be pumped out at a facility, rather than treating it for direct discharge; this is the standard setup boaters use to comply with Connecticut's No Discharge Area, which bars overboard discharge regardless of treatment level.",
+    "weight": 3,
+    "source_note": "CT DEEP Clean Vessel Act (CVA) Program materials, portal.ct.gov/DEEP/Boating/CVA"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "For a small Connecticut boat with no manufacturer's capacity plate, what formula is commonly used to estimate the safe number of persons it can carry in good weather?",
+    "choice_a": "Number of persons (averaging 150 lbs. each) equals the boat's length in feet multiplied by its width in feet, divided by 15",
+    "choice_b": "Number of persons equals the boat's length in feet alone, with width ignored",
+    "choice_c": "There is no formula; boats without a capacity plate have no limit on the number of persons aboard",
+    "choice_d": "Number of persons equals the boat's horsepower divided by 10",
+    "correct_choice": "A",
+    "explanation": "For small boats without a manufacturer's capacity plate (generally older or smaller craft), the widely used formula is: number of persons, averaging 150 pounds each, equals length in feet multiplied by width in feet, divided by 15 -- intended only as a good-weather, calm-water estimate, not a substitute for sound judgment in rough conditions.",
+    "weight": 3,
+    "source_note": "General vessel-capacity fundamentals (federal formula, NASBLA-aligned boating safety curriculum) applied to Connecticut's overloading guidance"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What basic precautions should a boater take when fueling a gasoline-powered vessel, to avoid a fire or explosion at the fuel dock?",
+    "choice_a": "No smoking near the fueling area, keeping the nozzle in contact with the fill opening to prevent a static spark, and refueling portable containers on the dock or pavement rather than aboard the boat",
+    "choice_b": "Fueling safety precautions are unnecessary as long as the engine is running during fueling",
+    "choice_c": "Smoking is permitted as long as it happens more than one foot from the fuel fill",
+    "choice_d": "Portable fuel containers should always be filled while sitting inside the boat",
+    "correct_choice": "A",
+    "explanation": "Standard fueling safety practice calls for no smoking near the fuel dock, keeping metal-to-metal contact between the nozzle and the fill opening to prevent a static-electricity spark, and filling portable fuel containers on the ground or dock (not inside the boat) to maintain a proper electrical ground and avoid trapping vapors aboard.",
+    "weight": 4,
+    "source_note": "General fueling-safety fundamentals (NASBLA-aligned boating safety curriculum) applied to Connecticut boating"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Although not federally mandated equipment for every small recreational boat, why do boating safety courses universally recommend carrying an anchor and an adequate length of anchor line aboard?",
+    "choice_a": "To allow a disabled or waiting vessel to hold its position safely rather than drift into a hazard, shipping lane, or another vessel",
+    "choice_b": "An anchor is required only to satisfy a vessel's capacity plate rating",
+    "choice_c": "Anchors serve no safety function and are purely for convenience while fishing",
+    "choice_d": "An anchor is required equipment only on vessels equipped with a PWC",
+    "correct_choice": "A",
+    "explanation": "Even where not specifically mandated by size class, a properly sized anchor and sufficient anchor line let a boater hold position if the engine fails, fuel runs low, or the operator needs to wait out worsening conditions, preventing an uncontrolled drift into shipping channels, rocks, or other vessels.",
+    "weight": 2,
+    "source_note": "General recommended-equipment fundamentals (NASBLA-aligned boating safety curriculum) applied to Connecticut boating"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why do boating safety courses recommend a manual bilge pump or bailer aboard, even on boats equipped with an automatic electric bilge pump?",
+    "choice_a": "A manual backup can remove water from the bilge if the boat loses electrical power or the automatic pump fails or is overwhelmed",
+    "choice_b": "Manual bilge pumps are required to replace anchors entirely",
+    "choice_c": "A manual pump is only useful for cleaning the boat's exterior",
+    "choice_d": "Manual bilge pumps have no purpose once an electric pump is installed",
+    "correct_choice": "A",
+    "explanation": "An electric bilge pump depends on a functioning battery and wiring; a manual bilge pump or simple bailer provides a backup way to remove water if the electrical system fails, the pump is overwhelmed by a serious leak, or the battery is dead, which is why it is widely recommended as basic safety gear.",
+    "weight": 2,
+    "source_note": "General recommended-equipment fundamentals (NASBLA-aligned boating safety curriculum) applied to Connecticut boating"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "How should a boater safely store pyrotechnic visual distress signals (flares) aboard a Connecticut vessel?",
+    "choice_a": "In a cool, dry, easily accessible watertight container, checked periodically for the manufacturer's expiration date",
+    "choice_b": "Loose in the bilge, where they will stay driest",
+    "choice_c": "It does not matter how flares are stored as long as they are aboard somewhere",
+    "choice_d": "Flares should be stored fully exposed to direct sunlight to keep them warm and ready",
+    "correct_choice": "A",
+    "explanation": "Pyrotechnic visual distress signals degrade with age, heat, and moisture, so they should be kept in a cool, dry, watertight container that is still quickly accessible in an emergency, and boaters should check the manufacturer's expiration date each season, since expired flares may not meet the Coast Guard's VDS carriage requirement.",
+    "weight": 3,
+    "source_note": "General visual-distress-signal handling fundamentals (NASBLA-aligned boating safety curriculum) applied to Connecticut's VDS requirements"
+  }
+]

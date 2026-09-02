@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Invasive Species: Clean, Drain, Dry",
+    "question": "What is Texas's statewide 'Clean, Drain, Dry' rule primarily intended to prevent?",
+    "choice_a": "Damage to boat trailers from road salt",
+    "choice_b": "The spread of zebra mussels and other invasive species between lakes and rivers by boats and trailers carrying residual water",
+    "choice_c": "Excess fuel consumption while trailering",
+    "choice_d": "It is a voluntary courtesy program with no connection to invasive species",
+    "correct_choice": "B",
+    "explanation": "Texas's statewide clean-drain-dry regulation exists to stop boaters from unintentionally transporting zebra mussels and other aquatic invasive species between water bodies via residual water in bilges, live wells, and other compartments.",
+    "weight": 4,
+    "source_note": "TPWD Zebra Mussel / Clean-Drain-Dry rule, 31 TAC Chapter 57, Subchapter N"
+  },
+  {
+    "topic": "Invasive Species: Clean, Drain, Dry",
+    "question": "Under the statewide Texas rule, what must boaters do with all water in their vessel before leaving or approaching a body of public fresh water?",
+    "choice_a": "There is no requirement to drain any water from the vessel",
+    "choice_b": "Only vessels longer than 40 feet must drain their water",
+    "choice_c": "Drain all water from the vessel, including bilges, live wells, and bait buckets, and remove the drain plug during transport",
+    "choice_d": "Water only needs to be drained from PWCs, not other motorboats",
+    "correct_choice": "C",
+    "explanation": "The statewide rule requires boaters to drain all water -- including bilges, live wells, and bait buckets -- from their vessel and keep the drain plug out before leaving or approaching any Texas public fresh water body.",
+    "weight": 4,
+    "source_note": "TPWD Clean-Drain-Dry rule -- draining requirement"
+  },
+  {
+    "topic": "Invasive Species: Clean, Drain, Dry",
+    "question": "What is the criminal classification for failing to comply with Texas's clean-drain-dry requirement?",
+    "choice_a": "A first-degree felony",
+    "choice_b": "There is no penalty for noncompliance",
+    "choice_c": "A capital offense",
+    "choice_d": "A Class C misdemeanor",
+    "correct_choice": "D",
+    "explanation": "Failing to properly clean, drain, and dry a vessel as required by Texas's statewide invasive species rule is a Class C misdemeanor.",
+    "weight": 3,
+    "source_note": "TPWD Clean-Drain-Dry rule -- penalty classification"
+  },
+  {
+    "topic": "Invasive Species: Clean, Drain, Dry",
+    "question": "Why are zebra mussels considered such a significant problem for Texas lakes once they become established?",
+    "choice_a": "They reproduce rapidly, can clog water intake pipes and boat engines, damage infrastructure, and are extremely difficult or impossible to eliminate once established",
+    "choice_b": "Zebra mussels are harmless and only affect fish populations, never boats or infrastructure",
+    "choice_c": "Zebra mussels are native to Texas and pose no ecological threat",
+    "choice_d": "Zebra mussels only affect saltwater environments, not freshwater lakes",
+    "correct_choice": "A",
+    "explanation": "Zebra mussels reproduce explosively, can clog water intake structures and boat engine cooling systems, damage docks and infrastructure, and are essentially impossible to remove once they colonize a lake.",
+    "weight": 3,
+    "source_note": "TPWD zebra mussel impact information"
+  },
+  {
+    "topic": "Invasive Species: Clean, Drain, Dry",
+    "question": "Besides zebra mussels, what other type of invasive aquatic material can boaters unintentionally spread between Texas water bodies?",
+    "choice_a": "Boaters cannot spread anything other than zebra mussels",
+    "choice_b": "Invasive aquatic plants, such as fragments of hydrilla or giant salvinia, and other invasive fish species carried in live wells or bait buckets",
+    "choice_c": "Only fuel and oil residue, never any biological material",
+    "choice_d": "Invasive species spread only through the air, never via boats",
+    "correct_choice": "B",
+    "explanation": "In addition to zebra mussels, invasive aquatic vegetation such as hydrilla and giant salvinia fragments, as well as invasive fish and other organisms, can hitch a ride on trailers, live wells, and bait buckets between lakes.",
+    "weight": 3,
+    "source_note": "TPWD aquatic invasive species information"
+  },
+  {
+    "topic": "Invasive Species: Clean, Drain, Dry",
+    "question": "What does the 'clean' step of clean-drain-dry involve, beyond draining water from the boat?",
+    "choice_a": "Washing the boat only with a specific brand of soap approved by TPWD",
+    "choice_b": "Cleaning applies only to the interior of the boat, never the trailer",
+    "choice_c": "Removing all visible mud, plants, and debris from the boat, trailer, and equipment before leaving the ramp area",
+    "choice_d": "There is no cleaning step; only draining is required",
+    "correct_choice": "C",
+    "explanation": "The 'clean' step calls for removing visible mud, aquatic vegetation, and debris from the hull, trailer, and any equipment (like anchors or waders) before leaving a lake, since these can harbor invasive species larvae or fragments.",
+    "weight": 2,
+    "source_note": "TPWD Clean-Drain-Dry procedures"
+  },
+  {
+    "topic": "Invasive Species: Clean, Drain, Dry",
+    "question": "How long should a boater let their vessel and equipment dry between uses on different lakes, as recommended by TPWD, to help kill any remaining invasive organisms?",
+    "choice_a": "Drying time makes no difference to invasive species survival",
+    "choice_b": "One minute of air exposure is always sufficient regardless of weather",
+    "choice_c": "Boats should never be dried between uses",
+    "choice_d": "Several days in warm, dry weather (longer in cooler or humid conditions), leaving compartments open so everything dries fully",
+    "correct_choice": "D",
+    "explanation": "TPWD recommends allowing a boat and equipment to dry completely for several days in warm weather (longer when cool or humid) with compartments left open, since thoroughly drying out the vessel helps kill invasive organisms that draining alone might miss.",
+    "weight": 2,
+    "source_note": "TPWD Clean-Drain-Dry procedures -- drying recommendation"
+  }
+]

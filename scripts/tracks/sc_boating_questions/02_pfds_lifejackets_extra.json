@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "What is a Type I PFD (offshore life jacket) best suited for, compared to the other wearable PFD types?",
+    "choice_a": "Rough, open, or remote water where rescue may be delayed, since it provides the most buoyancy and is the most effective type at turning an unconscious wearer face-up",
+    "choice_b": "It is designed only for calm, protected inland lakes",
+    "choice_c": "It is the least buoyant of all PFD types",
+    "choice_d": "It is intended only for use while water skiing",
+    "correct_choice": "A",
+    "explanation": "A Type I PFD (offshore life jacket) offers the greatest buoyancy of the wearable types and is the most reliable at turning most unconscious wearers face-up, making it the recommended choice for open, rough, or remote water where help may take a long time to arrive.",
+    "weight": 4,
+    "source_note": "USCG PFD type classifications (Type I offshore life jacket), universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Why is having the correct number of PFDs aboard not, by itself, enough to satisfy South Carolina's PFD requirement for every occupant?",
+    "choice_a": "The number of PFDs is the only thing that ever matters; fit is irrelevant",
+    "choice_b": "Each PFD must also be properly sized to the specific person who will wear it, since an oversized or undersized PFD can slip off or fail to keep the wearer's head above water",
+    "choice_c": "South Carolina law does not require PFDs to fit at all",
+    "choice_d": "Only the operator's PFD needs to fit properly",
+    "correct_choice": "B",
+    "explanation": "Federal PFD standards, applied under South Carolina's equipment law, require each wearable PFD to be the proper size for the specific person aboard who will wear it, since simply having the right total count of PFDs does not help if a device is too large or too small for the occupant assigned to it.",
+    "weight": 4,
+    "source_note": "Federal PFD sizing standards (33 CFR 175) applied under S.C. Code Ann. Section 50-21-610"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Can a Type IV throwable device (such as a boat cushion or ring buoy) be substituted for a missing wearable PFD to satisfy the one-PFD-per-person requirement?",
+    "choice_a": "Yes, a throwable device always counts as a substitute for a wearable PFD",
+    "choice_b": "No, a Type IV throwable device is a supplemental piece of rescue equipment meant to be thrown to a person in the water and does not satisfy the separate requirement that every person aboard have their own wearable PFD",
+    "choice_c": "Throwable devices are banned from South Carolina vessels entirely",
+    "choice_d": "Only children may rely on a throwable device instead of a wearable PFD",
+    "correct_choice": "B",
+    "explanation": "A Type IV throwable device serves a different safety purpose -- being tossed to a person who has fallen overboard -- and is carried in addition to, not instead of, a properly sized wearable PFD for each person aboard, since a throwable cannot be worn to keep an occupant afloat before an emergency occurs.",
+    "weight": 3,
+    "source_note": "Federal PFD carriage requirements (33 CFR 175), distinction between wearable and throwable device purposes"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "What is a key maintenance difference between an older foam (inherently buoyant) PFD and a modern inflatable PFD?",
+    "choice_a": "Foam PFDs require a CO2 cartridge to work, while inflatable PFDs never need any maintenance",
+    "choice_b": "Neither type requires any inspection ever",
+    "choice_c": "A foam PFD provides buoyancy through solid flotation material that can degrade or compress over years of use, while an inflatable PFD relies on a mechanical inflation system (CO2 cartridge and firing mechanism) that must be checked separately from the fabric itself",
+    "choice_d": "Inflatable PFDs never lose buoyancy under any circumstance",
+    "correct_choice": "C",
+    "explanation": "A foam PFD's buoyancy comes from solid flotation material that can lose effectiveness if it becomes compressed, waterlogged, or degraded over years of sun and water exposure, while an inflatable PFD depends on a separate mechanical system -- the CO2 cartridge and inflation mechanism -- that must be inspected on its own in addition to checking the fabric shell.",
+    "weight": 3,
+    "source_note": "USCG PFD material and maintenance guidance, universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "Why are inflatable PFDs generally not recommended or approved for young children or non-swimmers?",
+    "choice_a": "Inflatable PFDs are appropriate for every wearer regardless of age or swimming ability with no exception",
+    "choice_b": "A child or non-swimmer may not be able to activate the inflation mechanism reliably or may lack the swimming ability needed if the device fails to inflate as expected, so foam inherently buoyant PFDs are the recommended choice for that group",
+    "choice_c": "Inflatable PFDs are illegal for anyone to wear in South Carolina",
+    "choice_d": "Inflatable PFDs provide less buoyancy than a foam PFD once fully inflated",
+    "correct_choice": "B",
+    "explanation": "Because a young child or a non-swimmer may not reliably activate an inflatable PFD's manual mechanism or cope if an automatic mechanism fails, USCG guidance and most inflatable PFD labels themselves restrict or discourage their use for that group, recommending a standard foam inherently buoyant PFD instead.",
+    "weight": 3,
+    "source_note": "USCG inflatable PFD approval label restrictions, universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "What information should a boater check on a PFD's approval label before relying on it to meet South Carolina's carriage requirement?",
+    "choice_a": "Only the color of the PFD, since labels carry no useful information",
+    "choice_b": "The manufacturer's brand name only, ignoring size and type information",
+    "choice_c": "The U.S. Coast Guard approval information, the PFD's type, and the size/weight range it is approved for, so it matches the specific person who will wear it",
+    "choice_d": "Approval labels are optional and may be removed without affecting compliance",
+    "correct_choice": "C",
+    "explanation": "A PFD's sewn-in approval label identifies its Coast Guard approval, its type classification, and the weight/chest-size range it is designed for; checking this label against the intended wearer confirms the device both counts toward the legal requirement and will actually perform as intended for that person.",
+    "weight": 3,
+    "source_note": "USCG PFD approval labeling requirements, universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "PFDs and Life Jackets",
+    "question": "How should a South Carolina boater store PFDs during the off-season to keep them serviceable for next year?",
+    "choice_a": "Leave them balled up and wet inside a sealed locker for the winter",
+    "choice_b": "Store them in a cool, dry, ventilated place away from direct sunlight and chemicals such as fuel or cleaning solvents, which can degrade fabric and foam over time",
+    "choice_c": "Storage conditions have no effect on a PFD's future performance",
+    "choice_d": "Store them outdoors in direct sun to fully air them out",
+    "correct_choice": "B",
+    "explanation": "Prolonged exposure to sunlight, moisture, and chemicals such as fuel or solvents can weaken PFD fabric, straps, and foam over time, so proper off-season storage in a cool, dry, ventilated space away from those exposures helps ensure the PFD is still fully serviceable when boating season resumes.",
+    "weight": 2,
+    "source_note": "USCG/NASBLA PFD care and storage guidance, universal boating safety curriculum"
+  }
+]

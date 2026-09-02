@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Weather and Boating",
+    "question": "What should every boater do before departing on a Pennsylvania waterway, regardless of how calm conditions currently appear?",
+    "choice_a": "Only check weather if traveling more than 20 miles from the launch point",
+    "choice_b": "Weather conditions never change quickly enough to matter for short trips",
+    "choice_c": "Check the current weather forecast and marine/lake conditions for the planned trip duration",
+    "choice_d": "Weather forecasts are unreliable and not worth checking before departure",
+    "correct_choice": "C",
+    "explanation": "Checking a current weather forecast before departure is a basic but essential pre-trip step, since conditions on open water like Lake Erie or a large reservoir can change faster than on land.",
+    "weight": 2,
+    "source_note": "Pre-departure weather-check practice, PA-approved boating courses"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "Which visual and atmospheric signs can indicate an approaching thunderstorm while out on the water?",
+    "choice_a": "A clear blue sky with no clouds at all",
+    "choice_b": "Calm, glassy water with no wind",
+    "choice_c": "A steady, unchanging light breeze",
+    "choice_d": "Darkening clouds building vertically, a sudden shift or increase in wind, and a noticeable drop in temperature or barometric pressure",
+    "correct_choice": "D",
+    "explanation": "Towering dark clouds, a sudden wind shift or gust, falling temperature, and dropping barometric pressure are classic warning signs that a thunderstorm may be approaching, and boaters should head to shore promptly when they appear.",
+    "weight": 2,
+    "source_note": "Weather-hazard recognition, PA-approved boating courses"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "What should a boater do if caught on open water during a thunderstorm and unable to reach shore in time?",
+    "choice_a": "Lower antennas if possible, stay low in the boat, avoid touching metal objects, and if possible, move away from the tallest point on the water",
+    "choice_b": "Stand up to get a better view of the lightning",
+    "choice_c": "Hold onto metal railings for stability",
+    "choice_d": "Continue at full speed toward the nearest point of interest",
+    "correct_choice": "A",
+    "explanation": "During a thunderstorm on the water, boaters should lower antennas or fishing rods, crouch low in the boat, avoid contact with metal, and try not to be the tallest object on the water, all of which reduce lightning-strike risk.",
+    "weight": 2,
+    "source_note": "Thunderstorm safety on the water, PA-approved boating courses"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "What does a 'small craft advisory' issued by the National Weather Service generally mean for boaters?",
+    "choice_a": "A small craft advisory indicates unusually calm water",
+    "choice_b": "Sustained winds and/or wave conditions are expected that could be hazardous to small boats, and operators of smaller or less-stable craft should use caution or avoid going out",
+    "choice_c": "All boating is completely and legally banned during the advisory",
+    "choice_d": "It only applies to commercial cargo ships",
+    "correct_choice": "B",
+    "explanation": "A small craft advisory warns that wind and/or wave conditions may create a hazard particularly for smaller, less-stable vessels, and boaters in small or open craft should consider postponing their trip.",
+    "weight": 2,
+    "source_note": "NWS small craft advisory meaning, PA-approved boating courses"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "How can wind blowing against a strong current affect water conditions on a Pennsylvania river or channel?",
+    "choice_a": "It has no measurable effect on wave conditions",
+    "choice_b": "It only affects sailboats, not powerboats",
+    "choice_c": "It can create steep, choppy waves that are more hazardous than the wind or current would produce alone",
+    "choice_d": "Wind and current opposing each other always produces perfectly flat water",
+    "correct_choice": "C",
+    "explanation": "When wind blows opposite to a current's direction, it can stack up steeper, closer-together waves than either factor would create alone, creating rougher and more dangerous conditions for small boats.",
+    "weight": 2,
+    "source_note": "Wind-against-current wave hazard, PA-approved boating courses"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "What precaution should a boater take when operating in fog on a Pennsylvania lake or river?",
+    "choice_a": "Increase speed to exit the fog bank sooner",
+    "choice_b": "Turn off the boat's horn to avoid startling other boaters",
+    "choice_c": "Fog has no impact on safe boat operation",
+    "choice_d": "Slow down, sound the appropriate fog signal at intervals, and use radar or GPS if available while relying primarily on a sharp lookout",
+    "correct_choice": "D",
+    "explanation": "In fog, a vessel should reduce speed, sound fog signals at required intervals, and use navigation aids like GPS or radar to supplement -- not replace -- a vigilant visual and auditory lookout.",
+    "weight": 2,
+    "source_note": "Fog operating procedure, PA-approved boating courses"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "Why might weather conditions change more rapidly and unpredictably on Lake Erie than on a small inland Pennsylvania lake?",
+    "choice_a": "Its large open surface area allows wind and waves to build significantly over a longer fetch, similar to ocean conditions",
+    "choice_b": "Lake Erie's small size prevents any significant wave development",
+    "choice_c": "Weather over Lake Erie never changes throughout the boating season",
+    "choice_d": "Lake Erie is entirely sheltered from wind by surrounding terrain",
+    "correct_choice": "A",
+    "explanation": "Lake Erie's large, open surface gives wind a long 'fetch' to build wave height and can generate rapidly changing, ocean-like conditions that are less common on smaller, more sheltered inland Pennsylvania lakes.",
+    "weight": 2,
+    "source_note": "Lake Erie fetch/wave-development characteristics, PA-specific waterway"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "What is a practical reason to postpone a boating trip when a forecast calls for strong, gusty winds?",
+    "choice_a": "Wind conditions never factor into a safe-boating decision",
+    "choice_b": "Strong wind reduces boat control, increases wave height, and makes docking, anchoring, and man-overboard recovery significantly harder",
+    "choice_c": "Wind has no meaningful effect on boat handling",
+    "choice_d": "Strong wind only affects sailboats",
+    "correct_choice": "B",
+    "explanation": "High winds make a boat harder to steer and dock, build up dangerous wave conditions, and complicate emergency maneuvers like recovering a person overboard, all of which are good reasons to reconsider a trip.",
+    "weight": 2,
+    "source_note": "Wind-hazard trip-planning guidance, PA-approved boating courses"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "What resource can boaters check throughout a trip, not just before departure, to stay aware of changing weather on the water?",
+    "choice_a": "Only the color of the water can indicate a coming storm",
+    "choice_b": "Weather monitoring devices are illegal to use aboard a recreational boat",
+    "choice_c": "A portable weather radio, marine forecast updates, or a smartphone weather app with cell or satellite reception",
+    "choice_d": "There is no way to monitor weather once already on the water",
+    "correct_choice": "C",
+    "explanation": "A NOAA weather radio, marine radio forecast broadcasts, or a smartphone app (where reception allows) let boaters continue monitoring conditions throughout a trip, not just before leaving the dock.",
+    "weight": 1,
+    "source_note": "Ongoing weather-monitoring guidance, PA-approved boating courses"
+  },
+  {
+    "topic": "Weather and Boating",
+    "question": "If dark clouds and a sudden temperature drop appear while boating on a Pennsylvania lake, what is the safest response?",
+    "choice_a": "Continue the planned route since storms rarely materialize",
+    "choice_b": "Anchor in open water and wait it out",
+    "choice_c": "Increase speed to visit one more location before the storm arrives",
+    "choice_d": "Head to the nearest safe shore promptly, rather than waiting to see if the storm actually develops",
+    "correct_choice": "D",
+    "explanation": "Early warning signs of a storm should prompt an immediate, cautious return to shore, since conditions on open water can deteriorate faster than a boat can outrun a fast-moving storm cell.",
+    "weight": 2,
+    "source_note": "Storm-response decision-making, PA-approved boating courses"
+  }
+]

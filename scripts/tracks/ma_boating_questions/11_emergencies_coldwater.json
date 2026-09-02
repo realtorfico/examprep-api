@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "If a small boat capsizes, what is generally the safest action for those aboard?",
+    "choice_a": "Immediately swim for the nearest shore, no matter how far away it is",
+    "choice_b": "Dive underneath the capsized hull and remain there until rescue arrives",
+    "choice_c": "Remove your PFD to swim more easily toward shore",
+    "choice_d": "Stay with the boat if it remains afloat, since it is easier for rescuers to spot a capsized boat than a swimmer, and swimming to shore is often farther and more dangerous than it appears",
+    "correct_choice": "D",
+    "explanation": "A capsized boat usually still provides flotation and is much easier for searchers to spot than a person in the water; distances to shore are commonly misjudged, so staying with the vessel is generally the safer choice than attempting a long swim.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (capsizing response), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the first response recommended if a fire breaks out on a boat?",
+    "choice_a": "Cut off the fuel supply, position the boat so the fire is downwind, and use the appropriate fire extinguisher aimed at the base of the flames",
+    "choice_b": "Immediately jump overboard before taking any other action, even if the fire is small and contained",
+    "choice_c": "Pour water directly on a fuel or electrical fire",
+    "choice_d": "Continue operating at full throttle to reach shore as quickly as possible",
+    "correct_choice": "A",
+    "explanation": "When a fire starts, cutting the fuel supply, maneuvering to keep the fire downwind of the crew, and applying a proper marine (Type B) extinguisher at the base of the flames gives the best chance of controlling it; water should never be used on a fuel or electrical fire, and abandoning ship should be a last resort if the fire cannot be controlled.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (onboard fire response), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What should the crew of a boat do immediately if a person falls overboard?",
+    "choice_a": "Wait for the person to swim back to the boat unaided before taking any action",
+    "choice_b": "Shout 'person overboard,' assign someone to keep constant visual contact with the person in the water, throw a flotation device toward them, and maneuver the boat back carefully",
+    "choice_c": "Continue on course and circle back only after reaching the destination",
+    "choice_d": "Immediately put the engine in neutral and abandon all further action",
+    "correct_choice": "B",
+    "explanation": "A person-overboard response should include an immediate alert, assigning a dedicated spotter to keep eyes on the person at all times (they can be surprisingly hard to relocate once lost from sight), throwing a throwable PFD, and carefully maneuvering the boat back -- cutting the engine as the boat approaches to avoid propeller injury.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (person-overboard procedure), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "Why is cold-water immersion a particularly serious hazard for boaters in Massachusetts, especially in spring and fall?",
+    "choice_a": "Cold water has no different physiological effect than warm water on the human body",
+    "choice_b": "Cold-water risk applies only to inland lakes, not Massachusetts's coastal waters",
+    "choice_c": "Coastal and inland Massachusetts waters can remain cold well into late spring and turn cold again by early fall, and sudden cold-water immersion can cause cold shock, gasping, and rapidly weakening swimming ability even for strong swimmers",
+    "choice_d": "Cold water is only a concern in the middle of winter, when boating does not occur at all",
+    "correct_choice": "C",
+    "explanation": "Massachusetts's water temperatures, both coastal and inland, often stay cold long after air temperatures warm up in spring and cool quickly in fall; sudden immersion in cold water can trigger cold shock response (involuntary gasping, hyperventilation, and panic) and rapidly impairs swimming ability, making a PFD especially critical during shoulder-season boating.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (cold-water immersion physiology), particularly relevant to Massachusetts's New England climate and shoulder-season boating conditions"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the '1-10-1' guideline sometimes used to describe the stages of cold-water immersion?",
+    "choice_a": "A rule stating a person can survive unlimited time in any water temperature as long as they keep moving",
+    "choice_b": "A guideline for how many layers of clothing to wear on a boat",
+    "choice_c": "A rule about how many people are allowed on a PWC at one time",
+    "choice_d": "About 1 minute to get breathing under control after the initial cold shock, about 10 minutes of meaningful muscle movement before losing effective swimming ability, and about 1 hour before hypothermia causes unconsciousness (times vary with water temperature)",
+    "correct_choice": "D",
+    "explanation": "The 1-10-1 principle is a commonly taught reminder of cold-water immersion stages: roughly one minute to control initial cold shock and breathing, about ten minutes of useful muscle function for self-rescue, and about one hour before hypothermia can lead to unconsciousness -- though exact times vary by water temperature and individual.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (1-10-1 cold-water immersion principle), consistent with NASBLA-aligned course curricula, particularly relevant to Massachusetts's cold coastal and inland waters"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What body position is recommended for a person wearing a PFD who is alone in cold water awaiting rescue, to conserve body heat?",
+    "choice_a": "The Heat Escape Lessening Posture (HELP) -- drawing the knees up to the chest and arms close to the sides to protect areas of high heat loss",
+    "choice_b": "Swimming continuously at a fast pace to generate body heat",
+    "choice_c": "Removing the PFD to swim more efficiently and generate warmth",
+    "choice_d": "Spreading arms and legs out as wide as possible",
+    "correct_choice": "A",
+    "explanation": "The Heat Escape Lessening Posture (HELP) involves drawing the knees to the chest and arms tight to the sides to protect the head, neck, chest, and groin -- areas of significant heat loss -- helping a person in a PFD conserve body heat while awaiting rescue.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (Heat Escape Lessening Posture), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "If a boat runs aground on a rock or shoal, what should the operator generally do first before attempting to power off?",
+    "choice_a": "Abandon the boat immediately regardless of the severity of the grounding",
+    "choice_b": "Check for injuries and hull damage/flooding, and assess the situation, since powering off too quickly can worsen damage or cause a leak to flood the boat faster",
+    "choice_c": "Immediately apply full throttle in reverse without any assessment",
+    "choice_d": "Continue forward at full speed to push over the obstruction",
+    "correct_choice": "B",
+    "explanation": "After running aground, the operator should first check for injuries and assess hull damage before attempting to power free, since forcing the boat off an obstruction without knowing the extent of damage can worsen a hull breach and cause rapid flooding.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (grounding response), relevant to Massachusetts's rocky ledges and shifting shoals along the coast"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What should boaters do to prepare for the possibility of losing engine power or having equipment fail while on the water?",
+    "choice_a": "There is no reasonable way to prepare for equipment failure",
+    "choice_b": "Preparation for mechanical failure is only necessary offshore, never on inland lakes or rivers",
+    "choice_c": "Carry an anchor with sufficient line, basic tools, a manual bailing device, and a means of signaling or communicating for help (such as a VHF radio, cell phone, or visual distress signals)",
+    "choice_d": "Rely exclusively on a cell phone, since it always has reception on the water",
+    "correct_choice": "C",
+    "explanation": "Carrying an anchor, basic tools, a manual bailing device, and multiple ways to call for help (a VHF radio is generally more reliable on the water than a cell phone, which can lose signal) helps a crew manage a mechanical failure safely rather than drifting helplessly.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (emergency preparedness equipment), consistent with NASBLA-aligned course curricula"
+  }
+]

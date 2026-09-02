@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "When must a vessel display navigation lights?",
+    "choice_a": "From sunset to sunrise and during periods of reduced visibility, such as fog, haze, or heavy dust",
+    "choice_b": "Only when the operator personally feels it is necessary",
+    "choice_c": "Only on vessels longer than 40 feet",
+    "choice_d": "Navigation lights are optional at all times in Arizona",
+    "correct_choice": "A",
+    "explanation": "Navigation Rules require vessels underway to display the appropriate lights from sunset to sunrise and during periods of restricted visibility, such as fog, haze, or blowing dust common on Arizona's desert reservoirs.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Navigation Lights Law'"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "On a power-driven vessel underway at night, what do red and green sidelights indicate to another operator?",
+    "choice_a": "That the vessel is disabled and not under command",
+    "choice_b": "The direction the vessel is heading -- red marks the port (left) side and green marks the starboard (right) side, each visible from dead ahead to slightly aft of the beam",
+    "choice_c": "That the vessel is anchored",
+    "choice_d": "That the vessel is a sailboat under sail alone",
+    "correct_choice": "B",
+    "explanation": "Red and green sidelights show which way a power-driven vessel is heading: red is always the port (left) side and green is always the starboard (right) side, each visible across an arc from dead ahead to just aft of the beam on that side.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Navigation Lights'"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "What does an all-round white light on a small power-driven vessel underway at night typically indicate, when combined with sidelights?",
+    "choice_a": "That the vessel is a commercial fishing vessel actively engaged in fishing",
+    "choice_b": "That the vessel is towing another vessel",
+    "choice_c": "It serves as the vessel's masthead and sternlight combined, making the vessel visible from all directions",
+    "choice_d": "That the vessel is not moving at all",
+    "correct_choice": "C",
+    "explanation": "On many vessels under about 39.4 feet, a single all-round white light may combine the masthead and sternlight functions, making the vessel visible from every direction when paired with its red and green sidelights.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Navigation Lights for Small Vessels'"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "What lights must a vessel display when it is anchored outside of a designated anchorage area at night?",
+    "choice_a": "Full running lights, exactly as if it were underway",
+    "choice_b": "No lights at all, since it is not moving",
+    "choice_c": "Only a red light facing forward",
+    "choice_d": "An all-round white light visible from all directions",
+    "correct_choice": "D",
+    "explanation": "A vessel anchored outside a designated anchorage must generally show an all-round white light so other vessels underway at night can see and avoid it.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Navigation Lights: At Anchor'"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "What does one short horn blast (about one second) mean when signaling another power-driven vessel you are meeting or crossing?",
+    "choice_a": "I intend to leave you on my port side / I am altering course to starboard",
+    "choice_b": "I am about to sink",
+    "choice_c": "I am dropping anchor immediately",
+    "choice_d": "I am requesting permission to dock",
+    "correct_choice": "A",
+    "explanation": "In the standard meeting/crossing signals, one short blast means the signaling vessel intends to leave the other vessel on its port side (i.e., it is altering course to starboard); two short blasts mean the opposite.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Sound Signals Between Vessels'"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "What does a series of at least five short, rapid horn blasts mean on the water?",
+    "choice_a": "A request for fuel from a nearby vessel",
+    "choice_b": "A danger or doubt signal -- warning that the signaling vessel does not understand or agree with the other vessel's intended action, or that danger is present",
+    "choice_c": "A friendly greeting between passing boats",
+    "choice_d": "A signal that a race has started",
+    "correct_choice": "B",
+    "explanation": "Five or more short, rapid blasts is the danger or doubt signal, alerting another vessel that its intentions are unclear, that the signaling operator disagrees with a proposed maneuver, or that a hazard exists.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Sound Signals Between Vessels'"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "In periods of restricted visibility such as fog or heavy blowing dust, what should vessels do with sound signals even if no other vessel is visible?",
+    "choice_a": "Only signal if a collision has already occurred",
+    "choice_b": "Turn off all sound-producing devices to save battery power",
+    "choice_c": "Sound the appropriate fog signal at prescribed intervals to alert vessels that cannot yet be seen",
+    "choice_d": "Stay completely silent to avoid startling other boaters",
+    "correct_choice": "C",
+    "explanation": "In restricted visibility, vessels are required to sound the prescribed fog signals at regular intervals, since sound may be the only way another vessel becomes aware of them before they are within visual range.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Sound Signals in Restricted Visibility'"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "Why is blowing dust from Arizona's monsoon storms especially relevant to navigation lights and sound signals?",
+    "choice_a": "Dust storms have no effect on visibility over water",
+    "choice_b": "Dust storms only occur at night, when lights are already required anyway",
+    "choice_c": "Navigation rules do not apply during dust storms",
+    "choice_d": "Dust storms (haboobs) can suddenly reduce visibility to near zero on open reservoirs, so vessels must be prepared to use lights and sound signals as they would in fog",
+    "correct_choice": "D",
+    "explanation": "Arizona's monsoon season can bring sudden haboob dust storms that drastically cut visibility on open water like Lake Pleasant or Lake Havasu; the same restricted-visibility rules for lights and sound signals that apply in fog apply here.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum applied to Arizona monsoon conditions; National Weather Service Arizona haboob advisories"
+  }
+]

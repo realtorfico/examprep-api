@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is one of the most important pre-launch checks before backing a boat down a ramp into Tennessee waters?",
+    "choice_a": "Checking the boat's paint color",
+    "choice_b": "Filling the boat with extra fuel while still on the trailer",
+    "choice_c": "Removing all navigation lights",
+    "choice_d": "Making sure the drain plug is properly installed",
+    "correct_choice": "D",
+    "explanation": "Forgetting to install the drain plug before launching is one of the most common and preventable boating mistakes, since the boat will begin taking on water immediately once launched.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Where should boaters complete final launch preparations, such as loading gear and removing excess tie-downs, at a busy Tennessee boat ramp?",
+    "choice_a": "In the parking or staging area, away from the ramp itself",
+    "choice_b": "On the ramp, taking as much time as needed",
+    "choice_c": "In the water, after the boat has already been launched",
+    "choice_d": "It does not matter, since ramps are rarely busy",
+    "correct_choice": "A",
+    "explanation": "Boaters should finish loading gear, removing extra tie-downs, and other launch prep in the parking or staging area, not on the ramp itself, so they do not block other boaters waiting to launch or retrieve.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why are trailer safety chains an important towing safeguard?",
+    "choice_a": "They replace the need for working trailer brake lights",
+    "choice_b": "They keep the trailer connected to the tow vehicle if the hitch coupler fails or separates",
+    "choice_c": "They improve the boat's fuel economy while underway",
+    "choice_d": "They are required only for trailers hauling personal watercraft",
+    "correct_choice": "B",
+    "explanation": "Safety chains, crossed and properly attached, keep the trailer connected to the tow vehicle if the hitch coupler ever fails or disconnects, preventing the trailer from becoming a road hazard.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What should be checked on a boat trailer before a long tow to a Tennessee lake?",
+    "choice_a": "Nothing; trailers require no pre-trip inspection",
+    "choice_b": "Only the color of the trailer paint",
+    "choice_c": "Tire condition and pressure, wheel bearings, and that all trailer lights function properly",
+    "choice_d": "Only the boat's registration sticker",
+    "correct_choice": "C",
+    "explanation": "Before towing, boaters should inspect trailer tire condition and pressure, wheel bearings, and confirm that all trailer lights are working, since trailer failures are a common cause of towing incidents.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "What is a recommended practice when backing a trailer down a launch ramp with other boaters waiting?",
+    "choice_a": "Back down as fast as possible to clear the ramp quickly",
+    "choice_b": "Always back down without checking mirrors",
+    "choice_c": "Ask other boaters to move their vehicles out of the parking lot first",
+    "choice_d": "Back down slowly and use a spotter if available to help guide the vehicle and trailer",
+    "correct_choice": "D",
+    "explanation": "Backing down a ramp slowly, and using a spotter to help guide the vehicle when possible, reduces the risk of jackknifing the trailer, hitting other boats, or losing control near the water.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "When retrieving a boat from a launch ramp, what is a good practice to keep the ramp clear for the next boater?",
+    "choice_a": "Pull the boat and trailer completely out of the ramp area to the staging area before securing tie-downs and loading gear",
+    "choice_b": "Take as long as needed on the ramp itself to secure the boat",
+    "choice_c": "Leave the boat idling in the water at the ramp while chatting with friends",
+    "choice_d": "Wait for other boaters to retrieve first, regardless of arrival order",
+    "correct_choice": "A",
+    "explanation": "After retrieving a boat, operators should move the trailer and boat completely clear of the ramp to the staging area before securing tie-downs, so the ramp remains available for the next boater.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Trailering & Launching",
+    "question": "Why should the bow tie-down strap typically remain attached until a boat is actually in the water and ready to be released from the trailer?",
+    "choice_a": "It prevents the trailer lights from short-circuiting",
+    "choice_b": "It keeps the boat from sliding off the trailer prematurely while backing down the ramp",
+    "choice_c": "It has no safety purpose and can be removed at the top of the ramp",
+    "choice_d": "It is required only for pontoon boats",
+    "correct_choice": "B",
+    "explanation": "The bow strap should stay attached until the boat is floating and ready to be backed off, since removing it too early can let the boat slide off the trailer unexpectedly while still on the ramp.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  }
+]

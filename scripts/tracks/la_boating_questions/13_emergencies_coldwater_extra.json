@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "The Heat Escape Lessening Posture (HELP), used by a lone person wearing a PFD in cold water awaiting rescue, involves:",
+    "choice_a": "Swimming continuously to generate body heat",
+    "choice_b": "Removing the PFD to swim more efficiently toward shore",
+    "choice_c": "Drawing the knees up to the chest and crossing the arms to protect the body's major heat-loss areas",
+    "choice_d": "Floating spread-eagle with arms and legs extended as far apart as possible",
+    "correct_choice": "C",
+    "explanation": "HELP minimizes heat loss from the body's core, groin, and underarms by curling into a knees-to-chest position with arms crossed, conserving body heat while a PFD keeps the person afloat.",
+    "weight": 3,
+    "source_note": "Standard cold-water immersion fundamentals used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "When multiple people wearing PFDs are in cold water together after an accident, huddling closely side-by-side helps by:",
+    "choice_a": "Conserving shared body heat and creating a larger, more visible target for rescuers",
+    "choice_b": "Making the group less visible to searchers",
+    "choice_c": "Increasing each person's individual rate of heat loss",
+    "choice_d": "Having no effect on either heat retention or visibility",
+    "correct_choice": "A",
+    "explanation": "A tight huddle among multiple people in the water conserves body heat through shared contact and also creates a larger, easier-to-spot target for search-and-rescue than scattered individuals.",
+    "weight": 3,
+    "source_note": "Standard cold-water immersion fundamentals used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "VHF Channel 16 serves what function for a boater facing an emergency on Louisiana waters?",
+    "choice_a": "It is reserved exclusively for weather broadcasts with no ability to call for help",
+    "choice_b": "It is the international distress, safety, and hailing channel monitored by the U.S. Coast Guard and other vessels",
+    "choice_c": "It is used only for ship-to-shore restaurant reservations",
+    "choice_d": "It has been discontinued and is no longer monitored",
+    "correct_choice": "B",
+    "explanation": "VHF Channel 16 is the internationally recognized distress, safety, and calling channel, monitored by the Coast Guard and other mariners, making it the standard first channel to use when calling for help on the water.",
+    "weight": 4,
+    "source_note": "Standard VHF marine radio distress-channel convention used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "Swimming or lingering directly behind an idling boat's stern, such as while \"teak surfing,\" carries a serious risk of:",
+    "choice_a": "Sunburn only",
+    "choice_b": "Carbon monoxide poisoning from engine or generator exhaust that can accumulate near the swim platform",
+    "choice_c": "Improved buoyancy from the propeller wash",
+    "choice_d": "No meaningful risk as long as a PFD is worn",
+    "correct_choice": "B",
+    "explanation": "Exhaust fumes from an idling engine or generator can accumulate near a boat's swim platform and stern, creating a real carbon monoxide poisoning risk for anyone swimming or lingering directly behind it.",
+    "weight": 4,
+    "source_note": "Standard carbon monoxide hazard fundamentals used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Emergencies and Cold Water",
+    "question": "Carrying a basic first aid kit aboard a recreational vessel is recommended primarily to:",
+    "choice_a": "Satisfy a mandatory federal equipment inspection requirement",
+    "choice_b": "Replace the need for a PFD",
+    "choice_c": "Treat minor cuts, burns, and other injuries that can occur during a normal day on the water, before further medical help is available",
+    "choice_d": "Provide decoration for the vessel's console",
+    "correct_choice": "C",
+    "explanation": "A basic first aid kit lets boaters treat minor injuries -- cuts, burns, hook injuries, and similar mishaps -- promptly, which matters most in Louisiana's more remote bayous and marshes where medical help may be far away.",
+    "weight": 3,
+    "source_note": "Standard onboard first aid guidance used across NASBLA-aligned boating courses"
+  }
+]

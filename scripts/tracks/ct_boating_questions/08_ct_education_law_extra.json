@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Connecticut Boater Education Law",
+    "question": "What are the terms of a Connecticut Temporary Safe Boating Certificate or Temporary CPWO, for someone who just purchased a boat or PWC without holding a certificate?",
+    "choice_a": "It is valid for three months from the date of vessel registration, costs $50.00, and a person may only ever be issued one temporary certificate",
+    "choice_b": "It is valid for five years and is free of charge, with unlimited reissuance",
+    "choice_c": "Temporary certificates do not exist in Connecticut",
+    "choice_d": "It never expires and permanently substitutes for a permanent certificate",
+    "correct_choice": "A",
+    "explanation": "A Connecticut Temporary SBC or Temporary CPWO is valid for three months from the date of vessel registration, costs $50.00, and no person may be issued more than one temporary certificate in their lifetime -- within that three-month window, the holder must obtain the permanent certificate to keep operating.",
+    "weight": 4,
+    "source_note": "CT DEEP, \"Applying for SBC/CPWO Temporary and Duplicate Certificates,\" portal.ct.gov/DEEP/Boating/Certification/Applying-for-SBC-CPWO-Temporary-and-Duplicate-Certificates"
+  },
+  {
+    "topic": "Connecticut Boater Education Law",
+    "question": "Once a person earns a permanent Connecticut Safe Boating Certificate or CPWO, how long does it remain valid?",
+    "choice_a": "For the life of the holder -- it never needs to be renewed and carries no renewal fee",
+    "choice_b": "It must be renewed every year for a $25 fee",
+    "choice_c": "It expires automatically after five years",
+    "choice_d": "It expires the moment the holder sells their vessel",
+    "correct_choice": "A",
+    "explanation": "A permanent Connecticut Safe Boating Certificate or CPWO is valid for the life of the person to whom it is issued, with no renewal requirement and no renewal fee ever due, unlike vessel registration, which must be renewed periodically through the DMV.",
+    "weight": 4,
+    "source_note": "CT DEEP, \"Applying for SBC/CPWO Temporary and Duplicate Certificates\" and \"FAQs Certification\" pages, portal.ct.gov/DEEP/Boating/Certification"
+  },
+  {
+    "topic": "Connecticut Boater Education Law",
+    "question": "If a Connecticut boater loses their certificate card, how can they obtain a duplicate?",
+    "choice_a": "Duplicate certificates are available to print free of charge online through DEEP's Online Sportsmen Licensing system",
+    "choice_b": "A duplicate can only be obtained by retaking the entire 8-hour course from scratch",
+    "choice_c": "Duplicates are not available under any circumstances in Connecticut",
+    "choice_d": "A duplicate certificate costs $200 and takes one year to process",
+    "correct_choice": "A",
+    "explanation": "DEEP allows a boater to print a free duplicate certificate online through its Sportsmen Licensing system, avoiding the need to retake a course or pay a fee simply to replace a lost or damaged card.",
+    "weight": 3,
+    "source_note": "CT DEEP, \"Applying for SBC/CPWO Temporary and Duplicate Certificates,\" portal.ct.gov/DEEP/Boating/Certification/Applying-for-SBC-CPWO-Temporary-and-Duplicate-Certificates"
+  },
+  {
+    "topic": "Connecticut Boater Education Law",
+    "question": "For a boater whose only certificate is a reciprocal-state boating certificate or a qualifying USCG license (obtained after October 1, 2015), what no-cost option exists specifically for adding Connecticut's Safe Water Skiing Endorsement to their credentials?",
+    "choice_a": "Through an online Safe Water Skiing Course, whose education portion is provided free of charge to holders in that situation",
+    "choice_b": "There is no path to the endorsement without retaking the full 8-hour in-person boating course",
+    "choice_c": "The endorsement is automatically granted to anyone with any out-of-state fishing license",
+    "choice_d": "It requires a separate $500 application fee with no online option",
+    "correct_choice": "A",
+    "explanation": "A person who already holds a permanent boating certificate from a reciprocal state or a qualifying U.S. Coast Guard license, obtained after October 1, 2015, can satisfy Connecticut's separate Safe Water Skiing Endorsement requirement through an online course, with the education portion offered free of charge.",
+    "weight": 3,
+    "source_note": "CT DEEP, \"Obtaining a Safe Water Skiing Endorsement\" and \"Safe Waterskiing Endorsement\" pages, portal.ct.gov/DEEP/Boating/Safety/Safe-Waterskiing-Endorsement"
+  },
+  {
+    "topic": "Connecticut Boater Education Law",
+    "question": "Where must an applicant go to obtain a Connecticut Temporary Safe Boating Certificate application?",
+    "choice_a": "A DEEP Processing Office",
+    "choice_b": "Any privately owned marina, regardless of DEEP approval",
+    "choice_c": "Temporary certificate applications cannot be obtained anywhere in Connecticut",
+    "choice_d": "Only through a federal U.S. Coast Guard station",
+    "correct_choice": "A",
+    "explanation": "Applications for a Temporary Safe Boating Certificate must be obtained at a DEEP Processing Office, distinguishing the process from permanent certificates, which are typically earned through an approved course provider's own exam.",
+    "weight": 2,
+    "source_note": "CT DEEP, \"Applying for SBC/CPWO Temporary and Duplicate Certificates,\" portal.ct.gov/DEEP/Boating/Certification/Applying-for-SBC-CPWO-Temporary-and-Duplicate-Certificates"
+  },
+  {
+    "topic": "Connecticut Boater Education Law",
+    "question": "The 2026 Boater's Guide notes that Connecticut's approved boating-course landscape is made up of small nonprofit and private providers. What does this mean for boaters who try to satisfy the requirement through a large, well-known national online course marketplace?",
+    "choice_a": "As of this content's build, large national vendors like Boat-Ed or BOATERexam state on their own Connecticut pages that they cannot currently issue a Connecticut boating card, so a boater must instead use one of DEEP's approved local providers",
+    "choice_b": "Any nationally advertised online course automatically satisfies Connecticut's requirement",
+    "choice_c": "Connecticut has no approved course providers of any kind",
+    "choice_d": "National vendors are the only providers DEEP approves in Connecticut",
+    "correct_choice": "A",
+    "explanation": "Unlike states that rely on large national online marketplaces, Connecticut's approved-course landscape is fragmented across nine small local and nonprofit providers (such as America's Boating Club/US Power Squadrons and the USCG Auxiliary); large national vendors like Boat-Ed and BOATERexam state on their own Connecticut-specific pages that they cannot currently issue a Connecticut card, so boaters must use one of the state's approved local providers instead.",
+    "weight": 3,
+    "source_note": "Cross-verification of CT DEEP's approved-provider landscape against national course vendors' own Connecticut disclosure pages, current as of 2026"
+  },
+  {
+    "topic": "Connecticut Boater Education Law",
+    "question": "What is CT DEEP's \"Junior Boater\" web page primarily designed to provide?",
+    "choice_a": "A distance-learning educational resource hub for middle and high school students, featuring content like Bobber the Water Safety Dog and American Canoe Association paddling-safety materials, rather than an operating certification itself",
+    "choice_b": "A separate, standalone boating operator's certificate for children under 12",
+    "choice_c": "A legal exemption allowing any child to operate a PWC without adult supervision",
+    "choice_d": "A discount code for the DEEP Equivalency Examination fee",
+    "correct_choice": "A",
+    "explanation": "DEEP's \"Junior Boater\" page is described as a distance-learning resource for middle and high school students, linking to youth-oriented water-safety education like Bobber the Water Safety Dog and American Canoe Association content -- it is an educational resource, not itself a certification or exemption from Connecticut's youth-operator supervision rules.",
+    "weight": 2,
+    "source_note": "CT DEEP, \"Junior Boater,\" portal.ct.gov/DEEP/Boating/Certification/Junior-Boater"
+  }
+]

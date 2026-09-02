@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Alabama Boater Education and Licensing Law",
+    "question": "Since what school year has Alabama required boating safety to be taught as part of the state's approved driver education curriculum?",
+    "choice_a": "Boating safety has never been included in Alabama's driver education curriculum",
+    "choice_b": "Beginning with the 1994-95 school year, jointly approved in writing by the Commissioner of Conservation and Natural Resources and the State Superintendent of Education",
+    "choice_c": "Only since 2020, as a pilot program in three counties",
+    "choice_d": "It has been required since Alabama statehood",
+    "correct_choice": "B",
+    "explanation": "Alabama Code Section 33-5-81 has required the State Department of Education to include a boating-safety segment in the approved driver education curriculum since the 1994-95 school year, with that curriculum content jointly approved in writing by the Commissioner of Conservation and Natural Resources and the State Superintendent of Education.",
+    "weight": 3,
+    "source_note": "Code of Alabama Section 33-5-81 (boating safety as part of driver education curricula)"
+  },
+  {
+    "topic": "Alabama Boater Education and Licensing Law",
+    "question": "If a boater safety certification is not issued alongside a driver or learner license, how long is it valid, and what grace period applies before a new examination becomes required?",
+    "choice_a": "It never expires once issued",
+    "choice_b": "It is valid for four years from issuance; a 60-day grace period after expiration allows renewal without a new exam, and renewal without examination remains available for up to three years after expiration before a new exam is required",
+    "choice_c": "It expires after 90 days with no renewal option",
+    "choice_d": "It must be renewed every year regardless of the driver license expiration date",
+    "correct_choice": "B",
+    "explanation": "When not tied to the expiration of a driver or learner license, an Alabama boater safety certification is valid for four years; the Department of Public Safety mails a renewal reminder, a 60-day grace period after expiration keeps the certification valid, and a person may renew without a new exam anytime up to three years after expiration -- after which a written or oral exam is again required.",
+    "weight": 3,
+    "source_note": "Code of Alabama Section 33-5-52(c) (certification renewal cycle and grace periods)"
+  },
+  {
+    "topic": "Alabama Boater Education and Licensing Law",
+    "question": "What temporary operating grace period does Alabama law give a resident age 16 or older who has just purchased a vessel but has not yet been issued a boater safety certification?",
+    "choice_a": "No grace period exists; certification must be obtained before the sale can even be completed",
+    "choice_b": "30 days from the date of sale, provided the vessel is registered in the person's name and they carry a bill of sale proving they are the purchaser and owner at all times of operation",
+    "choice_c": "A full calendar year with no documentation required",
+    "choice_d": "Only military personnel receive any grace period",
+    "correct_choice": "B",
+    "explanation": "Alabama Code Section 33-5-52(a) allows an Alabama resident 16 or older who has never held a boater safety certification to operate their newly purchased vessel for 30 days following the sale, so long as the vessel is registered in their name and they keep a bill of sale proving their purchase and ownership on their person during operation.",
+    "weight": 3,
+    "source_note": "Code of Alabama Section 33-5-52(a) (30-day post-purchase operating grace period)"
+  },
+  {
+    "topic": "Alabama Boater Education and Licensing Law",
+    "question": "Besides being under 12 years old, which other categories of people are statutorily barred from receiving an Alabama boater safety certification?",
+    "choice_a": "Anyone who has ever owned a boat before",
+    "choice_b": "Anyone whose vessel-operating privilege is currently suspended or revoked, an habitual abuser of alcohol or drugs, or a person whose physical or mental disability would, in the examiner's opinion, prevent reasonable and ordinary control of a vessel",
+    "choice_c": "Only people who have never taken a written driving test of any kind",
+    "choice_d": "Alabama law places no restrictions on certification eligibility besides age",
+    "correct_choice": "B",
+    "explanation": "Alabama Code Section 33-5-57(a) bars issuing a boater safety certification to anyone under 12, anyone whose vessel-operating right is currently suspended or revoked, an habitual abuser of alcohol or drugs, or a person whose physical or mental disability would, in the Director of Public Safety's or examiner's opinion, prevent reasonable and ordinary control of a vessel -- though a person denied for a disability reason is entitled to a hearing consistent with federal disability-rights law.",
+    "weight": 3,
+    "source_note": "Code of Alabama Section 33-5-57(a) (persons ineligible for boater safety certification)"
+  },
+  {
+    "topic": "Alabama Boater Education and Licensing Law",
+    "question": "Under what conditions is a person operating a rented vessel exempt from Alabama's boater safety certification requirement?",
+    "choice_a": "Rental vessels always require the renter to hold a full certification regardless of any instruction given",
+    "choice_b": "When the vessel is rented from a duly licensed boat rental business, the rental contract states the lessor instructed the lessee in safe operation, the lessor complied with the contract, and the lessee signs a statement that they are not currently under suspension or revocation of any boater safety certification",
+    "choice_c": "Rental exemption applies automatically with no conditions of any kind",
+    "choice_d": "Only Alabama residents qualify for the rental exemption; nonresidents never do",
+    "correct_choice": "B",
+    "explanation": "Alabama Code Section 33-5-52(g) exempts a person using a rental vessel from the certification requirement only if it comes from a duly licensed boat rental business, the rental contract confirms the lessor instructed the lessee in safe operation, the lessor complied with the contract terms, and the lessee signs a statement confirming they are not currently under a boater safety suspension or revocation.",
+    "weight": 3,
+    "source_note": "Code of Alabama Section 33-5-52(g) (rental vessel certification exemption)"
+  },
+  {
+    "topic": "Alabama Boater Education and Licensing Law",
+    "question": "What is the general format and subject-matter coverage of the written examination Alabama gives to applicants for boat operator certification?",
+    "choice_a": "A single true/false question with no defined subject areas",
+    "choice_b": "Approximately 25 multiple-choice questions, issued in at least four rotating forms, covering equipment requirements, safe operation and waterway rules of the road, aids to navigation, and boating accident reporting",
+    "choice_c": "A 200-question exam covering only navigation math",
+    "choice_d": "An oral-only exam with no written component permitted",
+    "correct_choice": "B",
+    "explanation": "Alabama's regulation on the boat operator's certification exam specifies a written test of approximately 25 multiple-choice questions, issued in at least four different rotating forms, covering four general subject areas: equipment requirements, safe operation and waterway rules of the road, aids to navigation, and boating accident reporting -- structured similarly in length and format to the motor vehicle driver's license exam.",
+    "weight": 3,
+    "source_note": "Alabama Administrative Rule 220-6-.30 (Examination for Boat Operator's Certification)"
+  }
+]

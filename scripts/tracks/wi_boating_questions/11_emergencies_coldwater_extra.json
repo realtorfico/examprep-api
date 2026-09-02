@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What symptoms should a boater watch for that indicate a person may be developing hypothermia?",
+    "choice_a": "Increased energy and faster reaction times",
+    "choice_b": "Uncontrollable shivering, confusion, slurred speech, and a loss of coordination",
+    "choice_c": "A sudden rise in body temperature",
+    "choice_d": "Hypothermia produces no observable symptoms until unconsciousness",
+    "correct_choice": "B",
+    "explanation": "Hypothermia typically presents with uncontrollable shivering, mental confusion, slurred speech, and a loss of coordination as the body's core temperature drops -- recognizing these signs early allows faster intervention before the condition worsens.",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Cold Water Immersion and Hypothermia"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "How should a rescued hypothermia victim generally be treated while awaiting medical help?",
+    "choice_a": "Vigorously rub their arms and legs and give them alcohol to warm them quickly",
+    "choice_b": "Handle them gently, remove wet clothing, and begin gradual rewarming, while avoiding vigorous rubbing of limbs or giving alcohol, since rough handling can trigger a dangerous \"rescue collapse\"",
+    "choice_c": "Immerse them immediately in very hot water to reverse hypothermia as fast as possible",
+    "choice_d": "No special handling is needed once a person is out of the water",
+    "correct_choice": "B",
+    "explanation": "A hypothermic person should be handled gently and rewarmed gradually, with wet clothing removed and no alcohol given -- rough handling or vigorous limb massage can cause cold, acidic blood to suddenly return to the heart, triggering a dangerous cardiac event sometimes called \"rescue collapse.\"",
+    "weight": 3,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Cold Water Immersion and Hypothermia"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the \"HELP\" position (Heat Escape Lessening Posture), and when is it used?",
+    "choice_a": "A technique for restarting a stalled engine",
+    "choice_b": "A body position -- knees drawn to the chest, arms crossed and held close to the body -- used by a person alone in cold water wearing a PFD to slow heat loss while awaiting rescue",
+    "choice_c": "A hand signal requesting a tow",
+    "choice_d": "A procedure for anchoring in rough weather",
+    "correct_choice": "B",
+    "explanation": "The HELP position has a lone person in cold water draw their knees toward their chest and hold their arms close against their body while supported by a worn PFD, which helps slow the loss of body heat from the torso while awaiting rescue.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Cold Water Immersion and Hypothermia"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the difference between a \"swamped\" boat and a \"capsized\" boat?",
+    "choice_a": "A swamped boat is full of water but generally remains upright and afloat, while a capsized boat has overturned -- both typically still provide some flotation that survivors should stay with",
+    "choice_b": "The two terms mean exactly the same thing",
+    "choice_c": "A swamped boat sinks immediately, while a capsized boat never sinks",
+    "choice_d": "Only a capsized boat can be a source of flotation for survivors",
+    "correct_choice": "A",
+    "explanation": "A swamped boat has taken on enough water to lose normal function but generally stays upright and afloat, while a capsized boat has flipped over -- in either case, most recreational boats retain enough flotation that survivors are safer staying with the boat than swimming for shore.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Capsizing, Swamping, or Falling Overboard"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What does the \"PASS\" technique stand for when using a fire extinguisher on a boat fire?",
+    "choice_a": "Pull the pin, Aim at the base of the fire, Squeeze the handle, and Sweep side to side",
+    "choice_b": "Point, Activate, Signal, Stop",
+    "choice_c": "Prepare, Anchor, Signal, Steer",
+    "choice_d": "PASS refers only to passing other vessels safely, not to fire response",
+    "correct_choice": "A",
+    "explanation": "PASS is the standard fire extinguisher technique: Pull the safety pin, Aim the nozzle at the base of the flames (not the visible flame tips), Squeeze the handle to discharge, and Sweep side to side across the base of the fire.",
+    "weight": 2,
+    "source_note": "Standard fire extinguisher use technique (PASS), applied in NASBLA-aligned boater education curriculum, Unit 5: Dealing With Fire Emergencies"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "What is the safe approach for towing a disabled boat to help a fellow boater in distress?",
+    "choice_a": "Attach a long, loose tow line and immediately accelerate to full speed",
+    "choice_b": "Use a properly secured, appropriately short tow line, proceed at a slow, controlled speed, and maintain clear communication with the disabled boat throughout the tow",
+    "choice_c": "Towing another vessel is never advisable and should always be left to professional rescuers",
+    "choice_d": "No communication between the two boats is necessary once the tow line is attached",
+    "correct_choice": "B",
+    "explanation": "A safe assist tow uses a properly secured line of appropriate length, proceeds at a slow and controlled speed to avoid swamping or damaging the disabled boat, and keeps clear communication between both boats throughout, since conditions can change quickly during a tow.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Assisting Other Boaters"
+  },
+  {
+    "topic": "Emergencies & Cold Water",
+    "question": "Why do boater education courses recommend practicing self-rescue and reboarding techniques before an actual emergency happens?",
+    "choice_a": "Practicing beforehand builds familiarity and muscle memory, since climbing back into a boat or onto a PWC can be far more difficult in a real emergency than people expect, especially in cold water or rough conditions",
+    "choice_b": "Reboarding a boat or PWC is equally easy for everyone with no need for practice",
+    "choice_c": "This kind of practice is discouraged because it increases the risk of falling overboard",
+    "choice_d": "Self-rescue techniques are only relevant to professional lifeguards, not recreational boaters",
+    "correct_choice": "A",
+    "explanation": "Climbing back into a boat or onto a PWC is often much harder than people expect, particularly in cold water, rough conditions, or while wearing wet clothing, so practicing the technique ahead of time in a controlled setting builds the familiarity needed to do it quickly during a real emergency.",
+    "weight": 2,
+    "source_note": "NASBLA-aligned boater education curriculum, Unit 5: Rescue Techniques"
+  }
+]

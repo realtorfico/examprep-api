@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "When must a recreational vessel display its required navigation lights?",
+    "choice_a": "Navigation lights are optional for all recreational vessels",
+    "choice_b": "From sunset to sunrise, and during periods of reduced visibility such as fog or heavy rain",
+    "choice_c": "Only when the operator chooses to use them",
+    "choice_d": "Only while the vessel is anchored",
+    "correct_choice": "B",
+    "explanation": "Navigation Rules require vessels underway to display proper lighting from sunset to sunrise and any time visibility is restricted, such as in fog, rain, or haze, so other vessels can see and identify them.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules lighting requirements (33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "On a power-driven vessel underway at night, what do the red and green sidelights indicate to another boater?",
+    "choice_a": "Green means the vessel is a sailboat",
+    "choice_b": "The colors have no navigational meaning",
+    "choice_c": "The red light marks the vessel's port (left) side and the green light marks its starboard (right) side, helping other boaters judge the vessel's heading and which side to pass",
+    "choice_d": "Red always means the vessel is anchored",
+    "correct_choice": "C",
+    "explanation": "A vessel's red sidelight covers the port side and green sidelight covers the starboard side; seeing both from another boat tells you it is heading roughly toward you, while seeing only one tells you which side of the vessel you are viewing.",
+    "weight": 4,
+    "source_note": "Inland Navigation Rules sidelight color-coding (33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "What does a single all-round white light on a small powerboat typically indicate when combined with red and green sidelights?",
+    "choice_a": "It indicates the vessel is a commercial fishing vessel",
+    "choice_b": "It means the vessel is not under command",
+    "choice_c": "It has no lighting significance",
+    "choice_d": "It serves as a combined masthead and sternlight configuration commonly used on vessels under 12 meters, visible from all directions",
+    "correct_choice": "D",
+    "explanation": "Many small power-driven vessels under 12 meters use an all-round white light that combines the masthead and sternlight function, visible 360 degrees, along with red and green sidelights to show heading.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules lighting configurations for vessels under 12 meters (33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "What lighting configuration must a vessel display while anchored at night outside a designated anchorage area?",
+    "choice_a": "An all-round white anchor light visible from all directions",
+    "choice_b": "Full running lights identical to when underway",
+    "choice_c": "No lights are required while anchored",
+    "choice_d": "A flashing red light only",
+    "correct_choice": "A",
+    "explanation": "A vessel at anchor at night (outside specific exempted anchorage areas) must show an all-round white anchor light so other vessels can see its position and avoid a collision.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules anchor light requirements (33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "In periods of reduced visibility such as fog, what is the purpose of sounding one prolonged blast on a horn at intervals not exceeding two minutes?",
+    "choice_a": "It has no meaning under the Navigation Rules",
+    "choice_b": "It signals the position of a power-driven vessel underway to other vessels that cannot see it",
+    "choice_c": "It signals that the vessel wishes to overtake another vessel",
+    "choice_d": "It is a distress signal only",
+    "correct_choice": "B",
+    "explanation": "A power-driven vessel underway in fog or other restricted visibility sounds one prolonged blast at intervals of no more than two minutes to alert nearby vessels to its presence when it cannot be seen.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules restricted-visibility sound signals (Rule 35, 33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "What does one short horn blast mean when signaling another power-driven vessel during a meeting or crossing situation under the Inland Navigation Rules?",
+    "choice_a": "I am anchoring",
+    "choice_b": "I am about to sink",
+    "choice_c": "I intend to leave you on my port side (I am altering course to starboard)",
+    "choice_d": "I am in distress",
+    "correct_choice": "C",
+    "explanation": "Under the Inland Rules, one short blast signals an intent to leave the other vessel on your port side, effectively meaning you are altering course to starboard; two short blasts signal the opposite intent to leave the other vessel on your starboard side.",
+    "weight": 4,
+    "source_note": "Inland Navigation Rules maneuvering and warning signals (Rule 34, 33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "What does five or more short, rapid horn blasts signal to another vessel under the Navigation Rules?",
+    "choice_a": "A greeting to a passing vessel",
+    "choice_b": "A signal that the vessel is about to anchor",
+    "choice_c": "It has no defined meaning",
+    "choice_d": "A danger or doubt signal, warning that the other vessel's intentions or actions are unclear or unsafe",
+    "correct_choice": "D",
+    "explanation": "Five or more short, rapid blasts is the danger or doubt signal, used to warn another vessel that you do not understand its intentions or believe insufficient action is being taken to avoid collision.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules danger signal (Rule 34, 33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Lights & Sound Signals",
+    "question": "A sailboat under sail alone at night typically shows red and green sidelights plus a sternlight. What does a masthead white light generally indicate on a sailing vessel?",
+    "choice_a": "That the vessel is being propelled at least in part by machinery (motor-sailing), not sail alone",
+    "choice_b": "That the vessel is not moving at all",
+    "choice_c": "That the vessel is a personal watercraft",
+    "choice_d": "Masthead lights are never used on sailing vessels",
+    "correct_choice": "A",
+    "explanation": "A sailing vessel under sail alone does not show a masthead light; when a masthead light is added to a sailboat's sidelights and sternlight, it indicates the vessel is motor-sailing and must follow the rules for a power-driven vessel.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules sailing vessel lighting rules (Rule 25, 33 CFR 83)"
+  }
+]

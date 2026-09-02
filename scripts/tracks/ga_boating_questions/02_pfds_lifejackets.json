@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What type(s) of USCG-approved personal flotation device (PFD) must Georgia vessels carry for each person on board?",
+    "choice_a": "Any inflatable pool floatie",
+    "choice_b": "A single PFD regardless of the number of passengers",
+    "choice_c": "At least one USCG-approved Type I, II, III, or V PFD for each person on board",
+    "choice_d": "Only a Type IV throwable cushion for each passenger",
+    "correct_choice": "C",
+    "explanation": "All Georgia vessels must have at least one USCG-approved Type I, II, III, or V PFD for each person on board; Type V PFDs are acceptable only when worn and securely fastened.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Personal Flotation Devices (PFDs)'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Besides wearable PFDs, what additional device must most boats carry on board and readily accessible?",
+    "choice_a": "A spare anchor for every passenger",
+    "choice_b": "A second engine",
+    "choice_c": "An extra set of oars for every PFD on board",
+    "choice_d": "One USCG-approved throwable device (except on vessels less than 16 feet long, including PWC, canoes, and kayaks)",
+    "correct_choice": "D",
+    "explanation": "In addition to wearable PFDs, one USCG-approved throwable device must be on board and readily accessible on all boats except those less than 16 feet long, including PWC, canoes, and kayaks.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Personal Flotation Devices (PFDs)'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under Georgia law, when must a child under 13 years of age wear a USCG-approved PFD?",
+    "choice_a": "While on board any moving vessel, unless the child is in a fully enclosed cabin",
+    "choice_b": "Only when the child cannot swim",
+    "choice_c": "Only on vessels longer than 26 feet",
+    "choice_d": "Only when the vessel is anchored",
+    "correct_choice": "A",
+    "explanation": "Georgia law requires all children under 13 years of age to wear a USCG-approved PFD while on board any moving vessel; this requirement does not apply when the child is in a fully enclosed cabin.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Personal Flotation Devices (PFDs)'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What PFD requirement applies to every person riding on a personal watercraft (PWC) in Georgia?",
+    "choice_a": "PFDs are optional if the rider is a strong swimmer",
+    "choice_b": "Each person must wear a USCG-approved Type I, II, III, or V PFD that is properly fitted and fastened; inflatable PFDs are not approved for PWC use",
+    "choice_c": "Only the operator, not passengers, must wear a PFD",
+    "choice_d": "Any flotation cushion carried on board satisfies the requirement",
+    "correct_choice": "B",
+    "explanation": "Each person riding a PWC must wear a properly fitted and fastened USCG-approved Type I, II, III, or V PFD; inflatable PFDs are specifically not approved for PWC use.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Personal Flotation Devices (PFDs)'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What must a person being towed on water skis or a similar device wear in Georgia?",
+    "choice_a": "No flotation device is required if the person is an experienced skier",
+    "choice_b": "Only a snorkel and mask",
+    "choice_c": "A ski belt, ski jacket, or Type I, II, or III PFD that is properly fitted and fastened",
+    "choice_d": "A Type IV throwable cushion held under one arm",
+    "correct_choice": "C",
+    "explanation": "Persons being towed on water skis or a similar device must wear a ski belt, ski jacket, or a Type I, II, or III PFD that is properly fitted and fastened.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Personal Flotation Devices (PFDs)'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What does the numeric 'performance level' icon (typically 50 to 150) on newer-style PFD labels indicate?",
+    "choice_a": "The exact retail price of the PFD",
+    "choice_b": "The number of years the PFD remains under warranty",
+    "choice_c": "The maximum number of people the single PFD can support at once",
+    "choice_d": "A lower number is intended for near-shore activities in calm water with greater mobility and comfort, while a higher number is intended for offshore use with greater flotation and turning ability",
+    "correct_choice": "D",
+    "explanation": "New-style PFD labels use a performance level number: lower numbers suit near-shore, calm-water use with more mobility, while higher numbers suit offshore use with greater flotation, turning ability, and stability.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'PFD Label'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under what condition may a Type V PFD be substituted for another required PFD type in Georgia?",
+    "choice_a": "Only if it is specifically approved by the USCG for the activity at hand, and it may not be substituted on children weighing less than 90 pounds",
+    "choice_b": "Any Type V PFD may always be substituted for any other type with no restriction",
+    "choice_c": "Type V PFDs may never be substituted under any circumstance",
+    "choice_d": "Type V PFDs may only be used by adults over 200 pounds",
+    "correct_choice": "A",
+    "explanation": "A Type V PFD may substitute for another required type only if it is specifically USCG-approved for the activity at hand; it may not be substituted for children weighing less than 90 pounds.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Personal Flotation Devices (PFDs)'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What condition must all PFDs on board a Georgia vessel meet?",
+    "choice_a": "They must all be the exact same size",
+    "choice_b": "They must be in good and serviceable condition and readily accessible",
+    "choice_c": "They must be stored in a locked compartment at all times",
+    "choice_d": "They must be replaced every boating season regardless of condition",
+    "correct_choice": "B",
+    "explanation": "All PFDs carried on board must be in good and serviceable condition and must be readily accessible to the people who may need them.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Personal Flotation Devices (PFDs)'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is true about the 'turn ability' feature described on a USCG-approved PFD label?",
+    "choice_a": "All PFDs automatically turn a wearer face up regardless of the label",
+    "choice_b": "Turn ability refers to how easily the PFD can be put on, not how it performs in water",
+    "choice_c": "A PFD marked with turn ability will turn an unconscious person face up, while one without it will not",
+    "choice_d": "Turn ability only applies to Type IV throwable devices",
+    "correct_choice": "C",
+    "explanation": "PFD labels indicate turn ability: some PFDs are designed to turn an unconscious person face up, while others will not, which is an important safety distinction to check before use.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'PFD Label'"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "If a boater chooses to wear a PFD that is not USCG approved, what must still be carried on board in Georgia?",
+    "choice_a": "Nothing additional is required",
+    "choice_b": "A written waiver signed by all passengers",
+    "choice_c": "A second non-approved PFD as a backup",
+    "choice_d": "A properly fitting USCG-approved PFD, to meet state and federal carriage requirements",
+    "correct_choice": "D",
+    "explanation": "If a person chooses to wear a non-USCG-approved PFD when one is not specifically required, a properly fitting USCG-approved PFD must still be carried on board to meet state and federal carriage requirements.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Personal Flotation Devices (PFDs)'"
+  }
+]

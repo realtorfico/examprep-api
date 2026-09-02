@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "SEE Strategy",
+    "question": "What do the three letters of the MSF's SEE strategy stand for?",
+    "choice_a": "Signal, Escape, Exit",
+    "choice_b": "Search, Evaluate, Execute",
+    "choice_c": "Stop, Examine, Enter",
+    "choice_d": "See, Evade, Emerge",
+    "correct_choice": "B",
+    "explanation": "The manual describes the SEE strategy as Search, Evaluate, and Execute, used to assess traffic and plan the safest course of action.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, SEE, p.17"
+  },
+  {
+    "topic": "SEE Strategy",
+    "question": "What is the purpose of \"RiderRadar\" as described in the manual?",
+    "choice_a": "To warn other drivers of the motorcycle's presence",
+    "choice_b": "To detect other vehicles' speed electronically",
+    "choice_c": "To aggressively scan the environment ahead, to the sides, and behind to spot hazards before they arise",
+    "choice_d": "To measure following distance automatically",
+    "correct_choice": "C",
+    "explanation": "The manual describes 'RiderRadar' as a way to aggressively scan the environment ahead, to the sides, and behind to avoid potential hazards before they arise, as part of the Search step.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, SEE - Search, p.17-18"
+  },
+  {
+    "topic": "SEE Strategy",
+    "question": "What does the \"Evaluate\" step of SEE ask a rider to do?",
+    "choice_a": "Only evaluate hazards directly ahead, not to the sides",
+    "choice_b": "Immediately apply the brakes",
+    "choice_c": "Ignore hazards that are more than 4 seconds away",
+    "choice_d": "Think about how hazards can interact to create risks and anticipate potential problems",
+    "correct_choice": "D",
+    "explanation": "The manual defines 'Evaluate' as thinking about how hazards can interact to create risks and anticipating potential problems with a plan to reduce risks.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, SEE - Evaluate, p.18-19"
+  },
+  {
+    "topic": "SEE Strategy",
+    "question": "According to the manual's Execute step, how should a rider carry out their decision?",
+    "choice_a": "With smoothness and precision, communicating, adjusting speed, and adjusting position as needed",
+    "choice_b": "As abruptly as possible to maximize reaction time",
+    "choice_c": "By only using the horn",
+    "choice_d": "By stopping immediately regardless of the hazard type",
+    "correct_choice": "A",
+    "explanation": "The manual states to Execute a decision with smoothness and precision, by communicating presence, adjusting speed, and adjusting position or direction.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, SEE - Execute, p.19"
+  },
+  {
+    "topic": "SEE Strategy",
+    "question": "How does the manual recommend handling two or more hazards at once?",
+    "choice_a": "Always choose to brake for all hazards simultaneously",
+    "choice_b": "Adjust speed to separate the hazards and deal with them one at a time",
+    "choice_c": "Ignore all but the closest hazard",
+    "choice_d": "Accelerate through all hazards to clear them quickly",
+    "correct_choice": "B",
+    "explanation": "The manual advises adjusting speed to permit two hazards to separate, then dealing with them one at a time as single hazards, applying the adage 'one step at a time.'",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Execute, p.19"
+  },
+  {
+    "topic": "SEE Strategy",
+    "question": "In potential high-risk areas like intersections and school zones, what does the manual suggest doing to reduce reaction time?",
+    "choice_a": "Turn off the headlight to avoid distracting others",
+    "choice_b": "Increase speed to clear the area faster",
+    "choice_c": "Cover the clutch and both brakes",
+    "choice_d": "Shift into neutral",
+    "correct_choice": "C",
+    "explanation": "The manual recommends covering the clutch and both brakes in high-risk areas such as intersections, shopping areas, and school and construction zones to reduce reaction time.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, Execute, p.19"
+  },
+  {
+    "topic": "SEE Strategy",
+    "question": "What should riders search for regarding oncoming traffic, per the manual's SEE guidance?",
+    "choice_a": "Traffic signals at the next intersection only",
+    "choice_b": "Only traffic approaching from directly behind",
+    "choice_c": "Only stationary vehicles",
+    "choice_d": "Oncoming traffic that may turn left in front of them",
+    "correct_choice": "D",
+    "explanation": "The manual's Search step specifically lists watching for oncoming traffic that may turn left in front of the rider.",
+    "weight": 2,
+    "source_note": "Motorcycle Operator Manual, SEE - Search, p.18"
+  }
+]

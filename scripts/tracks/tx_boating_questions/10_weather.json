@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Weather & Water Conditions",
+    "question": "What is one of the most reliable visual warning signs that a thunderstorm may be approaching on a Texas lake?",
+    "choice_a": "Darkening, towering clouds building rapidly, often with a sudden drop in temperature and a shift in wind direction",
+    "choice_b": "A clear blue sky with no clouds at all",
+    "choice_c": "Calm, glassy water is always a sign of an approaching storm",
+    "choice_d": "Thunderstorms never develop quickly enough to pose a risk to boaters",
+    "correct_choice": "A",
+    "explanation": "Rapidly building, darkening cumulus or cumulonimbus clouds, along with a sudden temperature drop or shifting winds, are classic warning signs of an approaching thunderstorm that boaters should heed immediately.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- weather awareness"
+  },
+  {
+    "topic": "Weather & Water Conditions",
+    "question": "Why is it especially important for Texas boaters to check a marine or local weather forecast before heading out, given the state's climate?",
+    "choice_a": "Texas weather never changes throughout the day",
+    "choice_b": "Texas is prone to rapidly developing thunderstorms, high summer heat, and strong Gulf Coast weather systems that can change conditions on the water quickly",
+    "choice_c": "Weather forecasts are not available for Texas lakes and coastal waters",
+    "choice_d": "Checking weather is unnecessary if the boat has a working radio",
+    "correct_choice": "B",
+    "explanation": "Texas's climate includes fast-developing thunderstorms, intense summer heat, and Gulf Coast weather systems, all of which can change boating conditions rapidly, making a pre-departure forecast check an important safety step.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- weather planning"
+  },
+  {
+    "topic": "Weather & Water Conditions",
+    "question": "What should a boater do if caught on open water when a thunderstorm approaches?",
+    "choice_a": "Anchor in the middle of open water and wait it out while standing up to watch the storm",
+    "choice_b": "Continue water sports activities since lightning rarely strikes open water",
+    "choice_c": "Head to the nearest safe shore, put on life jackets, reduce speed, and secure loose gear while staying low in the boat",
+    "choice_d": "Speed up to try to outrun the storm regardless of wave conditions",
+    "correct_choice": "C",
+    "explanation": "When a thunderstorm threatens, boaters should head for the nearest safe shore, have everyone don life jackets, reduce speed for the rough conditions, and secure loose gear while keeping low for stability.",
+    "weight": 4,
+    "source_note": "TPWD Boater Education Manual -- thunderstorm response"
+  },
+  {
+    "topic": "Weather & Water Conditions",
+    "question": "Why is lightning a significant danger to boaters, even on relatively small lakes?",
+    "choice_a": "Lightning cannot strike open water under any circumstances",
+    "choice_b": "Lightning is a concern only for sailboats, never for powerboats",
+    "choice_c": "Boats are automatically grounded against lightning strikes",
+    "choice_d": "A boat, especially with a tall structure like a mast or antenna, can be one of the tallest objects on open water, making it and its occupants a lightning target",
+    "correct_choice": "D",
+    "explanation": "Because a boat, particularly one with a mast, antenna, or other tall fitting, may be the highest point on open water, it can attract a lightning strike, putting occupants at real risk during a thunderstorm.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- lightning risk"
+  },
+  {
+    "topic": "Weather & Water Conditions",
+    "question": "What does a NOAA Weather Radio small craft advisory generally indicate?",
+    "choice_a": "Sustained winds or wave conditions have reached a level that could be hazardous to small boats, and operators of smaller vessels should use caution or avoid going out",
+    "choice_b": "It means water skiing is temporarily made mandatory",
+    "choice_c": "It has no bearing on recreational boating decisions",
+    "choice_d": "It applies only to commercial shipping vessels over 65 feet",
+    "correct_choice": "A",
+    "explanation": "A small craft advisory warns that sustained wind speeds and/or wave heights have reached a level that could be dangerous to smaller recreational vessels, and boaters should exercise caution or delay their trip.",
+    "weight": 3,
+    "source_note": "NOAA Weather Radio marine forecasts, as referenced in TPWD boater education"
+  },
+  {
+    "topic": "Weather & Water Conditions",
+    "question": "How can rapidly changing water levels on a Texas reservoir after heavy rain affect boaters?",
+    "choice_a": "Water levels on reservoirs never change regardless of rainfall",
+    "choice_b": "Rising water can submerge or hide navigational hazards and change the location of no-wake zones or ramps, requiring extra caution",
+    "choice_c": "Rising water always makes navigation completely hazard-free",
+    "choice_d": "Reservoir water level has no relationship to nearby rainfall",
+    "correct_choice": "B",
+    "explanation": "Heavy rainfall can rapidly raise reservoir levels, submerging previously visible hazards or changing the practical location of ramps and marked channels, so boaters should stay alert to current conditions rather than past experience alone.",
+    "weight": 2,
+    "source_note": "TPWD Boater Education Manual -- reservoir water level awareness"
+  },
+  {
+    "topic": "Weather & Water Conditions",
+    "question": "Why is extreme summer heat a safety concern for boaters on Texas lakes and coastal waters?",
+    "choice_a": "Heat has no effect on boaters' health or judgment",
+    "choice_b": "Heat is a concern only for boaters operating at night",
+    "choice_c": "It increases the risk of dehydration, heat exhaustion, and heat stroke, especially with prolonged sun exposure and alcohol consumption",
+    "choice_d": "Heat exposure risk applies only to the boat's engine, not its occupants",
+    "correct_choice": "C",
+    "explanation": "Prolonged sun and heat exposure on the water increases the risk of dehydration, heat exhaustion, and heat stroke, a risk that is compounded by alcohol consumption, which itself increases dehydration.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- heat-related illness"
+  },
+  {
+    "topic": "Weather & Water Conditions",
+    "question": "What should a boater do before departing if fog is possible on the forecast for a coastal Texas trip?",
+    "choice_a": "Fog has no effect on safe operation and can be ignored",
+    "choice_b": "Increase speed to get through the fog-affected area as quickly as possible",
+    "choice_c": "Turn off all navigation lights to reduce glare in the fog",
+    "choice_d": "Consider delaying departure, and if already underway, slow to a safe speed, use sound signals, and rely on radar or GPS if equipped",
+    "correct_choice": "D",
+    "explanation": "In or approaching fog, a prudent operator should consider delaying the trip, reduce speed to a safe level, use sound signals as required in restricted visibility, and rely on radar or GPS chartplotters where available.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual / Inland Navigation Rules -- restricted visibility"
+  }
+]

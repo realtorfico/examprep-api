@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "What shape and color characterize a red 'nun' buoy in the U.S. Aids to Navigation System?",
+    "choice_a": "A green buoy with a flat top marking the port side of a channel",
+    "choice_b": "A red buoy with a cone-shaped top, marking the starboard side of a channel when returning from open water",
+    "choice_c": "A white buoy shaped like a cylinder with a blue horizontal band",
+    "choice_d": "A yellow buoy shaped like a diamond",
+    "correct_choice": "B",
+    "explanation": "Red 'nun' buoys are cylindrical buoys topped with a cone (pointed end up) and mark the starboard side of a channel for a vessel returning from open water, complementing green 'can' buoys on the port side.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, can and nun buoy shapes"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "In the U.S. Aids to Navigation System, what dayboard shape is typically mounted on a green (port-side) daybeacon versus a red (starboard-side) daybeacon?",
+    "choice_a": "A circular dayboard on both, differing only by color",
+    "choice_b": "A diamond dayboard on green daybeacons and an octagon on red daybeacons",
+    "choice_c": "A square dayboard on green daybeacons and a triangular dayboard on red daybeacons",
+    "choice_d": "Daybeacons never carry a dayboard shape, only a number",
+    "correct_choice": "C",
+    "explanation": "Daybeacons are fixed (non-floating) structures that mirror the meaning of buoys: green daybeacons carry a square dayboard (echoing a can buoy's flat top) and red daybeacons carry a triangular dayboard (echoing a nun buoy's conical top), marking the same port/starboard sides.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, daybeacon dayboard shapes"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a red-and-black isolated danger mark indicate in the U.S. Aids to Navigation System?",
+    "choice_a": "A designated swimming area only",
+    "choice_b": "A preferred channel reserved for commercial vessels only",
+    "choice_c": "A fueling and pump-out station",
+    "choice_d": "A danger, such as a wreck or obstruction, that may be passed safely on any side, with the mark placed on or near the danger itself",
+    "correct_choice": "D",
+    "explanation": "An isolated danger mark uses red-and-black coloring to warn of a danger, such as a wreck or rock, that can be passed on all sides; the mark is positioned on or near the hazard itself rather than defining a channel side.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, isolated danger marks"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is the purpose of a yellow 'special mark' in the U.S. Aids to Navigation System?",
+    "choice_a": "To mark a special feature or area, such as an anchorage limit, fishing ground, or dredging zone, rather than a channel side",
+    "choice_b": "To mark the port side of a channel when returning from sea",
+    "choice_c": "To mark a location where anchoring is mandatory for all vessels",
+    "choice_d": "To indicate a federal shipping channel's centerline exclusively",
+    "correct_choice": "A",
+    "explanation": "Special marks are yellow and identify a special feature or area -- such as anchorage limits, fishing grounds, or dredging areas -- rather than indicating a channel's port or starboard side; they may be lighted with a fixed or flashing yellow light.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System, special marks"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What color pattern identifies a mooring buoy, and what is it used for?",
+    "choice_a": "Solid orange; it marks a no-boating exclusion zone",
+    "choice_b": "White with a solid blue horizontal band; it is the only type of buoy to which a boater may legally secure their vessel",
+    "choice_c": "Red-and-green striped; it marks the start of a channel",
+    "choice_d": "Solid black; it marks a shipwreck",
+    "correct_choice": "B",
+    "explanation": "A mooring buoy is white with a solid blue horizontal band around its middle. It is the only buoy a boater may legally tie up to -- boaters must never secure a vessel to a channel marker, regulatory buoy, or other aid to navigation.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, mooring buoys"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is the purpose of a pair of 'range markers' (front and rear range daymarks)?",
+    "choice_a": "To mark the outer boundary of a marine sanctuary",
+    "choice_b": "To indicate a mandatory idle-speed zone",
+    "choice_c": "When the front and rear markers are visually lined up one above or behind the other, they show a vessel is positioned on the centerline of a channel",
+    "choice_d": "To show the location of a fuel dock from a distance",
+    "correct_choice": "C",
+    "explanation": "Range markers are placed in pairs -- a front and a rear marker at different heights. When a boater sights them in line, one directly above or behind the other, the vessel is on the centerline of the channel, a technique especially useful in narrow or dredged channels.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, range markers"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "On Florida's Intracoastal Waterway (ICW), what does a small yellow symbol added to a standard red or green channel marker indicate?",
+    "choice_a": "That the marker is temporarily out of service",
+    "choice_b": "That the area is closed to all vessel traffic",
+    "choice_c": "That the marker indicates a designated swimming area",
+    "choice_d": "That the marker is also part of the ICW route, in addition to its normal channel-side meaning",
+    "correct_choice": "D",
+    "explanation": "Because the ICW often shares channels with other waterways, aids along it carry a small yellow symbol in addition to their standard red or green coloring, identifying the marker as part of the ICW route -- a detail especially relevant given Florida's extensive ICW mileage.",
+    "weight": 4,
+    "source_note": "U.S. Aids to Navigation System, Intracoastal Waterway yellow symbols"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "If a lateral channel marker (buoy or daybeacon) is lighted, what color light does it typically display?",
+    "choice_a": "A green light on green (port-side) markers and a red light on red (starboard-side) markers, matching the marker's daytime color",
+    "choice_b": "All lighted channel markers display only white light, regardless of side",
+    "choice_c": "A blue light on port-side markers and a yellow light on starboard-side markers",
+    "choice_d": "Lighted markers flash a random color with no relationship to channel side",
+    "correct_choice": "A",
+    "explanation": "When a lateral marker is lighted, the light color matches its daytime color -- green markers show a green light and red markers show a red light -- so the same red-right-returning rule applies at night.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, lateral marker light colors"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What is the fundamental difference between a buoy and a daybeacon in the U.S. Aids to Navigation System?",
+    "choice_a": "A buoy is always red and a daybeacon is always green",
+    "choice_b": "A buoy is a floating aid anchored to the bottom, while a daybeacon is a fixed structure permanently attached to the bottom or shore",
+    "choice_c": "A daybeacon can only be used at night, while a buoy can only be used during the day",
+    "choice_d": "There is no meaningful difference -- the terms are interchangeable",
+    "correct_choice": "B",
+    "explanation": "A buoy is a floating aid to navigation moored to the bottom, so its exact position can shift slightly or be displaced by weather. A daybeacon is a fixed, permanently installed structure -- both use matching colors, numbers, and shapes to convey the same channel-side information.",
+    "weight": 2,
+    "source_note": "U.S. Aids to Navigation System, buoys versus daybeacons"
+  }
+]

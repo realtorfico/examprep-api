@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "What is NOAA Weather Radio, and why should a boater on Alabama's Gulf Coast or larger lakes monitor it during an outing?",
+    "choice_a": "A subscription-only satellite radio service unrelated to weather",
+    "choice_b": "A continuous VHF broadcast service (on dedicated weather channels) providing updated marine forecasts, watches, and warnings that a boater can monitor throughout an outing for changing conditions",
+    "choice_c": "A service available only to commercial vessels, never recreational boaters",
+    "choice_d": "A single one-time broadcast issued each morning with no updates",
+    "correct_choice": "B",
+    "explanation": "NOAA Weather Radio broadcasts continuously on dedicated VHF weather channels, providing regularly updated marine forecasts, watches, and warnings -- monitoring it throughout a Gulf Coast or large-lake outing helps a boater catch a developing hazard, such as an upgraded storm warning, before conditions actually deteriorate.",
+    "weight": 3,
+    "source_note": "Universal NOAA marine weather broadcasting guidance, applied to Alabama boating conditions"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "What is a rip current, and why does it matter to boaters near Gulf Shores or Orange Beach even though it is a swimming hazard rather than a boat-handling one?",
+    "choice_a": "A rip current is a myth with no basis in real ocean behavior",
+    "choice_b": "A narrow, fast-moving channel of water flowing away from shore that can rapidly pull a swimmer -- including a passenger who enters the water near an anchored boat or launch point -- out from the beach, rather than pulling them underwater",
+    "choice_c": "A type of tidal wave that only affects large ships",
+    "choice_d": "A current that only exists in freshwater lakes, never along the Gulf Coast",
+    "correct_choice": "B",
+    "explanation": "A rip current is a narrow, fast-moving channel of water that flows away from the beach through the surf zone, capable of quickly pulling a swimmer out from shore; it matters to boaters near Gulf Shores or Orange Beach because passengers who enter the water near an anchorage or launch point can be caught in one even without any vessel being involved.",
+    "weight": 3,
+    "source_note": "Universal NOAA/beach safety rip current guidance, applied to Alabama's Gulf Coast"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "What should a boater on an Alabama inland lake or river do if caught in dense, fast-forming fog, which can develop quickly on cool mornings over warmer water?",
+    "choice_a": "Continue at normal cruising speed since fog rarely affects visibility significantly",
+    "choice_b": "Slow down, sound the required sound signal, and if possible anchor and wait for the fog to clear rather than continuing to navigate blind",
+    "choice_c": "Turn off all lights to avoid confusing other boaters",
+    "choice_d": "Speed up to get through the fog bank as quickly as possible",
+    "correct_choice": "B",
+    "explanation": "Dense fog can form rapidly on Alabama's lakes and rivers, especially when cool morning air moves over warmer water; the safe response is to slow down, sound the appropriate signal for restricted visibility, and if conditions allow, anchor and wait rather than attempting to navigate blind through unfamiliar water.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (fog response), applied to Alabama inland waters"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "What is a waterspout, and why might it develop with little warning over Alabama's Gulf waters during unstable summer weather?",
+    "choice_a": "A harmless decorative fountain feature found at some marinas",
+    "choice_b": "A tornado-like rotating column of air that can form over warm Gulf water during unstable atmospheric conditions, sometimes developing quickly with little advance warning and requiring an immediate move away from the area if sighted",
+    "choice_c": "A type of large, stationary wave that only occurs in winter",
+    "choice_d": "A current found only deep below the surface with no visible effect",
+    "correct_choice": "B",
+    "explanation": "A waterspout is a rotating, tornado-like column of air that can form over warm Gulf of Mexico water during unstable summer conditions, sometimes developing rapidly with little warning; a boater who spots one should move away from the area immediately rather than attempting to observe it at close range.",
+    "weight": 3,
+    "source_note": "Universal National Weather Service waterspout guidance, applied to Alabama's Gulf Coast conditions"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "How can a squall line moving off a cold front differ from Alabama's typical summer afternoon thunderstorm pattern, in terms of the warning time it gives boaters on Guntersville Lake or Wheeler Lake?",
+    "choice_a": "Squall lines always give more warning than ordinary afternoon storms",
+    "choice_b": "A squall line associated with a passing cold front, more common in spring and fall, can arrive with much less warning than the typical predictable afternoon convective storm pattern of summer",
+    "choice_c": "Squall lines never occur in Alabama and are exclusive to coastal hurricanes",
+    "choice_d": "There is no meaningful difference between the two types of storms in terms of warning time",
+    "correct_choice": "B",
+    "explanation": "While Alabama's hot summer afternoons often build storms on a fairly predictable daily schedule, a squall line riding ahead of a passing cold front -- more typical in spring and fall -- can develop and arrive with far less advance warning, catching boaters on the northern lakes off guard if they are only watching for the usual afternoon pattern.",
+    "weight": 3,
+    "source_note": "Universal seasonal frontal thunderstorm pattern, applied to Alabama's northern lake boating conditions"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "Why might wind-driven chop build up faster and larger on a big, open reservoir like Lake Martin or Lake Eufaula than in a small, tree-sheltered cove on the same lake?",
+    "choice_a": "Chop conditions are identical everywhere on a given lake regardless of exposure",
+    "choice_b": "Wind has a longer unobstructed distance (fetch) to build wave energy across a large, open stretch of water, while trees and shoreline features block wind and reduce fetch in a small sheltered cove",
+    "choice_c": "Chop only forms near dams, never in open water",
+    "choice_d": "Larger lakes never experience wind-driven chop",
+    "correct_choice": "B",
+    "explanation": "Wave height builds with wind speed, duration, and especially \"fetch\" -- the open distance wind travels uninterrupted across water -- so a long, open stretch of a large reservoir like Lake Martin or Lake Eufaula can develop meaningfully rougher chop than a small, tree-sheltered cove on the same body of water experiencing the same wind.",
+    "weight": 2,
+    "source_note": "Universal wind-fetch and wave-building principles, applied to Alabama's larger inland reservoirs"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "How do tidal currents at Mobile Bay's entrance and passes differ from conditions typical of most of Alabama's inland lakes?",
+    "choice_a": "Tidal currents at Mobile Bay's entrance and passes can run strong enough to meaningfully affect a small boat's handling, especially against an opposing wind, unlike most of Alabama's inland lakes, which have negligible current",
+    "choice_b": "Mobile Bay has no tidal influence of any kind",
+    "choice_c": "Inland lakes generally have stronger currents than Mobile Bay's passes",
+    "choice_d": "Tidal current strength is identical across every Alabama waterway",
+    "correct_choice": "A",
+    "explanation": "Because Mobile Bay connects to the Gulf of Mexico, its entrance and passes experience real tidal currents that can noticeably affect a small boat's handling, particularly when running against an opposing wind -- a genuinely different condition from Alabama's inland lakes and reservoirs, which are essentially current-free apart from local wind or dam-release effects.",
+    "weight": 3,
+    "source_note": "Universal tidal-current principles applied to Alabama's Mobile Bay entrance and passes"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "What weather-related health risk is a real concern for boaters on Alabama's Gulf Coast during summer, distinct from storm or lightning hazards?",
+    "choice_a": "Heat exhaustion or heat stroke, given Alabama's hot, humid summer conditions; boaters should carry extra water, seek shade, and watch for symptoms like dizziness, nausea, or confusion in themselves and passengers",
+    "choice_b": "Frostbite, which is common on the Gulf Coast in July",
+    "choice_c": "Altitude sickness, which affects boaters on Alabama's coastal waters",
+    "choice_d": "No heat-related risk exists on the water since the surrounding water always keeps boaters cool",
+    "correct_choice": "A",
+    "explanation": "Alabama's hot, humid Gulf Coast summers create a real heat-illness risk for boaters, even on the water; carrying extra water, seeking shade when possible, and recognizing early symptoms like dizziness, nausea, or confusion in both the operator and passengers can prevent a heat emergency from becoming serious.",
+    "weight": 2,
+    "source_note": "Universal heat-illness prevention guidance, applied to Alabama's Gulf Coast summer boating conditions"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "Why should a boater planning a winter outing on one of Alabama's northern lakes check the timing of an approaching cold front, not just the current conditions at departure?",
+    "choice_a": "Cold fronts have no effect on wind or temperature in Alabama",
+    "choice_b": "A passing cold front can cause a rapid wind shift and sudden temperature drop that can catch a boater off guard if they only check conditions at the start of the trip rather than the frontal timing during the outing",
+    "choice_c": "Cold fronts only affect conditions after midnight and never during daylight boating hours",
+    "choice_d": "Checking frontal timing has no practical value for small-lake boating",
+    "correct_choice": "B",
+    "explanation": "A cold front passing through Alabama can bring a fast wind shift and sharp temperature drop within a short window; checking the forecast's frontal timing -- not just the conditions at the moment of departure -- helps a boater plan to be off the water, or prepared for the change, before the front actually arrives.",
+    "weight": 3,
+    "source_note": "Universal cold front weather-planning guidance, applied to Alabama's northern lake boating conditions"
+  }
+]

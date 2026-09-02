@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Earning Your License",
+    "question": "To earn a North Carolina motorcycle license, an applicant must pass:",
+    "choice_a": "Only a written test, with no riding component",
+    "choice_b": "A knowledge test and an on-cycle skill test",
+    "choice_c": "Only a road test conducted in a car",
+    "choice_d": "Only a vision screening",
+    "correct_choice": "B",
+    "explanation": "To earn your license, you must pass a knowledge test and an on-cycle skill test.",
+    "weight": 3,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.42, 'Earning Your License'"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "Knowledge test questions are based on:",
+    "choice_a": "General trivia unrelated to riding",
+    "choice_b": "Vehicle code section numbers, without any context",
+    "choice_c": "Information, practices, and ideas from the motorcyclists' handbook",
+    "choice_d": "Automobile operation rules only",
+    "correct_choice": "C",
+    "explanation": "Knowledge test questions are based on information, practices, and ideas from this manual, requiring knowledge of road rules and safe riding practices.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.42, 'Earning Your License'"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "The on-cycle skill test, according to the handbook, may be conducted:",
+    "choice_a": "Only on a closed racetrack",
+    "choice_b": "Only on a public interstate highway",
+    "choice_c": "Entirely in a written, paper format",
+    "choice_d": "In an actual traffic environment or in a controlled, off-street area",
+    "correct_choice": "D",
+    "explanation": "An on-cycle skill test will either be conducted in an actual traffic environment or in a controlled, off-street area.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.42, 'Earning Your License'"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "Among the sample knowledge test questions in the handbook, it is MOST important to flash your brake light when:",
+    "choice_a": "You will be slowing suddenly",
+    "choice_b": "Your headlight is already switched on",
+    "choice_c": "You are parked and about to dismount",
+    "choice_d": "Traffic behind you is completely absent",
+    "correct_choice": "A",
+    "explanation": "The sample knowledge test's answer identifies flashing your brake light before slowing suddenly as most important, consistent with the Brake Light section's guidance.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.42, 'Knowledge Test (Sample Questions)'"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "Among the sample knowledge test questions in the handbook, if a tire goes flat while riding, it is usually best to:",
+    "choice_a": "Relax on the handlegrips and take no other action",
+    "choice_b": "Brake on the good tire and steer to the side of the road",
+    "choice_c": "Shift your weight toward the flat tire",
+    "choice_d": "Apply both brakes and stop as abruptly as possible",
+    "correct_choice": "B",
+    "explanation": "The sample knowledge test's answer for a flat tire is to brake on the good tire and steer to the side of the road, consistent with the Tire Failure section.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.42, 'Knowledge Test (Sample Questions)'"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "In the sample knowledge test's scenario of a car waiting to enter an intersection ahead of you, the best response is to:",
+    "choice_a": "Make eye contact with the driver and proceed at full speed",
+    "choice_b": "Maintain speed and lane position without adjustment",
+    "choice_c": "Reduce speed and be ready to react",
+    "choice_d": "Maintain speed and move further to the right",
+    "correct_choice": "C",
+    "explanation": "The sample knowledge test's answer for a car waiting to enter the intersection is to reduce speed and be ready to react.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.42, 'Knowledge Test (Sample Questions)'"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "According to the sample knowledge test, to swerve correctly you should:",
+    "choice_a": "Shift your body weight quickly without touching the handlebars",
+    "choice_b": "Turn the handlebars sharply by hand",
+    "choice_c": "Press the handlegrip opposite the direction of the turn",
+    "choice_d": "Press the handlegrip in the direction of the turn",
+    "correct_choice": "D",
+    "explanation": "The sample knowledge test's answer for swerving correctly is to press the handlegrip in the direction of the turn, consistent with the Swerving section.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.42, 'Knowledge Test (Sample Questions)'"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "On-cycle skill testing is designed to evaluate a rider's ability to, among other things:",
+    "choice_a": "Stop, turn, and swerve quickly",
+    "choice_b": "Recite the vehicle code from memory",
+    "choice_c": "Change the motorcycle's oil at the roadside",
+    "choice_d": "Parallel park a passenger car",
+    "correct_choice": "A",
+    "explanation": "You may be tested on your ability to accelerate, brake, and turn safely, and to stop, turn, and swerve quickly, among other basic vehicle control and collision-avoidance skills.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.43, 'On-Cycle Skill Test'"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "Examiners administering the on-cycle skill test may score factors such as:",
+    "choice_a": "The rider's choice of jacket color",
+    "choice_b": "Selecting safe speeds and choosing the correct path while staying within boundaries",
+    "choice_c": "The exact make and model of the motorcycle used",
+    "choice_d": "How many years the rider has held a car license",
+    "correct_choice": "B",
+    "explanation": "Examiners may score factors related to safety such as selecting safe speeds and choosing the correct path and staying within boundaries.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.43, 'On-Cycle Skill Test'"
+  },
+  {
+    "topic": "Earning Your License",
+    "question": "The on-cycle skill test is designed to determine a rider's ability to handle:",
+    "choice_a": "Only parking-lot maneuvers",
+    "choice_b": "Only nighttime riding conditions",
+    "choice_c": "Normal and hazardous traffic situations",
+    "choice_d": "Only highway merging situations",
+    "correct_choice": "C",
+    "explanation": "Basic vehicle control and collision-avoidance skills are included in on-cycle tests to determine a rider's ability to handle normal and hazardous traffic situations.",
+    "weight": 2,
+    "source_note": "NC DMV Motorcyclists' Handbook (13th Ed., Sept. 2007), p.43, 'On-Cycle Skill Test'"
+  }
+]

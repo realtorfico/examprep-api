@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under 625 ILCS 45/5-2, what happens when a reckless operation violation is a proximate cause of great bodily harm, permanent disability, or permanent disfigurement to another person?",
+    "choice_a": "The operator only receives a written warning regardless of the injury caused",
+    "choice_b": "The statute treats it exactly the same as ordinary reckless operation with no enhancement",
+    "choice_c": "The offense is elevated to 'aggravated reckless operation of a watercraft,' a more serious offense than ordinary reckless operation",
+    "choice_d": "Only the vessel's registration is affected, with no criminal offense involved",
+    "correct_choice": "C",
+    "explanation": "Illinois law creates an enhanced offense, aggravated reckless operation of a watercraft, when a reckless-operation violation is a proximate cause of great bodily harm, permanent disability, or permanent disfigurement to another person.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-2"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "A boat operator sees another vessel on a collision course far in advance but deliberately waits until the last possible moment to swerve and avoid the collision. How does Illinois law treat this?",
+    "choice_a": "As acceptable operation, since no collision actually occurred",
+    "choice_b": "As careless operation only, and only if the vessels actually collide",
+    "choice_c": "As a violation only if it occurs after dark",
+    "choice_d": "As an example of reckless operation under 625 ILCS 45/5-2, regardless of whether a collision is ultimately avoided",
+    "correct_choice": "D",
+    "explanation": "Illinois's reckless operation statute specifically names waiting until the last possible moment to swerve and avoid a collision as an example of reckless operation -- the danger created by the delay is the violation, whether or not a collision ultimately results.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-2; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under 625 ILCS 45/5-3, what general standard governs how a vessel operator must navigate relative to other watercraft and waterway traffic?",
+    "choice_a": "An operator may not navigate in a manner that unreasonably or unnecessarily interferes with other watercraft or with the proper navigation of the waterway",
+    "choice_b": "An operator may navigate however they choose, regardless of the effect on other traffic",
+    "choice_c": "Only the largest vessel present may set the course for all other vessels on the water",
+    "choice_d": "Interference with other watercraft is illegal only if it actually results in a collision",
+    "correct_choice": "A",
+    "explanation": "Illinois's interference-with-navigation statute prohibits operating a vessel in a way that unreasonably or unnecessarily interferes with other watercraft or with the proper navigation of state waterways -- a separate offense from careless and reckless operation.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-3"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under 625 ILCS 45/5-3, what specific restriction applies to a vessel engaged in fishing when it is operating in a narrow channel or canal?",
+    "choice_a": "It is given automatic right-of-way over all other vessel traffic in the channel",
+    "choice_b": "It must not obstruct the passage of other vessels through the narrow channel or canal",
+    "choice_c": "It may not fish in any channel or canal at any time",
+    "choice_d": "It must display a diver-down flag while fishing",
+    "correct_choice": "B",
+    "explanation": "Illinois's interference-with-navigation statute specifically addresses vessels fishing in narrow channels or canals, prohibiting them from obstructing the passage of other vessels through that confined space.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-3"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under 625 ILCS 45/5-5, what is a motorboat's owner -- or a person otherwise in charge or control of it -- prohibited from doing?",
+    "choice_a": "Allowing more than one licensed adult to operate the motorboat during a single outing",
+    "choice_b": "Letting anyone under 18 ride along as a passenger, even when accompanied by a certified adult operator",
+    "choice_c": "Authorizing or knowingly allowing the motorboat to be operated by a person who is physically or mentally incapable of operating it safely under the existing conditions",
+    "choice_d": "Operating the motorboat without a written lease or rental agreement on board",
+    "correct_choice": "C",
+    "explanation": "Illinois law prohibits a motorboat's owner, or anyone in charge or control of it, from authorizing or knowingly allowing the boat to be operated by a person who is physically or mentally incapable of operating it safely given the existing conditions.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-5"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under 625 ILCS 45/5-4, Illinois requires a capacity plate on which vessels specifically?",
+    "choice_a": "Every vessel regardless of length, propulsion type, or passenger capacity",
+    "choice_b": "Only personal watercraft, regardless of their length",
+    "choice_c": "Only vessels 26 feet in length or longer",
+    "choice_d": "Every vessel less than 26 feet in length that is designed to carry 2 or more persons and is propelled by machinery as its principal source of power, or is designed to be propelled by oars",
+    "correct_choice": "D",
+    "explanation": "Illinois's overloading statute requires a capacity plate on every vessel less than 26 feet in length that is designed to carry 2 or more persons and is powered principally by machinery, or is designed to be propelled by oars -- the plate shows the safe passenger and weight limits.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-4(B)(1)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under 625 ILCS 45/5-15, how far in advance must an application be filed with the Department for a regatta or motorboat race on Illinois waters?",
+    "choice_a": "At least 30 days before the event, specifying the date, time, and location, with written authorization required before it may proceed",
+    "choice_b": "No advance notice is required for any regatta or race",
+    "choice_c": "At least one year before the event",
+    "choice_d": "Only same-day notice is required if the race is sponsored by a local government",
+    "correct_choice": "A",
+    "explanation": "Illinois law requires anyone proposing a regatta or motorboat race to file an application with the Department at least 30 days beforehand, specifying the date, time, and location, and to obtain written authorization before the event may proceed.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-15"
+  }
+]

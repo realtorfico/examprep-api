@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Weather & Florida Storms",
+    "question": "Why is Florida referred to as the 'lightning capital' of the United States, and what does this mean for boaters?",
+    "choice_a": "Lightning only strikes land in Florida, never open water",
+    "choice_b": "Lightning risk in Florida is limited to the winter months only",
+    "choice_c": "Florida experiences among the highest frequency of lightning strikes in the country, especially in summer, so boaters must take lightning risk seriously and get off the water when storms threaten",
+    "choice_d": "Florida rarely experiences lightning compared to other states, so boaters need not worry about it",
+    "correct_choice": "C",
+    "explanation": "Florida, particularly the central part of the state, records some of the highest lightning-strike frequencies in the nation, making early recognition of building storms and getting off the water a critical safety habit for boaters.",
+    "weight": 4,
+    "source_note": "NOAA/National Weather Service Florida lightning climatology"
+  },
+  {
+    "topic": "Weather & Florida Storms",
+    "question": "What is a common, predictable summer weather pattern Florida boaters should plan around?",
+    "choice_a": "Florida has no predictable seasonal weather pattern",
+    "choice_b": "Thunderstorms in Florida only occur at night, never in the afternoon",
+    "choice_c": "Summer weather in Florida is uniformly calm with no storm risk",
+    "choice_d": "Afternoon thunderstorms, which frequently develop as the day heats up, especially in summer, making early morning outings and an early return often the safer plan",
+    "correct_choice": "D",
+    "explanation": "Florida's summer weather pattern often features clear mornings followed by building convective thunderstorms in the afternoon, so many experienced boaters plan trips for the morning and head back before storms typically develop.",
+    "weight": 4,
+    "source_note": "NOAA Florida summer convective weather pattern"
+  },
+  {
+    "topic": "Weather & Florida Storms",
+    "question": "What should a boater do if they see darkening skies, a sudden temperature drop, or a shifting/gusting wind while on the water?",
+    "choice_a": "Treat it as an early warning sign of an approaching storm and head to a safe harbor or shore promptly",
+    "choice_b": "Continue the outing as planned since these signs rarely indicate anything significant",
+    "choice_c": "Speed up to try to outrun the storm regardless of distance to shore",
+    "choice_d": "Anchor in open water and wait it out",
+    "correct_choice": "A",
+    "explanation": "Darkening skies, sudden temperature drops, and shifting or gusting winds are classic early indicators of an approaching thunderstorm, and the safest response is heading to shore or safe harbor promptly rather than waiting to see what develops.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course weather-sign recognition guidance"
+  },
+  {
+    "topic": "Weather & Florida Storms",
+    "question": "What should a boater do if caught on open water during a lightning storm and unable to reach shore in time?",
+    "choice_a": "Continue standing on an open bow or flybridge throughout the storm",
+    "choice_b": "Get as low as possible, stay away from metal objects and the highest point of the boat, and if possible get inside an enclosed cabin",
+    "choice_c": "Stand up to get a better view of the storm's progress",
+    "choice_d": "Hold onto the highest metal rail or antenna to gauge the storm's direction",
+    "correct_choice": "B",
+    "explanation": "If caught in a lightning storm without time to reach shore, boaters should crouch low, avoid metal fittings and the highest points of the boat, and seek an enclosed cabin if available to reduce lightning-strike risk.",
+    "weight": 4,
+    "source_note": "Standard NASBLA-course lightning safety guidance"
+  },
+  {
+    "topic": "Weather & Florida Storms",
+    "question": "Where should a boater check for weather information before and during a Florida boating trip?",
+    "choice_a": "Weather forecasts should only be checked after returning from the trip",
+    "choice_b": "Only social media posts from other boaters, with no official source",
+    "choice_c": "NOAA Weather Radio, the National Weather Service marine forecast, and a marine VHF radio's weather channels for real-time updates",
+    "choice_d": "There is no reliable source of marine weather information available to recreational boaters",
+    "correct_choice": "C",
+    "explanation": "NOAA Weather Radio and the National Weather Service's marine forecasts, monitored via a VHF radio's dedicated weather channels, provide the most reliable real-time marine weather updates for planning and monitoring a trip.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course marine weather resource guidance"
+  },
+  {
+    "topic": "Weather & Florida Storms",
+    "question": "During Atlantic hurricane season, what should a Florida boat owner do as a storm approaches?",
+    "choice_a": "Leave the boat exactly as it normally sits in a slip with no additional preparation",
+    "choice_b": "Take the boat further offshore to ride out the storm in open water",
+    "choice_c": "There is no useful preparation a boat owner can make before a hurricane",
+    "choice_d": "Follow their hurricane plan: haul the boat out of the water if possible, or secure it with proper anchoring/mooring lines, remove electronics and loose gear, and monitor official storm tracking",
+    "correct_choice": "D",
+    "explanation": "A hurricane preparedness plan for boat owners typically includes hauling the vessel out of the water when feasible, reinforcing mooring or dock lines, removing valuable electronics and loose gear, and closely monitoring official hurricane tracking from NOAA/NHC.",
+    "weight": 3,
+    "source_note": "NOAA/FWC hurricane boat-preparedness guidance"
+  },
+  {
+    "topic": "Weather & Florida Storms",
+    "question": "When is the Atlantic hurricane season, which Florida boaters should be especially mindful of?",
+    "choice_a": "June 1 through November 30",
+    "choice_b": "January 1 through March 31 only",
+    "choice_c": "Hurricanes can occur at any time with no defined season",
+    "choice_d": "Only during a single week in September",
+    "correct_choice": "A",
+    "explanation": "The official Atlantic hurricane season runs from June 1 through November 30, with peak activity typically in late summer and early fall, a period Florida boaters should track closely.",
+    "weight": 3,
+    "source_note": "NOAA National Hurricane Center, official Atlantic hurricane season dates"
+  },
+  {
+    "topic": "Weather & Florida Storms",
+    "question": "Why can Florida's flat terrain and numerous inlets make small craft advisories and wind warnings especially important?",
+    "choice_a": "Wind has no meaningful effect on wave conditions in Florida's shallow waters",
+    "choice_b": "Wind can build significant chop quickly across open bays, sounds, and inlets, creating hazardous conditions for smaller vessels even without a full storm present",
+    "choice_c": "Flat terrain eliminates any risk of rough water regardless of wind speed",
+    "choice_d": "Small craft advisories are only relevant to commercial shipping, never recreational boaters",
+    "correct_choice": "B",
+    "explanation": "Sustained wind over open bays, sounds, and inlets can quickly build hazardous chop, which is why the National Weather Service issues small craft advisories that smaller or less-stable vessels should heed even absent a named storm.",
+    "weight": 3,
+    "source_note": "NWS small craft advisory guidance for Florida coastal/inland waters"
+  },
+  {
+    "topic": "Weather & Florida Storms",
+    "question": "What visibility and safety hazard is common with sudden Florida rain squalls even outside of a full thunderstorm?",
+    "choice_a": "Rain squalls are only a concern for vessels over 40 feet",
+    "choice_b": "Visibility issues from rain only occur at night, never during the day",
+    "choice_c": "Heavy rain can sharply reduce visibility and combine with gusty winds to create dangerous conditions with little warning",
+    "choice_d": "Rain squalls in Florida never reduce visibility or affect safe operation",
+    "correct_choice": "C",
+    "explanation": "Even brief, localized rain squalls common in Florida can sharply cut visibility and bring sudden wind gusts, so boaters should reduce speed, use sound signals, and proceed cautiously when one moves through.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course reduced-visibility operating guidance"
+  },
+  {
+    "topic": "Weather & Florida Storms",
+    "question": "What is the safest overall strategy for avoiding severe weather while boating in Florida?",
+    "choice_a": "Depart without checking any forecast and adjust plans only after severe weather has already arrived",
+    "choice_b": "Assume weather conditions will remain constant for the entire day once checked in the morning",
+    "choice_c": "Rely solely on visual sky observation with no forecast check at all",
+    "choice_d": "Check the forecast before departing, monitor conditions throughout the trip, and return early or seek shelter at the first sign of deteriorating weather rather than waiting to see how bad it gets",
+    "correct_choice": "D",
+    "explanation": "The most effective severe-weather strategy is proactive: check forecasts before departure, monitor conditions throughout the outing, and act early -- returning to shore or shelter at the first signs of a building storm.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course weather-planning guidance"
+  }
+]

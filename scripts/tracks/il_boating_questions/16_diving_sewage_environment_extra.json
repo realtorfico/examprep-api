@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "What type of USCG-classified Marine Sanitation Device (MSD) stores sewage onboard in a tank rather than treating it, for later disposal at a pump-out station?",
+    "choice_a": "A Type I MSD, which treats sewage using UV light and immediately discharges it",
+    "choice_b": "A Type III MSD (holding tank)",
+    "choice_c": "There is no such classification; all MSDs treat sewage identically",
+    "choice_d": "A bilge pump equipped with a sewage filter",
+    "correct_choice": "B",
+    "explanation": "Federal law (33 CFR Part 159) classifies MSDs into Types I, II, and III; a Type III MSD is a holding tank that stores sewage onboard, untreated, until it can be legally pumped out at a shoreside facility.",
+    "weight": 2,
+    "source_note": "33 CFR Part 159 MSD classifications; federal law referenced across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "If a boat's holding tank is fitted with a Y-valve or similar device that could allow sewage to be discharged directly overboard, what does federal law require while the boat is on U.S. navigable waters?",
+    "choice_a": "The valve may be left open at the operator's discretion",
+    "choice_b": "The valve must be left open at all times so the tank can vent",
+    "choice_c": "The valve or seacock must be secured in the closed position, such as by padlock, non-releasable wire tie, or removal of the valve handle",
+    "choice_d": "Federal law does not address Y-valves; they are unregulated",
+    "correct_choice": "C",
+    "explanation": "To prevent illegal direct discharge of untreated sewage, federal law requires that any Y-valve or other device capable of bypassing a boat's MSD be secured in the closed position while operating on U.S. navigable waters.",
+    "weight": 2,
+    "source_note": "Federal Clean Water Act / MSD bypass-valve requirements referenced across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "What makes a federally designated 'No Discharge Zone' (NDZ) stricter than general Clean Water Act sewage rules?",
+    "choice_a": "NDZs only restrict untreated sewage; treated sewage may still be discharged freely",
+    "choice_b": "NDZs apply only to commercial vessels, never to recreational boats",
+    "choice_c": "NDZs eliminate the need for boats to carry an MSD at all",
+    "choice_d": "In an NDZ, discharging any sewage from a vessel is prohibited, even sewage that has been treated by a certified MSD",
+    "correct_choice": "D",
+    "explanation": "Outside a No Discharge Zone, a certified MSD may treat and discharge sewage. Within an NDZ, however, discharge of any sewage -- treated or untreated -- is prohibited, so boaters must retain all sewage onboard for pump-out.",
+    "weight": 3,
+    "source_note": "Clean Water Act Section 312 No Discharge Zone provisions; federal law referenced across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "What federal length threshold requires a recreational vessel to display a placard notifying persons aboard of garbage discharge restrictions?",
+    "choice_a": "26 feet",
+    "choice_b": "16 feet",
+    "choice_c": "65 feet",
+    "choice_d": "There is no length threshold; all vessels regardless of size must display the placard",
+    "correct_choice": "A",
+    "explanation": "Federal regulations implementing MARPOL Annex V require vessels 26 feet in length or longer to display a placard notifying passengers and crew of the restrictions on discharging garbage overboard.",
+    "weight": 2,
+    "source_note": "MARPOL Annex V garbage-placard requirement (33 CFR Part 151); federal law referenced across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "Under the federal Clean Water Act, what condition makes it illegal to discharge oil or fuel into the water from a boat?",
+    "choice_a": "Only discharges of more than 55 gallons are regulated",
+    "choice_b": "Discharging oil or fuel that causes a visible sheen, film, or discoloration on the water's surface is illegal",
+    "choice_c": "Oil and fuel discharge is unregulated on inland waters like those in Illinois",
+    "choice_d": "It is illegal only if the discharge occurs within a marina",
+    "correct_choice": "B",
+    "explanation": "Federal law prohibits discharging oil or fuel in quantities that cause a visible sheen, film, or discoloration on the water, regardless of the total volume spilled.",
+    "weight": 3,
+    "source_note": "Clean Water Act Section 311 (33 U.S.C. 1321) oil-discharge sheen prohibition; federal law referenced across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "If a boater's fuel or oil spill causes a sheen on the water, what are they required to do under federal law?",
+    "choice_a": "Nothing, as long as the spill was accidental",
+    "choice_b": "Report it only if requested by another boater",
+    "choice_c": "Immediately report the spill to the U.S. Coast Guard National Response Center",
+    "choice_d": "Wait 24 hours to see if the sheen dissipates before reporting",
+    "correct_choice": "C",
+    "explanation": "Federal law requires that any oil or fuel spill causing a sheen on the water be reported immediately to the U.S. Coast Guard National Response Center, regardless of whether the spill was accidental.",
+    "weight": 2,
+    "source_note": "Clean Water Act Section 311 spill-reporting requirement / National Response Center; federal law referenced across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "What federal program funds the construction of boat sewage pump-out stations at marinas, including facilities in Illinois?",
+    "choice_a": "The Diver Safety Act",
+    "choice_b": "The Boating Infrastructure Grant for fuel docks only",
+    "choice_c": "There is no federal funding for pump-out stations; all are privately funded",
+    "choice_d": "The Clean Vessel Act",
+    "correct_choice": "D",
+    "explanation": "The federal Clean Vessel Act funds the construction, renovation, and maintenance of boat sewage pump-out and dump stations at marinas nationwide, including in Illinois, giving boaters with holding tanks a legal way to dispose of sewage.",
+    "weight": 2,
+    "source_note": "Clean Vessel Act (federal pump-out station funding); referenced across NASBLA-based boating courses"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "What engineered federal defense operates on the Chicago Sanitary and Ship Canal to help prevent Asian carp from reaching Lake Michigan?",
+    "choice_a": "A system of electric dispersal barriers that deter fish from swimming through the canal",
+    "choice_b": "A series of physical nets stretched across the canal",
+    "choice_c": "A chemical treatment applied continuously to the canal water",
+    "choice_d": "No such measures exist on the canal",
+    "correct_choice": "A",
+    "explanation": "The U.S. Army Corps of Engineers operates a system of electric dispersal barriers on the Chicago Sanitary and Ship Canal, an artificial waterway connecting the Mississippi River basin to Lake Michigan, to deter invasive Asian carp from migrating into the Great Lakes.",
+    "weight": 3,
+    "source_note": "U.S. Army Corps of Engineers Chicago Sanitary and Ship Canal electric dispersal barrier system; well-documented Illinois invasive-species defense referenced in Great Lakes boating/AIS education materials"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "Why is it important to drain a boat's livewell and bait bucket, not just clean the hull, before leaving a launch area?",
+    "choice_a": "Livewells and bait buckets are exempt from invasive species rules",
+    "choice_b": "Invasive mussel larvae (veligers) are microscopic and can survive undetected in small amounts of residual water, so a hull that looks clean can still carry them",
+    "choice_c": "Draining is only a fuel-economy measure with no ecological purpose",
+    "choice_d": "It is required only for boats used exclusively on Lake Michigan",
+    "correct_choice": "B",
+    "explanation": "Zebra and quagga mussel larvae, called veligers, are microscopic and invisible to the naked eye, so they can survive in small pockets of standing water left in livewells, bait buckets, or bilges even after the hull itself is cleaned -- making draining every compartment essential to preventing their spread.",
+    "weight": 3,
+    "source_note": "Aquatic invasive species (veliger) prevention guidance, referenced across Great Lakes and Mississippi River basin boating/AIS education materials applicable to Illinois waters"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "Why should boaters and anglers never release live bait, aquarium fish, or aquarium plants into Illinois public waters?",
+    "choice_a": "It is only discouraged for cost reasons, not ecological ones",
+    "choice_b": "There is no concern, since released organisms rarely survive",
+    "choice_c": "Doing so risks introducing non-native species that can become invasive and harm native fish and ecosystems",
+    "choice_d": "The concern applies only to saltwater species, which cannot survive in Illinois",
+    "correct_choice": "C",
+    "explanation": "Releasing live bait, aquarium fish, or aquarium plants into public waters can introduce non-native organisms that establish invasive populations, outcompeting native species and disrupting local ecosystems -- a key reason boaters and anglers are advised never to do so.",
+    "weight": 2,
+    "source_note": "Aquatic invasive species prevention guidance (unauthorized release of bait/aquarium organisms), referenced across NASBLA-based boating courses and applicable to Illinois waters"
+  }
+]

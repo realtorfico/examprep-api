@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Is a person who manipulates water skis, an aquaplane, or a similar device while intoxicated or under the influence of drugs, to the extent their normal faculties are impaired, in violation of Florida law?",
+    "choice_a": "No -- impairment laws in Florida apply only to the person operating the tow vessel, never to the person being towed",
+    "choice_b": "It is only a violation if the person being towed is also the vessel's registered owner",
+    "choice_c": "Yes -- Florida law separately prohibits the person being towed on skis, an aquaplane, or a similar device from doing so while impaired by alcohol or drugs, apart from any boating-under-the-influence law that applies to the vessel operator",
+    "choice_d": "Florida has no law addressing impairment for a person being towed on skis or a similar device",
+    "correct_choice": "C",
+    "explanation": "Florida Statute 327.38 makes it a separate offense for a person to manipulate water skis, an aquaplane, or a similar device while intoxicated or under the influence of a narcotic drug, barbiturate, or marijuana to the extent their normal faculties are impaired -- distinct from the boating-under-the-influence law that applies to vessel operators.",
+    "weight": 4,
+    "source_note": "Florida Statutes 327.38, skiing prohibited while intoxicated or under the influence"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "May the operator of a vessel towing a water skier deliberately steer or maneuver so that the skier is directed toward a collision with another vessel, bridge, dock, or buoy?",
+    "choice_a": "Yes, as long as the towed person is wearing a PFD, any maneuver is legal",
+    "choice_b": "This is legal as long as it happens more than one hour after sunset",
+    "choice_c": "Florida law only restricts this near swimming beaches, not near vessels, bridges, or docks",
+    "choice_d": "No -- Florida law prohibits operating a vessel so as to cause a person being towed on skis or a similar device to collide with another vessel, bridge, dock, buoy, or similar object, except for objects that are a normal part of a sanctioned competitive course",
+    "correct_choice": "D",
+    "explanation": "Florida law prohibits directing a vessel towing a skier, aquaplaner, or similar participant into a collision course with another vessel, a bridge, a dock, a buoy, or similar fixed or moving object; an exception exists for equipment that is a normal part of a sanctioned competitive course, such as slalom course buoys.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.37(4), prohibition on directing a towed person into a collision"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Do the observer requirement and the sunset-to-sunrise towing hours restriction apply to a professional water-ski performer taking part in an officially sanctioned exhibition, tournament, or regatta?",
+    "choice_a": "No -- Florida law exempts professional performers and participants in an officially sanctioned regatta, marine parade, tournament, or exhibition from the ordinary towing observer and nighttime-hours restrictions",
+    "choice_b": "Yes, every towing activity in Florida is always subject to the observer and hours restrictions with no exceptions",
+    "choice_c": "The hours restriction is waived for sanctioned events, but the observer requirement is never waived under any circumstance",
+    "choice_d": "Only PWC-based towing qualifies for any exemption from these restrictions",
+    "correct_choice": "A",
+    "explanation": "Florida law exempts professional performers and participants in an officially sanctioned regatta, marine parade, tournament, or exhibition from the standard observer/mirror and nighttime-hours restrictions that otherwise apply to towing a person on water skis or a similar device.",
+    "weight": 2,
+    "source_note": "Florida Statutes 327.37(3), exemption for sanctioned regattas, tournaments, and exhibitions"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Does Florida's observer-or-mirror requirement for towing a water skier apply to a class A motorboat that is operated by the person being towed and is designed so that it cannot carry a separate operator?",
+    "choice_a": "Yes, this type of motorboat must still carry a dedicated observer at all times",
+    "choice_b": "No -- Florida law's observer/mirror requirement for towing a skier specifically does not apply to a class A motorboat operated by the person being towed that is designed to be incapable of carrying the operator in the motorboat",
+    "choice_c": "Yes, but only a wide-angle rearview mirror can be used to satisfy the requirement in this case",
+    "choice_d": "This type of motorboat is banned outright from Florida waters",
+    "correct_choice": "B",
+    "explanation": "Florida's towing observer/mirror requirement carves out an exception for a class A motorboat that is operated by the person being towed and is designed to be incapable of carrying a separate operator, since there is no separate operator whose view of the towed person needs to be supplemented.",
+    "weight": 2,
+    "source_note": "Florida Statutes 327.37(1)(a), class A motorboat exception to the observer/mirror requirement"
+  }
+]

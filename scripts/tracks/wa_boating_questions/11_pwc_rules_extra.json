@@ -1,0 +1,38 @@
+[
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "How does Washington law (RCW 79A.60.010) legally define a \"personal watercraft\"?",
+    "choice_a": "Any vessel under 20 feet long equipped with an outboard motor",
+    "choice_b": "Any motorized vessel used primarily for recreation, regardless of size or propulsion type",
+    "choice_c": "A vessel of any length powered by a motor exceeding 10 horsepower",
+    "choice_d": "A vessel less than 16 feet long that uses a motor powering a water jet pump as its primary source of power, designed to be operated by a person sitting, standing, or kneeling on it, or being towed behind it, rather than sitting or standing inside it",
+    "correct_choice": "D",
+    "explanation": "Washington law defines a personal watercraft as a vessel less than 16 feet long that uses a motor powering a water jet pump as its primary source of motive power, and that is designed to be operated by a person sitting, standing, or kneeling on it, or being towed behind it, rather than in the conventional manner of sitting or standing inside the vessel.",
+    "weight": 2,
+    "source_note": "RCW 79A.60.010, Definitions"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Besides recklessly weaving through congested vessel traffic and recklessly jumping another vessel's wake too closely or with obstructed visibility, what third specific behavior does RCW 79A.60.190 define as reckless PWC operation?",
+    "choice_a": "Recklessly swerving at the last possible moment to avoid colliding with another vessel",
+    "choice_b": "Operating faster than 5 mph within 100 feet of a swimmer",
+    "choice_c": "Operating without a rearview mirror installed",
+    "choice_d": "Carrying more passengers than the seating positions provided",
+    "correct_choice": "A",
+    "explanation": "RCW 79A.60.190(5) lists a third form of reckless PWC operation beyond weaving through traffic and close wake-jumping: recklessly swerving at the last possible moment to avoid a collision.",
+    "weight": 3,
+    "source_note": "RCW 79A.60.190(5)"
+  },
+  {
+    "topic": "PWC-Specific Rules",
+    "question": "Under RCW 79A.60.190, how does Washington law classify the penalty for a PWC operator failing to wear an approved PFD compared to violations like disabling the engine cutoff switch or reckless operation?",
+    "choice_a": "Both types of violations are treated as identical civil infractions carrying the same fine",
+    "choice_b": "Failing to wear a PFD is a civil infraction, while disabling the cutoff switch, operating during darkness, and reckless operation are misdemeanors",
+    "choice_c": "Failing to wear a PFD is a felony while the other violations are only civil infractions",
+    "choice_d": "Washington law assigns no penalty distinctions among these PWC violations",
+    "correct_choice": "B",
+    "explanation": "RCW 79A.60.190 classifies the PFD requirement violation (subsection 1) as a civil infraction punishable under RCW 7.84.100, while violations of subsections (2) through (6) -- including disabling the cutoff switch, operating during darkness, and reckless operation -- constitute misdemeanors under RCW 9.92.030.",
+    "weight": 2,
+    "source_note": "RCW 79A.60.190(1), (8)"
+  }
+]

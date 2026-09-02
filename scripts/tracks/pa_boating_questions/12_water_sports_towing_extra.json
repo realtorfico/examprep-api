@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under Pennsylvania Fish & Boat Commission regulations, during what hours are waterskiing and other boat-towed watersports prohibited?",
+    "choice_a": "Between sunset and sunrise",
+    "choice_b": "Only between noon and 2 p.m.",
+    "choice_c": "There is no hour restriction on waterskiing in Pennsylvania",
+    "choice_d": "Only on weekdays before 10 a.m.",
+    "correct_choice": "A",
+    "explanation": "Pennsylvania regulations (58 Pa. Code Section 109.4) prohibit waterskiing and other boat-towed watersports between the hours of sunset and sunrise, reflecting the added danger of towing activities in low light.",
+    "weight": 2,
+    "source_note": "58 Pa. Code Section 109.4 hours-of-operation restriction, PA Fish & Boat Commission"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under Pennsylvania regulations, what specifically qualifies someone to serve as the 'competent observer' required aboard a towboat pulling a skier?",
+    "choice_a": "Simply being a licensed boat operator, regardless of skiing knowledge",
+    "choice_b": "The ability to recognize when the person being towed is in trouble, knowledge of standard waterskiing hand signals, and the capability to assist the towed person",
+    "choice_c": "Being the youngest person aboard the boat",
+    "choice_d": "There is no defined qualification for a towboat observer under Pennsylvania regulations",
+    "correct_choice": "B",
+    "explanation": "58 Pa. Code Section 109.4(a) defines a competent observer as a person able to assess when a towed person is in trouble, who knows and understands waterskiing hand signals, and is capable of helping the person being towed.",
+    "weight": 2,
+    "source_note": "58 Pa. Code Section 109.4(a) competent observer definition"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under Pennsylvania regulations, what is the maximum tow rope length permitted for conventional water-ski towing (not kiteskiing or parasailing)?",
+    "choice_a": "25 feet",
+    "choice_b": "300 feet",
+    "choice_c": "80 feet",
+    "choice_d": "There is no maximum tow rope length for conventional water-ski towing",
+    "correct_choice": "C",
+    "explanation": "58 Pa. Code Section 109.4(e) sets an 80-foot maximum tow rope length for conventional water skis and similar towed devices; longer maximum lengths apply to kiteskiing and parasailing equipment.",
+    "weight": 2,
+    "source_note": "58 Pa. Code Section 109.4(e) tow rope length limits"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "May a person being towed on conventional water skis wear an inflatable PFD instead of a standard wearable PFD, under Pennsylvania regulations?",
+    "choice_a": "Yes -- any Coast Guard-approved inflatable PFD may always be substituted",
+    "choice_b": "Yes, but only if the inflatable PFD is orange",
+    "choice_c": "PFDs of any kind are optional for towed skiers as long as an observer is aboard",
+    "choice_d": "No -- inflatable PFDs are specifically prohibited for a person being towed on conventional water skis",
+    "correct_choice": "D",
+    "explanation": "Pennsylvania regulations require persons being towed to wear a Coast Guard-approved wearable PFD and specifically prohibit inflatable PFDs for conventional waterskiing, since an inflatable device may not deploy or stay in place during a high-speed fall.",
+    "weight": 2,
+    "source_note": "58 Pa. Code Section 109.4 PFD requirements, inflatable PFD prohibition"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under Pennsylvania regulations, can a specialized water-ski wetsuit ever substitute for a PFD for a towed skier?",
+    "choice_a": "Yes -- for activities such as slalom, barefoot, jump, or trick skiing and wake surfing, a manufacturer-marked water-ski wetsuit meeting minimum flotation-padding thickness requirements may substitute for a PFD",
+    "choice_b": "No -- a wetsuit may never substitute for a PFD under any circumstance",
+    "choice_c": "Yes -- any neoprene wetsuit qualifies as a PFD substitute regardless of padding or marking",
+    "choice_d": "Wetsuits are banned outright for all towed water sports in Pennsylvania",
+    "correct_choice": "A",
+    "explanation": "Pennsylvania regulations allow a manufacturer-marked water-ski wetsuit with at least 1/2-inch-thick flotation padding to substitute for a PFD for activities like slalom, barefoot, jump, or trick skiing and wake surfing -- an ordinary wetsuit without that specific marking and padding does not qualify.",
+    "weight": 2,
+    "source_note": "58 Pa. Code Section 109.4(g) wetsuit-as-PFD-substitute provision"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under Pennsylvania regulations, is a water-skier permitted to be towed directly up to a dock or shore under power at the end of a run?",
+    "choice_a": "Yes -- towing a skier directly to the dock under power is the standard, required method of ending a run",
+    "choice_b": "No -- a water-skier is not permitted to be returned to dock or shore under power",
+    "choice_c": "It is permitted only if the skier is wearing an inflatable PFD",
+    "choice_d": "It is permitted only after sunset",
+    "correct_choice": "B",
+    "explanation": "Pennsylvania regulations prohibit returning a water-skier to a dock or shore under power; the skier must release the tow rope and the boat must approach separately, reducing the risk of a high-speed collision near a dock or swimming area.",
+    "weight": 2,
+    "source_note": "58 Pa. Code Section 109.4 dock/shore return restriction"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under Pennsylvania regulations, is a towboat operator ever allowed to tow a water skier without a separate observer aboard?",
+    "choice_a": "Yes, at any time, with no special equipment or permit required, as long as the operator glances back periodically",
+    "choice_b": "No, an observer is required in absolutely every circumstance with no exceptions of any kind",
+    "choice_c": "Only under a specific exception permit requiring equipment such as a rearview mirror at least 5 by 10 inches, and limiting the activity to a single skier before 10 a.m. on a non-weekend, non-holiday day",
+    "choice_d": "Yes, but only if the boat has a horn loud enough for the skier to hear",
+    "correct_choice": "C",
+    "explanation": "Pennsylvania's Executive Director may issue a permit allowing a towboat to operate without a separate observer only under strict conditions, including a rearview mirror of at least 5 by 10 inches configured so the operator can watch the towed person, and limiting the activity to towing a single person before 10 a.m. on a day that is not a weekend or holiday.",
+    "weight": 3,
+    "source_note": "58 Pa. Code Section 109.4(c) no-observer exception permit conditions"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under Pennsylvania regulations, where are kiteskiing and parasailing activities restricted from taking place?",
+    "choice_a": "Kiteskiing and parasailing have no location restrictions anywhere on Pennsylvania waters",
+    "choice_b": "Only within designated swimming beaches",
+    "choice_c": "Only on lakes smaller than 50 acres",
+    "choice_d": "Over or under power lines, bridges, dams, locks, or in congested areas",
+    "correct_choice": "D",
+    "explanation": "Because kiteskiing and parasailing involve a towed person rising well above the water's surface, Pennsylvania regulations bar these activities over or under power lines, bridges, dams, and locks, and in congested areas, to avoid collision and entanglement hazards.",
+    "weight": 2,
+    "source_note": "58 Pa. Code Section 109.4 kiteskiing/parasailing location restrictions"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Under Pennsylvania regulations, which type of towed device is permitted the longest maximum tow rope/tether length?",
+    "choice_a": "A commercial winch boat parasail, permitted up to 600 feet",
+    "choice_b": "A conventional water ski, permitted up to 600 feet",
+    "choice_c": "A nonreleasable kite ski, permitted up to 600 feet",
+    "choice_d": "All towed devices in Pennsylvania share the same 80-foot maximum tow length",
+    "correct_choice": "A",
+    "explanation": "Pennsylvania's tow-rope length limits scale with the device: 80 feet for conventional skis, 150 feet for nonreleasable kite skis, 500 feet for releasable kite skis, 300 feet for parasails, and up to 600 feet for commercial winch boat parasail operations -- the longest of the group.",
+    "weight": 2,
+    "source_note": "58 Pa. Code Section 109.4(e) tow line length table by device type"
+  }
+]

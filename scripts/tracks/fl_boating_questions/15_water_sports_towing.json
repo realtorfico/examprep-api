@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What observer requirement applies to a vessel towing a water skier or tuber in Florida?",
+    "choice_a": "The vessel must carry an observer at least 6 years old (or use a wide-angle rearview mirror where allowed) capable of watching the person being towed and communicating with the operator",
+    "choice_b": "No observer or mirror of any kind is ever required when towing a skier",
+    "choice_c": "The operator may watch the skier and steer at the same time with no observer needed under any circumstance",
+    "choice_d": "Only the person being towed is responsible for their own safety, with no requirement on the tow boat",
+    "correct_choice": "A",
+    "explanation": "Florida requires a vessel towing a person on water skis or a similar device to have an observer aboard (or in some cases an approved wide-angle mirror) to watch the person being towed and alert the operator to problems.",
+    "weight": 4,
+    "source_note": "Florida Statutes 327.331, towing observer requirement"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "During what hours is towing a person on water skis or a similar device prohibited in Florida?",
+    "choice_a": "Towing is prohibited only on weekends",
+    "choice_b": "From one hour after sunset to one hour before sunrise",
+    "choice_c": "Towing is allowed at any hour, day or night, with no restriction",
+    "choice_d": "Only between noon and 2 p.m.",
+    "correct_choice": "B",
+    "explanation": "Florida prohibits towing a person on water skis, a tube, or similar equipment from one hour after sunset until one hour before sunrise, when visibility for both the tow boat and the person in the water is poor.",
+    "weight": 4,
+    "source_note": "Florida Statutes 327.331, towing hours restriction"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What must a vessel towing a skier do immediately after the skier falls or the activity ends?",
+    "choice_a": "Leave the person in open water indefinitely with no marking",
+    "choice_b": "Speed away immediately to avoid other boat traffic",
+    "choice_c": "Retrieve the person promptly and display a ski flag or otherwise mark their position if they remain in the water, since a person in the water is hard to see",
+    "choice_d": "Continue on the original course without regard to the person's position",
+    "correct_choice": "C",
+    "explanation": "A fallen skier or tuber in the water is very difficult for other boaters to spot; Florida law and standard practice call for prompt retrieval and, if the person remains in the water, using a ski flag to mark the position and warn other vessels.",
+    "weight": 4,
+    "source_note": "Florida ski-flag / person-in-water marking requirement"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What PFD requirement applies to a person being towed on water skis, a tube, or a wakeboard in Florida?",
+    "choice_a": "PFDs are optional for anyone being towed, regardless of swimming ability",
+    "choice_b": "Only children under 12 being towed must wear a PFD",
+    "choice_c": "A PFD is not required as long as the person is an experienced skier",
+    "choice_d": "The person being towed must wear a USCG-approved PFD",
+    "correct_choice": "D",
+    "explanation": "Anyone being towed behind a vessel on water skis, a tube, wakeboard, or similar device must wear a USCG-approved PFD, since falls at speed are common and unpredictable.",
+    "weight": 4,
+    "source_note": "Florida towed-watersports PFD requirement"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Can a person legally water ski or tube while towed inside a posted idle-speed or slow-speed manatee zone in Florida?",
+    "choice_a": "No -- towed watersports require planing speed, which is not permitted inside posted idle-speed or slow-speed zones",
+    "choice_b": "Yes, towed activities are always exempt from posted speed zones",
+    "choice_c": "Only PWCs towing skiers are restricted; other tow boats are exempt",
+    "choice_d": "Manatee zones only restrict fishing, not watersports",
+    "correct_choice": "A",
+    "explanation": "Because posted manatee and other idle/slow-speed zones restrict all vessel speed, towing activities that require planing speed cannot legally be conducted inside those zone boundaries.",
+    "weight": 3,
+    "source_note": "FWC manatee/speed-zone enforcement applied to towed watersports"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is a key safety reason for maintaining a generous distance from swimmers, docks, and other vessels while towing a skier or tuber?",
+    "choice_a": "Tow ropes never present a hazard to nearby swimmers or vessels",
+    "choice_b": "A tow rope, the towed person's unpredictable path, and wake all extend the effective hazard zone well beyond the tow boat itself",
+    "choice_c": "Towing activities have no effect on the area around the tow boat",
+    "choice_d": "Distance from other objects is only a concern for the person being towed, not other boaters",
+    "correct_choice": "B",
+    "explanation": "A tow rope extending well behind the boat plus the towed person's often-unpredictable swinging path means the true hazard zone during towing extends much further than the tow vessel's own length, requiring extra clearance from other water users.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course towed-watersports safety guidance"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "How many people, at minimum, should be aboard a vessel towing a single skier if an observer is required (rather than a rearview mirror)?",
+    "choice_a": "No minimum crew size applies to towing activities",
+    "choice_b": "At least five people must be aboard for any towing activity",
+    "choice_c": "At least two: one to operate the vessel and one to serve as a dedicated observer",
+    "choice_d": "One person can safely operate the boat and observe the skier simultaneously with no dedicated observer needed",
+    "correct_choice": "C",
+    "explanation": "When an observer (rather than an approved mirror) is used to satisfy the towing-observer requirement, at least two people must be aboard: the operator focused on driving, and a separate observer watching the person being towed.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.331, minimum crew for towing without a mirror"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why should a tow boat operator maintain a steady, predictable speed and course while towing a skier?",
+    "choice_a": "Erratic speed changes have no effect on a person being towed",
+    "choice_b": "A skier performs better with constant, unpredictable direction changes",
+    "choice_c": "Speed and course only matter for the tow boat's fuel efficiency",
+    "choice_d": "Sudden speed or direction changes can cause the towed person to fall, lose control, or be whipped into a hazard",
+    "correct_choice": "D",
+    "explanation": "Sudden acceleration, deceleration, or sharp turns can cause a towed skier or tuber to lose balance and fall, or be swung into another obstacle, so steady and predictable operation is a core towing safety practice.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course towed-watersports operating guidance"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What should be checked about the tow rope and attachment points before beginning to tow a skier or tuber?",
+    "choice_a": "That the rope is free of knots, frays, or damage, and securely attached to an approved tow point rated for the load",
+    "choice_b": "Rope condition and attachment are irrelevant to towing safety",
+    "choice_c": "Any household rope is suitable for towing, regardless of rating",
+    "choice_d": "The rope should always be attached to the outboard motor itself",
+    "correct_choice": "A",
+    "explanation": "A frayed, knotted, or improperly rated tow rope can snap or fail under load; the rope should be inspected and attached to a properly rated tow point (never the outboard motor itself) before use.",
+    "weight": 2,
+    "source_note": "Standard NASBLA-course towing equipment inspection"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Does Florida's PWC hours-of-operation restriction (no operation from sunset to sunrise) also affect PWC-based towing activities?",
+    "choice_a": "There is no hour restriction on PWC towing in Florida",
+    "choice_b": "Yes -- since PWCs cannot legally operate after sunset or before sunrise, towing by PWC is confined to daylight hours, in addition to the separate one-hour-after-sunset towing cutoff that applies to all vessels",
+    "choice_c": "PWCs are exempt from the sunset-to-sunrise operating ban when towing a skier",
+    "choice_d": "Towing by PWC is allowed at any hour since it is a distinct activity from ordinary PWC operation",
+    "correct_choice": "B",
+    "explanation": "Because Florida bans all PWC operation from sunset to sunrise, a PWC cannot be used to tow a skier or tuber outside daylight hours, on top of the separate one-hour-after-sunset cutoff that applies to towing from any vessel type.",
+    "weight": 2,
+    "source_note": "Florida PWC hours-of-operation restriction combined with towing-hours restriction"
+  }
+]

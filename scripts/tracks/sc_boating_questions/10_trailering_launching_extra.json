@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should a boater cross the trailer's safety chains in an \"X\" pattern underneath the tow vehicle's hitch before towing?",
+    "choice_a": "Crossing the chains has no functional purpose and is purely traditional",
+    "choice_b": "If the trailer coupler ever separates from the ball, crossed chains form a cradle that can catch the trailer tongue and help keep it from dropping to the pavement or swerving away from the tow vehicle",
+    "choice_c": "Crossed chains are required only for trailers longer than 40 feet",
+    "choice_d": "Crossing the chains makes it easier to disconnect them at the ramp",
+    "correct_choice": "B",
+    "explanation": "Crossing the safety chains in an X pattern beneath the hitch means that if the coupler ever comes loose from the ball, the crossed chains form a cradle that can catch the trailer tongue, helping prevent it from dropping to the roadway or the trailer swinging away from the tow vehicle.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on trailer safety chain configuration"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What should a boater verify about their tow vehicle's trailer lighting connector before a long highway trip to a South Carolina lake?",
+    "choice_a": "Lighting connectors never need to be checked once initially installed",
+    "choice_b": "That the connector is compatible with the trailer's wiring and that turn signals, brake lights, and running lights all function correctly, since a trailer with non-working lights is both unsafe and a common cause of a traffic stop",
+    "choice_c": "Only headlights on the tow vehicle itself matter; trailer lights are optional",
+    "choice_d": "Trailer lights are illegal to use in South Carolina",
+    "correct_choice": "B",
+    "explanation": "Confirming the tow vehicle's connector is compatible with the trailer's wiring and that turn signals, brake lights, and running lights all work correctly before a trip helps other drivers anticipate the trailer's movements and avoids the safety risk -- and possible citation -- of towing with non-functioning trailer lights.",
+    "weight": 2,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on trailer lighting checks"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should a boat trailer use tires rated \"ST\" (Special Trailer) rather than standard passenger vehicle tires?",
+    "choice_a": "ST tires are purely a marketing label with no functional difference from passenger tires",
+    "choice_b": "ST tires are built with stiffer sidewalls and a load rating suited to trailer use, since trailer tires experience different stresses -- more side-loading in turns and less traction demand -- than a vehicle's drive tires",
+    "choice_c": "Passenger tires are always the better and safer choice for a boat trailer",
+    "choice_d": "Only the rim size matters; the tire's rating classification is irrelevant to towing safety",
+    "correct_choice": "B",
+    "explanation": "Special Trailer (ST) rated tires are engineered with stiffer sidewalls and load ratings suited to how a trailer actually behaves on the road -- absorbing more side-loading through turns with less traction demand than a vehicle's drive tires -- making them the appropriate and safer choice for towing a boat trailer.",
+    "weight": 2,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on trailer tire rating"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why can backing hot trailer wheel bearings straight into cold lake or ocean water be risky after a long tow?",
+    "choice_a": "It has no effect whatsoever on the bearings or their seals",
+    "choice_b": "The sudden temperature change from hot bearings meeting cold water can cause the bearing seals to contract and crack, drawing water into the hub and washing out the lubricating grease",
+    "choice_c": "Cold water always improves bearing lubrication with no downside",
+    "choice_d": "This risk applies only to bearings on the tow vehicle, never the trailer",
+    "correct_choice": "B",
+    "explanation": "After a long tow, wheel bearings can become quite hot; backing them straight into cold water causes a rapid temperature change that can crack or contract the bearing seals, letting water intrude into the hub and wash out the grease that protects the bearing, accelerating wear or failure.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on trailer wheel bearing thermal shock"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why is it good practice to rely on both the winch strap at the bow and separate transom tie-down straps while trailering a boat, rather than the winch strap alone?",
+    "choice_a": "The winch strap alone is always more than sufficient and transom straps serve no purpose",
+    "choice_b": "The winch strap mainly holds the boat forward against the bow stop, while transom tie-downs prevent the stern from bouncing or shifting at highway speed, so using both provides redundant, complementary securement",
+    "choice_c": "Transom straps are illegal to use in combination with a winch strap",
+    "choice_d": "Only the transom straps matter; the winch strap can be left disconnected while towing",
+    "correct_choice": "B",
+    "explanation": "The bow winch strap primarily pulls and holds the boat forward against the trailer's bow stop, but it does not fully control stern movement; separate transom tie-down straps keep the back of the boat from bouncing or shifting at highway speed, so using both together provides more complete, redundant securement than the winch strap alone.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on redundant trailer securement"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What is \"tongue weight,\" and why does it matter for safely towing a boat trailer?",
+    "choice_a": "It refers to the trailer's total weight including the boat, with no separate significance",
+    "choice_b": "It is the downward force the trailer's coupler exerts on the tow vehicle's hitch; too little tongue weight can cause dangerous trailer sway at highway speed, while too much can overload the rear axle",
+    "choice_c": "Tongue weight has no effect on towing stability at any speed",
+    "choice_d": "Tongue weight is regulated only for trailers used to carry PWCs",
+    "correct_choice": "B",
+    "explanation": "Tongue weight is the downward force the trailer coupler places on the tow vehicle's hitch; if it is too low relative to the trailer's total weight, the trailer can sway dangerously at highway speed, while excessive tongue weight can overload the tow vehicle's rear axle and affect steering and braking.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on trailer tongue weight and sway"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Besides checking the drain plug, what other system should a boater confirm is functioning before launching, to guard against water accumulating in the bilge once underway?",
+    "choice_a": "There is no other system relevant to keeping water out of the boat besides the drain plug",
+    "choice_b": "The boat's bilge pump and its battery connection, so that any water that does get in -- from rain, waves, or a small leak -- can be actively pumped out rather than accumulating unnoticed",
+    "choice_c": "Only the boat's stereo system needs to be checked before launching",
+    "choice_d": "Checking the bilge pump is illegal without a certified marine technician present",
+    "correct_choice": "B",
+    "explanation": "Beyond confirming the drain plug is inserted, a boater should verify the bilge pump and its battery connection are working, since the pump provides an active line of defense against water accumulating from rain, waves, or a small leak once the boat is already on the water.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on pre-launch bilge pump checks"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should a boater use wheel chocks or the tow vehicle's parking brake when staging a loaded trailer on a sloped area near a South Carolina boat ramp?",
+    "choice_a": "Sloped staging areas present no risk of a trailer or vehicle rolling unexpectedly",
+    "choice_b": "To prevent the trailer or tow vehicle from rolling unexpectedly on the slope while unattended or being prepared for launch, which could endanger people or property nearby",
+    "choice_c": "Chocks and parking brakes are only useful while the vehicle is already moving",
+    "choice_d": "This precaution is required only for trailers carrying PWCs",
+    "correct_choice": "B",
+    "explanation": "A sloped staging area near a ramp creates a real risk that an unattended or improperly secured trailer and tow vehicle could roll; using wheel chocks and engaging the parking brake helps prevent that from endangering nearby people, vehicles, or the boat itself while it is being prepared for launch.",
+    "weight": 2,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on trailer staging safety"
+  }
+]

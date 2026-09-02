@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "In Pennsylvania, what is the deadline for submitting a written accident report when a boating accident results in a death, a person's disappearance, or an injury requiring medical treatment beyond first aid?",
+    "choice_a": "Within 24 hours",
+    "choice_b": "Within 48 hours",
+    "choice_c": "Within 5 business days",
+    "choice_d": "Within 30 days",
+    "correct_choice": "B",
+    "explanation": "The PFBC requires a written report to be submitted within 48 hours when a boating accident causes a death, a person's disappearance under circumstances suggesting death or injury, or an injury requiring medical treatment beyond first aid.",
+    "weight": 3,
+    "source_note": "PA Fish & Boat Commission, 'Report a Boating Accident,' pa.gov (accessed 2026-08-31)"
+  },
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "In Pennsylvania, what is the deadline for submitting a written report for a boating accident that involves only property damage reaching the state's mandatory reporting threshold, with no death, disappearance, or injury?",
+    "choice_a": "Within 48 hours",
+    "choice_b": "Within 24 hours",
+    "choice_c": "Within 10 days",
+    "choice_d": "Within 60 days",
+    "correct_choice": "C",
+    "explanation": "A boating accident involving property damage at or above the reporting threshold must have a written report submitted within 10 days, a longer window than the 48-hour deadline that applies to accidents involving death, disappearance, or injury.",
+    "weight": 3,
+    "source_note": "PA Fish & Boat Commission, 'Report a Boating Accident,' pa.gov (accessed 2026-08-31)"
+  },
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "What aggregate dollar amount of property damage to the vessel(s) and other property triggers Pennsylvania's mandatory boating accident reporting requirement, even if no one is hurt?",
+    "choice_a": "$500 or more",
+    "choice_b": "$10,000 or more",
+    "choice_c": "$200 or more",
+    "choice_d": "$2,000 or more",
+    "correct_choice": "D",
+    "explanation": "Pennsylvania requires a boating accident to be reported when damage to the vessel(s) and other property totals $2,000 or more, even if the accident caused no injuries.",
+    "weight": 3,
+    "source_note": "PA Fish & Boat Commission, 'Report a Boating Accident' / Boating FAQs, pa.gov (accessed 2026-08-31)"
+  },
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "Besides reaching the $2,000 aggregate property-damage threshold, what other outcome by itself requires a Pennsylvania boating accident to be reported, regardless of the dollar amount of damage?",
+    "choice_a": "A complete loss of any vessel involved in the accident",
+    "choice_b": "Any scratch to a vessel's paint or hull",
+    "choice_c": "The loss of a single life jacket overboard",
+    "choice_d": "A fishing rod falling into the water",
+    "correct_choice": "A",
+    "explanation": "Pennsylvania's reporting requirement is triggered either by aggregate property damage of $2,000 or more, or by a complete loss of any vessel involved, whichever applies -- so a total loss must be reported even if the dollar figure is otherwise below $2,000.",
+    "weight": 2,
+    "source_note": "PA Fish & Boat Commission Boating FAQs, pa.gov (accessed 2026-08-31)"
+  },
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "For which situations does Pennsylvania require 'immediate notification' to the PFBC, in addition to the standard written accident report?",
+    "choice_a": "For any injury at all, no matter how minor",
+    "choice_b": "When a person dies, or when a person disappears from the boat under circumstances indicating death or injury is likely",
+    "choice_c": "For any accident causing more than $500 in property damage",
+    "choice_d": "Whenever a boat simply runs out of fuel",
+    "correct_choice": "B",
+    "explanation": "A death, or a disappearance under circumstances that indicate death or injury is likely, requires immediate notification to the Commission on top of the written report that follows within 48 hours; accidents involving only an injury or only property damage do not carry this immediate-notification requirement.",
+    "weight": 2,
+    "source_note": "PA Fish & Boat Commission Boating FAQs, pa.gov (accessed 2026-08-31)"
+  },
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "Under Pennsylvania's boating accident reporting requirement, who must file the required report if the vessel's operator is unable to do so?",
+    "choice_a": "No one; the reporting requirement simply lapses",
+    "choice_b": "Only a passenger who witnessed the accident",
+    "choice_c": "The owner of the vessel involved in the accident",
+    "choice_d": "The marina where the boat is normally docked",
+    "correct_choice": "C",
+    "explanation": "If the operator is unable to file the required boating accident report, the owner of every vessel involved in the accident is responsible for filing it instead.",
+    "weight": 2,
+    "source_note": "PA Fish & Boat Commission, 'Report a Boating Accident,' pa.gov (accessed 2026-08-31)"
+  },
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "How does the Pennsylvania Fish and Boat Commission treat the information submitted in boating accident reports?",
+    "choice_a": "It is published publicly online along with the boaters' names and addresses",
+    "choice_b": "It is sold to insurance marketing companies",
+    "choice_c": "It is discarded without being reviewed by anyone",
+    "choice_d": "It is kept confidential and used by the Commission only for boating safety purposes",
+    "correct_choice": "D",
+    "explanation": "The PFBC states that all boating accident reports are confidential and are used by the Commission solely for boating safety purposes.",
+    "weight": 1,
+    "source_note": "PA Fish & Boat Commission, 'Report a Boating Accident,' pa.gov (accessed 2026-08-31)"
+  },
+  {
+    "topic": "Accident Reporting and Legal Duties",
+    "question": "What must a Pennsylvania boat operator or owner submit to satisfy the legal requirement to report a qualifying boating accident?",
+    "choice_a": "A Boating Accident Report form, completely and legibly filled out",
+    "choice_b": "A verbal phone call only, with no written follow-up ever required",
+    "choice_c": "A private insurance claim form",
+    "choice_d": "A traffic citation issued by local police",
+    "correct_choice": "A",
+    "explanation": "Pennsylvania's boating accident reporting requirement is satisfied by submitting the Commission's Boating Accident Report form, which must be completely and legibly filled out by the operator, or by the owner if the operator is unable to do so.",
+    "weight": 1,
+    "source_note": "PA Fish & Boat Commission, 'Report a Boating Accident,' pa.gov (accessed 2026-08-31)"
+  }
+]

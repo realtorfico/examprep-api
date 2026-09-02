@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "According to Lake Mead National Recreation Area's boating rules, at what age can a child stop being required to wear a life jacket while a vessel is underway (absent an exception)?",
+    "choice_a": "The requirement ends at age 6",
+    "choice_b": "There is no age-based life jacket rule at Lake Mead NRA",
+    "choice_c": "The requirement applies only to children under 5",
+    "choice_d": "Children under 13 years old must wear a life jacket whenever underway in a vessel, unless they are in a fully enclosed area",
+    "correct_choice": "D",
+    "explanation": "Lake Mead National Recreation Area's boating rules state that children under 13 years old must wear a life jacket whenever underway in a vessel, unless they are in a fully enclosed area -- a specific exception boaters should know applies on these waters.",
+    "weight": 3,
+    "source_note": "National Park Service, Lake Mead National Recreation Area, boating life jacket rules"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "Lake Mead National Recreation Area's rules restrict the use of inflatable life jackets for certain boaters. Who is affected?",
+    "choice_a": "Inflatable life jackets are prohibited for persons under 16 years old, and for anyone riding a personal watercraft or being towed behind a vessel, regardless of age",
+    "choice_b": "Inflatable life jackets are banned for all boaters of every age at Lake Mead",
+    "choice_c": "Only adults over 65 are restricted from using inflatable life jackets",
+    "choice_d": "Inflatable life jackets have no restrictions at Lake Mead NRA",
+    "correct_choice": "A",
+    "explanation": "Lake Mead NRA's rules prohibit inflatable life jackets for persons under 16 years old, and separately prohibit them for anyone on a personal watercraft or being towed, regardless of the wearer's age -- a more specific restriction than a general life jacket requirement.",
+    "weight": 2,
+    "source_note": "National Park Service, Lake Mead National Recreation Area, boating life jacket rules"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "On Lake Mohave, operators of hand-propelled craft such as kayaks and canoes face a mandatory PFD-wear zone in a specific stretch of river. Where is it?",
+    "choice_a": "Anywhere within Lake Mead National Recreation Area without exception",
+    "choice_b": "Between Hoover Dam and River Mile 43 on Lake Mohave, where hand-propelled craft operators must wear Coast Guard-approved PFDs",
+    "choice_c": "Only within designated swimming beaches",
+    "choice_d": "Only on the Nevada side of Lake Mohave",
+    "correct_choice": "B",
+    "explanation": "Lake Mead NRA's rules single out the stretch of Lake Mohave between Hoover Dam and River Mile 43, requiring operators of hand-propelled craft (kayaks, canoes, and similar) to wear Coast Guard-approved PFDs in that zone.",
+    "weight": 3,
+    "source_note": "National Park Service, Lake Mead National Recreation Area, boating life jacket rules (Lake Mohave hand-propelled craft zone)"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "Nevada imposes a minimum-age/supervision rule on operators who tow a person on water skis or a similar device. Since Nevada law applies on Lake Mead, what does Nevada's rule require?",
+    "choice_a": "Any operator of any age may tow a skier with no supervision requirement",
+    "choice_b": "Only licensed adults over 21 may ever tow a skier in Nevada",
+    "choice_c": "The towing operator must be at least 16, or at least 14 if accompanied by an observer aged 18 or older aboard the vessel",
+    "choice_d": "Nevada has no age or supervision requirement for towing water skiers",
+    "correct_choice": "C",
+    "explanation": "Nevada requires that an operator towing a water skier or similar device be at least 16 years old, or at least 14 with an 18-or-older observer aboard -- a Nevada-specific requirement that applies to boaters on the shared waters of Lake Mead under the dual-jurisdiction rule.",
+    "weight": 3,
+    "source_note": "National Park Service, Lake Mead National Recreation Area, boating rules (Nevada towing age/supervision requirement)"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "Glen Canyon National Recreation Area's rules set a specific speed limit and buffer distance to protect people and objects in the water. What is required?",
+    "choice_a": "There is no speed limit anywhere on Lake Powell",
+    "choice_b": "The only speed restriction is a 45 mph limit that applies lake-wide with no exceptions",
+    "choice_c": "Wake restrictions apply only at night",
+    "choice_d": "Operating in excess of 5 mph or creating a wake is prohibited in harbors, marinas, designated swimming areas, and areas marked 'No Wake,' and boaters must avoid creating a wake within 100 feet of downed skiers or tubers, people wading, fishing, floating, or swimming, other vessels, launch sites, or dive flag markers",
+    "correct_choice": "D",
+    "explanation": "Glen Canyon NRA's boating rules set a 5 mph/no-wake standard for harbors, marinas, designated swimming areas, and posted 'No Wake' zones, and separately require a 100-foot no-wake buffer around downed skiers/tubers, people in the water, other vessels, launch sites, and dive flag markers.",
+    "weight": 3,
+    "source_note": "National Park Service, Glen Canyon National Recreation Area, boating speed/no-wake rules"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "Beyond the general 5 mph/100-foot no-wake rules, Glen Canyon National Recreation Area designates certain locations as wakeless zones at all times. Which are named?",
+    "choice_a": "Rainbow Bridge National Monument, and Antelope, Labyrinth, and Lost Eden Canyons",
+    "choice_b": "The entire main body of Lake Powell at all times",
+    "choice_c": "Only the marina at Wahweap",
+    "choice_d": "No specific locations are designated as permanently wakeless",
+    "correct_choice": "A",
+    "explanation": "Glen Canyon NRA's boating rules specifically name Rainbow Bridge National Monument and Antelope, Labyrinth, and Lost Eden Canyons as wakeless zones, regardless of the general no-wake distance rules that apply elsewhere on the lake.",
+    "weight": 2,
+    "source_note": "National Park Service, Glen Canyon National Recreation Area, boating speed/no-wake rules (named wakeless zones)"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "What special personal watercraft (PWC) and life jacket rules apply to the stretch of the Colorado River between Glen Canyon Dam and Lees Ferry?",
+    "choice_a": "PWC are allowed with no restrictions, and life jackets are optional for everyone",
+    "choice_b": "PWC are not allowed on this stretch of the Colorado River at all, and paddlecraft operators and passengers there must wear life jackets",
+    "choice_c": "Only PWC are allowed on this stretch; all other craft are banned",
+    "choice_d": "This stretch of river has no boating rules distinct from the rest of Lake Powell",
+    "correct_choice": "B",
+    "explanation": "Glen Canyon NRA's boating rules prohibit personal watercraft entirely on the Colorado River between Glen Canyon Dam and Lees Ferry, and require paddlecraft operators and passengers on that stretch to wear life jackets.",
+    "weight": 3,
+    "source_note": "National Park Service, Glen Canyon National Recreation Area, boating rules (Glen Canyon Dam to Lees Ferry stretch)"
+  },
+  {
+    "topic": "Interstate Waters (Lake Mead, Lake Powell, Colorado River)",
+    "question": "Because of quagga mussels, what does Glen Canyon National Recreation Area require of all boaters and anglers after they use Lake Powell?",
+    "choice_a": "Boats must be pressure-washed at a state-certified facility before ever touching the water",
+    "choice_b": "There is no aquatic invasive species requirement at Glen Canyon NRA",
+    "choice_c": "All boaters and fishermen must clean, drain, and dry their vessels and all equipment after contact with these waters",
+    "choice_d": "Only trailered boats over 26 feet must be inspected",
+    "correct_choice": "C",
+    "explanation": "Because of quagga mussel contamination, Glen Canyon NRA requires all boaters and anglers to clean, drain, and dry their vessels and all equipment after contact with Lake Powell waters -- a mandatory practice distinct from the AIS decal-purchase requirement that applies on the Nevada side of Lake Mead.",
+    "weight": 2,
+    "source_note": "National Park Service, Glen Canyon National Recreation Area, aquatic invasive species (quagga mussel) guidance"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "Under the Act to Prevent Pollution from Ships, what must a boater do with trash generated aboard a vessel on Georgia waters?",
+    "choice_a": "It may be thrown overboard as long as it is biodegradable",
+    "choice_b": "Paper and food waste may be discharged anywhere, but plastics must be stored",
+    "choice_c": "Store it in a container while on board, since it is illegal to dump refuse, garbage, or plastics into state or federally controlled waters, and place it in a proper receptacle after returning to shore",
+    "choice_d": "Trash may be discharged once the vessel is more than one mile offshore",
+    "correct_choice": "C",
+    "explanation": "The Act to Prevent Pollution from Ships limits the discharge of garbage from vessels; it is illegal to dump refuse, garbage, or plastics into any state or federally controlled waters, so trash must be stored in a container on board and disposed of properly after returning to shore.",
+    "weight": 3,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Discharge of Trash'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "Which vessels must display a Garbage Disposal Placard when boating on federally controlled waters?",
+    "choice_a": "All vessels, regardless of length, including canoes and kayaks",
+    "choice_b": "Only commercial fishing vessels over 65 feet",
+    "choice_c": "Only vessels that carry a marine toilet",
+    "choice_d": "Vessels 26 feet or longer, which must post a durable placard at least 4 by 9 inches notifying passengers and crew about discharge restrictions",
+    "correct_choice": "D",
+    "explanation": "A vessel 26 feet or longer operating on federally controlled waters must display a Garbage Disposal Placard, a durable sign at least 4 by 9 inches that notifies passengers and crew about discharge restrictions.",
+    "weight": 2,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Discharge of Trash'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "Which vessels are required to have a written Waste Management Plan aboard?",
+    "choice_a": "Oceangoing vessels 40 feet or more in length that have cooking and sleeping facilities",
+    "choice_b": "Every registered vessel regardless of size",
+    "choice_c": "Only vessels used exclusively for personal watercraft rental",
+    "choice_d": "Only vessels without a marine toilet",
+    "correct_choice": "A",
+    "explanation": "Oceangoing vessels that are 40 feet or more in length and have cooking and sleeping facilities must have a written Waste Management Plan, which the captain is responsible for implementing and posting.",
+    "weight": 3,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Waste Management Plan'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "Besides directing the crew on discharging sewage, garbage, and plastics, what else must a vessel's Waste Management Plan identify?",
+    "choice_a": "The vessel owner's home mailing address only",
+    "choice_b": "The vessel's name and home port, along with how to advise the captain of any oily discharges or diesel spills",
+    "choice_c": "The insurance policy number for the vessel",
+    "choice_d": "Nothing further is required beyond the discharge instructions",
+    "correct_choice": "B",
+    "explanation": "A vessel's Waste Management Plan must identify the vessel's name and home port and must direct everyone aboard on proper waste handling, including advising the captain of oily discharges or diesel spills.",
+    "weight": 2,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Waste Management Plan'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "Which organisms are specifically named as aquatic nuisance species that most often spread between Georgia waterways by hitching a ride on vessels and trailers?",
+    "choice_a": "Largemouth bass, bluegill, and crappie",
+    "choice_b": "American alligators and snapping turtles",
+    "choice_c": "Zebra mussels, quagga mussels, milfoil, and hydrilla",
+    "choice_d": "Blue crabs and oysters",
+    "correct_choice": "C",
+    "explanation": "Aquatic nuisance species such as zebra mussels, quagga mussels, milfoil, and hydrilla most often spread between waterways by hitching a ride on vessels and trailers, displacing native species once introduced.",
+    "weight": 2,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Aquatic Nuisance Species'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "To help stop the spread of invasive species, what should a boater do to the vessel and trailer before leaving a boat ramp?",
+    "choice_a": "Immediately drive to the next lake without stopping to inspect anything",
+    "choice_b": "Only rinse the vessel if visible mud is present, without draining any water-holding compartments",
+    "choice_c": "Leave all inspection and cleaning to the boat ramp attendant",
+    "choice_d": "Inspect the vessel and trailer and remove any plants and animals seen, and drain the motor, live well, and bilge on land before leaving the area",
+    "correct_choice": "D",
+    "explanation": "Georgia's invasive-species prevention practices call for boaters to inspect their vessel and trailer, remove any plants and animals before leaving the area, and drain the motor, live well, and bilge on land before leaving.",
+    "weight": 3,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Stop the Spread of Invasive Species'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "What should a boater do with leftover bait after a day of fishing, according to Georgia's invasive-species prevention guidance?",
+    "choice_a": "Empty the bait bucket on land, and never release live bait into a body of water or move aquatic animals from one body of water to another",
+    "choice_b": "Release any leftover live bait back into the water it was caught in to be humane",
+    "choice_c": "Pour the bait bucket's contents into any nearby waterway, since bait is not a pollutant",
+    "choice_d": "Transfer leftover bait to the next lake being visited so it is not wasted",
+    "correct_choice": "A",
+    "explanation": "Boaters should empty bait buckets on land and should never release live bait into a body of water or move aquatic animals from one body of water into another, since this is a common way aquatic nuisance species spread.",
+    "weight": 2,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Stop the Spread of Invasive Species'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "What diver-down flag must a scuba diver or snorkeler display to mark a diving area on Georgia state waters?",
+    "choice_a": "A solid orange square flag with no markings",
+    "choice_b": "A rectangular red flag, at least 15 inches by 15 inches, with a white diagonal stripe",
+    "choice_c": "A blue-and-white checkered flag",
+    "choice_d": "A plain white flag with a red circle in the center",
+    "correct_choice": "B",
+    "explanation": "On Georgia state waters, a diver-down flag must be a rectangular red flag, at least 15 inches by 15 inches, with a white diagonal stripe, marking the diving area.",
+    "weight": 2,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Diver-Down Flags'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "What diver-down marking must be displayed on a vessel operating on federally controlled waters to indicate divers are in the water?",
+    "choice_a": "A red pennant flown from the bow only, with no size requirement",
+    "choice_b": "A green light displayed at the masthead during daylight hours",
+    "choice_c": "A blue-and-white International Code Flag \"A\" (Alfa flag), at least 3.3 feet (one meter) high and visible from all directions",
+    "choice_d": "No special marking is required on federally controlled waters",
+    "correct_choice": "C",
+    "explanation": "On federally controlled waters, a vessel must display a blue-and-white International Code Flag \"A\" (Alfa flag), at least 3.3 feet (one meter) high and visible from all directions, to indicate that divers are down.",
+    "weight": 2,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Diver-Down Flags'"
+  },
+  {
+    "topic": "Waste Discharge & Environment",
+    "question": "How far away must a vessel operator stay from a diver-down flag or a person in the water it marks?",
+    "choice_a": "At least 10 feet",
+    "choice_b": "At least 500 yards",
+    "choice_c": "There is no minimum distance, only a no-wake requirement",
+    "choice_d": "At least 100 feet",
+    "correct_choice": "D",
+    "explanation": "Vessel operators must stay at least 100 feet away from a diver-down flag and any person in the water that it marks.",
+    "weight": 3,
+    "source_note": "Boat-Ed Georgia Boating Safety Course, 'Diver-Down Flags'"
+  }
+]

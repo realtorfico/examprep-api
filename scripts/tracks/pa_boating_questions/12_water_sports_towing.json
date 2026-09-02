@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Besides the operator, who else should typically be aboard a boat towing a water skier or tuber, if the boat is not equipped with a wide-angle rearview mirror?",
+    "choice_a": "An observer whose sole job is to watch the person being towed and relay information to the operator",
+    "choice_b": "No one else is needed if the operator glances back occasionally",
+    "choice_c": "A second operator to steer while the first one skis",
+    "choice_d": "Observers are never useful when towing a skier",
+    "correct_choice": "A",
+    "explanation": "A dedicated observer keeps constant watch on the skier or tuber, watching for falls or signals and communicating with the operator, since the operator cannot safely watch both the water ahead and the person being towed at the same time.",
+    "weight": 3,
+    "source_note": "Observer requirement for towed water sports, PA-approved boating courses"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What type of PFD should a person being towed on skis, a tube, or a wakeboard wear, rather than a bulkier offshore-style life jacket?",
+    "choice_a": "A Type IV throwable device worn around the waist",
+    "choice_b": "A PFD specifically designed and labeled for water-skiing or towed sports, offering a snug fit that won't be pulled off by impact with the water",
+    "choice_c": "No PFD is required for towed water sports",
+    "choice_d": "Any flotation cushion, regardless of fit",
+    "correct_choice": "B",
+    "explanation": "A PFD labeled for water-skiing is designed to stay securely in place and provide flotation despite the impact of falling at speed, unlike a bulkier general-purpose PFD.",
+    "weight": 2,
+    "source_note": "PFD selection for towed water sports, PA-approved boating courses"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What does it mean if a skier or tuber falls into the water and raises a hand or an orange/red flag?",
+    "choice_a": "The signal has no defined meaning in boating safety",
+    "choice_b": "It means the skier wants the boat to leave the area",
+    "choice_c": "It signals to the operator, observer, and other boaters that the skier is down and in the water, so nearby traffic should steer clear",
+    "choice_d": "It is a signal that the skier wants to be towed faster",
+    "correct_choice": "C",
+    "explanation": "A raised hand, or an orange/red flag displayed by the observer, alerts other boaters that a person is in the water near the towboat, warning them to steer clear until the skier is safely aboard again.",
+    "weight": 2,
+    "source_note": "Downed-skier flag signal, PA-approved boating courses"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why is nighttime water-skiing or tubing considered especially dangerous and generally avoided or restricted?",
+    "choice_a": "Water sports are always safer at night than during the day",
+    "choice_b": "Visibility has no bearing on the safety of towed water sports",
+    "choice_c": "Nighttime towing eliminates the need for an observer",
+    "choice_d": "Low visibility makes it very difficult for the towboat operator, observer, and other boaters to see a person in the water in time to avoid a collision",
+    "correct_choice": "D",
+    "explanation": "A skier or tuber in the water is very low to the surface and hard to spot even in daylight; in darkness, the risk that another vessel would not see them in time increases dramatically, which is why towed water sports are best limited to daylight hours.",
+    "weight": 2,
+    "source_note": "Towed water sports visibility hazard, PA-approved boating courses"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What should a boat operator do before starting to tow a water skier, to check that the path ahead is clear?",
+    "choice_a": "Check for other boats, swimmers, obstructions, and shallow water along the intended towing path before accelerating",
+    "choice_b": "Simply accelerate immediately without checking the surrounding area",
+    "choice_c": "Only check the water behind the boat, not ahead",
+    "choice_d": "Rely solely on the skier to identify hazards",
+    "correct_choice": "A",
+    "explanation": "Before accelerating to pull a skier up, the operator should scan the intended path for other boats, swimmers, floating debris, and shallow areas to avoid a collision or grounding while towing.",
+    "weight": 2,
+    "source_note": "Pre-tow safety check, PA-approved boating courses"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "How should a boat approach a fallen skier or tuber to pick them up safely?",
+    "choice_a": "Leave the engine engaged in forward gear as the person climbs aboard",
+    "choice_b": "Circle around slowly, approach from the downwind or downcurrent side, and shift the engine to neutral before the person reaches the boat",
+    "choice_c": "Reverse directly toward the person at full throttle",
+    "choice_d": "Approach at high speed to minimize their time in the water",
+    "correct_choice": "B",
+    "explanation": "As with any person-in-water recovery, the operator should approach carefully and shift to neutral (or shut off the engine) before the swimmer nears the boat, to eliminate propeller-strike risk during pickup.",
+    "weight": 3,
+    "source_note": "Fallen-skier recovery procedure, PA-approved boating courses"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What is a safety reason for limiting the number of people a single boat can tow at once on devices like tubes?",
+    "choice_a": "More riders always makes towing safer and easier to control",
+    "choice_b": "Towing limits exist only to reduce fuel consumption",
+    "choice_c": "Towing capacity is tied to the boat's power, stability, observer coverage, and the manufacturer's rated towing limits, all of which affect how safely multiple riders can be controlled",
+    "choice_d": "There is never any limit on how many people a boat can tow",
+    "correct_choice": "C",
+    "explanation": "A boat's engine power, stability, and the observer's ability to track multiple riders all factor into safe towing limits, which is why Pennsylvania and manufacturers set specific capacity restrictions, especially for PWCs.",
+    "weight": 2,
+    "source_note": "Towing-capacity safety rationale, PA-approved boating courses"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "Why should a boat operator avoid pulling a skier or tuber close to docks, swimming areas, or other boats?",
+    "choice_a": "There is no added risk when towing near congested areas",
+    "choice_b": "Towing close to docks is a common and encouraged practice",
+    "choice_c": "Congested areas are actually the safest place to tow a skier",
+    "choice_d": "It creates a serious risk of collision or injury if the skier falls, loses control, or swings wide of the towboat's path",
+    "correct_choice": "D",
+    "explanation": "A skier or tuber can swing wide of the boat's wake or lose control unexpectedly, so towing should be done in open water away from docks, swim areas, and other vessels to reduce collision risk.",
+    "weight": 2,
+    "source_note": "Towed-sport congested-area hazard, PA-approved boating courses"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What should be checked about the tow rope and handle before starting a water-skiing or tubing session?",
+    "choice_a": "That the rope is free of knots or fraying and is properly attached to a secure tow point on the boat, since a failure at speed can cause injury",
+    "choice_b": "Rope condition has no bearing on the safety of towed water sports",
+    "choice_c": "Any rope, regardless of condition, is acceptable for towing",
+    "choice_d": "The rope should be attached to the outboard motor rather than a dedicated tow point",
+    "correct_choice": "A",
+    "explanation": "A frayed or knotted tow rope can snap unexpectedly under load, and towing from an improper attachment point (like the motor rather than a rated tow eye or pylon) can affect boat handling and rider safety.",
+    "weight": 2,
+    "source_note": "Tow rope/attachment-point inspection, PA-approved boating courses"
+  },
+  {
+    "topic": "Water Sports and Towing",
+    "question": "What is one reason paddlecraft users (canoeists, kayakers) should also be cautious around areas where powerboats are towing skiers?",
+    "choice_a": "There is no additional risk to paddlecraft near towing activity",
+    "choice_b": "A towboat's attention is often focused on the skier behind it rather than small, low-profile paddlecraft nearby, making paddlecraft harder for the towboat operator to notice in time",
+    "choice_c": "Powerboats towing skiers always yield automatically to any paddlecraft nearby",
+    "choice_d": "Paddlecraft are completely invisible to all other vessels regardless of location",
+    "correct_choice": "B",
+    "explanation": "Because a towboat operator's attention is split between steering and monitoring the skier, low, quiet paddlecraft can be easy to miss, so canoeists and kayakers should stay alert and visible around active ski/tow zones.",
+    "weight": 2,
+    "source_note": "Paddlecraft awareness near towing activity, PA-approved boating courses"
+  }
+]

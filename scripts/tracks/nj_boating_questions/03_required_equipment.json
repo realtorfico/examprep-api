@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What type of fire extinguisher is generally required aboard a powerboat with an enclosed engine compartment or fuel tank compartment?",
+    "choice_a": "Any household water-based fire extinguisher",
+    "choice_b": "A Class A extinguisher rated only for wood and paper fires",
+    "choice_c": "No fire extinguisher is ever required on a recreational vessel",
+    "choice_d": "A U.S. Coast Guard-approved B-I or B-II type extinguisher rated for gasoline and oil fires",
+    "correct_choice": "D",
+    "explanation": "Powerboats with enclosed compartments where flammable vapors could collect must carry a USCG-approved B-I or B-II fire extinguisher, rated for flammable liquid fires such as gasoline, and the number required scales with vessel length.",
+    "weight": 4,
+    "source_note": "Federal USCG fire extinguisher carriage requirements enforced statewide including New Jersey"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is the purpose of a mechanical ventilation system (power blower) on a powerboat with an enclosed engine compartment powered by gasoline?",
+    "choice_a": "To clear explosive gasoline fumes from the bilge and engine compartment before starting the engine",
+    "choice_b": "To cool the cabin for passenger comfort",
+    "choice_c": "To power the boat's navigation lights",
+    "choice_d": "Ventilation systems serve no safety purpose",
+    "correct_choice": "A",
+    "explanation": "Gasoline vapors are heavier than air and can pool in an enclosed engine compartment or bilge, creating an explosion risk; a power ventilation blower run for several minutes before starting the engine helps clear those fumes.",
+    "weight": 4,
+    "source_note": "Federal ventilation requirements for gasoline-powered enclosed engine compartments (33 CFR 183)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Before starting a gasoline inboard engine in an enclosed compartment, what should a boater do?",
+    "choice_a": "There is no recommended pre-start safety procedure",
+    "choice_b": "Run the blower for at least four minutes and sniff for fuel odor in the bilge before starting the engine",
+    "choice_c": "Immediately start the engine at full throttle",
+    "choice_d": "Open all fuel lines to check for leaks while the engine runs",
+    "correct_choice": "B",
+    "explanation": "Running the blower for several minutes and checking for fuel odor before starting a gasoline inboard engine helps ensure that dangerous vapors have been cleared from the engine compartment and bilge, reducing explosion risk.",
+    "weight": 4,
+    "source_note": "Universal pre-start safety procedure taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "On which New Jersey waters are visual distress signals (VDS), such as flares or an orange distress flag, generally required aboard recreational vessels?",
+    "choice_a": "VDS are never required in New Jersey",
+    "choice_b": "VDS are required only for vessels under 10 feet",
+    "choice_c": "Coastal waters and other waters directly connected to the ocean, as designated under federal law",
+    "choice_d": "VDS are required on every lake and pond in New Jersey regardless of size",
+    "correct_choice": "C",
+    "explanation": "Federal law, enforced on New Jersey's coastal and ocean-connected waters, requires most vessels to carry visual distress signals; vessels operating solely on smaller inland lakes are generally not subject to the same VDS carriage rule.",
+    "weight": 3,
+    "source_note": "Federal VDS carriage requirements (33 CFR 175) applied to New Jersey coastal and tidal waters"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is an example of a daytime-only visual distress signal accepted for meeting federal VDS requirements?",
+    "choice_a": "A red handheld flare that also works at night",
+    "choice_b": "A white stern light",
+    "choice_c": "A PFD of any type",
+    "choice_d": "An orange distress flag with a black square and ball",
+    "correct_choice": "D",
+    "explanation": "An orange distress flag with a black square and ball symbol is a daytime-only visual distress signal; boaters must also carry a nighttime-capable signal, such as a flare, to be fully compliant since day signals alone do not satisfy nighttime requirements.",
+    "weight": 3,
+    "source_note": "Federal VDS carriage requirements (33 CFR 175)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What sound-producing device must generally be carried aboard a recreational vessel to signal intentions or warn other vessels?",
+    "choice_a": "A whistle, horn, or other efficient sound-producing device audible for a sufficient distance",
+    "choice_b": "A musical instrument of the operator's choosing",
+    "choice_c": "A car horn wired into the dashboard",
+    "choice_d": "No sound-producing device is ever required",
+    "correct_choice": "A",
+    "explanation": "Navigation Rules require vessels to carry an efficient sound-producing device, such as a whistle or horn, to make required signals like danger signals or maneuvering signals in reduced visibility or close-quarters situations.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules sound-signal equipment requirements (33 CFR 83)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "For a vessel 39.4 feet (12 meters) or longer, what additional sound signaling device is required beyond a whistle or horn?",
+    "choice_a": "No additional device is required",
+    "choice_b": "A bell",
+    "choice_c": "A siren identical to a police vehicle's",
+    "choice_d": "A second engine",
+    "correct_choice": "B",
+    "explanation": "Vessels 12 meters (about 39.4 feet) or longer must carry a bell in addition to a whistle, which is used for specific signals such as anchor signals in fog or restricted visibility.",
+    "weight": 2,
+    "source_note": "Inland Navigation Rules bell requirement for vessels 12 meters and longer (33 CFR 83)"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What is a backfire flame arrestor, and on which vessels is it typically required?",
+    "choice_a": "A device required only on sailboats",
+    "choice_b": "A type of navigation light",
+    "choice_c": "A device fitted to the carburetor air intake of a gasoline inboard engine to prevent an engine backfire from igniting fuel vapors, required on most gasoline inboard-powered vessels",
+    "choice_d": "A fire extinguisher used only on wooden boats",
+    "correct_choice": "C",
+    "explanation": "A backfire flame arrestor is mounted on the carburetor of a gasoline inboard engine to stop flames from an engine backfire from reaching and igniting vapors in the engine compartment, and it is required equipment on most gasoline inboard vessels.",
+    "weight": 3,
+    "source_note": "Federal backfire flame arrestor requirement (33 CFR 183) for gasoline inboard engines"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "What does New Jersey's Marine Services Bureau equipment checklist reference for boaters to verify before heading out on the water?",
+    "choice_a": "A checklist that covers only whether the boat has enough fuel",
+    "choice_b": "A checklist limited exclusively to personal watercraft",
+    "choice_c": "New Jersey provides no equipment guidance to boaters",
+    "choice_d": "A checklist covering required PFDs, fire extinguishers, sound and visual distress signaling devices, navigation lights, and registration/documentation appropriate to the vessel",
+    "correct_choice": "D",
+    "explanation": "The NJSP Marine Services Bureau publishes an equipment checklist referenced from its boating safety certificate materials, directing boaters to confirm PFDs, fire extinguishers, signaling devices, lights, and paperwork are aboard and in order before departure.",
+    "weight": 2,
+    "source_note": "NJSP Marine Services Bureau boating safety certificate page equipment checklist reference"
+  },
+  {
+    "topic": "Required Safety Equipment",
+    "question": "Why should a boater periodically check the gauge on a USCG-approved fire extinguisher?",
+    "choice_a": "To confirm it is still charged and within its service life, since an expired or discharged extinguisher will not work in an emergency",
+    "choice_b": "The gauge only indicates the extinguisher's manufacture color",
+    "choice_c": "Fire extinguisher gauges have no functional purpose",
+    "choice_d": "To determine how much fuel is in the boat's tank",
+    "correct_choice": "A",
+    "explanation": "A fire extinguisher's pressure gauge shows whether it remains properly charged; an extinguisher that has lost pressure, expired, or already been partially discharged may fail when it's actually needed.",
+    "weight": 2,
+    "source_note": "Universal fire extinguisher maintenance guidance in NASBLA-aligned boating courses"
+  }
+]

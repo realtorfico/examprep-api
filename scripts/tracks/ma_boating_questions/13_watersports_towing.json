@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "When towing a water skier, tuber, or wakeboarder, why is a second person aboard (an observer) generally required in addition to the operator, unless the boat has a wide-angle rearview mirror?",
+    "choice_a": "The observer's only job is to operate the boat's stereo system",
+    "choice_b": "An observer is never required for towed water sports of any kind",
+    "choice_c": "The observer's job is to watch the person being towed continuously, since the operator needs to focus on steering and cannot safely watch both the towed person and the path ahead",
+    "choice_d": "A second person is required only to add ballast weight to the boat",
+    "correct_choice": "C",
+    "explanation": "Because the operator must concentrate on steering and watching for hazards ahead, most states require either a dedicated observer to continuously watch the person being towed and relay information (like signaling a fall), or a properly rated wide-angle rearview mirror as a substitute.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (observer/mirror requirement for towed water sports), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What is the standard hand signal a fallen water skier or tuber should use to indicate they are okay after a fall?",
+    "choice_a": "Waving both arms wildly overhead",
+    "choice_b": "Splashing water repeatedly with both hands",
+    "choice_c": "There is no standard signal; the boat should just guess",
+    "choice_d": "Raising one arm straight up with a hand or fist clenched",
+    "correct_choice": "D",
+    "explanation": "A single raised arm with a clenched fist or open hand is the widely used signal that a fallen skier or tuber is okay; failing to see this signal, or seeing the person in obvious distress, should prompt the boat to return immediately.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (water-skiing hand signals), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What time-of-day restriction commonly applies to towing a person on water skis, a tube, or a wakeboard?",
+    "choice_a": "Towing activities are generally restricted to daylight hours only",
+    "choice_b": "Towing is allowed only after sunset",
+    "choice_c": "There is no time-of-day restriction on towing anywhere",
+    "choice_d": "Towing is permitted only between midnight and dawn",
+    "correct_choice": "A",
+    "explanation": "Because a person being towed is difficult to see and needs good visibility for safety, towed water sports are generally limited to daylight hours in most states, a rule that also reflects the broader visibility concerns behind PWC daylight-only operation rules.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (daylight-only towing restriction), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What safety concern should an operator keep in mind when picking up a fallen skier or tuber from the water?",
+    "choice_a": "There is no special precaution needed when the propeller is spinning near a swimmer",
+    "choice_b": "Approach slowly, shift into neutral before the person is close to the boat, and keep the propeller shut off while they climb aboard, since propeller strikes can cause severe injury",
+    "choice_c": "Approach at full throttle to reach the person as quickly as possible",
+    "choice_d": "Leave the engine running in gear the entire time the person climbs aboard",
+    "correct_choice": "B",
+    "explanation": "When approaching a person in the water, an operator should slow down well before arriving, shift to neutral, and shut off the engine as the person nears or boards the boat, since a spinning propeller near a swimmer poses a serious injury risk.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (propeller safety when recovering a swimmer), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Why should a boat towing a skier or tuber avoid congested areas, swimming beaches, or narrow channels?",
+    "choice_a": "Congested areas are actually the safest place to tow water skiers because help is nearby",
+    "choice_b": "Towing regulations apply only in open ocean water, never near shorelines",
+    "choice_c": "The wide turning radius, wake, and unpredictable movement of a towed person create a greater collision or injury risk in crowded or confined areas",
+    "choice_d": "There is no additional risk to towing in congested areas compared to open water",
+    "correct_choice": "C",
+    "explanation": "A boat towing a skier or tuber needs room to maneuver, and the towed person's position can shift unpredictably; operating in crowded swimming areas, marinas, or narrow channels significantly raises the risk of collision or injuring a swimmer or another boater.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (towing location safety), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What should be checked about the tow rope/line before starting a towed water sport activity?",
+    "choice_a": "The tow rope condition has no bearing on safety",
+    "choice_b": "Any household rope is an acceptable substitute for a rated tow line",
+    "choice_c": "The tow rope should always be looped directly around a passenger's body rather than a tow bar or pylon",
+    "choice_d": "It should be of appropriate length and strength for the activity, free of knots or fraying, and clear of the propeller before the boat gets underway",
+    "correct_choice": "D",
+    "explanation": "A worn, frayed, or improperly rated tow line can snap or fail unexpectedly, and a line left near the propeller when the boat starts moving can foul it; operators should inspect the line's condition and confirm it's clear of the prop before towing.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (tow line inspection), consistent with NASBLA-aligned course curricula"
+  }
+]

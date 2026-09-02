@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "What shape distinguishes a \"nun\" buoy from a \"can\" buoy in the U.S. Aids to Navigation System?",
+    "choice_a": "A nun buoy is red and cone-shaped (tapering toward the top), while a can buoy is green and cylindrical (flat-topped)",
+    "choice_b": "Both shapes are identical and only their color differs",
+    "choice_c": "A nun buoy is always square while a can buoy is always triangular",
+    "choice_d": "Shape has no defined meaning in the U.S. Aids to Navigation System",
+    "correct_choice": "A",
+    "explanation": "A nun buoy is red and tapers to a cone-shaped top, while a can buoy is green and has a flat, cylindrical top; boaters who understand both the color and the shape can identify which side of the channel a buoy marks even without seeing its color clearly, such as at dusk.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System (lateral marker shapes), universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "How are numbered lateral aids to navigation generally arranged along a channel?",
+    "choice_a": "Numbers are assigned randomly with no consistent pattern",
+    "choice_b": "Numbers increase consecutively from the sea or open water toward the head of navigation, with even numbers on red aids and odd numbers on green aids",
+    "choice_c": "Only red aids are ever numbered; green aids never carry numbers",
+    "choice_d": "Numbers restart at one every time a channel curves",
+    "correct_choice": "B",
+    "explanation": "Lateral aids are numbered consecutively from seaward (or from open water) toward the head of navigation, with even numbers assigned to red aids and odd numbers assigned to green aids, letting a boater confirm position and direction of travel by checking whether the numbers are increasing or decreasing.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System (lateral marker numbering convention), universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "What does a quick-flashing light rhythm on a lighted aid to navigation typically signal to a boater at night?",
+    "choice_a": "Quick flashing has no special significance different from a slow, steady flash",
+    "choice_b": "It always means the aid has a dead battery",
+    "choice_c": "A sharp turn, a hazard, or an obstruction requiring special caution, distinguishing it from the slower flash rhythms used on routine channel markers",
+    "choice_d": "It indicates the channel is closed to all traffic",
+    "correct_choice": "C",
+    "explanation": "A quick-flashing light rhythm is commonly used to draw extra attention to a sharp turn, junction, or hazard along a route, distinguishing it from the slower, more routine flash rates used on ordinary channel-marking aids and prompting a boater to proceed with added caution.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System (lighted aid rhythm conventions), universal NASBLA-aligned boating safety curriculum"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Why shouldn't a South Carolina boater rely solely on a GPS chartplotter and ignore visual aids to navigation and lookout?",
+    "choice_a": "GPS chartplotters are illegal to use while boating",
+    "choice_b": "Electronic charts can be outdated, aids can be shifted by storms or ice, and GPS position error or signal loss can occur, so visual confirmation from actual aids to navigation and a proper lookout remain essential",
+    "choice_c": "GPS chartplotters are always 100% accurate and require no cross-checking",
+    "choice_d": "Aids to navigation are being phased out entirely in favor of GPS",
+    "correct_choice": "B",
+    "explanation": "A chartplotter is a valuable tool, but its charts can be outdated, real-world aids can be moved or damaged by storms, and GPS itself can suffer position error or signal loss, so prudent boaters continue to visually confirm their position against actual aids to navigation and maintain a proper lookout rather than navigating by screen alone.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum on electronic navigation limitations"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Under S.C. Code Section 50-21-710, may a city, county, or private individual place their own navigation markers on South Carolina's waters that conflict with SCDNR's official marking system?",
+    "choice_a": "Yes, any local government or individual may freely place markers without regard to the state system",
+    "choice_b": "No -- the statute makes it unlawful for a city, county, or person to mark or obstruct the waters of the state in a way that endangers vessel operation or conflicts with SCDNR's prescribed marking system",
+    "choice_c": "Only counties, never cities or individuals, are restricted from placing conflicting markers",
+    "choice_d": "The statute is silent on who may place navigation markers",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-710 makes it unlawful for a city, county, or person to mark or obstruct South Carolina's waters in a manner that endangers vessel operation or conflicts with the uniform marking system SCDNR prescribes, protecting the reliability of the official aids-to-navigation system statewide.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-710 (prohibition on conflicting local/private markers)"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Under Section 50-21-710, is it lawful to moor a vessel to, or to damage or remove, a navigational aid or regulatory marker on South Carolina waters?",
+    "choice_a": "Yes, boaters may moor to any buoy they find convenient with no restriction",
+    "choice_b": "No -- the statute makes it unlawful to moor or fasten a vessel to, or to wilfully damage, tamper with, remove, or obstruct, an aid to navigation or regulatory marker",
+    "choice_c": "Only SCDNR officers are prohibited from tampering with markers; the public may do so freely",
+    "choice_d": "The statute permits removal of a marker as long as it is reported afterward",
+    "correct_choice": "B",
+    "explanation": "Section 50-21-710 specifically prohibits mooring or fastening a vessel to an aid to navigation or regulatory marker, or wilfully damaging, tampering with, removing, or obstructing one, since doing so can displace or disable a marker other boaters depend on for safe navigation.",
+    "weight": 4,
+    "source_note": "S.C. Code Ann. Section 50-21-710 (prohibition on mooring to, damaging, or removing aids to navigation)"
+  }
+]

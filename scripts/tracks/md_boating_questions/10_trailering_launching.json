@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Trailering and Launching",
+    "question": "Before towing a boat trailer on Maryland roads, what should the driver check regarding the trailer's lights and connections?",
+    "choice_a": "Safety chains are unnecessary if the hitch appears secure",
+    "choice_b": "That the trailer's brake lights, turn signals, and running lights are properly connected and functioning, along with a secure hitch and safety chains",
+    "choice_c": "Trailer lights are optional and never required for road travel",
+    "choice_d": "Only the tow vehicle's lights need to be checked; trailer lights are irrelevant",
+    "correct_choice": "B",
+    "explanation": "Before towing, a driver should verify that trailer lights (brake, turn signal, running) work correctly, the hitch is properly latched, and safety chains are crossed and attached, since these are essential for safe and legal road travel.",
+    "weight": 2,
+    "source_note": "Universal boat trailering safety-check fundamentals (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "At a boat ramp, why is it generally recommended to prepare the boat (loading gear, installing the drain plug, attaching lines) before backing down the ramp?",
+    "choice_a": "It is required only for vessels longer than 26 feet",
+    "choice_b": "Drain plugs should always be installed after the boat is already in the water",
+    "choice_c": "To keep the launch process quick, minimizing the time the ramp lane is occupied and blocking other boaters waiting to launch or retrieve",
+    "choice_d": "Preparation at the ramp has no effect on other boaters",
+    "correct_choice": "C",
+    "explanation": "Preparing the boat away from the ramp itself, including installing the drain plug, loading gear, and readying dock lines, keeps the launch efficient and courteous to other boaters waiting to use the ramp.",
+    "weight": 2,
+    "source_note": "Universal boat ramp courtesy and launching-procedure fundamentals (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What is one of the most common and preventable mistakes boaters make when launching a trailered boat?",
+    "choice_a": "Installing the drain plug too early, before the trailer is even hooked up",
+    "choice_b": "Checking trailer tire pressure before a trip",
+    "choice_c": "Backing the trailer too slowly down the ramp",
+    "choice_d": "Forgetting to insert the drain plug before launching, which can allow the boat to take on water and sink at the dock",
+    "correct_choice": "D",
+    "explanation": "Forgetting to install the drain plug before launching is one of the most common boater mistakes and can result in the boat swamping or sinking at the dock or shortly after departure.",
+    "weight": 3,
+    "source_note": "Universal boat launching common-mistakes guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why should a driver check their trailer tires, wheel bearings, and tire pressure before a long tow to a Maryland boat ramp?",
+    "choice_a": "Trailer tires often sit unused between trips and can develop dry rot, low pressure, or bearing wear that increases the risk of a blowout or wheel failure on the road",
+    "choice_b": "Trailer tires never need maintenance since they carry less weight than a car's tires",
+    "choice_c": "Wheel bearings are irrelevant to trailer safety",
+    "choice_d": "Trailer tire pressure should always match the tow vehicle's tire pressure exactly",
+    "correct_choice": "A",
+    "explanation": "Because trailers often sit idle between outings, their tires and wheel bearings are prone to dry rot, pressure loss, and wear, so checking them before towing helps prevent blowouts or bearing failures on the highway.",
+    "weight": 2,
+    "source_note": "Universal boat trailer maintenance fundamentals (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What boat ramp etiquette should a boater follow after retrieving their vessel from the water?",
+    "choice_a": "Other boaters are expected to wait indefinitely regardless of how long retrieval takes",
+    "choice_b": "Move the trailer and vehicle away from the ramp to a parking area before securing gear, tying down the boat, and removing the drain plug, so the ramp lane stays clear for others",
+    "choice_c": "Leave the vehicle and trailer parked in the ramp lane while packing up gear at a leisurely pace",
+    "choice_d": "There is no expectation to move away from the ramp after retrieval",
+    "correct_choice": "B",
+    "explanation": "Good ramp etiquette calls for moving the trailer away from the ramp lane immediately after pulling the boat out, then completing tie-downs, gear stowage, and drain-plug removal in a designated parking area, keeping the ramp available for others.",
+    "weight": 2,
+    "source_note": "Universal boat ramp courtesy and etiquette guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What should a driver do to check that a boat is properly secured to the trailer before towing on the road?",
+    "choice_a": "Tie-down straps are unnecessary if the boat trailer has bunks instead of rollers",
+    "choice_b": "Securing the boat to the trailer is optional for short trips",
+    "choice_c": "Ensure the winch strap or cable and separate transom tie-down straps are both properly tightened and secured, since the winch alone is not designed to hold the boat during transport",
+    "choice_d": "Rely on the winch strap alone with no additional tie-downs",
+    "correct_choice": "C",
+    "explanation": "The winch strap or cable is meant to pull the boat onto the trailer, not to secure it during highway travel, so separate transom tie-down straps must also be used and checked before towing.",
+    "weight": 2,
+    "source_note": "Universal boat trailer tie-down safety fundamentals (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "Why might a Maryland boater choose to back the trailer only partway into the water rather than submerging the trailer wheel hubs fully, when conditions allow?",
+    "choice_a": "Partial submersion has no effect on trailer wheel bearings",
+    "choice_b": "Fully submerging the trailer is always required by Maryland law",
+    "choice_c": "Wheel bearings work better the more frequently they are fully submerged",
+    "choice_d": "Fully submerging wheel bearings, especially hot ones, can force water past the seals and cause premature bearing failure",
+    "correct_choice": "D",
+    "explanation": "Submerging hot wheel bearings in cool water can create a vacuum effect that draws water past the seals, so many boaters minimize hub submersion time and let bearings cool before backing deep into the water when practical.",
+    "weight": 1,
+    "source_note": "Universal boat trailer wheel-bearing maintenance guidance (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Trailering and Launching",
+    "question": "What is a practical reason to do a final walk-around check of the tow vehicle, trailer, and boat before departing for a Maryland boat ramp?",
+    "choice_a": "To confirm the hitch is latched, safety chains are attached, the drain plug and gear are aboard, and straps are secure, catching any problem before it becomes a hazard on the road or at the ramp",
+    "choice_b": "A walk-around check is purely a formality with no safety value",
+    "choice_c": "It is required only for boats being launched at night",
+    "choice_d": "It replaces the need to check trailer lights",
+    "correct_choice": "A",
+    "explanation": "A final walk-around before departure helps confirm the hitch, safety chains, tie-down straps, lights, and loaded gear (including the drain plug) are all correctly in place, catching a problem before it turns into a breakdown or safety issue en route.",
+    "weight": 1,
+    "source_note": "Universal boat trailering pre-departure checklist guidance (NASBLA-aligned course content)"
+  }
+]

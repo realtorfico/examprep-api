@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Operating Rules, Speed, and No-Wake Zones",
+    "question": "A capacity plate, required by the USCG on most monohull boats less than 20 feet, generally shows:",
+    "choice_a": "The vessel's resale value",
+    "choice_b": "The maximum recommended horsepower, number of persons, and/or weight the vessel can safely carry",
+    "choice_c": "Only the manufacturer's warranty period",
+    "choice_d": "The vessel's registration expiration date",
+    "correct_choice": "B",
+    "explanation": "A federally required capacity plate tells an operator the maximum safe horsepower, person count, and/or weight capacity for that specific boat, information critical to avoiding a dangerous overload.",
+    "weight": 3,
+    "source_note": "Standard USCG capacity-plate requirement used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Operating Rules, Speed, and No-Wake Zones",
+    "question": "An operator whose excessive wake damages a moored boat or dock, even in an area without a posted no-wake sign, is generally:",
+    "choice_a": "Still potentially liable, since the general safe-speed and due-care standard applies regardless of posted signage",
+    "choice_b": "Automatically excused from any responsibility because no sign was posted",
+    "choice_c": "Only liable if the damaged boat was also underway at the time",
+    "choice_d": "Immune from liability as long as the operator was under the vessel's top speed",
+    "correct_choice": "A",
+    "explanation": "Louisiana's general safe-speed and due-care operating standard applies everywhere, not just in posted no-wake zones, so an operator whose wake damages a moored vessel or dock can still be held responsible even without a sign present.",
+    "weight": 3,
+    "source_note": "LDWF, Boating Regulations (wlf.louisiana.gov/page/boating-regulations), applying the general safe-speed/due-care standard"
+  },
+  {
+    "topic": "Operating Rules, Speed, and No-Wake Zones",
+    "question": "A low-head dam poses a particular danger to boaters because it can create:",
+    "choice_a": "A recirculating hydraulic \"keeper\" current on its downstream side that can trap and hold even a strong swimmer or a boat",
+    "choice_b": "No current disturbance whatsoever",
+    "choice_c": "A permanent no-wake zone with no other hazard",
+    "choice_d": "A safe area to anchor overnight",
+    "correct_choice": "A",
+    "explanation": "The recirculating hydraulic current below a low-head dam can trap swimmers and boats in a way that is often underestimated even by experienced boaters, which is why such structures should be avoided entirely rather than approached closely.",
+    "weight": 4,
+    "source_note": "Standard low-head dam hazard fundamentals used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Operating Rules, Speed, and No-Wake Zones",
+    "question": "While a vessel is underway, passengers should generally:",
+    "choice_a": "Ride on the bow, gunwales, seatbacks, or transom whenever there is room to do so",
+    "choice_b": "Remain properly seated inside the vessel, since a sudden wake or maneuver can throw an improperly seated passenger overboard",
+    "choice_c": "Stand up near the stern to improve visibility",
+    "choice_d": "Sit on the transom edge for a better view of the wake",
+    "correct_choice": "B",
+    "explanation": "Passengers riding on the bow, gunwales, seatbacks, or transom risk being thrown overboard by a sudden wake, wake-jump, or hard maneuver, so proper seating inside the vessel is part of safe operating practice.",
+    "weight": 3,
+    "source_note": "Standard passenger-seating safety fundamentals used across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Operating Rules, Speed, and No-Wake Zones",
+    "question": "Leaving the helm unattended while a vessel is underway and on plane is risky primarily because:",
+    "choice_a": "Most vessels are not designed to hold a straight, safe course indefinitely without operator input, and a sudden turn or hazard could go unaddressed",
+    "choice_b": "It has no effect since modern outboards always travel in a perfectly straight line",
+    "choice_c": "It is only a concern for sailboats, never powerboats",
+    "choice_d": "Leaving the helm briefly is required by law during refueling",
+    "correct_choice": "A",
+    "explanation": "A powerboat underway generally will not reliably hold a safe course on its own, so an unattended helm at speed leaves no one able to react to a hazard, another vessel, or a sudden course change.",
+    "weight": 3,
+    "source_note": "Standard safe-operating fundamentals used across NASBLA-aligned boating courses"
+  }
+]

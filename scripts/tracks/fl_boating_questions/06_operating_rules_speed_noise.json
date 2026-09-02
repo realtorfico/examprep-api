@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What does a 'slow speed, minimum wake' zone require of a vessel operator in Florida?",
+    "choice_a": "Come to a complete stop and drift with no engine use",
+    "choice_b": "Maintain exactly 30 mph regardless of conditions",
+    "choice_c": "Operate the vessel at the minimum speed needed to maintain steerage while producing as little wake as possible",
+    "choice_d": "Operate at the vessel's maximum available speed",
+    "correct_choice": "C",
+    "explanation": "A slow speed, minimum wake zone requires a vessel to be fully off plane and settled in the water, moving only as fast as needed to maintain steering control while minimizing its wake.",
+    "weight": 4,
+    "source_note": "FWC boating speed-zone definitions"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What does 'idle speed' mean as used in Florida idle-speed zones?",
+    "choice_a": "Any speed under 30 mph",
+    "choice_b": "The vessel's cruising speed",
+    "choice_c": "Full throttle in reverse",
+    "choice_d": "The slowest speed at which a vessel can be operated while still maintaining steerage, essentially the engine's idle throttle setting",
+    "correct_choice": "D",
+    "explanation": "Idle speed is the slowest speed a boat can travel while still being steered, essentially running the engine at idle throttle without additional acceleration -- the most restrictive of Florida's common speed-zone categories.",
+    "weight": 4,
+    "source_note": "FWC boating speed-zone definitions"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What is Florida's law regarding reckless or careless vessel operation?",
+    "choice_a": "It is illegal to operate a vessel in a reckless or careless manner so as to endanger the life, limb, or property of any person",
+    "choice_b": "Reckless operation is only illegal if it results in an actual collision",
+    "choice_c": "There is no Florida law against careless boat operation",
+    "choice_d": "Reckless operation is only a civil matter, never a criminal offense",
+    "correct_choice": "A",
+    "explanation": "Florida Statute 327.33 makes it unlawful to operate a vessel in a reckless or careless manner likely to endanger life, limb, or property, independent of whether an accident actually occurs.",
+    "weight": 4,
+    "source_note": "Florida Statutes 327.33, reckless/careless operation"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Which of the following is an example of careless or reckless vessel operation under Florida law?",
+    "choice_a": "Wearing a PFD at all times while underway",
+    "choice_b": "Weaving through congested vessel traffic at high speed, or riding on the bow/gunwale/transom with legs dangling over the side while underway above idle speed",
+    "choice_c": "Operating at idle speed inside a marked no-wake zone",
+    "choice_d": "Anchoring in a designated anchorage",
+    "correct_choice": "B",
+    "explanation": "Florida law specifically identifies behaviors like weaving through congested traffic and riding on the bow, gunwale, or transom (or seated on backs of seats) while underway at greater than idle speed as reckless operation.",
+    "weight": 4,
+    "source_note": "Florida Statutes 327.33, examples of careless/reckless conduct"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Who has ultimate responsibility for a vessel's wake and any damage it causes?",
+    "choice_a": "Only the vessel's owner (if different from the operator) is responsible",
+    "choice_b": "Wake responsibility only applies in officially marked no-wake zones",
+    "choice_c": "The operator is always responsible for damage or injury caused by the vessel's wake",
+    "choice_d": "No one is legally responsible for wake damage",
+    "correct_choice": "C",
+    "explanation": "Florida law holds the operator responsible for any damage or injury their vessel's wake causes, regardless of whether the area is a marked no-wake zone -- operators must always consider the effect of their wake.",
+    "weight": 3,
+    "source_note": "Florida boating law, operator responsibility for wake"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What must a vessel operator do when approaching a marina, mooring field, or area with anchored vessels and swimmers?",
+    "choice_a": "Maintain full speed until very close to avoid losing momentum",
+    "choice_b": "Sound the horn continuously instead of slowing down",
+    "choice_c": "There is no need to reduce speed near marinas",
+    "choice_d": "Reduce speed to slow-speed/minimum wake or idle speed as posted, to avoid endangering people and property",
+    "correct_choice": "D",
+    "explanation": "Operators must slow to the posted or common-sense minimum-wake or idle speed near marinas, mooring fields, and areas where people may be swimming or anchored, to avoid swamping small craft or endangering swimmers.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course near-shore operating guidance"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What distance must a vessel generally maintain from a divers-down flag displayed on the water?",
+    "choice_a": "At least 300 feet in open water and 100 feet in a river, inlet, or navigation channel, operating at idle speed within those distances",
+    "choice_b": "No specific distance is required around a divers-down flag",
+    "choice_c": "Exactly 10 feet",
+    "choice_d": "Divers-down flags apply only to commercial dive boats",
+    "correct_choice": "A",
+    "explanation": "Florida law requires vessels to stay at least 300 feet away from a divers-down flag in open water (100 feet in a river, inlet, or navigation channel) and to operate at idle speed if closer approach is unavoidable, protecting divers below the surface.",
+    "weight": 4,
+    "source_note": "Florida Statutes 327.331, divers-down flag safety zone"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "May a vessel legally tow a person or ride at high speed within a posted idle-speed manatee zone?",
+    "choice_a": "Speed zones apply only to vessels over 26 feet",
+    "choice_b": "No -- posted idle-speed and slow-speed zones apply to all vessel activity, including towing skiers or tubers, which requires more speed than the zone allows",
+    "choice_c": "Yes, towing is always exempt from posted manatee speed zones",
+    "choice_d": "Only PWCs are restricted in these zones; other boats towing skiers are exempt",
+    "correct_choice": "B",
+    "explanation": "Posted idle-speed and slow-speed zones -- including manatee zones -- apply to every vessel activity, so towing a skier or tuber (which requires planing speed) is prohibited inside those zones.",
+    "weight": 3,
+    "source_note": "FWC manatee/speed-zone enforcement, towing restriction"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What should an operator do before getting underway regarding local speed zone signage?",
+    "choice_a": "Ignore signage since it is only advisory, not legally enforceable",
+    "choice_b": "Speed zones only need to be checked once per year, not per outing",
+    "choice_c": "Review posted regulatory markers and charts for the waterway to know where idle-speed, slow-speed, and other controlled zones apply",
+    "choice_d": "Assume every Florida waterway has the same speed limit everywhere",
+    "correct_choice": "C",
+    "explanation": "Because speed zones vary by waterway (and sometimes seasonally, as with manatee zones), operators should review current markers and charts before departure to know which controlled zones they will encounter.",
+    "weight": 3,
+    "source_note": "Standard NASBLA-course pre-departure planning guidance"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Can local governments in Florida establish additional boating-restricted areas or speed zones beyond state and federal rules?",
+    "choice_a": "No, only the federal government may ever set speed limits on any Florida water",
+    "choice_b": "Local governments may only regulate parking, never boating speed",
+    "choice_c": "Local speed zones are automatically void if they conflict with any other local speed zone",
+    "choice_d": "Yes -- counties and municipalities may adopt local ordinances creating boating-restricted areas (such as additional no-wake zones), subject to FWC approval where required by law",
+    "correct_choice": "D",
+    "explanation": "Florida law allows counties and municipalities to establish local boating-restricted areas, including additional no-wake or speed zones, which is why speed limits can vary between adjoining bodies of water.",
+    "weight": 3,
+    "source_note": "Florida Statutes 327.60, local government boating-restricted areas"
+  }
+]

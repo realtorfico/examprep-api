@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Under Georgia's BUI law, how is a third BUI conviction within a 10-year period classified?",
+    "choice_a": "A high and aggravated misdemeanor, with a fine of $1,000 to $5,000 and a mandatory minimum of 15 days actually served",
+    "choice_b": "A simple traffic infraction with no possibility of jail time",
+    "choice_c": "An automatic felony regardless of the number of prior convictions",
+    "choice_d": "The exact same charge and penalty range as a first offense",
+    "correct_choice": "A",
+    "explanation": "A third BUI conviction within 10 years is a high and aggravated misdemeanor under O.C.G.A. Section 52-7-12, carrying a fine of $1,000 to $5,000 and a sentence of 120 days to 12 months, of which at least 15 days must actually be served.",
+    "weight": 3,
+    "source_note": "O.C.G.A. Section 52-7-12, Georgia Boat Safety Act (penalty provisions, third conviction)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What happens under Georgia law if a person is convicted of BUI for a fourth time within a 10-year period?",
+    "choice_a": "It remains a misdemeanor identical in every way to a first offense",
+    "choice_b": "The offense becomes a felony punishable by 1 to 5 years imprisonment, with a minimum of 90 days that must actually be served",
+    "choice_c": "The charge is automatically dismissed once three prior convictions exist",
+    "choice_d": "Only a fine can be imposed, with imprisonment never permitted",
+    "correct_choice": "B",
+    "explanation": "A fourth or subsequent BUI conviction within 10 years is a felony under O.C.G.A. Section 52-7-12, punishable by 1 to 5 years imprisonment (with at least 90 days actually served) and at least 60 days of community service.",
+    "weight": 3,
+    "source_note": "O.C.G.A. Section 52-7-12, Georgia Boat Safety Act (penalty provisions, fourth and subsequent convictions)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "For a second BUI conviction within 10 years in Georgia, what is the minimum amount of jail time that must actually be served, out of a sentence of 90 days to 12 months?",
+    "choice_a": "There is no mandatory minimum period that must actually be served",
+    "choice_b": "10 years",
+    "choice_c": "72 hours",
+    "choice_d": "5 minutes",
+    "correct_choice": "C",
+    "explanation": "A second BUI conviction within 10 years carries a fine of $600 to $1,000 and a sentence of 90 days to 12 months, with a mandatory minimum of 72 hours that must actually be served in confinement.",
+    "weight": 2,
+    "source_note": "O.C.G.A. Section 52-7-12, Georgia Boat Safety Act (penalty provisions, second conviction)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What authority do Georgia law enforcement officers, including DNR rangers, have to stop and board vessels to check for BUI and other violations?",
+    "choice_a": "They may only board a vessel after first obtaining a search warrant signed by a judge",
+    "choice_b": "They may only approach a vessel after witnessing a boating accident occur",
+    "choice_c": "Officers have no authority to board a vessel that is underway, only vessels that are already docked",
+    "choice_d": "They may stop and board any vessel subject to the Georgia Boat Safety Act to inspect it or determine compliance, and an underway vessel must stop immediately and lay to when hailed by an officer",
+    "correct_choice": "D",
+    "explanation": "O.C.G.A. Section 52-7-25 gives officers enforcing the Georgia Boat Safety Act the authority to stop and board any vessel for inspection or to determine compliance, and requires an underway vessel to stop immediately and lay to when hailed by a law enforcement officer.",
+    "weight": 3,
+    "source_note": "O.C.G.A. Section 52-7-25, Georgia Boat Safety Act (enforcement of article)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Who is legally authorized to withdraw a blood specimen for BUI chemical testing in Georgia?",
+    "choice_a": "Only a physician, registered nurse, laboratory technician, emergency medical technician, or other similarly qualified person",
+    "choice_b": "Any law enforcement officer present at the scene",
+    "choice_c": "The boat operator is permitted to draw their own blood sample",
+    "choice_d": "Only a licensed marine mechanic",
+    "correct_choice": "A",
+    "explanation": "Under O.C.G.A. Section 52-7-12, only a physician, registered nurse, laboratory technician, emergency medical technician, or other similarly qualified person may withdraw a blood specimen for BUI testing; this restriction does not apply to breath or urine tests.",
+    "weight": 2,
+    "source_note": "O.C.G.A. Section 52-7-12, Georgia Boat Safety Act (chemical test administration)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Besides the chemical test administered at an officer's request, what additional testing right does a person suspected of BUI have under Georgia law?",
+    "choice_a": "The right to have all testing automatically canceled if they object",
+    "choice_b": "The right to have a physician, qualified technician, chemist, registered nurse, or other qualified person of their own choosing administer an additional chemical test",
+    "choice_c": "The right to demand the case be dismissed by requesting a second opinion",
+    "choice_d": "There is no additional testing right recognized under Georgia law",
+    "correct_choice": "B",
+    "explanation": "In addition to the test requested by law enforcement, O.C.G.A. Section 52-7-12 allows a person to have a physician, qualified technician, chemist, registered nurse, or other qualified person of their own choosing administer an additional chemical test.",
+    "weight": 2,
+    "source_note": "O.C.G.A. Section 52-7-12, Georgia Boat Safety Act (right to independent chemical test)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Besides alcohol and drugs, what other category of substance is specifically named in Georgia's BUI statute as a basis for an 'under the influence' charge?",
+    "choice_a": "Caffeine",
+    "choice_b": "Nicotine",
+    "choice_c": "Toxic vapors",
+    "choice_d": "Over-the-counter sunscreen",
+    "correct_choice": "C",
+    "explanation": "O.C.G.A. Section 52-7-12 prohibits operating a vessel while under the influence of alcohol, drugs, or toxic vapors to the extent that it is less safe for the person to operate.",
+    "weight": 2,
+    "source_note": "O.C.G.A. Section 52-7-12, Georgia Boat Safety Act (definition of under the influence)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What must happen when a Georgia boating accident results in a fatality, with respect to alcohol or drug testing?",
+    "choice_a": "Testing after a fatality is left entirely to the discretion of surviving witnesses",
+    "choice_b": "Testing is legally prohibited once a death has occurred",
+    "choice_c": "Only the vessel's insurance company may request testing in a fatal accident",
+    "choice_d": "The investigating coroner or medical examiner must direct that a chemical blood test be performed",
+    "correct_choice": "D",
+    "explanation": "Georgia law requires that in a boating accident involving a fatality, the investigating coroner or medical examiner direct that a chemical blood test be performed to help determine whether BUI was involved.",
+    "weight": 2,
+    "source_note": "O.C.G.A. Section 52-7-12, Georgia Boat Safety Act (testing in fatal boating accidents)"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Besides exceeding a specific numeric blood alcohol threshold, on what other legal basis can a boat operator be convicted of BUI in Georgia?",
+    "choice_a": "Being under the influence of alcohol, drugs, or toxic vapors to the extent that it is less safe for the person to operate the vessel, regardless of the exact BAC reading",
+    "choice_b": "There is no alternative basis; a conviction requires proof of the exact numeric BAC threshold",
+    "choice_c": "Having operated any vessel within the previous 24 hours after consuming any alcohol at all",
+    "choice_d": "Having an unopened container of alcohol stored on board, regardless of impairment",
+    "correct_choice": "A",
+    "explanation": "Georgia's BUI statute defines 'under the influence' to include being impaired by alcohol, drugs, or toxic vapors to the extent that it is less safe to operate the vessel, which is a separate legal basis from the per se numeric BAC thresholds.",
+    "weight": 3,
+    "source_note": "O.C.G.A. Section 52-7-12, Georgia Boat Safety Act (definition of under the influence, less-safe-to-operate standard)"
+  }
+]

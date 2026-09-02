@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Alcohol & BUI",
+    "question": "According to nationwide boating accident statistics cited in boater education courses, what is consistently identified as a leading contributing factor in fatal boating accidents?",
+    "choice_a": "Alcohol use by the operator or a person involved",
+    "choice_b": "Excessive use of navigation lights",
+    "choice_c": "Wearing a properly fitted PFD",
+    "choice_d": "Carrying too much safety equipment aboard",
+    "correct_choice": "A",
+    "explanation": "National boating accident statistics compiled from Coast Guard data consistently identify alcohol use as one of the leading known contributing factors in fatal boating accidents, which is why BUI enforcement is a major focus of state boating safety programs, including Tennessee's.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (nationwide BUI accident-statistics finding, NASBLA-aligned)"
+  },
+  {
+    "topic": "Alcohol & BUI",
+    "question": "Why does balance and coordination on a moving boat make alcohol impairment more dangerous than on solid ground?",
+    "choice_a": "A boat's constant motion already challenges balance, so even mild impairment further increases the risk of falling overboard or losing control",
+    "choice_b": "Boats never move enough to affect a person's balance",
+    "choice_c": "Alcohol has no effect on balance or coordination",
+    "choice_d": "Balance is only a concern for personal watercraft operators",
+    "correct_choice": "A",
+    "explanation": "A moving vessel already places extra demand on a person's balance and coordination, so alcohol's impairing effects compound that challenge, increasing the risk of a fall overboard, a mishandled line, or a lost grip on the wheel or throttle.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Alcohol & BUI",
+    "question": "How does dehydration from sun and wind exposure interact with alcohol consumption during a day of boating?",
+    "choice_a": "Dehydration can intensify alcohol's impairing effects and accelerate the onset of fatigue, compounding \"boater's fatigue\"",
+    "choice_b": "Dehydration has no relationship to alcohol's effects on the body",
+    "choice_c": "Drinking alcohol is an effective way to prevent dehydration on the water",
+    "choice_d": "Dehydration only matters for operators over age 65",
+    "correct_choice": "A",
+    "explanation": "Sun and wind exposure on the water can dehydrate boaters faster than expected, and dehydration can intensify alcohol's impairing effects and speed up the onset of fatigue, adding to the compounding hazard described as \"boater's fatigue.\"",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Alcohol & BUI",
+    "question": "If a boat operator is cited for BUI in Tennessee and also happens to be operating without required safety equipment aboard, what is generally true about how these violations are handled?",
+    "choice_a": "Each violation, such as BUI and an equipment violation, can be charged and penalized separately, since they are legally distinct offenses",
+    "choice_b": "Only the more serious of the two violations may ever be charged",
+    "choice_c": "An equipment violation automatically cancels out a BUI charge",
+    "choice_d": "TWRA officers may only issue one citation per stop, regardless of how many violations are found",
+    "correct_choice": "A",
+    "explanation": "BUI and an equipment violation are legally distinct offenses, so a law enforcement officer who finds both during the same stop may cite the operator separately for each violation.",
+    "weight": 2,
+    "source_note": "General boating law fundamentals (distinct-offense enforcement principle)"
+  }
+]

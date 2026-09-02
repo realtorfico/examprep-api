@@ -1,0 +1,74 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "USCG-approved PFDs are sized by the wearer's body weight rather than age. Which weight range corresponds to an 'Infant' PFD?",
+    "choice_a": "55 to 88 pounds",
+    "choice_b": "Greater than 88 pounds",
+    "choice_c": "33 to 55 pounds",
+    "choice_d": "33 pounds or less",
+    "correct_choice": "D",
+    "explanation": "USCG PFD sizing categories are based on wearer weight: Infant is 33 lbs or less, Child is 33-55 lbs, Youth is 55-88 lbs, and Adult is greater than 88 lbs. An adult-sized life jacket will not work properly on a child, even if the child is tall for their age.",
+    "weight": 2,
+    "source_note": "uscgboating.org, PFD sizing/weight categories"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "For a wearable PFD to meet the legal 'readily accessible' standard, where must it NOT be stored?",
+    "choice_a": "Sealed in its original plastic packaging, locked in a compartment, or buried under other gear where it cannot be reached quickly",
+    "choice_b": "In a dry storage bag on the seat",
+    "choice_c": "In an unlocked cabin locker near the helm",
+    "choice_d": "On a hook near the companionway",
+    "correct_choice": "A",
+    "explanation": "USCG guidance defines 'readily accessible' as being reachable and wearable within a reasonable time in an emergency; a PFD left sealed in its original plastic wrap, locked away, or stacked under coolers and gear does not satisfy this standard even though it is technically 'on board.'",
+    "weight": 2,
+    "source_note": "uscgboating.org, life jacket accessibility requirements"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "A Type II near-shore buoyant vest differs from a Type III flotation aid in what way?",
+    "choice_a": "A Type II is only legal for use on PWCs, while a Type III is only legal for offshore use",
+    "choice_b": "A Type II is designed to turn some unconscious wearers to a face-up position, while a Type III is not designed to turn an unconscious wearer at all",
+    "choice_c": "A Type II provides no flotation and is worn only as a visibility aid",
+    "choice_d": "A Type III turns unconscious wearers face-up more reliably than a Type II",
+    "correct_choice": "B",
+    "explanation": "A Type II near-shore vest is built to turn some, though not all, unconscious wearers face-up, offering more protection than a Type III flotation aid, which supports a conscious wearer in an upright or slightly backward position but has no turning capability -- Type I remains the only category designed to reliably turn most unconscious wearers face-up.",
+    "weight": 2,
+    "source_note": "uscgboating.org, PFD type classifications"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Before relying on an inflatable PFD on the water, what should a boater check?",
+    "choice_a": "Nothing -- inflatable PFDs require no pre-use inspection",
+    "choice_b": "Only that the fabric color is bright orange",
+    "choice_c": "That the CO2 cylinder is full and properly seated, and that the status indicator window shows green, per the manufacturer's maintenance instructions",
+    "choice_d": "That the device has never been washed",
+    "correct_choice": "C",
+    "explanation": "Inflatable PFDs rely on a charged CO2 cylinder and a functioning inflation mechanism; before use, a boater should confirm the cylinder is full and correctly installed and that the indicator window shows green, and should otherwise follow the manufacturer's maintenance schedule -- an inflatable that fails this check may not inflate when needed.",
+    "weight": 2,
+    "source_note": "uscgboating.org, inflatable PFD maintenance requirements"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why are inflatable PFDs generally not recommended for weak swimmers, non-swimmers, or unsupervised children?",
+    "choice_a": "Inflatable PFDs float better than foam PFDs and are therefore too buoyant for weak swimmers",
+    "choice_b": "Inflatable PFDs are heavier than foam PFDs and slow a swimmer down",
+    "choice_c": "There is no difference in how quickly inflatable and foam PFDs provide flotation",
+    "choice_d": "Unlike inherently buoyant foam PFDs, an inflatable does not provide flotation until it is properly inflated (manually, or automatically if equipped and armed), so a wearer who cannot activate it or is caught off guard may not get immediate flotation",
+    "correct_choice": "D",
+    "explanation": "A foam Type I, II, or III PFD floats the instant it is worn, while an inflatable only floats once inflated, whether by pulling a manual toggle or through an automatic mechanism -- for this reason inflatables are generally discouraged for weak or non-swimmers and are not USCG-approved for use by persons under 16.",
+    "weight": 1,
+    "source_note": "uscgboating.org, inflatable PFD limitations for non-swimmers"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "How can a boater confirm that a given flotation device is actually a legal, USCG-approved PFD rather than a novelty item?",
+    "choice_a": "By checking for a legible USCG approval statement sewn or printed into the device, showing its type and approval number -- items like inner tubes, water wings, and pool floats never carry this and are not legal PFDs",
+    "choice_b": "By checking whether the device is orange in color",
+    "choice_c": "By checking whether the device floats at all, regardless of labeling",
+    "choice_d": "All flotation devices sold in stores are automatically USCG-approved",
+    "correct_choice": "A",
+    "explanation": "Only devices carrying a USCG approval label identifying their type and approval number satisfy the legal PFD requirement; recreational flotation toys such as inner tubes, water wings, and pool noodles float but are not approved substitutes for a PFD, regardless of color or shape.",
+    "weight": 2,
+    "source_note": "uscgboating.org, USCG approval labeling requirement"
+  }
+]

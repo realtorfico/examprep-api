@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Under the Inland Navigation Rules, what does a signal of two short blasts from a power-driven vessel indicate?",
+    "choice_a": "Intent to alter course to port (or to pass on the other vessel's starboard side)",
+    "choice_b": "Intent to overtake on the port side only",
+    "choice_c": "A request to anchor",
+    "choice_d": "A distress signal",
+    "correct_choice": "A",
+    "explanation": "Under the Inland Navigation Rules, two short blasts signals an intent to alter course to port, the counterpart to the one-short-blast starboard-turn signal.",
+    "weight": 2,
+    "source_note": "Universal Inland Navigation Rules maneuvering and warning signals (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "What does a signal of three short blasts indicate under the Inland Navigation Rules?",
+    "choice_a": "The vessel is preparing to raise its anchor",
+    "choice_b": "The vessel is operating astern propulsion (backing up)",
+    "choice_c": "The vessel intends to overtake on the starboard side",
+    "choice_d": "The vessel is requesting permission to cross a shipping channel",
+    "correct_choice": "B",
+    "explanation": "Three short blasts tells nearby vessels that a vessel is operating astern propulsion, meaning it is backing up, which is important information for anyone nearby judging its movement.",
+    "weight": 2,
+    "source_note": "Universal Inland Navigation Rules maneuvering and warning signals (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "What does it mean for a vessel to be 'not under command' under the Navigation Rules, and how is it marked at night?",
+    "choice_a": "It is a vessel that, through some exceptional circumstance such as mechanical failure, is unable to maneuver as required, shown at night by two all-round red lights in a vertical line",
+    "choice_b": "It is any vessel operating without a licensed captain",
+    "choice_c": "It refers only to a vessel that has run out of fuel while docked",
+    "choice_d": "It is shown at night by a single green light",
+    "correct_choice": "A",
+    "explanation": "A vessel not under command cannot maneuver as the Rules require, typically due to an exceptional circumstance like mechanical failure, and displays two all-round red lights in a vertical line at night to warn other vessels to keep clear.",
+    "weight": 2,
+    "source_note": "Universal Navigation Rules vessel-not-under-command definition and lighting (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "During daylight, what day shapes does a vessel restricted in its ability to maneuver (such as one engaged in dredging) display?",
+    "choice_a": "A single black ball",
+    "choice_b": "A vertical arrangement of a ball, diamond, and ball shape",
+    "choice_c": "No shapes are ever required during daylight",
+    "choice_d": "A red square flag only",
+    "correct_choice": "B",
+    "explanation": "A vessel restricted in its ability to maneuver displays a ball-diamond-ball day shape arrangement, signaling to nearby vessels that it has limited maneuvering ability and should be given a wide berth.",
+    "weight": 1,
+    "source_note": "Universal Navigation Rules day-shape requirements for restricted-maneuverability vessels (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "When two sailing vessels under sail alone are approaching each other and might collide, which vessel generally must keep clear?",
+    "choice_a": "The vessel with the wind on its port side (port tack) must generally keep clear of a vessel with the wind on its starboard side (starboard tack)",
+    "choice_b": "The larger sailboat always has right-of-way regardless of tack",
+    "choice_c": "Whichever boat is moving faster has right-of-way",
+    "choice_d": "Sailing vessels have no right-of-way rules between each other",
+    "correct_choice": "A",
+    "explanation": "Between two sailing vessels, the Navigation Rules generally require the vessel on port tack (wind coming over its port side) to keep clear of a vessel on starboard tack, among other tie-breaking rules for identical tacks or windward/leeward position.",
+    "weight": 2,
+    "source_note": "Universal Navigation Rules sailing-vessel-to-sailing-vessel right-of-way (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "How does the Navigation Rules' right-of-way hierarchy treat a vessel actively engaged in commercial fishing with nets or trawls that restrict its maneuverability, compared to an ordinary vessel underway?",
+    "choice_a": "It has no special status and must always give way to recreational vessels",
+    "choice_b": "It is treated similarly to other vessels restricted in their ability to maneuver, and other vessels should generally keep clear of it while its gear is deployed",
+    "choice_c": "It is banned from operating in the same waters as recreational boats",
+    "choice_d": "It automatically becomes the give-way vessel in every situation",
+    "correct_choice": "B",
+    "explanation": "A vessel actively engaged in fishing with gear such as trawls or nets that restricts its ability to maneuver is given special right-of-way consideration under the Rules, similar to other restricted-maneuverability vessels.",
+    "weight": 2,
+    "source_note": "Universal Navigation Rules right-of-way treatment of vessels engaged in fishing (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "In a narrow channel or fairway, what does the Navigation Rules require a vessel to do when it is safe and practicable?",
+    "choice_a": "Travel down the exact center of the channel at all times",
+    "choice_b": "Keep as near to the outer limit of the channel that lies on the vessel's own starboard side as is safe and practicable",
+    "choice_c": "Keep to the port side of the channel",
+    "choice_d": "There is no guidance for narrow channels",
+    "correct_choice": "B",
+    "explanation": "In a narrow channel or fairway, a vessel should keep as near to its own starboard-side outer limit as is safe and practicable, similar to keeping to the right side of a roadway, to keep the channel clear for oncoming and overtaking traffic.",
+    "weight": 2,
+    "source_note": "Universal Navigation Rules narrow-channel/fairway rule (NASBLA-aligned course content)"
+  },
+  {
+    "topic": "Navigation Rules and Right-of-Way",
+    "question": "Why should a boater generally avoid anchoring within a marked navigation channel on the Chesapeake Bay?",
+    "choice_a": "Anchoring in a channel poses no risk to other vessels",
+    "choice_b": "It is required practice whenever fuel runs low",
+    "choice_c": "It can obstruct the passage of other vessels, including larger ships confined to the channel by their draft, except in a genuine emergency",
+    "choice_d": "Channels are reserved exclusively for anchoring",
+    "correct_choice": "C",
+    "explanation": "Anchoring within a marked channel can block the passage of other vessels, particularly deep-draft ships that cannot leave the channel, so boaters should anchor outside channels except in a genuine emergency.",
+    "weight": 2,
+    "source_note": "Chesapeake Bay commercial shipping channel navigation guidance, combined with universal Navigation Rules anchoring-in-channel caution"
+  }
+]

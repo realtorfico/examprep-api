@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Under the standard federal definition used nationwide, what makes a vessel a \"personal watercraft\" (PWC) rather than an ordinary motorboat?",
+    "choice_a": "It is a small vessel under about 16 feet, powered by an inboard jet drive, designed to be operated by a person sitting, standing, or kneeling on it rather than inside it",
+    "choice_b": "Any vessel with an outboard motor, regardless of size",
+    "choice_c": "Any vessel that can exceed 30 mph",
+    "choice_d": "Any vessel used exclusively for towing water skiers",
+    "correct_choice": "A",
+    "explanation": "A personal watercraft is federally defined as a small jet-drive vessel, typically under 16 feet, designed to be operated by someone sitting, standing, or kneeling on it, rather than in the conventional manner of sitting or standing inside the hull like a typical motorboat.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals / federal PWC classification (NASBLA-aligned)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is the basic difference between a monohull and a multihull vessel, such as a pontoon boat or catamaran?",
+    "choice_a": "A monohull has a single continuous hull, while a multihull has two or more separate hulls connected by a deck structure",
+    "choice_b": "A multihull always has more horsepower than a monohull",
+    "choice_c": "Only multihulls can be registered in Tennessee",
+    "choice_d": "There is no structural difference; the terms are interchangeable",
+    "correct_choice": "A",
+    "explanation": "A monohull vessel has one continuous hull, while a multihull vessel, such as a pontoon boat or catamaran, has two or more separate hulls joined by a deck, often providing greater stability at rest.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (hull design fundamentals, NASBLA-aligned)"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Pontoon boats are extremely common on Tennessee's TVA reservoirs. What structurally defines a pontoon boat?",
+    "choice_a": "A deck mounted on two or more hollow, buoyant metal tubes (pontoons) rather than a single traditional hull",
+    "choice_b": "A boat that can only be paddled, never motorized",
+    "choice_c": "A boat with a single deep-V fiberglass hull",
+    "choice_d": "A vessel that is legally classified as a personal watercraft",
+    "correct_choice": "A",
+    "explanation": "A pontoon boat is built on a flat deck mounted atop two or more hollow, buoyant metal tubes called pontoons, rather than a traditional single hull, which is part of why they are popular for stable, family-oriented recreation on Tennessee's large reservoirs.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals applied to Tennessee's TVA reservoir system"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is a rigid inflatable boat (RIB), as distinguished from a fully inflatable craft like a raft?",
+    "choice_a": "A vessel that combines a rigid hull bottom with inflatable tubes forming the sides for buoyancy and stability",
+    "choice_b": "A vessel made entirely of rigid aluminum with no inflatable components",
+    "choice_c": "A category exclusive to personal watercraft",
+    "choice_d": "A vessel that cannot legally be registered in Tennessee",
+    "correct_choice": "A",
+    "explanation": "A rigid inflatable boat (RIB) combines a solid, rigid hull bottom with inflatable tubes along the sides, giving it more durability and a better ride than a fully inflatable raft while retaining the stability benefits of inflatable sponsons.",
+    "weight": 1,
+    "source_note": "General boating safety fundamentals (hull design fundamentals, NASBLA-aligned)"
+  }
+]

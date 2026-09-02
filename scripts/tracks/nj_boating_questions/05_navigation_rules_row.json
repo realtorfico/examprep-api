@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "When two power-driven vessels are approaching each other head-on, what should each operator do?",
+    "choice_a": "The faster vessel always has the right of way",
+    "choice_b": "Each vessel should alter course to starboard (right) so they pass port-to-port",
+    "choice_c": "Both vessels should alter course to port so they pass starboard-to-starboard",
+    "choice_d": "Neither vessel should change course",
+    "correct_choice": "B",
+    "explanation": "In a head-on meeting situation, the Navigation Rules direct both power-driven vessels to alter course to starboard, passing each other port side to port side, just as vehicles on a two-way road each keep to their own right.",
+    "weight": 5,
+    "source_note": "Inland Navigation Rules head-on meeting rule (Rule 14, 33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "In a crossing situation between two power-driven vessels, which vessel is the 'stand-on' vessel that should maintain its course and speed?",
+    "choice_a": "Whichever vessel is larger",
+    "choice_b": "Whichever vessel is traveling faster",
+    "choice_c": "The vessel that has the other vessel approaching on its own port (left) side",
+    "choice_d": "The vessel that has the other vessel approaching on its own starboard (right) side",
+    "correct_choice": "C",
+    "explanation": "In a crossing situation, the vessel that has the other approaching from its own port side is the stand-on vessel and should maintain course and speed, while the vessel that sees the other on its starboard side is the give-way vessel and must take early, substantial action to avoid collision.",
+    "weight": 5,
+    "source_note": "Inland Navigation Rules crossing rule (Rule 15, 33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "Under the Navigation Rules, an overtaking vessel approaching another vessel from more than 22.5 degrees abaft its beam must do what?",
+    "choice_a": "Demand the slower vessel yield immediately regardless of position",
+    "choice_b": "Sound five short blasts and proceed without changing course",
+    "choice_c": "The overtaking vessel always has right-of-way over the vessel ahead",
+    "choice_d": "Keep out of the way of the vessel being overtaken, regardless of which vessel would otherwise have right-of-way",
+    "correct_choice": "D",
+    "explanation": "A vessel overtaking another from behind (more than 22.5 degrees abaft the beam) is always the give-way vessel and must keep clear of the vessel being overtaken until safely past, regardless of vessel type or propulsion.",
+    "weight": 4,
+    "source_note": "Inland Navigation Rules overtaking rule (Rule 13, 33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "As a general rule of thumb, when a sailing vessel under sail alone meets a power-driven vessel, which vessel is the stand-on vessel?",
+    "choice_a": "The sailing vessel, since a vessel under sail alone generally has right-of-way over a power-driven vessel",
+    "choice_b": "The power-driven vessel always has right-of-way over a sailing vessel",
+    "choice_c": "Whichever vessel signals first",
+    "choice_d": "Right-of-way is decided by vessel size alone",
+    "correct_choice": "A",
+    "explanation": "A vessel under sail alone (not motor-sailing) is generally the stand-on vessel over a power-driven vessel, but this general rule has exceptions such as when the sailing vessel is overtaking, or when the power vessel is restricted in ability to maneuver, not under command, or engaged in commercial fishing.",
+    "weight": 4,
+    "source_note": "Inland Navigation Rules rule regarding responsibilities between vessels (Rule 18, 33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "Which vessel generally has right-of-way over both sailing vessels and ordinary power-driven vessels: one 'not under command' or one 'restricted in ability to maneuver'?",
+    "choice_a": "Personal watercraft always outrank every other vessel type",
+    "choice_b": "Both vessels not under command and vessels restricted in ability to maneuver generally have right-of-way over sailing and ordinary power-driven vessels, since they cannot readily maneuver to avoid collision",
+    "choice_c": "Neither type of vessel receives any special right-of-way",
+    "choice_d": "Only recreational sailboats ever receive priority",
+    "correct_choice": "B",
+    "explanation": "Vessels not under command (unable to maneuver due to an exceptional circumstance, like an engine failure) and vessels restricted in ability to maneuver (such as one laying cable) generally rank above sailing vessels and power-driven vessels in the right-of-way hierarchy because they cannot easily get out of the way themselves.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules vessel hierarchy (Rule 18, 33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "A vessel engaged in commercial fishing with gear deployed, such as nets or trawls, generally has right-of-way over what other vessel types?",
+    "choice_a": "Vessels restricted in ability to maneuver",
+    "choice_b": "No other vessel; fishing vessels always yield",
+    "choice_c": "Ordinary power-driven and sailing vessels, since deployed fishing gear limits the fishing vessel's ability to maneuver",
+    "choice_d": "Vessels not under command",
+    "correct_choice": "C",
+    "explanation": "A vessel actively engaged in fishing with gear deployed that restricts its maneuverability ranks above ordinary power-driven and sailing vessels in the right-of-way hierarchy, though it still ranks below vessels not under command or restricted in ability to maneuver.",
+    "weight": 3,
+    "source_note": "Inland Navigation Rules vessel hierarchy (Rule 18, 33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What is a give-way vessel required to do when the Navigation Rules require it to yield?",
+    "choice_a": "Wait until a collision is imminent before reacting",
+    "choice_b": "Maintain its exact course and speed no matter what",
+    "choice_c": "Sound its horn and continue on the same path",
+    "choice_d": "Take early and substantial action to keep well clear of the stand-on vessel",
+    "correct_choice": "D",
+    "explanation": "A give-way vessel must act early and decisively, altering course or speed enough to be obviously clear to the other vessel, rather than making a small or last-minute adjustment that could be misread.",
+    "weight": 4,
+    "source_note": "Inland Navigation Rules general responsibilities (Rule 16, 33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "What must the stand-on vessel do if the give-way vessel fails to take appropriate action to avoid a collision?",
+    "choice_a": "The stand-on vessel may and eventually must take whatever action is necessary to avoid collision, including departing from its own course",
+    "choice_b": "The stand-on vessel must never deviate from its course under any circumstance",
+    "choice_c": "The stand-on vessel should speed up to pass before the other vessel arrives",
+    "choice_d": "The stand-on vessel has no further obligation once it has right-of-way",
+    "correct_choice": "A",
+    "explanation": "While the stand-on vessel should initially hold course and speed, it must take whatever action is necessary, including its own course change, if it becomes apparent the give-way vessel is not taking appropriate action and collision cannot otherwise be avoided.",
+    "weight": 4,
+    "source_note": "Inland Navigation Rules stand-on vessel obligations (Rule 17, 33 CFR 83)"
+  },
+  {
+    "topic": "Navigation Rules & Right-of-Way",
+    "question": "Do the Inland Navigation Rules apply to personal watercraft (PWC) operators in New Jersey the same way they apply to conventional powerboats?",
+    "choice_a": "Navigation Rules only apply to vessels over 26 feet",
+    "choice_b": "Yes -- a PWC is legally a power-driven vessel and its operator must follow the same right-of-way, sound-signal, and collision-avoidance rules as any other powerboat",
+    "choice_c": "No, PWCs are exempt from all Navigation Rules",
+    "choice_d": "PWCs only need to follow right-of-way rules against other PWCs",
+    "correct_choice": "B",
+    "explanation": "A personal watercraft is legally classified as a power-driven vessel, so its operator is bound by the same Navigation Rules on right-of-way, sound signals, and collision avoidance as any other motorized boat operator.",
+    "weight": 4,
+    "source_note": "Inland Navigation Rules applicability to PWCs; NJSP Marine Services Bureau PWC operating rules"
+  }
+]

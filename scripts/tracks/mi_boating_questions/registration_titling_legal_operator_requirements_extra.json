@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Registration, Titling & Legal Operator Requirements",
+    "question": "Under Michigan law, when must a vessel's Certificate of Number (registration card) be on board?",
+    "choice_a": "It must be on board and available for inspection by an enforcement officer whenever the vessel is being operated",
+    "choice_b": "Only when operating more than five miles from shore",
+    "choice_c": "Only during the official boating season from May through September",
+    "choice_d": "It may be left at home as long as the validation decals are properly displayed",
+    "correct_choice": "A",
+    "explanation": "The handbook states the Certificate of Number (registration card) must be on board and available for inspection by an enforcement officer whenever the vessel is being operated.",
+    "weight": 3,
+    "source_note": "Registering Your Vessel"
+  },
+  {
+    "topic": "Registration, Titling & Legal Operator Requirements",
+    "question": "If a Michigan boat owner loses or destroys their Certificate of Number or a validation decal, what must they do?",
+    "choice_a": "Apply to the Secretary of State for a duplicate and submit a processing fee",
+    "choice_b": "Wait until the next three-year renewal cycle to replace it",
+    "choice_c": "File a police report, after which the state automatically reissues a new certificate at no cost",
+    "choice_d": "Nothing; the vessel may be operated without proof of registration for the remainder of the registration period",
+    "correct_choice": "A",
+    "explanation": "Per 'Other Facts About Titling and Registration,' if you lose or destroy your Certificate of Number or decal, you must apply to the Secretary of State for a duplicate and submit a processing fee.",
+    "weight": 2,
+    "source_note": "Other Facts About Titling and Registration"
+  },
+  {
+    "topic": "Registration, Titling & Legal Operator Requirements",
+    "question": "What lighting must a Michigan boat trailer have, and in what condition must it be maintained?",
+    "choice_a": "Turn signals, taillights, and brake lights, all maintained in operable condition",
+    "choice_b": "Only a single rear reflector, with no lighting requirement",
+    "choice_c": "Headlights matching the color of the tow vehicle's lights",
+    "choice_d": "Lighting is optional if the trailer is used only during daylight hours",
+    "correct_choice": "A",
+    "explanation": "Under 'Legal Requirements for Trailers,' trailers must have proper lighting, including turn signals, taillights, and brake lights, and all trailer lights must be maintained in an operable condition, the same as when the trailer was manufactured.",
+    "weight": 3,
+    "source_note": "Legal Requirements for Trailers"
+  },
+  {
+    "topic": "Registration, Titling & Legal Operator Requirements",
+    "question": "How must a towing vehicle be connected to a boat trailer under Michigan law?",
+    "choice_a": "By a safety chain or cable of sufficient strength to maintain connection under all conditions",
+    "choice_b": "By the trailer hitch ball alone, with no secondary connection required",
+    "choice_c": "By a tow rope rated for at least 500 pounds",
+    "choice_d": "By bungee cords securing both frames",
+    "correct_choice": "A",
+    "explanation": "Under 'Legal Requirements for Trailers,' all towing vehicles must be connected to the trailer by a safety chain or cable of sufficient strength to maintain connection under all conditions.",
+    "weight": 3,
+    "source_note": "Legal Requirements for Trailers"
+  },
+  {
+    "topic": "Registration, Titling & Legal Operator Requirements",
+    "question": "Besides the vessel itself, what else does Michigan law require a boater to license and register?",
+    "choice_a": "The boat trailer",
+    "choice_b": "The tow vehicle's spare tire",
+    "choice_c": "The vessel's anchor",
+    "choice_d": "Nothing else requires licensing besides the vessel",
+    "correct_choice": "A",
+    "explanation": "The handbook's 'Legal Requirements for Trailers' section states that Michigan has specific requirements for boat trailers, and trailers must be licensed and registered, separate from the vessel's own registration.",
+    "weight": 2,
+    "source_note": "Legal Requirements for Trailers"
+  },
+  {
+    "topic": "Registration, Titling & Legal Operator Requirements",
+    "question": "What is the 3-year registration fee for a pontoon vessel of any length in Michigan?",
+    "choice_a": "$23.00",
+    "choice_b": "$42.00",
+    "choice_c": "$9.00",
+    "choice_d": "$168.00",
+    "correct_choice": "A",
+    "explanation": "The Schedule of Fees to Register Your Vessel lists pontoon vessels of any length at $23.00 for the registration period.",
+    "weight": 2,
+    "source_note": "Schedule of Fees to Register Your Vessel"
+  },
+  {
+    "topic": "Registration, Titling & Legal Operator Requirements",
+    "question": "What is the registration fee for a non-powered vessel in Michigan, other than a non-motorized canoe or kayak?",
+    "choice_a": "$9.00",
+    "choice_b": "$14.00",
+    "choice_c": "$5.00",
+    "choice_d": "$45.00",
+    "correct_choice": "A",
+    "explanation": "Under 'Other fees' in the Schedule of Fees to Register Your Vessel, non-powered vessels (except non-motorized canoes or kayaks) are charged $9.00.",
+    "weight": 2,
+    "source_note": "Schedule of Fees to Register Your Vessel"
+  },
+  {
+    "topic": "Registration, Titling & Legal Operator Requirements",
+    "question": "What is the registration fee for a Michigan vessel that carries passengers or freight for hire, regardless of the vessel's length?",
+    "choice_a": "$45.00",
+    "choice_b": "$115.00",
+    "choice_c": "$244.00",
+    "choice_d": "$15.00",
+    "correct_choice": "A",
+    "explanation": "The Schedule of Fees to Register Your Vessel sets a flat fee of $45.00 for vessels carrying passengers or freight for hire, distinct from the length-based motorboat fee tiers.",
+    "weight": 2,
+    "source_note": "Schedule of Fees to Register Your Vessel"
+  },
+  {
+    "topic": "Registration, Titling & Legal Operator Requirements",
+    "question": "What is the 3-year registration fee for a motorized canoe of any length in Michigan?",
+    "choice_a": "$14.00",
+    "choice_b": "$17.00",
+    "choice_c": "$23.00",
+    "choice_d": "$5.00",
+    "correct_choice": "A",
+    "explanation": "The Schedule of Fees to Register Your Vessel lists motorized canoes of any length at $14.00, the same rate as a motorboat less than 12 feet.",
+    "weight": 2,
+    "source_note": "Schedule of Fees to Register Your Vessel"
+  }
+]

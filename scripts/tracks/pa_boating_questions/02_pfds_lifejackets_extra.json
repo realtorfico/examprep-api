@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Required Equipment - PFDs",
+    "question": "According to the Pennsylvania Fish and Boat Commission, which groups of boaters are explicitly barred from counting an inflatable life jacket toward their requirement?",
+    "choice_a": "Anyone being towed behind a boat (water-skiing, wake surfing, kneeboarding, or tubing), personal watercraft (PWC) operators and passengers, and sailboarders",
+    "choice_b": "Only recreational canoe paddlers on calm lakes",
+    "choice_c": "Only children under 12 years old",
+    "choice_d": "No one -- inflatable PFDs are accepted for all of these activities in Pennsylvania",
+    "correct_choice": "A",
+    "explanation": "PFBC guidance states that inflatable life jackets are not acceptable for anyone towed behind a boat, for PWC operators and passengers, or for sailboarders, because these activities carry a higher risk of sudden, forceful entry into the water where an inflatable device may not deploy in time.",
+    "weight": 2,
+    "source_note": "PA Fish and Boat Commission boat-towed watersports and personal watercraft regulation pages (pa.gov/agencies/fishandboat/boating/regulations)"
+  },
+  {
+    "topic": "Required Equipment - PFDs",
+    "question": "What specific water-temperature threshold does the Pennsylvania Fish and Boat Commission identify as the point below which cold water shock becomes a major factor in boating fatalities, reinforcing the importance of wearing a PFD?",
+    "choice_a": "Below 32 degrees Fahrenheit",
+    "choice_b": "Below 70 degrees Fahrenheit",
+    "choice_c": "Below 50 degrees Fahrenheit, and only during winter months",
+    "choice_d": "Water temperature is not addressed in PFBC cold-water safety guidance",
+    "correct_choice": "B",
+    "explanation": "PFBC safety materials state that cold water shock is a major factor in boating fatalities when water temperatures are less than 70 degrees Fahrenheit, a threshold that can occur well outside the coldest winter months, which is why wearing a PFD is stressed even in fall and spring.",
+    "weight": 2,
+    "source_note": "PA Fish and Boat Commission hazards-on-the-water safety page (pa.gov/agencies/fishandboat/boating/safety/hazards-on-water)"
+  },
+  {
+    "topic": "Required Equipment - PFDs",
+    "question": "On lakes operated by the Pittsburgh District of the U.S. Army Corps of Engineers within Pennsylvania, how does the life-jacket-wear rule for boats under 16 feet, canoes, kayaks, and paddleboards differ from the statewide cold-weather rule?",
+    "choice_a": "No life jacket is ever required on these lakes",
+    "choice_b": "The rule is identical to the statewide November 1-April 30 rule, with no differences",
+    "choice_c": "Everyone aboard those vessel types must wear a life jacket year-round, not just from November 1 through April 30",
+    "choice_d": "Life jackets are required only for powerboats over 26 feet on these lakes",
+    "correct_choice": "C",
+    "explanation": "While Pennsylvania's statewide rule mandates PFD wear on boats under 16 feet, canoes, kayaks, and paddleboards only from November 1 through April 30, Pittsburgh District U.S. Army Corps of Engineers lakes require everyone in those same vessel types to wear a life jacket year-round.",
+    "weight": 3,
+    "source_note": "PA Fish and Boat Commission paddlesports equipment page, noting the Pittsburgh District USACE lake exception (pa.gov/agencies/fishandboat/boating/paddlesports/equipment)"
+  },
+  {
+    "topic": "Required Equipment - PFDs",
+    "question": "According to Pennsylvania Fish and Boat Commission safety statistics, roughly what share of boating fatalities happen to boaters who were not wearing a life jacket?",
+    "choice_a": "About ten percent",
+    "choice_b": "About twenty-five percent",
+    "choice_c": "Virtually none -- most fatalities involve boaters who were wearing a life jacket",
+    "choice_d": "About eighty percent",
+    "correct_choice": "D",
+    "explanation": "The Pennsylvania Fish and Boat Commission reports that roughly eighty percent of boating fatalities happen to boaters who were not wearing a life jacket, which is why wearing one at all times while underway is stressed as the single most effective boating safety practice.",
+    "weight": 2,
+    "source_note": "PA Fish and Boat Commission life jackets and throwables page (pa.gov/agencies/fishandboat/boating/basics/equipment/life-jackets)"
+  },
+  {
+    "topic": "Required Equipment - PFDs",
+    "question": "Where must the required throwable flotation device be kept aboard a Pennsylvania boat 16 feet or longer while the vessel is underway?",
+    "choice_a": "Within arm's reach of the operator or a passenger, so it is immediately available for use",
+    "choice_b": "Stowed in a locked compartment to prevent it from being lost overboard",
+    "choice_c": "Anywhere on the boat, as long as it is somewhere aboard",
+    "choice_d": "It only needs to be aboard while the boat is docked, not while underway",
+    "correct_choice": "A",
+    "explanation": "Pennsylvania regulation requires the USCG-approved throwable device on boats 16 feet and longer to be immediately available, specifically within arm's reach of the operator or a passenger during operation, not stowed away where it can't be grabbed quickly in an emergency.",
+    "weight": 2,
+    "source_note": "PA Fish and Boat Commission life jackets and throwables page (pa.gov/agencies/fishandboat/boating/basics/equipment/life-jackets)"
+  }
+]

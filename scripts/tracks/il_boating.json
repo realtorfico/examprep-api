@@ -1,0 +1,6 @@
+{
+  "examType": "il_boating",
+  "questionsDir": "C:\\claudews\\PassExamHQ\\Workers\\passexamhq-api\\scripts\\tracks\\il_boating_questions",
+  "priceCents": 799,
+  "handbookNote": "Illinois Department of Natural Resources (IDNR) Boat Registration and Safety Act (625 ILCS 45) and the Handbook of Illinois Boating Laws and Responsibilities -- Illinois has no single official IDNR-administered boating exam; anyone born on or after January 1, 1998 must hold a Boating Safety Certificate to operate a vessel powered by a motor of more than 10 hp, earned through a NASBLA-approved third-party course provider (Boat-Ed/boat-ed.com/illinois is the provider IDNR's own handbook directs boaters to, alongside a DNR classroom-course option) whose embedded final exam is the de facto test, with an 80% passing score confirmed directly on the DNR-accepted provider's course page and unlimited retake attempts, though the exact per-vendor question count is not publicly published (industry-wide NASBLA course finals commonly run 50-60 questions) -- price matches this project's Motorcycle-tier boating convention ($7.99), not a placeholder"
+}

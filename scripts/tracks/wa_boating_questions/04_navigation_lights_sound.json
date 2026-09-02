@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Navigation Lights & Nighttime Navigation",
+    "question": "Between what hours must a vessel display its required navigation lights?",
+    "choice_a": "Only from midnight to 4 a.m.",
+    "choice_b": "From sunset to sunrise, and during periods of restricted visibility such as fog or heavy rain",
+    "choice_c": "Only when other vessels are visible nearby",
+    "choice_d": "Navigation lights are optional in Washington",
+    "correct_choice": "B",
+    "explanation": "Navigation lights are required between sunset and sunrise and also during periods of restricted visibility like fog or heavy rain, regardless of the time of day.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Navigation Lights"
+  },
+  {
+    "topic": "Navigation Lights & Nighttime Navigation",
+    "question": "What do red and green sidelights indicate on a vessel at night?",
+    "choice_a": "Red means the engine is off; green means it is running",
+    "choice_b": "Red is for sailboats only; green is for powerboats only",
+    "choice_c": "Red indicates the vessel's port (left) side; green indicates the starboard (right) side",
+    "choice_d": "The colors have no standardized meaning",
+    "correct_choice": "C",
+    "explanation": "Sidelights are red on the port (left) side and green on the starboard (right) side, visible to vessels approaching from the side or head-on.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Nighttime Navigation"
+  },
+  {
+    "topic": "Navigation Lights & Nighttime Navigation",
+    "question": "What does a masthead light indicate about a vessel at night?",
+    "choice_a": "The vessel is anchored for the night",
+    "choice_b": "The vessel is a non-motorized canoe or kayak",
+    "choice_c": "The vessel is disabled and requires assistance",
+    "choice_d": "It is required on all motorboats under power; its absence indicates a sailboat under sail",
+    "correct_choice": "D",
+    "explanation": "A masthead light must be displayed by all vessels under engine power at night; the absence of this white forward-facing light indicates the vessel is a sailboat operating under sail alone.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Nighttime Navigation"
+  },
+  {
+    "topic": "Navigation Lights & Nighttime Navigation",
+    "question": "On power-driven vessels less than 39.4 feet long, what can the all-round white light be used for?",
+    "choice_a": "To combine the masthead light and sternlight into a single light visible from any direction, and to serve as an anchor light when sidelights are off",
+    "choice_b": "It replaces the need for sidelights entirely, at any length",
+    "choice_c": "It is only used to signal an emergency",
+    "choice_d": "It must be red, not white",
+    "correct_choice": "A",
+    "explanation": "On vessels under 39.4 feet, the all-round white light can combine the masthead and sternlight functions into one light visible from all directions, and doubles as an anchor light once sidelights are extinguished.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Nighttime Navigation"
+  },
+  {
+    "topic": "Navigation Lights & Nighttime Navigation",
+    "question": "At night, if you see only a white light from another vessel, what does that tell you?",
+    "choice_a": "You are approaching a sailboat under sail head-on",
+    "choice_b": "You are overtaking that vessel, and it is the stand-on vessel whether underway or anchored",
+    "choice_c": "The other vessel is a PWC operating illegally at night",
+    "choice_d": "The other vessel has no legal right-of-way status at all",
+    "correct_choice": "B",
+    "explanation": "Seeing only a white light (typically the sternlight) means you are overtaking that vessel; it remains the stand-on vessel and you may pass on either side.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Encountering Vessels at Night"
+  },
+  {
+    "topic": "Navigation Lights & Nighttime Navigation",
+    "question": "At night, if you see a red and a white light from another vessel, what must you do?",
+    "choice_a": "Maintain course and speed because you are the stand-on vessel",
+    "choice_b": "Sound five short blasts and continue forward",
+    "choice_c": "Give way -- slow down and let the vessel pass, or turn right and pass behind it",
+    "choice_d": "Nothing -- red and white lights have no navigational meaning",
+    "correct_choice": "C",
+    "explanation": "Seeing a red and white light means you must give way to the other vessel -- slow down and allow it to pass, or turn to the right and pass behind it.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Encountering Vessels at Night"
+  },
+  {
+    "topic": "Navigation Lights & Nighttime Navigation",
+    "question": "At night, if you see only a red light or only a green light from another vessel, what should you assume?",
+    "choice_a": "The other vessel is anchored and not underway",
+    "choice_b": "It is a lighthouse, not a vessel",
+    "choice_c": "You have the right-of-way automatically",
+    "choice_d": "You may be approaching a sailboat under sail, which is always the stand-on vessel, and you must give way",
+    "correct_choice": "D",
+    "explanation": "Seeing only one sidelight color often indicates a sailboat under sail approaching at an angle; a sailboat under sail is always the stand-on vessel, so the power-driven vessel must give way.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Encountering a Sailboat at Night"
+  },
+  {
+    "topic": "Navigation Lights & Nighttime Navigation",
+    "question": "What must a non-motorized vessel less than 23.0 feet long (such as a canoe or kayak) have available at night?",
+    "choice_a": "Either a 360-degree white light or a flare-up light to signal its location, or at minimum a lantern or flashlight showing a white light",
+    "choice_b": "Full red and green sidelights matching a 65-foot vessel",
+    "choice_c": "No lighting is required for any non-motorized vessel",
+    "choice_d": "A rotating blue emergency beacon",
+    "correct_choice": "A",
+    "explanation": "A non-motorized vessel under 23.0 feet must have at minimum a lantern or flashlight showing a white light, or if practical the same lights required of larger unpowered vessels, to signal its location at night.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Encountering a Non-Motorized Vessel at Night"
+  },
+  {
+    "topic": "Navigation Lights & Nighttime Navigation",
+    "question": "When must all vessels display a white light visible in all directions, even while anchored away from a dock?",
+    "choice_a": "Only if the vessel is over 100 feet long",
+    "choice_b": "Between sunset and sunrise, though vessels less than 23 feet are exempt unless anchored in a narrow channel, fairway, or anchorage",
+    "choice_c": "Only during a declared state of emergency",
+    "choice_d": "White lights are never required while at anchor",
+    "correct_choice": "B",
+    "explanation": "All anchored vessels away from a dock must show a white light visible in all directions between sunset and sunrise; vessels under 23 feet are exempt unless anchored in a narrow channel, fairway, or anchorage, or where other vessels navigate.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, All Vessels When Not Underway"
+  },
+  {
+    "topic": "Navigation Lights & Nighttime Navigation",
+    "question": "For power-driven vessels under 39.4 feet, from what minimum distance must sidelights be visible on a dark, clear night?",
+    "choice_a": "At least ten miles",
+    "choice_b": "At least 100 yards",
+    "choice_c": "At least one mile",
+    "choice_d": "Visibility distance is not specified",
+    "correct_choice": "C",
+    "explanation": "Sidelights on vessels less than 39.4 feet long must be visible from at least one mile; larger vessels' sidelights must be visible from at least two miles.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Navigation Lights"
+  }
+]

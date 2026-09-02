@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "What is the official Atlantic hurricane season, which directly affects Alabama's Gulf Coast waters near Mobile Bay, Gulf Shores, and Orange Beach?",
+    "choice_a": "There is no defined hurricane season; storms can form with equal likelihood year-round",
+    "choice_b": "January 1 through March 31",
+    "choice_c": "June 1 through November 30",
+    "choice_d": "Only the month of October",
+    "correct_choice": "C",
+    "explanation": "The Atlantic hurricane season officially runs June 1 through November 30, and Alabama's Gulf Coast waters -- including Mobile Bay, Gulf Shores, and Orange Beach -- are directly exposed to tropical storms and hurricanes forming or tracking through the Gulf of Mexico during this period.",
+    "weight": 4,
+    "source_note": "National Hurricane Center Atlantic hurricane season dates, applied to Alabama's Gulf Coast exposure"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "What is the difference between a \"small craft advisory\" and a \"hurricane warning\" that a boater on the Alabama coast might hear from NOAA marine weather broadcasts?",
+    "choice_a": "Neither term has any defined meaning for Alabama's Gulf Coast",
+    "choice_b": "The two terms mean exactly the same thing",
+    "choice_c": "A small craft advisory is more severe than a hurricane warning",
+    "choice_d": "A small craft advisory warns of sustained winds and/or seas that could be hazardous for smaller vessels, while a hurricane warning means hurricane-force winds are expected in the area within a specified time frame -- a far more severe and imminent threat",
+    "correct_choice": "D",
+    "explanation": "A small craft advisory signals conditions (wind, seas, or both) that could be hazardous to smaller recreational vessels, while a hurricane warning is a far more severe alert meaning hurricane-force winds (74+ mph) are expected in the area within a defined timeframe, calling for boats to be secured or removed from the water entirely.",
+    "weight": 4,
+    "source_note": "Universal NOAA marine weather advisory definitions, applied to Alabama's Gulf Coast boating conditions"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "What is the safest action for a boater to take if a thunderstorm with lightning approaches while out on Lake Guntersville or Wheeler Lake?",
+    "choice_a": "Head for the nearest safe shore or harbor immediately, since a boat -- especially one with limited or no enclosed cabin -- offers very little lightning protection out on open water",
+    "choice_b": "Continue the outing as planned since lightning rarely strikes open water",
+    "choice_c": "Anchor in the middle of the lake and wait it out in place",
+    "choice_d": "Stand at the highest point of the boat to get a better view of the storm",
+    "correct_choice": "A",
+    "explanation": "Open boats provide little to no lightning protection, so the safest response to an approaching thunderstorm is to head for the nearest safe harbor or shore promptly rather than continuing the outing or waiting it out on open water.",
+    "weight": 4,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (lightning/thunderstorm response)"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "What visual warning signs on the water or in the sky should an Alabama boater watch for that may indicate a fast-developing storm?",
+    "choice_a": "There are no visible warning signs before a storm; they always strike with zero warning",
+    "choice_b": "Darkening or towering clouds, a sudden drop in temperature, an abrupt shift in wind direction or speed, and choppy or whitecapping water where it was previously calm",
+    "choice_c": "Only an official radio broadcast can ever indicate an approaching storm",
+    "choice_d": "Clear blue skies always indicate an imminent severe storm",
+    "correct_choice": "B",
+    "explanation": "Boaters should watch for darkening or building cloud towers, a sudden temperature drop, shifting or strengthening wind, and rapidly building chop -- all common visual precursors of an approaching storm that can develop faster than an inland weather forecast might suggest on Alabama's large lakes.",
+    "weight": 3,
+    "source_note": "Universal NASBLA-aligned boating safety curriculum (visual storm warning signs)"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "Why should a boater check a detailed marine weather forecast (not just a general land forecast) before heading out on Mobile Bay or into the Gulf of Mexico?",
+    "choice_a": "Marine forecasts are only useful for commercial shipping, never recreational boaters",
+    "choice_b": "Marine and land forecasts are always identical with no meaningful difference",
+    "choice_c": "Because marine forecasts include wave height, wind over water (which is often stronger and steadier than over land), and tide/current information that a general land forecast does not capture",
+    "choice_d": "Checking a forecast before departure has no safety value",
+    "correct_choice": "C",
+    "explanation": "A marine forecast specifically reports wave height, wind speed and direction over open water (frequently stronger and more sustained than over land), and tidal or current information critical to route planning -- details a general land-based weather forecast does not adequately provide for coastal or offshore boating.",
+    "weight": 3,
+    "source_note": "Universal NOAA marine forecasting guidance applied to Alabama's Mobile Bay/Gulf of Mexico boating"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "What is storm surge, and why is it a particular hazard for boats moored or stored along Alabama's Gulf Coast during hurricane season?",
+    "choice_a": "A phenomenon that only affects boats already out on open water, never those docked",
+    "choice_b": "A type of ocean current unrelated to weather",
+    "choice_c": "A term describing unusually calm water conditions",
+    "choice_d": "An abnormal rise in seawater level generated by a storm's winds and low pressure, which can flood marinas, break moorings, and push or sink boats well beyond their normal dock lines",
+    "correct_choice": "D",
+    "explanation": "Storm surge is the abnormal rise of seawater pushed ashore by a hurricane's or tropical storm's winds and low atmospheric pressure; it can flood marinas and low-lying storage areas, break mooring lines, and carry boats far from where they were secured -- a major reason Alabama's Gulf Coast marinas urge early haul-out or relocation ahead of an approaching storm.",
+    "weight": 4,
+    "source_note": "Universal National Hurricane Center storm surge definition, applied to Alabama Gulf Coast marina/mooring risk"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "Why can afternoon thunderstorms be a predictable seasonal hazard for boaters on Alabama's inland lakes during summer months?",
+    "choice_a": "Summer heat and humidity commonly build into convective thunderstorms during the afternoon and evening, so boaters who launch early and plan to be off the water before peak heat reduce their storm exposure",
+    "choice_b": "Alabama never experiences thunderstorms during summer months",
+    "choice_c": "Afternoon storms only occur once per year at most",
+    "choice_d": "Thunderstorms are exclusively a winter phenomenon in Alabama",
+    "correct_choice": "A",
+    "explanation": "Alabama's hot, humid summer conditions frequently produce convective (heat-driven) thunderstorms that build during the afternoon and evening; experienced boaters on lakes like Guntersville, Martin, and Eufaula often plan to be off the water before this predictable afternoon risk window.",
+    "weight": 3,
+    "source_note": "Universal seasonal convective thunderstorm pattern, applied to Alabama's inland lake boating conditions"
+  },
+  {
+    "topic": "Weather and Gulf Coast Conditions",
+    "question": "What should a boater do with a vessel moored along coastal Alabama if a hurricane watch or warning is issued for the area?",
+    "choice_a": "Leave the boat exactly where it is with no additional precautions",
+    "choice_b": "Follow the marina's or owner's hurricane plan promptly -- typically hauling the boat out of the water or moving it to a designated safe harbor well before the storm's arrival, rather than waiting until conditions deteriorate",
+    "choice_c": "Take the boat out onto open Gulf water to \"ride out\" the storm",
+    "choice_d": "Add extra fuel and passengers before the storm arrives",
+    "correct_choice": "B",
+    "explanation": "Once a hurricane watch or warning is issued, boat owners along Alabama's Gulf Coast should promptly execute a hurricane plan -- typically hauling the vessel out or relocating it to a safe harbor -- well ahead of the storm, since waiting until conditions worsen sharply increases risk to both people and property.",
+    "weight": 3,
+    "source_note": "Universal National Hurricane Center/NASBLA hurricane preparedness guidance for boat owners, applied to Alabama's Gulf Coast"
+  }
+]

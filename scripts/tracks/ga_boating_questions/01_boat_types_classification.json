@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Under Georgia's vessel length classes, which class covers boats less than 16 feet long?",
+    "choice_a": "Class A",
+    "choice_b": "Class 1",
+    "choice_c": "Class 2",
+    "choice_d": "Class 3",
+    "correct_choice": "A",
+    "explanation": "Georgia divides vessels into length classes that determine required equipment: Class A is less than 16 feet, Class 1 is 16 to less than 26 feet, Class 2 is 26 to less than 40 feet, and Class 3 is 40 to less than 65 feet.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Vessel Length Classes'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "A vessel that is 20 feet long falls into which Georgia length class?",
+    "choice_a": "Class A (less than 16 feet)",
+    "choice_b": "Class 1 (16 feet to less than 26 feet)",
+    "choice_c": "Class 2 (26 feet to less than 40 feet)",
+    "choice_d": "Class 3 (40 feet to less than 65 feet)",
+    "correct_choice": "B",
+    "explanation": "A 20-foot vessel falls within the Class 1 range of 16 feet to less than 26 feet under Georgia's vessel length classification system.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Vessel Length Classes'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "How is a vessel's length measured for classification purposes in Georgia?",
+    "choice_a": "By adding the length of the hull plus any outboard motor and swim platform",
+    "choice_b": "By the manufacturer's advertised model name only",
+    "choice_c": "In a straight line from the tip of the bow to the stern, not including outboard motors, brackets, rudders, bow attachments, or swim platforms and ladders that are not molded parts of the hull",
+    "choice_d": "From the waterline to the highest point of the vessel",
+    "correct_choice": "C",
+    "explanation": "Length is measured in a straight line from the bow tip to the stern; it excludes outboard motors, brackets, rudders, bow attachments, and swim platforms/ladders that are not molded parts of the hull.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Vessel Length Classes'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is the purpose of a boat's capacity plate?",
+    "choice_a": "It lists the boat's resale value",
+    "choice_b": "It shows the boat's insurance policy number",
+    "choice_c": "It records the boat's most recent oil change date",
+    "choice_d": "It indicates the maximum weight capacity and maximum number of people the vessel can carry safely",
+    "correct_choice": "D",
+    "explanation": "The capacity plate, usually found near the operator's position or on the transom, indicates the maximum weight capacity and maximum number of persons the vessel can carry safely.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Vessel Capacity'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Do personal watercraft (PWC) generally have a capacity plate like a conventional boat?",
+    "choice_a": "No -- PWC and some other vessels are not required to have a capacity plate, so operators should follow the capacity recommended in the owner's manual and on the manufacturer's warning decal",
+    "choice_b": "Yes, every PWC must have an identical capacity plate to a Class 1 boat",
+    "choice_c": "No, PWC have no capacity limit at all",
+    "choice_d": "Yes, but only PWC manufactured before 2000",
+    "correct_choice": "A",
+    "explanation": "PWC and some other vessels are not required to carry a capacity plate; operators should instead follow the recommended capacity in the owner's manual and on the manufacturer's warning decal.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Vessel Capacity'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Why does Georgia divide vessels into length classes (Class A, 1, 2, and 3)?",
+    "choice_a": "Because it determines the color the hull must be painted",
+    "choice_b": "Because a vessel's length class determines what equipment is necessary to comply with federal and state boating laws",
+    "choice_c": "Because it sets the maximum age of the operator",
+    "choice_d": "Because it determines which lake the vessel may be used on",
+    "correct_choice": "B",
+    "explanation": "A vessel's length class determines the equipment necessary to comply with federal and state laws, such as required lights, fire extinguishers, and sound-producing devices.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Vessel Length Classes'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "What is the key difference between a displacement hull and a planing hull?",
+    "choice_a": "A displacement hull is only used on personal watercraft",
+    "choice_b": "There is no real difference between the two hull types",
+    "choice_c": "A displacement hull pushes through the water and is limited in top speed by its waterline length, while a planing hull is designed to rise up and glide across the water's surface at higher speeds",
+    "choice_d": "A planing hull can never be operated in open water",
+    "correct_choice": "C",
+    "explanation": "Displacement hulls (common on sailboats and trawlers) push through the water and are speed-limited by length, while planing hulls (common on many powerboats) rise and glide across the surface as speed increases.",
+    "weight": 2,
+    "source_note": "Universal hull-design fundamentals covered in NASBLA-based boating safety courses"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "For registration and equipment purposes, how is a personal watercraft (PWC) generally treated under Georgia law?",
+    "choice_a": "As exempt from nearly all boating laws",
+    "choice_b": "As a non-motorized vessel similar to a canoe",
+    "choice_c": "As equipment rather than a vessel",
+    "choice_d": "As an inboard vessel that comes under the same rules and requirements as any other vessel, with some additional PWC-specific requirements",
+    "correct_choice": "D",
+    "explanation": "Although a PWC is considered an inboard vessel and falls under the same general rules as any other vessel, Georgia law also layers on additional requirements specific to PWC operation.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Specifically for PWC'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "A vessel measuring 45 feet long falls into which Georgia length class?",
+    "choice_a": "Class 3 (40 feet to less than 65 feet)",
+    "choice_b": "Class 2 (26 feet to less than 40 feet)",
+    "choice_c": "Class A (less than 16 feet)",
+    "choice_d": "Class 1 (16 feet to less than 26 feet)",
+    "correct_choice": "A",
+    "explanation": "A 45-foot vessel falls into Class 3, which covers vessels 40 feet to less than 65 feet long.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Vessel Length Classes'"
+  },
+  {
+    "topic": "Boat Types & Classification",
+    "question": "Where is a boat's capacity plate usually located?",
+    "choice_a": "Inside the fuel tank",
+    "choice_b": "Near the operator's position or on the vessel's transom",
+    "choice_c": "On the underside of the hull only visible when the boat is out of the water",
+    "choice_d": "On the trailer, not the boat itself",
+    "correct_choice": "B",
+    "explanation": "The capacity plate is usually found near the operator's position or on the vessel's transom, where it is visible before getting underway.",
+    "weight": 1,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Vessel Capacity'"
+  }
+]

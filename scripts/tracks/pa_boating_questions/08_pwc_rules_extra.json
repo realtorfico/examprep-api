@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Under Pennsylvania's boating regulations (58 Pa. Code Section 109.3), what specifically makes a vessel a \"personal watercraft\" rather than an ordinary motorboat?",
+    "choice_a": "It is less than 16 feet long, is propelled by an internal combustion engine driving a water jet pump, and is designed to be operated by a person sitting, standing, or kneeling on it, rather than sitting or standing inside it",
+    "choice_b": "Any boat powered by an outboard motor, regardless of size or design",
+    "choice_c": "Any boat capable of carrying more than three passengers",
+    "choice_d": "Any vessel used exclusively for fishing tournaments",
+    "correct_choice": "A",
+    "explanation": "Pennsylvania's regulatory definition of a personal watercraft turns on both size and design: a vessel under 16 feet long that uses an internal combustion motor powering a water jet pump for propulsion, and that is built for a rider to sit, stand, or kneel on top of it rather than inside a hull like a conventional motorboat.",
+    "weight": 2,
+    "source_note": "58 Pa. Code Section 109.3(a), definition of personal watercraft"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Under 58 Pa. Code Section 109.3, who is exempt from the PWC requirements to wear a life jacket and attach the engine cutoff switch lanyard?",
+    "choice_a": "Any PWC operator who has owned the PWC for more than one year",
+    "choice_b": "Performers taking part in a permitted regatta, boat race, marine parade, tournament, or exhibition, and those practicing for it within 48 hours beforehand at the event site",
+    "choice_c": "All PWC operators older than 21 years of age",
+    "choice_d": "No one -- Pennsylvania law provides no exemptions to these requirements",
+    "correct_choice": "B",
+    "explanation": "Pennsylvania's PWC regulation carves out a narrow exemption from the life-jacket-wear and cutoff-lanyard requirements for performers in a permitted regatta, race, marine parade, tournament, or exhibition, and for those preparing for the event within 48 hours beforehand at the event location -- it is not a general exemption based on ownership length or age.",
+    "weight": 2,
+    "source_note": "58 Pa. Code Section 109.3(e), performer exemption"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Besides the operator, who else must generally be aboard when a PWC is towing a skier, tuber, or similar participant on a rope in Pennsylvania?",
+    "choice_a": "No one else is required to be aboard",
+    "choice_b": "A state-licensed lifeguard must ride along",
+    "choice_c": "A competent observer to watch and assist the person being towed, so a minimum of three people -- operator, observer, and the person being towed -- are involved",
+    "choice_d": "A second PWC must follow directly behind as an escort",
+    "correct_choice": "C",
+    "explanation": "Pennsylvania's boat-towed watersports rules require a competent observer on board, in addition to the operator, to watch and assist the person being towed -- meaning towing a skier or tuber behind a PWC generally takes a minimum of three people: the operator, the observer, and the person being towed.",
+    "weight": 3,
+    "source_note": "PFBC boat-towed watersports observer requirement, pa.gov boating regulations"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "When a PWC tows a person on water skis, a tube, or a similar device in Pennsylvania (other than wake surfing, kite surfing, or parasailing), what does state guidance say about the tow rope?",
+    "choice_a": "It must be exactly 10 feet long",
+    "choice_b": "There is no rope-length guidance at all",
+    "choice_c": "It must be at least 200 feet long",
+    "choice_d": "It must be longer than 20 feet and no more than 80 feet",
+    "correct_choice": "D",
+    "explanation": "Pennsylvania's boat-towed watersports guidance calls for tow ropes longer than 20 feet but no more than 80 feet, an exception carved out for activities like wake surfing, kite surfing, and parasailing that use different towing setups.",
+    "weight": 2,
+    "source_note": "PFBC boat-towed watersports tow rope length guidance, pa.gov boating regulations"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Does a personal watercraft need to be registered with the Pennsylvania Fish and Boat Commission the same as other powered boats?",
+    "choice_a": "Yes -- a PWC meets Pennsylvania's definition of a powered boat, and all powered boats must be registered",
+    "choice_b": "No -- personal watercraft are exempt from boat registration",
+    "choice_c": "Only if the PWC is used commercially for rentals",
+    "choice_d": "Only if the PWC is longer than 16 feet",
+    "correct_choice": "A",
+    "explanation": "A PWC is propelled by an internal combustion motor and therefore qualifies as a powered boat under Pennsylvania law; the Fish and Boat Commission's boating regulations state plainly that all powered boats must be registered, with no PWC-specific exemption.",
+    "weight": 2,
+    "source_note": "PFBC powered boat registration requirement, pa.gov boating regulations; PWC meets the powered-boat definition per 58 Pa. Code Section 109.3"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Weather",
+    "question": "What should a boater do to prepare the vessel if caught in severe weather?",
+    "choice_a": "Immediately shut off the engine and drift",
+    "choice_b": "Slow down but keep enough power for headway and steering, close hatches/windows/doors to reduce swamping risk, and stow unnecessary gear",
+    "choice_c": "Open all hatches and windows to reduce wind resistance",
+    "choice_d": "Speed up to outrun the storm regardless of conditions",
+    "correct_choice": "B",
+    "explanation": "In severe weather, slow down while keeping enough power to maintain headway and steering, close hatches, windows, and doors to reduce the chance of swamping, and stow unnecessary gear.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'What to Do if Caught in Severe Weather'"
+  },
+  {
+    "topic": "Weather",
+    "question": "What should passengers do to prepare for severe weather on the water?",
+    "choice_a": "Stand up to watch for other boats",
+    "choice_b": "Move to the bow to keep the boat balanced",
+    "choice_c": "Put on a USCG-approved PFD (or ensure it is secured if already worn) and sit on the vessel floor close to the centerline",
+    "choice_d": "Remove PFDs so they can swim if needed",
+    "correct_choice": "C",
+    "explanation": "Passengers should have PFDs on and properly secured and should sit on the vessel floor close to the centerline for safety and to help keep the boat stable in severe weather.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'What to Do if Caught in Severe Weather'"
+  },
+  {
+    "topic": "Weather",
+    "question": "At what angle should the bow be pointed into waves during severe weather (for a conventional boat, not a PWC)?",
+    "choice_a": "Directly broadside (90 degrees) to the waves",
+    "choice_b": "Directly away from the waves at all times",
+    "choice_c": "Angle does not matter in rough water",
+    "choice_d": "A 45-degree angle into the waves",
+    "correct_choice": "D",
+    "explanation": "In severe weather, head the bow into the waves at a 45-degree angle; PWC, however, should head directly into the waves rather than at an angle.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'What to Do if Caught in Severe Weather'"
+  },
+  {
+    "topic": "Weather",
+    "question": "What can be used as a makeshift 'sea anchor' if the engine stops during severe weather?",
+    "choice_a": "A bucket dropped on a line off the bow to keep the bow headed into the wind and reduce drifting",
+    "choice_b": "A folded PFD tied to the stern",
+    "choice_c": "The boat's own anchor light",
+    "choice_d": "There is no substitute if a proper sea anchor is not aboard",
+    "correct_choice": "A",
+    "explanation": "If the engine stops, dropping a sea anchor on a line off the bow helps keep the bow headed into the wind and reduces drifting; in an emergency, a bucket can serve as a sea anchor.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'What to Do if Caught in Severe Weather'"
+  },
+  {
+    "topic": "Weather",
+    "question": "What should be done with electrical equipment if lightning is present during a storm on the water?",
+    "choice_a": "Turn on all electrical equipment to ground the boat",
+    "choice_b": "Disconnect all electrical equipment and stay as clear of metal objects as possible",
+    "choice_c": "Hold onto metal railings for stability",
+    "choice_d": "Lightning poses no additional risk on the water",
+    "correct_choice": "B",
+    "explanation": "If lightning is present, disconnect all electrical equipment and stay as clear of metal objects as possible to reduce the risk of being struck.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'What to Do if Caught in Severe Weather'"
+  },
+  {
+    "topic": "Weather",
+    "question": "If already caught in a storm on open water, is it always best to head for the nearest shore?",
+    "choice_a": "Yes, heading to shore is always the safest choice regardless of conditions",
+    "choice_b": "No, boaters should always anchor in open water and never attempt to reach shore",
+    "choice_c": "Not necessarily -- if already caught in the storm, it may be safer to ride it out in open water rather than approach the shore in heavy wind and waves",
+    "choice_d": "The decision is irrelevant since weather never affects boat handling",
+    "correct_choice": "C",
+    "explanation": "If already caught in a storm, it may be best to ride it out in open water rather than risk approaching the shore in heavy wind and waves; head for shore only if it can be reached safely.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'What to Do if Caught in Severe Weather'"
+  },
+  {
+    "topic": "Weather",
+    "question": "Which VHF channel is designated for distress and safety calls to the USCG and is often called the 'hailing' channel?",
+    "choice_a": "Channel 6",
+    "choice_b": "Channel 70",
+    "choice_c": "Channel 13",
+    "choice_d": "Channel 16",
+    "correct_choice": "D",
+    "explanation": "Channel 16 is used for distress and safety calls to the USCG and others and is commonly called the hailing channel; after making contact, boaters should switch to another channel to continue the conversation.",
+    "weight": 3,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'VHF Frequencies Broadcasting NOAA Weather Reports'"
+  },
+  {
+    "topic": "Weather",
+    "question": "What is VHF Channel 13 commonly used for?",
+    "choice_a": "Navigational use by commercial, military, and recreational vessels at bridges, locks, and harbors",
+    "choice_b": "Playing recorded weather music",
+    "choice_c": "Exclusively for ship-to-shore telephone calls",
+    "choice_d": "Only for hailing other PWC operators",
+    "correct_choice": "A",
+    "explanation": "Channel 13 is used for navigational communications by commercial, military, and recreational vessels near bridges, locks, and harbors.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'VHF Frequencies Broadcasting NOAA Weather Reports'"
+  },
+  {
+    "topic": "Weather",
+    "question": "How can a boater monitor developing weather conditions while on the water?",
+    "choice_a": "Rely solely on visual cloud observation with no radio",
+    "choice_b": "Tune a VHF radio to NOAA weather report frequencies",
+    "choice_c": "Weather cannot be monitored once away from the dock",
+    "choice_d": "Check a printed newspaper forecast from that morning",
+    "correct_choice": "B",
+    "explanation": "One way to monitor developing weather is to tune a VHF radio to the NOAA weather report frequencies broadcast on Georgia waters.",
+    "weight": 2,
+    "source_note": "Handbook of Georgia Boating Laws and Responsibilities, 'Weather Emergencies'"
+  }
+]

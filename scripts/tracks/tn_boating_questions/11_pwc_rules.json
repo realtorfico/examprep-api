@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "What is Tennessee's minimum age to legally rent a personal watercraft (PWC)?",
+    "choice_a": "21 years old",
+    "choice_b": "There is no minimum rental age in Tennessee",
+    "choice_c": "16 years old -- those under 16 may not rent a PWC",
+    "choice_d": "10 years old",
+    "correct_choice": "C",
+    "explanation": "Tennessee law states that those under 16 years of age may not rent a personal watercraft.",
+    "weight": 3,
+    "source_note": "Boat-Ed Tennessee Boating Laws page"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Under Tennessee's boater certification rules, what must a child under 12 have in order to operate a qualifying vessel or PWC?",
+    "choice_a": "No supervision is required for children under 12",
+    "choice_b": "A note from a parent is sufficient with no adult present",
+    "choice_c": "Written permission from TWRA mailed in advance",
+    "choice_d": "Direct supervision from an adult, age 18 or older, who holds a valid boating safety certificate",
+    "correct_choice": "D",
+    "explanation": "Tennessee requires children under 12 to be directly supervised by an adult, age 18 or older, who holds a valid boating safety certificate, when operating a qualifying vessel or PWC.",
+    "weight": 3,
+    "source_note": "Boat-Ed Tennessee Boating Laws page"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "At what age can a person in Tennessee legally operate a qualifying vessel or PWC alone, without adult supervision, if they hold a Boater Education Certificate?",
+    "choice_a": "12 years old and older",
+    "choice_b": "18 years old and older only",
+    "choice_c": "6 years old and older",
+    "choice_d": "Solo operation is never allowed under any age",
+    "correct_choice": "A",
+    "explanation": "A person age 12 or older in Tennessee may operate a qualifying vessel or PWC alone once they hold a TWRA Boater Education Certificate.",
+    "weight": 3,
+    "source_note": "Boat-Ed Tennessee Boating Laws page"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Once a Tennessee boater earns their Boater Education Certificate card, what must they do with it while operating?",
+    "choice_a": "It only needs to be shown once, at the time it is first issued",
+    "choice_b": "Carry it on board the vessel and have it available for inspection",
+    "choice_c": "Leave it at home in a safe place",
+    "choice_d": "Mail it back to TWRA for verification each season",
+    "correct_choice": "B",
+    "explanation": "Tennessee requires certified operators to carry their Boater Education Certificate card on board the vessel and make it available for inspection by law enforcement.",
+    "weight": 3,
+    "source_note": "Boat-Ed Tennessee Boating Laws page"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Under federal law that applies nationwide, including Tennessee, what must the operator of many PWCs and other small vessels with an engine cutoff switch (ECOS) do when underway at speed?",
+    "choice_a": "Attach the lanyard only when operating at idle speed",
+    "choice_b": "Leave the lanyard on the dock for safekeeping",
+    "choice_c": "Attach the ECOS lanyard to their person, clothing, or PFD so the engine cuts off if the operator is displaced",
+    "choice_d": "Disable the engine cutoff switch entirely for better performance",
+    "correct_choice": "C",
+    "explanation": "Federal law requires the operator of most vessels manufactured with an engine cutoff switch, including most PWCs, to attach the ECOS lanyard to themselves so the engine shuts off if they are thrown from the helm.",
+    "weight": 3,
+    "source_note": "Federal ECOS/engine cutoff switch law (33 CFR 175, applies nationwide including Tennessee)"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Why should a PWC operator avoid jumping the wake of another vessel at close range?",
+    "choice_a": "It is perfectly safe as long as the PWC is under warranty",
+    "choice_b": "PWCs are designed specifically for wake-jumping and it carries no added risk",
+    "choice_c": "Wake jumping is only dangerous for vessels over 26 feet",
+    "choice_d": "It is a common cause of PWC collisions and injuries, since the operator has little time to react if another vessel or obstacle is on the other side",
+    "correct_choice": "D",
+    "explanation": "Jumping another vessel's wake at close range is a leading cause of PWC collisions and injuries, since airborne time and reduced control leave little chance to react to hazards on landing.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "In Tennessee, is a personal watercraft treated as a distinct category exempt from vessel registration, or is it registered like other mechanically propelled boats?",
+    "choice_a": "A PWC is a mechanically propelled vessel and must be registered like other motorized boats",
+    "choice_b": "PWCs are entirely exempt from registration in Tennessee",
+    "choice_c": "PWCs only need registration if operated on rivers, not lakes",
+    "choice_d": "PWCs are registered through the Department of Motor Vehicles instead of TWRA",
+    "correct_choice": "A",
+    "explanation": "A personal watercraft is a mechanically propelled vessel under Tennessee law and must be registered with TWRA just like other motorized boats.",
+    "weight": 2,
+    "source_note": "TWRA Boating Registration page"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "What is the recommended extra precaution when a PWC is used to tow a person on a tube or skis?",
+    "choice_a": "Towing should always be done after sunset for better visibility",
+    "choice_b": "Have an observer on board in addition to the operator, or use a wide-angle rearview mirror, to watch the person being towed",
+    "choice_c": "No extra precaution is needed since the PWC is small and maneuverable",
+    "choice_d": "The person being towed should always face away from the PWC",
+    "correct_choice": "B",
+    "explanation": "When towing a person on a tube or skis behind a PWC, it is safest to have an observer aboard watching the towed person, since operators often cannot safely watch both the water ahead and the person behind at once.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Why is it unsafe for a PWC passenger to ride facing backward or lying flat on the seat while underway?",
+    "choice_a": "It is required riding position for all passengers under Tennessee law",
+    "choice_b": "It improves the PWC's fuel efficiency",
+    "choice_c": "It reduces the rider's ability to hold on and brace for sudden turns, waves, or stops, increasing the risk of falling off",
+    "choice_d": "It has no effect on rider safety",
+    "correct_choice": "C",
+    "explanation": "Riding backward or lying flat reduces a passenger's ability to brace against sudden turns, waves, or stops, making it much easier to be thrown off the PWC.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Personal Watercraft (PWC) Rules",
+    "question": "Because a PWC has no navigation lights configuration suited for extended after-dark operation and is highly maneuverable at speed, what is the general safety guidance for PWC operation timing?",
+    "choice_a": "PWCs perform identically day or night with no added risk",
+    "choice_b": "Nighttime is the safest time to operate a PWC because waters are less crowded",
+    "choice_c": "Lighting has no bearing on PWC operating safety",
+    "choice_d": "PWCs are best operated during daylight hours with good visibility, since they present unique nighttime hazards",
+    "correct_choice": "D",
+    "explanation": "PWCs are best operated in daylight with good visibility; their speed, low profile, and typical lack of extensive lighting create unique hazards for other boaters after dark.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "BUI / Alcohol & Drug Laws",
+    "question": "Under Arizona law, at what blood alcohol concentration (BAC) is a standard watercraft operator considered to be operating under the influence?",
+    "choice_a": "0.02 or more for any operator, regardless of age",
+    "choice_b": "Arizona has no numeric BAC threshold for boating",
+    "choice_c": "0.08 or more, measured within two hours of operating or being in actual physical control of a motorized watercraft",
+    "choice_d": "0.15 or more, with no lower BUI threshold",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-395 sets 0.08 BAC, measured within two hours of operating or being in actual physical control of a motorized watercraft, as the standard threshold for boating under the influence, mirroring Arizona's DUI standard for motor vehicles.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-395, 'Operating motorized watercraft while intoxicated'"
+  },
+  {
+    "topic": "BUI / Alcohol & Drug Laws",
+    "question": "What BAC threshold applies to a person operating a commercial motorized watercraft in Arizona?",
+    "choice_a": "The same 0.08 threshold as any other operator, with no separate commercial standard",
+    "choice_b": "0.10 or more",
+    "choice_c": "There is no BAC threshold for commercial operators",
+    "choice_d": "0.04 or more",
+    "correct_choice": "D",
+    "explanation": "A.R.S. 5-395 sets a stricter 0.04 BAC threshold for a person operating a commercial motorized watercraft, half the 0.08 threshold that applies to standard recreational operators.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-395, commercial watercraft BAC threshold"
+  },
+  {
+    "topic": "BUI / Alcohol & Drug Laws",
+    "question": "Under Arizona's BUI statute, what legal presumption applies if a chemical test shows a BAC of 0.05 or less?",
+    "choice_a": "It may be presumed that the defendant was not under the influence",
+    "choice_b": "It is automatically presumed the defendant was under the influence regardless of the low reading",
+    "choice_c": "The case is automatically dismissed with no further analysis permitted",
+    "choice_d": "The presumption is identical to the 0.08-or-more presumption",
+    "correct_choice": "A",
+    "explanation": "A.R.S. 5-395 provides that a BAC of 0.05 or less creates a presumption that the defendant was not under the influence, while 0.08 or more creates the opposite presumption; results between 0.05 and 0.08 carry no presumption either way.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-395, statutory presumptions"
+  },
+  {
+    "topic": "BUI / Alcohol & Drug Laws",
+    "question": "Besides alcohol, what else can trigger an Arizona BUI violation?",
+    "choice_a": "Only marijuana can trigger a BUI charge in Arizona",
+    "choice_b": "Operating while impaired to the slightest degree by any drug, a vapor-releasing substance containing a toxic substance, or a combination of substances -- and even having certain drug metabolites present in the body",
+    "choice_c": "BUI in Arizona applies exclusively to alcohol and never to any other substance",
+    "choice_d": "Only illegal drugs count; prescription medication use is always exempt regardless of impairment",
+    "correct_choice": "B",
+    "explanation": "Arizona's BUI law also prohibits operating a watercraft while impaired to the slightest degree by any drug or toxic vapor-releasing substance, or with a prohibited drug or its metabolite present in the body, independent of any alcohol involved.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-395, drug and substance provisions"
+  },
+  {
+    "topic": "BUI / Alcohol & Drug Laws",
+    "question": "What is 'aggravated' operation while under the influence under Arizona law?",
+    "choice_a": "A term with no distinct legal meaning separate from ordinary BUI",
+    "choice_b": "A charge reserved exclusively for commercial vessel operators",
+    "choice_c": "A more serious classification of BUI, generally involving factors such as a suspended/revoked operating privilege or prior BUI convictions, that carries harsher penalties than a standard violation",
+    "choice_d": "A charge that applies only to sailboats",
+    "correct_choice": "C",
+    "explanation": "A.R.S. 5-396 establishes aggravated BUI as an elevated offense classification -- generally tied to factors such as prior convictions -- carrying more serious penalties than a standard BUI violation under 5-395.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-396, 'Aggravated operation while under influence'"
+  },
+  {
+    "topic": "BUI / Alcohol & Drug Laws",
+    "question": "What does Arizona's 'extreme' BUI classification under A.R.S. 5-397 generally reflect?",
+    "choice_a": "It applies only to operators under age 21",
+    "choice_b": "It has nothing to do with BAC level and is based solely on vessel size",
+    "choice_c": "It is a lesser offense than standard BUI with reduced penalties",
+    "choice_d": "A significantly higher BAC level than the standard 0.08 threshold, carrying enhanced penalties similar to Arizona's extreme DUI structure for motor vehicles",
+    "correct_choice": "D",
+    "explanation": "A.R.S. 5-397 addresses operating a watercraft while 'extremely' under the influence, generally reflecting a materially higher BAC than the standard threshold and carrying enhanced penalties, paralleling Arizona's extreme DUI tier for vehicles.",
+    "weight": 3,
+    "source_note": "Arizona Revised Statutes 5-397, 'Operating watercraft while extremely influenced by alcohol'"
+  },
+  {
+    "topic": "BUI / Alcohol & Drug Laws",
+    "question": "Why does alcohol impair boating judgment and reaction time even faster than driving judgment, according to boating safety education?",
+    "choice_a": "Sun, wind, engine noise, vibration, and motion on the water ('boater's fatigue') can intensify alcohol's effects compared with the same amount consumed on land",
+    "choice_b": "Alcohol has no different effect on the water than on land",
+    "choice_c": "Water exposure completely neutralizes any effects of alcohol",
+    "choice_d": "Boating always sobers a person up faster than sitting on land",
+    "correct_choice": "A",
+    "explanation": "Environmental stressors common on the water -- sun, glare, wind, engine noise and vibration, and motion -- combine to accelerate fatigue and intensify alcohol's impairing effects, meaning the same amount of alcohol impairs a boater more than it would a driver.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Alcohol and Boater's Fatigue'"
+  },
+  {
+    "topic": "BUI / Alcohol & Drug Laws",
+    "question": "Does an AZGFD or other Arizona enforcement officer have authority to conduct a BUI investigation and administer field sobriety or chemical tests on the water?",
+    "choice_a": "BUI cannot legally be enforced anywhere in Arizona",
+    "choice_b": "Yes -- Arizona boating enforcement officers are authorized to investigate suspected BUI and administer testing consistent with A.R.S. Title 5's BUI provisions",
+    "choice_c": "No, only officers on land can ever test for impairment",
+    "choice_d": "Only U.S. Coast Guard personnel may investigate any BUI in Arizona",
+    "correct_choice": "B",
+    "explanation": "Arizona's BUI statutes are enforceable by boating law enforcement officers, who are authorized to investigate suspected violations and pursue chemical testing consistent with A.R.S. Title 5, Chapter 3.",
+    "weight": 2,
+    "source_note": "Arizona Revised Statutes 5-395 through 5-397, enforcement provisions"
+  }
+]

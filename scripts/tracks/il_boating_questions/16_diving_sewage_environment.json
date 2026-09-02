@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "Under 625 ILCS 45/5-19, who must display a diver-down flag while in Illinois waters?",
+    "choice_a": "No one; diver-down flags are optional in Illinois",
+    "choice_b": "Persons scuba diving, skin diving, snorkeling, or underwater spearfishing",
+    "choice_c": "Only commercial dive operators",
+    "choice_d": "Only divers operating on Lake Michigan",
+    "correct_choice": "B",
+    "explanation": "Illinois requires anyone scuba diving, skin diving, snorkeling, or underwater spearfishing to display a diver-down flag to warn nearby boaters of their presence.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-19; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "How far from a diver-down flag must a diver generally stay under Illinois law?",
+    "choice_a": "Within one mile of the flag",
+    "choice_b": "There is no distance limit for divers relative to their flag",
+    "choice_c": "Within 150 feet of the flag",
+    "choice_d": "Within 10 feet of the flag",
+    "correct_choice": "C",
+    "explanation": "Illinois law requires a diver to stay within 150 feet of their displayed diver-down flag, and except in an emergency, not surface more than 50 feet from the flag.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-19; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "How close may a vessel not engaged in diving operations approach a displayed diver-down flag in Illinois?",
+    "choice_a": "Vessels may pass directly over the flag at reduced speed",
+    "choice_b": "There is no minimum distance for passing vessels",
+    "choice_c": "Only PWCs must avoid the flag; other vessels may approach freely",
+    "choice_d": "Vessels must stay at least 150 feet from a displayed diver-down flag",
+    "correct_choice": "D",
+    "explanation": "Illinois law requires vessels not involved in the diving operation to stay at least 150 feet away from a displayed diver-down flag, protecting divers below the surface from vessel traffic and propeller strikes.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/5-19; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "Describe the two types of diver-down flags recognized under Illinois law.",
+    "choice_a": "A rectangular red flag with a white diagonal stripe (at least 12 inches by 15 inches), or the blue-and-white International Code Flag A (Alfa), required on federally controlled waters",
+    "choice_b": "A solid yellow flag or a solid black flag",
+    "choice_c": "Any flag of any color, as long as it is visible",
+    "choice_d": "Only the U.S. national flag may be used to indicate diving",
+    "correct_choice": "A",
+    "explanation": "Illinois recognizes the traditional red-and-white diagonal-striped diver's flag and the blue-and-white International Code Flag A (Alfa flag), the latter required specifically on federally controlled waters.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-19; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "Is it lawful under Illinois law to display a diver-down flag when no one is actually diving?",
+    "choice_a": "The law does not address this situation",
+    "choice_b": "No -- it is unlawful to display a diver-down flag when not diving",
+    "choice_c": "Yes, boaters may fly the flag at all times as a general caution",
+    "choice_d": "Yes, but only on weekends",
+    "correct_choice": "B",
+    "explanation": "Illinois law makes it unlawful to display a diver-down flag when diving is not actually taking place, since doing so could mislead other boaters into unnecessarily avoiding an area or, worse, disregarding a genuine diver-down flag elsewhere.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-19; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "Under 625 ILCS 45/4-9, what does Illinois law say about discharging sewage into state waters?",
+    "choice_a": "Sewage discharge is permitted only on the Illinois River",
+    "choice_b": "Sewage discharge rules apply only to commercial vessels",
+    "choice_c": "It is unlawful to discharge any sewage into Illinois waters, directly or indirectly",
+    "choice_d": "Sewage discharge is permitted more than one mile from shore",
+    "correct_choice": "C",
+    "explanation": "Illinois law prohibits discharging any sewage into state waters, whether directly or indirectly, to protect water quality on the state's lakes and rivers.",
+    "weight": 3,
+    "source_note": "625 ILCS 45/4-9; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "What equipment must a vessel with an installed toilet carry under federal law, as referenced in Illinois's boating handbook?",
+    "choice_a": "A garden-style composting toilet with no certification required",
+    "choice_b": "No special equipment is required for vessels with installed toilets",
+    "choice_c": "A permit issued annually by the Illinois Department of Revenue",
+    "choice_d": "An operable, USCG-certified marine sanitation device (MSD)",
+    "correct_choice": "D",
+    "explanation": "Federal law, referenced in Illinois's boating handbook, requires every vessel with an installed toilet to have an operable, USCG-certified marine sanitation device on board to prevent untreated sewage discharge.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/4-9; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "Why are boaters on Illinois waters, including the Great Lakes system, encouraged to clean, drain, and dry their boat, trailer, and gear between different bodies of water?",
+    "choice_a": "To prevent spreading aquatic invasive species, such as zebra mussels and Asian carp, from one waterway to another",
+    "choice_b": "To improve fuel economy on the next outing",
+    "choice_c": "It is only a cosmetic recommendation with no ecological purpose",
+    "choice_d": "To comply with a rule that applies only to PWCs",
+    "correct_choice": "A",
+    "explanation": "Cleaning, draining, and drying boats and trailers between waterways helps prevent the spread of aquatic invasive species like zebra mussels and Asian carp, both significant concerns for Illinois's Great Lakes and inland waterway ecosystems.",
+    "weight": 3,
+    "source_note": "Universal clean-drain-dry invasive species prevention guidance, particularly relevant to Illinois's Great Lakes and river systems"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "What is a practical reason a diver should avoid surfacing more than 50 feet from their diver-down flag, absent an emergency?",
+    "choice_a": "It ensures the diver stays within sight of shore",
+    "choice_b": "Surfacing far from the flag defeats the flag's purpose of warning nearby boaters of the diver's actual location, increasing the risk of a boat-diver collision",
+    "choice_c": "There is no safety reason; the rule exists purely for administrative convenience",
+    "choice_d": "It only matters for spearfishing, not scuba diving",
+    "correct_choice": "B",
+    "explanation": "The 50-foot surfacing limit keeps a diver's actual position close to where their flag warns boaters to steer clear, preserving the flag's protective purpose.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/5-19; Handbook of Illinois Boating Laws and Responsibilities"
+  },
+  {
+    "topic": "Diving, Sewage & Environment",
+    "question": "Which of these substances is prohibited from being dumped overboard on Illinois waters under environmental protection principles reflected in state and federal law?",
+    "choice_a": "There are no restrictions on dumping any materials into Illinois waters",
+    "choice_b": "Restrictions apply only to vessels longer than 26 feet",
+    "choice_c": "Trash, plastic, and other debris, in addition to untreated sewage",
+    "choice_d": "Only glass containers are prohibited from being discarded",
+    "correct_choice": "C",
+    "explanation": "In addition to Illinois's sewage-discharge prohibition, federal law under the Clean Water Act and MARPOL-based regulations bars dumping trash, plastic, and other debris overboard, since it can harm wildlife and water quality.",
+    "weight": 2,
+    "source_note": "625 ILCS 45/4-9; federal Clean Water Act / MARPOL trash-discharge prohibitions referenced across NASBLA-based boating courses"
+  }
+]

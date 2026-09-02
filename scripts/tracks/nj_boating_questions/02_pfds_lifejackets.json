@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is the general New Jersey requirement for personal flotation devices (PFDs) aboard a recreational vessel underway?",
+    "choice_a": "PFDs are optional for adults on any New Jersey waterway",
+    "choice_b": "There must be one U.S. Coast Guard-approved, wearable PFD of the proper size for each person on board, readily accessible",
+    "choice_c": "Only the operator is required to have a PFD available",
+    "choice_d": "PFDs are only required on vessels longer than 40 feet",
+    "correct_choice": "B",
+    "explanation": "New Jersey, consistent with federal requirements, mandates one properly fitted, USCG-approved wearable PFD for every person aboard, and it must be readily accessible, not locked away or buried under gear.",
+    "weight": 4,
+    "source_note": "NJSP Marine Services Bureau equipment checklist; federal USCG PFD carriage requirements"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under New Jersey's cold-weather PFD rule, when must PFDs be actually worn (not just carried) aboard vessels under 26 feet while underway?",
+    "choice_a": "Only on weekends year-round",
+    "choice_b": "New Jersey has no seasonal wear requirement",
+    "choice_c": "From November 1 through May 1",
+    "choice_d": "Only during the month of January",
+    "correct_choice": "C",
+    "explanation": "New Jersey requires all persons aboard recreational vessels under 26 feet to actually wear a USCG-approved PFD, not merely have one stowed aboard, while underway between November 1 and May 1, when cold-water immersion risk is highest.",
+    "weight": 5,
+    "source_note": "NJSP Marine Services Bureau FAQ; N.J.A.C. 13:82 seasonal PFD-wear requirement"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a Type III PFD most commonly used for?",
+    "choice_a": "Offshore emergency use in remote or rough water where rescue may be delayed",
+    "choice_b": "A throwable device tossed to a person in the water",
+    "choice_c": "Only for use by children under age five",
+    "choice_d": "General boating and water sports flotation aid, worn continuously, though it may not turn an unconscious wearer face-up",
+    "correct_choice": "D",
+    "explanation": "A Type III flotation aid is designed for general recreational boating and water sports where help is nearby, and it is the most commonly worn PFD type, though it is not designed to turn an unconscious person face-up like a Type I.",
+    "weight": 3,
+    "source_note": "USCG PFD classification system, taught in NJ-approved NASBLA boater education courses"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Which PFD type provides the greatest flotation and is designed to turn most unconscious wearers face-up in the water, making it best suited for offshore or rough water use?",
+    "choice_a": "Type I",
+    "choice_b": "Type III",
+    "choice_c": "Type IV",
+    "choice_d": "Type V (used only as a seat cushion)",
+    "correct_choice": "A",
+    "explanation": "A Type I offshore life jacket provides the most buoyancy of the wearable types and is specifically designed to turn an unconscious wearer face-up, making it ideal for open, rough, or remote water where rescue could take time.",
+    "weight": 3,
+    "source_note": "USCG PFD classification system"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What is a Type IV PFD, and what is a key limitation on how it may be used?",
+    "choice_a": "A device used exclusively on personal watercraft",
+    "choice_b": "A throwable device, such as a ring buoy or buoyant cushion, that must never be used as a substitute for a wearable PFD",
+    "choice_c": "A wearable vest intended for infants only",
+    "choice_d": "An inflatable belt pack that automatically counts toward the per-person wearable PFD requirement even when not worn",
+    "correct_choice": "B",
+    "explanation": "A Type IV device is a throwable flotation aid, like a boat cushion or ring buoy, meant to be thrown to a person in the water and grasped -- it does not satisfy the per-person wearable PFD requirement.",
+    "weight": 3,
+    "source_note": "USCG PFD classification system"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under New Jersey law, is a stand-up paddleboard (SUP) user ever exempt from PFD requirements?",
+    "choice_a": "SUPs are banned outright on all New Jersey waters",
+    "choice_b": "SUP users are exempt only if they are certified lifeguards",
+    "choice_c": "Yes -- a SUP used within the narrow limits of a designated swimming, surfing, or bathing area is exempt from the PFD requirement that otherwise applies",
+    "choice_d": "No, SUP users must always wear a Type I offshore PFD regardless of location",
+    "correct_choice": "C",
+    "explanation": "New Jersey exempts stand-up paddleboards from PFD carriage/wear rules only when used within the limited confines of a designated swimming, surfing, or bathing area; outside those areas, a SUP is treated as a vessel and PFD rules apply.",
+    "weight": 4,
+    "source_note": "NJSP Marine Services Bureau FAQ, SUP/paddleboard PFD exemption"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "For vessels 16 feet and longer (excluding canoes and kayaks), what additional PFD is generally required beyond one wearable PFD per person?",
+    "choice_a": "A second full set of wearable PFDs for every passenger",
+    "choice_b": "A life raft rated for ocean use",
+    "choice_c": "No additional device is required beyond the wearable PFDs",
+    "choice_d": "At least one Type IV throwable flotation device that is immediately accessible",
+    "correct_choice": "D",
+    "explanation": "Federal and New Jersey equipment rules require vessels 16 feet or longer, other than canoes and kayaks, to carry at least one throwable Type IV device in addition to a wearable PFD for each person aboard.",
+    "weight": 4,
+    "source_note": "Federal USCG PFD carriage requirements applied in New Jersey"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "What should a boater check regularly to make sure a PFD will actually perform in an emergency?",
+    "choice_a": "That it is the correct size for the wearer, in serviceable condition with no rips or waterlogged flotation material, and USCG-approved",
+    "choice_b": "That it matches the color of the boat",
+    "choice_c": "That it has never been worn before",
+    "choice_d": "PFD condition does not need to be checked once purchased",
+    "correct_choice": "A",
+    "explanation": "A PFD must be properly sized, undamaged, and USCG-approved to function correctly; waterlogged foam, rips, or an oversized/undersized fit can all reduce a PFD's ability to keep a person afloat.",
+    "weight": 3,
+    "source_note": "Universal PFD maintenance guidance in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Why is an inflatable Type V PFD only counted toward the legal PFD requirement under certain conditions?",
+    "choice_a": "Inflatable PFDs are always exempt from any restriction",
+    "choice_b": "Because it must be worn, not simply stowed, to be legally credited as meeting the wearable PFD requirement",
+    "choice_c": "Because inflatable PFDs are illegal in New Jersey",
+    "choice_d": "Because Type V PFDs only work for children",
+    "correct_choice": "B",
+    "explanation": "A Type V special-use PFD, including many inflatable models, is only approved for use under specific conditions -- typically it must actually be worn as prescribed on its label to count toward the legal PFD requirement.",
+    "weight": 3,
+    "source_note": "USCG PFD classification system, Type V special-use conditions"
+  },
+  {
+    "topic": "PFDs & Life Jackets",
+    "question": "Under federal law that New Jersey enforces on its waters, what PFD-wear rule applies specifically to children?",
+    "choice_a": "Only children under age 2 must wear a PFD",
+    "choice_b": "Children may substitute a pool noodle for a PFD",
+    "choice_c": "Children under 13 must wear a USCG-approved PFD while underway on the open deck of a vessel, unless below deck or in an enclosed cabin",
+    "choice_d": "Children are exempt from all PFD requirements",
+    "correct_choice": "C",
+    "explanation": "Federal law requires children under 13 to wear a USCG-approved PFD whenever a recreational vessel is underway on the open deck, unless the child is below deck or within an enclosed cabin, and New Jersey enforces this rule on its waters.",
+    "weight": 4,
+    "source_note": "Federal child PFD-wear requirement (33 CFR 175.15) enforced statewide including New Jersey"
+  }
+]

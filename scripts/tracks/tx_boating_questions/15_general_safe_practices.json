@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "General Safe Boating Practices",
+    "question": "What is an engine cutoff switch (ECOS) lanyard, and why is its use required by federal law on many small boats?",
+    "choice_a": "A decorative accessory required only on racing boats",
+    "choice_b": "A lanyard connecting the operator to a switch that immediately stops the engine if the operator is thrown from the helm, preventing a runaway boat; federal law requires its use on most vessels under 26 feet with a compliant cutoff switch installed while operating on plane or above displacement speed",
+    "choice_c": "A device used only to lock the boat when it is docked",
+    "choice_d": "A cutoff switch has no connection to operator safety",
+    "correct_choice": "B",
+    "explanation": "Federal law (effective 2021) requires the operator of most vessels under 26 feet equipped with an engine cutoff switch to use the ECOS link while operating at planing speed or above, since a lost or ejected operator can otherwise leave a runaway boat circling with no one at the helm.",
+    "weight": 4,
+    "source_note": "Federal engine cutoff switch (ECOS) requirement, as reflected in TPWD boater education"
+  },
+  {
+    "topic": "General Safe Boating Practices",
+    "question": "Why is exceeding a vessel's capacity plate rating for people or weight dangerous?",
+    "choice_a": "Capacity ratings are only suggestions with no real safety basis",
+    "choice_b": "Overloading only affects fuel economy, not safety",
+    "choice_c": "Overloading reduces freeboard and stability, making the boat more likely to swamp, capsize, or handle unpredictably, especially in rough water",
+    "choice_d": "Capacity plate limits apply only to commercial vessels",
+    "correct_choice": "C",
+    "explanation": "Loading a boat beyond its rated capacity reduces freeboard (the distance between the waterline and the gunwale) and stability, greatly increasing the risk of swamping or capsizing, particularly in wind or waves.",
+    "weight": 4,
+    "source_note": "TPWD Boater Education Manual -- overloading and capacity limits"
+  },
+  {
+    "topic": "General Safe Boating Practices",
+    "question": "How does 'boater's fatigue,' caused by sun, wind, noise, vibration, and motion, affect a boat operator over the course of a day?",
+    "choice_a": "It has no measurable effect on an operator's abilities",
+    "choice_b": "It only becomes a problem after more than a week of continuous boating",
+    "choice_c": "It affects only passengers, never the operator at the helm",
+    "choice_d": "It can gradually impair judgment, reaction time, and coordination in a way similar to alcohol, even without drinking",
+    "correct_choice": "D",
+    "explanation": "Prolonged exposure to sun, wind, engine noise, vibration, and the boat's motion can produce 'boater's fatigue,' progressively dulling judgment and reaction time in ways that resemble alcohol impairment, even with no alcohol consumed.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- boater's fatigue"
+  },
+  {
+    "topic": "General Safe Boating Practices",
+    "question": "Why is alcohol considered more impairing on the water than on the road for a given amount consumed?",
+    "choice_a": "Sun, wind, noise, vibration, and motion combine with alcohol's effects to impair balance, judgment, and reaction time faster than on land",
+    "choice_b": "Alcohol has no different effect on the water compared to driving",
+    "choice_c": "Alcohol only impairs swimming ability, not boat operation",
+    "choice_d": "Alcohol is metabolized more slowly on land than on water",
+    "correct_choice": "A",
+    "explanation": "The combined stress of sun, wind, engine noise, vibration, and wave motion (sometimes called 'boater's fatigue') compounds alcohol's impairing effects, meaning a boater can become dangerously impaired faster than a driver with the same blood alcohol level.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- alcohol's amplified effect while boating"
+  },
+  {
+    "topic": "General Safe Boating Practices",
+    "question": "What is the safest way to approach and depart from a dock in a moderate crosswind or current?",
+    "choice_a": "Always approach a dock at full throttle to overpower the wind or current",
+    "choice_b": "Approach and depart slowly, using the wind or current to help rather than fight the boat's movement, and use fenders to protect the hull",
+    "choice_c": "Wind and current have no meaningful effect on docking",
+    "choice_d": "Fenders are illegal to use while docking in Texas",
+    "correct_choice": "B",
+    "explanation": "Slow, deliberate docking that accounts for wind and current -- using them to assist the approach rather than fighting them -- combined with fenders to cushion contact, produces the safest docking outcome.",
+    "weight": 2,
+    "source_note": "TPWD Boater Education Manual -- docking technique"
+  },
+  {
+    "topic": "General Safe Boating Practices",
+    "question": "What should a boater do before departure to check that the vessel is properly loaded and balanced?",
+    "choice_a": "Weight distribution never affects a boat's stability or handling",
+    "choice_b": "All gear should always be stacked at the bow for the best ride",
+    "choice_c": "Distribute the weight of passengers and gear evenly, keeping heavy items low and centered rather than concentrated at the bow, stern, or one side",
+    "choice_d": "Passengers should always be seated only on one side of the boat",
+    "correct_choice": "C",
+    "explanation": "Evenly distributing the weight of passengers and gear, keeping heavier items low and centered, helps maintain a boat's stability and proper trim rather than causing it to list or handle unpredictably.",
+    "weight": 2,
+    "source_note": "TPWD Boater Education Manual -- proper loading and weight distribution"
+  },
+  {
+    "topic": "General Safe Boating Practices",
+    "question": "What should passengers generally do while a boat is underway on plane, in terms of where they sit?",
+    "choice_a": "Sitting on the bow or gunwales while underway carries no additional risk",
+    "choice_b": "Passengers should stand while the boat is on plane for better visibility",
+    "choice_c": "Seating location is only a concern for vessels longer than 26 feet",
+    "choice_d": "Remain seated in designated seating areas rather than on the gunwales, bow, or other areas not intended for seating while underway",
+    "correct_choice": "D",
+    "explanation": "Sitting on the bow, gunwales, seat backs, or transom while underway increases the risk of being thrown overboard from a sudden wake, wave, or turn, so passengers should use proper designated seating.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- passenger seating safety"
+  },
+  {
+    "topic": "General Safe Boating Practices",
+    "question": "What basic pre-departure check should every Texas boater perform regardless of trip length?",
+    "choice_a": "Check the weather forecast, confirm all required safety equipment is aboard and functional, and verify the fuel supply is sufficient for the planned trip",
+    "choice_b": "No pre-departure checks are necessary if the boat operated fine on its last outing",
+    "choice_c": "Pre-departure checks are required only for trips longer than 50 miles",
+    "choice_d": "Only the engine needs to be checked before departure",
+    "correct_choice": "A",
+    "explanation": "A basic pre-departure checklist -- weather forecast, required safety equipment aboard and working, and adequate fuel -- helps catch problems before they become emergencies on the water.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- pre-departure checklist"
+  },
+  {
+    "topic": "General Safe Boating Practices",
+    "question": "Why should boaters be especially cautious around swimmers, particularly near unmarked or informal swimming spots on Texas lakes?",
+    "choice_a": "Swimmers are always required to wear bright flags that make them visible from any distance",
+    "choice_b": "Swimmers are low in the water, hard to see, and cannot always hear or react to an approaching boat in time, especially if the operator is not maintaining a proper lookout",
+    "choice_c": "Boats have no legal obligation to watch for swimmers outside marked swim areas",
+    "choice_d": "Swimmers pose no additional collision risk compared to other boats",
+    "correct_choice": "B",
+    "explanation": "Swimmers sit low in the water and can be difficult to spot, especially in glare or chop, and often cannot hear an approaching boat in time to react, making a vigilant lookout essential near any area where people might be swimming.",
+    "weight": 3,
+    "source_note": "TPWD Boater Education Manual -- swimmer awareness"
+  },
+  {
+    "topic": "General Safe Boating Practices",
+    "question": "What should an operator do before shifting into gear or accelerating near a dock, swim platform, or people in the water?",
+    "choice_a": "Propeller checks are unnecessary because propellers automatically stop near obstacles",
+    "choice_b": "It is safe to accelerate immediately as long as the horn is sounded first",
+    "choice_c": "Visually confirm the area around the propeller is clear of people, since propeller strikes can cause severe injury",
+    "choice_d": "Only check for obstacles behind the boat, never near the stern where people may be swimming",
+    "correct_choice": "C",
+    "explanation": "Before engaging the propeller near a dock, swim platform, or people in the water, the operator should visually confirm the area is clear, since a spinning propeller can cause severe or fatal injuries in seconds.",
+    "weight": 4,
+    "source_note": "TPWD Boater Education Manual -- propeller strike prevention"
+  }
+]

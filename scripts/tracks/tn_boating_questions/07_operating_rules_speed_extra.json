@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What does \"idle speed\" mean in the context of a posted idle-speed-only zone on a Tennessee waterway?",
+    "choice_a": "The slowest speed at which a vessel can move and still be steered, essentially the engine's lowest throttle setting",
+    "choice_b": "Any speed under the vessel's top rated speed",
+    "choice_c": "A fixed number, such as exactly 5 mph, that applies everywhere",
+    "choice_d": "The speed limit posted for the fastest vessels on the water",
+    "correct_choice": "A",
+    "explanation": "\"Idle speed\" refers to the slowest speed at which a vessel can move while still maintaining steering control, essentially the engine's lowest throttle setting, and is the standard used in idle-speed-only zones near docks, marinas, and swim areas.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What does the term \"following distance\" mean when applied to operating a boat near other vessels on a busy Tennessee reservoir?",
+    "choice_a": "Maintaining enough space behind another vessel to react safely if it slows, turns, or stops suddenly",
+    "choice_b": "The distance a boat can be towed behind another vessel",
+    "choice_c": "A legally fixed distance of exactly 500 feet that never changes",
+    "choice_d": "The distance from shore a boat must remain at all times",
+    "correct_choice": "A",
+    "explanation": "Maintaining adequate following distance behind another vessel gives an operator enough time and space to react safely if that vessel slows, turns, or stops unexpectedly, which is especially important in the congested traffic common on popular Tennessee reservoirs.",
+    "weight": 2,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Why is it considered unsafe and often prohibited to operate a vessel at high speed through a designated swimming area, even if no swimmers are visible at the moment?",
+    "choice_a": "A swimmer can surface unexpectedly from underwater or be obscured by glare, waves, or other boats, leaving little time to react at speed",
+    "choice_b": "High speed through a swimming area is always perfectly safe as long as the boat has working navigation lights",
+    "choice_c": "Swimming areas have no bearing on vessel speed rules",
+    "choice_d": "Only personal watercraft are restricted from swimming areas",
+    "correct_choice": "A",
+    "explanation": "Because a swimmer can surface unexpectedly, or be hard to see due to glare, waves, or other boats, operating at high speed through or near a designated swimming area leaves little to no time to react, which is why such areas are typically no-wake or closed to vessel traffic.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What operating hazard is created when a boat operator makes a sharp, high-speed turn with passengers standing or improperly seated?",
+    "choice_a": "The sudden lateral force can throw a standing or improperly seated passenger overboard or into the interior of the boat",
+    "choice_b": "Sharp turns have no effect on passenger safety at any speed",
+    "choice_c": "It only affects the vessel's fuel efficiency, not passenger safety",
+    "choice_d": "It is a concern only for vessels longer than 40 feet",
+    "correct_choice": "A",
+    "explanation": "A sharp, high-speed turn generates significant lateral (centrifugal) force that can throw a standing or improperly seated passenger overboard or hard into the boat's interior, which is why operators should slow down before turning and ensure passengers are seated.",
+    "weight": 3,
+    "source_note": "General boating safety fundamentals (NASBLA-aligned)"
+  }
+]

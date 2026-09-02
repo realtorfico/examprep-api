@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "At what blood or breath alcohol concentration is a boat operator considered to be boating under the influence (BUI) in Washington?",
+    "choice_a": "0.15% or more by weight",
+    "choice_b": "0.02% or more by weight",
+    "choice_c": "0.08% or more by weight",
+    "choice_d": "There is no numeric threshold in Washington",
+    "correct_choice": "C",
+    "explanation": "Washington law establishes BUI if a person's blood or breath alcohol concentration is 0.08% or more by weight, the same threshold used for driving under the influence.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Alcohol and Drugs"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What is Washington's legal limit for boating under the influence of marijuana?",
+    "choice_a": "There is no marijuana limit for boaters",
+    "choice_b": "1.0 nanogram",
+    "choice_c": "50 nanograms",
+    "choice_d": "5.0 nanograms, consistent with Initiative 502",
+    "correct_choice": "D",
+    "explanation": "Washington's BUI law sets a 5.0 nanogram limit for marijuana, consistent with Initiative 502, which legalized recreational marijuana use.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Alcohol and Drugs"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What is the maximum penalty for a BUI conviction as a gross misdemeanor in Washington?",
+    "choice_a": "Up to a $5,000 fine and/or 364 days in jail",
+    "choice_b": "A $50 fine only",
+    "choice_c": "Automatic permanent loss of vessel registration with no fine",
+    "choice_d": "There is no criminal penalty, only a warning",
+    "correct_choice": "A",
+    "explanation": "A BUI conviction is a gross misdemeanor carrying a penalty of up to a $5,000 fine and/or 364 days in jail.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Alcohol and Drugs"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What happens if a boat operator refuses to take a breathalyzer test when an officer has probable cause?",
+    "choice_a": "Nothing -- refusal carries no consequence in Washington",
+    "choice_b": "The operator is issued a Class 1 Civil Infraction, with a maximum penalty around $2,050 including added assessments",
+    "choice_c": "The operator is automatically charged with a felony",
+    "choice_d": "The vessel is immediately destroyed by law enforcement",
+    "correct_choice": "B",
+    "explanation": "Refusing a breathalyzer test when an officer has probable cause results in a Class 1 Civil Infraction, with a maximum fine of $1,000 that can total up to $2,050 with the public safety and education assessment added.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Alcohol and Drugs"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "Can an operator's refusal to take a breathalyzer test be used as evidence in a later criminal trial?",
+    "choice_a": "Yes, refusal is automatically treated as an admission of guilt in court",
+    "choice_b": "Only if the operator is under 21 years old",
+    "choice_c": "No, the refusal cannot be used as evidence in a subsequent criminal trial",
+    "choice_d": "Only if a second officer also witnessed the refusal",
+    "correct_choice": "C",
+    "explanation": "The handbook specifically notes that an operator's refusal to take the breathalyzer test cannot be used as evidence in a subsequent criminal trial.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Alcohol and Drugs"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What charge can result if someone dies or is seriously injured as a result of another person boating while intoxicated?",
+    "choice_a": "Only a civil infraction can be issued in this situation",
+    "choice_b": "No additional charge is possible beyond the original BUI",
+    "choice_c": "The penalty is capped at $500 regardless of the outcome",
+    "choice_d": "The convicted person may also be charged with a felony, punishable by imprisonment in a state correctional institution and a substantial fine",
+    "correct_choice": "D",
+    "explanation": "If a death or serious injury results from BUI, the person may face felony charges, punishable by imprisonment and a substantial fine, in addition to the underlying BUI offense.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Alcohol and Drugs"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What environmental factors can increase alcohol's effect on a boater's body while out on the water?",
+    "choice_a": "Fatigue and prolonged exposure to sun, wind, vibration, and noise",
+    "choice_b": "Only air temperature above 90 degrees",
+    "choice_c": "Environmental factors have no effect on alcohol's impact",
+    "choice_d": "Only nighttime boating increases alcohol's effect",
+    "correct_choice": "A",
+    "explanation": "Fatigue and long exposure to sun, wind, vibration, and noise -- sometimes called 'boater's fatigue' -- increase alcohol's effect on the body, so the handbook recommends taking breaks, finding shade, and resting.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Remember--Be aware of environmental stressors"
+  },
+  {
+    "topic": "Boating Under the Influence (BUI)",
+    "question": "What is 'Assault by Watercraft' under Washington law?",
+    "choice_a": "Any minor collision between two vessels",
+    "choice_b": "Operating a vessel in a reckless manner or while under the influence of alcohol or drugs and injuring another person with serious disfigurement or the loss of a body part or organ",
+    "choice_c": "Verbally threatening another boater",
+    "choice_d": "Damaging another vessel's hull without injuring anyone",
+    "correct_choice": "B",
+    "explanation": "Assault by Watercraft applies when a reckless or impaired operator causes serious disfigurement or the loss of a body part or organ to another person.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Unlawful and Dangerous Operation"
+  }
+]

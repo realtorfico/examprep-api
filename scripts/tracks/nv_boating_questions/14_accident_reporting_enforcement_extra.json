@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "What general categories of outcomes typically trigger a mandatory boating accident report under the national reporting standard that NRS 488.560 helps transmit data to?",
+    "choice_a": "Death, an injury requiring medical treatment beyond simple first aid, disappearance of a person from the vessel, or property damage exceeding a set dollar threshold",
+    "choice_b": "Only accidents involving a total loss of the vessel",
+    "choice_c": "Only accidents that occur at night",
+    "choice_d": "No specific triggering criteria exist; every incident of any kind must be reported",
+    "correct_choice": "A",
+    "explanation": "The national boating accident reporting standard, which NRS 488.560 helps transmit Nevada data into, generally requires a report when an accident involves death, an injury needing more than basic first aid, disappearance of a person from the vessel, or property damage above a set dollar threshold.",
+    "weight": 3,
+    "source_note": "NRS 488.560 (transmittal of collision/accident information to federal agency) combined with the universal national boating accident reporting standard (33 CFR 173)"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "Under the national boating accident reporting standard reflected in Nevada's reporting duty, how quickly must an accident involving a death generally be reported compared to other reportable accidents?",
+    "choice_a": "Death-related accidents generally must be reported much sooner, commonly within 48 hours, while other reportable accidents are typically allowed a longer period, such as within 10 days",
+    "choice_b": "All reportable accidents share the exact same reporting deadline with no distinction for severity",
+    "choice_c": "There is no reporting deadline at all",
+    "choice_d": "A death-related accident may be reported at any time within one year",
+    "correct_choice": "A",
+    "explanation": "Under the national standard that Nevada's reporting duty aligns with, an accident involving a death generally must be reported much sooner, commonly within 48 hours, while other reportable accidents (serious injury or significant property damage) are typically allowed a longer period, often within about 10 days.",
+    "weight": 3,
+    "source_note": "NRS 488.550/488.560 combined with the universal national boating accident reporting timeline standard (33 CFR 173)"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "Under NRS 488.900, what enforcement authority do game wardens and other peace officers have regarding vessel inspection on Nevada waters?",
+    "choice_a": "They have no authority to inspect a vessel under any circumstance",
+    "choice_b": "NRS 488.900 gives game wardens and other peace officers authority to enforce Chapter 488 and inspect vessels for compliance",
+    "choice_c": "Inspection authority under this statute applies only to commercial fishing vessels",
+    "choice_d": "Only a court order obtained in advance permits any vessel inspection",
+    "correct_choice": "B",
+    "explanation": "NRS 488.900 grants game wardens and other peace officers authority to enforce Nevada's watercraft laws under Chapter 488 and to inspect vessels for compliance, forming part of the enforcement backbone for the registration, equipment, and safety requirements discussed throughout this chapter.",
+    "weight": 3,
+    "source_note": "NRS 488.900 (enforcement by game wardens and other peace officers; inspection of vessel)"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "Similar to a hit-and-run on the road, can leaving the scene of a reportable boating accident without providing required information or rendering aid be treated as a separate, more serious offense than the underlying accident itself?",
+    "choice_a": "No, leaving the scene of a boating accident carries no distinct consequence",
+    "choice_b": "Yes; failing to stop, provide information, or render reasonable assistance after a reportable accident can be prosecuted as its own violation, separate from and in addition to any fault for the accident itself",
+    "choice_c": "This concept applies only to accidents on public roads, never on the water",
+    "choice_d": "Leaving the scene is only a concern if no other people were involved in the accident",
+    "correct_choice": "B",
+    "explanation": "As with a hit-and-run on the road, failing to stop, exchange information, or render reasonable assistance after a reportable boating accident can be prosecuted as a separate, more serious violation, independent of whatever fault applies to the underlying accident.",
+    "weight": 3,
+    "source_note": "General duty-to-stop-and-render-assistance principle applied under NRS 488.550's accident-reporting framework"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "What standardized report does an operator typically complete after a reportable boating accident, and how is that data ultimately used?",
+    "choice_a": "A Boating Accident Report (BAR) form, whose data feeds into national recreational boating accident statistics maintained by the U.S. Coast Guard, alongside Nevada's own recordkeeping",
+    "choice_b": "No standardized form exists anywhere in the country",
+    "choice_c": "A vehicle traffic collision report, since no boating-specific form exists",
+    "choice_d": "A form that is destroyed immediately after submission with no further use",
+    "correct_choice": "A",
+    "explanation": "A reportable boating accident is typically documented on a standardized Boating Accident Report (BAR) form, whose data feeds into the U.S. Coast Guard's national recreational boating accident statistics in addition to Nevada's own records, supporting both state and nationwide safety analysis.",
+    "weight": 2,
+    "source_note": "NRS 488.560 (transmittal to federal agency) combined with the universal national Boating Accident Report (BAR) form standard"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "Does NRS 488.550's reporting duty apply only to a collision between two vessels, or can a single-vessel incident also trigger it?",
+    "choice_a": "It applies only when two or more vessels collide with each other",
+    "choice_b": "A single-vessel incident, such as a passenger thrown overboard by a wake or injured in a fall aboard, can also trigger the same reporting duty if it meets the qualifying severity criteria, even without a second vessel involved",
+    "choice_c": "Single-vessel incidents are never subject to any Nevada reporting requirement",
+    "choice_d": "The reporting duty applies only if the vessel sinks completely",
+    "correct_choice": "B",
+    "explanation": "NRS 488.550's reporting duty is not limited to collisions between two vessels; a single-vessel incident that meets the qualifying severity criteria, such as a passenger thrown overboard by a wake or injured in an onboard fall, can trigger the same duty to report.",
+    "weight": 2,
+    "source_note": "NRS 488.550 (collisions, accidents and other casualties) applied to single-vessel incidents"
+  },
+  {
+    "topic": "Accident Reporting and Enforcement",
+    "question": "During a routine safety check, does a game warden always have to issue a formal citation for a minor equipment issue, such as a slightly worn but present life jacket?",
+    "choice_a": "No; depending on the severity and context of the issue, an officer may use discretion to issue a written warning rather than a formal citation for a minor violation",
+    "choice_b": "Officers must issue the maximum possible citation for every violation they observe, no matter how minor",
+    "choice_c": "Officers have no discretion of any kind during a safety check",
+    "choice_d": "Only a judge, never an officer in the field, may decide between a warning and a citation",
+    "correct_choice": "A",
+    "explanation": "Officers conducting a routine safety check generally retain some discretion, and depending on the severity and context of a minor issue, may choose to issue a written warning rather than a formal citation, reserving citations for more serious or repeat violations.",
+    "weight": 2,
+    "source_note": "NRS 488.900 (enforcement authority) combined with general law-enforcement discretion principles applied to routine safety checks"
+  }
+]

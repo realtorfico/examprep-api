@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Accident Reporting",
+    "question": "Following a Louisiana boating accident, an involved operator has a duty to render reasonable assistance to anyone endangered by the accident, provided that:",
+    "choice_a": "Doing so would not place their own vessel or passengers in serious danger",
+    "choice_b": "The operator is guaranteed full reimbursement in advance",
+    "choice_c": "The other vessel involved is also disabled",
+    "choice_d": "There is no such duty under Louisiana boating law",
+    "correct_choice": "A",
+    "explanation": "Louisiana's accident-response duty requires an operator to render reasonable assistance to those endangered by the accident, so long as doing so does not create serious danger to their own vessel or passengers -- similar in spirit to a highway duty to assist after a collision.",
+    "weight": 4,
+    "source_note": "LDWF, Report Boat Crash, Collision, or Casualty (wlf.louisiana.gov/page/report-boat-crash-collision-or-casualty)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Submitting a false or materially incomplete Incident Report Form to LDWF after a boating accident can:",
+    "choice_a": "Expose the person who filed it to separate penalties beyond the accident itself",
+    "choice_b": "Never have any consequence, since the form is purely informational",
+    "choice_c": "Automatically dismiss the underlying accident investigation",
+    "choice_d": "Only affect the outcome of a related insurance claim, with no other consequence",
+    "correct_choice": "A",
+    "explanation": "Because the Incident Report Form is an official statement to LDWF, knowingly filing a false or materially incomplete report can expose the filer to penalties separate from any consequences of the accident itself.",
+    "weight": 3,
+    "source_note": "LDWF, Report Boat Crash, Collision, or Casualty (wlf.louisiana.gov/page/report-boat-crash-collision-or-casualty)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "A completed boating accident Incident Report Form filed with LDWF may later be used:",
+    "choice_a": "For no purpose beyond internal LDWF filing",
+    "choice_b": "In a subsequent law enforcement investigation or related civil legal proceeding arising from the accident",
+    "choice_c": "Only if the accident resulted in a fatality",
+    "choice_d": "Only by the vessel's manufacturer",
+    "correct_choice": "B",
+    "explanation": "Beyond satisfying the statutory reporting requirement, an Incident Report Form can become part of the factual record used in a later law enforcement investigation or civil proceeding connected to the accident.",
+    "weight": 3,
+    "source_note": "LDWF, Report Boat Crash, Collision, or Casualty (wlf.louisiana.gov/page/report-boat-crash-collision-or-casualty)"
+  },
+  {
+    "topic": "Accident Reporting",
+    "question": "Filing a claim with a vessel's insurance company after a reportable Louisiana boating accident:",
+    "choice_a": "Automatically satisfies the statutory obligation to report the accident to LDWF",
+    "choice_b": "Does not, by itself, satisfy Louisiana's separate statutory obligation to report the accident to LDWF",
+    "choice_c": "Is legally required before an LDWF report can be filed",
+    "choice_d": "Replaces the need to notify law enforcement immediately after the accident",
+    "correct_choice": "B",
+    "explanation": "An insurance claim and LDWF's statutory accident-reporting requirement are separate obligations -- filing one does not excuse an operator from also meeting the immediate-notification and written-report duties owed to LDWF or law enforcement.",
+    "weight": 3,
+    "source_note": "LDWF, Report Boat Crash, Collision, or Casualty (wlf.louisiana.gov/page/report-boat-crash-collision-or-casualty)"
+  }
+]

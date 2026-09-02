@@ -1,0 +1,62 @@
+[
+  {
+    "topic": "Aids to Navigation",
+    "question": "A preferred-channel (junction) marker, showing horizontal bands of both red and green, tells a boater which channel is preferred based on:",
+    "choice_a": "The current speed of the vessel",
+    "choice_b": "The color of the topmost band -- treat it like that color (e.g., red-over-green means treat it as a red mark) to find the preferred route",
+    "choice_c": "The number of bands alone, regardless of color",
+    "choice_d": "Whichever side has more boat traffic that day",
+    "correct_choice": "B",
+    "explanation": "A preferred-channel marker's topmost color indicates the preferred route: if red is on top, the mark should be treated as a red aid (kept to starboard when returning); if green is on top, it is treated as a green aid.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, standard content across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "At night, which light colors correspond to the red and green channel markers a boater relies on during the day?",
+    "choice_a": "Green lights mark the port-return (odd-numbered) side, and red lights mark the starboard-return (even-numbered) side, mirroring the daytime colors",
+    "choice_b": "All lighted aids show only white light regardless of daytime color",
+    "choice_c": "Red lights mark the port-return side and green lights mark the starboard-return side",
+    "choice_d": "Lighted aids use blue and yellow instead of red and green",
+    "correct_choice": "A",
+    "explanation": "Lighted aids to navigation preserve the same red/green meaning as their daytime buoy colors, so a boater can apply \"red right returning\" at night using light color exactly as they would use buoy color during the day.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, standard content across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "A pair of range markers, commonly used on rivers and larger channels, helps a boater by:",
+    "choice_a": "Marking a swimming-only area",
+    "choice_b": "Indicating navigable water on all sides, like a safe-water mark",
+    "choice_c": "Showing the centerline of a safe channel when the two markers are visually lined up one above or behind the other",
+    "choice_d": "Warning of a specific isolated wreck",
+    "correct_choice": "C",
+    "explanation": "Range markers work in pairs: when a boater lines up the near and far marker visually, the vessel is on the centerline of the safe channel, a technique especially useful on rivers like the Mississippi.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, standard content across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "An isolated danger mark -- black bands with a distinctive red double-sphere topmark -- indicates:",
+    "choice_a": "A general \"proceed with caution\" area with no specific hazard",
+    "choice_b": "Navigable water on all sides generally, but a specific isolated hazard, such as a wreck, located at that exact spot",
+    "choice_c": "A swimming beach",
+    "choice_d": "A safe channel for high-speed travel directly over the mark",
+    "correct_choice": "B",
+    "explanation": "Unlike a general danger symbol, an isolated danger mark pinpoints a specific hazard, such as a wreck or shoal, at that exact location, while indicating that navigable water otherwise surrounds it.",
+    "weight": 2,
+    "source_note": "IALA aids to navigation system, standard content across NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Aids to Navigation",
+    "question": "Compared to a fixed daymark, a floating buoy's charted position should be treated as:",
+    "choice_a": "Exact and unchanging under all conditions",
+    "choice_b": "Irrelevant, since buoys are purely decorative",
+    "choice_c": "Approximate, since currents, tides, and vessel strikes can shift a floating buoy from its charted position, unlike a fixed daymark",
+    "choice_d": "More precise than a daymark's position",
+    "correct_choice": "C",
+    "explanation": "Because a floating buoy is anchored rather than fixed in place, wind, current, tide, and even collisions can move it off its charted position, so a boater should treat its exact location as approximate in a way that a fixed daymark's position is not.",
+    "weight": 3,
+    "source_note": "U.S. Aids to Navigation System, standard content across NASBLA-aligned boating courses"
+  }
+]

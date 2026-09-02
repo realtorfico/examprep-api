@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Boating Emergencies",
+    "question": "How does heat stroke differ from heat exhaustion in severity and required response?",
+    "choice_a": "Heat stroke and heat exhaustion always require the exact same response with no difference in urgency",
+    "choice_b": "Heat stroke is less serious than heat exhaustion and typically resolves on its own without intervention",
+    "choice_c": "Heat stroke is a life-threatening emergency marked by a body temperature above 103°F, confusion or slurred speech, and hot, red, dry or damp skin; it requires calling 911 immediately and rapidly cooling the person while withholding fluids, unlike heat exhaustion, which can often be managed by moving to shade, resting, and sipping water",
+    "choice_d": "Giving the person large amounts of water to drink is the correct first response to heat stroke",
+    "correct_choice": "C",
+    "explanation": "Heat stroke is a medical emergency distinguished from heat exhaustion by signs such as body temperature above 103°F, confusion, slurred speech, and hot/red/dry or damp skin; it requires immediately calling 911 and cooling the person without giving fluids, whereas heat exhaustion is generally addressed with shade, rest, and hydration.",
+    "weight": 3,
+    "source_note": "National Weather Service extreme heat safety guidance (weather.gov/safety/heat-illness), consistent with CDC heat-illness first aid guidance, applied to Arizona desert boating conditions"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "Why can carbon monoxide (CO) poisoning on a boat be especially dangerous to recognize before it becomes severe?",
+    "choice_a": "CO produces a strong, sweet odor that makes it immediately easy to identify",
+    "choice_b": "CO poisoning can only occur while a boat's engine and generator are both completely shut off",
+    "choice_c": "CO poisoning symptoms are always dramatically distinct from any other illness, making it simple to diagnose on sight",
+    "choice_d": "Because CO is colorless, odorless, and tasteless, and its early symptoms -- headache, dizziness, and nausea -- closely resemble seasickness or alcohol intoxication, and it can accumulate whether the boat is underway, moored, or anchored, not only while idling",
+    "correct_choice": "D",
+    "explanation": "CO cannot be seen, smelled, or tasted, and its early symptoms mimic seasickness or drunkenness, which can delay recognition; the U.S. Coast Guard notes it can accumulate around a vessel whether underway, moored, or anchored, and high concentrations can be dangerous within just a few breaths.",
+    "weight": 3,
+    "source_note": "U.S. Coast Guard Boating Safety Division, uscgboating.org carbon monoxide safety guidance"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "What is 'swamping,' and how does it differ from capsizing?",
+    "choice_a": "Swamping occurs when a boat fills with water and loses buoyancy while generally remaining upright, whereas capsizing means the boat has rolled over; a swamped boat that still floats should generally be stayed with, bailed if possible, with occupants keeping PFDs on and signaling for help",
+    "choice_b": "Swamping and capsizing describe the exact same event under two different names",
+    "choice_c": "A swamped boat always sinks to the bottom instantly with no time to react",
+    "choice_d": "A swamped boat should always be abandoned immediately in favor of swimming to shore",
+    "correct_choice": "A",
+    "explanation": "Swamping means a boat has taken on enough water to lose effective buoyancy but generally stays upright, distinct from capsizing where the hull rolls over; in both cases, if the hull retains some flotation, occupants wearing PFDs are generally safer staying with the boat, bailing water if possible, and signaling for help than attempting a long swim.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Swamping and Capsizing'"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "Why should an operator shift the engine to neutral (or shut it off) before pulling a person from the water back aboard?",
+    "choice_a": "The engine should be run at full throttle to help pull the person toward the boat",
+    "choice_b": "Because a spinning propeller near a person in the water can cause severe or fatal injury, so the engine should be in neutral or off during the final approach and recovery",
+    "choice_c": "A spinning propeller poses no real danger to a person in the water near the stern",
+    "choice_d": "Shifting to neutral serves no safety purpose and only wastes valuable time",
+    "correct_choice": "B",
+    "explanation": "A rotating propeller close to a person in the water is a serious injury hazard, so operators are trained to shift the engine to neutral or shut it off entirely before the person comes alongside for recovery.",
+    "weight": 3,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Person Overboard Recovery'"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "Why should water never be used to fight a gasoline or fuel-fed fire on a boat?",
+    "choice_a": "Water is actually the most effective way to extinguish any fuel-fed fire",
+    "choice_b": "Fuel fires cannot be extinguished by any method, including a fire extinguisher",
+    "choice_c": "Because water can spread burning fuel across the surface and make the fire worse; a Coast Guard-approved fire extinguisher aimed at the base of the flames should be used instead",
+    "choice_d": "There is no meaningful difference between using water and using a fire extinguisher on a fuel fire",
+    "correct_choice": "C",
+    "explanation": "Because gasoline and other fuels float on and mix with water, dousing a fuel fire with water can spread the flames rather than putting them out; a Coast Guard-approved extinguisher directed at the base of the fire is the correct response.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Fire Emergencies'"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "Besides a radio call, what are recognized visual distress signal devices a boater can use to summon help?",
+    "choice_a": "Only sounding a boat horn qualifies as a recognized distress signal",
+    "choice_b": "Waving a white towel is the only method recognized for signaling distress on the water",
+    "choice_c": "There are no standardized visual distress signal devices available to recreational boaters",
+    "choice_d": "Coast Guard-approved pyrotechnic devices such as red flares or orange smoke signals, as well as non-pyrotechnic options like an orange distress flag for daytime use or an electric distress light for nighttime use",
+    "correct_choice": "D",
+    "explanation": "Recognized visual distress signals include pyrotechnic devices (red flares, orange smoke) and non-pyrotechnic devices (an orange distress flag for day use, an electric distress light for night use), giving boaters options to signal for help visually in addition to radio communication.",
+    "weight": 2,
+    "source_note": "NASBLA-based boating safety curriculum used by AZGFD-approved course providers, 'Visual Distress Signals'"
+  },
+  {
+    "topic": "Boating Emergencies",
+    "question": "What preventive steps significantly reduce the risk of heat exhaustion or heat stroke on an Arizona reservoir during summer?",
+    "choice_a": "Drinking water regularly before feeling thirsty, seeking shade during peak afternoon heat, wearing light-colored breathable clothing and a hat, and limiting alcohol, which increases dehydration",
+    "choice_b": "Waiting until someone feels thirsty before offering water, since thirst is a reliable early warning sign",
+    "choice_c": "Drinking alcoholic beverages, since alcohol helps the body retain fluids in hot weather",
+    "choice_d": "Heat illness cannot be prevented and has no connection to hydration or sun exposure",
+    "correct_choice": "A",
+    "explanation": "Regular hydration before thirst sets in, seeking shade during peak heat, wearing appropriate clothing, and limiting alcohol (which promotes dehydration) are standard preventive measures against heat exhaustion and heat stroke, which are elevated risks on hot, sun-exposed Arizona reservoirs.",
+    "weight": 2,
+    "source_note": "National Weather Service extreme heat safety guidance (weather.gov/safety/heat-illness), consistent with CDC heat-illness prevention guidance, applied to Arizona desert boating conditions"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Is operating a vessel loaded beyond the number of persons or weight shown on its capacity plate itself a violation, separate from any accident that might result?",
+    "choice_a": "No -- exceeding the capacity plate only matters if a person is actually injured as a result",
+    "choice_b": "Yes -- operating a vessel overloaded beyond its manufacturer's rated capacity is generally treated as unsafe, negligent operation in itself, regardless of whether an accident actually occurs",
+    "choice_c": "Capacity plates are purely advisory and carry no legal weight in Massachusetts",
+    "choice_d": "Overloading is permitted as long as everyone aboard is wearing a PFD",
+    "correct_choice": "B",
+    "explanation": "Knowingly operating a vessel loaded beyond its capacity plate rating is generally considered unsafe or negligent operation on its own, since overloading reduces freeboard and stability and significantly raises the risk of swamping or capsizing, independent of whether an accident ultimately happens.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (overloading as an operating violation), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "May a powerboat operate at planing or cruising speed directly through a marked swimming or bathing area?",
+    "choice_a": "Yes, as long as the operator sounds the horn once before entering",
+    "choice_b": "No -- powered vessels are generally prohibited from operating within the marked boundaries of a designated swimming or bathing area at all, not merely required to slow down",
+    "choice_c": "Only PWCs are restricted from swimming areas; other motorboats may enter freely",
+    "choice_d": "Swimming areas have no defined boundaries under Massachusetts practice",
+    "correct_choice": "B",
+    "explanation": "A marked swimming or bathing area is generally off-limits to powered vessel operation entirely, not simply an area requiring reduced speed -- the marked boundary exists specifically to keep boat traffic separated from swimmers, and entering it with a motor running is a common and serious violation.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (swimming area vessel exclusion), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Why is it unsafe and generally prohibited for a passenger to ride on the bow, gunwale, seatback, or transom of a boat while it is underway above idle/headway speed?",
+    "choice_a": "There is no safety concern; passengers may sit anywhere on the boat regardless of speed",
+    "choice_b": "A sudden wave, wake, or abrupt maneuver can easily throw a person seated in these positions overboard, often into the path of the propeller, so operators are expected to have passengers seated in designed seating while underway",
+    "choice_c": "This rule applies only to vessels longer than 26 feet",
+    "choice_d": "Riding on the bow is prohibited only during nighttime operation",
+    "correct_choice": "B",
+    "explanation": "Riding on the bow, gunwale, seatback, or transom while a boat is underway above idle speed is dangerous because an unexpected wake, wave, or sudden turn can throw the passenger into the water, often directly into the path of the propeller -- operators are responsible for keeping passengers in proper seating positions while underway.",
+    "weight": 3,
+    "source_note": "Universal boating safety fundamentals (unsafe passenger positioning while underway), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Is it legal to remove or bypass a boat's muffler system to run open exhaust ('straight pipes') on Massachusetts waters?",
+    "choice_a": "Yes, as long as the vessel is operated only during daylight hours",
+    "choice_b": "No -- vessels are generally required to operate with an effective muffling system, and bypassing it to increase exhaust noise is a common noise-related operating violation, particularly disruptive near residential shorelines and moorings",
+    "choice_c": "Muffler requirements apply only to vessels used for racing competitions",
+    "choice_d": "There is no regulation of boat exhaust noise anywhere in Massachusetts",
+    "correct_choice": "B",
+    "explanation": "Massachusetts, like most states, generally requires motorboats to be equipped with an effective muffling system to control exhaust noise; deliberately bypassing or removing the muffler to run louder open exhaust is a common operating violation, especially disruptive in quiet coves, mooring fields, and residential waterfront areas.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (exhaust muffling/noise operating requirements), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Is it generally permissible to anchor a recreational vessel within a marked navigation channel?",
+    "choice_a": "Yes, at any time, as long as the vessel displays an anchor light at night",
+    "choice_b": "Generally no, except in an emergency -- anchoring within a marked channel obstructs traffic that depends on that channel for safe passage and creates a collision hazard for other vessels, especially larger ones confined to the channel",
+    "choice_c": "Anchoring in a channel is always required before sunset",
+    "choice_d": "Channels have no special anchoring restrictions different from open water",
+    "correct_choice": "B",
+    "explanation": "Anchoring within a marked navigation channel is generally prohibited except in a genuine emergency, since it can block or endanger other vessels -- particularly larger or deep-draft vessels that are constrained to that channel and cannot maneuver around an obstruction the way a small boat in open water could.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (anchoring in a marked channel prohibition), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Beyond statewide Massachusetts boating law, what additional layer of rules should a boater expect to find and follow in an individual Massachusetts harbor or town's waters?",
+    "choice_a": "State law is exclusive and no municipality may impose any additional boating rule",
+    "choice_b": "Local harbormaster regulations and municipal bylaws, which can set additional rules such as local mooring assignments, specific no-wake zones, or seasonal restrictions particular to that harbor",
+    "choice_c": "Local rules apply only to commercial vessels, never recreational boaters",
+    "choice_d": "Local regulations can never be more restrictive than state law",
+    "correct_choice": "B",
+    "explanation": "Beyond the statewide framework of Massachusetts General Laws Chapter 90B, individual coastal and many inland Massachusetts communities adopt their own harbormaster regulations and municipal bylaws -- covering things like local mooring assignments, additional no-wake areas, or seasonal rules -- that boaters are expected to know and follow in that specific harbor.",
+    "weight": 2,
+    "source_note": "Massachusetts General Laws Chapter 90B and local harbormaster/municipal bylaw authority, consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "What courtesy and safety practice should a boater follow when passing near a vessel that is actively trolling or has fishing lines out?",
+    "choice_a": "Cut as close as possible to the fishing vessel to save time",
+    "choice_b": "Give the fishing vessel a wide, slow-speed berth and avoid crossing close behind its stern where trolling lines are likely to be running, to avoid fouling their gear or creating a hazardous wake",
+    "choice_c": "There is no special consideration needed around a fishing vessel",
+    "choice_d": "Fishing vessels must always alter course for any approaching recreational boat",
+    "correct_choice": "B",
+    "explanation": "A boater passing near a vessel that is trolling or has lines out should slow down and give it a wide berth, avoiding a close pass across its stern where lines commonly trail, both to prevent fouling the other boater's gear and to avoid throwing a disruptive wake at a vessel moving slowly for fishing purposes.",
+    "weight": 2,
+    "source_note": "Universal boating safety fundamentals (courtesy around fishing vessels/lines), consistent with NASBLA-aligned course curricula"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Under Massachusetts General Laws Chapter 90B -- which specifically addresses regattas among its provisions -- what authority applies when a sanctioned regatta, boat race, or similar organized marine event is held on Massachusetts waters?",
+    "choice_a": "Regattas are entirely unregulated, and other boaters have no obligation to avoid or slow down for one",
+    "choice_b": "Authorities such as the Massachusetts Environmental Police can establish a temporary restricted or regulated area for the duration of a sanctioned regatta or marine event, and boaters not participating are generally expected to avoid the area or follow posted speed and access restrictions",
+    "choice_c": "Only the event organizer may legally operate any vessel on the water that day",
+    "choice_d": "Regattas may only be held on days when no other boating is allowed anywhere in the state",
+    "correct_choice": "B",
+    "explanation": "Massachusetts General Laws Chapter 90B specifically addresses regattas among its subject matter, reflecting that organized boat races and marine events can warrant a temporary restricted or regulated area on the water; non-participating boaters are generally expected to steer clear of or comply with posted restrictions during a sanctioned event.",
+    "weight": 2,
+    "source_note": "Massachusetts General Laws Chapter 90B (regatta provisions), consistent with Massachusetts Environmental Police-reviewed course materials"
+  },
+  {
+    "topic": "Operating Rules & Speed Zones",
+    "question": "Chapter 90B's title also references 'Marine Parks.' What does this generally mean for a boater operating near a designated Massachusetts marine park or protected marine area?",
+    "choice_a": "Marine parks and protected marine areas can carry additional use restrictions beyond the standard statewide boating rules -- such as limits on motorized access, speed, or activity in sensitive areas -- that a boater must observe on top of the general Chapter 90B framework",
+    "choice_b": "Marine parks have no rules different from any other body of water in Massachusetts",
+    "choice_c": "Marine parks are reserved exclusively for commercial shipping traffic",
+    "choice_d": "The term 'marine park' is purely historical and no longer applies to any Massachusetts waters",
+    "correct_choice": "A",
+    "explanation": "Massachusetts General Laws Chapter 90B's title explicitly covers marine parks alongside motorboats, mooring, regattas, piers, and boat launching areas, reflecting that a designated marine park or protected marine area can carry its own additional use restrictions -- such as limits on motorized boat access or activity -- layered on top of the state's general boating rules.",
+    "weight": 2,
+    "source_note": "Massachusetts General Laws Chapter 90B (marine park provisions), consistent with Massachusetts Environmental Police-reviewed course materials"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "Unless otherwise posted, what daytime speed limits apply on the Connecticut River?",
+    "choice_a": "45 mph on weekdays, 30 mph on weekends and holidays from the Saturday before Memorial Day through Labor Day, and 45 mph the rest of the year",
+    "choice_b": "A flat 10 mph limit year-round with no exceptions",
+    "choice_c": "There is no speed limit of any kind on the Connecticut River",
+    "choice_d": "60 mph at all times, regardless of the day or season",
+    "correct_choice": "A",
+    "explanation": "Unless posted otherwise, the Connecticut River carries a tiered speed limit: 45 mph on weekdays, a reduced 30 mph on weekends and holidays during the busy season from the Saturday before Memorial Day through Labor Day, and 45 mph again the rest of the year.",
+    "weight": 4,
+    "source_note": "Connecticut General Assembly Office of Legislative Research Report 2003-R-0526, \"Motor Boat Noise and Wake and Speed on the Connecticut River,\" consistent with current CT DEEP boating guidance"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "What nighttime speed limit applies on the Connecticut River, from half an hour after sunset until half an hour before sunrise?",
+    "choice_a": "25 mph",
+    "choice_b": "70 mph",
+    "choice_c": "There is no separate nighttime speed limit on the river",
+    "choice_d": "5 mph, identical to Slow-No-Wake speed",
+    "correct_choice": "A",
+    "explanation": "On the Connecticut River, a 25 mph nighttime speed limit applies from half an hour after sunset until half an hour before sunrise, reducing the higher daytime limits during hours of darkness when hazards and other boaters are harder to see.",
+    "weight": 3,
+    "source_note": "Connecticut General Assembly Office of Legislative Research Report 2003-R-0526, \"Motor Boat Noise and Wake and Speed on the Connecticut River,\" consistent with current CT DEEP boating guidance"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "What speed standard is generally expected of vessels operating near a marina, fuel dock, or harbor entrance crowded with other boats, even without a posted numeric limit?",
+    "choice_a": "Idle or headway speed only -- just enough to maintain steering control -- to avoid dangerous wake or a collision in the confined, congested area",
+    "choice_b": "Full cruising speed, since posted limits are the only speeds that matter",
+    "choice_c": "There is no expectation of reduced speed near a marina",
+    "choice_d": "Vessels must come to a complete stop and drift through any marina area",
+    "correct_choice": "A",
+    "explanation": "Even without a posted numeric limit, prudent operation near a marina, fuel dock, or busy harbor entrance calls for idle or headway speed -- just enough to maintain steering control -- since the tight quarters and concentration of moored and moving boats make excess speed or wake especially dangerous.",
+    "weight": 3,
+    "source_note": "General prudent-operation fundamentals (NASBLA-aligned boating safety curriculum) applied to Connecticut marinas and harbors"
+  },
+  {
+    "topic": "Operating Rules and Speed Zones",
+    "question": "If an operator spots a swimmer in open water who is not within a marked, buoyed swim area, what speed and course duty still applies under Connecticut's general safe-operation standard?",
+    "choice_a": "The operator must still slow down and steer well clear, since the general duty to operate at a speed that will not endanger others applies everywhere, not just inside marked swim zones",
+    "choice_b": "No duty exists unless the swimmer is inside a buoyed swim area",
+    "choice_c": "The operator may maintain full speed as long as the swimmer is more than 10 feet away",
+    "choice_d": "Swimmers in unmarked open water have no legal protection under Connecticut boating law",
+    "correct_choice": "A",
+    "explanation": "Connecticut's general safe-speed standard -- operating in a manner that will not endanger others and can stop within the distance seen clear ahead -- applies everywhere on the water, not only within a marked, buoyed swim area, so an operator who spots a swimmer in open water must still slow down and give them a wide, safe berth.",
+    "weight": 3,
+    "source_note": "2026 CT DEEP Boater's Guide, \"Restricted Operating Distances and Speed Regulations,\" p.24, applied to unmarked open-water swimmers"
+  }
+]

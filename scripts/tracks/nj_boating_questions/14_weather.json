@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "What should a boater do before heading out onto New Jersey's coastal or bay waters, given how quickly summer weather can change along the Jersey Shore?",
+    "choice_a": "Weather forecasts are unnecessary for short trips",
+    "choice_b": "Check the forecast only after already being several miles offshore",
+    "choice_c": "Check a current marine weather forecast, such as NOAA VHF weather radio, before departing and periodically during the outing",
+    "choice_d": "Rely only on the sky's appearance at the dock that morning",
+    "correct_choice": "C",
+    "explanation": "Checking a current marine forecast, such as continuous NOAA VHF weather broadcasts, before departure and periodically throughout a trip is essential because summer conditions along the Jersey Shore, including fast-forming thunderstorms, can shift quickly.",
+    "weight": 4,
+    "source_note": "Universal marine weather-check practice, with added relevance to New Jersey's fast-changing coastal summer weather"
+  },
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "What are common visible warning signs that a thunderstorm may be approaching while out on the water?",
+    "choice_a": "A clear blue sky with no wind at all",
+    "choice_b": "Thunderstorms give no visible warning signs whatsoever",
+    "choice_c": "Only a falling barometer indicates an approaching storm, with no visible signs",
+    "choice_d": "Darkening clouds building vertically, a sudden drop in temperature, a shift in wind direction, and increasing wind speed",
+    "correct_choice": "D",
+    "explanation": "Boaters are taught to watch for building dark clouds, a sudden temperature drop, shifting wind direction, and increasing wind as visible early warning signs that a thunderstorm may be developing, giving time to head to safety.",
+    "weight": 4,
+    "source_note": "Universal storm-warning-sign guidance taught in NASBLA-aligned boating courses"
+  },
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "What is a nor'easter, a weather system that frequently affects the New Jersey coast, especially in fall and winter?",
+    "choice_a": "A large coastal storm system bringing strong winds (often from the northeast), heavy precipitation, rough seas, and coastal flooding",
+    "choice_b": "A brief, mild afternoon breeze with no significant impact",
+    "choice_c": "A type of tide unique to bay waters",
+    "choice_d": "A regulatory marker used only in New Jersey",
+    "correct_choice": "A",
+    "explanation": "A nor'easter is a powerful coastal storm system, common along the New Jersey shore especially in fall and winter, bringing sustained strong winds from the northeast, heavy rain or snow, dangerous seas, and coastal flooding risk.",
+    "weight": 3,
+    "source_note": "New Jersey coastal weather pattern (nor'easter), NOAA and NJ shore weather-safety guidance"
+  },
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "What is a rip current, and why is it a hazard boaters and swimmers should understand along the New Jersey shore?",
+    "choice_a": "A type of tide chart symbol with no real-world hazard",
+    "choice_b": "A powerful, narrow channel of water flowing away from shore that can quickly pull a swimmer or a small vessel out to deeper water",
+    "choice_c": "A slow, gentle current that only moves parallel to the beach",
+    "choice_d": "A phenomenon that only affects surfers, never boaters or swimmers",
+    "correct_choice": "B",
+    "explanation": "A rip current is a strong, narrow flow of water moving away from the beach through the surf zone; it is a well-documented hazard along the New Jersey shore for swimmers and can also affect small, low-powered vessels near the surf line.",
+    "weight": 3,
+    "source_note": "NOAA/National Weather Service rip current hazard guidance, applicable to the New Jersey shore"
+  },
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "Why can dense fog form suddenly along New Jersey's shore and bay waters, particularly in early morning or during temperature transitions?",
+    "choice_a": "Fog is only a hazard for aircraft, not boats",
+    "choice_b": "Fog only occurs during winter along the New Jersey coast",
+    "choice_c": "When warm, moist air moves over relatively cooler ocean or bay water, or overnight cooling drops air temperature near the dew point, fog can form and reduce visibility sharply",
+    "choice_d": "Fog never forms over coastal or bay waters",
+    "correct_choice": "C",
+    "explanation": "Fog often forms along the Jersey Shore when warm, moist air passes over cooler ocean or bay water, or through overnight radiational cooling, and it can develop or thicken quickly enough to catch boaters off guard with sharply reduced visibility.",
+    "weight": 3,
+    "source_note": "Universal marine fog formation science, applied to New Jersey shore and bay conditions"
+  },
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "What should a boater do if caught in sudden fog or a squall with severely reduced visibility?",
+    "choice_a": "Speed up to get through the reduced-visibility area as quickly as possible",
+    "choice_b": "Turn off all lights to avoid being seen by other traffic",
+    "choice_c": "Reduced visibility requires no change in operating behavior",
+    "choice_d": "Slow down, sound the appropriate fog signal, turn on navigation lights, and use radar or GPS/chartplotter if available while proceeding cautiously",
+    "correct_choice": "D",
+    "explanation": "In fog or sudden low visibility, a prudent operator slows down, sounds the required restricted-visibility signal, ensures navigation lights are on, and relies on available electronic aids like radar or GPS while proceeding with extra caution.",
+    "weight": 4,
+    "source_note": "Universal reduced-visibility operating guidance, tied to Inland Navigation Rules restricted-visibility signals"
+  },
+  {
+    "topic": "Weather & NJ Coastal Conditions",
+    "question": "Why is it important to monitor the tide schedule when boating in New Jersey's back bays, inlets, and shallow coastal waterways?",
+    "choice_a": "Water depth in shallow inlets, marshes, and bay channels can change significantly with the tide, creating grounding hazards and stronger currents around inlets at certain tide stages",
+    "choice_b": "Tides have no effect on water depth in New Jersey's bays and inlets",
+    "choice_c": "Tide schedules are only relevant to commercial shipping",
+    "choice_d": "Tides only matter for swimmers, not boaters",
+    "correct_choice": "A",
+    "explanation": "New Jersey's shallow back-bay areas and inlets can see significant depth changes between high and low tide, creating grounding risk at low tide and stronger, more hazardous currents through inlets during outgoing tides.",
+    "weight": 4,
+    "source_note": "New Jersey back-bay/inlet tidal navigation hazard, universal tide-awareness boating guidance"
+  }
+]

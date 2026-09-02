@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Water Sports & Towing",
+    "question": "In addition to the operator, what must every vessel towing a person on water skis or similar devices have on board?",
+    "choice_a": "A person capable of observing the towed person and reporting their progress to the operator",
+    "choice_b": "A second engine as a backup",
+    "choice_c": "No additional person is required if the operator has a mirror",
+    "choice_d": "A certified lifeguard",
+    "correct_choice": "A",
+    "explanation": "Vessels towing a water skier or similar must carry, in addition to the operator, an observer capable of watching the towed person and reporting their status to the operator.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Requirements for Towing Water Sports"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "When must the skier-down flag be displayed while towing a water skier?",
+    "choice_a": "Only while the boat is docked",
+    "choice_b": "Whenever the towed person is in the water after falling or while preparing to ski, visible from all directions",
+    "choice_c": "The flag is optional decoration with no legal requirement",
+    "choice_d": "Only at night",
+    "correct_choice": "B",
+    "explanation": "The skier-down flag must be displayed, visible from all directions, whenever the towed person has fallen into the water or is preparing to ski.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Requirements for Towing Water Sports / Skier-Down Flag"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What PFD requirement applies to a person being towed on water skis or a similar device?",
+    "choice_a": "No PFD is required if the water is calm",
+    "choice_b": "Only the operator, not the towed person, needs a PFD",
+    "choice_c": "They must wear a USCG-approved wearable PFD; inflatable and most Type II near-shore vests are not approved for towed persons",
+    "choice_d": "Any flotation device, including a pool noodle, satisfies the requirement",
+    "correct_choice": "C",
+    "explanation": "A person being towed behind a vessel on water skis or similar devices must wear a USCG-approved wearable PFD; inflatable PFDs and most Type II near-shore vests are not approved for this activity.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Requirements for Towing Water Sports"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "During what hours is it illegal to tow a person on water skis or similar devices in Washington?",
+    "choice_a": "At any time of day, towing is always illegal",
+    "choice_b": "Only between noon and 2 p.m.",
+    "choice_c": "There is no time-of-day restriction on towing",
+    "choice_d": "From one hour after sunset until one hour before sunrise",
+    "correct_choice": "D",
+    "explanation": "It is illegal to tow a person on water skis or other devices from one hour after sunset until one hour before sunrise.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Requirements for Towing Water Sports"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "When calculating a vessel's safe carrying capacity while towing a skier, how should the towed person be counted?",
+    "choice_a": "Included in the vessel's load capacity, just like any other passenger",
+    "choice_b": "Not counted at all since they are in the water, not the boat",
+    "choice_c": "Counted only if there are already four or more people aboard",
+    "choice_d": "Counted as half a passenger",
+    "correct_choice": "A",
+    "explanation": "A towed water skier must be included in the vessel's safe carrying capacity calculation, and law enforcement can require a return to shore if the capacity is exceeded.",
+    "weight": 3,
+    "source_note": "WA Boating handbook, Requirements for Towing Water Sports"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What color and size must a skier-down flag be, per the handbook's description?",
+    "choice_a": "Any color flag of any size is acceptable",
+    "choice_b": "A brilliant orange or bright red flag at least 12 x 12 inches, mounted on a pole at least 24 inches long",
+    "choice_c": "A white flag with a red cross",
+    "choice_d": "A blue and white checkered flag",
+    "correct_choice": "B",
+    "explanation": "The skier-down flag must be a brilliant orange or bright red flag at least 12 x 12 inches, mounted on a pole at least 24 inches long.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Skier-Down Flag"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "What hand signal does a skier use to say 'Speed up' to the boat operator or observer?",
+    "choice_a": "There are no standardized hand signals for water skiers",
+    "choice_b": "Skiers may only communicate by shouting",
+    "choice_c": "A designated hand signal shown in the handbook's chart of standard skier signals, distinct from 'slow down,' 'turn left,' and 'turn right'",
+    "choice_d": "Skiers must stop skiing entirely to communicate any request",
+    "correct_choice": "C",
+    "explanation": "The handbook provides a chart of standard skier hand signals including Skier OK, Skier down/watch/stop, Speed up, Slow down, Speed OK, Turn left, and Turn right, so the operator and observer can communicate with the skier.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Hand Signals for Skiers"
+  },
+  {
+    "topic": "Water Sports & Towing",
+    "question": "Who among a water-skiing party must conduct themselves safely so as not to endanger others?",
+    "choice_a": "Only the operator has any safety obligation",
+    "choice_b": "Only the towed person has any safety obligation",
+    "choice_c": "Safety obligations apply only if other boats are nearby",
+    "choice_d": "Everyone involved -- the operator, the observer, and the towed person(s)",
+    "correct_choice": "D",
+    "explanation": "The handbook states that everyone engaged in water-skiing -- the operator, the observer, and the towed person -- must conduct themselves safely so as not to endanger other persons or property.",
+    "weight": 2,
+    "source_note": "WA Boating handbook, Requirements for Towing Water Sports"
+  }
+]
