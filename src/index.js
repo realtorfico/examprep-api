@@ -1153,6 +1153,58 @@ async function handleRecentActivity(env) {
   return json({ items });
 }
 
+// Minimum completed attempts a category needs before its pass rate is shown on the public
+// transparency page (see handlePassRatesByCategory) -- below this, the true percentage is too
+// noisy to be meaningful (a 1-of-2 result reads as "50%" either way it could have landed), so the
+// UI shows "not enough data yet" instead. This is a sample-size gate only, never a value gate: a
+// category with 20+ real attempts and a genuinely low rate still gets shown as-is -- suppressing a
+// real number specifically because it's unflattering would defeat the entire point of a
+// transparency page. Agreed with the user 2026-09-02.
+const PASS_RATE_MIN_SAMPLE = 20;
+
+// Display order for the transparency page's category breakdown -- mirrors
+// scripts/generate-guides.js's CATEGORIES order in the site repo (flagship/original category
+// first, then roughly by catalog size) so the two surfaces read consistently.
+const PASS_RATE_CATEGORY_ORDER = [
+  'Notary', 'Real Estate Salesperson', 'Real Estate Broker', 'Driver',
+  'Commercial Driver (CDL)', 'Motorcycle', 'Boating',
+];
+
+// Per-category breakdown for the public "Pass Rate Transparency" page -- same real,
+// snapshotted-threshold computation as handlePublicStats' sitewide figure, just grouped by
+// track_registry's `kind` instead of collapsed to one number. Only categories with at least one
+// active track are returned (mirrors kindSlugsWithActiveTracks in
+// scripts/generate-seo-meta.js on the site side).
+async function handlePassRatesByCategory(env) {
+  const [attemptRows, trackRegistry] = await Promise.all([
+    env.DB.prepare(`SELECT exam_type, score_correct, score_total, pass_percent FROM exam_attempts WHERE submitted_at IS NOT NULL`).all(),
+    getTrackRegistry(env),
+  ]);
+  const activeKinds = new Set(Object.values(trackRegistry).filter((r) => r.active).map((r) => r.kind));
+  const byKind = {};
+  (attemptRows.results || []).forEach((a) => {
+    if (!a.score_total) return;
+    const track = trackRegistry[a.exam_type];
+    if (!track) return;
+    const threshold = a.pass_percent != null ? a.pass_percent : getExamConfigFromRegistry(trackRegistry, a.exam_type).passPercent;
+    const passed = (100 * a.score_correct) / a.score_total >= threshold;
+    if (!byKind[track.kind]) byKind[track.kind] = { attempts: 0, passed: 0 };
+    byKind[track.kind].attempts += 1;
+    if (passed) byKind[track.kind].passed += 1;
+  });
+  const categories = PASS_RATE_CATEGORY_ORDER.filter((kind) => activeKinds.has(kind)).map((kind) => {
+    const stats = byKind[kind] || { attempts: 0, passed: 0 };
+    const hasEnoughData = stats.attempts >= PASS_RATE_MIN_SAMPLE;
+    return {
+      kind,
+      categorySlug: KIND_ROUTE_SLUGS[kind] || null,
+      attemptCount: stats.attempts,
+      passRate: hasEnoughData ? Math.round((100 * stats.passed) / stats.attempts) : null,
+    };
+  });
+  return json({ minSampleSize: PASS_RATE_MIN_SAMPLE, categories });
+}
+
 // ---- Promotions ----------------------------------------------------------
 // Admin-configurable banners (examprep-admin's Promotions tab) shown on the public site's home
 // and/or checkout pages. A promo with promo_code set is a real discount, redeemed by typing that
@@ -3423,6 +3475,7 @@ export default {
       if (pathname === '/pricing' && method === 'GET') return await handlePricingGet(request, env);
       if (pathname === '/config' && method === 'GET') return await handlePublicConfig(env);
       if (pathname === '/stats/public' && method === 'GET') return await handlePublicStats(env);
+      if (pathname === '/stats/pass-rates-by-category' && method === 'GET') return await handlePassRatesByCategory(env);
       if (pathname === '/activity/recent' && method === 'GET') return await handleRecentActivity(env);
       if (pathname === '/category-content' && method === 'GET') return await handleCategoryContentList(request, env);
       if (pathname === '/blog' && method === 'GET') return await handleBlogList(request, env);
