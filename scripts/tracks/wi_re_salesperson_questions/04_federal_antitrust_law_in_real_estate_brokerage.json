@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Federal Antitrust Law in Real Estate Brokerage",
+    "question": "15 U.S.C. 1, Section 1 of the Sherman Antitrust Act, declares illegal:",
+    "choice_a": "Every contract, combination, or conspiracy in restraint of trade or commerce among the states",
+    "choice_b": "Any single firm's unilateral decision to raise its own prices",
+    "choice_c": "Any merger between two real estate brokerages",
+    "choice_d": "Any advertisement of a commission rate",
+    "correct_choice": "A",
+    "explanation": "15 U.S.C. 1 declares illegal every contract, combination, or conspiracy in restraint of trade or commerce among the states -- the foundational antitrust prohibition applied to real estate brokerage conduct.",
+    "weight": 4,
+    "source_note": "15 U.S.C. 1 (Sherman Act Section 1); REEB 25.023(8)(c)"
+  },
+  {
+    "topic": "Federal Antitrust Law in Real Estate Brokerage",
+    "question": "Two competing brokerage firms secretly agree that both will charge clients a flat 6% commission rate. This conduct is:",
+    "choice_a": "Legal, as long as clients are told the rate is non-negotiable",
+    "choice_b": "A per se violation of Sherman Act Section 1's price-fixing prohibition",
+    "choice_c": "Legal, since 6% is a common industry rate",
+    "choice_d": "Only illegal if a third firm joins the agreement",
+    "correct_choice": "B",
+    "explanation": "An agreement between competing firms to fix commission rates is a classic per se violation of Sherman Act Section 1 -- each firm must set its own commission rates independently, and rates must remain negotiable.",
+    "weight": 5,
+    "source_note": "15 U.S.C. 1 (Sherman Act Section 1); REEB 25.023(8)(c)"
+  },
+  {
+    "topic": "Federal Antitrust Law in Real Estate Brokerage",
+    "question": "A group of brokers agrees among themselves to refuse to show properties listed by a discount or limited-service brokerage. This is an example of:",
+    "choice_a": "A lawful marketing strategy",
+    "choice_b": "Legitimate self-regulation by the MLS",
+    "choice_c": "A group boycott, a per se violation of Sherman Act Section 1",
+    "choice_d": "A tying arrangement",
+    "correct_choice": "C",
+    "explanation": "An agreement among competing firms to refuse to deal with a particular firm or type of business, such as a discount brokerage, is a group boycott and a per se violation of Sherman Act Section 1.",
+    "weight": 5,
+    "source_note": "15 U.S.C. 1 (Sherman Act Section 1); REEB 25.023(8)(c)"
+  },
+  {
+    "topic": "Federal Antitrust Law in Real Estate Brokerage",
+    "question": "Two competing brokerage firms agree that Firm A will only take listings north of Main Street and Firm B will only take listings south of Main Street. This is an example of:",
+    "choice_a": "A permissible territory specialization",
+    "choice_b": "A lawful marketing agreement",
+    "choice_c": "A permissible referral arrangement",
+    "choice_d": "Market allocation, a per se violation of Sherman Act Section 1",
+    "correct_choice": "D",
+    "explanation": "Agreements between competitors to divide up territories, price ranges, or customer types so they don't compete for the same business are market-allocation agreements and a per se violation of Sherman Act Section 1.",
+    "weight": 4,
+    "source_note": "15 U.S.C. 1 (Sherman Act Section 1); REEB 25.023(8)(c)"
+  },
+  {
+    "topic": "Federal Antitrust Law in Real Estate Brokerage",
+    "question": "A listing firm tells a buyer that an offer will only be accepted if the buyer agrees to use the listing firm's in-house mortgage company. Conditioning one service on the purchase of a second, separate service like this is known as:",
+    "choice_a": "A tying arrangement, which can raise antitrust concerns",
+    "choice_b": "A permissible cross-sell",
+    "choice_c": "A standard closing requirement",
+    "choice_d": "A fiduciary duty",
+    "correct_choice": "A",
+    "explanation": "Conditioning the provision of one service on the client's purchase of a separate service is a tying arrangement, which can violate antitrust law when the party imposing the condition has market power -- a concern that parallels Wisconsin's own tie-in-arrangement conduct rule.",
+    "weight": 4,
+    "source_note": "15 U.S.C. 1 (Sherman Act Section 1); Wis. Admin. Code REEB 24.075"
+  },
+  {
+    "topic": "Federal Antitrust Law in Real Estate Brokerage",
+    "question": "Sherman Act Section 1 requires proof of a \"conspiracy,\" meaning:",
+    "choice_a": "Any single broker's business decision, made without input from a competitor",
+    "choice_b": "An agreement or meeting of the minds between two or more separate, competing firms or persons",
+    "choice_c": "Any agreement between a broker and the broker's own client",
+    "choice_d": "Any decision made by a firm's managing broker",
+    "correct_choice": "B",
+    "explanation": "Sherman Act Section 1 requires concerted action -- an agreement or meeting of the minds between two or more separate, competing firms or persons; it does not reach a single firm's unilateral, independent business decisions.",
+    "weight": 4,
+    "source_note": "15 U.S.C. 1 (Sherman Act Section 1); REEB 25.023(8)(c)"
+  },
+  {
+    "topic": "Federal Antitrust Law in Real Estate Brokerage",
+    "question": "A single real estate firm unilaterally decides, entirely on its own, to charge an unusually high commission rate. This decision:",
+    "choice_a": "Constitutes price fixing",
+    "choice_b": "Constitutes a group boycott",
+    "choice_c": "Does NOT violate Sherman Act Section 1, because Section 1 requires concerted action between two or more competitors, not unilateral action",
+    "choice_d": "Must be lowered to match competitors under federal law",
+    "correct_choice": "C",
+    "explanation": "A firm's unilateral pricing decision, made without any agreement with a competitor, does not violate Sherman Act Section 1 -- even an unusually high rate is lawful unilateral conduct as long as it results from no agreement with another firm.",
+    "weight": 4,
+    "source_note": "15 U.S.C. 1 (Sherman Act Section 1); REEB 25.023(8)(c)"
+  },
+  {
+    "topic": "Federal Antitrust Law in Real Estate Brokerage",
+    "question": "Two competing agents discuss commission rates, or which competitors to work with, at an MLS or board meeting -- even without reaching an explicit agreement. This kind of discussion:",
+    "choice_a": "Is always completely lawful",
+    "choice_b": "Only matters legally if a client later complains",
+    "choice_c": "Cannot create any legal risk under federal law",
+    "choice_d": "Can create a legal inference of an unlawful conspiracy, which is why licensees are trained to avoid such topics altogether with competitors",
+    "correct_choice": "D",
+    "explanation": "Even informal discussion of commission rates, fees, or which competitors to deal with can create a legal inference of price fixing or group boycott without an explicit agreement, so licensees are trained to avoid these topics with competitors entirely.",
+    "weight": 5,
+    "source_note": "REEB 25.023(8)(c) -- situations creating inferences of price fixing/boycott"
+  },
+  {
+    "topic": "Federal Antitrust Law in Real Estate Brokerage",
+    "question": "An individual convicted of a Sherman Act Section 1 violation faces which of the following potential penalties?",
+    "choice_a": "A felony conviction, with a fine of up to $1,000,000 and/or up to 10 years' imprisonment",
+    "choice_b": "A civil fine only, with no possibility of imprisonment",
+    "choice_c": "License suspension by the Real Estate Examining Board only",
+    "choice_d": "No penalty unless the conduct also independently violates state law",
+    "correct_choice": "A",
+    "explanation": "A Sherman Act Section 1 violation is a felony; an individual faces a fine of up to $1,000,000 and/or up to 10 years' imprisonment, while a corporation faces a fine of up to $100,000,000.",
+    "weight": 3,
+    "source_note": "15 U.S.C. 1 (Sherman Act Section 1)"
+  },
+  {
+    "topic": "Federal Antitrust Law in Real Estate Brokerage",
+    "question": "A real estate consumer injured by a price-fixing conspiracy among competing brokers may pursue a private civil remedy of:",
+    "choice_a": "A refund of the commission only",
+    "choice_b": "Treble (triple) damages under the Clayton Act's private right of action",
+    "choice_c": "No remedy; only the federal government may sue",
+    "choice_d": "A public apology from the offending firms",
+    "correct_choice": "B",
+    "explanation": "The Clayton Act gives private parties injured by a Sherman Act violation the right to sue for treble (triple) damages, in addition to any DOJ Antitrust Division or state attorney general enforcement action.",
+    "weight": 3,
+    "source_note": "Clayton Act private right of action; 15 U.S.C. 1"
+  }
+]

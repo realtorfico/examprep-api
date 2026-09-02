@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Real Estate Commission, Division of Real Estate, and Rulemaking Authority",
+    "question": "How is the five-member Colorado real estate commission composed under § 12-10-206?",
+    "choice_a": "Three real estate brokers with at least five years of Colorado real estate experience (one of whom has substantial property management experience), plus two representatives of the public at large",
+    "choice_b": "Four real estate brokers and one public representative",
+    "choice_c": "Two real estate brokers and three public representatives",
+    "choice_d": "Five real estate brokers, each with at least five years of experience",
+    "correct_choice": "A",
+    "explanation": "The statute states the commission 'consists of three real estate brokers who have had not less than five years' experience in the real estate business in Colorado, one of whom has substantial experience in property management, and two representatives of the public at large.'",
+    "weight": 4,
+    "source_note": "Colo. Rev. Stat. § 12-10-206(1)"
+  },
+  {
+    "topic": "Real Estate Commission, Division of Real Estate, and Rulemaking Authority",
+    "question": "A commission member resigns partway through their term. Per § 12-10-206, what happens next, and how long is a normal term?",
+    "choice_a": "The remaining commission members vote on a replacement; regular terms are four years",
+    "choice_b": "The governor appoints a member to fill out the unexpired term; regular terms are three years",
+    "choice_c": "The seat stays vacant until the next general election; regular terms are two years",
+    "choice_d": "The Division of Real Estate director appoints a replacement; regular terms are five years",
+    "correct_choice": "B",
+    "explanation": "The text states members 'serve three-year terms' and that 'upon the death, resignation, removal, or otherwise of any member of the commission, the governor shall appoint a member to fill out the unexpired term.'",
+    "weight": 3,
+    "source_note": "Colo. Rev. Stat. § 12-10-206(1)"
+  },
+  {
+    "topic": "Real Estate Commission, Division of Real Estate, and Rulemaking Authority",
+    "question": "For what reasons may the governor remove a member of the real estate commission under § 12-10-206?",
+    "choice_a": "Only upon a criminal conviction",
+    "choice_b": "Only after missing three consecutive meetings",
+    "choice_c": "Misconduct, neglect of duty, or incompetence",
+    "choice_d": "The governor has no authority to remove a sitting member",
+    "correct_choice": "C",
+    "explanation": "The statute provides: 'The governor may remove any member for misconduct, neglect of duty, or incompetence.'",
+    "weight": 3,
+    "source_note": "Colo. Rev. Stat. § 12-10-206(1)"
+  },
+  {
+    "topic": "Real Estate Commission, Division of Real Estate, and Rulemaking Authority",
+    "question": "A complainant who filed a good-faith complaint against a broker is later sued civilly over statements made during the resulting disciplinary proceeding. Under § 12-10-206(3), what protection applies?",
+    "choice_a": "No immunity applies to complainants -- only commission members are protected",
+    "choice_b": "Immunity applies only if the broker is ultimately exonerated",
+    "choice_c": "Immunity applies only to commission members and consultants, not to complainants or expert witnesses",
+    "choice_d": "The complainant is immune from suit, along with commission members, consultants, and expert witnesses, for disciplinary-proceeding or other official acts performed in good faith",
+    "correct_choice": "D",
+    "explanation": "The statute states: 'Members of the commission, consultants, expert witnesses, and complainants shall be immune from suit in any civil action based upon any disciplinary proceedings or other official acts they performed in good faith.'",
+    "weight": 4,
+    "source_note": "Colo. Rev. Stat. § 12-10-206(3)"
+  },
+  {
+    "topic": "Real Estate Commission, Division of Real Estate, and Rulemaking Authority",
+    "question": "According to § 12-10-206(4), what is required before a real estate broker's license may be denied, suspended, or revoked?",
+    "choice_a": "A majority vote of the members of the commission",
+    "choice_b": "A unanimous vote of all five commission members",
+    "choice_c": "Approval solely by the director of the Division of Real Estate",
+    "choice_d": "A two-thirds vote of the commission plus the governor's sign-off",
+    "correct_choice": "A",
+    "explanation": "The text states: 'No real estate broker's license shall be denied, suspended, or revoked except as determined by a majority vote of the members of the commission.'",
+    "weight": 5,
+    "source_note": "Colo. Rev. Stat. § 12-10-206(4)"
+  },
+  {
+    "topic": "Real Estate Commission, Division of Real Estate, and Rulemaking Authority",
+    "question": "How are the real estate commission and the Division of Real Estate classified as entities under § 24-1-105, per §§ 12-10-206 and 12-10-207?",
+    "choice_a": "Both the commission and the division are type 1 entities",
+    "choice_b": "The commission is a type 1 entity; the division and its director are type 2 entities",
+    "choice_c": "The commission is a type 2 entity; the division is a type 1 entity",
+    "choice_d": "Both the commission and the division are type 2 entities",
+    "correct_choice": "B",
+    "explanation": "Section 12-10-206(1) states 'the commission is a type 1 entity,' while § 12-10-207(1) states 'the division and the director are type 2 entities.'",
+    "weight": 2,
+    "source_note": "Colo. Rev. Stat. §§ 12-10-206(1), 12-10-207(1)"
+  },
+  {
+    "topic": "Real Estate Commission, Division of Real Estate, and Rulemaking Authority",
+    "question": "Under § 12-10-209, what must the commission maintain regarding licensees, and how must publication of that information be handled?",
+    "choice_a": "Only licensees' exam scores, published annually to the legislature",
+    "choice_b": "Licensees' criminal histories, kept fully confidential at all times",
+    "choice_c": "A record of the names and addresses of all licensees, plus any other information the commission deems necessary for enforcement, with publication handled in accordance with § 24-1-136",
+    "choice_d": "A record maintained solely by the Division of Real Estate director, not the commission",
+    "correct_choice": "C",
+    "explanation": "The statute reads: 'The commission shall maintain a record of the names and addresses of all licensees... together with such other information relative to the enforcement of the provisions as deemed by the commission to be necessary. Publication of the record... shall be in accordance with the provisions of section 24-1-136.'",
+    "weight": 2,
+    "source_note": "Colo. Rev. Stat. § 12-10-209"
+  },
+  {
+    "topic": "Real Estate Commission, Division of Real Estate, and Rulemaking Authority",
+    "question": "Under § 12-10-210, how frequently must the commission publish the compiled educational-institution passing-rate data, and for how long must it retain that data?",
+    "choice_a": "Annually; retained indefinitely",
+    "choice_b": "Monthly; retained for one year",
+    "choice_c": "Biannually; retained for five years",
+    "choice_d": "Quarterly; retained for three years",
+    "correct_choice": "D",
+    "explanation": "The statute states: 'The commission shall publish this statistical data and make it available to the public quarterly' and 'the commission shall retain the statistical data for three years.'",
+    "weight": 3,
+    "source_note": "Colo. Rev. Stat. § 12-10-210(3)-(4)"
+  },
+  {
+    "topic": "Real Estate Commission, Division of Real Estate, and Rulemaking Authority",
+    "question": "An applicant asks the commission to release their specific real estate licensure exam score to a prospective employer. Under § 12-10-210(5), may the commission do so?",
+    "choice_a": "Yes, but only if the applicant authorizes release of the information",
+    "choice_b": "No, individual scores may never be disclosed under any circumstances",
+    "choice_c": "Yes, scores are public record open to anyone upon request",
+    "choice_d": "Yes, but only pursuant to a subpoena",
+    "correct_choice": "A",
+    "explanation": "The statute provides: 'Specific examination scores for an applicant will be kept confidential by the commission unless the applicant authorizes release of the information.'",
+    "weight": 3,
+    "source_note": "Colo. Rev. Stat. § 12-10-210(5)"
+  },
+  {
+    "topic": "Real Estate Commission, Division of Real Estate, and Rulemaking Authority",
+    "question": "A person is engaging in unlicensed real estate brokerage activity in violation of parts 2 and 5 of article 10. Under § 12-10-226, what must a court do once the commission makes the required showing?",
+    "choice_a": "The court may deny relief in its discretion if another remedy exists",
+    "choice_b": "Grant an injunction, restraining order, or other appropriate order, regardless of the existence of another remedy",
+    "choice_c": "Require the commission to pursue administrative discipline first before seeking an injunction",
+    "choice_d": "Refer the matter to the attorney general, who alone may seek injunctive relief",
+    "correct_choice": "B",
+    "explanation": "The statute states that upon a showing that a person is engaging or intends to engage in a violation, 'an injunction, restraining order, or other appropriate order shall be granted by the court regardless of the existence of another remedy therefor.'",
+    "weight": 4,
+    "source_note": "Colo. Rev. Stat. § 12-10-226"
+  }
+]
