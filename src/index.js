@@ -2643,6 +2643,66 @@ async function handleConsoleTrackRegistryActiveSet(request, env) {
   return json({ ok: true });
 }
 
+// Real, dated, reasoned corrections to exam mechanics -- powers the public /changelog page (see
+// track_registry_changelog in schema.sql). Only fields that actually CHANGED get a changelog row
+// (a no-op "save" with identical values logs nothing, keeping the changelog free of noise), and a
+// reason is mandatory -- this exists specifically so a visitor can trust that every entry reflects
+// a real, sourced correction, not a silent/unexplained edit.
+const MECHANICS_FIELDS = [
+  ['questionCount', 'exam_question_count'],
+  ['durationSec', 'exam_duration_sec'],
+  ['passPercent', 'pass_percent'],
+  ['minCorrect', 'min_correct'],
+];
+async function handleConsoleTrackRegistryMechanicsUpdate(request, env) {
+  const body = await request.json();
+  const { examType, reason } = body;
+  if (!examType || !reason || !reason.trim()) return json({ error: 'examType_and_reason_required' }, 400);
+  const current = await env.DB.prepare('SELECT * FROM track_registry WHERE exam_type = ?').bind(examType).first();
+  if (!current) return json({ error: 'track_not_found' }, 404);
+
+  const changes = MECHANICS_FIELDS.filter(([bodyKey, column]) => body[bodyKey] != null && body[bodyKey] !== current[column]);
+  if (!changes.length) return json({ error: 'no_changes_provided' }, 400);
+
+  const ts = now();
+  for (const [bodyKey, column] of changes) {
+    await env.DB.prepare(
+      `INSERT INTO track_registry_changelog (id, exam_type, field, old_value, new_value, reason, changed_at) VALUES (?, ?, ?, ?, ?, ?, ?)`
+    ).bind(newId(), examType, column, String(current[column]), String(body[bodyKey]), reason.trim(), ts).run();
+  }
+  const setClause = changes.map(([, column]) => `${column} = ?`).join(', ');
+  await env.DB.prepare(`UPDATE track_registry SET ${setClause}, updated_at = ? WHERE exam_type = ?`)
+    .bind(...changes.map(([bodyKey]) => body[bodyKey]), ts, examType).run();
+  trackRegistryCache = null;
+  return json({ ok: true, changed: changes.map(([, column]) => column) });
+}
+
+// Public, real, dated correction history -- see track_registry_changelog's own schema comment for
+// why this only ever contains genuine code-driven corrections (never a fabricated/backfilled
+// history). Joined against track_registry for a real track label per entry.
+async function handleChangelogList(env) {
+  const [rows, trackRegistry] = await Promise.all([
+    env.DB.prepare('SELECT * FROM track_registry_changelog ORDER BY changed_at DESC LIMIT 200').all(),
+    getTrackRegistry(env),
+  ]);
+  return json({
+    items: (rows.results || []).map((r) => {
+      const track = trackRegistry[r.exam_type];
+      return {
+        examType: r.exam_type,
+        trackLabel: track ? track.short_name : r.exam_type,
+        kind: track ? track.kind : null,
+        stateCode: track ? track.state_code : null,
+        field: r.field,
+        oldValue: r.old_value,
+        newValue: r.new_value,
+        reason: r.reason,
+        changedAt: r.changed_at,
+      };
+    }),
+  });
+}
+
 async function handleExamConfig(user, request, env) {
   const url = new URL(request.url);
   // ageCategory query param previews a specific category (the exam intro page's per-sitting
@@ -3597,6 +3657,7 @@ export default {
       if (pathname === '/config' && method === 'GET') return await handlePublicConfig(env);
       if (pathname === '/stats/public' && method === 'GET') return await handlePublicStats(env);
       if (pathname === '/stats/pass-rates-by-category' && method === 'GET') return await handlePassRatesByCategory(env);
+      if (pathname === '/changelog' && method === 'GET') return await handleChangelogList(env);
       if (pathname === '/activity/recent' && method === 'GET') return await handleRecentActivity(env);
       if (pathname === '/category-content' && method === 'GET') return await handleCategoryContentList(request, env);
       if (pathname === '/blog' && method === 'GET') return await handleBlogList(request, env);
@@ -3682,6 +3743,7 @@ export default {
         if (pathname === '/console/questions/sources' && method === 'GET') return await handleQuestionSources(request, env);
         if (pathname === '/console/track-registry' && method === 'GET') return await handleTrackRegistryList(env);
         if (pathname === '/console/track-registry/active' && method === 'POST') return await handleConsoleTrackRegistryActiveSet(request, env);
+        if (pathname === '/console/track-registry/mechanics' && method === 'POST') return await handleConsoleTrackRegistryMechanicsUpdate(request, env);
         if (pathname === '/console/questions/create' && method === 'POST') return await handleQuestionCreate(request, env);
         if (pathname === '/console/questions/update' && method === 'POST') return await handleQuestionUpdate(request, env);
         if (pathname === '/console/questions/delete' && method === 'POST') return await handleQuestionDelete(request, env);

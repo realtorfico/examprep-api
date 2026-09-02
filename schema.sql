@@ -571,4 +571,20 @@ CREATE TABLE affiliate_conversions (
   created_at        INTEGER NOT NULL
 );
 CREATE INDEX idx_affiliate_conversions_partner ON affiliate_conversions(partner_id);
+
+-- Real, dated log of track_registry mechanics corrections (question count/duration/pass_percent/
+-- min_correct/mechanics_note changes) -- powers the public /changelog transparency page. Written
+-- by handleConsoleTrackRegistryMechanicsUpdate() whenever an admin edits a track's mechanics, so
+-- this only ever contains genuine, code-driven corrections, never a fabricated or backfilled
+-- history for changes that predate this table's existence.
+CREATE TABLE track_registry_changelog (
+  id         TEXT PRIMARY KEY,
+  exam_type  TEXT NOT NULL,
+  field      TEXT NOT NULL, -- e.g. 'exam_duration_sec', 'exam_question_count', 'pass_percent'
+  old_value  TEXT,
+  new_value  TEXT,
+  reason     TEXT NOT NULL, -- why -- e.g. "corrected duration per CT's own confirmed pacing ratio"
+  changed_at INTEGER NOT NULL
+);
+CREATE INDEX idx_track_registry_changelog_changed_at ON track_registry_changelog(changed_at);
 CREATE INDEX idx_blog_posts_kind ON blog_posts(kind, status);
