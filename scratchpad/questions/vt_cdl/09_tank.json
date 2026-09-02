@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Tank Endorsement Requirement",
+    "question": "According to the Vermont CDL Manual, a tank endorsement is required for a Class A or B CDL when hauling a liquid or liquid gas in a tank meeting which minimum capacity thresholds?",
+    "choice_a": "An individual rated capacity of more than 119 gallons and an aggregate rated capacity of 1,000 gallons or more",
+    "choice_b": "An individual rated capacity of more than 100 gallons and an aggregate rated capacity of 500 gallons or more",
+    "choice_c": "An individual rated capacity of more than 200 gallons and an aggregate rated capacity of 1,500 gallons or more",
+    "choice_d": "An individual rated capacity of more than 119 gallons and an aggregate rated capacity of 2,000 gallons or more",
+    "correct_choice": "A",
+    "explanation": "The manual states a tank endorsement is required when hauling liquid or liquid gas in a tank or tanks having an individual rated capacity of more than 119 gallons and an aggregate rated capacity of 1,000 gallons or more, whether permanently or temporarily attached.",
+    "weight": 4,
+    "source_note": "Vermont CDL Manual, Section 8 - Tank Vehicles"
+  },
+  {
+    "topic": "Tank Inspection - Leaks",
+    "question": "On all tank vehicles, what is the most important item to check during inspection?",
+    "choice_a": "Tire tread depth",
+    "choice_b": "Signs of leaking under and around the vehicle",
+    "choice_c": "Mirror adjustment",
+    "choice_d": "Fuel gauge accuracy",
+    "correct_choice": "B",
+    "explanation": "The manual states that on all tank vehicles, the most important item to check for is leaks, and drivers should check under and around the vehicle for signs of any leaking.",
+    "weight": 5,
+    "source_note": "Vermont CDL Manual, Section 8 - Tank Vehicles"
+  },
+  {
+    "topic": "Tank Inspection - Manhole Covers and Valves",
+    "question": "According to the manual's guidance on special purpose equipment, what should a driver never do with a tank vehicle?",
+    "choice_a": "Drive it with an empty tank",
+    "choice_b": "Drive it on wet roads",
+    "choice_c": "Drive it with open valves or manhole covers",
+    "choice_d": "Drive it without a bulkhead",
+    "correct_choice": "C",
+    "explanation": "The manual explicitly warns to never drive a tank vehicle with open valves or manhole covers.",
+    "weight": 4,
+    "source_note": "Vermont CDL Manual, Section 8 - Tank Vehicles"
+  },
+  {
+    "topic": "Danger of Surge",
+    "question": "What is a dangerous effect of liquid surge described in the Vermont CDL Manual?",
+    "choice_a": "It causes the tank to overheat",
+    "choice_b": "It reduces the vehicle's fuel efficiency",
+    "choice_c": "It causes brake fade",
+    "choice_d": "When a surge wave hits the end of the tank, it tends to push the truck in the direction the wave is moving, which on a slippery surface can shove a stopped truck into an intersection",
+    "correct_choice": "D",
+    "explanation": "The manual describes how liquid surge from movement in partially filled tanks causes a wave that pushes the truck in the direction it moves, and on ice can shove a stopped truck out into an intersection.",
+    "weight": 5,
+    "source_note": "Vermont CDL Manual, Section 8 - Tank Vehicles"
+  },
+  {
+    "topic": "Bulkheads",
+    "question": "What must a driver pay attention to when loading or unloading a tank vehicle that is divided into several smaller tanks by bulkheads?",
+    "choice_a": "Tire pressure",
+    "choice_b": "Weight distribution, so as not to put too much weight on the front or rear of the vehicle",
+    "choice_c": "Engine temperature",
+    "choice_d": "Windshield wiper function",
+    "correct_choice": "B",
+    "explanation": "The manual states that when loading and unloading the smaller tanks created by bulkheads, the driver must pay attention to weight distribution and avoid putting too much weight on the front or rear of the vehicle.",
+    "weight": 3,
+    "source_note": "Vermont CDL Manual, Section 8 - Tank Vehicles"
+  },
+  {
+    "topic": "Baffled Tanks",
+    "question": "How do baffled liquid tanks help control liquid movement, according to the manual?",
+    "choice_a": "Baffles have holes that let liquid flow through, helping control forward-and-backward surge, though side-to-side surge can still occur and cause a rollover",
+    "choice_b": "Baffles completely eliminate all liquid movement in the tank",
+    "choice_c": "Baffles prevent the tank from ever being loaded partially full",
+    "choice_d": "Baffles are only used on tanks hauling hazardous materials",
+    "correct_choice": "A",
+    "explanation": "The manual explains that baffled tanks have bulkheads with holes that let liquid flow through, helping control forward-and-backward surge, but side-to-side surge can still occur and cause a roll over.",
+    "weight": 4,
+    "source_note": "Vermont CDL Manual, Section 8 - Tank Vehicles"
+  },
+  {
+    "topic": "Un-Baffled (Smooth Bore) Tanks",
+    "question": "Why are un-baffled ('smooth bore') tanks typically used for hauling food products such as milk?",
+    "choice_a": "They are cheaper to manufacture than baffled tanks",
+    "choice_b": "They allow faster loading and unloading",
+    "choice_c": "Sanitation regulations forbid the use of baffles because of the difficulty in cleaning the inside of the tank",
+    "choice_d": "They have a lower center of gravity than baffled tanks",
+    "correct_choice": "C",
+    "explanation": "The manual states that un-baffled tanks are usually used for food products like milk because sanitation regulations forbid the use of baffles due to the difficulty in cleaning the inside of the tank.",
+    "weight": 4,
+    "source_note": "Vermont CDL Manual, Section 8 - Tank Vehicles"
+  },
+  {
+    "topic": "Outage",
+    "question": "What term does the Vermont CDL Manual use for the empty space that must be left in a cargo tank to allow for liquid expansion?",
+    "choice_a": "Ullage",
+    "choice_b": "Ballast",
+    "choice_c": "Freeboard",
+    "choice_d": "Outage",
+    "correct_choice": "D",
+    "explanation": "The manual states that since liquids expand as they warm, room must be left for the expanding liquid, which is called 'outage.'",
+    "weight": 4,
+    "source_note": "Vermont CDL Manual, Section 8 - Tank Vehicles"
+  },
+  {
+    "topic": "Stopping Distance",
+    "question": "According to the manual's discussion of stopping distance for tank vehicles, which statement is true?",
+    "choice_a": "Full tank vehicles always take longer to stop than empty ones",
+    "choice_b": "Empty tank vehicles may take longer to stop than full ones",
+    "choice_c": "Tank vehicles stop faster than any other type of commercial vehicle",
+    "choice_d": "Stopping distance is unaffected by whether the tank is full or empty",
+    "correct_choice": "B",
+    "explanation": "The manual notes that wet roads double the normal stopping distance and that empty tank vehicles may take longer to stop than full ones.",
+    "weight": 3,
+    "source_note": "Vermont CDL Manual, Section 8 - Tank Vehicles"
+  }
+]
