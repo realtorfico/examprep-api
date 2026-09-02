@@ -1,0 +1,86 @@
+[
+  {
+    "topic": "RECAD",
+    "question": "What is the primary purpose of Alabama's Real Estate Consumers Agency Disclosure Act (RECAD)?",
+    "choice_a": "To establish which types of agency relationships a real estate licensee may have with buyers and sellers and require disclosure of those relationships to consumers",
+    "choice_b": "To set the maximum commission a broker may charge on a residential sale",
+    "choice_c": "To require every buyer to hire a licensed attorney to review the purchase contract",
+    "choice_d": "To create the state's residential property condition disclosure form used in every sale",
+    "correct_choice": "A",
+    "explanation": "RECAD, codified in Article 4 of Chapter 27, Title 34 of the Code of Alabama, defines the agency relationships a licensee may enter into with real estate consumers (client vs. customer status, single agency, subagency, dual agency, and designated agency) and requires that those relationships be disclosed. It does not regulate commission amounts, mandate attorney review, or create a separate property condition disclosure form.",
+    "weight": 3,
+    "source_note": "Ala. Code § 34-27-80 et seq. (Real Estate Consumers Agency Disclosure Act, Title 34, Ch. 27, Art. 4)"
+  },
+  {
+    "topic": "RECAD",
+    "question": "Under RECAD, what is a 'designated agent'?",
+    "choice_a": "A licensee within a brokerage who is specifically appointed by the broker to represent one party (such as the seller) to the exclusion of other licensees in the same firm, who may in turn be designated to represent the other party",
+    "choice_b": "The broker of record who personally supervises every transaction in the firm",
+    "choice_c": "A licensee hired directly by the Alabama Real Estate Commission to investigate consumer complaints",
+    "choice_d": "Any licensee who has completed post-licensing education",
+    "correct_choice": "A",
+    "explanation": "Designated agency lets a broker assign specific licensees within the same company to represent the seller and the buyer separately, so each consumer has a single agent with full fiduciary duties, rather than the whole firm being deemed a dual agent. This is one of RECAD's central mechanisms for structuring in-house transactions.",
+    "weight": 4,
+    "source_note": "Ala. Code § 34-27-80 et seq. (Real Estate Consumers Agency Disclosure Act, Title 34, Ch. 27, Art. 4)"
+  },
+  {
+    "topic": "RECAD",
+    "question": "Under RECAD, what must occur before a licensee acts as a dual agent representing both the buyer and the seller in the same transaction?",
+    "choice_a": "Both parties must give their informed, written consent to the dual agency arrangement",
+    "choice_b": "Only the seller's consent is required, since the seller pays the commission",
+    "choice_c": "The Alabama Real Estate Commission must approve the transaction in advance",
+    "choice_d": "Dual agency is prohibited outright in Alabama under all circumstances",
+    "correct_choice": "A",
+    "explanation": "RECAD permits limited consensual dual agency only when both the buyer and the seller are informed of and knowingly consent, in writing, to the licensee acting for both sides. In that role the dual agent's duties are limited compared to representing a single client, and the licensee cannot advocate exclusively for either party's interests.",
+    "weight": 4,
+    "source_note": "Ala. Code § 34-27-80 et seq. (Real Estate Consumers Agency Disclosure Act, Title 34, Ch. 27, Art. 4)"
+  },
+  {
+    "topic": "RECAD",
+    "question": "Under RECAD, what duties does a licensee owe to a 'client' (a party the licensee formally represents in an agency relationship)?",
+    "choice_a": "Full fiduciary duties, including loyalty, obedience to lawful instructions, reasonable skill and care, disclosure of material information, confidentiality, and accounting for funds and property",
+    "choice_b": "Only a duty of basic honesty and fair dealing, with no fiduciary obligations",
+    "choice_c": "No duties beyond delivering a copy of the purchase contract",
+    "choice_d": "A duty to represent the opposing party equally in every negotiation",
+    "correct_choice": "A",
+    "explanation": "RECAD distinguishes a 'client,' to whom the licensee owes full fiduciary duties (loyalty, obedience, disclosure, confidentiality, accounting, and reasonable skill and care), from a 'customer,' to whom the licensee owes only limited duties of honesty, fair dealing, and disclosure of known material facts. This client/customer distinction is a core feature of the Act.",
+    "weight": 4,
+    "source_note": "Ala. Code § 34-27-80 et seq. (Real Estate Consumers Agency Disclosure Act, Title 34, Ch. 27, Art. 4)"
+  },
+  {
+    "topic": "RECAD",
+    "question": "Under RECAD, what duties does a licensee owe to a 'customer' (a party the licensee does not represent in an agency capacity)?",
+    "choice_a": "Honesty and fair dealing, and disclosure of material facts about the property that the licensee actually knows, without owing fiduciary duties such as loyalty or confidentiality",
+    "choice_b": "The exact same fiduciary duties owed to a client, including loyalty and confidentiality",
+    "choice_c": "No duties whatsoever, since the licensee has no relationship with that party",
+    "choice_d": "A duty to negotiate the lowest possible price on the customer's behalf",
+    "correct_choice": "A",
+    "explanation": "A customer is a consumer the licensee assists in a transaction without representing in an agency relationship. RECAD requires honesty, fair dealing, and disclosure of known material facts to a customer, but does not impose fiduciary duties like loyalty, obedience, or confidentiality, since those duties flow only from an agency (client) relationship.",
+    "weight": 3,
+    "source_note": "Ala. Code § 34-27-80 et seq. (Real Estate Consumers Agency Disclosure Act, Title 34, Ch. 27, Art. 4)"
+  },
+  {
+    "topic": "RECAD",
+    "question": "Under RECAD, does the source of a licensee's compensation (for example, receiving part of a commission through a cooperating brokerage arrangement) by itself determine whether an agency relationship exists with a party?",
+    "choice_a": "No, RECAD provides that the source of compensation alone does not establish or negate an agency relationship between a licensee and a party",
+    "choice_b": "Yes, whoever pays the licensee is automatically that licensee's client",
+    "choice_c": "Yes, but only in commercial transactions, not residential ones",
+    "choice_d": "RECAD does not address compensation at all",
+    "correct_choice": "A",
+    "explanation": "RECAD makes clear that agency status is established by the disclosed representation relationship, not simply by who pays the commission. A buyer's agent may still be compensated through the listing broker's commission split without that payment source making the buyer's agent a subagent of the seller.",
+    "weight": 3,
+    "source_note": "Ala. Code § 34-27-80 et seq. (Real Estate Consumers Agency Disclosure Act, Title 34, Ch. 27, Art. 4)"
+  },
+  {
+    "topic": "RECAD",
+    "question": "Which of the following agency relationships does RECAD recognize as forms a licensee's relationship with a party to a real estate transaction may take?",
+    "choice_a": "Single (exclusive) agency, subagency, limited consensual dual agency, and designated agency",
+    "choice_b": "Only single agency; all other arrangements are illegal in Alabama",
+    "choice_c": "Only dual agency, which is mandatory in every transaction",
+    "choice_d": "Franchise agency and referral agency, which are unique to Alabama and unrelated to representation",
+    "correct_choice": "A",
+    "explanation": "RECAD's framework recognizes several possible agency structures a licensee may operate under with appropriate disclosure: representing only one party as a single agent, acting as a subagent of another broker's client, serving as a limited consensual dual agent with informed written consent of both parties, or acting as a designated agent for one side of an in-house transaction.",
+    "weight": 3,
+    "source_note": "Ala. Code § 34-27-80 et seq. (Real Estate Consumers Agency Disclosure Act, Title 34, Ch. 27, Art. 4)"
+  }
+]
