@@ -882,6 +882,8 @@ async function handleConsoleVisitorsList(request, env) {
   const regionOp = url.searchParams.get('regionOp') === 'ne' ? '!=' : '=';
   const minDurationSec = url.searchParams.get('minDurationSec');
   const maxDurationSec = url.searchParams.get('maxDurationSec');
+  const minPages = url.searchParams.get('minPages');
+  const maxPages = url.searchParams.get('maxPages');
 
   const clauses = [];
   const binds = [];
@@ -891,6 +893,8 @@ async function handleConsoleVisitorsList(request, env) {
   if (region) { clauses.push(`region ${regionOp} ?`); binds.push(region); }
   if (minDurationSec) { clauses.push('(last_seen_at - first_seen_at) >= ?'); binds.push(Number(minDurationSec)); }
   if (maxDurationSec) { clauses.push('(last_seen_at - first_seen_at) <= ?'); binds.push(Number(maxDurationSec)); }
+  if (minPages) { clauses.push('page_count >= ?'); binds.push(Number(minPages)); }
+  if (maxPages) { clauses.push('page_count <= ?'); binds.push(Number(maxPages)); }
   const where = clauses.length ? `WHERE ${clauses.join(' AND ')}` : '';
 
   const excluded = await getExcludedVisitorIps(env);
