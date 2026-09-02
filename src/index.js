@@ -206,6 +206,30 @@ async function handleSample(request, env) {
 // /sample already exposes unauthenticated -- no new schema, no new trust boundary. Grading trusts
 // question IDs the same way the authenticated quiz flow does: they're non-enumerable UUIDs
 // (newId()), so no additional scoping is needed on the lookup.
+//
+// Originally built 2026-08-08 back when California Notary was the only track on the site; the
+// tool copy and CTA link stayed hardcoded to ca_notary/the bare homepage even as the catalog grew
+// to 250+ tracks across 8 categories (2026-09-02 generalization). KIND_ROUTE_SLUGS mirrors the
+// site's own HUB_KIND_SLUGS (Websites/passexamhq/wwwroot/js/app.js) -- duplicated rather than
+// shared since the two are separate deploys/repos with no shared module boundary, same as
+// track_registry.kind itself is already a cross-repo naming convention, not a shared import.
+const KIND_ROUTE_SLUGS = {
+  'Real Estate Salesperson': 'real-estate-salesperson',
+  'Real Estate Broker': 'real-estate-broker',
+  'Driver': 'driver',
+  'Commercial Driver (CDL)': 'cdl',
+  'Motorcycle': 'motorcycle',
+  'Boating': 'boating',
+  'Notary': 'notary',
+  'Mortgage Loan Origination': 'mlo',
+};
+function trackUrl(kind, stateCode) {
+  const slug = KIND_ROUTE_SLUGS[kind];
+  if (!slug) return 'https://passexamhq.com';
+  if (!stateCode || stateCode === 'US') return `https://passexamhq.com/${slug}`;
+  return `https://passexamhq.com/${slug}/${stateCode.toLowerCase()}`;
+}
+
 const MCP_PROTOCOL_VERSION = '2025-06-18';
 const MCP_CORS_HEADERS = {
   'Access-Control-Allow-Origin': '*',
@@ -214,9 +238,46 @@ const MCP_CORS_HEADERS = {
 };
 const MCP_TOOLS = [
   {
+    name: 'list_available_tracks',
+    title: 'List available exam tracks',
+    description: 'List PassExamHQ\'s active exam-prep tracks -- state licensing exams across Notary, Real Estate Salesperson, Real Estate Broker, Driver, Commercial Driver (CDL), Motorcycle, and Boating, covering every U.S. state that has one. Call this first if you don\'t already know the examType for what someone is asking about (e.g. "Texas real estate" or "Florida boating license"). Optionally filter by kind and/or a 2-letter stateCode; call with no arguments to get category-level counts first.',
+    annotations: {
+      title: 'List available exam tracks',
+      readOnlyHint: true,
+      destructiveHint: false,
+      openWorldHint: false,
+    },
+    inputSchema: {
+      type: 'object',
+      properties: {
+        kind: { type: 'string', description: 'Optional category filter.', enum: ['Notary', 'Real Estate Salesperson', 'Real Estate Broker', 'Driver', 'Commercial Driver (CDL)', 'Motorcycle', 'Boating'] },
+        stateCode: { type: 'string', description: 'Optional 2-letter state filter, e.g. "TX", "FL".' },
+      },
+    },
+    outputSchema: {
+      type: 'object',
+      properties: {
+        totalActive: { type: 'integer' },
+        categoryCounts: { type: 'object', description: 'Active state count per category, only present on an unfiltered call.' },
+        tracks: {
+          type: 'array',
+          items: {
+            type: 'object',
+            properties: {
+              examType: { type: 'string' }, kind: { type: 'string' }, stateCode: { type: 'string' },
+              shortName: { type: 'string' }, url: { type: 'string' },
+            },
+            required: ['examType', 'kind', 'stateCode', 'shortName', 'url'],
+          },
+        },
+      },
+      required: ['totalActive', 'tracks'],
+    },
+  },
+  {
     name: 'get_sample_question',
     title: 'Get a sample exam question',
-    description: 'Fetch a real practice question from PassExamHQ\'s California Notary Public exam question bank. Returns the question and its 4 answer choices (A-D) WITHOUT the correct answer -- call grade_practice_answer with the returned questionId once you have a response to check it and see the explanation.',
+    description: 'Fetch a real practice question from one of PassExamHQ\'s exam tracks (see list_available_tracks for the full catalog -- state licensing exams across Notary, Real Estate Salesperson/Broker, Driver, CDL, Motorcycle, and Boating). Returns the question and its 4 answer choices (A-D) WITHOUT the correct answer -- call grade_practice_answer with the returned questionId once you have a response to check it and see the explanation.',
     annotations: {
       title: 'Get a sample exam question',
       readOnlyHint: true,
@@ -226,8 +287,8 @@ const MCP_TOOLS = [
     inputSchema: {
       type: 'object',
       properties: {
-        topic: { type: 'string', description: 'Optional topic to filter by, e.g. "Fees", "Journal", "Bonds". Omit for any topic.' },
-        examType: { type: 'string', description: 'Which exam track, e.g. "ca_notary" (California Notary Public exam), "ca_driver", "ca_cdl", "ca_motorcycle".', default: 'ca_notary' },
+        topic: { type: 'string', description: 'Optional topic to filter by, e.g. "Fees", "Contracts", "Financing". Omit for any topic.' },
+        examType: { type: 'string', description: 'Which exam track. Use list_available_tracks to find the exact value for a given state/category (naming pattern is roughly {2-letter state}_{category}, e.g. "tx_re_broker", "fl_notary", "ny_cdl"). Defaults to the original California Notary Public track if omitted.', default: 'ca_notary' },
       },
     },
     outputSchema: {
@@ -242,8 +303,9 @@ const MCP_TOOLS = [
           properties: { A: { type: 'string' }, B: { type: 'string' }, C: { type: 'string' }, D: { type: 'string' } },
           required: ['A', 'B', 'C', 'D'],
         },
+        trackUrl: { type: 'string', description: 'Link to this specific track\'s page on PassExamHQ.' },
       },
-      required: ['questionId', 'examType', 'topic', 'question', 'choices'],
+      required: ['questionId', 'examType', 'topic', 'question', 'choices', 'trackUrl'],
     },
   },
   {
@@ -266,11 +328,34 @@ const MCP_TOOLS = [
     },
     outputSchema: {
       type: 'object',
-      properties: { correct: { type: 'boolean' }, correctChoice: { type: 'string' }, explanation: { type: 'string' } },
-      required: ['correct', 'correctChoice', 'explanation'],
+      properties: { correct: { type: 'boolean' }, correctChoice: { type: 'string' }, explanation: { type: 'string' }, trackUrl: { type: 'string' } },
+      required: ['correct', 'correctChoice', 'explanation', 'trackUrl'],
     },
   },
 ];
+
+async function mcpListAvailableTracks(env, args) {
+  const kind = args && args.kind;
+  const stateCode = args && args.stateCode ? String(args.stateCode).toUpperCase() : undefined;
+  let query = 'SELECT exam_type, kind, state_code, short_name FROM track_registry WHERE active = 1';
+  const binds = [];
+  if (kind) { query += ' AND kind = ?'; binds.push(kind); }
+  if (stateCode) { query += ' AND state_code = ?'; binds.push(stateCode); }
+  query += ' ORDER BY kind, state_code';
+  const rows = (await env.DB.prepare(query).bind(...binds).all()).results;
+  const tracks = rows.map((r) => ({
+    examType: r.exam_type, kind: r.kind, stateCode: r.state_code, shortName: r.short_name,
+    url: trackUrl(r.kind, r.state_code),
+  }));
+  const filtered = !!(kind || stateCode);
+  const result = { totalActive: tracks.length, tracks };
+  if (!filtered) {
+    const categoryCounts = {};
+    tracks.forEach((t) => { categoryCounts[t.kind] = (categoryCounts[t.kind] || 0) + 1; });
+    result.categoryCounts = categoryCounts;
+  }
+  return result;
+}
 
 async function mcpGetSampleQuestion(env, args) {
   const examType = (args && args.examType) || 'ca_notary';
@@ -279,11 +364,13 @@ async function mcpGetSampleQuestion(env, args) {
     ? await env.DB.prepare('SELECT * FROM questions WHERE exam_type = ? AND topic = ? ORDER BY weight DESC, RANDOM() LIMIT 1').bind(examType, topic).first()
     : null;
   if (!row) row = await env.DB.prepare('SELECT * FROM questions WHERE exam_type = ? ORDER BY weight DESC, RANDOM() LIMIT 1').bind(examType).first();
-  if (!row) return { error: `No practice questions available for examType "${examType}".` };
+  if (!row) return { error: `No practice questions available for examType "${examType}". Call list_available_tracks to see valid examType values.` };
   const { choices } = buildDisplayChoices(row);
+  const registry = await getTrackRegistry(env);
+  const track = registry[examType];
   return {
     questionId: row.id, examType: row.exam_type, topic: row.topic, question: row.question,
-    choices,
+    choices, trackUrl: track ? trackUrl(track.kind, track.state_code) : 'https://passexamhq.com',
   };
 }
 
@@ -297,18 +384,33 @@ async function mcpGradePracticeAnswer(env, args) {
   if (!row) return { error: `Unknown questionId "${questionId}" -- call get_sample_question first to get a valid one.` };
   const originalResponse = toOriginalChoice(row.id, response);
   const { correctChoice } = buildDisplayChoices(row);
-  return { correct: originalResponse === row.correct_choice, correctChoice, explanation: row.explanation };
+  const registry = await getTrackRegistry(env);
+  const track = registry[row.exam_type];
+  return {
+    correct: originalResponse === row.correct_choice, correctChoice, explanation: row.explanation,
+    trackUrl: track ? trackUrl(track.kind, track.state_code) : 'https://passexamhq.com',
+  };
 }
 
 function mcpToolResultText(toolName, data) {
   if (data.error) return data.error;
+  if (toolName === 'list_available_tracks') {
+    if (data.tracks.length && (data.categoryCounts === undefined)) {
+      // Filtered call -- the caller asked about a specific kind/state, so give them the actual rows.
+      return data.tracks.map((t) => `${t.shortName} (${t.kind}, ${t.stateCode}) -- examType: "${t.examType}" -- ${t.url}`).join('\n');
+    }
+    if (!data.tracks.length) return 'No active tracks matched that filter. Call list_available_tracks with no arguments to see every category and state covered.';
+    const summary = Object.entries(data.categoryCounts).map(([k, c]) => `${k}: ${c} states`).join('\n');
+    return `PassExamHQ covers ${data.totalActive} active exam tracks:\n${summary}\n\n` +
+      `Call list_available_tracks again with a "kind" and/or "stateCode" filter to get the exact examType values and links, then pass one to get_sample_question.`;
+  }
   if (toolName === 'get_sample_question') {
     return `[${data.topic}] ${data.question}\nA) ${data.choices.A}\nB) ${data.choices.B}\nC) ${data.choices.C}\nD) ${data.choices.D}\n\n` +
       `(questionId: ${data.questionId} -- pass this to grade_practice_answer with the chosen letter)\n` +
-      `Full mock exams and progress tracking: https://passexamhq.com`;
+      `Full mock exams and progress tracking: ${data.trackUrl}`;
   }
   const verdict = data.correct ? 'Correct!' : `Not quite -- the correct answer is ${data.correctChoice}.`;
-  return `${verdict} ${data.explanation}\n\nFull mock exams and progress tracking: https://passexamhq.com`;
+  return `${verdict} ${data.explanation}\n\nFull mock exams and progress tracking: ${data.trackUrl}`;
 }
 
 function mcpJson(data, status = 200) {
@@ -348,7 +450,7 @@ async function handleMcp(request, env) {
         protocolVersion: MCP_PROTOCOL_VERSION,
         capabilities: { tools: {} },
         serverInfo: { name: 'examprep-mcp', title: 'PassExamHQ', version: '1.0.0' },
-        instructions: 'Public, unauthenticated tools for California Notary Public exam prep: fetch a real practice question and grade a submitted answer. Full mock exams and progress tracking are at https://passexamhq.com.',
+        instructions: 'Public, unauthenticated tools for PassExamHQ, a licensing-exam prep site covering state Notary, Real Estate Salesperson/Broker, Driver, Commercial Driver (CDL), Motorcycle, and Boating exams for every U.S. state that requires one. Call list_available_tracks first to discover what\'s covered and find the right examType, then get_sample_question to fetch a real practice question and grade_practice_answer to check a submitted answer. Full mock exams and progress tracking are at https://passexamhq.com.',
       },
     });
   }
@@ -359,7 +461,8 @@ async function handleMcp(request, env) {
     const toolName = params && params.name;
     const args = (params && params.arguments) || {};
     let data;
-    if (toolName === 'get_sample_question') data = await mcpGetSampleQuestion(env, args);
+    if (toolName === 'list_available_tracks') data = await mcpListAvailableTracks(env, args);
+    else if (toolName === 'get_sample_question') data = await mcpGetSampleQuestion(env, args);
     else if (toolName === 'grade_practice_answer') data = await mcpGradePracticeAnswer(env, args);
     else return mcpErrorResponse(id, -32602, `Unknown tool "${toolName}"`);
 
