@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Financing",
+    "question": "In Hawaii, a seller-financed Agreement of Sale differs from a typical purchase-money loan primarily because:",
+    "choice_a": "The buyer takes possession and receives equitable title while the seller retains legal title as security until the contract price is paid in full",
+    "choice_b": "The seller conveys legal title to the buyer at closing and records a mortgage lien to secure repayment",
+    "choice_c": "The buyer receives full legal title with no security interest retained by the seller",
+    "choice_d": "The instrument may be used only for the sale of vacant land, never improved residential property",
+    "correct_choice": "A",
+    "explanation": "Under a Hawaii Agreement of Sale (also called a land contract or contract of sale), the buyer takes possession and equitable title while the seller withholds legal (deed) title as security until the purchase price is paid off, at which point the seller delivers the deed — making A correct. Choice B describes a purchase money mortgage (PMM), a different seller-financing device; Choice C is wrong because retaining legal title is the seller's essential security; Choice D is false since Agreement of Sale is used for both land and improved property in Hawaii.",
+    "weight": 3,
+    "source_note": "HRS chapter 502 (Bureau of Conveyances recording of agreements of sale); general Hawaii Agreement of Sale/land contract practice."
+  },
+  {
+    "topic": "Financing",
+    "question": "How does a Hawaii Purchase Money Mortgage (PMM) differ from an Agreement of Sale as a seller-financing tool?",
+    "choice_a": "A PMM requires the buyer to obtain private mortgage insurance; an Agreement of Sale does not",
+    "choice_b": "Under a PMM the seller conveys legal title to the buyer at closing and takes back a mortgage as security; under an Agreement of Sale the seller withholds legal title until the price is paid",
+    "choice_c": "A PMM can only be used by institutional lenders, never by an individual seller",
+    "choice_d": "An Agreement of Sale automatically converts to a PMM once 50% of the price is paid",
+    "correct_choice": "B",
+    "explanation": "With a PMM, the seller finances the sale but conveys legal title to the buyer at closing, recording a mortgage against that title as security for the unpaid balance; with an Agreement of Sale, the seller keeps legal title until the buyer pays in full — making C correct. A private mortgage insurance requirement (A) is a conventional-loan concept, not a PMM/Agreement of Sale distinction; PMMs are typically seller-financed by individuals, not limited to institutions (B); Hawaii recognizes no automatic conversion mechanism like the one described in D.",
+    "weight": 3,
+    "source_note": "General Hawaii seller-financing practice; contrast of Agreement of Sale vs. purchase money mortgage instruments."
+  },
+  {
+    "topic": "Financing",
+    "question": "Under HRS section 502-85, what must the buyer under a Hawaii Agreement of Sale do to secure priority over a later conflicting claim against the seller's interest?",
+    "choice_a": "Notify the Real Estate Commission within 10 days of signing",
+    "choice_b": "Obtain title insurance naming the seller as insured",
+    "choice_c": "Record the agreement of sale at the Bureau of Conveyances",
+    "choice_d": "File the agreement with the county tax assessor",
+    "correct_choice": "C",
+    "explanation": "HRS section 502-85 gives a buyer's rights under a duly recorded agreement of sale priority over later claims against the seller's interest in the property. Recording occurs at the Bureau of Conveyances, Hawaii's single statewide land recording office — making B correct. There is no REC filing requirement (A), no county tax assessor filing step (D), and title insurance (C) does not itself establish statutory recording priority.",
+    "weight": 3,
+    "source_note": "HRS section 502-85, Agreements of sale; priority."
+  },
+  {
+    "topic": "Financing",
+    "question": "Where are real estate financing instruments such as an Agreement of Sale or mortgage recorded in Hawaii, and under which system(s)?",
+    "choice_a": "The county recorder's office, under the Torrens system only",
+    "choice_b": "The Real Estate Commission's licensing division",
+    "choice_c": "The State Department of Taxation, under the Regular System only",
+    "choice_d": "The State Bureau of Conveyances, under either the Regular System or the Land Court (Torrens) System",
+    "correct_choice": "D",
+    "explanation": "Hawaii has no county recording offices; all real property instruments — including an Agreement of Sale or mortgage — are recorded at the State Bureau of Conveyances in Honolulu, under either the Regular System (a race-notice system) or the Land Court System (Hawaii's Torrens-style registered-title system), depending on how the underlying land is registered — making C correct. Hawaii has no county recorder (A), the Real Estate Commission does not record financing instruments (B), and the Department of Taxation is not a recording office (D).",
+    "weight": 2,
+    "source_note": "HRS chapter 502, Bureau of Conveyances; Regular System vs. Land Court System."
+  },
+  {
+    "topic": "Financing",
+    "question": "When a Hawaii broker or salesperson obtains a signature on a seller-financed Agreement of Sale, HRS section 467-13 requires the licensee to:",
+    "choice_a": "Deliver a copy of the signed agreement to the signing party at the time the signature is obtained",
+    "choice_b": "Hold the original document in the brokerage's files for seven years before delivery",
+    "choice_c": "File the agreement with the Real Estate Commission within 30 days",
+    "choice_d": "Withhold delivery until the transaction closes escrow",
+    "correct_choice": "A",
+    "explanation": "HRS section 467-13 requires a licensee to deliver a copy of any agreement — including a seller-financing instrument such as an Agreement of Sale — to a party at the time that party's signature is obtained, making D correct. There is no requirement to withhold delivery until closing (C) or file the agreement with the Commission (B); record-retention rules (A) do not substitute for the immediate delivery duty.",
+    "weight": 2,
+    "source_note": "HRS section 467-13, Delivery of agreement."
+  },
+  {
+    "topic": "Financing",
+    "question": "A Hawaii Agreement of Sale is never recorded. The seller later conveys the same property to a good-faith third-party purchaser who records the deed first without actual notice of the earlier agreement. What is the result?",
+    "choice_a": "The original buyer automatically keeps priority regardless of recording because possession alone gives constructive notice",
+    "choice_b": "The original buyer's unrecorded equitable interest is void as against the later bona fide purchaser who recorded first",
+    "choice_c": "The transaction is void and the property reverts to the State",
+    "choice_d": "The later purchaser must honor the unrecorded agreement because Hawaii has no recording requirement for agreements of sale",
+    "correct_choice": "B",
+    "explanation": "Hawaii's recording statutes operate on a race-notice principle: an unrecorded conveyance, including an agreement of sale, is void against a later bona fide purchaser for value without actual notice who records first — making A correct. Choice B overstates the effect of possession alone; Choices C and D misstate Hawaii recording law, which does apply to agreements of sale (HRS section 502-85) and does not cause reversion to the State.",
+    "weight": 4,
+    "source_note": "HRS section 502-83 (effect of not recording) and section 502-85 (agreements of sale; priority)."
+  },
+  {
+    "topic": "Financing",
+    "question": "Because the seller retains legal title as security under a Hawaii Agreement of Sale, a buyer's default is typically addressed through:",
+    "choice_a": "The same judicial mortgage foreclosure process required for a recorded mortgage",
+    "choice_b": "Automatic transfer of legal title to a title insurance company",
+    "choice_c": "Contract-based cancellation or forfeiture remedies specified in the agreement, rather than a mortgage foreclosure action",
+    "choice_d": "A criminal trespass action against the buyer",
+    "correct_choice": "C",
+    "explanation": "Because legal title never left the seller, a defaulting buyer under an Agreement of Sale is typically pursued through the contract's own cancellation or forfeiture remedies rather than the judicial (or power-of-sale) foreclosure process required when a mortgagee forecloses a lien on someone else's title — making D correct. Choices A, B, and C do not reflect how Agreement of Sale default is actually handled in Hawaii.",
+    "weight": 3,
+    "source_note": "General Hawaii Agreement of Sale/land contract practice, contrasted with HRS chapter 667 mortgage foreclosure procedure."
+  },
+  {
+    "topic": "Financing",
+    "question": "A Hawaii buyer is financing the purchase of a leasehold condominium with a 30-year institutional loan. What must the lender typically confirm about the ground lease before approving the loan?",
+    "choice_a": "The lease has fewer years remaining than the loan term, to reduce the buyer's total payments",
+    "choice_b": "The ground lease rent must reset annually for the loan to qualify",
+    "choice_c": "Leasehold property cannot be financed with an institutional loan in Hawaii under any circumstance",
+    "choice_d": "The remaining lease term extends well beyond the loan's maturity date -- commonly at least five years past maturity -- with the lease in good standing",
+    "correct_choice": "D",
+    "explanation": "Because a leasehold interest expires at the end of the lease term, institutional and secondary-market lenders (for example, Fannie Mae's leasehold estate underwriting guidelines) commonly require the remaining lease term to exceed the loan's maturity date by a safety margin, often cited as at least five years, and require the lease to be current with no defaults -- making A correct. Choice B is backwards, since a remaining term shorter than the loan term is disqualifying, not desirable; Choice C invents an annual-reset requirement; Choice D is false, since leasehold financing is common, though constrained, in Hawaii.",
+    "weight": 4,
+    "source_note": "Fannie Mae leasehold estate underwriting guidelines as applied to Hawaii's leasehold market; general Hawaii institutional lending practice on leasehold property."
+  },
+  {
+    "topic": "Financing",
+    "question": "Why do Hawaii lenders scrutinize the remaining term of a ground lease more closely than they would for a comparable fee simple property?",
+    "choice_a": "Because the lender's collateral is the leasehold interest itself, which loses value and eventually terminates as the lease approaches expiration",
+    "choice_b": "Because leasehold property is exempt from Hawaii property tax, changing the lender's risk calculation",
+    "choice_c": "Because Hawaii law requires all leasehold loans to be sold to the state housing agency",
+    "choice_d": "Because leasehold buyers are statutorily prohibited from obtaining title insurance",
+    "correct_choice": "A",
+    "explanation": "A leasehold mortgage is secured only by the buyer's leasehold interest, which diminishes in value and eventually ends when the ground lease expires, unlike a fee simple interest, which does not expire -- making A correct. This is why lenders require adequate remaining lease term and confirm rent and renegotiation terms and lease standing. Choices B, C, and D describe things that are not true of Hawaii leasehold property.",
+    "weight": 3,
+    "source_note": "General leasehold estate lending principles as applied to Hawaii's leasehold real estate market."
+  },
+  {
+    "topic": "Financing",
+    "question": "During the term of a Hawaii Agreement of Sale, before the buyer receives the deed, which statement is generally true?",
+    "choice_a": "The buyer typically has no obligation for property taxes, insurance, or maintenance since legal title remains with the seller",
+    "choice_b": "The buyer typically remains responsible for property taxes, insurance, and maintenance under the agreement's terms, despite the seller holding legal title",
+    "choice_c": "The seller must occupy the property alongside the buyer until the deed is delivered",
+    "choice_d": "The buyer cannot obtain a leasehold or fee simple interest in the property until a separate escrow is opened",
+    "correct_choice": "B",
+    "explanation": "Even though the seller retains legal title as security, a Hawaii Agreement of Sale customarily places the burdens of ownership -- property taxes, hazard insurance, and maintenance -- on the buyer in possession, consistent with the buyer's equitable ownership interest -- making B correct. Choice A misstates typical contract allocation; Choices C and D describe arrangements not used in practice.",
+    "weight": 2,
+    "source_note": "General Hawaii Agreement of Sale/land contract drafting practice."
+  }
+]
