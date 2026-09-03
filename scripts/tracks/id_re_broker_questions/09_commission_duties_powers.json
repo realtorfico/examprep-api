@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Duties and Powers of the Real Estate Commission",
+    "question": "How many members serve on the Idaho Real Estate Commission (IREC)?",
+    "choice_a": "Five (5)",
+    "choice_b": "Three (3)",
+    "choice_c": "Seven (7)",
+    "choice_d": "Nine (9)",
+    "correct_choice": "A",
+    "explanation": "Idaho Code §54-2005 establishes the Idaho Real Estate Commission and provides that it 'shall consist of five (5) members.' The commission sits within the Division of Occupational and Professional Licenses (DOPL) but functions as the licensing and regulatory authority over real estate brokers and salespersons in Idaho.",
+    "weight": 2,
+    "source_note": "Idaho Code §54-2005 (The Idaho Real Estate Commission)"
+  },
+  {
+    "topic": "Duties and Powers of the Real Estate Commission",
+    "question": "Who is responsible for appointing the members of the Idaho Real Estate Commission, and under what standard do they serve?",
+    "choice_a": "The Idaho Association of REALTORS(R), by member election",
+    "choice_b": "The Governor, and members serve at the pleasure of the Governor",
+    "choice_c": "The Director of the Division of Occupational and Professional Licenses, by administrative order",
+    "choice_d": "The Idaho Supreme Court, by judicial appointment",
+    "correct_choice": "B",
+    "explanation": "Idaho Code §54-2005 provides that commission members 'shall be appointed by the governor and who shall serve at the pleasure of the governor.' The statute also requires that the licensed commissioner seats represent Idaho's northern, southeastern, southwestern, and south central districts.",
+    "weight": 2,
+    "source_note": "Idaho Code §54-2005 (The Idaho Real Estate Commission)"
+  },
+  {
+    "topic": "Duties and Powers of the Real Estate Commission",
+    "question": "Of the five members of the Idaho Real Estate Commission, how many must be actively licensed Idaho-designated real estate brokers or associate brokers with at least five years of active license experience?",
+    "choice_a": "Two (2)",
+    "choice_b": "Three (3)",
+    "choice_c": "Four (4)",
+    "choice_d": "All five (5)",
+    "correct_choice": "C",
+    "explanation": "Idaho Code §54-2006 requires that four of the five commissioners be actively licensed Idaho-designated real estate brokers or associate brokers who have had at least five years' active license experience. The fifth seat is reserved for a public (non-industry) member.",
+    "weight": 3,
+    "source_note": "Idaho Code §54-2006 (Qualifications of commissioners -- Term and organization)"
+  },
+  {
+    "topic": "Duties and Powers of the Real Estate Commission",
+    "question": "The one commission seat not filled by a licensed broker or associate broker is designated for whom?",
+    "choice_a": "A licensed real estate attorney",
+    "choice_b": "A certified real property appraiser",
+    "choice_c": "A representative of a title insurance company",
+    "choice_d": "A public member representing consumer interests",
+    "correct_choice": "D",
+    "explanation": "Idaho Code §54-2006 sets aside one of the five commission seats for a public member representing the interests of consumers, distinct from the four industry seats held by experienced licensed brokers or associate brokers.",
+    "weight": 3,
+    "source_note": "Idaho Code §54-2006 (Qualifications of commissioners -- Term and organization)"
+  },
+  {
+    "topic": "Duties and Powers of the Real Estate Commission",
+    "question": "What is the length of a regular Idaho Real Estate Commission member's term, and when does it commence?",
+    "choice_a": "Four years, commencing July 1",
+    "choice_b": "Two years, commencing January 1",
+    "choice_c": "Six years, commencing October 1",
+    "choice_d": "Three years, commencing January 1",
+    "correct_choice": "A",
+    "explanation": "Idaho Code §54-2006 provides that regular commission appointments are for a term of four years, commencing July 1, with a commissioner continuing to serve until a qualified successor is appointed. The statute also requires the commission to annually elect a chair, a vice-chair, and a commissioner to serve on the Idaho real estate education council.",
+    "weight": 3,
+    "source_note": "Idaho Code §54-2006 (Qualifications of commissioners -- Term and organization)"
+  },
+  {
+    "topic": "Duties and Powers of the Real Estate Commission",
+    "question": "Under Idaho Code §54-2007, what is the core scope of the Idaho Real Estate Commission's general authority?",
+    "choice_a": "It is limited strictly to issuing and renewing licenses, with no independent rulemaking power",
+    "choice_b": "It is charged with administering and enforcing all provisions of Chapter 20 and is expressly vested with authority to make and enforce all reasonable rules it deems necessary to do so",
+    "choice_c": "It has exclusive authority over federal fair housing enforcement in Idaho",
+    "choice_d": "It sets binding commission-rate schedules for all licensed brokerages statewide",
+    "correct_choice": "B",
+    "explanation": "Idaho Code §54-2007 states that the commission 'is charged with administering and enforcing all provisions of this chapter, and is expressly vested with the power and authority to make and enforce any and all reasonable rules as it deems necessary for administering and enforcing this chapter.' This is the core statutory grant underlying IREC's rulemaking and general regulatory authority; it does not extend to setting commission rates or exclusive federal fair-housing jurisdiction.",
+    "weight": 4,
+    "source_note": "Idaho Code §54-2007 (Compensation, powers and duties of commission)"
+  },
+  {
+    "topic": "Duties and Powers of the Real Estate Commission",
+    "question": "Under Idaho Code §54-2058, how is a commission investigation of a licensee typically initiated?",
+    "choice_a": "Only pursuant to a prior district court order",
+    "choice_b": "Only during a licensee's biennial renewal cycle",
+    "choice_c": "Upon receipt of a written complaint, or upon information developed by the executive director",
+    "choice_d": "Only when a competing brokerage files a civil lawsuit against the licensee",
+    "correct_choice": "C",
+    "explanation": "Idaho Code §54-2058 authorizes the commission to investigate the actions of any person engaged in real estate brokerage activity in the state upon a written complaint or upon information developed by the executive director. The statute also requires licensees to answer reasonable investigative questions and promptly produce requested records.",
+    "weight": 4,
+    "source_note": "Idaho Code §54-2058 (Authority to investigate and discipline)"
+  },
+  {
+    "topic": "Duties and Powers of the Real Estate Commission",
+    "question": "Under Idaho Code §54-2058, the commission's periodic audit authority specifically extends to which records?",
+    "choice_a": "A licensee's personal income tax filings",
+    "choice_b": "MLS data feeds and listing agreements only",
+    "choice_c": "A licensee's advertising and marketing budgets",
+    "choice_d": "The transaction records and real estate trust accounts of Idaho-licensed designated brokers",
+    "correct_choice": "D",
+    "explanation": "Idaho Code §54-2058 vests the commission with authority to conduct periodic inspections, surveys, and audits of the transaction records and real estate trust accounts of all Idaho-licensed designated brokers, an important tool for detecting trust account mismanagement or commingling.",
+    "weight": 4,
+    "source_note": "Idaho Code §54-2058 (Authority to investigate and discipline)"
+  },
+  {
+    "topic": "Duties and Powers of the Real Estate Commission",
+    "question": "Under Idaho Code §54-2059, in addition to suspending or revoking a license, what disciplinary tool -- with a specific statutory dollar cap -- may the commission impose alongside a formal reprimand?",
+    "choice_a": "A civil penalty not to exceed $5,000",
+    "choice_b": "A civil penalty not to exceed $500",
+    "choice_c": "A civil penalty not to exceed $1,000",
+    "choice_d": "A civil penalty not to exceed $25,000",
+    "correct_choice": "A",
+    "explanation": "Idaho Code §54-2059 authorizes the commission to temporarily suspend or permanently revoke a license, and separately authorizes it to issue a formal reprimand coupled with a civil penalty of up to $5,000. The statute distinguishes this from the executive director's separate authority to issue informal letters of reprimand without any civil penalty or cost assessment.",
+    "weight": 4,
+    "source_note": "Idaho Code §54-2059 (Disciplinary powers -- Revocation, suspension or other disciplinary action)"
+  },
+  {
+    "topic": "Duties and Powers of the Real Estate Commission",
+    "question": "Under Idaho Code §54-2071, the Idaho Real Estate Recovery Fund's total liability for claims arising from the conduct of any one licensee is capped, per calendar year, at what amount?",
+    "choice_a": "$5,000",
+    "choice_b": "$10,000",
+    "choice_c": "$25,000",
+    "choice_d": "$50,000",
+    "correct_choice": "B",
+    "explanation": "Idaho Code §54-2071 caps aggregate recovery fund liability arising from the acts of any one licensee at $10,000 per licensee per calendar year, regardless of the number of claimants harmed or claims filed against that licensee within the same year. This is a hard aggregate ceiling, distinct from any per-claim considerations within that total.",
+    "weight": 5,
+    "source_note": "Idaho Code §54-2071 (Recovery from fund -- Procedure -- Grounds -- Amount -- Hearing)"
+  }
+]

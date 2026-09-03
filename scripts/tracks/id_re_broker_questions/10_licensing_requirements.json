@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Licensing Requirements",
+    "question": "Under Idaho Code §54-2011, which of the following correctly describes the three types of real estate licenses an individual may hold in Idaho?",
+    "choice_a": "Trainee, salesperson, and broker",
+    "choice_b": "Salesperson, broker, and managing broker",
+    "choice_c": "Salesperson, associate broker, and designated broker acting for a sole proprietorship or legal business entity",
+    "choice_d": "Provisional salesperson, associate broker, and principal broker",
+    "correct_choice": "C",
+    "explanation": "Idaho Code §54-2011 establishes three license classifications: real estate salesperson, associate broker, and designated broker — the broker who acts on behalf of a sole proprietorship or legal business entity and bears ultimate supervisory responsibility for the brokerage. Idaho does not use \"managing broker,\" \"principal broker,\" or \"trainee\" as statutory license classifications.",
+    "weight": 2,
+    "source_note": "Idaho Code §54-2011 (Types of Licenses)"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "A licensee who wants to become a Designated Broker in Idaho, as opposed to an Associate Broker, must additionally satisfy which requirement?",
+    "choice_a": "Pass a national-only examination with no state-specific portion",
+    "choice_b": "Hold an active salesperson license for at least ten years",
+    "choice_c": "Obtain a separate real estate appraiser certification",
+    "choice_d": "Complete the Business Conduct and Office Operations (BCOO) pre-licensing course and register the brokerage's company and trust accounts with the Commission",
+    "correct_choice": "D",
+    "explanation": "Because a designated broker assumes responsibility for operating and supervising a brokerage — including custody of client trust funds — Idaho's licensing framework under Chapter 20 requires designated broker applicants to complete the BCOO course and register the firm's company and trust accounts with the Idaho Real Estate Commission. An associate broker practices under a designated broker rather than operating an independent brokerage, so neither requirement applies to that tier.",
+    "weight": 3,
+    "source_note": "Idaho Code §54-2011 (license tiers) and IREC designated broker licensing requirements (BCOO course, trust/company account registration)"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "What are the minimum age and education requirements for an individual applying for any Idaho real estate license under Idaho Code §54-2012?",
+    "choice_a": "At least 18 years of age and possession of a high school diploma or its equivalent",
+    "choice_b": "At least 21 years of age and an associate's degree",
+    "choice_c": "At least 18 years of age with no education requirement",
+    "choice_d": "At least 19 years of age and completion of a bachelor's degree in any field",
+    "correct_choice": "A",
+    "explanation": "Idaho Code §54-2012 requires that an applicant for a primary Idaho real estate license be at least 18 years of age and hold a high school diploma or its equivalent, in addition to meeting the statute's education, examination, and background-check requirements.",
+    "weight": 1,
+    "source_note": "Idaho Code §54-2012 (Minimum Requirements for an Individual Primary Idaho License)"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "Under Idaho Code §54-2012, an applicant for an associate broker or designated broker license must demonstrate which additional qualification beyond that required of a salesperson applicant?",
+    "choice_a": "At least five years of licensure with no activity requirement",
+    "choice_b": "At least two years as an actively licensed real estate salesperson within the preceding five years, with listing/sale activity certified by the broker(s) of record",
+    "choice_c": "Completion of a four-year real estate degree",
+    "choice_d": "Sponsorship by two currently licensed designated brokers",
+    "correct_choice": "B",
+    "explanation": "Idaho Code §54-2012 requires broker and associate broker applicants to show at least two years of active, full-time licensure as a real estate salesperson within the five years preceding application, with productivity commensurate with similarly situated licensees, certified by the broker(s) under whom the applicant worked.",
+    "weight": 3,
+    "source_note": "Idaho Code §54-2012 (broker/associate broker experience requirement)"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "As part of the Idaho real estate license application process, §54-2012 requires applicants to do which of the following?",
+    "choice_a": "Submit a personal financial statement to the Commission",
+    "choice_b": "Provide three personal references from licensed brokers",
+    "choice_c": "Submit fingerprints for a national criminal history background check",
+    "choice_d": "Post a surety bond in favor of the Commission",
+    "correct_choice": "C",
+    "explanation": "Idaho Code §54-2012 requires license applicants to submit fingerprints so the Commission can obtain a national criminal history background check; the statute also disqualifies applicants with certain recent felony or dishonesty-related misdemeanor convictions. Idaho does not require a financial statement, broker references, or a surety bond as part of the individual license application.",
+    "weight": 2,
+    "source_note": "Idaho Code §54-2012 (fingerprint/background check requirement)"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "Under Idaho Code §54-2022, what is the pre-licensing classroom-hour requirement to qualify for an Idaho real estate salesperson license, and how many additional hours are required to also qualify as an associate broker or designated broker?",
+    "choice_a": "45 hours for salesperson; 45 additional hours for broker",
+    "choice_b": "60 hours for salesperson; 60 additional hours for broker",
+    "choice_c": "90 hours for salesperson; no additional hours are required for broker",
+    "choice_d": "90 hours for salesperson; 90 additional hours for broker (180 hours total)",
+    "correct_choice": "D",
+    "explanation": "Idaho Code §54-2022 requires 90 classroom hours of prelicense education to qualify for a salesperson license. An applicant seeking an associate broker or designated broker license must complete the salesperson curriculum plus a minimum of 90 additional classroom hours of advanced real estate study, for 180 total hours. These courses generally must be completed within three years of the license application, absent a Commission-approved exception.",
+    "weight": 3,
+    "source_note": "Idaho Code §54-2022 (pre-licensing education hours)"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "Idaho Code §54-2013 requires actively licensed real estate licensees to carry which form of coverage as a condition of licensure?",
+    "choice_a": "Errors and omissions insurance covering all licensed activities, subject to a Commission-administered program with a statutory premium ceiling of $250 per year per licensee",
+    "choice_b": "General liability insurance with a $1 million minimum limit",
+    "choice_c": "Fidelity bond coverage of at least $50,000",
+    "choice_d": "Workers' compensation insurance regardless of employee count",
+    "correct_choice": "A",
+    "explanation": "Idaho Code §54-2013 conditions active licensure on carrying errors and omissions (E&O) insurance covering the licensee's real estate activities. The Commission sets specific terms, including minimum coverage limits and permissible deductibles, but the statute caps the acceptable annual premium at $250 per licensee — if the Commission cannot secure coverage at or below that premium for participating licensees, the insurance mandate becomes void for that contract period.",
+    "weight": 3,
+    "source_note": "Idaho Code §54-2013 (Errors and Omissions Insurance)"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "How does Idaho Code §54-2018 define the length of an individual's first real estate license period after initial issuance?",
+    "choice_a": "Exactly two years from the date of issuance, regardless of birth month",
+    "choice_b": "One year plus the number of months remaining until the licensee's next birthday, not to exceed a maximum of two years",
+    "choice_c": "Exactly one year from the date of issuance",
+    "choice_d": "A fixed term set annually by the Commission by rule",
+    "correct_choice": "B",
+    "explanation": "Idaho Code §54-2018 ties license expiration to the licensee's birthday: the first license period runs one year plus however many months remain until the licensee's next birthday following initial licensure, capped at a maximum of two years. This produces first license periods of varying length depending on when in the year the license is issued, after which renewals follow the licensee's birthdate on a regular annual cycle.",
+    "weight": 2,
+    "source_note": "Idaho Code §54-2018 (License Renewals — Inactive License Status — Personal Changes)"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "Under Idaho Code §54-2023, what continuing education is generally required of an Idaho real estate licensee at each renewal, and what special substitution applies to a salesperson's first active renewal?",
+    "choice_a": "6 classroom hours total, with no core course requirement for any renewal",
+    "choice_b": "24 classroom hours with no core courses required",
+    "choice_c": "Two Commission-approved core courses plus 12 classroom hours of continuing education; for a salesperson's first active-status renewal, the required post-license course substitutes for the 12-hour requirement",
+    "choice_d": "Two core courses only, with no additional classroom-hour requirement at any renewal",
+    "correct_choice": "C",
+    "explanation": "Idaho Code §54-2023 requires two Commission core courses plus 12 hours of classroom continuing education for each renewal cycle. For a salesperson's first renewal to active status, the statute substitutes completion of the required post-license course for the 12 classroom hours, while the two core courses are still required.",
+    "weight": 3,
+    "source_note": "Idaho Code §54-2023 (Continuing Education Requirements)"
+  },
+  {
+    "topic": "Licensing Requirements",
+    "question": "Under the fee ceilings set in Idaho Code §54-2020, which of the following fee caps is correctly matched to its purpose?",
+    "choice_a": "$150 maximum license renewal fee; $50 maximum late renewal fee; $25 maximum branch office license fee",
+    "choice_b": "$100 maximum license renewal fee; $25 maximum late renewal fee; $50 maximum branch office license fee",
+    "choice_c": "$200 maximum license renewal fee; $50 maximum late renewal fee; $100 maximum branch office license fee",
+    "choice_d": "$150 maximum license renewal fee; $25 maximum late renewal fee; $50 maximum branch office license fee",
+    "correct_choice": "D",
+    "explanation": "Idaho Code §54-2020 sets statutory ceilings (which the Commission may set at or below by rule) of not more than $150 for an active or inactive license renewal, not more than $25 for a late renewal, and not more than $50 for issuance or renewal of a branch office license.",
+    "weight": 2,
+    "source_note": "Idaho Code §54-2020 (Fees)"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "topic": "Duties and Powers of the Kansas Real Estate Commission",
+    "question": "How is the Kansas Real Estate Commission (KREC) composed under K.S.A. 74-4201?",
+    "choice_a": "Five members appointed by the governor, with one member appointed from each congressional district and the remainder from the state at large",
+    "choice_b": "Seven members elected by licensed brokers in a statewide vote",
+    "choice_c": "Three members appointed by the Kansas Association of REALTORS and confirmed by the Senate",
+    "choice_d": "Nine members appointed jointly by the governor and the Kansas Bar Association",
+    "correct_choice": "A",
+    "explanation": "K.S.A. 74-4201 establishes the Kansas real estate commission as a five-member body. The governor makes all appointments, with one member appointed from each of the state's congressional districts and the remaining member(s) appointed from the state at large. Each appointee must have been a Kansas citizen and resident for at least five years prior to appointment. The commission is not an elected body and is not appointed by any private trade association.",
+    "weight": 3,
+    "source_note": "K.S.A. 74-4201"
+  },
+  {
+    "topic": "Duties and Powers of the Kansas Real Estate Commission",
+    "question": "K.S.A. 74-4201 imposes which professional-background requirement on the makeup of the Kansas Real Estate Commission's five members?",
+    "choice_a": "All five members must currently hold an active broker's license and continue actively practicing while serving",
+    "choice_b": "Not less than three members must have been licensed real estate brokers for five years, and not less than one member must never have engaged in business as a real estate broker (and must not do so while serving)",
+    "choice_c": "At least two members must be licensed attorneys who have practiced real estate law for ten years",
+    "choice_d": "No member may have any prior connection to the real estate industry in any capacity",
+    "correct_choice": "B",
+    "explanation": "Under K.S.A. 74-4201, the commission must include a mix of industry experience and public representation: at least three of the five members must have been real estate brokers for five years, and at least one member must never have engaged in business as a real estate broker and must refrain from doing so while serving on the commission. This ensures both licensee expertise and a consumer/public perspective on the commission.",
+    "weight": 3,
+    "source_note": "K.S.A. 74-4201"
+  },
+  {
+    "topic": "Duties and Powers of the Kansas Real Estate Commission",
+    "question": "What is the length of a Kansas Real Estate Commission member's term under K.S.A. 74-4201, and how is a mid-term vacancy filled?",
+    "choice_a": "Two-year terms; a vacancy is filled by a vote of the remaining commission members",
+    "choice_b": "Six-year terms; a vacancy is filled by the Kansas Secretary of State",
+    "choice_c": "Four-year terms; when a vacancy occurs, the governor appoints a successor to serve the remainder of the unexpired term",
+    "choice_d": "Lifetime appointments subject to periodic reconfirmation by the legislature",
+    "correct_choice": "C",
+    "explanation": "K.S.A. 74-4201 sets commission members' terms at four years. If a vacancy arises before a term expires, the governor appoints a replacement to serve only the remainder of that unexpired term, not a full new four-year term. Before assuming duties, each member must also take and file an oath with the commission to faithfully perform the duties of the office.",
+    "weight": 2,
+    "source_note": "K.S.A. 74-4201"
+  },
+  {
+    "topic": "Duties and Powers of the Kansas Real Estate Commission",
+    "question": "Under K.S.A. 74-4202, how does the Kansas Real Estate Commission organize itself, and what constitutes a quorum for it to exercise its powers?",
+    "choice_a": "The governor designates the chairperson permanently, and unanimous consent of all five members is required for any action",
+    "choice_b": "The commission has no formal officers, and any single member may act on behalf of the full commission",
+    "choice_c": "The attorney general serves as ex officio chairperson, and a quorum requires at least four of the five members",
+    "choice_d": "The members annually elect a chairperson and vice-chairperson from among themselves, and a majority of the members constitutes a quorum for exercising the commission's powers or authority",
+    "correct_choice": "D",
+    "explanation": "K.S.A. 74-4202 provides that the commission's members elect a chairperson and vice-chairperson annually from their own ranks, and that a majority of the members constitutes a quorum for the exercise of the powers or authority conferred on the commission. The statute also requires the commission to maintain an office in Topeka and to hold its meetings and hearings in Topeka or other places it determines.",
+    "weight": 2,
+    "source_note": "K.S.A. 74-4202"
+  },
+  {
+    "topic": "Duties and Powers of the Kansas Real Estate Commission",
+    "question": "Which of the following accurately describes the Kansas Real Estate Commission's general powers and duties under K.S.A. 74-4202?",
+    "choice_a": "The commission issues broker and salesperson licenses, administers the real estate license act and related acts, investigates violations, and may enforce its orders through district court actions",
+    "choice_b": "The commission's role is purely advisory; actual licensing decisions are made exclusively by the Kansas Secretary of State",
+    "choice_c": "The commission may only investigate complaints referred to it by the attorney general and has no independent enforcement authority",
+    "choice_d": "The commission's authority is limited to collecting license renewal fees, with all disciplinary matters handled by county district attorneys",
+    "correct_choice": "A",
+    "explanation": "K.S.A. 74-4202 confirms that the commission itself issues licenses to brokers and salespersons, administers the license act and related acts applicable to licensees, investigates alleged violations, and may enforce its orders through actions in district court. This is a broad, independent grant of licensing, investigative, and enforcement authority to the commission rather than a merely advisory role.",
+    "weight": 3,
+    "source_note": "K.S.A. 74-4202"
+  },
+  {
+    "topic": "Duties and Powers of the Kansas Real Estate Commission",
+    "question": "Under K.S.A. 58-3062, what happens if a licensee fails to respond in a timely manner to a commission request for documents or information concerning a real estate transaction or the licensee's real estate business?",
+    "choice_a": "Nothing, because such requests are purely voluntary and unenforceable under the act",
+    "choice_b": "The failure to respond timely (or a refusal to appear or testify under oath) is itself a prohibited act/violation of the license act",
+    "choice_c": "The licensee must be immediately criminally prosecuted before any administrative action can be taken",
+    "choice_d": "The commission must obtain a search warrant before any records may ever be requested from a licensee",
+    "correct_choice": "B",
+    "explanation": "K.S.A. 58-3062 grants the commission authority to request documents or information that concerns, directly or indirectly, any real estate transaction or the licensee's real estate business. A licensee who fails to respond in a timely manner, or who refuses to appear or testify under oath, has violated the statute in and of itself -- giving the commission a self-executing investigative tool separate from criminal process or a warrant requirement.",
+    "weight": 4,
+    "source_note": "K.S.A. 58-3062"
+  },
+  {
+    "topic": "Duties and Powers of the Kansas Real Estate Commission",
+    "question": "Under K.S.A. 58-3064, how may the Kansas Real Estate Commission seek to stop an ongoing violation of the real estate license act or the commission's rules?",
+    "choice_a": "By publishing the violator's name in a newspaper of general circulation as its sole remedy",
+    "choice_b": "By referring the matter exclusively to the Kansas Attorney General, who has sole authority to seek injunctive relief",
+    "choice_c": "By instituting an action for an injunction in the district court of the county where the person resides or where the violation occurred, and the commission is exempt from posting bond or paying filing fees for such an action",
+    "choice_d": "By suspending the license of every broker in the same brokerage firm, regardless of individual involvement",
+    "correct_choice": "C",
+    "explanation": "K.S.A. 58-3064 authorizes the commission to bring an action in the district court of the county in which the person resides, or in the county where the violation occurred, seeking an injunction to enforce compliance with the act or its regulations. The commission is exempt from having to post a bond or pay filing fees in connection with such an action, and the court may also enter orders necessary to conserve, protect, and disburse any funds involved.",
+    "weight": 3,
+    "source_note": "K.S.A. 58-3064"
+  },
+  {
+    "topic": "Duties and Powers of the Kansas Real Estate Commission",
+    "question": "Under K.S.A. 58-3065, what is true regarding criminal penalties for a willful violation of the real estate license act, and the commission's discretion regarding minor violations?",
+    "choice_a": "A willful violation constitutes a felony carrying a mandatory five-year prison sentence with no discretion for lesser violations",
+    "choice_b": "Only repeat offenders face any criminal penalty; a first willful violation carries no possible penalty of any kind",
+    "choice_c": "Criminal penalties may be imposed only by the commission itself, without any involvement of the district or county courts",
+    "choice_d": "A willful violation is a misdemeanor punishable by up to 12 months' imprisonment and/or a fine (escalating to a $1,000-$10,000 fine range for repeat offenses), and the commission or director is not required to refer minor violations for criminal prosecution when administrative remedies adequately protect the public",
+    "correct_choice": "D",
+    "explanation": "K.S.A. 58-3065(a) makes a willful violation of the license act (or the brokerage relationships in real estate transactions act) a misdemeanor, with imprisonment of not more than 12 months or a fine of not less than $100 or more than $1,000 (or both) for a first offense, and enhanced fines of $1,000 to $10,000 for subsequent offenses. Subsection (b) makes clear the commission or director need not refer minor violations for criminal prosecution where administrative remedies are sufficient to protect the public welfare, and subsection (c) separately allows cease and desist orders against unlicensed practice under the Kansas administrative procedure act.",
+    "weight": 3,
+    "source_note": "K.S.A. 58-3065"
+  },
+  {
+    "topic": "Duties and Powers of the Kansas Real Estate Commission",
+    "question": "A claimant obtains a qualifying final judgment against a Kansas broker and seeks payment from the Real Estate Recovery Revolving Fund. Under K.S.A. 58-3069, how is that claimant's individual recovery amount determined?",
+    "choice_a": "The court may order payment of the lesser of (i) the claimant's actual or compensatory damages plus reasonable attorney fees incurred in effecting the recovery, or (ii) $15,000",
+    "choice_b": "The claimant automatically receives a flat $50,000 regardless of the amount of the underlying judgment",
+    "choice_c": "The claimant receives the full judgment amount plus punitive damages, with no statutory ceiling",
+    "choice_d": "The claimant must accept whatever amount the licensee's insurance carrier voluntarily offers, since the fund cannot be used once insurance exists",
+    "correct_choice": "A",
+    "explanation": "K.S.A. 58-3069 caps an individual claimant's recovery from the real estate recovery revolving fund at the lesser of the claimant's actual or compensatory damages (plus reasonable attorney fees incurred in effecting the recovery) or $15,000. This per-claimant cap is distinct from the separate aggregate limits found in K.S.A. 58-3067 (a $15,000 aggregate cap per transaction regardless of the number of claimants, and $30,000/$50,000 annual/absolute caps per licensee). The court must also give the commission director 10 to 30 days' notice before the recovery hearing.",
+    "weight": 5,
+    "source_note": "K.S.A. 58-3069"
+  },
+  {
+    "topic": "Duties and Powers of the Kansas Real Estate Commission",
+    "question": "Under K.S.A. 58-3068, what may happen to money in the Real Estate Recovery Revolving Fund once the fund's balance exceeds $250,000?",
+    "choice_a": "The excess must be immediately refunded on a pro-rata basis to every currently licensed broker and salesperson in Kansas",
+    "choice_b": "The excess may be redirected to consumer-focused purposes, such as producing and distributing an agency newsletter, monitoring education courses, expanding consumer materials, and funding education grants to schools for money-management and homeownership course materials",
+    "choice_c": "The excess must be transferred permanently to the state's general fund and is no longer available to the real estate commission for any purpose",
+    "choice_d": "The excess must be forfeited to the federal Department of Housing and Urban Development under a reciprocal funding agreement",
+    "correct_choice": "B",
+    "explanation": "K.S.A. 58-3068 allows the commission, once the recovery fund's balance exceeds $250,000, to redirect the excess toward consumer-oriented purposes -- including producing and distributing an agency newsletter, monitoring education courses, expanding the materials available to consumers, and awarding education grants to high schools and universities for course materials on money management and home ownership. The excess is not refunded to licensees, sent to the general fund, or forfeited to a federal agency.",
+    "weight": 4,
+    "source_note": "K.S.A. 58-3068"
+  }
+]
