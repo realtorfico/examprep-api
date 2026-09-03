@@ -22,6 +22,10 @@ export const ALL_RESOURCE_FILES = {
     'California_Notary_Rules.mp4', 'Why_California_Notaries_Demand_Your_Thumbprint.m4a',
     'CA_Powers_of_Attorney.mp4',
   ],
+  ca_re_salesperson: [
+    'What_Happens_When_a_CA_Broker_Gets_Sued.m4a', 'The_Money_That_Was_Never_Yours.m4a',
+    'Whose_Side_Are_You_Actually_On.m4a',
+  ],
 };
 
 // True only if every requested file is in the given track's own catalog -- deliberately all-or-
