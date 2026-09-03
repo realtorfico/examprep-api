@@ -256,6 +256,32 @@ export async function sendPointsEarnedEmail(env, to, points, reason) {
 // index.js's handleExamSubmit for the "first passing attempt" dedup logic) -- a genuine positive-
 // outcome moment, same trigger the in-app "You passed!" screen's own feedback prompt uses, just
 // reaching them by email too since not everyone notices an on-page link.
+// Sent once, on a user's first NEAR-MISS mock exam attempt for a given track (see the caller in
+// index.js's handleExamSubmit for the "close but not passing, and not already flagged before"
+// dedup logic) -- a different lifecycle moment from sendExamPassedEmail above: this is meant to
+// re-engage someone who came close, not congratulate a pass. weakTopics is real per-topic
+// accuracy data (see PROGRESS_BY_TOPIC_SQL) for the 1-3 topics they're weakest on, with enough
+// attempts to be a real signal -- never a guessed or generic "focus on X" placeholder.
+export async function sendMissedItByOneEmail(env, to, examType, percent, passPercent, weakTopics) {
+  const topicListHtml = weakTopics.length
+    ? `<ul style="margin:0 0 16px;padding-left:20px;">${weakTopics.map((t) =>
+        `<li style="margin-bottom:4px;"><strong>${t.topic}</strong> — ${t.accuracyPct}% correct so far</li>`).join('')}</ul>`
+    : '';
+  await sendEmail(env, {
+    to,
+    subject: `So close! Here's what to review for your ${examType} exam`,
+    html: emailShell({
+      badge: '📊',
+      title: 'You were close!',
+      bodyHtml: `<p>You scored <strong>${percent}%</strong> on a <strong>${examType}</strong> practice exam — the passing score is ${passPercent}%, so you're not far off at all.</p>
+        ${weakTopics.length ? `<p>Based on your real practice history, these are the topics worth another look before your next attempt:</p>${topicListHtml}` : ''}
+        <p>A focused review of just those topics could be the difference next time.</p>`,
+      ctaText: 'Keep practicing →',
+      ctaUrl: SITE_URL,
+    }),
+  });
+}
+
 export async function sendExamPassedEmail(env, to, examType) {
   await sendEmail(env, {
     to,

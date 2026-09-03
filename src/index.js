@@ -1,7 +1,7 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
-import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail, sendMissedItByOneEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL, ALL_USERS_PROGRESS_TOTALS_SQL } from './progressQueries.js';
 import { filesOwnedByTrack } from './resourceOwnership.js';
@@ -2894,6 +2894,13 @@ async function handleExamDiscard(user, request, env) {
   return json({ ok: true });
 }
 
+// "Missed it by one" retention email thresholds (marketing round 3, item #2) -- a near-miss is
+// scoring within this many percentage points BELOW the real passing threshold; a topic only gets
+// called out as "weak" once the user has genuinely attempted it enough times for that to mean
+// something, not off a single unlucky guess.
+const MISSED_IT_GAP_PERCENT = 5;
+const MISSED_IT_MIN_TOPIC_ATTEMPTS = 3;
+
 async function handleExamSubmit(user, request, env) {
   const { attemptId } = await request.json();
   const attempt = await env.DB.prepare('SELECT * FROM exam_attempts WHERE id = ? AND user_id = ?').bind(attemptId, user.id).first();
@@ -2944,6 +2951,37 @@ async function handleExamSubmit(user, request, env) {
     });
     if (!alreadyPassedBefore) {
       try { await sendExamPassedEmail(env, codeRow.buyer_email, attempt.exam_type); } catch (e) { /* best-effort */ }
+    }
+  }
+
+  // "Missed it by one" retention email -- sent once, on the FIRST attempt where a user falls
+  // within MISSED_IT_GAP_PERCENT points of passing without actually passing. A different lifecycle
+  // moment from the pass email above: re-engagement for a near-miss, not congratulations. Dedup
+  // mirrors the pass-email's own "not already happened before" check, just scoped to "already
+  // passed OR already near-missed" so this never re-fires on every subsequent close attempt.
+  if (!result.passed && codeRow && codeRow.buyer_email) {
+    const registry = await getTrackRegistry(env);
+    const threshold = attempt.pass_percent != null ? attempt.pass_percent : getExamConfigFromRegistry(registry, attempt.exam_type).passPercent;
+    if (result.percent >= threshold - MISSED_IT_GAP_PERCENT) {
+      const priorAttempts = (await env.DB.prepare(
+        'SELECT score_correct, score_total, pass_percent FROM exam_attempts WHERE user_id = ? AND exam_type = ? AND submitted_at IS NOT NULL AND id != ?'
+      ).bind(user.id, attempt.exam_type, attemptId).all()).results;
+      const alreadyFlaggedOrPassed = priorAttempts.some((row) => {
+        const t = row.pass_percent != null ? row.pass_percent : getExamConfigFromRegistry(registry, attempt.exam_type).passPercent;
+        const pct = row.score_total ? Math.round((row.score_correct / row.score_total) * 1000) / 10 : 0;
+        return pct >= t - MISSED_IT_GAP_PERCENT;
+      });
+      if (!alreadyFlaggedOrPassed) {
+        try {
+          const byTopic = (await env.DB.prepare(PROGRESS_BY_TOPIC_SQL).bind(user.id, attempt.exam_type).all()).results;
+          const weakTopics = byTopic
+            .filter((t) => t.total >= MISSED_IT_MIN_TOPIC_ATTEMPTS)
+            .map((t) => ({ topic: t.topic, accuracyPct: Math.round((t.correct / t.total) * 100) }))
+            .sort((a, b) => a.accuracyPct - b.accuracyPct)
+            .slice(0, 3);
+          await sendMissedItByOneEmail(env, codeRow.buyer_email, attempt.exam_type, result.percent, threshold, weakTopics);
+        } catch (e) { /* best-effort */ }
+      }
     }
   }
 
