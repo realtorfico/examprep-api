@@ -595,6 +595,9 @@ const FREE_RESOURCES = {
   fl_re_salesperson: [
     'The_Three_Day_Clock.m4a',
   ],
+  fl_re_broker: [
+    'The_Day_You_Stop_Being_Just_an_Agent.m4a',
+  ],
 };
 
 async function handleResourcesFree(request, env) {

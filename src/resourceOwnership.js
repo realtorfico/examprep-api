@@ -30,6 +30,10 @@ export const ALL_RESOURCE_FILES = {
     'The_Three_Day_Clock.m4a', 'Who_Do_You_Actually_Work_For.m4a',
     'The_License_You_Can_Lose_in_an_Afternoon.m4a',
   ],
+  fl_re_broker: [
+    'The_Day_You_Stop_Being_Just_an_Agent.m4a', 'Whose_Money_Is_It_Really.m4a',
+    'The_Price_of_Being_Wrong.m4a',
+  ],
 };
 
 // True only if every requested file is in the given track's own catalog -- deliberately all-or-
