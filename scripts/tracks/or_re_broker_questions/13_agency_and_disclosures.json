@@ -2,11 +2,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Under Oregon law, a real estate licensee who is retained under a listing agreement with a seller acts as:",
-    "choice_a": "The seller's agent only",
-    "choice_b": "A disclosed limited agent for both parties automatically",
-    "choice_c": "A subagent of the buyer",
-    "choice_d": "A customer's representative with no fiduciary duties",
-    "correct_choice": "A",
+    "choice_a": "A disclosed limited agent for both parties automatically",
+    "choice_b": "A subagent of the buyer",
+    "choice_c": "A customer's representative with no fiduciary duties",
+    "choice_d": "The seller's agent only",
+    "correct_choice": "D",
     "explanation": "ORS 696.805(1) provides that a real estate licensee who acts under a listing agreement with a seller acts as the seller's agent only.",
     "weight": 3,
     "source_note": "ORS 696.805(1)"
@@ -26,11 +26,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Which of the following is a duty an Oregon seller's agent owes specifically to the seller (beyond duties owed to all parties)?",
-    "choice_a": "Maintaining confidentiality of the seller's information even after the agency relationship terminates",
-    "choice_b": "Investigating matters that are beyond the licensee's real estate expertise",
+    "choice_a": "Investigating matters that are beyond the licensee's real estate expertise",
+    "choice_b": "Maintaining confidentiality of the seller's information even after the agency relationship terminates",
     "choice_c": "Disclosing the seller's confidential information to the buyer's agent",
     "choice_d": "Waiving the duty of loyalty whenever the seller requests it",
-    "correct_choice": "A",
+    "correct_choice": "B",
     "explanation": "ORS 696.805(3) requires a seller's agent to exercise reasonable care and diligence, timely account for money and property, remain loyal, disclose conflicts of interest, recommend expert consultation where appropriate, make continuous good-faith efforts to find a buyer, and maintain the seller's confidentiality even after the agency ends.",
     "weight": 4,
     "source_note": "ORS 696.805(3)"
@@ -38,12 +38,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Under ORS 696.805(5), which single affirmative duty of a seller's agent may the seller agree in writing to waive?",
-    "choice_a": "The duty to continue making good-faith efforts to obtain additional offers once the property is already under contract",
-    "choice_b": "The duty to deal honestly and in good faith",
-    "choice_c": "The duty to account for money and property in a timely manner",
-    "choice_d": "The duty to disclose known material facts"
-    ,
-    "correct_choice": "A",
+    "choice_a": "The duty to deal honestly and in good faith",
+    "choice_b": "The duty to account for money and property in a timely manner",
+    "choice_c": "The duty to continue making good-faith efforts to obtain additional offers once the property is already under contract",
+    "choice_d": "The duty to disclose known material facts",
+    "correct_choice": "C",
     "explanation": "Most affirmative duties owed by a seller's agent cannot be waived. ORS 696.805(5) creates a narrow exception allowing the seller to waive only the duty to continue seeking additional offers while the property is under contract.",
     "weight": 3,
     "source_note": "ORS 696.805(5)"
@@ -51,12 +50,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Under ORS 696.805(6), an Oregon seller's agent has a duty to investigate matters that fall outside the agent's real estate expertise (such as structural or environmental issues) only if:",
-    "choice_a": "The agent has agreed in writing to conduct such an investigation",
-    "choice_b": "The seller makes a verbal request for the investigation",
-    "choice_c": "Oregon law requires such an investigation in every transaction",
-    "choice_d": "The buyer's agent formally requests it"
-    ,
-    "correct_choice": "A",
+    "choice_a": "The seller makes a verbal request for the investigation",
+    "choice_b": "Oregon law requires such an investigation in every transaction",
+    "choice_c": "The buyer's agent formally requests it",
+    "choice_d": "The agent has agreed in writing to conduct such an investigation",
+    "correct_choice": "D",
     "explanation": "ORS 696.805(6) clarifies that a seller's agent has no duty to investigate matters outside the agent's real estate expertise unless the agent has agreed in writing to do so.",
     "weight": 3,
     "source_note": "ORS 696.805(6)"
@@ -67,8 +65,7 @@
     "choice_a": "The licensee's compensation is paid by the seller",
     "choice_b": "The buyer refuses to sign any buyer service agreement",
     "choice_c": "The seller has no listing agreement in place",
-    "choice_d": "The property is owned by a financial institution"
-    ,
+    "choice_d": "The property is owned by a financial institution",
     "correct_choice": "A",
     "explanation": "ORS 696.810(1) allows a licensee to represent only the buyer even though the licensee receives compensation from the seller; ORS 696.840 confirms that the source of compensation does not by itself determine the agency relationship.",
     "weight": 4,
@@ -77,12 +74,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Which of the following is a duty an Oregon buyer's agent owes specifically to the buyer under ORS 696.810(3)?",
-    "choice_a": "Making continuous good-faith efforts to locate property meeting the buyer's requirements",
-    "choice_b": "Disclosing the buyer's maximum acceptable price to the seller",
+    "choice_a": "Disclosing the buyer's maximum acceptable price to the seller",
+    "choice_b": "Making continuous good-faith efforts to locate property meeting the buyer's requirements",
     "choice_c": "Refusing to show any other properties to competing buyers",
-    "choice_d": "Waiving confidentiality once an offer has been accepted"
-    ,
-    "correct_choice": "A",
+    "choice_d": "Waiving confidentiality once an offer has been accepted",
+    "correct_choice": "B",
     "explanation": "ORS 696.810(3) requires a buyer's agent to exercise reasonable care and diligence, promptly account for funds, avoid actions adverse to the buyer, promptly disclose conflicts of interest, keep the buyer's information confidential even after the relationship ends, and make continuous good-faith efforts to locate suitable property.",
     "weight": 4,
     "source_note": "ORS 696.810(3)"
@@ -90,12 +86,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Under Oregon agency law, does a licensee representing one buyer breach any duty by also showing properties to, or entering agency relationships with, other prospective buyers?",
-    "choice_a": "No, an agent representing one buyer may still work with and show properties to other prospective buyers",
-    "choice_b": "Yes, this is always a breach of the duty of loyalty",
-    "choice_c": "Yes, unless the other buyer pays a reduced commission",
-    "choice_d": "No, but only if the other buyer is a relative of the agent"
-    ,
-    "correct_choice": "A",
+    "choice_a": "Yes, this is always a breach of the duty of loyalty",
+    "choice_b": "Yes, unless the other buyer pays a reduced commission",
+    "choice_c": "No, an agent representing one buyer may still work with and show properties to other prospective buyers",
+    "choice_d": "No, but only if the other buyer is a relative of the agent",
+    "correct_choice": "C",
     "explanation": "ORS 696.810 confirms that a buyer's agent may show property to, and enter into agency relationships with, other prospective buyers without breaching the duties owed to any single buyer client.",
     "weight": 2,
     "source_note": "ORS 696.810"
@@ -103,12 +98,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Before an Oregon real estate licensee may represent both the seller and the buyer in the same transaction, what must occur?",
-    "choice_a": "The parties must enter into a disclosed limited agency agreement, with full disclosure of the relationship",
-    "choice_b": "The Oregon Real Estate Agency must pre-approve the specific transaction",
-    "choice_c": "The licensee must reduce the total commission by half",
-    "choice_d": "Only the principal broker's supervisor needs to be told verbally"
-    ,
-    "correct_choice": "A",
+    "choice_a": "The Oregon Real Estate Agency must pre-approve the specific transaction",
+    "choice_b": "The licensee must reduce the total commission by half",
+    "choice_c": "Only the principal broker's supervisor needs to be told verbally",
+    "choice_d": "The parties must enter into a disclosed limited agency agreement, with full disclosure of the relationship",
+    "correct_choice": "D",
     "explanation": "ORS 696.815(1) permits a licensee to represent both the seller and the buyer only under a disclosed limited agency agreement, with full disclosure of the relationship under that agreement. Oregon's statutory term for this arrangement is \"disclosed limited agency,\" not \"dual agency.\"",
     "weight": 5,
     "source_note": "ORS 696.815(1)"
@@ -119,8 +113,7 @@
     "choice_a": "Both the seller's agent duties under ORS 696.805 and the buyer's agent duties under ORS 696.810, as modified by specific confidentiality obligations",
     "choice_b": "Only the seller's agent duties, since the seller typically pays the commission",
     "choice_c": "No specific statutory duties, since disclosed limited agency waives them",
-    "choice_d": "Only a duty to close the transaction as quickly as possible"
-    ,
+    "choice_d": "Only a duty to close the transaction as quickly as possible",
     "correct_choice": "A",
     "explanation": "ORS 696.815(2) requires a disclosed limited agent to carry out the duties of both a seller's agent and a buyer's agent, modified by the specific confidentiality obligations owed to each party.",
     "weight": 4,
@@ -129,12 +122,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "In an Oregon disclosed limited agency, may the licensee tell the buyer that the seller will actually accept less than the listed price?",
-    "choice_a": "No, not without the seller's express written permission",
-    "choice_b": "Yes, at any time, because the licensee represents both parties equally",
+    "choice_a": "Yes, at any time, because the licensee represents both parties equally",
+    "choice_b": "No, not without the seller's express written permission",
     "choice_c": "Yes, but only if communicated verbally",
-    "choice_d": "No, this information can never be disclosed under any circumstance, even with consent"
-    ,
-    "correct_choice": "A",
+    "choice_d": "No, this information can never be disclosed under any circumstance, even with consent",
+    "correct_choice": "B",
     "explanation": "ORS 696.815(2)(c) prohibits a disclosed limited agent from disclosing to the buyer, without the seller's express written permission, that the seller will accept a price or terms less favorable than those in the listing (and likewise bars disclosing to the seller that the buyer will pay more, absent the buyer's express written permission).",
     "weight": 5,
     "source_note": "ORS 696.815(2)(c)"
@@ -142,12 +134,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "A seller is represented by one associated broker and a buyer is represented by a different associated broker, both affiliated with the same principal broker, in the same transaction. Under Oregon law, who is treated as the disclosed limited agent?",
-    "choice_a": "Only the principal broker",
-    "choice_b": "Both associated brokers individually",
-    "choice_c": "Neither broker is considered a disclosed limited agent",
-    "choice_d": "Whichever associated broker has the longer tenure with the firm"
-    ,
-    "correct_choice": "A",
+    "choice_a": "Both associated brokers individually",
+    "choice_b": "Neither broker is considered a disclosed limited agent",
+    "choice_c": "Only the principal broker",
+    "choice_d": "Whichever associated broker has the longer tenure with the firm",
+    "correct_choice": "C",
     "explanation": "ORS 696.815(4) provides that when different licensees affiliated with the same principal broker separately represent the seller and the buyer, only the principal broker is deemed to act as the disclosed limited agent.",
     "weight": 5,
     "source_note": "ORS 696.815(4)"
@@ -155,12 +146,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Under ORS 696.815(5), when a conflict of interest arises during a disclosed limited agency, the principal broker and licensees involved must:",
-    "choice_a": "Disclose the conflict in writing and refrain from taking action adverse to either party's interest",
-    "choice_b": "Immediately terminate the transaction",
-    "choice_c": "Notify only whichever party is more likely to be affected",
-    "choice_d": "Resolve the conflict internally without informing either party"
-    ,
-    "correct_choice": "A",
+    "choice_a": "Immediately terminate the transaction",
+    "choice_b": "Notify only whichever party is more likely to be affected",
+    "choice_c": "Resolve the conflict internally without informing either party",
+    "choice_d": "Disclose the conflict in writing and refrain from taking action adverse to either party's interest",
+    "correct_choice": "D",
     "explanation": "ORS 696.815(5) requires principal brokers and licensees engaged in disclosed limited agency to disclose conflicts of interest in writing and to avoid taking action adverse to either party's interest.",
     "weight": 4,
     "source_note": "ORS 696.815(5)"
@@ -171,8 +161,7 @@
     "choice_a": "No; the payment of, or obligation to pay, compensation is not necessarily determinative of a particular agency relationship",
     "choice_b": "Yes, the source of compensation always controls who is represented",
     "choice_c": "Yes, unless the buyer formally objects in writing",
-    "choice_d": "No, but only in transactions under a statutory dollar threshold"
-    ,
+    "choice_d": "No, but only in transactions under a statutory dollar threshold",
     "correct_choice": "A",
     "explanation": "ORS 696.840 states that payment of compensation, or the obligation to pay compensation, to a real estate licensee by the seller or the buyer is not necessarily determinative of a particular agency relationship.",
     "weight": 3,
@@ -181,12 +170,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Who prescribes the format and content of Oregon's initial agency disclosure pamphlet, and when must a licensee provide a copy of it?",
-    "choice_a": "The Real Estate Commissioner prescribes it by rule, and the agent must provide it at first contact with each party to a real property transaction",
-    "choice_b": "Each principal broker designs a custom pamphlet, delivered only at closing",
+    "choice_a": "Each principal broker designs a custom pamphlet, delivered only at closing",
+    "choice_b": "The Real Estate Commissioner prescribes it by rule, and the agent must provide it at first contact with each party to a real property transaction",
     "choice_c": "The buyer's attorney provides it before any property showing",
-    "choice_d": "It is optional, provided only if a party specifically requests it"
-    ,
-    "correct_choice": "A",
+    "choice_d": "It is optional, provided only if a party specifically requests it",
+    "correct_choice": "B",
     "explanation": "ORS 696.820 provides that the Real Estate Commissioner shall prescribe by rule the format and content of the initial agency disclosure pamphlet, and requires an agent to provide a copy of it at first contact with each party to a real property transaction.",
     "weight": 4,
     "source_note": "ORS 696.820"
@@ -194,12 +182,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Under ORS 696.845, when an Oregon buyer submits a written offer to purchase real property, the buyer must:",
-    "choice_a": "Acknowledge the existing agency relationships, if any, as part of the offer",
-    "choice_b": "Independently verify the seller's identity",
-    "choice_c": "Waive all agency disclosures as a condition of making the offer",
-    "choice_d": "Pay a disclosure fee to the Oregon Real Estate Agency"
-    ,
-    "correct_choice": "A",
+    "choice_a": "Independently verify the seller's identity",
+    "choice_b": "Waive all agency disclosures as a condition of making the offer",
+    "choice_c": "Acknowledge the existing agency relationships, if any, as part of the offer",
+    "choice_d": "Pay a disclosure fee to the Oregon Real Estate Agency",
+    "correct_choice": "C",
     "explanation": "ORS 696.845 requires each buyer, when signing an offer to purchase, to acknowledge the existing agency relationships, if any.",
     "weight": 3,
     "source_note": "ORS 696.845"
@@ -207,12 +194,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Under ORS 696.845, when must an Oregon seller acknowledge the existing agency relationships in a transaction?",
-    "choice_a": "When the seller accepts or rejects an offer to purchase in writing",
-    "choice_b": "Only at the closing appointment",
-    "choice_c": "Only if the buyer's agent specifically requests it",
-    "choice_d": "Sellers are never required to acknowledge agency relationships"
-    ,
-    "correct_choice": "A",
+    "choice_a": "Only at the closing appointment",
+    "choice_b": "Only if the buyer's agent specifically requests it",
+    "choice_c": "Sellers are never required to acknowledge agency relationships",
+    "choice_d": "When the seller accepts or rejects an offer to purchase in writing",
+    "correct_choice": "D",
     "explanation": "ORS 696.845 requires each seller, when accepting or rejecting an offer to purchase in writing, to acknowledge the existing agency relationships, if any.",
     "weight": 3,
     "source_note": "ORS 696.845"
@@ -223,8 +209,7 @@
     "choice_a": "An agent to the transaction must obtain the buyers' and sellers' signatures, incorporating the acknowledgment into or attaching it as an addendum to the offer or acceptance",
     "choice_b": "It may be documented verbally and simply noted in the agent's file",
     "choice_c": "It is required only in transactions involving new construction",
-    "choice_d": "It must be filed separately with the county recorder's office"
-    ,
+    "choice_d": "It must be filed separately with the county recorder's office",
     "correct_choice": "A",
     "explanation": "ORS 696.845 requires an agent to the real estate transaction to obtain the signatures of the buyers and sellers on the acknowledgment, which must be incorporated into or attached as an addendum to the offer to purchase or the acceptance; the Oregon Real Estate Agency prescribes the form and content of the acknowledgment by rule.",
     "weight": 3,
@@ -233,12 +218,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Under ORS 696.800, Oregon's definition of \"confidential information\" in an agency relationship generally excludes:",
-    "choice_a": "Information the client has authorized the licensee to disclose, or information necessary to prevent a fraudulent act",
-    "choice_b": "Any information relating to the transaction's financing terms",
+    "choice_a": "Any information relating to the transaction's financing terms",
+    "choice_b": "Information the client has authorized the licensee to disclose, or information necessary to prevent a fraudulent act",
     "choice_c": "The identity of the licensee's principal broker",
-    "choice_d": "The property's listed asking price"
-    ,
-    "correct_choice": "A",
+    "choice_d": "The property's listed asking price",
+    "correct_choice": "B",
     "explanation": "ORS 696.800 defines \"confidential information\" to cover communications about matters such as price and financial terms, but the definition excludes information the client has authorized for disclosure or information necessary to prevent a fraudulent act.",
     "weight": 3,
     "source_note": "ORS 696.800"
@@ -246,12 +230,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Under Oregon's statutory definition of \"agent\" in ORS 696.800, which licensees are included?",
-    "choice_a": "Principal brokers who have entered into a listing agreement or buyer service agreement, and associated brokers acting under a principal broker's supervision",
-    "choice_b": "Only principal brokers, never associated brokers",
-    "choice_c": "Only licensees who hold a separate property management certification",
-    "choice_d": "Any unlicensed assistant working in a real estate office"
-    ,
-    "correct_choice": "A",
+    "choice_a": "Only principal brokers, never associated brokers",
+    "choice_b": "Only licensees who hold a separate property management certification",
+    "choice_c": "Principal brokers who have entered into a listing agreement or buyer service agreement, and associated brokers acting under a principal broker's supervision",
+    "choice_d": "Any unlicensed assistant working in a real estate office",
+    "correct_choice": "C",
     "explanation": "ORS 696.800 defines \"agent\" to include principal brokers who have entered into a listing agreement or buyer service contract, as well as associated brokers who act under the supervision of a principal broker.",
     "weight": 3,
     "source_note": "ORS 696.800"
@@ -259,12 +242,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Under Oregon's Seller's Property Disclosure Statement law, a seller of residential property must deliver the statutory disclosure form to:",
-    "choice_a": "Each buyer who makes a written offer to purchase the property",
-    "choice_b": "Only buyers who specifically request the disclosure in writing",
-    "choice_c": "The buyer's lender, rather than the buyer",
-    "choice_d": "The county assessor's office"
-    ,
-    "correct_choice": "A",
+    "choice_a": "Only buyers who specifically request the disclosure in writing",
+    "choice_b": "The buyer's lender, rather than the buyer",
+    "choice_c": "The county assessor's office",
+    "choice_d": "Each buyer who makes a written offer to purchase the property",
+    "correct_choice": "D",
     "explanation": "ORS 105.465 requires a seller to deliver a disclosure statement, in substantially the statutory form, to each buyer who submits a written offer to purchase the property.",
     "weight": 4,
     "source_note": "ORS 105.465"
@@ -275,8 +257,7 @@
     "choice_a": "Five business days from the seller's delivery of the statement",
     "choice_b": "Thirty calendar days from closing",
     "choice_c": "Ten business days from mutual acceptance of the contract",
-    "choice_d": "There is no revocation right once an offer has been signed"
-    ,
+    "choice_d": "There is no revocation right once an offer has been signed",
     "correct_choice": "A",
     "explanation": "ORS 105.465 gives a buyer five business days from the seller's delivery of the disclosure statement to revoke a written offer by delivering a written statement disapproving of the disclosure, unless that right has been waived.",
     "weight": 4,
@@ -285,12 +266,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "Can an Oregon buyer waive the right to revoke an offer that is otherwise triggered by the Seller's Property Disclosure Statement?",
-    "choice_a": "Yes, if the buyer delivers a written statement waiving the right to revoke before receiving the disclosure statement",
-    "choice_b": "No, this right can never be waived under any circumstance",
+    "choice_a": "No, this right can never be waived under any circumstance",
+    "choice_b": "Yes, if the buyer delivers a written statement waiving the right to revoke before receiving the disclosure statement",
     "choice_c": "Yes, but only after closing has occurred",
-    "choice_d": "Yes, if the seller's agent verbally agrees to accept the waiver"
-    ,
-    "correct_choice": "A",
+    "choice_d": "Yes, if the seller's agent verbally agrees to accept the waiver",
+    "correct_choice": "B",
     "explanation": "ORS 105.475(1) allows a buyer to waive the right of revocation by delivering to the seller a written statement waiving that right before the buyer receives the disclosure statement, in which case the standard revocation period does not apply.",
     "weight": 4,
     "source_note": "ORS 105.475(1)"
@@ -298,12 +278,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "If an Oregon seller fails or refuses to provide a required Seller's Property Disclosure Statement, what happens to the buyer's right of revocation?",
-    "choice_a": "It continues until the transaction closes",
-    "choice_b": "It expires immediately because no disclosure statement exists to revoke against",
-    "choice_c": "It is automatically forfeited five business days after the offer is signed, regardless of delivery",
-    "choice_d": "It transfers from the buyer to the buyer's lender"
-    ,
-    "correct_choice": "A",
+    "choice_a": "It expires immediately because no disclosure statement exists to revoke against",
+    "choice_b": "It is automatically forfeited five business days after the offer is signed, regardless of delivery",
+    "choice_c": "It continues until the transaction closes",
+    "choice_d": "It transfers from the buyer to the buyer's lender",
+    "correct_choice": "C",
     "explanation": "ORS 105.475(4) provides that if the seller fails or refuses to provide the required disclosure statement, the buyer's right of revocation continues until that right is terminated at closing.",
     "weight": 4,
     "source_note": "ORS 105.475(4)"
@@ -311,12 +290,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "When an Oregon buyer properly revokes an offer under the Seller's Property Disclosure Statement law, the buyer is entitled to:",
-    "choice_a": "Immediate return of all deposits and other consideration delivered to any party or to an escrow agent",
-    "choice_b": "A penalty payment from the seller equal to the earnest money deposit",
-    "choice_c": "Only a partial refund of the earnest money deposit",
-    "choice_d": "Nothing, because a valid revocation forfeits all deposits"
-    ,
-    "correct_choice": "A",
+    "choice_a": "A penalty payment from the seller equal to the earnest money deposit",
+    "choice_b": "Only a partial refund of the earnest money deposit",
+    "choice_c": "Nothing, because a valid revocation forfeits all deposits",
+    "choice_d": "Immediate return of all deposits and other consideration delivered to any party or to an escrow agent",
+    "correct_choice": "D",
     "explanation": "ORS 105.475(5) entitles a buyer who properly revokes an offer to the immediate return of all deposits and other consideration delivered to any party or to an escrow agent.",
     "weight": 3,
     "source_note": "ORS 105.475(5)"
@@ -327,8 +305,7 @@
     "choice_a": "A sale by a financial institution that acquired the property through foreclosure or a trustee's sale",
     "choice_b": "A standard resale of an owner-occupied single-family home",
     "choice_c": "A sale between two unrelated private parties using a real estate licensee",
-    "choice_d": "A short sale in which the lender approves a reduced payoff amount"
-    ,
+    "choice_d": "A short sale in which the lender approves a reduced payoff amount",
     "correct_choice": "A",
     "explanation": "ORS 105.470 exempts certain transfers from full disclosure, limiting the seller to the Title section only — including sales by financial institutions that acquired the property through foreclosure or trustee's sale, first sales of never-occupied dwellings, sales by court-appointed receivers or guardians, and transfers by governmental agencies.",
     "weight": 4,
@@ -337,12 +314,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "On Oregon's statutory Seller's Property Disclosure Statement form, the seismic/foundation-bolting disclosure question is specifically directed at:",
-    "choice_a": "Homes built before 1974",
-    "choice_b": "All homes, regardless of construction date",
+    "choice_a": "All homes, regardless of construction date",
+    "choice_b": "Homes built before 1974",
     "choice_c": "Only manufactured homes",
-    "choice_d": "Homes located outside the Willamette Valley"
-    ,
-    "correct_choice": "A",
+    "choice_d": "Homes located outside the Willamette Valley",
+    "correct_choice": "B",
     "explanation": "The seismic section of Oregon's statutory disclosure form asks sellers to disclose whether the foundation has been bolted for structures built before 1974, reflecting the period before more stringent seismic anchoring standards took effect. (Flag: this specific pre-1974 cutoff is drawn from the statutory form's content as summarized by a secondary source rather than a verbatim ORS quote; recommend spot-checking the current published form on oregon.gov/rea before high-stakes use.)",
     "weight": 3,
     "source_note": "ORS 105.465 (statutory disclosure form, Seismic section)"
@@ -350,12 +326,11 @@
   {
     "topic": "Agency Relationships & Disclosures",
     "question": "The representations a seller makes on Oregon's Seller's Property Disclosure Statement are:",
-    "choice_a": "Based on the seller's actual knowledge and are not a warranty, nor a representation by any real estate licensee or lender involved in the transaction",
-    "choice_b": "Legally binding warranties enforceable against the seller regardless of the seller's actual knowledge",
-    "choice_c": "Prepared and certified by the seller's real estate agent on the seller's behalf",
-    "choice_d": "Guaranteed accurate by the buyer's lender as a condition of loan approval"
-    ,
-    "correct_choice": "A",
+    "choice_a": "Legally binding warranties enforceable against the seller regardless of the seller's actual knowledge",
+    "choice_b": "Prepared and certified by the seller's real estate agent on the seller's behalf",
+    "choice_c": "Based on the seller's actual knowledge and are not a warranty, nor a representation by any real estate licensee or lender involved in the transaction",
+    "choice_d": "Guaranteed accurate by the buyer's lender as a condition of loan approval",
+    "correct_choice": "C",
     "explanation": "The statutory disclosure form under ORS 105.465 states that the seller's representations are made on the basis of the seller's actual knowledge, are not a warranty, and are not the representations of the buyer's or seller's agent or of any lender.",
     "weight": 3,
     "source_note": "ORS 105.465 (statutory disclosure form)"
