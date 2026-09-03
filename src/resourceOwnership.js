@@ -38,6 +38,9 @@ export const ALL_RESOURCE_FILES = {
     'The_Deal_With_Two_Sides_Texas_Intermediary_Practice.m4a', 'What_Happens_When_a_Texas_Broker_Gets_Sued.m4a',
     'Whose_Money_Is_It_Really_Trust_Accounts_in_Texas.m4a',
   ],
+  tx_re_broker: [
+    'Once_Youre_the_Broker.m4a', 'The_Fund_Behind_the_License.m4a', 'Whose_Office_Is_This_Really.m4a',
+  ],
 };
 
 // True only if every requested file is in the given track's own catalog -- deliberately all-or-

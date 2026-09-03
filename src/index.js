@@ -601,6 +601,9 @@ const FREE_RESOURCES = {
   tx_re_salesperson: [
     'The_Deal_With_Two_Sides_Texas_Intermediary_Practice.m4a',
   ],
+  tx_re_broker: [
+    'Once_Youre_the_Broker.m4a',
+  ],
 };
 
 async function handleResourcesFree(request, env) {
