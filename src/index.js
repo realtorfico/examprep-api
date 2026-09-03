@@ -592,6 +592,9 @@ const FREE_RESOURCES = {
   ca_re_salesperson: [
     'What_Happens_When_a_CA_Broker_Gets_Sued.m4a',
   ],
+  fl_re_salesperson: [
+    'The_Three_Day_Clock.m4a',
+  ],
 };
 
 async function handleResourcesFree(request, env) {

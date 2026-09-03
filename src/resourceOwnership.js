@@ -26,6 +26,10 @@ export const ALL_RESOURCE_FILES = {
     'What_Happens_When_a_CA_Broker_Gets_Sued.m4a', 'The_Money_That_Was_Never_Yours.m4a',
     'Whose_Side_Are_You_Actually_On.m4a',
   ],
+  fl_re_salesperson: [
+    'The_Three_Day_Clock.m4a', 'Who_Do_You_Actually_Work_For.m4a',
+    'The_License_You_Can_Lose_in_an_Afternoon.m4a',
+  ],
 };
 
 // True only if every requested file is in the given track's own catalog -- deliberately all-or-
