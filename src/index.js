@@ -589,6 +589,9 @@ const FREE_RESOURCES = {
     'California_Notary_Fees.mp4',
     'California_Notary_2026_Quick_Guide.png',
   ],
+  ca_re_salesperson: [
+    'What_Happens_When_a_CA_Broker_Gets_Sued.m4a',
+  ],
 };
 
 async function handleResourcesFree(request, env) {
