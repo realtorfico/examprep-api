@@ -598,6 +598,9 @@ const FREE_RESOURCES = {
   fl_re_broker: [
     'The_Day_You_Stop_Being_Just_an_Agent.m4a',
   ],
+  tx_re_salesperson: [
+    'The_Deal_With_Two_Sides_Texas_Intermediary_Practice.m4a',
+  ],
 };
 
 async function handleResourcesFree(request, env) {

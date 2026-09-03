@@ -34,6 +34,10 @@ export const ALL_RESOURCE_FILES = {
     'The_Day_You_Stop_Being_Just_an_Agent.m4a', 'Whose_Money_Is_It_Really.m4a',
     'The_Price_of_Being_Wrong.m4a',
   ],
+  tx_re_salesperson: [
+    'The_Deal_With_Two_Sides_Texas_Intermediary_Practice.m4a', 'What_Happens_When_a_Texas_Broker_Gets_Sued.m4a',
+    'Whose_Money_Is_It_Really_Trust_Accounts_in_Texas.m4a',
+  ],
 };
 
 // True only if every requested file is in the given track's own catalog -- deliberately all-or-
