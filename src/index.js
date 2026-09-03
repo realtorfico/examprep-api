@@ -1,7 +1,7 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
-import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail, sendMissedItByOneEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail, sendMissedItByOneEmail, sendTrackMechanicsChangedEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL, ALL_USERS_PROGRESS_TOTALS_SQL } from './progressQueries.js';
 import { filesOwnedByTrack } from './resourceOwnership.js';
@@ -2654,6 +2654,13 @@ const MECHANICS_FIELDS = [
   ['passPercent', 'pass_percent'],
   ['minCorrect', 'min_correct'],
 ];
+// Human-readable labels for the legislative-change alert email -- mirrors CHANGELOG_FIELD_LABELS
+// in the site's app.js (a separate small copy, same reasoning as every other cross-repo naming
+// map in this codebase: no shared module boundary between the API and site repos).
+const MECHANICS_FIELD_LABELS = {
+  exam_question_count: 'Question count', exam_duration_sec: 'Exam duration',
+  pass_percent: 'Passing score', min_correct: 'Minimum correct',
+};
 async function handleConsoleTrackRegistryMechanicsUpdate(request, env) {
   const body = await request.json();
   const { examType, reason } = body;
@@ -2674,6 +2681,30 @@ async function handleConsoleTrackRegistryMechanicsUpdate(request, env) {
   await env.DB.prepare(`UPDATE track_registry SET ${setClause}, updated_at = ? WHERE exam_type = ?`)
     .bind(...changes.map(([bodyKey]) => body[bodyKey]), ts, examType).run();
   trackRegistryCache = null;
+
+  // Legislative-change alert (marketing round 3, item #3) -- scope is deliberately MECHANICS ONLY
+  // (this same admin-driven correction, never an automated statute crawler -- see
+  // project_marketing_ideas_round3 in memory for why: detection stays a human/session-driven
+  // re-verification process, this just fires the notification once a real correction is actually
+  // logged). Window is admin-configurable (examprep-admin Settings tab), defaults to 2 months --
+  // a buyer from years ago studying a since-passed exam doesn't need to hear about a correction.
+  try {
+    const windowMonths = parseInt(await getAppSetting(env, 'legislative_alert_window_months', '2'), 10) || 2;
+    const sinceTs = ts - windowMonths * 30 * 86400;
+    const buyers = (await env.DB.prepare(
+      'SELECT DISTINCT buyer_email FROM codes WHERE exam_type = ? AND buyer_email IS NOT NULL AND issued_at >= ?'
+    ).bind(examType, sinceTs).all()).results;
+    const formatMechanicsValue = (column, value) => (column === 'exam_duration_sec' ? `${Math.round(value / 60)} min` : String(value));
+    const changesSummary = changes.map(([bodyKey, column]) => ({
+      field: MECHANICS_FIELD_LABELS[column] || column,
+      oldValue: formatMechanicsValue(column, current[column]),
+      newValue: formatMechanicsValue(column, body[bodyKey]),
+    }));
+    for (const row of buyers) {
+      await sendTrackMechanicsChangedEmail(env, row.buyer_email, examType, changesSummary, reason.trim());
+    }
+  } catch (e) { /* best-effort -- the correction itself must never fail over this */ }
+
   return json({ ok: true, changed: changes.map(([, column]) => column) });
 }
 

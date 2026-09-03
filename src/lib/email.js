@@ -282,6 +282,32 @@ export async function sendMissedItByOneEmail(env, to, examType, percent, passPer
   });
 }
 
+// Legislative-change alert (marketing round 3, item #3) -- sent to past buyers of a track when an
+// admin logs a real, reasoned correction to its exam mechanics via the "Edit exam mechanics" modal
+// (see handleConsoleTrackRegistryMechanicsUpdate in index.js, which is also the ONLY place this is
+// called from). Deliberately scoped to mechanics only, and deliberately NOT tied to any automated
+// statute-monitoring crawler -- detection stays a human/admin-driven re-verification process; this
+// just fires the notification once a real change is actually logged. changes is real, already-
+// formatted field/oldValue/newValue data from track_registry_changelog, never guessed.
+export async function sendTrackMechanicsChangedEmail(env, to, examType, changes, reason) {
+  const changesHtml = changes.map((c) =>
+    `<li style="margin-bottom:4px;"><strong>${c.field}</strong>: ${c.oldValue} → ${c.newValue}</li>`).join('');
+  await sendEmail(env, {
+    to,
+    subject: `An update to your ${examType} exam details`,
+    html: emailShell({
+      badge: '📋',
+      title: 'Exam details updated',
+      bodyHtml: `<p>We found a real update to the official exam details for <strong>${examType}</strong>, and corrected our practice content to match:</p>
+        <ul style="margin:0 0 16px;padding-left:20px;">${changesHtml}</ul>
+        <p style="color:#64748b;font-size:14px;">${reason}</p>
+        <p>Nothing you need to do — your practice bank already reflects the update.</p>`,
+      ctaText: 'See the full changelog →',
+      ctaUrl: `${SITE_URL}#/changelog`,
+    }),
+  });
+}
+
 export async function sendExamPassedEmail(env, to, examType) {
   await sendEmail(env, {
     to,
