@@ -41,6 +41,10 @@ export const ALL_RESOURCE_FILES = {
   tx_re_broker: [
     'Once_Youre_the_Broker.m4a', 'The_Fund_Behind_the_License.m4a', 'Whose_Office_Is_This_Really.m4a',
   ],
+  ny_re_salesperson: [
+    'Who_Are_You_Actually_Working_For.m4a', 'The_Money_That_Changes_Hands_Before_You_Get_Paid.m4a',
+    'Owning_a_Piece_of_the_Building_vs_a_Piece_of_Paper.m4a',
+  ],
 };
 
 // True only if every requested file is in the given track's own catalog -- deliberately all-or-

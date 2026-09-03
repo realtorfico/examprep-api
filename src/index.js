@@ -604,6 +604,9 @@ const FREE_RESOURCES = {
   tx_re_broker: [
     'Once_Youre_the_Broker.m4a',
   ],
+  ny_re_salesperson: [
+    'Who_Are_You_Actually_Working_For.m4a',
+  ],
 };
 
 async function handleResourcesFree(request, env) {
