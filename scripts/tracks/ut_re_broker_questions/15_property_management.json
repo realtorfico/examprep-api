@@ -1,0 +1,98 @@
+[
+  {
+    "topic": "Property Management",
+    "question": "An individual holds a Utah real estate license as a \"property manager\" only (not as a principal broker, associate broker, or dual broker). Under Utah Code 61-2f-201, what is that individual permitted to do?",
+    "choice_a": "Engage in property management, but only for one or more residential rental units",
+    "choice_b": "Manage any type of real estate, including commercial and industrial property, for consideration",
+    "choice_c": "List and sell residential real estate on behalf of an owner",
+    "choice_d": "Supervise associate brokers and sales agents at a brokerage",
+    "correct_choice": "A",
+    "explanation": "Utah Code 61-2f-201(4) limits a licensee holding only a \"property manager\" license to engaging in, offering to engage in, or advertising property management services for one or more residential rental units. That licensee may not perform property management activity in relation to real estate other than a residential rental unit.",
+    "weight": 4,
+    "source_note": "Utah Code 61-2f-201(4), Real Estate Licensing and Practices Act (as amended, Chapter 142, 2026 General Session)"
+  },
+  {
+    "topic": "Property Management",
+    "question": "Under the definitions in Utah Code 61-2f-102, which of the following activities falls within the statutory definition of \"property management\"?",
+    "choice_a": "Renting a condominium to a tourist for a 10-day stay",
+    "choice_b": "Collecting or attempting to collect rent for real estate owned by another person, for valuable consideration",
+    "choice_c": "Managing the daily room reservations of a hotel",
+    "choice_d": "Leasing subsurface mineral rights separately from the surface estate",
+    "correct_choice": "B",
+    "explanation": "\"Property management\" is defined to include advertising for, arranging, or negotiating the rental or leasing of real estate, collecting or attempting to collect rent for real estate owned by another, and signing lease agreements or addenda with tenants, all done with the expectation of valuable consideration. The definition expressly excludes hotel/motel management, transient accommodations rented for fewer than 30 consecutive days, and the separate leasing or management of subsurface minerals or oil and gas interests.",
+    "weight": 4,
+    "source_note": "Utah Code 61-2f-102(32)"
+  },
+  {
+    "topic": "Property Management",
+    "question": "A Utah \"property management company,\" as defined by the Real Estate Licensing and Practices Act, is an entity that engages solely in property management, must register with the Division of Real Estate, and must be supervised by which of the following?",
+    "choice_a": "Any licensed sales agent, regardless of broker affiliation",
+    "choice_b": "The Utah Real Estate Commission directly",
+    "choice_c": "A dual broker, a principal broker, or a principal property manager",
+    "choice_d": "A licensed home inspector",
+    "correct_choice": "C",
+    "explanation": "Utah Code 61-2f-102(33) defines a \"property management company\" as an entity that engages solely in property management, is required to register with the Division, and is supervised by a dual broker, a principal broker, or a principal property manager.",
+    "weight": 3,
+    "source_note": "Utah Code 61-2f-102(33)"
+  },
+  {
+    "topic": "Property Management",
+    "question": "How does Utah Code 61-2f-102 define a \"dual broker\"?",
+    "choice_a": "A broker who represents both the landlord and the tenant in the same lease transaction",
+    "choice_b": "An associate broker who is affiliated with two different principal brokers simultaneously",
+    "choice_c": "A licensee who holds both a real estate license and a mortgage loan originator license",
+    "choice_d": "A principal broker who functions as the principal property manager of a property management company that is a separate entity from a brokerage",
+    "correct_choice": "D",
+    "explanation": "A \"dual broker\" is statutorily defined as a principal broker who functions as the principal property manager of a property management company that is organized as a separate entity from a real estate brokerage.",
+    "weight": 3,
+    "source_note": "Utah Code 61-2f-102(20)"
+  },
+  {
+    "topic": "Property Management",
+    "question": "A Utah licensee acting as a property manager collects rent on behalf of an owner-client. Under Utah Code 61-2f-401, which of the following is grounds for disciplinary action against the licensee?",
+    "choice_a": "Commingling the owner's rent money with the licensee's own personal funds",
+    "choice_b": "Depositing the collected rent into the property management company's trust account",
+    "choice_c": "Remitting the owner's share of the rent to the owner within a reasonable time",
+    "choice_d": "Providing the owner a periodic accounting of rents collected",
+    "correct_choice": "A",
+    "explanation": "Utah Code 61-2f-401(4) makes it unlawful and grounds for disciplinary action to fail, within a reasonable time, to account for or remit money belonging to another that comes into a licensee's possession, to commingle that money with the licensee's own money, or to divert the money from the purpose for which it was received.",
+    "weight": 5,
+    "source_note": "Utah Code 61-2f-401(4)"
+  },
+  {
+    "topic": "Property Management",
+    "question": "Under Utah Code 57-17-3, no later than how many days after a renter vacates and returns possession of a rental property must the owner or the owner's agent deliver the balance of the deposit and prepaid rent, along with a written itemized notice of any deductions?",
+    "choice_a": "15 days",
+    "choice_b": "30 days",
+    "choice_c": "45 days",
+    "choice_d": "60 days",
+    "correct_choice": "B",
+    "explanation": "Utah Code 57-17-3(2) requires that no later than 30 days after the day a renter vacates and returns possession of a rental property, the owner or the owner's agent must deliver to the renter the balance of any deposit, the balance of any prepaid rent, and, if any deductions were made, a written notice itemizing and explaining each deduction.",
+    "weight": 5,
+    "source_note": "Utah Code 57-17-3(2), effective 5/7/2025"
+  },
+  {
+    "topic": "Property Management",
+    "question": "A Utah owner's agent fails to timely return a tenant's security deposit as required by statute. After the tenant properly serves the owner's agent with the statutory written notice demanding compliance and the agent still does not comply, what civil penalty, in addition to recovery of the full deposit, may the tenant recover under Utah Code 57-17-5?",
+    "choice_a": "$50",
+    "choice_b": "$250",
+    "choice_c": "$100",
+    "choice_d": "$500",
+    "correct_choice": "C",
+    "explanation": "Utah Code 57-17-5(1) provides that if an owner or the owner's agent fails to comply with the deposit-return and notice requirements after the renter has properly served the required statutory notice, the renter may recover the full deposit (or the full amount of prepaid rent, as applicable) plus a civil penalty of $100, and may also file an action to enforce compliance.",
+    "weight": 3,
+    "source_note": "Utah Code 57-17-5(1)"
+  },
+  {
+    "topic": "Property Management",
+    "question": "Under Utah Code 57-17-2, when must an owner or the owner's designated agent disclose in writing that part of a tenant's deposit will be non-refundable?",
+    "choice_a": "Only if the tenant later requests an itemized statement",
+    "choice_b": "No later than 30 days after the tenant vacates the unit",
+    "choice_c": "Disclosure is not required as long as it is communicated verbally",
+    "choice_d": "At the time the deposit is taken from the renter",
+    "correct_choice": "D",
+    "explanation": "Utah Code 57-17-2 requires that if there is a written agreement and any part of a deposit is to be made non-refundable, that fact must be stated in writing to the renter at the time the deposit is taken by the owner or the owner's designated agent.",
+    "weight": 3,
+    "source_note": "Utah Code 57-17-2"
+  }
+]

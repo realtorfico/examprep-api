@@ -1,0 +1,110 @@
+[
+  {
+    "topic": "Closing Statements",
+    "question": "Under Utah Code, on what date does the tax lien attach to real property for that year's property taxes, meaning a buyer and seller closing later in the year must prorate taxes back to that date?",
+    "choice_a": "January 1",
+    "choice_b": "July 1",
+    "choice_c": "The date the deed is recorded",
+    "choice_d": "April 15",
+    "correct_choice": "A",
+    "explanation": "Utah Code Section 59-2-103 and 59-2-104 establish January 1 as the lien date: real property is appraised and assessed based on its situs and status as of January 1 of that year. Because the tax obligation for the full calendar year attaches on January 1, Utah closings prorate the year's property taxes using that date as the starting point regardless of when during the year the sale closes.",
+    "weight": 5,
+    "source_note": "Utah Code Ann. Section 59-2-103 & Section 59-2-104 (lien date); Utah State Tax Commission Property Tax Calendar (rev. 02/14/2024), \"Jan. 1st—Assessor—Lien Date.\""
+  },
+  {
+    "topic": "Closing Statements",
+    "question": "By what date must a Utah county treasurer mail the property tax notice (tax bill) to owners for that calendar year's taxes?",
+    "choice_a": "January 1",
+    "choice_b": "November 1",
+    "choice_c": "June 1",
+    "choice_d": "December 31",
+    "correct_choice": "B",
+    "explanation": "Under Utah Code Section 59-2-1317, the county treasurer must mail tax notices by November 1 of each year. This matters at closing because the actual current-year tax bill often does not exist yet for transactions that close earlier in the year, which is why Utah closings frequently prorate current-year taxes using an estimate (commonly the prior year's tax amount) rather than a final bill.",
+    "weight": 3,
+    "source_note": "Utah Code Ann. Section 59-2-1317; Utah State Tax Commission Property Tax Calendar (rev. 02/14/2024), \"By Nov. 1st—Treasurer—Mail tax notices.\""
+  },
+  {
+    "topic": "Closing Statements",
+    "question": "Absent a county proclamation extending the deadline, on what date do unpaid Utah real property taxes for the year become delinquent?",
+    "choice_a": "October 15",
+    "choice_b": "January 31 of the following year",
+    "choice_c": "December 1",
+    "choice_d": "March 15 of the following year",
+    "correct_choice": "C",
+    "explanation": "Utah Code Section 59-2-1331 makes unpaid real property taxes delinquent, with penalty applied, on December 1. This is why Utah closing practice treats November 30 as the practical \"due\" date for the current year's taxes; a county may extend the delinquency date to noon on December 30 by proclamation under Section 59-2-1332, but that is an exception, not the default rule.",
+    "weight": 4,
+    "source_note": "Utah Code Ann. Section 59-2-1331 (delinquency/penalty date); Section 59-2-1332 (optional extension to Dec. 30); Utah State Tax Commission Property Tax Calendar (rev. 02/14/2024)."
+  },
+  {
+    "topic": "Closing Statements",
+    "question": "A Utah home sale is closing in June, but the county has not yet mailed the current year's property tax notice (that mailing does not happen until around November 1). How do Utah title/escrow companies typically handle the property tax proration on the settlement statement in this situation?",
+    "choice_a": "They omit any tax proration and let the buyer and seller settle it privately after the bill arrives",
+    "choice_b": "They require the seller to pay the full estimated annual tax bill in advance at closing",
+    "choice_c": "They wait to close until the November tax notice is issued",
+    "choice_d": "They estimate the proration using the prior year's tax amount (or the best available estimate) and credit the buyer for the seller's share of the not-yet-billed current year taxes",
+    "correct_choice": "D",
+    "explanation": "Because the current year's tax lien attaches January 1 but the actual bill is not mailed until around November 1, a mid-year Utah closing has no final tax figure to prorate. Standard Utah escrow/title closing practice is to prorate using the best available estimate (typically the prior year's tax bill) from January 1 through the closing date, crediting the buyer at closing for the seller's share of taxes that will come due later in the year.",
+    "weight": 4,
+    "source_note": "Standard Utah title/escrow closing practice, consistent with the property tax cycle under Utah Code Section 59-2-1317 (bill mailed by Nov. 1) and Section 59-2-1331 (delinquent Dec. 1); reflected in customary proration provisions of the Utah Real Estate Purchase Contract (REPC) published by the Utah Association of REALTORS."
+  },
+  {
+    "topic": "Closing Statements",
+    "question": "Which statement correctly describes Utah's treatment of real estate transfer taxes at closing?",
+    "choice_a": "Utah imposes no state or county real estate transfer tax; no such line item appears on a Utah closing statement",
+    "choice_b": "Utah imposes a state real estate transfer tax paid by the seller, similar to many other states",
+    "choice_c": "Utah imposes a transfer tax only on commercial property transfers",
+    "choice_d": "Utah imposes a transfer tax that is always split equally between buyer and seller",
+    "correct_choice": "A",
+    "explanation": "Utah is among the minority of states that levy no real estate transfer tax at the state or county level. A Utah closing/settlement statement will not show a transfer tax line item; closing costs are instead limited to items such as title insurance premiums, escrow/closing fees, recording fees, and prorations.",
+    "weight": 5,
+    "source_note": "Utah Code Title 59 (Revenue and Taxation) contains no real property transfer tax provision; Utah has never enacted a state or local real estate transfer tax. Standard content in Utah real estate pre-licensing and broker education materials and confirmed by the absence of any transfer tax statute in Utah Code Titles 57 or 59."
+  },
+  {
+    "topic": "Closing Statements",
+    "question": "Which best describes how residential real estate closings are customarily conducted in Utah?",
+    "choice_a": "Utah requires an attorney to conduct the closing, as in many East Coast states",
+    "choice_b": "Utah is customarily an escrow/title-company closing state, where a title company acts as the neutral closing and escrow agent",
+    "choice_c": "Utah requires the listing broker to personally hold and disburse all closing funds",
+    "choice_d": "Utah requires closings to occur at the county recorder's office",
+    "correct_choice": "B",
+    "explanation": "Utah is customarily an escrow state: closings are handled by a title company (or other neutral escrow/settlement agent) rather than by an attorney conducting the closing, as is customary in some other states. The title company prepares the settlement statement, holds funds in escrow, and coordinates recording, rather than the buyer's or seller's broker.",
+    "weight": 5,
+    "source_note": "Standard Utah real estate closing custom, reflected in the escrow/closing provisions of the Utah Real Estate Purchase Contract (REPC) published by the Utah Association of REALTORS, under which an approved title company customarily serves as closing/escrow agent."
+  },
+  {
+    "topic": "Closing Statements",
+    "question": "Under Utah's real estate licensing framework (Utah Code Title 61, Chapter 2f, the Real Estate Licensing and Practices Act, and its implementing rules in Utah Admin. Code R162-2f), what is a Utah broker's proper role with respect to the closing/settlement statement in a typical transaction?",
+    "choice_a": "The broker prepares and signs the closing/settlement statement on behalf of both parties",
+    "choice_b": "The broker acts as the escrow agent and disburses the sale proceeds directly to the seller",
+    "choice_c": "The broker assists and monitors the transaction through closing but relies on the title/escrow company to prepare the settlement statement and disburse funds",
+    "choice_d": "The broker has no obligations once the purchase contract is signed and may disregard the closing process entirely",
+    "correct_choice": "C",
+    "explanation": "A Utah licensee's duties under Title 61, Chapter 2f and Rule R162-2f include diligently exercising reasonable skill and care and keeping the client informed through closing, but preparing the actual settlement statement, holding funds in escrow, and disbursing proceeds is the function of the title/escrow company, not the broker. A broker who attempted to act as escrow agent or unilaterally prepare/disburse against the settlement statement would exceed the broker's licensed role.",
+    "weight": 4,
+    "source_note": "Utah Code Title 61, Chapter 2f (Real Estate Licensing and Practices Act) and Utah Admin. Code R162-2f (Division of Real Estate rules governing licensee duties and trust fund handling)."
+  },
+  {
+    "topic": "Closing Statements",
+    "question": "On a Utah closing/settlement statement, the recording fee charged for the deed and trust deed is best described as which of the following?",
+    "choice_a": "A percentage-based state transfer tax collected by the county",
+    "choice_b": "A fee calculated as a percentage of the loan amount and remitted to the state treasurer",
+    "choice_c": "An optional fee the buyer may decline to pay",
+    "choice_d": "A flat, per-document fee charged by the county recorder for recording the instrument, unrelated to the sale price",
+    "correct_choice": "D",
+    "explanation": "Because Utah has no ad valorem or percentage-based real estate transfer tax, the only charge tied to recording an instrument in Utah is the county recorder's flat, per-document recording fee, which does not vary with the property's sale price the way a transfer tax would. This distinguishes Utah closing costs from those in states that impose a transfer tax calculated on consideration paid.",
+    "weight": 3,
+    "source_note": "County recorder fees are set under Utah Code Title 17 (county recorder fee statutes) and charged per document/page recorded, not as a percentage of sale price; consistent with Utah's lack of a real estate transfer tax."
+  },
+  {
+    "topic": "Closing Statements",
+    "question": "Utah counties mail a \"Notice of Valuation and Tax Changes\" to property owners each year by a statutory deadline that falls well before the actual tax bill is issued. When must this valuation notice be mailed, and how does it differ from the November tax notice?",
+    "choice_a": "It must be mailed on or before July 22 and shows the assessed value and proposed tax changes, but it is not the actual tax bill, which is mailed later, by November 1",
+    "choice_b": "It is the final tax bill and must be paid by July 22",
+    "choice_c": "It is mailed on January 1 and replaces the November tax notice entirely",
+    "choice_d": "Utah counties are not required to send any valuation notice before the tax bill",
+    "correct_choice": "A",
+    "explanation": "Utah Code Section 59-2-919 and 59-2-919.1 require the county auditor to mail the \"Notice of Valuation and Tax Changes\" on or before July 22, informing owners of assessed value and any proposed tax rate/budget hearings. This is distinct from, and precedes, the actual tax notice (bill) that the treasurer mails by November 1. Understanding this two-step calendar helps explain why an accurate current-year tax figure is not available for proration purposes until relatively late in the year.",
+    "weight": 2,
+    "source_note": "Utah Code Ann. Section 59-2-919 & Section 59-2-919.1; Utah State Tax Commission Property Tax Calendar (rev. 02/14/2024), \"On or before July 22—Auditor—Prepare and mail 'Notice of Valuation and Tax Changes.'\""
+  }
+]
