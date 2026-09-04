@@ -570,7 +570,11 @@ async function handleMediaFile(request, env) {
 async function handleResourcesSignBatch(user, request, env) {
   const { files } = await request.json();
   if (!Array.isArray(files) || !files.length) return json({ error: 'files_required' }, 400);
-  if (!filesOwnedByTrack(files, user.exam_type)) return json({ error: 'not_found' }, 404);
+  const ownedRows = await env.DB.prepare(
+    'SELECT file FROM resources WHERE exam_type = ? AND file IS NOT NULL'
+  ).bind(user.exam_type).all();
+  const ownedFiles = (ownedRows.results || []).map((r) => r.file);
+  if (!filesOwnedByTrack(files, ownedFiles)) return json({ error: 'not_found' }, 404);
   const ttlSeconds = 3600; // long enough to fully stream a large file, short enough to discourage link-sharing
   const urls = {};
   for (const file of files) {
@@ -582,58 +586,16 @@ async function handleResourcesSignBatch(user, request, env) {
 
 // Server-side source of truth for which resources are free-to-preview without an access code —
 // deliberately NOT trusted from the client, so a visitor can't just edit a `free: true` flag in
-// devtools to unlock everything. Must be kept in sync with the `free:` flags in the site's own
-// RESOURCES data (site repo, wwwroot/js/app.js) — that copy is presentation-only.
-const FREE_RESOURCES = {
-  ca_notary: [
-    'California_Notary_Fees.mp4',
-    'California_Notary_2026_Quick_Guide.png',
-  ],
-  ca_re_salesperson: [
-    'What_Happens_When_a_CA_Broker_Gets_Sued.m4a',
-  ],
-  fl_re_salesperson: [
-    'The_Three_Day_Clock.m4a',
-  ],
-  fl_re_broker: [
-    'The_Day_You_Stop_Being_Just_an_Agent.m4a',
-  ],
-  tx_re_salesperson: [
-    'The_Deal_With_Two_Sides_Texas_Intermediary_Practice.m4a',
-  ],
-  tx_re_broker: [
-    'Once_Youre_the_Broker.m4a',
-  ],
-  ny_re_salesperson: [
-    'Who_Are_You_Actually_Working_For.m4a',
-  ],
-  ny_re_broker: [
-    'The_Brokers_Real_Exposure.m4a',
-  ],
-  pa_re_salesperson: [
-    'The_Commission_the_Complaint_and_the_Fund_of_Last_Resort.m4a',
-  ],
-  pa_re_broker: [
-    'Becoming_a_Broker_What_Actually_Changes.m4a',
-  ],
-  il_re_salesperson: [
-    'How_Agency_Really_Works_in_Illinois.m4a',
-  ],
-  il_re_broker: [
-    'So_Youre_the_Designated_Managing_Broker_Now.m4a',
-  ],
-  oh_re_salesperson: [
-    'When_a_Judgment_Isnt_Enough.m4a',
-  ],
-  oh_re_broker: [
-    'What_Changes_When_You_Become_the_Principal_Broker.m4a',
-  ],
-};
-
+// devtools to unlock everything. Queried live from `resources` (free = 1 AND file IS NOT NULL) --
+// the client-side `free:` flag the site renders is presentation-only and can't unlock anything by
+// itself, this query is the real gate.
 async function handleResourcesFree(request, env) {
   const url = new URL(request.url);
   const examType = url.searchParams.get('examType') || 'ca_notary';
-  const files = FREE_RESOURCES[examType] || [];
+  const rows = await env.DB.prepare(
+    'SELECT file FROM resources WHERE exam_type = ? AND free = 1 AND file IS NOT NULL'
+  ).bind(examType).all();
+  const files = (rows.results || []).map((r) => r.file);
   const ttlSeconds = 3600;
   const urls = {};
   for (const file of files) {
@@ -641,6 +603,35 @@ async function handleResourcesFree(request, env) {
     urls[file] = `/media/${encodeURIComponent(file)}?exp=${exp}&sig=${sig}`;
   }
   return json({ urls });
+}
+
+// Full Resources-tab catalog for every track, fetched once at site boot (mirrors
+// handleTrackRegistryList/loadTrackRegistry's own "gate first render on a small async fetch"
+// pattern) and cached client-side in the same module-level `RESOURCES` object the site's render
+// functions already read synchronously -- see wwwroot/js/app.js's loadResourcesCatalog(). Table
+// and flashcard payloads round-trip through `data_json` unparsed here and JSON.parsed by the
+// caller only where needed (site does it once per resource on open) to keep this one query cheap
+// even as the catalog grows across all ~286 tracks.
+async function handleResourcesCatalog(env) {
+  const rows = await env.DB.prepare(
+    'SELECT exam_type, ord, type, title, desc, topic, free, downloadable, url, file, data_json FROM resources ORDER BY exam_type, ord'
+  ).all();
+  const byTrack = {};
+  for (const r of rows.results || []) {
+    if (!byTrack[r.exam_type]) byTrack[r.exam_type] = [];
+    const item = { type: r.type, title: r.title, desc: r.desc, topic: r.topic };
+    if (r.free) item.free = true;
+    if (r.downloadable) item.downloadable = true;
+    if (r.url) item.url = r.url;
+    if (r.file) item.file = r.file;
+    if (r.data_json) {
+      const parsed = JSON.parse(r.data_json);
+      if (r.type === 'table') item.table = parsed;
+      else if (r.type === 'flashcards') item.flashcards = parsed;
+    }
+    byTrack[r.exam_type].push(item);
+  }
+  return json({ resources: byTrack });
 }
 
 const DEFAULT_PRICE_CENTS = 499; // fallback if the `pricing` table has no row yet for an exam type
@@ -3778,6 +3769,7 @@ export default {
       // Public alias of the admin's /console/track-registry -- see handleTrackRegistryList's own
       // comment for why this is public and what it replaces.
       if (pathname === '/track-registry' && method === 'GET') return await handleTrackRegistryList(env);
+      if (pathname === '/resources/catalog' && method === 'GET') return await handleResourcesCatalog(env);
       if (pathname === '/promotions' && method === 'GET') return await handlePromotionsList(request, env);
       if (pathname === '/promotions/verify-request' && method === 'POST') return await handlePromoVerifyRequest(request, env);
       if (pathname === '/promotions/verify-email' && method === 'GET') return await handlePromoVerifyEmailConfirm(request, env);

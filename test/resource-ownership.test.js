@@ -4,46 +4,39 @@
 // yet (only ca_notary has real file-based resources today, and filenames aren't guessable), but a
 // real gap once other tracks get their own premium audio/video -- see
 // [[examprep_track_addition_playbook]] for the fuller incident writeup.
+//
+// 2026-09-03: filesOwnedByTrack() became a pure set-membership check -- the real catalog moved to
+// D1's `resources` table (see schema.sql), with a UNIQUE partial index on `file` enforcing
+// "a file can only belong to one track" at the source of truth (previously only checked here by a
+// JS unit test against a static object, which could go stale -- a real DB constraint can't).
+// These tests use a small fixture standing in for what a real `SELECT file FROM resources WHERE
+// exam_type = ? AND file IS NOT NULL` result would look like.
 
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { ALL_RESOURCE_FILES, filesOwnedByTrack } from '../src/resourceOwnership.js';
+import { filesOwnedByTrack } from '../src/resourceOwnership.js';
+
+const CA_NOTARY_FILES = ['The_Power_Behind_California_Notary_Stamps.m4a', 'California_Notary_Fees.mp4'];
 
 test('a ca_notary file is owned by ca_notary', () => {
-  const file = ALL_RESOURCE_FILES.ca_notary[0];
-  assert.ok(filesOwnedByTrack([file], 'ca_notary'));
+  assert.ok(filesOwnedByTrack([CA_NOTARY_FILES[0]], CA_NOTARY_FILES));
 });
 
-test('a ca_notary file is NOT owned by any other track', () => {
-  const file = ALL_RESOURCE_FILES.ca_notary[0];
-  assert.equal(filesOwnedByTrack([file], 'ca_driver'), false);
-  assert.equal(filesOwnedByTrack([file], 'ca_cdl'), false);
-  assert.equal(filesOwnedByTrack([file], 'ca_motorcycle'), false);
+test('a ca_notary file is NOT owned by any other track (empty owned-files list for that track)', () => {
+  assert.equal(filesOwnedByTrack([CA_NOTARY_FILES[0]], []), false);
 });
 
 test('an unknown/made-up track owns nothing', () => {
-  const file = ALL_RESOURCE_FILES.ca_notary[0];
-  assert.equal(filesOwnedByTrack([file], 'not_a_real_track'), false);
+  assert.equal(filesOwnedByTrack([CA_NOTARY_FILES[0]], undefined), false);
 });
 
 test('a batch mixing one legitimate file with one file from another track is rejected entirely (all-or-nothing, not partial)', () => {
-  const legit = ALL_RESOURCE_FILES.ca_notary[0];
   const foreign = 'some_other_tracks_premium_video.mp4';
-  assert.equal(filesOwnedByTrack([legit, foreign], 'ca_notary'), false,
+  assert.equal(filesOwnedByTrack([CA_NOTARY_FILES[0], foreign], CA_NOTARY_FILES), false,
     'must fail closed, not silently sign only the legitimate one');
 });
 
-test('every file in the catalog is unique across all tracks (no accidental cross-listing)', () => {
-  const seen = new Map(); // filename -> which track first claimed it
-  for (const [examType, files] of Object.entries(ALL_RESOURCE_FILES)) {
-    for (const f of files) {
-      assert.ok(!seen.has(f), `"${f}" is listed under both "${seen.get(f)}" and "${examType}" -- a file can only belong to one track`);
-      seen.set(f, examType);
-    }
-  }
-});
-
 test('an empty files array does not vacuously pass (defense in depth -- the handler itself also 400s this case before calling filesOwnedByTrack)', () => {
-  assert.equal(filesOwnedByTrack([], 'ca_notary'), true, // Array.prototype.every on [] is true by JS spec
+  assert.equal(filesOwnedByTrack([], CA_NOTARY_FILES), true, // Array.prototype.every on [] is true by JS spec
     'documenting the JS every-on-empty-array quirk -- this is why handleResourcesSignBatch rejects empty `files` BEFORE this check, not relying on it here');
 });

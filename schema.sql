@@ -106,6 +106,38 @@ CREATE TABLE resource_progress (
 );
 CREATE INDEX idx_resource_progress_file ON resource_progress(resource_file);
 
+-- Per-track "Resources" tab content (Key Facts Digest tables/flashcards, plus audio/video/pdf/web
+-- entries) -- the single source of truth, replacing what used to be a hardcoded RESOURCES object
+-- literal in the site's own app.js bundle (14 tracks' worth of table/flashcard consts + wiring)
+-- plus TWO separately-maintained allowlists in this repo (FREE_RESOURCES in index.js,
+-- ALL_RESOURCE_FILES in resourceOwnership.js). Both of those allowlists are now just queries
+-- against this table (`file IS NOT NULL` / `free = 1 AND file IS NOT NULL`), so a new audio file
+-- or a content-only edit is a plain D1 write -- no app.js edit, no site-repo commit, no API
+-- redeploy. The site fetches the full catalog once at boot via GET /resources/catalog (same
+-- "gate first render on a small async fetch" pattern loadTrackRegistry() already established for
+-- track_registry), caching it in the same module-level `RESOURCES` var every existing render
+-- function already reads synchronously -- so no downstream render code needed to change shape.
+CREATE TABLE resources (
+  id          TEXT PRIMARY KEY,     -- '<exam_type>:<slug>', e.g. 'il_re_broker:trust-fund-quick-facts'
+  exam_type   TEXT NOT NULL,
+  ord         INTEGER NOT NULL,     -- display order within the track (matches array order in the old RESOURCES[examType])
+  type        TEXT NOT NULL,        -- 'table' | 'flashcards' | 'audio' | 'video' | 'pdf' | 'image' | 'web'
+  title       TEXT NOT NULL,
+  desc        TEXT NOT NULL,
+  topic       TEXT NOT NULL,        -- must match a real HUB_EXAMS breakdown category string, or 'General Reference'
+  free        INTEGER NOT NULL DEFAULT 0,
+  downloadable INTEGER NOT NULL DEFAULT 0,
+  url         TEXT,                 -- external link, for type IN ('pdf','web') and some 'video'
+  file        TEXT,                 -- R2 object filename, for type IN ('audio','video') served via signed /media/:file
+  data_json   TEXT,                 -- type='table': {headers,rows,journalNote?,sourceNote}; type='flashcards': [{front,back,source}]
+  created_at  INTEGER NOT NULL,
+  updated_at  INTEGER NOT NULL
+);
+CREATE INDEX idx_resources_exam_type ON resources(exam_type, ord);
+-- Enforces "a file can only belong to one track" at the source of truth (previously only checked
+-- by a JS unit test against a static object -- a real constraint is stronger and can't go stale).
+CREATE UNIQUE INDEX idx_resources_file_unique ON resources(file) WHERE file IS NOT NULL;
+
 -- Self-serve purchase pricing (admin-editable via examprep-admin's Settings tab).
 CREATE TABLE pricing (
   exam_type   TEXT PRIMARY KEY,
