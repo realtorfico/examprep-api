@@ -619,6 +619,9 @@ const FREE_RESOURCES = {
   il_re_salesperson: [
     'How_Agency_Really_Works_in_Illinois.m4a',
   ],
+  il_re_broker: [
+    'So_Youre_the_Designated_Managing_Broker_Now.m4a',
+  ],
 };
 
 async function handleResourcesFree(request, env) {

@@ -60,6 +60,10 @@ export const ALL_RESOURCE_FILES = {
     'How_Agency_Really_Works_in_Illinois.m4a', 'Money_Youre_Holding_for_Someone_Else.m4a',
     'Getting_and_Keeping_Your_Illinois_Broker_License.m4a',
   ],
+  il_re_broker: [
+    'So_Youre_the_Designated_Managing_Broker_Now.m4a', 'Where_Does_the_Earnest_Money_Actually_Go.m4a',
+    'The_Fund_Nobody_Wants_to_Need.m4a',
+  ],
 };
 
 // True only if every requested file is in the given track's own catalog -- deliberately all-or-
