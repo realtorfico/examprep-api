@@ -52,6 +52,10 @@ export const ALL_RESOURCE_FILES = {
     'The_Commission_the_Complaint_and_the_Fund_of_Last_Resort.m4a', 'Whose_Side_Are_You_Really_On.m4a',
     'The_Rules_Nobody_Reads_Until_Theyre_in_Trouble.m4a',
   ],
+  pa_re_broker: [
+    'Becoming_a_Broker_What_Actually_Changes.m4a', 'The_Escrow_Account_Is_Yours_Now.m4a',
+    'Designated_Agency_How_a_Broker_Becomes_a_Dual_Agent.m4a',
+  ],
 };
 
 // True only if every requested file is in the given track's own catalog -- deliberately all-or-

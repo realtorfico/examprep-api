@@ -613,6 +613,9 @@ const FREE_RESOURCES = {
   pa_re_salesperson: [
     'The_Commission_the_Complaint_and_the_Fund_of_Last_Resort.m4a',
   ],
+  pa_re_broker: [
+    'Becoming_a_Broker_What_Actually_Changes.m4a',
+  ],
 };
 
 async function handleResourcesFree(request, env) {
