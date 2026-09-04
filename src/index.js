@@ -625,6 +625,9 @@ const FREE_RESOURCES = {
   oh_re_salesperson: [
     'When_a_Judgment_Isnt_Enough.m4a',
   ],
+  oh_re_broker: [
+    'What_Changes_When_You_Become_the_Principal_Broker.m4a',
+  ],
 };
 
 async function handleResourcesFree(request, env) {
