@@ -610,6 +610,9 @@ const FREE_RESOURCES = {
   ny_re_broker: [
     'The_Brokers_Real_Exposure.m4a',
   ],
+  pa_re_salesperson: [
+    'The_Commission_the_Complaint_and_the_Fund_of_Last_Resort.m4a',
+  ],
 };
 
 async function handleResourcesFree(request, env) {
