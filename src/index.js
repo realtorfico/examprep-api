@@ -616,6 +616,9 @@ const FREE_RESOURCES = {
   pa_re_broker: [
     'Becoming_a_Broker_What_Actually_Changes.m4a',
   ],
+  il_re_salesperson: [
+    'How_Agency_Really_Works_in_Illinois.m4a',
+  ],
 };
 
 async function handleResourcesFree(request, env) {

@@ -56,6 +56,10 @@ export const ALL_RESOURCE_FILES = {
     'Becoming_a_Broker_What_Actually_Changes.m4a', 'The_Escrow_Account_Is_Yours_Now.m4a',
     'Designated_Agency_How_a_Broker_Becomes_a_Dual_Agent.m4a',
   ],
+  il_re_salesperson: [
+    'How_Agency_Really_Works_in_Illinois.m4a', 'Money_Youre_Holding_for_Someone_Else.m4a',
+    'Getting_and_Keeping_Your_Illinois_Broker_License.m4a',
+  ],
 };
 
 // True only if every requested file is in the given track's own catalog -- deliberately all-or-
