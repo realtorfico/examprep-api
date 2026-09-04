@@ -64,6 +64,9 @@ export const ALL_RESOURCE_FILES = {
     'So_Youre_the_Designated_Managing_Broker_Now.m4a', 'Where_Does_the_Earnest_Money_Actually_Go.m4a',
     'The_Fund_Nobody_Wants_to_Need.m4a',
   ],
+  oh_re_salesperson: [
+    'When_a_Judgment_Isnt_Enough.m4a', 'Whose_Agent_Are_You_Really.m4a', 'Behind_the_Trust_Account.m4a',
+  ],
 };
 
 // True only if every requested file is in the given track's own catalog -- deliberately all-or-

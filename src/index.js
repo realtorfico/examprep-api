@@ -622,6 +622,9 @@ const FREE_RESOURCES = {
   il_re_broker: [
     'So_Youre_the_Designated_Managing_Broker_Now.m4a',
   ],
+  oh_re_salesperson: [
+    'When_a_Judgment_Isnt_Enough.m4a',
+  ],
 };
 
 async function handleResourcesFree(request, env) {
