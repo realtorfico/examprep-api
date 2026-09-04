@@ -631,7 +631,11 @@ async function handleResourcesCatalog(env) {
     }
     byTrack[r.exam_type].push(item);
   }
-  return json({ resources: byTrack });
+  // Same response for every visitor (not user-specific), rendered on most page types (category
+  // cards + track landing pages read it for pre-purchase resource-count previews, not just the
+  // Resources tab) -- cached so a page boot doesn't re-hit D1 for all 262 tracks' worth of rows
+  // every single time. 5 min is fresh enough that a content edit shows up quickly.
+  return Response.json({ resources: byTrack }, { headers: { 'cache-control': 'public, max-age=300' } });
 }
 
 const DEFAULT_PRICE_CENTS = 499; // fallback if the `pricing` table has no row yet for an exam type
