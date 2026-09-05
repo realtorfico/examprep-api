@@ -174,6 +174,27 @@ CREATE TABLE track_registry (
 CREATE INDEX idx_track_registry_kind ON track_registry(kind);
 CREATE INDEX idx_track_registry_state ON track_registry(state_code);
 
+-- Per-track prose that only ever gets read for ONE track at a time: the footer's affiliation
+-- disclaimer, the terms page's track-specific paragraph, the exam-intro/pass-score disclaimers, and
+-- the "verify with the official source" links. Migrated 2026-09-05 out of two hardcoded objects in
+-- the site's app.js (TRACK_COMPLIANCE ~573KB + ADDITIONAL_INFO_LINKS ~153KB), which shipped all 285
+-- tracks' copies of this to every visitor on every page load -- same problem, and same fix, as the
+-- earlier RESOURCES -> D1 migration.
+--
+-- Deliberately a SEPARATE table from track_registry rather than extra columns on it: the admin
+-- Tracks tab reads/writes that table, and /track-registry serves it site-wide (all 285 rows) on
+-- every boot -- adding this prose there would just move the payload problem rather than fix it.
+CREATE TABLE track_content (
+  exam_type             TEXT PRIMARY KEY,
+  org_line              TEXT,  -- e.g. "the California Secretary of State" -- used in footer + terms
+  footer_requirement    TEXT,  -- what this practice site does NOT satisfy, named precisely per track
+  terms_paragraph2      TEXT,
+  exam_intro_disclaimer TEXT,
+  pass_score_note       TEXT,  -- how this track's pass threshold relates to the real exam's
+  info_links_json       TEXT,  -- [{title,url,desc}] official-source links, NULL if none
+  updated_at            INTEGER NOT NULL
+);
+
 -- Refer & earn points. `accounts` are lightweight, email-keyed identities (no password/login) —
 -- created the moment someone refers a friend, so points can accrue before any purchase happens.
 CREATE TABLE accounts (

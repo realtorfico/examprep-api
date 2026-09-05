@@ -612,6 +612,29 @@ async function handleResourcesFree(request, env) {
 // and flashcard payloads round-trip through `data_json` unparsed here and JSON.parsed by the
 // caller only where needed (site does it once per resource on open) to keep this one query cheap
 // even as the catalog grows across all ~286 tracks.
+// Per-track prose (footer/terms affiliation copy, exam-intro + pass-score disclaimers, official
+// "verify this yourself" links) for ONE track. Migrated 2026-09-05 out of two hardcoded app.js
+// objects that shipped all 285 tracks' worth (~726KB) to every visitor on every page load; every
+// read site was a single [examType] lookup, so nothing ever needed more than one track's row.
+async function handleTrackContent(env, url) {
+  const examType = url && url.searchParams.get('examType');
+  if (!examType) return json({ error: 'examType_required' }, 400);
+  const row = await env.DB.prepare(
+    'SELECT org_line, footer_requirement, terms_paragraph2, exam_intro_disclaimer, pass_score_note, info_links_json FROM track_content WHERE exam_type = ?'
+  ).bind(examType).first();
+  // A track with no row isn't an error -- the site falls back to its own generic hub copy, exactly
+  // as it did for any exam_type missing from the old TRACK_COMPLIANCE object.
+  const content = row
+    ? {
+        orgLine: row.org_line, footerRequirement: row.footer_requirement,
+        termsParagraph2: row.terms_paragraph2, examIntroDisclaimer: row.exam_intro_disclaimer,
+        passScoreNote: row.pass_score_note,
+        infoLinks: row.info_links_json ? JSON.parse(row.info_links_json) : [],
+      }
+    : null;
+  return Response.json({ content }, { headers: { 'cache-control': 'public, max-age=300' } });
+}
+
 async function handleResourcesCatalog(env, url) {
   // Three modes, because the three consumers need wildly different amounts of data and the full
   // catalog is by far the largest payload this API serves (~2.4MB raw / 640KB brotli across 285
@@ -3816,6 +3839,7 @@ export default {
       // comment for why this is public and what it replaces.
       if (pathname === '/track-registry' && method === 'GET') return await handleTrackRegistryList(env);
       if (pathname === '/resources/catalog' && method === 'GET') return await handleResourcesCatalog(env, url);
+      if (pathname === '/track-content' && method === 'GET') return await handleTrackContent(env, url);
       if (pathname === '/promotions' && method === 'GET') return await handlePromotionsList(request, env);
       if (pathname === '/promotions/verify-request' && method === 'POST') return await handlePromoVerifyRequest(request, env);
       if (pathname === '/promotions/verify-email' && method === 'GET') return await handlePromoVerifyEmailConfirm(request, env);
