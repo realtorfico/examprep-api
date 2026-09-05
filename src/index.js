@@ -612,10 +612,52 @@ async function handleResourcesFree(request, env) {
 // and flashcard payloads round-trip through `data_json` unparsed here and JSON.parsed by the
 // caller only where needed (site does it once per resource on open) to keep this one query cheap
 // even as the catalog grows across all ~286 tracks.
-async function handleResourcesCatalog(env) {
-  const rows = await env.DB.prepare(
-    'SELECT exam_type, ord, type, title, desc, topic, free, downloadable, url, file, data_json FROM resources ORDER BY exam_type, ord'
-  ).all();
+async function handleResourcesCatalog(env, url) {
+  // Three modes, because the three consumers need wildly different amounts of data and the full
+  // catalog is by far the largest payload this API serves (~2.4MB raw / 640KB brotli across 285
+  // tracks -- bigger than the site's entire JS bundle):
+  //
+  //   ?counts=1        -> ~11KB. Per-track resource counts only. What the homepage, category pages
+  //                       and track-landing stat tiles actually need; loaded once at site boot.
+  //   ?examType=<id>   -> one track's full items. What the Resources tab (and the track landing
+  //                       page's 4-item preview) needs, fetched lazily for that track alone.
+  //   (no params)      -> the original full catalog, unchanged for any caller still expecting it.
+  //
+  // Before this split the site fetched the full 2.4MB payload on EVERY page load and blocked its
+  // first paint on it, to render pages that between them used ~11KB of it -- 80% of the payload is
+  // table rows and flashcard arrays that only ever get read one track at a time.
+  const examTypeParam = url && url.searchParams.get('examType');
+  const countsOnly = url && url.searchParams.get('counts') === '1';
+
+  if (countsOnly) {
+    // Aggregated in SQL rather than by fetching every row and reducing in JS -- this is the one
+    // request every single page load makes, so it should touch as little data as possible.
+    // json_array_length() over a flashcards row's data_json gives the real card count without
+    // shipping (or parsing) the cards themselves.
+    const counted = await env.DB.prepare(
+      `SELECT exam_type,
+              SUM(CASE WHEN type = 'table' THEN 1 ELSE 0 END) AS tables,
+              SUM(CASE WHEN type = 'flashcards' THEN 1 ELSE 0 END) AS decks,
+              COALESCE(SUM(CASE WHEN type = 'flashcards' AND data_json IS NOT NULL
+                                THEN json_array_length(data_json) ELSE 0 END), 0) AS cards,
+              SUM(CASE WHEN type = 'audio' THEN 1 ELSE 0 END) AS audio,
+              SUM(CASE WHEN type = 'video' THEN 1 ELSE 0 END) AS video
+         FROM resources GROUP BY exam_type`
+    ).all();
+    const counts = {};
+    for (const r of counted.results || []) {
+      counts[r.exam_type] = { tables: r.tables, decks: r.decks, cards: r.cards, audio: r.audio, video: r.video };
+    }
+    return Response.json({ counts }, { headers: { 'cache-control': 'public, max-age=300' } });
+  }
+
+  const rows = examTypeParam
+    ? await env.DB.prepare(
+        'SELECT exam_type, ord, type, title, desc, topic, free, downloadable, url, file, data_json FROM resources WHERE exam_type = ? ORDER BY ord'
+      ).bind(examTypeParam).all()
+    : await env.DB.prepare(
+        'SELECT exam_type, ord, type, title, desc, topic, free, downloadable, url, file, data_json FROM resources ORDER BY exam_type, ord'
+      ).all();
   const byTrack = {};
   for (const r of rows.results || []) {
     if (!byTrack[r.exam_type]) byTrack[r.exam_type] = [];
@@ -631,10 +673,10 @@ async function handleResourcesCatalog(env) {
     }
     byTrack[r.exam_type].push(item);
   }
-  // Same response for every visitor (not user-specific), rendered on most page types (category
-  // cards + track landing pages read it for pre-purchase resource-count previews, not just the
-  // Resources tab) -- cached so a page boot doesn't re-hit D1 for all 262 tracks' worth of rows
-  // every single time. 5 min is fresh enough that a content edit shows up quickly.
+  // Same response for every visitor (not user-specific) -- cached so repeat loads don't re-hit D1.
+  // 5 min is fresh enough that a content edit shows up quickly. Since the ?counts=1 split above,
+  // this heavier branch is only reached for a single track at a time (the Resources tab / track
+  // landing preview), or by a caller explicitly asking for the whole catalog.
   return Response.json({ resources: byTrack }, { headers: { 'cache-control': 'public, max-age=300' } });
 }
 
@@ -3773,7 +3815,7 @@ export default {
       // Public alias of the admin's /console/track-registry -- see handleTrackRegistryList's own
       // comment for why this is public and what it replaces.
       if (pathname === '/track-registry' && method === 'GET') return await handleTrackRegistryList(env);
-      if (pathname === '/resources/catalog' && method === 'GET') return await handleResourcesCatalog(env);
+      if (pathname === '/resources/catalog' && method === 'GET') return await handleResourcesCatalog(env, url);
       if (pathname === '/promotions' && method === 'GET') return await handlePromotionsList(request, env);
       if (pathname === '/promotions/verify-request' && method === 'POST') return await handlePromoVerifyRequest(request, env);
       if (pathname === '/promotions/verify-email' && method === 'GET') return await handlePromoVerifyEmailConfirm(request, env);
