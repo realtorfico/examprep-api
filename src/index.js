@@ -620,7 +620,7 @@ async function handleTrackContent(env, url) {
   const examType = url && url.searchParams.get('examType');
   if (!examType) return json({ error: 'examType_required' }, 400);
   const row = await env.DB.prepare(
-    'SELECT org_line, footer_requirement, terms_paragraph2, exam_intro_disclaimer, pass_score_note, info_links_json FROM track_content WHERE exam_type = ?'
+    'SELECT org_line, footer_requirement, terms_paragraph2, exam_intro_disclaimer, pass_score_note, info_links_json, description FROM track_content WHERE exam_type = ?'
   ).bind(examType).first();
   // A track with no row isn't an error -- the site falls back to its own generic hub copy, exactly
   // as it did for any exam_type missing from the old TRACK_COMPLIANCE object.
@@ -628,7 +628,7 @@ async function handleTrackContent(env, url) {
     ? {
         orgLine: row.org_line, footerRequirement: row.footer_requirement,
         termsParagraph2: row.terms_paragraph2, examIntroDisclaimer: row.exam_intro_disclaimer,
-        passScoreNote: row.pass_score_note,
+        passScoreNote: row.pass_score_note, description: row.description || '',
         infoLinks: row.info_links_json ? JSON.parse(row.info_links_json) : [],
       }
     : null;
@@ -2695,7 +2695,13 @@ async function getExamConfig(env, examType, ageCategory) {
 // objects with no key translation. Public + unauthenticated, same posture as /questions/counts --
 // none of this is sensitive, and the public site needs it to render its own homepage/category
 // pages/nav.
-async function handleTrackRegistryList(env) {
+// `includeMechanicsNote` is false for the PUBLIC /track-registry alias: mechanics_note is
+// sourcing/confidence rationale that no public surface reads (verified 2026-09-05 across the site,
+// the admin panel and the MCP server -- the only other mentions are a test fixture and a write-side
+// SQL generator), yet at ~276 B/track it was 51% of this response, which every visitor fetches
+// inside boot()'s blocking gate on every page load. The admin console route keeps it, since that's
+// where the field is actually maintained.
+async function handleTrackRegistryList(env, includeMechanicsNote) {
   const [registry, lastUpdatedRows] = await Promise.all([
     getTrackRegistry(env),
     // Real per-track "question bank last updated" signal for the site's freshness-stamp feature --
@@ -2710,7 +2716,7 @@ async function handleTrackRegistryList(env) {
   (lastUpdatedRows.results || []).forEach((row) => { lastUpdatedByType[row.exam_type] = row.ts; });
   const tracks = Object.keys(registry).map((examType) => {
     const r = registry[examType];
-    return {
+    const t = {
       examType: r.exam_type,
       examKind: r.kind,
       stateCode: r.state_code,
@@ -2721,9 +2727,10 @@ async function handleTrackRegistryList(env) {
       durationSec: r.exam_duration_sec,
       passPercent: r.pass_percent,
       minCorrect: r.min_correct,
-      mechanicsNote: r.mechanics_note,
       questionsUpdatedAt: lastUpdatedByType[examType] || null,
     };
+    if (includeMechanicsNote) t.mechanicsNote = r.mechanics_note;
+    return t;
   });
   return json({ tracks });
 }
@@ -3837,7 +3844,7 @@ export default {
       if (pathname === '/questions/counts' && method === 'GET') return await handleQuestionCounts(env);
       // Public alias of the admin's /console/track-registry -- see handleTrackRegistryList's own
       // comment for why this is public and what it replaces.
-      if (pathname === '/track-registry' && method === 'GET') return await handleTrackRegistryList(env);
+      if (pathname === '/track-registry' && method === 'GET') return await handleTrackRegistryList(env, false);
       if (pathname === '/resources/catalog' && method === 'GET') return await handleResourcesCatalog(env, url);
       if (pathname === '/track-content' && method === 'GET') return await handleTrackContent(env, url);
       if (pathname === '/promotions' && method === 'GET') return await handlePromotionsList(request, env);
@@ -3911,7 +3918,7 @@ export default {
         if (pathname === '/console/questions/counts' && method === 'GET') return await handleQuestionCounts(env);
         if (pathname === '/console/questions/topics' && method === 'GET') return await handleQuestionTopics(request, env);
         if (pathname === '/console/questions/sources' && method === 'GET') return await handleQuestionSources(request, env);
-        if (pathname === '/console/track-registry' && method === 'GET') return await handleTrackRegistryList(env);
+        if (pathname === '/console/track-registry' && method === 'GET') return await handleTrackRegistryList(env, true);
         if (pathname === '/console/track-registry/active' && method === 'POST') return await handleConsoleTrackRegistryActiveSet(request, env);
         if (pathname === '/console/track-registry/mechanics' && method === 'POST') return await handleConsoleTrackRegistryMechanicsUpdate(request, env);
         if (pathname === '/console/questions/create' && method === 'POST') return await handleQuestionCreate(request, env);
