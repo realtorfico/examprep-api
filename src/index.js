@@ -1,7 +1,7 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
-import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail, sendMissedItByOneEmail, sendTrackMechanicsChangedEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail, sendMissedItByOneEmail, sendTrackMechanicsChangedEmail, sendExamCountdownEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL, ALL_USERS_PROGRESS_TOTALS_SQL } from './progressQueries.js';
 import { filesOwnedByTrack } from './resourceOwnership.js';
@@ -797,6 +797,46 @@ async function sendAbandonedCheckoutReminders(env) {
     try {
       await sendAbandonedCheckoutEmail(env, row.email, row.exam_type);
       await env.DB.prepare('UPDATE checkout_intents SET reminder_sent_at = ? WHERE id = ?').bind(now(), row.id).run();
+    } catch (e) { /* best-effort -- one failed send shouldn't block the rest of the batch */ }
+  }
+}
+
+// Marketing round 4, item #5 ("countdown & exam-date personalization") -- daily digest to anyone
+// who set a real exam date on the My Profile page (see handleSetExamDate), counting down with 2
+// real practice questions pulled fresh each day. Runs on the same daily cron as the other
+// scheduled jobs. Dedup via last_countdown_sent_date (UTC 'YYYY-MM-DD') so a redeploy or a second
+// cron tick the same day never double-sends. Stops naturally once exam_date is in the past --
+// nobody gets emailed "day -1" reminders for an exam they already took.
+async function sendExamCountdownEmails(env) {
+  const today = new Date().toISOString().slice(0, 10);
+  const todayMs = Date.parse(today + 'T00:00:00Z');
+  const rows = (await env.DB.prepare(
+    `SELECT u.id, u.exam_type, u.exam_date, u.last_countdown_sent_date, u.token, c.buyer_email,
+            t.short_name AS track_label
+     FROM users u
+     JOIN codes c ON c.redeemed_by = u.id
+     LEFT JOIN track_registry t ON t.exam_type = u.exam_type
+     WHERE u.exam_date IS NOT NULL AND u.countdown_opt_out = 0
+       AND c.buyer_email IS NOT NULL AND c.status != 'revoked'
+       AND (u.last_countdown_sent_date IS NULL OR u.last_countdown_sent_date != ?)`
+  ).bind(today).all()).results;
+
+  for (const row of rows) {
+    const examMs = Date.parse(row.exam_date + 'T00:00:00Z');
+    if (Number.isNaN(examMs)) continue;
+    const daysLeft = Math.round((examMs - todayMs) / 86400000);
+    if (daysLeft < 0) continue; // exam day has passed -- stop counting down, never re-triggers since exam_date is untouched
+    try {
+      const qRows = (await env.DB.prepare(
+        'SELECT * FROM questions WHERE exam_type = ? ORDER BY RANDOM() LIMIT 2'
+      ).bind(row.exam_type).all()).results;
+      const questions = qRows.map((q) => {
+        const { choices, correctChoice } = buildDisplayChoices(q);
+        return { question: q.question, choices, correctChoice, explanation: q.explanation };
+      });
+      const unsubscribeUrl = `https://passexamhq.com/notary#/countdown-unsubscribe/${row.token}`;
+      await sendExamCountdownEmail(env, row.buyer_email, row.track_label || row.exam_type, daysLeft, questions, unsubscribeUrl);
+      await env.DB.prepare('UPDATE users SET last_countdown_sent_date = ? WHERE id = ?').bind(today, row.id).run();
     } catch (e) { /* best-effort -- one failed send shouldn't block the rest of the batch */ }
   }
 }
@@ -3208,12 +3248,49 @@ async function handleProfileGet(user, env) {
     buyerEmail: codeRow ? codeRow.buyer_email : null,
     paidCents: codeRow ? codeRow.paid_cents : null,
     points,
+    examDate: user.exam_date || null,
+    countdownOptOut: !!user.countdown_opt_out,
   });
 }
 async function handlePrefsSet(user, request, env) {
   const { theme, fontScale } = await request.json();
   await env.DB.prepare('UPDATE users SET theme = ?, font_scale = ? WHERE id = ?')
     .bind(theme ?? user.theme, fontScale ?? user.font_scale, user.id).run();
+  return json({ ok: true });
+}
+
+// Sets/clears the exam date behind the countdown-email feature (marketing round 4, item #5 --
+// see sendExamCountdownEmails below for the cron that actually sends). Setting a real date also
+// clears last_countdown_sent_date (so a changed date doesn't skip a day it hasn't actually sent
+// for yet) and re-enables countdown_opt_out=0 -- a deliberate re-engagement action (typing in a
+// new date) is a stronger, more current signal than a stale unsubscribe click, so it overrides it.
+async function handleSetExamDate(user, request, env) {
+  const { examDate } = await request.json();
+  if (examDate !== null && !/^\d{4}-\d{2}-\d{2}$/.test(String(examDate))) {
+    return json({ error: 'invalid_exam_date' }, 400);
+  }
+  if (examDate === null) {
+    await env.DB.prepare('UPDATE users SET exam_date = NULL, last_countdown_sent_date = NULL WHERE id = ?')
+      .bind(user.id).run();
+  } else {
+    await env.DB.prepare(
+      'UPDATE users SET exam_date = ?, last_countdown_sent_date = NULL, countdown_opt_out = 0 WHERE id = ?'
+    ).bind(examDate, user.id).run();
+  }
+  return json({ ok: true });
+}
+
+// Public (no auth) -- reached via the unsubscribe link in a countdown email, keyed by the same
+// bearer token used for authenticated API calls (already the right trust level: whoever has this
+// token already has full account access, so using it to opt out of one email type isn't a new
+// exposure). Mirrors handleReferralVerify's "token in query string, JSON response, site route
+// renders a confirmation" pattern.
+async function handleCountdownUnsubscribe(request, env) {
+  const url = new URL(request.url);
+  const token = url.searchParams.get('token');
+  if (!token) return json({ error: 'token_required' }, 400);
+  const result = await env.DB.prepare('UPDATE users SET countdown_opt_out = 1 WHERE token = ?').bind(token).run();
+  if (!result.meta.changes) return json({ error: 'invalid_token' }, 404);
   return json({ ok: true });
 }
 
@@ -3869,6 +3946,7 @@ export default {
       if (pathname === '/referrals/link' && method === 'POST') return await handleReferralLink(request, env);
       if (pathname === '/referrals/invite' && method === 'POST') return await handleReferralInvite(request, env);
       if (pathname === '/referrals/verify' && method === 'GET') return await handleReferralVerify(request, env);
+      if (pathname === '/countdown/unsubscribe' && method === 'GET') return await handleCountdownUnsubscribe(request, env);
       if (pathname === '/refunds/claim' && method === 'POST') return await handleRefundClaimSubmit(request, env);
       if (pathname === '/contact' && method === 'POST') return await handleContactSubmit(request, env);
       if (pathname === '/testimonials/submit' && method === 'POST') return await handleTestimonialSubmit(request, env);
@@ -3969,6 +4047,7 @@ export default {
       if (pathname === '/prefs' && method === 'GET') return await handlePrefsGet(user);
       if (pathname === '/prefs' && method === 'POST') return await handlePrefsSet(user, request, env);
       if (pathname === '/profile' && method === 'GET') return await handleProfileGet(user, env);
+      if (pathname === '/profile/exam-date' && method === 'POST') return await handleSetExamDate(user, request, env);
       if (pathname === '/resources/sign-batch' && method === 'POST') return await handleResourcesSignBatch(user, request, env);
 
       return json({ error: 'not_found' }, 404);
@@ -3986,5 +4065,6 @@ export default {
     ctx.waitUntil(runDailyHealthCheck(env));
     ctx.waitUntil(recordDailyProgressSnapshots(env));
     ctx.waitUntil(sendAbandonedCheckoutReminders(env));
+    ctx.waitUntil(sendExamCountdownEmails(env));
   },
 };

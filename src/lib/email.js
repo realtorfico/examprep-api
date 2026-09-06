@@ -308,6 +308,44 @@ export async function sendTrackMechanicsChangedEmail(env, to, examType, changes,
   });
 }
 
+// Marketing round 4, item #5 -- daily countdown to a user's self-reported exam date (set on My
+// Profile), with 2 real practice questions picked fresh by the caller (index.js's
+// sendExamCountdownEmails) each send, not a canned set. answersHtml reveals the answer inline
+// (email clients can't do interactive spoiler/reveal without JS) -- visually separated so it still
+// reads as "try it, then check," just not literally hidden. Recurring/non-transactional, unlike
+// every other email in this file, so this is the one with a real unsubscribe link.
+function questionBlockHtml(q, i) {
+  const choicesHtml = Object.entries(q.choices).map(([letter, text]) =>
+    `<div style="padding:6px 0;">${letter}. ${escapeForEmail(text)}</div>`).join('');
+  return `<div style="margin:${i === 0 ? '0' : '20px'} 0 0;padding:16px;background:#f8fafc;border-radius:10px;">
+    <p style="margin:0 0 8px;font-weight:700;">${escapeForEmail(q.question)}</p>
+    <div style="font-size:14px;color:#334155;">${choicesHtml}</div>
+    <p style="margin:12px 0 0;padding-top:10px;border-top:1px dashed #cbd5e1;font-size:14px;">
+      <strong>Answer: ${q.correctChoice}</strong> &mdash; ${escapeForEmail(q.explanation)}</p>
+  </div>`;
+}
+
+export async function sendExamCountdownEmail(env, to, examLabel, daysLeft, questions, unsubscribeUrl) {
+  const dayWord = daysLeft === 0 ? 'today' : daysLeft === 1 ? 'tomorrow' : `in ${daysLeft} days`;
+  const title = daysLeft === 0 ? "It's exam day!" : `${daysLeft} day${daysLeft === 1 ? '' : 's'} to go`;
+  const questionsHtml = questions.map(questionBlockHtml).join('');
+  await sendEmail(env, {
+    to,
+    subject: daysLeft === 0
+      ? `🎯 Good luck on your ${examLabel} exam today!`
+      : `⏳ ${daysLeft} day${daysLeft === 1 ? '' : 's'} until your ${examLabel} exam — quick practice`,
+    html: emailShell({
+      badge: '⏳',
+      title,
+      bodyHtml: `<p>Your <strong>${escapeForEmail(examLabel)}</strong> exam is ${dayWord}. Here are 2 real practice questions to warm up:</p>
+        ${questionsHtml}`,
+      ctaText: 'Practice more →',
+      ctaUrl: SITE_URL,
+      footerNote: `Set this reminder yourself on your My Profile page. <a href="${unsubscribeUrl}" style="color:#94a3b8;">Stop these daily emails</a>`,
+    }),
+  });
+}
+
 export async function sendExamPassedEmail(env, to, examType) {
   await sendEmail(env, {
     to,

@@ -9,11 +9,19 @@ CREATE TABLE users (
   created_at             INTEGER NOT NULL,
   last_seen_at           INTEGER NOT NULL,
   last_reminder_sent_at  INTEGER,                 -- last admin-sent "stalled buyer" re-engagement email
-  age_category           TEXT                     -- 'under18' | '18plus' | NULL (unset -> default
+  age_category           TEXT,                    -- 'under18' | '18plus' | NULL (unset -> default
                                                     -- 18plus format). Only meaningful for ca_driver
                                                     -- (see getExamConfig) -- captured optionally at
                                                     -- checkout, overridable per-sitting on the exam
                                                     -- intro page. Harmless/unused for every other track.
+  exam_date              TEXT,                     -- 'YYYY-MM-DD' or NULL -- set on the My Profile
+                                                    -- page, drives sendExamCountdownEmails' daily cron.
+  countdown_opt_out      INTEGER NOT NULL DEFAULT 0, -- set by clicking the unsubscribe link in a
+                                                    -- countdown email; re-set to 0 whenever the user
+                                                    -- sets a new exam_date (a deliberate re-engagement
+                                                    -- action overrides a stale unsubscribe).
+  last_countdown_sent_date TEXT                    -- 'YYYY-MM-DD', UTC -- dedup so the daily cron
+                                                    -- never double-sends on the same calendar day.
 );
 CREATE INDEX idx_users_token ON users(token);
 
