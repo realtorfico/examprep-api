@@ -265,6 +265,7 @@ function trackUrl(kind, stateCode) {
   if (!stateCode || stateCode === 'US') return `https://passexamhq.com/${slug}`;
   return `https://passexamhq.com/${slug}/${stateCode.toLowerCase()}`;
 }
+const SLUG_KIND_ROUTES = Object.fromEntries(Object.entries(KIND_ROUTE_SLUGS).map(([kind, slug]) => [slug, kind]));
 
 const MCP_PROTOCOL_VERSION = '2025-06-18';
 const MCP_CORS_HEADERS = {
@@ -370,8 +371,8 @@ const MCP_TOOLS = [
   },
 ];
 
-async function mcpListAvailableTracks(env, args) {
-  const kind = args && args.kind;
+async function mcpListAvailableTracks(env, args, defaultKind) {
+  const kind = (args && args.kind) || defaultKind;
   const stateCode = args && args.stateCode ? String(args.stateCode).toUpperCase() : undefined;
   let query = 'SELECT exam_type, kind, state_code, short_name FROM track_registry WHERE active = 1';
   const binds = [];
@@ -393,8 +394,13 @@ async function mcpListAvailableTracks(env, args) {
   return result;
 }
 
-async function mcpGetSampleQuestion(env, args) {
-  const examType = (args && args.examType) || 'ca_notary';
+async function mcpDefaultExamTypeForKind(env, kind) {
+  const row = await env.DB.prepare('SELECT exam_type FROM track_registry WHERE active = 1 AND kind = ? ORDER BY state_code LIMIT 1').bind(kind).first();
+  return row ? row.exam_type : 'ca_notary';
+}
+
+async function mcpGetSampleQuestion(env, args, defaultKind) {
+  const examType = (args && args.examType) || (defaultKind ? await mcpDefaultExamTypeForKind(env, defaultKind) : 'ca_notary');
   const topic = args && args.topic;
   let row = topic
     ? await env.DB.prepare('SELECT * FROM questions WHERE exam_type = ? AND topic = ? ORDER BY weight DESC, RANDOM() LIMIT 1').bind(examType, topic).first()
@@ -464,6 +470,9 @@ async function handleMcp(request, env) {
     return new Response('Method Not Allowed', { status: 405, headers: { ...MCP_CORS_HEADERS, Allow: 'POST, OPTIONS' } });
   }
 
+  const kindSlug = new URL(request.url).searchParams.get('kind');
+  const defaultKind = kindSlug ? SLUG_KIND_ROUTES[kindSlug] : undefined;
+
   let body;
   try {
     body = await request.json();
@@ -486,7 +495,9 @@ async function handleMcp(request, env) {
         protocolVersion: MCP_PROTOCOL_VERSION,
         capabilities: { tools: {} },
         serverInfo: { name: 'examprep-mcp', title: 'PassExamHQ', version: '1.0.0' },
-        instructions: 'Public, unauthenticated tools for PassExamHQ, a licensing-exam prep site covering state Notary, Real Estate Salesperson/Broker, Driver, Commercial Driver (CDL), Motorcycle, and Boating exams for every U.S. state that requires one. Call list_available_tracks first to discover what\'s covered and find the right examType, then get_sample_question to fetch a real practice question and grade_practice_answer to check a submitted answer. Full mock exams and progress tracking are at https://passexamhq.com.',
+        instructions: defaultKind
+          ? `Public, unauthenticated tools for PassExamHQ's ${defaultKind} exam-prep tracks, covering every U.S. state that requires one. Call list_available_tracks (kind defaults to "${defaultKind}" on this endpoint) to discover the exact examType for a state, then get_sample_question to fetch a real practice question and grade_practice_answer to check a submitted answer. Full mock exams and progress tracking are at ${trackUrl(defaultKind)}.`
+          : 'Public, unauthenticated tools for PassExamHQ, a licensing-exam prep site covering state Notary, Real Estate Salesperson/Broker, Driver, Commercial Driver (CDL), Motorcycle, and Boating exams for every U.S. state that requires one. Call list_available_tracks first to discover what\'s covered and find the right examType, then get_sample_question to fetch a real practice question and grade_practice_answer to check a submitted answer. Full mock exams and progress tracking are at https://passexamhq.com.',
       },
     });
   }
@@ -497,8 +508,8 @@ async function handleMcp(request, env) {
     const toolName = params && params.name;
     const args = (params && params.arguments) || {};
     let data;
-    if (toolName === 'list_available_tracks') data = await mcpListAvailableTracks(env, args);
-    else if (toolName === 'get_sample_question') data = await mcpGetSampleQuestion(env, args);
+    if (toolName === 'list_available_tracks') data = await mcpListAvailableTracks(env, args, defaultKind);
+    else if (toolName === 'get_sample_question') data = await mcpGetSampleQuestion(env, args, defaultKind);
     else if (toolName === 'grade_practice_answer') data = await mcpGradePracticeAnswer(env, args);
     else return mcpErrorResponse(id, -32602, `Unknown tool "${toolName}"`);
 
