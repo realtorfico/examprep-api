@@ -3842,12 +3842,12 @@ async function handleBlogList(request, env) {
   const kind = url.searchParams.get('kind');
   const rows = kind
     ? (await env.DB.prepare(
-        `SELECT id, slug, kind, state_code, title, excerpt, seo_title, seo_description, published_at FROM blog_posts
-         WHERE status = 'published' AND kind = ? ORDER BY published_at DESC`
+        `SELECT id, slug, kind, state_code, title, excerpt, seo_title, seo_description, published_at, featured FROM blog_posts
+         WHERE status = 'published' AND kind = ? ORDER BY featured DESC, published_at DESC`
       ).bind(kind).all()).results
     : (await env.DB.prepare(
-        `SELECT id, slug, kind, state_code, title, excerpt, seo_title, seo_description, published_at FROM blog_posts
-         WHERE status = 'published' ORDER BY published_at DESC`
+        `SELECT id, slug, kind, state_code, title, excerpt, seo_title, seo_description, published_at, featured FROM blog_posts
+         WHERE status = 'published' ORDER BY featured DESC, published_at DESC`
       ).all()).results;
   return json({ posts: rows });
 }
@@ -3883,15 +3883,16 @@ async function handleConsoleBlogUpsert(request, env) {
     ? ((existing && existing.published_at) || ts)
     : null;
   await env.DB.prepare(
-    `INSERT INTO blog_posts (id, slug, kind, state_code, title, excerpt, body_html, seo_title, seo_description, status, published_at, created_at, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `INSERT INTO blog_posts (id, slug, kind, state_code, title, excerpt, body_html, seo_title, seo_description, status, published_at, created_at, updated_at, featured)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
      ON CONFLICT (id) DO UPDATE SET slug = excluded.slug, kind = excluded.kind, state_code = excluded.state_code,
        title = excluded.title, excerpt = excluded.excerpt, body_html = excluded.body_html,
        seo_title = excluded.seo_title, seo_description = excluded.seo_description,
-       status = excluded.status, published_at = excluded.published_at, updated_at = excluded.updated_at`
+       status = excluded.status, published_at = excluded.published_at, updated_at = excluded.updated_at,
+       featured = excluded.featured`
   ).bind(
     id, slug, b.kind.trim(), b.stateCode || null, b.title.trim(), b.excerpt.trim(), b.bodyHtml,
-    b.seoTitle || null, b.seoDescription || null, status, publishedAt, ts, ts
+    b.seoTitle || null, b.seoDescription || null, status, publishedAt, ts, ts, b.featured ? 1 : 0
   ).run();
   return json({ ok: true, id });
 }

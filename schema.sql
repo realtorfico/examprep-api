@@ -595,7 +595,12 @@ CREATE TABLE blog_posts (
   status          TEXT NOT NULL DEFAULT 'draft', -- draft | published
   published_at    INTEGER,
   created_at      INTEGER NOT NULL,
-  updated_at      INTEGER NOT NULL
+  updated_at      INTEGER NOT NULL,
+  featured        INTEGER NOT NULL DEFAULT 0 -- sorts above non-featured posts on the list page and
+                                              -- gets distinct card/badge styling -- for posts more
+                                              -- directly actionable for an exam-taker (e.g. the
+                                              -- state-specific practice-test/cheat-sheet articles)
+                                              -- than the general educational posts.
 );
 CREATE INDEX idx_blog_posts_status_published ON blog_posts(status, published_at);
 
