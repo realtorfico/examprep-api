@@ -3837,8 +3837,34 @@ function parseBlogPostRow(row) {
   return { ...row };
 }
 
+// Lightweight counts-only mode (?counts=1), same reasoning as the resources catalog's own
+// ?counts=1 split: hero cards on the homepage/category/track pages only need a NUMBER, not the
+// full ~214KB published-post list, on every single page load. Returns three small maps a caller
+// combines client-side: kindCounts (every published post of that kind, any state or state-
+// agnostic), kindStateCounts (posts of that kind tagged to that specific state), and
+// kindAgnosticCounts (posts of that kind with no state_code at all -- relevant to every state).
+// A track's real "articles for you" count is kindStateCounts[kind:state] + kindAgnosticCounts[kind].
+async function handleBlogCounts(env) {
+  const rows = (await env.DB.prepare(
+    `SELECT kind, state_code, COUNT(*) AS n FROM blog_posts WHERE status = 'published' GROUP BY kind, state_code`
+  ).all()).results || [];
+  const kindCounts = {};
+  const kindStateCounts = {};
+  const kindAgnosticCounts = {};
+  let total = 0;
+  for (const r of rows) {
+    total += r.n;
+    kindCounts[r.kind] = (kindCounts[r.kind] || 0) + r.n;
+    if (r.state_code) kindStateCounts[r.kind + ':' + r.state_code] = r.n;
+    else kindAgnosticCounts[r.kind] = (kindAgnosticCounts[r.kind] || 0) + r.n;
+  }
+  return json({ total, kindCounts, kindStateCounts, kindAgnosticCounts },
+    { headers: { 'cache-control': 'public, max-age=300' } });
+}
+
 async function handleBlogList(request, env) {
   const url = new URL(request.url);
+  if (url.searchParams.get('counts') === '1') return await handleBlogCounts(env);
   const kind = url.searchParams.get('kind');
   const rows = kind
     ? (await env.DB.prepare(
