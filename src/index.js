@@ -3858,8 +3858,7 @@ async function handleBlogCounts(env) {
     if (r.state_code) kindStateCounts[r.kind + ':' + r.state_code] = r.n;
     else kindAgnosticCounts[r.kind] = (kindAgnosticCounts[r.kind] || 0) + r.n;
   }
-  return json({ total, kindCounts, kindStateCounts, kindAgnosticCounts },
-    { headers: { 'cache-control': 'public, max-age=300' } });
+  return json({ total, kindCounts, kindStateCounts, kindAgnosticCounts });
 }
 
 async function handleBlogList(request, env) {
