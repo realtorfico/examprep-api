@@ -174,8 +174,10 @@ CREATE TABLE track_registry (
   is_exam_required     INTEGER NOT NULL DEFAULT 1,
   exam_question_count  INTEGER NOT NULL,
   exam_duration_sec    INTEGER NOT NULL,
-  pass_percent         INTEGER NOT NULL,
-  min_correct          INTEGER NOT NULL,
+  pass_percent         INTEGER, -- NULL for scored-not-pass/fail tracks (e.g. ACT's 1-36 composite,
+                                 -- no pass threshold) -- migrated to nullable 2026-09-07 for the ACT
+                                 -- track build; every existing track still has a real value.
+  min_correct          INTEGER, -- NULL alongside pass_percent, same reasoning.
   mechanics_note       TEXT, -- sourcing/confidence rationale, migrated verbatim from EXAM_CONFIGS' code comments
   updated_at           INTEGER NOT NULL
 );

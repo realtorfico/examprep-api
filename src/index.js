@@ -1351,6 +1351,10 @@ async function handlePublicStats(env) {
   const passed = attempts.filter((a) => {
     if (!a.score_total) return false;
     const threshold = a.pass_percent != null ? a.pass_percent : getExamConfigFromRegistry(trackRegistry, a.exam_type).passPercent;
+    // null threshold = a scored-not-pass/fail track (e.g. ACT) -- excluded from pass-rate math
+    // entirely, same as a missing score_total, rather than letting `>= null` coerce to `>= 0` and
+    // silently count every such attempt as passed.
+    if (threshold == null) return false;
     return (100 * a.score_correct) / a.score_total >= threshold;
   }).length;
   return json({
@@ -1379,7 +1383,9 @@ async function handleRecentActivity(env) {
   for (const a of rows) {
     if (!a.score_total) continue;
     const threshold = a.pass_percent != null ? a.pass_percent : getExamConfigFromRegistry(trackRegistry, a.exam_type).passPercent;
-    if ((100 * a.score_correct) / a.score_total < threshold) continue;
+    // Same null-threshold exclusion as handlePublicStats above -- a scored-not-pass/fail track has
+    // no "passed" this feed can meaningfully surface.
+    if (threshold == null || (100 * a.score_correct) / a.score_total < threshold) continue;
     const track = trackRegistry[a.exam_type];
     items.push({ kind: track ? track.kind : a.exam_type, stateCode: track ? track.state_code : null, submittedAt: a.submitted_at });
     if (items.length >= 15) break;
@@ -1421,6 +1427,9 @@ async function handlePassRatesByCategory(env) {
     const track = trackRegistry[a.exam_type];
     if (!track) return;
     const threshold = a.pass_percent != null ? a.pass_percent : getExamConfigFromRegistry(trackRegistry, a.exam_type).passPercent;
+    // A scored-not-pass/fail kind (e.g. ACT) contributes no attempts to this breakdown at all --
+    // its pass rate is undefined, not zero, so it shouldn't dilute the category's real denominator.
+    if (threshold == null) return;
     const passed = (100 * a.score_correct) / a.score_total >= threshold;
     if (!byKind[track.kind]) byKind[track.kind] = { attempts: 0, passed: 0 };
     byKind[track.kind].attempts += 1;
@@ -2601,7 +2610,10 @@ async function handleConsoleExamAttemptsList(env) {
       const percent = r.score_total ? Math.round((r.score_correct / r.score_total) * 1000) / 10 : 0;
       return {
         attemptId: r.id, userId: r.user_id, examType: r.exam_type, mode: r.mode, code: r.code, buyerEmail: r.buyer_email,
-        correct: r.score_correct, total: r.score_total, percent, passed: percent >= threshold,
+        // null (not `percent >= threshold`, which would coerce a null threshold to 0 and always
+        // read true) for scored-not-pass/fail tracks -- the admin UI should show "N/A", not a
+        // fabricated pass/fail.
+        correct: r.score_correct, total: r.score_total, percent, passed: threshold != null ? percent >= threshold : null,
         startedAt: r.started_at, submittedAt: r.submitted_at,
       };
     }),
@@ -2972,7 +2984,10 @@ async function buildExamResult(env, examType, questionIds, answers, byId, correc
   const effectivePassPercent = passPercent != null ? passPercent : (await getExamConfig(env, examType)).passPercent;
   const percent = total ? Math.round((correct / total) * 1000) / 10 : 0;
   return {
-    correct, total, percent, passed: percent >= effectivePassPercent,
+    // null (not a coerced-to-0 comparison) for scored-not-pass/fail tracks (e.g. ACT) -- both the
+    // snapshot and the config fallback are null there, and `percent >= null` would otherwise
+    // silently evaluate true for every attempt (null coerces to 0 in a numeric comparison).
+    correct, total, percent, passed: effectivePassPercent != null ? percent >= effectivePassPercent : null,
     // durationSec 0 means untimed (see track_registry) -- nothing to cap timeTakenSec against.
     timeTakenSec: durationSec ? Math.min(submittedAt - startedAt, durationSec) : (submittedAt - startedAt),
     review: questionIds.map((id) => {
@@ -3147,7 +3162,9 @@ async function handleExamSubmit(user, request, env) {
   // moment from the pass email above: re-engagement for a near-miss, not congratulations. Dedup
   // mirrors the pass-email's own "not already happened before" check, just scoped to "already
   // passed OR already near-missed" so this never re-fires on every subsequent close attempt.
-  if (!result.passed && codeRow && codeRow.buyer_email) {
+  // result.passed === null (not just falsy) means a scored-not-pass/fail track -- "missed it by
+  // one" is inherently a pass-threshold-proximity concept, so it doesn't apply there at all.
+  if (result.passed === false && codeRow && codeRow.buyer_email) {
     const registry = await getTrackRegistry(env);
     const threshold = attempt.pass_percent != null ? attempt.pass_percent : getExamConfigFromRegistry(registry, attempt.exam_type).passPercent;
     if (result.percent >= threshold - MISSED_IT_GAP_PERCENT) {
@@ -3176,7 +3193,8 @@ async function handleExamSubmit(user, request, env) {
   const modeLabel = attempt.mode === 'toughest45' ? 'Toughest 45' : 'mock';
   await notifyAdmin(env, 'mock_exam_completed', 'Mock exam completed',
     `<p><strong>${(codeRow && (codeRow.buyer_email || codeRow.code)) || 'A user'}</strong> completed a ${attempt.exam_type} ` +
-    `${modeLabel} exam: ${correctCount}/${questionIds.length} (${result.percent}%) — ${result.passed ? 'passed' : 'did not pass'}.</p>`);
+    `${modeLabel} exam: ${correctCount}/${questionIds.length} (${result.percent}%) — ` +
+    `${result.passed === null ? 'no pass/fail threshold for this track' : result.passed ? 'passed' : 'did not pass'}.</p>`);
 
   return json(result);
 }
@@ -3199,7 +3217,8 @@ async function handleExamHistory(user, request, env) {
       const percent = r.score_total ? Math.round((r.score_correct / r.score_total) * 1000) / 10 : 0;
       return {
         attemptId: r.id, examType: r.exam_type, correct: r.score_correct, total: r.score_total,
-        percent, passed: percent >= threshold, startedAt: r.started_at, submittedAt: r.submitted_at,
+        // Same null-threshold handling as buildExamResult -- see its comment.
+        percent, passed: threshold != null ? percent >= threshold : null, startedAt: r.started_at, submittedAt: r.submitted_at,
       };
     }),
   });
