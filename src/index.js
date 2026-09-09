@@ -2192,6 +2192,17 @@ async function handleRefundClaimSubmit(request, env) {
   const existingClaim = await env.DB.prepare('SELECT id FROM refund_claims WHERE code = ?').bind(codeRow.code).first();
   if (existingClaim) return json({ error: 'already_claimed' }, 400);
 
+  // Scored, non-pass/fail national exams (ACT/DAT/CLT/OAT -- track_registry.pass_percent IS NULL)
+  // have no "failing the real exam" concept, so the exam-failure claim type makes no sense for
+  // them -- only the always-valid 7-day unconditional refund applies to those tracks.
+  if (claimType === 'exam_failure_50pct') {
+    const registry = await getTrackRegistry(env);
+    const trackInfo = registry[codeRow.exam_type];
+    if (trackInfo && trackInfo.pass_percent == null) {
+      return json({ error: 'no_pass_fail_threshold' }, 400);
+    }
+  }
+
   const windowSec = claimType === 'unconditional_7day' ? REFUND_UNCONDITIONAL_WINDOW_SEC : REFUND_FAILURE_WINDOW_SEC;
   if (now() - codeRow.issued_at > windowSec) return json({ error: 'window_expired' }, 400);
 
