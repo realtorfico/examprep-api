@@ -1907,11 +1907,11 @@ async function handleStripeConfirm(request, env) {
   const note = `stripe:${paymentIntentId}`;
   const existing = await env.DB.prepare('SELECT * FROM codes WHERE note = ?').bind(note).first();
   if (existing) {
-    if (existing.status === 'unused') return json({ code: existing.code, token: null, examType: existing.exam_type, isGift: true });
+    if (existing.status === 'unused') return json({ code: existing.code, token: null, examType: existing.exam_type, isGift: true, capturedCents: existing.paid_cents });
     const token = crypto.randomUUID();
     await env.DB.prepare('UPDATE users SET token = ?, last_seen_at = ? WHERE id = ?')
       .bind(token, now(), existing.redeemed_by).run();
-    return json({ code: existing.code, token, examType: existing.exam_type });
+    return json({ code: existing.code, token, examType: existing.exam_type, capturedCents: existing.paid_cents });
   }
 
   const { priceCents: fullPriceCents } = await getPrice(env, examType);
@@ -1932,7 +1932,7 @@ async function handleStripeConfirm(request, env) {
   const payerEmail = (charge && charge.billing_details && charge.billing_details.email) || intent.receipt_email;
   const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, affCode, sessionId });
 
-  return json({ code, token, examType, pointsApplied, isGift: giftResult });
+  return json({ code, token, examType, pointsApplied, isGift: giftResult, capturedCents: intent.amount_received });
 }
 
 // ---- Refer & earn points ----------------------------------------------
