@@ -741,6 +741,7 @@ const ALERT_TRIGGERS = [
   { key: 'health_check_failed', label: 'Site health check failed' },
   { key: 'contact_form_submitted', label: 'Contact form submitted' },
   { key: 'testimonial_submitted', label: 'Testimonial submitted' },
+  { key: 'issue_reported', label: 'Issue reported' },
 ];
 const ALERT_TRIGGER_KEYS = new Set(ALERT_TRIGGERS.map((t) => t.key));
 
@@ -981,6 +982,47 @@ async function handleConsoleTestimonialModerate(request, env) {
   if (!id || (status !== 'approved' && status !== 'rejected')) return json({ error: 'id_and_valid_status_required' }, 400);
   await env.DB.prepare('UPDATE testimonial_submissions SET status = ?, reviewed_at = ? WHERE id = ?')
     .bind(status, now(), id).run();
+  return json({ ok: true });
+}
+
+// ---- Report an issue (site-wide widget, separate from Contact Us/testimonials) -------------
+// Deliberately no Turnstile -- see schema.sql's comment on issue_reports for why. A review queue
+// (open/resolved/dismissed) rather than a straight-through email, since these need to be tracked
+// and actually fixed, not just read once.
+async function handleIssueReportSubmit(request, env) {
+  const { description, email, pageUrl, userAgent } = await request.json();
+  const trimmedDescription = (description || '').trim();
+  if (!trimmedDescription) return json({ error: 'description_required' }, 400);
+  if (trimmedDescription.length > 2000) return json({ error: 'description_too_long' }, 400);
+
+  await env.DB.prepare(
+    'INSERT INTO issue_reports (id, description, page_url, user_agent, email, created_at) VALUES (?,?,?,?,?,?)'
+  ).bind(newId(), trimmedDescription, (pageUrl || '').trim() || null, (userAgent || '').trim() || null,
+    (email || '').trim() || null, now()).run();
+
+  await notifyAdmin(env, 'issue_reported', 'New issue reported',
+    `<p>${escapeHtml(trimmedDescription).replace(/\n/g, '<br>')}</p>` +
+    (pageUrl ? `<p><strong>Page:</strong> ${escapeHtml(pageUrl)}</p>` : '') +
+    `<p>Review it in the admin Issue Reports tab.</p>`, (email || '').trim() || null);
+
+  return json({ ok: true });
+}
+
+async function handleConsoleIssueReportsList(env) {
+  const rows = (await env.DB.prepare(
+    'SELECT * FROM issue_reports ORDER BY created_at DESC LIMIT 500'
+  ).all()).results;
+  return json({ items: rows });
+}
+
+async function handleConsoleIssueReportUpdateStatus(request, env) {
+  const { id, status } = await request.json();
+  if (!id || (status !== 'resolved' && status !== 'dismissed' && status !== 'open')) {
+    return json({ error: 'id_and_valid_status_required' }, 400);
+  }
+  const adminEmail = getAccessEmail(request);
+  await env.DB.prepare('UPDATE issue_reports SET status = ?, reviewed_at = ?, reviewed_by = ? WHERE id = ?')
+    .bind(status, now(), adminEmail || null, id).run();
   return json({ ok: true });
 }
 
@@ -4006,6 +4048,7 @@ export default {
       if (pathname === '/refunds/claim' && method === 'POST') return await handleRefundClaimSubmit(request, env);
       if (pathname === '/contact' && method === 'POST') return await handleContactSubmit(request, env);
       if (pathname === '/testimonials/submit' && method === 'POST') return await handleTestimonialSubmit(request, env);
+      if (pathname === '/issue-reports' && method === 'POST') return await handleIssueReportSubmit(request, env);
       if (pathname === '/waitlist/join' && method === 'POST') return await handleWaitlistJoin(request, env);
       if (pathname === '/track/visit' && method === 'POST') return await handleTrackVisit(request, env);
       if (pathname === '/track/event' && method === 'POST') return await handleTrackEvent(request, env);
@@ -4051,6 +4094,8 @@ export default {
         if (pathname === '/console/testimonials' && method === 'GET') return await handleConsoleTestimonialsList(env);
         if (pathname === '/console/waitlist' && method === 'GET') return await handleConsoleWaitlist(env);
         if (pathname === '/console/testimonials/moderate' && method === 'POST') return await handleConsoleTestimonialModerate(request, env);
+        if (pathname === '/console/issue-reports' && method === 'GET') return await handleConsoleIssueReportsList(env);
+        if (pathname === '/console/issue-reports/status' && method === 'POST') return await handleConsoleIssueReportUpdateStatus(request, env);
         if (pathname === '/console/visitors/facets' && method === 'GET') return await handleConsoleVisitorsFacets(env);
         if (pathname === '/console/point-rules' && method === 'GET') return await handleConsolePointRulesList(env);
         if (pathname === '/console/point-rules' && method === 'POST') return await handleConsolePointRulesSet(request, env);

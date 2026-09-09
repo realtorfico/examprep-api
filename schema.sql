@@ -655,4 +655,21 @@ CREATE TABLE track_registry_changelog (
   changed_at INTEGER NOT NULL
 );
 CREATE INDEX idx_track_registry_changelog_changed_at ON track_registry_changelog(changed_at);
+
+-- Site-wide "report an issue" submissions (floating widget on every public page, separate from
+-- the help-chat FAQ widget and the Contact Us form). Deliberately no Turnstile on the submit path
+-- -- same reasoning as track_waitlist above: worst-case a junk row an admin dismisses in a click,
+-- not worth the extra friction on what's meant to be a frictionless "something's wrong" outlet.
+CREATE TABLE issue_reports (
+  id          TEXT PRIMARY KEY,
+  description TEXT NOT NULL,
+  page_url    TEXT,
+  user_agent  TEXT,
+  email       TEXT,           -- optional, private -- only so we can follow up if needed
+  status      TEXT NOT NULL DEFAULT 'open', -- open | resolved | dismissed
+  created_at  INTEGER NOT NULL,
+  reviewed_at INTEGER,
+  reviewed_by TEXT            -- admin email, best-effort from the Access JWT
+);
+CREATE INDEX idx_issue_reports_status ON issue_reports(status);
 CREATE INDEX idx_blog_posts_kind ON blog_posts(kind, status);
