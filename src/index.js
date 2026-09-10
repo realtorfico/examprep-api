@@ -1,7 +1,7 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
-import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail, sendMissedItByOneEmail, sendTrackMechanicsChangedEmail, sendExamCountdownEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail, sendMissedItByOneEmail, sendTrackMechanicsChangedEmail, sendExamCountdownEmail, sendOnboardingTipsEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL, ALL_USERS_PROGRESS_TOTALS_SQL } from './progressQueries.js';
 import { filesOwnedByTrack } from './resourceOwnership.js';
@@ -2817,6 +2817,34 @@ async function handleConsoleStalledBuyerRemind(request, env) {
   return json({ ok: true });
 }
 
+// ---- Post-purchase onboarding email --------------------------------------
+// One-time "here's how to actually use this" email, sent to EVERY real buyer (not just inactive
+// ones -- distinct from sendStalledBuyerReminders above) roughly a day after account creation.
+// Window is 20-48h (not a tight 24h) since this only runs once/day on the shared cron -- a buyer
+// who created their account right after a cron run would otherwise wait nearly 2 full days before
+// falling inside a tighter window. buyer_email IS NOT NULL for the same reason as the stalled-buyer
+// query -- excludes admin-issued/test codes with no real customer behind them.
+const ONBOARDING_EMAIL_MIN_HOURS = 20;
+const ONBOARDING_EMAIL_MAX_HOURS = 48;
+async function sendOnboardingTipsEmails(env) {
+  const minCutoff = now() - ONBOARDING_EMAIL_MIN_HOURS * 3600;
+  const maxCutoff = now() - ONBOARDING_EMAIL_MAX_HOURS * 3600;
+  const rows = (await env.DB.prepare(
+    `SELECT u.id AS user_id, u.exam_type, c.buyer_email
+     FROM users u
+     JOIN codes c ON c.redeemed_by = u.id
+     WHERE u.created_at < ? AND u.created_at > ? AND c.status = 'redeemed' AND c.buyer_email IS NOT NULL
+       AND u.onboarding_email_sent_at IS NULL
+     ORDER BY u.created_at ASC LIMIT 100`
+  ).bind(minCutoff, maxCutoff).all()).results;
+  for (const row of rows) {
+    try {
+      await sendOnboardingTipsEmail(env, row.buyer_email, row.exam_type);
+      await env.DB.prepare('UPDATE users SET onboarding_email_sent_at = ? WHERE id = ?').bind(now(), row.user_id).run();
+    } catch (e) { /* best-effort -- one failed send shouldn't block the rest of the batch */ }
+  }
+}
+
 // ---- Timed mock exam --------------------------------------------------
 // A single-sitting, timed simulation of the real exam -- fixed question set + a
 // server-authoritative start time (not client-trusted) so refreshing or fiddling with the
@@ -4239,5 +4267,6 @@ export default {
     ctx.waitUntil(sendAbandonedCheckoutReminders(env));
     ctx.waitUntil(sendExamCountdownEmails(env));
     ctx.waitUntil(sendStalledBuyerReminders(env));
+    ctx.waitUntil(sendOnboardingTipsEmails(env));
   },
 };

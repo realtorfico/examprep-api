@@ -20,8 +20,14 @@ CREATE TABLE users (
                                                     -- countdown email; re-set to 0 whenever the user
                                                     -- sets a new exam_date (a deliberate re-engagement
                                                     -- action overrides a stale unsubscribe).
-  last_countdown_sent_date TEXT                    -- 'YYYY-MM-DD', UTC -- dedup so the daily cron
+  last_countdown_sent_date TEXT,                   -- 'YYYY-MM-DD', UTC -- dedup so the daily cron
                                                     -- never double-sends on the same calendar day.
+  onboarding_email_sent_at INTEGER                 -- set once, ~24h after account creation (see
+                                                    -- sendOnboardingTipsEmails' daily cron) -- a
+                                                    -- one-time "here's how to actually use this"
+                                                    -- email, distinct from the immediate purchase
+                                                    -- receipt (sendCodeEmail, pure transactional) and
+                                                    -- the 14-day-inactive stalled-buyer nudge.
 );
 CREATE INDEX idx_users_token ON users(token);
 

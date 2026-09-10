@@ -156,6 +156,30 @@ export async function sendReengagementEmail(env, to, examType) {
   });
 }
 
+// One-time "here's how to actually use this" email, ~24h after account creation -- distinct from
+// sendCodeEmail (immediate, pure transactional receipt) and sendReengagementEmail (only fires for
+// buyers who've gone quiet 14+ days later). Every tip points at a real, shipped feature -- nothing
+// invented. Added 2026-09-10 (post-purchase onboarding item from the marketing priority list).
+export async function sendOnboardingTipsEmail(env, to, examType) {
+  await sendEmail(env, {
+    to,
+    subject: '💡 3 things most people miss on ExamPrep',
+    html: emailShell({
+      badge: '💡',
+      title: 'Get the most out of your practice time',
+      bodyHtml: `<p>You're set up with full access to the <strong>${examType}</strong> question bank. A few things worth knowing before your next study session:</p>
+        <ul style="padding-left:20px;margin:16px 0;">
+          <li style="margin-bottom:10px;"><strong>Quiz mode vs. Timed Mock Exam</strong> — Quiz mode gives instant feedback per question, great for learning. The Timed Mock Exam simulates the real thing (same question count and time limit) — run at least one before test day so the format isn't a surprise.</li>
+          <li style="margin-bottom:10px;"><strong>Voice-enabled practice</strong> — questions can be read aloud, useful for hands-free review or just a different way to retain the material.</li>
+          <li style="margin-bottom:10px;"><strong>Your Progress tab</strong> — tracks real accuracy and topic coverage as you go, so you can see exactly which topics need more work instead of guessing.</li>
+        </ul>
+        <p>Set an exam date on your Profile page and we'll send a daily countdown with fresh practice questions leading up to it.</p>`,
+      ctaText: 'Continue studying →',
+      ctaUrl: SITE_URL,
+    }),
+  });
+}
+
 // Free-form user text (giftMessage) goes into an HTML email body below -- escape it, unlike the
 // internal/controlled strings (examType, promoTitle, etc.) every other email in this file inserts
 // raw, since a gift message is the one field here a buyer could type literally anything into.
