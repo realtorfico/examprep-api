@@ -490,6 +490,12 @@ CREATE TABLE funnel_events (
   visitor_id  TEXT,
   event_name  TEXT NOT NULL,
   exam_type   TEXT,
+  variant     TEXT,     -- 'experimentKey:variantValue', optional -- lightweight A/B testing infra
+                         -- (see getExperimentVariant() in app.js), added 2026-09-10. Only ever set
+                         -- on client-fired events (quiz_completed/checkout_started); no live
+                         -- experiment threads a variant through to purchase_completed yet -- that'd
+                         -- need it carried through Stripe metadata/checkout_intents, a bigger lift
+                         -- deliberately left out of this first pass.
   created_at  INTEGER NOT NULL
 );
 CREATE INDEX idx_funnel_events_name ON funnel_events(event_name);

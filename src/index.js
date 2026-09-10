@@ -1152,10 +1152,10 @@ async function getExcludedVisitorIps(env) {
 // purchase is authoritative there, no need to trust a client-fired beacon for it.
 const FUNNEL_EVENT_NAMES = new Set(['quiz_completed', 'checkout_started']);
 
-async function recordFunnelEvent(env, { sessionId, visitorId, eventName, examType }) {
+async function recordFunnelEvent(env, { sessionId, visitorId, eventName, examType, variant }) {
   try {
-    await env.DB.prepare('INSERT INTO funnel_events (id, session_id, visitor_id, event_name, exam_type, created_at) VALUES (?,?,?,?,?,?)')
-      .bind(newId(), sessionId || null, visitorId || null, eventName, examType || null, now()).run();
+    await env.DB.prepare('INSERT INTO funnel_events (id, session_id, visitor_id, event_name, exam_type, variant, created_at) VALUES (?,?,?,?,?,?,?)')
+      .bind(newId(), sessionId || null, visitorId || null, eventName, examType || null, variant || null, now()).run();
   } catch (e) { /* best-effort -- funnel tracking never blocks the actual user action */ }
 }
 
@@ -1174,6 +1174,7 @@ async function handleTrackEvent(request, env) {
     visitorId: String(body.visitorId || '').trim(),
     eventName,
     examType: typeof body.examType === 'string' ? body.examType.slice(0, 100) : null,
+    variant: typeof body.variant === 'string' ? body.variant.slice(0, 100) : null,
   });
   return json({ ok: true });
 }
@@ -1190,12 +1191,23 @@ async function handleConsoleFunnel(env) {
   ).all()).results;
   const byName = {};
   rows.forEach((r) => { byName[r.event_name] = r.count; });
+  // A/B testing infra, added 2026-09-10 -- variant is only ever set on client-fired events
+  // (quiz_completed/checkout_started, see getExperimentVariant() in app.js), never on
+  // purchase_completed (that'd need the variant carried through Stripe metadata -- a bigger lift
+  // deliberately left out of this first pass). Grouped separately so the admin can see per-variant
+  // counts for whichever experiment is currently live, without it cluttering the always-shown
+  // top-line stage counts above when no experiment is running (variantRows is just empty then).
+  const variantRows = (await env.DB.prepare(
+    `SELECT event_name, variant, COUNT(*) AS count FROM funnel_events
+     WHERE variant IS NOT NULL GROUP BY event_name, variant ORDER BY variant, event_name`
+  ).all()).results;
   return json({
     stages: [
       { eventName: 'quiz_completed', label: 'Sample Quiz Completed', count: byName.quiz_completed || 0 },
       { eventName: 'checkout_started', label: 'Checkout Started', count: byName.checkout_started || 0 },
       { eventName: 'purchase_completed', label: 'Purchase Completed', count: byName.purchase_completed || 0 },
     ],
+    variants: variantRows,
   });
 }
 
