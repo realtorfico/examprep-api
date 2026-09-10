@@ -1490,6 +1490,44 @@ async function handlePassRatesByCategory(env) {
   return json({ minSampleSize: PASS_RATE_MIN_SAMPLE, categories });
 }
 
+// Quiz-mode accuracy companion to handlePassRatesByCategory above, added 2026-09-10 -- a
+// meaningful share of students use quiz mode (untimed, immediate-feedback practice) and never
+// submit a full scored exam, so the pass-rate table alone misses them entirely. Sourced from
+// STATS_ACCURACY_BY_TOPIC_SQL, the same shared progress-totals query the admin console's global
+// accuracy view uses (see progressQueries.js's file header on why this SQL is centralized rather
+// than duplicated -- these figures drifted out of sync once before when it wasn't), just summed
+// across topics per exam_type here instead of returned per-topic. Aggregated across ALL users --
+// a sitewide, not personal, figure. Reuses PASS_RATE_MIN_SAMPLE as the same suppression threshold
+// (sample-size gate only, never a value gate, same reasoning as above), applied to total questions
+// answered rather than completed exams since quiz mode has no discrete "attempt" unit to count
+// instead.
+async function handleQuizAccuracyByCategory(env) {
+  const [progressRows, trackRegistry] = await Promise.all([
+    env.DB.prepare(STATS_ACCURACY_BY_TOPIC_SQL).all(),
+    getTrackRegistry(env),
+  ]);
+  const activeKinds = new Set(Object.values(trackRegistry).filter((r) => r.active).map((r) => r.kind));
+  const byKind = {};
+  (progressRows.results || []).forEach((row) => {
+    const track = trackRegistry[row.exam_type];
+    if (!track) return;
+    if (!byKind[track.kind]) byKind[track.kind] = { total: 0, correct: 0 };
+    byKind[track.kind].total += row.attempts || 0;
+    byKind[track.kind].correct += row.correct || 0;
+  });
+  const categories = PASS_RATE_CATEGORY_ORDER.filter((kind) => activeKinds.has(kind)).map((kind) => {
+    const stats = byKind[kind] || { total: 0, correct: 0 };
+    const hasEnoughData = stats.total >= PASS_RATE_MIN_SAMPLE;
+    return {
+      kind,
+      categorySlug: KIND_ROUTE_SLUGS[kind] || null,
+      questionsAnswered: stats.total,
+      accuracyRate: hasEnoughData ? Math.round((100 * stats.correct) / stats.total) : null,
+    };
+  });
+  return json({ minSampleSize: PASS_RATE_MIN_SAMPLE, categories });
+}
+
 // ---- Promotions ----------------------------------------------------------
 // Admin-configurable banners (examprep-admin's Promotions tab) shown on the public site's home
 // and/or checkout pages. A promo with promo_code set is a real discount, redeemed by typing that
@@ -4018,6 +4056,7 @@ export default {
       if (pathname === '/config' && method === 'GET') return await handlePublicConfig(env);
       if (pathname === '/stats/public' && method === 'GET') return await handlePublicStats(env);
       if (pathname === '/stats/pass-rates-by-category' && method === 'GET') return await handlePassRatesByCategory(env);
+      if (pathname === '/stats/quiz-accuracy-by-category' && method === 'GET') return await handleQuizAccuracyByCategory(env);
       if (pathname === '/changelog' && method === 'GET') return await handleChangelogList(env);
       if (pathname === '/activity/recent' && method === 'GET') return await handleRecentActivity(env);
       if (pathname === '/category-content' && method === 'GET') return await handleCategoryContentList(request, env);
