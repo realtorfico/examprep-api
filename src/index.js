@@ -2749,9 +2749,14 @@ async function handleConsoleQuizProgressList(env) {
 }
 
 // ---- Re-engagement: stalled buyers --------------------------------------
-// "Stalled" = redeemed (active, non-revoked) code, no activity (last_seen_at, updated on every
-// authenticated request -- see requireUser) in at least `days`. Admin-triggered, not automatic --
-// the admin reviews the list and clicks Send per user, rather than a cron blasting emails unsupervised.
+// "Stalled" = redeemed (active, non-revoked) code with a REAL customer behind it (buyer_email on
+// file), no activity (last_seen_at, updated on every authenticated request -- see requireUser) in
+// at least `days`. buyer_email IS NOT NULL added 2026-09-10 -- admin-issued/test codes (see the
+// refund-claims comment: "admin-issued codes never have a paid_cents value") also never have a
+// buyer_email, and were showing up in this list alongside real buyers even though there's no real
+// customer relationship to nudge. Admin-triggered manual send still exists
+// (handleConsoleStalledBuyerRemind) for a human judgment call; sendStalledBuyerReminders below adds
+// an automated one-time nudge on top of it.
 
 async function handleConsoleStalledBuyersList(request, env) {
   const url = new URL(request.url);
@@ -2761,10 +2766,36 @@ async function handleConsoleStalledBuyersList(request, env) {
     `SELECT u.id AS user_id, u.exam_type, u.last_seen_at, u.created_at, u.last_reminder_sent_at, c.code, c.buyer_email
      FROM users u
      JOIN codes c ON c.redeemed_by = u.id
-     WHERE u.last_seen_at < ? AND c.status = 'redeemed'
+     WHERE u.last_seen_at < ? AND c.status = 'redeemed' AND c.buyer_email IS NOT NULL
      ORDER BY u.last_seen_at ASC LIMIT 500`
   ).bind(cutoff).all()).results;
   return json({ items: rows, days });
+}
+
+// Automated counterpart to the manual admin tool above, added 2026-09-10. One-time only per user
+// (last_reminder_sent_at IS NULL) -- a real stalled buyer gets nudged automatically once, not
+// repeatedly; the admin's manual tool is still there for a deliberate second nudge if a human
+// judges it worth it. STALLED_BUYER_AUTO_DAYS is deliberately longer than the manual tool's 7-day
+// default (less aggressive for an unsupervised send) and capped per run so the backlog of buyers
+// who were already stalled before this existed doesn't blast dozens of emails in one run.
+const STALLED_BUYER_AUTO_DAYS = 14;
+const STALLED_BUYER_AUTO_LIMIT = 25;
+async function sendStalledBuyerReminders(env) {
+  const cutoff = now() - STALLED_BUYER_AUTO_DAYS * 86400;
+  const rows = (await env.DB.prepare(
+    `SELECT u.id AS user_id, u.exam_type, c.buyer_email
+     FROM users u
+     JOIN codes c ON c.redeemed_by = u.id
+     WHERE u.last_seen_at < ? AND c.status = 'redeemed' AND c.buyer_email IS NOT NULL
+       AND u.last_reminder_sent_at IS NULL
+     ORDER BY u.last_seen_at ASC LIMIT ?`
+  ).bind(cutoff, STALLED_BUYER_AUTO_LIMIT).all()).results;
+  for (const row of rows) {
+    try {
+      await sendReengagementEmail(env, row.buyer_email, row.exam_type);
+      await env.DB.prepare('UPDATE users SET last_reminder_sent_at = ? WHERE id = ?').bind(now(), row.user_id).run();
+    } catch (e) { /* best-effort -- one failed send shouldn't block the rest of the batch */ }
+  }
 }
 
 async function handleConsoleStalledBuyerRemind(request, env) {
@@ -4207,5 +4238,6 @@ export default {
     ctx.waitUntil(recordDailyProgressSnapshots(env));
     ctx.waitUntil(sendAbandonedCheckoutReminders(env));
     ctx.waitUntil(sendExamCountdownEmails(env));
+    ctx.waitUntil(sendStalledBuyerReminders(env));
   },
 };
