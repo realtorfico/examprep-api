@@ -2612,13 +2612,14 @@ async function handleProgressReset(user, request, env) {
 }
 
 // ---- Leaderboard ---------------------------------------------------------
-// Top 3 by accuracy and top 3 by coverage, same exam_type (track) as the requesting user only --
+// Top N by accuracy and top N by coverage, same exam_type (track) as the requesting user only --
 // never crosses tracks, since a DRE user's accuracy isn't comparable to a notary user's. Must have
 // answered at least MIN_LEADERBOARD_QUESTIONS questions to qualify, so a single lucky question
 // can't top the accuracy list. Codes are masked (not full identity) since this is visible to any
-// other student on the same track, not just admin. Returns the union of both top-3 sets (not just
+// other student on the same track, not just admin. Returns the union of both top-N sets (not just
 // whichever the caller asked for) so the client can toggle sort order without a second round-trip.
 const MIN_LEADERBOARD_QUESTIONS = 20;
+const LEADERBOARD_TOP_N = 2; // reduced from top 3 -> top 2, 2026-09-10 at user's request
 
 function maskLeaderboardCode(code) {
   if (!code) return 'Anonymous';
@@ -2641,8 +2642,8 @@ async function handleLeaderboard(user, env) {
     }))
     .filter((r) => r.total >= MIN_LEADERBOARD_QUESTIONS);
 
-  const topByAccuracy = ranked.slice().sort((a, b) => b.accuracy - a.accuracy).slice(0, 3);
-  const topByCoverage = ranked.slice().sort((a, b) => b.coverage - a.coverage).slice(0, 3);
+  const topByAccuracy = ranked.slice().sort((a, b) => b.accuracy - a.accuracy).slice(0, LEADERBOARD_TOP_N);
+  const topByCoverage = ranked.slice().sort((a, b) => b.coverage - a.coverage).slice(0, LEADERBOARD_TOP_N);
   const seenIds = new Set();
   const combined = topByAccuracy.concat(topByCoverage)
     .filter((r) => (seenIds.has(r.id) ? false : (seenIds.add(r.id), true)))
