@@ -2629,6 +2629,36 @@ function maskLeaderboardCode(code) {
   return second ? first + '-' + second : first;
 }
 
+// ---- Referral leaderboard --------------------------------------------------
+// Top referrers by real converted referrals (a friend actually bought, not just invited/verified --
+// the strongest signal). No sample-size gate needed, unlike the accuracy/coverage leaderboard or
+// the pass-rate page -- a raw count is never statistically noisy the way an average can be, so even
+// a referrer with just 1 conversion is shown honestly, same "never hide a real number" rule as
+// elsewhere on this site. Identity always masked (local-part of email, domain shown) -- never the
+// account's own `name` field, even though a referrer typed it themselves: they typed it for referral
+// tracking/personalization, not expecting it to be shown publicly on a leaderboard, so this stays as
+// privacy-conservative as the quiz leaderboard's own masked-code pattern.
+function maskEmailForLeaderboard(email) {
+  if (!email) return 'Anonymous';
+  const at = email.indexOf('@');
+  if (at <= 0) return 'Anonymous';
+  const local = email.slice(0, at), domain = email.slice(at + 1);
+  const maskedLocal = local.length > 1 ? local[0] + '*'.repeat(local.length - 1) : local;
+  return maskedLocal + '@' + domain;
+}
+const REFERRAL_LEADERBOARD_TOP_N = 3;
+async function handleReferralLeaderboard(env) {
+  const rows = (await env.DB.prepare(
+    `SELECT a.email, COUNT(*) AS convertedCount
+     FROM referrals r JOIN accounts a ON a.id = r.referrer_account_id
+     WHERE r.status = 'converted'
+     GROUP BY r.referrer_account_id
+     ORDER BY convertedCount DESC LIMIT ?`
+  ).bind(REFERRAL_LEADERBOARD_TOP_N).all()).results;
+  const leaders = rows.map((r) => ({ display: maskEmailForLeaderboard(r.email), convertedCount: r.convertedCount }));
+  return json({ leaders });
+}
+
 async function handleLeaderboard(user, env) {
   const rows = (await env.DB.prepare(LEADERBOARD_SQL).bind(user.exam_type).all()).results;
   const ranked = rows
@@ -4141,6 +4171,7 @@ export default {
       if (pathname === '/stripe/create-intent' && method === 'POST') return await handleStripeCreateIntent(request, env);
       if (pathname === '/stripe/confirm' && method === 'POST') return await handleStripeConfirm(request, env);
       if (pathname === '/referrals/link' && method === 'POST') return await handleReferralLink(request, env);
+      if (pathname === '/referrals/leaderboard' && method === 'GET') return await handleReferralLeaderboard(env);
       if (pathname === '/referrals/invite' && method === 'POST') return await handleReferralInvite(request, env);
       if (pathname === '/referrals/verify' && method === 'GET') return await handleReferralVerify(request, env);
       if (pathname === '/countdown/unsubscribe' && method === 'GET') return await handleCountdownUnsubscribe(request, env);
