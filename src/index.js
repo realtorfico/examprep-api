@@ -3691,7 +3691,7 @@ async function handleCodeDetail(request, env) {
 
   const userId = codeRow.redeemed_by;
   const [user, activityRow, totalsRow, topicRows, examAttemptRows, resourceRows, snapshotRows] = await Promise.all([
-    env.DB.prepare('SELECT id, exam_type, created_at, last_seen_at FROM users WHERE id = ?').bind(userId).first(),
+    env.DB.prepare('SELECT id, exam_type, exam_date, created_at, last_seen_at FROM users WHERE id = ?').bind(userId).first(),
     env.DB.prepare('SELECT MIN(last_answered_at) AS firstActivityAt, MAX(last_answered_at) AS lastActivityAt FROM progress WHERE user_id = ? AND last_answered_at IS NOT NULL').bind(userId).first(),
     env.DB.prepare(PROGRESS_TOTALS_SQL).bind(userId).first(),
     env.DB.prepare(PROGRESS_BY_TOPIC_SQL).bind(userId, codeRow.exam_type).all(),
