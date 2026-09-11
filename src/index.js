@@ -1363,6 +1363,20 @@ async function handleConsoleVisitorsList(request, env) {
      FROM site_visits ${where} ORDER BY last_seen_at DESC LIMIT 2000`
   ).bind(...binds).all()).results;
   const filtered = excluded.size ? rows.filter((r) => !excluded.has(r.ip_address)) : rows;
+
+  // "Purchased" column, added 2026-09-11 -- distinct from the client-side "Reached Buy" (which just
+  // means /buy was somewhere in the page journey). finalizePurchase() records a purchase_completed
+  // funnel_events row carrying the SAME session_id the client already sends on every /track/visit
+  // beacon (getOrCreateSessionId() in app.js), so this is a real, reliable join key already in
+  // place -- no new client-side tracking needed. One extra query (not per-row -- a single
+  // DISTINCT-session_id lookup turned into a Set) rather than a per-row correlated subquery, kept
+  // fast via idx_funnel_events_session. Admin-only/low-traffic, so unlike the public stats
+  // endpoints fixed the same day, this doesn't need its own cache.
+  const purchasedSessionIds = new Set((await env.DB.prepare(
+    `SELECT DISTINCT session_id FROM funnel_events WHERE event_name = 'purchase_completed' AND session_id IS NOT NULL`
+  ).all()).results.map((r) => r.session_id));
+  filtered.forEach((r) => { r.purchased = purchasedSessionIds.has(r.session_id) ? 1 : 0; });
+
   return json({ items: filtered });
 }
 
