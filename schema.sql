@@ -493,6 +493,14 @@ CREATE TABLE site_visits (
   utm_source     TEXT,
   utm_medium     TEXT,
   utm_campaign   TEXT,
+  utm_term       TEXT,             -- keyword, when the ad's Final URL suffix passes Google Ads'
+                                    -- {keyword} ValueTrack parameter as utm_term -- lets a real
+                                    -- purchase be traced back to the specific keyword that served
+                                    -- the click, not just the campaign. Added 2026-09-11.
+  gclid          TEXT,             -- Google Click ID (ValueTrack {gclid}) -- a stronger, harder-
+                                    -- to-lose signal than utm_term that a visit really came from a
+                                    -- paid Google Ads click at all, independent of whether utm_term
+                                    -- survived. Added 2026-09-11.
   landing_path   TEXT NOT NULL,    -- first route path this session, never overwritten
   pages_json     TEXT NOT NULL,    -- JSON array of every route path visited this session, in order
   page_count     INTEGER NOT NULL DEFAULT 1,

@@ -1354,14 +1354,15 @@ async function handleTrackVisit(request, env) {
     `INSERT INTO site_visits (
        session_id, visitor_id, ip_address, country, region, city, timezone, latitude, longitude,
        user_agent, browser, os, device_type, is_bot, referrer, utm_source, utm_medium, utm_campaign,
-       landing_path, pages_json, page_count, first_seen_at, last_seen_at
-     ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+       utm_term, gclid, landing_path, pages_json, page_count, first_seen_at, last_seen_at
+     ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
      ON CONFLICT(session_id) DO UPDATE SET
        ip_address = excluded.ip_address, country = excluded.country, region = excluded.region, city = excluded.city,
        timezone = excluded.timezone, latitude = excluded.latitude, longitude = excluded.longitude,
        user_agent = excluded.user_agent, browser = excluded.browser, os = excluded.os, device_type = excluded.device_type,
        is_bot = excluded.is_bot, referrer = excluded.referrer, utm_source = excluded.utm_source,
-       utm_medium = excluded.utm_medium, utm_campaign = excluded.utm_campaign,
+       utm_medium = excluded.utm_medium, utm_campaign = excluded.utm_campaign, utm_term = excluded.utm_term,
+       gclid = excluded.gclid,
        pages_json = excluded.pages_json, page_count = excluded.page_count, last_seen_at = excluded.last_seen_at`
   ).bind(
     sessionId, visitorId, ip, cf.country || null, cf.regionCode || null, cf.city || null,
@@ -1369,6 +1370,7 @@ async function handleTrackVisit(request, env) {
     ua, parsed.browser, parsed.os, parsed.deviceType, parsed.isBot ? 1 : 0,
     (body.referrer || '').slice(0, 500) || null, (body.utmSource || '').slice(0, 100) || null,
     (body.utmMedium || '').slice(0, 100) || null, (body.utmCampaign || '').slice(0, 100) || null,
+    (body.utmTerm || '').slice(0, 200) || null, (body.gclid || '').slice(0, 200) || null,
     landingPath, JSON.stringify(pages), pages.length || 1, firstSeenAt, t
   ).run();
 
@@ -1407,6 +1409,7 @@ async function handleConsoleVisitorsList(request, env) {
   const rows = (await env.DB.prepare(
     `SELECT session_id, visitor_id, ip_address, country, region, city, timezone, latitude, longitude,
             browser, os, device_type, is_bot, referrer, utm_source, utm_medium, utm_campaign,
+            utm_term, gclid,
             landing_path, pages_json, page_count, first_seen_at, last_seen_at,
             (last_seen_at - first_seen_at) AS duration_sec
      FROM site_visits ${where} ORDER BY last_seen_at DESC LIMIT 2000`
