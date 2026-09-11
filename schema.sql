@@ -526,6 +526,10 @@ CREATE INDEX idx_funnel_events_created ON funnel_events(created_at);
 -- Backs the admin Visitors tab's "Purchased" column (handleConsoleVisitorsList, added 2026-09-11)
 -- -- a lookup of which session_ids have a purchase_completed row, joined against site_visits.
 CREATE INDEX idx_funnel_events_session ON funnel_events(session_id, event_name);
+-- Backs the admin Visitors "Purchased" column's actual filter shape
+-- (event_name = 'purchase_completed' AND created_at BETWEEN ? AND ?) -- the single-column indexes
+-- above don't cover that combination. Added 2026-09-11 via a follow-up code review.
+CREATE INDEX idx_funnel_events_name_created ON funnel_events(event_name, created_at);
 
 -- Real-student testimonial submissions -- a moderation queue, NOT auto-published. Approving one
 -- here does not write into category_content.testimonials directly: that JSON is keyed by category

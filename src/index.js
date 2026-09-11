@@ -1286,7 +1286,19 @@ async function handleTrackEvent(request, env) {
 // 'checkout_started' come from the public /track/event beacon; 'purchase_completed' is recorded
 // directly by finalizePurchase() server-side, more reliable than trusting a client-fired beacon
 // for the actual conversion event.
+// In-memory 5-min TTL cache, same pattern as publicStatsCache -- these are genuinely intended as
+// ALL-TIME totals (see the function's own original comment: "deliberately simple, no date range/
+// filtering, for a first pass"), so a time bound would change the feature's actual meaning, not
+// just its performance. Caching bounds how often the full-table scan runs (once per 5 min instead
+// of once per admin page-load) without changing what it reports. Found 2026-09-11 via a follow-up
+// code review verifying the same day's other stats-endpoint fixes.
+let consoleFunnelCache = null;
+let consoleFunnelCacheAt = 0;
+const CONSOLE_FUNNEL_CACHE_TTL_MS = 5 * 60 * 1000;
+
 async function handleConsoleFunnel(env) {
+  const cacheAge = Date.now() - consoleFunnelCacheAt;
+  if (consoleFunnelCache && cacheAge < CONSOLE_FUNNEL_CACHE_TTL_MS) return json(consoleFunnelCache);
   const rows = (await env.DB.prepare(
     'SELECT event_name, COUNT(*) AS count FROM funnel_events GROUP BY event_name'
   ).all()).results;
@@ -1302,14 +1314,16 @@ async function handleConsoleFunnel(env) {
     `SELECT event_name, variant, COUNT(*) AS count FROM funnel_events
      WHERE variant IS NOT NULL GROUP BY event_name, variant ORDER BY variant, event_name`
   ).all()).results;
-  return json({
+  consoleFunnelCache = {
     stages: [
       { eventName: 'quiz_completed', label: 'Sample Quiz Completed', count: byName.quiz_completed || 0 },
       { eventName: 'checkout_started', label: 'Checkout Started', count: byName.checkout_started || 0 },
       { eventName: 'purchase_completed', label: 'Purchase Completed', count: byName.purchase_completed || 0 },
     ],
     variants: variantRows,
-  });
+  };
+  consoleFunnelCacheAt = Date.now();
+  return json(consoleFunnelCache);
 }
 
 async function handleTrackVisit(request, env) {
@@ -2041,7 +2055,15 @@ async function handlePaypalCreateOrder(request, env) {
   // Real-track validation -- see handleStripeCreateIntent's identical check for why: examType is
   // otherwise trusted raw/unescaped in every transactional email template, and quoteCheckout's
   // getPrice() silently falls back to a default price rather than rejecting an unknown value.
-  if (!(await getTrackRegistry(env))[examType]) return json({ error: 'invalid_examType' }, 400);
+  // Checks active too, not just presence in the registry -- a deactivated/retired track (pulled
+  // from sale, see track_registry.active) would otherwise still pass this check and let someone
+  // complete a purchase or sign up for a reminder on it, the exact "only active tracks are
+  // purchasable" invariant handleQotd already enforces (`!track || !track.active`). Found
+  // 2026-09-11 via a follow-up code review verifying the original fix.
+  {
+    const validationTrack = (await getTrackRegistry(env))[examType];
+    if (!validationTrack || !validationTrack.active) return json({ error: 'invalid_examType' }, 400);
+  }
 
   const quote = await quoteCheckout(env, examType, email, applyPoints, promoCode);
   if (quote.error) {
@@ -2123,7 +2145,15 @@ async function handleStripeCreateIntent(request, env) {
   // (silently falls back to DEFAULT_PRICE_CENTS), so without this check an attacker-controlled
   // examType containing HTML would reach sendAbandonedCheckoutEmail verbatim. Found 2026-09-11 via
   // code review, alongside the identical gap in the new handleBuyReminderSubmit below.
-  if (!(await getTrackRegistry(env))[examType]) return json({ error: 'invalid_examType' }, 400);
+  // Checks active too, not just presence in the registry -- a deactivated/retired track (pulled
+  // from sale, see track_registry.active) would otherwise still pass this check and let someone
+  // complete a purchase or sign up for a reminder on it, the exact "only active tracks are
+  // purchasable" invariant handleQotd already enforces (`!track || !track.active`). Found
+  // 2026-09-11 via a follow-up code review verifying the original fix.
+  {
+    const validationTrack = (await getTrackRegistry(env))[examType];
+    if (!validationTrack || !validationTrack.active) return json({ error: 'invalid_examType' }, 400);
+  }
 
   const quote = await quoteCheckout(env, examType, email, applyPoints, promoCode);
   if (quote.error) {
@@ -2187,7 +2217,15 @@ async function handleBuyReminderSubmit(request, env) {
   if (!trimmedEmail || !examType) return json({ error: 'email_and_examType_required' }, 400);
   // Real-track validation -- see handleStripeCreateIntent's identical check for why: examType is
   // otherwise trusted raw/unescaped in sendBuyPageReminderEmail's template.
-  if (!(await getTrackRegistry(env))[examType]) return json({ error: 'invalid_examType' }, 400);
+  // Checks active too, not just presence in the registry -- a deactivated/retired track (pulled
+  // from sale, see track_registry.active) would otherwise still pass this check and let someone
+  // complete a purchase or sign up for a reminder on it, the exact "only active tracks are
+  // purchasable" invariant handleQotd already enforces (`!track || !track.active`). Found
+  // 2026-09-11 via a follow-up code review verifying the original fix.
+  {
+    const validationTrack = (await getTrackRegistry(env))[examType];
+    if (!validationTrack || !validationTrack.active) return json({ error: 'invalid_examType' }, 400);
+  }
 
   await env.DB.prepare(
     `INSERT INTO checkout_intents (id, email, exam_type, created_at, source) VALUES (?, ?, ?, ?, 'exit_capture')
