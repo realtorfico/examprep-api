@@ -180,6 +180,28 @@ export async function sendOnboardingTipsEmail(env, to, examType) {
   });
 }
 
+// One-time "what do you think?" ask, ~10 days after account creation -- distinct from
+// sendReengagementEmail (only fires for INACTIVE buyers, asks them to come back) and
+// sendOnboardingTipsEmail (day 1, tips not opinions). Links to SITE_URL + ?feedback=1, which
+// auto-opens the site's suggestions widget (see app.js boot()) so the reply lands directly in the
+// admin Suggestions tab rather than a raw inbox reply. Added 2026-09-11.
+export async function sendSuggestionRequestEmail(env, to, examType) {
+  await sendEmail(env, {
+    to,
+    subject: '💭 Got a minute? Tell us what you think',
+    html: emailShell({
+      badge: '💭',
+      title: 'What would make this better?',
+      bodyHtml: `<p>You've had a bit of time with the <strong>${examType}</strong> question bank now —
+        we'd genuinely like to know what's working, what isn't, or what you wish it did differently.</p>
+        <p>Takes 30 seconds, and a real person reads every one.</p>`,
+      ctaText: 'Share your thoughts →',
+      ctaUrl: `${SITE_URL}?feedback=1`,
+      footerNote: "Nothing to add right now? No action needed.",
+    }),
+  });
+}
+
 // Free-form user text (giftMessage) goes into an HTML email body below -- escape it, unlike the
 // internal/controlled strings (examType, promoTitle, etc.) every other email in this file inserts
 // raw, since a gift message is the one field here a buyer could type literally anything into.

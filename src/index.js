@@ -1,7 +1,7 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
-import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail, sendMissedItByOneEmail, sendTrackMechanicsChangedEmail, sendExamCountdownEmail, sendOnboardingTipsEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail, sendMissedItByOneEmail, sendTrackMechanicsChangedEmail, sendExamCountdownEmail, sendOnboardingTipsEmail, sendSuggestionRequestEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL, ALL_USERS_PROGRESS_TOTALS_SQL } from './progressQueries.js';
 import { filesOwnedByTrack } from './resourceOwnership.js';
@@ -742,6 +742,7 @@ const ALERT_TRIGGERS = [
   { key: 'contact_form_submitted', label: 'Contact form submitted' },
   { key: 'testimonial_submitted', label: 'Testimonial submitted' },
   { key: 'issue_reported', label: 'Issue reported' },
+  { key: 'suggestion_submitted', label: 'Suggestion submitted' },
 ];
 const ALERT_TRIGGER_KEYS = new Set(ALERT_TRIGGERS.map((t) => t.key));
 
@@ -1024,6 +1025,71 @@ async function handleConsoleIssueReportUpdateStatus(request, env) {
   await env.DB.prepare('UPDATE issue_reports SET status = ?, reviewed_at = ?, reviewed_by = ? WHERE id = ?')
     .bind(status, now(), adminEmail || null, id).run();
   return json({ ok: true });
+}
+
+// ---- Suggestions ("let us know what you think", site-wide widget) --------------------
+// Deliberately no Turnstile -- same reasoning as issue_reports above. Separate table/review queue
+// from issue_reports (an idea/opinion, not a bug to fix) and from testimonial_submissions (private
+// feedback for us, not a public quote).
+async function handleSuggestionSubmit(request, env) {
+  const { description, email, pageUrl } = await request.json();
+  const trimmedDescription = (description || '').trim();
+  if (!trimmedDescription) return json({ error: 'description_required' }, 400);
+  if (trimmedDescription.length > 2000) return json({ error: 'description_too_long' }, 400);
+
+  await env.DB.prepare(
+    'INSERT INTO suggestions (id, description, page_url, email, created_at) VALUES (?,?,?,?,?)'
+  ).bind(newId(), trimmedDescription, (pageUrl || '').trim() || null, (email || '').trim() || null, now()).run();
+
+  await notifyAdmin(env, 'suggestion_submitted', 'New suggestion submitted',
+    `<p>${escapeHtml(trimmedDescription).replace(/\n/g, '<br>')}</p>` +
+    (pageUrl ? `<p><strong>Page:</strong> ${escapeHtml(pageUrl)}</p>` : '') +
+    `<p>Review it in the admin Suggestions tab.</p>`, (email || '').trim() || null);
+
+  return json({ ok: true });
+}
+
+async function handleConsoleSuggestionsList(env) {
+  const rows = (await env.DB.prepare(
+    'SELECT * FROM suggestions ORDER BY created_at DESC LIMIT 500'
+  ).all()).results;
+  return json({ items: rows });
+}
+
+async function handleConsoleSuggestionUpdateStatus(request, env) {
+  const { id, status } = await request.json();
+  if (!id || (status !== 'reviewed' && status !== 'dismissed' && status !== 'open')) {
+    return json({ error: 'id_and_valid_status_required' }, 400);
+  }
+  const adminEmail = getAccessEmail(request);
+  await env.DB.prepare('UPDATE suggestions SET status = ?, reviewed_at = ?, reviewed_by = ? WHERE id = ?')
+    .bind(status, now(), adminEmail || null, id).run();
+  return json({ ok: true });
+}
+
+// One-time "what do you think?" ask, sent to every real buyer (buyer_email on file, redeemed code)
+// regardless of activity level -- distinct from sendStalledBuyerReminders (only fires for INACTIVE
+// buyers) and sendOnboardingTipsEmails (day 1, tips not opinions). 10 days gives enough real usage
+// to have an opinion without feeling like an immediate ask. Capped per run like the stalled-buyer
+// cron, same reasoning -- don't blast the pre-existing backlog of buyers in one shot.
+const SUGGESTION_EMAIL_DAYS = 10;
+const SUGGESTION_EMAIL_LIMIT = 25;
+async function sendSuggestionRequestEmails(env) {
+  const cutoff = now() - SUGGESTION_EMAIL_DAYS * 86400;
+  const rows = (await env.DB.prepare(
+    `SELECT u.id AS user_id, u.exam_type, c.buyer_email
+     FROM users u
+     JOIN codes c ON c.redeemed_by = u.id
+     WHERE u.created_at < ? AND c.status = 'redeemed' AND c.buyer_email IS NOT NULL
+       AND u.suggestion_email_sent_at IS NULL
+     ORDER BY u.created_at ASC LIMIT ?`
+  ).bind(cutoff, SUGGESTION_EMAIL_LIMIT).all()).results;
+  for (const row of rows) {
+    try {
+      await sendSuggestionRequestEmail(env, row.buyer_email, row.exam_type);
+      await env.DB.prepare('UPDATE users SET suggestion_email_sent_at = ? WHERE id = ?').bind(now(), row.user_id).run();
+    } catch (e) { /* best-effort -- one failed send shouldn't block the rest of the batch */ }
+  }
 }
 
 // ---- Affiliate partners (business, e.g. pre-licensing course providers) ---
@@ -4191,6 +4257,7 @@ export default {
       if (pathname === '/contact' && method === 'POST') return await handleContactSubmit(request, env);
       if (pathname === '/testimonials/submit' && method === 'POST') return await handleTestimonialSubmit(request, env);
       if (pathname === '/issue-reports' && method === 'POST') return await handleIssueReportSubmit(request, env);
+      if (pathname === '/suggestions' && method === 'POST') return await handleSuggestionSubmit(request, env);
       if (pathname === '/waitlist/join' && method === 'POST') return await handleWaitlistJoin(request, env);
       if (pathname === '/track/visit' && method === 'POST') return await handleTrackVisit(request, env);
       if (pathname === '/track/event' && method === 'POST') return await handleTrackEvent(request, env);
@@ -4238,6 +4305,8 @@ export default {
         if (pathname === '/console/testimonials/moderate' && method === 'POST') return await handleConsoleTestimonialModerate(request, env);
         if (pathname === '/console/issue-reports' && method === 'GET') return await handleConsoleIssueReportsList(env);
         if (pathname === '/console/issue-reports/status' && method === 'POST') return await handleConsoleIssueReportUpdateStatus(request, env);
+        if (pathname === '/console/suggestions' && method === 'GET') return await handleConsoleSuggestionsList(env);
+        if (pathname === '/console/suggestions/status' && method === 'POST') return await handleConsoleSuggestionUpdateStatus(request, env);
         if (pathname === '/console/visitors/facets' && method === 'GET') return await handleConsoleVisitorsFacets(env);
         if (pathname === '/console/point-rules' && method === 'GET') return await handleConsolePointRulesList(env);
         if (pathname === '/console/point-rules' && method === 'POST') return await handleConsolePointRulesSet(request, env);
@@ -4311,5 +4380,6 @@ export default {
     ctx.waitUntil(sendExamCountdownEmails(env));
     ctx.waitUntil(sendStalledBuyerReminders(env));
     ctx.waitUntil(sendOnboardingTipsEmails(env));
+    ctx.waitUntil(sendSuggestionRequestEmails(env));
   },
 };

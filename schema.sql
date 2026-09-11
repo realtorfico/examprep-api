@@ -22,12 +22,18 @@ CREATE TABLE users (
                                                     -- action overrides a stale unsubscribe).
   last_countdown_sent_date TEXT,                   -- 'YYYY-MM-DD', UTC -- dedup so the daily cron
                                                     -- never double-sends on the same calendar day.
-  onboarding_email_sent_at INTEGER                 -- set once, ~24h after account creation (see
+  onboarding_email_sent_at INTEGER,                -- set once, ~24h after account creation (see
                                                     -- sendOnboardingTipsEmails' daily cron) -- a
                                                     -- one-time "here's how to actually use this"
                                                     -- email, distinct from the immediate purchase
                                                     -- receipt (sendCodeEmail, pure transactional) and
                                                     -- the 14-day-inactive stalled-buyer nudge.
+  suggestion_email_sent_at INTEGER                 -- set once, ~10 days after account creation (see
+                                                    -- sendSuggestionRequestEmails' daily cron) -- a
+                                                    -- one-time "what do you think?" ask, sent to
+                                                    -- every real buyer regardless of activity level
+                                                    -- (distinct from the stalled-buyer nudge, which
+                                                    -- only fires for INACTIVE buyers).
 );
 CREATE INDEX idx_users_token ON users(token);
 
@@ -685,3 +691,20 @@ CREATE TABLE issue_reports (
 );
 CREATE INDEX idx_issue_reports_status ON issue_reports(status);
 CREATE INDEX idx_blog_posts_kind ON blog_posts(kind, status);
+
+-- "Let us know what you think" -- site-wide suggestions/feedback widget, separate from
+-- issue_reports above (an idea/opinion, not a bug report to fix) and separate from
+-- testimonial_submissions (private feedback for us, not a public quote). Also the landing target
+-- for sendSuggestionRequestEmails' automated cron below. Same deliberate no-Turnstile reasoning as
+-- issue_reports -- frictionless outlet, worst case a junk row an admin dismisses in a click.
+CREATE TABLE suggestions (
+  id          TEXT PRIMARY KEY,
+  description TEXT NOT NULL,
+  page_url    TEXT,
+  email       TEXT,           -- optional, private -- only so we can follow up if needed
+  status      TEXT NOT NULL DEFAULT 'open', -- open | reviewed | dismissed
+  created_at  INTEGER NOT NULL,
+  reviewed_at INTEGER,
+  reviewed_by TEXT            -- admin email, best-effort from the Access JWT
+);
+CREATE INDEX idx_suggestions_status ON suggestions(status);
