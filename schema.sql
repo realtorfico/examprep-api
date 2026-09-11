@@ -559,6 +559,14 @@ CREATE TABLE checkout_intents (
   created_at        INTEGER NOT NULL,
   purchased_at      INTEGER,
   reminder_sent_at  INTEGER,
+  source            TEXT,   -- 'checkout_form' (real Stripe-intent creation, /stripe/create-intent)
+                             -- | 'exit_capture' (the buy page's opt-in "leave your email, get a
+                             -- reminder" card, for a visitor who never opened the payment form at
+                             -- all -- see handleBuyReminderSubmit). sendAbandonedCheckoutReminders
+                             -- picks the email wording by this column so an exit_capture reminder
+                             -- never falsely claims "you started checking out". NULL = a row
+                             -- written before this column existed (2026-09-11); treated as
+                             -- 'checkout_form' by the cron, the only kind that existed then.
   UNIQUE(email, exam_type)
 );
 CREATE INDEX idx_checkout_intents_reminder ON checkout_intents(purchased_at, reminder_sent_at, created_at);

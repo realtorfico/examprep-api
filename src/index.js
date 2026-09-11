@@ -1,7 +1,7 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
-import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail, sendMissedItByOneEmail, sendTrackMechanicsChangedEmail, sendExamCountdownEmail, sendOnboardingTipsEmail, sendSuggestionRequestEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail, sendMissedItByOneEmail, sendTrackMechanicsChangedEmail, sendExamCountdownEmail, sendOnboardingTipsEmail, sendSuggestionRequestEmail, sendBuyPageReminderEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
 import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL, ALL_USERS_PROGRESS_TOTALS_SQL } from './progressQueries.js';
 import { filesOwnedByTrack } from './resourceOwnership.js';
@@ -792,12 +792,15 @@ async function sendAbandonedCheckoutReminders(env) {
   const sixHoursAgo = now() - 6 * 3600;
   const threeDaysAgo = now() - 3 * 86400;
   const rows = (await env.DB.prepare(
-    `SELECT id, email, exam_type FROM checkout_intents
+    `SELECT id, email, exam_type, source FROM checkout_intents
      WHERE purchased_at IS NULL AND reminder_sent_at IS NULL AND created_at < ? AND created_at > ?`
   ).bind(sixHoursAgo, threeDaysAgo).all()).results;
   for (const row of rows) {
     try {
-      await sendAbandonedCheckoutEmail(env, row.email, row.exam_type);
+      // source is NULL for rows written before this column existed -- treated as 'checkout_form',
+      // the only kind that existed then. See schema.sql's own comment on checkout_intents.source.
+      if (row.source === 'exit_capture') await sendBuyPageReminderEmail(env, row.email, row.exam_type);
+      else await sendAbandonedCheckoutEmail(env, row.email, row.exam_type);
       await env.DB.prepare('UPDATE checkout_intents SET reminder_sent_at = ? WHERE id = ?').bind(now(), row.id).run();
     } catch (e) { /* best-effort -- one failed send shouldn't block the rest of the batch */ }
   }
@@ -2088,9 +2091,12 @@ async function handleStripeCreateIntent(request, env) {
   // gets set) so a genuinely-completed prior purchase is never un-marked by a later re-mount.
   if (email && email.trim()) {
     try {
+      // source explicitly set (and re-set) to 'checkout_form' on every real checkout-intent write --
+      // this is always the stronger signal, so it must win even if an earlier exit_capture row
+      // (see handleBuyReminderSubmit) exists for the same email+examType.
       await env.DB.prepare(
-        `INSERT INTO checkout_intents (id, email, exam_type, created_at) VALUES (?, ?, ?, ?)
-         ON CONFLICT(email, exam_type) DO UPDATE SET created_at = excluded.created_at, reminder_sent_at = NULL`
+        `INSERT INTO checkout_intents (id, email, exam_type, created_at, source) VALUES (?, ?, ?, ?, 'checkout_form')
+         ON CONFLICT(email, exam_type) DO UPDATE SET created_at = excluded.created_at, reminder_sent_at = NULL, source = 'checkout_form'`
       ).bind(newId(), email.trim().toLowerCase(), examType, now()).run();
     } catch (e) { /* best-effort */ }
   }
@@ -2107,6 +2113,28 @@ async function handleStripeCreateIntent(request, env) {
   }
 
   return json({ clientSecret: intent.client_secret, priceCents: quote.finalPriceCents, pointsApplied: quote.pointsToApply, promoDiscountCents: quote.promoDiscountCents || 0, promoTitle: quote.promo ? quote.promo.title : undefined });
+}
+
+// The buy page's opt-in "not ready today? leave your email, we'll send a reminder" card -- added
+// 2026-09-11 after real Visitors data showed several buy-page visitors bouncing in under a minute,
+// too fast to have ever opened the real payment form (mountStripePaymentElement/handleStripeCreateIntent
+// above never ran for them, so no checkout_intents row exists at all). A deliberately lightweight,
+// separate capture: no Stripe PaymentIntent, no Turnstile (same reasoning as issue_reports/
+// suggestions -- worst case is a junk row an admin never even sees, since this only drives a
+// single best-effort reminder email, nothing financial). ON CONFLICT DO NOTHING -- if a real
+// checkout_intents row already exists for this email+examType (source='checkout_form', a stronger
+// signal), this must never downgrade or reset it.
+async function handleBuyReminderSubmit(request, env) {
+  const { email, examType } = await request.json();
+  const trimmedEmail = (email || '').trim().toLowerCase();
+  if (!trimmedEmail || !examType) return json({ error: 'email_and_examType_required' }, 400);
+
+  await env.DB.prepare(
+    `INSERT INTO checkout_intents (id, email, exam_type, created_at, source) VALUES (?, ?, ?, ?, 'exit_capture')
+     ON CONFLICT(email, exam_type) DO NOTHING`
+  ).bind(newId(), trimmedEmail, examType, now()).run();
+
+  return json({ ok: true });
 }
 
 async function handleStripeConfirm(request, env) {
@@ -4316,6 +4344,7 @@ export default {
       if (pathname === '/testimonials/submit' && method === 'POST') return await handleTestimonialSubmit(request, env);
       if (pathname === '/issue-reports' && method === 'POST') return await handleIssueReportSubmit(request, env);
       if (pathname === '/suggestions' && method === 'POST') return await handleSuggestionSubmit(request, env);
+      if (pathname === '/buy/reminder' && method === 'POST') return await handleBuyReminderSubmit(request, env);
       if (pathname === '/waitlist/join' && method === 'POST') return await handleWaitlistJoin(request, env);
       if (pathname === '/track/visit' && method === 'POST') return await handleTrackVisit(request, env);
       if (pathname === '/track/event' && method === 'POST') return await handleTrackEvent(request, env);

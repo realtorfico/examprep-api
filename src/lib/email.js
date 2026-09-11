@@ -283,6 +283,29 @@ export async function sendAbandonedCheckoutEmail(env, to, examType) {
   });
 }
 
+// Companion to sendAbandonedCheckoutEmail above, for the buy page's opt-in "leave your email, get
+// a reminder" card (source='exit_capture' in checkout_intents) -- a visitor who asked for a
+// reminder without ever opening the actual payment form. Deliberately does NOT say "you started
+// checking out" (untrue for this group, unlike the real-checkout-form case above) and makes no
+// discount/urgency claim -- a plain, honest reminder, same as what was promised on the page. Added
+// 2026-09-11 after real Visitors data showed several buy-page visitors bouncing in well under a
+// minute, too fast to have entered a payment email at all.
+export async function sendBuyPageReminderEmail(env, to, examType) {
+  await sendEmail(env, {
+    to,
+    subject: 'Your reminder: ' + examType + ' practice questions',
+    html: emailShell({
+      badge: '👋',
+      title: 'As promised — here\'s your reminder',
+      bodyHtml: `<p>You asked for a reminder about PassExamHQ's <strong>${examType}</strong> practice questions.</p>
+        <p>Whenever you're ready, everything's right where you left it — the full question bank, a timed mock exam, and the pass-or-money-back guarantee.</p>`,
+      ctaText: 'Take a look →',
+      ctaUrl: SITE_URL,
+      footerNote: 'Changed your mind or already found what you needed elsewhere? No action needed.',
+    }),
+  });
+}
+
 export async function sendPointsEarnedEmail(env, to, points, reason) {
   await sendEmail(env, {
     to,
