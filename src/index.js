@@ -1437,6 +1437,29 @@ async function handlePublicConfig(env) {
   });
 }
 
+// In-memory TTL cache for the three public sitewide-stats endpoints below -- same pattern as
+// trackRegistryCache above (5-min TTL, per-isolate, "stale until next cold start or TTL expiry" is
+// the accepted tradeoff). Added 2026-09-11 after a real Cloudflare Web Analytics 5xx spike (511%
+// jump, spread across many unrelated simple endpoints like /pricing, /blog, /config) traced to D1's
+// own 24h metrics showing 78M rows read against only 5,405 queries -- ~14,400 rows/query, wildly
+// disproportionate for endpoints like pricing (a single indexed row). handlePublicStats in
+// particular runs on every homepage load (the site's highest-traffic page) and did a full,
+// uncached scan+SUM of the whole `progress` table (plus a nested subquery over it again for
+// coverage) on every single visit -- the likely dominant driver, with the two category-breakdown
+// endpoints below contributing the same uncached-full-scan pattern on lower-traffic pages. A
+// concurrent expensive query can slow/queue unrelated simple queries sharing the same D1 database,
+// which fits the observed "5xx spread across many different endpoints" pattern better than a bug
+// in any single handler. None of these figures need to be real-time -- a few minutes of staleness
+// on a homepage stat tile is imperceptible, same reasoning as the resources/free catalog's own
+// 5-min cache.
+const PUBLIC_STATS_CACHE_TTL_MS = 5 * 60 * 1000;
+let publicStatsCache = null;
+let publicStatsCacheAt = 0;
+let passRatesByCategoryCache = null;
+let passRatesByCategoryCacheAt = 0;
+let quizAccuracyByCategoryCache = null;
+let quizAccuracyByCategoryCacheAt = 0;
+
 // Sitewide, anonymized aggregates for the home page's "outcomes" strip and the hero's "Community
 // Readiness" card -- real numbers computed live from questions/codes/progress/exam_attempts, not
 // hardcoded or fabricated (see the redesign's standing constraint: never fabricate a value to fill
@@ -1450,6 +1473,8 @@ async function handlePublicConfig(env) {
 // banks wouldn't mean anything. Same LEFT JOIN shape as PROGRESS_BY_TOPIC_SQL/LEADERBOARD_SQL in
 // progressQueries.js, just aggregated to one number per user instead of per user+topic.
 async function handlePublicStats(env) {
+  const cacheAge = Date.now() - publicStatsCacheAt;
+  if (publicStatsCache && cacheAge < PUBLIC_STATS_CACHE_TTL_MS) return json(publicStatsCache);
   const [questionCountRow, studentsRow, attemptRows, accuracyRow, coverageRow] = await Promise.all([
     env.DB.prepare(`SELECT COUNT(*) AS n FROM questions`).first(),
     env.DB.prepare(`SELECT COUNT(*) AS n FROM codes WHERE status = 'redeemed'`).first(),
@@ -1477,7 +1502,7 @@ async function handlePublicStats(env) {
     if (threshold == null) return false;
     return (100 * a.score_correct) / a.score_total >= threshold;
   }).length;
-  return json({
+  publicStatsCache = {
     totalQuestions: questionCountRow.n || 0,
     examsCompleted: attempts.length,
     examsPassed: passed,
@@ -1486,7 +1511,9 @@ async function handlePublicStats(env) {
     avgCoverage: coverageRow && coverageRow.avg != null ? Math.round(coverageRow.avg) : null,
     studentsServed: studentsRow.n || 0,
     tracksLive: Object.values(trackRegistry).filter((r) => r.active).length,
-  });
+  };
+  publicStatsCacheAt = Date.now();
+  return json(publicStatsCache);
 }
 
 // Real, anonymized "recent activity" feed -- last few genuine PASSING mock exam attempts
@@ -1536,6 +1563,8 @@ const PASS_RATE_CATEGORY_ORDER = [
 // active track are returned (mirrors kindSlugsWithActiveTracks in
 // scripts/generate-seo-meta.js on the site side).
 async function handlePassRatesByCategory(env) {
+  const cacheAge = Date.now() - passRatesByCategoryCacheAt;
+  if (passRatesByCategoryCache && cacheAge < PUBLIC_STATS_CACHE_TTL_MS) return json(passRatesByCategoryCache);
   const [attemptRows, trackRegistry] = await Promise.all([
     env.DB.prepare(`SELECT exam_type, score_correct, score_total, pass_percent FROM exam_attempts WHERE submitted_at IS NOT NULL`).all(),
     getTrackRegistry(env),
@@ -1565,7 +1594,9 @@ async function handlePassRatesByCategory(env) {
       passRate: hasEnoughData ? Math.round((100 * stats.passed) / stats.attempts) : null,
     };
   });
-  return json({ minSampleSize: PASS_RATE_MIN_SAMPLE, categories });
+  passRatesByCategoryCache = { minSampleSize: PASS_RATE_MIN_SAMPLE, categories };
+  passRatesByCategoryCacheAt = Date.now();
+  return json(passRatesByCategoryCache);
 }
 
 // Quiz-mode accuracy companion to handlePassRatesByCategory above, added 2026-09-10 -- a
@@ -1580,6 +1611,8 @@ async function handlePassRatesByCategory(env) {
 // answered rather than completed exams since quiz mode has no discrete "attempt" unit to count
 // instead.
 async function handleQuizAccuracyByCategory(env) {
+  const cacheAge = Date.now() - quizAccuracyByCategoryCacheAt;
+  if (quizAccuracyByCategoryCache && cacheAge < PUBLIC_STATS_CACHE_TTL_MS) return json(quizAccuracyByCategoryCache);
   const [progressRows, trackRegistry] = await Promise.all([
     env.DB.prepare(STATS_ACCURACY_BY_TOPIC_SQL).all(),
     getTrackRegistry(env),
@@ -1603,7 +1636,9 @@ async function handleQuizAccuracyByCategory(env) {
       accuracyRate: hasEnoughData ? Math.round((100 * stats.correct) / stats.total) : null,
     };
   });
-  return json({ minSampleSize: PASS_RATE_MIN_SAMPLE, categories });
+  quizAccuracyByCategoryCache = { minSampleSize: PASS_RATE_MIN_SAMPLE, categories };
+  quizAccuracyByCategoryCacheAt = Date.now();
+  return json(quizAccuracyByCategoryCache);
 }
 
 // ---- Promotions ----------------------------------------------------------
