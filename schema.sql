@@ -36,6 +36,11 @@ CREATE TABLE users (
                                                     -- only fires for INACTIVE buyers).
 );
 CREATE INDEX idx_users_token ON users(token);
+-- last_seen_at/created_at are filtered on by 3 daily crons (sendStalledBuyerReminders,
+-- sendOnboardingTipsEmails, sendSuggestionRequestEmails) plus an admin list, with no supporting
+-- index -- cost grows with total user count (never pruned). Added 2026-09-11 via code review.
+CREATE INDEX idx_users_last_seen ON users(last_seen_at);
+CREATE INDEX idx_users_created_at ON users(created_at);
 
 CREATE TABLE codes (
   code         TEXT PRIMARY KEY,
@@ -54,6 +59,15 @@ CREATE TABLE codes (
                                                  -- refund claims against who actually paid
 );
 CREATE INDEX idx_codes_exam_type ON codes(exam_type);
+-- redeemed_by is a JOIN key in 8+ places (including 3 daily crons: sendExamCountdownEmails,
+-- sendStalledBuyerReminders, sendOnboardingTipsEmails) with no supporting index. Added 2026-09-11
+-- via code review.
+CREATE INDEX idx_codes_redeemed_by ON codes(redeemed_by);
+-- Expression index matching quoteCheckout's `WHERE LOWER(buyer_email) = ?` (the first_purchase_only
+-- promo-eligibility check, a real-money path) -- without this, wrapping the column in LOWER()
+-- prevents SQLite from using any plain index on buyer_email, forcing a full scan of the
+-- ever-growing codes table on every matching checkout attempt. Added 2026-09-11 via code review.
+CREATE INDEX idx_codes_buyer_email_lower ON codes(LOWER(buyer_email));
 
 CREATE TABLE questions (
   id             TEXT PRIMARY KEY,
@@ -326,6 +340,9 @@ CREATE TABLE exam_attempts (
                                          -- buildExamResult falls back to getExamConfig() for those.
 );
 CREATE INDEX idx_exam_attempts_user ON exam_attempts(user_id);
+-- ORDER BY'd on the public homepage "recent activity" feed (handleRecentActivity) and the admin
+-- console's exam-attempts list, with no supporting index. Added 2026-09-11 via code review.
+CREATE INDEX idx_exam_attempts_submitted ON exam_attempts(submitted_at);
 
 -- A free (points-covered) redemption must be confirmed by clicking a link emailed to the
 -- account's address before it actually happens -- otherwise anyone who merely knows/guesses an

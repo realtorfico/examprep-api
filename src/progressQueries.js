@@ -42,7 +42,13 @@ export const CONSOLE_QUIZ_PROGRESS_SQL =
    LEFT JOIN progress p ON p.question_id = q.id AND p.user_id = u.id
    LEFT JOIN codes c ON c.redeemed_by = u.id
    GROUP BY u.id, q.topic
-   ORDER BY u.id`;
+   ORDER BY u.id
+   LIMIT 5000`;
+// LIMIT added 2026-09-11 via code review -- every other admin list handler in index.js caps
+// results (accounts/referrals/codes/resource-progress/exam-attempts), this one didn't, and it
+// grows with active users x topics x tracks. Safe to embed directly (fixed constant, no bind
+// param involved) and doesn't affect PROGRESS_BY_TOPIC_SQL/LEADERBOARD_SQL or this file's own
+// tests, which use small fixtures well under the cap.
 
 // Same LEFT JOIN idea as CONSOLE_QUIZ_PROGRESS_SQL, but grouped by user only (not user+topic) and
 // scoped to a single exam_type -- backs the cross-user leaderboard (top accuracy / top coverage,

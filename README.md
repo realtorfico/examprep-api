@@ -13,13 +13,14 @@ Cloudflare Worker + D1, no framework, no build step.
    without any public hostname on this Worker.
 
 ## Tests
-`node --test test/progress-consistency.test.js test/resource-ownership.test.js test/public-stats-caching.test.js`
+`node --test test/progress-consistency.test.js test/resource-ownership.test.js test/public-stats-caching.test.js test/difficulty-index-caching.test.js`
 — runs against an in-memory DB via Node's built-in `node:sqlite` (no wrangler/workerd needed,
 which matters since this repo can't run those locally on this machine). Node's `--test` flag
 doesn't glob a bare directory on this machine's Node version (v22.17.1) -- pass files explicitly.
 `progress-consistency` covers the 2026-08-05 admin-vs-site counter bug, `resource-ownership`
 covers per-track resource access, `public-stats-caching` covers the 2026-09-11 uncached-full-scan
-5xx-spike regression (see that file's own header comment). Add more test files under `test/` as
+5xx-spike regression, `difficulty-index-caching` covers the same day's rewrite of the difficulty-
+filtered next-question query (see each file's own header comment). Add more test files under `test/` as
 needed, and add them to this command.
 
 ## Routes

@@ -826,19 +826,35 @@ async function sendExamCountdownEmails(env) {
        AND (u.last_countdown_sent_date IS NULL OR u.last_countdown_sent_date != ?)`
   ).bind(today).all()).results;
 
+  // Batched per DISTINCT exam_type (not per user) -- fixed 2026-09-11 via code review. Previously
+  // a fresh `ORDER BY RANDOM() LIMIT 2` ran once per USER, so N users on the same track meant N
+  // identical-shape queries in one cron run; now it's one query per track actually present in
+  // today's batch, all users on that track sharing the same 2 questions for the day (an accepted
+  // trade -- these are marketing/engagement questions, not the quiz itself, no per-user uniqueness
+  // was ever promised). The per-row `UPDATE ... last_countdown_sent_date` is deliberately NOT
+  // batched/deferred to the end (unlike recordDailyProgressSnapshots' pattern) -- it stays
+  // immediate, right after each successful send, so a mid-run crash/timeout can only ever leave
+  // ALREADY-sent users correctly marked done; deferring it would risk re-emailing everyone sent so
+  // far tomorrow if the run never reaches a final flush.
+  const examTypesToday = [...new Set(rows.map((r) => r.exam_type))];
+  const questionsByExamType = {};
+  for (const examType of examTypesToday) {
+    const qRows = (await env.DB.prepare(
+      'SELECT * FROM questions WHERE exam_type = ? ORDER BY RANDOM() LIMIT 2'
+    ).bind(examType).all()).results;
+    questionsByExamType[examType] = qRows.map((q) => {
+      const { choices, correctChoice } = buildDisplayChoices(q);
+      return { question: q.question, choices, correctChoice, explanation: q.explanation };
+    });
+  }
+
   for (const row of rows) {
     const examMs = Date.parse(row.exam_date + 'T00:00:00Z');
     if (Number.isNaN(examMs)) continue;
     const daysLeft = Math.round((examMs - todayMs) / 86400000);
     if (daysLeft < 0) continue; // exam day has passed -- stop counting down, never re-triggers since exam_date is untouched
     try {
-      const qRows = (await env.DB.prepare(
-        'SELECT * FROM questions WHERE exam_type = ? ORDER BY RANDOM() LIMIT 2'
-      ).bind(row.exam_type).all()).results;
-      const questions = qRows.map((q) => {
-        const { choices, correctChoice } = buildDisplayChoices(q);
-        return { question: q.question, choices, correctChoice, explanation: q.explanation };
-      });
+      const questions = questionsByExamType[row.exam_type] || [];
       const unsubscribeUrl = `https://passexamhq.com/notary#/countdown-unsubscribe/${row.token}`;
       await sendExamCountdownEmail(env, row.buyer_email, row.track_label || row.exam_type, daysLeft, questions, unsubscribeUrl);
       await env.DB.prepare('UPDATE users SET last_countdown_sent_date = ? WHERE id = ?').bind(today, row.id).run();
@@ -1210,9 +1226,25 @@ function parseUserAgent(ua) {
 // traffic never pollutes the Visitors tab. Checked at write time (skip storing entirely) AND at
 // read time (handleConsoleVisitorsList) so adding an exclusion also retroactively hides anything
 // already recorded from that IP.
+//
+// In-memory 5-min TTL cache, same pattern as trackRegistryCache -- this is called on EVERY
+// handleTrackVisit and handleTrackEvent request, the site's two highest-QPS endpoints, to re-read
+// a value that changes maybe a few times a year. Found+fixed 2026-09-11 via code review. A newly
+// admin-added exclusion can take up to 5 min to start being skipped at write time on this isolate
+// (negligible -- the read-time filter in handleConsoleVisitorsList already retroactively hides
+// anything already recorded from that IP regardless, and that path is low-traffic enough it
+// doesn't need its own cache).
+let excludedVisitorIpsCache = null;
+let excludedVisitorIpsCacheAt = 0;
+const EXCLUDED_VISITOR_IPS_CACHE_TTL_MS = 5 * 60 * 1000;
+
 async function getExcludedVisitorIps(env) {
+  const cacheAge = Date.now() - excludedVisitorIpsCacheAt;
+  if (excludedVisitorIpsCache && cacheAge < EXCLUDED_VISITOR_IPS_CACHE_TTL_MS) return excludedVisitorIpsCache;
   const raw = await getAppSetting(env, 'visitor_excluded_ips', '');
-  return new Set(raw.split(',').map((s) => s.trim()).filter(Boolean));
+  excludedVisitorIpsCache = new Set(raw.split(',').map((s) => s.trim()).filter(Boolean));
+  excludedVisitorIpsCacheAt = Date.now();
+  return excludedVisitorIpsCache;
 }
 
 // Fixed allowlist, not free-form -- keeps funnel_events queryable/meaningful instead of an
@@ -1372,12 +1404,20 @@ async function handleConsoleVisitorsList(request, env) {
   // funnel_events row carrying the SAME session_id the client already sends on every /track/visit
   // beacon (getOrCreateSessionId() in app.js), so this is a real, reliable join key already in
   // place -- no new client-side tracking needed. One extra query (not per-row -- a single
-  // DISTINCT-session_id lookup turned into a Set) rather than a per-row correlated subquery, kept
-  // fast via idx_funnel_events_session. Admin-only/low-traffic, so unlike the public stats
-  // endpoints fixed the same day, this doesn't need its own cache.
+  // DISTINCT-session_id lookup turned into a Set) rather than a per-row correlated subquery.
+  // Bounded by the SAME from/to window already applied to site_visits above (not the full lifetime
+  // purchase history) -- fixed 2026-09-11 via code review: an unbounded version here would grow
+  // forever, the exact class of issue behind that same day's /stats/public 5xx incident, just on
+  // this admin-only (lower-traffic) path. The default UI preset is "Last 7 Days", so in practice
+  // this is almost always bounded; an explicit "All Time" view intentionally still scans everything
+  // (matching site_visits' own unrestricted-when-unfiltered behavior).
+  const purchaseClauses = [`event_name = 'purchase_completed'`, `session_id IS NOT NULL`];
+  const purchaseBinds = [];
+  if (from) { purchaseClauses.push('created_at >= ?'); purchaseBinds.push(Number(from)); }
+  if (to) { purchaseClauses.push('created_at <= ?'); purchaseBinds.push(Number(to)); }
   const purchasedSessionIds = new Set((await env.DB.prepare(
-    `SELECT DISTINCT session_id FROM funnel_events WHERE event_name = 'purchase_completed' AND session_id IS NOT NULL`
-  ).all()).results.map((r) => r.session_id));
+    `SELECT DISTINCT session_id FROM funnel_events WHERE ${purchaseClauses.join(' AND ')}`
+  ).bind(...purchaseBinds).all()).results.map((r) => r.session_id));
   filtered.forEach((r) => { r.purchased = purchasedSessionIds.has(r.session_id) ? 1 : 0; });
 
   return json({ items: filtered });
@@ -1998,6 +2038,10 @@ async function handlePaypalCreateOrder(request, env) {
     return json({ error: 'turnstile_failed' }, 400);
   }
   if (!examType) return json({ error: 'examType_required' }, 400);
+  // Real-track validation -- see handleStripeCreateIntent's identical check for why: examType is
+  // otherwise trusted raw/unescaped in every transactional email template, and quoteCheckout's
+  // getPrice() silently falls back to a default price rather than rejecting an unknown value.
+  if (!(await getTrackRegistry(env))[examType]) return json({ error: 'invalid_examType' }, 400);
 
   const quote = await quoteCheckout(env, examType, email, applyPoints, promoCode);
   if (quote.error) {
@@ -2073,6 +2117,13 @@ async function handleStripeCreateIntent(request, env) {
     return json({ error: 'turnstile_failed' }, 400);
   }
   if (!examType) return json({ error: 'examType_required' }, 400);
+  // Real-track validation -- examType is otherwise trusted as-is everywhere downstream (raw,
+  // unescaped, in every transactional email template in email.js), on the assumption it's always
+  // an internal/controlled value. quoteCheckout's getPrice() does NOT reject an unknown examType
+  // (silently falls back to DEFAULT_PRICE_CENTS), so without this check an attacker-controlled
+  // examType containing HTML would reach sendAbandonedCheckoutEmail verbatim. Found 2026-09-11 via
+  // code review, alongside the identical gap in the new handleBuyReminderSubmit below.
+  if (!(await getTrackRegistry(env))[examType]) return json({ error: 'invalid_examType' }, 400);
 
   const quote = await quoteCheckout(env, examType, email, applyPoints, promoCode);
   if (quote.error) {
@@ -2121,17 +2172,27 @@ async function handleStripeCreateIntent(request, env) {
 // above never ran for them, so no checkout_intents row exists at all). A deliberately lightweight,
 // separate capture: no Stripe PaymentIntent, no Turnstile (same reasoning as issue_reports/
 // suggestions -- worst case is a junk row an admin never even sees, since this only drives a
-// single best-effort reminder email, nothing financial). ON CONFLICT DO NOTHING -- if a real
+// single best-effort reminder email, nothing financial).
+//
+// The WHERE clause on DO UPDATE (not a bare DO NOTHING) does two things at once: (1) if a real
 // checkout_intents row already exists for this email+examType (source='checkout_form', a stronger
-// signal), this must never downgrade or reset it.
+// signal), the WHERE is false and the row is left completely untouched -- never downgraded; (2) if
+// a PRIOR exit_capture row exists (a repeat "Remind me" click, e.g. after the first reminder was
+// already sent), the WHERE is true and created_at/reminder_sent_at reset, so the visitor is
+// eligible for another reminder instead of being silently, permanently excluded (a real bug a
+// bare DO NOTHING had -- found 2026-09-11 via code review).
 async function handleBuyReminderSubmit(request, env) {
   const { email, examType } = await request.json();
   const trimmedEmail = (email || '').trim().toLowerCase();
   if (!trimmedEmail || !examType) return json({ error: 'email_and_examType_required' }, 400);
+  // Real-track validation -- see handleStripeCreateIntent's identical check for why: examType is
+  // otherwise trusted raw/unescaped in sendBuyPageReminderEmail's template.
+  if (!(await getTrackRegistry(env))[examType]) return json({ error: 'invalid_examType' }, 400);
 
   await env.DB.prepare(
     `INSERT INTO checkout_intents (id, email, exam_type, created_at, source) VALUES (?, ?, ?, ?, 'exit_capture')
-     ON CONFLICT(email, exam_type) DO NOTHING`
+     ON CONFLICT(email, exam_type) DO UPDATE SET created_at = excluded.created_at, reminder_sent_at = NULL
+     WHERE checkout_intents.source = 'exit_capture'`
   ).bind(newId(), trimmedEmail, examType, now()).run();
 
   return json({ ok: true });
@@ -2594,16 +2655,55 @@ async function handlePointsRedeemVerify(request, env) {
 // below that it defaults to 'moderate' rather than guessing from an unrelated field.
 const DIFFICULTY_MIN_SAMPLES = 5;
 const DIFFICULTY_BANDS = ['easy', 'moderate', 'hard', 'extremely_hard'];
-const DIFFICULTY_CTE = `WITH q_stats AS (
-    SELECT question_id, SUM(times_seen) AS seen, SUM(times_correct) AS correct FROM progress GROUP BY question_id
-  ) `;
-const DIFFICULTY_CASE = `CASE
-    WHEN COALESCE(qs.seen, 0) < ${DIFFICULTY_MIN_SAMPLES} THEN 'moderate'
-    WHEN (CAST(qs.correct AS REAL) / qs.seen) >= 0.8 THEN 'easy'
-    WHEN (CAST(qs.correct AS REAL) / qs.seen) >= 0.6 THEN 'moderate'
-    WHEN (CAST(qs.correct AS REAL) / qs.seen) >= 0.4 THEN 'hard'
-    ELSE 'extremely_hard'
-  END`;
+
+function bandFromDifficultyStats(seen, correct) {
+  if (seen < DIFFICULTY_MIN_SAMPLES) return 'moderate';
+  const acc = correct / seen;
+  if (acc >= 0.8) return 'easy';
+  if (acc >= 0.6) return 'moderate';
+  if (acc >= 0.4) return 'hard';
+  return 'extremely_hard';
+}
+
+// In-memory 5-min TTL cache backing difficulty-filtered quiz question selection -- replaces a
+// full, unindexed `progress` GROUP BY (there's no index on progress.question_id, only on
+// user_id -- see schema.sql) that used to be recomputed on EVERY "next question" request, the
+// highest-QPS authenticated endpoint in the app. Same pattern as trackRegistryCache/
+// publicStatsCache. Precomputed as a nested Map<examType, Map<band, questionId[]>> at refresh
+// time (not per-request) so a request-time lookup is O(1), and each track's own id list stays
+// small (bounded by that track's question count) rather than a cross-track set. Found+fixed
+// 2026-09-11 via code review.
+let difficultyIndexCache = null;
+let difficultyIndexCacheAt = 0;
+const DIFFICULTY_INDEX_CACHE_TTL_MS = 5 * 60 * 1000;
+
+export async function getDifficultyIndex(env) {
+  const cacheAge = Date.now() - difficultyIndexCacheAt;
+  if (difficultyIndexCache && cacheAge < DIFFICULTY_INDEX_CACHE_TTL_MS) return difficultyIndexCache;
+  const [statsRows, questionRows] = await Promise.all([
+    env.DB.prepare('SELECT question_id, SUM(times_seen) AS seen, SUM(times_correct) AS correct FROM progress GROUP BY question_id').all(),
+    env.DB.prepare('SELECT id, exam_type FROM questions').all(),
+  ]);
+  const bandById = new Map();
+  (statsRows.results || []).forEach((r) => { bandById.set(r.question_id, bandFromDifficultyStats(r.seen || 0, r.correct || 0)); });
+  const index = new Map();
+  (questionRows.results || []).forEach((r) => {
+    const band = bandById.get(r.id) || 'moderate'; // absent from progress at all = 0 samples = 'moderate', same default as bandFromDifficultyStats
+    if (!index.has(r.exam_type)) index.set(r.exam_type, new Map());
+    const byBand = index.get(r.exam_type);
+    if (!byBand.has(band)) byBand.set(band, []);
+    byBand.get(band).push(r.id);
+  });
+  difficultyIndexCache = index;
+  difficultyIndexCacheAt = Date.now();
+  return index;
+}
+
+// Test-only -- see _resetStatsCacheForTests' identical rationale.
+export function _resetDifficultyIndexCacheForTests() {
+  difficultyIndexCache = null;
+  difficultyIndexCacheAt = 0;
+}
 
 // Chance any given pick interleaves a missed question in ahead of the unseen pool, instead of
 // strictly deferring all review until every unseen question is exhausted. With a large bank (this
@@ -2612,11 +2712,21 @@ const DIFFICULTY_CASE = `CASE
 // mix review into new content rather than batching it at the end.
 const MISSED_INTERLEAVE_CHANCE = 0.3;
 
-async function findNextQuestionRow(env, user, difficulty) {
-  const cte = difficulty ? DIFFICULTY_CTE : '';
-  const diffJoin = difficulty ? 'LEFT JOIN q_stats qs ON qs.question_id = q.id' : '';
-  const diffFilter = difficulty ? `AND (${DIFFICULTY_CASE}) = ?` : '';
-  const diffArgs = difficulty ? [difficulty] : [];
+export async function findNextQuestionRow(env, user, difficulty) {
+  // json_each(?) over a JSON-array bind parameter, not one bound parameter per id -- D1/SQLite
+  // has a limited bound-parameter count, but a track's own difficulty-band id list (from the
+  // cache above) can run to a couple thousand entries for the largest banks. An empty '[]' (no
+  // questions in this band for this track) correctly joins zero rows, same as the old CASE
+  // filter finding no match -- handleNextQuestion's own fallback-to-unfiltered already covers
+  // that case.
+  let diffJoin = '';
+  let diffIdsJson = null;
+  if (difficulty) {
+    const index = await getDifficultyIndex(env);
+    const ids = (index.get(user.exam_type) && index.get(user.exam_type).get(difficulty)) || [];
+    diffIdsJson = JSON.stringify(ids);
+    diffJoin = 'JOIN json_each(?) je ON je.value = q.id';
+  }
 
   // Excludes whatever question this user most recently answered, so the missed-question
   // interleave below (and the exhausted-bank fallback further down) can never immediately
@@ -2631,9 +2741,9 @@ async function findNextQuestionRow(env, user, difficulty) {
   const excludeArgs = lastId ? [lastId] : [];
 
   const pickMissed = () => env.DB.prepare(
-    `${cte}SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin}
-     WHERE p.user_id = ? AND p.last_result = 'incorrect' ${excludeFilter} ${diffFilter} ORDER BY RANDOM() LIMIT 1`
-  ).bind(user.id, ...excludeArgs, ...diffArgs).first();
+    `SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin}
+     WHERE p.user_id = ? AND p.last_result = 'incorrect' ${excludeFilter} ORDER BY RANDOM() LIMIT 1`
+  ).bind(...(difficulty ? [diffIdsJson] : []), user.id, ...excludeArgs).first();
 
   if (Math.random() < MISSED_INTERLEAVE_CHANCE) {
     const interleaved = await pickMissed();
@@ -2641,18 +2751,18 @@ async function findNextQuestionRow(env, user, difficulty) {
   }
 
   const unseen = await env.DB.prepare(
-    `${cte}SELECT q.* FROM questions q LEFT JOIN progress p ON p.question_id = q.id AND p.user_id = ? ${diffJoin}
-     WHERE q.exam_type = ? AND p.question_id IS NULL ${diffFilter} ORDER BY q.weight DESC, RANDOM() LIMIT 1`
-  ).bind(user.id, user.exam_type, ...diffArgs).first();
+    `SELECT q.* FROM questions q LEFT JOIN progress p ON p.question_id = q.id AND p.user_id = ? ${diffJoin}
+     WHERE q.exam_type = ? AND p.question_id IS NULL ORDER BY q.weight DESC, RANDOM() LIMIT 1`
+  ).bind(user.id, ...(difficulty ? [diffIdsJson] : []), user.exam_type).first();
   if (unseen) return unseen;
 
   const missed = await pickMissed();
   if (missed) return missed;
 
   const review = await env.DB.prepare(
-    `${cte}SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin}
-     WHERE p.user_id = ? ${diffFilter} ORDER BY RANDOM() LIMIT 1`
-  ).bind(user.id, ...diffArgs).first();
+    `SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin}
+     WHERE p.user_id = ? ORDER BY RANDOM() LIMIT 1`
+  ).bind(...(difficulty ? [diffIdsJson] : []), user.id).first();
   return review || null;
 }
 
