@@ -1460,6 +1460,15 @@ let passRatesByCategoryCacheAt = 0;
 let quizAccuracyByCategoryCache = null;
 let quizAccuracyByCategoryCacheAt = 0;
 
+// Test-only -- lets test/public-stats-caching.test.js exercise "cold" behavior more than once in
+// the same process, since these are real module-level singletons (same tradeoff as
+// trackRegistryCache) that would otherwise stay warm for the rest of the test run.
+export function _resetStatsCacheForTests() {
+  publicStatsCache = null; publicStatsCacheAt = 0;
+  passRatesByCategoryCache = null; passRatesByCategoryCacheAt = 0;
+  quizAccuracyByCategoryCache = null; quizAccuracyByCategoryCacheAt = 0;
+}
+
 // Sitewide, anonymized aggregates for the home page's "outcomes" strip and the hero's "Community
 // Readiness" card -- real numbers computed live from questions/codes/progress/exam_attempts, not
 // hardcoded or fabricated (see the redesign's standing constraint: never fabricate a value to fill
@@ -1472,7 +1481,7 @@ let quizAccuracyByCategoryCacheAt = 0;
 // to whichever exam_type a user is on, so a flat sitewide ratio across users on different-sized
 // banks wouldn't mean anything. Same LEFT JOIN shape as PROGRESS_BY_TOPIC_SQL/LEADERBOARD_SQL in
 // progressQueries.js, just aggregated to one number per user instead of per user+topic.
-async function handlePublicStats(env) {
+export async function handlePublicStats(env) {
   const cacheAge = Date.now() - publicStatsCacheAt;
   if (publicStatsCache && cacheAge < PUBLIC_STATS_CACHE_TTL_MS) return json(publicStatsCache);
   const [questionCountRow, studentsRow, attemptRows, accuracyRow, coverageRow] = await Promise.all([
@@ -1562,7 +1571,7 @@ const PASS_RATE_CATEGORY_ORDER = [
 // track_registry's `kind` instead of collapsed to one number. Only categories with at least one
 // active track are returned (mirrors kindSlugsWithActiveTracks in
 // scripts/generate-seo-meta.js on the site side).
-async function handlePassRatesByCategory(env) {
+export async function handlePassRatesByCategory(env) {
   const cacheAge = Date.now() - passRatesByCategoryCacheAt;
   if (passRatesByCategoryCache && cacheAge < PUBLIC_STATS_CACHE_TTL_MS) return json(passRatesByCategoryCache);
   const [attemptRows, trackRegistry] = await Promise.all([
@@ -1610,7 +1619,7 @@ async function handlePassRatesByCategory(env) {
 // (sample-size gate only, never a value gate, same reasoning as above), applied to total questions
 // answered rather than completed exams since quiz mode has no discrete "attempt" unit to count
 // instead.
-async function handleQuizAccuracyByCategory(env) {
+export async function handleQuizAccuracyByCategory(env) {
   const cacheAge = Date.now() - quizAccuracyByCategoryCacheAt;
   if (quizAccuracyByCategoryCache && cacheAge < PUBLIC_STATS_CACHE_TTL_MS) return json(quizAccuracyByCategoryCache);
   const [progressRows, trackRegistry] = await Promise.all([
