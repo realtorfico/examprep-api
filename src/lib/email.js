@@ -6,8 +6,13 @@
 // general site link). REDEEM_URL below already used the right domain; this didn't.
 const SITE_URL = 'https://passexamhq.com/';
 
+// BCC'd on every buyer/user-facing email (site owner asked for visibility into all outgoing
+// communication, 2026-09-12) -- deliberately in this one shared function rather than per-caller,
+// so it covers every template in this file with no per-email-type changes needed.
+const OWNER_BCC = 'avangari@gmail.com';
+
 async function sendEmail(env, { to, subject, html, replyTo }) {
-  const body = { from: 'ExamPrep <noreply@examprep.softician.com>', to, subject, html };
+  const body = { from: 'ExamPrep <noreply@examprep.softician.com>', to, subject, html, bcc: OWNER_BCC };
   if (replyTo) body.reply_to = replyTo;
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
