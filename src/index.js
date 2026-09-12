@@ -2939,6 +2939,9 @@ async function handleProgressReset(user, request, env) {
 // whichever the caller asked for) so the client can toggle sort order without a second round-trip.
 const MIN_LEADERBOARD_QUESTIONS = 20;
 const LEADERBOARD_TOP_N = 2; // reduced from top 3 -> top 2, 2026-09-10 at user's request
+// A "top 2" board out of 1-4 qualifying people reads as hollow rather than competitive (could be
+// "beating" just yourself) -- hide the whole board below this, added 2026-09-12 at user's request.
+const MIN_LEADERBOARD_USERS = 5;
 
 function maskLeaderboardCode(code) {
   if (!code) return 'Anonymous';
@@ -2991,14 +2994,17 @@ async function handleLeaderboard(user, env) {
     }))
     .filter((r) => r.total >= MIN_LEADERBOARD_QUESTIONS);
 
-  const topByAccuracy = ranked.slice().sort((a, b) => b.accuracy - a.accuracy).slice(0, LEADERBOARD_TOP_N);
-  const topByCoverage = ranked.slice().sort((a, b) => b.coverage - a.coverage).slice(0, LEADERBOARD_TOP_N);
-  const seenIds = new Set();
-  const combined = topByAccuracy.concat(topByCoverage)
-    .filter((r) => (seenIds.has(r.id) ? false : (seenIds.add(r.id), true)))
-    .map((r) => ({ code: r.code, total: r.total, accuracy: r.accuracy, coverage: r.coverage, attempts: r.examAttempts }));
+  let combined = [];
+  if (ranked.length >= MIN_LEADERBOARD_USERS) {
+    const topByAccuracy = ranked.slice().sort((a, b) => b.accuracy - a.accuracy).slice(0, LEADERBOARD_TOP_N);
+    const topByCoverage = ranked.slice().sort((a, b) => b.coverage - a.coverage).slice(0, LEADERBOARD_TOP_N);
+    const seenIds = new Set();
+    combined = topByAccuracy.concat(topByCoverage)
+      .filter((r) => (seenIds.has(r.id) ? false : (seenIds.add(r.id), true)))
+      .map((r) => ({ code: r.code, total: r.total, accuracy: r.accuracy, coverage: r.coverage, attempts: r.examAttempts }));
+  }
 
-  return json({ minQuestions: MIN_LEADERBOARD_QUESTIONS, users: combined });
+  return json({ minQuestions: MIN_LEADERBOARD_QUESTIONS, minUsers: MIN_LEADERBOARD_USERS, users: combined });
 }
 
 // ---- Resource consumption tracking -------------------------------------
