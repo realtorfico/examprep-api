@@ -1409,7 +1409,7 @@ async function handleConsoleVisitorsList(request, env) {
   const excluded = await getExcludedVisitorIps(env);
   const rows = (await env.DB.prepare(
     `SELECT session_id, visitor_id, ip_address, country, region, city, timezone, latitude, longitude,
-            browser, os, device_type, is_bot, referrer, utm_source, utm_medium, utm_campaign,
+            browser, os, device_type, is_bot, bot_note, referrer, utm_source, utm_medium, utm_campaign,
             utm_term, gclid, utm_content,
             landing_path, pages_json, page_count, first_seen_at, last_seen_at,
             (last_seen_at - first_seen_at) AS duration_sec

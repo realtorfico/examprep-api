@@ -488,7 +488,22 @@ CREATE TABLE site_visits (
   browser        TEXT,             -- parsed server-side from user_agent
   os             TEXT,             -- parsed server-side from user_agent
   device_type    TEXT,             -- Mobile | Tablet | Desktop, parsed server-side
-  is_bot         INTEGER NOT NULL DEFAULT 0, -- heuristic user_agent-based crawler/bot flag
+  is_bot         INTEGER NOT NULL DEFAULT 0, -- heuristic user_agent-based crawler/bot flag -- a
+                                    -- broad "this looks automated" signal, TRUE for both malicious
+                                    -- traffic AND legitimate/beneficial crawlers alike (e.g. a real
+                                    -- Applebot hit matches this since "Applebot" contains "bot") --
+                                    -- deliberately NOT a "verified malicious, safe to disregard"
+                                    -- flag on its own. See bot_note below for that distinction.
+  bot_note       TEXT,             -- free-text investigation note, set manually (not by the
+                                    -- automated heuristic) when a human has actually confirmed
+                                    -- WHY a visit is fake/malicious -- e.g. "confirmed spoofed
+                                    -- scraper, shares visitor_id X across N states/countries in
+                                    -- one script run". Deliberately separate from is_bot so a
+                                    -- future reader can tell "our heuristic guessed automated" from
+                                    -- "a human actually investigated and confirmed malicious", and so
+                                    -- a legitimate crawler (Applebot, Googlebot) never gets silently
+                                    -- conflated with a deceptive one just for sharing "bot" in its
+                                    -- UA. Added 2026-09-11 after exactly this ambiguity was raised.
   referrer       TEXT,             -- document.referrer, captured once at session start
   utm_source     TEXT,
   utm_medium     TEXT,
