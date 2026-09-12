@@ -1354,8 +1354,8 @@ async function handleTrackVisit(request, env) {
     `INSERT INTO site_visits (
        session_id, visitor_id, ip_address, country, region, city, timezone, latitude, longitude,
        user_agent, browser, os, device_type, is_bot, referrer, utm_source, utm_medium, utm_campaign,
-       utm_term, gclid, utm_content, landing_path, pages_json, page_count, first_seen_at, last_seen_at
-     ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+       utm_term, gclid, utm_content, landing_path, pages_json, page_count, click_count, first_seen_at, last_seen_at
+     ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
      ON CONFLICT(session_id) DO UPDATE SET
        ip_address = excluded.ip_address, country = excluded.country, region = excluded.region, city = excluded.city,
        timezone = excluded.timezone, latitude = excluded.latitude, longitude = excluded.longitude,
@@ -1363,7 +1363,8 @@ async function handleTrackVisit(request, env) {
        is_bot = excluded.is_bot, referrer = excluded.referrer, utm_source = excluded.utm_source,
        utm_medium = excluded.utm_medium, utm_campaign = excluded.utm_campaign, utm_term = excluded.utm_term,
        gclid = excluded.gclid, utm_content = excluded.utm_content,
-       pages_json = excluded.pages_json, page_count = excluded.page_count, last_seen_at = excluded.last_seen_at`
+       pages_json = excluded.pages_json, page_count = excluded.page_count, click_count = excluded.click_count,
+       last_seen_at = excluded.last_seen_at`
   ).bind(
     sessionId, visitorId, ip, cf.country || null, cf.regionCode || null, cf.city || null,
     cf.timezone || null, cf.latitude ? Number(cf.latitude) : null, cf.longitude ? Number(cf.longitude) : null,
@@ -1372,7 +1373,9 @@ async function handleTrackVisit(request, env) {
     (body.utmMedium || '').slice(0, 100) || null, (body.utmCampaign || '').slice(0, 100) || null,
     (body.utmTerm || '').slice(0, 200) || null, (body.gclid || '').slice(0, 200) || null,
     (body.utmContent || '').slice(0, 100) || null,
-    landingPath, JSON.stringify(pages), pages.length || 1, firstSeenAt, t
+    landingPath, JSON.stringify(pages), pages.length || 1,
+    Number.isFinite(body.clickCount) ? Math.max(0, Math.floor(body.clickCount)) : 0,
+    firstSeenAt, t
   ).run();
 
   return json({ ok: true });
@@ -1411,7 +1414,7 @@ async function handleConsoleVisitorsList(request, env) {
     `SELECT session_id, visitor_id, ip_address, country, region, city, timezone, latitude, longitude,
             browser, os, device_type, is_bot, bot_note, referrer, utm_source, utm_medium, utm_campaign,
             utm_term, gclid, utm_content,
-            landing_path, pages_json, page_count, first_seen_at, last_seen_at,
+            landing_path, pages_json, page_count, click_count, first_seen_at, last_seen_at,
             (last_seen_at - first_seen_at) AS duration_sec
      FROM site_visits ${where} ORDER BY last_seen_at DESC LIMIT 2000`
   ).bind(...binds).all()).results;

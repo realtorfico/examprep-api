@@ -524,6 +524,11 @@ CREATE TABLE site_visits (
   landing_path   TEXT NOT NULL,    -- first route path this session, never overwritten
   pages_json     TEXT NOT NULL,    -- JSON array of every route path visited this session, in order
   page_count     INTEGER NOT NULL DEFAULT 1,
+  click_count    INTEGER NOT NULL DEFAULT 0, -- total clicks anywhere on the page this session,
+                                    -- same raw metric Clarity's session detail shows -- captured
+                                    -- client-side (see the document click listener in app.js) and
+                                    -- sent as a running total on each beacon, same overwrite
+                                    -- pattern as page_count (not incremented server-side).
   first_seen_at  INTEGER NOT NULL,
   last_seen_at   INTEGER NOT NULL  -- (last_seen_at - first_seen_at) = time spent on site
 );
