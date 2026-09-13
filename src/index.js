@@ -1892,13 +1892,13 @@ async function handlePromoRedeemPointsMultiplier(request, env) {
 // /redeem's unused-code branch, so the buyer never has to separately type their own code in.
 // ageCategory ('under18' | '18plus' | undefined) only matters for ca_driver -- see getExamConfig --
 // but is accepted generically since this is shared by every track's checkout.
-async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail, ageCategory) {
+async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail, ageCategory, referralSource) {
   const code = newCode();
   const token = crypto.randomUUID();
   const userId = newId();
   await env.DB.batch([
-    env.DB.prepare('INSERT INTO codes (code, exam_type, note, issued_at, paid_cents, buyer_email) VALUES (?, ?, ?, ?, ?, ?)')
-      .bind(code, examType, note, now(), paidCents == null ? null : paidCents, buyerEmail || null),
+    env.DB.prepare('INSERT INTO codes (code, exam_type, note, issued_at, paid_cents, buyer_email, referral_source) VALUES (?, ?, ?, ?, ?, ?, ?)')
+      .bind(code, examType, note, now(), paidCents == null ? null : paidCents, buyerEmail || null, referralSource || null),
     env.DB.prepare('INSERT INTO users (id, exam_type, token, created_at, last_seen_at, age_category) VALUES (?, ?, ?, ?, ?, ?)')
       .bind(userId, examType, token, now(), now(), ageCategory || null),
     env.DB.prepare("UPDATE codes SET status = 'redeemed', redeemed_by = ?, redeemed_at = ? WHERE code = ?")
@@ -1912,10 +1912,10 @@ async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail, ag
 // admin's own manual code-generation already produces) until the recipient redeems it themselves
 // via the existing (already track-agnostic) /redeem flow -- so the buyer is never auto-logged-in
 // as if they were the student.
-async function issueGiftCode(env, examType, note, paidCents, buyerEmail) {
+async function issueGiftCode(env, examType, note, paidCents, buyerEmail, referralSource) {
   const code = newCode();
-  await env.DB.prepare('INSERT INTO codes (code, exam_type, note, issued_at, paid_cents, buyer_email) VALUES (?, ?, ?, ?, ?, ?)')
-    .bind(code, examType, note, now(), paidCents == null ? null : paidCents, buyerEmail || null).run();
+  await env.DB.prepare('INSERT INTO codes (code, exam_type, note, issued_at, paid_cents, buyer_email, referral_source) VALUES (?, ?, ?, ?, ?, ?, ?)')
+    .bind(code, examType, note, now(), paidCents == null ? null : paidCents, buyerEmail || null, referralSource || null).run();
   return { code };
 }
 
@@ -2001,11 +2001,11 @@ async function quoteCheckout(env, examType, email, applyPoints, promoCode) {
 // code has verified the payment actually completed and the captured amount matches what was
 // quoted. Handles point deduction, code issuance, receipt email, referral crediting, and the
 // admin activity alert -- the one thing that's genuinely identical regardless of processor.
-async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, affCode, sessionId }) {
+async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, affCode, sessionId, referralSource }) {
   const buyerEmail = payerEmail || email;
   const { code, token } = gift
-    ? await issueGiftCode(env, examType, note, capturedCents, buyerEmail)
-    : await issueAndRedeemCode(env, examType, note, capturedCents, buyerEmail, ageCategory);
+    ? await issueGiftCode(env, examType, note, capturedCents, buyerEmail, referralSource)
+    : await issueAndRedeemCode(env, examType, note, capturedCents, buyerEmail, ageCategory, referralSource);
 
   if (discount) {
     // MAX(0, ...) floors it defensively in case the balance somehow changed since create-order
@@ -2244,7 +2244,7 @@ async function handleBuyReminderSubmit(request, env) {
 }
 
 async function handleStripeConfirm(request, env) {
-  const { paymentIntentId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode, affCode, sessionId } = await request.json();
+  const { paymentIntentId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode, affCode, sessionId, referralSource } = await request.json();
   if (!paymentIntentId || !examType) return json({ error: 'paymentIntentId_and_examType_required' }, 400);
   // Unlike points/promo discounts, gift status has no effect on the charged amount -- nothing to
   // pre-commit at create-intent time, so it's just read straight off this request (see the
@@ -2280,9 +2280,26 @@ async function handleStripeConfirm(request, env) {
   // differ -- prefer the latter, same "trust what the processor tells us" approach as PayPal.
   const charge = intent.latest_charge;
   const payerEmail = (charge && charge.billing_details && charge.billing_details.email) || intent.receipt_email;
-  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, affCode, sessionId });
+  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, affCode, sessionId, referralSource });
 
   return json({ code, token, examType, pointsApplied, isGift: giftResult, capturedCents: intent.amount_received });
+}
+
+// Fills in "how did you hear about us" after the fact -- either the buyer skipped the checkout
+// field and the purchase-success screen nudged them once (see the site's referral-source-nudge
+// UI), or (rarer) they answered at checkout and this just confirms the same value. Keyed by the
+// purchase `code` itself rather than requiring a login, since a gift purchase never gets an
+// account/token (see issueGiftCode) but both success screens already have `code` on hand either
+// way. Only writes when the column is still empty so a nudge answer can never clobber a real
+// checkout-time answer, and a repeat/duplicate submit is a harmless no-op.
+async function handleSetReferralSource(request, env) {
+  const { code, referralSource } = await request.json();
+  const trimmed = (referralSource || '').trim();
+  if (!code || !trimmed) return json({ error: 'code_and_referralSource_required' }, 400);
+  const result = await env.DB.prepare(
+    "UPDATE codes SET referral_source = ? WHERE code = ? AND referral_source IS NULL"
+  ).bind(trimmed.slice(0, 200), code).run();
+  return json({ ok: result.meta.changes > 0 });
 }
 
 // ---- Refer & earn points ----------------------------------------------
@@ -4495,6 +4512,7 @@ export default {
       if (pathname === '/paypal/capture-order' && method === 'POST') return await handlePaypalCaptureOrder(request, env);
       if (pathname === '/stripe/create-intent' && method === 'POST') return await handleStripeCreateIntent(request, env);
       if (pathname === '/stripe/confirm' && method === 'POST') return await handleStripeConfirm(request, env);
+      if (pathname === '/purchase/referral-source' && method === 'POST') return await handleSetReferralSource(request, env);
       if (pathname === '/referrals/link' && method === 'POST') return await handleReferralLink(request, env);
       if (pathname === '/referrals/leaderboard' && method === 'GET') return await handleReferralLeaderboard(env);
       if (pathname === '/referrals/invite' && method === 'POST') return await handleReferralInvite(request, env);
