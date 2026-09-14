@@ -1513,6 +1513,91 @@ export async function handleTrackKeyBreakdownGet(request, env) {
   return json({ examType, items });
 }
 
+// ---- À la carte topic pricing -------------------------------------------
+// Each topic's price = (full-track price × its declared_pct share) × (1 + an admin-configurable
+// padding %), rounded UP to the next .99, floored at an admin-configurable minimum. Both settings
+// admin-editable in examprep-admin's Settings tab (keys: topic_price_padding_pct,
+// topic_price_min_cents). Padding is what keeps the SUM of every topic's price above the
+// full-track price -- the declared_pct values sum to 100%, so padding every share by the same
+// percentage before summing always pushes the total above the unpadded full price, which is what
+// stops a buyer from assembling the whole track cheaper by buying every topic separately. The
+// minimum floor exists because a small bucket (CA CDL's Vehicle Inspection is 6% of the exam) would
+// otherwise price out around $2-3 -- below that, card-processing fees eat a disproportionate share
+// of the sale and it reads as a throwaway product next to the site's real pricing.
+const DEFAULT_TOPIC_PRICE_PADDING_PCT = 20;
+const DEFAULT_TOPIC_PRICE_MIN_CENTS = 999;
+
+async function getTopicPricePaddingPct(env) {
+  const raw = await getAppSetting(env, 'topic_price_padding_pct', String(DEFAULT_TOPIC_PRICE_PADDING_PCT));
+  const pct = parseFloat(raw);
+  return Number.isFinite(pct) && pct >= 0 ? pct : DEFAULT_TOPIC_PRICE_PADDING_PCT;
+}
+
+async function getTopicPriceMinCents(env) {
+  const raw = await getAppSetting(env, 'topic_price_min_cents', String(DEFAULT_TOPIC_PRICE_MIN_CENTS));
+  const cents = parseInt(raw, 10);
+  return Number.isFinite(cents) && cents >= 0 ? cents : DEFAULT_TOPIC_PRICE_MIN_CENTS;
+}
+
+// Rounds UP to the nearest price ending in .99 -- e.g. 1731 ("$17.31") -> 1799 ("$17.99"), never
+// down, so the padding percentage's protective margin (see above) can never be quietly eroded by
+// rounding a computed price back down below the true unpadded share. floor(cents/100)*100+99 is
+// always >= cents (the last two digits of any integer are 0-99, so adding 99 to the "dollars"
+// portion can never land below where cents already was) -- a price already ending in .99 is
+// therefore left unchanged, not bumped to the next dollar.
+export function ceilTo99Cents(cents) {
+  return Math.floor(cents / 100) * 100 + 99;
+}
+
+// Pure -- no DB access -- so the actual pricing math is directly unit-testable without a fake
+// database. fullPriceCents/declaredPct/paddingPct/minCents are all plain numbers the caller
+// already resolved (from `pricing`, `track_key_breakdown`, and the two app_settings above).
+export function topicPriceCentsFor(fullPriceCents, declaredPct, paddingPct, minCents) {
+  const raw = fullPriceCents * (declaredPct / 100) * (1 + paddingPct / 100);
+  return Math.max(ceilTo99Cents(Math.round(raw)), minCents);
+}
+
+// Server-authoritative pricing for a set of topics -- the ONLY place this calculation happens.
+// The buy page's (not-yet-built) topic picker calls the public GET endpoint below to display a
+// live total as the buyer selects/deselects topics, and the real PaymentIntent amount (once the
+// à la carte checkout flow itself is built) will independently recompute from this same function
+// rather than trusting anything the client submits -- same trust boundary the existing full-track
+// checkout already uses for its own total.
+export async function computeTopicPricing(env, examType, topicLabels) {
+  const [{ priceCents: fullPriceCents }, paddingPct, minCents, breakdownResult] = await Promise.all([
+    getPrice(env, examType),
+    getTopicPricePaddingPct(env),
+    getTopicPriceMinCents(env),
+    env.DB.prepare('SELECT label, declared_pct FROM track_key_breakdown WHERE exam_type = ?').bind(examType).all(),
+  ]);
+  const declaredPctByLabel = new Map(breakdownResult.results.map((r) => [r.label, r.declared_pct]));
+  const items = [];
+  for (const label of topicLabels) {
+    const declaredPct = declaredPctByLabel.get(label);
+    // Unknown/stale topic label for this track (e.g. a client-side list that's out of date) is
+    // silently skipped rather than erroring the whole request -- the resulting total simply
+    // reflects only the topics that are actually real for this track.
+    if (declaredPct == null) continue;
+    items.push({ label, priceCents: topicPriceCentsFor(fullPriceCents, declaredPct, paddingPct, minCents) });
+  }
+  const totalCents = items.reduce((sum, i) => sum + i.priceCents, 0);
+  return { totalCents, items, fullPriceCents };
+}
+
+// Public, read-only, no side effects (matches /pricing's own GET-not-POST convention) -- the buy
+// page's topic picker calls this to show a live price as the buyer selects/deselects topics.
+export async function handleTopicPricingGet(request, env) {
+  const url = new URL(request.url);
+  const examType = url.searchParams.get('examType');
+  const topicsParam = url.searchParams.get('topics');
+  if (!examType) return json({ error: 'examType_required' }, 400);
+  if (!topicsParam) return json({ error: 'topics_required' }, 400);
+  const topicLabels = topicsParam.split(',').map((t) => t.trim()).filter(Boolean);
+  if (!topicLabels.length) return json({ error: 'topics_required' }, 400);
+  const pricing = await computeTopicPricing(env, examType, topicLabels);
+  return json({ examType, ...pricing });
+}
+
 // Small, unauthenticated, site-wide config -- fetched once at boot (not tied to any one page) so
 // the footer and other chrome that renders before/without any other API call can still reflect
 // admin-configurable values instead of a stale hardcoded default. Per-track active status used to
@@ -4562,6 +4647,7 @@ export default {
       if (pathname === '/mcp') return await handleMcp(request, env);
       if (pathname === '/pricing' && method === 'GET') return await handlePricingGet(request, env);
       if (pathname === '/track-key-breakdown' && method === 'GET') return await handleTrackKeyBreakdownGet(request, env);
+      if (pathname === '/topic-pricing' && method === 'GET') return await handleTopicPricingGet(request, env);
       if (pathname === '/config' && method === 'GET') return await handlePublicConfig(env);
       if (pathname === '/stats/public' && method === 'GET') return await handlePublicStats(env);
       if (pathname === '/stats/pass-rates-by-category' && method === 'GET') return await handlePassRatesByCategory(env);
