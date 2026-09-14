@@ -8,11 +8,15 @@ const SITE_URL = 'https://passexamhq.com/';
 
 // BCC'd on every buyer/user-facing email (site owner asked for visibility into all outgoing
 // communication, 2026-09-12) -- deliberately in this one shared function rather than per-caller,
-// so it covers every template in this file with no per-email-type changes needed.
+// so it covers every template in this file with no per-email-type changes needed. EXCEPT emails
+// carrying a one-time verify link or a raw access code (skipBcc: true below) -- BCC'ing those
+// would hand a second mailbox a working credential for someone else's account/points/code, which
+// defeats the "knowing/guessing someone's email isn't enough" protection those flows depend on.
 const OWNER_BCC = 'avangari@gmail.com';
 
-async function sendEmail(env, { to, subject, html, replyTo }) {
-  const body = { from: 'ExamPrep <noreply@examprep.softician.com>', to, subject, html, bcc: OWNER_BCC };
+async function sendEmail(env, { to, subject, html, replyTo, skipBcc }) {
+  const body = { from: 'ExamPrep <noreply@examprep.softician.com>', to, subject, html };
+  if (!skipBcc) body.bcc = OWNER_BCC;
   if (replyTo) body.reply_to = replyTo;
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
@@ -74,6 +78,7 @@ export async function sendCodeEmail(env, to, code, examType) {
       ctaText: 'Go to ExamPrep →',
       ctaUrl: SITE_URL,
     }),
+    skipBcc: true,
   });
 }
 
@@ -93,6 +98,7 @@ export async function sendReferralInviteEmail(env, to, referrerName, verifyUrl) 
       ctaUrl: verifyUrl,
       footerNote: "Didn't expect this? You can safely ignore it.",
     }),
+    skipBcc: true,
   });
 }
 
@@ -110,6 +116,7 @@ export async function sendRedeemVerifyEmail(env, to, points, verifyUrl) {
       ctaUrl: verifyUrl,
       footerNote: "Didn't request this? You can safely ignore it — your points are untouched.",
     }),
+    skipBcc: true,
   });
 }
 
@@ -127,6 +134,7 @@ export async function sendPromoVerifyEmail(env, to, promoTitle, verifyUrl) {
       ctaUrl: verifyUrl,
       footerNote: "Didn't request this? You can safely ignore it.",
     }),
+    skipBcc: true,
   });
 }
 
@@ -239,6 +247,7 @@ export async function sendGiftCodeEmail(env, to, code, examType, giftMessage, gi
       ctaUrl: REDEEM_URL,
       footerNote: "Wasn't expecting this? You can safely ignore it — the code just won't get used.",
     }),
+    skipBcc: true,
   });
 }
 
