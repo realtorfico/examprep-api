@@ -1586,13 +1586,24 @@ export async function computeTopicPricing(env, examType, topicLabels) {
 
 // Public, read-only, no side effects (matches /pricing's own GET-not-POST convention) -- the buy
 // page's topic picker calls this to show a live price as the buyer selects/deselects topics.
+// `topics` is a JSON-encoded array (e.g. `?topics=%5B%22General%20Knowledge...%22%5D`), NOT
+// comma-separated -- real declared_pct labels routinely contain commas themselves (3 of CA CDL's
+// 4 do, e.g. "General Knowledge (CDL Rules, Safe Driving & Cargo)"), so a naive comma-split would
+// silently mangle them into unmatchable fragments. Caught live: the first deploy of this endpoint
+// returned an empty items array for exactly this reason.
 export async function handleTopicPricingGet(request, env) {
   const url = new URL(request.url);
   const examType = url.searchParams.get('examType');
   const topicsParam = url.searchParams.get('topics');
   if (!examType) return json({ error: 'examType_required' }, 400);
   if (!topicsParam) return json({ error: 'topics_required' }, 400);
-  const topicLabels = topicsParam.split(',').map((t) => t.trim()).filter(Boolean);
+  let topicLabels;
+  try {
+    const parsed = JSON.parse(topicsParam);
+    topicLabels = Array.isArray(parsed) ? parsed.filter((t) => typeof t === 'string' && t.trim()) : [];
+  } catch (e) {
+    return json({ error: 'topics_must_be_json_array' }, 400);
+  }
   if (!topicLabels.length) return json({ error: 'topics_required' }, 400);
   const pricing = await computeTopicPricing(env, examType, topicLabels);
   return json({ examType, ...pricing });

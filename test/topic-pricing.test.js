@@ -154,18 +154,47 @@ function req(query) {
   return new Request('https://api.example.com/topic-pricing' + query);
 }
 
-test('handleTopicPricingGet: comma-separated topics query param resolves to a real total', async () => {
+test('handleTopicPricingGet: a single-topic JSON array resolves to a real total', async () => {
   const db = makeDb();
   const env = { DB: makeD1(db) };
-  const res = await handleTopicPricingGet(req('?examType=ca_cdl&topics=' + encodeURIComponent('Vehicle Inspection Procedures')), env);
+  const res = await handleTopicPricingGet(req('?examType=ca_cdl&topics=' + encodeURIComponent(JSON.stringify(['Vehicle Inspection Procedures']))), env);
   const body = await res.json();
   assert.equal(body.examType, 'ca_cdl');
   assert.equal(body.totalCents, 999);
 });
 
+test('handleTopicPricingGet: a topic label containing commas is NOT mangled -- caught live in production on first deploy', async () => {
+  // 3 of CA CDL's 4 real declared_pct labels contain commas (e.g. this one). A naive
+  // comma-separated query param would split this into unmatchable fragments; the JSON-array
+  // format must round-trip it intact.
+  const db = makeDb();
+  const env = { DB: makeD1(db) };
+  const commaLabel = 'General Knowledge (CDL Rules, Safe Driving & Cargo)';
+  const res = await handleTopicPricingGet(req('?examType=ca_cdl&topics=' + encodeURIComponent(JSON.stringify([commaLabel]))), env);
+  const body = await res.json();
+  assert.equal(body.items.length, 1, 'the comma-containing label must resolve to exactly one real topic, not zero');
+  assert.equal(body.items[0].label, commaLabel);
+});
+
+test('handleTopicPricingGet: multiple topics, at least one with a comma, all resolve correctly together', async () => {
+  const db = makeDb();
+  const env = { DB: makeD1(db) };
+  const topics = ['General Knowledge (CDL Rules, Safe Driving & Cargo)', 'Vehicle Inspection Procedures'];
+  const res = await handleTopicPricingGet(req('?examType=ca_cdl&topics=' + encodeURIComponent(JSON.stringify(topics))), env);
+  const body = await res.json();
+  assert.equal(body.items.length, 2);
+});
+
 test('handleTopicPricingGet: missing examType or topics is rejected with 400', async () => {
   const db = makeDb();
   const env = { DB: makeD1(db) };
-  assert.equal((await handleTopicPricingGet(req('?topics=General+Knowledge'), env)).status, 400);
+  assert.equal((await handleTopicPricingGet(req('?topics=' + encodeURIComponent(JSON.stringify(['General Knowledge']))), env)).status, 400);
   assert.equal((await handleTopicPricingGet(req('?examType=ca_cdl'), env)).status, 400);
+});
+
+test('handleTopicPricingGet: malformed (non-JSON, or JSON but not an array) topics param is rejected with 400, not a 500', async () => {
+  const db = makeDb();
+  const env = { DB: makeD1(db) };
+  assert.equal((await handleTopicPricingGet(req('?examType=ca_cdl&topics=not-json'), env)).status, 400);
+  assert.equal((await handleTopicPricingGet(req('?examType=ca_cdl&topics=' + encodeURIComponent('{"not":"an array"}')), env)).status, 400);
 });
