@@ -234,6 +234,40 @@ CREATE TABLE track_content (
   updated_at            INTEGER NOT NULL
 );
 
+-- Canonical per-track "Key Breakdown" -- the real exam's declared topic-weighting categories
+-- (e.g. "General Knowledge 48%"), one row per category. Generic across every kind/state/track, not
+-- CDL-specific -- exam_type is the only per-track key, same convention as track_content above.
+--
+-- Two things this table is meant to fix, both flagged 2026-09-14 while scoping the à la carte
+-- topic-purchase pilot (see project memory project_ca_cdl_topic_purchase_pilot): (1) the site's
+-- public "Key Breakdown" display has always been a hardcoded array in app.js's HUB_EXAMS_CONTENT,
+-- with zero DB backing -- no queryable list existed anywhere. (2) that hardcoded array and
+-- questions.topic (the per-question tag) are two independently-maintained free-text sources that
+-- are only "the same thing" by manual discipline -- exactly the drift the CDL topic-relabeling
+-- campaigns (project_cdl_gk_breakdown_backfill/_n14) have been chasing by hand. This table is meant
+-- to become the single source of truth going forward, one track at a time.
+--
+-- Deliberately NOT a hard foreign key from questions.topic to this table's label -- most tracks
+-- have no rows here yet (this starts CA CDL only), and a hard FK would block every question insert
+-- on every OTHER track until they all migrated too. The convention instead: once a track has rows
+-- here, questions.topic for that exam_type is expected to exactly match one of them (enforced by
+-- the same admin-side discipline the relabel campaigns already use, not a DB constraint).
+--
+-- The site's own hardcoded `breakdown` array is left unchanged for now (not swapped to fetch from
+-- here) -- CA's rows are seeded FROM that exact array, so there's no drift AT SEEDING TIME; keeping
+-- the display's data source live-bound to this table is a separate, larger follow-up (touches
+-- multiple render call sites), not required for the purchase-gating mechanics this table exists for.
+CREATE TABLE track_key_breakdown (
+  id           TEXT PRIMARY KEY,
+  exam_type    TEXT NOT NULL,
+  label        TEXT NOT NULL,  -- must exactly match the declared breakdown label shown to buyers,
+                                -- and (once a track is cleaned up) questions.topic for this exam_type
+  declared_pct INTEGER NOT NULL,
+  sort_order   INTEGER NOT NULL,
+  UNIQUE(exam_type, label)
+);
+CREATE INDEX idx_track_key_breakdown_exam_type ON track_key_breakdown(exam_type);
+
 -- Refer & earn points. `accounts` are lightweight, email-keyed identities (no password/login) —
 -- created the moment someone refers a friend, so points can accrue before any purchase happens.
 CREATE TABLE accounts (

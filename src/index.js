@@ -1497,6 +1497,22 @@ async function handlePricingGet(request, env) {
   return json({ examType, priceCents, currency, minPaypalChargeCents });
 }
 
+// Public, read-only -- the canonical per-track "Key Breakdown" (see track_key_breakdown's own
+// schema.sql comment for why this table exists). Generic across every kind/state, not CDL-specific
+// -- examType is the only per-track key. Most tracks have no rows here yet (this starts CA CDL
+// only); an empty items array just means "not migrated yet", not an error -- callers (the à la
+// carte topic-purchase pilot) should treat that as "this track isn't available for topic-level
+// purchase" rather than retrying or erroring.
+export async function handleTrackKeyBreakdownGet(request, env) {
+  const url = new URL(request.url);
+  const examType = url.searchParams.get('examType');
+  if (!examType) return json({ error: 'examType_required' }, 400);
+  const items = (await env.DB.prepare(
+    `SELECT label, declared_pct, sort_order FROM track_key_breakdown WHERE exam_type = ? ORDER BY sort_order`
+  ).bind(examType).all()).results;
+  return json({ examType, items });
+}
+
 // Small, unauthenticated, site-wide config -- fetched once at boot (not tied to any one page) so
 // the footer and other chrome that renders before/without any other API call can still reflect
 // admin-configurable values instead of a stale hardcoded default. Per-track active status used to
@@ -4514,6 +4530,7 @@ export default {
       if (pathname === '/qotd' && method === 'GET') return await handleQotd(request, env);
       if (pathname === '/mcp') return await handleMcp(request, env);
       if (pathname === '/pricing' && method === 'GET') return await handlePricingGet(request, env);
+      if (pathname === '/track-key-breakdown' && method === 'GET') return await handleTrackKeyBreakdownGet(request, env);
       if (pathname === '/config' && method === 'GET') return await handlePublicConfig(env);
       if (pathname === '/stats/public' && method === 'GET') return await handlePublicStats(env);
       if (pathname === '/stats/pass-rates-by-category' && method === 'GET') return await handlePassRatesByCategory(env);
