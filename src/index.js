@@ -2244,8 +2244,12 @@ async function handleBuyReminderSubmit(request, env) {
 }
 
 async function handleStripeConfirm(request, env) {
-  const { paymentIntentId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode, affCode, sessionId, referralSource } = await request.json();
+  const { paymentIntentId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode, affCode, sessionId, referralSource: rawReferralSource } = await request.json();
   if (!paymentIntentId || !examType) return json({ error: 'paymentIntentId_and_examType_required' }, 400);
+  // Same 200-char cap as handleSetReferralSource's post-purchase nudge path -- the checkout
+  // field's "Other" option is free text with no client-side maxlength, so an unbounded string is
+  // reachable here even though the UI only ever sends one of a handful of short values.
+  const referralSource = rawReferralSource ? String(rawReferralSource).trim().slice(0, 200) || undefined : undefined;
   // Unlike points/promo discounts, gift status has no effect on the charged amount -- nothing to
   // pre-commit at create-intent time, so it's just read straight off this request (see the
   // finalizePurchase/issueGiftCode comments for why an untrusted isGift can't be exploited).
