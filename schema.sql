@@ -28,12 +28,21 @@ CREATE TABLE users (
                                                     -- email, distinct from the immediate purchase
                                                     -- receipt (sendCodeEmail, pure transactional) and
                                                     -- the 14-day-inactive stalled-buyer nudge.
-  suggestion_email_sent_at INTEGER                 -- set once, ~10 days after account creation (see
+  suggestion_email_sent_at INTEGER,                -- set once, ~10 days after account creation (see
                                                     -- sendSuggestionRequestEmails' daily cron) -- a
                                                     -- one-time "what do you think?" ask, sent to
                                                     -- every real buyer regardless of activity level
                                                     -- (distinct from the stalled-buyer nudge, which
                                                     -- only fires for INACTIVE buyers).
+  owned_topics_json      TEXT                      -- JSON array of track_key_breakdown.label strings
+                                                    -- this user's purchase actually covers, e.g.
+                                                    -- '["General Knowledge (CDL Rules, Safe Driving &
+                                                    -- Cargo)"]'. NULL = full track access -- the
+                                                    -- default for every existing user and every
+                                                    -- full-price purchase; only an à la carte topic
+                                                    -- purchase (pilot: CA CDL) ever sets this. See
+                                                    -- findNextQuestionRow's own comment for how this
+                                                    -- restricts quiz-mode question selection.
 );
 CREATE INDEX idx_users_token ON users(token);
 -- last_seen_at/created_at are filtered on by 3 daily crons (sendStalledBuyerReminders,

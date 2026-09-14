@@ -2794,7 +2794,12 @@ export function _resetDifficultyIndexCacheForTests() {
 // mix review into new content rather than batching it at the end.
 const MISSED_INTERLEAVE_CHANCE = 0.3;
 
-export async function findNextQuestionRow(env, user, difficulty) {
+// topics: optional array of exact-match questions.topic strings to restrict the pool to -- the
+// à la carte topic-purchase pilot's access scoping (see track_key_breakdown's own schema.sql
+// comment, and users.owned_topics_json). null/undefined/empty = no restriction, the default for
+// every existing caller and every full-track purchase, so this is fully additive: nothing changes
+// for any user whose owned_topics_json is NULL.
+export async function findNextQuestionRow(env, user, difficulty, topics) {
   // json_each(?) over a JSON-array bind parameter, not one bound parameter per id -- D1/SQLite
   // has a limited bound-parameter count, but a track's own difficulty-band id list (from the
   // cache above) can run to a couple thousand entries for the largest banks. An empty '[]' (no
@@ -2810,6 +2815,18 @@ export async function findNextQuestionRow(env, user, difficulty) {
     diffJoin = 'JOIN json_each(?) je ON je.value = q.id';
   }
 
+  // Same json_each(?) pattern as the difficulty join above, joined on q.topic instead of q.id --
+  // a topic list is short (a handful of strings) but this stays consistent with the established
+  // pattern here rather than introducing a second filtering technique in the same function.
+  const hasTopics = !!(topics && topics.length);
+  let topicJoin = '';
+  let topicsJson = null;
+  if (hasTopics) {
+    topicsJson = JSON.stringify(topics);
+    topicJoin = 'JOIN json_each(?) te ON te.value = q.topic';
+  }
+  const topicArgs = hasTopics ? [topicsJson] : [];
+
   // Excludes whatever question this user most recently answered, so the missed-question
   // interleave below (and the exhausted-bank fallback further down) can never immediately
   // re-serve the exact question just gotten wrong -- with a small missed-pool (e.g. only one
@@ -2823,9 +2840,9 @@ export async function findNextQuestionRow(env, user, difficulty) {
   const excludeArgs = lastId ? [lastId] : [];
 
   const pickMissed = () => env.DB.prepare(
-    `SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin}
+    `SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin} ${topicJoin}
      WHERE p.user_id = ? AND p.last_result = 'incorrect' ${excludeFilter} ORDER BY RANDOM() LIMIT 1`
-  ).bind(...(difficulty ? [diffIdsJson] : []), user.id, ...excludeArgs).first();
+  ).bind(...(difficulty ? [diffIdsJson] : []), ...topicArgs, user.id, ...excludeArgs).first();
 
   if (Math.random() < MISSED_INTERLEAVE_CHANCE) {
     const interleaved = await pickMissed();
@@ -2833,27 +2850,41 @@ export async function findNextQuestionRow(env, user, difficulty) {
   }
 
   const unseen = await env.DB.prepare(
-    `SELECT q.* FROM questions q LEFT JOIN progress p ON p.question_id = q.id AND p.user_id = ? ${diffJoin}
+    `SELECT q.* FROM questions q LEFT JOIN progress p ON p.question_id = q.id AND p.user_id = ? ${diffJoin} ${topicJoin}
      WHERE q.exam_type = ? AND p.question_id IS NULL ORDER BY q.weight DESC, RANDOM() LIMIT 1`
-  ).bind(user.id, ...(difficulty ? [diffIdsJson] : []), user.exam_type).first();
+  ).bind(user.id, ...(difficulty ? [diffIdsJson] : []), ...topicArgs, user.exam_type).first();
   if (unseen) return unseen;
 
   const missed = await pickMissed();
   if (missed) return missed;
 
   const review = await env.DB.prepare(
-    `SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin}
+    `SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin} ${topicJoin}
      WHERE p.user_id = ? ORDER BY RANDOM() LIMIT 1`
-  ).bind(...(difficulty ? [diffIdsJson] : []), user.id).first();
+  ).bind(...(difficulty ? [diffIdsJson] : []), ...topicArgs, user.id).first();
   return review || null;
+}
+
+// null for every user except an à la carte topic purchaser (see users.owned_topics_json's own
+// schema.sql comment) -- a malformed/corrupted value degrades to "full access" (null) rather than
+// a hard 500 or an empty-forever pool, since a parse failure here should never be able to lock a
+// real paying user out of their own quiz.
+export function ownedTopicsFor(user) {
+  if (!user.owned_topics_json) return null;
+  try {
+    const parsed = JSON.parse(user.owned_topics_json);
+    return Array.isArray(parsed) && parsed.length ? parsed : null;
+  } catch (e) { return null; }
 }
 
 async function handleNextQuestion(user, env, difficulty) {
   const validDifficulty = difficulty && DIFFICULTY_BANDS.includes(difficulty) ? difficulty : null;
-  let row = await findNextQuestionRow(env, user, validDifficulty);
+  const topics = ownedTopicsFor(user);
+  let row = await findNextQuestionRow(env, user, validDifficulty, topics);
   // If that band has nothing left (e.g. all extremely_hard questions already seen), fall back to
-  // the unfiltered pick rather than dead-ending the quiz.
-  if (!row && validDifficulty) row = await findNextQuestionRow(env, user, null);
+  // the unfiltered pick rather than dead-ending the quiz -- still topic-scoped, the difficulty
+  // band is what's being relaxed here, not the buyer's own topic ownership.
+  if (!row && validDifficulty) row = await findNextQuestionRow(env, user, null, topics);
   if (row) return json(toPublicQuestion(row));
   return json({ error: 'no_questions' }, 404);
 }
