@@ -54,9 +54,12 @@ CREATE TABLE codes (
   paid_cents   INTEGER,                        -- real cash actually paid via PayPal (NULL for
                                                  -- free/points/admin-issued codes) -- refund_claims
                                                  -- computes off this, never off points value
-  buyer_email  TEXT                            -- payer's email from PayPal (or their optional
+  buyer_email  TEXT,                           -- payer's email from PayPal (or their optional
                                                  -- backup email) -- best-effort, used to sanity-check
                                                  -- refund claims against who actually paid
+  referral_source TEXT                          -- "how did you hear about us", from checkout or the
+                                                 -- post-purchase nudge (handleSetReferralSource) --
+                                                 -- NULL until either answers it
 );
 CREATE INDEX idx_codes_exam_type ON codes(exam_type);
 -- redeemed_by is a JOIN key in 8+ places (including 3 daily crons: sendExamCountdownEmails,
