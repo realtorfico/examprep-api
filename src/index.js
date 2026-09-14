@@ -3148,6 +3148,31 @@ async function handleConsoleStalledBuyersList(request, env) {
   return json({ items: rows, days });
 }
 
+// ---- Buy-page leads (checkout_intents, not yet purchased) ---------------
+// Read-only visibility for the admin so the exit-intent modal's own copy ("we may also let you
+// know about promos and sale events" -- see maybeShowExitIntentModal in the site's app.js) is
+// actually true and not just a promise: without this, an exit_capture/checkout_form email sat in
+// checkout_intents completely invisible to a human, reachable only by the one automated one-time
+// reminder in sendAbandonedCheckoutReminders. No automated promo-sending pipeline yet -- same
+// deliberately manual, human-judgment-call shape as the Stalled Buyers list above (the admin copies
+// emails out and sends via whatever tool they choose); this just makes that possible at all.
+export async function handleConsoleCheckoutIntentsList(request, env) {
+  const url = new URL(request.url);
+  const days = Math.max(1, parseInt(url.searchParams.get('days'), 10) || 90);
+  // 'source' is NULL for rows written before that column existed -- treated as 'checkout_form',
+  // same fallback sendAbandonedCheckoutReminders already uses (see its own comment).
+  const source = url.searchParams.get('source') || 'exit_capture'; // 'exit_capture' | 'checkout_form' | 'all'
+  const cutoff = now() - days * 86400;
+  const rows = (await env.DB.prepare(
+    `SELECT email, exam_type, source, created_at, purchased_at, reminder_sent_at
+     FROM checkout_intents
+     WHERE purchased_at IS NULL AND created_at > ?
+       AND (? = 'all' OR COALESCE(source, 'checkout_form') = ?)
+     ORDER BY created_at DESC LIMIT 500`
+  ).bind(cutoff, source, source).all()).results;
+  return json({ items: rows, days, source });
+}
+
 // Automated counterpart to the manual admin tool above, added 2026-09-10. One-time only per user
 // (last_reminder_sent_at IS NULL) -- a real stalled buyer gets nudged automatically once, not
 // repeatedly; the admin's manual tool is still there for a deliberate second nudge if a human
@@ -4601,6 +4626,7 @@ export default {
         if (pathname === '/console/quiz-progress' && method === 'GET') return await handleConsoleQuizProgressList(env);
         if (pathname === '/console/stalled-buyers' && method === 'GET') return await handleConsoleStalledBuyersList(request, env);
         if (pathname === '/console/stalled-buyers/remind' && method === 'POST') return await handleConsoleStalledBuyerRemind(request, env);
+        if (pathname === '/console/checkout-intents' && method === 'GET') return await handleConsoleCheckoutIntentsList(request, env);
         if (pathname === '/console/exam-attempts' && method === 'GET') return await handleConsoleExamAttemptsList(env);
         if (pathname === '/console/exam-attempts/detail' && method === 'GET') return await handleConsoleExamAttemptDetail(request, env);
         return json({ error: 'not_found' }, 404);
