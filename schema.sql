@@ -66,9 +66,22 @@ CREATE TABLE codes (
   buyer_email  TEXT,                           -- payer's email from PayPal (or their optional
                                                  -- backup email) -- best-effort, used to sanity-check
                                                  -- refund claims against who actually paid
-  referral_source TEXT                          -- "how did you hear about us", from checkout or the
+  referral_source TEXT,                         -- "how did you hear about us", from checkout or the
                                                  -- post-purchase nudge (handleSetReferralSource) --
                                                  -- NULL until either answers it
+  topics_json  TEXT                             -- JSON array of track_key_breakdown.label strings
+                                                 -- this UNREDEEMED code grants, same shape as
+                                                 -- users.owned_topics_json. NULL = full track access
+                                                 -- (every code before this column existed, every
+                                                 -- gift/checkout-purchased code, and most admin-
+                                                 -- issued codes). Only admin's own "Generate code"
+                                                 -- form (handleCodesGenerate) ever sets this -- a
+                                                 -- topic-scoped comp/support code. handleRedeem
+                                                 -- copies it onto the new user's owned_topics_json
+                                                 -- at redemption time; a purchase-driven code never
+                                                 -- goes through this column at all (issueAndRedeemCode
+                                                 -- writes owned_topics_json directly since it creates
+                                                 -- and redeems the code in one atomic step).
 );
 CREATE INDEX idx_codes_exam_type ON codes(exam_type);
 -- redeemed_by is a JOIN key in 8+ places (including 3 daily crons: sendExamCountdownEmails,

@@ -146,7 +146,7 @@ function isDisposableEmail(email) {
 
 // ---- Public endpoints (bearer-token auth via requireUser) -----------------
 
-async function handleRedeem(request, env) {
+export async function handleRedeem(request, env) {
   const { code, turnstileToken } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
   if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
@@ -163,10 +163,14 @@ async function handleRedeem(request, env) {
 
   if (row.status === 'unused') {
     const userId = newId();
+    // row.topics_json is set only for an admin-issued topic-scoped comp code (see
+    // handleCodesGenerate) -- NULL for every other code (gift, checkout-purchased, or a plain
+    // full-track admin code), which leaves the new user's owned_topics_json NULL, its normal
+    // full-access default.
     await env.DB.batch([
       env.DB.prepare(
-        'INSERT INTO users (id, exam_type, token, created_at, last_seen_at) VALUES (?, ?, ?, ?, ?)'
-      ).bind(userId, row.exam_type, token, now(), now()),
+        'INSERT INTO users (id, exam_type, token, created_at, last_seen_at, owned_topics_json) VALUES (?, ?, ?, ?, ?, ?)'
+      ).bind(userId, row.exam_type, token, now(), now(), row.topics_json || null),
       env.DB.prepare(
         "UPDATE codes SET status = 'redeemed', redeemed_by = ?, redeemed_at = ? WHERE code = ?"
       ).bind(userId, now(), row.code),
@@ -4333,15 +4337,32 @@ async function handleConsoleReferralsList(env) {
   return json({ referrals: rows });
 }
 
-async function handleCodesGenerate(request, env) {
-  const { examType, note, expiresInDays } = await request.json();
+export async function handleCodesGenerate(request, env) {
+  const { examType, note, expiresInDays, topics } = await request.json();
   if (!examType) return json({ error: 'examType_required' }, 400);
   const code = newCode();
   const expiresAt = expiresInDays ? now() + expiresInDays * 86400 : null;
+  // Optional à la carte scoping (see project memory project_ca_cdl_topic_purchase_pilot) -- lets
+  // admin hand out a comp/support code for specific topics only, same owned_topics_json shape a
+  // real topic purchase ends up with, rather than only ever being able to issue full-track codes.
+  // Absent/empty `topics` (every caller before this existed) leaves topicsJson null -- full track
+  // access, unchanged.
+  let topicsJson = null;
+  if (Array.isArray(topics) && topics.length) {
+    const breakdownResult = await env.DB.prepare('SELECT label FROM track_key_breakdown WHERE exam_type = ?').bind(examType).all();
+    const validLabels = new Set(breakdownResult.results.map((r) => r.label));
+    const filtered = topics.filter((t) => validLabels.has(t));
+    // Same "reject outright rather than silently issue a subset" reasoning as the à la carte
+    // checkout's own tamper/staleness check (handleStripeCreateIntent) -- an admin picking topics
+    // from a UI backed by the real breakdown should never produce a mismatch; if it does, something
+    // is stale (or this track doesn't offer à la carte at all) and the whole request is invalid.
+    if (!filtered.length || filtered.length !== topics.length) return json({ error: 'invalid_topics' }, 400);
+    topicsJson = JSON.stringify(filtered);
+  }
   await env.DB.prepare(
-    'INSERT INTO codes (code, exam_type, note, expires_at, issued_at) VALUES (?, ?, ?, ?, ?)'
-  ).bind(code, examType, note || null, expiresAt, now()).run();
-  return json({ code, examType, expiresAt });
+    'INSERT INTO codes (code, exam_type, note, expires_at, issued_at, topics_json) VALUES (?, ?, ?, ?, ?, ?)'
+  ).bind(code, examType, note || null, expiresAt, now(), topicsJson).run();
+  return json({ code, examType, expiresAt, topics: topicsJson ? JSON.parse(topicsJson) : null });
 }
 
 async function handleCodesList(request, env) {
