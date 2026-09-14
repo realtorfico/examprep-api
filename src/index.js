@@ -2004,15 +2004,20 @@ async function handlePromoRedeemPointsMultiplier(request, env) {
 // /redeem's unused-code branch, so the buyer never has to separately type their own code in.
 // ageCategory ('under18' | '18plus' | undefined) only matters for ca_driver -- see getExamConfig --
 // but is accepted generically since this is shared by every track's checkout.
-async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail, ageCategory, referralSource) {
+// ownedTopicsJson: null for every normal (full-track) purchase -- the vast majority of callers.
+// Only an à la carte topic purchase (see handleStripeConfirm) ever passes a real value, written
+// straight onto the new user row (see users.owned_topics_json's own schema.sql comment for what
+// this does downstream -- quiz-mode filtering, the Exam/Weak Spots lock, Resources/Progress
+// gating, refund-guarantee eligibility).
+async function issueAndRedeemCode(env, examType, note, paidCents, buyerEmail, ageCategory, referralSource, ownedTopicsJson) {
   const code = newCode();
   const token = crypto.randomUUID();
   const userId = newId();
   await env.DB.batch([
     env.DB.prepare('INSERT INTO codes (code, exam_type, note, issued_at, paid_cents, buyer_email, referral_source) VALUES (?, ?, ?, ?, ?, ?, ?)')
       .bind(code, examType, note, now(), paidCents == null ? null : paidCents, buyerEmail || null, referralSource || null),
-    env.DB.prepare('INSERT INTO users (id, exam_type, token, created_at, last_seen_at, age_category) VALUES (?, ?, ?, ?, ?, ?)')
-      .bind(userId, examType, token, now(), now(), ageCategory || null),
+    env.DB.prepare('INSERT INTO users (id, exam_type, token, created_at, last_seen_at, age_category, owned_topics_json) VALUES (?, ?, ?, ?, ?, ?, ?)')
+      .bind(userId, examType, token, now(), now(), ageCategory || null, ownedTopicsJson || null),
     env.DB.prepare("UPDATE codes SET status = 'redeemed', redeemed_by = ?, redeemed_at = ? WHERE code = ?")
       .bind(userId, now(), code),
   ]);
@@ -2113,11 +2118,15 @@ async function quoteCheckout(env, examType, email, applyPoints, promoCode) {
 // code has verified the payment actually completed and the captured amount matches what was
 // quoted. Handles point deduction, code issuance, receipt email, referral crediting, and the
 // admin activity alert -- the one thing that's genuinely identical regardless of processor.
-async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, affCode, sessionId, referralSource }) {
+async function finalizePurchase(env, { examType, note, capturedCents, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, affCode, sessionId, referralSource, topicPurchase }) {
   const buyerEmail = payerEmail || email;
+  // gift is already forced null by handleStripeConfirm whenever topicPurchase is present (à la
+  // carte purchases never support gifting -- see that function's own comment), so this can't
+  // silently drop the owned-topics scope on the floor by taking the gift branch instead.
+  const ownedTopicsJson = topicPurchase ? topicPurchase.topics_json : null;
   const { code, token } = gift
     ? await issueGiftCode(env, examType, note, capturedCents, buyerEmail, referralSource)
-    : await issueAndRedeemCode(env, examType, note, capturedCents, buyerEmail, ageCategory, referralSource);
+    : await issueAndRedeemCode(env, examType, note, capturedCents, buyerEmail, ageCategory, referralSource, ownedTopicsJson);
 
   if (discount) {
     // MAX(0, ...) floors it defensively in case the balance somehow changed since create-order
@@ -2131,6 +2140,10 @@ async function finalizePurchase(env, { examType, note, capturedCents, payerEmail
   if (promoDiscount) {
     await env.DB.prepare('UPDATE promotions SET redeemed_count = redeemed_count + 1 WHERE id = ?').bind(promoDiscount.promo_id).run();
     await env.DB.prepare('DELETE FROM pending_promo_discounts WHERE order_id = ?').bind(promoDiscount.order_id).run();
+  }
+
+  if (topicPurchase) {
+    await env.DB.prepare('DELETE FROM pending_topic_purchases WHERE order_id = ?').bind(topicPurchase.order_id).run();
   }
 
   if (gift) {
@@ -2159,6 +2172,7 @@ async function finalizePurchase(env, { examType, note, capturedCents, payerEmail
     ` for $${(capturedCents / 100).toFixed(2)}` +
     (discount ? ` (${discount.points_to_apply} points applied as a discount)` : '') +
     (promoDiscount ? ` (promo code ${promoDiscount.code} applied, -$${(promoDiscount.discount_cents / 100).toFixed(2)})` : '') +
+    (ownedTopicsJson ? ` (à la carte: ${JSON.parse(ownedTopicsJson).join(', ')})` : '') +
     `.</p>`);
 
   return { code, token, pointsApplied: discount ? discount.points_to_apply : 0, isGift: !!gift };
@@ -2251,8 +2265,29 @@ async function handlePaypalCaptureOrder(request, env) {
   return json({ code, token, examType, pointsApplied, isGift: giftResult });
 }
 
-async function handleStripeCreateIntent(request, env) {
-  const { examType, turnstileToken, email, applyPoints, promoCode } = await request.json();
+// Shared by both the full-track and à la carte branches of handleStripeCreateIntent -- the real
+// "started checkout with a known email" moment (unlike the funnel_events 'checkout_started'
+// beacon, which fires on page-render before any email is typed in). Best-effort: never blocks
+// checkout if this write fails. Re-mounting the Payment Element (buyer edits their email/promo/
+// points/topic selection) just refreshes created_at and clears any prior reminder_sent_at, not a
+// duplicate row (UNIQUE(email, exam_type)) -- purchased_at is deliberately left untouched by this
+// upsert (see finalizePurchase for how it gets set) so a genuinely-completed prior purchase is
+// never un-marked by a later re-mount.
+async function upsertCheckoutIntent(env, email, examType) {
+  if (!email || !email.trim()) return;
+  try {
+    // source explicitly set (and re-set) to 'checkout_form' on every real checkout-intent write --
+    // this is always the stronger signal, so it must win even if an earlier exit_capture row
+    // (see handleBuyReminderSubmit) exists for the same email+examType.
+    await env.DB.prepare(
+      `INSERT INTO checkout_intents (id, email, exam_type, created_at, source) VALUES (?, ?, ?, ?, 'checkout_form')
+       ON CONFLICT(email, exam_type) DO UPDATE SET created_at = excluded.created_at, reminder_sent_at = NULL, source = 'checkout_form'`
+    ).bind(newId(), email.trim().toLowerCase(), examType, now()).run();
+  } catch (e) { /* best-effort */ }
+}
+
+export async function handleStripeCreateIntent(request, env) {
+  const { examType, turnstileToken, email, applyPoints, promoCode, topics } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
   if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
     return json({ error: 'turnstile_failed' }, 400);
@@ -2274,6 +2309,27 @@ async function handleStripeCreateIntent(request, env) {
     if (!validationTrack || !validationTrack.active) return json({ error: 'invalid_examType' }, 400);
   }
 
+  // À la carte topic purchase (pilot: CA CDL, see project memory project_ca_cdl_topic_purchase_
+  // pilot) -- a completely separate, early-return branch so the full-track flow below (promo
+  // codes, referral points) is entirely untouched when `topics` is absent, which is every request
+  // except this pilot's own checkout UI. No promo/points support here in this first version --
+  // real complexity on the highest-risk part of the site, deferred to a scoped follow-up.
+  if (Array.isArray(topics) && topics.length) {
+    const pricing = await computeTopicPricing(env, examType, topics);
+    // computeTopicPricing silently skips any label that isn't a real declared topic for this
+    // track -- if fewer priced items came back than were requested, the list was stale or
+    // tampered and must be rejected outright, not silently charged as a subset.
+    if (pricing.items.length !== topics.length || pricing.totalCents <= 0) {
+      return json({ error: 'invalid_topics' }, 400);
+    }
+    const intent = await createStripePaymentIntent(env, pricing.totalCents, 'USD', { email, examType });
+    await env.DB.prepare(
+      'INSERT INTO pending_topic_purchases (order_id, exam_type, topics_json, created_at) VALUES (?, ?, ?, ?)'
+    ).bind(intent.id, examType, JSON.stringify(topics), now()).run();
+    await upsertCheckoutIntent(env, email, examType);
+    return json({ clientSecret: intent.client_secret, priceCents: pricing.totalCents, pointsApplied: 0, promoDiscountCents: 0 });
+  }
+
   const quote = await quoteCheckout(env, examType, email, applyPoints, promoCode);
   if (quote.error) {
     return json({ error: quote.error, requiredEmailDomain: quote.requiredEmailDomain, promoId: quote.promoId, promoTitle: quote.promoTitle }, 400);
@@ -2282,24 +2338,7 @@ async function handleStripeCreateIntent(request, env) {
 
   const intent = await createStripePaymentIntent(env, quote.finalPriceCents, quote.currency, { email, examType });
 
-  // Abandoned-checkout tracking -- the real "started checkout with a known email" moment (unlike
-  // the funnel_events 'checkout_started' beacon, which fires on page-render before any email is
-  // typed in). Best-effort: never block checkout if this write fails. Re-mounting the Payment
-  // Element (e.g. the buyer edits their email or toggles points/promo) just refreshes created_at
-  // and clears any prior reminder_sent_at, not a duplicate row (UNIQUE(email, exam_type)) --
-  // purchased_at is deliberately left untouched by this upsert (see finalizePurchase for how it
-  // gets set) so a genuinely-completed prior purchase is never un-marked by a later re-mount.
-  if (email && email.trim()) {
-    try {
-      // source explicitly set (and re-set) to 'checkout_form' on every real checkout-intent write --
-      // this is always the stronger signal, so it must win even if an earlier exit_capture row
-      // (see handleBuyReminderSubmit) exists for the same email+examType.
-      await env.DB.prepare(
-        `INSERT INTO checkout_intents (id, email, exam_type, created_at, source) VALUES (?, ?, ?, ?, 'checkout_form')
-         ON CONFLICT(email, exam_type) DO UPDATE SET created_at = excluded.created_at, reminder_sent_at = NULL, source = 'checkout_form'`
-      ).bind(newId(), email.trim().toLowerCase(), examType, now()).run();
-    } catch (e) { /* best-effort */ }
-  }
+  await upsertCheckoutIntent(env, email, examType);
 
   if (quote.pointsToApply > 0) {
     await env.DB.prepare(
@@ -2355,17 +2394,13 @@ async function handleBuyReminderSubmit(request, env) {
   return json({ ok: true });
 }
 
-async function handleStripeConfirm(request, env) {
+export async function handleStripeConfirm(request, env) {
   const { paymentIntentId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode, affCode, sessionId, referralSource: rawReferralSource } = await request.json();
   if (!paymentIntentId || !examType) return json({ error: 'paymentIntentId_and_examType_required' }, 400);
   // Same 200-char cap as handleSetReferralSource's post-purchase nudge path -- the checkout
   // field's "Other" option is free text with no client-side maxlength, so an unbounded string is
   // reachable here even though the UI only ever sends one of a handful of short values.
   const referralSource = rawReferralSource ? String(rawReferralSource).trim().slice(0, 200) || undefined : undefined;
-  // Unlike points/promo discounts, gift status has no effect on the charged amount -- nothing to
-  // pre-commit at create-intent time, so it's just read straight off this request (see the
-  // finalizePurchase/issueGiftCode comments for why an untrusted isGift can't be exploited).
-  const gift = isGift ? { recipient_email: (recipientEmail || '').trim() || null, gift_message: (giftMessage || '').trim() || null } : null;
 
   // Idempotency: a retried confirm call for an intent we've already issued a code for either
   // re-mints a token for the existing account (normal purchase), or -- for a gift order, which
@@ -2380,12 +2415,31 @@ async function handleStripeConfirm(request, env) {
     return json({ code: existing.code, token, examType: existing.exam_type, capturedCents: existing.paid_cents });
   }
 
-  const { priceCents: fullPriceCents } = await getPrice(env, examType);
-  const discount = await env.DB.prepare('SELECT * FROM pending_point_discounts WHERE order_id = ?').bind(paymentIntentId).first();
-  const promoDiscount = await env.DB.prepare('SELECT * FROM pending_promo_discounts WHERE order_id = ?').bind(paymentIntentId).first();
-  const expectedCents = Math.max(0, fullPriceCents
-    - (discount ? discount.points_to_apply : 0)
-    - (promoDiscount ? promoDiscount.discount_cents : 0));
+  const topicPurchase = await env.DB.prepare('SELECT * FROM pending_topic_purchases WHERE order_id = ?').bind(paymentIntentId).first();
+  // Unlike points/promo discounts, gift status normally has no effect on the charged amount --
+  // nothing to pre-commit at create-intent time, so it's ordinarily just read straight off this
+  // request (see finalizePurchase/issueGiftCode for why an untrusted isGift can't be exploited in
+  // that case). À la carte purchases are the one exception: they're priced far below the
+  // full-track amount `issueGiftCode` would otherwise treat as ordinary, and gifting has no
+  // `users` row to ever write owned_topics_json onto (see project memory
+  // project_ca_cdl_topic_purchase_pilot) -- so a topic purchase forces the real, topic-scoped
+  // non-gift path regardless of what isGift claims, rather than either honoring it (which would
+  // silently grant an unscoped full gift code for a cheaper topic-only payment) or hard-erroring
+  // a request the real checkout UI never sends this way anyway.
+  const gift = (isGift && !topicPurchase) ? { recipient_email: (recipientEmail || '').trim() || null, gift_message: (giftMessage || '').trim() || null } : null;
+
+  let expectedCents, discount = null, promoDiscount = null;
+  if (topicPurchase) {
+    const pricing = await computeTopicPricing(env, examType, JSON.parse(topicPurchase.topics_json));
+    expectedCents = pricing.totalCents;
+  } else {
+    const { priceCents: fullPriceCents } = await getPrice(env, examType);
+    discount = await env.DB.prepare('SELECT * FROM pending_point_discounts WHERE order_id = ?').bind(paymentIntentId).first();
+    promoDiscount = await env.DB.prepare('SELECT * FROM pending_promo_discounts WHERE order_id = ?').bind(paymentIntentId).first();
+    expectedCents = Math.max(0, fullPriceCents
+      - (discount ? discount.points_to_apply : 0)
+      - (promoDiscount ? promoDiscount.discount_cents : 0));
+  }
 
   const intent = await retrieveStripePaymentIntent(env, paymentIntentId);
   if (intent.status !== 'succeeded') return json({ error: 'payment_not_completed' }, 402);
@@ -2396,7 +2450,7 @@ async function handleStripeConfirm(request, env) {
   // differ -- prefer the latter, same "trust what the processor tells us" approach as PayPal.
   const charge = intent.latest_charge;
   const payerEmail = (charge && charge.billing_details && charge.billing_details.email) || intent.receipt_email;
-  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, affCode, sessionId, referralSource });
+  const { code, token, pointsApplied, isGift: giftResult } = await finalizePurchase(env, { examType, note, capturedCents: intent.amount_received, payerEmail, email, discount, promoDiscount, ageCategory, gift, refCode, affCode, sessionId, referralSource, topicPurchase });
 
   return json({ code, token, examType, pointsApplied, isGift: giftResult, capturedCents: intent.amount_received });
 }

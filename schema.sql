@@ -345,6 +345,20 @@ CREATE TABLE pending_point_discounts (
   created_at      INTEGER NOT NULL
 );
 
+-- À la carte topic-purchase pilot (see project memory project_ca_cdl_topic_purchase_pilot) --
+-- same "quoted at create-intent time, consumed and deleted at confirm time" shape as
+-- pending_point_discounts/pending_promo_discounts above, keyed by the Stripe PaymentIntent id.
+-- handleStripeConfirm looks this up to know the expected charge amount (recomputed fresh via
+-- computeTopicPricing, never trusted from the client) and what to write into the new user's
+-- owned_topics_json. No promo/points/gift support for à la carte purchases in this first version
+-- -- see handleStripeCreateIntent's own comment for why.
+CREATE TABLE pending_topic_purchases (
+  order_id    TEXT PRIMARY KEY,
+  exam_type   TEXT NOT NULL,
+  topics_json TEXT NOT NULL,
+  created_at  INTEGER NOT NULL
+);
+
 -- Generic admin-editable key/value settings -- avoids a new table/migration for every future
 -- single-value knob. First use: 'min_paypal_charge_cents', the floor a points discount can
 -- leave payable through PayPal (PayPal purchases can't go below $1; full coverage down to
