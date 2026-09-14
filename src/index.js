@@ -2653,7 +2653,7 @@ async function getRefundFailurePercent(env) {
   return Number.isFinite(pct) && pct >= 0 && pct <= 100 ? pct : DEFAULT_REFUND_FAILURE_PERCENT;
 }
 
-async function handleRefundClaimSubmit(request, env) {
+export async function handleRefundClaimSubmit(request, env) {
   const { code, email, claimType, examDate, confirmationNote, notes, turnstileToken } = await request.json();
   const ip = request.headers.get('CF-Connecting-IP');
   if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
@@ -2683,6 +2683,20 @@ async function handleRefundClaimSubmit(request, env) {
     const trackInfo = registry[codeRow.exam_type];
     if (trackInfo && trackInfo.pass_percent == null) {
       return json({ error: 'no_pass_fail_threshold' }, 400);
+    }
+    // Same reasoning, different cause: the guarantee's whole premise is "you used our full prep
+    // material and still failed the real exam" -- that premise doesn't hold for an à la carte
+    // buyer who may have only studied some of the real exam's own topics. Worse, Coverage for a
+    // partial buyer is scoped to their OWNED topics only (see the Progress-tab fix in project
+    // memory project_ca_cdl_topic_purchase_pilot), so without this check someone could buy one
+    // cheap topic, trivially hit 100% Coverage on just that topic, fail the real exam on
+    // everything else, and still technically satisfy the guarantee's stated threshold. See the
+    // matching static caveat added to the refund-request form on the site.
+    if (codeRow.redeemed_by) {
+      const buyer = await env.DB.prepare('SELECT owned_topics_json FROM users WHERE id = ?').bind(codeRow.redeemed_by).first();
+      if (buyer && ownedTopicsFor(buyer)) {
+        return json({ error: 'not_eligible_ala_carte' }, 400);
+      }
     }
   }
 
@@ -3419,6 +3433,14 @@ let trackRegistryCache = null;
 let trackRegistryCacheAt = 0;
 const TRACK_REGISTRY_CACHE_TTL_MS = 5 * 60 * 1000;
 
+// Test-only -- see _resetStatsCacheForTests' identical rationale (node --test runs every test
+// file's imports in one shared process, so this module-level cache would otherwise stay warm
+// across unrelated test files).
+export function _resetTrackRegistryCacheForTests() {
+  trackRegistryCache = null;
+  trackRegistryCacheAt = 0;
+}
+
 async function getTrackRegistry(env) {
   const cacheAge = Date.now() - trackRegistryCacheAt;
   if (trackRegistryCache && cacheAge < TRACK_REGISTRY_CACHE_TTL_MS) return trackRegistryCache;
@@ -3719,10 +3741,20 @@ async function handleExamCurrent(user, request, env) {
   return json({ attempt: attempt ? await attemptToClientShape(env, attempt) : null });
 }
 
-async function handleExamStart(user, request, env) {
+export async function handleExamStart(user, request, env) {
   const body = await request.json().catch(() => ({}));
   const mode = body.mode === 'toughest45' ? 'toughest45' : 'standard';
   const unseenOnly = mode === 'standard' && body.unseenOnly === true;
+
+  // Both exam modes (standard AND Weak Spots) are meant to simulate the real, complete exam --
+  // Weak Spots specifically drills questions missed across the WHOLE track, same as standard mode
+  // draws from the whole track's question bank. Neither is a coherent "simulation" for someone who
+  // only purchased some of the track's topics (see project memory project_ca_cdl_topic_purchase_
+  // pilot), so both require full-track access. Checked before the resume lookup below -- a partial
+  // owner should never be able to resume or start either mode, not just be blocked from freshly
+  // starting one. The site's own tab UI locks these tabs for a partial owner too (see renderTabs),
+  // but this is the actual enforcement -- the client-side lock is UX only.
+  if (ownedTopicsFor(user)) return json({ error: 'requires_full_track_access' }, 403);
 
   // Resume rather than restart -- a refresh or re-visit mid-sitting must not hand out a
   // fresh, easier random question set or reset the clock. Tracked separately per mode, so a
@@ -3935,11 +3967,14 @@ async function handleExamAttemptDetail(user, request, env) {
   return json({ ...result, startedAt: attempt.started_at, submittedAt: attempt.submitted_at });
 }
 
-async function handlePrefsGet(user) {
+export async function handlePrefsGet(user) {
   // examType rides along here (not just theme/font) since this is already the cheapest existing
   // per-request lookup of "info about my own account" -- the frontend needs to know which track a
   // token actually grants access to, distinct from whatever track's route it's currently viewing.
-  return json({ theme: user.theme, fontScale: user.font_scale, examType: user.exam_type });
+  // ownedTopics (null = full track access, the default for every non-à-la-carte purchase) rides
+  // along the same way -- the site needs this on every page that gates content by topic ownership
+  // (Resources, Progress, the Exam/Weak Spots tab lock), not just the buy/checkout flow.
+  return json({ theme: user.theme, fontScale: user.font_scale, examType: user.exam_type, ownedTopics: ownedTopicsFor(user) });
 }
 // Account-level info for the "My Profile" page. There's no name/email field on `users` itself --
 // an email only exists if one was captured at purchase (codes.buyer_email, best-effort from
