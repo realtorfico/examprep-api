@@ -582,17 +582,29 @@ async function handleMediaFile(request, env) {
 // otherwise any paying customer of ANY track could sign and stream any OTHER track's premium
 // resources just by knowing/guessing a filename, since files themselves aren't stored per-exam_type
 // in D1 at all (the catalog only exists in that module + the site's own presentation-only copy).
-async function handleResourcesSignBatch(user, request, env) {
+//
+// À la carte accounts (owned_topics_json set) only get URLs for free files and files tagged with a
+// topic they own -- found 2026-09-15 by the daily code review: this used to sign the whole track's
+// files for them, and the site only locked unowned rows AFTER the working URLs were already in the
+// response. Unowned-topic files of the user's own track are skipped, not 404'd -- an already-cached
+// older client still requests the whole track's list, and failing the batch would break its
+// Resources tab entirely. A file from a different track still fails the whole batch, as before.
+export async function handleResourcesSignBatch(user, request, env) {
   const { files } = await request.json();
   if (!Array.isArray(files) || !files.length) return json({ error: 'files_required' }, 400);
-  const ownedRows = await env.DB.prepare(
-    'SELECT file FROM resources WHERE exam_type = ? AND file IS NOT NULL'
-  ).bind(user.exam_type).all();
-  const ownedFiles = (ownedRows.results || []).map((r) => r.file);
+  const trackRows = (await env.DB.prepare(
+    'SELECT file, topic, free FROM resources WHERE exam_type = ? AND file IS NOT NULL'
+  ).bind(user.exam_type).all()).results || [];
+  const ownedFiles = trackRows.map((r) => r.file);
   if (!filesOwnedByTrack(files, ownedFiles)) return json({ error: 'not_found' }, 404);
+  const ownedTopics = ownedTopicsFor(user);
+  const signable = ownedTopics
+    ? new Set(trackRows.filter((r) => r.free || ownedTopics.includes(r.topic)).map((r) => r.file))
+    : null;
   const ttlSeconds = 3600; // long enough to fully stream a large file, short enough to discourage link-sharing
   const urls = {};
   for (const file of files) {
+    if (signable && !signable.has(file)) continue;
     const { exp, sig } = await signMediaUrl(env, file, ttlSeconds);
     urls[file] = `/media/${encodeURIComponent(file)}?exp=${exp}&sig=${sig}`;
   }
