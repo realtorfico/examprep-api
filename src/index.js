@@ -1863,7 +1863,7 @@ async function findActivePromoByCode(env, code) {
 // nothing secret to type, so there's no lookup key besides the email itself. Only a handful of
 // promotions exist at a time, so fetching all codeless ones and checking suffixes in JS is simpler
 // than a SQL LIKE per row and avoids the '_'/'%' wildcard-escaping footgun that'd come with LIKE.
-async function findActiveDomainPromoForEmail(env, email) {
+async function findActiveDomainPromoForEmail(env, email, trackKind) {
   if (!email) return null;
   // discount_value IS NOT NULL scopes this to actual checkout discounts -- a points-multiplier-only
   // promotion (see handlePromoRedeemPointsMultiplier) never auto-applies at checkout even if it
@@ -1872,7 +1872,10 @@ async function findActiveDomainPromoForEmail(env, email) {
     `SELECT * FROM promotions WHERE active = 1 AND promo_code IS NULL AND required_email_domain IS NOT NULL
      AND discount_value IS NOT NULL ORDER BY sort_order ASC`
   ).all()).results;
-  return rows.find((p) => email.endsWith(p.required_email_domain)) || null;
+  // A kind-scoped codeless promo just doesn't auto-apply on another kind's checkout -- silently,
+  // same as a non-matching domain, since the buyer never asked for it.
+  return rows.find((p) => email.endsWith(p.required_email_domain) &&
+    (!p.required_track_kind || p.required_track_kind === trackKind)) || null;
 }
 
 function promoDiscountCentsFor(promo, priceCents) {
@@ -1885,20 +1888,29 @@ function promoDiscountCentsFor(promo, priceCents) {
 // Public listing -- only active promos, only the fields a visitor needs to see (no internal
 // id/sort_order/redeemed_count). promo_code/discount fields ARE included when present -- the
 // whole point of advertising a code is telling the visitor what to type.
-async function handlePromotionsList(request, env) {
+//
+// ?kind= (a track_registry.kind label, e.g. 'Commercial Driver (CDL)') is the page's own track
+// kind: promos scoped to that kind are included alongside unscoped ones. With no kind (the hub,
+// the refer page, any non-track page), kind-scoped promos are excluded entirely -- a CDL-only
+// discount shouldn't be advertised to a notary visitor who can't use it.
+export async function handlePromotionsList(request, env) {
   const url = new URL(request.url);
   const requested = url.searchParams.get('placement');
   const placement = ['home', 'checkout', 'refer'].indexOf(requested) !== -1 ? requested : 'home';
+  const kind = (url.searchParams.get('kind') || '').trim();
   // 'both' only ever means home+checkout (see schema.sql) -- 'refer' is its own explicit choice,
   // not folded into 'both', since it's a distinct page/audience from the storefront banners.
   const placementFilter = placement === 'refer' ? 'placement = ?' : "(placement = ? OR placement = 'both')";
+  const kindFilter = kind ? '(required_track_kind IS NULL OR required_track_kind = ?)' : 'required_track_kind IS NULL';
+  const binds = kind ? [placement, kind] : [placement];
   const rows = (await env.DB.prepare(
     `SELECT id, title, body, cta_label AS ctaLabel, cta_url AS ctaUrl, promo_code AS promoCode,
             discount_type AS discountType, discount_value AS discountValue,
             required_email_domain AS requiredEmailDomain, require_email_verification AS requireEmailVerification,
+            required_track_kind AS requiredTrackKind,
             points_multiplier AS pointsMultiplier, points_multiplier_days AS pointsMultiplierDays
-     FROM promotions WHERE active = 1 AND ${placementFilter} ORDER BY sort_order ASC`
-  ).bind(placement).all()).results;
+     FROM promotions WHERE active = 1 AND ${placementFilter} AND ${kindFilter} ORDER BY sort_order ASC`
+  ).bind(...binds).all()).results;
   return json({ promotions: rows });
 }
 
@@ -2053,8 +2065,13 @@ async function issueGiftCode(env, examType, note, paidCents, buyerEmail, referra
 // handlePromoVerifyRequest) and it hasn't yet, { error: 'promo_first_purchase_only_email_required' }
 // if the promo is restricted to first-time buyers and no email was given, or
 // { error: 'promo_not_first_purchase' } if that email already appears as a buyer_email on an
-// existing `codes` row (i.e. this account already has access, however it was obtained). Promo
-// discount is applied BEFORE points, so points then discount whatever the promo left.
+// existing `codes` row (i.e. this account already has access, however it was obtained), or
+// { error: 'promo_wrong_track_kind', requiredTrackKind } if the promo is scoped to a different
+// track kind (e.g. a CDL-only code at a notary checkout). Promo discount is applied BEFORE points,
+// so points then discount whatever the promo left.
+//
+// Only ever reached for a FULL-track checkout -- handleStripeCreateIntent's à la carte branch
+// returns before calling this, so no promo (kind-scoped or not) ever discounts a topic purchase.
 //
 // A promoCode always resolves by exact match; with none given but an email present, a codeless
 // domain-gated promo (see findActiveDomainPromoForEmail) auto-applies if the email's domain
@@ -2074,16 +2091,21 @@ async function issueGiftCode(env, examType, note, paidCents, buyerEmail, referra
 async function quoteCheckout(env, examType, email, applyPoints, promoCode) {
   const { priceCents, currency } = await getPrice(env, examType);
   const normalizedEmail = (email || '').trim().toLowerCase();
+  const track = (await getTrackRegistry(env))[examType];
+  const trackKind = track ? track.kind : null;
   let promo = null;
   let promoDiscountCents = 0;
   if (promoCode) {
     promo = await findActivePromoByCode(env, promoCode);
     if (!promo) return { error: 'invalid_promo_code' };
+    if (promo.required_track_kind && promo.required_track_kind !== trackKind) {
+      return { error: 'promo_wrong_track_kind', requiredTrackKind: promo.required_track_kind };
+    }
     if (promo.required_email_domain && !normalizedEmail.endsWith(promo.required_email_domain)) {
       return { error: 'promo_email_domain_required', requiredEmailDomain: promo.required_email_domain };
     }
   } else if (normalizedEmail) {
-    promo = await findActiveDomainPromoForEmail(env, normalizedEmail); // null just means no match -- not an error
+    promo = await findActiveDomainPromoForEmail(env, normalizedEmail, trackKind); // null just means no match -- not an error
   }
   if (promo) {
     if (promo.first_purchase_only) {
@@ -2204,7 +2226,7 @@ async function handlePaypalCreateOrder(request, env) {
 
   const quote = await quoteCheckout(env, examType, email, applyPoints, promoCode);
   if (quote.error) {
-    return json({ error: quote.error, requiredEmailDomain: quote.requiredEmailDomain, promoId: quote.promoId, promoTitle: quote.promoTitle }, 400);
+    return json({ error: quote.error, requiredEmailDomain: quote.requiredEmailDomain, requiredTrackKind: quote.requiredTrackKind, promoId: quote.promoId, promoTitle: quote.promoTitle }, 400);
   }
   if (quote.fullyCoveredByPoints) return json({ error: 'fully_covered_by_points' }, 400); // client should use /points/redeem instead
 
@@ -2336,7 +2358,7 @@ export async function handleStripeCreateIntent(request, env) {
 
   const quote = await quoteCheckout(env, examType, email, applyPoints, promoCode);
   if (quote.error) {
-    return json({ error: quote.error, requiredEmailDomain: quote.requiredEmailDomain, promoId: quote.promoId, promoTitle: quote.promoTitle }, 400);
+    return json({ error: quote.error, requiredEmailDomain: quote.requiredEmailDomain, requiredTrackKind: quote.requiredTrackKind, promoId: quote.promoId, promoTitle: quote.promoTitle }, 400);
   }
   if (quote.fullyCoveredByPoints) return json({ error: 'fully_covered_by_points' }, 400); // client should use /points/redeem instead
 
@@ -4219,6 +4241,7 @@ function promotionFromBody(b) {
     b.requiredEmailDomain && b.requiredEmailDomain.trim() ? b.requiredEmailDomain.trim().toLowerCase() : null,
     b.requireEmailVerification ? 1 : 0,
     b.firstPurchaseOnly ? 1 : 0,
+    b.requiredTrackKind && b.requiredTrackKind.trim() ? b.requiredTrackKind.trim() : null,
     hasMultiplier ? parseInt(b.pointsMultiplier, 10) : null,
     hasMultiplier ? (parseInt(b.pointsMultiplierDays, 10) || 30) : null,
     ['home', 'checkout', 'refer', 'both'].indexOf(b.placement) !== -1 ? b.placement : 'both',
@@ -4234,9 +4257,9 @@ async function handleConsolePromotionsCreate(request, env) {
   const sortOrder = (maxOrderRow && maxOrderRow.m != null ? maxOrderRow.m : -1) + 1;
   await env.DB.prepare(
     `INSERT INTO promotions (id, title, body, cta_label, cta_url, promo_code, discount_type, discount_value,
-       required_email_domain, require_email_verification, first_purchase_only, points_multiplier, points_multiplier_days,
-       placement, active, sort_order, redeemed_count, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?)`
+       required_email_domain, require_email_verification, first_purchase_only, required_track_kind, points_multiplier,
+       points_multiplier_days, placement, active, sort_order, redeemed_count, created_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 0, ?)`
   ).bind(id, ...promotionFromBody(b), sortOrder, now()).run();
   return json({ id });
 }
@@ -4248,7 +4271,7 @@ async function handleConsolePromotionsUpdate(request, env) {
   await env.DB.prepare(
     `UPDATE promotions SET title=?, body=?, cta_label=?, cta_url=?, promo_code=?, discount_type=?,
        discount_value=?, required_email_domain=?, require_email_verification=?, first_purchase_only=?,
-       points_multiplier=?, points_multiplier_days=?, placement=?, active=? WHERE id = ?`
+       required_track_kind=?, points_multiplier=?, points_multiplier_days=?, placement=?, active=? WHERE id = ?`
   ).bind(...promotionFromBody(b), b.id).run();
   return json({ ok: true });
 }

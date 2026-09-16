@@ -467,6 +467,12 @@ CREATE TABLE promotions (
                                                -- quoteCheckout) -- i.e. this account has already
                                                -- gotten access before, by any means (paid, points,
                                                -- or free). Requires an email to be given at all.
+  required_track_kind TEXT,                    -- e.g. 'Commercial Driver (CDL)' (track_registry.kind)
+                                               -- -- the discount only applies to a full-track
+                                               -- checkout for a track of this kind, and the banner
+                                               -- only shows on that kind's pages (see
+                                               -- handlePromotionsList). NULL = any track. Added
+                                               -- 2026-09-16 (ALTER TABLE promotions ADD COLUMN).
   points_multiplier      INTEGER,              -- e.g. 2 to double referral points -- an entirely
                                                -- different promo "effect" than a checkout discount
                                                -- (see awardPoints), redeemed on the Refer page, not
