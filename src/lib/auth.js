@@ -64,8 +64,15 @@ export async function requireAccess(request, env) {
   const [headerB64, payloadB64, sigB64] = jwt.split('.');
   if (!headerB64 || !payloadB64 || !sigB64) return false;
 
-  const header = JSON.parse(new TextDecoder().decode(base64UrlDecode(headerB64)));
-  const payload = JSON.parse(new TextDecoder().decode(base64UrlDecode(payloadB64)));
+  // A malformed token used to throw here and surface as a 500 with the parser's error message --
+  // still refused, but noisy and leaky. Anything unparseable is simply not a valid login.
+  let header, payload;
+  try {
+    header = JSON.parse(new TextDecoder().decode(base64UrlDecode(headerB64)));
+    payload = JSON.parse(new TextDecoder().decode(base64UrlDecode(payloadB64)));
+  } catch (e) {
+    return false;
+  }
 
   const now = Math.floor(Date.now() / 1000);
   if (payload.exp && payload.exp < now) return false;

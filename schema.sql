@@ -398,7 +398,7 @@ CREATE TABLE exam_attempts (
   submitted_at  INTEGER,
   score_correct INTEGER,
   score_total   INTEGER,
-  mode          TEXT NOT NULL DEFAULT 'standard' -- 'standard' | 'toughest45' (questions drawn from
+  mode          TEXT NOT NULL DEFAULT 'standard', -- 'standard' | 'toughest45' (questions drawn from
                                                   -- the user's own missed questions -- see
                                                   -- pickToughest45Questions in index.js); tracked
                                                   -- separately from 'standard' everywhere (history,
@@ -708,6 +708,25 @@ CREATE INDEX idx_checkout_intents_reminder ON checkout_intents(purchased_at, rem
 -- (which used to control notifyAdmin, the daily health check, AND the Contact Admin form all at
 -- once) with a proper per-trigger table: multiple recipients per trigger, each independently
 -- toggleable. trigger_key must be one of ALERT_TRIGGERS in src/index.js.
+-- Every refused attempt to reach content without the right access (see recordAccessDenial in index.js):
+-- a logged-in account asking for another track's question/file or an un-owned topic, a failed admin
+-- (/console) login, a media request with a missing/forged signature, or public MCP grading of a question
+-- outside the public set. Drives the 'access_denied' admin alert. Added 2026-09-16 after the paid-content
+-- audit found holes that left no record anywhere.
+CREATE TABLE access_denials (
+  id          TEXT PRIMARY KEY,
+  kind        TEXT NOT NULL,   -- answer_foreign_question | answer_unowned_topic | sign_batch_foreign_file |
+                               -- console_auth_failed | media_bad_signature | mcp_grade_not_public
+  user_id     TEXT,            -- NULL for anonymous kinds
+  exam_type   TEXT,            -- the account's own track (NULL for anonymous kinds)
+  detail      TEXT,            -- what was asked for, e.g. "question tx_cdl-b1-001 (tx_cdl)"
+  path        TEXT,
+  ip          TEXT,
+  created_at  INTEGER NOT NULL
+);
+CREATE INDEX idx_access_denials_kind_created ON access_denials(kind, created_at);
+CREATE INDEX idx_access_denials_created ON access_denials(created_at);
+
 CREATE TABLE admin_alert_rules (
   id              TEXT PRIMARY KEY,
   trigger_key     TEXT NOT NULL,

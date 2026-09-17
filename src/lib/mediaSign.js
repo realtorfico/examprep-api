@@ -22,6 +22,14 @@ export async function signMediaUrl(env, file, ttlSeconds) {
   return { exp, sig };
 }
 
+// True only for a link that WAS genuinely signed but has since expired -- a normal event (a tab left open
+// past the link's hour), so callers don't treat it as a probe. A missing or forged signature is false.
+export async function isExpiredMediaSig(env, file, exp, sig) {
+  if (!file || !exp || !sig) return false;
+  if (Number(exp) >= Math.floor(Date.now() / 1000)) return false;
+  return (await sign(env.MEDIA_SIGNING_SECRET, file, Number(exp))) === sig;
+}
+
 export async function verifyMediaSig(env, file, exp, sig) {
   if (!file || !exp || !sig) return false;
   if (Number(exp) < Math.floor(Date.now() / 1000)) return false;

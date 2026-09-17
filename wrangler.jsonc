@@ -23,7 +23,11 @@
   // Daily health check (src/index.js `scheduled` handler) -- catches a Worker secret silently
   // going missing (see the 2026-08-08 STRIPE_SECRET_KEY incident) before a real buyer does.
   // 13:00 UTC = 6am Pacific / 9am Eastern.
-  "triggers": { "crons": ["0 13 * * *"] }
+  "triggers": { "crons": ["0 13 * * *"] },
+  // Workers Logs -- request/console logs kept by Cloudflare (a few days, plan-dependent), viewable under
+  // Workers & Pages > examprep-api > Logs. Turned on 2026-09-16: the paid-content audit couldn't tell whether
+  // anyone had used the public holes because no request logs existed at all.
+  "observability": { "enabled": true }
   // Secrets/vars (set via dashboard: Settings > Variables & Secrets, not committed here):
   //   TURNSTILE_SECRET          — from the Turnstile widget (public site's /redeem form)
   //   CF_ACCESS_TEAM_DOMAIN     — e.g. yourteam.cloudflareaccess.com

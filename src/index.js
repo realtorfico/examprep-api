@@ -2,7 +2,7 @@ import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, new
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
 import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail, sendMissedItByOneEmail, sendTrackMechanicsChangedEmail, sendExamCountdownEmail, sendOnboardingTipsEmail, sendSuggestionRequestEmail, sendBuyPageReminderEmail } from './lib/email.js';
-import { signMediaUrl, verifyMediaSig } from './lib/mediaSign.js';
+import { signMediaUrl, verifyMediaSig, isExpiredMediaSig } from './lib/mediaSign.js';
 import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL, ALL_USERS_PROGRESS_TOTALS_SQL } from './progressQueries.js';
 import { filesOwnedByTrack } from './resourceOwnership.js';
 
@@ -184,17 +184,48 @@ export async function handleRedeem(request, env) {
   return json({ token, examType: row.exam_type, isNewRedemption: false });
 }
 
+// ---- Public question set --------------------------------------------------
+// The ONLY questions any unauthenticated surface may show (the free sample, question of the day, and
+// the public MCP tools): each ACTIVE track's first N questions by (weight DESC, id ASC), where
+// N = min(30, 10% of the track's bank). Decided 2026-09-16 after an audit found /sample (random top
+// weight tier, unlimited calls), /qotd (whole-bank daily rotation) and the MCP tools (any question id)
+// together exposed far more of the paid bank than intended. A fixed, capped set means no amount of
+// repeat calling can collect more than N questions per track. See test/security-public-endpoints.test.js.
+const PUBLIC_SET_MAX = 30;
+const PUBLIC_SET_MAX_SHARE = 0.10;
+const PUBLIC_SET_CACHE_TTL_MS = 5 * 60 * 1000;
+const SAMPLE_SIZE = 10;
+let publicSetCache = new Map(); // examType -> { rows, at }, per isolate
+
+export function _resetPublicSetCacheForTests() { publicSetCache = new Map(); }
+
+// null for an unknown or inactive (pulled from sale) track -- nothing about it is public.
+async function getPublicQuestionSet(env, examType) {
+  if (!examType) return null;
+  const track = (await getTrackRegistry(env))[examType];
+  if (!track || !track.active) return null;
+  const cached = publicSetCache.get(examType);
+  if (cached && Date.now() - cached.at < PUBLIC_SET_CACHE_TTL_MS) return cached.rows;
+  const countRow = await env.DB.prepare('SELECT COUNT(*) AS n FROM questions WHERE exam_type = ?').bind(examType).first();
+  const total = countRow ? countRow.n : 0;
+  const size = total ? Math.max(1, Math.min(PUBLIC_SET_MAX, Math.floor(total * PUBLIC_SET_MAX_SHARE))) : 0;
+  const rows = size
+    ? (await env.DB.prepare('SELECT * FROM questions WHERE exam_type = ? ORDER BY weight DESC, id ASC LIMIT ?').bind(examType, size).all()).results
+    : [];
+  publicSetCache.set(examType, { rows, at: Date.now() });
+  return rows;
+}
+
 // No auth required — a small taste of the real question bank so visitors can see the
 // experience before buying/redeeming a code. Correct answers are included directly in
-// the response (unlike the real quiz flow) since there's no progress to protect here.
+// the response (unlike the real quiz flow), so it draws only from the track's public set.
 async function handleSample(request, env) {
   const url = new URL(request.url);
   const examType = url.searchParams.get('examType') || 'ca_notary';
-  const rows = await env.DB.prepare(
-    'SELECT * FROM questions WHERE exam_type = ? ORDER BY weight DESC, RANDOM() LIMIT 10'
-  ).bind(examType).all();
+  const publicSet = await getPublicQuestionSet(env, examType);
+  if (!publicSet || !publicSet.length) return json({ error: 'unknown_or_inactive_examType' }, 404);
   return json({
-    questions: rows.results.map((q) => {
+    questions: shuffle(publicSet).slice(0, SAMPLE_SIZE).map((q) => {
       const { choices, correctChoice } = buildDisplayChoices(q);
       return { id: q.id, topic: q.topic, question: q.question, choices, correctChoice, explanation: q.explanation };
     }),
@@ -204,9 +235,10 @@ async function handleSample(request, env) {
 // "Question of the Day" -- backs the embeddable widget at wwwroot/embed/qotd/index.html (site
 // repo), built 2026-09-02 as a real backlink/distribution lever: other sites (state subreddits,
 // forums, agent blogs) iframe-embed it with attribution back to the real track page. Deterministic
-// per UTC calendar day (dayIndex % pool size, ordered by id) rather than random, so it genuinely
-// rotates through the whole real question pool over time and everyone embedding it on the same day
-// sees the same question -- a random pick per request wouldn't be "of the day" at all. Reuses
+// per UTC calendar day (dayIndex % public set size) rather than random, so everyone embedding it on
+// the same day sees the same question -- a random pick per request wouldn't be "of the day" at all.
+// Rotates through the track's public set only (see getPublicQuestionSet) -- it used to rotate through
+// the WHOLE bank, which over time published every paid question with its answer. Reuses
 // buildDisplayChoices() (same per-request A/B/C/D shuffle as /sample) for the answer LAYOUT, which
 // is independent of which question got picked -- two visitors on the same day seeing the correct
 // answer in a different lettered slot doesn't change which question is "today's."
@@ -217,12 +249,10 @@ async function handleQotd(request, env) {
   const trackRegistry = await getTrackRegistry(env);
   const track = trackRegistry[examType];
   if (!track || !track.active) return json({ error: 'unknown or inactive examType' }, 404);
-  const countRow = await env.DB.prepare('SELECT COUNT(*) AS n FROM questions WHERE exam_type = ?').bind(examType).first();
-  const total = countRow ? countRow.n : 0;
-  if (!total) return json({ error: 'no questions available for this track' }, 404);
+  const publicSet = await getPublicQuestionSet(env, examType);
+  if (!publicSet || !publicSet.length) return json({ error: 'no questions available for this track' }, 404);
   const dayIndex = Math.floor(Date.now() / 86400000);
-  const offset = dayIndex % total;
-  const row = await env.DB.prepare('SELECT * FROM questions WHERE exam_type = ? ORDER BY id LIMIT 1 OFFSET ?').bind(examType, offset).first();
+  const row = publicSet[dayIndex % publicSet.length];
   const { choices, correctChoice } = buildDisplayChoices(row);
   const data = {
     examType,
@@ -406,10 +436,12 @@ async function mcpDefaultExamTypeForKind(env, kind) {
 async function mcpGetSampleQuestion(env, args, defaultKind) {
   const examType = (args && args.examType) || (defaultKind ? await mcpDefaultExamTypeForKind(env, defaultKind) : 'ca_notary');
   const topic = args && args.topic;
-  let row = topic
-    ? await env.DB.prepare('SELECT * FROM questions WHERE exam_type = ? AND topic = ? ORDER BY weight DESC, RANDOM() LIMIT 1').bind(examType, topic).first()
-    : null;
-  if (!row) row = await env.DB.prepare('SELECT * FROM questions WHERE exam_type = ? ORDER BY weight DESC, RANDOM() LIMIT 1').bind(examType).first();
+  // Public set only (see getPublicQuestionSet) -- a topic filter narrows within it, falling back to the
+  // whole set, and never reaches past it into the paid bank.
+  const publicSet = await getPublicQuestionSet(env, examType);
+  const inTopic = topic && publicSet ? publicSet.filter((q) => q.topic === topic) : [];
+  const pool = inTopic.length ? inTopic : (publicSet || []);
+  const row = pool.length ? pool[Math.floor(Math.random() * pool.length)] : null;
   if (!row) return { error: `No practice questions available for examType "${examType}". Call list_available_tracks to see valid examType values.` };
   const { choices } = buildDisplayChoices(row);
   const registry = await getTrackRegistry(env);
@@ -420,14 +452,20 @@ async function mcpGetSampleQuestion(env, args, defaultKind) {
   };
 }
 
-async function mcpGradePracticeAnswer(env, args) {
+async function mcpGradePracticeAnswer(env, args, request) {
   const questionId = args && args.questionId;
   const response = args && args.response;
   if (!questionId || !['A', 'B', 'C', 'D'].includes(response)) {
     return { error: 'questionId and a response of A, B, C, or D are required.' };
   }
   const row = await env.DB.prepare('SELECT * FROM questions WHERE id = ?').bind(questionId).first();
-  if (!row) return { error: `Unknown questionId "${questionId}" -- call get_sample_question first to get a valid one.` };
+  // Grades only questions this endpoint could itself have handed out (the track's public set) -- it used
+  // to grade ANY question id, and ids are guessable, which gave away the answer key to the paid bank.
+  const publicSet = row ? await getPublicQuestionSet(env, row.exam_type) : null;
+  if (!row || !publicSet || !publicSet.some((q) => q.id === row.id)) {
+    await recordAccessDenial(env, request, { kind: 'mcp_grade_not_public', detail: `questionId ${questionId}` });
+    return { error: `Unknown questionId "${questionId}" -- call get_sample_question first to get a valid one.` };
+  }
   const originalResponse = toOriginalChoice(row.id, response);
   const { correctChoice } = buildDisplayChoices(row);
   const registry = await getTrackRegistry(env);
@@ -514,7 +552,7 @@ async function handleMcp(request, env) {
     let data;
     if (toolName === 'list_available_tracks') data = await mcpListAvailableTracks(env, args, defaultKind);
     else if (toolName === 'get_sample_question') data = await mcpGetSampleQuestion(env, args, defaultKind);
-    else if (toolName === 'grade_practice_answer') data = await mcpGradePracticeAnswer(env, args);
+    else if (toolName === 'grade_practice_answer') data = await mcpGradePracticeAnswer(env, args, request);
     else return mcpErrorResponse(id, -32602, `Unknown tool "${toolName}"`);
 
     const isError = !!data.error;
@@ -555,7 +593,14 @@ async function handleMediaFile(request, env) {
   const file = decodeURIComponent(url.pathname.slice('/media/'.length));
   const exp = url.searchParams.get('exp');
   const sig = url.searchParams.get('sig');
-  if (!(await verifyMediaSig(env, file, exp, sig))) return json({ error: 'invalid_or_expired' }, 403);
+  if (!(await verifyMediaSig(env, file, exp, sig))) {
+    // An expired-but-genuine link is routine (a tab open past the hour) -- only a missing or forged
+    // signature is recorded as a probe.
+    if (!(await isExpiredMediaSig(env, file, exp, sig))) {
+      await recordAccessDenial(env, request, { kind: 'media_bad_signature', detail: `file ${file}` + (sig ? ' (bad signature)' : ' (no signature)') });
+    }
+    return json({ error: 'invalid_or_expired' }, 403);
+  }
 
   const head = await env.MEDIA.head(file);
   if (!head) return json({ error: 'not_found' }, 404);
@@ -596,7 +641,11 @@ export async function handleResourcesSignBatch(user, request, env) {
     'SELECT file, topic, free FROM resources WHERE exam_type = ? AND file IS NOT NULL'
   ).bind(user.exam_type).all()).results || [];
   const ownedFiles = trackRows.map((r) => r.file);
-  if (!filesOwnedByTrack(files, ownedFiles)) return json({ error: 'not_found' }, 404);
+  if (!filesOwnedByTrack(files, ownedFiles)) {
+    const foreign = files.filter((f) => !ownedFiles.includes(f)).slice(0, 5);
+    await recordAccessDenial(env, request, { kind: 'sign_batch_foreign_file', user, detail: `files ${foreign.join(', ')}` });
+    return json({ error: 'not_found' }, 404);
+  }
   const ownedTopics = ownedTopicsFor(user);
   const signable = ownedTopics
     ? new Set(trackRows.filter((r) => r.free || ownedTopics.includes(r.topic)).map((r) => r.file))
@@ -662,6 +711,36 @@ async function handleTrackContent(env, url) {
   return Response.json({ content }, { headers: { 'cache-control': 'public, max-age=300' } });
 }
 
+// Public catalog columns. A paid resource's CONTENT (table rows, flashcards, link url) is never selected
+// here -- this endpoint is public and edge-cached, and it used to hand every paid table and deck to anyone
+// (site-side lock was display-only). Paid content now comes from the logged-in /resources/content.
+// Media filenames stay listed: a filename alone can't fetch a file (signed /media URLs only).
+const CATALOG_COLUMNS = `id, exam_type, ord, type, title, desc, topic, free, downloadable, file,
+  CASE WHEN free = 1 THEN url END AS url,
+  CASE WHEN free = 1 THEN data_json END AS data_json,
+  CASE WHEN type = 'flashcards' AND data_json IS NOT NULL THEN json_array_length(data_json) END AS card_count`;
+
+// Logged-in counterpart to the public catalog: the actual content (table rows, flashcards, link url) of
+// every resource on the caller's own track that they're entitled to -- all of them for a full-track
+// buyer, free + owned-topic ones for an à la carte buyer. Keyed by resource id so the site can merge it
+// onto the public catalog rows. Media files aren't here; those go through signed URLs (sign-batch).
+export async function handleResourcesContent(user, env) {
+  const rows = (await env.DB.prepare(
+    'SELECT id, type, topic, free, url, data_json FROM resources WHERE exam_type = ? AND (data_json IS NOT NULL OR url IS NOT NULL)'
+  ).bind(user.exam_type).all()).results || [];
+  const ownedTopics = ownedTopicsFor(user);
+  const items = {};
+  for (const r of rows) {
+    if (!r.free && ownedTopics && !ownedTopics.includes(r.topic)) continue;
+    const item = {};
+    if (r.data_json && r.type === 'table') item.table = JSON.parse(r.data_json);
+    else if (r.data_json && r.type === 'flashcards') item.flashcards = JSON.parse(r.data_json);
+    if (r.url) item.url = r.url;
+    if (Object.keys(item).length) items[r.id] = item;
+  }
+  return json({ items });
+}
+
 async function handleResourcesCatalog(env, url) {
   // Three modes, because the three consumers need wildly different amounts of data and the full
   // catalog is by far the largest payload this API serves (~2.4MB raw / 640KB brotli across 285
@@ -703,19 +782,20 @@ async function handleResourcesCatalog(env, url) {
 
   const rows = examTypeParam
     ? await env.DB.prepare(
-        'SELECT exam_type, ord, type, title, desc, topic, free, downloadable, url, file, data_json FROM resources WHERE exam_type = ? ORDER BY ord'
+        `SELECT ${CATALOG_COLUMNS} FROM resources WHERE exam_type = ? ORDER BY ord`
       ).bind(examTypeParam).all()
     : await env.DB.prepare(
-        'SELECT exam_type, ord, type, title, desc, topic, free, downloadable, url, file, data_json FROM resources ORDER BY exam_type, ord'
+        `SELECT ${CATALOG_COLUMNS} FROM resources ORDER BY exam_type, ord`
       ).all();
   const byTrack = {};
   for (const r of rows.results || []) {
     if (!byTrack[r.exam_type]) byTrack[r.exam_type] = [];
-    const item = { type: r.type, title: r.title, desc: r.desc, topic: r.topic };
+    const item = { id: r.id, type: r.type, title: r.title, desc: r.desc, topic: r.topic };
     if (r.free) item.free = true;
     if (r.downloadable) item.downloadable = true;
-    if (r.url) item.url = r.url;
+    if (r.url) item.url = r.url; // CATALOG_COLUMNS only returns url/data_json for free rows
     if (r.file) item.file = r.file;
+    if (r.card_count != null) item.cardCount = r.card_count;
     if (r.data_json) {
       const parsed = JSON.parse(r.data_json);
       if (r.type === 'table') item.table = parsed;
@@ -759,6 +839,7 @@ const ALERT_TRIGGERS = [
   { key: 'testimonial_submitted', label: 'Testimonial submitted' },
   { key: 'issue_reported', label: 'Issue reported' },
   { key: 'suggestion_submitted', label: 'Suggestion submitted' },
+  { key: 'access_denied', label: 'Refused access attempt (possible probe or exploit)' },
 ];
 const ALERT_TRIGGER_KEYS = new Set(ALERT_TRIGGERS.map((t) => t.key));
 
@@ -3043,8 +3124,8 @@ export async function findNextQuestionRow(env, user, difficulty, topics) {
 
   const pickMissed = () => env.DB.prepare(
     `SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin} ${topicJoin}
-     WHERE p.user_id = ? AND p.last_result = 'incorrect' ${excludeFilter} ORDER BY RANDOM() LIMIT 1`
-  ).bind(...(difficulty ? [diffIdsJson] : []), ...topicArgs, user.id, ...excludeArgs).first();
+     WHERE p.user_id = ? AND q.exam_type = ? AND p.last_result = 'incorrect' ${excludeFilter} ORDER BY RANDOM() LIMIT 1`
+  ).bind(...(difficulty ? [diffIdsJson] : []), ...topicArgs, user.id, user.exam_type, ...excludeArgs).first();
 
   if (Math.random() < MISSED_INTERLEAVE_CHANCE) {
     const interleaved = await pickMissed();
@@ -3062,8 +3143,8 @@ export async function findNextQuestionRow(env, user, difficulty, topics) {
 
   const review = await env.DB.prepare(
     `SELECT q.* FROM questions q JOIN progress p ON p.question_id = q.id ${diffJoin} ${topicJoin}
-     WHERE p.user_id = ? ORDER BY RANDOM() LIMIT 1`
-  ).bind(...(difficulty ? [diffIdsJson] : []), ...topicArgs, user.id).first();
+     WHERE p.user_id = ? AND q.exam_type = ? ORDER BY RANDOM() LIMIT 1`
+  ).bind(...(difficulty ? [diffIdsJson] : []), ...topicArgs, user.id, user.exam_type).first();
   return review || null;
 }
 
@@ -3128,6 +3209,18 @@ async function handleAnswer(user, request, env) {
   const { questionId, choice } = await request.json();
   const q = await env.DB.prepare('SELECT * FROM questions WHERE id = ?').bind(questionId).first();
   if (!q) return json({ error: 'question_not_found' }, 404);
+  // Only the caller's own track, and only owned topics for an à la carte buyer. This used to accept ANY
+  // question id (and record it as progress, which /progress then displayed in full) -- so any login
+  // could read any question site-wide by guessing ids. Refused exactly like a nonexistent id.
+  if (q.exam_type !== user.exam_type) {
+    await recordAccessDenial(env, request, { kind: 'answer_foreign_question', user, detail: `question ${q.id} (${q.exam_type})` });
+    return json({ error: 'question_not_found' }, 404);
+  }
+  const ownedTopics = ownedTopicsFor(user);
+  if (ownedTopics && !ownedTopics.includes(q.topic)) {
+    await recordAccessDenial(env, request, { kind: 'answer_unowned_topic', user, detail: `question ${q.id} (topic ${q.topic})` });
+    return json({ error: 'question_not_found' }, 404);
+  }
 
   const originalChoice = toOriginalChoice(q.id, choice);
   await progressUpsertStmt(env, user.id, questionId, originalChoice, q.correct_choice, now()).run();
@@ -3167,8 +3260,12 @@ async function handleProgress(user, env) {
     `SELECT q.id, q.topic, q.question, q.choice_a, q.choice_b, q.choice_c, q.choice_d,
             q.correct_choice, q.explanation, p.last_choice, p.last_answered_at
      FROM progress p JOIN questions q ON q.id = p.question_id
-     WHERE p.user_id = ? AND p.last_result = 'incorrect' ORDER BY p.last_answered_at DESC`
-  ).bind(user.id).all();
+     WHERE p.user_id = ? AND q.exam_type = ? AND p.last_result = 'incorrect' ORDER BY p.last_answered_at DESC`
+  ).bind(user.id, user.exam_type).all();
+  // Scoped to the user's own track (and owned topics) at read time too, not just at answer time --
+  // progress rows for other tracks' questions could exist from before /answer was locked down.
+  const progressOwnedTopics = ownedTopicsFor(user);
+  const wrongRows = wrong.results.filter((q) => !progressOwnedTopics || progressOwnedTopics.includes(q.topic));
 
   return json({
     totalAnswered: totals.total || 0,
@@ -3176,7 +3273,7 @@ async function handleProgress(user, env) {
     accuracyPassPct,
     coveragePassPct,
     byTopic: byTopic.results,
-    wrongQuestions: wrong.results.map((q) => {
+    wrongQuestions: wrongRows.map((q) => {
       const { choices, correctChoice } = buildDisplayChoices(q);
       return {
         id: q.id, topic: q.topic, question: q.question,
@@ -4788,6 +4885,64 @@ async function handleConsoleBlogDelete(request, env) {
   return json({ ok: true });
 }
 
+// ---- Refused-access monitoring ---------------------------------------------
+// Every refused attempt to reach content without the right access is recorded in access_denials, and
+// the owner is emailed (admin_alert_rules trigger 'access_denied'). Added 2026-09-16: the paid-content
+// audit found holes that could have been used for weeks with no record anywhere and no alert.
+// - Account kinds: a logged-in account asked for something outside what it bought. The real site never
+//   does that, so a single one alerts.
+// - Anonymous kinds: probes and stale links from strangers/bots -- some noise is normal, so these alert
+//   only past a threshold per hour.
+// At most one email per group per hour. Always best-effort: recording/alerting must never break or slow
+// down the refusal itself. See test/security-monitoring.test.js.
+const ACCESS_DENIAL_ACCOUNT_KINDS = ['answer_foreign_question', 'answer_unowned_topic', 'sign_batch_foreign_file'];
+const ACCESS_DENIAL_ANONYMOUS_KINDS = ['console_auth_failed', 'media_bad_signature', 'mcp_grade_not_public'];
+const ACCESS_DENIAL_ANONYMOUS_ALERT_THRESHOLD = 20;
+const ACCESS_DENIAL_ALERT_WINDOW_SEC = 3600;
+
+async function recordAccessDenial(env, request, { kind, user, detail }) {
+  try {
+    const path = request ? new URL(request.url).pathname : null;
+    const ip = request ? request.headers.get('CF-Connecting-IP') : null;
+    await env.DB.prepare(
+      'INSERT INTO access_denials (id, kind, user_id, exam_type, detail, path, ip, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)'
+    ).bind(newId(), kind, user ? user.id : null, user ? user.exam_type : null, detail ? String(detail).slice(0, 500) : null, path, ip, now()).run();
+    await maybeAlertAccessDenials(env, kind);
+  } catch (e) { /* best-effort */ }
+}
+
+async function maybeAlertAccessDenials(env, kind) {
+  const isAccount = ACCESS_DENIAL_ACCOUNT_KINDS.includes(kind);
+  const kinds = isAccount ? ACCESS_DENIAL_ACCOUNT_KINDS : ACCESS_DENIAL_ANONYMOUS_KINDS;
+  const settingKey = 'access_denial_alert_last_sent_at:' + (isAccount ? 'account' : 'anonymous');
+  const since = now() - ACCESS_DENIAL_ALERT_WINDOW_SEC;
+  const lastSent = Number(await getAppSetting(env, settingKey, 0)) || 0;
+  if (lastSent > since) return;
+  const placeholders = kinds.map(() => '?').join(', ');
+  const counts = (await env.DB.prepare(
+    `SELECT kind, COUNT(*) AS n FROM access_denials WHERE created_at > ? AND kind IN (${placeholders}) GROUP BY kind`
+  ).bind(since, ...kinds).all()).results;
+  const total = counts.reduce((sum, r) => sum + r.n, 0);
+  if (!total || (!isAccount && total < ACCESS_DENIAL_ANONYMOUS_ALERT_THRESHOLD)) return;
+  await env.DB.prepare(
+    'INSERT INTO app_settings (key, value, updated_at) VALUES (?, ?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value, updated_at = excluded.updated_at'
+  ).bind(settingKey, String(now()), now()).run();
+  const recent = (await env.DB.prepare(
+    `SELECT kind, user_id, exam_type, detail, path, ip, created_at FROM access_denials WHERE created_at > ? AND kind IN (${placeholders}) ORDER BY created_at DESC LIMIT 10`
+  ).bind(since, ...kinds).all()).results;
+  const title = isAccount ? 'Refused access: a logged-in account asked for content it did not buy' : 'Refused access attempts spiking';
+  const bodyHtml =
+    `<p>${total} refused access attempt${total === 1 ? '' : 's'} in the last hour (${isAccount ? 'logged-in accounts' : 'anonymous requests'}):</p><ul>` +
+    counts.map((r) => `<li><strong>${escapeHtml(r.kind)}</strong>: ${r.n}</li>`).join('') + '</ul>' +
+    '<p>Most recent:</p><ul>' +
+    recent.map((r) => `<li>${new Date(r.created_at * 1000).toISOString()} &middot; ${escapeHtml(r.kind)} &middot; ${escapeHtml(r.path || '')}` +
+      (r.user_id ? ` &middot; user ${escapeHtml(r.user_id)} (${escapeHtml(r.exam_type || '')})` : '') +
+      (r.ip ? ` &middot; ip ${escapeHtml(r.ip)}` : '') +
+      (r.detail ? ` &middot; ${escapeHtml(r.detail)}` : '') + '</li>').join('') + '</ul>' +
+    '<p>Full log: the access_denials table. The request was refused -- nothing was exposed. No more emails for this group for an hour.</p>';
+  await notifyAdmin(env, 'access_denied', title, bodyHtml);
+}
+
 // ---- Router -----------------------------------------------------------
 
 export default {
@@ -4854,7 +5009,13 @@ export default {
       if (pathname === '/resources/free' && method === 'GET') return await handleResourcesFree(request, env);
 
       if (pathname.startsWith('/console/')) {
-        if (!(await requireAccess(request, env))) return json({ error: 'unauthorized' }, 401);
+        if (!(await requireAccess(request, env))) {
+          await recordAccessDenial(env, request, {
+            kind: 'console_auth_failed',
+            detail: request.headers.get('Cf-Access-Jwt-Assertion') ? 'invalid Access token' : 'no Access token',
+          });
+          return json({ error: 'unauthorized' }, 401);
+        }
         if (pathname === '/console/codes' && method === 'GET') return await handleCodesList(request, env);
         if (pathname === '/console/codes/detail' && method === 'GET') return await handleCodeDetail(request, env);
         if (pathname === '/console/codes/generate' && method === 'POST') return await handleCodesGenerate(request, env);
@@ -4947,6 +5108,7 @@ export default {
       if (pathname === '/profile' && method === 'GET') return await handleProfileGet(user, env);
       if (pathname === '/profile/exam-date' && method === 'POST') return await handleSetExamDate(user, request, env);
       if (pathname === '/resources/sign-batch' && method === 'POST') return await handleResourcesSignBatch(user, request, env);
+      if (pathname === '/resources/content' && method === 'GET') return await handleResourcesContent(user, env);
 
       return json({ error: 'not_found' }, 404);
     } catch (err) {
