@@ -648,7 +648,7 @@ export async function handleResourcesSignBatch(user, request, env) {
   }
   const ownedTopics = ownedTopicsFor(user);
   const signable = ownedTopics
-    ? new Set(trackRows.filter((r) => r.free || ownedTopics.includes(r.topic)).map((r) => r.file))
+    ? new Set(trackRows.filter((r) => resourceAvailableTo(ownedTopics, r)).map((r) => r.file))
     : null;
   const ttlSeconds = 3600; // long enough to fully stream a large file, short enough to discourage link-sharing
   const urls = {};
@@ -724,6 +724,15 @@ const CATALOG_COLUMNS = `id, exam_type, ord, type, title, desc, topic, free, dow
 // every resource on the caller's own track that they're entitled to -- all of them for a full-track
 // buyer, free + owned-topic ones for an à la carte buyer. Keyed by resource id so the site can merge it
 // onto the public catalog rows. Media files aren't here; those go through signed URLs (sign-batch).
+// Whether an account may have a resource: everything for a full-track buyer; for an à la carte buyer,
+// free resources, their owned topics, and "General Reference" -- orientation material (license classes,
+// scoring scales, test-day policy) that isn't tied to any purchasable topic, so no topic purchase could
+// ever include it otherwise (decided 2026-09-16; it used to be locked for every topic buyer).
+const GENERAL_REFERENCE_TOPIC = 'General Reference';
+function resourceAvailableTo(ownedTopics, resource) {
+  return !ownedTopics || !!resource.free || resource.topic === GENERAL_REFERENCE_TOPIC || ownedTopics.includes(resource.topic);
+}
+
 export async function handleResourcesContent(user, env) {
   const rows = (await env.DB.prepare(
     'SELECT id, type, topic, free, url, data_json FROM resources WHERE exam_type = ? AND (data_json IS NOT NULL OR url IS NOT NULL)'
@@ -731,7 +740,7 @@ export async function handleResourcesContent(user, env) {
   const ownedTopics = ownedTopicsFor(user);
   const items = {};
   for (const r of rows) {
-    if (!r.free && ownedTopics && !ownedTopics.includes(r.topic)) continue;
+    if (!resourceAvailableTo(ownedTopics, r)) continue;
     const item = {};
     if (r.data_json && r.type === 'table') item.table = JSON.parse(r.data_json);
     else if (r.data_json && r.type === 'flashcards') item.flashcards = JSON.parse(r.data_json);
@@ -959,12 +968,46 @@ async function sendExamCountdownEmails(env) {
   }
 }
 
+// On every track sold by topic (has track_key_breakdown rows), each question's and resource's topic must be
+// one of the track's sellable topics (resources may also be "General Reference"). A stale topic silently
+// breaks things for buyers: the question is never served to a topic buyer, the resource is locked even for
+// buyers of the topic it belongs to. Added 2026-09-16 after 10 paid resources on 5 live tracks were found
+// still carrying pre-relabel topic names -- the rollout only ever checked questions, by hand.
+async function findTopicTagProblems(env) {
+  const problems = [];
+  const resources = (await env.DB.prepare(
+    `SELECT r.exam_type, r.id, r.topic FROM resources r
+     WHERE r.exam_type IN (SELECT DISTINCT exam_type FROM track_key_breakdown)
+       AND r.topic != ?
+       AND NOT EXISTS (SELECT 1 FROM track_key_breakdown k WHERE k.exam_type = r.exam_type AND k.label = r.topic)
+     ORDER BY r.exam_type, r.id`
+  ).bind(GENERAL_REFERENCE_TOPIC).all()).results;
+  resources.slice(0, 25).forEach((r) => problems.push(
+    `Resource ${r.id} (${r.exam_type}) is tagged "${r.topic}", which isn't one of the track's sellable topics -- locked for every topic buyer`));
+  if (resources.length > 25) problems.push(`...and ${resources.length - 25} more mis-tagged resources`);
+  const questions = (await env.DB.prepare(
+    `SELECT q.exam_type, q.topic, COUNT(*) AS n FROM questions q
+     WHERE q.exam_type IN (SELECT DISTINCT exam_type FROM track_key_breakdown)
+       AND NOT EXISTS (SELECT 1 FROM track_key_breakdown k WHERE k.exam_type = q.exam_type AND k.label = q.topic)
+     GROUP BY q.exam_type, q.topic ORDER BY q.exam_type`
+  ).all()).results;
+  questions.slice(0, 25).forEach((q) => problems.push(
+    `${q.n} question(s) on ${q.exam_type} tagged "${q.topic}", which isn't one of the track's sellable topics -- never served to topic buyers`));
+  if (questions.length > 25) problems.push(`...and ${questions.length - 25} more mis-tagged question topics`);
+  return problems;
+}
+
 async function runDailyHealthCheck(env) {
   const problems = [];
   const stripeProblem = await checkStripeSecretLive(env);
   if (stripeProblem) problems.push(stripeProblem);
   for (const name of OTHER_REQUIRED_SECRETS) {
     if (!env[name]) problems.push(`${name} is not set`);
+  }
+  try {
+    problems.push(...(await findTopicTagProblems(env)));
+  } catch (e) {
+    problems.push(`Topic tag check could not run: ${e.message}`);
   }
   if (!problems.length) return;
 
@@ -978,8 +1021,9 @@ async function runDailyHealthCheck(env) {
     await sendAdminAlertEmail(env, to, '⚠️ ExamPrep daily health check failed',
       '<p>The daily automated check found a problem:</p><ul>' +
       problems.map((p) => `<li>${escapeHtml(p)}</li>`).join('') +
-      '</ul><p>Most likely a Worker secret was cleared in the Cloudflare dashboard -- check ' +
-      'examprep-api’s Settings &gt; Variables and Secrets.</p>');
+      '</ul><p>A missing secret most likely means it was cleared in the Cloudflare dashboard -- check ' +
+      'examprep-api’s Settings &gt; Variables and Secrets. A mis-tagged topic means a question or resource ' +
+      'needs its topic changed to one of that track’s Key Breakdown labels.</p>');
   }
 }
 

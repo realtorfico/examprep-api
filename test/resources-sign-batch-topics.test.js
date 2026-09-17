@@ -45,12 +45,13 @@ function req(files) {
 
 const ALL_CA_CDL = ['owned.m4a', 'unowned.m4a', 'general.m4a', 'free-unowned.m4a'];
 
-test('à la carte account only gets signed URLs for owned-topic and free files', async () => {
+test('à la carte account only gets signed URLs for owned-topic, free, and General Reference files', async () => {
   const user = { exam_type: 'ca_cdl', owned_topics_json: JSON.stringify([OWNED]) };
   const res = await handleResourcesSignBatch(user, req(ALL_CA_CDL), makeEnv());
   assert.equal(res.status, 200);
   const { urls } = await res.json();
-  assert.deepEqual(Object.keys(urls).sort(), ['free-unowned.m4a', 'owned.m4a']);
+  // General Reference isn't tied to any purchasable topic, so topic buyers get it (decided 2026-09-16).
+  assert.deepEqual(Object.keys(urls).sort(), ['free-unowned.m4a', 'general.m4a', 'owned.m4a']);
   assert.match(urls['owned.m4a'], /^\/media\/owned\.m4a\?exp=\d+&sig=/);
 });
 

@@ -34,7 +34,7 @@ test('/resources/catalog (one track): no paid table/flashcard content, free cont
   assertNoPaidMarkers(assert, res.text, 'catalog ca_cdl');
   assert.ok(res.text.includes('PUBLIC-TABLE ca_cdl free'), 'free table content stays public');
   assert.ok(res.text.includes('PUBLIC-CARD ca_cdl free'), 'free deck content stays public');
-  assert.equal(res.json.resources.ca_cdl.length, 12, 'every resource is still listed (shown locked, not hidden)');
+  assert.equal(res.json.resources.ca_cdl.length, 14, 'every resource is still listed (shown locked, not hidden)');
   assert.ok(res.text.includes('PUBLIC-URL-free.pdf'), 'a free link resource keeps its url');
   const paidAudio = res.json.resources.ca_cdl.find((r) => r.id === 'ca_cdl:paid-audio-owned');
   assert.equal(paidAudio.file, 'paid-owned.m4a', 'media filenames stay listed -- a filename alone cannot fetch the file (signed URLs only)');
@@ -52,15 +52,15 @@ test('/resources/catalog: every item carries its stable resource id, so a logged
   const res = await call(env, 'GET', '/resources/catalog?examType=ca_cdl');
   const ids = res.json.resources.ca_cdl.map((r) => r.id).sort();
   assert.deepEqual(ids, ['ca_cdl:free-audio', 'ca_cdl:free-deck', 'ca_cdl:free-pdf', 'ca_cdl:free-table', 'ca_cdl:paid-audio-owned',
-    'ca_cdl:paid-audio-unowned', 'ca_cdl:paid-deck-owned', 'ca_cdl:paid-deck-unowned', 'ca_cdl:paid-pdf-owned', 'ca_cdl:paid-pdf-unowned',
-    'ca_cdl:paid-table-owned', 'ca_cdl:paid-table-unowned']);
+    'ca_cdl:paid-audio-unowned', 'ca_cdl:paid-deck-owned', 'ca_cdl:paid-deck-unowned', 'ca_cdl:paid-general-audio', 'ca_cdl:paid-general-table',
+    'ca_cdl:paid-pdf-owned', 'ca_cdl:paid-pdf-unowned', 'ca_cdl:paid-table-owned', 'ca_cdl:paid-table-unowned']);
 });
 
 test('/resources/catalog?counts=1: card counts still include paid decks (pre-purchase stat tiles)', async () => {
   const { env } = setup();
   const res = await call(env, 'GET', '/resources/catalog?counts=1');
   assert.deepEqual({ tables: res.json.counts.ca_cdl.tables, decks: res.json.counts.ca_cdl.decks, cards: res.json.counts.ca_cdl.cards },
-    { tables: 3, decks: 3, cards: 3 });
+    { tables: 4, decks: 3, cards: 3 }); // 4 tables: owned, unowned, free, General Reference
 });
 
 // ---- Authenticated content ----------------------------------------------------------------------
@@ -79,19 +79,20 @@ test('/resources/content: a full-track buyer gets every table and deck on their 
   const res = await call(env, 'GET', '/resources/content', { token: TOKENS.full });
   assert.equal(res.status, 200);
   assert.deepEqual(Object.keys(res.json.items).sort(), ['ca_cdl:free-deck', 'ca_cdl:free-pdf', 'ca_cdl:free-table', 'ca_cdl:paid-deck-owned',
-    'ca_cdl:paid-deck-unowned', 'ca_cdl:paid-pdf-owned', 'ca_cdl:paid-pdf-unowned', 'ca_cdl:paid-table-owned', 'ca_cdl:paid-table-unowned']);
+    'ca_cdl:paid-deck-unowned', 'ca_cdl:paid-general-table', 'ca_cdl:paid-pdf-owned', 'ca_cdl:paid-pdf-unowned', 'ca_cdl:paid-table-owned',
+    'ca_cdl:paid-table-unowned']);
   assert.equal(res.json.items['ca_cdl:paid-pdf-unowned'].url, 'https://example.com/PAID-URL-SECRET-unowned.pdf');
   assert.equal(res.json.items['ca_cdl:paid-table-owned'].table.rows[0][0], 'PAID-TABLE-SECRET ca_cdl owned');
   assert.equal(res.json.items['ca_cdl:paid-deck-unowned'].flashcards[0].front, 'PAID-CARD-SECRET ca_cdl unowned');
   assert.ok(!res.text.includes('tx_notary'), 'no other track\'s content');
 });
 
-test('/resources/content: an à la carte buyer gets free + owned-topic content only', async () => {
+test('/resources/content: an à la carte buyer gets free + owned-topic + General Reference content only', async () => {
   const { env } = setup();
   const res = await call(env, 'GET', '/resources/content', { token: TOKENS.topic });
   assert.equal(res.status, 200);
   assert.deepEqual(Object.keys(res.json.items).sort(), ['ca_cdl:free-deck', 'ca_cdl:free-pdf', 'ca_cdl:free-table', 'ca_cdl:paid-deck-owned',
-    'ca_cdl:paid-pdf-owned', 'ca_cdl:paid-table-owned']);
+    'ca_cdl:paid-general-table', 'ca_cdl:paid-pdf-owned', 'ca_cdl:paid-table-owned']);
   assert.ok(!res.text.includes('unowned'), 'no un-owned topic content');
 });
 
@@ -107,7 +108,7 @@ test('/resources/content: a buyer of a different track gets only their own track
 
 // Fake R2 binding: every seeded media file "exists", so a 403 can only come from the signature check.
 function withMedia(env) {
-  const files = new Set(['paid-owned.m4a', 'paid-unowned.m4a', 'free.m4a', 'notary-paid.m4a']);
+  const files = new Set(['paid-owned.m4a', 'paid-unowned.m4a', 'free.m4a', 'notary-paid.m4a', 'paid-general.m4a']);
   env.MEDIA = {
     head: async (key) => (files.has(key) ? { size: 10 } : null),
     get: async (key) => (files.has(key) ? { body: 'PAID-MEDIA-BYTES', writeHttpMetadata() {}, httpEtag: '"etag"' } : null),
@@ -151,9 +152,9 @@ test('/resources/sign-batch: requires a valid login, never signs another track\'
   const foreign = await call(env, 'POST', '/resources/sign-batch', { token: TOKENS.notary, body: { files: ['paid-owned.m4a'] } });
   assert.equal(foreign.status, 404);
   assert.ok(!foreign.text.includes('sig='));
-  const topic = await call(env, 'POST', '/resources/sign-batch', { token: TOKENS.topic, body: { files: ['paid-owned.m4a', 'paid-unowned.m4a', 'free.m4a'] } });
+  const topic = await call(env, 'POST', '/resources/sign-batch', { token: TOKENS.topic, body: { files: ['paid-owned.m4a', 'paid-unowned.m4a', 'free.m4a', 'paid-general.m4a'] } });
   assert.equal(topic.status, 200);
-  assert.deepEqual(Object.keys(topic.json.urls).sort(), ['free.m4a', 'paid-owned.m4a']);
+  assert.deepEqual(Object.keys(topic.json.urls).sort(), ['free.m4a', 'paid-general.m4a', 'paid-owned.m4a'], 'owned topic, free, and General Reference -- never an un-owned topic');
 });
 
 test('/resources/free: only signs files marked free -- never a paid file, on any track', async () => {

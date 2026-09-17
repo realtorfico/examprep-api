@@ -106,6 +106,11 @@ export function seedPaidContent(db) {
   media.run('ca_cdl:paid-pdf-unowned', 'ca_cdl', 10, 'pdf', 'Paid Unowned PDF', T_UNOWNED, 0, 'https://example.com/PAID-URL-SECRET-unowned.pdf', null, now, now);
   media.run('ca_cdl:free-pdf', 'ca_cdl', 11, 'pdf', 'Free PDF', T_UNOWNED, 1, 'https://example.com/PUBLIC-URL-free.pdf', null, now, now);
   media.run('tx_notary:paid-audio', 'tx_notary', 1, 'audio', 'Paid Notary Audio', 'Notary Duties', 0, null, 'notary-paid.m4a', now, now);
+
+  // Paid "General Reference" resources: not tied to any purchasable topic (orientation material), so an
+  // à la carte buyer of ANY topic gets them, same as a full-track buyer (decided 2026-09-16).
+  res.run('ca_cdl:paid-general-table', 'ca_cdl', 12, 'table', 'Paid General Table', 'General Reference', 0, table('PAID-TABLE-SECRET ca_cdl general'), now, now);
+  media.run('ca_cdl:paid-general-audio', 'ca_cdl', 13, 'audio', 'Paid General Audio', 'General Reference', 0, null, 'paid-general.m4a', now, now);
 }
 
 // Realistic activity so public aggregate endpoints (stats, recent-activity ticker, leaderboards) have
