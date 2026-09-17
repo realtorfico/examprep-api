@@ -4939,20 +4939,67 @@ async function handleConsoleBlogDelete(request, env) {
 //   only past a threshold per hour.
 // At most one email per group per hour. Always best-effort: recording/alerting must never break or slow
 // down the refusal itself. See test/security-monitoring.test.js.
+//
+// Flood limits (added 2026-09-17, daily code review): the anonymous kinds are reachable by anyone with no
+// credentials, so one row per refusal let a scanner turn into unbounded D1 writes. Per rolling hour, at most
+// ACCESS_DENIAL_MAX_PER_SOURCE rows per source (IP for anonymous kinds, account for logged-in kinds) and
+// ACCESS_DENIAL_MAX_PER_GROUP per group -- still enough to cross the alert threshold and show what happened.
+// Once a limit is hit, this isolate remembers it for a few minutes so a sustained flood doesn't even cost
+// the limit-check read. Rows older than ACCESS_DENIAL_RETENTION_DAYS are pruned by the daily cron.
 const ACCESS_DENIAL_ACCOUNT_KINDS = ['answer_foreign_question', 'answer_unowned_topic', 'sign_batch_foreign_file'];
 const ACCESS_DENIAL_ANONYMOUS_KINDS = ['console_auth_failed', 'media_bad_signature', 'mcp_grade_not_public'];
 const ACCESS_DENIAL_ANONYMOUS_ALERT_THRESHOLD = 20;
 const ACCESS_DENIAL_ALERT_WINDOW_SEC = 3600;
+const ACCESS_DENIAL_MAX_PER_SOURCE = 25;
+const ACCESS_DENIAL_MAX_PER_GROUP = 200;
+const ACCESS_DENIAL_LIMIT_MEMO_SEC = 300;
+const ACCESS_DENIAL_LIMIT_MEMO_MAX_KEYS = 1000;
+const ACCESS_DENIAL_RETENTION_DAYS = 90;
+let accessDenialLimitMemo = new Map(); // 'group:<g>' | 'source:<g>:<id>' -> unix sec the limit was last seen hit, per isolate
+
+export function _resetAccessDenialLimitMemoForTests() { accessDenialLimitMemo = new Map(); }
+
+function accessDenialLimitMemoized(key, t) {
+  const at = accessDenialLimitMemo.get(key);
+  return at !== undefined && t - at < ACCESS_DENIAL_LIMIT_MEMO_SEC;
+}
+
+function memoizeAccessDenialLimit(key, t) {
+  if (accessDenialLimitMemo.size >= ACCESS_DENIAL_LIMIT_MEMO_MAX_KEYS) accessDenialLimitMemo = new Map();
+  accessDenialLimitMemo.set(key, t);
+}
 
 async function recordAccessDenial(env, request, { kind, user, detail }) {
   try {
     const path = request ? new URL(request.url).pathname : null;
     const ip = request ? request.headers.get('CF-Connecting-IP') : null;
+    const isAccount = ACCESS_DENIAL_ACCOUNT_KINDS.includes(kind);
+    const group = isAccount ? 'account' : 'anonymous';
+    const kinds = isAccount ? ACCESS_DENIAL_ACCOUNT_KINDS : ACCESS_DENIAL_ANONYMOUS_KINDS;
+    const source = isAccount ? (user ? user.id : null) : ip;
+    const groupKey = 'group:' + group;
+    const sourceKey = 'source:' + group + ':' + (source || '');
+    const t = now();
+    if (accessDenialLimitMemoized(groupKey, t) || accessDenialLimitMemoized(sourceKey, t)) return;
+    // LIMIT bounds the rows read: past the group limit the exact count doesn't matter, and below it every
+    // row in the window is included, so the per-source count is exact whenever it can still matter.
+    const usage = await env.DB.prepare(
+      `SELECT COUNT(*) AS total, COALESCE(SUM(CASE WHEN src IS ? THEN 1 ELSE 0 END), 0) AS fromSource
+       FROM (SELECT ${isAccount ? 'user_id' : 'ip'} AS src FROM access_denials
+             WHERE created_at > ? AND kind IN (${kinds.map(() => '?').join(', ')}) LIMIT ?)`
+    ).bind(source, t - ACCESS_DENIAL_ALERT_WINDOW_SEC, ...kinds, ACCESS_DENIAL_MAX_PER_GROUP).first();
+    if (usage && usage.total >= ACCESS_DENIAL_MAX_PER_GROUP) return memoizeAccessDenialLimit(groupKey, t);
+    if (usage && usage.fromSource >= ACCESS_DENIAL_MAX_PER_SOURCE) return memoizeAccessDenialLimit(sourceKey, t);
     await env.DB.prepare(
       'INSERT INTO access_denials (id, kind, user_id, exam_type, detail, path, ip, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)'
     ).bind(newId(), kind, user ? user.id : null, user ? user.exam_type : null, detail ? String(detail).slice(0, 500) : null, path, ip, now()).run();
     await maybeAlertAccessDenials(env, kind);
   } catch (e) { /* best-effort */ }
+}
+
+async function pruneAccessDenials(env) {
+  await env.DB.prepare('DELETE FROM access_denials WHERE created_at < ?')
+    .bind(now() - ACCESS_DENIAL_RETENTION_DAYS * 86400).run();
 }
 
 async function maybeAlertAccessDenials(env, kind) {
@@ -4983,7 +5030,8 @@ async function maybeAlertAccessDenials(env, kind) {
       (r.user_id ? ` &middot; user ${escapeHtml(r.user_id)} (${escapeHtml(r.exam_type || '')})` : '') +
       (r.ip ? ` &middot; ip ${escapeHtml(r.ip)}` : '') +
       (r.detail ? ` &middot; ${escapeHtml(r.detail)}` : '') + '</li>').join('') + '</ul>' +
-    '<p>Full log: the access_denials table. The request was refused -- nothing was exposed. No more emails for this group for an hour.</p>';
+    '<p>Full log: the access_denials table. The request was refused -- nothing was exposed. No more emails for this group for an hour.</p>' +
+    `<p>Recording is capped at ${ACCESS_DENIAL_MAX_PER_SOURCE} per source and ${ACCESS_DENIAL_MAX_PER_GROUP} per group per hour, so a sustained flood shows as those caps, not its true size.</p>`;
   await notifyAdmin(env, 'access_denied', title, bodyHtml);
 }
 
@@ -5173,5 +5221,6 @@ export default {
     ctx.waitUntil(sendStalledBuyerReminders(env));
     ctx.waitUntil(sendOnboardingTipsEmails(env));
     ctx.waitUntil(sendSuggestionRequestEmails(env));
+    ctx.waitUntil(pruneAccessDenials(env));
   },
 };

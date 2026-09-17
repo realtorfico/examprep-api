@@ -8,7 +8,7 @@
 
 import fs from 'node:fs';
 import { DatabaseSync } from 'node:sqlite';
-import worker, { _resetTrackRegistryCacheForTests, _resetPublicSetCacheForTests } from '../src/index.js';
+import worker, { _resetTrackRegistryCacheForTests, _resetPublicSetCacheForTests, _resetAccessDenialLimitMemoForTests } from '../src/index.js';
 
 export function makeDb() {
   const db = new DatabaseSync(':memory:');
@@ -37,6 +37,7 @@ export function makeD1(db) {
 export function makeEnv(db) {
   _resetTrackRegistryCacheForTests();
   _resetPublicSetCacheForTests();
+  _resetAccessDenialLimitMemoForTests();
   return { DB: makeD1(db), MEDIA_SIGNING_SECRET: 'test-media-secret' };
 }
 

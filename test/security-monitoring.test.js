@@ -15,6 +15,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { makeDb, makeEnv, call, mcp } from './_harness.js';
+import worker from '../src/index.js';
 import { seedPaidContent, TOKENS, USERS } from './_paid-content-fixture.js';
 import { signMediaUrl } from '../src/lib/mediaSign.js';
 
@@ -157,4 +158,105 @@ test('a failure to record or email never breaks the actual request', async () =>
   db.exec('DROP TABLE access_denials');
   const res = await call(env, 'POST', '/answer', { token: TOKENS.notary, body: { questionId: 'ca_cdl-b1-101', choice: 'A' } });
   assert.equal(res.status, 404, 'still a clean refusal, not a 500');
+});
+
+// ---- Flood limits and retention -----------------------------------------------------------------
+// Added 2026-09-17 after the daily code review: every anonymous refusal (/console/<anything>, a guessed
+// /media/ URL, an MCP grade call) wrote a row with no limit, so a commodity scanner could turn into
+// unbounded D1 writes and bury the real signals. Limits, per rolling hour: at most 25 rows per source
+// (IP for anonymous kinds, account for logged-in kinds) and 200 rows per group. Enough to still cross
+// the alert threshold and show what happened; not enough to be a write amplifier. Rows older than 90
+// days are pruned by the daily cron. The refusal itself is unchanged either way.
+
+const PER_SOURCE_MAX = 25;
+const PER_GROUP_MAX = 200;
+const RETENTION_DAYS = 90;
+const fromIp = (ip) => ({ headers: { 'CF-Connecting-IP': ip } });
+const countAll = (db) => db.prepare('SELECT COUNT(*) AS n FROM access_denials').get().n;
+
+test('one IP hammering an anonymous route is recorded at most 25 times an hour, still refused and alerted', async () => {
+  const { db, env } = setup();
+  for (let i = 0; i < 60; i++) {
+    const res = await call(env, 'GET', '/media/paid-owned.m4a', fromIp('203.0.113.7'));
+    assert.equal(res.status, 403);
+  }
+  assert.equal(denials(db, 'media_bad_signature').length, PER_SOURCE_MAX);
+  assert.equal(alertEmails().length, 1, 'the flood still produces its one alert');
+});
+
+test('the per-IP limit is shared across anonymous kinds, and does not affect other IPs', async () => {
+  const { db, env } = setup();
+  for (let i = 0; i < 20; i++) await call(env, 'GET', `/console/wp-admin-${i}`, fromIp('203.0.113.7'));
+  for (let i = 0; i < 20; i++) await call(env, 'GET', `/media/guess-${i}.m4a`, fromIp('203.0.113.7'));
+  assert.equal(countAll(db), PER_SOURCE_MAX, 'one IP: 25 rows total, whatever it probes');
+  await call(env, 'GET', '/media/guess.m4a', fromIp('198.51.100.1'));
+  assert.equal(countAll(db), PER_SOURCE_MAX + 1, 'a different IP is still recorded');
+});
+
+test('a scanner rotating IPs is capped at 200 anonymous rows an hour', async () => {
+  const { db, env } = setup();
+  for (let i = 0; i < 260; i++) {
+    const res = await call(env, 'GET', `/console/scan-${i}`, fromIp(`2001:db8::${i.toString(16)}`));
+    assert.equal(res.status, 401);
+  }
+  assert.equal(denials(db, 'console_auth_failed').length, PER_GROUP_MAX);
+});
+
+test('a logged-in account hammering /answer is recorded at most 25 times an hour, alert still sent once', async () => {
+  const { db, env } = setup();
+  for (let i = 0; i < 40; i++) {
+    const res = await call(env, 'POST', '/answer', { token: TOKENS.notary, body: { questionId: 'ca_cdl-b1-101', choice: 'A' } });
+    assert.equal(res.status, 404);
+  }
+  assert.equal(denials(db, 'answer_foreign_question').length, PER_SOURCE_MAX);
+  assert.equal(alertEmails().length, 1);
+});
+
+test('a flood of anonymous probes never stops a logged-in account denial from being recorded and alerted', async () => {
+  const { db, env } = setup();
+  for (let i = 0; i < 260; i++) await call(env, 'GET', `/console/scan-${i}`, fromIp(`2001:db8::${i.toString(16)}`));
+  await call(env, 'POST', '/answer', { token: TOKENS.notary, body: { questionId: 'ca_cdl-b1-101', choice: 'A' } });
+  assert.equal(denials(db, 'answer_foreign_question').length, 1);
+  assert.equal(alertEmails().filter((e) => /logged-in account/.test(e.subject)).length, 1);
+});
+
+test('the limits are per rolling hour: older rows do not count against them', async () => {
+  const { db, env } = setup();
+  const old = Math.floor(Date.now() / 1000) - 3700;
+  const ins = db.prepare(`INSERT INTO access_denials (id, kind, user_id, exam_type, detail, path, ip, created_at)
+    VALUES (?, 'console_auth_failed', NULL, NULL, NULL, '/console/x', ?, ?)`);
+  for (let i = 0; i < PER_GROUP_MAX; i++) ins.run('old-' + i, '203.0.113.7', old);
+  await call(env, 'GET', '/console/x', fromIp('203.0.113.7'));
+  assert.equal(countAll(db), PER_GROUP_MAX + 1);
+});
+
+test('once a source is over its limit, further requests from it cost no database work at all', async () => {
+  const { db, env } = setup();
+  for (let i = 0; i < PER_SOURCE_MAX + 1; i++) await call(env, 'GET', '/media/paid-owned.m4a', fromIp('203.0.113.7'));
+  const realPrepare = env.DB.prepare;
+  let denialQueries = 0;
+  env.DB.prepare = (sql) => { if (/access_denials/.test(sql)) denialQueries++; return realPrepare(sql); };
+  for (let i = 0; i < 50; i++) await call(env, 'GET', '/media/paid-owned.m4a', fromIp('203.0.113.7'));
+  assert.equal(denialQueries, 0);
+  assert.equal(countAll(db), PER_SOURCE_MAX);
+});
+
+test('the daily cron prunes access_denials rows older than 90 days and keeps newer ones', async () => {
+  const { db, env } = setup();
+  const nowSec = Math.floor(Date.now() / 1000);
+  const ins = db.prepare(`INSERT INTO access_denials (id, kind, user_id, exam_type, detail, path, ip, created_at)
+    VALUES (?, 'media_bad_signature', NULL, NULL, NULL, '/media/x', '203.0.113.7', ?)`);
+  ins.run('ancient', nowSec - (RETENTION_DAYS + 1) * 86400);
+  ins.run('recent', nowSec - (RETENTION_DAYS - 1) * 86400);
+  const savedFetch = globalThis.fetch;
+  globalThis.fetch = async () => new Response('{}', { status: 500 }); // the cron's other jobs must not hit the network
+  try {
+    const pending = [];
+    await worker.scheduled({ cron: '0 13 * * *', scheduledTime: Date.now() }, env, { waitUntil: (p) => pending.push(p) });
+    await Promise.allSettled(pending);
+  } finally {
+    globalThis.fetch = savedFetch;
+  }
+  const ids = db.prepare('SELECT id FROM access_denials ORDER BY id').all().map((r) => r.id);
+  assert.deepEqual(ids, ['recent']);
 });
