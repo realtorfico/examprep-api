@@ -4625,6 +4625,26 @@ async function handleCodesRevoke(request, env) {
   return json({ ok: true });
 }
 
+// Undoes a revoke (added 2026-09-17 after an accidental one-click revoke in the console). Revoke only ever
+// sets status = 'revoked' -- no other column, no timestamp -- so restoring the status the code had fully undoes
+// it: 'redeemed' if someone redeemed it, otherwise 'unused'. The code's user regains access immediately
+// (requireUser checks the code's status). Refuses a code revoked by a refunded 7-day claim
+// (handleConsoleRefundClaimsReview): that buyer got their money back. See test/codes-unrevoke.test.js.
+async function handleCodesUnrevoke(request, env) {
+  const { code } = await request.json();
+  if (!code) return json({ error: 'code_required' }, 400);
+  const row = await env.DB.prepare('SELECT status, redeemed_by FROM codes WHERE code = ?').bind(code).first();
+  if (!row) return json({ error: 'code_not_found' }, 404);
+  if (row.status !== 'revoked') return json({ error: 'not_revoked' }, 409);
+  const refunded = await env.DB.prepare(
+    "SELECT 1 FROM refund_claims WHERE code = ? AND claim_type = 'unconditional_7day' AND status = 'refunded' LIMIT 1"
+  ).bind(code).first();
+  if (refunded) return json({ error: 'code_refunded' }, 409);
+  const status = row.redeemed_by ? 'redeemed' : 'unused';
+  await env.DB.prepare("UPDATE codes SET status = ? WHERE code = ? AND status = 'revoked'").bind(status, code).run();
+  return json({ ok: true, status });
+}
+
 // Admin-editable fields on an existing code: note (free text) and expires_at (epoch seconds, or
 // null to clear -- a code with no expiry is valid indefinitely, see schema.sql). Deliberately does
 // NOT restrict this to unredeemed/unrevoked codes -- editing note/expiry on an already-redeemed
@@ -5112,6 +5132,7 @@ export default {
         if (pathname === '/console/codes/detail' && method === 'GET') return await handleCodeDetail(request, env);
         if (pathname === '/console/codes/generate' && method === 'POST') return await handleCodesGenerate(request, env);
         if (pathname === '/console/codes/revoke' && method === 'POST') return await handleCodesRevoke(request, env);
+        if (pathname === '/console/codes/unrevoke' && method === 'POST') return await handleCodesUnrevoke(request, env);
         if (pathname === '/console/codes/update' && method === 'POST') return await handleCodesUpdate(request, env);
         if (pathname === '/console/pricing' && method === 'GET') return await handleConsolePricingList(env);
         if (pathname === '/console/pricing' && method === 'POST') return await handleConsolePricingSet(request, env);
