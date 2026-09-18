@@ -55,6 +55,7 @@ const REVIEWED_PUBLIC_ROUTES = {
   'POST /issue-reports': 'issue report widget',
   'POST /suggestions': 'suggestion widget',
   'POST /buy/reminder': 'buy-page reminder email capture',
+  'POST /study-link': 'CDL "email me the free practice link" capture (Turnstile-gated, rate-limited); emails registry-built links only, returns ok',
   'POST /waitlist/join': 'track waitlist signup',
   'POST /track/visit': 'analytics beacon',
   'POST /track/event': 'analytics beacon',

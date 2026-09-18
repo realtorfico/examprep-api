@@ -704,6 +704,30 @@ CREATE TABLE checkout_intents (
 );
 CREATE INDEX idx_checkout_intents_reminder ON checkout_intents(purchased_at, reminder_sent_at, created_at);
 
+-- "Email me the free practice link" on the CDL category page and the CDL track pages (phase 1 of the
+-- CDL email capture, 2026-09-18) -- see handleStudyLinkSubmit. Its own table rather than a new
+-- checkout_intents source: those rows get the daily buy-reminder cron, and these visitors never
+-- reached the buy page. One row per email+track; a repeat request updates it in place.
+CREATE TABLE study_link_requests (
+  id                TEXT PRIMARY KEY,
+  email             TEXT NOT NULL,
+  exam_type         TEXT NOT NULL,
+  source            TEXT NOT NULL,   -- 'category_card' (/cdl) | 'track_card' (/cdl/{state}) |
+                                     -- 'track_exit' (the desktop exit-intent modal on a track page)
+  marketing_opt_in  INTEGER NOT NULL DEFAULT 0, -- 1 only when the visitor ticked the separate,
+                                     -- unticked-by-default "study tips and offers" box. The latest
+                                     -- request's answer wins. Nothing sends promos yet: that waits for
+                                     -- the promo pipeline (unsubscribe link + postal address).
+  opt_in_at         INTEGER,         -- when that consent was given; NULL when not opted in
+  opt_in_text       TEXT,            -- the checkbox wording agreed to; NULL when not opted in
+  created_at        INTEGER NOT NULL,
+  updated_at        INTEGER NOT NULL,
+  sent_at           INTEGER,         -- last time the link email went out; NULL = not sent yet
+  UNIQUE(email, exam_type)
+);
+CREATE INDEX idx_study_link_requests_email_sent ON study_link_requests(email, sent_at);
+CREATE INDEX idx_study_link_requests_created ON study_link_requests(created_at);
+
 -- Admin-managed notification rules -- replaces the old single admin_alert_email app_setting
 -- (which used to control notifyAdmin, the daily health check, AND the Contact Admin form all at
 -- once) with a proper per-trigger table: multiple recipients per trigger, each independently

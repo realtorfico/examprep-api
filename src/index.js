@@ -1,7 +1,7 @@
 import { verifyTurnstile, requireUser, requireAccess, getAccessEmail, newId, newCode } from './lib/auth.js';
 import { createPayPalOrder, capturePayPalOrder } from './lib/paypal.js';
 import { createStripePaymentIntent, retrieveStripePaymentIntent } from './lib/stripe.js';
-import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail, sendMissedItByOneEmail, sendTrackMechanicsChangedEmail, sendExamCountdownEmail, sendOnboardingTipsEmail, sendSuggestionRequestEmail, sendBuyPageReminderEmail } from './lib/email.js';
+import { sendCodeEmail, sendReferralInviteEmail, sendPointsEarnedEmail, sendRedeemVerifyEmail, sendAdminAlertEmail, sendReengagementEmail, sendPromoVerifyEmail, sendGiftCodeEmail, sendGiftPurchaseEmail, sendExamPassedEmail, sendAbandonedCheckoutEmail, sendMissedItByOneEmail, sendTrackMechanicsChangedEmail, sendExamCountdownEmail, sendOnboardingTipsEmail, sendSuggestionRequestEmail, sendBuyPageReminderEmail, sendStudyLinkEmail } from './lib/email.js';
 import { signMediaUrl, verifyMediaSig, isExpiredMediaSig } from './lib/mediaSign.js';
 import { PROGRESS_TOTALS_SQL, PROGRESS_BY_TOPIC_SQL, CONSOLE_QUIZ_PROGRESS_SQL, STATS_ACCURACY_BY_TOPIC_SQL, LEADERBOARD_SQL, ALL_USERS_PROGRESS_TOTALS_SQL } from './progressQueries.js';
 import { filesOwnedByTrack } from './resourceOwnership.js';
@@ -2557,6 +2557,81 @@ async function handleBuyReminderSubmit(request, env) {
   return json({ ok: true });
 }
 
+// "Email me the free practice link" on the CDL category page and the CDL track pages (phase 1 of the
+// CDL email capture, 2026-09-18): one email back with the state's free sample questions and its
+// track page, plus a separate, unticked-by-default consent for occasional study tips and offers.
+// Nothing sends those yet -- that waits for the promo pipeline (unsubscribe link, postal address);
+// this only records the consent, with when it was given and the wording agreed to.
+//
+// Unlike /buy/reminder this sends an email the moment it is asked, to any address typed in, so it
+// is gated harder: Turnstile, one email per address+track per day, and at most three a day to one
+// address across tracks. Every link in the email is built here from track_registry -- nothing the
+// client sends ends up in it, or this would be a phishing relay carrying our domain.
+//
+// CDL only for now (STUDY_LINK_KIND_SLUGS): the track URL is derived as /{slug}/{state}, which holds
+// for every CDL track, and CDL is the only kind the site shows the card on.
+const STUDY_LINK_KIND_SLUGS = { 'Commercial Driver (CDL)': 'cdl' };
+const STUDY_LINK_SOURCES = ['category_card', 'track_card', 'track_exit'];
+// Must match the checkbox label on the site (STUDY_LINK_OPT_IN_TEXT in its app.js) -- it is the
+// record of what the visitor agreed to.
+const STUDY_LINK_OPT_IN_TEXT = 'Also send me occasional study tips and offers. Unsubscribe anytime.';
+const STUDY_LINK_RESEND_AFTER_SEC = 86400;
+const STUDY_LINK_MAX_PER_EMAIL_PER_DAY = 3;
+const STUDY_LINK_SITE = 'https://passexamhq.com';
+
+async function handleStudyLinkSubmit(request, env) {
+  const { email, examType, source, marketingOptIn, turnstileToken } = await request.json();
+  const ip = request.headers.get('CF-Connecting-IP');
+  if (!(await verifyTurnstile(turnstileToken, env.TURNSTILE_SECRET, ip))) {
+    return json({ error: 'turnstile_failed' }, 400);
+  }
+  const trimmedEmail = (typeof email === 'string' ? email : '').trim().toLowerCase();
+  if (!trimmedEmail || trimmedEmail.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmedEmail)) {
+    return json({ error: 'invalid_email' }, 400);
+  }
+  if (STUDY_LINK_SOURCES.indexOf(source) === -1) return json({ error: 'invalid_source' }, 400);
+  const track = examType ? (await getTrackRegistry(env))[examType] : null;
+  if (!track || !track.active) return json({ error: 'invalid_examType' }, 400);
+  const kindSlug = STUDY_LINK_KIND_SLUGS[track.kind];
+  if (!kindSlug) return json({ error: 'not_offered' }, 400);
+
+  // Only a real boolean true is consent -- never a truthy string or number.
+  const optIn = marketingOptIn === true;
+  const ts = now();
+  await env.DB.prepare(
+    `INSERT INTO study_link_requests (id, email, exam_type, source, marketing_opt_in, opt_in_at, opt_in_text, created_at, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+     ON CONFLICT(email, exam_type) DO UPDATE SET
+       source = excluded.source, marketing_opt_in = excluded.marketing_opt_in, opt_in_at = excluded.opt_in_at,
+       opt_in_text = excluded.opt_in_text, updated_at = excluded.updated_at`
+  ).bind(newId(), trimmedEmail, examType, source, optIn ? 1 : 0, optIn ? ts : null, optIn ? STUDY_LINK_OPT_IN_TEXT : null, ts, ts).run();
+
+  // Already sent this link within the day, or this address has had its daily share: the lead (and
+  // any change of consent) is recorded above, but no email goes out. Still a plain ok, so the form
+  // doesn't tell a stranger anything about an address.
+  const since = ts - STUDY_LINK_RESEND_AFTER_SEC;
+  const recent = (await env.DB.prepare(
+    'SELECT exam_type FROM study_link_requests WHERE email = ? AND sent_at > ?'
+  ).bind(trimmedEmail, since).all()).results;
+  if (recent.some((r) => r.exam_type === examType) || recent.length >= STUDY_LINK_MAX_PER_EMAIL_PER_DAY) {
+    return json({ ok: true });
+  }
+
+  const trackUrl = `${STUDY_LINK_SITE}/${kindSlug}/${String(track.state_code).toLowerCase()}`;
+  try {
+    await sendStudyLinkEmail(env, trimmedEmail, {
+      trackName: track.short_name || examType,
+      sampleUrl: trackUrl + '#/sample',
+      trackUrl,
+    });
+  } catch (e) {
+    return json({ error: 'send_failed' }, 502);
+  }
+  await env.DB.prepare('UPDATE study_link_requests SET sent_at = ? WHERE email = ? AND exam_type = ?')
+    .bind(now(), trimmedEmail, examType).run();
+  return json({ ok: true });
+}
+
 export async function handleStripeConfirm(request, env) {
   const { paymentIntentId, examType, email, ageCategory, isGift, recipientEmail, giftMessage, refCode, affCode, sessionId, referralSource: rawReferralSource } = await request.json();
   if (!paymentIntentId || !examType) return json({ error: 'paymentIntentId_and_examType_required' }, 400);
@@ -3561,6 +3636,22 @@ export async function handleConsoleCheckoutIntentsList(request, env) {
      ORDER BY created_at DESC LIMIT 500`
   ).bind(cutoff, source, source).all()).results;
   return json({ items: rows, days, source });
+}
+
+// Backs the admin's "Study-Link Leads" tab: everyone who asked for the free practice link on the
+// CDL pages, newest first, optionally only those who ticked the study-tips-and-offers box. Read-only
+// on purpose -- promos to these people wait for the promo pipeline (unsubscribe + postal address).
+export async function handleConsoleStudyLinkRequestsList(request, env) {
+  const url = new URL(request.url);
+  const days = Math.max(1, parseInt(url.searchParams.get('days'), 10) || 90);
+  const optedInOnly = url.searchParams.get('optIn') === 'yes';
+  const rows = (await env.DB.prepare(
+    `SELECT email, exam_type, source, marketing_opt_in, opt_in_at, created_at, updated_at, sent_at
+     FROM study_link_requests
+     WHERE updated_at > ? AND (? = 0 OR marketing_opt_in = 1)
+     ORDER BY updated_at DESC LIMIT 500`
+  ).bind(now() - days * 86400, optedInOnly ? 1 : 0).all()).results;
+  return json({ items: rows, days, optIn: optedInOnly ? 'yes' : 'all' });
 }
 
 // Automated counterpart to the manual admin tool above, added 2026-09-10. One-time only per user
@@ -5110,6 +5201,7 @@ export default {
       if (pathname === '/issue-reports' && method === 'POST') return await handleIssueReportSubmit(request, env);
       if (pathname === '/suggestions' && method === 'POST') return await handleSuggestionSubmit(request, env);
       if (pathname === '/buy/reminder' && method === 'POST') return await handleBuyReminderSubmit(request, env);
+      if (pathname === '/study-link' && method === 'POST') return await handleStudyLinkSubmit(request, env);
       if (pathname === '/waitlist/join' && method === 'POST') return await handleWaitlistJoin(request, env);
       if (pathname === '/track/visit' && method === 'POST') return await handleTrackVisit(request, env);
       if (pathname === '/track/event' && method === 'POST') return await handleTrackEvent(request, env);
@@ -5191,6 +5283,7 @@ export default {
         if (pathname === '/console/stalled-buyers' && method === 'GET') return await handleConsoleStalledBuyersList(request, env);
         if (pathname === '/console/stalled-buyers/remind' && method === 'POST') return await handleConsoleStalledBuyerRemind(request, env);
         if (pathname === '/console/checkout-intents' && method === 'GET') return await handleConsoleCheckoutIntentsList(request, env);
+        if (pathname === '/console/study-link-requests' && method === 'GET') return await handleConsoleStudyLinkRequestsList(request, env);
         if (pathname === '/console/exam-attempts' && method === 'GET') return await handleConsoleExamAttemptsList(env);
         if (pathname === '/console/exam-attempts/detail' && method === 'GET') return await handleConsoleExamAttemptDetail(request, env);
         return json({ error: 'not_found' }, 404);

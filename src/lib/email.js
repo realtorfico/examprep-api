@@ -320,6 +320,27 @@ export async function sendBuyPageReminderEmail(env, to, examType) {
   });
 }
 
+// The CDL pages' "email me the free practice link" card (handleStudyLinkSubmit, 2026-09-18). The one
+// email the visitor asked for: their state's free sample questions, plus the track page. Every URL
+// and name here comes from track_registry via the handler, never from the request. No promo content,
+// even for someone who ticked the tips-and-offers box -- those wait for the promo pipeline.
+export async function sendStudyLinkEmail(env, to, { trackName, sampleUrl, trackUrl }) {
+  const name = escapeForEmail(trackName);
+  await sendEmail(env, {
+    to,
+    subject: 'Your free ' + trackName + ' practice questions',
+    html: emailShell({
+      badge: '🚛',
+      title: 'Your practice link',
+      bodyHtml: `<p>Here's the link you asked for: free <strong>${name}</strong> practice questions, with the answers explained, for whenever you're ready.</p>
+        <p>When you want the full question bank and timed mock exams, everything is on the <a href="${trackUrl}" style="color:#0284c7;">${name} page</a>.</p>`,
+      ctaText: 'Start the free questions →',
+      ctaUrl: sampleUrl,
+      footerNote: 'You asked for this link on passexamhq.com. If it wasn\'t you, no action is needed.',
+    }),
+  });
+}
+
 export async function sendPointsEarnedEmail(env, to, points, reason) {
   await sendEmail(env, {
     to,
